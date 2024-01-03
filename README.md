@@ -1,0 +1,2 @@
+# BetterDisplay-localization
+BetterDisplay-localization
