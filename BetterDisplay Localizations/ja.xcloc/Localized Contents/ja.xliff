@@ -472,11 +472,6 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">代替の輝度キーとしてF14 / F15を使用することを許可</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allows access to app functionality via HTTP requests when enabled." xml:space="preserve">
-        <source>Allows access to app functionality via HTTP requests when enabled.</source>
-        <target state="translated">有効化するとHTTPリクエストによるアプリケーション機能へのアクセスが可能になります。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
         <source>Allows access to app functionality via HTTP requests.</source>
         <target state="translated">HTTPリクエストによるアプリケーション機能へのアクセスが可能になります。</target>
@@ -569,11 +564,6 @@ You should exit the other app or disable `Allow color adjustments` under Setting
         <target state="translated">他のアプリケーションが画面のカラーや輝度を繰り返し変更しています - これはBetterDisplayが行ってる動作と衝突しています。
 
 他のアプリケーションを終了するか、設定/ディスプレイの「カラー調整を許可」を無効にして、この問題を解決してください!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="App Integration" xml:space="preserve">
-        <source>App Integration</source>
-        <target state="translated">アプリケーションの統合</target>
         <note/>
       </trans-unit>
       <trans-unit id="App Menu" xml:space="preserve">
@@ -2382,8 +2372,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">ディスプレイの接続/切断オプションを有効化</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable custom URL schema access" xml:space="preserve">
-        <source>Enable custom URL schema access</source>
+      <trans-unit id="Enable custom URL scheme access" xml:space="preserve">
+        <source>Enable custom URL scheme access</source>
         <target state="translated">カスタムURLスキームでのアクセスを有効化</target>
         <note/>
       </trans-unit>
@@ -4441,9 +4431,17 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">OSDを表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
+        <source>Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
         <source>Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
         <target state="translated">キーボードショートカット使用時にOSDを表示します。OSD UIを表示したくない場合や、サードパーティ製OSDプレゼンテーションアプリを代わりに使用する場合は、無効にしてください。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show OSD when using any other keyboard shortcut (besides brightness, volume, mute). Disable this if you don't want custom OSDs to appear or when a third party OSD presentation app is being used instead." xml:space="preserve">
+        <source>Show OSD when using any other keyboard shortcut (besides brightness, volume, mute). Disable this if you don't want custom OSDs to appear or when a third party OSD presentation app is being used instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show PIP menu when only a single display is connected" xml:space="preserve">
@@ -4466,6 +4464,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">メニューバーにアプリケーションアイコンを表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show brightness, volume, mute OSD" xml:space="preserve">
+        <source>Show brightness, volume, mute OSD</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show connect/disconnect in menu even if header has it as switch" xml:space="preserve">
         <source>Show connect/disconnect in menu even if header has it as switch</source>
         <target state="translated">ヘッダにスイッチがある場合も、メニューに接続/切断を表示</target>
@@ -4479,6 +4481,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show currently off-line (past disconnected) displays in Settings" xml:space="preserve">
         <source>Show currently off-line (past disconnected) displays in Settings</source>
         <target state="translated">現在オフラインの（過去に切断した）ディスプレイを表示</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show custom OSD icons" xml:space="preserve">
+        <source>Show custom OSD icons</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show data as" xml:space="preserve">
@@ -5848,6 +5854,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="⚠️ Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>⚠️ Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
         <target state="translated">⚠️ フルスクリーンストリーミングは、画面集録を許可する必要があるため利用できません。システム設定 &gt; プライバシーとセキュリティ &gt; 画面集録で許可することができます!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ If a third party app (like MediaMate) is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!" xml:space="preserve">
+        <source>⚠️ If a third party app (like MediaMate) is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the smooth scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen was connected." xml:space="preserve">
