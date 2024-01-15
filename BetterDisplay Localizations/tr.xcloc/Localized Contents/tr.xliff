@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
@@ -25,7 +25,7 @@
   </file>
   <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -234,8 +234,8 @@
         <target state="translated">Erişilebilirlik Yapılandırıldı - Uygulamanın Yeniden Başlatılması Gerekiyor</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart BetterDisplay&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart BetterDisplay" button below to restart the app immediately!</source>
+      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
@@ -3453,14 +3453,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Restart</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Restart %@" xml:space="preserve">
+        <source>Restart %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Restart App…" xml:space="preserve">
         <source>Restart App…</source>
         <target state="translated">Uygulamayı Baştan Başlat...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Restart BetterDisplay" xml:space="preserve">
-        <source>Restart BetterDisplay</source>
-        <target state="translated">BetterDisplay'i Baştan Başlat</target>
         <note/>
       </trans-unit>
       <trans-unit id="Restart the app" xml:space="preserve">
@@ -3743,16 +3742,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Show Mouse Pointer</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Show OSD" xml:space="preserve">
-        <source>Show OSD</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
         <source>Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
-        <source>Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show OSD when using any other keyboard shortcut (besides brightness, volume, mute). Disable this if you don't want custom OSDs to appear or when a third party OSD presentation app is being used instead." xml:space="preserve">
@@ -4073,10 +4064,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Televizyon</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Temperature" xml:space="preserve">
-        <source>Temperature</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD)." xml:space="preserve">
         <source>The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD).</source>
         <note/>
@@ -4099,8 +4086,8 @@ Virtual screens are not connected automatically, brightness and other adjustment
         <source>The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the raw display name." xml:space="preserve">
-        <source>The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the raw display name.</source>
+      <trans-unit id="The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name." xml:space="preserve">
+        <source>The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app normally does not restore full dimming upon wake or app startup to avoid confusion." xml:space="preserve">
@@ -4117,16 +4104,16 @@ Please open the app in native mode - to achieve this, unselect "Open using Roset
         <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold SHIFT on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The app will forget all stored DDC values and treat all controls and untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
-        <source>The app will forget all stored DDC values and treat all controls and untouched. Sliders will revert to default neutral values.
+      <trans-unit id="The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
+        <source>The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.
 
 This operation does not reset the display itself.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected.&#10;&#10;If you connect the built-in display, this setting will be turned off. You can enable it again under Settings &gt; Advanced." xml:space="preserve">
+      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected.&#10;&#10;If you connect the built-in display, this setting will be turned off. You can enable it again under Displays &gt; Overview &gt; Connection management settings." xml:space="preserve">
         <source>The built-in display is configured to be disconnected when an external display is connected.
 
-If you connect the built-in display, this setting will be turned off. You can enable it again under Settings &gt; Advanced.</source>
+If you connect the built-in display, this setting will be turned off. You can enable it again under Displays &gt; Overview &gt; Connection management settings.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The built-in display of the iMac cannot be easily reconnected (lack of display cable, closable lid) in case of an application failure. Enable this setting with extra caution!" xml:space="preserve">
@@ -4275,8 +4262,8 @@ Please note that previously stored custom display configurations won't be remove
         <source>This should match the physical resolution of the display panel (actual number of pixels vertically and horizontally).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="This should remove displays from the display layout and make compatible systems enter standby mode.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain turned off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
-        <source>This should remove displays from the display layout and make compatible systems enter standby mode.
+      <trans-unit id="This should remove displays from the display layout and make them enter standby mode on compatible systems.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain turned off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
+        <source>This should remove displays from the display layout and make them enter standby mode on compatible systems.
 
 Some displays are not compatible with this feature and may not turn off or remain turned off.
 
@@ -4947,7 +4934,7 @@ You can dismiss this notification - in this case the changes will be applied whe
   </file>
   <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
