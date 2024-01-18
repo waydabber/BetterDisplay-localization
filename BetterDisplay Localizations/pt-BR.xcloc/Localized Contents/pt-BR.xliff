@@ -118,6 +118,10 @@
         <target state="translated">%@x%@%@ %@ %lld%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%lf" xml:space="preserve">
+        <source>%lf</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%lld" xml:space="preserve">
         <source>%lld</source>
         <target state="translated">%lld</target>
@@ -431,6 +435,10 @@ Você pode fazer isso nas Configurações do sistema ou o aplicativo pode fazer 
       <trans-unit id="Allow color adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
         <source>Allow color adjustments (note: turn this off for compatibility mode)</source>
         <target state="translated">Permitir ajustes de cores (nota: desligar para modo de compatibilidade)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
+        <source>Allow combined brightness in native XDR upscaling mode</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow disconnecting all connected displays" xml:space="preserve">
@@ -1138,6 +1146,10 @@ AliPay disponível na China.</target>
         <target state="translated">Brilho combinado - nível mínimo de brilho de hardware permitido</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
+        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
         <source>Combined brightness software dimming switchover point</source>
         <target state="translated">Ponto de comutação de escurecimento do software de brilho combinado</target>
@@ -1762,6 +1774,14 @@ AliPay disponível na China.</target>
       <trans-unit id="Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different." xml:space="preserve">
         <source>Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different.</source>
         <target state="translated">Define o tamanho diagonal que o sistema percebe na tela. Se usado para espelhamento/streaming, pode opcionalmente corresponder à tela de destino. É seguro deixar vazio como padrão. Com uma lista de resolução personalizada com proporções variadas, o tamanho real relatado pode ser diferente.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black." xml:space="preserve">
+        <source>Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
+        <source>Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Delay between commands" xml:space="preserve">
@@ -3387,6 +3407,14 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">O controle do teclado nativo (Apple) usando as teclas de brilho ou de áudio não funcionará sem configurar primeiro as permissões de acessibilidade nas Configurações do sistema!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Native XDR brightness upscaling" xml:space="preserve">
+        <source>Native XDR brightness upscaling</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
+        <source>Native XDR brightness upscaling settings</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
         <source>Native audio key settings</source>
         <target state="translated">Configurações de tecla de áudio nativa</target>
@@ -3557,6 +3585,10 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">OSD</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later." xml:space="preserve">
+        <source>Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="On startup &amp; wake" xml:space="preserve">
         <source>On startup &amp; wake</source>
         <target state="translated">Na inicialização e ativação</target>
@@ -3675,6 +3707,10 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Portrait 270° (Sidecar port up)" xml:space="preserve">
         <source>Portrait 270° (Sidecar port up)</source>
         <target state="translated">Retrato 270° (porta Sidecar para cima)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Potential EDR" xml:space="preserve">
+        <source>Potential EDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Potentially DDC compatible" xml:space="preserve">
@@ -3875,6 +3911,10 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Redetect Displays" xml:space="preserve">
         <source>Redetect Displays</source>
         <target state="translated">Redetectar Monitores</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reference EDR" xml:space="preserve">
+        <source>Reference EDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh Rate" xml:space="preserve">
@@ -4608,6 +4648,10 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">Brilho do software</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Software XDR brightness upscaling" xml:space="preserve">
+        <source>Software XDR brightness upscaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
         <source>Software control</source>
         <target state="translated">Controle de software</target>
@@ -4726,6 +4770,14 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Supported by the display" xml:space="preserve">
         <source>Supported by the display</source>
         <target state="translated">Suportado pelo monitor</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Supports Color Profiles" xml:space="preserve">
+        <source>Supports Color Profiles</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Supports HDR" xml:space="preserve">
+        <source>Supports HDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Supports XDR presets" xml:space="preserve">
@@ -5382,6 +5434,14 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <target state="translated">Monitor Desconhecido</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
+        <source>Unlock Color Profile management for XDR displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlocks the full brightness range of XDR displays. Compared to other XDR upscaling methods this does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders. Requires the default Apple XDR profile to be selected." xml:space="preserve">
+        <source>Unlocks the full brightness range of XDR displays. Compared to other XDR upscaling methods this does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders. Requires the default Apple XDR profile to be selected.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
         <source>Unmute (DDC)</source>
         <target state="translated">Ativar o som (DDC)</target>
@@ -5682,6 +5742,22 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <target state="translated">Predefinição de XDR</target>
         <note/>
       </trans-unit>
+      <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
+        <source>XDR brightness scale maximum</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR brightness scale minimum" xml:space="preserve">
+        <source>XDR brightness scale minimum</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
+        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR/HDR Upscaling, Color Adjustments, Software Dimming" xml:space="preserve">
+        <source>XDR/HDR Upscaling, Color Adjustments, Software Dimming</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
         <source>XDR/HDR upscaling compatible</source>
         <target state="translated">Compatível com upscaling XDR/HDR</target>
@@ -5787,6 +5863,10 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <target state="translated">milissegundos</target>
         <note/>
       </trans-unit>
+      <trans-unit id="nits" xml:space="preserve">
+        <source>nits</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="seconds" xml:space="preserve">
         <source>seconds</source>
         <target state="translated">segundos</target>
@@ -5820,6 +5900,10 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
       <trans-unit id="⚠ Virtual Screen as Stream Target?" xml:space="preserve">
         <source>⚠ Virtual Screen as Stream Target?</source>
         <target state="translated">⚠ Tela Virtual como Destino de Transmissão?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ **WARNING: This is an experimental feature, use at your own risk!** Uses undocumented, unsanctioned API access. Might not work with all versions of macOS. Was tested on a limited number of configurations. May cause permanent black screen, system lockup, inability to boot." xml:space="preserve">
+        <source>⚠️ **WARNING: This is an experimental feature, use at your own risk!** Uses undocumented, unsanctioned API access. Might not work with all versions of macOS. Was tested on a limited number of configurations. May cause permanent black screen, system lockup, inability to boot.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
