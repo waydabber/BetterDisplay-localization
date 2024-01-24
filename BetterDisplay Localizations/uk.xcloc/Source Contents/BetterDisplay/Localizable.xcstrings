@@ -123,9 +123,6 @@
     "%u bits per sample" : {
 
     },
-    "⚠️ **Experimental - may cause black screen, lockup, boot issues!** Fully expands the available brightness range for non-HDR content at a system level and also allows for more dimming range. Compared to software upscaling methods does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders." : {
-
-    },
     "⚠ Associated display mirroring is enforced!" : {
 
     },
@@ -135,7 +132,7 @@
     "⚠️ EDID data retrieval failed." : {
 
     },
-    "⚠️ Feature requires the default XDR Profile to be selected!" : {
+    "⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac." : {
 
     },
     "⚠️ For best results stick close to the display aspect ratio!" : {
@@ -156,10 +153,19 @@
     "⚠️ It is recommended to have some more leeway in the range!" : {
 
     },
+    "⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU." : {
+
+    },
     "⚠️ Minimum width/height value should be lower than the maximum!" : {
 
     },
+    "⚠️ Native XDR upscaling is an experimental! Use at your own risk!" : {
+
+    },
     "⚠ Stream auto-starts to associated display!" : {
+
+    },
+    "⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." : {
 
     },
     "⚠️ Unable to enable DDC due to display or connection issues." : {
@@ -241,6 +247,9 @@
 
     },
     "Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC." : {
+
+    },
+    "Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." : {
 
     },
     "Add and remove favorite resolutions via long press" : {
@@ -331,6 +340,9 @@
 
     },
     "Allow color adjustments (note: turn this off for compatibility mode)" : {
+      "extractionState" : "stale"
+    },
+    "Allow color table adjustments (note: turn this off for compatibility mode)" : {
 
     },
     "Allow combined brightness in native XDR upscaling mode" : {
@@ -346,6 +358,9 @@
 
     },
     "Allow disconnecting the built-in display of the iMac" : {
+
+    },
+    "Allow native XDR brightness upscaling" : {
 
     },
     "Allow resolution change for mirror target displays" : {
@@ -552,6 +567,9 @@
     "Automatic (based on display type)" : {
 
     },
+    "Automatically activate native XDR Upscaling" : {
+
+    },
     "Automatically apply custom EDID upon detection of this display" : {
 
     },
@@ -634,6 +652,9 @@
 
     },
     "Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment." : {
+      "extractionState" : "stale"
+    },
+    "Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." : {
 
     },
     "Briefly show Dock icon on startup" : {
@@ -651,10 +672,16 @@
     "Brightness (DDC)" : {
 
     },
+    "Brightness (Metal Upscaling)" : {
+
+    },
     "Brightness (Native XDR Upscaling)" : {
 
     },
     "Brightness (Overlay)" : {
+
+    },
+    "Brightness (Software Upscaling)" : {
 
     },
     "Brightness (Software)" : {
@@ -730,6 +757,9 @@
 
     },
     "Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." : {
+      "extractionState" : "stale"
+    },
+    "Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." : {
 
     },
     "Color Depth" : {
@@ -1485,10 +1515,16 @@
     "Enable Apple display hardware brightness control" : {
 
     },
+    "Enable by selecting \"%@\" under the XDR Preset menu." : {
+
+    },
     "Enable CLI access and notification based integration" : {
 
     },
     "Enable color adjustments" : {
+      "extractionState" : "stale"
+    },
+    "Enable color table adjustments" : {
 
     },
     "Enable connect/disconnect option for displays" : {
@@ -1510,7 +1546,7 @@
 
     },
     "Enable HDR brightness upscaling" : {
-
+      "extractionState" : "stale"
     },
     "Enable HDR Mode" : {
 
@@ -1537,6 +1573,12 @@
 
     },
     "Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" : {
+
+    },
+    "Enable software HDR brightness upscaling (if available)" : {
+
+    },
+    "Enable software XDR brightness upscaling if available" : {
 
     },
     "Enable software-based video adjustments" : {
@@ -1602,8 +1644,11 @@
     "For easier identification of slider functionality." : {
 
     },
-    "Force support for color table manipulation" : {
+    "Force support for color table adjustments" : {
 
+    },
+    "Force support for color table manipulation" : {
+      "extractionState" : "stale"
     },
     "Force-enable underscan slider" : {
 
@@ -1630,6 +1675,9 @@
 
     },
     "Fully dim display on disconnect" : {
+
+    },
+    "Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." : {
 
     },
     "Gain" : {
@@ -1807,6 +1855,9 @@
 
     },
     "Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." : {
+      "extractionState" : "stale"
+    },
+    "Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." : {
 
     },
     "Increase gamma" : {
@@ -2058,6 +2109,9 @@
     "Menu visibility" : {
 
     },
+    "Metal device" : {
+
+    },
     "milliseconds" : {
 
     },
@@ -2152,9 +2206,15 @@
 
     },
     "Native XDR brightness upscaling" : {
-
+      "extractionState" : "stale"
     },
     "Native XDR brightness upscaling settings" : {
+
+    },
+    "Native XDR Upscaling" : {
+
+    },
+    "Native XDR upscaling is active. Deactivate it under the XDR Preset menu." : {
 
     },
     "Neutral" : {
@@ -2905,7 +2965,7 @@
 
     },
     "Software XDR brightness upscaling" : {
-
+      "extractionState" : "stale"
     },
     "Some displays are still disconnected!" : {
 
@@ -3111,8 +3171,11 @@
     "Third-party external display" : {
 
     },
-    "This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." : {
+    "This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." : {
 
+    },
+    "This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." : {
+      "extractionState" : "stale"
     },
     "This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." : {
 
@@ -3129,8 +3192,11 @@
     "This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if smooth scaling resolutions seem to be missing." : {
 
     },
-    "This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." : {
+    "This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." : {
 
+    },
+    "This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." : {
+      "extractionState" : "stale"
     },
     "This is the recommended setting." : {
 
@@ -3363,6 +3429,9 @@
     "Use custom resolution list" : {
 
     },
+    "Use if you are sure your display supports color table adjustments but the app does not detect the capability." : {
+
+    },
     "Use lighter app menu fonts and icons" : {
 
     },
@@ -3379,7 +3448,7 @@
 
     },
     "Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled." : {
-
+      "extractionState" : "stale"
     },
     "UUID" : {
 
@@ -3538,6 +3607,9 @@
 
     },
     "XDR/HDR Upscaling, Color Adjustments, Software Dimming" : {
+      "extractionState" : "stale"
+    },
+    "XDR/HDR Upscaling, Software Dimming" : {
 
     },
     "Year %lld, week %lld" : {

@@ -293,6 +293,10 @@
         <target state="translated">Активується лише тоді, коли дисплей не встановлено як основний, тому він не заважає екрану блокування. Більшість дисплеїв не підтримують вимикання або повторне ввімкнення підсвічування через DDC.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." xml:space="preserve">
+        <source>Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">Додати спеціальну роздільну здатність</target>
@@ -452,6 +456,10 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">Дозволити коригування кольорів (примітка: вимкніть це для режиму сумісності)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
         <source>Allow combined brightness in native XDR upscaling mode</source>
         <note/>
@@ -469,6 +477,10 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allow disconnecting the built-in display of the iMac" xml:space="preserve">
         <source>Allow disconnecting the built-in display of the iMac</source>
         <target state="translated">Дозволити від'єднання вбудованого дисплею iMac</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow native XDR brightness upscaling" xml:space="preserve">
+        <source>Allow native XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -819,6 +831,10 @@ AliPay доступний у Китаї.</target>
         <target state="translated">Автоматично (залежно від типу дисплею)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Automatically activate native XDR Upscaling" xml:space="preserve">
+        <source>Automatically activate native XDR Upscaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
         <source>Automatically apply custom EDID upon detection of this display</source>
         <target state="translated">Автоматично застосовувати спеціальний EDID після виявлення цього дисплею</target>
@@ -959,6 +975,10 @@ AliPay доступний у Китаї.</target>
         <target state="translated">Коротко показувати піктограму вгору (збільшення XDR/HDR) або вниз (програмне затемнення) в екранному меню, коли відбувається додаткове затемнення або збільшення яскравості за допомогою налаштування таблиці кольорів.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
+        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness" xml:space="preserve">
         <source>Brightness</source>
         <target state="translated">Яскравість</target>
@@ -978,6 +998,10 @@ AliPay доступний у Китаї.</target>
         <target state="translated">Яскравість (DDC)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
         <source>Brightness (Native XDR Upscaling)</source>
         <note/>
@@ -985,6 +1009,10 @@ AliPay доступний у Китаї.</target>
       <trans-unit id="Brightness (Overlay)" xml:space="preserve">
         <source>Brightness (Overlay)</source>
         <target state="translated">Яскравість (Накладання)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Software Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Software)" xml:space="preserve">
@@ -1135,6 +1163,10 @@ AliPay доступний у Китаї.</target>
       <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
         <target state="translated">Налаштування кольорів і програмне затемнення відрізають вміст HDR, тож програма скидає кольори, коли коригування не потрібні. Це може відволікати або викликати чорний екран у деяких конфігураціях.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
+        <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -2413,9 +2445,17 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Увімкнути збільшення яскравості XDR</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
+        <source>Enable by selecting "%@" under the XDR Preset menu.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable color adjustments" xml:space="preserve">
         <source>Enable color adjustments</source>
         <target state="translated">Увімкнути налаштування кольору</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable color table adjustments" xml:space="preserve">
+        <source>Enable color table adjustments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
@@ -2461,6 +2501,14 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!</source>
         <target state="translated">Увімкнути плавне масштабування, створити власну масштабовану роздільну здатність, замінити рідну роздільну здатність і роздільну здатність за замовчуванням, замінити відображуване ім'я та роль%@. Зверніть увагу, що зміни стосуються всіх дисплеїв одного виробника та номеру моделі!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software HDR brightness upscaling (if available)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software XDR brightness upscaling if available" xml:space="preserve">
+        <source>Enable software XDR brightness upscaling if available</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software-based video adjustments" xml:space="preserve">
@@ -2558,6 +2606,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Для легшого визначення функціональності повзунка.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Force support for color table adjustments" xml:space="preserve">
+        <source>Force support for color table adjustments</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Force support for color table manipulation" xml:space="preserve">
         <source>Force support for color table manipulation</source>
         <target state="translated">Примусова підтримка маніпулювання таблицею кольорів</target>
@@ -2606,6 +2658,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Fully dim display on disconnect" xml:space="preserve">
         <source>Fully dim display on disconnect</source>
         <target state="translated">Повністю затемнений дисплей після відключення</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." xml:space="preserve">
+        <source>Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Gain" xml:space="preserve">
@@ -2899,6 +2955,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
         <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
         <target state="translated">Збільшити яскравість дисплею понад 100%. Потрібен дисплей Apple XDR або зовнішній дисплей із підтримкою HDR у режимі HDR.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
@@ -3311,6 +3371,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Видимість меню</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Metal device" xml:space="preserve">
+        <source>Metal device</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Min HW" xml:space="preserve">
         <source>Min HW</source>
         <target state="translated">Мін. HW</target>
@@ -3441,12 +3505,20 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Керування рідною клавіатурою (Apple) за допомогою клавіш яскравості чи аудіоклавіш не працюватиме, якщо спочатку не налаштувати дозволи Спеціальних Можливостей у налаштуваннях системи!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Native XDR Upscaling" xml:space="preserve">
+        <source>Native XDR Upscaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Native XDR brightness upscaling" xml:space="preserve">
         <source>Native XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR upscaling is active. Deactivate it under the XDR Preset menu." xml:space="preserve">
+        <source>Native XDR upscaling is active. Deactivate it under the XDR Preset menu.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
@@ -5070,6 +5142,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Це дозволяє розширене затемнення, налаштування кольору та інші функції, як-от масштабування XDR/HDR. Примітка: коригування кольору відрізає вміст HDR під час активного використання.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
+        <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data.</source>
         <target state="translated">Це налаштовує, як дані, пов'язані з поточним налаштованим дисплеєм, зіставляються з виявленим дисплеєм під час процесу налаштування/виявлення. Зміна цього параметра може призвести до того, що дисплей буде розпізнано як раніше не підключений, і від'єднати наявні збережені дані конфігурації дисплею. Збіг системного UUID використовує ідентифікацію MacOS за замовчуванням. Якщо налаштовано використовувати базові ідентифікатори, програма ідентифікує дисплей за ідентифікаторами виробника/моделі та серійним номером. З розширенням також використовується назва продукту, буквено-цифровий серійний номер і дата виробництва. Разом із розташуванням програма також враховує дані про підключення апаратного забезпечення.</target>
@@ -5101,6 +5177,10 @@ Please try again once the permissions are granted!</source>
       <trans-unit id="This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if smooth scaling resolutions seem to be missing." xml:space="preserve">
         <source>This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if smooth scaling resolutions seem to be missing.</source>
         <target state="translated">Це обхідний шлях для вирішення проблеми, наявної в деяких версіях macOS Sonoma, яка час від часу перешкоджає належному завантаженню спеціальної конфігурації дисплею. За допомогою цього параметра програма намагається повторно ініціалізувати дисплей, якщо здається, що роздільна здатність плавного масштабування відсутня.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
+        <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
@@ -5524,6 +5604,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Використовувати власний список роздільної здатності</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use if you are sure your display supports color table adjustments but the app does not detect the capability." xml:space="preserve">
+        <source>Use if you are sure your display supports color table adjustments but the app does not detect the capability.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use lighter app menu fonts and icons" xml:space="preserve">
         <source>Use lighter app menu fonts and icons</source>
         <target state="translated">Використовувати світліші шрифти та піктограми меню програми</target>
@@ -5799,6 +5883,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>XDR/HDR Upscaling, Color Adjustments, Software Dimming</source>
         <note/>
       </trans-unit>
+      <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
+        <source>XDR/HDR Upscaling, Software Dimming</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
         <source>XDR/HDR upscaling compatible</source>
         <target state="translated">Сумісно з масштабуванням XDR/HDR</target>
@@ -5943,10 +6031,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠ Віртуальний екран як ціль потоку?</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ **Experimental - may cause black screen, lockup, boot issues!** Fully expands the available brightness range for non-HDR content at a system level and also allows for more dimming range. Compared to software upscaling methods does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders." xml:space="preserve">
-        <source>⚠️ **Experimental - may cause black screen, lockup, boot issues!** Fully expands the available brightness range for non-HDR content at a system level and also allows for more dimming range. Compared to software upscaling methods does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
         <source>⚠️ EDID data cannot be interpreted (might be invalid).</source>
         <target state="translated">⚠️ Дані EDID не можна інтерпретувати (можуть бути недійсними).</target>
@@ -5957,8 +6041,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ Не вдалося отримати дані EDID.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Feature requires the default XDR Profile to be selected!" xml:space="preserve">
-        <source>⚠️ Feature requires the default XDR Profile to be selected!</source>
+      <trans-unit id="⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac." xml:space="preserve">
+        <source>⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ For best results stick close to the display aspect ratio!" xml:space="preserve">
@@ -5991,9 +6075,21 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ Рекомендується мати трохи більше вільного простору в діапазоні!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
+        <source>⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
         <target state="translated">⚠️ Мінімальне значення ширини/висоти має бути меншим за максимальне!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Native XDR upscaling is an experimental! Use at your own risk!" xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is an experimental! Use at your own risk!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
+        <source>⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Unable to enable DDC due to display or connection issues." xml:space="preserve">

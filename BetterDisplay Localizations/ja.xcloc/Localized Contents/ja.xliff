@@ -290,6 +290,10 @@
         <target state="translated">主ディスプレイに設定されていない場合にのみ認証が有効になるので、ロック画面とは干渉しません。ほとんどのディスプレイは、DDC経由でバックライトを消灯することができません。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." xml:space="preserve">
+        <source>Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">カスタム解像度を追加</target>
@@ -449,6 +453,10 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">カラー調整を許可（注: 互換モードではオフにすること）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
         <source>Allow combined brightness in native XDR upscaling mode</source>
         <target state="translated">ネイティブXDRアップスケーリングモードで複合輝度を許可</target>
@@ -467,6 +475,10 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allow disconnecting the built-in display of the iMac" xml:space="preserve">
         <source>Allow disconnecting the built-in display of the iMac</source>
         <target state="translated">iMacの内蔵ディスプレイの切断を許可</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow native XDR brightness upscaling" xml:space="preserve">
+        <source>Allow native XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -818,6 +830,10 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">自動（ディスプレイの種類による）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Automatically activate native XDR Upscaling" xml:space="preserve">
+        <source>Automatically activate native XDR Upscaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
         <source>Automatically apply custom EDID upon detection of this display</source>
         <target state="translated">このディスプレイを検出した場合、カスタムEDIDを自動的に適用</target>
@@ -958,6 +974,10 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">カラーテーブルの調整によって追加ディミングや輝度アップスケーリングが生じる場合に、OSDに上向き（XDR/HDRアップスケーリング）または下向き（ソフトウェアディミング）のポインティングアイコンを表示します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
+        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness" xml:space="preserve">
         <source>Brightness</source>
         <target state="translated">輝度</target>
@@ -977,6 +997,10 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">輝度（DDC）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
         <source>Brightness (Native XDR Upscaling)</source>
         <note/>
@@ -984,6 +1008,10 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Brightness (Overlay)" xml:space="preserve">
         <source>Brightness (Overlay)</source>
         <target state="translated">輝度（オーバーレイ）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Software Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Software)" xml:space="preserve">
@@ -1134,6 +1162,10 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
         <target state="translated">カラー調整とソフトウェアディミングはHDRコンテンツをクリップし、調整が不要な場合はカラーをリセットします。このため構成によっては、画面が変になったり黒くなることがあります。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
+        <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -2415,9 +2447,17 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">XDR輝度アップスケーリングを有効化</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
+        <source>Enable by selecting "%@" under the XDR Preset menu.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable color adjustments" xml:space="preserve">
         <source>Enable color adjustments</source>
         <target state="translated">カラー調整を有効化</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable color table adjustments" xml:space="preserve">
+        <source>Enable color table adjustments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
@@ -2463,6 +2503,14 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!</source>
         <target state="translated">スムーズスケーリング、カスタムスケーリング解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割%@の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software HDR brightness upscaling (if available)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software XDR brightness upscaling if available" xml:space="preserve">
+        <source>Enable software XDR brightness upscaling if available</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software-based video adjustments" xml:space="preserve">
@@ -2560,6 +2608,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">スライダの機能を識別しやすくします。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Force support for color table adjustments" xml:space="preserve">
+        <source>Force support for color table adjustments</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Force support for color table manipulation" xml:space="preserve">
         <source>Force support for color table manipulation</source>
         <target state="translated">カラーテーブル操作を強制サポート</target>
@@ -2608,6 +2660,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Fully dim display on disconnect" xml:space="preserve">
         <source>Fully dim display on disconnect</source>
         <target state="translated">接続解除時に完全減光するディスプレイ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." xml:space="preserve">
+        <source>Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Gain" xml:space="preserve">
@@ -2901,6 +2957,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
         <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
         <target state="translated">ディスプレイの輝度を100%以上に増やします。Apple XDRディスプレイまたはHDRモードのHDR対応外付けディスプレイが必要です。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
@@ -3313,6 +3373,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">メニュー表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Metal device" xml:space="preserve">
+        <source>Metal device</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Min HW" xml:space="preserve">
         <source>Min HW</source>
         <target state="translated">最小HW</target>
@@ -3443,6 +3507,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">輝度キーやオーディオキーを使うネイティブ（Apple）キーボードコントロールは、システム設定でアクセシビリティの許可を設定しないと機能しません!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Native XDR Upscaling" xml:space="preserve">
+        <source>Native XDR Upscaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Native XDR brightness upscaling" xml:space="preserve">
         <source>Native XDR brightness upscaling</source>
         <target state="translated">ネイティブのXDR輝度アップスケーリング</target>
@@ -3451,6 +3519,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
         <target state="translated">ネイティブXDR輝度アップスケーリング設定</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR upscaling is active. Deactivate it under the XDR Preset menu." xml:space="preserve">
+        <source>Native XDR upscaling is active. Deactivate it under the XDR Preset menu.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
@@ -5080,6 +5152,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">高度なディミング、カラー調整、XDR/HDRアップスケーリングなどの機能が使えるようになります。注: カラー調整は、アクティブな使い方ではHDRをクリップします。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
+        <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data.</source>
         <target state="translated">構成/検出処理中に、現在構成しているディスプレイに関連付けたデータを、検出したディスプレイにどのように適合させるかを構成します。この設定を変更すると、接続したことがないディスプレイであると認識され、保存されている既存のディスプレイ構成データの関連付けが解除される可能性があります。システムUUIDの一致は、macOSのデフォルト識別子を使用します。基本識別子を使用するよう設定すると、アプリはベンダー/モデルIDおよびシリアル番号によってディスプレイを識別します。拡張識別子では、製品名、英数字のシリアル番号、製造日も使用します。位置情報を使用する場合、ハードウェア接続データも考慮します。</target>
@@ -5111,6 +5187,10 @@ Please try again once the permissions are granted!</source>
       <trans-unit id="This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if smooth scaling resolutions seem to be missing." xml:space="preserve">
         <source>This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if smooth scaling resolutions seem to be missing.</source>
         <target state="translated">macOS Sonomaの一部バージョンで、ディスプレイのカスタム構成が正しく読み込まれないことがある問題への回避策です。この設定では、スムーズスケーリング解像度が見つからない場合に、ディスプレイの再初期化を試みます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
+        <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
@@ -5535,6 +5615,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">カスタム解像度リストを使用</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use if you are sure your display supports color table adjustments but the app does not detect the capability." xml:space="preserve">
+        <source>Use if you are sure your display supports color table adjustments but the app does not detect the capability.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use lighter app menu fonts and icons" xml:space="preserve">
         <source>Use lighter app menu fonts and icons</source>
         <target state="translated">メニューフォントとアイコンに細いフォントを使用</target>
@@ -5814,6 +5898,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">XDR/HDRアップスケーリング、カラー調整、ソフトウェアディミング</target>
         <note/>
       </trans-unit>
+      <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
+        <source>XDR/HDR Upscaling, Software Dimming</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
         <source>XDR/HDR upscaling compatible</source>
         <target state="translated">XDR/HDRアップスケーリング可能</target>
@@ -5959,10 +6047,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠ ストリーミング先の仮想スクリーンですか?</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ **Experimental - may cause black screen, lockup, boot issues!** Fully expands the available brightness range for non-HDR content at a system level and also allows for more dimming range. Compared to software upscaling methods does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders." xml:space="preserve">
-        <source>⚠️ **Experimental - may cause black screen, lockup, boot issues!** Fully expands the available brightness range for non-HDR content at a system level and also allows for more dimming range. Compared to software upscaling methods does not cause HDR clipping or overblown HDR videos, supports auto brightness and full range for native macOS sliders.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
         <source>⚠️ EDID data cannot be interpreted (might be invalid).</source>
         <target state="translated">⚠️ EDIDデータを解釈できません（無効な可能性があります）。</target>
@@ -5973,8 +6057,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ EDIDデータの取得に失敗しました。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Feature requires the default XDR Profile to be selected!" xml:space="preserve">
-        <source>⚠️ Feature requires the default XDR Profile to be selected!</source>
+      <trans-unit id="⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac." xml:space="preserve">
+        <source>⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ For best results stick close to the display aspect ratio!" xml:space="preserve">
@@ -6007,9 +6091,21 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ 範囲にもう少し余裕を持たせることをおすすめします!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
+        <source>⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
         <target state="translated">⚠️ 幅/高さの最小値は、最大値より小さくしてください!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Native XDR upscaling is an experimental! Use at your own risk!" xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is an experimental! Use at your own risk!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
+        <source>⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Unable to enable DDC due to display or connection issues." xml:space="preserve">
