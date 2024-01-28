@@ -88,6 +88,11 @@
         <target state="translated">%@ Pro está ativo</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
+        <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
+        <target state="translated">%@ não consegue detectar nenhum monitor. Isso pode indicar um erro de aplicativo ou sistema.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -448,11 +453,6 @@ Você pode fazer isso nas Configurações do sistema ou o aplicativo pode fazer 
         <target state="translated">Permitir brilho automático quando o aumento de brilho XDR combinado é usado</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color adjustments (note: turn this off for compatibility mode)</source>
-        <target state="translated">Permitir ajustes de cores (nota: desligar para modo de compatibilidade)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
         <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
         <note/>
@@ -580,20 +580,20 @@ Você pode fazer isso nas Configurações do sistema ou o aplicativo pode fazer 
         <target state="translated">Ocorreu um erro ao criar a tela virtual</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.
+      <trans-unit id="An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
+        <source>An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.
 
 If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">Uma versão de pré-lançamento mais antiga do BetterDisplay foi instalada neste sistema. A atualização para a versão atual requer a redefinição de todas as configurações do aplicativo.
+        <target state="translated">Uma versão de pré-lançamento mais antiga do %@ foi instalada neste sistema. A atualização para a versão atual requer a redefinição de todas as configurações do aplicativo.
 
 Se você não quiser continuar, faça o downgrade para o pré-lançamento mais antigo!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.
+      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
+        <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
 You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
-        <target state="translated">Outro aplicativo alterou repetidamente as cores ou o brilho da tela - isso vai de encontro ao que o BetterDisplay está fazendo.
+        <target state="translated">Outro aplicativo alterou repetidamente as cores ou o brilho da tela - isso vai de encontro ao que o %@ está fazendo.
 
 Você deve sair do outro aplicativo ou desativar `Permitir ajustes de cores` em Configurações/Telas para corrigir isso!</target>
         <note/>
@@ -922,16 +922,6 @@ AliPay disponível na China.</target>
         <target state="translated">Abaixo deste nível na escala de brilho combinada, o aplicativo usa escurecimento de software adicional (já que o controle de luz de fundo do hardware atinge o nível mais baixo possível).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="BetterDisplay" xml:space="preserve">
-        <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="BetterDisplay is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
-        <source>BetterDisplay is unable to detect any display. This might indicate an application or system error.</source>
-        <target state="translated">BetterDisplay não consegue detectar nenhum monitor. Isso pode indicar um erro de aplicativo ou sistema.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
         <source>Blue Black Level (DDC)</source>
         <target state="translated">Nível decPreto do Azul (DDC)</target>
@@ -942,21 +932,6 @@ AliPay disponível na China.</target>
         <target state="translated">Ganho Azul (DDC)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Blue Gamma" xml:space="preserve">
-        <source>Blue Gamma</source>
-        <target state="translated">Gama Azul</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Black Level" xml:space="preserve">
-        <source>Blue Hardware Black Level</source>
-        <target state="translated">Nível de preto do Hardware Azul</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Gain" xml:space="preserve">
-        <source>Blue Hardware Gain</source>
-        <target state="translated">Ganho de hardware azul</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
         <source>Both turned off by HDR toggle</source>
         <target state="translated">Ambos desligados pela alternância HDR</target>
@@ -965,11 +940,6 @@ AliPay disponível na China.</target>
       <trans-unit id="Briefly show Dock icon on startup" xml:space="preserve">
         <source>Briefly show Dock icon on startup</source>
         <target state="translated">Mostrar brevemente o ícone do Dock na inicialização</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment." xml:space="preserve">
-        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment.</source>
-        <target state="translated">Mostrar brevemente um ícone apontando para cima (aumento de escala XDR/HDR) ou para baixo (escurecimento de software) no OSD quando o escurecimento extra ou aumento de brilho estiver acontecendo por meio do ajuste da tabela de cores.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
@@ -997,6 +967,10 @@ AliPay disponível na China.</target>
       </trans-unit>
       <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
         <source>Brightness (Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Metal)" xml:space="preserve">
+        <source>Brightness (Metal)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
@@ -1147,19 +1121,9 @@ AliPay disponível na China.</target>
         <target state="translated">Configuração do perfil de cor</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Table Adjustments, XDR/HDR Upscaling" xml:space="preserve">
-        <source>Color Table Adjustments, XDR/HDR Upscaling</source>
-        <target state="translated">Ajustes de tabela de cores, upscaling XDR/HDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">Temperatura de Cor</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
-        <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">Os ajustes de cores e o escurecimento do software cortam o conteúdo HDR, para que o aplicativo redefina as cores quando nenhum ajuste for necessário. Isso pode distrair ou causar uma tela preta em algumas configurações.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
@@ -1184,11 +1148,6 @@ AliPay disponível na China.</target>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
         <target state="translated">Combinar controle de brilho de hardware (se disponível), escurecimento de software e upscaling XDR/HDR em um controle de brilho unificado.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Combined Brightness" xml:space="preserve">
-        <source>Combined Brightness</source>
-        <target state="translated">Brilho Combinado</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
@@ -1368,11 +1327,6 @@ AliPay disponível na China.</target>
       <trans-unit id="Contrast (DDC)" xml:space="preserve">
         <source>Contrast (DDC)</source>
         <target state="translated">Contraste (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Control" xml:space="preserve">
-        <source>Control</source>
-        <target state="translated">Controle</target>
         <note/>
       </trans-unit>
       <trans-unit id="Copy" xml:space="preserve">
@@ -2223,11 +2177,6 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Não desconecte</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Nothing" xml:space="preserve">
-        <source>Do Nothing</source>
-        <target state="translated">Não fazer nada</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">Não aplicar para o monitor interno</target>
@@ -2418,11 +2367,6 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Habilitar modo HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable HDR brightness upscaling" xml:space="preserve">
-        <source>Enable HDR brightness upscaling</source>
-        <target state="translated">Habilitar o aumento de brilho HDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable HiDPI resolutions" xml:space="preserve">
         <source>Enable HiDPI resolutions</source>
         <target state="translated">Habilitar resoluções HiDPI</target>
@@ -2438,18 +2382,8 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Habilitar True Tone</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable XDR brightness upscaling" xml:space="preserve">
-        <source>Enable XDR brightness upscaling</source>
-        <target state="translated">Habilitar o aumento de brilho XDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
         <source>Enable by selecting "%@" under the XDR Preset menu.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable color adjustments" xml:space="preserve">
-        <source>Enable color adjustments</source>
-        <target state="translated">Habilitar ajustes de cores</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable color table adjustments" xml:space="preserve">
@@ -2517,6 +2451,10 @@ O processo não funciona para o monitor integrado (reinicialização necessária
       <trans-unit id="Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well." xml:space="preserve">
         <source>Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well.</source>
         <target state="translated">Habilitar alteração de resolução de baixo nível para destinos de espelho. Também permite os submenus Taxa de atualização e Profundidade de cor.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enables native XDR brightness upscaling and extended dimming for this display." xml:space="preserve">
+        <source>Enables native XDR brightness upscaling and extended dimming for this display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and native smooth scaling. Using 8K+ virtual screens might cause stability issues. Native smooth scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
@@ -2608,11 +2546,6 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <source>Force support for color table adjustments</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Force support for color table manipulation" xml:space="preserve">
-        <source>Force support for color table manipulation</source>
-        <target state="translated">Forçar suporte para manipulação de tabela de cores</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
         <source>Force-enable underscan slider</source>
         <target state="translated">Forçar a ativação do Controle deslizante de "underscan"</target>
@@ -2692,9 +2625,9 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Configurações Gerais</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Get BetterDisplay Pro" xml:space="preserve">
-        <source>Get BetterDisplay Pro</source>
-        <target state="translated">Compre o BetterDisplay Pro</target>
+      <trans-unit id="Get %@ Pro" xml:space="preserve">
+        <source>Get %@ Pro</source>
+        <target state="translated">Compre o %@ Pro</target>
         <note/>
       </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
@@ -2705,21 +2638,6 @@ O processo não funciona para o monitor integrado (reinicialização necessária
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
         <target state="translated">Ganho Verde (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Gamma" xml:space="preserve">
-        <source>Green Gamma</source>
-        <target state="translated">Gama Verde</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Black Level" xml:space="preserve">
-        <source>Green Hardware Black Level</source>
-        <target state="translated">Nível de preto do Hardware Verde</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Gain" xml:space="preserve">
-        <source>Green Hardware Gain</source>
-        <target state="translated">Ganhos de hardware verde</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2750,16 +2668,6 @@ O processo não funciona para o monitor integrado (reinicialização necessária
       <trans-unit id="HTTP server is currently running and listening for commands on port %@." xml:space="preserve">
         <source>HTTP server is currently running and listening for commands on port %@.</source>
         <target state="translated">O servidor HTTP está em execução no momento e ouvindo comandos na porta %@.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Brightness" xml:space="preserve">
-        <source>Hardware Brightness</source>
-        <target state="translated">Brilho do hardware</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Contrast" xml:space="preserve">
-        <source>Hardware Contrast</source>
-        <target state="translated">Contraste de Hardware</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
@@ -2891,9 +2799,9 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Se o ícone do menu estiver oculto, você poderá mostrá-lo novamente reiniciando o aplicativo enquanto ele já estiver em execução.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session." xml:space="preserve">
-        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session.</source>
-        <target state="translated">Se o EDID atualizado contiver uma nova identidade de exibição (número de série, ID do modelo, ID do fornecedor), o macOS tratará a tela como uma tela separada. Com esta opção habilitada, BetterDisplay preserva a continuidade entre a identidade antiga e a nova durante a sessão atual do aplicativo.</target>
+      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
+        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
+        <target state="translated">Se o EDID atualizado contiver uma nova identidade de exibição (número de série, ID do modelo, ID do fornecedor), o macOS tratará a tela como uma tela separada. Com esta opção habilitada, %@ preserva a continuidade entre a identidade antiga e a nova durante a sessão atual do aplicativo.</target>
         <note/>
       </trans-unit>
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
@@ -2950,11 +2858,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">Aumentar o contraste - ajuste fino</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
-        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
-        <target state="translated">Aumentar o brilho da tela além de 100%. Requer um monitor Apple XDR ou um monitor externo compatível com HDR no modo HDR.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
         <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
         <note/>
@@ -2991,12 +2894,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       </trans-unit>
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
-        <target state="translated">Integração</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Integration (Experimental)" xml:space="preserve">
-        <source>Integration (Experimental)</source>
-        <target state="translated">Integração</target>
         <note/>
       </trans-unit>
       <trans-unit id="Integration settings" xml:space="preserve">
@@ -3194,9 +3091,9 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">Carregar Dados EDID...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
-        <source>Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
-        <target state="translated">Carregar uma imagem binária EDID exportada por BetterDisplay (ou outras ferramentas). Você também pode usar um binário EDID criado/modificado por um editor EDID como o AW EDID Editor. Se você tiver uma representação de texto Base64 de uma imagem EDID, use o botão 'Colar Base64' para carregá-la.</target>
+      <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
+        <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
+        <target state="translated">Carregar uma imagem binária EDID exportada por %@ (ou outras ferramentas). Você também pode usar um binário EDID criado/modificado por um editor EDID como o AW EDID Editor. Se você tiver uma representação de texto Base64 de uma imagem EDID, use o botão 'Colar Base64' para carregá-la.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -3507,10 +3404,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <source>Native XDR Upscaling</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Native XDR brightness upscaling" xml:space="preserve">
-        <source>Native XDR brightness upscaling</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
         <note/>
@@ -3557,11 +3450,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">Nova configuração de tela virtual</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Night Shift" xml:space="preserve">
-        <source>Night Shift</source>
-        <target state="translated">Modo Noturno</target>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3999,21 +3887,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Red Gain (DDC)" xml:space="preserve">
         <source>Red Gain (DDC)</source>
         <target state="translated">Ganho Vermelho (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Gamma" xml:space="preserve">
-        <source>Red Gamma</source>
-        <target state="translated">Gama Vermelha</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Black Level" xml:space="preserve">
-        <source>Red Hardware Black Level</source>
-        <target state="translated">Nível de Preto do Hardware Vermelho</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Gain" xml:space="preserve">
-        <source>Red Hardware Gain</source>
-        <target state="translated">Ganho de hardware vermelho</target>
         <note/>
       </trans-unit>
       <trans-unit id="Redetect Displays" xml:space="preserve">
@@ -4570,9 +4443,9 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">As configurações feitas com o aplicativo são protegidas.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show BetterDisplay in the macOS Dock" xml:space="preserve">
-        <source>Show BetterDisplay in the macOS Dock</source>
-        <target state="translated">Mostrar BetterDisplay no Dock do macOS</target>
+      <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
+        <source>Show %@ in the macOS Dock</source>
+        <target state="translated">Mostrar %@ no Dock do macOS</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -4753,15 +4626,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Smooth transitions" xml:space="preserve">
         <source>Smooth transitions</source>
         <target state="translated">Transições suaves</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Software Brightness" xml:space="preserve">
-        <source>Software Brightness</source>
-        <target state="translated">Brilho do software</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Software XDR brightness upscaling" xml:space="preserve">
-        <source>Software XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
@@ -5131,11 +4995,6 @@ Em caso de falha, desconecte e reconecte o monitor fisicamente.</target>
         <target state="translated">Monitor externo de terceiros</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." xml:space="preserve">
-        <source>This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use.</source>
-        <target state="translated">Isso permite escurecimento avançado, ajustes de cores e outros recursos como upscaling XDR/HDR. Nota: os ajustes de cores cortam o conteúdo HDR quando em uso ativo.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <note/>
@@ -5175,11 +5034,6 @@ Tente novamente assim que as permissões forem concedidas!</target>
       </trans-unit>
       <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
         <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
-        <source>This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <target state="translated">Isso é necessário para ajustes de cores, escurecimento combinado e recursos de upscaling XDR/HDR. Recomendado deixar ativado. Desative esta opção para compatibilidade com alguns aplicativos de terceiros que também alteram as cores do sistema.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -5627,11 +5481,6 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <target state="translated">Usar zero para desativar a animação de transição.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled." xml:space="preserve">
-        <source>Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled.</source>
-        <target state="translated">Útil para monitores DisplayLink que usam versões de driver mais recentes com suporte à temperatura de cor habilitado.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
         <source>VIRTUAL</source>
         <target state="translated">VIRTUAL</target>
@@ -5873,10 +5722,6 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="XDR/HDR Upscaling, Color Adjustments, Software Dimming" xml:space="preserve">
-        <source>XDR/HDR Upscaling, Color Adjustments, Software Dimming</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
         <source>XDR/HDR Upscaling, Software Dimming</source>
         <note/>
@@ -6075,10 +5920,6 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
         <target state="translated">⚠️ O valor mínimo de largura/altura deve ser menor que o máximo!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Native XDR upscaling is an experimental feature! Use with caution!" xml:space="preserve">
-        <source>⚠️ Native XDR upscaling is an experimental feature! Use with caution!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">

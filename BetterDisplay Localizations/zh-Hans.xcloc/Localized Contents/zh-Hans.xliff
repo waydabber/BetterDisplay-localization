@@ -88,6 +88,11 @@
         <target state="translated">%@ 专业版已激活</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
+        <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
+        <target state="translated">%@ 无法识别任何显示器。这可能表明应用程序或系统存在错误。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -447,11 +452,6 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">使用组合 XDR 亮度提升时允许自动调节亮度</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color adjustments (note: turn this off for compatibility mode)</source>
-        <target state="translated">允许颜色调整（注意：在兼容模式下需关闭此选项）</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
         <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
         <note/>
@@ -579,20 +579,20 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">创建虚拟屏幕时出错</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.
+      <trans-unit id="An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
+        <source>An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.
 
 If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">此系统上已安装较旧的 BetterDisplay 预发布版本。升级到当前版本需要重置所有应用程序设置。
+        <target state="translated">此系统上已安装较旧的 %@ 预发布版本。升级到当前版本需要重置所有应用程序设置。
 
 如果您不想继续，请降级到旧版本！</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.
+      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
+        <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
 You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
-        <target state="translated">另一应用程序反复更改屏幕颜色或亮度，这与 BetterDisplay 的功能冲突。
+        <target state="translated">另一应用程序反复更改屏幕颜色或亮度，这与 %@ 的功能冲突。
 
 您应该退出其他应用程序或禁用 "设置 &gt; 显示器 &gt; 允许颜色调整" 来解决此问题！</target>
         <note/>
@@ -921,16 +921,6 @@ AliPay available in China.</source>
         <target state="translated">在此组合亮度等级下，应用程序采取额外的软件调光（因为硬件背光控制可能已达最低级别）。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="BetterDisplay" xml:space="preserve">
-        <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="BetterDisplay is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
-        <source>BetterDisplay is unable to detect any display. This might indicate an application or system error.</source>
-        <target state="translated">BetterDisplay 无法识别任何显示器。这可能表明应用程序或系统存在错误。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
         <source>Blue Black Level (DDC)</source>
         <target state="translated">蓝色黑电平 (DDC)</target>
@@ -941,21 +931,6 @@ AliPay available in China.</source>
         <target state="translated">蓝色增益 (DDC)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Blue Gamma" xml:space="preserve">
-        <source>Blue Gamma</source>
-        <target state="translated">蓝色伽马值</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Black Level" xml:space="preserve">
-        <source>Blue Hardware Black Level</source>
-        <target state="translated">蓝色硬件黑电平</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Gain" xml:space="preserve">
-        <source>Blue Hardware Gain</source>
-        <target state="translated">蓝色硬件增益</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
         <source>Both turned off by HDR toggle</source>
         <target state="translated">两者都随 HDR 切换关闭</target>
@@ -964,11 +939,6 @@ AliPay available in China.</source>
       <trans-unit id="Briefly show Dock icon on startup" xml:space="preserve">
         <source>Briefly show Dock icon on startup</source>
         <target state="translated">启动时短暂显示程序坞图标</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment." xml:space="preserve">
-        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment.</source>
-        <target state="translated">对色表调整进行额外调光或亮度提升时在调整浮窗 (OSD) 中简单显示为向上（XDR/HDR 提升）或向下（软件调光）的指向图标。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
@@ -996,6 +966,10 @@ AliPay available in China.</source>
       </trans-unit>
       <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
         <source>Brightness (Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Metal)" xml:space="preserve">
+        <source>Brightness (Metal)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
@@ -1146,19 +1120,9 @@ AliPay available in China.</source>
         <target state="translated">颜色描述文件配置</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Table Adjustments, XDR/HDR Upscaling" xml:space="preserve">
-        <source>Color Table Adjustments, XDR/HDR Upscaling</source>
-        <target state="translated">色表调整，XDR/HDR 提升</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">色温</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
-        <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">色彩调整和软件调光会影响 HDR 内容，因此应用程序会在无需调整时重设色彩。在某些配置下可能会分散注意力或导致黑屏。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
@@ -1183,11 +1147,6 @@ AliPay available in China.</source>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
         <target state="translated">将硬件亮度控制（如有）、软件调光和 XDR/HDR 提升合并为一个统一的亮度控制。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Combined Brightness" xml:space="preserve">
-        <source>Combined Brightness</source>
-        <target state="translated">组合亮度</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
@@ -1367,11 +1326,6 @@ AliPay available in China.</source>
       <trans-unit id="Contrast (DDC)" xml:space="preserve">
         <source>Contrast (DDC)</source>
         <target state="translated">对比度 (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Control" xml:space="preserve">
-        <source>Control</source>
-        <target state="translated">控制</target>
         <note/>
       </trans-unit>
       <trans-unit id="Copy" xml:space="preserve">
@@ -2221,11 +2175,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">不要断开</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Nothing" xml:space="preserve">
-        <source>Do Nothing</source>
-        <target state="translated">无操作</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">不应用于内建显示屏</target>
@@ -2416,11 +2365,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">启用 HDR 模式</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable HDR brightness upscaling" xml:space="preserve">
-        <source>Enable HDR brightness upscaling</source>
-        <target state="translated">启用 HDR 亮度提升</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable HiDPI resolutions" xml:space="preserve">
         <source>Enable HiDPI resolutions</source>
         <target state="translated">启用 HiDPI 分辨率</target>
@@ -2436,18 +2380,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">启用原彩显示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable XDR brightness upscaling" xml:space="preserve">
-        <source>Enable XDR brightness upscaling</source>
-        <target state="translated">启用 XDR 亮度提升</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
         <source>Enable by selecting "%@" under the XDR Preset menu.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable color adjustments" xml:space="preserve">
-        <source>Enable color adjustments</source>
-        <target state="translated">启用颜色调整</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable color table adjustments" xml:space="preserve">
@@ -2515,6 +2449,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well." xml:space="preserve">
         <source>Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well.</source>
         <target state="translated">启用镜像目标低级分辨率更改，也允许子菜单更改刷新率和色深。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enables native XDR brightness upscaling and extended dimming for this display." xml:space="preserve">
+        <source>Enables native XDR brightness upscaling and extended dimming for this display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and native smooth scaling. Using 8K+ virtual screens might cause stability issues. Native smooth scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
@@ -2606,11 +2544,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Force support for color table adjustments</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Force support for color table manipulation" xml:space="preserve">
-        <source>Force support for color table manipulation</source>
-        <target state="translated">强制支持色表操作</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
         <source>Force-enable underscan slider</source>
         <target state="translated">强制启用欠扫描滑块</target>
@@ -2690,8 +2623,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">通用设置</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Get BetterDisplay Pro" xml:space="preserve">
-        <source>Get BetterDisplay Pro</source>
+      <trans-unit id="Get %@ Pro" xml:space="preserve">
+        <source>Get %@ Pro</source>
         <target state="translated">获取专业版</target>
         <note/>
       </trans-unit>
@@ -2703,21 +2636,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
         <target state="translated">绿色增益 (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Gamma" xml:space="preserve">
-        <source>Green Gamma</source>
-        <target state="translated">绿色伽马值</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Black Level" xml:space="preserve">
-        <source>Green Hardware Black Level</source>
-        <target state="translated">绿色硬件黑电平</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Gain" xml:space="preserve">
-        <source>Green Hardware Gain</source>
-        <target state="translated">绿色硬件增益</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2748,16 +2666,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="HTTP server is currently running and listening for commands on port %@." xml:space="preserve">
         <source>HTTP server is currently running and listening for commands on port %@.</source>
         <target state="translated">HTTP 服务器正在运行并监听端口 %@ 的指令</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Brightness" xml:space="preserve">
-        <source>Hardware Brightness</source>
-        <target state="translated">硬件亮度</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Contrast" xml:space="preserve">
-        <source>Hardware Contrast</source>
-        <target state="translated">硬件对比度</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
@@ -2889,9 +2797,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">菜单图标被隐藏时可在应用程序运行时重启应用程序来显示图标。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session." xml:space="preserve">
-        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session.</source>
-        <target state="translated">如果更新后 EDID 包含新显示器标识（序列号、型号 ID、供应商 ID），macOS 会将此显示器视为另一显示器。启用此选项后，BetterDisplay 会在本次应用程序会话中保持新旧标识的连续性。</target>
+      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
+        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
+        <target state="translated">如果更新后 EDID 包含新显示器标识（序列号、型号 ID、供应商 ID），macOS 会将此显示器视为另一显示器。启用此选项后，%@ 会在本次应用程序会话中保持新旧标识的连续性。</target>
         <note/>
       </trans-unit>
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
@@ -2948,11 +2856,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">增强对比度 - 微调</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
-        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
-        <target state="translated">将显示器亮度提高到 100%以上。需开启 Apple XDR 显示器或支持 HDR 的外部显示器 HDR 模式。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
         <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
         <note/>
@@ -2989,12 +2892,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
-        <target state="translated">集成</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Integration (Experimental)" xml:space="preserve">
-        <source>Integration (Experimental)</source>
-        <target state="translated">集成</target>
         <note/>
       </trans-unit>
       <trans-unit id="Integration settings" xml:space="preserve">
@@ -3192,9 +3089,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">加载 EDID 数据...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
-        <source>Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
-        <target state="translated">加载由 BetterDisplay（或其他工具）导出的 EDID 二进制文件。您也可使用由 EDID 编辑器（如AW EDID Editor）创建/更改的EDID 二进制文件。如果您有 EDID 图像的 Base64 字符串标识，使用 "粘贴 Base64 文本" 按钮来加载它。</target>
+      <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
+        <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
+        <target state="translated">加载由 %@（或其他工具）导出的 EDID 二进制文件。您也可使用由 EDID 编辑器（如AW EDID Editor）创建/更改的EDID 二进制文件。如果您有 EDID 图像的 Base64 字符串标识，使用 "粘贴 Base64 文本" 按钮来加载它。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -3505,10 +3402,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Native XDR Upscaling</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Native XDR brightness upscaling" xml:space="preserve">
-        <source>Native XDR brightness upscaling</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
         <note/>
@@ -3555,11 +3448,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">新虚拟屏幕配置</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Night Shift" xml:space="preserve">
-        <source>Night Shift</source>
-        <target state="translated">夜览</target>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3997,21 +3885,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Red Gain (DDC)" xml:space="preserve">
         <source>Red Gain (DDC)</source>
         <target state="translated">红色增益 (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Gamma" xml:space="preserve">
-        <source>Red Gamma</source>
-        <target state="translated">红色伽马值</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Black Level" xml:space="preserve">
-        <source>Red Hardware Black Level</source>
-        <target state="translated">红色硬件黑电平</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Gain" xml:space="preserve">
-        <source>Red Hardware Gain</source>
-        <target state="translated">红色硬件增益</target>
         <note/>
       </trans-unit>
       <trans-unit id="Redetect Displays" xml:space="preserve">
@@ -4568,9 +4441,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">此应用程序所做设置受到保护。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show BetterDisplay in the macOS Dock" xml:space="preserve">
-        <source>Show BetterDisplay in the macOS Dock</source>
-        <target state="translated">在 macOS 程序坞中显示 BetterDisplay</target>
+      <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
+        <source>Show %@ in the macOS Dock</source>
+        <target state="translated">在 macOS 程序坞中显示 %@</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -4755,15 +4628,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Smooth transitions" xml:space="preserve">
         <source>Smooth transitions</source>
         <target state="translated">平滑过渡</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Software Brightness" xml:space="preserve">
-        <source>Software Brightness</source>
-        <target state="translated">软件亮度</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Software XDR brightness upscaling" xml:space="preserve">
-        <source>Software XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
@@ -5133,11 +4997,6 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">第三方外部显示器</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." xml:space="preserve">
-        <source>This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use.</source>
-        <target state="translated">这允许实现高级调光、色彩调整和其他功能，如 XDR/HDR 提升。注意：色彩调整在使用时会影响 HDR 内容。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <note/>
@@ -5177,11 +5036,6 @@ Please try again once the permissions are granted!</source>
       </trans-unit>
       <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
         <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
-        <source>This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <target state="translated">色彩调整、组合调光和 XDR/HDR 提升功能都需要此选项，建议启用。关闭此选项可与某些也会改变系统颜色的第三方应用程序兼容。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -5629,11 +5483,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">采用 0 值禁用过渡动画。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled." xml:space="preserve">
-        <source>Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled.</source>
-        <target state="translated">用于采用开启色温支持的较新驱动程序版本的 DisplayLink 连接显示器。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
         <source>VIRTUAL</source>
         <target state="translated">虚拟</target>
@@ -5875,10 +5724,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="XDR/HDR Upscaling, Color Adjustments, Software Dimming" xml:space="preserve">
-        <source>XDR/HDR Upscaling, Color Adjustments, Software Dimming</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
         <source>XDR/HDR Upscaling, Software Dimming</source>
         <note/>
@@ -6078,10 +5923,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
         <target state="translated">⚠️ 最小宽度/高度值应低于最大值！</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Native XDR upscaling is an experimental feature! Use with caution!" xml:space="preserve">
-        <source>⚠️ Native XDR upscaling is an experimental feature! Use with caution!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
