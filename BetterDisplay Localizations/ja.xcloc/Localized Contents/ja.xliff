@@ -588,15 +588,6 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">仮想スクリーンの作成中にエラーが発生しました。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.
-
-If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">このシステムには、%@の古いプレリリースバージョンがインストールされています。現行バージョンにアップグレードするには、アプリケーションのすべての設定をリセットする必要があります。
-
-続行しない場合は、古いプレリリース版にダウングレードしてください!</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
         <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
@@ -788,9 +779,15 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">直近に使用した値またはデフォルト値が有効であると仮定</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Attempts to directly read the EDID data from the display.%@" xml:space="preserve">
-        <source>Attempts to directly read the EDID data from the display.%@</source>
-        <target state="translated">ディスプレイからEDIDデータを直接読み込みます。%@</target>
+      <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">ディスプレイからEDIDデータを直接読み込みます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
+
+Specifying read length is optional - leave the field empty for autodetect.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -1037,11 +1034,6 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">内蔵ディスプレイ</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Built-in display" xml:space="preserve">
-        <source>Built-in display</source>
-        <target state="translated">内蔵ディスプレイ</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Buy %@ Pro" xml:space="preserve">
         <source>Buy %@ Pro</source>
         <target state="translated">購入: %@ Pro</target>
@@ -1097,8 +1089,8 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">この設定を変更しても、既存のディスプレイには影響しません。ディスプレイの識別方法は、各ディスプレイの追加設定でディスプレイごとに変更することができます。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Check For Updates" xml:space="preserve">
-        <source>Check For Updates</source>
+      <trans-unit id="Check for Updates" xml:space="preserve">
+        <source>Check for Updates</source>
         <target state="translated">アップデートを確認</target>
         <note/>
       </trans-unit>
@@ -1167,14 +1159,14 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">ハードウェア輝度コントロール（利用可能な場合）、ソフトウェアディミング、XDR/HDRアップスケーリングをひとつの輝度コントロールに統合します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
-        <source>Combined XDR/HDR upscaling maximum scale value</source>
-        <target state="translated">複合XDR/HDRアップスケーリング最大スケール値</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
         <target state="translated">複合輝度</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness - XDR/HDR upscaling maximum scale value" xml:space="preserve">
+        <source>Combined brightness - XDR/HDR upscaling maximum scale value</source>
+        <target state="translated">複合XDR/HDRアップスケーリング最大スケール値</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness - minimum allowed hardware brightness level" xml:space="preserve">
@@ -1182,14 +1174,14 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">複合輝度 - ハードウェアで許容される最小輝度レベル</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
+        <source>Combined brightness - software dimming switchover point</source>
+        <target state="translated">複合輝度ソフトウェアディミング切り替えポイント</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
         <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
         <target state="translated">XDRのネイティブ輝度スケールは設定可能なスケール全体をカバーしているため、デフォルト設定で複合輝度を使う必要はありません。設定されたXDR輝度スケール以下にディミングカーブを微調整したい場合にのみ使用してください。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
-        <source>Combined brightness software dimming switchover point</source>
-        <target state="translated">複合輝度ソフトウェアディミング切り替えポイント</target>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -2605,6 +2597,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">フルスクリーンストリーミング</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full display sleep mode is not available on Intel Macs." xml:space="preserve">
+        <source>Full display sleep mode is not available on Intel Macs.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full screen streams looks best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams looks best when the target display is set to its native resolution.</source>
         <target state="translated">対象のディスプレイをネイティブ解像度に設定している場合に、フルスクリーンストリーミングは最良となります。</target>
@@ -3819,11 +3815,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">一部の構成で、追加の便利なディスプレイモードオプションを提供します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Quit" xml:space="preserve">
-        <source>Quit</source>
-        <target state="translated">終了</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
         <source>Quit %@</source>
         <target state="translated">%@を終了</target>
@@ -4057,11 +4048,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
         <source>Reset Menu Layout…</source>
         <target state="translated">メニューレイアウトをリセット...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset Settings" xml:space="preserve">
-        <source>Reset Settings</source>
-        <target state="translated">設定をリセット</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Values" xml:space="preserve">
@@ -4467,11 +4453,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
         <source>Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
         <target state="translated">複合輝度コントロールを使用する場合に、ソフトウェアディミングを開始するハードウェア輝度値（独自スケールでの）の最小値を設定します。この設定は、PWM感度が高い場合に有効で、バックライト制御が重いPWMレンジに入ることを禁止し、代わりにソフトウェアディミングを使用します。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Settings Reset Required" xml:space="preserve">
-        <source>Settings Reset Required</source>
-        <target state="translated">設定のリセットが必要</target>
         <note/>
       </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">

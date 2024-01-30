@@ -572,12 +572,6 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">가상 화면을 생성하는 중 오류가 발생했습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.
-
-If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
         <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
@@ -767,9 +761,15 @@ AliPay available in China.</source>
         <target state="translated">마지막으로 사용한 값 또는 기본값이 유효하다고 가정</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Attempts to directly read the EDID data from the display.%@" xml:space="preserve">
-        <source>Attempts to directly read the EDID data from the display.%@</source>
-        <target state="translated">디스플레이에서 EDID 데이터를 직접 읽으려고 시도합니다.%@.</target>
+      <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">디스플레이에서 EDID 데이터를 직접 읽으려고 시도합니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
+
+Specifying read length is optional - leave the field empty for autodetect.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -1009,11 +1009,6 @@ AliPay available in China.</source>
         <target state="translated">내장 디스플레이</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Built-in display" xml:space="preserve">
-        <source>Built-in display</source>
-        <target state="translated">내장 디스플레이</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Buy %@ Pro" xml:space="preserve">
         <source>Buy %@ Pro</source>
         <target state="translated">%@ Pro 구매</target>
@@ -1069,8 +1064,8 @@ AliPay available in China.</source>
         <target state="translated">이 설정을 변경해도 기존의 알려진 디스플레이에는 영향을 미치지 않습니다. 디스플레이 식별 방법은 각 디스플레이의 추가 설정에서 디스플레이별로 변경할 수 있습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Check For Updates" xml:space="preserve">
-        <source>Check For Updates</source>
+      <trans-unit id="Check for Updates" xml:space="preserve">
+        <source>Check for Updates</source>
         <target state="translated">업데이트 확인</target>
         <note/>
       </trans-unit>
@@ -1138,14 +1133,13 @@ AliPay available in China.</source>
         <target state="translated">하드웨어 밝기 제어(사용 가능한 경우), 소프트웨어 디밍 및 XDR/HDR 업스케일링을 하나의 통합된 밝기 제어로 결합합니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
-        <source>Combined XDR/HDR upscaling maximum scale value</source>
-        <target state="translated">XDR/HDR 업스케일링 결합 최대 스케일 값</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
         <target state="translated">통합된 밝기 제어</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness - XDR/HDR upscaling maximum scale value" xml:space="preserve">
+        <source>Combined brightness - XDR/HDR upscaling maximum scale value</source>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness - minimum allowed hardware brightness level" xml:space="preserve">
@@ -1153,13 +1147,13 @@ AliPay available in China.</source>
         <target state="translated">통합된 밝기 - 허용되는 최소 하드웨어 밝기 수준</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
-        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
+      <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
+        <source>Combined brightness - software dimming switchover point</source>
+        <target state="translated">통합된 밝기 - 소프트웨어 디밍 전환 지점</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
-        <source>Combined brightness software dimming switchover point</source>
-        <target state="translated">통합된 밝기 - 소프트웨어 디밍 전환 지점</target>
+      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
+        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -2542,6 +2536,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">전체 화면 스트리밍</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full display sleep mode is not available on Intel Macs." xml:space="preserve">
+        <source>Full display sleep mode is not available on Intel Macs.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full screen streams looks best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams looks best when the target display is set to its native resolution.</source>
         <target state="translated">전체 화면 스트리밍은 대상 디스플레이가 패널 기본 해상도로 설정되어 있을 때 가장 잘 표시됩니다.</target>
@@ -3647,10 +3645,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">일부 구성에서 유용한 추가 표시 모드 옵션을 제공합니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Quit" xml:space="preserve">
-        <source>Quit</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
         <source>Quit %@</source>
         <note/>
@@ -3864,10 +3858,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
         <source>Reset Menu Layout…</source>
         <target state="translated">메뉴 레이아웃 재설정...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset Settings" xml:space="preserve">
-        <source>Reset Settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Values" xml:space="preserve">
@@ -4240,10 +4230,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
         <source>Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
         <target state="translated">결합된 밝기 제어를 사용할 때 소프트웨어 디밍이 시작되는 최소 허용 하드웨어 밝기 값(자체 스케일)을 설정합니다. 이 설정은 백라이트 제어가 과도한 PWM 범위로 들어가는 것을 방지하고 대신 소프트웨어 디밍으로 대체하므로 PWM 민감도가 있는 사용자에게 유용합니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Settings Reset Required" xml:space="preserve">
-        <source>Settings Reset Required</source>
         <note/>
       </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">

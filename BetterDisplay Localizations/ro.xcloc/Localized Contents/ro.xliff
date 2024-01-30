@@ -569,13 +569,6 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">A apărut o eroare în timpul creării ecranului virtual.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of %@ was installed on this system. Upgrading to the current version requires all app settings to reset.
-
-If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">Pe acest sistem a fost instalată o versiune mai veche pre-release a %@. Actualizarea la versiunea curentă necesită resetarea tuturor setărilor aplicației.\n\nDacă nu doriți să continuați, vă rugăm să reveniți la versiunea mai veche pre-release!</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
         <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
@@ -759,9 +752,15 @@ AliPay available in China.</source>
         <target state="translated">Presupune că ultimele valori utilizate sau valorile implicite sunt valide</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Attempts to directly read the EDID data from the display.%@" xml:space="preserve">
-        <source>Attempts to directly read the EDID data from the display.%@</source>
-        <target state="translated">Încercări de a citi direct datele EDID de pe ecran.%@</target>
+      <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">Încercări de a citi direct datele EDID de pe ecran.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
+
+Specifying read length is optional - leave the field empty for autodetect.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -998,11 +997,6 @@ AliPay available in China.</source>
         <target state="translated">Ecran încorporat</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Built-in display" xml:space="preserve">
-        <source>Built-in display</source>
-        <target state="translated">Ecran încorporat</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Buy %@ Pro" xml:space="preserve">
         <source>Buy %@ Pro</source>
         <target state="translated">Cumpărați %@ Pro</target>
@@ -1058,8 +1052,8 @@ AliPay available in China.</source>
         <target state="translated">Schimbarea acestei setări nu afectează ecranele cunoscute existente. Metoda de identificare a ecranului poate fi schimbată pe o bază de ecran în submeniul de setări suplimentare al fiecărui ecran.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Check For Updates" xml:space="preserve">
-        <source>Check For Updates</source>
+      <trans-unit id="Check for Updates" xml:space="preserve">
+        <source>Check for Updates</source>
         <target state="translated">Verificare Actualizări</target>
         <note/>
       </trans-unit>
@@ -1125,14 +1119,14 @@ AliPay available in China.</source>
         <target state="translated">Combinați controlul hardware al luminozității (dacă este disponibil), întunecarea software și upscaling XDR/HDR într-un control unificat al luminozității.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
-        <source>Combined XDR/HDR upscaling maximum scale value</source>
-        <target state="translated">Valoarea maximă de scalare combinată XDR/HDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
         <target state="translated">Luminozitate combinată</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness - XDR/HDR upscaling maximum scale value" xml:space="preserve">
+        <source>Combined brightness - XDR/HDR upscaling maximum scale value</source>
+        <target state="translated">Valoarea maximă de scalare combinată XDR/HDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness - minimum allowed hardware brightness level" xml:space="preserve">
@@ -1140,13 +1134,13 @@ AliPay available in China.</source>
         <target state="translated">Luminozitate combinată - nivelul minim permis al luminozității hardware</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
-        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
+      <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
+        <source>Combined brightness - software dimming switchover point</source>
+        <target state="translated">Punctul de comutare la software dimming a luminozității combinate</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
-        <source>Combined brightness software dimming switchover point</source>
-        <target state="translated">Punctul de comutare la software dimming a luminozității combinate</target>
+      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
+        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -2545,6 +2539,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Stream Pe Ecran Întreg</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full display sleep mode is not available on Intel Macs." xml:space="preserve">
+        <source>Full display sleep mode is not available on Intel Macs.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full screen streams looks best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams looks best when the target display is set to its native resolution.</source>
         <target state="translated">Streaming-ul pe ecran întreg arata cel mai bine când display-ul ținta este setat la rezoluția nativa.</target>
@@ -3747,11 +3745,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Oferă opțiuni suplimentare de moduri utile de afișare pentru anumite configurații.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Quit" xml:space="preserve">
-        <source>Quit</source>
-        <target state="translated">Închide</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
         <source>Quit %@</source>
         <target state="translated">Închide %@</target>
@@ -3981,11 +3974,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
         <source>Reset Menu Layout…</source>
         <target state="translated">Resetați aspectul meniului...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset Settings" xml:space="preserve">
-        <source>Reset Settings</source>
-        <target state="translated">Resetați setările</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Values" xml:space="preserve">
@@ -4388,11 +4376,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
         <source>Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
         <target state="translated">Stabilește valoarea minimă permisă a luminozității hardware (pe propria sa scară) sub care atenuarea software intră în funcțiune atunci când se utilizează controlul de luminozitate combinat. Această setare este utilă pentru cei cu sensibilitate la PWM, deoarece interzice controlului luminozității să intre într-un interval PWM intens, înlocuindu-l în schimb cu software dimming.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Settings Reset Required" xml:space="preserve">
-        <source>Settings Reset Required</source>
-        <target state="translated">Este necesară resetarea setărilor</target>
         <note/>
       </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
