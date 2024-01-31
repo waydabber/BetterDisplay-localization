@@ -213,6 +213,10 @@
         <target state="translated">デスクトップの解像度が720p未満の場合、GUI要素が収まらないことがあるため、macOSのユーザビリティにとって好ましくありません。ディスプレイの解像度スライダだけでなく、仮想スクリーンにも影響します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting." xml:space="preserve">
+        <source>A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app." xml:space="preserve">
         <source>A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app.</source>
         <target state="translated">仮想スクリーンは実際のディスプレイと似ていますが、仮想空間（コンピュータのメモリ内）にのみ存在します。これを使用して、PIPウインドウを表示したり、その内容を実際のディスプレイにストリーミングまたはミラーリングしたり、適切なアプリケーションを使った画面集録やスクリーンキャストのソースとして使用したりすることができます。</target>
@@ -383,11 +387,6 @@
         <target state="translated">調整によりHDRコンテンツがクリップされることがあります!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Advanced color table and upscaling settings" xml:space="preserve">
-        <source>Advanced color table and upscaling settings</source>
-        <target state="translated">高度なカラーテーブルとアップスケーリング設定</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
         <source>Advanced control settings</source>
         <target state="translated">高度なコントロール設定</target>
@@ -401,6 +400,10 @@
       <trans-unit id="Advanced settings &amp; privacy" xml:space="preserve">
         <source>Advanced settings &amp; privacy</source>
         <target state="translated">高度な設定とプライバシー</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
+        <source>Advanced upscaling and software dimming settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced virtual screen settings" xml:space="preserve">
@@ -1509,8 +1512,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">カスタムアスペクト比</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Custom displayed icon SF Symbol name:" xml:space="preserve">
-        <source>Custom displayed icon SF Symbol name:</source>
+      <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
+        <source>Custom displayed icon SF Symbol name</source>
         <target state="translated">カスタム表示するSF Symbolアイコン名</target>
         <note/>
       </trans-unit>
@@ -4605,6 +4608,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">複合輝度コントロール用サブスライダを表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
+        <source>Show warning notifications about color table anomalies</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line.</source>
         <target state="translated">以前に検出したすべてのディスプレイを表示します。ディスプレイがオフラインの場合でも、構成を変更することが可能です。</target>
@@ -5043,6 +5050,10 @@ Please note that not all displays support DDC power operations and some displays
 すべてのディスプレイがDDC電源操作をサポートしているわけではなく、一部のディスプレイでは期待通りに動作しないことに注意してください。ディスプレイの電源をオフにした場合は、手動で電源を入れ直す必要があります。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty." xml:space="preserve">
+        <source>This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. &#10;&#10;Please try again once the permissions are granted!" xml:space="preserve">
         <source>This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. 
 
@@ -5472,6 +5483,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Updates" xml:space="preserve">
         <source>Updates</source>
         <target state="translated">アップデート</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
+        <source>Use Metal for image adjustments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Use custom resolution list" xml:space="preserve">
@@ -5949,9 +5964,9 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ 範囲にもう少し余裕を持たせることをおすすめします!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
-        <source>⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU.</source>
-        <target state="translated">⚠️ Intel内蔵GPUのこのデバイスでは、Metalアップスケーリングのパフォーマンスが低下することがあります。</target>
+      <trans-unit id="⚠️ Metal performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
+        <source>⚠️ Metal performance might be degraded on this device with integrated Intel GPU.</source>
+        <target state="translated">⚠️ Intel内蔵GPUのこのデバイスでは、Metalのパフォーマンスが低下することがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
