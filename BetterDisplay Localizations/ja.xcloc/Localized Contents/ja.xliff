@@ -973,6 +973,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">輝度（複合）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Combined, Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Software Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (DDC)" xml:space="preserve">
         <source>Brightness (DDC)</source>
         <target state="translated">輝度（DDC）</target>
@@ -2022,9 +2030,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">切断</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Disconnected%@" xml:space="preserve">
-        <source>Disconnected%@</source>
-        <target state="translated">切断: %@</target>
+      <trans-unit id="Disconnected (with sleep)" xml:space="preserve">
+        <source>Disconnected (with sleep)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnecting Displays" xml:space="preserve">
@@ -2296,9 +2303,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">EDIDバージョン</target>
         <note/>
       </trans-unit>
-      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@" xml:space="preserve">
-        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@</source>
-        <target state="translated">EDID（Extended Display Identification Data）は、解像度、サポートされるビデオフォーマット、タイミング、メーカー情報などのディスプレイの性能を、接続したコンピュータに伝えるための標準規格です。%@</target>
+      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
+        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
+        <target state="translated">EDID（Extended Display Identification Data）は、解像度、サポートされるビデオフォーマット、タイミング、メーカー情報などのディスプレイの性能を、接続したコンピュータに伝えるための標準規格です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Edit" xml:space="preserve">
@@ -2446,9 +2453,13 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">スムーズスケーリング</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
-        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">スムーズスケーリング、カスタムスケーリング解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割%@の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <target state="translated">スムーズスケーリング、カスタムスケーリング解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割。 の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
@@ -4243,9 +4254,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">画面を270°回転</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Rotate the display (flip width and height). %@" xml:space="preserve">
-        <source>Rotate the display (flip width and height). %@</source>
-        <target state="translated">ディスプレイを回転する （幅と高さを反転）。%@</target>
+      <trans-unit id="Rotate the display (flip width and height)." xml:space="preserve">
+        <source>Rotate the display (flip width and height).</source>
+        <target state="translated">ディスプレイを回転する （幅と高さを反転）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Rotated Orientation" xml:space="preserve">
@@ -4318,9 +4329,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">%@画面の回転</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@" xml:space="preserve">
-        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@</source>
-        <target state="translated">スクリーンセーバ開始時またはロック時に、画面の輝度を任意のレベル（もともとは高い）に変更します。%@</target>
+      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock." xml:space="preserve">
+        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.</source>
+        <target state="translated">スクリーンセーバ開始時またはロック時に、画面の輝度を任意のレベル（もともとは高い）に変更します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Screen with the mouse pointer" xml:space="preserve">
@@ -4543,9 +4554,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">詳細表示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@" xml:space="preserve">
-        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@</source>
-        <target state="translated">ディスプレイの切断/接続メニューオプションを表示します。ディスプレイを切断すると、そのディスプレイはスリープモードになり、ディスプレイレイアウトから削除されます。接続するとディスプレイが復活します。切断したディスプレイは、ヘッダ切り替え（電源ボタン）、ディスプレイのオン/オフあるいはMacBook内蔵ディスプレイを閉じてから開き直せば再接続することができます。%@</target>
+      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
+        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
+        <target state="translated">ディスプレイの切断/接続メニューオプションを表示します。ディスプレイを切断すると、そのディスプレイはスリープモードになり、ディスプレイレイアウトから削除されます。接続するとディスプレイが復活します。切断したディスプレイは、ヘッダ切り替え（電源ボタン）、ディスプレイのオン/オフあるいはMacBook内蔵ディスプレイを閉じてから開き直せば再接続することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show display modes marked as unsafe or invalid" xml:space="preserve">
@@ -5699,6 +5710,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">メニュー項目を展開するとき、指定されたデバイス/メニューブロックの、その他の項目を自動的に非表示にします。これはメニューを小さく保つのに役立ちます。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness." xml:space="preserve">
+        <source>When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">音量が0%になったとき...</target>
@@ -5727,6 +5742,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
         <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
         <target state="translated">このオプションを選択すると、追加のソフトウェア輝度コントロール機能を使わずApple製ディスプレイを接続しても、ネイティブの輝度キーをmacOSの制御下に置きます。しかしながらこの場合は、輝度キーのデフォルト動作を変更するさまざまな設定（「微細スケールをデフォルトにする」や「すべての適切な画面」を同時に制御するなど）は適用されません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Works only when an associated virtual screen is not set to follow the associated display's orientation" xml:space="preserve">
+        <source>Works only when an associated virtual screen is not set to follow the associated display's orientation</source>
         <note/>
       </trans-unit>
       <trans-unit id="Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
@@ -5812,6 +5831,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="You can override the default meaning of the on/off switch under Settings/Displays." xml:space="preserve">
         <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
         <target state="translated">オン/オフスイッチのデフォルトの意味は、設定/ディスプレイでオーバーライドできます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
+        <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
