@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
@@ -25,7 +25,7 @@
   </file>
   <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -88,6 +88,11 @@
         <target state="translated">%@ Proは有効です</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
+        <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
+        <target state="translated">%@はディスプレイを検出できません。アプリケーションまたはシステムのエラーの可能性があります。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -116,6 +121,11 @@
       <trans-unit id="%@x%@%@ %@ %lld%@" xml:space="preserve">
         <source>%@x%@%@ %@ %lld%@</source>
         <target state="translated">%@×%@%@ %@ %lld%@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lf" xml:space="preserve">
+        <source>%lf</source>
+        <target state="translated">%lf</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld" xml:space="preserve">
@@ -173,6 +183,11 @@
         <target state="translated">-</target>
         <note/>
       </trans-unit>
+      <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
+        <source>1:1 Pixel Mapping</source>
+        <target state="translated">1:1 ピクセルマッピング</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="100" xml:space="preserve">
         <source>100</source>
         <target state="translated">100</target>
@@ -183,9 +198,23 @@
         <target state="translated">@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A controllable display is present" xml:space="preserve">
+        <source>A controllable display is present</source>
+        <target state="translated">コントロール可能なディスプレイが存在</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
+        <source>A display is present which is not fully controllable without the app</source>
+        <target state="translated">アプリケーションなしで完全に制御できないディスプレイが存在</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays." xml:space="preserve">
         <source>A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays.</source>
-        <target state="translated">デスクトップの解像度が720p未満の場合、GUI要素が収まらない可能性があるため、macOSのユーザビリティにとって好ましくありません。ディスプレイの解像度スライダだけでなく、仮想スクリーンにも影響します。</target>
+        <target state="translated">デスクトップの解像度が720p未満の場合、GUI要素が収まらないことがあるため、macOSのユーザビリティにとって好ましくありません。ディスプレイの解像度スライダだけでなく、仮想スクリーンにも影響します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting." xml:space="preserve">
+        <source>A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app." xml:space="preserve">
@@ -243,9 +272,9 @@
         <target state="translated">アクセシビリティが構成されました - アプリケーションを再起動してください</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart BetterDisplay&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart BetterDisplay" button below to restart the app immediately!</source>
-        <target state="translated">アクセシビリティ許可は構成されていますが、**変更を有効にするには**アプリケーションの再起動が必要です! ダイアログを閉じて都合の良い時に再起動するか、下の 「BetterDisplay再起動」ボタンを押して今すぐアプリケーションを再起動してください!</target>
+      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
+        <target state="translated">アクセシビリティ許可は構成されていますが、**変更を有効にするには**アプリケーションの再起動が必要です! ダイアログを閉じて都合の良い時に再起動するか、下の 「%@再起動」ボタンを押して今すぐアプリケーションを再起動してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
@@ -271,6 +300,11 @@
       <trans-unit id="Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC.</source>
         <target state="translated">主ディスプレイに設定されていない場合にのみ認証が有効になるので、ロック画面とは干渉しません。ほとんどのディスプレイは、DDC経由でバックライトを消灯することができません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." xml:space="preserve">
+        <source>Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation.</source>
+        <target state="translated">起動時またはディスプレイ接続時にネイティブXDRアップスケーリングを有効にします。事前にデフォルトのApple XDRプロファイルを選択しておく必要があります。自動起動を避けるには、起動時にシフトキーを押したままにします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
@@ -350,12 +384,7 @@
       </trans-unit>
       <trans-unit id="Adjustments may clip HDR content!" xml:space="preserve">
         <source>Adjustments may clip HDR content!</source>
-        <target state="translated">調整によりHDRコンテンツがクリップされる場合があります!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Advanced color table and upscaling settings" xml:space="preserve">
-        <source>Advanced color table and upscaling settings</source>
-        <target state="translated">高度なカラーテーブルとアップスケーリング設定</target>
+        <target state="translated">調整によりHDRコンテンツがクリップされることがあります!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
@@ -371,6 +400,10 @@
       <trans-unit id="Advanced settings &amp; privacy" xml:space="preserve">
         <source>Advanced settings &amp; privacy</source>
         <target state="translated">高度な設定とプライバシー</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
+        <source>Advanced upscaling and software dimming settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced virtual screen settings" xml:space="preserve">
@@ -414,7 +447,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="All suitable screens" xml:space="preserve">
         <source>All suitable screens</source>
-        <target state="translated">すべての適切なスクリーン</target>
+        <target state="translated">すべての適切な画面</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow DDC hardware brightness control in HDR mode" xml:space="preserve">
@@ -427,9 +460,14 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">複合XDR輝度アップスケーリング使用時に輝度の自動調整を許可</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color adjustments (note: turn this off for compatibility mode)</source>
-        <target state="translated">カラー調整を許可（注: 互換モードではオフにすること）</target>
+      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+        <target state="translated">カラーテーブル調整を許可（注：互換モードではオフにしてください）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
+        <source>Allow combined brightness in native XDR upscaling mode</source>
+        <target state="translated">ネイティブXDRアップスケーリングモードで複合輝度を許可</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow disconnecting all connected displays" xml:space="preserve">
@@ -445,6 +483,11 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allow disconnecting the built-in display of the iMac" xml:space="preserve">
         <source>Allow disconnecting the built-in display of the iMac</source>
         <target state="translated">iMacの内蔵ディスプレイの切断を許可</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow native XDR brightness upscaling" xml:space="preserve">
+        <source>Allow native XDR brightness upscaling</source>
+        <target state="translated">ネイティブXDR輝度アップスケーリングを許可</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -464,7 +507,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allow sending crash logs to the developer automatically. Crash logs do not contain any personal data but may contain hardware specific data. Crash logs are handled by Sentry ([sentry.io/privacy](https://sentry.io/privacy))." xml:space="preserve">
         <source>Allow sending crash logs to the developer automatically. Crash logs do not contain any personal data but may contain hardware specific data. Crash logs are handled by Sentry ([sentry.io/privacy](https://sentry.io/privacy)).</source>
-        <target state="translated">クラッシュログを自動的に開発者に送信できるようにします。クラッシュログに個人データは含まれませんが、ハードウェアの固有データが含まれる場合があります。クラッシュログはSentry（[sentry.io/privacy](https://sentry.io/privacy)）によって処理されます。</target>
+        <target state="translated">クラッシュログの開発者への自動送信を許可。クラッシュログに個人データは含まれませんが、ハードウェアの固有データが含まれることがあります。クラッシュログはSentry（[sentry.io/privacy](https://sentry.io/privacy)）によって処理されます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
@@ -474,28 +517,28 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
         <source>Allows access to app functionality via HTTP requests.</source>
-        <target state="translated">HTTPリクエストによるアプリケーション機能へのアクセスが可能になります。</target>
+        <target state="translated">HTTPリクエストによるアプリケーション機能へのアクセスを許可。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows only one device to show more options via the more options chevron. This helps with menu bloating when several displays are present." xml:space="preserve">
         <source>Allows only one device to show more options via the more options chevron. This helps with menu bloating when several displays are present.</source>
-        <target state="translated">オプション表示に、ひとつのデバイスにのみより多くのオプションを表示するようにします。複数のディスプレイがある場合に、メニューが肥大化することを防ぎます。</target>
+        <target state="translated">オプション表示で、ひとつのデバイスにのみより多くのオプションを表示することを許可。複数のディスプレイがある場合に、メニューが肥大化することを防ぎます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows restoring zero software brightness levels and combined brightness levels with the hardware brightness component being lower than the current reported brightness level for Apple displays (these might be invalid restore values saved during a dark wake period)." xml:space="preserve">
         <source>Allows restoring zero software brightness levels and combined brightness levels with the hardware brightness component being lower than the current reported brightness level for Apple displays (these might be invalid restore values saved during a dark wake period).</source>
-        <target state="translated">ソフトウェア輝度レベルと複合輝度レベルとを、Apple製ディスプレイで報告されている輝度レベルより低くなるよう復元します（これらはウェイク時の暗転期間中に保存された無効な値である可能性があります）。
+        <target state="translated">ソフトウェア輝度レベルと複合輝度レベルとを、Apple製ディスプレイで報告されている輝度レベルより低くなるよう復元することを許可（これらはウェイク時の暗転期間中に保存された無効な値であることがあります）。
 </target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration))." xml:space="preserve">
         <source>Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration)).</source>
-        <target state="translated">通知ディスパッチ（[説明](https://betterdisplay.pro/integration)を参照）を使用して、スクリプトによるCLIアクセスとサードパーティ製アプリの統合を可能にします。</target>
+        <target state="translated">通知ディスパッチ（[説明](https://betterdisplay.pro/integration)を参照）を使用して、スクリプトによるCLIアクセスとサードパーティ製アプリに統合することを許可。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
         <source>Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality.</source>
-        <target state="translated">システムワイドURL（[説明](https://betterdisplay.pro/integration)を参照）を使って、アプリケーションのさまざまな機能にアクセスできるようにします。これにより、他のアプリケーションとの統合や、スクリプトによるアプリケーション機能へのアクセスが可能になります。</target>
+        <target state="translated">システムワイドURL（[説明](https://betterdisplay.pro/integration)を参照）を使って、アプリケーションのさまざまな機能にアクセスすることを許可。これにより、他のアプリケーションとの統合や、スクリプトによるアプリケーション機能へアクセスできるようになります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Alpha" xml:space="preserve">
@@ -548,20 +591,11 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">仮想スクリーンの作成中にエラーが発生しました。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.
-
-If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">このシステムには、BetterDisplayの古いプレリリースバージョンがインストールされています。現行バージョンにアップグレードするには、アプリケーションのすべての設定をリセットする必要があります。
-
-続行しない場合は、古いプレリリース版にダウングレードしてください!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.
+      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
+        <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
 You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
-        <target state="translated">他のアプリケーションが画面のカラーや輝度を繰り返し変更しています - これはBetterDisplayが行ってる動作と衝突しています。
+        <target state="translated">他のアプリケーションが画面のカラーや輝度を繰り返し変更しています - これは%@が行ってる動作と衝突しています。
 
 他のアプリケーションを終了するか、設定/ディスプレイの「カラー調整を許可」を無効にして、この問題を解決してください!</target>
         <note/>
@@ -591,6 +625,11 @@ You should exit the other app or disable `Allow color adjustments` under Setting
         <target state="translated">次の場合、ネイティブオーディオキーの制御を引き継ぐ:</target>
         <note/>
       </trans-unit>
+      <trans-unit id="App should assume control over native brightness keys when" xml:space="preserve">
+        <source>App should assume control over native brightness keys when</source>
+        <target state="translated">以下の場合、アプリケーションはネイティブ輝度キーの制御を引き継ぎます：</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
@@ -605,7 +644,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Apple Silicon Macs tend freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround that tries to fix this issue." xml:space="preserve">
         <source>Apple Silicon Macs tend freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround that tries to fix this issue.</source>
-        <target state="translated">AppleシリコンMacでは、仮想スクリーンがミラーリングされている場合、スリープ時にディスプレイがスタンバイ状態にならず、フリーズするがあります。この問題を解決するための回避策です。</target>
+        <target state="translated">AppleシリコンMacでは、仮想スクリーンがミラーリングされている場合、スリープ時にディスプレイがスタンバイ状態にならず、フリーズすることがあります。この問題を解決するための回避策です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apple external display" xml:space="preserve">
@@ -650,7 +689,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Apply EDID override on startup or when the display is next connected. A modified EDID allows you to alter display capabilities perceived by your Mac." xml:space="preserve">
         <source>Apply EDID override on startup or when the display is next connected. A modified EDID allows you to alter display capabilities perceived by your Mac.</source>
-        <target state="translated">起動時またはディスプレイの次回接続時にEDIDオーバーライドを適用します。EDIDを変更すると、Macが認識するディスプレイの機能を変更できます。</target>
+        <target state="translated">起動時またはディスプレイの次回接続時にEDIDオーバーライドを適用します。EDIDを変更により、Macが認識するディスプレイの機能を変更できるようになります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apply Filter" xml:space="preserve">
@@ -681,6 +720,11 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Apply resolution favorite 5" xml:space="preserve">
         <source>Apply resolution favorite 5</source>
         <target state="translated">お気に入り解像度5を適用</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
+        <source>Are sure you want to quit the app?</source>
+        <target state="translated">アプリケーションを終了してもよろしいですか?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like smooth scaling, custom resolutions." xml:space="preserve">
@@ -738,9 +782,15 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">直近に使用した値またはデフォルト値が有効であると仮定</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Attempts to directly read the EDID data from the display.%@" xml:space="preserve">
-        <source>Attempts to directly read the EDID data from the display.%@</source>
-        <target state="translated">ディスプレイからEDIDデータを直接読み込みます。%@</target>
+      <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">ディスプレイからEDIDデータを直接読み込みます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
+
+Specifying read length is optional - leave the field empty for autodetect.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -786,6 +836,11 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Automatic (based on display type)" xml:space="preserve">
         <source>Automatic (based on display type)</source>
         <target state="translated">自動（ディスプレイの種類による）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically activate native XDR Upscaling" xml:space="preserve">
+        <source>Automatically activate native XDR Upscaling</source>
+        <target state="translated">ネイティブXDRアップスケーリングを自動的に有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
@@ -878,16 +933,6 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">複合輝度スケールがこのレベル以下になる場合は、追加のソフトウェアディミングを使用します（ハードウェアのバックライト制御が最低レベルに達するため）。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="BetterDisplay" xml:space="preserve">
-        <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="BetterDisplay is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
-        <source>BetterDisplay is unable to detect any display. This might indicate an application or system error.</source>
-        <target state="translated">BetterDisplayはディスプレイを検出できません。アプリケーションまたはシステムのエラーの可能性があります。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
         <source>Blue Black Level (DDC)</source>
         <target state="translated">ブルー-ブラックレベル（DDC）</target>
@@ -896,21 +941,6 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Blue Gain (DDC)" xml:space="preserve">
         <source>Blue Gain (DDC)</source>
         <target state="translated">ブルーゲイン（DDC）</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Gamma" xml:space="preserve">
-        <source>Blue Gamma</source>
-        <target state="translated">ブルーガンマ</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Black Level" xml:space="preserve">
-        <source>Blue Hardware Black Level</source>
-        <target state="translated">ブルー-ハードウェアブラックレベル</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Gain" xml:space="preserve">
-        <source>Blue Hardware Gain</source>
-        <target state="translated">ブルーハードウェアゲイン</target>
         <note/>
       </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
@@ -923,9 +953,9 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">起動時にDockアイコンをしばらく表示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment." xml:space="preserve">
-        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment.</source>
-        <target state="translated">カラーテーブルの調整によって追加ディミングや輝度アップスケーリングが生じる場合に、OSDに上向き（XDR/HDRアップスケーリング）または下向き（ソフトウェアディミング）のポインティングアイコンを表示します。</target>
+      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
+        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
+        <target state="translated">ソフトウェア調整によって追加ディミングまたは輝度アップスケーリングが生じる場合に、上向き（XDR/HDRアップスケーリング）または下向き（ソフトウェアディミング）のポインティングアイコンをOSDに一時表示します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness" xml:space="preserve">
@@ -938,14 +968,46 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">輝度（Apple）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Combined)" xml:space="preserve">
+        <source>Brightness (Combined)</source>
+        <target state="translated">輝度（複合）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Combined, Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Software Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (DDC)" xml:space="preserve">
         <source>Brightness (DDC)</source>
         <target state="translated">輝度（DDC）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Metal Upscaling)</source>
+        <target state="translated">輝度（Metalアップスケーリング）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Metal)" xml:space="preserve">
+        <source>Brightness (Metal)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
+        <source>Brightness (Native XDR Upscaling)</source>
+        <target state="translated">輝度（ネイティブXDRスケーリング）</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (Overlay)" xml:space="preserve">
         <source>Brightness (Overlay)</source>
         <target state="translated">輝度（オーバーレイ）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Software Upscaling)</source>
+        <target state="translated">輝度（ソフトウェアアップスケーリング）</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Software)" xml:space="preserve">
@@ -980,11 +1042,6 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Built-in Display" xml:space="preserve">
         <source>Built-in Display</source>
-        <target state="translated">内蔵ディスプレイ</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Built-in display" xml:space="preserve">
-        <source>Built-in display</source>
         <target state="translated">内蔵ディスプレイ</target>
         <note/>
       </trans-unit>
@@ -1043,8 +1100,8 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">この設定を変更しても、既存のディスプレイには影響しません。ディスプレイの識別方法は、各ディスプレイの追加設定でディスプレイごとに変更することができます。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Check For Updates" xml:space="preserve">
-        <source>Check For Updates</source>
+      <trans-unit id="Check for Updates" xml:space="preserve">
+        <source>Check for Updates</source>
         <target state="translated">アップデートを確認</target>
         <note/>
       </trans-unit>
@@ -1083,19 +1140,14 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">カラープロファイル設定</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Table Adjustments, XDR/HDR Upscaling" xml:space="preserve">
-        <source>Color Table Adjustments, XDR/HDR Upscaling</source>
-        <target state="translated">カラーテーブル調整、XDR/HDRアップスケーリング</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">色温度</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
-        <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">カラー調整とソフトウェアディミングはHDRコンテンツをクリップし、調整が不要な場合はカラーをリセットします。このため構成によっては、画面が変になったり黒くなることがあります。</target>
+      <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
+        <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
+        <target state="translated">カラーテーブル調整によるカラー変更、アップスケール、ディミングによりHDRコンテンツをクリップ。有効化すると、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり黒くなったりすることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1118,19 +1170,14 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">ハードウェア輝度コントロール（利用可能な場合）、ソフトウェアディミング、XDR/HDRアップスケーリングをひとつの輝度コントロールに統合します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined Brightness" xml:space="preserve">
-        <source>Combined Brightness</source>
-        <target state="translated">複合輝度</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
-        <source>Combined XDR/HDR upscaling maximum scale value</source>
-        <target state="translated">複合XDR/HDRアップスケーリング最大スケール値</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
         <target state="translated">複合輝度</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness - XDR/HDR upscaling maximum scale value" xml:space="preserve">
+        <source>Combined brightness - XDR/HDR upscaling maximum scale value</source>
+        <target state="translated">複合XDR/HDRアップスケーリング最大スケール値</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness - minimum allowed hardware brightness level" xml:space="preserve">
@@ -1138,9 +1185,14 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">複合輝度 - ハードウェアで許容される最小輝度レベル</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
-        <source>Combined brightness software dimming switchover point</source>
+      <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
+        <source>Combined brightness - software dimming switchover point</source>
         <target state="translated">複合輝度ソフトウェアディミング切り替えポイント</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
+        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
+        <target state="translated">XDRのネイティブ輝度スケールは設定可能なスケール全体をカバーしているため、デフォルト設定で複合輝度を使う必要はありません。設定されたXDR輝度スケール以下にディミングカーブを微調整したい場合にのみ使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -1296,11 +1348,6 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Contrast (DDC)" xml:space="preserve">
         <source>Contrast (DDC)</source>
         <target state="translated">コントラスト（DDC）</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Control" xml:space="preserve">
-        <source>Control</source>
-        <target state="translated">コントロール</target>
         <note/>
       </trans-unit>
       <trans-unit id="Copy" xml:space="preserve">
@@ -1473,8 +1520,8 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">カスタムアスペクト比</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Custom displayed icon SF Symbol name:" xml:space="preserve">
-        <source>Custom displayed icon SF Symbol name:</source>
+      <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
+        <source>Custom displayed icon SF Symbol name</source>
         <target state="translated">カスタム表示するSF Symbolアイコン名</target>
         <note/>
       </trans-unit>
@@ -1625,7 +1672,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="DDC hardware brightness might be restored according to the per-display settings." xml:space="preserve">
         <source>DDC hardware brightness might be restored according to the per-display settings.</source>
-        <target state="translated">DDCのハードウェア輝度は、ディスプレイごとの設定によって元に戻る可能性があります。</target>
+        <target state="translated">DDCのハードウェア輝度は、ディスプレイごとの設定によって元に戻ることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC is Unavailable" xml:space="preserve">
@@ -1761,6 +1808,16 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different." xml:space="preserve">
         <source>Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different.</source>
         <target state="translated">システムが認識するディスプレイの対角サイズを定義します。ミラーリング/ストリーミングに使用する場合は、オプションで対象の画面に合わせることができます。デフォルトでは空のままにしてください。さまざなアスペクト比のカスタム解像度リストでは、実際のサイズとは異なることがあります。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black." xml:space="preserve">
+        <source>Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black.</source>
+        <target state="translated">輝度コントロールの下限をニトで設定します。ブラックまで完全に連続的ディミングする場合には0を使用してください。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
+        <source>Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness.</source>
+        <target state="translated">輝度コントロールの上限をニトで設定します。フルスクリーンの輝度を維持したい場合にのみ1000を使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Delay between commands" xml:space="preserve">
@@ -1973,9 +2030,8 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">切断</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Disconnected%@" xml:space="preserve">
-        <source>Disconnected%@</source>
-        <target state="translated">切断: %@</target>
+      <trans-unit id="Disconnected (with sleep)" xml:space="preserve">
+        <source>Disconnected (with sleep)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnecting Displays" xml:space="preserve">
@@ -1995,7 +2051,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
         <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">すべてのディスプレイの接続を解除すると、Macとのやりとりができなくなる場合があります!</target>
+        <target state="translated">すべてのディスプレイの接続を解除すると、Macとのやりとりができなくなることがあります!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
@@ -2134,17 +2190,12 @@ AliPayは中国で利用可能です。</target>
 The process does not work for the built-in display (reboot needed). The operation might cause some Macs to enter sleep mode.</source>
         <target state="translated">しばらくディスプレイ表示が消え、Macを操作できなくなります。このプロセスには約2～4秒かかります。
 
-このプロセスは内蔵ディスプレイでは機能しません（再起動が必要です）。この操作により、一部のMacではスリープモードになる場合があります。</target>
+このプロセスは内蔵ディスプレイでは機能しません（再起動が必要です）。この操作により、一部のMacではスリープモードになることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do Not Disconnect" xml:space="preserve">
         <source>Do Not Disconnect</source>
         <target state="translated">切断しない</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do Nothing" xml:space="preserve">
-        <source>Do Nothing</source>
-        <target state="translated">何もしない</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
@@ -2252,9 +2303,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">EDIDバージョン</target>
         <note/>
       </trans-unit>
-      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@" xml:space="preserve">
-        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@</source>
-        <target state="translated">EDID（Extended Display Identification Data）は、解像度、サポートされるビデオフォーマット、タイミング、メーカー情報などのディスプレイの性能を、接続したコンピュータに伝えるための標準規格です。%@</target>
+      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
+        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
+        <target state="translated">EDID（Extended Display Identification Data）は、解像度、サポートされるビデオフォーマット、タイミング、メーカー情報などのディスプレイの性能を、接続したコンピュータに伝えるための標準規格です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Edit" xml:space="preserve">
@@ -2337,11 +2388,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">HDRモードを有効化</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable HDR brightness upscaling" xml:space="preserve">
-        <source>Enable HDR brightness upscaling</source>
-        <target state="translated">HDR輝度アップスケーリングを有効化</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable HiDPI resolutions" xml:space="preserve">
         <source>Enable HiDPI resolutions</source>
         <target state="translated">HiDPI解像度を有効化</target>
@@ -2357,14 +2403,14 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">True Toneを有効化</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable XDR brightness upscaling" xml:space="preserve">
-        <source>Enable XDR brightness upscaling</source>
-        <target state="translated">XDR輝度アップスケーリングを有効化</target>
+      <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
+        <source>Enable by selecting "%@" under the XDR Preset menu.</source>
+        <target state="translated">XDRプリセットメニューで"%@"を選択することで有効化します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable color adjustments" xml:space="preserve">
-        <source>Enable color adjustments</source>
-        <target state="translated">カラー調整を有効化</target>
+      <trans-unit id="Enable color table adjustments" xml:space="preserve">
+        <source>Enable color table adjustments</source>
+        <target state="translated">カラーテーブル調整を有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
@@ -2407,9 +2453,23 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">スムーズスケーリング</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
-        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">スムーズスケーリング、カスタムスケーリング解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割%@の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <target state="translated">スムーズスケーリング、カスタムスケーリング解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割。 の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software HDR brightness upscaling (if available)</source>
+        <target state="translated">ソフトウェアHDR輝度アップスケーリングを有効化（可能な場合）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software XDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software XDR brightness upscaling (if available)</source>
+        <target state="translated">可能な場合はソフトウェアXDR輝度アップスケーリングを有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software-based video adjustments" xml:space="preserve">
@@ -2422,9 +2482,13 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">ミラー先の低解像度への変更を有効化。リフレッシュレートとカラー深度のサブメニューも有効にします。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enables native XDR brightness upscaling and extended dimming for this display." xml:space="preserve">
+        <source>Enables native XDR brightness upscaling and extended dimming for this display.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and native smooth scaling. Using 8K+ virtual screens might cause stability issues. Native smooth scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
         <source>Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and native smooth scaling. Using 8K+ virtual screens might cause stability issues. Native smooth scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type.</source>
-        <target state="translated">16K×16K（8K×8K HiDPI）までの解像度を仮想スクリーンとネイティブのスムーズスケーリングで有効化します。8K以上の仮想スクリーンを使用すると、安定性に問題が生じる可能性があります。ネイティブのスムーズスケーリングを再適用する必要があります。最大ネイティブ解像度は、macOSバージョンとGPUタイプによる制限があります。</target>
+        <target state="translated">16K×16K（8K×8K HiDPI）までの解像度を仮想スクリーンとネイティブのスムーズスケーリングで有効化します。8K以上の仮想スクリーンを使用すると、安定性に問題が生じることがあります。ネイティブのスムーズスケーリングを再適用する必要があります。最大ネイティブ解像度は、macOSバージョンとGPUタイプによる制限があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
@@ -2507,9 +2571,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">スライダの機能を識別しやすくします。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Force support for color table manipulation" xml:space="preserve">
-        <source>Force support for color table manipulation</source>
-        <target state="translated">カラーテーブル操作を強制サポート</target>
+      <trans-unit id="Force support for color table adjustments" xml:space="preserve">
+        <source>Force support for color table adjustments</source>
+        <target state="translated">カラーテーブル調整を強制的にサポート</target>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -2547,6 +2611,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">フルスクリーンストリーミング</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full display sleep mode is not available on Intel Macs." xml:space="preserve">
+        <source>Full display sleep mode is not available on Intel Macs.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full screen streams looks best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams looks best when the target display is set to its native resolution.</source>
         <target state="translated">対象のディスプレイをネイティブ解像度に設定している場合に、フルスクリーンストリーミングは最良となります。</target>
@@ -2555,6 +2623,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Fully dim display on disconnect" xml:space="preserve">
         <source>Fully dim display on disconnect</source>
         <target state="translated">接続解除時に完全減光するディスプレイ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." xml:space="preserve">
+        <source>Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods.</source>
+        <target state="translated">より広いディミング範囲を得るよう、システムレベルでSDRコンテンツの輝度範囲を利用可能な限界まで拡大することを有効化。他のどのアップスケーリング方法よりも優れています。無効化した場合には、ソフトウェアベースのXDRアップスケーリング方法にフォールバックします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Gain" xml:space="preserve">
@@ -2587,9 +2660,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">一般設定</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Get BetterDisplay Pro" xml:space="preserve">
-        <source>Get BetterDisplay Pro</source>
-        <target state="translated">BetterDisplay Proを入手</target>
+      <trans-unit id="Get %@ Pro" xml:space="preserve">
+        <source>Get %@ Pro</source>
+        <target state="translated">%@ Proを入手</target>
         <note/>
       </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
@@ -2600,21 +2673,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
         <target state="translated">グリーンゲイン（DDC）</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Gamma" xml:space="preserve">
-        <source>Green Gamma</source>
-        <target state="translated">グリーンガンマ</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Black Level" xml:space="preserve">
-        <source>Green Hardware Black Level</source>
-        <target state="translated">グリーン-ハードウェアブラックレベル</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Gain" xml:space="preserve">
-        <source>Green Hardware Gain</source>
-        <target state="translated">グリーンハードウェアゲイン</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2645,16 +2703,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="HTTP server is currently running and listening for commands on port %@." xml:space="preserve">
         <source>HTTP server is currently running and listening for commands on port %@.</source>
         <target state="translated">HTTPサーバは現在実行中で、ポート%@からのコマンドを待ち受けています。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Brightness" xml:space="preserve">
-        <source>Hardware Brightness</source>
-        <target state="translated">ハードウェア輝度</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Contrast" xml:space="preserve">
-        <source>Hardware Contrast</source>
-        <target state="translated">ハードウェアコントラスト</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
@@ -2714,7 +2762,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Hold SHIFT during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected." xml:space="preserve">
         <source>Hold SHIFT during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected.</source>
-        <target state="translated">アプリケーション起動中にSHIFTを押し続けるとセーフモードになり、保存された値が書き込まれなくなります。複合コントロールを有効にすると、非選択時にもDDC輝度が再適用される場合があります。</target>
+        <target state="translated">アプリケーション起動中にSHIFTを押し続けるとセーフモードになり、保存された値が書き込まれなくなります。複合コントロールを有効にすると、非選択時にもDDC輝度が再適用されることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select. Sub-720p modes are hidden." xml:space="preserve">
@@ -2762,6 +2810,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">構成した場合、トークンをURLで指定する必要があります（[説明](https://betterdisplay.pro/integration)を参照）。外部リンクにより不要な動作が実行されることを防ぎます。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If disabled, Quit %@ is listed in the Tools menu." xml:space="preserve">
+        <source>If disabled, Quit %@ is listed in the Tools menu.</source>
+        <target state="translated">無効化した場合、ツールメニューに %@の終了を追加。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
         <target state="translated">キーボードコントロールが現在のオーディオ装置と同じ名前のディスプレイに設定されているとき（キーボード設定）、ディスプレイ名の代わりにこの値がオーディオ装置のマッチングに使用されます。</target>
@@ -2782,9 +2835,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">メニューアイコンが非表示になっている場合は、アプリケーションを起動した状態でアプリケーションを再起動すれば表示されます。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session." xml:space="preserve">
-        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session.</source>
-        <target state="translated">更新されたEDIDに新しいディスプレイID（シリアル番号、モデルID、ベンダーID）が含まれている場合、macOSはそのディスプレイを別のディスプレイとして扱います。このオプションを有効にすると、BetterDisplayは現在のセッション中、新旧ID間の連続性を維持します。</target>
+      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
+        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
+        <target state="translated">更新されたEDIDに新しいディスプレイID（シリアル番号、モデルID、ベンダーID）が含まれている場合、macOSはそのディスプレイを別のディスプレイとして扱います。このオプションを有効にすると、%@は現在のセッション中、新旧ID間の連続性を維持します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
@@ -2798,7 +2851,7 @@ The process does not work for the built-in display (reboot needed). The operatio
 Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!</source>
         <target state="translated">使用しているディスプレイがこの機能に完全に対応していない場合、アプリケーションはバックライトをオフにしたり、再びオンにしたりできないことがあります!
 
-すべてのディスプレイでDDC電源操作ができるわけではありません。DDC電源操作は、一部のディスプレイで（より深刻な）問題を引き起こす可能性があります!</target>
+すべてのディスプレイでDDC電源操作ができるわけではありません。DDC電源操作は、一部のディスプレイで（より深刻な）問題を引き起こすことがあります!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustments" xml:space="preserve">
@@ -2841,9 +2894,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">コントラストを増やす - 微細スケール</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
-        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
-        <target state="translated">ディスプレイの輝度を100%以上に増やします。Apple XDRディスプレイまたはHDRモードのHDR対応外付けディスプレイが必要です。</target>
+      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
+        <target state="translated">ディスプレイの輝度を100%以上にする。Apple XDRディスプレイまたはHDRモードのHDR対応外部ディスプレイが必要です。カラーテーブル調整を有効化したAppleシリコンMac、あるいはカラーテーブル調整を無効化した（Metalベースのオーバーレイ輝度コントロールを使用する）すべてのプラットフォームで動作します。Metalを使用したアップスケーリングは、システムによってはCPUとGPUの使用率を増加させることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
@@ -2878,11 +2931,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
-        <target state="translated">統合</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Integration (Experimental)" xml:space="preserve">
-        <source>Integration (Experimental)</source>
         <target state="translated">統合</target>
         <note/>
       </trans-unit>
@@ -2928,7 +2976,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="It is advised to leave this on, especially if the custom EDID alters display identity. Without this the app may detect the display as different upon next startup." xml:space="preserve">
         <source>It is advised to leave this on, especially if the custom EDID alters display identity. Without this the app may detect the display as different upon next startup.</source>
-        <target state="translated">カスタムEDIDでディスプレイのアイデンティティを変更する場合は、この設定をオンにしてください。オンにしないと、次回のアプリケーション起動時に、異なるディスプレイとして検出する可能性があります。</target>
+        <target state="translated">カスタムEDIDでディスプレイのアイデンティティを変更する場合は、この設定をオンにしてください。オンにしないと、次回のアプリケーション起動時に、異なるディスプレイとして検出することがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Keep Above Other Windows" xml:space="preserve">
@@ -3081,9 +3129,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">EDIDデータをロード...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
-        <source>Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
-        <target state="translated">BetterDisplay（またはその他のツール）によってエクスポートしたEDIDバイナリイメージをロードします。AW EDID EditorのようなEDIDエディタで作成/変更したEDIDバイナリも使用できます。EDIDイメージのBase64テキスト表現がある場合は、「Base64をペースト」ボタンを使用してロードします。</target>
+      <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
+        <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
+        <target state="translated">%@（またはその他のツール）によってエクスポートしたEDIDバイナリイメージをロードします。AW EDID EditorのようなEDIDエディタで作成/変更したEDIDバイナリも使用できます。EDIDイメージのBase64テキスト表現がある場合は、「Base64をペースト」ボタンを使用してロードします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -3256,6 +3304,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">メニュー表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Metal device" xml:space="preserve">
+        <source>Metal device</source>
+        <target state="translated">Metalデバイス</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Min HW" xml:space="preserve">
         <source>Min HW</source>
         <target state="translated">最小HW</target>
@@ -3386,6 +3439,21 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">輝度キーやオーディオキーを使うネイティブ（Apple）キーボードコントロールは、システム設定でアクセシビリティの許可を設定しないと機能しません!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Native XDR Upscaling" xml:space="preserve">
+        <source>Native XDR Upscaling</source>
+        <target state="translated">ネイティブXDRアップスケーリング</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
+        <source>Native XDR brightness upscaling settings</source>
+        <target state="translated">ネイティブXDR輝度アップスケーリング設定</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR upscaling is active. Deactivate it under the XDR Preset menu." xml:space="preserve">
+        <source>Native XDR upscaling is active. Deactivate it under the XDR Preset menu.</source>
+        <target state="translated">ネイティブXDRアップスケーリングが有効です。XDRプリセットメニューで無効化できます。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
         <source>Native audio key settings</source>
         <target state="translated">ネイティブオーディオキー設定</target>
@@ -3424,11 +3492,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">新規仮想スクリーン構成</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Night Shift" xml:space="preserve">
-        <source>Night Shift</source>
-        <target state="translated">Night Shift</target>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3503,7 +3566,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!" xml:space="preserve">
         <source>Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!</source>
-        <target state="translated">すべてのディスプレイがDDC電源操作ができるわけではありません。DDC電源操作は、一部のディスプレイに（深刻な）問題を引き起こす可能性があります!</target>
+        <target state="translated">すべてのディスプレイがDDC電源操作ができるわけではありません。DDC電源操作は、一部のディスプレイに（深刻な）問題を引き起こすことがあります!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Not detected (past disconnected)" xml:space="preserve">
@@ -3554,6 +3617,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="OSD" xml:space="preserve">
         <source>OSD</source>
         <target state="translated">OSD</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later." xml:space="preserve">
+        <source>Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later.</source>
+        <target state="translated">旧バージョンのmacOSでは、ネイティブ解像度でのHiDPIバリアントの使用が許可されていません - 垂直行を1px削除したネイティブに近いモードを、代替として追加します。macOS Ventura 13.2以降では推奨しません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="On startup &amp; wake" xml:space="preserve">
@@ -3658,7 +3726,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Please note that not all displays support DDC power operations and some displays may not behave as expected. If you power off your display, you will have to power it back on manually." xml:space="preserve">
         <source>Please note that not all displays support DDC power operations and some displays may not behave as expected. If you power off your display, you will have to power it back on manually.</source>
-        <target state="translated">すべてのディスプレイがDDC電源操作ができるわけではないので、一部のディスプレイでは期待通りに動作しない可能性があります。ディスプレイの電源を切った場合は、手動で電源を入れ直す必要があります。</target>
+        <target state="translated">すべてのディスプレイがDDC電源操作ができるわけではないので、一部のディスプレイでは期待通りに動作しないことがあります。ディスプレイの電源を切った場合は、手動で電源を入れ直す必要があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Please select a display you want to match the virtual display!" xml:space="preserve">
@@ -3674,6 +3742,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Portrait 270° (Sidecar port up)" xml:space="preserve">
         <source>Portrait 270° (Sidecar port up)</source>
         <target state="translated">ポートレイト270°（Sidecarポート上向き）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Potential EDR" xml:space="preserve">
+        <source>Potential EDR</source>
+        <target state="translated">ポテンシャルEDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="Potentially DDC compatible" xml:space="preserve">
@@ -3756,14 +3829,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">一部の構成で、追加の便利なディスプレイモードオプションを提供します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Quit" xml:space="preserve">
-        <source>Quit</source>
-        <target state="translated">終了</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
         <source>Quit %@</source>
         <target state="translated">%@を終了</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quit App…" xml:space="preserve">
+        <source>Quit App…</source>
+        <target state="translated">アプリケーション終了...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Quit the app" xml:space="preserve">
@@ -3788,7 +3861,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reads EDID data acquired by the operating system. This data might be altered by the system for various reasons." xml:space="preserve">
         <source>Reads EDID data acquired by the operating system. This data might be altered by the system for various reasons.</source>
-        <target state="translated">オペレーティングシステムによって取得したEDIDデータを読み込みます。このデータはさまざまな理由でシステムによって変更される可能性があります。</target>
+        <target state="translated">オペレーティングシステムによって取得したEDIDデータを読み込みます。このデータはさまざまな理由でシステムによって変更されることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
@@ -3856,24 +3929,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">レッドゲイン（DDC）</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Red Gamma" xml:space="preserve">
-        <source>Red Gamma</source>
-        <target state="translated">レッドガンマ</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Black Level" xml:space="preserve">
-        <source>Red Hardware Black Level</source>
-        <target state="translated">レッド-ハードウェアブラックレベル</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Gain" xml:space="preserve">
-        <source>Red Hardware Gain</source>
-        <target state="translated">レッドハードウェアゲイン</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Redetect Displays" xml:space="preserve">
         <source>Redetect Displays</source>
         <target state="translated">ディスプレイを再検出</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reference EDR" xml:space="preserve">
+        <source>Reference EDR</source>
+        <target state="translated">リファレンスEDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh Rate" xml:space="preserve">
@@ -4001,11 +4064,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">メニューレイアウトをリセット...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Settings" xml:space="preserve">
-        <source>Reset Settings</source>
-        <target state="translated">設定をリセット</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset Values" xml:space="preserve">
         <source>Reset Values</source>
         <target state="translated">値をリセット</target>
@@ -4081,14 +4139,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">再起動</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Restart %@" xml:space="preserve">
+        <source>Restart %@</source>
+        <target state="translated">%@ を再起動</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Restart App…" xml:space="preserve">
         <source>Restart App…</source>
         <target state="translated">アプリケーションを再起動</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Restart BetterDisplay" xml:space="preserve">
-        <source>Restart BetterDisplay</source>
-        <target state="translated">BetterDisplayを再起動</target>
         <note/>
       </trans-unit>
       <trans-unit id="Restart the app" xml:space="preserve">
@@ -4196,9 +4254,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">画面を270°回転</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Rotate the display (flip width and height). %@" xml:space="preserve">
-        <source>Rotate the display (flip width and height). %@</source>
-        <target state="translated">ディスプレイを回転する （幅と高さを反転）。%@</target>
+      <trans-unit id="Rotate the display (flip width and height)." xml:space="preserve">
+        <source>Rotate the display (flip width and height).</source>
+        <target state="translated">ディスプレイを回転する （幅と高さを反転）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Rotated Orientation" xml:space="preserve">
@@ -4271,19 +4329,19 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">%@画面の回転</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@" xml:space="preserve">
-        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@</source>
-        <target state="translated">スクリーンセーバ開始時またはロック時に、画面の輝度を任意のレベル（もともとは高い）に変更します。%@</target>
+      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock." xml:space="preserve">
+        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.</source>
+        <target state="translated">スクリーンセーバ開始時またはロック時に、画面の輝度を任意のレベル（もともとは高い）に変更します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Screen with the mouse pointer" xml:space="preserve">
         <source>Screen with the mouse pointer</source>
-        <target state="translated">マウスポインタ表示スクリーン</target>
+        <target state="translated">マウスポインタがある画面</target>
         <note/>
       </trans-unit>
       <trans-unit id="Screen with the window in focus" xml:space="preserve">
         <source>Screen with the window in focus</source>
-        <target state="translated">フォーカス中のウインドウがあるスクリーン</target>
+        <target state="translated">フォーカス中のウインドウがある画面</target>
         <note/>
       </trans-unit>
       <trans-unit id="Security token" xml:space="preserve">
@@ -4368,7 +4426,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Set display as main screen" xml:space="preserve">
         <source>Set display as main screen</source>
-        <target state="translated">ディスプレイを主スクリーンに設定</target>
+        <target state="translated">主ディスプレイとして設定</target>
         <note/>
       </trans-unit>
       <trans-unit id="Set native halved HiDPI resolution (if available)" xml:space="preserve">
@@ -4411,19 +4469,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">複合輝度コントロールを使用する場合に、ソフトウェアディミングを開始するハードウェア輝度値（独自スケールでの）の最小値を設定します。この設定は、PWM感度が高い場合に有効で、バックライト制御が重いPWMレンジに入ることを禁止し、代わりにソフトウェアディミングを使用します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Settings Reset Required" xml:space="preserve">
-        <source>Settings Reset Required</source>
-        <target state="translated">設定のリセットが必要</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
         <source>Settings made with the app are protected.</source>
         <target state="translated">アプリケーションによる設定値を保護しました。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show BetterDisplay in the macOS Dock" xml:space="preserve">
-        <source>Show BetterDisplay in the macOS Dock</source>
-        <target state="translated">BetterDisplayをmacOSのDockに表示</target>
+      <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
+        <source>Show %@ in the macOS Dock</source>
+        <target state="translated">%@をmacOSのDockに表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -4431,19 +4484,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">マウスポインタを表示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show OSD" xml:space="preserve">
-        <source>Show OSD</source>
-        <target state="translated">OSDを表示</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
         <source>Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
         <target state="translated">基本コントロールにキーボードショートカットを使用する場合にOSD表示します。OSD UIを表示したくない場合、またはサードパーティ製OSDプレゼンテーションアプリを代わりに使用する場合、無効にしてください。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
-        <source>Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
-        <target state="translated">キーボードショートカット使用時にOSD表示します。OSD UIを表示したくない場合や、サードパーティ製OSDプレゼンテーションアプリを代わりに使用する場合は、無効にしてください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show OSD when using any other keyboard shortcut (besides brightness, volume, mute). Disable this if you don't want custom OSDs to appear or when a third party OSD presentation app is being used instead." xml:space="preserve">
@@ -4454,6 +4497,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show PIP menu when only a single display is connected" xml:space="preserve">
         <source>Show PIP menu when only a single display is connected</source>
         <target state="translated">ディスプレイが1台しか接続されていないときにPIPメニューを表示</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Quit %@ in the bottom button bar" xml:space="preserve">
+        <source>Show Quit %@ in the bottom button bar</source>
+        <target state="translated">ボタンバーの最後に%@の終了を表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
@@ -4506,9 +4554,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">詳細表示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@" xml:space="preserve">
-        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@</source>
-        <target state="translated">ディスプレイの切断/接続メニューオプションを表示します。ディスプレイを切断すると、そのディスプレイはスリープモードになり、ディスプレイレイアウトから削除されます。接続するとディスプレイが復活します。切断したディスプレイは、ヘッダ切り替え（電源ボタン）、ディスプレイのオン/オフあるいはMacBook内蔵ディスプレイを閉じてから開き直せば再接続することができます。%@</target>
+      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
+        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
+        <target state="translated">ディスプレイの切断/接続メニューオプションを表示します。ディスプレイを切断すると、そのディスプレイはスリープモードになり、ディスプレイレイアウトから削除されます。接続するとディスプレイが復活します。切断したディスプレイは、ヘッダ切り替え（電源ボタン）、ディスプレイのオン/オフあるいはMacBook内蔵ディスプレイを閉じてから開き直せば再接続することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show display modes marked as unsafe or invalid" xml:space="preserve">
@@ -4538,7 +4586,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show native underscan slider in the Image Adjustments menu even if this capability is not detected. The force-enabled slider might not work or can cause system issues or crash the application." xml:space="preserve">
         <source>Show native underscan slider in the Image Adjustments menu even if this capability is not detected. The force-enabled slider might not work or can cause system issues or crash the application.</source>
-        <target state="translated">この機能が検出されない場合でも、画像調整メニューにネイティブのアンダースキャンスライダを表示します。強制的に有効化したスライダは動作しないか、システムの問題を引き起こしたり、アプリケーションをクラッシュさせる可能性があります。</target>
+        <target state="translated">この機能が検出されない場合でも、画像調整メニューにネイティブのアンダースキャンスライダを表示します。強制的に有効化したスライダは動作しないか、システムの問題を引き起こしたり、アプリケーションをクラッシュさせることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show on/off (power) switch in headers" xml:space="preserve">
@@ -4569,6 +4617,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show subsliders for combined brightness control" xml:space="preserve">
         <source>Show subsliders for combined brightness control</source>
         <target state="translated">複合輝度コントロール用サブスライダを表示</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
+        <source>Show warning notifications about color table anomalies</source>
         <note/>
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line." xml:space="preserve">
@@ -4616,11 +4668,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">スムーズなトランジション</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Software Brightness" xml:space="preserve">
-        <source>Software Brightness</source>
-        <target state="translated">ソフトウェア輝度</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
         <source>Software control</source>
         <target state="translated">ソフトウェアコントロール</target>
@@ -4639,11 +4686,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
         <source>Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
         <target state="translated">一部のディスプレイは、HDRモードでのDDC輝度コントロールをサポートしていません。互換性のあるディスプレイでこれを有効にすると、クリップされていないHDRコンテンツを保持しながら輝度を制御できるようになります。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Some macOS versions disallow the use of the HiDPI variant of the native resolution. This setting adds a near-native mode with 1px vertical row removed as a substitute." xml:space="preserve">
-        <source>Some macOS versions disallow the use of the HiDPI variant of the native resolution. This setting adds a near-native mode with 1px vertical row removed as a substitute.</source>
-        <target state="translated">macOSのバージョンによっては、ネイティブ解像度と異なるHiDPIの使用を許可していません。この設定により、垂直行を1 px削除したネイティブに近いモードが追加されます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -4741,6 +4783,16 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">対応ディスプレイ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Supports Color Profiles" xml:space="preserve">
+        <source>Supports Color Profiles</source>
+        <target state="translated">カラープロファイル対応</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Supports HDR" xml:space="preserve">
+        <source>Supports HDR</source>
+        <target state="translated">HDR対応</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Supports XDR presets" xml:space="preserve">
         <source>Supports XDR presets</source>
         <target state="translated">XDRプリセットをサポート</target>
@@ -4831,11 +4883,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">テレビ</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Temperature" xml:space="preserve">
-        <source>Temperature</source>
-        <target state="translated">温度</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD)." xml:space="preserve">
         <source>The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD).</source>
         <target state="translated">DDC リセットコマンドは、すべてのディスプレイで正しく機能するとは限りません。また、ディスプレイに内蔵された出荷時リセット機能（通常はディスプレイのOSDからアクセス可能）を使用することもできます。</target>
@@ -4865,8 +4912,8 @@ Virtual screens are not connected automatically, brightness and other adjustment
         <target state="translated">メニューアイコンに、現在の主ディスプレイのアイコンを反映します。デフォルトのアイコンが気に入らない場合は有効にしてください。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the raw display name." xml:space="preserve">
-        <source>The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the raw display name.</source>
+      <trans-unit id="The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name." xml:space="preserve">
+        <source>The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name.</source>
         <target state="translated">ディスプレイのシステム名の代わりにこの名前がメニューに表示されます。システム全体の名前を変更したい場合には、構成のオーバーライドオプションを有効にし、rawディスプレイ名を編集して変更することができます。</target>
         <note/>
       </trans-unit>
@@ -4886,11 +4933,11 @@ Please open the app in native mode - to achieve this, unselect "Open using Roset
       </trans-unit>
       <trans-unit id="The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold SHIFT on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble." xml:space="preserve">
         <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold SHIFT on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble.</source>
-        <target state="translated">このディスプレイを接続すると、読み込んだEDIDを適用します。この操作により更新したEDIDで、既存のモード利用できない場合、画面がちらついてモードが切り替わります。新しいEDIDが異なるIDデータ（ベンダー、モデル、シリアル）を持つ場合、異なるディスプレイとして再検出されます。Shiftを押したまま起動すると、セーフモードが有効となり、EDIDが自動的に適用されることを防げます。深刻な問題が生じた場合には、ディスプレイを物理的につなぎ直して最初の状態に戻してみてください。</target>
+        <target state="translated">このディスプレイを接続すると、読み込んだEDIDを適用します。この操作により更新したEDIDで、既存のモード利用できない場合には、画面がちらついてモードが切り替わります。新しいEDIDが異なるIDデータ（ベンダー、モデル、シリアル）を持つ場合、異なるディスプレイとして再検出されます。Shiftを押したまま起動すると、セーフモードが有効となり、EDIDが自動的に適用されることを防げます。深刻な問題が生じた場合には、ディスプレイを物理的につなぎ直して最初の状態に戻してみてください。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The app will forget all stored DDC values and treat all controls and untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
-        <source>The app will forget all stored DDC values and treat all controls and untouched. Sliders will revert to default neutral values.
+      <trans-unit id="The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
+        <source>The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.
 
 This operation does not reset the display itself.</source>
         <target state="translated">保存したすべてのDDC値を消去し、すべてのコントロールを変更しないで扱います。スライダはデフォルトの中間値に戻ります。
@@ -4898,18 +4945,18 @@ This operation does not reset the display itself.</source>
 この操作ではディスプレイそのものはリセットされません。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected.&#10;&#10;If you connect the built-in display, this setting will be turned off. You can enable it again under Settings &gt; Advanced." xml:space="preserve">
+      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected.&#10;&#10;If you connect the built-in display, this setting will be turned off. You can enable it again under Displays &gt; Overview &gt; Connection management settings." xml:space="preserve">
         <source>The built-in display is configured to be disconnected when an external display is connected.
 
-If you connect the built-in display, this setting will be turned off. You can enable it again under Settings &gt; Advanced.</source>
+If you connect the built-in display, this setting will be turned off. You can enable it again under Displays &gt; Overview &gt; Connection management settings.</source>
         <target state="translated">外付けディスプレイを接続すると、内蔵ディスプレイが切断される設定になっています。
 
-内蔵ディスプレイを接続すると、この設定はオフになります。設定 &gt; 高度な設定で再度有効にすることができます。</target>
+内蔵ディスプレイを接続すると、この設定はオフになります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The built-in display of the iMac cannot be easily reconnected (lack of display cable, closable lid) in case of an application failure. Enable this setting with extra caution!" xml:space="preserve">
         <source>The built-in display of the iMac cannot be easily reconnected (lack of display cable, closable lid) in case of an application failure. Enable this setting with extra caution!</source>
-        <target state="translated">iMacの内蔵ディスプレイは、アプリケーションに障害が発生した場合、簡単に再接続することができません（ディスプレイケーブルや開け閉めできる蓋が無い）。この設定を有効にする場合には、特に注意してください!</target>
+        <target state="translated">iMacの内蔵ディスプレイは、アプリケーションに障害が発生した場合には、簡単に再接続することができません（ディスプレイケーブルや開け閉めできる蓋が無い）。この設定を有効にする場合には、特に注意してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the &quot;LG alt&quot; toggle for some newer LG displays if input control does not work!" xml:space="preserve">
@@ -4919,7 +4966,7 @@ If you connect the built-in display, this setting will be turned off. You can en
       </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
-        <target state="translated">事前にアプリケーションからディスプレイを切断している場合、ディスプレイの検出時または物理的接続時に自動的に切断します。この設定は予期しない問題（互換性のないディスプレイとの接続-切断の繰り返しや、ディスプレイを接続できない）を引き起こす可能性があるので、注意してください!</target>
+        <target state="translated">事前にアプリケーションからディスプレイを切断している場合、ディスプレイの検出時または物理的接続時に自動的に切断します。この設定は予期しない問題（互換性のないディスプレイとの接続-切断の繰り返しや、ディスプレイを接続できない）を引き起こすことがあるので、注意してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
@@ -4990,14 +5037,14 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">サードパーティ製外付けディスプレイ</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." xml:space="preserve">
-        <source>This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use.</source>
-        <target state="translated">高度なディミング、カラー調整、XDR/HDRアップスケーリングなどの機能が使えるようになります。注: カラー調整は、アクティブな使い方ではHDRをクリップします。</target>
+      <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
+        <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
+        <target state="translated">高度なディミング、カラー調整、その他ソフトウェアXDR/HDRアップスケーリングなどの機能が利用可能になります。注意：カラー調整は使用時にHDRコンテンツをクリップします。このオプションを無効にすると、アプリはオーバーレイベースのディミング制御に戻り、ソフトウェアXDR/HDRアップスケーリングにMetalを使用します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data.</source>
-        <target state="translated">構成/検出処理中に、現在構成しているディスプレイに関連付けたデータを、検出したディスプレイにどのように適合させるかを構成します。この設定を変更すると、接続したことがないディスプレイであると認識され、保存されている既存のディスプレイ構成データの関連付けが解除される可能性があります。システムUUIDの一致は、macOSのデフォルト識別子を使用します。基本識別子を使用するよう設定すると、アプリはベンダー/モデルIDおよびシリアル番号によってディスプレイを識別します。拡張識別子では、製品名、英数字のシリアル番号、製造日も使用します。位置情報を使用する場合、ハードウェア接続データも考慮します。</target>
+        <target state="translated">構成/検出処理中に、現在構成しているディスプレイに関連付けたデータを、検出したディスプレイにどのように適合させるかを構成します。この設定を変更すると、接続したことがないディスプレイであると認識され、保存されている既存のディスプレイ構成データの関連付けが解除されることがあります。システムUUIDの一致は、macOSのデフォルト識別子を使用します。基本識別子を使用するよう設定すると、アプリはベンダー/モデルIDおよびシリアル番号によってディスプレイを識別します。拡張識別子では、製品名、英数字のシリアル番号、製造日も使用します。位置情報を使用する場合、ハードウェア接続データも考慮します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This display is the main display. Are you sure you want to turn the backlight off?" xml:space="preserve">
@@ -5014,6 +5061,10 @@ Please note that not all displays support DDC power operations and some displays
 すべてのディスプレイがDDC電源操作をサポートしているわけではなく、一部のディスプレイでは期待通りに動作しないことに注意してください。ディスプレイの電源をオフにした場合は、手動で電源を入れ直す必要があります。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty." xml:space="preserve">
+        <source>This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. &#10;&#10;Please try again once the permissions are granted!" xml:space="preserve">
         <source>This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. 
 
@@ -5028,9 +5079,9 @@ Please try again once the permissions are granted!</source>
         <target state="translated">macOS Sonomaの一部バージョンで、ディスプレイのカスタム構成が正しく読み込まれないことがある問題への回避策です。この設定では、スムーズスケーリング解像度が見つからない場合に、ディスプレイの再初期化を試みます。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
-        <source>This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <target state="translated">カラー調整、複合ディミング、XDR/HDRアップスケーリング機能を使用するときに必要です。有効にしておくことをおすすめします。システムカラーを変更する一部のサードパーティ製アプリでは、互換性のため設定を無効にしてください。</target>
+      <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
+        <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
+        <target state="translated">カラー調整と、より良いソフトウェアディミングやXDR/HDRアップスケーリングのために必要なので、有効化しておくことをお勧めします。システムカラーも変更する一部のサードパーティ製アプリケーションとの互換性を保つには、オフにします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -5050,7 +5101,7 @@ Please try again once the permissions are granted!</source>
       </trans-unit>
       <trans-unit id="This might not work properly with all displays (especially low PPI ones) and might create a pixel-doubled LoDPI default resolution instead on Intel Macs." xml:space="preserve">
         <source>This might not work properly with all displays (especially low PPI ones) and might create a pixel-doubled LoDPI default resolution instead on Intel Macs.</source>
-        <target state="translated">すべてのディスプレイ（特に低PPIのもの）で正しく動作しない可能性があり、Intel Macではピクセルを倍増したLoDPIのデフォルト解像度が代わりに作成される場合があります。</target>
+        <target state="translated">すべてのディスプレイ（特に低PPIのもの）で正しく動作しない可能性があり、Intel Macではピクセルを倍増したLoDPIのデフォルト解像度が代わりに作成されることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This name is used by macOS system-wide." xml:space="preserve">
@@ -5075,7 +5126,7 @@ Please try again once the permissions are granted!</source>
       </trans-unit>
       <trans-unit id="This resolution is used as default when the display is included in a new layout. Results might be approximate only on Intel Macs." xml:space="preserve">
         <source>This resolution is used as default when the display is included in a new layout. Results might be approximate only on Intel Macs.</source>
-        <target state="translated">新規レイアウトにディスプレイが含まれる場合、この解像度をデフォルトとして使用します。Intel Macでは近似値となる場合があります。</target>
+        <target state="translated">新規レイアウトにディスプレイが含まれる場合、この解像度をデフォルトとして使用します。Intel Macでは近似値となることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This restores the default settings and restarts the app.&#10;&#10;Please note that previously stored custom display configurations won't be removed from the system!" xml:space="preserve">
@@ -5097,8 +5148,8 @@ Please note that previously stored custom display configurations won't be remove
         <target state="translated">ディスプレイパネルの物理解像度（縦横の実際のピクセル数）と一致している必要があります。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This should remove displays from the display layout and make compatible systems enter standby mode.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain turned off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
-        <source>This should remove displays from the display layout and make compatible systems enter standby mode.
+      <trans-unit id="This should remove displays from the display layout and make them enter standby mode on compatible systems.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain turned off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
+        <source>This should remove displays from the display layout and make them enter standby mode on compatible systems.
 
 Some displays are not compatible with this feature and may not turn off or remain turned off.
 
@@ -5120,7 +5171,7 @@ If you can't turn the display back on using the app, try reconnecting the displa
 
 一部のディスプレイはこの機能に対応していないため、電源がオフにならなかったり、オフのままになることがあります。
 
-アプリケーションからディスプレイをオンに戻せない場合は、ディスプレイを手動で再接続してみてください（MacBookのディスプレイの場合は、蓋を閉じてから開けてください）。</target>
+アプリケーションからディスプレイをオンに戻せない場合は、ディスプレイを手動で再接続してみてください（MacBookのディスプレイの場合は、蓋を開閉し直してください）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should remove the display from the display layout.&#10;&#10;Please note that on Intel Macs (such as this Mac) the feature might not work as expected!&#10;&#10;IMPORTANT: While the display is in a disconnected state (via the app), physically turning the display off, removing the cable or (for a built-in display) closing the lid may result in an inability to turn any displays back on (until a reboot)!" xml:space="preserve">
@@ -5131,7 +5182,7 @@ Please note that on Intel Macs (such as this Mac) the feature might not work as 
 IMPORTANT: While the display is in a disconnected state (via the app), physically turning the display off, removing the cable or (for a built-in display) closing the lid may result in an inability to turn any displays back on (until a reboot)!</source>
         <target state="translated">ディスプレイレイアウトからディスプレイを削除します。
 
-Intel Mac（このMacなど）では、この機能が期待通りに動作しない場合がありますのでご注意ください!
+Intel Mac（このMacなど）では、この機能が期待通りに動作しないことがありますのでご注意ください!
 
 重要:（アプリケーションから）ディスプレイを切断した状態で、物理的にディスプレイの電源を切ったり、ケーブルを抜いたり、（内蔵ディスプレイの）蓋を閉めてしまうと、（再起動するまで）ディスプレイを再びオンにできなくなることがあります!</target>
         <note/>
@@ -5242,7 +5293,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Treat this display (identified as Apple-made) as generic and allow DDC control to be enabled. Might cause permanent issues on some older Apple displays!" xml:space="preserve">
         <source>Treat this display (identified as Apple-made) as generic and allow DDC control to be enabled. Might cause permanent issues on some older Apple displays!</source>
-        <target state="translated">このディスプレイ（Apple製と識別）を汎用ディスプレイとして扱い、DDCコントロールを有効にします。一部の古いApple製ディスプレイでは、永続的な問題が発生する可能性があります!</target>
+        <target state="translated">このディスプレイ（Apple製と識別）を汎用ディスプレイとして扱い、DDCコントロールを有効にします。一部の古いApple製ディスプレイでは、永続的な問題が発生することがあります!</target>
         <note/>
       </trans-unit>
       <trans-unit id="True Tone turned off by HDR toggle" xml:space="preserve">
@@ -5332,7 +5383,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Typical values include: 100, 200 or 255 (note: 255 works for most old DDC compatible Apple Cinema / LED displays and helps avoid permanent dimming issue)." xml:space="preserve">
         <source>Typical values include: 100, 200 or 255 (note: 255 works for most old DDC compatible Apple Cinema / LED displays and helps avoid permanent dimming issue).</source>
-        <target state="translated">一般的な値は次の通りです： 100、200または255（注: 255は、ほとんどの古いDDC互換Apple Cinema / LEDディスプレイで機能し、ディミングの問題を回避するのに役立ちます）。</target>
+        <target state="translated">一般的な値は次の通りです： 100、200または255（注: 255は、ほとんどの古いDDC互換Apple Cinema / LEDディスプレイで機能し、永続的なディミングの問題を回避するのに役立ちます）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Typical values include: 100, 200 or 255." xml:space="preserve">
@@ -5400,6 +5451,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">未知のディスプレイ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
+        <source>Unlock Color Profile management for XDR displays</source>
+        <target state="translated">XDRディスプレイのカラープロファイル管理の制限を解除</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
         <source>Unmute (DDC)</source>
         <target state="translated">ミュート解除（DDC）</target>
@@ -5440,9 +5496,18 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">アップデート</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
+        <source>Use Metal for image adjustments</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use custom resolution list" xml:space="preserve">
         <source>Use custom resolution list</source>
         <target state="translated">カスタム解像度リストを使用</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use if you are sure your display supports color table adjustments but the app does not detect the capability." xml:space="preserve">
+        <source>Use if you are sure your display supports color table adjustments but the app does not detect the capability.</source>
+        <target state="translated">ディスプレイがカラーテーブル調整をサポートしていることは確かだが、アプリケーションがその機能を検出しない場合にのみ使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Use lighter app menu fonts and icons" xml:space="preserve">
@@ -5468,11 +5533,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Use zero to disable transition animation." xml:space="preserve">
         <source>Use zero to disable transition animation.</source>
         <target state="translated">0で遷移アニメーションを無効化</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled." xml:space="preserve">
-        <source>Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled.</source>
-        <target state="translated">色温度サポートが有効な新しいバージョンのドライバを使用しているDisplayLink接続モニタに便利です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
@@ -5637,7 +5697,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100% brightness is inserted." xml:space="preserve">
         <source>When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100% brightness is inserted.</source>
-        <target state="translated">ハードウェア輝度コントロールが無効な状態でHDRアップスケーリングが有効な場合、ゼロとキャリブレーションされた最大アップスケール値との間の連続的な輝度スケールを使用します。このため、ニュートラル設定（画面上のHDR内容がクリップされていないときの輝度100%）は、OSDのチクレット範囲に収まらないことがあり、ショートカットキーで達成するのが難しくなります。この問題を解決するため、輝度100%に追加のチクレット中間ステップを挿入します。</target>
+        <target state="translated">ハードウェア輝度コントロールが無効な状態でHDRアップスケーリングが有効な場合、ゼロとキャリブレーションされた最大アップスケール値との間の連続的な輝度スケールを使用します。このため、ニュートラル設定（画面上のHDR内容がクリップされていないときの輝度100%）は、OSDのチクレット範囲に収まらないことがあり、ショートカットキーで達成することが難しくなります。この問題を解決するため、輝度100%に追加のチクレット中間ステップを挿入します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="When Settings is Open" xml:space="preserve">
@@ -5648,6 +5708,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">メニュー項目を展開するとき、指定されたデバイス/メニューブロックの、その他の項目を自動的に非表示にします。これはメニューを小さく保つのに役立ちます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness." xml:space="preserve">
+        <source>When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
@@ -5675,6 +5739,15 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">ウインドウの影</target>
         <note/>
       </trans-unit>
+      <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
+        <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
+        <target state="translated">このオプションを選択すると、追加のソフトウェア輝度コントロール機能を使わずApple製ディスプレイを接続しても、ネイティブの輝度キーをmacOSの制御下に置きます。しかしながらこの場合は、輝度キーのデフォルト動作を変更するさまざまな設定（「微細スケールをデフォルトにする」や「すべての適切な画面」を同時に制御するなど）は適用されません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Works only when an associated virtual screen is not set to follow the associated display's orientation" xml:space="preserve">
+        <source>Works only when an associated virtual screen is not set to follow the associated display's orientation</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC.</source>
         <target state="translated">複合輝度とDDCハードウェアコントロールを組み合わせた動作。ほとんどのディスプレイは、DDCによるバックライトのオン/オフに対応していません。</target>
@@ -5698,6 +5771,26 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="XDR Preset" xml:space="preserve">
         <source>XDR Preset</source>
         <target state="translated">XDR設定</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
+        <source>XDR brightness scale maximum</source>
+        <target state="translated">XDR輝度スケール最大</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR brightness scale minimum" xml:space="preserve">
+        <source>XDR brightness scale minimum</source>
+        <target state="translated">XDR輝度スケール最小</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
+        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display.</source>
+        <target state="translated">XDRディスプレイは、XDRプリセットを使用して、ディスプレイの色再現、ガンマ、ホワイトポイント設定を管理します。カラープロファイルは限られた範囲で影響しますが、工場出荷時のカラープロファイルがXDRディスプレイ用に設定されている場合に、XDRプロファイルは最も効果的に機能します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
+        <source>XDR/HDR Upscaling, Software Dimming</source>
+        <target state="translated">XDR/HDRアップスケーリング、ソフトウェアディミング</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
@@ -5740,9 +5833,13 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">オン/オフスイッチのデフォルトの意味は、設定/ディスプレイでオーバーライドできます。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
+        <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
         <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
-        <target state="translated">デバイスがアプリによって管理されているオーディオコントロールを持つ場合、macOSの音量OSDを隠したい場合があります。無効化できない独自の音量OSDを持つディスプレイに便利です。</target>
+        <target state="translated">デバイスがアプリによって管理されているオーディオコントロールを持つ場合、macOSの音量OSDを隠したいことがあります。無効化できない独自の音量OSDを持つディスプレイに便利です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Zoom" xml:space="preserve">
@@ -5805,6 +5902,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">ミリ秒</target>
         <note/>
       </trans-unit>
+      <trans-unit id="nits" xml:space="preserve">
+        <source>nits</source>
+        <target state="translated">ニト</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="seconds" xml:space="preserve">
         <source>seconds</source>
         <target state="translated">秒</target>
@@ -5850,6 +5952,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ EDIDデータの取得に失敗しました。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac." xml:space="preserve">
+        <source>⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac.</source>
+        <target state="translated">⚠️ AppleシリコンMacの内蔵ディスプレイでは、EDID操作が利用できないことがあります。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ For best results stick close to the display aspect ratio!" xml:space="preserve">
         <source>⚠️ For best results stick close to the display aspect ratio!</source>
         <target state="translated">⚠️ ディスプレイのアスペクト比に近づけると、最良の結果が得られます!</target>
@@ -5880,9 +5987,19 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ 範囲にもう少し余裕を持たせることをおすすめします!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Metal performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
+        <source>⚠️ Metal performance might be degraded on this device with integrated Intel GPU.</source>
+        <target state="translated">⚠️ Intel内蔵GPUのこのデバイスでは、Metalのパフォーマンスが低下することがあります。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
         <target state="translated">⚠️ 幅/高さの最小値は、最大値より小さくしてください!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
+        <source>⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled.</source>
+        <target state="translated">⚠️ このプラットフォーム（Intel）は、カラーテーブル調整が有効な場合、アップスケーリングに対応していません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Unable to enable DDC due to display or connection issues." xml:space="preserve">
@@ -5899,7 +6016,7 @@ You can dismiss this notification - in this case the changes will be applied whe
   </file>
   <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">

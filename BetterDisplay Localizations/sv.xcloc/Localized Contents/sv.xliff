@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="sv" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
@@ -25,7 +25,7 @@
   </file>
   <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="sv" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -86,6 +86,11 @@
         <target state="translated">%@ Pro är Aktiv</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
+        <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
+        <target state="translated">%@ kunde inte hitta någon skärm. Detta kan indikera ett fel i programmet eller datorn.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -114,6 +119,10 @@
       <trans-unit id="%@x%@%@ %@ %lld%@" xml:space="preserve">
         <source>%@x%@%@ %@ %lld%@</source>
         <target state="translated">%@x%@%@ %@ %lld%@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lf" xml:space="preserve">
+        <source>%lf</source>
         <note/>
       </trans-unit>
       <trans-unit id="%lld" xml:space="preserve">
@@ -171,6 +180,10 @@
         <target state="translated">-</target>
         <note/>
       </trans-unit>
+      <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
+        <source>1:1 Pixel Mapping</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="100" xml:space="preserve">
         <source>100</source>
         <target state="translated">100</target>
@@ -181,8 +194,20 @@
         <target state="translated">@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A controllable display is present" xml:space="preserve">
+        <source>A controllable display is present</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
+        <source>A display is present which is not fully controllable without the app</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays." xml:space="preserve">
         <source>A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting." xml:space="preserve">
+        <source>A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app." xml:space="preserve">
@@ -233,8 +258,8 @@
         <target state="translated">Hjälpmedel konfigurerade - Omstart av programmet krävs</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart BetterDisplay&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart BetterDisplay" button below to restart the app immediately!</source>
+      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
@@ -258,6 +283,10 @@
       </trans-unit>
       <trans-unit id="Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." xml:space="preserve">
+        <source>Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
@@ -334,11 +363,6 @@
         <target state="translated">Justeringar kan klippa av HDR-innehåll!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Advanced color table and upscaling settings" xml:space="preserve">
-        <source>Advanced color table and upscaling settings</source>
-        <target state="translated">Avancerade inställningar för färgtabell och uppskalning</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
         <source>Advanced control settings</source>
         <target state="translated">Inställningar för avancerade kontroller</target>
@@ -352,6 +376,10 @@
       <trans-unit id="Advanced settings &amp; privacy" xml:space="preserve">
         <source>Advanced settings &amp; privacy</source>
         <target state="translated">Avancerade inställningar och integritet</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
+        <source>Advanced upscaling and software dimming settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced virtual screen settings" xml:space="preserve">
@@ -403,8 +431,12 @@ You can do this in System Settings or the app can do it for you (administrator c
         <source>Allow auto brightness when combined XDR brightness upscaling is used</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color adjustments (note: turn this off for compatibility mode)</source>
+      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
+        <source>Allow combined brightness in native XDR upscaling mode</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow disconnecting all connected displays" xml:space="preserve">
@@ -418,6 +450,10 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allow disconnecting the built-in display of the iMac" xml:space="preserve">
         <source>Allow disconnecting the built-in display of the iMac</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow native XDR brightness upscaling" xml:space="preserve">
+        <source>Allow native XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -512,17 +548,8 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">Ett fel inträffade vid skapandet av virtuella skärmen</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.
-
-If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">En äldre förutgåva av BetterDisplay var installerad på denna dator. Uppgradering till den aktuella versionen kräver att alla programinställningar nollställs.
-
-Om du inte vill fortsätta så nedgradera till den äldre förutgåvan!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.
+      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
+        <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
 You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
         <note/>
@@ -547,6 +574,10 @@ You should exit the other app or disable `Allow color adjustments` under Setting
       </trans-unit>
       <trans-unit id="App should assume control over native audio keys when" xml:space="preserve">
         <source>App should assume control over native audio keys when</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="App should assume control over native brightness keys when" xml:space="preserve">
+        <source>App should assume control over native brightness keys when</source>
         <note/>
       </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
@@ -638,6 +669,10 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Tillämpa upplösningsfavorit 5</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
+        <source>Are sure you want to quit the app?</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like smooth scaling, custom resolutions." xml:space="preserve">
         <source>Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like smooth scaling, custom resolutions.</source>
         <note/>
@@ -692,9 +727,15 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Antag senast använda eller standardvärden är giltiga</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Attempts to directly read the EDID data from the display.%@" xml:space="preserve">
-        <source>Attempts to directly read the EDID data from the display.%@</source>
-        <target state="translated">Försöker att direkt läsa EDID-data från skärmen.%@</target>
+      <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">Försöker att direkt läsa EDID-data från skärmen.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
+
+Specifying read length is optional - leave the field empty for autodetect.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -739,6 +780,10 @@ AliPay tillgänglig i Kina.</target>
       <trans-unit id="Automatic (based on display type)" xml:space="preserve">
         <source>Automatic (based on display type)</source>
         <target state="translated">Automatiskt (baserat på skärmtyp)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically activate native XDR Upscaling" xml:space="preserve">
+        <source>Automatically activate native XDR Upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
@@ -821,34 +866,12 @@ AliPay tillgänglig i Kina.</target>
         <source>Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="BetterDisplay" xml:space="preserve">
-        <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="BetterDisplay is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
-        <source>BetterDisplay is unable to detect any display. This might indicate an application or system error.</source>
-        <target state="translated">BetterDisplay kunde inte hitta någon skärm. Detta kan indikera ett fel i programmet eller datorn.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
         <source>Blue Black Level (DDC)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Blue Gain (DDC)" xml:space="preserve">
         <source>Blue Gain (DDC)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Gamma" xml:space="preserve">
-        <source>Blue Gamma</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Black Level" xml:space="preserve">
-        <source>Blue Hardware Black Level</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Gain" xml:space="preserve">
-        <source>Blue Hardware Gain</source>
         <note/>
       </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
@@ -860,8 +883,8 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Visa kort Dock-ikonen vid uppstart</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment." xml:space="preserve">
-        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment.</source>
+      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
+        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness" xml:space="preserve">
@@ -874,14 +897,42 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Ljusstyrka (Apple)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Combined)" xml:space="preserve">
+        <source>Brightness (Combined)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Combined, Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Software Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (DDC)" xml:space="preserve">
         <source>Brightness (DDC)</source>
         <target state="translated">Ljusstyrka (DDC)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Metal)" xml:space="preserve">
+        <source>Brightness (Metal)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
+        <source>Brightness (Native XDR Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (Overlay)" xml:space="preserve">
         <source>Brightness (Overlay)</source>
         <target state="translated">Ljusstyrka (Overlay)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Software Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Software)" xml:space="preserve">
@@ -915,11 +966,6 @@ AliPay tillgänglig i Kina.</target>
       </trans-unit>
       <trans-unit id="Built-in Display" xml:space="preserve">
         <source>Built-in Display</source>
-        <target state="translated">Inbyggd skärm</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Built-in display" xml:space="preserve">
-        <source>Built-in display</source>
         <target state="translated">Inbyggd skärm</target>
         <note/>
       </trans-unit>
@@ -974,8 +1020,8 @@ AliPay tillgänglig i Kina.</target>
         <source>Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Check For Updates" xml:space="preserve">
-        <source>Check For Updates</source>
+      <trans-unit id="Check for Updates" xml:space="preserve">
+        <source>Check for Updates</source>
         <target state="translated">Leta efter uppdateringar</target>
         <note/>
       </trans-unit>
@@ -1012,17 +1058,13 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Konfiguration av färgprofil</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Table Adjustments, XDR/HDR Upscaling" xml:space="preserve">
-        <source>Color Table Adjustments, XDR/HDR Upscaling</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">Färgtemperatur</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
-        <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
+      <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
+        <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1043,25 +1085,25 @@ AliPay tillgänglig i Kina.</target>
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined Brightness" xml:space="preserve">
-        <source>Combined Brightness</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
-        <source>Combined XDR/HDR upscaling maximum scale value</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
         <target state="translated">Kombinerad ljusstyrka</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness - XDR/HDR upscaling maximum scale value" xml:space="preserve">
+        <source>Combined brightness - XDR/HDR upscaling maximum scale value</source>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness - minimum allowed hardware brightness level" xml:space="preserve">
         <source>Combined brightness - minimum allowed hardware brightness level</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
-        <source>Combined brightness software dimming switchover point</source>
+      <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
+        <source>Combined brightness - software dimming switchover point</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
+        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -1213,10 +1255,6 @@ AliPay tillgänglig i Kina.</target>
       <trans-unit id="Contrast (DDC)" xml:space="preserve">
         <source>Contrast (DDC)</source>
         <target state="translated">Kontrast (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Control" xml:space="preserve">
-        <source>Control</source>
         <note/>
       </trans-unit>
       <trans-unit id="Copy" xml:space="preserve">
@@ -1375,8 +1413,8 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Anpassat bildförhållande</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Custom displayed icon SF Symbol name:" xml:space="preserve">
-        <source>Custom displayed icon SF Symbol name:</source>
+      <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
+        <source>Custom displayed icon SF Symbol name</source>
         <note/>
       </trans-unit>
       <trans-unit id="Custom displayed name" xml:space="preserve">
@@ -1637,6 +1675,14 @@ AliPay tillgänglig i Kina.</target>
         <source>Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black." xml:space="preserve">
+        <source>Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
+        <source>Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Delay between commands" xml:space="preserve">
         <source>Delay between commands</source>
         <target state="translated">Fördröjning mellan kommandon</target>
@@ -1833,9 +1879,8 @@ AliPay tillgänglig i Kina.</target>
         <target state="translated">Frånkopplad</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Disconnected%@" xml:space="preserve">
-        <source>Disconnected%@</source>
-        <target state="translated">Frånkopplad%@</target>
+      <trans-unit id="Disconnected (with sleep)" xml:space="preserve">
+        <source>Disconnected (with sleep)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnecting Displays" xml:space="preserve">
@@ -1986,11 +2031,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Koppla inte ifrån</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Nothing" xml:space="preserve">
-        <source>Do Nothing</source>
-        <target state="translated">Gör ingenting</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">Tillämpa inte på den inbyggda skärmen</target>
@@ -2090,8 +2130,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">EDID-version</target>
         <note/>
       </trans-unit>
-      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@" xml:space="preserve">
-        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@</source>
+      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
+        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Edit" xml:space="preserve">
@@ -2165,11 +2205,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Aktivera HDR-läge</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable HDR brightness upscaling" xml:space="preserve">
-        <source>Enable HDR brightness upscaling</source>
-        <target state="translated">Aktivera uppskalning av HDR-ljusstyrka</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable HiDPI resolutions" xml:space="preserve">
         <source>Enable HiDPI resolutions</source>
         <target state="translated">Aktivera HiDPI-upplösningar</target>
@@ -2185,14 +2220,12 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Aktivera True Tone</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable XDR brightness upscaling" xml:space="preserve">
-        <source>Enable XDR brightness upscaling</source>
-        <target state="translated">Aktivera XDR-uppskalning av ljusstyrka</target>
+      <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
+        <source>Enable by selecting "%@" under the XDR Preset menu.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable color adjustments" xml:space="preserve">
-        <source>Enable color adjustments</source>
-        <target state="translated">Aktivera färgjusteringar</target>
+      <trans-unit id="Enable color table adjustments" xml:space="preserve">
+        <source>Enable color table adjustments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
@@ -2232,8 +2265,20 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Aktivera mjuk skalning</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
-        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software HDR brightness upscaling (if available)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable software XDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software XDR brightness upscaling (if available)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software-based video adjustments" xml:space="preserve">
@@ -2243,6 +2288,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well." xml:space="preserve">
         <source>Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enables native XDR brightness upscaling and extended dimming for this display." xml:space="preserve">
+        <source>Enables native XDR brightness upscaling and extended dimming for this display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and native smooth scaling. Using 8K+ virtual screens might cause stability issues. Native smooth scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
@@ -2323,8 +2372,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>For easier identification of slider functionality.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Force support for color table manipulation" xml:space="preserve">
-        <source>Force support for color table manipulation</source>
+      <trans-unit id="Force support for color table adjustments" xml:space="preserve">
+        <source>Force support for color table adjustments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -2361,6 +2410,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Helskärmsström</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full display sleep mode is not available on Intel Macs." xml:space="preserve">
+        <source>Full display sleep mode is not available on Intel Macs.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full screen streams looks best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams looks best when the target display is set to its native resolution.</source>
         <target state="translated">Helskärmsströmmar ser bäst ut när målskärmen är inställd till dess inbyggda upplösning.</target>
@@ -2369,6 +2422,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Fully dim display on disconnect" xml:space="preserve">
         <source>Fully dim display on disconnect</source>
         <target state="translated">Fullständig neddimmning vid frånkoppling</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." xml:space="preserve">
+        <source>Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Gain" xml:space="preserve">
@@ -2400,9 +2457,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Allmänna inställningar</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Get BetterDisplay Pro" xml:space="preserve">
-        <source>Get BetterDisplay Pro</source>
-        <target state="translated">Få BetterDisplay Pro</target>
+      <trans-unit id="Get %@ Pro" xml:space="preserve">
+        <source>Get %@ Pro</source>
+        <target state="translated">Få %@ Pro</target>
         <note/>
       </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
@@ -2411,18 +2468,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Gamma" xml:space="preserve">
-        <source>Green Gamma</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Black Level" xml:space="preserve">
-        <source>Green Hardware Black Level</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Gain" xml:space="preserve">
-        <source>Green Hardware Gain</source>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2452,14 +2497,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="HTTP server is currently running and listening for commands on port %@." xml:space="preserve">
         <source>HTTP server is currently running and listening for commands on port %@.</source>
         <target state="translated">HTTP-server körs för närvarande och lyssnar efter kommandon på port %@.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Brightness" xml:space="preserve">
-        <source>Hardware Brightness</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Contrast" xml:space="preserve">
-        <source>Hardware Contrast</source>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
@@ -2560,6 +2597,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>If configured, the token must be specified in the URL (see [documentation](https://betterdisplay.pro/integration)). This prevents external links to perform unwanted actions.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="If disabled, Quit %@ is listed in the Tools menu." xml:space="preserve">
+        <source>If disabled, Quit %@ is listed in the Tools menu.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
         <note/>
@@ -2576,8 +2617,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>If the menu icon is hidden, you can reveal the icon by re-launching the app while the app is already running.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session." xml:space="preserve">
-        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session.</source>
+      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
+        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
@@ -2629,8 +2670,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Öka kontrast - fin skala</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
-        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
+      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
@@ -2664,10 +2705,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Integration (Experimental)" xml:space="preserve">
-        <source>Integration (Experimental)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Integration settings" xml:space="preserve">
@@ -2847,8 +2884,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Läs in EDID-data...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
-        <source>Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
+      <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
+        <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -3007,6 +3044,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Menysynlighet</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Metal device" xml:space="preserve">
+        <source>Metal device</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Min HW" xml:space="preserve">
         <source>Min HW</source>
         <target state="translated">Min hårdvara</target>
@@ -3134,6 +3175,18 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Native XDR Upscaling" xml:space="preserve">
+        <source>Native XDR Upscaling</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
+        <source>Native XDR brightness upscaling settings</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Native XDR upscaling is active. Deactivate it under the XDR Preset menu." xml:space="preserve">
+        <source>Native XDR upscaling is active. Deactivate it under the XDR Preset menu.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
         <source>Native audio key settings</source>
         <note/>
@@ -3169,10 +3222,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">Konfiguration för ny virtuell skärm</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Night Shift" xml:space="preserve">
-        <source>Night Shift</source>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3295,6 +3344,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>OSD</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later." xml:space="preserve">
+        <source>Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="On startup &amp; wake" xml:space="preserve">
         <source>On startup &amp; wake</source>
         <target state="translated">Vid uppstart/uppvaknande</target>
@@ -3409,6 +3462,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Portrait 270° (Sidecar port up)</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Potential EDR" xml:space="preserve">
+        <source>Potential EDR</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Potentially DDC compatible" xml:space="preserve">
         <source>Potentially DDC compatible</source>
         <target state="translated">Möjligen DDC-kompatibel</target>
@@ -3487,14 +3544,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Tillhandahåller ytterligare användbara skärmlägen för vissa konfigurationer.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Quit" xml:space="preserve">
-        <source>Quit</source>
-        <target state="translated">Avsluta</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
         <source>Quit %@</source>
         <target state="translated">Avsluta %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quit App…" xml:space="preserve">
+        <source>Quit App…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Quit the app" xml:space="preserve">
@@ -3581,21 +3637,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Red Gain (DDC)</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Red Gamma" xml:space="preserve">
-        <source>Red Gamma</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Black Level" xml:space="preserve">
-        <source>Red Hardware Black Level</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Gain" xml:space="preserve">
-        <source>Red Hardware Gain</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Redetect Displays" xml:space="preserve">
         <source>Redetect Displays</source>
         <target state="translated">Återupptäck skärmar</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reference EDR" xml:space="preserve">
+        <source>Reference EDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh Rate" xml:space="preserve">
@@ -3722,11 +3770,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Nollställ menylayout...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Settings" xml:space="preserve">
-        <source>Reset Settings</source>
-        <target state="translated">Nollställ inställningar</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset Values" xml:space="preserve">
         <source>Reset Values</source>
         <target state="translated">Nollställ värden</target>
@@ -3798,14 +3841,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Starta om</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Restart %@" xml:space="preserve">
+        <source>Restart %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Restart App…" xml:space="preserve">
         <source>Restart App…</source>
         <target state="translated">Starta om programmet...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Restart BetterDisplay" xml:space="preserve">
-        <source>Restart BetterDisplay</source>
-        <target state="translated">Starta om BetterDisplay</target>
         <note/>
       </trans-unit>
       <trans-unit id="Restart the app" xml:space="preserve">
@@ -3906,8 +3948,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Rotera skärm med 270°</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Rotate the display (flip width and height). %@" xml:space="preserve">
-        <source>Rotate the display (flip width and height). %@</source>
+      <trans-unit id="Rotate the display (flip width and height)." xml:space="preserve">
+        <source>Rotate the display (flip width and height).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Rotated Orientation" xml:space="preserve">
@@ -3979,8 +4021,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Skärmrotation%@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@" xml:space="preserve">
-        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@</source>
+      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock." xml:space="preserve">
+        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Screen with the mouse pointer" xml:space="preserve">
@@ -4110,17 +4152,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Settings Reset Required" xml:space="preserve">
-        <source>Settings Reset Required</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
         <source>Settings made with the app are protected.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Show BetterDisplay in the macOS Dock" xml:space="preserve">
-        <source>Show BetterDisplay in the macOS Dock</source>
-        <target state="translated">Visa BetterDisplay i macOS Dock</target>
+      <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
+        <source>Show %@ in the macOS Dock</source>
+        <target state="translated">Visa %@ i macOS Dock</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -4128,16 +4166,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Visa muspekare</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show OSD" xml:space="preserve">
-        <source>Show OSD</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
         <source>Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
-        <source>Show OSD when using a keyboard shortcut. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show OSD when using any other keyboard shortcut (besides brightness, volume, mute). Disable this if you don't want custom OSDs to appear or when a third party OSD presentation app is being used instead." xml:space="preserve">
@@ -4146,6 +4176,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show PIP menu when only a single display is connected" xml:space="preserve">
         <source>Show PIP menu when only a single display is connected</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Quit %@ in the bottom button bar" xml:space="preserve">
+        <source>Show Quit %@ in the bottom button bar</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
@@ -4192,8 +4226,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Visa detaljer</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@" xml:space="preserve">
-        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@</source>
+      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
+        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show display modes marked as unsafe or invalid" xml:space="preserve">
@@ -4247,6 +4281,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Show subsliders for combined brightness control</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
+        <source>Show warning notifications about color table anomalies</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line.</source>
         <note/>
@@ -4285,10 +4323,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Smooth transitions</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Software Brightness" xml:space="preserve">
-        <source>Software Brightness</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
         <source>Software control</source>
         <note/>
@@ -4303,10 +4337,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
         <source>Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Some macOS versions disallow the use of the HiDPI variant of the native resolution. This setting adds a near-native mode with 1px vertical row removed as a substitute." xml:space="preserve">
-        <source>Some macOS versions disallow the use of the HiDPI variant of the native resolution. This setting adds a near-native mode with 1px vertical row removed as a substitute.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -4401,6 +4431,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Stöds av skärmen</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Supports Color Profiles" xml:space="preserve">
+        <source>Supports Color Profiles</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Supports HDR" xml:space="preserve">
+        <source>Supports HDR</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Supports XDR presets" xml:space="preserve">
         <source>Supports XDR presets</source>
         <target state="translated">Stöd för XDR-förval</target>
@@ -4489,10 +4527,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Television</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Temperature" xml:space="preserve">
-        <source>Temperature</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD)." xml:space="preserve">
         <source>The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD).</source>
         <note/>
@@ -4515,8 +4549,8 @@ Virtual screens are not connected automatically, brightness and other adjustment
         <source>The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the raw display name." xml:space="preserve">
-        <source>The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the raw display name.</source>
+      <trans-unit id="The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name." xml:space="preserve">
+        <source>The app menu will show this name instead of the system name in the app menu for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app normally does not restore full dimming upon wake or app startup to avoid confusion." xml:space="preserve">
@@ -4533,16 +4567,16 @@ Please open the app in native mode - to achieve this, unselect "Open using Roset
         <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold SHIFT on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The app will forget all stored DDC values and treat all controls and untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
-        <source>The app will forget all stored DDC values and treat all controls and untouched. Sliders will revert to default neutral values.
+      <trans-unit id="The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
+        <source>The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.
 
 This operation does not reset the display itself.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected.&#10;&#10;If you connect the built-in display, this setting will be turned off. You can enable it again under Settings &gt; Advanced." xml:space="preserve">
+      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected.&#10;&#10;If you connect the built-in display, this setting will be turned off. You can enable it again under Displays &gt; Overview &gt; Connection management settings." xml:space="preserve">
         <source>The built-in display is configured to be disconnected when an external display is connected.
 
-If you connect the built-in display, this setting will be turned off. You can enable it again under Settings &gt; Advanced.</source>
+If you connect the built-in display, this setting will be turned off. You can enable it again under Displays &gt; Overview &gt; Connection management settings.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The built-in display of the iMac cannot be easily reconnected (lack of display cable, closable lid) in case of an application failure. Enable this setting with extra caution!" xml:space="preserve">
@@ -4612,8 +4646,8 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>Third-party external display</source>
         <note/>
       </trans-unit>
-      <trans-unit id="This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." xml:space="preserve">
-        <source>This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use.</source>
+      <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
+        <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
@@ -4630,6 +4664,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
 Please note that not all displays support DDC power operations and some displays may not behave as expected. If you power off your display, you will have to power it back on manually.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty." xml:space="preserve">
+        <source>This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. &#10;&#10;Please try again once the permissions are granted!" xml:space="preserve">
         <source>This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. 
 
@@ -4640,8 +4678,8 @@ Please try again once the permissions are granted!</source>
         <source>This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if smooth scaling resolutions seem to be missing.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
-        <source>This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
+      <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
+        <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -4694,8 +4732,8 @@ Please note that previously stored custom display configurations won't be remove
         <source>This should match the physical resolution of the display panel (actual number of pixels vertically and horizontally).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="This should remove displays from the display layout and make compatible systems enter standby mode.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain turned off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
-        <source>This should remove displays from the display layout and make compatible systems enter standby mode.
+      <trans-unit id="This should remove displays from the display layout and make them enter standby mode on compatible systems.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain turned off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
+        <source>This should remove displays from the display layout and make them enter standby mode on compatible systems.
 
 Some displays are not compatible with this feature and may not turn off or remain turned off.
 
@@ -4956,6 +4994,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Okänd skärm</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
+        <source>Unlock Color Profile management for XDR displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
         <source>Unmute (DDC)</source>
         <note/>
@@ -4991,9 +5033,17 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Uppdateringar</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
+        <source>Use Metal for image adjustments</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use custom resolution list" xml:space="preserve">
         <source>Use custom resolution list</source>
         <target state="translated">Använd anpassad upplösningslista</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use if you are sure your display supports color table adjustments but the app does not detect the capability." xml:space="preserve">
+        <source>Use if you are sure your display supports color table adjustments but the app does not detect the capability.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Use lighter app menu fonts and icons" xml:space="preserve">
@@ -5018,10 +5068,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Use zero to disable transition animation." xml:space="preserve">
         <source>Use zero to disable transition animation.</source>
         <target state="translated">Använd noll för att inaktivera övergångsanimering.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled." xml:space="preserve">
-        <source>Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
@@ -5185,6 +5231,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness." xml:space="preserve">
+        <source>When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">När volymen når 0%...</target>
@@ -5210,6 +5260,14 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Fönsterskugga</target>
         <note/>
       </trans-unit>
+      <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
+        <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Works only when an associated virtual screen is not set to follow the associated display's orientation" xml:space="preserve">
+        <source>Works only when an associated virtual screen is not set to follow the associated display's orientation</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC.</source>
         <note/>
@@ -5231,6 +5289,22 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="XDR Preset" xml:space="preserve">
         <source>XDR Preset</source>
         <target state="translated">XDR-förval</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
+        <source>XDR brightness scale maximum</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR brightness scale minimum" xml:space="preserve">
+        <source>XDR brightness scale minimum</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
+        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
+        <source>XDR/HDR Upscaling, Software Dimming</source>
         <note/>
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
@@ -5266,6 +5340,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can override the default meaning of the on/off switch under Settings/Displays." xml:space="preserve">
         <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
+        <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
@@ -5332,6 +5410,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">millisekunder</target>
         <note/>
       </trans-unit>
+      <trans-unit id="nits" xml:space="preserve">
+        <source>nits</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="seconds" xml:space="preserve">
         <source>seconds</source>
         <target state="translated">sekunder</target>
@@ -5376,6 +5458,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ Hämtning av EDID-data misslyckades.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac." xml:space="preserve">
+        <source>⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ For best results stick close to the display aspect ratio!" xml:space="preserve">
         <source>⚠️ For best results stick close to the display aspect ratio!</source>
         <note/>
@@ -5400,8 +5486,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>⚠️ It is recommended to have some more leeway in the range!</source>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Metal performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
+        <source>⚠️ Metal performance might be degraded on this device with integrated Intel GPU.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
+        <source>⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Unable to enable DDC due to display or connection issues." xml:space="preserve">
@@ -5418,7 +5512,7 @@ You can dismiss this notification - in this case the changes will be applied whe
   </file>
   <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="sv" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C5500c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
