@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="ro" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5178i"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
@@ -25,7 +25,7 @@
   </file>
   <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="ro" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5178i"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -86,6 +86,10 @@
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro este Activ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
+        <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
@@ -202,6 +206,10 @@
       <trans-unit id="A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays." xml:space="preserve">
         <source>A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays.</source>
         <target state="translated">O rezoluție de desktop mai mică de 720p nu este ideală pentru utilizarea macOS, deoarece elementele GUI s-ar putea să nu se potrivească. Acest lucru afectează ecranele virtuale, precum și cursorul de rezoluție pentru ecrane.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting." xml:space="preserve">
+        <source>A pop-up notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app." xml:space="preserve">
@@ -373,11 +381,6 @@
         <target state="translated">Ajustările pot tăia conținutul HDR!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Advanced color table and upscaling settings" xml:space="preserve">
-        <source>Advanced color table and upscaling settings</source>
-        <target state="translated">Tabelul de culori avansat și setările de mărire</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
         <source>Advanced control settings</source>
         <target state="translated">Setări de control avansate</target>
@@ -391,6 +394,10 @@
       <trans-unit id="Advanced settings &amp; privacy" xml:space="preserve">
         <source>Advanced settings &amp; privacy</source>
         <target state="translated">Setări avansate și confidențialitate</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
+        <source>Advanced upscaling and software dimming settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced virtual screen settings" xml:space="preserve">
@@ -441,11 +448,6 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allow auto brightness when combined XDR brightness upscaling is used" xml:space="preserve">
         <source>Allow auto brightness when combined XDR brightness upscaling is used</source>
         <target state="translated">Permiteți luminozitatea automată atunci când este utilizată scalarea luminozității XDR combinată</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Allow color adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color adjustments (note: turn this off for compatibility mode)</source>
-        <target state="translated">Permiteți ajustările de culoare (notă: dezactivați aceasta opțiune pentru modul de compatibilitate)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
@@ -570,18 +572,11 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">A apărut o eroare în timpul creării ecranului virtual.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.&#10;&#10;If you do not wish to proceed, please downgrade to the older pre-release!" xml:space="preserve">
-        <source>An older pre-release version of BetterDisplay was installed on this system. Upgrading to the current version requires all app settings to reset.
-
-If you do not wish to proceed, please downgrade to the older pre-release!</source>
-        <target state="translated">Pe acest sistem a fost instalată o versiune mai veche pre-release a BetterDisplay. Actualizarea la versiunea curentă necesită resetarea tuturor setărilor aplicației.\n\nDacă nu doriți să continuați, vă rugăm să reveniți la versiunea mai veche pre-release!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>Another app repeatedly altered screen colors or brightness - this clashes with what BetterDisplay is doing.
+      <trans-unit id="Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.&#10;&#10;You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
+        <source>Another app repeatedly altered screen colors or brightness - this clashes with what %@ is doing.
 
 You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
-        <target state="translated">O altă aplicație a modificat repetat culorile sau luminozitatea ecranului - acest lucru intră în conflict cu ceea ce face BetterDisplay.\n\nAr trebui să închideți cealaltă aplicație sau să dezactivați Permiteți ajustări de culoare în Setări/Ecrane pentru a remedia această problemă!</target>
+        <target state="translated">O altă aplicație a modificat repetat culorile sau luminozitatea ecranului - acest lucru intră în conflict cu ceea ce face %@.\n\nAr trebui să închideți cealaltă aplicație sau să dezactivați Permiteți ajustări de culoare în Setări/Ecrane pentru a remedia această problemă!</target>
         <note/>
       </trans-unit>
       <trans-unit id="App Menu" xml:space="preserve">
@@ -760,9 +755,15 @@ AliPay available in China.</source>
         <target state="translated">Presupune că ultimele valori utilizate sau valorile implicite sunt valide</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Attempts to directly read the EDID data from the display.%@" xml:space="preserve">
-        <source>Attempts to directly read the EDID data from the display.%@</source>
-        <target state="translated">Încercări de a citi direct datele EDID de pe ecran.%@</target>
+      <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">Încercări de a citi direct datele EDID de pe ecran.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
+        <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
+
+Specifying read length is optional - leave the field empty for autodetect.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -902,16 +903,6 @@ AliPay available in China.</source>
         <target state="translated">Sub acest nivel pe scara de luminozitate combinată, aplicația utilizează  suplimentar software dimming-ul (deoarece controlul backlight-ului hardware a atins cel mai mic nivel posibil).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="BetterDisplay" xml:space="preserve">
-        <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="BetterDisplay is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
-        <source>BetterDisplay is unable to detect any display. This might indicate an application or system error.</source>
-        <target state="translated">BetterDisplay nu poate detecta niciun ecran. Acest lucru poate indica o eroare a aplicației sau a sistemului.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
         <source>Blue Black Level (DDC)</source>
         <target state="translated">Nivel negru albastru (DDC)</target>
@@ -920,18 +911,6 @@ AliPay available in China.</source>
       <trans-unit id="Blue Gain (DDC)" xml:space="preserve">
         <source>Blue Gain (DDC)</source>
         <target state="translated">Câștig albastru (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Gamma" xml:space="preserve">
-        <source>Blue Gamma</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Black Level" xml:space="preserve">
-        <source>Blue Hardware Black Level</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Blue Hardware Gain" xml:space="preserve">
-        <source>Blue Hardware Gain</source>
         <note/>
       </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
@@ -943,13 +922,12 @@ AliPay available in China.</source>
         <source>Briefly show Dock icon on startup</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment." xml:space="preserve">
-        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via color table adjustment.</source>
-        <target state="translated">Afișează pentru un timp scurt o săgeată în sus (scalare XDR/HDR) sau în jos (întunecare prin software) în OSD atunci când se întâmplă întunecarea suplimentară sau scalarea luminozității prin ajustarea tabelului de culori</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
         <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brighten Displays" xml:space="preserve">
+        <source>Brighten Displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness" xml:space="preserve">
@@ -966,13 +944,29 @@ AliPay available in China.</source>
         <source>Brightness (Combined)</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Combined, Metal Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Software Upscaling)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (DDC)" xml:space="preserve">
         <source>Brightness (DDC)</source>
         <target state="translated">Luminozitate (DDC)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Hardware)" xml:space="preserve">
+        <source>Brightness (Hardware)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (Metal Upscaling)" xml:space="preserve">
         <source>Brightness (Metal Upscaling)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Metal)" xml:space="preserve">
+        <source>Brightness (Metal)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
@@ -1019,11 +1013,6 @@ AliPay available in China.</source>
       </trans-unit>
       <trans-unit id="Built-in Display" xml:space="preserve">
         <source>Built-in Display</source>
-        <target state="translated">Ecran încorporat</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Built-in display" xml:space="preserve">
-        <source>Built-in display</source>
         <target state="translated">Ecran încorporat</target>
         <note/>
       </trans-unit>
@@ -1082,8 +1071,8 @@ AliPay available in China.</source>
         <target state="translated">Schimbarea acestei setări nu afectează ecranele cunoscute existente. Metoda de identificare a ecranului poate fi schimbată pe o bază de ecran în submeniul de setări suplimentare al fiecărui ecran.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Check For Updates" xml:space="preserve">
-        <source>Check For Updates</source>
+      <trans-unit id="Check for Updates" xml:space="preserve">
+        <source>Check for Updates</source>
         <target state="translated">Verificare Actualizări</target>
         <note/>
       </trans-unit>
@@ -1120,19 +1109,9 @@ AliPay available in China.</source>
         <source>Color Profile Configuration</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Table Adjustments, XDR/HDR Upscaling" xml:space="preserve">
-        <source>Color Table Adjustments, XDR/HDR Upscaling</source>
-        <target state="translated">Ajustări Tabel de Culori, Upscaling XDR/HDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">Temperatura Culorii</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
-        <source>Color adjustments and software dimming clip HDR content, so the app resets colors when no adjustments needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">Ajustările de culoare și întunecarea software clipesc conținutul HDR, astfel încât aplicația resetează culorile atunci când nu sunt necesare ajustări. Acest lucru poate fi deranjant sau poate cauza un ecran negru în unele configurații.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
@@ -1159,18 +1138,14 @@ AliPay available in China.</source>
         <target state="translated">Combinați controlul hardware al luminozității (dacă este disponibil), întunecarea software și upscaling XDR/HDR într-un control unificat al luminozității.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined Brightness" xml:space="preserve">
-        <source>Combined Brightness</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Combined XDR/HDR upscaling maximum scale value" xml:space="preserve">
-        <source>Combined XDR/HDR upscaling maximum scale value</source>
-        <target state="translated">Valoarea maximă de scalare combinată XDR/HDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
         <target state="translated">Luminozitate combinată</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Combined brightness - XDR/HDR upscaling maximum scale value" xml:space="preserve">
+        <source>Combined brightness - XDR/HDR upscaling maximum scale value</source>
+        <target state="translated">Valoarea maximă de scalare combinată XDR/HDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness - minimum allowed hardware brightness level" xml:space="preserve">
@@ -1178,13 +1153,13 @@ AliPay available in China.</source>
         <target state="translated">Luminozitate combinată - nivelul minim permis al luminozității hardware</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
-        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
+      <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
+        <source>Combined brightness - software dimming switchover point</source>
+        <target state="translated">Punctul de comutare la software dimming a luminozității combinate</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Combined brightness software dimming switchover point" xml:space="preserve">
-        <source>Combined brightness software dimming switchover point</source>
-        <target state="translated">Punctul de comutare la software dimming a luminozității combinate</target>
+      <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
+        <source>Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum</source>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -1516,9 +1491,9 @@ AliPay available in China.</source>
         <target state="translated">Raport de aspect personalizat</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Custom displayed icon SF Symbol name:" xml:space="preserve">
-        <source>Custom displayed icon SF Symbol name:</source>
-        <target state="translated">Numele personalizat al pictogramei SF Symbol:</target>
+      <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
+        <source>Custom displayed icon SF Symbol name</source>
+        <target state="translated">Numele personalizat al pictogramei SF Symbol</target>
         <note/>
       </trans-unit>
       <trans-unit id="Custom displayed name" xml:space="preserve">
@@ -1853,6 +1828,10 @@ AliPay available in China.</source>
         <target state="translated">Determina dacă ecranul este prezentat în meniul aplicației</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Dim Displays" xml:space="preserve">
+        <source>Dim Displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Dim display brightness on screen saver or lock" xml:space="preserve">
         <source>Dim display brightness on screen saver or lock</source>
         <target state="translated">Reduce luminozitatea ecranului în screen saver sau ecranul de logare</target>
@@ -2022,9 +2001,8 @@ AliPay available in China.</source>
         <target state="translated">Deconectat</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Disconnected%@" xml:space="preserve">
-        <source>Disconnected%@</source>
-        <target state="translated">A fost deconectat %@</target>
+      <trans-unit id="Disconnected (with sleep)" xml:space="preserve">
+        <source>Disconnected (with sleep)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnecting Displays" xml:space="preserve">
@@ -2054,6 +2032,10 @@ AliPay available in China.</source>
       </trans-unit>
       <trans-unit id="Dispatch OSD notifications" xml:space="preserve">
         <source>Dispatch OSD notifications</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display" xml:space="preserve">
+        <source>Display</source>
         <note/>
       </trans-unit>
       <trans-unit id="Display Attributes" xml:space="preserve">
@@ -2188,10 +2170,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Nu Deconecta</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Nothing" xml:space="preserve">
-        <source>Do Nothing</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">Nu aplica ecranului intern</target>
@@ -2296,9 +2274,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Versiune EDID</target>
         <note/>
       </trans-unit>
-      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@" xml:space="preserve">
-        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.%@</source>
-        <target state="translated">EDID, sau Date de Identificare Extinsă a Ecranelor, este un standard pentru ecrane pentru a-și comunica capacitățile unui computer conectat, inclusiv rezoluția, formate video suportate, sincronizări și informații despre producător.%@"</target>
+      <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
+        <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
+        <target state="translated">EDID, sau Date de Identificare Extinsă a Ecranelor, este un standard pentru ecrane pentru a-și comunica capacitățile unui computer conectat, inclusiv rezoluția, formate video suportate, sincronizări și informații despre producător.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Edit" xml:space="preserve">
@@ -2380,11 +2358,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Activează Modul HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable HDR brightness upscaling" xml:space="preserve">
-        <source>Enable HDR brightness upscaling</source>
-        <target state="translated">Activează amplificarea luminozității HDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable HiDPI resolutions" xml:space="preserve">
         <source>Enable HiDPI resolutions</source>
         <target state="translated">Activează rezoluțiile HiDPI</target>
@@ -2400,18 +2373,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Activează True Tone</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable XDR brightness upscaling" xml:space="preserve">
-        <source>Enable XDR brightness upscaling</source>
-        <target state="translated">Activează amplificarea luminozității XDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
         <source>Enable by selecting "%@" under the XDR Preset menu.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable color adjustments" xml:space="preserve">
-        <source>Enable color adjustments</source>
-        <target state="translated">Activează ajustările de culoare</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable color table adjustments" xml:space="preserve">
@@ -2456,17 +2419,21 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Activează scalarea uniformă</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
-        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role%@. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">Activează scalarea uniformă, creați rezoluții personalizate scalate, modificați rezoluțiile native și implicite, schimbați numele și rolul ecranului%@. Vă rugăm să rețineți că toate ecranele cu același producător și număr de model sunt afectate de aceste modificări!</target>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
+        <source>Enable smooth scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
+        <target state="translated">Activează scalarea uniformă, creați rezoluții personalizate scalate, modificați rezoluțiile native și implicite, schimbați numele și rolul ecranului. Vă rugăm să rețineți că toate ecranele cu același producător și număr de model sunt afectate de aceste modificări!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
         <source>Enable software HDR brightness upscaling (if available)</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable software XDR brightness upscaling if available" xml:space="preserve">
-        <source>Enable software XDR brightness upscaling if available</source>
+      <trans-unit id="Enable software XDR brightness upscaling (if available)" xml:space="preserve">
+        <source>Enable software XDR brightness upscaling (if available)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software-based video adjustments" xml:space="preserve">
@@ -2477,6 +2444,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well." xml:space="preserve">
         <source>Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well.</source>
         <target state="translated">Activează schimbarea rezoluției la nivel înalt pentru țintele mirror. Permite și submeniurile pentru Rată de Reîmprospătare și Profunzimea Culorii.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enables native XDR brightness upscaling and extended dimming for this display." xml:space="preserve">
+        <source>Enables native XDR brightness upscaling and extended dimming for this display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and native smooth scaling. Using 8K+ virtual screens might cause stability issues. Native smooth scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
@@ -2529,6 +2500,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Moduri preferate:</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Feature" xml:space="preserve">
+        <source>Feature</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Feature Availability" xml:space="preserve">
         <source>Feature Availability</source>
         <target state="translated">Disponibilitatea funcției</target>
@@ -2568,11 +2543,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Force support for color table adjustments</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Force support for color table manipulation" xml:space="preserve">
-        <source>Force support for color table manipulation</source>
-        <target state="translated">Forțați suportul pentru manipularea tabelului de culori</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
         <source>Force-enable underscan slider</source>
         <note/>
@@ -2607,6 +2577,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Stream Pe Ecran Întreg</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full display sleep mode is not available on Intel Macs." xml:space="preserve">
+        <source>Full display sleep mode is not available on Intel Macs.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full screen streams looks best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams looks best when the target display is set to its native resolution.</source>
         <target state="translated">Streaming-ul pe ecran întreg arata cel mai bine când display-ul ținta este setat la rezoluția nativa.</target>
@@ -2624,6 +2598,18 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Gain" xml:space="preserve">
         <source>Gain</source>
         <target state="translated">Gain</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Gain (Blue)" xml:space="preserve">
+        <source>Gain (Blue)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Gain (Green)" xml:space="preserve">
+        <source>Gain (Green)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Gain (Red)" xml:space="preserve">
+        <source>Gain (Red)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Gamma" xml:space="preserve">
@@ -2651,9 +2637,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Setări generale</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Get BetterDisplay Pro" xml:space="preserve">
-        <source>Get BetterDisplay Pro</source>
-        <target state="translated">Cumparati BetterDisplay Pro</target>
+      <trans-unit id="Get %@ Pro" xml:space="preserve">
+        <source>Get %@ Pro</source>
+        <target state="translated">Cumparati %@ Pro</target>
         <note/>
       </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
@@ -2664,18 +2650,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
         <target state="translated">Gain Verde (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Gamma" xml:space="preserve">
-        <source>Green Gamma</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Black Level" xml:space="preserve">
-        <source>Green Hardware Black Level</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Green Hardware Gain" xml:space="preserve">
-        <source>Green Hardware Gain</source>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2704,14 +2678,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="HTTP server is currently running and listening for commands on port %@." xml:space="preserve">
         <source>HTTP server is currently running and listening for commands on port %@.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Brightness" xml:space="preserve">
-        <source>Hardware Brightness</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hardware Contrast" xml:space="preserve">
-        <source>Hardware Contrast</source>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
@@ -2845,9 +2811,9 @@ The process does not work for the built-in display (reboot needed). The operatio
 </target>
         <note/>
       </trans-unit>
-      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session." xml:space="preserve">
-        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, BetterDisplay preserves continuity between the old and new identity during the current app session.</source>
-        <target state="translated">Dacă EDID-ul actualizat conține o nouă identitate a ecranului (număr de serie, ID model, ID producător), macOS va trata ecranul ca un ecran separat. Cu această opțiune activată, BetterDisplay păstrează continuitatea între vechea și noua identitate în timpul sesiunii curente a aplicației.
+      <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
+        <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
+        <target state="translated">Dacă EDID-ul actualizat conține o nouă identitate a ecranului (număr de serie, ID model, ID producător), macOS va trata ecranul ca un ecran separat. Cu această opțiune activată, %@ păstrează continuitatea între vechea și noua identitate în timpul sesiunii curente a aplicației.
 </target>
         <note/>
       </trans-unit>
@@ -2897,6 +2863,10 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Crește luminozitatea - scara fină</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Increase brightness for all displays by some amount." xml:space="preserve">
+        <source>Increase brightness for all displays by some amount.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Increase contrast" xml:space="preserve">
         <source>Increase contrast</source>
         <target state="translated">Crește contrastul</target>
@@ -2905,11 +2875,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Increase contrast - fine scale" xml:space="preserve">
         <source>Increase contrast - fine scale</source>
         <target state="translated">Crește contrastul - scară fină</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode." xml:space="preserve">
-        <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode.</source>
-        <target state="translated">Crește luminozitatea ecranului peste 100%. Necesită un ecran Apple XDR sau un ecran extern compatibil HDR în modul HDR.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
@@ -2948,10 +2913,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Integration (Experimental)" xml:space="preserve">
-        <source>Integration (Experimental)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Integration settings" xml:space="preserve">
@@ -3150,9 +3111,9 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Încărcați datele EDID...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
-        <source>Load an EDID binary image exported by BetterDisplay (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
-        <target state="translated">Incarcați o imagine binară EDID exportată de BetterDisplay (sau alte instrumente). Puteți utiliza, de asemenea, o imagine binară EDID creată/modificată de un editor EDID, cum ar fi AW EDID Editor. Dacă aveți o reprezentare text Base64 a unei imagini EDID, utilizați butonul 'Lipiți Base64' pentru a o încărca."</target>
+      <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
+        <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
+        <target state="translated">Incarcați o imagine binară EDID exportată de %@ (sau alte instrumente). Puteți utiliza, de asemenea, o imagine binară EDID creată/modificată de un editor EDID, cum ar fi AW EDID Editor. Dacă aveți o reprezentare text Base64 a unei imagini EDID, utilizați butonul 'Lipiți Base64' pentru a o încărca."</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -3168,6 +3129,10 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Long press the mouse button to set and cycle through favorites in the slider." xml:space="preserve">
         <source>Long press the mouse button to set and cycle through favorites in the slider.</source>
         <target state="translated">Apăsați lung butonul mouse-ului pentru a seta și a trece prin favorite în glisor.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Lower brightness for all displays by some amount." xml:space="preserve">
+        <source>Lower brightness for all displays by some amount.</source>
         <note/>
       </trans-unit>
       <trans-unit id="MacOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature." xml:space="preserve">
@@ -3459,10 +3424,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <source>Native XDR Upscaling</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Native XDR brightness upscaling" xml:space="preserve">
-        <source>Native XDR brightness upscaling</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
         <note/>
@@ -3508,10 +3469,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">Creează o nouă configuratie de ecran virtual</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Night Shift" xml:space="preserve">
-        <source>Night Shift</source>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3637,6 +3594,10 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <source>OSD</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Offset Value" xml:space="preserve">
+        <source>Offset Value</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later." xml:space="preserve">
         <source>Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later.</source>
         <note/>
@@ -3716,9 +3677,13 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Pauzați toate stream-urile (afectează și PIP)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Percentage shows the size of the GUI elements compared to size with resolution size (Windows, Linux style). Native resolution is 100%. Affects resolution keyboard shortcut as well." xml:space="preserve">
-        <source>Percentage shows the size of the GUI elements compared to size with resolution size (Windows, Linux style). Native resolution is 100%. Affects resolution keyboard shortcut as well.</source>
+      <trans-unit id="Percentage reflects the size of the GUI elements (Windows, Linux style) instead of the resolution. Native size is 100%. Affects resolution keyboard shortcut as well." xml:space="preserve">
+        <source>Percentage reflects the size of the GUI elements (Windows, Linux style) instead of the resolution. Native size is 100%. Affects resolution keyboard shortcut as well.</source>
         <target state="translated">Procentul arată dimensiunea elementelor GUI în comparație cu dimensiunea și rezoluția (stil Windows, Linux). Rezoluția nativă este 100%. Afectează, de asemenea, scurtătura tastaturii pentru rezoluție.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Perform VMM7100 HDMI adapter reset" xml:space="preserve">
+        <source>Perform VMM7100 HDMI adapter reset</source>
         <note/>
       </trans-unit>
       <trans-unit id="Periodically check for updates and notify if there is an update available. Requires network connectivity. No data is collected ([betterdisplay.pro/privacy](https://betterdisplay.pro/privacy))." xml:space="preserve">
@@ -3841,14 +3806,9 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Oferă o listă detaliată de rezoluții care se potrivesc cu raportul de aspect al rezoluției native a ecranului fizic. Acest lucru vă permite să schimbați dimensiunea GUI (scalarea ecranului) în mod liber prin intermediul glisorului de rezoluție.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional display useful modes options on some configurations." xml:space="preserve">
-        <source>Provides additional display useful modes options on some configurations.</source>
+      <trans-unit id="Provides additional display modes on some configurations." xml:space="preserve">
+        <source>Provides additional display modes on some configurations.</source>
         <target state="translated">Oferă opțiuni suplimentare de moduri utile de afișare pentru anumite configurații.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Quit" xml:space="preserve">
-        <source>Quit</source>
-        <target state="translated">Închide</target>
         <note/>
       </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
@@ -3863,6 +3823,10 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Quit the app" xml:space="preserve">
         <source>Quit the app</source>
         <target state="translated">Închide aplicația</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Range includes software brightness upscaling" xml:space="preserve">
+        <source>Range includes software brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Rate" xml:space="preserve">
@@ -3949,18 +3913,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Red Gain (DDC)" xml:space="preserve">
         <source>Red Gain (DDC)</source>
         <target state="translated">Câștig roșu (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Gamma" xml:space="preserve">
-        <source>Red Gamma</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Black Level" xml:space="preserve">
-        <source>Red Hardware Black Level</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Red Hardware Gain" xml:space="preserve">
-        <source>Red Hardware Gain</source>
         <note/>
       </trans-unit>
       <trans-unit id="Redetect Displays" xml:space="preserve">
@@ -4094,9 +4046,8 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Resetați aspectul meniului...</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Settings" xml:space="preserve">
-        <source>Reset Settings</source>
-        <target state="translated">Resetați setările</target>
+      <trans-unit id="Reset VMM7100 HDMI Adapter" xml:space="preserve">
+        <source>Reset VMM7100 HDMI Adapter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Values" xml:space="preserve">
@@ -4288,9 +4239,9 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Rotați ecranul cu 270°</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Rotate the display (flip width and height). %@" xml:space="preserve">
-        <source>Rotate the display (flip width and height). %@</source>
-        <target state="translated">Rotați ecranul (inversați lățimea și înălțimea). %@</target>
+      <trans-unit id="Rotate the display (flip width and height)." xml:space="preserve">
+        <source>Rotate the display (flip width and height).</source>
+        <target state="translated">Rotați ecranul (inversați lățimea și înălțimea).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Rotated Orientation" xml:space="preserve">
@@ -4362,9 +4313,9 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Rotația Ecranului</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@" xml:space="preserve">
-        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.%@</source>
-        <target state="translated">Luminozitatea ecranului este modificată la un nivel dorit (atunci când este inițial mai mare) la pornirea screensaver sau blocare. %@</target>
+      <trans-unit id="Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock." xml:space="preserve">
+        <source>Screen brightness is changed to a desired level (when originally higher) upon screen saver start or lock.</source>
+        <target state="translated">Luminozitatea ecranului este modificată la un nivel dorit (atunci când este inițial mai mare) la pornirea screensaver sau blocare.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Screen with the mouse pointer" xml:space="preserve">
@@ -4420,14 +4371,46 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Setați toate ca ascunse</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set Brightness" xml:space="preserve">
+        <source>Set Brightness</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set Brightness for All Displays" xml:space="preserve">
+        <source>Set Brightness for All Displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set DDC Volume" xml:space="preserve">
+        <source>Set DDC Volume</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set Default - Auto Calibrate" xml:space="preserve">
         <source>Set Default - Auto Calibrate</source>
         <target state="translated">Setați implicit - Auto-calibrare</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set Ranged Control" xml:space="preserve">
+        <source>Set Ranged Control</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set Ranged Control Offset" xml:space="preserve">
+        <source>Set Ranged Control Offset</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set Ranged Control for All Displays" xml:space="preserve">
+        <source>Set Ranged Control for All Displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
         <target state="translated">Configurați permisiunile</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set any ranged control of a display by a specified offset. The percentage value will be converted to the feature's own specific min-max range." xml:space="preserve">
+        <source>Set any ranged control of a display by a specified offset. The percentage value will be converted to the feature's own specific min-max range.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set any ranged control of a display to a specified value. The percentage value will be converted to the feature's own specific min-max range." xml:space="preserve">
+        <source>Set any ranged control of a display to a specified value. The percentage value will be converted to the feature's own specific min-max range.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set as Favorite %lld%@" xml:space="preserve">
@@ -4470,6 +4453,18 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Setați rezoluția nativă</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
+        <source>Set the audio volume of a display using DDC to a specified value.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the brightness of a display to a specified value." xml:space="preserve">
+        <source>Set the brightness of a display to a specified value.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the brightness of all displays to a specified value." xml:space="preserve">
+        <source>Set the brightness of all displays to a specified value.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem." xml:space="preserve">
         <source>Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem.</source>
         <target state="translated">Setați glisorul de luminozitate cât mai sus posibil! Asigurați-vă, de asemenea, că încă vedeți fața zâmbitoare! Dacă nu vedeți fața zâmbitoare când glisorul este setat la setarea cea mai joasă, trebuie să ajustați mai întâi controalele hardware ale ecranului (contrast, gamma) pentru a rezolva problema de saturație albă.
@@ -4501,18 +4496,13 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Stabilește valoarea minimă permisă a luminozității hardware (pe propria sa scară) sub care atenuarea software intră în funcțiune atunci când se utilizează controlul de luminozitate combinat. Această setare este utilă pentru cei cu sensibilitate la PWM, deoarece interzice controlului luminozității să intre într-un interval PWM intens, înlocuindu-l în schimb cu software dimming.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Settings Reset Required" xml:space="preserve">
-        <source>Settings Reset Required</source>
-        <target state="translated">Este necesară resetarea setărilor</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
         <source>Settings made with the app are protected.</source>
         <target state="translated">Setările făcute cu aplicația sunt protejate.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show BetterDisplay in the macOS Dock" xml:space="preserve">
-        <source>Show BetterDisplay in the macOS Dock</source>
+      <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
+        <source>Show %@ in the macOS Dock</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -4585,10 +4575,9 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Afișează detaliile</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@" xml:space="preserve">
-        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays. %@</source>
-        <target state="translated">Afișează opțiunea meniului de deconectare/conectare pentru ecrane. Deconectarea unui ecran pune ecranul în modul de somn și îl elimină din aspectul ecranului. Conectarea îl restaurează. Ecranele deconectate pot fi reconectate cu comutatorul din antet (butonul de alimentare), prin pornirea/oprirea ecranului sau prin închiderea și deschiderea capacului pentru ecranele integrate MacBook. %@
-</target>
+      <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
+        <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
+        <target state="translated">Afișează opțiunea meniului de deconectare/conectare pentru ecrane. Deconectarea unui ecran pune ecranul în modul de somn și îl elimină din aspectul ecranului. Conectarea îl restaurează. Ecranele deconectate pot fi reconectate cu comutatorul din antet (butonul de alimentare), prin pornirea/oprirea ecranului sau prin închiderea și deschiderea capacului pentru ecranele integrate MacBook.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show display modes marked as unsafe or invalid" xml:space="preserve">
@@ -4652,6 +4641,10 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Afișează subglisoare pentru controlul luminozității combinate</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
+        <source>Show warning notifications about color table anomalies</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is off-line.</source>
         <target state="translated">Afișează toate ecranele detectate anterior de către aplicație. Permite unele modificări de configurare chiar și atunci când un ecran este deconectat.</target>
@@ -4695,14 +4688,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Smooth transitions" xml:space="preserve">
         <source>Smooth transitions</source>
         <target state="translated">Tranziții line</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Software Brightness" xml:space="preserve">
-        <source>Software Brightness</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Software XDR brightness upscaling" xml:space="preserve">
-        <source>Software XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
@@ -5086,11 +5071,6 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Ecran extern de la terți</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use." xml:space="preserve">
-        <source>This allows advanced dimming, color adjustments and other features like XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use.</source>
-        <target state="translated">Acesta permite reducerea avansată a luminozității, ajustări ale culorilor și alte funcții precum scalarea XDR/HDR. Notă: ajustările culorilor pot elimina conținutul HDR atunci când sunt  active.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <note/>
@@ -5112,6 +5092,10 @@ Please note that not all displays support DDC power operations and some displays
         <target state="translated">Acest ecran este ecranul principal. Sunteți sigur că doriți să opriți ecranul?\n\nRețineți că nu toate ecranele suportă operațiunile de power DDC și unele ecrane ar putea să nu se comporte așa cum este de așteptat. Dacă opriți ecranul, va trebui să-l porniți manual.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty." xml:space="preserve">
+        <source>This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. &#10;&#10;Please try again once the permissions are granted!" xml:space="preserve">
         <source>This functionality needs Screen Recording permissions. You need to add the app to the list under System Settings &gt; Privacy &amp; Security &gt; Screen Recording! After this, you will need to quit and reopen the app. 
 
@@ -5126,11 +5110,6 @@ Please try again once the permissions are granted!</source>
       </trans-unit>
       <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
         <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
-        <source>This is required for color adjustments, combined dimming and XDR/HDR upscaling features. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <target state="translated">Acesta este necesar pentru ajustările culorilor, reducerea combinată a luminozității și funcțiile de scalare XDR/HDR. Se recomandă să rămână activat. Dezactivați acesta opțiune pentru compatibilitate cu unele aplicații de la terți care modifică, de asemenea, culorile sistemului.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -5525,6 +5504,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Actualizări</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
+        <source>Use Metal for image adjustments</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use custom resolution list" xml:space="preserve">
         <source>Use custom resolution list</source>
         <target state="translated">Utilizați lista de rezoluții personalizate</target>
@@ -5556,11 +5539,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Use zero to disable transition animation." xml:space="preserve">
         <source>Use zero to disable transition animation.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled." xml:space="preserve">
-        <source>Useful for DisplayLink attached monitors using newer driver versions with color-temperature support enabled.</source>
-        <target state="translated">Util pentru monitoarele conectate cu DisplayLink care utilizează versiuni mai noi ale driverelor cu suport pentru temperatură de culoare.</target>
         <note/>
       </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
@@ -5738,6 +5716,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Atunci când extindeți un element de meniu, ascundeți automat celelalte elemente sub blocul de dispozitive/meniu dat. Acest lucru ajută la menținerea meniului mai compact.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness." xml:space="preserve">
+        <source>When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">Când volumul ajunge la 0%…</target>
@@ -5765,6 +5747,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
         <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Works only when an associated virtual screen is not set to follow the associated display's orientation" xml:space="preserve">
+        <source>Works only when an associated virtual screen is not set to follow the associated display's orientation</source>
         <note/>
       </trans-unit>
       <trans-unit id="Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
@@ -5799,12 +5785,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>XDR brightness scale minimum</source>
         <note/>
       </trans-unit>
-      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
-        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR profiles work best when the factory default Color Profile is configured for the XDR display.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR/HDR Upscaling, Color Adjustments, Software Dimming" xml:space="preserve">
-        <source>XDR/HDR Upscaling, Color Adjustments, Software Dimming</source>
+      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
+        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="XDR/HDR Upscaling, Software Dimming" xml:space="preserve">
@@ -5852,6 +5834,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
         <target state="translated">Puteți forța înțelesul implicit al comutatorului pornit/oprit în Setări/Ecrane.
 </target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
+        <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
@@ -5999,17 +5985,13 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ Se recomandă să aveți mai multă flexibilitate în interval!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
-        <source>⚠️ Metal upscaling performance might be degraded on this device with integrated Intel GPU.</source>
+      <trans-unit id="⚠️ Metal performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
+        <source>⚠️ Metal performance might be degraded on this device with integrated Intel GPU.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
         <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
         <target state="translated">⚠️ Valoarea minimă a lățimii/înălțimii trebuie să fie mai mică decât cea maximă!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Native XDR upscaling is an experimental feature! Use with caution!" xml:space="preserve">
-        <source>⚠️ Native XDR upscaling is an experimental feature! Use with caution!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
@@ -6030,7 +6012,7 @@ You can dismiss this notification - in this case the changes will be applied whe
   </file>
   <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="ro" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.2" build-num="15C500b"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5178i"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
