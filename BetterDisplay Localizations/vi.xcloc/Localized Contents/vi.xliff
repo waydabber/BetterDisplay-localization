@@ -2415,6 +2415,11 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Chỉnh sửa độ phân giải pixel tự nhiên của tấm nền</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Edit system display name" xml:space="preserve">
+        <source>Edit system display name</source>
+        <target state="translated">Tên màn hình hệ thống</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Edit the system configuration of this display model" xml:space="preserve">
         <source>Edit the system configuration of this display model</source>
         <target state="translated">Chỉnh sửa cấu hình hệ thống của màn hình này</target>
@@ -2800,8 +2805,8 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Nhận giá trị hiện tại của bất kỳ điều chỉnh nào cho màn hình. Giá trị sẽ được chuyển đổi thành một tỉ lệ từ 0-1.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Grayscale Image" xml:space="preserve">
-        <source>Grayscale Image</source>
+      <trans-unit id="Grayscale Framebuffer" xml:space="preserve">
+        <source>Grayscale Framebuffer</source>
         <note/>
       </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
@@ -3131,12 +3136,12 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Đảo ngược tỉ lệ giá trị DDC</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Inverted &amp; Grayscale" xml:space="preserve">
-        <source>Inverted &amp; Grayscale</source>
+      <trans-unit id="Inverted Framebuffer" xml:space="preserve">
+        <source>Inverted Framebuffer</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Inverted Image" xml:space="preserve">
-        <source>Inverted Image</source>
+      <trans-unit id="Inverted Grayscale Framebuffer" xml:space="preserve">
+        <source>Inverted Grayscale Framebuffer</source>
         <note/>
       </trans-unit>
       <trans-unit id="Issue mute command first, then set volume level to lowest setting" xml:space="preserve">
@@ -3754,10 +3759,6 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
       <trans-unit id="Non-natively connected display" xml:space="preserve">
         <source>Non-natively connected display</source>
         <target state="translated">Màn hình không được kết nối tự nhiên</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Normal Image" xml:space="preserve">
-        <source>Normal Image</source>
         <note/>
       </trans-unit>
       <trans-unit id="Normal Window Priority" xml:space="preserve">
@@ -4994,6 +4995,10 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Chỉ định điều gì sẽ xảy ra khi nút bật/tắt của menu ứng dụng được nhấn. Không phải tất cả tùy chọn có thể hợp lệ cho màn hình.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Standard Framebuffer" xml:space="preserve">
+        <source>Standard Framebuffer</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
         <target state="translated">Khởi động tự động</target>
@@ -5159,11 +5164,6 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Khớp UUID hệ thống (được khuyến nghị)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="System display name" xml:space="preserve">
-        <source>System display name</source>
-        <target state="translated">Tên màn hình hệ thống</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="TARGET" xml:space="preserve">
         <source>TARGET</source>
         <target state="translated">MỤC TIÊU</target>
@@ -5238,8 +5238,8 @@ This operation does not reset the display itself.</source>
 Thao tác này không làm đặt lại màn hình.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
-        <source>The built-in display is configured to be disconnected when an external display is connected. This setting will will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
+      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
+        <source>The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
         <target state="translated">Màn hình tích hợp được cấu hình để ngắt kết nối khi một màn hình rời được kết nối. Cài đặt này sẽ được kích hoạt lại khi màn hình tích hợp được ngắt kết nối thủ công hoặc ứng dụng được khởi động lại.</target>
         <note/>
       </trans-unit>
@@ -6254,6 +6254,10 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
       <trans-unit id="⚠ Virtual Screen as Stream Target?" xml:space="preserve">
         <source>⚠ Virtual Screen as Stream Target?</source>
         <target state="translated">⚠ Màn hình ảo là Trình chiếu?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
+        <source>⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
