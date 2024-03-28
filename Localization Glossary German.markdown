@@ -1,6 +1,6 @@
 # Translation Glossary
 
-Regarding the use of the "Du" pronoun in German: as _Apple_ use the lowercase "du" in it's translations, I decided to use it as well.
+Regarding the use of the personal pronoun (either "Du / du informal, or "Sie" formal) in German: as _Apple_ use the lowercase "du" in it's translations, I decided to use it as well.
 
 ## Glossary (based on the [Apple Glossar (German)](https://developer.apple.com/download/all/?q=glossaries))
 
