@@ -34,7 +34,6 @@
     <body>
       <trans-unit id="" xml:space="preserve">
         <source/>
-        <target state="translated"/>
         <note/>
       </trans-unit>
       <trans-unit id=" - Liquid Retina with Notch" xml:space="preserve">
@@ -44,11 +43,12 @@
       </trans-unit>
       <trans-unit id=" - connected" xml:space="preserve">
         <source> - connected</source>
-        <target state="translated">- verbunden</target>
+        <target>- verbunden</target>
         <note/>
       </trans-unit>
       <trans-unit id=" - disabled" xml:space="preserve">
         <source> - disabled</source>
+        <target state="translated">- deaktiviert</target>
         <note/>
       </trans-unit>
       <trans-unit id=" - disconnected" xml:space="preserve">
@@ -127,6 +127,7 @@
       </trans-unit>
       <trans-unit id="%@Hz" xml:space="preserve">
         <source>%@Hz</source>
+        <target state="translated">%@Hz</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@mm x %@mm" xml:space="preserve">
@@ -161,6 +162,7 @@
       </trans-unit>
       <trans-unit id="%lld pixels HiDPI (%lld pixels LoDPI)" xml:space="preserve">
         <source>%1$lld pixels HiDPI (%2$lld pixels LoDPI)</source>
+        <target state="translated">%1$lld Pixel HiDPI (%2$lld Pixel LoDPI)</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld x %lld" xml:space="preserve">
@@ -299,6 +301,7 @@
       </trans-unit>
       <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
         <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
+        <target state="translated">Die Berechtigungen für die Bedienungshilfen sind eingerichtet, und **die App muss immer noch neu gestartet werden**, damit die Änderungen wirksam werden! Bitte beende und starte die App erneut, wenn es passt. Oder drücke auf die "Neustart von %@" Taste, um die App sofort neu zu starten!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
@@ -355,7 +358,7 @@
       </trans-unit>
       <trans-unit id="Add near-native HiDPI resolution with flexible scaling" xml:space="preserve">
         <source>Add near-native HiDPI resolution with flexible scaling</source>
-        <target state="translated">Füge eine nahe der nativen HiDPI Auflösung mittels gleichmäßiger Skalierung hinzu</target>
+        <target state="translated">Füge eine nahe der nativen HiDPI-Auflösung mittels flexibler Skalierung hinzu</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
@@ -417,6 +420,16 @@
         <target state="translated">Fügt zusätzliche Auflösungen für manche Konfigurationen hinzu, aber behindert normalerweise die Nutzung des Reglers. Betrifft auch die Tastaturkurzbefehle für Auflösungen.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Adjustments may clip HDR content!" xml:space="preserve">
+        <source>Adjustments may clip HDR content!</source>
+        <target state="translated">Anpassungen können HDR Inhalte beschneiden!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced color table and upscaling settings" xml:space="preserve">
+        <source>Advanced color table and upscaling settings</source>
+        <target state="translated">Einstellungen für die erweiterte Farbpalette und der Hochskalierung</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
         <source>Advanced control settings</source>
         <target state="translated">Erweiterte Kontrolleinstellungen</target>
@@ -445,7 +458,9 @@
         <source>After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.
 
 You can do this in System Settings or the app can do it for you (administrator credentials needed).</source>
-        <target state="translated">Nach dem Verwerfen eines virtuellen Bildschirms wird empfohlen, auch das ungenutzte Werksfarbprofil zu entfernen. Sie können dies in den Systemeinstellungen tun oder die App kann es für Sie tun (Administratorrechte erforderlich).</target>
+        <target state="translated">Nach dem Verwerfen eines virtuellen Bildschirms wird empfohlen, auch das ungenutzte Werksfarbprofil zu entfernen.
+
+Dies kann in den Systemeinstellungen gemacht werden oder die App kann es für dich machen (Administratorrechte erforderlich).</target>
         <note/>
       </trans-unit>
       <trans-unit id="After discarding the virtual screen, it is recommended to remove it's unused factory color profile in System Settings." xml:space="preserve">
@@ -494,6 +509,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
         <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+        <target state="translated">Erlaube Farbanpassungen (Bitte beachten: schalte dies aus für den Kompatibilitätsmodus</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
@@ -561,7 +577,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration))." xml:space="preserve">
         <source>Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration)).</source>
-        <target state="translated">Ermöglicht den skriptgesteuerten CLI-Zugriff und die Integration von Apps von Drittanbietern über den Benachrichtigungsversand (siehe [Dokumentation] (https://betterdisplay.pro/integration)).</target>
+        <target state="translated">Ermöglicht den skriptgesteuerten Zugriff über das CLI und die Integration von Apps von Drittanbietern über den Benachrichtigungsversand (siehe [Dokumentation](https://betterdisplay.pro/integration)).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
@@ -647,7 +663,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="App menu transition animation speed" xml:space="preserve">
         <source>App menu transition animation speed</source>
-        <target state="translated">App-Menü-Übergangs-Animationsgeschwindigkeit</target>
+        <target state="translated">Die Geschwindigkeit der Übergangsanimation des App-Menüs</target>
         <note/>
       </trans-unit>
       <trans-unit id="App notification style" xml:space="preserve">
@@ -772,6 +788,7 @@ Die App wird nicht das integrierte Display wieder erneut Verbinden, wenn du erla
       </trans-unit>
       <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
         <source>Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions.</source>
+        <target state="translated">Bist du dir sicher, dass du alle Einstellungen für dieses Display zurücksetzen (vergessen) willst? Das Zurücksetzen betrifft nicht die Konfiguration der Systemeinstellungen, wie flexible Skalierung und eigene Auflösungen.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to reset app settings?" xml:space="preserve">
@@ -826,6 +843,7 @@ Die App wird nicht das integrierte Display wieder erneut Verbinden, wenn du erla
       </trans-unit>
       <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
         <source>Attempts to directly read the EDID data from the display.</source>
+        <target state="translated">Versucht die EDID Daten direkt von dem Display zu lesen.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.&#10;&#10;Specifying read length is optional - leave the field empty for autodetect." xml:space="preserve">
@@ -995,6 +1013,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
         <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
+        <target state="translated">Zeige kurz ein nach oben (bei der XDR/HDR Hochskalierung) oder unten (bei dem Software-basiertes Dimmen) gerichtetes Symbol in dem OSD an, wenn zusätzliches Dimmen oder Helligkeitshochskalierung durch eine software-basierte Anpassung geschieht.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brighten Displays" xml:space="preserve">
@@ -1132,6 +1151,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Calibrate Upscaling…" xml:space="preserve">
         <source>Calibrate Upscaling…</source>
+        <target state="translated">Hochskalierung kalibrieren …</target>
         <note/>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
@@ -1161,7 +1181,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
         <source>Click icon to open/close app menu!</source>
-        <target state="translated">Auf das Icon drücken um das App Menü zu Öffnen / Schließen!</target>
+        <target state="translated">Auf das Symbol drücken um das App Menü zu Öffnen / Schließen!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Click to show/hide features..." xml:space="preserve">
@@ -1196,6 +1216,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
+        <target state="translated">Farbanpassungen, Hochskalierung und Abdunkeln durch die Farbtabelle, beschneidet den Inhalt von HDR. Wenn dies aktiviert ist, setzt die App die Farbtabelle zurück wenn keine Anpassungen nötig sind. Dies könnte ablenkend wirken oder bei manchen Konfigurationen einen blanken Bildschirm verursachen.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1215,7 +1236,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
-        <target state="translated">Vereinige die Hardware-Helligkeitskontrolle (so verfügbar), mit dem software-basiertem Abdunkeln und XDR / HDR Hochskalierung in eine kombinierte Helligkeitskontrolle.</target>
+        <target state="translated">Kombiniere die Hardware-Helligkeitskontrolle (so verfügbar), mit dem software-basiertem Abdunkeln und der XDR- / HDR-Hochskalierung, in eine kombinierte Helligkeitskontrolle.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined Brightness" xml:space="preserve">
@@ -1239,6 +1260,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Combined brightness - software dimming switchover point" xml:space="preserve">
         <source>Combined brightness - software dimming switchover point</source>
+        <target state="needs-translation"/>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness is not required with default settings as the native XDR brightness scale covers the entire configurable scale. Use only if you want to finetune the dimming curve below the configured XDR brightness scale minimum" xml:space="preserve">
@@ -1592,6 +1614,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
         <source>Custom displayed icon SF Symbol name</source>
+        <target state="translated">SF Symbolname des eigenen angezeigten Icons</target>
         <note/>
       </trans-unit>
       <trans-unit id="Custom displayed name" xml:space="preserve">
@@ -1636,6 +1659,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Customize flexible scaling resolution range" xml:space="preserve">
         <source>Customize flexible scaling resolution range</source>
+        <target state="translated">Auflösungbereich der flexiblen Skalierung anpassen</target>
         <note/>
       </trans-unit>
       <trans-unit id="Customize input source list for this display" xml:space="preserve">
@@ -1974,31 +1998,32 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Disable" xml:space="preserve">
         <source>Disable</source>
+        <target state="translated">Deaktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disable All Protections" xml:space="preserve">
         <source>Disable All Protections</source>
-        <target state="translated">Ausschalten aller Schutzeinstellungen</target>
+        <target state="translated">Alle Schutzeinstellungen deaktiveren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disable Auto-Connect" xml:space="preserve">
         <source>Disable Auto-Connect</source>
-        <target state="translated">Ausschalten der automatischen Verbindug</target>
+        <target state="translated">Automatische Verbindung deaktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disable Both in HDR Mode" xml:space="preserve">
         <source>Disable Both in HDR Mode</source>
-        <target state="translated">Schalte beides im HDR-Modus aus</target>
+        <target state="translated">Beides im HDR-Modus deaktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disabled" xml:space="preserve">
         <source>Disabled</source>
-        <target state="translated">Ausschalten</target>
+        <target state="translated">Deaktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disabled by default to avoid accidental value changes." xml:space="preserve">
         <source>Disabled by default to avoid accidental value changes.</source>
-        <target state="translated">Standardmäßig ausgeschaltet, um versehentliche Veränderungen der Werte zu verhindern.</target>
+        <target state="translated">Standardmäßig deaktiviert, um versehentliche Veränderungen der Werte zu verhindern.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control." xml:space="preserve">
@@ -2120,7 +2145,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Disconnect virtual screens upon lock or screen saver and connect when returning to the desktop" xml:space="preserve">
         <source>Disconnect virtual screens upon lock or screen saver and connect when returning to the desktop</source>
-        <target state="translated">Virtuelle Bildschirme trennen, wenn der Bildschirmschoner oder der Sperrbildschirm aktiviert wird und verbinde sie erneut, wenn zum Desktop zurückgekehrt wird.</target>
+        <target state="translated">Virtuelle Bildschirme trennen, wenn der Bildschirmschoner oder der Sperrbildschirm aktiviert wird und verbinde sie erneut, wenn zum Desktop zurückgekehrt wird</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnected" xml:space="preserve">
@@ -2130,6 +2155,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Disconnected (with sleep)" xml:space="preserve">
         <source>Disconnected (with sleep)</source>
+        <target state="translated">Getrennt (mit Ruhezustand)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnecting Displays" xml:space="preserve">
@@ -2536,6 +2562,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="Enable color table adjustments" xml:space="preserve">
         <source>Enable color table adjustments</source>
+        <target state="translated">Farbanpassungen aktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
@@ -2549,6 +2576,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="Enable flexible scaling" xml:space="preserve">
         <source>Enable flexible scaling</source>
+        <target state="translated">Flexible Skalierung aktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
@@ -2614,6 +2642,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
         <source>Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type.</source>
+        <target state="translated">Auflösungen bis zu 16Kx16K (8Kx8K HiDPI) für virtuelle Bildschirme und flexible Skalierungen aktivieren. Die Nutzung von virtuellen Bildschirmen mit  8K+ kann Unstabilitäten verursachen. Flexible Skalierung muss neu angewendet werden. Die maximalen nativen Auflösungen werden durch spezifische macOS Versionen und den GPU Typ limitiert.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
@@ -2691,6 +2720,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="Flexible scaling options" xml:space="preserve">
         <source>Flexible scaling options</source>
+        <target state="translated">Optionen für die flexible Skalierung</target>
         <note/>
       </trans-unit>
       <trans-unit id="Flip" xml:space="preserve">
@@ -2705,6 +2735,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
+        <target state="translated">Erzwinge die Unterstützung der Farbtabellenanpassung</target>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -2811,6 +2842,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="Get %@ Pro" xml:space="preserve">
         <source>Get %@ Pro</source>
+        <target state="translated">Kaufe %@ Pro</target>
         <note/>
       </trans-unit>
       <trans-unit id="Get DDC value" xml:space="preserve">
@@ -2999,6 +3031,7 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       </trans-unit>
       <trans-unit id="If disabled, Quit %@ is listed in the Tools menu." xml:space="preserve">
         <source>If disabled, Quit %@ is listed in the Tools menu.</source>
+        <target state="translated">Quit %@ wird in dem Toolsmenü angezeigt, wenn dies deaktiviert ist</target>
         <note/>
       </trans-unit>
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
@@ -3347,6 +3380,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
         <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
+        <target state="translated">Lade ein EDID Binärimage, das von %@ (oder anderen Programmen) exportiert wurde. Du kannst ein EDID Binärimage verwenden, das von einem EDID-Editor (wie z. B. dem "AW EDID Editor") erzeugt oder bearbeitet wurde. Wenn du eine Base64 Textrepräsentation von einem EDID Image hast, kann dieses mit dem 'Base64 einfügen' Taste geladen werden.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -4209,6 +4243,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reinitialize External Displays" xml:space="preserve">
         <source>Reinitialize External Displays</source>
+        <target state="translated">Externe Displays erneut initialisieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reinitialize external displays" xml:space="preserve">
@@ -4500,6 +4535,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Rotate the display (flip width and height)." xml:space="preserve">
         <source>Rotate the display (flip width and height).</source>
+        <target state="translated">Display drehen (gespiegelte Breite und Höhe).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Rotated Orientation" xml:space="preserve">
@@ -4809,6 +4845,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show custom OSD icons" xml:space="preserve">
         <source>Show custom OSD icons</source>
+        <target state="translated">Zeige eigene OSD Symbole an</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show data as" xml:space="preserve">
@@ -4823,6 +4860,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
         <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
+        <target state="translated">Zeige die Trennen/Verbinden Menüeinträge für Displays. Das Trennen eines Displays versetzt dieses in den Ruhezustand und entfernt es von dem Display Layout. Das Verbinden, stellt das Display wieder her. Getrennte Displays können wieder verbunden werden, durch den Umschalter in der Überschrift (Ein-/Ausschalter), beim physikalischem Ein-/Ausschalten und durch das Öffnen des Deckels für das MacBook Display.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show display modes marked as unsafe or invalid" xml:space="preserve">
@@ -4832,6 +4870,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show extra OSD icon if keyboard adjustment causes upscaling or extra dimming" xml:space="preserve">
         <source>Show extra OSD icon if keyboard adjustment causes upscaling or extra dimming</source>
+        <target state="translated">Zeige zusätzliche OSD Symbole an, wenn Tastatur-Anpassungen die Ursache für die Hochskalierung oder zusätzliches Abdunkeln sind</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show header when only one device is present" xml:space="preserve">
@@ -5078,6 +5117,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="System Configuration and Flexible Scaling" xml:space="preserve">
         <source>System Configuration and Flexible Scaling</source>
+        <target state="translated">Systemeinstellungen und flexible Skalierung</target>
         <note/>
       </trans-unit>
       <trans-unit id="System Settings" xml:space="preserve">
@@ -5153,7 +5193,7 @@ This operation does not reset the display itself.</source>
       </trans-unit>
       <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
         <source>The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
-        <target state="translated">Das integrierte Display ist so eingestellt, dass es getrennt wird, wenn ein externes Display verbunden wird. Diese Einstellung wird </target>
+        <target state="translated">Das integrierte Display ist so eingestellt, dass es getrennt wird, wenn ein externes Display verbunden wird. Diese Einstellung wird wieder aktiviert, wenn das integrierte Display manuell wieder getrennt wird oder die App neu gestartet wird.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The built-in display of the iMac cannot be easily reconnected (lack of display cable, closable lid) in case of an application failure. Enable this setting with extra caution!" xml:space="preserve">
@@ -5245,7 +5285,7 @@ Please note that not all displays support DDC power operations and some displays
       </trans-unit>
       <trans-unit id="This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing." xml:space="preserve">
         <source>This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing.</source>
-        <target state="translated">Dies ist eine Problemumgehung eines Problems, das in einigen Versionen von macOS Sonoma vorhanden ist und gelegentlich verhindert, dass die benutzerdefinierte Konfiguration eines Displays ordnungsgemäß geladen wird. Mit dieser Einstellung versucht die App, die Anzeige neu zu initialisieren, wenn reibungslose Skalierungsauflösungen zu fehlen scheinen.</target>
+        <target state="translated">Dies ist eine Problemumgehung eines Problems, das in einigen Versionen von macOS Sonoma vorhanden ist und gelegentlich verhindert, dass die benutzerdefinierte Konfiguration eines Displays ordnungsgemäß geladen wird. Mit dieser Einstellung versucht die App, die Anzeige neu zu initialisieren, wenn Auflösungen der flexiblen Skalierung  zu fehlen scheinen.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
@@ -5301,6 +5341,7 @@ Please note that previously stored custom display configurations won't be remove
       </trans-unit>
       <trans-unit id="This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100%." xml:space="preserve">
         <source>This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100%.</source>
+        <target state="translated">Diese Einstellung wird auf Bildschirme / Displays angewendet, die skalierbar (virtuelle Bildschirme, reale Displays bei denen flexible Skalierung eingeschaltet ist). Die Standard Auflösung ist 100%.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should match the physical resolution of the display panel (actual number of pixels vertically and horizontally)." xml:space="preserve">
@@ -5616,6 +5657,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Use lighter app menu fonts and icons" xml:space="preserve">
         <source>Use lighter app menu fonts and icons</source>
+        <target state="translated">Benutze hellere Schriften und Symbole für das App-Menü</target>
         <note/>
       </trans-unit>
       <trans-unit id="Use magnification slider instead of resolution slider" xml:space="preserve">
@@ -5894,17 +5936,17 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can change DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
         <source>You can change DDC volume and mute control support for this display under "DDC Features…".</source>
-        <target state="translated">Sie können die DDC-Lautstärke und die Unterstützung für die Stummschaltung für dieses Display unter "DDC-Funktionen..." ändern.</target>
+        <target state="translated">Die DDC-Lautstärke und die Unterstützung für die Stummschaltung für dieses Display kann unter "DDC-Funktionen ..." geändert werden.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`)." xml:space="preserve">
         <source>You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`).</source>
-        <target state="translated">Sie können die SF Symbols-App von [developer.apple.com/sf-symbols] (https://developer.apple.com/sf-symbols) herunterladen, um die richtige SF-Symbol-Symbolzeichenfolge zu finden (versuchen Sie: `face.smiling`).</target>
+        <target state="translated">Die "SF Symbols-App" von [developer.apple.com/sf-symbols] (https://developer.apple.com/sf-symbols) herunterladen, um den richtigen SF-Symbolnamen zu finden (z. B.: `face.smiling`).</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can override the default meaning of the on/off switch under Settings/Displays." xml:space="preserve">
         <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
-        <target state="translated">Sie können die Standardbedeutung des Ein-/Ausschalters unter Einstellungen/Anzeigen überschreiben.</target>
+        <target state="translated">Das Standardverhalten des Ein- / Ausschalters kann unter Einstellungen / Displays überschreiben werden.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
@@ -5913,7 +5955,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
         <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
-        <target state="translated">Möglicherweise möchten Sie die macOS-Lautstärke-OSD ausblenden, wenn das Gerät über Audiosteuerungen verfügt, die von der App verwaltet werden. Nützlich für Displays mit eigener Lautstärke-OSD, die nicht deaktiviert werden können.</target>
+        <target state="translated">Möglicherweise möchtest du das Lautstärke-OSD von macOS ausblenden, wenn das Gerät über Audiosteuerungen verfügt, die von der App verwaltet werden. Nützlich für Displays mit eigenem OSD für die Lautstärke, die nicht deaktiviert werden können.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
@@ -6061,7 +6103,7 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
         <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
-        <target state="translated">⚠️ Für diese XDR-Anzeige ist es am besten, die Kalibrierung auf Standard - Auto Calibrate zu setzen, damit die App das Upscaling automatisch an die aktuell ausgewählten XDR-Voreinstellungen und Umweltfaktoren anpassen kann. Stellen Sie für die manuelle Kalibrierung den Helligkeitsregler so hoch wie möglich ein und stellen Sie gleichzeitig sicher, dass Sie immer noch das lächelnde Gesicht sehen!</target>
+        <target state="translated">⚠️ Für dieses XDR-Display ist es am besten, die Kalibrierung auf "Standard - Automatische Kalibrierung" zu setzen, damit die App die Hochskalierung automatisch an die aktuell ausgewählten XDR-Voreinstellungen und Umweltfaktoren anpassen kann. Für die manuelle Kalibrierung, den Helligkeitsregler so hoch wie möglich einstellen, und gleichzeitig sicher stellen, dass immer noch das lächelnde Gesicht zu sehen ist!</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
@@ -6072,12 +6114,12 @@ Dies kann unter Systemeinstellungen &gt; Datenschutz &amp; Sicherheit &gt; Bilds
       </trans-unit>
       <trans-unit id="⚠️ If a third party app (like MediaMate) is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!" xml:space="preserve">
         <source>⚠️ If a third party app (like MediaMate) is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!</source>
-        <target state="translated">⚠️ Wenn eine App eines Drittanbieters (wie MediaMate) verwendet wird, um die OSD anzuzeigen, sollten Sie die integrierte OSD unter Tastatur/OSD deaktivieren, um zu vermeiden, dass doppelte oder gemischte OSDs angezeigt werden!</target>
+        <target state="translated">⚠️ Wenn eine App eines Drittanbieters (wie MediaMate) verwendet wird, um das OSD anzuzeigen, sollte das integrierte OSD unter Tastatur / OSD deaktivieren werden. Damit wird vermieden, dass doppelte oder gemischte OSDs angezeigt werden!</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen was connected." xml:space="preserve">
         <source>⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen was connected.</source>
-        <target state="translated">⚠️ Wenn das Spiegeln / Streamen von einem virtuellen Bildschirm, nur für eine flexible HiDPI-Auflösung eines verbundenen Displays gemacht wird, wird empfohlen, die Funktion Gleichmäßige Skalierung zu benutzen (so möglich)! Wenn Spiegeln anstelle von Streaming genutzt werden soll, kann dies im Menü der App aktiviert werden, nachdem der virtuelle Bildschirm verbunden wurde.</target>
+        <target state="translated">⚠️ Wenn das Spiegeln / Streamen von einem virtuellen Bildschirm, nur für eine flexible HiDPI-Auflösung eines verbundenen Displays gemacht wird, wird empfohlen, die Funktion "Flexible Skalierung" zu benutzen (so möglich)! Wenn Spiegeln anstelle von Streaming genutzt werden soll, kann dies im Menü der App aktiviert werden, nachdem der virtuelle Bildschirm verbunden wurde.</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ It is recommended to have some more leeway in the range!" xml:space="preserve">
