@@ -135,7 +135,9 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | Wake                      | Beenden des Ruhezustandes                   |                                                                                                                                                                                                                        |
 
 
-## Missing
+## Todo list
+
+### Missing translations
 
 | English           | Context                    |
 | ----------------- | -------------------------- |
@@ -147,3 +149,17 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | Tag ID            |                            |
 
 
+## Check the following, later
+
+| English                   | German |
+| ------------------------- | ------ |
+| Preset                    |        |
+| environmental factors     |        |
+| OSD                       |        |
+| administrator credentials |        |
+| notification dispatch     |        |
+| scripted                  |        |
+| dimming                   |        |
+| this is a workaround      | --     |
+| icon bounce               | --     |
+| tools                     | --     |
