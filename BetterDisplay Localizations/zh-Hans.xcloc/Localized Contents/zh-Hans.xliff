@@ -218,14 +218,26 @@
         <target state="translated">@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A configured sync source and target display is connected" xml:space="preserve">
+        <source>A configured sync source and target display is connected</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="A controllable display is present" xml:space="preserve">
         <source>A controllable display is present</source>
         <target state="translated">存在可控显示器</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave." xml:space="preserve">
+        <source>A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
         <source>A display is present which is not fully controllable without the app</source>
         <target state="translated">存在不借助应用程序无法完全控制的显示器</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
+        <source>A higher priority display group marked as exclusive is active.</source>
         <note/>
       </trans-unit>
       <trans-unit id="A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays." xml:space="preserve">
@@ -318,6 +330,10 @@
         <target state="translated">无需重启以激活配置？</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Activate tihis display group when…" xml:space="preserve">
+        <source>Activate tihis display group when…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC.</source>
         <target state="translated">仅显示器没有设置为主显示屏时才会激活，因此不会干扰锁屏。大多数显示器不支持通过 DDC 开关背光。</target>
@@ -328,12 +344,20 @@
         <target state="translated">启动或连接显示器时激活原生 XDR 提升。要求先选中默认的 Apple XDR 描述文件。启动时按下 ⇧ Shift 避免自动激活。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Activation Policy" xml:space="preserve">
-        <source>Activation Policy</source>
+      <trans-unit id="Activation" xml:space="preserve">
+        <source>Activation</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Active" xml:space="preserve">
-        <source>Active</source>
+      <trans-unit id="Activation depends on the presence of synchronization source and target displays but synchronization is not enabled for the display group." xml:space="preserve">
+        <source>Activation depends on the presence of synchronization source and target displays but synchronization is not enabled for the display group.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation priority" xml:space="preserve">
+        <source>Activation priority</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation requires the presence of source and target displays for at least one configured synchronization." xml:space="preserve">
+        <source>Activation requires the presence of source and target displays for at least one configured synchronization.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
@@ -473,6 +497,14 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="All VMM7100 based USB-C to HDMI devices are affected - make sure you enable the appropriate reinitialize for all displays connected with such devices to avoid the need for manual power cycles." xml:space="preserve">
         <source>All VMM7100 based USB-C to HDMI devices are affected - make sure you enable the appropriate reinitialize for all displays connected with such devices to avoid the need for manual power cycles.</source>
         <target state="translated">所有使用 VMM7100 芯片的 USB-C 转 HDMI 适配器都受到影响。为避免手动重启设备，请确保启用所有连接此类适配器的显示器的相应重新初始化功能。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All configured group member displays are connected" xml:space="preserve">
+        <source>All configured group member displays are connected</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All display group members are present." xml:space="preserve">
+        <source>All display group members are present.</source>
         <note/>
       </trans-unit>
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
@@ -636,6 +668,10 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Another app altered screen colors or brightness - this clashes with what %@ is doing." xml:space="preserve">
         <source>Another app altered screen colors or brightness - this clashes with what %@ is doing.</source>
         <target state="translated">另一应用程序反复更改屏幕颜色或亮度，这与 %@ 的功能冲突。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any group member is connected" xml:space="preserve">
+        <source>Any group member is connected</source>
         <note/>
       </trans-unit>
       <trans-unit id="Any number of display groups can be created besides the default display group. Display groups are activated/deactivated according to activation and priority settings." xml:space="preserve">
@@ -833,6 +869,22 @@ AliPay available in China.</source>
         <target state="translated">假设最后使用的值或默认值有效</target>
         <note/>
       </trans-unit>
+      <trans-unit id="At least one display group member is present." xml:space="preserve">
+        <source>At least one display group member is present.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least one non-group member display is connected - this is prohibited by the activation rules." xml:space="preserve">
+        <source>At least one non-group member display is connected - this is prohibited by the activation rules.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least two display group members are present." xml:space="preserve">
+        <source>At least two display group members are present.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least two group members are connected" xml:space="preserve">
+        <source>At least two group members are connected</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
         <source>Attempts to directly read the EDID data from the display.</source>
         <target state="translated">尝试直接从显示器读取 EDID 数据。</target>
@@ -1000,6 +1052,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Blue Gain (DDC)" xml:space="preserve">
         <source>Blue Gain (DDC)</source>
         <target state="translated">蓝色增益 (DDC)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Both source and target displays are available for a configured synchronization." xml:space="preserve">
+        <source>Both source and target displays are available for a configured synchronization.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
@@ -1311,6 +1367,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">配置虚拟屏幕...</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure activation rules" xml:space="preserve">
+        <source>Configure activation rules</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure full screen stream to this display" xml:space="preserve">
         <source>Configure full screen stream to this display</source>
         <target state="translated">配置全屏串流到此显示器</target>
@@ -1577,10 +1637,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Current resolution (width x height) is shown as text inside when enabled." xml:space="preserve">
         <source>Current resolution (width x height) is shown as text inside when enabled.</source>
         <target state="translated">启用内部显示当前分辨率（宽度 x 高度）文本。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Current state" xml:space="preserve">
-        <source>Current state</source>
         <note/>
       </trans-unit>
       <trans-unit id="Current system display name" xml:space="preserve">
@@ -2287,8 +2343,20 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">显示刘海</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display gorup name" xml:space="preserve">
-        <source>Display gorup name</source>
+      <trans-unit id="Display group is configured to be always active regardless of the presence of group members." xml:space="preserve">
+        <source>Display group is configured to be always active regardless of the presence of group members.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is currently active" xml:space="preserve">
+        <source>Display group is currently active</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is inactive" xml:space="preserve">
+        <source>Display group is inactive</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is not enabled." xml:space="preserve">
+        <source>Display group is not enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Display group name" xml:space="preserve">
@@ -2301,6 +2369,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Display groups" xml:space="preserve">
         <source>Display groups</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups are listed in activation priority (higher priority first)." xml:space="preserve">
+        <source>Display groups are listed in activation priority (higher priority first).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Display groups provide a way to allow various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, resolution synchronization, display layout management and more." xml:space="preserve">
@@ -2360,6 +2432,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Displays And Virtual Screens" xml:space="preserve">
         <source>Displays And Virtual Screens</source>
         <target state="translated">显示器和虚拟屏幕</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Displays that were added to the list previously are be shown even when detected." xml:space="preserve">
+        <source>Displays that were added to the list previously are be shown even when detected.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Displays will turn blank for a while and you will not be able to interact with your Mac. The process should take about 2-4 seconds.&#10;&#10;The process does not work for the built-in display (reboot needed). The operation might cause some Macs to enter sleep mode." xml:space="preserve">
@@ -2684,6 +2760,18 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">强制虚拟屏幕镜像</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Exclude some displays from the group" xml:space="preserve">
+        <source>Exclude some displays from the group</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Excluded displays" xml:space="preserve">
+        <source>Excluded displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclusive display group" xml:space="preserve">
+        <source>Exclusive display group</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
         <target state="translated">可展开菜单项在应用程序主菜单内展开。关闭此选项时应用程序会向右或向左（取决于可用空间）显示一个浮动弹出式子菜单。</target>
@@ -2925,8 +3013,12 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Group %lld</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Group Members" xml:space="preserve">
-        <source>Group Members</source>
+      <trans-unit id="Group Membership" xml:space="preserve">
+        <source>Group Membership</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Groups" xml:space="preserve">
+        <source>Groups</source>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -3110,6 +3202,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">如果更新后 EDID 包含新显示器标识（序列号、型号 ID、供应商 ID），macOS 会将此显示器视为另一显示器。启用此选项后，%@ 会在本次应用程序会话中保持新旧标识的连续性。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active." xml:space="preserve">
+        <source>If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information." xml:space="preserve">
         <source>If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information.</source>
         <target state="translated">如果使用通知中心，请查看是否开启了此应用的通知。 重要通知有时会静默出现，具体取决于不同情况。 传统弹窗可能包含更多详细信息。</target>
@@ -3152,10 +3248,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency)." xml:space="preserve">
         <source>In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency).</source>
         <target state="translated">在分离状态下应用程序菜单作为顶层窗口浮在桌面上。您可指定透视菜单的透明度值（透明度越高，数值越低）。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Inactive" xml:space="preserve">
-        <source>Inactive</source>
         <note/>
       </trans-unit>
       <trans-unit id="Increase Apple Keyboard brightness" xml:space="preserve">
@@ -3602,6 +3694,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">组合亮度范围的 XDR/HDR 升级亮度的最大亮度比。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Members" xml:space="preserve">
+        <source>Members</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Menu" xml:space="preserve">
         <source>Menu</source>
         <target state="translated">菜单</target>
@@ -3901,10 +3997,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">未找到颜色描述文件。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="No display groups are available." xml:space="preserve">
-        <source>No display groups are available.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="No display is selected" xml:space="preserve">
         <source>No display is selected</source>
         <target state="translated">无已选显示器</target>
@@ -3933,6 +4025,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Normally the header is not visible when a single display is present." xml:space="preserve">
         <source>Normally the header is not visible when a single display is present.</source>
         <target state="translated">仅存在单一显示器时常隐藏标题栏。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not all display group members are present." xml:space="preserve">
+        <source>Not all display group members are present.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!" xml:space="preserve">
@@ -4013,6 +4109,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="On startup &amp; wake" xml:space="preserve">
         <source>On startup &amp; wake</source>
         <target state="translated">启动与唤醒时</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Only group members can be present" xml:space="preserve">
+        <source>Only group members can be present</source>
         <note/>
       </trans-unit>
       <trans-unit id="Only non-brightness settings (color adjustments) are restored." xml:space="preserve">
@@ -5008,6 +5108,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">显示当前分辨率值</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show currently not detected displays in list" xml:space="preserve">
+        <source>Show currently not detected displays in list</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show currently off-line (past disconnected) displays in Settings" xml:space="preserve">
         <source>Show currently off-line (past disconnected) displays in Settings</source>
         <target state="translated">在 "设置 &gt; 显示器" 中显示当前脱机（过去已断开）显示器</target>
@@ -5168,6 +5272,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
         <source>Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
         <target state="translated">某些显示器在 HDR 模式下不支持 DDC 亮度控制。在兼容显示器上启用此功能可在保留未受影响的 HDR 内容同时进行亮度控制。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sort Activation Priority…" xml:space="preserve">
+        <source>Sort Activation Priority…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of displays to be excluded from the display group." xml:space="preserve">
+        <source>Specify a list of displays to be excluded from the display group.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -5442,6 +5554,18 @@ This operation does not reset the display itself.</source>
         <target state="translated">默认输入源列表反映了常见分配，但实际列表因显示器供应商/型号而异。输入控制不起作用时请尝试在某些较新的 LG 显示器上使用 “LG Alt” 切换！</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The display group is marked as exclusive while at least one other display group with higher priority is active." xml:space="preserve">
+        <source>The display group is marked as exclusive while at least one other display group with higher priority is active.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group will be activated or deactivated depending on the activation settings, configured group members and various other factors." xml:space="preserve">
+        <source>The display group will be activated or deactivated depending on the activation settings, configured group members and various other factors.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group will not activate when other displays are connected beyond group members." xml:space="preserve">
+        <source>The display group will not activate when other displays are connected beyond group members.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
         <target state="translated">在检测或物理连接事先用应用程序断开的显示器时自动断开显示器。此设置可能导致意外问题（与不兼容显示器反复断连、缺少任何已连接显示器）- 请谨慎使用！</target>
@@ -5495,6 +5619,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">未创建虚拟屏幕。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="There are no at least two display group members present." xml:space="preserve">
+        <source>There are no at least two display group members present.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="There are some unapplied system configuration changes." xml:space="preserve">
         <source>There are some unapplied system configuration changes.</source>
         <target state="translated">有些系统配置更改尚未应用。</target>
@@ -5503,6 +5631,14 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       <trans-unit id="There is at least one controllable display connected" xml:space="preserve">
         <source>There is at least one controllable display connected</source>
         <target state="translated">至少连接一个可控显示器</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There is no at least one display group member present." xml:space="preserve">
+        <source>There is no at least one display group member present.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There is no group member present." xml:space="preserve">
+        <source>There is no group member present.</source>
         <note/>
       </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serves as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display." xml:space="preserve">
@@ -5759,6 +5895,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">传输</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
+        <source>Treat all currently connected displays as group members</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Treat as generic third-party (non-Apple) display" xml:space="preserve">
         <source>Treat as generic third-party (non-Apple) display</source>
         <target state="translated">将其视为通用的第三方 (非 Apple) 显示器</target>
@@ -5923,6 +6063,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">取消隐藏串流画面</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Uniformity Correction" xml:space="preserve">
+        <source>Uniformity Correction</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unknown" xml:space="preserve">
         <source>Unknown</source>
         <target state="translated">未知</target>
@@ -5935,6 +6079,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Unknown Display" xml:space="preserve">
         <source>Unknown Display</source>
         <target state="translated">未知显示器</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlimited" xml:space="preserve">
+        <source>Unlimited</source>
         <note/>
       </trans-unit>
       <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
@@ -6567,10 +6715,6 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ Some display group based features are not available in this app version." xml:space="preserve">
         <source>⚠️ Some display group based features are not available in this app version.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ This feature is currently unavailable." xml:space="preserve">
-        <source>⚠️ This feature is currently unavailable.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">
