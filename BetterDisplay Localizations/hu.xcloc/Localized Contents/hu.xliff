@@ -236,10 +236,6 @@
         <target state="translated">Csak alkalmazás által vezérelhető kijelző csatlakoztatva van</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A group member set as the main display acts as the source." xml:space="preserve">
-        <source>A group member set as the main display acts as the source.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <note/>
@@ -274,14 +270,8 @@
         <target state="translated">Valamennyi kijelzőhöz társított virtuális képernyő automatikusan leválasztódik, amikor a társított kijelző leválasztásra kerül. Az összes többi virtuális képernyő leválasztásra került. A társított virtuális képernyők automatikus leválasztása letiltható.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will connect automatically when the associated display is connected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will connect automatically when the associated display is connected.</source>
-        <target state="translated">A kijelzőhöz társított virtuális képernyő automatikusan csatlakozik, amikor a társított kijelző csatlakozik.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected.</source>
-        <target state="translated">A kijelzőhöz társított virtuális képernyő automatikusan leválasztódik, amikor a társított kijelző leválasztásra kerül.</target>
+      <trans-unit id="A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
+        <source>A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected.</source>
         <note/>
       </trans-unit>
       <trans-unit id="About" xml:space="preserve">
@@ -523,10 +513,6 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <source>All group members can be synchronization sources.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="All group members not on the specified list can act as sources." xml:space="preserve">
-        <source>All group members not on the specified list can act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
         <source>All members (except the the source of the sync event) will be sync targets.</source>
         <note/>
@@ -604,6 +590,14 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
         <source>Allow using F14/F15 as alternative brightness keys</source>
         <target state="translated">F14/F15 engedélyezése helyettesítő fényerő billentyűkként</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync sources" xml:space="preserve">
+        <source>Allow virtual screens as sync sources</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync targets" xml:space="preserve">
+        <source>Allow virtual screens as sync targets</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
@@ -694,20 +688,8 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <target state="translated">Egy alkalmazás megváltoztatta a képernyő színeit vagy fényerejét - ez ütközik azzal, amit a %@ csinál.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Any Apple display (built-in or external)" xml:space="preserve">
-        <source>Any Apple display (built-in or external)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any external Apple display" xml:space="preserve">
-        <source>Any external Apple display</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member" xml:space="preserve">
-        <source>Any group member</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member except listed" xml:space="preserve">
-        <source>Any group member except listed</source>
+      <trans-unit id="Any group member can be a sync source" xml:space="preserve">
+        <source>Any group member can be a sync source</source>
         <note/>
       </trans-unit>
       <trans-unit id="Any group member is connected" xml:space="preserve">
@@ -978,6 +960,10 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Virtuális képernyő automatikus csatlakoztatása</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
+        <source>Auto-connect virtual screen when all associated screens are offline</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Automatikus lecsatolás felfüggesztve külső kijelző csatlakoztatásakor.</target>
@@ -1023,9 +1009,12 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Tükrözés automatikus konfigurálása a virtuális képernyő tartalmának a társított kijelzőn való megjelenítéséhez. Ha több társított kijelző van csatlakoztatva, csak az egyik lesz tükrözési célpont.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Automatically connect the virtual screen when the associated display is online and disconnect when it is not." xml:space="preserve">
-        <source>Automatically connect the virtual screen when the associated display is online and disconnect when it is not.</source>
-        <target state="translated">Automatikusan csatlakoztatja a virtuális képernyőt, ha a társított kijelző csatlakoztatva van, és leválasztja, ha nem.</target>
+      <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -1254,14 +1243,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       </trans-unit>
       <trans-unit id="Change Activation Priority…" xml:space="preserve">
         <source>Change Activation Priority…</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) are replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>Changes (delta values) are replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -1511,6 +1492,10 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected." xml:space="preserve">
         <source>Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected.</source>
         <target state="translated">Csatlakoztatja a virtuális képernyőt, és elindítja a streaminget a virtuális képernyőről a kijelzőre. Beállítja továbbá, hogy a stream mindig automatikusan elinduljon, amikor a kijelzőt csatlakoztatják.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Consider range differences" xml:space="preserve">
+        <source>Consider range differences</source>
         <note/>
       </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
@@ -2043,12 +2028,8 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Adat törlése</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Delta sync" xml:space="preserve">
-        <source>Delta sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Delta sync - full range" xml:space="preserve">
-        <source>Delta sync - full range</source>
+      <trans-unit id="Delta syncing" xml:space="preserve">
+        <source>Delta syncing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Description" xml:space="preserve">
@@ -2069,10 +2050,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Detected some interference..." xml:space="preserve">
         <source>Detected some interference...</source>
         <target state="translated">Zavar detektálva...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Determines the displays from which %@ is synchronized to the sync target displays." xml:space="preserve">
-        <source>Determines the displays from which %@ is synchronized to the sync target displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
@@ -2116,14 +2093,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Direct I2C communication" xml:space="preserve">
         <source>Direct I2C communication</source>
         <target state="translated">Közvetlen I2C kommunikáció</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync" xml:space="preserve">
-        <source>Direct sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync - full range" xml:space="preserve">
-        <source>Direct sync - full range</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disable" xml:space="preserve">
@@ -2512,11 +2481,6 @@ The process does not work for the built-in display (reboot needed). The operatio
 A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A művelet hatására egyes Mac-ek alvó üzemmódba kerülhetnek.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Not Disconnect" xml:space="preserve">
-        <source>Do Not Disconnect</source>
-        <target state="translated">Ne legyen leválasztva</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">Ne legyen alkalmazva a beépített kijelzőre</target>
@@ -2550,11 +2514,6 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Do you want to discard the virtual screen?" xml:space="preserve">
         <source>Do you want to discard the virtual screen?</source>
         <target state="translated">Törölni akarja a virtuális képernyőt?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do you want to disconnect the virtual screen?" xml:space="preserve">
-        <source>Do you want to disconnect the virtual screen?</source>
-        <target state="translated">Le akarja választani a virtuális képernyőt?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to proceed?" xml:space="preserve">
@@ -2827,6 +2786,10 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       </trans-unit>
       <trans-unit id="Exclude some displays from the group" xml:space="preserve">
         <source>Exclude some displays from the group</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync source list" xml:space="preserve">
+        <source>Exclude some members from sync source list</source>
         <note/>
       </trans-unit>
       <trans-unit id="Exclude some members from sync target list" xml:space="preserve">
@@ -3259,6 +3222,10 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Ha a billentyűzetvezérlés az aktuális hangeszköz nevének megfelelő kijelzőre van állítva (ezt a Billentyűzet menüpontban állíthatja be), akkor a kijelző neve helyett ezt az értéket fogja használni az alkalmazás a hangeszköz megfeleltetésére.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
+        <source>If source and target control ranges differ, synchronized values are remaped (rebased) accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
         <target state="translated">Ha a kijelző gyári visszaállítása megfelelően megtörtént, akkor az összes alkalmazás által tárolt DDC-értéket is javasolt visszaállítani az alapértelmezett értékekre.</target>
@@ -3592,10 +3559,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Korlátozza a felbontási tartományt a képarány értékek és a szorzó alapján.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="List of specified group members" xml:space="preserve">
-        <source>List of specified group members</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Listen to native audio keys" xml:space="preserve">
         <source>Listen to native audio keys</source>
         <target state="translated">Natív hangerőbillentyűk kezelése</target>
@@ -3664,10 +3627,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Main app menu popup animation" xml:space="preserve">
         <source>Main app menu popup animation</source>
         <target state="translated">Fő app menü megjelenés animáció</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Main display" xml:space="preserve">
-        <source>Main display</source>
         <note/>
       </trans-unit>
       <trans-unit id="Main status changed for %@." xml:space="preserve">
@@ -5415,10 +5374,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Specify one or more group members that act as sources." xml:space="preserve">
-        <source>Specify one or more group members that act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <target state="translated">Adja meg, hogy mi történjen az alkalmazás menü ki-/bekapcsolójának megnyomásakor. Nem minden beállítás feltétlenül érvényes erre a kijelzőre.</target>
@@ -5584,16 +5539,20 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <source>Synchronization Settings</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization method" xml:space="preserve">
-        <source>Synchronization method</source>
+      <trans-unit id="Synchronization source configuration" xml:space="preserve">
+        <source>Synchronization source configuration</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization source" xml:space="preserve">
-        <source>Synchronization source</source>
+      <trans-unit id="Synchronization target configuration" xml:space="preserve">
+        <source>Synchronization target configuration</source>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize %@" xml:space="preserve">
         <source>Synchronize %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
+        <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
         <note/>
       </trans-unit>
       <trans-unit id="System Colors" xml:space="preserve">
@@ -5649,14 +5608,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="The SHIFT key was pressed during launch. The app started in safe mode." xml:space="preserve">
         <source>The SHIFT key was pressed during launch. The app started in safe mode.</source>
         <target state="translated">Lenyomta a SHIFT billentyűt az indítás során. Az alkalmazás csökkentett módban indult.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
@@ -5735,10 +5686,6 @@ Ez a művelet nem állítja vissza magát a kijelzőt.</target>
         <target state="translated">A kijelző automatikusan leválasztásra került az érzékelésekor, vagy a fizikai csatlakoztatáskor, ha az alkalmazás segítségével korábban már le lett választva. Ez a beállítás nem várt problémákat okozhat (csatlakoztatás-leválasztás ciklus nem kompatibilis kijelzőkkel, legalább egy csatlakoztatott kijelző hiánya) - óvatosan használja!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The following method is used to sync values from source to targets:" xml:space="preserve">
-        <source>The following method is used to sync values from source to targets:</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
         <source>The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.
 
@@ -5772,15 +5719,8 @@ Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</targ
         <target state="translated">Az ezzel a képaránnyal létrehozott virtuális képernyő nem tűnik életképesnek.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings)." xml:space="preserve">
-        <source>The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings).</source>
-        <target state="translated">A virtuális képernyő most egy csatlakoztatott kijelzőhöz van társítva, ezért a virtuális képernyőnek automatikusan csatlakoznia kell. Alternatívaként letilthatja az automatikus csatlakozást (bármikor újra engedélyezheti a társítási beállítások között).
-</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The virtual screen was disassociated from a connected display but the virtual screen is still connected." xml:space="preserve">
-        <source>The virtual screen was disassociated from a connected display but the virtual screen is still connected.</source>
-        <target state="translated">A virtuális képernyő társítása megszűnt egy csatlakoztatott kijelzőhöz, de a virtuális képernyő továbbra is csatlakoztatva van.</target>
+      <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings)." xml:space="preserve">
+        <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings).</source>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
@@ -5996,6 +5936,10 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
         <source>This virtual screen should now be connected</source>
         <target state="translated">Ennek a virtuális képernyőnek most csatlakoznia kellene</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
+        <source>This virtual screen should now be disconnected</source>
         <note/>
       </trans-unit>
       <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
@@ -6352,10 +6296,6 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">A nulla letiltja az átmenet animációkat.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays." xml:space="preserve">
-        <source>Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
         <source>VIRTUAL</source>
         <target state="translated">VIRTUÁLIS</target>
@@ -6439,6 +6379,14 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="Virtual screen follows display orientation" xml:space="preserve">
         <source>Virtual screen follows display orientation</source>
         <target state="translated">A virtuális képernyő követi a kijelző tájolását</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync sources." xml:space="preserve">
+        <source>Virtual screen group members can be sync sources.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync targets." xml:space="preserve">
+        <source>Virtual screen group members can be sync targets.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screen name" xml:space="preserve">
@@ -6887,10 +6835,6 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
         <target state="translated">⚠️ Az értesítések nincsenek engedélyezve az alkalmazás számára. Módosítsa a Rendszerbeállítások &gt; Értesítések alatt!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Some display group based features are not available in this app version." xml:space="preserve">
-        <source>⚠️ Some display group based features are not available in this app version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">

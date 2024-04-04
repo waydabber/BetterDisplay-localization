@@ -230,10 +230,6 @@
         <source>A display is present which is not fully controllable without the app</source>
         <note/>
       </trans-unit>
-      <trans-unit id="A group member set as the main display acts as the source." xml:space="preserve">
-        <source>A group member set as the main display acts as the source.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <note/>
@@ -267,14 +263,8 @@
         <target state="translated">디스플레이와 연결된 가상 화면은 연결된 디스플레이의 연결이 끊어지면 자동으로 연결이 끊어집니다. 다른 모든 가상 화면은 연결이 끊어집니다. 연결된 가상 화면의 자동 연결 해제를 비활성화할 수 있습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will connect automatically when the associated display is connected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will connect automatically when the associated display is connected.</source>
-        <target state="translated">디스플레이와 연결된 가상 화면은 연결된 디스플레이가 연결되면 자동으로 연결됩니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected.</source>
-        <target state="translated">디스플레이와 연결된 가상 화면은 연결된 디스플레이의 연결이 끊어지면 자동으로 연결이 끊어집니다.</target>
+      <trans-unit id="A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
+        <source>A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected.</source>
         <note/>
       </trans-unit>
       <trans-unit id="About" xml:space="preserve">
@@ -511,10 +501,6 @@ You can do this in System Settings or the app can do it for you (administrator c
         <source>All group members can be synchronization sources.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="All group members not on the specified list can act as sources." xml:space="preserve">
-        <source>All group members not on the specified list can act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
         <source>All members (except the the source of the sync event) will be sync targets.</source>
         <note/>
@@ -589,6 +575,14 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
         <source>Allow using F14/F15 as alternative brightness keys</source>
         <target state="translated">F14/F15를 대체 밝기 키로 사용 허용</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync sources" xml:space="preserve">
+        <source>Allow virtual screens as sync sources</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync targets" xml:space="preserve">
+        <source>Allow virtual screens as sync targets</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
@@ -675,20 +669,8 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">다른 앱에서 화면 색상 또는 밝기를 반복적으로 변경하는 것을 감지했습니다. 이는 %@가 수행하는 작업과 충돌합니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Any Apple display (built-in or external)" xml:space="preserve">
-        <source>Any Apple display (built-in or external)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any external Apple display" xml:space="preserve">
-        <source>Any external Apple display</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member" xml:space="preserve">
-        <source>Any group member</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member except listed" xml:space="preserve">
-        <source>Any group member except listed</source>
+      <trans-unit id="Any group member can be a sync source" xml:space="preserve">
+        <source>Any group member can be a sync source</source>
         <note/>
       </trans-unit>
       <trans-unit id="Any group member is connected" xml:space="preserve">
@@ -953,6 +935,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">가상 화면 자동 연결</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
+        <source>Auto-connect virtual screen when all associated screens are offline</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <note/>
@@ -996,9 +982,12 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">연결된 디스플레이에 가상 화면의 콘텐츠를 표시하도록 미러링을 자동으로 구성합니다. 연결된 디스플레이가 여러 대인 경우 한 대만 미러링 대상이 됩니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Automatically connect the virtual screen when the associated display is online and disconnect when it is not." xml:space="preserve">
-        <source>Automatically connect the virtual screen when the associated display is online and disconnect when it is not.</source>
-        <target state="translated">연결된 디스플레이가 온라인 상태일 때 가상 화면을 자동으로 연결하고 온라인 상태가 아닐 때는 연결을 해제합니다.</target>
+      <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -1216,14 +1205,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Change Activation Priority…" xml:space="preserve">
         <source>Change Activation Priority…</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) are replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>Changes (delta values) are replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -1469,6 +1450,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected." xml:space="preserve">
         <source>Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected.</source>
         <target state="translated">가상 화면을 연결하고 가상 화면에서 디스플레이로 전체 화면 스트리밍을 시작합니다. 디스플레이가 연결될 때마다 전체 화면 스트리밍이 자동으로 시작되도록 설정할 수도 있습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Consider range differences" xml:space="preserve">
+        <source>Consider range differences</source>
         <note/>
       </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
@@ -1995,12 +1980,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">데이터 삭제</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Delta sync" xml:space="preserve">
-        <source>Delta sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Delta sync - full range" xml:space="preserve">
-        <source>Delta sync - full range</source>
+      <trans-unit id="Delta syncing" xml:space="preserve">
+        <source>Delta syncing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Description" xml:space="preserve">
@@ -2021,10 +2002,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Detected some interference..." xml:space="preserve">
         <source>Detected some interference...</source>
         <target state="translated">충돌 감지...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Determines the displays from which %@ is synchronized to the sync target displays." xml:space="preserve">
-        <source>Determines the displays from which %@ is synchronized to the sync target displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
@@ -2067,14 +2044,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Direct I2C communication" xml:space="preserve">
         <source>Direct I2C communication</source>
         <target state="translated">직접적인 I2C 통신</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync" xml:space="preserve">
-        <source>Direct sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync - full range" xml:space="preserve">
-        <source>Direct sync - full range</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disable" xml:space="preserve">
@@ -2458,11 +2427,6 @@ The process does not work for the built-in display (reboot needed). The operatio
 내장 디스플레이에서는 이 프로세스가 작동하지 않습니다 (재부팅 필요). 이 작업으로 인해 일부 Mac이 절전 모드로 전환될 수 있습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Not Disconnect" xml:space="preserve">
-        <source>Do Not Disconnect</source>
-        <target state="translated">연결 해제하지 마십시오</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">내장 디스플레이에 적용하지 않음</target>
@@ -2496,11 +2460,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Do you want to discard the virtual screen?" xml:space="preserve">
         <source>Do you want to discard the virtual screen?</source>
         <target state="translated">가상 화면을 삭제하시겠습니까?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do you want to disconnect the virtual screen?" xml:space="preserve">
-        <source>Do you want to disconnect the virtual screen?</source>
-        <target state="translated">가상 화면 연결을 해제하시겠습니까?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to proceed?" xml:space="preserve">
@@ -2753,6 +2712,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Exclude some displays from the group" xml:space="preserve">
         <source>Exclude some displays from the group</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync source list" xml:space="preserve">
+        <source>Exclude some members from sync source list</source>
         <note/>
       </trans-unit>
       <trans-unit id="Exclude some members from sync target list" xml:space="preserve">
@@ -3141,6 +3104,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">키보드 제어가 현재 오디오 장치 이름과 일치하는 디스플레이로 설정되어 있는 경우(키보드 설정에서 설정), 디스플레이 이름 대신 이 값이 오디오 장치 일치에 사용됩니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
+        <source>If source and target control ranges differ, synchronized values are remaped (rebased) accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
         <target state="translated">디스플레이 공장 초기화가 제대로 수행되었다면 저장된 모든 앱 DDC 값도 기본값으로 초기화해야 합니다.</target>
@@ -3455,10 +3422,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">종횡비 값과 승수를 기준으로 해상도 범위를 제한합니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="List of specified group members" xml:space="preserve">
-        <source>List of specified group members</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Listen to native audio keys" xml:space="preserve">
         <source>Listen to native audio keys</source>
         <target state="translated">네이티브 오디오 조정 키 듣기</target>
@@ -3518,10 +3481,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Main app menu popup animation" xml:space="preserve">
         <source>Main app menu popup animation</source>
         <target state="translated">메인 앱 메뉴 팝업 애니메이션</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Main display" xml:space="preserve">
-        <source>Main display</source>
         <note/>
       </trans-unit>
       <trans-unit id="Main status changed for %@." xml:space="preserve">
@@ -5114,10 +5073,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Specify one or more group members that act as sources." xml:space="preserve">
-        <source>Specify one or more group members that act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <target state="translated">앱 메뉴 켜기/끄기 스위치를 눌렀을 때 어떤 일이 일어날지 지정합니다. 일부 옵션은 디스플레이에 유효하지 않을 수 있습니다.</target>
@@ -5276,16 +5231,20 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Synchronization Settings</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization method" xml:space="preserve">
-        <source>Synchronization method</source>
+      <trans-unit id="Synchronization source configuration" xml:space="preserve">
+        <source>Synchronization source configuration</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization source" xml:space="preserve">
-        <source>Synchronization source</source>
+      <trans-unit id="Synchronization target configuration" xml:space="preserve">
+        <source>Synchronization target configuration</source>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize %@" xml:space="preserve">
         <source>Synchronize %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
+        <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
         <note/>
       </trans-unit>
       <trans-unit id="System Colors" xml:space="preserve">
@@ -5339,14 +5298,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="The SHIFT key was pressed during launch. The app started in safe mode." xml:space="preserve">
         <source>The SHIFT key was pressed during launch. The app started in safe mode.</source>
         <target state="translated">실행 중에 SHIFT 키를 눌렀습니다. 앱이 안전 모드에서 시작되었습니다. </target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
@@ -5423,10 +5374,6 @@ This operation does not reset the display itself.</source>
         <target state="translated">디스플레이가 감지되면 자동으로 연결이 끊어지거나, 미리 앱을 사용하여 연결이 끊어진 경우 물리적으로 연결됩니다. 이 설정은 예기치 않은 문제(호환되지 않는 디스플레이의 연결-연결 해제 주기, 연결된 디스플레이가 없는 경우)를 일으킬 수 있으므로 주의해서 사용하세요!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The following method is used to sync values from source to targets:" xml:space="preserve">
-        <source>The following method is used to sync values from source to targets:</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
         <source>The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.
 
@@ -5460,14 +5407,8 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">이 화면 비율로 생성된 가상 화면은 실행할 수 없는 것 같습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings)." xml:space="preserve">
-        <source>The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings).</source>
-        <target state="translated">이제 가상 화면이 연결된 디스플레이와 연결되었으므로 가상 화면이 자동으로 연결됩니다. 또는 자동 연결을 비활성화할 수도 있습니다(연결 설정에서 언제든지 활성화할 수 있음).</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The virtual screen was disassociated from a connected display but the virtual screen is still connected." xml:space="preserve">
-        <source>The virtual screen was disassociated from a connected display but the virtual screen is still connected.</source>
-        <target state="translated">가상 화면이 연결된 디스플레이에서 연결이 끊어졌지만 가상 화면은 여전히 연결되어 있습니다.</target>
+      <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings)." xml:space="preserve">
+        <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings).</source>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
@@ -5681,6 +5622,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
         <source>This virtual screen should now be connected</source>
         <target state="translated">이제 이 가상 화면이 연결되었습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
+        <source>This virtual screen should now be disconnected</source>
         <note/>
       </trans-unit>
       <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
@@ -6006,10 +5951,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">전환 효과를 비활성화하려면 0을 입력하세요.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays." xml:space="preserve">
-        <source>Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
         <source>VIRTUAL</source>
         <note/>
@@ -6082,6 +6023,14 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Virtual screen follows display orientation" xml:space="preserve">
         <source>Virtual screen follows display orientation</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync sources." xml:space="preserve">
+        <source>Virtual screen group members can be sync sources.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync targets." xml:space="preserve">
+        <source>Virtual screen group members can be sync targets.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screen name" xml:space="preserve">
@@ -6512,10 +6461,6 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Some display group based features are not available in this app version." xml:space="preserve">
-        <source>⚠️ Some display group based features are not available in this app version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">

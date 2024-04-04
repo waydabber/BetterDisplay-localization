@@ -236,10 +236,6 @@
         <target state="translated">Está presente um monitor que não é totalmente controlável sem o aplicativo</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A group member set as the main display acts as the source." xml:space="preserve">
-        <source>A group member set as the main display acts as the source.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <note/>
@@ -274,14 +270,8 @@
         <target state="translated">Uma tela virtual associada a um monitor será desconectada automaticamente quando o monitor associado for desconectado. Todas as outras telas virtuais foram desconectadas. Você pode desativar a desconexão automática para telas virtuais associadas.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will connect automatically when the associated display is connected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will connect automatically when the associated display is connected.</source>
-        <target state="translated">Uma tela virtual associada a um monitor será conectada automaticamente quando o monitor associado for conectado.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected.</source>
-        <target state="translated">Uma tela virtual associada a um monitor será desconectada automaticamente quando o monitor associado for desconectado.</target>
+      <trans-unit id="A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
+        <source>A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected.</source>
         <note/>
       </trans-unit>
       <trans-unit id="About" xml:space="preserve">
@@ -523,10 +513,6 @@ Você pode fazer isso nas Configurações do sistema ou o aplicativo pode fazer 
         <source>All group members can be synchronization sources.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="All group members not on the specified list can act as sources." xml:space="preserve">
-        <source>All group members not on the specified list can act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
         <source>All members (except the the source of the sync event) will be sync targets.</source>
         <note/>
@@ -604,6 +590,14 @@ Você pode fazer isso nas Configurações do sistema ou o aplicativo pode fazer 
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
         <source>Allow using F14/F15 as alternative brightness keys</source>
         <target state="translated">Permitir usar F14/F15 como teclas alternativas de brilho</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync sources" xml:space="preserve">
+        <source>Allow virtual screens as sync sources</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync targets" xml:space="preserve">
+        <source>Allow virtual screens as sync targets</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
@@ -694,20 +688,8 @@ Você pode fazer isso nas Configurações do sistema ou o aplicativo pode fazer 
         <target state="translated">Outro aplicativo alterou repetidamente as cores ou o brilho da tela - isso vai de encontro ao que o %@ está fazendo.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Any Apple display (built-in or external)" xml:space="preserve">
-        <source>Any Apple display (built-in or external)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any external Apple display" xml:space="preserve">
-        <source>Any external Apple display</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member" xml:space="preserve">
-        <source>Any group member</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member except listed" xml:space="preserve">
-        <source>Any group member except listed</source>
+      <trans-unit id="Any group member can be a sync source" xml:space="preserve">
+        <source>Any group member can be a sync source</source>
         <note/>
       </trans-unit>
       <trans-unit id="Any group member is connected" xml:space="preserve">
@@ -978,6 +960,10 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
         <target state="translated">Tela virtual com conexão automática</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
+        <source>Auto-connect virtual screen when all associated screens are offline</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">A desconexão automática na conexão de monitor externo agora está suspensa.</target>
@@ -1023,9 +1009,12 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
         <target state="translated">Configure automaticamente o espelhamento para mostrar o conteúdo da tela virtual no monitor associado. Se vários monitores associados estiverem conectados, apenas um será o alvo do espelho.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Automatically connect the virtual screen when the associated display is online and disconnect when it is not." xml:space="preserve">
-        <source>Automatically connect the virtual screen when the associated display is online and disconnect when it is not.</source>
-        <target state="translated">Conectar automaticamente a tela virtual quando o monitor associado estiver on-line e desconectar quando não estiver.</target>
+      <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -1254,14 +1243,6 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
       </trans-unit>
       <trans-unit id="Change Activation Priority…" xml:space="preserve">
         <source>Change Activation Priority…</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) are replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>Changes (delta values) are replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -1511,6 +1492,10 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
       <trans-unit id="Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected." xml:space="preserve">
         <source>Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected.</source>
         <target state="translated">Conecta a tela virtual e inicia a transmissão em tela cheia da tela virtual para o monitor. Também configura o fluxo de tela inteira para iniciar automaticamente sempre que o monitor estiver conectado.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Consider range differences" xml:space="preserve">
+        <source>Consider range differences</source>
         <note/>
       </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
@@ -2044,12 +2029,8 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
         <target state="translated">Excluir dados</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Delta sync" xml:space="preserve">
-        <source>Delta sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Delta sync - full range" xml:space="preserve">
-        <source>Delta sync - full range</source>
+      <trans-unit id="Delta syncing" xml:space="preserve">
+        <source>Delta syncing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Description" xml:space="preserve">
@@ -2070,10 +2051,6 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
       <trans-unit id="Detected some interference..." xml:space="preserve">
         <source>Detected some interference...</source>
         <target state="translated">Detectado alguma interferência...</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Determines the displays from which %@ is synchronized to the sync target displays." xml:space="preserve">
-        <source>Determines the displays from which %@ is synchronized to the sync target displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
@@ -2117,14 +2094,6 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
       <trans-unit id="Direct I2C communication" xml:space="preserve">
         <source>Direct I2C communication</source>
         <target state="translated">Comunicação I2C direta</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync" xml:space="preserve">
-        <source>Direct sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync - full range" xml:space="preserve">
-        <source>Direct sync - full range</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disable" xml:space="preserve">
@@ -2513,11 +2482,6 @@ The process does not work for the built-in display (reboot needed). The operatio
 O processo não funciona para o monitor integrado (reinicialização necessária). A operação pode fazer com que alguns Macs entrem no modo de suspensão.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Not Disconnect" xml:space="preserve">
-        <source>Do Not Disconnect</source>
-        <target state="translated">Não desconecte</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <target state="translated">Não aplicar para o monitor interno</target>
@@ -2551,11 +2515,6 @@ O processo não funciona para o monitor integrado (reinicialização necessária
       <trans-unit id="Do you want to discard the virtual screen?" xml:space="preserve">
         <source>Do you want to discard the virtual screen?</source>
         <target state="translated">Quer descartar a tela virtual?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do you want to disconnect the virtual screen?" xml:space="preserve">
-        <source>Do you want to disconnect the virtual screen?</source>
-        <target state="translated">Quer desconectar a tela virtual?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to proceed?" xml:space="preserve">
@@ -2828,6 +2787,10 @@ O processo não funciona para o monitor integrado (reinicialização necessária
       </trans-unit>
       <trans-unit id="Exclude some displays from the group" xml:space="preserve">
         <source>Exclude some displays from the group</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync source list" xml:space="preserve">
+        <source>Exclude some members from sync source list</source>
         <note/>
       </trans-unit>
       <trans-unit id="Exclude some members from sync target list" xml:space="preserve">
@@ -3260,6 +3223,10 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Se o controle do teclado estiver definido para a exibição que corresponde ao nome do dispositivo de áudio atual (configure isso em Configurações do teclado), esse valor será usado para correspondência do dispositivo de áudio em vez do nome de exibição.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
+        <source>If source and target control ranges differ, synchronized values are remaped (rebased) accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
         <target state="translated">Se a redefinição de fábrica do monitor tiver sido realizada corretamente, você também deverá redefinir todos os valores DDC do aplicativo armazenados para os padrões.</target>
@@ -3593,10 +3560,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <target state="translated">Limita o intervalo de resolução com base nos valores da proporção e no multiplicador.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="List of specified group members" xml:space="preserve">
-        <source>List of specified group members</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Listen to native audio keys" xml:space="preserve">
         <source>Listen to native audio keys</source>
         <target state="translated">Ouça as teclas de áudio nativas</target>
@@ -3665,10 +3628,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Main app menu popup animation" xml:space="preserve">
         <source>Main app menu popup animation</source>
         <target state="translated">Animação do menu pop-up da aplicação principal</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Main display" xml:space="preserve">
-        <source>Main display</source>
         <note/>
       </trans-unit>
       <trans-unit id="Main status changed for %@." xml:space="preserve">
@@ -5415,10 +5374,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Specify one or more group members that act as sources." xml:space="preserve">
-        <source>Specify one or more group members that act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <target state="translated">Especifique o que deve acontecer quando o botão liga/desliga do menu do aplicativo é pressionado. Nem todas as opções podem ser válidas para o monitor.</target>
@@ -5584,16 +5539,20 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
         <source>Synchronization Settings</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization method" xml:space="preserve">
-        <source>Synchronization method</source>
+      <trans-unit id="Synchronization source configuration" xml:space="preserve">
+        <source>Synchronization source configuration</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization source" xml:space="preserve">
-        <source>Synchronization source</source>
+      <trans-unit id="Synchronization target configuration" xml:space="preserve">
+        <source>Synchronization target configuration</source>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize %@" xml:space="preserve">
         <source>Synchronize %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
+        <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
         <note/>
       </trans-unit>
       <trans-unit id="System Colors" xml:space="preserve">
@@ -5649,14 +5608,6 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="The SHIFT key was pressed during launch. The app started in safe mode." xml:space="preserve">
         <source>The SHIFT key was pressed during launch. The app started in safe mode.</source>
         <target state="translated">A tecla SHIFT foi pressionada durante a inicialização. O aplicativo foi iniciado em modo de segurança.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
@@ -5735,10 +5686,6 @@ Esta operação não reinicia o display em si.</target>
         <target state="translated">O monitor será desconectado automaticamente após detecção ou conexão física, caso tenha sido desconectado usando o aplicativo anteriormente. Esta configuração pode causar problemas inesperados (ciclo de conexão-desconexão com monitores incompatíveis, falta de monitores conectados) - use com cuidado!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The following method is used to sync values from source to targets:" xml:space="preserve">
-        <source>The following method is used to sync values from source to targets:</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
         <source>The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.
 
@@ -5772,14 +5719,8 @@ Em caso de falha, desconecte e reconecte o monitor fisicamente.</target>
         <target state="translated">A tela virtual criada com esta proporção não parece viável.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings)." xml:space="preserve">
-        <source>The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings).</source>
-        <target state="translated">A tela virtual agora está associada a um monitor conectado, portanto, a tela virtual deve se conectar automaticamente. Alternativamente, você pode desativar a conexão automática (você pode habilitá-la a qualquer momento nas configurações de associação).</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The virtual screen was disassociated from a connected display but the virtual screen is still connected." xml:space="preserve">
-        <source>The virtual screen was disassociated from a connected display but the virtual screen is still connected.</source>
-        <target state="translated">A tela virtual foi desassociada de um monitor conectado, mas a tela virtual ainda está conectada.</target>
+      <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings)." xml:space="preserve">
+        <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings).</source>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
@@ -5995,6 +5936,10 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
         <source>This virtual screen should now be connected</source>
         <target state="translated">Esta tela virtual agora pode ser conectada</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
+        <source>This virtual screen should now be disconnected</source>
         <note/>
       </trans-unit>
       <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
@@ -6350,10 +6295,6 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <target state="translated">Usar zero para desativar a animação de transição.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays." xml:space="preserve">
-        <source>Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
         <source>VIRTUAL</source>
         <target state="translated">VIRTUAL</target>
@@ -6437,6 +6378,14 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
       <trans-unit id="Virtual screen follows display orientation" xml:space="preserve">
         <source>Virtual screen follows display orientation</source>
         <target state="translated">A tela virtual segue a orientação da exibição</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync sources." xml:space="preserve">
+        <source>Virtual screen group members can be sync sources.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync targets." xml:space="preserve">
+        <source>Virtual screen group members can be sync targets.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screen name" xml:space="preserve">
@@ -6885,10 +6834,6 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
         <target state="translated">⚠️ As notificações estão desativadas para o aplicativo. Corrija isso em Configurações do sistema &gt; Notificações!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Some display group based features are not available in this app version." xml:space="preserve">
-        <source>⚠️ Some display group based features are not available in this app version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">

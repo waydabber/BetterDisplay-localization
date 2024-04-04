@@ -234,10 +234,6 @@
         <target state="translated">BetterDisplay olmadan tam olarak kontrol edilemeyen bir ekran mevcut</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A group member set as the main display acts as the source." xml:space="preserve">
-        <source>A group member set as the main display acts as the source.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <note/>
@@ -270,12 +266,8 @@
         <source>A virtual screen which is associated with a display will automatically disconnect when the associated display is disconnected. All other virtual screens were disconnected. You can disable auto-disconnect for associated virtual screens.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will connect automatically when the associated display is connected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will connect automatically when the associated display is connected.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected.</source>
+      <trans-unit id="A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
+        <source>A virtual screen which is associated with a display will connector disconnect automatically when the associated display is connected or disconnected.</source>
         <note/>
       </trans-unit>
       <trans-unit id="About" xml:space="preserve">
@@ -509,10 +501,6 @@ Bunu Sistem Ayarları'ndan yapabilir veya uygulama sizin için yapabilir (yönet
         <source>All group members can be synchronization sources.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="All group members not on the specified list can act as sources." xml:space="preserve">
-        <source>All group members not on the specified list can act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
         <source>All members (except the the source of the sync event) will be sync targets.</source>
         <note/>
@@ -578,6 +566,14 @@ Bunu Sistem Ayarları'ndan yapabilir veya uygulama sizin için yapabilir (yönet
       </trans-unit>
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
         <source>Allow using F14/F15 as alternative brightness keys</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync sources" xml:space="preserve">
+        <source>Allow virtual screens as sync sources</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync targets" xml:space="preserve">
+        <source>Allow virtual screens as sync targets</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
@@ -661,20 +657,8 @@ Bunu Sistem Ayarları'ndan yapabilir veya uygulama sizin için yapabilir (yönet
         <target state="translated">Başka bir uygulama ekran renklerini veya parlaklığını değiştirdi - bu %@'nın yaptığı işlemle çakışıyor.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Any Apple display (built-in or external)" xml:space="preserve">
-        <source>Any Apple display (built-in or external)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any external Apple display" xml:space="preserve">
-        <source>Any external Apple display</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member" xml:space="preserve">
-        <source>Any group member</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Any group member except listed" xml:space="preserve">
-        <source>Any group member except listed</source>
+      <trans-unit id="Any group member can be a sync source" xml:space="preserve">
+        <source>Any group member can be a sync source</source>
         <note/>
       </trans-unit>
       <trans-unit id="Any group member is connected" xml:space="preserve">
@@ -937,6 +921,10 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <target state="translated">Sanal ekrana otomatik bağlan</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
+        <source>Auto-connect virtual screen when all associated screens are offline</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <note/>
@@ -975,8 +963,12 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <source>Automatically configure mirroring to show the virtual screen's content on the associated display. If multiple associated displays are connected, only one will be mirror target.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Automatically connect the virtual screen when the associated display is online and disconnect when it is not." xml:space="preserve">
-        <source>Automatically connect the virtual screen when the associated display is online and disconnect when it is not.</source>
+      <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -1177,14 +1169,6 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       </trans-unit>
       <trans-unit id="Change Activation Priority…" xml:space="preserve">
         <source>Change Activation Priority…</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) are replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>Changes (delta values) are replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>Changes (delta values) will be replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -1420,6 +1404,10 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       <trans-unit id="Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected." xml:space="preserve">
         <source>Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected.</source>
         <target state="translated">Sanal ekranı bağlar ve sanal ekran ile monitör arasında tam ekran yayınını başlatır. Ayrıca tam ekran yayınını, ekran her bağlandığında otomatik olarak başlayacak şekilde ayarlar.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Consider range differences" xml:space="preserve">
+        <source>Consider range differences</source>
         <note/>
       </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
@@ -1877,12 +1865,8 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <source>Delete Data</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Delta sync" xml:space="preserve">
-        <source>Delta sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Delta sync - full range" xml:space="preserve">
-        <source>Delta sync - full range</source>
+      <trans-unit id="Delta syncing" xml:space="preserve">
+        <source>Delta syncing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Description" xml:space="preserve">
@@ -1900,10 +1884,6 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       </trans-unit>
       <trans-unit id="Detected some interference..." xml:space="preserve">
         <source>Detected some interference...</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Determines the displays from which %@ is synchronized to the sync target displays." xml:space="preserve">
-        <source>Determines the displays from which %@ is synchronized to the sync target displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
@@ -1940,14 +1920,6 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       </trans-unit>
       <trans-unit id="Direct I2C communication" xml:space="preserve">
         <source>Direct I2C communication</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync" xml:space="preserve">
-        <source>Direct sync</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Direct sync - full range" xml:space="preserve">
-        <source>Direct sync - full range</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disable" xml:space="preserve">
@@ -2294,10 +2266,6 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
 The process does not work for the built-in display (reboot needed). The operation might cause some Macs to enter sleep mode.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Do Not Disconnect" xml:space="preserve">
-        <source>Do Not Disconnect</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
         <note/>
@@ -2325,10 +2293,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Do you want to discard the virtual screen?" xml:space="preserve">
         <source>Do you want to discard the virtual screen?</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do you want to disconnect the virtual screen?" xml:space="preserve">
-        <source>Do you want to disconnect the virtual screen?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to proceed?" xml:space="preserve">
@@ -2571,6 +2535,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Exclude some displays from the group" xml:space="preserve">
         <source>Exclude some displays from the group</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync source list" xml:space="preserve">
+        <source>Exclude some members from sync source list</source>
         <note/>
       </trans-unit>
       <trans-unit id="Exclude some members from sync target list" xml:space="preserve">
@@ -2963,6 +2931,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
+        <source>If source and target control ranges differ, synchronized values are remaped (rebased) accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
         <note/>
@@ -3255,10 +3227,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">En boy oranı değerlerine ve çarpana bağlı olarak çözünürlük aralığını sınırlar.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="List of specified group members" xml:space="preserve">
-        <source>List of specified group members</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Listen to native audio keys" xml:space="preserve">
         <source>Listen to native audio keys</source>
         <note/>
@@ -3321,10 +3289,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Main app menu popup animation" xml:space="preserve">
         <source>Main app menu popup animation</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Main display" xml:space="preserve">
-        <source>Main display</source>
         <note/>
       </trans-unit>
       <trans-unit id="Main status changed for %@." xml:space="preserve">
@@ -4813,10 +4777,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Specify one or more group members that act as sources." xml:space="preserve">
-        <source>Specify one or more group members that act as sources.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <note/>
@@ -4963,16 +4923,20 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Synchronization Settings</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization method" xml:space="preserve">
-        <source>Synchronization method</source>
+      <trans-unit id="Synchronization source configuration" xml:space="preserve">
+        <source>Synchronization source configuration</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronization source" xml:space="preserve">
-        <source>Synchronization source</source>
+      <trans-unit id="Synchronization target configuration" xml:space="preserve">
+        <source>Synchronization target configuration</source>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize %@" xml:space="preserve">
         <source>Synchronize %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
+        <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
         <note/>
       </trans-unit>
       <trans-unit id="System Colors" xml:space="preserve">
@@ -5023,14 +4987,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="The SHIFT key was pressed during launch. The app started in safe mode." xml:space="preserve">
         <source>The SHIFT key was pressed during launch. The app started in safe mode.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If ranges differ, no rebasing is performed." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If ranges differ, no rebasing is performed.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly." xml:space="preserve">
-        <source>The absolute value of the source control is replicated. If source and target control ranges differ, synchronized values are rebased accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
@@ -5095,10 +5051,6 @@ This operation does not reset the display itself.</source>
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The following method is used to sync values from source to targets:" xml:space="preserve">
-        <source>The following method is used to sync values from source to targets:</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
         <source>The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.
 
@@ -5123,12 +5075,8 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The virtual screen created with this aspect ratio does not seem to be viable.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings)." xml:space="preserve">
-        <source>The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings).</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The virtual screen was disassociated from a connected display but the virtual screen is still connected." xml:space="preserve">
-        <source>The virtual screen was disassociated from a connected display but the virtual screen is still connected.</source>
+      <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings)." xml:space="preserve">
+        <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings).</source>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
@@ -5336,6 +5284,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
         <source>This virtual screen should now be connected</source>
         <target state="translated">Bu sanal ekran şimdi bağlanmış olmalıdır</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
+        <source>This virtual screen should now be disconnected</source>
         <note/>
       </trans-unit>
       <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
@@ -5661,10 +5613,6 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
         <source>Use zero to disable transition animation.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays." xml:space="preserve">
-        <source>Useful for syncing system induced (Control Center, Touch Bar, ambient light sensor) brightness changes to other displays.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
         <source>VIRTUAL</source>
         <target state="translated">SANAL</target>
@@ -5747,6 +5695,14 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       <trans-unit id="Virtual screen follows display orientation" xml:space="preserve">
         <source>Virtual screen follows display orientation</source>
         <target state="translated">Sanal ekran, monitör yönünü takip eder</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync sources." xml:space="preserve">
+        <source>Virtual screen group members can be sync sources.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync targets." xml:space="preserve">
+        <source>Virtual screen group members can be sync targets.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screen name" xml:space="preserve">
@@ -6174,10 +6130,6 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠️ Some display group based features are not available in this app version." xml:space="preserve">
-        <source>⚠️ Some display group based features are not available in this app version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">
