@@ -580,6 +580,10 @@ Dies kann in den Systemeinstellungen gemacht werden oder die App kann es für di
         <target state="translated">Native XDR-Helligkeitshochskalierung erlauben</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Allow native XDR upscaling" xml:space="preserve">
+        <source>Allow native XDR upscaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
         <source>Allow resolution change for mirror target displays</source>
         <target state="translated">Ändern der Auflösung von dem Monitor, auf den ein Bildschirm gespiegelt wird, erlauben.</target>
@@ -956,6 +960,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Automatische Helligkeit (Umgebungslichtsensor) kann das Hochskalieren von XDR ausschalten, basierend auf den Lichtbedingungen, wenn die kombinierte Helligkeit benutzt wird.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-activate native XDR upscaling" xml:space="preserve">
+        <source>Auto-activate native XDR upscaling</source>
+        <target state="translated">Natives XDR-Hochskalierung automatisch aktivieren</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-connect all displays on quit" xml:space="preserve">
         <source>Auto-connect all displays on quit</source>
         <target state="translated">Alle Displays beim Beenden automatisch verbinden</target>
@@ -992,11 +1001,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Automatic (based on display type)" xml:space="preserve">
         <source>Automatic (based on display type)</source>
         <target state="translated">Automatisch (basierend auf dem Typ des Displays)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Automatically activate native XDR upscaling" xml:space="preserve">
-        <source>Automatically activate native XDR upscaling</source>
-        <target state="translated">Natives XDR-Hochskalierung automatisch aktivieren</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
@@ -1186,6 +1190,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Helligkeit und Video</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
+        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
         <source>Brightness control using native brightness keys</source>
         <target state="translated">Helligkeitskontrolle durch native Helligkeitstasten</target>
@@ -1273,6 +1281,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Check for Updates…" xml:space="preserve">
         <source>Check for Updates…</source>
         <target state="translated">Nach Updates suchen …</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chunk size" xml:space="preserve">
+        <source>Chunk size</source>
         <note/>
       </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
@@ -2597,6 +2609,10 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
         <target state="translated">EDID Version</target>
         <note/>
       </trans-unit>
+      <trans-unit id="EDID write communication settings" xml:space="preserve">
+        <source>EDID write communication settings</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
         <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
         <note/>
@@ -2747,6 +2763,10 @@ Der Prozess kann nicht auf das integrierte Display angewendet werden (dazu ist e
       <trans-unit id="Enable lower than 720p resolutions" xml:space="preserve">
         <source>Enable lower than 720p resolutions</source>
         <target state="translated">Niedrigere Auflösungen als 720p aktivieren</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable native XDR brightness upscaling" xml:space="preserve">
+        <source>Enable native XDR brightness upscaling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
@@ -4127,6 +4147,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Notifications and Dock" xml:space="preserve">
         <source>Notifications and Dock</source>
         <target state="translated">Mitteilungen und Dock</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1" xml:space="preserve">
+        <source>Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1</source>
         <note/>
       </trans-unit>
       <trans-unit id="Number of retry attempts on failure" xml:space="preserve">
@@ -5557,6 +5581,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Synchronize %@</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
+        <source>Synchronize brightness changes triggered externally</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
         <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
         <note/>
@@ -6041,6 +6069,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Turn off display backlight when combined brightness is set to zero</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu." xml:space="preserve">
+        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Turning this off reduces system load for XDR displays when auto brightness is enabled but makes upscaling a less smooth experience." xml:space="preserve">
         <source>Turning this off reduces system load for XDR displays when auto brightness is enabled but makes upscaling a less smooth experience.</source>
         <note/>
@@ -6504,6 +6536,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">XDR-Voreinstellungen</target>
         <note/>
       </trans-unit>
+      <trans-unit id="XDR Preset &amp; Brightness" xml:space="preserve">
+        <source>XDR Preset &amp; Brightness</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
         <source>XDR brightness scale maximum</source>
         <target state="translated">Maximum der XDR-Helligkeitsskalierung</target>
@@ -6558,8 +6594,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Die "SF Symbols-App" von [developer.apple.com/sf-symbols] (https://developer.apple.com/sf-symbols) herunterladen, um den richtigen SF-Symbolnamen zu finden (z. B.: `face.smiling`).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You can override the default meaning of the on/off switch under Settings/Displays." xml:space="preserve">
-        <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
+      <trans-unit id="You can override the default meaning of the on/off switch under Settings &gt; Displays." xml:space="preserve">
+        <source>You can override the default meaning of the on/off switch under Settings &gt; Displays.</source>
         <target state="translated">Das Standardverhalten des Ein- / Ausschalters kann unter Einstellungen / Displays überschreiben werden.</target>
         <note/>
       </trans-unit>
@@ -6572,8 +6608,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Möglicherweise möchtest du das Lautstärke-OSD von macOS ausblenden, wenn das Gerät über Audiosteuerungen verfügt, die von der App verwaltet werden. Nützlich für Displays mit eigenem OSD für die Lautstärke, die nicht deaktiviert werden können.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable `Allow color table adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable `Allow color table adjustments` under Settings/Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable `Allow color table adjustments` under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable `Allow color table adjustments` under Settings &gt; Displays to fix this!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Zoom" xml:space="preserve">
@@ -6614,6 +6650,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="bit" xml:space="preserve">
         <source>bit</source>
         <target state="translated">bit</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="bytes" xml:space="preserve">
+        <source>bytes</source>
         <note/>
       </trans-unit>
       <trans-unit id="days" xml:space="preserve">
@@ -6668,6 +6708,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="⚠ Image adjustment controls are unavailable." xml:space="preserve">
         <source>⚠ Image adjustment controls are unavailable.</source>
         <target state="translated">⚠ Die Steuerung der Farbanpassung ist nicht verfügbar. </target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
+        <source>⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠ Some adjustments may clip HDR content!" xml:space="preserve">
@@ -6757,6 +6801,10 @@ Dies kann unter Systemeinstellungen &gt; Datenschutz &amp; Sicherheit &gt; Bilds
         <target state="translated">⚠️ Der minimale Wert von Breite / Höhe muss kleiner sein, als das Maximum!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR profile is selected." xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR profile is selected.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ No display groups are available." xml:space="preserve">
         <source>⚠️ No display groups are available.</source>
         <target state="translated">⚠️ Keine Displaygruppe ist verfügbar.</target>
@@ -6765,6 +6813,10 @@ Dies kann unter Systemeinstellungen &gt; Datenschutz &amp; Sicherheit &gt; Bilds
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
         <target state="translated">⚠️ Die Mitteilungen sind für die App ausgeschaltet. Das kann unter Systemeinstellungen &gt; Mitteilungen geändert werden.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!" xml:space="preserve">
+        <source>⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">
