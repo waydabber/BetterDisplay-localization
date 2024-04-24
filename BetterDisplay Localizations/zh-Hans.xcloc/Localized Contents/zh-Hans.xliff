@@ -227,11 +227,6 @@
         <target state="translated">@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A configured sync source and target display is connected" xml:space="preserve">
-        <source>A configured sync source and target display is connected</source>
-        <target state="translated">已配置的同步源和目标显示器已连接。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="A controllable display is present" xml:space="preserve">
         <source>A controllable display is present</source>
         <target state="translated">存在可控显示器</target>
@@ -352,9 +347,8 @@
         <target state="translated">激活</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Activation depends on the presence of synchronization source and target displays but synchronization is not enabled for the display group." xml:space="preserve">
-        <source>Activation depends on the presence of synchronization source and target displays but synchronization is not enabled for the display group.</source>
-        <target state="translated">激活此显示组需要设置同步源显示器和目标显示器，但同步功能尚未启用。</target>
+      <trans-unit id="Activation depends on enabled synchronization or UI scale matching for this display group." xml:space="preserve">
+        <source>Activation depends on enabled synchronization or UI scale matching for this display group.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Activation priority" xml:space="preserve">
@@ -362,9 +356,8 @@
         <target state="translated">激活优先级</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Activation requires the presence of source and target displays for at least one configured synchronization." xml:space="preserve">
-        <source>Activation requires the presence of source and target displays for at least one configured synchronization.</source>
-        <target state="translated">要激活显示组，至少需要为一个已配置同步项连接源显示器和目标显示器。</target>
+      <trans-unit id="Activation requires the presence of appropriate displays for a configured synchronization or UI scale matching." xml:space="preserve">
+        <source>Activation requires the presence of appropriate displays for a configured synchronization or UI scale matching.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
@@ -477,6 +470,10 @@
         <target state="translated">高级虚拟屏幕设置</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Affected displays" xml:space="preserve">
+        <source>Affected displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.&#10;&#10;You can do this in System Settings or the app can do it for you (administrator credentials needed)." xml:space="preserve">
         <source>After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.
 
@@ -524,6 +521,10 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="All group members are sync targets" xml:space="preserve">
         <source>All group members are sync targets</source>
         <target state="translated">同步所有组成员</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members are watched for resolution changes and can initiate a UI scale matching operation." xml:space="preserve">
+        <source>All group members are watched for resolution changes and can initiate a UI scale matching operation.</source>
         <note/>
       </trans-unit>
       <trans-unit id="All group members can be synchronization sources." xml:space="preserve">
@@ -853,6 +854,10 @@ AliPay available in China.</source>
         <target state="translated">应用收藏分辨率 5</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Appropriate displays are available for a configured synchronization or UI scale matching." xml:space="preserve">
+        <source>Appropriate displays are available for a configured synchronization or UI scale matching.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Are sure you want to discard this display group and all its settings?" xml:space="preserve">
         <source>Are sure you want to discard this display group and all its settings?</source>
         <target state="translated">您确定想要舍弃该显示组及其所有设置吗？</target>
@@ -1115,11 +1120,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Blue Gain (DDC)" xml:space="preserve">
         <source>Blue Gain (DDC)</source>
         <target state="translated">蓝色增益 (DDC)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Both source and target displays are available for a configured synchronization." xml:space="preserve">
-        <source>Both source and target displays are available for a configured synchronization.</source>
-        <target state="translated">同步配置支持源显示器和目标显示器。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
@@ -1445,6 +1445,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down." xml:space="preserve">
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">配置虚拟屏幕/串流旋转 - 对纵向随航或不支持改变方向的显示器非常有用。您可决定随航时 USB-C 端口（闪电接口）是朝上还是朝下。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure watched and affected group members" xml:space="preserve">
+        <source>Configure watched and affected group members</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configured synchronization or UI scale matching displays are present" xml:space="preserve">
+        <source>Configured synchronization or UI scale matching displays are present</source>
         <note/>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
@@ -2879,6 +2887,14 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">从同步目标列表中排除部分成员</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Exclude some members from the list of affected displays" xml:space="preserve">
+        <source>Exclude some members from the list of affected displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from watch list" xml:space="preserve">
+        <source>Exclude some members from watch list</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Excluded displays" xml:space="preserve">
         <source>Excluded displays</source>
         <target state="translated">已排除的显示器</target>
@@ -3254,6 +3270,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">应用程序启动时按住 ⇧ Shift 可进入安全模式来防止写入已存储的值。启用组合控制后即使未选中此项也会重新应用 DDC 亮度。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hold ⇧ Shift for multi-select." xml:space="preserve">
+        <source>Hold ⇧ Shift for multi-select.</source>
+        <target state="translated">按住 ⇧ Shift 多选。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select. Sub-720p modes are hidden." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select. Sub-720p modes are hidden.</source>
         <target state="translated">按住 ⇧ Shift 多选。Sub-720p 模式已隐藏。</target>
@@ -3589,8 +3610,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">仅长度</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Let UI size be matched among members of the display group. This feature works on displays with flexible scaling enabled." xml:space="preserve">
-        <source>Let UI size be matched among members of the display group. This feature works on displays with flexible scaling enabled.</source>
+      <trans-unit id="Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled." xml:space="preserve">
+        <source>Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
@@ -3791,6 +3812,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Mark System Configuration As Unapplied" xml:space="preserve">
         <source>Mark System Configuration As Unapplied</source>
         <target state="translated">将系统配置标记为未应用</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Match UI scale of all group members" xml:space="preserve">
+        <source>Match UI scale of all group members</source>
         <note/>
       </trans-unit>
       <trans-unit id="Match aspect ratio of and associate to a display" xml:space="preserve">
@@ -4163,6 +4188,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">无屏幕旋转</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Non-affected displays" xml:space="preserve">
+        <source>Non-affected displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Non-natively connected display" xml:space="preserve">
         <source>Non-natively connected display</source>
         <target state="translated">非本机已连接的显示器</target>
@@ -4176,6 +4205,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Non-sync-target member displays" xml:space="preserve">
         <source>Non-sync-target member displays</source>
         <target state="translated">非同步目标的组成员显示器</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-watched member displays" xml:space="preserve">
+        <source>Non-watched member displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Normal Window Priority" xml:space="preserve">
@@ -5087,6 +5120,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">请选择可作为此配置同步源的显示器！</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Select which displays should be affected by UI scale matching!" xml:space="preserve">
+        <source>Select which displays should be affected by UI scale matching!</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Select which displays should be excluded from being sync sources for this configuration!" xml:space="preserve">
         <source>Select which displays should be excluded from being sync sources for this configuration!</source>
         <target state="translated">选择不需同步的显示器！</target>
@@ -5105,6 +5142,18 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Select which displays should be sync targets for this configuration!" xml:space="preserve">
         <source>Select which displays should be sync targets for this configuration!</source>
         <target state="translated">请选择将成为此配置同步目标的显示器！</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should be watched for resolution change to initiate a scale matching operation!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be affected by UI scale matching!" xml:space="preserve">
+        <source>Select which displays should not be affected by UI scale matching!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should not be for resolution change to initiate a scale matching operation!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Select which displays should not be members of this display group!" xml:space="preserve">
@@ -5540,6 +5589,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Specify a list of displays to be excluded from the display group." xml:space="preserve">
         <source>Specify a list of displays to be excluded from the display group.</source>
         <target state="translated">指定要从此显示器组中剔除的显示器列表。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that should not be watched." xml:space="preserve">
+        <source>Specify a list of members that should not be watched.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that will not be affected by UI scale matching." xml:space="preserve">
+        <source>Specify a list of members that will not be affected by UI scale matching.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
@@ -6336,8 +6393,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">典型值包括 100, 200, 255。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="UI scale matching" xml:space="preserve">
-        <source>UI scale matching</source>
+      <trans-unit id="UI Scale Matching" xml:space="preserve">
+        <source>UI Scale Matching</source>
         <note/>
       </trans-unit>
       <trans-unit id="USB" xml:space="preserve">
@@ -6468,6 +6525,18 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Unsupported" xml:space="preserve">
         <source>Unsupported</source>
         <target state="translated">不受支持</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update resolution configuration protections" xml:space="preserve">
+        <source>Update resolution configuration protections</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update the resolution of virtual screen group members when a physical dimension can be associated with them (they are mirrored or streamed to a real display)" xml:space="preserve">
+        <source>Update the resolution of virtual screen group members when a physical dimension can be associated with them (they are mirrored or streamed to a real display)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update virtual screens as well" xml:space="preserve">
+        <source>Update virtual screens as well</source>
         <note/>
       </trans-unit>
       <trans-unit id="Updates" xml:space="preserve">
@@ -6685,6 +6754,26 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">读取响应的等待时间</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Watch all group members for resolution changes" xml:space="preserve">
+        <source>Watch all group members for resolution changes</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch for resolution changes made outside of the app" xml:space="preserve">
+        <source>Watch for resolution changes made outside of the app</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch mirrored/streamed virtual screens" xml:space="preserve">
+        <source>Watch mirrored/streamed virtual screens</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watched group member displays" xml:space="preserve">
+        <source>Watched group member displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
+        <source>Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Week of manufacture" xml:space="preserve">
         <source>Week of manufacture</source>
         <target state="translated">制造周数</target>
@@ -6703,6 +6792,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="When Settings is Open" xml:space="preserve">
         <source>When Settings is Open</source>
         <target state="translated">打开应用程序设置时</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display." xml:space="preserve">
+        <source>When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">
@@ -6754,6 +6847,14 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
         <source>With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed.</source>
         <target state="translated">启用此设置后，使用本应用断开的随航显示器将保留在显示器列表中，以便轻松重新连接。在应用外部或应用启动前断开连接的随航显示器不会被列出。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well." xml:space="preserve">
+        <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app." xml:space="preserve">
+        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app.</source>
         <note/>
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
