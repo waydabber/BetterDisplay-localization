@@ -460,6 +460,10 @@
         <target state="translated">高级设置与隐私</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Advanced settings, watched &amp; affected group members" xml:space="preserve">
+        <source>Advanced settings, watched &amp; affected group members</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
         <source>Advanced upscaling and software dimming settings</source>
         <target state="translated">高级图像缩放和软件调光设置</target>
@@ -1445,10 +1449,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down." xml:space="preserve">
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">配置虚拟屏幕/串流旋转 - 对纵向随航或不支持改变方向的显示器非常有用。您可决定随航时 USB-C 端口（闪电接口）是朝上还是朝下。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure watched and affected group members" xml:space="preserve">
-        <source>Configure watched and affected group members</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configured synchronization or UI scale matching displays are present" xml:space="preserve">
@@ -2867,6 +2867,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">虚拟屏幕及原生平滑缩放的分辨率将高达 16K x 16K (8K x 8K HiDPI) 。使用 8K 以上的虚拟屏幕可能导致稳定性问题，需要重新应用原生平滑缩放。最大原生分辨率受限于具体 macOS 版本和 GPU 类型。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enforce UI scale match upon connecting a display and on app startup" xml:space="preserve">
+        <source>Enforce UI scale match upon connecting a display and on app startup</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
         <source>Enforce virtual screen mirroring</source>
         <target state="translated">强制虚拟屏幕镜像</target>
@@ -3338,6 +3342,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
         <target state="translated">键盘控制设置为与当前音频设备名称匹配的显示器名称（在键盘设置下可进行设置）时将该值用于匹配音频设备而非显示器名称。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
+        <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
@@ -3851,6 +3859,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Matching audio device name" xml:space="preserve">
         <source>Matching audio device name</source>
         <target state="translated">匹配音频设备名称</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Matching tolerance" xml:space="preserve">
+        <source>Matching tolerance</source>
         <note/>
       </trans-unit>
       <trans-unit id="Max HW" xml:space="preserve">
@@ -6101,6 +6113,10 @@ Please note that not all displays support DDC power operations and some displays
         <target state="translated">当滑块不在使用状态时外观更整洁。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly." xml:space="preserve">
+        <source>This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This resolution is used as default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
         <source>This resolution is used as default (as HiDPI if available) when the display is included in a new layout.</source>
         <target state="translated">新布局中包含此显示器时此分辨率将作默认设置使用 (可用时为 HiDPI)。</target>
@@ -6766,12 +6782,12 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Watch mirrored/streamed virtual screens</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Watched group member displays" xml:space="preserve">
-        <source>Watched group member displays</source>
+      <trans-unit id="Watch virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
+        <source>Watch virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
-        <source>Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
+      <trans-unit id="Watched group member displays" xml:space="preserve">
+        <source>Watched group member displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Week of manufacture" xml:space="preserve">
@@ -6853,8 +6869,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app." xml:space="preserve">
-        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app.</source>
+      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
+        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
         <note/>
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">

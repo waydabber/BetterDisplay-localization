@@ -456,6 +456,10 @@
         <target state="translated">Cài đặt &amp; Quyền riêng tư Nâng cao</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Advanced settings, watched &amp; affected group members" xml:space="preserve">
+        <source>Advanced settings, watched &amp; affected group members</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
         <source>Advanced upscaling and software dimming settings</source>
         <target state="translated">Cài đặt nâng cao cho tằng cường hình ảnh và làm tối của phần mềm</target>
@@ -1441,10 +1445,6 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
       <trans-unit id="Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down." xml:space="preserve">
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">Cấu hình màn hỉnh ảo/xoay trình chiếu - hữu ích cho chế độ Sidecar dọc hoặc cho các màn hình không hỗ trợ thay đổi hướng. Với Sidecar, bạn có thể quyết định xem cổng USB-C (cổng lightning) nên hướng lên hay hướng xuống.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure watched and affected group members" xml:space="preserve">
-        <source>Configure watched and affected group members</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configured synchronization or UI scale matching displays are present" xml:space="preserve">
@@ -2863,6 +2863,10 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Cho phép độ phân giải lên đến 16Kx16K (8Kx8K HiDPI) cho màn hình ảo và thu phóng linh hoạt. Sử dụng màn hình ảo 8K+ có thể gây ra vấn đề về ổn định. Thu phóng linh hoạt cần phải được áp dụng lại. Độ phân giải tối đa có các giới hạn phụ thuộc vào phiên bản cụ thể của macOS và loại GPU.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enforce UI scale match upon connecting a display and on app startup" xml:space="preserve">
+        <source>Enforce UI scale match upon connecting a display and on app startup</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
         <source>Enforce virtual screen mirroring</source>
         <target state="translated">Thực hiện bắt buộc phản chiếu lên màn hình ảo</target>
@@ -3334,6 +3338,10 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
         <target state="translated">Nếu điều khiển bàn phím được đặt cho màn hình tương ứng với tên thiết bị âm thanh hiện tại (thiết lập trong cài đặt Bàn phím), giá trị này sẽ được sử dụng cho thiết bị âm thanh tương ứng thay vì tên màn hình.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
+        <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
@@ -3846,6 +3854,10 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
       <trans-unit id="Matching audio device name" xml:space="preserve">
         <source>Matching audio device name</source>
         <target state="translated">Tên thiết bị âm thanh phù hợp</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Matching tolerance" xml:space="preserve">
+        <source>Matching tolerance</source>
         <note/>
       </trans-unit>
       <trans-unit id="Max HW" xml:space="preserve">
@@ -6092,6 +6104,10 @@ Xin lưu ý rằng không phải tất cả các màn hình đều hỗ trợ c�
         <target state="translated">Điều này tạo ra một giao diện gọn gàng hơn khi thanh trượt không được sử dụng.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly." xml:space="preserve">
+        <source>This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This resolution is used as default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
         <source>This resolution is used as default (as HiDPI if available) when the display is included in a new layout.</source>
         <target state="translated">Độ phân giải này được sử dụng làm mặc định (dưới dạng HiDPI nếu có) khi màn hình được bao gồm trong một bố cục mới.</target>
@@ -6757,12 +6773,12 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <source>Watch mirrored/streamed virtual screens</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Watched group member displays" xml:space="preserve">
-        <source>Watched group member displays</source>
+      <trans-unit id="Watch virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
+        <source>Watch virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
-        <source>Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
+      <trans-unit id="Watched group member displays" xml:space="preserve">
+        <source>Watched group member displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Week of manufacture" xml:space="preserve">
@@ -6842,8 +6858,8 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app." xml:space="preserve">
-        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app.</source>
+      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
+        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
         <note/>
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">

@@ -456,6 +456,10 @@
         <target state="translated">Configurações avançadas e privacidade</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Advanced settings, watched &amp; affected group members" xml:space="preserve">
+        <source>Advanced settings, watched &amp; affected group members</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
         <source>Advanced upscaling and software dimming settings</source>
         <target state="translated">Configurações avançadas de upscaling e escurecimento por software</target>
@@ -1441,10 +1445,6 @@ A especificação do comprimento de leitura é opcional – deixe o campo vazio 
       <trans-unit id="Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down." xml:space="preserve">
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">Configure a rotação de tela/stream virtual - útil para Sidecar em retrato ou para monitores que não suportam alteração de orientação. Com o Sidecar você pode decidir se a porta USB-C (conector lightning) deve ficar voltada para cima ou para baixo.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure watched and affected group members" xml:space="preserve">
-        <source>Configure watched and affected group members</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configured synchronization or UI scale matching displays are present" xml:space="preserve">
@@ -2864,6 +2864,10 @@ O processo não funciona para o monitor integrado (reinicialização necessária
         <target state="translated">Habilitar resoluções de até 16Kx16K (8Kx8K HiDPI) para telas virtuais e dimensionamento suave nativo. Usar telas virtuais de 8K+ pode causar problemas de estabilidade. A escala suave nativa precisa ser reaplicada. As resoluções nativas máximas têm limitações dependendo da versão específica do macOS e do tipo de GPU.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enforce UI scale match upon connecting a display and on app startup" xml:space="preserve">
+        <source>Enforce UI scale match upon connecting a display and on app startup</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
         <source>Enforce virtual screen mirroring</source>
         <target state="translated">Forçar espelhamento de tela virtual</target>
@@ -3335,6 +3339,10 @@ O processo não funciona para o monitor integrado (reinicialização necessária
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
         <target state="translated">Se o controle do teclado estiver definido para a exibição que corresponde ao nome do dispositivo de áudio atual (configure isso em Configurações do teclado), esse valor será usado para correspondência do dispositivo de áudio em vez do nome de exibição.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
+        <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
@@ -3846,6 +3854,10 @@ Nem todos os monitores suportam operações de alimentação DDC. As operações
       <trans-unit id="Matching audio device name" xml:space="preserve">
         <source>Matching audio device name</source>
         <target state="translated">Nome do dispositivo de áudio correspondente</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Matching tolerance" xml:space="preserve">
+        <source>Matching tolerance</source>
         <note/>
       </trans-unit>
       <trans-unit id="Max HW" xml:space="preserve">
@@ -6092,6 +6104,10 @@ Observe que nem todos os monitores suportam operações de alimentação DDC e a
         <target state="translated">Isso fornece uma aparência mais limpa quando o controle deslizante não está em uso ativo.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly." xml:space="preserve">
+        <source>This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This resolution is used as default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
         <source>This resolution is used as default (as HiDPI if available) when the display is included in a new layout.</source>
         <target state="translated">Esta resolução é usada como padrão (como HiDPI, se disponível) quando o monitor é incluído em um novo layout.</target>
@@ -6757,12 +6773,12 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <source>Watch mirrored/streamed virtual screens</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Watched group member displays" xml:space="preserve">
-        <source>Watched group member displays</source>
+      <trans-unit id="Watch virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
+        <source>Watch virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display)." xml:space="preserve">
-        <source>Watched virtual screen group members for resolution changes when a physical dimension can be associated with them (they are mirrored or streamed to a real display).</source>
+      <trans-unit id="Watched group member displays" xml:space="preserve">
+        <source>Watched group member displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Week of manufacture" xml:space="preserve">
@@ -6842,8 +6858,8 @@ Você pode dispensar esta notificação – neste caso as alterações serão ap
         <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app." xml:space="preserve">
-        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app.</source>
+      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
+        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
         <note/>
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
