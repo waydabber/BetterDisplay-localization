@@ -455,6 +455,7 @@
       </trans-unit>
       <trans-unit id="Advanced settings, watched &amp; affected group members" xml:space="preserve">
         <source>Advanced settings, watched &amp; affected group members</source>
+        <target state="translated">高度な設定、監視対象および影響を受けるグループメンバー</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
@@ -1339,7 +1340,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">カラー変更、アップスケール、カラーテーブル調整によるディミングはHDRコンテンツをクリップします。有効化すると、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり黒くなったりすることがあります。</target>
+        <target state="translated">カラー変更、アップスケール、カラーテーブル調整によるディミングはHDRコンテンツをクリップします。有効化した場合は、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり黒くなったりすることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -2868,6 +2869,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
         <source>Enforce UI scale match upon connecting a display</source>
+        <target state="translated">ディスプレイ接続時にUIサイズ調整を強制</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
@@ -3347,6 +3349,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
+        <target state="translated">完全に一致するサイズ調整可能な解像度が無い場合は、与えられた許容誤差の範囲内で、もっとも近い解像度を探します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
@@ -3865,6 +3868,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Matching tolerance" xml:space="preserve">
         <source>Matching tolerance</source>
+        <target state="translated">サイズの許容誤差</target>
         <note/>
       </trans-unit>
       <trans-unit id="Max HW" xml:space="preserve">
@@ -4149,6 +4153,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Newly connected displays are normally treated as possible affected displays only. With this enabled newly connected displays will be checked against watched display list as well." xml:space="preserve">
         <source>Newly connected displays are normally treated as possible affected displays only. With this enabled newly connected displays will be checked against watched display list as well.</source>
+        <target state="translated">通常は、新規に接続したディスプレイは、影響を受ける可能性のあるディスプレイとしてのみ扱います。これを有効化した場合は、新規に接続したディスプレイも監視対象ディスプレイリストと照合します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -4339,6 +4344,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Only non-brightness settings (color adjustments) are restored." xml:space="preserve">
         <source>Only non-brightness settings (color adjustments) are restored.</source>
         <target state="translated">輝度以外の設定（カラー調整）のみが復元されます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!" xml:space="preserve">
+        <source>Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!</source>
+        <target state="translated">紛らわしさを避けるために、監視対象ディスプレイは1つに限定する必要があります。監視対象ディスプレイは適切に設定してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Only resolutions that match native aspect ratio" xml:space="preserve">
@@ -5176,14 +5186,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">UIサイズ調整による影響を受けないディスプレイを選択してください!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Select which displays should not be for resolution change to initiate a scale matching operation!" xml:space="preserve">
-        <source>Select which displays should not be for resolution change to initiate a scale matching operation!</source>
-        <target state="translated">サイズ調整操作を行う場合に、解像度を変更しないディスプレイを選択します!</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Select which displays should not be members of this display group!" xml:space="preserve">
         <source>Select which displays should not be members of this display group!</source>
         <target state="translated">このディスプレイグループのメンバーにしないディスプレイを選択してください!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should not be watched for resolution change to initiate a scale matching operation!</source>
+        <target state="translated">サイズ調整操作を行う場合に、解像度を変更しないディスプレイを選択します!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Selected display is not available" xml:space="preserve">
@@ -5980,6 +5990,7 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the `reported diagonal size` setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected." xml:space="preserve">
         <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the `reported diagonal size` setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected.</source>
+        <target state="translated">仮想スクリーンに関連する物理的サイズ（UIサイズを計算するために使用）は、主に「報告された対角サイズ」設定によって決定されますが、仮想スクリーンが接続されている場合は、「ディスプレイの物理的サイズ」設定によりさらに変更することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
@@ -6124,10 +6135,6 @@ Please note that not all displays support DDC power operations and some displays
       <trans-unit id="This provides a cleaner look when the slider is not in active use." xml:space="preserve">
         <source>This provides a cleaner look when the slider is not in active use.</source>
         <target state="translated">スライダがアクティブに使用されていないときは、見かけががすっきりします。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly." xml:space="preserve">
-        <source>This requires only one watched display to be present to avoid ambiguity. Configure watched displays accordingly.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This resolution is used as default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
@@ -6314,6 +6321,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Treat newly connected displays as possible watched displays" xml:space="preserve">
         <source>Treat newly connected displays as possible watched displays</source>
+        <target state="translated">新規接続ディスプレイを監視対象ディスプレイとして扱う</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat shortcuts as rotation toggles" xml:space="preserve">
@@ -6798,6 +6806,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Watch virtual screens" xml:space="preserve">
         <source>Watch virtual screens</source>
+        <target state="translated">仮想スクリーンを監視</target>
         <note/>
       </trans-unit>
       <trans-unit id="Watched group member displays" xml:space="preserve">
@@ -6877,16 +6886,17 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
         <source>With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed.</source>
-        <target state="translated">有効化した場合、アプリから切断したSidecarディスプレイを、再接続しやすいようディスプレイリストに残します。アプリを使用しないか、アプリ起動前に切断されたSidecarディスプレイはリストに表示されません。</target>
+        <target state="translated">有効化した場合は、アプリから切断したSidecarディスプレイを、再接続しやすいようディスプレイリストに残します。アプリを使用しないか、アプリ起動前に切断されたSidecarディスプレイはリストに表示されません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well." xml:space="preserve">
         <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
-        <target state="translated">有効化した場合、解像度構成の保護が有効になっているディスプレイにサイズ変更が行われます。保護した解像度も更新します。</target>
+        <target state="translated">有効化した場合は、解像度構成の保護が有効になっているディスプレイにサイズ変更が行われます。また、保護した解像度も更新します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
         <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
+        <target state="translated">有効化した場合は、監視対象ディスプレイの解像度がシステムまたは他のアプリによって変更された場合に、サイズ調整を実行します。複数の監視対象ディスプレイの解像度が変更された場合（例：レイアウト変更による場合など）は、紛らわしさを避けるため、何も行いません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
