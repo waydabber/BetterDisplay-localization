@@ -108,6 +108,10 @@
         <target state="translated">%@はディスプレイを検出できません。アプリケーションまたはシステムのエラーの可能性があります。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%%" xml:space="preserve">
+        <source>%@%%</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -118,6 +122,10 @@
         <target state="translated">%@%@%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%@%@%@" xml:space="preserve">
+        <source>%1$@%2$@%3$@%4$@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@, %@" xml:space="preserve">
         <source>%@, %@</source>
         <target state="translated">%@、%@</target>
@@ -126,6 +134,10 @@
       <trans-unit id="%@Hz" xml:space="preserve">
         <source>%@Hz</source>
         <target state="translated">%@Hz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@mm" xml:space="preserve">
+        <source>%@mm</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@mm x %@mm" xml:space="preserve">
@@ -196,6 +208,14 @@
       <trans-unit id="(%@)" xml:space="preserve">
         <source>(%@)</source>
         <target state="translated">（%@）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(next to %@)" xml:space="preserve">
+        <source>(next to %@)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(next to unspecified)" xml:space="preserve">
+        <source>(next to unspecified)</source>
         <note/>
       </trans-unit>
       <trans-unit id=", associated" xml:space="preserve">
@@ -290,7 +310,7 @@
       </trans-unit>
       <trans-unit id="Above %@" xml:space="preserve">
         <source>Above %@</source>
-        <target state="translated">%@以上</target>
+        <target state="translated">%@の上</target>
         <note/>
       </trans-unit>
       <trans-unit id="Above Menu, Dock, Spaces" xml:space="preserve">
@@ -458,9 +478,17 @@
         <target state="translated">構成によっては解像度が追加されますが、通常はスライダを壊してしまいます。解像度のキーボードショートカットにも影響します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Adjust anchor point offsets" xml:space="preserve">
+        <source>Adjust anchor point offsets</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Adjust offsets" xml:space="preserve">
         <source>Adjust offsets</source>
         <target state="translated">オフセット調整</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way." xml:space="preserve">
+        <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchors horizontally or vertically. The default setting is to line up displays in a centered way." xml:space="preserve">
@@ -891,7 +919,7 @@ AliPayは中国で使用可能です。</target>
       </trans-unit>
       <trans-unit id="Are sure you want to discard this display group and all its settings?" xml:space="preserve">
         <source>Are sure you want to discard this display group and all its settings?</source>
-        <target state="translated">このディスプレイグループと設定をすべて破棄してもよろしいですか?</target>
+        <target state="translated">このディスプレイグループとすべての設定を破棄してもよろしいですか?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
@@ -901,12 +929,12 @@ AliPayは中国で使用可能です。</target>
       </trans-unit>
       <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
         <source>Are sure you want to remove this synchronization with all its settings?</source>
-        <target state="translated">この同期とその設定をすべて削除してもよろしいですか?</target>
+        <target state="translated">すべての設定からこの同期を削除してもよろしいですか?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
         <source>Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions.</source>
-        <target state="translated">このディスプレイに関連するすべての設定をリセット（消去）してよろしいですか? リセットは、フレキシブルケーリングやカスタム解像度などのシステム構成には影響しません。</target>
+        <target state="translated">このディスプレイに関連するすべての設定をリセット（消去）してもよろしいですか? フレキシブルケーリングやカスタム解像度などのシステム構成には影響しません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to reset app settings?" xml:space="preserve">
@@ -926,7 +954,7 @@ AliPayは中国で使用可能です。</target>
       </trans-unit>
       <trans-unit id="Arrange %@ next to" xml:space="preserve">
         <source>Arrange %@ next to</source>
-        <target state="translated">%@をこの次に配置:</target>
+        <target state="translated">%@の隣に配置するディスプレイ:</target>
         <note/>
       </trans-unit>
       <trans-unit id="Aspect ratio" xml:space="preserve">
@@ -1171,6 +1199,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
         <source>Both turned off by HDR toggle</source>
         <target state="translated">HDR切り替え時は共にオフ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bottom" xml:space="preserve">
+        <source>Bottom</source>
         <note/>
       </trans-unit>
       <trans-unit id="Briefly show Dock icon on startup" xml:space="preserve">
@@ -3691,9 +3723,17 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ミュートキーをOSの制御下に残す</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Left" xml:space="preserve">
+        <source>Left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left of %@" xml:space="preserve">
+        <source>Left of %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Left to %@" xml:space="preserve">
         <source>Left to %@</source>
-        <target state="translated">%@の右</target>
+        <target state="translated">%@の左</target>
         <note/>
       </trans-unit>
       <trans-unit id="Length only" xml:space="preserve">
@@ -4058,7 +4098,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Mirror of %@" xml:space="preserve">
         <source>Mirror of %@</source>
-        <target state="translated">ミラーリング元%@</target>
+        <target state="translated">ミラーリング元: %@</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mirror the contents of this display to:" xml:space="preserve">
@@ -4068,7 +4108,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Mirrored to %@" xml:space="preserve">
         <source>Mirrored to %@</source>
-        <target state="translated">ミラーリング先%@</target>
+        <target state="translated">%@にミラーリング</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mirrored to Multiple Screens" xml:space="preserve">
@@ -5023,7 +5063,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Restart %@" xml:space="preserve">
         <source>Restart %@</source>
-        <target state="translated">%@ を再起動</target>
+        <target state="translated">%@を再起動</target>
         <note/>
       </trans-unit>
       <trans-unit id="Restart App…" xml:space="preserve">
@@ -5094,6 +5134,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Retrieved EDID Data" xml:space="preserve">
         <source>Retrieved EDID Data</source>
         <target state="translated">取得済みEDIDデータ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Right" xml:space="preserve">
+        <source>Right</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Right of %@" xml:space="preserve">
+        <source>Right of %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Right to %@" xml:space="preserve">
@@ -6449,6 +6497,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">ツール</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Top" xml:space="preserve">
+        <source>Top</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Traditional popups" xml:space="preserve">
         <source>Traditional popups</source>
         <target state="translated">従来型のポップアップ</target>
@@ -7415,7 +7467,11 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ The protection is not in effect unless all participating displays are connected." xml:space="preserve">
         <source>⚠️ The protection is not in effect unless all participating displays are connected.</source>
-        <target state="translated">⚠️ すべてのディスプレイが接続されるまで、保護は有効になりません。</target>
+        <target state="translated">⚠️ 関係するすべてのディスプレイが接続されるまで、保護は有効になりません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The protection is not in effect unless relative position is defined." xml:space="preserve">
+        <source>⚠️ The protection is not in effect unless relative position is defined.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
