@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="vi" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5194e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
@@ -25,7 +25,7 @@
   </file>
   <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="vi" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5194e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -43,6 +43,11 @@
         <target state="translated">- đã kết nối</target>
         <note/>
       </trans-unit>
+      <trans-unit id=" - disabled" xml:space="preserve">
+        <source> - disabled</source>
+        <target state="translated">- vô hiệu hóa</target>
+        <note/>
+      </trans-unit>
       <trans-unit id=" - disconnected" xml:space="preserve">
         <source> - disconnected</source>
         <target state="translated">- đã ngắt kết nối</target>
@@ -56,6 +61,11 @@
       <trans-unit id=" - forced" xml:space="preserve">
         <source> - forced</source>
         <target state="translated">- bắt buộc</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id=" - inactive" xml:space="preserve">
+        <source> - inactive</source>
+        <target state="translated">- không hoạt động</target>
         <note/>
       </trans-unit>
       <trans-unit id=" - not detected" xml:space="preserve">
@@ -78,6 +88,11 @@
         <target state="translated">%@ (%@)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ (%@)%@" xml:space="preserve">
+        <source>%1$@ (%2$@)%3$@</source>
+        <target state="translated">%1$@ (%2$@)%3$@</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ - Swap Position" xml:space="preserve">
         <source>%@ - Swap Position</source>
         <target state="translated">%@ - Đổi Vị trí</target>
@@ -93,6 +108,10 @@
         <target state="translated">%@ không thể phát hiện được màn hình nào. Đây có thể là lỗi ứng dụng hoặc hệ thống.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%%" xml:space="preserve">
+        <source>%@%%</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -103,9 +122,22 @@
         <target state="translated">%@%@%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%@%@%@" xml:space="preserve">
+        <source>%1$@%2$@%3$@%4$@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@, %@" xml:space="preserve">
         <source>%@, %@</source>
         <target state="translated">%@, %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@Hz" xml:space="preserve">
+        <source>%@Hz</source>
+        <target state="translated">%@Hz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@mm" xml:space="preserve">
+        <source>%@mm</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@mm x %@mm" xml:space="preserve">
@@ -136,6 +168,11 @@
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
         <source>%lld Trial Days Left</source>
         <target state="translated">Còn lại %lld ngày Dùng thử</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld pixels HiDPI (%lld pixels LoDPI)" xml:space="preserve">
+        <source>%1$lld pixels HiDPI (%2$lld pixels LoDPI)</source>
+        <target state="translated">%1$lld pixels HiDPI (%2$lld pixels LoDPI)</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld x %lld" xml:space="preserve">
@@ -173,6 +210,14 @@
         <target state="translated">(%@)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="(next to %@)" xml:space="preserve">
+        <source>(next to %@)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(next to unspecified)" xml:space="preserve">
+        <source>(next to unspecified)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id=", associated" xml:space="preserve">
         <source>, associated</source>
         <target state="translated">, liên kết</target>
@@ -203,9 +248,19 @@
         <target state="translated">Có một màn hình có thể điều khiển.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave." xml:space="preserve">
+        <source>A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave.</source>
+        <target state="translated">Một nhóm màn hình có thể bao gồm tất cả các màn hình (với một danh sách ngoại lệ có thể được chỉ định) hoặc có thể bao gồm một danh sạch cụ thể các màn hình. Việc thuộc nhóm màn hình có thể quyết định trạng thái kích hoạt của nhóm màn hình (tùy thuộc vào cài đặt chính sách kích hoạt) và ảnh hưởng đến cách hoạt động của các tính năng dựa trên nhóm màn hình.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
         <source>A display is present which is not fully controllable without the app</source>
         <target state="translated">Một màn hình hiện diện nhưng không thể điều khiển hoàn toàn nếu không có ứng dụng</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
+        <source>A higher priority display group marked as exclusive is active.</source>
+        <target state="translated">Một nhóm màn hình ưu tiên được đánh dấu là đặc biệt đang hoạt động.</target>
         <note/>
       </trans-unit>
       <trans-unit id="A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays." xml:space="preserve">
@@ -238,14 +293,9 @@
         <target state="translated">Một màn hình ảo được liên kết với một màn hình thực sẽ tự động ngắt kết nối khi màn hình đó ngắt kết nối. Tất cả màn hình ảo khác đều ngắt kết nối. Bạn có thể tắt chế độ tự động này cho các màn hình ảo liên kết.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will connect automatically when the associated display is connected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will connect automatically when the associated display is connected.</source>
-        <target state="translated">Một màn hình ảo được liên kết với một màn hình thực sẽ tự động kết nối khi màn hình thực được kết nối.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected.</source>
-        <target state="translated">Một màn hình ảo được liên kết với một màn hình thực sẽ tự động ngắt kết nối khi màn hình thực ngắt kết nối.</target>
+      <trans-unit id="A virtual screen which is associated with a display will connect or disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
+        <source>A virtual screen which is associated with a display will connect or disconnect automatically when the associated display is connected or disconnected.</source>
+        <target state="translated">Một màn hình ảo được liên kết với một màn hình sẽ tự động kết nối hoặc ngắt kết nối khi màn hình liên kết được kết nối hoặc ngắt kết nối.</target>
         <note/>
       </trans-unit>
       <trans-unit id="About" xml:space="preserve">
@@ -256,6 +306,10 @@
       <trans-unit id="About %@" xml:space="preserve">
         <source>About %@</source>
         <target state="translated">Về %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Above %@" xml:space="preserve">
+        <source>Above %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Above Menu, Dock, Spaces" xml:space="preserve">
@@ -298,19 +352,46 @@
         <target state="translated">Kích hoạt Cấu hình mà không khởi động lại máy?</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Activate this display group when…" xml:space="preserve">
+        <source>Activate this display group when…</source>
+        <target state="translated">Kích hoạt nhóm màn hình này khi...</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC.</source>
         <target state="translated">Chỉ kích hoạt khi màn hình không được đặt làm màn hình chính để tránh gây nhiễu loạn trên màn hình khóa. Hầu hết các màn hình không hỗ trợ bật/tắt đèn nền qua DDC.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." xml:space="preserve">
-        <source>Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation.</source>
-        <target state="translated">Kích hoạt tính năng tăng cường hình ảnh XDR nguyên bản khi khởi động hoặc khi màn hình được kết nối. Yêu cầu chọn hồ sơ Apple XDR mặc định trước đó. Giữ phím SHIFT trong quá trình khởi động để tránh kích hoạt tự động.</target>
+      <trans-unit id="Activation" xml:space="preserve">
+        <source>Activation</source>
+        <target state="translated">Kích hoạt</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation depends on enabled synchronization or UI scale matching for this display group." xml:space="preserve">
+        <source>Activation depends on enabled synchronization or UI scale matching for this display group.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation priority" xml:space="preserve">
+        <source>Activation priority</source>
+        <target state="translated">Ưu tiên kích hoạt</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation requires the presence of appropriate displays for a configured synchronization or UI scale matching." xml:space="preserve">
+        <source>Activation requires the presence of appropriate displays for a configured synchronization or UI scale matching.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">Thêm độ phân giải tùy chọn</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add New Protection…" xml:space="preserve">
+        <source>Add New Protection…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add New Synchronization…" xml:space="preserve">
+        <source>Add New Synchronization…</source>
+        <target state="translated">Thêm Đồng bộ hóa mới...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add Refresh Rate" xml:space="preserve">
@@ -331,6 +412,10 @@
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
         <target state="translated">Thêm ứng dụng vào Cài đặt Hệ thống &gt; Riêng tư &amp; Bảo mật &gt; Ghi màn hình!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
+        <source>Additional delay after wake to reapply DDC settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Additional licenses:" xml:space="preserve">
@@ -388,9 +473,12 @@
         <target state="translated">Thêm các độ phân giải khác trong một số cấu hình nhưng thường sẽ làm hỏng thanh trượt. Điều này cũng ảnh hưởng đến các phím tắt độ phân giải.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Adjustments may clip HDR content!" xml:space="preserve">
-        <source>Adjustments may clip HDR content!</source>
-        <target state="translated">Các điều chỉnh có thể làm mất nội dung HDR!</target>
+      <trans-unit id="Adjust anchor point offsets" xml:space="preserve">
+        <source>Adjust anchor point offsets</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way." xml:space="preserve">
+        <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
@@ -398,14 +486,13 @@
         <target state="translated">Cài đặt điều khiển nâng cao</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Advanced displays settings" xml:space="preserve">
-        <source>Advanced displays settings</source>
-        <target state="translated">Cài đặt màn hình nâng cao</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Advanced settings &amp; privacy" xml:space="preserve">
         <source>Advanced settings &amp; privacy</source>
         <target state="translated">Cài đặt &amp; Quyền riêng tư Nâng cao</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced settings, watched &amp; affected group members" xml:space="preserve">
+        <source>Advanced settings, watched &amp; affected group members</source>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
@@ -418,15 +505,21 @@
         <target state="translated">Cài đặt màn hình ảo nâng cao</target>
         <note/>
       </trans-unit>
-      <trans-unit id="After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.&#10;&#10;You can do this in System Settings or the app can do it for you (administrator credentials needed)." xml:space="preserve">
-        <source>After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.
-
-You can do this in System Settings or the app can do it for you (administrator credentials needed).</source>
-        <target state="translated">Sau khi loại bỏ một màn hình ảo, bạn nên xóa cả hồ sơ màu đi kèm với nó.  Bạn có thể thao tác trong Cài đặt Hệ thống hoặc ứng dụng có thể thao tác cho bạn (cần quyền quản trị).</target>
+      <trans-unit id="Affected displays" xml:space="preserve">
+        <source>Affected displays</source>
         <note/>
       </trans-unit>
-      <trans-unit id="After discarding the virtual screen, it is recommended to remove it's unused factory color profile in System Settings." xml:space="preserve">
-        <source>After discarding the virtual screen, it is recommended to remove it's unused factory color profile in System Settings.</source>
+      <trans-unit id="After discarding a virtual screen, it is recommended to remove its unused factory color profile as well.&#10;&#10;You can do this in System Settings or the app can do it for you (administrator credentials needed)." xml:space="preserve">
+        <source>After discarding a virtual screen, it is recommended to remove its unused factory color profile as well.
+
+You can do this in System Settings or the app can do it for you (administrator credentials needed).</source>
+        <target state="translated">Sau khi loại bỏ một màn hình ảo, bạn nên xóa cả hồ sơ màu đi kèm với nó.
+
+Bạn có thể thao tác trong Cài đặt Hệ thống hoặc ứng dụng có thể thao tác cho bạn (cần quyền quản trị).</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings." xml:space="preserve">
+        <source>After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings.</source>
         <target state="translated">Sau khi loại bỏ một màn hình ảo, bạn nên xóa cả hồ sơ màu đi kèm với nó trong Cài đặt Hệ thống.</target>
         <note/>
       </trans-unit>
@@ -448,6 +541,35 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="All VMM7100 based USB-C to HDMI devices are affected - make sure you enable the appropriate reinitialize for all displays connected with such devices to avoid the need for manual power cycles." xml:space="preserve">
         <source>All VMM7100 based USB-C to HDMI devices are affected - make sure you enable the appropriate reinitialize for all displays connected with such devices to avoid the need for manual power cycles.</source>
         <target state="translated">Tất cả các thiết bị USB-C sang HDMI dựa trên VMM7100 đều bị ảnh hưởng - đảm bảo rằng bạn kích hoạt việc khởi động lại phù hợp cho tất cả các màn hình kết nối với các thiết bị như vậy để tránh việc cần phải khởi động lại thủ công.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All configured group member displays are connected" xml:space="preserve">
+        <source>All configured group member displays are connected</source>
+        <target state="translated">Tất cả các màn hình đã được cấu hình trong nhóm đều đã kết nối</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All display group members are present." xml:space="preserve">
+        <source>All display group members are present.</source>
+        <target state="translated">Tất cả các màn hình trong nhóm đã hiển thị.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members are sync targets" xml:space="preserve">
+        <source>All group members are sync targets</source>
+        <target state="translated">Tất cả các thành viên của nhóm đều là mục tiêu đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members are watched for resolution changes and can initiate a UI scale matching operation." xml:space="preserve">
+        <source>All group members are watched for resolution changes and can initiate a UI scale matching operation.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members can be synchronization sources." xml:space="preserve">
+        <source>All group members can be synchronization sources.</source>
+        <target state="translated">Tất cả thành viên nhóm đều có thể là nguồn đồng bộ hóa.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
+        <source>All members (except the the source of the sync event) will be sync targets.</source>
+        <target state="translated">Tất cả các thành viên (ngoại trừ nguồn của sự kiện đồng bộ hóa) sẽ là mục tiêu đồng bộ hóa.</target>
         <note/>
       </trans-unit>
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
@@ -495,9 +617,9 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">Cho phép ngắt kết nối màn hình tích hợp của iMac</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow native XDR brightness upscaling" xml:space="preserve">
-        <source>Allow native XDR brightness upscaling</source>
-        <target state="translated">Cho phép tăng cường độ sáng XDR nguyên bản</target>
+      <trans-unit id="Allow native XDR upscaling" xml:space="preserve">
+        <source>Allow native XDR upscaling</source>
+        <target state="translated">Cho phép tăng cường XDR nguyên bản</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -523,6 +645,16 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
         <source>Allow using F14/F15 as alternative brightness keys</source>
         <target state="translated">Cho phép sử dụng F14/F15 làm phím độ sáng thay thế</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync sources" xml:space="preserve">
+        <source>Allow virtual screens as sync sources</source>
+        <target state="translated">Cho phép màn hình ảo làm nguồn đồng bộ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync targets" xml:space="preserve">
+        <source>Allow virtual screens as sync targets</source>
+        <target state="translated">Cho phép màn hình ảo là mục tiêu đồng bộ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
@@ -580,6 +712,16 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">Luôn hiện cả độ phân giải thấp (non-HiDPI) và cao (HiDPI)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Always show in app menu when available for connect" xml:space="preserve">
+        <source>Always show in app menu when available for connect</source>
+        <target state="translated">Luôn hiển thị trong menu ứng dụng khi khả dụng để kết nối</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Always show this Sidecar display in the app menu when the system reports it as available for connect. Requires enabled display connection management." xml:space="preserve">
+        <source>Always show this Sidecar display in the app menu when the system reports it as available for connect. Requires enabled display connection management.</source>
+        <target state="translated">Luôn hiện màn hình Sidecar này trong menu ứng dụng khi hệ thống báo cáo nó là khả dụng để kết nối. Yêu cầu quản lý kết nối màn hình được kích hoạt.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
         <source>An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!</source>
         <target state="translated">Có lỗi xảy ra trong quá trình tính toán kích thước màn hình ảo. Hãy thử tạo màn hình ảo bằng cách thủ công!</target>
@@ -600,9 +742,28 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">Có lỗi xảy ra trong quá trình tạo màn hình ảo.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="An other group member display next to which the protected display should be positioned in the display arrangement." xml:space="preserve">
+        <source>An other group member display next to which the protected display should be positioned in the display arrangement.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Another app altered screen colors or brightness - this clashes with what %@ is doing." xml:space="preserve">
         <source>Another app altered screen colors or brightness - this clashes with what %@ is doing.</source>
         <target state="translated">Một ứng dụng khác đã thay đổi màu sắc hoặc độ sáng màn hình - điều này xung đột với những gì %@ đang làm.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any group member can be a sync source" xml:space="preserve">
+        <source>Any group member can be a sync source</source>
+        <target state="translated">Bất kỳ thành viên nhóm nào cũng có thể là nguồn đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any group member is connected" xml:space="preserve">
+        <source>Any group member is connected</source>
+        <target state="translated">Bất kỳ thành viên nào của nhóm đều được kết nối</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any number of display groups can be created besides the default display group. Display groups are activated/deactivated according to activation and priority settings." xml:space="preserve">
+        <source>Any number of display groups can be created besides the default display group. Display groups are activated/deactivated according to activation and priority settings.</source>
+        <target state="translated">Bất kỳ số lượng nhóm màn hình nào cũng có thể được tạo ngoài nhóm màn hình mặc định. Nhóm màn hình được kích hoạt/vô hiệu hóa theo cài đặt kích hoạt và ưu tiên.</target>
         <note/>
       </trans-unit>
       <trans-unit id="App Menu" xml:space="preserve">
@@ -643,7 +804,8 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
-        <target state="translated">Apple Pay cần có Safari, Google Pay cần có Chrome. AliPay khả dụng ở Trung Quốc.</target>
+        <target state="translated">Apple Pay cần có Safari, Google Pay cần có Chrome.
+AliPay khả dụng ở Trung Quốc.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apple Silicon" xml:space="preserve">
@@ -674,6 +836,10 @@ AliPay available in China.</source>
       <trans-unit id="Apply" xml:space="preserve">
         <source>Apply</source>
         <target state="translated">Áp dụng</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Apply All Protections" xml:space="preserve">
+        <source>Apply All Protections</source>
         <note/>
       </trans-unit>
       <trans-unit id="Apply Custom EDID" xml:space="preserve">
@@ -731,9 +897,23 @@ AliPay available in China.</source>
         <target state="translated">Áp dụng độ phân giải yêu thích 5</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Appropriate displays are available for a configured synchronization or UI scale matching." xml:space="preserve">
+        <source>Appropriate displays are available for a configured synchronization or UI scale matching.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to discard this display group and all its settings?" xml:space="preserve">
+        <source>Are sure you want to discard this display group and all its settings?</source>
+        <target state="translated">Bạn có chắc muốn loại bỏ nhóm màn hình này và tất cả cài đặt của nó không?</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
         <source>Are sure you want to quit the app?</source>
         <target state="translated">Bạn có chắc chắn muốn thoát ứng dụng?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
+        <source>Are sure you want to remove this synchronization with all its settings?</source>
+        <target state="translated">Bạn có chắc muốn xóa đồng bộ hóa này cùng với tất cả cài đặt của nó không?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
@@ -749,6 +929,14 @@ AliPay available in China.</source>
       <trans-unit id="Are sure you want to restart the app?" xml:space="preserve">
         <source>Are sure you want to restart the app?</source>
         <target state="translated">Bạn có chắc chắn muốn khởi động lại ứng dụng?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to remove the layout protection for this display with all its settings?" xml:space="preserve">
+        <source>Are you sure you want to remove the layout protection for this display with all its settings?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Arrange %@ next to" xml:space="preserve">
+        <source>Arrange %@ next to</source>
         <note/>
       </trans-unit>
       <trans-unit id="Aspect ratio" xml:space="preserve">
@@ -791,6 +979,26 @@ AliPay available in China.</source>
         <target state="translated">Cho rằng các giá trị đã sử dụng cuối hoặc giá trị mặc định là hợp lệ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="At least one display group member is present." xml:space="preserve">
+        <source>At least one display group member is present.</source>
+        <target state="translated">Ít nhất một thành viên nhóm màn hình đang hiện diện.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least one non-group member display is connected - this is prohibited by the activation rules." xml:space="preserve">
+        <source>At least one non-group member display is connected - this is prohibited by the activation rules.</source>
+        <target state="translated">Ít nhất một màn hình không thuộc nhóm nào đã được kết nối - điều này bị cấm bởi các quy tắc kích hoạt.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least two display group members are present." xml:space="preserve">
+        <source>At least two display group members are present.</source>
+        <target state="translated">Ít nhất hai thành viên nhóm màn hình đang hiện diện.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least two group members are connected" xml:space="preserve">
+        <source>At least two group members are connected</source>
+        <target state="translated">Ít nhất hai thành viên của nhóm đã được kết nối</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
         <source>Attempts to directly read the EDID data from the display.</source>
         <target state="translated">Thử đọc trực tiếp dữ liệu EDID từ màn hình.</target>
@@ -800,7 +1008,9 @@ AliPay available in China.</source>
         <source>Attempts to directly read the EDID data from the display. Might not yield valid results on some systems.
 
 Specifying read length is optional - leave the field empty for autodetect.</source>
-        <target state="translated">Thử đọc trực tiếp dữ liệu EDID từ màn hình. Có thể không cho kết quả hợp trên một số hệ thống.  Việc chỉ định chiều dài đọc là tùy chọn - để trống thường để tự động phát hiện.</target>
+        <target state="translated">Thử đọc trực tiếp dữ liệu EDID từ màn hình. Có thể không cho kết quả hợp trên một số hệ thống.
+
+Việc chỉ định chiều dài đọc là tùy chọn - để trống thường để tự động phát hiện.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
@@ -838,6 +1048,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Tự động kết nối màn hình ảo</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
+        <source>Auto-connect virtual screen when all associated screens are offline</source>
+        <target state="translated">Tự động kết nối màn hình ảo khi tất cả các màn hình liên kết đều tắt</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Tự động ngắt kết nối khi kết nối màn hình rời đã tạm ngừng.</target>
@@ -851,11 +1066,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Automatic (based on display type)" xml:space="preserve">
         <source>Automatic (based on display type)</source>
         <target state="translated">Tự động (dựa vào loại màn hình)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Automatically activate native XDR upscaling" xml:space="preserve">
-        <source>Automatically activate native XDR upscaling</source>
-        <target state="translated">Tự động kích hoạt tăng cường XDR tự nhiên</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
@@ -883,9 +1093,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Tự động cấu hình chế độ phản chiếu để hiển thị nội dung của màn hình ảo trên màn hình liên kết. Nếu có nhiều màn hình liên kết được kết nối, chỉ một màn hình sẽ được dùng để phản chiếu.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Automatically connect the virtual screen when the associated display is online and disconnect when it is not." xml:space="preserve">
-        <source>Automatically connect the virtual screen when the associated display is online and disconnect when it is not.</source>
-        <target state="translated">Tự động kết nối màn hình ảo khi màn hình liên kết trực tuyến và ngắt kết nối khi không trực tuyến.</target>
+      <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
+        <target state="translated">Tự động kết nối màn hình ảo khi tất cả màn hình liên kết đều không hoạt động và ngắt kết nối.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
+        <target state="translated">Tự động kết nối màn hình ảo khi một màn hình liên kết được kích hoạt và ngắt kết nối khi không kích hoạt.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -943,6 +1158,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Cẩn thận khi sử dụng cài đặt này vì nó sẽ kiểm soát ngay cả khi đã chọn một đầu ra âm thanh khác!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Below %@" xml:space="preserve">
+        <source>Below %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level)." xml:space="preserve">
         <source>Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level).</source>
         <target state="translated">Dưới mức này trên biểu đồ độ sáng kết hợp, ứng dụng sử dụng tính năng làm tối phần mềm bổ sung (vì kiểm soát đèn nền phần cứng đã đạt đến mức thấp nhất có thể).</target>
@@ -961,6 +1180,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
         <source>Both turned off by HDR toggle</source>
         <target state="translated">Cả hai được tắt thông qua chuyển đổi HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bottom" xml:space="preserve">
+        <source>Bottom</source>
         <note/>
       </trans-unit>
       <trans-unit id="Briefly show Dock icon on startup" xml:space="preserve">
@@ -983,11 +1206,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Độ sáng</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Apple)" xml:space="preserve">
-        <source>Brightness (Apple)</source>
-        <target state="translated">Độ sáng (Apple)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Combined)" xml:space="preserve">
         <source>Brightness (Combined)</source>
         <target state="translated">Độ sáng (Kết hợp)</target>
@@ -1001,11 +1219,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
         <source>Brightness (Combined, Software Upscaling)</source>
         <target state="translated">Độ sáng (Kết hợp, Tăng cường qua phần mềm)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Brightness (DDC)" xml:space="preserve">
-        <source>Brightness (DDC)</source>
-        <target state="translated">Độ sáng (DDC)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
@@ -1028,11 +1241,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Độ sáng (Tăng cường XDR nguyên bản)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Overlay)" xml:space="preserve">
-        <source>Brightness (Overlay)</source>
-        <target state="translated">Độ sáng (Chồng lên)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
         <source>Brightness (Software Upscaling)</source>
         <target state="translated">Độ sáng (Tăng cường qua phần mềm)</target>
@@ -1051,6 +1259,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Brightness and Video" xml:space="preserve">
         <source>Brightness and Video</source>
         <target state="translated">Độ sáng và Video</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
+        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
+        <target state="translated">Các thay đổi về độ sáng có thể được kích hoạt bên ngoài ứng dụng (Touch Bar, cảm biến ánh sáng, Trung tâm Kiểm soát, v.v.) khi nguồn đồng bộ là một màn Apple. Đồng bộ các thay đổi này không được khuyến khích khi sử dụng độ sáng kết hợp và tăng cường XDR phần mềm (thay vào đó, hãy dùng tăng cường XDR nguyên bản).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
@@ -1123,6 +1336,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Khả năng</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Change Activation Priority…" xml:space="preserve">
+        <source>Change Activation Priority…</source>
+        <target state="translated">Thay đổi ưu tiên kích hoạt...</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
         <source>Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings.</source>
         <target state="translated">Thay đổi cài đặt này không ảnh hưởng đến màn hình đã biết. Phương pháp xác định màn hình có thể được thay đổi dựa trên từng màn hình trong cài đặt bổ sung của mỗi màn hình.</target>
@@ -1136,6 +1354,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Check for Updates…" xml:space="preserve">
         <source>Check for Updates…</source>
         <target state="translated">Kiểm tra Cập nhật...</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chunk size" xml:space="preserve">
+        <source>Chunk size</source>
+        <target state="translated">Kích thước phần</target>
         <note/>
       </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
@@ -1238,6 +1461,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Thay đổi cấu hình yêu cầu khởi động lại hoặc kích hoạt.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configuration delay" xml:space="preserve">
+        <source>Configuration delay</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configuration run ID" xml:space="preserve">
         <source>Configuration run ID</source>
         <target state="translated">ID chạy cấu hình</target>
@@ -1263,6 +1490,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Cấu hình Màn hình ảo...</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure activation rules" xml:space="preserve">
+        <source>Configure activation rules</source>
+        <target state="translated">Cấu hình quy tắc kích hoạt</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure full screen stream to this display" xml:space="preserve">
         <source>Configure full screen stream to this display</source>
         <target state="translated">Cấu hình trình chiếu toàn màn hình đến màn hình này</target>
@@ -1276,6 +1508,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down." xml:space="preserve">
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">Cấu hình màn hỉnh ảo/xoay trình chiếu - hữu ích cho chế độ Sidecar dọc hoặc cho các màn hình không hỗ trợ thay đổi hướng. Với Sidecar, bạn có thể quyết định xem cổng USB-C (cổng lightning) nên hướng lên hay hướng xuống.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configured synchronization or UI scale matching displays are present" xml:space="preserve">
+        <source>Configured synchronization or UI scale matching displays are present</source>
         <note/>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
@@ -1368,6 +1604,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Kết nối màn hình ảo và bắt đầu trình chiếu toàn màn hình từ màn hình ảo đến màn hình. Đồng thời thiết lập trình chiếu toàn màn hình để tự động bắt đầu mỗi khi màn hình được kết nối.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Consider range differences" xml:space="preserve">
+        <source>Consider range differences</source>
+        <target state="translated">Xem xét sự khác biệt về phạm vi</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
         <source>Continuous XDR upscaling readiness</source>
         <target state="translated">Sẵn sàng tăng cường hình ảnh XDR liên tục</target>
@@ -1401,6 +1642,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Crash reporting" xml:space="preserve">
         <source>Crash reporting</source>
         <target state="translated">Báo cáo lỗi</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create Display Group" xml:space="preserve">
+        <source>Create Display Group</source>
+        <target state="translated">Tạo Nhóm Màn hình</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create New Display Group…" xml:space="preserve">
+        <source>Create New Display Group…</source>
+        <target state="translated">Tạo Nhóm Màn hình mới...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Create New Virtual Screen" xml:space="preserve">
@@ -1556,6 +1807,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Custom aspect ratio" xml:space="preserve">
         <source>Custom aspect ratio</source>
         <target state="translated">Tỷ lệ khung hình tùy chỉnh</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Custom display groups require Pro." xml:space="preserve">
+        <source>Custom display groups require Pro.</source>
+        <target state="translated">Nhóm màn hình tùy chỉnh yêu cầu bản quyền Pro.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
@@ -1758,6 +2014,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">DDC, tăng cường XDR/HDR, ghi đè EDID không khả dụng. Vui lòng mở ứng dụng trong chế độ tự nhiên - để làm điều này, hủy chọn `Mở bằng Rosetta` trong mục thông tin ứng dụng!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Data link" xml:space="preserve">
+        <source>Data link</source>
+        <target state="translated">Liên kết dữ liệu</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Date of manufacture" xml:space="preserve">
         <source>Date of manufacture</source>
         <target state="translated">Ngày sản xuất</target>
@@ -1828,6 +2089,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Mặc định</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Default Group" xml:space="preserve">
+        <source>Default Group</source>
+        <target state="translated">Nhóm Mặc định</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Default and native modes:" xml:space="preserve">
         <source>Default and native modes:</source>
         <target state="translated">Chế độ mặc định và nguyên bản:</target>
@@ -1878,6 +2144,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Xóa dữ liệu</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Delta syncing" xml:space="preserve">
+        <source>Delta syncing</source>
+        <target state="translated">Đồng bộ hóa Delta</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Description" xml:space="preserve">
         <source>Description</source>
         <target state="translated">Mô tả</target>
@@ -1898,6 +2169,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Phát hiện một số sự xung đột...</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately." xml:space="preserve">
+        <source>Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
         <source>Determines whether display is affected by keyboard adjustments (video/audio controls).</source>
         <target state="translated">Xác định liệu màn hình có bị ảnh hưởng bởi điều chỉnh bàn phím (điều khiển video/âm thanh) hay không.</target>
@@ -1906,6 +2181,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Determines whether the display is presented in the app menu." xml:space="preserve">
         <source>Determines whether the display is presented in the app menu.</source>
         <target state="translated">Xác định liệu màn hình có được hiển thị trong menu ứng dụng hay không.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Device type" xml:space="preserve">
+        <source>Device type</source>
+        <target state="translated">Loại thiết bị</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Device type identifier" xml:space="preserve">
+        <source>Device type identifier</source>
+        <target state="translated">Bộ nhận diện loại thiết bị</target>
         <note/>
       </trans-unit>
       <trans-unit id="Dim Displays" xml:space="preserve">
@@ -1996,6 +2281,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Discard Calibration" xml:space="preserve">
         <source>Discard Calibration</source>
         <target state="translated">Hủy bỏ cân chỉnh</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Discard Display Group" xml:space="preserve">
+        <source>Discard Display Group</source>
+        <target state="translated">Loại bỏ Nhóm Màn hình</target>
         <note/>
       </trans-unit>
       <trans-unit id="Discard Virtual Screen" xml:space="preserve">
@@ -2173,11 +2463,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Khôi phục Cài đặt gốc Màn hình</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display Group %lld" xml:space="preserve">
-        <source>Display Group %lld</source>
-        <target state="translated">Nhóm Màn hình %lld</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display Information" xml:space="preserve">
         <source>Display Information</source>
         <target state="translated">Thông tin Màn hình</target>
@@ -2203,9 +2488,59 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Menu Chế độ Màn hình</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Display Mode changed for %@." xml:space="preserve">
+        <source>Display Mode changed for %@.</source>
+        <target state="translated">Chế độ Màn hình đã đổi cho %@.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Display Notch" xml:space="preserve">
         <source>Display Notch</source>
         <target state="translated">Notch Màn hình</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is configured to be always active regardless of the presence of group members." xml:space="preserve">
+        <source>Display group is configured to be always active regardless of the presence of group members.</source>
+        <target state="translated">Nhóm màn hình được cấu hình luôn hoạt động bất kể có hoặc không có thành viên nhóm.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is currently active" xml:space="preserve">
+        <source>Display group is currently active</source>
+        <target state="translated">Nhóm màn hình hiện đang hoạt động</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is inactive" xml:space="preserve">
+        <source>Display group is inactive</source>
+        <target state="translated">Nhóm màn hình đang không hoạt động</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is not enabled." xml:space="preserve">
+        <source>Display group is not enabled.</source>
+        <target state="translated">Nhóm màn hình không được kích hoạt.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group name" xml:space="preserve">
+        <source>Display group name</source>
+        <target state="translated">Tên Nhóm Màn hình</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group settings will be available at the created group's settings pane." xml:space="preserve">
+        <source>Display group settings will be available at the created group's settings pane.</source>
+        <target state="translated">Các cài đặt nhóm màn hình sẽ có sẵn tại ô cài đặt của nhóm đã tạo.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups" xml:space="preserve">
+        <source>Display groups</source>
+        <target state="translated">Nhóm màn hình</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups are sorted by activation priority (higher priority first)." xml:space="preserve">
+        <source>Display groups are sorted by activation priority (higher priority first).</source>
+        <target state="translated">Nhóm màn hình được sắp xếp theo ưu tiên kích hoạt (ưu tiên cao hơn được hiển thị trước).</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups provide a way to let various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, UI scale matching, display layout management and more." xml:space="preserve">
+        <source>Display groups provide a way to let various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, UI scale matching, display layout management and more.</source>
+        <target state="translated">Nhóm màn hình cung cấp một cách để cho phép các hoạt động khác nhau ảnh hưởng đến nhiều màn hình. Các tính năng dựa trên nhóm màn hình bao gồm đồng bộ hóa độ sáng và điều chỉnh hình ảnh khác, độ phân giải, quản lý bố cục màn hình và hơn nữa.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display identification method" xml:space="preserve">
@@ -2223,9 +2558,18 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Các tùy chọn Menu màn hình</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Display mode submenu settings" xml:space="preserve">
+        <source>Display mode submenu settings</source>
+        <target state="translated">Cài đặt menu con độ phân giải</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Display name" xml:space="preserve">
         <source>Display name</source>
         <target state="translated">Tên màn hình</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display physical dimensions" xml:space="preserve">
+        <source>Display physical dimensions</source>
         <note/>
       </trans-unit>
       <trans-unit id="Display status" xml:space="preserve">
@@ -2258,16 +2602,18 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Màn hình và Màn hình ảo</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Displays that were added to the list previously are shown even when not detected." xml:space="preserve">
+        <source>Displays that were added to the list previously are shown even when not detected.</source>
+        <target state="translated">Các màn hình đã được thêm vào danh sách trước đó vẫn được hiển thị ngay cả khi không được phát hiện.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Displays will turn blank for a while and you will not be able to interact with your Mac. The process should take about 2-4 seconds.&#10;&#10;The process does not work for the built-in display (reboot needed). The operation might cause some Macs to enter sleep mode." xml:space="preserve">
         <source>Displays will turn blank for a while and you will not be able to interact with your Mac. The process should take about 2-4 seconds.
 
 The process does not work for the built-in display (reboot needed). The operation might cause some Macs to enter sleep mode.</source>
-        <target state="translated">Màn hình sẽ hiện trắng trong một khoảng thời gian và bạn sẽ không thể tương tác với Mac của bạn. Quá trình này có thể mất khoảng 2-4 giây.  Quá trình này không khả dụng cho màn hình tích hợp (cần khởi động lại). Thao tác này có thể khiến một số Mac chuyển sang chế độ ngủ.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do Not Disconnect" xml:space="preserve">
-        <source>Do Not Disconnect</source>
-        <target state="translated">Không ngắt kết nối</target>
+        <target state="translated">Màn hình sẽ hiện trắng trong một khoảng thời gian và bạn sẽ không thể tương tác với Mac của bạn. Quá trình này có thể mất khoảng 2-4 giây.
+
+Quá trình này không khả dụng cho màn hình tích hợp (cần khởi động lại). Thao tác này có thể khiến một số Mac chuyển sang chế độ ngủ.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
@@ -2283,6 +2629,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Do not restore combined brightness and software adjustments" xml:space="preserve">
         <source>Do not restore combined brightness and software adjustments</source>
         <target state="translated">Không khôi phục độ sáng kết hợp và điều chỉnh phần mềm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Do not synchronize brightness changes made using the app." xml:space="preserve">
+        <source>Do not synchronize brightness changes made using the app.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to deactivate the license?" xml:space="preserve">
@@ -2303,11 +2653,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Do you want to discard the virtual screen?" xml:space="preserve">
         <source>Do you want to discard the virtual screen?</source>
         <target state="translated">Bạn có muốn hủy bỏ màn hình ảo không?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do you want to disconnect the virtual screen?" xml:space="preserve">
-        <source>Do you want to disconnect the virtual screen?</source>
-        <target state="translated">Bạn có muốn ngắt kết nối màn hình ảo?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to proceed?" xml:space="preserve">
@@ -2370,6 +2715,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Phiên bản EDID</target>
         <note/>
       </trans-unit>
+      <trans-unit id="EDID write communication settings" xml:space="preserve">
+        <source>EDID write communication settings</source>
+        <target state="translated">Cài đặt giao tiếp ghi EDID</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
         <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
         <target state="translated">EDID (Extended Display Identification Data), hoặc Dữ liệu Xác định Màn hình Mở rộng, là một tiêu chuẩn cho các màn hình để truyền đạt khả năng của chúng đến máy tính kết nối, bao gồm độ phân giải, các định dạng video được hỗ trợ, định thời, và thông tin của nhà sản xuất.</target>
@@ -2393,6 +2743,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Edit native panel pixel resolution" xml:space="preserve">
         <source>Edit native panel pixel resolution</source>
         <target state="translated">Chỉnh sửa độ phân giải pixel tự nhiên của tấm nền</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit system display name" xml:space="preserve">
+        <source>Edit system display name</source>
+        <target state="translated">Tên màn hình hệ thống</target>
         <note/>
       </trans-unit>
       <trans-unit id="Edit the system configuration of this display model" xml:space="preserve">
@@ -2470,9 +2825,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Kích hoạt True Tone</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
-        <source>Enable by selecting "%@" under the XDR Preset menu.</source>
-        <target state="translated">Kích hoạt bằng cách chọn "%@" trong menu XDR Preset.</target>
+      <trans-unit id="Enable UI scale matching" xml:space="preserve">
+        <source>Enable UI scale matching</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable color table adjustments" xml:space="preserve">
@@ -2515,9 +2869,18 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Kích hoạt máy chủ HTTP tích hợp</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable layout protection" xml:space="preserve">
+        <source>Enable layout protection</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable lower than 720p resolutions" xml:space="preserve">
         <source>Enable lower than 720p resolutions</source>
         <target state="translated">Kích hoạt độ phân giải thấp hơn 720p</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable native XDR brightness upscaling" xml:space="preserve">
+        <source>Enable native XDR brightness upscaling</source>
+        <target state="translated">Kích hoạt tăng cường độ sáng XDR nguyên bản</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
@@ -2545,6 +2908,16 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Kích hoạt điều chỉnh video dựa trên phần mềm</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable synchronization for this display group" xml:space="preserve">
+        <source>Enable synchronization for this display group</source>
+        <target state="translated">Bật đồng bộ hóa cho nhóm màn hình này</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enabled" xml:space="preserve">
+        <source>Enabled</source>
+        <target state="translated">Đã kích hoạt</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well." xml:space="preserve">
         <source>Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well.</source>
         <target state="translated">Kích hoạt thay đổi độ phân giải cấp thấp cho mục tiêu phản chiếu. Cho phép các mục con của Tần Số Làm Mới và Độ Sau Màu nữa.</target>
@@ -2560,9 +2933,46 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Cho phép độ phân giải lên đến 16Kx16K (8Kx8K HiDPI) cho màn hình ảo và thu phóng linh hoạt. Sử dụng màn hình ảo 8K+ có thể gây ra vấn đề về ổn định. Thu phóng linh hoạt cần phải được áp dụng lại. Độ phân giải tối đa có các giới hạn phụ thuộc vào phiên bản cụ thể của macOS và loại GPU.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
+        <source>Enforce UI scale match upon connecting a display</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
         <source>Enforce virtual screen mirroring</source>
         <target state="translated">Thực hiện bắt buộc phản chiếu lên màn hình ảo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some displays from the group" xml:space="preserve">
+        <source>Exclude some displays from the group</source>
+        <target state="translated">Loại bỏ một số màn hình khỏi nhóm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync source list" xml:space="preserve">
+        <source>Exclude some members from sync source list</source>
+        <target state="translated">Loại trừ một số thành viên khỏi danh sách nguồn đồng bộ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync target list" xml:space="preserve">
+        <source>Exclude some members from sync target list</source>
+        <target state="translated">Loại bỏ một số thành viên khỏi danh sách mục tiêu đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from the list of affected displays" xml:space="preserve">
+        <source>Exclude some members from the list of affected displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from watch list" xml:space="preserve">
+        <source>Exclude some members from watch list</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Excluded displays" xml:space="preserve">
+        <source>Excluded displays</source>
+        <target state="translated">Các màn hình không được bao gồm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclusive display group" xml:space="preserve">
+        <source>Exclusive display group</source>
+        <target state="translated">Nhóm màn hình đặc biệt</target>
         <note/>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
@@ -2573,6 +2983,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Expanding menu items" xml:space="preserve">
         <source>Expanding menu items</source>
         <target state="translated">Các mục menu mở rộng</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Experimental feature" xml:space="preserve">
+        <source>Experimental feature</source>
+        <target state="translated">Tính năng thử nghiệm</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
@@ -2680,6 +3095,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Quên màn hình sau một thời gian</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Framerate" xml:space="preserve">
+        <source>Framerate</source>
+        <target state="translated">Tốc độ khung hình</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Free Aspect Ratio" xml:space="preserve">
         <source>Free Aspect Ratio</source>
         <target state="translated">Tỉ lệ khung hình tự do</target>
@@ -2708,6 +3128,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." xml:space="preserve">
         <source>Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods.</source>
         <target state="translated">Mở rộng hoàn toàn phạm vi độ sáng cho nội dung SDR ở cấp độ hệ thống và cũng cho phép phạm vi làm tối nhiều hơn. Vượt trội hơn so với tất cả các phương pháp tăng cường khác. Khi không hoạt động, ứng dụng chuyển về các phương pháp tăng cường XDR dựa trên phần mềm.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="GPU Dithering" xml:space="preserve">
+        <source>GPU Dithering</source>
+        <target state="translated">GPU Dithering</target>
         <note/>
       </trans-unit>
       <trans-unit id="Gain" xml:space="preserve">
@@ -2780,6 +3205,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Nhận giá trị hiện tại của bất kỳ điều chỉnh nào cho màn hình. Giá trị sẽ được chuyển đổi thành một tỉ lệ từ 0-1.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Grayscale Framebuffer" xml:space="preserve">
+        <source>Grayscale Framebuffer</source>
+        <target state="translated">Khung hình trắng đen</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
         <source>Green Black Level (DDC)</source>
         <target state="translated">Mức độ Xanh lá Đen (DDC)</target>
@@ -2788,6 +3218,26 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
         <target state="translated">Độ sáng Xanh lá (DDC)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Group %lld" xml:space="preserve">
+        <source>Group %lld</source>
+        <target state="translated">Nhóm %lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Group Membership" xml:space="preserve">
+        <source>Group Membership</source>
+        <target state="translated">Thành viên nhóm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Groups" xml:space="preserve">
+        <source>Groups</source>
+        <target state="translated">Nhóm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
+        <source>HDR Color Profile changed for %@.</source>
+        <target state="translated">Hồ sơ màu HDR đã thay đổi cho %@.</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2810,6 +3260,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Trạng thái HDR %@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="HDR mode changed for %@." xml:space="preserve">
+        <source>HDR mode changed for %@.</source>
+        <target state="translated">Chế độ HDR đã đổi cho %@.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="HEX editor styled blocks" xml:space="preserve">
         <source>HEX editor styled blocks</source>
         <target state="translated">Các khối được thiết kế theo kiểu HEX</target>
@@ -2828,6 +3283,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Hardware control (Apple)" xml:space="preserve">
         <source>Hardware control (Apple)</source>
         <target state="translated">Điều khiển phần cứng (Apple)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Has Home button" xml:space="preserve">
+        <source>Has Home button</source>
+        <target state="translated">Có nút Home</target>
         <note/>
       </trans-unit>
       <trans-unit id="Have fun by creating an endless mirror from your desktop!" xml:space="preserve">
@@ -2880,6 +3340,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Giữ ⇧ Shift khi khởi động ứng dụng để bật chế độ an toàn (safe mode) và ngăn việc ghi giá trị đã lưu. Với điều khiển kết hợp được kích hoạt, độ sáng DDC có thể được áp dụng lại ngay cả khi chưa được chọn.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hold ⇧ Shift for multi-select." xml:space="preserve">
+        <source>Hold ⇧ Shift for multi-select.</source>
+        <target state="translated">Giữ ⇧ Shift để chọn nhiều.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select. Sub-720p modes are hidden." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select. Sub-720p modes are hidden.</source>
         <target state="translated">Giữ ⇧ Shift để chọn nhiều. Các chế độ dưới 720p được ẩn.</target>
@@ -2895,9 +3360,19 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Giữ ⇧ Shift để chọn nhiều. Các chế độ không an toàn được ẩn.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hold ⌥ OPTION + reopen this menu for more!" xml:space="preserve">
+        <source>Hold ⌥ OPTION + reopen this menu for more!</source>
+        <target state="translated">Giữ ⌥ OPTION + mở lại menu này để xem thêm!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
         <source>Horizontal</source>
         <target state="translated">Ngang</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Horizontal GPU resolution limit" xml:space="preserve">
+        <source>Horizontal GPU resolution limit</source>
+        <target state="translated">Giới hạn độ phân giải GPU theo chiều ngang</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hz" xml:space="preserve">
@@ -2935,6 +3410,15 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Nếu điều khiển bàn phím được đặt cho màn hình tương ứng với tên thiết bị âm thanh hiện tại (thiết lập trong cài đặt Bàn phím), giá trị này sẽ được sử dụng cho thiết bị âm thanh tương ứng thay vì tên màn hình.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
+        <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
+        <source>If source and target control ranges differ, synchronized values are remaped (rebased) accordingly.</source>
+        <target state="translated">Nếu các phạm vi kiểm soát nguồn và mục tiêu khác nhau, các giá trị được đồng bộ sẽ được ánh xạ lại tương ứng.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
         <target state="translated">Nếu việc khôi phục gốc của màn hình được thực hiện đúng cách, bạn cũng nên đặt lại tất cả các giá trị DDC đã lưu về mặc định.</target>
@@ -2955,6 +3439,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Nếu EDID được cập nhật chứa thông tin mới về danh tính màn hình (số serial, model ID, ID nhà sản xuất), macOS sẽ xem màn hình đó là một màn hình riêng biệt. Khi tùy chọn này được kích hoạt, %@ sẽ duy trì tính liên tục giữa danh tính cũ và mới trong phiên làm việc hiện tại của ứng dụng.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active." xml:space="preserve">
+        <source>If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active.</source>
+        <target state="translated">Nếu nhóm màn hình này được kích hoạt, không có nhóm màn hình nào khác có ưu tiên hơn thấp có thể hoạt động. Nếu bất kỳ nhóm màn hình khác với ưu tiên cao hơn đang hoạt động, nhóm màn hình không thể được kích hoạt.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information." xml:space="preserve">
         <source>If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information.</source>
         <target state="translated">Nếu bạn sử dụng Trung tâm Thông báo, hãy đảm bảo rằng thông báo đã được kích hoạt cho ứng dụng. Thông báo quan trọng có thể xuất hiện mà không làm phiền, tùy thuộc vào nhiều yếu tố khác nhau. Thông báo truyền thống có thể chứa thêm thông tin khác.</target>
@@ -2969,7 +3458,13 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>If your display is not fully compatible with this feature, the app may not be able to turn the backlight off or turn it back on again!
 
 Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!</source>
-        <target state="translated">Nếu màn hình của bạn không hoàn toàn tương thích với tính năng này, ứng dụng có thể không thể tắt đèn nền hoặc bật lại!  Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồn DDC. Các hoạt động nguồn DDC có thể gây ra vấn đề (thậm chí là nghiêm trọng) với một số màn hình!</target>
+        <target state="translated">Nếu màn hình của bạn không hoàn toàn tương thích với tính năng này, ứng dụng có thể không thể tắt đèn nền hoặc bật lại.
+
+Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồn DDC. Các hoạt động nguồn DDC có thể gây ra vấn đề (thậm chí là nghiêm trọng) với một số màn hình!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
+        <source>Ignore checksum check error on read</source>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustment" xml:space="preserve">
@@ -3069,6 +3564,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Integer Scaling" xml:space="preserve">
         <source>Integer Scaling</source>
+        <target state="translated">Thu phóng số</target>
         <note/>
       </trans-unit>
       <trans-unit id="Integration" xml:space="preserve">
@@ -3096,9 +3592,24 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Độ phân giải không hợp lệ (đã bỏ qua)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Invert Colors" xml:space="preserve">
+        <source>Invert Colors</source>
+        <target state="translated">Đảo ngược Màu</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Invert DDC value scale" xml:space="preserve">
         <source>Invert DDC value scale</source>
         <target state="translated">Đảo ngược tỉ lệ giá trị DDC</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Inverted Framebuffer" xml:space="preserve">
+        <source>Inverted Framebuffer</source>
+        <target state="translated">Bộ đệm khung hình Nghịch đảo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Inverted Grayscale Framebuffer" xml:space="preserve">
+        <source>Inverted Grayscale Framebuffer</source>
+        <target state="translated">Bộ đệm khung hình Trắng đen Nghịch</target>
         <note/>
       </trans-unit>
       <trans-unit id="Issue mute command first, then set volume level to lowest setting" xml:space="preserve">
@@ -3124,6 +3635,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Keep Above Other Windows" xml:space="preserve">
         <source>Keep Above Other Windows</source>
         <target state="translated">Giữ trên tất cả cửa sổ khác</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Keep Sidecar displays in display list after being disconnected" xml:space="preserve">
+        <source>Keep Sidecar displays in display list after being disconnected</source>
+        <target state="translated">Giữ các màn hình Sidecar trong danh sách màn hình sau khi bị ngắt kết nối</target>
         <note/>
       </trans-unit>
       <trans-unit id="Keyboard" xml:space="preserve">
@@ -3161,14 +3677,34 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Lần cuối cùng không được phát hiện</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Layout Protection" xml:space="preserve">
+        <source>Layout Protection</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Layout protection enforces a configured arrangement for group member displays relative to each other. The feature can be used to make sure the displays are arranged properly after changing display resolutions, connecting new displays that are not part of the display group or dealing with displays that are not properly handled by the built-in display layout management of the operating system." xml:space="preserve">
+        <source>Layout protection enforces a configured arrangement for group member displays relative to each other. The feature can be used to make sure the displays are arranged properly after changing display resolutions, connecting new displays that are not part of the display group or dealing with displays that are not properly handled by the built-in display layout management of the operating system.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Leave mute key under OS control" xml:space="preserve">
         <source>Leave mute key under OS control</source>
         <target state="translated">Để phím tắt tiếng dưới sự kiểm soát của hệ điều hành</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Left" xml:space="preserve">
+        <source>Left</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left of %@" xml:space="preserve">
+        <source>Left of %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Length only" xml:space="preserve">
         <source>Length only</source>
         <target state="translated">Chỉ chiều dài</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled." xml:space="preserve">
+        <source>Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
@@ -3204,6 +3740,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Let the virtual screen follow the orientation of the associated display when it is rotated." xml:space="preserve">
         <source>Let the virtual screen follow the orientation of the associated display when it is rotated.</source>
         <target state="translated">Cho phép màn hình ảo tuân theo hướng xoay của màn hình liên kết khi được xoay.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let various adjustments like display brightness, contrast, etc. synchronize among members of the display group based on the configured rules." xml:space="preserve">
+        <source>Let various adjustments like display brightness, contrast, etc. synchronize among members of the display group based on the configured rules.</source>
+        <target state="translated">Cho các điều chỉnh hác nhau nhu độ sáng màn hình, độ tương phản, v.v đồng bộ giữa các thành viên của nhóm màn hình dựa trên các quy tắc được cấu hình.</target>
         <note/>
       </trans-unit>
       <trans-unit id="License management allows Pro features, purchasing, license activation and free trial. If you disable this, you can only use free features. License management requires communication with the payment and licensing provider Paddle ([paddle.com/privacy](https://paddle.com/privacy))." xml:space="preserve">
@@ -3311,6 +3852,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Chuyển động của popup menu chính</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Main status changed for %@." xml:space="preserve">
+        <source>Main status changed for %@.</source>
+        <target state="translated">Trạng thái chính đã thay đổi cho %@.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Make Tools menu collapsible instead of closable" xml:space="preserve">
         <source>Make Tools menu collapsible instead of closable</source>
         <target state="translated">Đặt menu Công cụ có thể thu gọn thay vì đóng lại</target>
@@ -3361,6 +3907,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Đánh dấu Cấu hình Hệ thống là Chưa áp dụng</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Match UI scale of all group members" xml:space="preserve">
+        <source>Match UI scale of all group members</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Match aspect ratio of and associate to a display" xml:space="preserve">
         <source>Match aspect ratio of and associate to a display</source>
         <target state="translated">Làm cho tỉ lệ khung hình phù hợp và liên kết với một màn hình</target>
@@ -3396,6 +3946,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Tên thiết bị âm thanh phù hợp</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Matching tolerance" xml:space="preserve">
+        <source>Matching tolerance</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Max HW" xml:space="preserve">
         <source>Max HW</source>
         <target state="translated">Độ sáng phần cứng tối đa</target>
@@ -3414,6 +3968,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">Giá trị độ sáng tối đa cho độ sáng XDR/HDR tăng cường trên tỉ lệ độ sáng kết hợp.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Member displays" xml:space="preserve">
+        <source>Member displays</source>
+        <target state="translated">Màn hình thành viên</target>
         <note/>
       </trans-unit>
       <trans-unit id="Menu" xml:space="preserve">
@@ -3516,6 +4075,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Đã phản chiếu đến nhiều màn hình</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Model" xml:space="preserve">
+        <source>Model</source>
+        <target state="translated">Model</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Model ID" xml:space="preserve">
         <source>Model ID</source>
         <target state="translated">Model ID</target>
@@ -3534,6 +4098,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="More system configuration options" xml:space="preserve">
         <source>More system configuration options</source>
         <target state="translated">Các tùy chọn cấu hình hệ thống khác</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mouse Click-through" xml:space="preserve">
+        <source>Mouse Click-through</source>
+        <target state="translated">Bấm chuột qua</target>
         <note/>
       </trans-unit>
       <trans-unit id="Move Display" xml:space="preserve">
@@ -3556,6 +4125,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Nhiều màn hình</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Multiple display groups" xml:space="preserve">
+        <source>Multiple display groups</source>
+        <target state="translated">Nhiều nhóm màn hình</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Multiple identical entries" xml:space="preserve">
         <source>Multiple identical entries</source>
         <target state="translated">Nhiều mục nhập giống nhau</target>
@@ -3566,6 +4140,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Bội số</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Mute" xml:space="preserve">
+        <source>Mute</source>
+        <target state="translated">Tắt tiếng</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Mute (DDC)" xml:space="preserve">
         <source>Mute (DDC)</source>
         <target state="translated">Tắt tiếng (DDC)</target>
@@ -3574,6 +4153,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Mute method" xml:space="preserve">
         <source>Mute method</source>
         <target state="translated">Phương pháp tắt tiếng</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Name" xml:space="preserve">
+        <source>Name</source>
+        <target state="translated">Tên</target>
         <note/>
       </trans-unit>
       <trans-unit id="Native" xml:space="preserve">
@@ -3599,11 +4183,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
         <target state="translated">Cài đặt Tăng cường độ sáng XDR tự nhiên</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Native XDR upscaling is active. Deactivate it under the XDR Preset menu." xml:space="preserve">
-        <source>Native XDR upscaling is active. Deactivate it under the XDR Preset menu.</source>
-        <target state="translated">Tăng cường XDR tự nhiên đang hoạt động. Vô hiệu hóa nó trong menu XDR Preset.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
@@ -3641,9 +4220,18 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Không bao giờ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="New Display Group" xml:space="preserve">
+        <source>New Display Group</source>
+        <target state="translated">Nhóm Màn hình mới</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">Cấu hình Màn hình ảo mới</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Newly connected displays are normally treated as possible affected displays only. With this enabled newly connected displays will be checked against watched display list as well." xml:space="preserve">
+        <source>Newly connected displays are normally treated as possible affected displays only. With this enabled newly connected displays will be checked against watched display list as well.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3701,9 +4289,31 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Không có xoay màn hình</target>
         <note/>
       </trans-unit>
+      <trans-unit id="No selection" xml:space="preserve">
+        <source>No selection</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-affected displays" xml:space="preserve">
+        <source>Non-affected displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Non-natively connected display" xml:space="preserve">
         <source>Non-natively connected display</source>
         <target state="translated">Màn hình không được kết nối tự nhiên</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-sync-source member displays" xml:space="preserve">
+        <source>Non-sync-source member displays</source>
+        <target state="translated">Các màn hình không phải là nguồn đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-sync-target member displays" xml:space="preserve">
+        <source>Non-sync-target member displays</source>
+        <target state="translated">Màn hình không phải là mục tiêu đồng bộ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-watched member displays" xml:space="preserve">
+        <source>Non-watched member displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Normal Window Priority" xml:space="preserve">
@@ -3714,6 +4324,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Normally the header is not visible when a single display is present." xml:space="preserve">
         <source>Normally the header is not visible when a single display is present.</source>
         <target state="translated">Tiêu đề thường không hiển thị khi chỉ có một màn hình.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not all display group members are present." xml:space="preserve">
+        <source>Not all display group members are present.</source>
+        <target state="translated">Không phải tất cả các thành viên của nhóm màn hình đang hiện diện.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!" xml:space="preserve">
@@ -3749,6 +4364,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Notifications and Dock" xml:space="preserve">
         <source>Notifications and Dock</source>
         <target state="translated">Thông báo và Dock</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1" xml:space="preserve">
+        <source>Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1</source>
+        <target state="translated">Số byte được ghi trong một lệnh - các giá trị phù hợp: 16, 8, 4, 2, 1</target>
         <note/>
       </trans-unit>
       <trans-unit id="Number of retry attempts on failure" xml:space="preserve">
@@ -3796,9 +4416,18 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Khi khởi động &amp; thức dậy</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Only group members can be present" xml:space="preserve">
+        <source>Only group members can be present</source>
+        <target state="translated">Chỉ thành viên nhóm mới được hiện diện</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Only non-brightness settings (color adjustments) are restored." xml:space="preserve">
         <source>Only non-brightness settings (color adjustments) are restored.</source>
         <target state="translated">Chỉ các cài đặt không phải về độ sáng (điều chỉnh màu sắc) được khôi phục.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!" xml:space="preserve">
+        <source>Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Only resolutions that match native aspect ratio" xml:space="preserve">
@@ -3881,6 +4510,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Kiểm tra cập nhật định kỳ và thông báo nếu có bản cập nhật mới. Yêu cầu kết nối mạng. Không dữ liệu nào được thu nhập ([betterdisplay.pro/privacy](https://betterdisplay.pro/privacy)).</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Phyiscal dimensions are used by the app for UI scale matching among display group members. Dimensions reported by the display might not be accurate - make sure the correct figures are specified for this feature to work properly!" xml:space="preserve">
+        <source>Phyiscal dimensions are used by the app for UI scale matching among display group members. Dimensions reported by the display might not be accurate - make sure the correct figures are specified for this feature to work properly!</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Picture in Picture" xml:space="preserve">
         <source>Picture in Picture</source>
         <target state="translated">Picture in Picture</target>
@@ -3914,6 +4547,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Portrait 270° (Sidecar port up)" xml:space="preserve">
         <source>Portrait 270° (Sidecar port up)</source>
         <target state="translated">Hướng dọc 270° (cổng Sidecar hướng lên)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Position of %@" xml:space="preserve">
+        <source>Position of %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Potential EDR" xml:space="preserve">
@@ -3981,9 +4618,18 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Tiếp tục</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Proceed With EDID Write" xml:space="preserve">
+        <source>Proceed With EDID Write</source>
+        <target state="translated">Tiếp tục với việc ghi EDID</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">Tên sản phẩm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Protect the position of %@" xml:space="preserve">
+        <source>Protect the position of %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Provided by EDID" xml:space="preserve">
@@ -3999,6 +4645,15 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Provides additional display modes on some configurations." xml:space="preserve">
         <source>Provides additional display modes on some configurations.</source>
         <target state="translated">Cung cấp thêm các chế độ màn hình trên một số cấu hình.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quantization" xml:space="preserve">
+        <source>Quantization</source>
+        <target state="translated">Lượng tử hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quick mode switch" xml:space="preserve">
+        <source>Quick mode switch</source>
         <note/>
       </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
@@ -4039,6 +4694,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Reads EDID data acquired by the operating system. This data might be altered by the system for various reasons." xml:space="preserve">
         <source>Reads EDID data acquired by the operating system. This data might be altered by the system for various reasons.</source>
         <target state="translated">Đọc dữ liệu EDID mà hệ điều hành thu thập. Dữ liệu này có thể bị thay đổi bởi hệ thống vì nhiều lý do khác nhau.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reapply DDC settings on wake" xml:space="preserve">
+        <source>Reapply DDC settings on wake</source>
         <note/>
       </trans-unit>
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
@@ -4146,8 +4805,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Khởi tạo lại các màn hình rời</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reinitialize external displays with flexible scaling enabled if needed" xml:space="preserve">
-        <source>Reinitialize external displays with flexible scaling enabled if needed</source>
+      <trans-unit id="Reinitialize external displays with flexible scaling if needed" xml:space="preserve">
+        <source>Reinitialize external displays with flexible scaling if needed</source>
         <target state="translated">Khởi tạo lại màn hình rời với thu phóng linh hoạt được bật nếu cần</target>
         <note/>
       </trans-unit>
@@ -4171,6 +4830,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Ghi nhớ màn hình chưa xác định ít nhất trong</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove" xml:space="preserve">
+        <source>Remove</source>
+        <target state="translated">Xóa</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove Color Profiles" xml:space="preserve">
         <source>Remove Color Profiles</source>
         <target state="translated">Xóa Hồ sơ Màu</target>
@@ -4181,9 +4845,27 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Xóa Hồ sơ Màu Gốc?</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove Protection…" xml:space="preserve">
+        <source>Remove Protection…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove Synchronization…" xml:space="preserve">
+        <source>Remove Synchronization…</source>
+        <target state="translated">Xóa Đồng bộ hóa...</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove from Favorite %lld" xml:space="preserve">
         <source>Remove from Favorite %lld</source>
         <target state="translated">Xóa khỏi Yêu thích %lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove layout protection for %@" xml:space="preserve">
+        <source>Remove layout protection for %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove synchronization for %@" xml:space="preserve">
+        <source>Remove synchronization for %@</source>
+        <target state="translated">Xóa đồng bộ hóa cho %@</target>
         <note/>
       </trans-unit>
       <trans-unit id="Render all other app menu icons in hierarchical style (with grayscales)" xml:space="preserve">
@@ -4316,11 +4998,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Các bước độ phân giải mà các giá trị chiều rộng và chiều cao tỉ lệ màn hình ảo được nhân để tạo ra các tùy chọn độ phân giải. Bội số nhỏ hơn có nghĩa là mức độ tỉ lệ độ phân giải chi tiết hơn.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Resolution submenu settings" xml:space="preserve">
-        <source>Resolution submenu settings</source>
-        <target state="translated">Cài đặt menu con độ phân giải</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Resolution unavailable" xml:space="preserve">
         <source>Resolution unavailable</source>
         <target state="translated">Độ phân không khả dụng</target>
@@ -4411,6 +5088,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Đã truy xuất dữ liệu EDID</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Right" xml:space="preserve">
+        <source>Right</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Right of %@" xml:space="preserve">
+        <source>Right of %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Rosetta emulation layer detected" xml:space="preserve">
         <source>Rosetta emulation layer detected</source>
         <target state="translated">Phát hiện lớp mô phỏng Rosetta</target>
@@ -4481,6 +5166,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Xoay (hướng dọc)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Rotation changed for %@." xml:space="preserve">
+        <source>Rotation changed for %@.</source>
+        <target state="translated">Quay đã thay đổi cho %@.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Rotation shortcut keys toggle the screen between rotated and non-rotated modes." xml:space="preserve">
         <source>Rotation shortcut keys toggle the screen between rotated and non-rotated modes.</source>
         <target state="translated">Phím tắt xoay chuyển màn hình giữa các chế độ đã xoay và chưa xoay.</target>
@@ -4489,6 +5179,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Rotation%@" xml:space="preserve">
         <source>Rotation%@</source>
         <target state="translated">Xoay%@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="SDR Color Profile changed for %@." xml:space="preserve">
+        <source>SDR Color Profile changed for %@.</source>
+        <target state="translated">Hồ sơ màu SDR đã được thay đổi cho %@.</target>
         <note/>
       </trans-unit>
       <trans-unit id="SDR Color Profile%@" xml:space="preserve">
@@ -4554,6 +5249,64 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this." xml:space="preserve">
         <source>Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this.</source>
         <target state="translated">Chọn một tỉ lệ khung hình phổ biến cho màn hình ảo. Ứng dụng sẽ tạo danh sách độ phân giải linh hoạt dựa trên điều này.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select display" xml:space="preserve">
+        <source>Select display</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select one or more filters to specify which displays are allowed be sync sources for this configuration!" xml:space="preserve">
+        <source>Select one or more filters to specify which displays are allowed be sync sources for this configuration!</source>
+        <target state="translated">Chọn một hoặc nhiều bộ lọc để chỉ định các màn hình được phép làm nguồn đồng bộ hóa cho cấu hình này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select position" xml:space="preserve">
+        <source>Select position</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays can be sync sources for this configuration!" xml:space="preserve">
+        <source>Select which displays can be sync sources for this configuration!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be affected by UI scale matching!" xml:space="preserve">
+        <source>Select which displays should be affected by UI scale matching!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be excluded from being sync sources for this configuration!" xml:space="preserve">
+        <source>Select which displays should be excluded from being sync sources for this configuration!</source>
+        <target state="translated">Chọn các màn hình nào sẽ không được bao gồm làm nguồn đồng bộ hóa cho cấu hình này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be excluded from being sync targets for this configuration!" xml:space="preserve">
+        <source>Select which displays should be excluded from being sync targets for this configuration!</source>
+        <target state="translated">Chọn các màn hình mà bạn muốn loại khỏi danh sách mục tiêu đồng bộ cho cấu hình này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be members of this display group!" xml:space="preserve">
+        <source>Select which displays should be members of this display group!</source>
+        <target state="translated">Chọn các màn hình nào sẽ là thành viên của nhóm màn hình này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be sync targets for this configuration!" xml:space="preserve">
+        <source>Select which displays should be sync targets for this configuration!</source>
+        <target state="translated">Chọn các màn hình nào sẽ là mục tiêu đồng bộ hóa cho cấu hình này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should be watched for resolution change to initiate a scale matching operation!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be affected by UI scale matching!" xml:space="preserve">
+        <source>Select which displays should not be affected by UI scale matching!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be members of this display group!" xml:space="preserve">
+        <source>Select which displays should not be members of this display group!</source>
+        <target state="translated">Chọn những màn hình nào không nên là thành viên của nhóm màn hình này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should not be watched for resolution change to initiate a scale matching operation!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Selected display is not available" xml:space="preserve">
@@ -4646,6 +5399,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Đặt làm Màn hình Chính</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set as Main protection is turned off for %@." xml:space="preserve">
+        <source>Set as Main protection is turned off for %@.</source>
+        <target state="translated">"Đặt làm Bảo vệ chính" đã được tắt cho %@.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set audio volume level only" xml:space="preserve">
         <source>Set audio volume level only</source>
         <target state="translated">Chỉ đặt mức độ âm lượng</target>
@@ -4716,8 +5474,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Đặt âm lượng xuống thấp nhất</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
-        <source>Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
+      <trans-unit id="Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
+        <source>Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
         <target state="translated">Thiết lập giá trị độ sáng phần cứng tối thiểu được phép (trên thang đo riêng của nó) dưới mức mà làm tối phần mềm bắt đầu khi sử dụng điều khiển độ sáng kết hợp. Cài đặt này hữu ích cho những người nhạy cảm với PWM vì nó ngăn chặn điều khiển đèn nền đi vào phạm vi PWM nặng, thay thế nó bằng việc làm tối phần mềm.</target>
         <note/>
       </trans-unit>
@@ -4786,8 +5544,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Hiện các giá trị độ phân giải hiện tại</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show currently off-line (past disconnected) displays in Settings" xml:space="preserve">
-        <source>Show currently off-line (past disconnected) displays in Settings</source>
+      <trans-unit id="Show currently not detected displays in list" xml:space="preserve">
+        <source>Show currently not detected displays in list</source>
+        <target state="translated">Hiển thị các màn hình không được phát hiện trong danh sách</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show currently off-line displays in Settings" xml:space="preserve">
+        <source>Show currently off-line displays in Settings</source>
         <target state="translated">Hiện các màn hình hiện đã ngắt kết nối (qua thời gian) trong Cài đặt</target>
         <note/>
       </trans-unit>
@@ -4881,9 +5644,19 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Hiển thị tất cả các màn hình đã được phát hiện trước bởi ứng dụng. Cho phép một số thay đổi cấu hình ngay cả khi một màn hình không hoạt động.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Sidecar Configuration" xml:space="preserve">
+        <source>Sidecar Configuration</source>
+        <target state="translated">Cấu hình Sidecar</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Sidecar Display" xml:space="preserve">
         <source>Sidecar Display</source>
         <target state="translated">Màn hình Sidecar</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sidecar UUID" xml:space="preserve">
+        <source>Sidecar UUID</source>
+        <target state="translated">UUID Sidecar</target>
         <note/>
       </trans-unit>
       <trans-unit id="Simplifies navigation greatly." xml:space="preserve">
@@ -4896,14 +5669,17 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Loại máy nhận</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Size" xml:space="preserve">
-        <source>Size</source>
-        <target state="translated">Kích thước</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Skip" xml:space="preserve">
         <source>Skip</source>
         <target state="translated">Bỏ qua</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Skip displays in HDR or reference XDR mode" xml:space="preserve">
+        <source>Skip displays in HDR or reference XDR mode</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Skip the standard macOS fade-out and fade-in animations during mode change and display layout operations performed by the app." xml:space="preserve">
+        <source>Skip the standard macOS fade-out and fade-in animations during mode change and display layout operations performed by the app.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Slider visibility" xml:space="preserve">
@@ -4936,9 +5712,56 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Một số màn hình không hỗ trợ kiểm soát độ sáng DDC trong chế độ HDR. Kích hoạt tính năng này cho các màn hình tương thích cho phép kiểm soát độ sáng trong khi bảo tồn nội dung HDR không bị cắt bớt.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Some displays forget changes made via DDC commands after sleep. With this enabled, the app reapplies DDC settings every time the display wakes." xml:space="preserve">
+        <source>Some displays forget changes made via DDC commands after sleep. With this enabled, the app reapplies DDC settings every time the display wakes.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source member must be an Apple display" xml:space="preserve">
+        <source>Source member must be an Apple display</source>
+        <target state="translated">Thành viên nguồn phải là một màn hình Apple</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source member must be an external display" xml:space="preserve">
+        <source>Source member must be an external display</source>
+        <target state="translated">Thành viên nguồn phải là một màn hình rời</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source member must be set as the main display" xml:space="preserve">
+        <source>Source member must be set as the main display</source>
+        <target state="translated">Thành viên nguồn phải được đặt là màn hình chính</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source must be on the list of specified members" xml:space="preserve">
+        <source>Source must be on the list of specified members</source>
+        <target state="translated">Nguồn phải có trong danh sách các thành viên được chỉ định</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of displays to be excluded from the display group." xml:space="preserve">
+        <source>Specify a list of displays to be excluded from the display group.</source>
+        <target state="translated">Chỉ định một danh sách các màn hình sẽ được loại bỏ khỏi nhóm màn hình.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that should not be watched." xml:space="preserve">
+        <source>Specify a list of members that should not be watched.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that will not be affected by UI scale matching." xml:space="preserve">
+        <source>Specify a list of members that will not be affected by UI scale matching.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
+        <source>Specify a list of members that will not be affected by this synchronization.</source>
+        <target state="translated">Chỉ định một danh sách các thành viên sẽ không bị ảnh hưởng bởi đồng bộ hóa này.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <target state="translated">Chỉ định điều gì sẽ xảy ra khi nút bật/tắt của menu ứng dụng được nhấn. Không phải tất cả tùy chọn có thể hợp lệ cho màn hình.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Standard Framebuffer" xml:space="preserve">
+        <source>Standard Framebuffer</source>
+        <target state="translated">Bộ đệm khung hình Tiêu chuẩn</target>
         <note/>
       </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
@@ -4954,6 +5777,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Start/Stop PIP window" xml:space="preserve">
         <source>Start/Stop PIP window</source>
         <target state="translated">Khởi động/Dừng cửa sổ PiP</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="State" xml:space="preserve">
+        <source>State</source>
+        <target state="translated">Trạng thái</target>
         <note/>
       </trans-unit>
       <trans-unit id="Status: Licensing Disabled (Settings &gt; Application &gt; Advanced)" xml:space="preserve">
@@ -5081,6 +5909,54 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Tên biểu tượng</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Sync source group member display filters" xml:space="preserve">
+        <source>Sync source group member display filters</source>
+        <target state="translated">Bộ lọc nguồn đồng bộ màn hình của nhóm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sync source group member displays" xml:space="preserve">
+        <source>Sync source group member displays</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sync target group member displays" xml:space="preserve">
+        <source>Sync target group member displays</source>
+        <target state="translated">Đồng bộ các màn hình thành viên trong nhóm mục tiêu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronization Settings" xml:space="preserve">
+        <source>Synchronization Settings</source>
+        <target state="translated">Cài đặt Đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronization source configuration" xml:space="preserve">
+        <source>Synchronization source configuration</source>
+        <target state="translated">Cấu hình nguồn đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronization target configuration" xml:space="preserve">
+        <source>Synchronization target configuration</source>
+        <target state="translated">Cấu hình mục tiêu đồng bộ hóa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize %@" xml:space="preserve">
+        <source>Synchronize %@</source>
+        <target state="translated">Đồng bộ %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
+        <source>Synchronize brightness changes triggered externally</source>
+        <target state="translated">Đồng bộ hóa các thay đổi độ sáng được kích hoạt từ bên ngoài</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize external changes only" xml:space="preserve">
+        <source>Synchronize external changes only</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
+        <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
+        <target state="translated">Đồng bộ hóa thay đổi giá trị (delta) từ nguồn đến mục tiêu. Điều này giúp giữ sự khác biệt giá trị ban đầu giữa nguồn và mục tiêu (cho đến khi giá trị tối thiểu hoặc tối đa được đạt). Khi tính năng này bị vô hiệu hóa, các giá trị tuyệt đối được đồng bộ hóa.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="System Colors" xml:space="preserve">
         <source>System Colors</source>
         <target state="translated">Màu Hệ thống</target>
@@ -5104,11 +5980,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="System UUID match (recommended)" xml:space="preserve">
         <source>System UUID match (recommended)</source>
         <target state="translated">Khớp UUID hệ thống (được khuyến nghị)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="System display name" xml:space="preserve">
-        <source>System display name</source>
-        <target state="translated">Tên màn hình hệ thống</target>
         <note/>
       </trans-unit>
       <trans-unit id="TARGET" xml:space="preserve">
@@ -5180,11 +6051,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.
 
 This operation does not reset the display itself.</source>
-        <target state="translated">Ứng dụng sẽ quên tất cả các giá trị DDC đã lưu và xem tất cả các điều khiển như chưa được đụng đến. Các thanh trượt sẽ quay trở lại giá trị mặc định.  Thao tác này không làm đặt lại màn hình.</target>
+        <target state="translated">Ứng dụng sẽ quên tất cả các giá trị DDC đã lưu và xem tất cả các điều khiển như chưa được đụng đến. Các thanh trượt sẽ quay trở lại giá trị mặc định.
+
+Thao tác này không làm đặt lại màn hình.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
-        <source>The built-in display is configured to be disconnected when an external display is connected. This setting will will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
+      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
+        <source>The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
         <target state="translated">Màn hình tích hợp được cấu hình để ngắt kết nối khi một màn hình rời được kết nối. Cài đặt này sẽ được kích hoạt lại khi màn hình tích hợp được ngắt kết nối thủ công hoặc ứng dụng được khởi động lại.</target>
         <note/>
       </trans-unit>
@@ -5198,6 +6071,21 @@ This operation does not reset the display itself.</source>
         <target state="translated">Danh sách nguồn đầu vào mặc định phản ánh các sự gán kết thường xuyên xảy ra, nhưng danh sách thực thay đổi theo nhà sản xuất/model. Hãy thử sử dụng chuyển đổi "thay thế LG" cho một số màn hình LG mới nếu điều khiển đầu vào không hoạt động!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The display group is marked as exclusive while at least one other display group with higher priority is active." xml:space="preserve">
+        <source>The display group is marked as exclusive while at least one other display group with higher priority is active.</source>
+        <target state="translated">Nhóm màn hình được đánh dấu là đặc biệt trong khi ít nhất một nhóm màn hình khác có ưu tiên cao hơn đang hoạt động</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group will be activated or deactivated depending on the activation settings, configured group members and various other factors." xml:space="preserve">
+        <source>The display group will be activated or deactivated depending on the activation settings, configured group members and various other factors.</source>
+        <target state="translated">Nhóm màn hình sẽ được kích hoạt hoặc vô hiệu hóa tùy vào cài đặt kích hoạt, các thành viên nhóm được cấu hình và các yếu tố khác.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group will not activate when other displays are connected beyond group members." xml:space="preserve">
+        <source>The display group will not activate when other displays are connected beyond group members.</source>
+        <target state="translated">Nhóm màn hình sẽ không kích hoạt khi các màn hình khác được kết nối ngoài các thành viên của nhóm.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
         <target state="translated">Màn hình sẽ tự động bị ngắt kết nối khi phát hiện hoặc kết nối vật lý nếu trước đó đã bị ngắt kết nối bằng ứng dụng. Cài đặt này có thể gây ra các vấn đề không mong muốn (chu kỳ kết nối-ngắt kết nối với màn hình không tương thích, thiếu bất kỳ màn hình nào được kết nối) - hãy sử dụng cẩn thận!</target>
@@ -5207,14 +6095,22 @@ This operation does not reset the display itself.</source>
         <source>The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.
 
 In case of a failure, disconnect and reconnect the display physically.</source>
-        <target state="translated">Quá trình này có thể làm màn hình nhấp nháy và chuyển đổi chế độ nếu chế độ hiện tại không khả dụng với EDID nhà máy. Màn hình sẽ được phát hiện lại như một màn hình khác nếu EDID hiện tại có các định danh khác nhau.  Trong trường hợp thất bại, ngắt kết nối và kết nối lại màn hình một cách vật lý.</target>
+        <target state="translated">Quá trình này có thể làm màn hình nhấp nháy và chuyển đổi chế độ nếu chế độ hiện tại không khả dụng với EDID nhà máy. Màn hình sẽ được phát hiện lại như một màn hình khác nếu EDID hiện tại có các định danh khác nhau.
+
+Trong trường hợp thất bại, ngắt kết nối và kết nối lại màn hình một cách vật lý.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the updated EDID. The display will be redetected as a different display if the EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
         <source>The operation might cause the screen to flicker and switch mode if the existing mode is not available with the updated EDID. The display will be redetected as a different display if the EDID has different identifiers.
 
 In case of a failure, disconnect and reconnect the display physically.</source>
-        <target state="translated">Quá trình này có thể làm màn hình nhấp nháy và chuyển đổi chế độ nếu chế độ hiện tại không khả dụng với EDID đã được cập nhật. Màn hình sẽ được phát hiện lại như một màn hình khác nếu EDID có các định danh khác nhau.  Trong trường hợp thất bại, ngắt kết nối và kết nối lại màn hình một cách vật lý.</target>
+        <target state="translated">Quá trình này có thể làm màn hình nhấp nháy và chuyển đổi chế độ nếu chế độ hiện tại không khả dụng với EDID đã được cập nhật. Màn hình sẽ được phát hiện lại như một màn hình khác nếu EDID có các định danh khác nhau.
+
+Trong trường hợp thất bại, ngắt kết nối và kết nối lại màn hình một cách vật lý.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the `reported diagonal size` setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected." xml:space="preserve">
+        <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the `reported diagonal size` setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
@@ -5227,24 +6123,32 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Hệ thống có thể kết nối lại màn hình tích hợp và các màn hình khác nhau sau khi thức để đảm bảo truy cập GUI. Với tùy chọn này được kích hoạt, ứng dụng sẽ ngắt kết nối các màn hình này một lần nữa. Màn hình chính sau khi thức sẽ không bị ngắt kết nối.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The time it takes for the app to enter into an active state after the system wakes from a sleep." xml:space="preserve">
+        <source>The time it takes for the app to enter into an active state after the system wakes from a sleep.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The time it takes for the app to respond to a configuration change." xml:space="preserve">
+        <source>The time it takes for the app to respond to a configuration change.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The virtual screen created with this aspect ratio does not seem to be viable." xml:space="preserve">
         <source>The virtual screen created with this aspect ratio does not seem to be viable.</source>
         <target state="translated">Màn hình ảo được tạo với tỉ lệ khung hình này có vẻ không khả thi.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings)." xml:space="preserve">
-        <source>The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings).</source>
-        <target state="translated">Màn hình ảo hiện đã được liên kết với một màn hình đang được kết nối, do đó màn hình ảo sẽ tự động kết nối. Hoặc bạn có thể tắt tính năng tự động kết (có thể bật lại bất kỳ lúc nào trong cài đặt liên kết).</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The virtual screen was disassociated from a connected display but the virtual screen is still connected." xml:space="preserve">
-        <source>The virtual screen was disassociated from a connected display but the virtual screen is still connected.</source>
-        <target state="translated">Màn hình ảo đã không còn liên kết với màn hình được kết nối nhưng màn hình ảo vẫn đang được kết nối.</target>
+      <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings)." xml:space="preserve">
+        <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings).</source>
+        <target state="translated">Màn hình ảo hiện đã được liên kết với một màn hình và để tuân thủ các cài đặt liên kết, màn hình ảo sẽ tự động thay đổi trạng thái kết nối của nó. Tuy nhiên, bạn cũng có thể ô hiệu hóa kết nối tự động (nó có thể được kích hoạt bất kỳ lúc nào trong cài đặt liên kết).</target>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
         <source>The virtual screen was not created.</source>
         <target state="translated">Màn hình ảo không được tạo.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There are no at least two display group members present." xml:space="preserve">
+        <source>There are no at least two display group members present.</source>
+        <target state="translated">Không có ít nhất hai thành viên trong nhóm màn hình hiện tại.</target>
         <note/>
       </trans-unit>
       <trans-unit id="There are some unapplied system configuration changes." xml:space="preserve">
@@ -5257,6 +6161,16 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Có ít nhất một màn hình có thể điều khiển được đang được kết nối.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="There is no at least one display group member present." xml:space="preserve">
+        <source>There is no at least one display group member present.</source>
+        <target state="translated">Không có ít nhất một thành viên của nhóm màn hình hiện tại.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There is no group member present." xml:space="preserve">
+        <source>There is no group member present.</source>
+        <target state="translated">Không có thành viên nhóm hiện diện.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serves as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display." xml:space="preserve">
         <source>These three identifiers (serial number, vendor and model ID) serves as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display.</source>
         <target state="translated">Ba nhận dạng này (số seri, nhà sản xuất và ID model) là cơ sở cho việc nhận dạng màn hình trên macOS. Nếu bất kỳ trong ba nhận dạng này thay đổi, hệ thống sẽ gán một định danh mới (UUID) cho màn hình ảo và xem nó như một màn hình mới được kết nối.</target>
@@ -5265,6 +6179,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       <trans-unit id="Third-party external display" xml:space="preserve">
         <source>Third-party external display</source>
         <target state="translated">Màn hình rời bên thứ ba</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This allows additional image adjustment control options when color table adjustments are not enabled or available. Comes with a slight performance penalty. This feature is always active when software brightness upscaling is turned on while color table adjustments are not available." xml:space="preserve">
+        <source>This allows additional image adjustment control options when color table adjustments are not enabled or available. Comes with a slight performance penalty. This feature is always active when software brightness upscaling is turned on while color table adjustments are not available.</source>
+        <target state="translated">Điều này cho phép các tùy chọn điều chỉnh hình ảnh bổ sung khi điều chỉnh bảng màu không được bật hoặc không có sẵn. Đi kèm với một tổn thất nhỏ về hiệu suất. Tính năng này luôn hoạt động khi việc tăng độ sáng phần mềm được bật trong khi điều chỉnh bảng màu không có sẵn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
@@ -5277,6 +6196,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Điều này cấu hình cách dữ liệu liên quan đến màn hình hiện được cấu hình phù hợp với một màn hình đã phát hiện trong quá trình cấu hình/phát hiện. Thay đổi cài đặt này có thể làm cho một màn hình được nhận dạng như trước đây chưa được kết nối và không liên kết dữ liệu cấu hình màn hình đã lưu trữ hiện tại. Sự phù hợp UUID hệ thống sử dụng xác định mặc định của macOS. Khi đặt để sử dụng các bộ nhận dạng cơ bản, ứng dụng xác định màn hình bằng các ID của nhà sản xuất/model và số seri. Với mở rộng nó cũng sử dụng tên sản phẩm, số seri chữ số và ngày sản xuất. Với vị trí, ứng dụng cũng xem xét dữ liệu kết nối phần cứng.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This display group does not have member displays." xml:space="preserve">
+        <source>This display group does not have member displays.</source>
+        <target state="translated">Nhóm màn hình này không có các màn hình thành viên.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This display is the main display. Are you sure you want to turn the backlight off?" xml:space="preserve">
         <source>This display is the main display. Are you sure you want to turn the backlight off?</source>
         <target state="translated">Màn hình này là màn hình chính. Bạn có chắc muốn tắt đèn nền không?</target>
@@ -5286,12 +6210,9 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>This display is the main display. Are you sure you want to turn the display off?
 
 Please note that not all displays support DDC power operations and some displays may not behave as expected. If you power off your display, you will have to power it back on manually.</source>
-        <target state="translated">Màn hình này là màn hình chính. Bạn có chắc muốn tắt màn hình không?  Xin lưu ý rằng không phải tất cả các màn hình đều hỗ trợ các hoạt động nguồn DDC và một số màn hình có thể không hoạt động như mong đợi. Nếu bạn tắt màn hình, bạn sẽ phải bật nó lại bằng cách thủ công.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty." xml:space="preserve">
-        <source>This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty.</source>
-        <target state="translated">Điều này cho phép một số điều chỉnh hình ảnh ngay cả khi hỗ trợ điều chỉnh bảng màu không khả dụng. Đi kèm với một khoản tốn hiệu suất nhỏ.</target>
+        <target state="translated">Màn hình này là màn hình chính. Bạn có chắc muốn tắt màn hình không?.
+
+Xin lưu ý rằng không phải tất cả các màn hình đều hỗ trợ các hoạt động nguồn DDC và một số màn hình có thể không hoạt động như mong đợi. Nếu bạn tắt màn hình, bạn sẽ phải bật nó lại bằng cách thủ công.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing." xml:space="preserve">
@@ -5299,9 +6220,18 @@ Please note that not all displays support DDC power operations and some displays
         <target state="translated">Đây là một biện pháp tạm thời để giải quyết một vấn đề tồn tại trên một số phiên bản của macOS Sonoma, đôi khi gây ra việc cấu hình tùy chỉnh của màn hình không được tải đúng cách. Với cài đặt này, ứng dụng cố gắng khởi tạo lại màn hình nếu các độ phân giải linh hoạt có bị thiếu.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This is in addition to the configured wake delay (%@ seconds), configuration delay (%@ seconds) and the time it takes to configure the displays." xml:space="preserve">
+        <source>This is in addition to the configured wake delay (%1$@ seconds), configuration delay (%2$@ seconds) and the time it takes to configure the displays.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
         <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
         <target state="translated">Điều này cần thiết để điều chỉnh màu sắc và trải nghiệm làm tối phần mềm và nâng cấp XDR/HDR tốt hơn. Khuyến nghị để bật. Tắt tình năng này để tương thích với một số ứng dụng bên thứ ba khác cũng điều chỉnh màu sắc hệ thống.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This is the default display group. This group cannot be removed but can be disabled or made inactive by changing activation settings." xml:space="preserve">
+        <source>This is the default display group. This group cannot be removed but can be disabled or made inactive by changing activation settings.</source>
+        <target state="translated">Đây là nhóm màn hình mặc định. Nhóm này không thể bị xóa nhưng có thể được vô hiệu hóa hoặc làm không hoạt động bằng cách thay đổi cài đặt kích hoạt.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -5353,7 +6283,9 @@ Please note that not all displays support DDC power operations and some displays
         <source>This restores the default settings and restarts the app.
 
 Please note that previously stored custom display configurations won't be removed from the system!</source>
-        <target state="translated">Điều này khôi phục các thiết lập mặc định và khởi động lại ứng dụng.  Vui long lưu ý răng các cấu hình màn hình tùy chỉnh đã được lưu trước đó sẽ không bị xóa khỏi hệ thống!</target>
+        <target state="translated">Điều này khôi phục các thiết lập mặc định và khởi động lại ứng dụng.
+
+Vui long lưu ý răng các cấu hình màn hình tùy chỉnh đã được lưu trước đó sẽ không bị xóa khỏi hệ thống!</target>
         <note/>
       </trans-unit>
       <trans-unit id="This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100%." xml:space="preserve">
@@ -5372,7 +6304,11 @@ Please note that previously stored custom display configurations won't be remove
 Some displays are not compatible with this feature and may not turn off or remain turned off.
 
 If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid).</source>
-        <target state="translated">Điều này sẽ loại bỏ các màn hình khỏi bố cục màn hình và khiến chúng vào chế độ chờ trên các hệ thống tương thích.  Một số màn hình không tương thích với tính năng này và có thể không tắt hoặc vẫn ở trạng thái tắt.  Nếu bạn không thể bật màn hình trở lại bằng ứng dụng, hãy thử kết nối lại bằng cách thủ công (hoặc trong trường hợp màn hình MacBook, đóng và mở nắp).</target>
+        <target state="translated">Điều này sẽ loại bỏ các màn hình khỏi bố cục màn hình và khiến chúng vào chế độ chờ trên các hệ thống tương thích.
+
+Một số màn hình không tương thích với tính năng này và có thể không tắt hoặc vẫn ở trạng thái tắt.
+
+Nếu bạn không thể bật màn hình trở lại bằng ứng dụng, hãy thử kết nối lại bằng cách thủ công (hoặc trong trường hợp màn hình MacBook, đóng và mở nắp).</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should remove the display from the display layout and make the display enter standby mode.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
@@ -5381,7 +6317,11 @@ If you can't turn the display back on using the app, try reconnecting the displa
 Some displays are not compatible with this feature and may not turn off or remain off.
 
 If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid).</source>
-        <target state="translated">Điều này sẽ loại bỏ màn hình khỏi bố cục màn hình và đưa màn hình vào chế độ chờ.  Một số màn hình không tương thích với tính năng này và có thể không tắt hoặc vẫn ở trạng thái tắt.  Nếu bạn không thể bật lại màn hình bằng ứng dụng, hãy thử kết nối lại bằng cách thủ công (hoặc trong trường hợp màn hình MacBook, đóng và mở nắp).</target>
+        <target state="translated">Điều này sẽ loại bỏ màn hình khỏi bố cục màn hình và đưa màn hình vào chế độ chờ.
+
+Một số màn hình không tương thích với tính năng này và có thể không tắt hoặc vẫn ở trạng thái tắt.
+
+Nếu bạn không thể bật lại màn hình bằng ứng dụng, hãy thử kết nối lại bằng cách thủ công (hoặc trong trường hợp màn hình MacBook, đóng và mở nắp).</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should remove the display from the display layout.&#10;&#10;Please note that on Intel Macs (such as this Mac) the feature might not work as expected!&#10;&#10;IMPORTANT: While the display is in a disconnected state (via the app), physically turning the display off, removing the cable or (for a built-in display) closing the lid may result in an inability to turn any displays back on (until a reboot)!" xml:space="preserve">
@@ -5390,7 +6330,11 @@ If you can't turn the display back on using the app, try reconnecting the displa
 Please note that on Intel Macs (such as this Mac) the feature might not work as expected!
 
 IMPORTANT: While the display is in a disconnected state (via the app), physically turning the display off, removing the cable or (for a built-in display) closing the lid may result in an inability to turn any displays back on (until a reboot)!</source>
-        <target state="translated">Điều này sẽ loại bỏ màn hình khỏi bố cục màn hình.  Vui lòng lưu ý rằng trên Mac Intel (như Mac này), tính năng này có thể không hoạt động như mong đợi!  QUAN TRỌNG: Khi màn hình ở trạng thái bị ngắt kết nối (qua ứng dụng), việc tắt màn hình một cách vật lý, tháo dây cáp hoặc (đối với màn hình tích hợp) đóng nắp có thể dẫn đến việc không thể bật lại bất kỳ màn hình nào (cho đến khi khởi động lại)!</target>
+        <target state="translated">Điều này sẽ loại bỏ màn hình khỏi bố cục màn hình.
+
+Vui lòng lưu ý rằng trên Mac Intel (như Mac này), tính năng này có thể không hoạt động như mong đợi.
+
+QUAN TRỌNG: Khi màn hình ở trạng thái bị ngắt kết nối (qua ứng dụng), việc tắt màn hình một cách vật lý, tháo dây cáp hoặc (đối với màn hình tích hợp) đóng nắp có thể dẫn đến việc không thể bật lại bất kỳ màn hình nào (cho đến khi khởi động lại)!</target>
         <note/>
       </trans-unit>
       <trans-unit id="This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
@@ -5412,12 +6356,19 @@ IMPORTANT: While the display is in a disconnected state (via the app), physicall
         <source>This virtual screen needs to be reconnected for all configuration changes to take place! During this operation the display will not be available for a moment!
 
 You can dismiss this notification - in this case the changes will be applied when the virtual screen is connected next time.</source>
-        <target state="translated">Màn hình ảo này cần được kết nối lại để tất cả các thay đổi cấu hình có hiệu lực! Trong quá trình này, màn hình sẽ không khả dụng trong một khoảng thời gian ngắn!  Bạn có thể bỏ qua thông báo này - trong trường hợp này, các thay đổi sẽ được áp dụng khi màn hình ảo được kết nối lần sau.</target>
+        <target state="translated">Màn hình ảo này cần được kết nối lại để tất cả các thay đổi cấu hình có hiệu lực! Trong quá trình này, màn hình sẽ không khả dụng trong một khoảng thời gian ngắn.
+
+Bạn có thể bỏ qua thông báo này - trong trường hợp này, các thay đổi sẽ được áp dụng khi màn hình ảo được kết nối lần sau.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
         <source>This virtual screen should now be connected</source>
         <target state="translated">Màn hình ảo này hiện đã được kết nối</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
+        <source>This virtual screen should now be disconnected</source>
+        <target state="translated">Màn hình ảo này đã được ngắt kết nối</target>
         <note/>
       </trans-unit>
       <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
@@ -5480,6 +6431,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Công cụ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Top" xml:space="preserve">
+        <source>Top</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Traditional popups" xml:space="preserve">
         <source>Traditional popups</source>
         <target state="translated">Thông báo truyền thống</target>
@@ -5490,9 +6445,18 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Vận chuyển</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
+        <source>Treat all currently connected displays as group members</source>
+        <target state="translated">Xem tất cả các màn hình đã kết nối là thành viên của nhóm</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Treat as generic third-party (non-Apple) display" xml:space="preserve">
         <source>Treat as generic third-party (non-Apple) display</source>
         <target state="translated">Xử lý như một màn hình bên thứ ba thông thường (không phải của Apple)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Treat newly connected displays as possible watched displays" xml:space="preserve">
+        <source>Treat newly connected displays as possible watched displays</source>
         <note/>
       </trans-unit>
       <trans-unit id="Treat shortcuts as rotation toggles" xml:space="preserve">
@@ -5570,6 +6534,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Tắt đèn nền màn hình khi độ sáng kết hợp được đặt về không</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu." xml:space="preserve">
+        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu.</source>
+        <target state="translated">Tắt tính năng này để ngăn chặn việc tự kích hoạt tăng cường XDR nguyên bản khi khởi chạy ứng dụng hoặc không có sẵn trong menu Preset XDR.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Turning this off reduces system load for XDR displays when auto brightness is enabled but makes upscaling a less smooth experience." xml:space="preserve">
         <source>Turning this off reduces system load for XDR displays when auto brightness is enabled but makes upscaling a less smooth experience.</source>
         <target state="translated">Tắt tính năng này giúp giảm tải hệ thống cho các màn hình XDR khi độ sáng tự động được bật, nhưng làm cho việc tăng cường độ phân giải trở nên không mượt mà bằng.</target>
@@ -5598,6 +6567,15 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Typical values include: 100, 200 or 255." xml:space="preserve">
         <source>Typical values include: 100, 200 or 255.</source>
         <target state="translated">Các giá trị thông thường bao gồm: 100, 200 hoặc 255</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="UI Scale Matching" xml:space="preserve">
+        <source>UI Scale Matching</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="USB" xml:space="preserve">
+        <source>USB</source>
+        <target state="translated">USB</target>
         <note/>
       </trans-unit>
       <trans-unit id="UUID" xml:space="preserve">
@@ -5650,9 +6628,19 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Hiện Trình chiếu</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Uniformity Correction" xml:space="preserve">
+        <source>Uniformity Correction</source>
+        <target state="translated">Điều chỉnh đồng đều</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unknown" xml:space="preserve">
         <source>Unknown</source>
         <target state="translated">Không xác định</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unknown (%@)" xml:space="preserve">
+        <source>Unknown (%@)</source>
+        <target state="translated">Không xác định (%@)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unknown Display" xml:space="preserve">
@@ -5660,9 +6648,24 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Màn hình không được xác định</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unlimited" xml:space="preserve">
+        <source>Unlimited</source>
+        <target state="translated">Không giới hạn</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
         <source>Unlock Color Profile management for XDR displays</source>
         <target state="translated">Mở khóa quản lý Hồ sơ Màu cho các màn hình XDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
+        <source>Unlock EDID write - I understand the risks involved</source>
+        <target state="translated">Mở khóa ghi EDID - Tôi chấp nhận các rủi ro liên quan</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unmovable Window (Lock)" xml:space="preserve">
+        <source>Unmovable Window (Lock)</source>
+        <target state="translated">Cửa sổ không thể di chuyển (Khóa)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
@@ -5698,6 +6701,14 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Unsupported" xml:space="preserve">
         <source>Unsupported</source>
         <target state="translated">Không hỗ trợ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update resolution configuration protections" xml:space="preserve">
+        <source>Update resolution configuration protections</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update virtual screens as well" xml:space="preserve">
+        <source>Update virtual screens as well</source>
         <note/>
       </trans-unit>
       <trans-unit id="Updates" xml:space="preserve">
@@ -5830,6 +6841,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Màn hình ảo tuân theo chiều hướng của màn hình</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync sources." xml:space="preserve">
+        <source>Virtual screen group members can be sync sources.</source>
+        <target state="translated">Các thành viên nhóm màn hình ảo có thể là nguồn đồng bộ hóa.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync targets." xml:space="preserve">
+        <source>Virtual screen group members can be sync targets.</source>
+        <target state="translated">Màn hình ảo trong nhóm có thể là mục tiêu đồng bộ.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Virtual screen name" xml:space="preserve">
         <source>Virtual screen name</source>
         <target state="translated">Tên màn hình ảo</target>
@@ -5905,6 +6926,26 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Thời gian chờ để nhận phản hồi khi đọc</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Wake delay" xml:space="preserve">
+        <source>Wake delay</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch all group members for resolution changes" xml:space="preserve">
+        <source>Watch all group members for resolution changes</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch for resolution changes made outside of the app" xml:space="preserve">
+        <source>Watch for resolution changes made outside of the app</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch virtual screens" xml:space="preserve">
+        <source>Watch virtual screens</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watched group member displays" xml:space="preserve">
+        <source>Watched group member displays</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Week of manufacture" xml:space="preserve">
         <source>Week of manufacture</source>
         <target state="translated">Tuần sản xuất</target>
@@ -5925,6 +6966,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Khi Cài đặt được mở</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display." xml:space="preserve">
+        <source>When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">Khi mở rộng một mục menu, tự động ẩn các mục khác trong khối thiết bị/menu đã chọn. Điều này giúp giữ cho menu nhỏ gọn hơn.</target>
@@ -5933,6 +6978,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness." xml:space="preserve">
         <source>When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness.</source>
         <target state="translated">Khi màn hình được đặt là chính, giới hạn thất nhất là 30% cho độ sáng kết hợp hoặc phần mềm, 10% cho độ sáng phần cứng của Apple, 0% cho độ sáng phần cứng DDC.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset." xml:space="preserve">
+        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
@@ -5960,6 +7009,24 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Bóng cửa sổ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Wireless" xml:space="preserve">
+        <source>Wireless</source>
+        <target state="translated">Không dây</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
+        <source>With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed.</source>
+        <target state="translated">Khi tính năng này được kích hoạt, các màn hình Sidecar bị ngắt kết nối bằng cách sử dụng ứng dụng sẽ được giữ lại trong danh sách màn hình để dễ dàng kết nối lại. Các màn hình Sidecar bị ngắt kết nối bên ngoài ứng dụng hoặc trước khi khởi động ứng dụng sẽ không được liệt kê.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well." xml:space="preserve">
+        <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
+        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
         <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
         <target state="translated">Khi tùy chọn này được chọn, ứng dụng sẽ để các phím điều chỉnh độ sáng tự nhiên cho macOS kiểm soát nếu chỉ có các màn hình của Apple được kết nối mà không có các tính năng điều chỉnh độ sáng phần mềm bổ sung được kích hoạt. Trong trường hợp này, các thiết lập khác nhau (như "Đặt thu phóng tỉ mỉ làm mặc định" hoặc kiểm soát "Tất cả các màn hình phù hợp" cùng một lúc) mà sửa đổi hành vi mặc định của các phím điều chỉnh độ sáng sẽ không áp dụng.</target>
@@ -5985,6 +7052,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Bạn có muốn kết nối tất cả màn hình trước khi tắt quản lý kết nối không?</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Write EDID Data to Device" xml:space="preserve">
+        <source>Write EDID Data to Device</source>
+        <target state="translated">Ghi dữ liệu EDID vào thiết bị</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Write EDID to Device" xml:space="preserve">
+        <source>Write EDID to Device</source>
+        <target state="translated">Ghi EDID vào Thiết bị</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Write last used values to display" xml:space="preserve">
         <source>Write last used values to display</source>
         <target state="translated">Ghi các giá trị đã sử dụng gần đây vào màn hình</target>
@@ -5998,6 +7075,11 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="XDR Preset" xml:space="preserve">
         <source>XDR Preset</source>
         <target state="translated">Preset XDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR Preset &amp; Brightness" xml:space="preserve">
+        <source>XDR Preset &amp; Brightness</source>
+        <target state="translated">Preset XDR &amp; Độ sáng</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
@@ -6055,8 +7137,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Bạn có thể tải ứng dụng SF Symbols từ [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) để tìm chuỗi biểu tượng SF Symbol phù hợp (thử: `face.smiling`).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You can override the default meaning of the on/off switch under Settings/Displays." xml:space="preserve">
-        <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
+      <trans-unit id="You can override the default meaning of the on/off switch under Settings &gt; Displays." xml:space="preserve">
+        <source>You can override the default meaning of the on/off switch under Settings &gt; Displays.</source>
         <target state="translated">Bạn có thể ghi đè lên ý nghĩa mặc định của công tắc bật/tắt dưới Cài đặt/Màn hình.</target>
         <note/>
       </trans-unit>
@@ -6070,8 +7152,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Bạn có thể muốn ẩn OSD âm lượng của macOS nếu thiết bị có các điều khiển âm thanh được quản lý bởi ứng dụng. Hữu ích cho các màn hình có OSD âm lượng riêng không thể tắt.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable `Allow color table adjustments` under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable `Allow color table adjustments` under Settings &gt; Displays to fix this!</source>
         <target state="translated">Bạn nên thoát ứng dụng khác hoặc tắt `Cho phép điều chỉnh màu sắc` trong Cài đặt &gt; Màn hình để sửa lỗi này!</target>
         <note/>
       </trans-unit>
@@ -6115,6 +7197,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">bit</target>
         <note/>
       </trans-unit>
+      <trans-unit id="bytes" xml:space="preserve">
+        <source>bytes</source>
+        <target state="translated">bytes</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="days" xml:space="preserve">
         <source>days</source>
         <target state="translated">ngày</target>
@@ -6133,6 +7220,15 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="milliseconds" xml:space="preserve">
         <source>milliseconds</source>
         <target state="translated">mili giây</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="mm" xml:space="preserve">
+        <source>mm</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="n/a" xml:space="preserve">
+        <source>n/a</source>
+        <target state="translated">n/a</target>
         <note/>
       </trans-unit>
       <trans-unit id="nits" xml:space="preserve">
@@ -6160,6 +7256,25 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠ Màn hình phản chiếu liên kết đã được bắt buộc!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
+        <source>⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Image adjustment controls are unavailable." xml:space="preserve">
+        <source>⚠ Image adjustment controls are unavailable.</source>
+        <target state="translated">⚠ Các điều khiển điều chỉnh hình ảnh không khả dụng.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
+        <source>⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
+        <target state="translated">⚠ Tăng cường XDR phần mềm đang hoạt động để tăng thêm độ sáng, trong khi tăng cường nguyên bản cũng khả dụng. Kích hoạt preset %@ để có trải nghiệm tốt hơn!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Some adjustments may clip HDR content!" xml:space="preserve">
+        <source>⚠ Some adjustments may clip HDR content!</source>
+        <target state="translated">⚠ Các điều chỉnh có thể làm mất nội dung HDR!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠ Stream auto-starts to associated display!" xml:space="preserve">
         <source>⚠ Stream auto-starts to associated display!</source>
         <target state="translated">⚠ Tự động bắt đầu trình chiếu đến màn hình được liên kết!</target>
@@ -6173,6 +7288,20 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="⚠ Virtual Screen as Stream Target?" xml:space="preserve">
         <source>⚠ Virtual Screen as Stream Target?</source>
         <target state="translated">⚠ Màn hình ảo là Trình chiếu?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!&#10;&#10;Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI." xml:space="preserve">
+        <source>⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!
+
+Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI.</source>
+        <target state="translated">⚠️ Một hoạt động ghi EDID sửa đổi dữ liệu EDID và DisplayID trên chính thiết bị. Dữ liệu EDID sai hoặc sự cố trong quá trình ghi EDID có thể làm cho màn hình không thể sử dụng được vĩnh viễn!
+
+Hầu hết các màn hình không phép việc ghi EDID vì lý do bảo mật, một số màn hình yêu cầu việc ghi EDID được kích hoạt trong một menu dịch vụ. Hầu hết các thiết bị mô phỏng hoặc cáp truyền qua EDID hỗ trợ ghi EDID. Ghi EDID (nếu được hỗ trợ) thường hoạt động qua cổng HDMI.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
+        <source>⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
+        <target state="translated">⚠️ Một bản thể EDID thay thế đang có hiệu lực - các thay đổi cấu hình hệ thống sẽ được liên kết với bản thể này!</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
@@ -6220,6 +7349,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ Khuyến khích bạn nên có thêm một số độ linh hoạt trong phạm vi!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Layout protection is disabled for this display group." xml:space="preserve">
+        <source>⚠️ Layout protection is disabled for this display group.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Metal performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
         <source>⚠️ Metal performance might be degraded on this device with integrated Intel GPU.</source>
         <target state="translated">⚠️ Hiệu suất Metal có thể bị suy giảm trên thiết bị này với GPU Intel tích hợp.</target>
@@ -6230,9 +7363,50 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠️ Giá trị chiều rộng/chiều cao tối thiểu nên thấp hơn giá trị tối đa!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected." xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected.</source>
+        <target state="translated">⚠️ Tăng cường XDR nguyên bản được kích hoạt nhưng không có hiệu lực - một preset XDR khác có thể đã được chọn bên ngoài ứng dụng. %@ sẽ vẫn cố gắng kích hoạt tăng cường XDR nguyên bản khi khởi động lại ứng dụng mỗi khi hồ sơ XDR mặc định được chọn.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ No display groups are available." xml:space="preserve">
+        <source>⚠️ No display groups are available.</source>
+        <target state="translated">⚠️ Không có nhóm màn hình nào khả dụng.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
         <target state="translated">⚠️ Thông báo đã bị tắt cho ứng dụng. Sửa điều này trong Cài đặt Hệ thống &amp;gt; Thông báo!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!" xml:space="preserve">
+        <source>⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!</source>
+        <target state="translated">⚠️ Tăng cường XDR phần mềm đang hoạt động để tăng cường độ sáng, trong khi tăng cường XDR nguyên bản cũng khả dụng. Đề xuất kích hoạt việc tăng cường độ sáng XDR nguyên bản thay vì phần mềm để có trải nghiệm tăng độ làm tối, tăng cường và đồng bộ tốt hơn!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">
+        <source>⚠️ Synchronization is disabled for this display group.</source>
+        <target state="translated">⚠️ Đồng bộ hóa đã được vô hiệu hóa cho nhóm màn hình này.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The protection is not in effect unless all participating displays are connected." xml:space="preserve">
+        <source>⚠️ The protection is not in effect unless all participating displays are connected.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The protection is not in effect unless relative position is defined." xml:space="preserve">
+        <source>⚠️ The protection is not in effect unless relative position is defined.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
+        <source>⚠️ This feature is not available in this version.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">
+        <source>⚠️ This operation might permanently render your display unusable!
+
+Are sure you want to continue?</source>
+        <target state="translated">⚠️ Thao tác này có thể làm cho màn hình của bạn không thể sử dụng được vĩnh viễn!
+
+Bạn có chắc muốn tiếp tục không?</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
@@ -6254,7 +7428,7 @@ You can dismiss this notification - in this case the changes will be applied whe
   </file>
   <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="vi" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5194e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">

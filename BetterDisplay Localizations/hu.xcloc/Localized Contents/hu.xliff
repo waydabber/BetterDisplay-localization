@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5194e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
@@ -25,7 +25,7 @@
   </file>
   <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5194e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -43,6 +43,11 @@
         <target state="translated"> - csatlakoztatva</target>
         <note/>
       </trans-unit>
+      <trans-unit id=" - disabled" xml:space="preserve">
+        <source> - disabled</source>
+        <target state="translated"> - letiltva</target>
+        <note/>
+      </trans-unit>
       <trans-unit id=" - disconnected" xml:space="preserve">
         <source> - disconnected</source>
         <target state="translated"> - leválasztva</target>
@@ -55,7 +60,12 @@
       </trans-unit>
       <trans-unit id=" - forced" xml:space="preserve">
         <source> - forced</source>
-        <target state="translated"> - erőltetett</target>
+        <target state="translated"> - kényszerített</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id=" - inactive" xml:space="preserve">
+        <source> - inactive</source>
+        <target state="translated"> - inaktív</target>
         <note/>
       </trans-unit>
       <trans-unit id=" - not detected" xml:space="preserve">
@@ -78,6 +88,11 @@
         <target state="translated">%@ (%@)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ (%@)%@" xml:space="preserve">
+        <source>%1$@ (%2$@)%3$@</source>
+        <target state="translated">%1$@ (%2$@)%3$@</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ - Swap Position" xml:space="preserve">
         <source>%@ - Swap Position</source>
         <target state="translated">%@ - pozíciócsere</target>
@@ -93,6 +108,11 @@
         <target state="translated">%@ nem érzékel egyetlen csatlakoztatott kijelzőt sem. Ez alkalmazás vagy rendszerhibára utalhat.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%%" xml:space="preserve">
+        <source>%@%%</source>
+        <target state="translated">%@%%</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@" xml:space="preserve">
         <source>%@%@</source>
         <target state="translated">%@%@</target>
@@ -103,9 +123,24 @@
         <target state="translated">%@%@%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%@%@%@" xml:space="preserve">
+        <source>%1$@%2$@%3$@%4$@</source>
+        <target state="translated">%1$@%2$@%3$@%4$@</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@, %@" xml:space="preserve">
         <source>%@, %@</source>
         <target state="translated">%@, %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@Hz" xml:space="preserve">
+        <source>%@Hz</source>
+        <target state="translated">%@Hz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@mm" xml:space="preserve">
+        <source>%@mm</source>
+        <target state="translated">%@mm</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@mm x %@mm" xml:space="preserve">
@@ -136,6 +171,11 @@
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
         <source>%lld Trial Days Left</source>
         <target state="translated">%lld próbanap maradt</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld pixels HiDPI (%lld pixels LoDPI)" xml:space="preserve">
+        <source>%1$lld pixels HiDPI (%2$lld pixels LoDPI)</source>
+        <target state="translated">%1$lld pixel HiDPI (%2$lld pixel LoDPI)</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld x %lld" xml:space="preserve">
@@ -173,6 +213,16 @@
         <target state="translated">(%@)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="(next to %@)" xml:space="preserve">
+        <source>(next to %@)</source>
+        <target state="translated">%@ mellett)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="(next to unspecified)" xml:space="preserve">
+        <source>(next to unspecified)</source>
+        <target state="translated">(nem meghatározott mellett)</target>
+        <note/>
+      </trans-unit>
       <trans-unit id=", associated" xml:space="preserve">
         <source>, associated</source>
         <target state="translated">, társítva</target>
@@ -203,9 +253,19 @@
         <target state="translated">Vezérelhető kijelző csatlakoztatva van</target>
         <note/>
       </trans-unit>
+      <trans-unit id="A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave." xml:space="preserve">
+        <source>A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave.</source>
+        <target state="translated">A kijelzőcsoport kiterjedhet az összes kijelzőre (a kivételek opcionálisan megadott listájával), vagy állhat a kijelzők egy meghatározott listájából. A kijelzőcsoport-tagság meghatározhatja a kijelzőcsoport aktiválási állapotát (az aktiválási beállításoktól függően), és befolyásolhatja a kijelzőcsoport-alapú funkciók viselkedését.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
         <source>A display is present which is not fully controllable without the app</source>
         <target state="translated">Csak alkalmazás által vezérelhető kijelző csatlakoztatva van</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
+        <source>A higher priority display group marked as exclusive is active.</source>
+        <target state="translated">Egy magasabb prioritású, kizárólagosnak jelölt kijelzőcsoport aktív.</target>
         <note/>
       </trans-unit>
       <trans-unit id="A less than 720p desktop resolution is not ideal for macOS usability as GUI elements might not fit. This affects virtual screens as well as the resolution slider for displays." xml:space="preserve">
@@ -238,14 +298,9 @@
         <target state="translated">Valamennyi kijelzőhöz társított virtuális képernyő automatikusan leválasztódik, amikor a társított kijelző leválasztásra kerül. Az összes többi virtuális képernyő leválasztásra került. A társított virtuális képernyők automatikus leválasztása letiltható.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will connect automatically when the associated display is connected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will connect automatically when the associated display is connected.</source>
-        <target state="translated">A kijelzőhöz társított virtuális képernyő automatikusan csatlakozik, amikor a társított kijelző csatlakozik.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected." xml:space="preserve">
-        <source>A virtual screen which is associated with a display will disconnect automatically when the associated display is disconnected.</source>
-        <target state="translated">A kijelzőhöz társított virtuális képernyő automatikusan leválasztódik, amikor a társított kijelző leválasztásra kerül.</target>
+      <trans-unit id="A virtual screen which is associated with a display will connect or disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
+        <source>A virtual screen which is associated with a display will connect or disconnect automatically when the associated display is connected or disconnected.</source>
+        <target state="translated">A kijelzőhöz társított virtuális képernyő automatikusan csatlakozik vagy leválasztódik, amikor a társított kijelzőt csatlakozik vagy leválasztásra kerül.</target>
         <note/>
       </trans-unit>
       <trans-unit id="About" xml:space="preserve">
@@ -256,6 +311,11 @@
       <trans-unit id="About %@" xml:space="preserve">
         <source>About %@</source>
         <target state="translated">%@ névjegy</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Above %@" xml:space="preserve">
+        <source>Above %@</source>
+        <target state="translated">%@ felett</target>
         <note/>
       </trans-unit>
       <trans-unit id="Above Menu, Dock, Spaces" xml:space="preserve">
@@ -298,19 +358,49 @@
         <target state="translated">Konfiguráció aktiválása újraindítás nélkül?</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Activate this display group when…" xml:space="preserve">
+        <source>Activate this display group when…</source>
+        <target state="translated">Kijelzőcsoport aktiválása amikor...</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Activated only when the display is not set as main so it does not interfere with the lock screen. Most displays do not support turning the backlight off or back on via DDC.</source>
         <target state="translated">Csak akkor aktiválódik, ha a kijelző nincs főképernyőként beállítva, hogy nem zavarja a képernyőzárolást. A legtöbb kijelző nem támogatja a háttérvilágítás ki- és bekapcsolását a DDC-n keresztül.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation." xml:space="preserve">
-        <source>Activates native XDR upscaling upon startup or when the display is connected. Requires the default Apple XDR Profile to be selected beforehand. Hold SHIFT during startup to avoid auto-activation.</source>
-        <target state="translated">Aktiválja a natív XDR felskálázást induláskor vagy a kijelző csatlakoztatásakor. Abban az esetben érvényesül, ha az alapértelmezett XDR profil van kiválasztva. Tartsa lenyomva a SHIFT billentyűt indításkor az automatikus aktiválás elkerülése érdekében!</target>
+      <trans-unit id="Activation" xml:space="preserve">
+        <source>Activation</source>
+        <target state="translated">Aktiváció</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation depends on enabled synchronization or UI scale matching for this display group." xml:space="preserve">
+        <source>Activation depends on enabled synchronization or UI scale matching for this display group.</source>
+        <target state="translated">Az aktiválás függ a szinkronizálás vagy a felhasználói felület méretezés egyeztetés engedélyezésétől ebben a kijelzőcsoportban.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation priority" xml:space="preserve">
+        <source>Activation priority</source>
+        <target state="translated">Aktiváció prioritás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Activation requires the presence of appropriate displays for a configured synchronization or UI scale matching." xml:space="preserve">
+        <source>Activation requires the presence of appropriate displays for a configured synchronization or UI scale matching.</source>
+        <target state="translated">Az aktiváláshoz valamely szinkronizáláshoz vagy felhasználói felület méretezés egyeztetéshez beállított kijelzők jelenlétére van szükség.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">Egyéni felbontás hozzáadása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add New Protection…" xml:space="preserve">
+        <source>Add New Protection…</source>
+        <target state="translated">Új védelem hozzáadása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add New Synchronization…" xml:space="preserve">
+        <source>Add New Synchronization…</source>
+        <target state="translated">Új szinkronizáció hozzáadása…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add Refresh Rate" xml:space="preserve">
@@ -325,12 +415,17 @@
       </trans-unit>
       <trans-unit id="Add near-native HiDPI resolution with flexible scaling" xml:space="preserve">
         <source>Add near-native HiDPI resolution with flexible scaling</source>
-        <target state="translated">Közel-natív HiDPI felbontás hozzáadása folyamatos skálázás esetén</target>
+        <target state="translated">Közel-natív HiDPI felbontás hozzáadása rugalmas skálázás esetén</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
         <target state="translated">Adja hozzá az alkalmazást a Rendszerbeállítások &gt; Adatvédelem és biztonság &gt; Képernyő- és rendszerhangfelvétel alatt!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
+        <source>Additional delay after wake to reapply DDC settings</source>
+        <target state="translated">Késleltetés ébredés után a DDC beállítások újraalkalmazásához</target>
         <note/>
       </trans-unit>
       <trans-unit id="Additional licenses:" xml:space="preserve">
@@ -388,9 +483,14 @@
         <target state="translated">Egyes esetekben további felbontásokat ad hozzá, de általában csak zavart okoz a csúszka működésében. Befolyásolja a felbontás billentyűkombinációkat is.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Adjustments may clip HDR content!" xml:space="preserve">
-        <source>Adjustments may clip HDR content!</source>
-        <target state="translated">A műveletek HDR fényerőkorláttal járnak!</target>
+      <trans-unit id="Adjust anchor point offsets" xml:space="preserve">
+        <source>Adjust anchor point offsets</source>
+        <target state="translated">Illesztési pontok eltolásának beállítása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way." xml:space="preserve">
+        <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
+        <target state="translated">A két kijelző eltolásának módosítása az illesztési pontok beállításával. Az elrendezésvédelem igyekszik úgy elrendezni a kijelzőket, hogy azok vízszintesen vagy függőlegesen az illesztési pontoknál igazodjanak. Az alapértelmezett beállítás a kijelzők középre igazítása.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced control settings" xml:space="preserve">
@@ -398,14 +498,14 @@
         <target state="translated">Fejlett vezérlés beálíltások</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Advanced displays settings" xml:space="preserve">
-        <source>Advanced displays settings</source>
-        <target state="translated">Fejlett kijelző beállítások</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Advanced settings &amp; privacy" xml:space="preserve">
         <source>Advanced settings &amp; privacy</source>
         <target state="translated">Fejlett beállítások és adatvédelem</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Advanced settings, watched &amp; affected group members" xml:space="preserve">
+        <source>Advanced settings, watched &amp; affected group members</source>
+        <target state="translated">Speciális beállítások, megfigyelt és érintett kijelzők</target>
         <note/>
       </trans-unit>
       <trans-unit id="Advanced upscaling and software dimming settings" xml:space="preserve">
@@ -418,8 +518,13 @@
         <target state="translated">Fejlett virtuális képernyő beállítások</target>
         <note/>
       </trans-unit>
-      <trans-unit id="After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.&#10;&#10;You can do this in System Settings or the app can do it for you (administrator credentials needed)." xml:space="preserve">
-        <source>After discarding a virtual screen, it is recommended to remove it's unused factory color profile as well.
+      <trans-unit id="Affected displays" xml:space="preserve">
+        <source>Affected displays</source>
+        <target state="translated">Érintett kijelzők</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="After discarding a virtual screen, it is recommended to remove its unused factory color profile as well.&#10;&#10;You can do this in System Settings or the app can do it for you (administrator credentials needed)." xml:space="preserve">
+        <source>After discarding a virtual screen, it is recommended to remove its unused factory color profile as well.
 
 You can do this in System Settings or the app can do it for you (administrator credentials needed).</source>
         <target state="translated">A virtuális képernyő eltávolítása után ajánlott annak már nem használt gyári színprofilját is eltávolítani.
@@ -427,8 +532,8 @@ You can do this in System Settings or the app can do it for you (administrator c
 Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás is elvégezheti (rendszergazdai jelszó szükséges).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="After discarding the virtual screen, it is recommended to remove it's unused factory color profile in System Settings." xml:space="preserve">
-        <source>After discarding the virtual screen, it is recommended to remove it's unused factory color profile in System Settings.</source>
+      <trans-unit id="After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings." xml:space="preserve">
+        <source>After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings.</source>
         <target state="translated">A virtuális képernyő törlése után ajánlott eltávolítani a nem használt gyári színprofilt a Rendszerbeállításokban.</target>
         <note/>
       </trans-unit>
@@ -450,6 +555,36 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
       <trans-unit id="All VMM7100 based USB-C to HDMI devices are affected - make sure you enable the appropriate reinitialize for all displays connected with such devices to avoid the need for manual power cycles." xml:space="preserve">
         <source>All VMM7100 based USB-C to HDMI devices are affected - make sure you enable the appropriate reinitialize for all displays connected with such devices to avoid the need for manual power cycles.</source>
         <target state="translated">Valamennyi VMM7100 alapú USB-C - HDMI átalakító érintett - győződjön meg róla, hogy valamennyi ilyen eszközzel csatlakoztatott kijelző esetén beállította a megfelelő újrainicializálást, hogy elkerülje a kézi csatlakoztatás szükségességét! </target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All configured group member displays are connected" xml:space="preserve">
+        <source>All configured group member displays are connected</source>
+        <target state="translated">Az összes konfigurált csoporttag kijelző csatlakoztatva van</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All display group members are present." xml:space="preserve">
+        <source>All display group members are present.</source>
+        <target state="translated">Valamennyi kijelzőcsoport-tag jelen van.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members are sync targets" xml:space="preserve">
+        <source>All group members are sync targets</source>
+        <target state="translated">Minden csoporttag szinkronizációs cél</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members are watched for resolution changes and can initiate a UI scale matching operation." xml:space="preserve">
+        <source>All group members are watched for resolution changes and can initiate a UI scale matching operation.</source>
+        <target state="translated">A csoport minden tagja figyelés alatt áll a képernyőfelbontás változása tekintetében és kezdeményezhet felhasználói felület méretezés egyeztetési műveletet.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All group members can be synchronization sources." xml:space="preserve">
+        <source>All group members can be synchronization sources.</source>
+        <target state="translated">Minden csoporttag lehet szinkronizációs forrás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
+        <source>All members (except the the source of the sync event) will be sync targets.</source>
+        <target state="translated">Minden csoporttag (kivéve a szinkronizált esemény forrása) a szinkronizáció célja lesz.</target>
         <note/>
       </trans-unit>
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
@@ -497,8 +632,8 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <target state="translated">Az iMac beépített kijelzője leválasztásának engedélyezése</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow native XDR brightness upscaling" xml:space="preserve">
-        <source>Allow native XDR brightness upscaling</source>
+      <trans-unit id="Allow native XDR upscaling" xml:space="preserve">
+        <source>Allow native XDR upscaling</source>
         <target state="translated">Natív XDR felskálázás engedélyezése</target>
         <note/>
       </trans-unit>
@@ -525,6 +660,16 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
       <trans-unit id="Allow using F14/F15 as alternative brightness keys" xml:space="preserve">
         <source>Allow using F14/F15 as alternative brightness keys</source>
         <target state="translated">F14/F15 engedélyezése helyettesítő fényerő billentyűkként</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync sources" xml:space="preserve">
+        <source>Allow virtual screens as sync sources</source>
+        <target state="translated">Virtuális képernyők engedélyezése szinkronizálási forrásként</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow virtual screens as sync targets" xml:space="preserve">
+        <source>Allow virtual screens as sync targets</source>
+        <target state="translated">Virtuális képernyők engedélyezése szinkronizálási célként</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
@@ -582,6 +727,16 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <target state="translated">Mutassa mind az alacsony (LoDPI) és mind a magas (HiDPI) felbontású módokat</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Always show in app menu when available for connect" xml:space="preserve">
+        <source>Always show in app menu when available for connect</source>
+        <target state="translated">Mindig jelenjen meg az menüben, amikor csatlakoztatható</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Always show this Sidecar display in the app menu when the system reports it as available for connect. Requires enabled display connection management." xml:space="preserve">
+        <source>Always show this Sidecar display in the app menu when the system reports it as available for connect. Requires enabled display connection management.</source>
+        <target state="translated">Mindig jelenjen meg ezt az Sidecar kijelző az alkalmazás menüjében, amikor a rendszer a csatlakoztatáshoz rendelkezésre állónak érzékeli. Engedélyezett kijelzőkapcsolat-kezelés szükséges.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
         <source>An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!</source>
         <target state="translated">Hiba történt a virtuális képernyő méretének kiszámítása során. Próbálja meg manuálisan létrehozni a virtuális képernyőt!</target>
@@ -602,9 +757,29 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <target state="translated">Hiba történt a virtuális képernyő létrehozása során</target>
         <note/>
       </trans-unit>
+      <trans-unit id="An other group member display next to which the protected display should be positioned in the display arrangement." xml:space="preserve">
+        <source>An other group member display next to which the protected display should be positioned in the display arrangement.</source>
+        <target state="translated">Egy másik csoporttag kijelző, amely mellé a védett kijelző elhelyezkedik a kijelzők elrendezésében.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Another app altered screen colors or brightness - this clashes with what %@ is doing." xml:space="preserve">
         <source>Another app altered screen colors or brightness - this clashes with what %@ is doing.</source>
         <target state="translated">Egy alkalmazás megváltoztatta a képernyő színeit vagy fényerejét - ez ütközik azzal, amit a %@ csinál.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any group member can be a sync source" xml:space="preserve">
+        <source>Any group member can be a sync source</source>
+        <target state="translated">Bármely csoporttag lehet szinkronizációs forrás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any group member is connected" xml:space="preserve">
+        <source>Any group member is connected</source>
+        <target state="translated">Bármely csoporttag csatlakoztatva van</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Any number of display groups can be created besides the default display group. Display groups are activated/deactivated according to activation and priority settings." xml:space="preserve">
+        <source>Any number of display groups can be created besides the default display group. Display groups are activated/deactivated according to activation and priority settings.</source>
+        <target state="translated">Az alapértelmezett kijelzőcsoporton kívül tetszőleges számú kijelzőcsoport hozható létre. A kijelzőcsoportok aktiválása/deaktiválása az aktiválási és prioritási beállításoknak megfelelően történik.</target>
         <note/>
       </trans-unit>
       <trans-unit id="App Menu" xml:space="preserve">
@@ -679,6 +854,11 @@ Az AliPay Kínában érhető el.</target>
         <target state="translated">Alkalmaz</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Apply All Protections" xml:space="preserve">
+        <source>Apply All Protections</source>
+        <target state="translated">Védelmek alkalmazása</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Apply Custom EDID" xml:space="preserve">
         <source>Apply Custom EDID</source>
         <target state="translated">Egyéni EDID alkalmazása</target>
@@ -734,9 +914,24 @@ Az AliPay Kínában érhető el.</target>
         <target state="translated">Kedvenc felbontás 5 alkalmazása</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Appropriate displays are available for a configured synchronization or UI scale matching." xml:space="preserve">
+        <source>Appropriate displays are available for a configured synchronization or UI scale matching.</source>
+        <target state="translated">Megfelelő kijelzők állnak rendelkezésre valamely a beállított szinkronizáláshoz vagy a felhasználói felület méretezésének egyeztetéséhez.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to discard this display group and all its settings?" xml:space="preserve">
+        <source>Are sure you want to discard this display group and all its settings?</source>
+        <target state="translated">Biztos, hogy el akarja távolítani ezt a kijelzőcsoportot és annak minden beállítását?</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
         <source>Are sure you want to quit the app?</source>
         <target state="translated">Biztos, hogy ki akar lépni az alkalmazásból?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
+        <source>Are sure you want to remove this synchronization with all its settings?</source>
+        <target state="translated">Biztos, hogy el akarja távolítani ezt a szinkronizálást az összes beállításával együtt?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
@@ -752,6 +947,16 @@ Az AliPay Kínában érhető el.</target>
       <trans-unit id="Are sure you want to restart the app?" xml:space="preserve">
         <source>Are sure you want to restart the app?</source>
         <target state="translated">Biztos, hogy újra akarja indítani az alkalmazást?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to remove the layout protection for this display with all its settings?" xml:space="preserve">
+        <source>Are you sure you want to remove the layout protection for this display with all its settings?</source>
+        <target state="translated">Biztosan el akarja távolítani az elrendezés védelmét ehhez a kijelzőhöz annak összes beállításával együtt?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Arrange %@ next to" xml:space="preserve">
+        <source>Arrange %@ next to</source>
+        <target state="translated">%@ melletti képernyő</target>
         <note/>
       </trans-unit>
       <trans-unit id="Aspect ratio" xml:space="preserve">
@@ -792,6 +997,26 @@ Az AliPay Kínában érhető el.</target>
       <trans-unit id="Assume last used or default values are valid" xml:space="preserve">
         <source>Assume last used or default values are valid</source>
         <target state="translated">Az utoljára használt vagy alapértelmezett értékek érvényességének feltételezése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least one display group member is present." xml:space="preserve">
+        <source>At least one display group member is present.</source>
+        <target state="translated">Legalább egy kijelzőcsoport-tag jelen van.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least one non-group member display is connected - this is prohibited by the activation rules." xml:space="preserve">
+        <source>At least one non-group member display is connected - this is prohibited by the activation rules.</source>
+        <target state="translated">Legalább egy nem csoporttag kijelző csatlakoztatva van - ezt az aktiválási szabályok tiltják.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least two display group members are present." xml:space="preserve">
+        <source>At least two display group members are present.</source>
+        <target state="translated">Legalább két kijelzőcsoport-tag jelen van</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="At least two group members are connected" xml:space="preserve">
+        <source>At least two group members are connected</source>
+        <target state="translated">Legalább két csoporttag csatlakoztatva van</target>
         <note/>
       </trans-unit>
       <trans-unit id="Attempts to directly read the EDID data from the display." xml:space="preserve">
@@ -843,6 +1068,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Virtuális képernyő automatikus csatlakoztatása</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
+        <source>Auto-connect virtual screen when all associated screens are offline</source>
+        <target state="translated">Virtuális képernyő automatikus csatlakoztatása, ha az összes társított képernyő leválasztott állapotban van</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Automatikus lecsatolás felfüggesztve külső kijelző csatlakoztatásakor.</target>
@@ -856,11 +1086,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Automatic (based on display type)" xml:space="preserve">
         <source>Automatic (based on display type)</source>
         <target state="translated">Automatikus (a kijelző típusától függően)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Automatically activate native XDR upscaling" xml:space="preserve">
-        <source>Automatically activate native XDR upscaling</source>
-        <target state="translated">A natív XDR felskálázás automatikus aktiválása</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
@@ -888,9 +1113,14 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Tükrözés automatikus konfigurálása a virtuális képernyő tartalmának a társított kijelzőn való megjelenítéséhez. Ha több társított kijelző van csatlakoztatva, csak az egyik lesz tükrözési célpont.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Automatically connect the virtual screen when the associated display is online and disconnect when it is not." xml:space="preserve">
-        <source>Automatically connect the virtual screen when the associated display is online and disconnect when it is not.</source>
-        <target state="translated">Automatikusan csatlakoztatja a virtuális képernyőt, ha a társított kijelző csatlakoztatva van, és leválasztja, ha nem.</target>
+      <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
+        <target state="translated">Automatikusan csatlakoztatja a virtuális képernyőt, ha az összes társított kijelző le van választva, és leválasztja, ha nem.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
+        <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
+        <target state="translated">Automatikusan csatlakoztatja a virtuális képernyőt, ha egy társított kijelző csatlakoztatva van, és szétkapcsolja, ha nincs.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -948,6 +1178,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Legyen óvatos ezzel a beállítással, mert akkor is átveszi a vezérlést, ha egy másik hangkimenet van kiválasztva!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Below %@" xml:space="preserve">
+        <source>Below %@</source>
+        <target state="translated">%@ alatt</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level)." xml:space="preserve">
         <source>Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level).</source>
         <target state="translated">A kombinált fényerőskála ezen szintje alatt az alkalmazás további szoftveres fényerőcsökkentést alkalmaz (mivel a hardveres fényerőszabályozás elérte a lehető legalacsonyabb szintet).</target>
@@ -966,6 +1201,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
         <source>Both turned off by HDR toggle</source>
         <target state="translated">Mind kikapcsolva HDR miatt</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bottom" xml:space="preserve">
+        <source>Bottom</source>
+        <target state="translated">Alul</target>
         <note/>
       </trans-unit>
       <trans-unit id="Briefly show Dock icon on startup" xml:space="preserve">
@@ -988,11 +1228,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Fényerő</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Apple)" xml:space="preserve">
-        <source>Brightness (Apple)</source>
-        <target state="translated">Fényerő (Apple)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Combined)" xml:space="preserve">
         <source>Brightness (Combined)</source>
         <target state="translated">Fényerő (kombinált)</target>
@@ -1006,11 +1241,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
         <source>Brightness (Combined, Software Upscaling)</source>
         <target state="translated">Fényerő (kombinált, szoftveres felskálázás)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Brightness (DDC)" xml:space="preserve">
-        <source>Brightness (DDC)</source>
-        <target state="translated">Fényerő (DDC)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
@@ -1033,11 +1263,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Fényerő (natív XDR felskálázás)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Overlay)" xml:space="preserve">
-        <source>Brightness (Overlay)</source>
-        <target state="translated">Fényerő (árnyékoló)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
         <source>Brightness (Software Upscaling)</source>
         <target state="translated">Fényerő (szoftveres felskálázás)</target>
@@ -1056,6 +1281,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Brightness and Video" xml:space="preserve">
         <source>Brightness and Video</source>
         <target state="translated">Fényerő és Video</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
+        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
+        <target state="translated">A fényerőt alkalmazáson események kívüli események is megváltoztathatják (Touch Bar, fényérzékelő, Vezérlőközpont stb.), ha a szinkronizálási forrás egy Apple kijelző. Ezek szinkronizálása nem ajánlott, ha kombinált fényerő- és szoftveres XDR-felskálázás van használatban (helyette a natív XDR-felskálázás használata javasolt).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
@@ -1128,6 +1358,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Képességek</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Change Activation Priority…" xml:space="preserve">
+        <source>Change Activation Priority…</source>
+        <target state="translated">Aktivációs prioritás módosítása…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
         <source>Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings.</source>
         <target state="translated">A beállítás megváltoztatása nem érinti a már ismert kijelzőket. A kijelző azonosítási módszere kijelzőnként módosítható az egyes kijelzők további beállításai között.</target>
@@ -1141,6 +1376,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Check for Updates…" xml:space="preserve">
         <source>Check for Updates…</source>
         <target state="translated">Frissítések keresése…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chunk size" xml:space="preserve">
+        <source>Chunk size</source>
+        <target state="translated">Csomag méret</target>
         <note/>
       </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
@@ -1243,6 +1483,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">A konfigurációs változtatások újraindítást vagy aktivációt igényelnek</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configuration delay" xml:space="preserve">
+        <source>Configuration delay</source>
+        <target state="translated">Konfigurációs késleltetés</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configuration run ID" xml:space="preserve">
         <source>Configuration run ID</source>
         <target state="translated">Konfigurációs futás ID</target>
@@ -1268,6 +1513,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Virtuális képernyő konfigurálása…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure activation rules" xml:space="preserve">
+        <source>Configure activation rules</source>
+        <target state="translated">Aktivációs szabályok beállítása</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure full screen stream to this display" xml:space="preserve">
         <source>Configure full screen stream to this display</source>
         <target state="translated">Streamelés konfigurálása erre a kijelzőre</target>
@@ -1281,6 +1531,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down." xml:space="preserve">
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">A virtuális képernyő/folyam forgatásának beállítása - hasznos állóra tájolt Sidecar esetén vagy olyan kijelzőkhöz, amelyek nem támogatják a tájolás megváltoztatását. A Sidecar segítségével eldöntheti, hogy az USB-C port (lightning csatlakozó) felfelé vagy lefelé nézzen.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configured synchronization or UI scale matching displays are present" xml:space="preserve">
+        <source>Configured synchronization or UI scale matching displays are present</source>
+        <target state="translated">Szinkronizáláshoz vagy felhasználói felület méretezés egyeztetéshez beállított kijelzők vannak jelen</target>
         <note/>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
@@ -1373,6 +1628,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Csatlakoztatja a virtuális képernyőt, és elindítja a streaminget a virtuális képernyőről a kijelzőre. Beállítja továbbá, hogy a stream mindig automatikusan elinduljon, amikor a kijelzőt csatlakoztatják.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Consider range differences" xml:space="preserve">
+        <source>Consider range differences</source>
+        <target state="translated">Skála tartomány különbség figyelembevétele</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
         <source>Continuous XDR upscaling readiness</source>
         <target state="translated">Folyamatos XDR felskálázás készültség</target>
@@ -1406,6 +1666,16 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Crash reporting" xml:space="preserve">
         <source>Crash reporting</source>
         <target state="translated">Hibanapló jelentés</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create Display Group" xml:space="preserve">
+        <source>Create Display Group</source>
+        <target state="translated">Kijelzőcsoport létrehozása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create New Display Group…" xml:space="preserve">
+        <source>Create New Display Group…</source>
+        <target state="translated">Új kijelzőcsoport létrehozása…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Create New Virtual Screen" xml:space="preserve">
@@ -1563,6 +1833,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Egyedi képarány</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Custom display groups require Pro." xml:space="preserve">
+        <source>Custom display groups require Pro.</source>
+        <target state="translated">Az egyedi kijelzőcsoportok Pro-t igényelnek.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Custom displayed icon SF Symbol name" xml:space="preserve">
         <source>Custom displayed icon SF Symbol name</source>
         <target state="translated">Egyedi megjelenített SF Symbol név</target>
@@ -1610,7 +1885,7 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       </trans-unit>
       <trans-unit id="Customize flexible scaling resolution range" xml:space="preserve">
         <source>Customize flexible scaling resolution range</source>
-        <target state="translated">Flexibilis skálázás felbontási tartomány testreszabása</target>
+        <target state="translated">Rugalmas skálázás felbontási tartomány testreszabása</target>
         <note/>
       </trans-unit>
       <trans-unit id="Customize input source list for this display" xml:space="preserve">
@@ -1763,6 +2038,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">DDC, XDR/HDR felskálázás, EDID felülírás nem elérhető. Nyissa meg az alkalmazást natív módban. Ehhez kapcsolja ki a "Megnyitás a Rosetta használatával" opciót az alkalmazás Infó menü alatt.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Data link" xml:space="preserve">
+        <source>Data link</source>
+        <target state="translated">Adatkapcsolat</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Date of manufacture" xml:space="preserve">
         <source>Date of manufacture</source>
         <target state="translated">Gyártási dátum</target>
@@ -1833,6 +2113,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Alapértelmezett</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Default Group" xml:space="preserve">
+        <source>Default Group</source>
+        <target state="translated">Alapértelmezett csoport</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Default and native modes:" xml:space="preserve">
         <source>Default and native modes:</source>
         <target state="translated">Alapértelmezett és natív módok:</target>
@@ -1883,6 +2168,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Adat törlése</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Delta syncing" xml:space="preserve">
+        <source>Delta syncing</source>
+        <target state="translated">Delta szinkronizálás</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Description" xml:space="preserve">
         <source>Description</source>
         <target state="translated">Leírás</target>
@@ -1903,6 +2193,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Zavar detektálva...</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately." xml:space="preserve">
+        <source>Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately.</source>
+        <target state="translated">Meghatározza, hogy a védett kijelző hol helyezkedjen el a megadott kijelzőhöz képest. Ha a védett kijelzőt valamelyik sarokba szeretné helyezni, válassza ki a megfelelő vízszintes vagy függőleges oldalt, és adja meg az eltolásokat ennek megfelelően.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
         <source>Determines whether display is affected by keyboard adjustments (video/audio controls).</source>
         <target state="translated">Meghatározza, hogy a kijelzőt befolyásolja-e a billentyűzetvezérlés (video és hang).</target>
@@ -1911,6 +2206,16 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Determines whether the display is presented in the app menu." xml:space="preserve">
         <source>Determines whether the display is presented in the app menu.</source>
         <target state="translated">Meghatározza, hogy a kijelző megjelenjen-e az alkalmazás menüjében.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Device type" xml:space="preserve">
+        <source>Device type</source>
+        <target state="translated">Eszköztípus</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Device type identifier" xml:space="preserve">
+        <source>Device type identifier</source>
+        <target state="translated">Eszköztípus azonosító</target>
         <note/>
       </trans-unit>
       <trans-unit id="Dim Displays" xml:space="preserve">
@@ -2001,6 +2306,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Discard Calibration" xml:space="preserve">
         <source>Discard Calibration</source>
         <target state="translated">Kalibráció elvetése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Discard Display Group" xml:space="preserve">
+        <source>Discard Display Group</source>
+        <target state="translated">Kijelzőcsoport elvetése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Discard Virtual Screen" xml:space="preserve">
@@ -2178,11 +2488,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Kijelző gyári reset</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display Group %lld" xml:space="preserve">
-        <source>Display Group %lld</source>
-        <target state="translated">Kijelző csoport %lld</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display Information" xml:space="preserve">
         <source>Display Information</source>
         <target state="translated">Kijelző információk</target>
@@ -2200,17 +2505,67 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       </trans-unit>
       <trans-unit id="Display Mode" xml:space="preserve">
         <source>Display Mode</source>
-        <target state="translated">Megjelenítési mód</target>
+        <target state="translated">Képernyő mód</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display Mode Menu" xml:space="preserve">
         <source>Display Mode Menu</source>
-        <target state="translated">Megjelenítési mód Menü</target>
+        <target state="translated">Képernyő mód Menü</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display Mode changed for %@." xml:space="preserve">
+        <source>Display Mode changed for %@.</source>
+        <target state="translated">A képernyőmód módosítva a(z) %@ kijelzőn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display Notch" xml:space="preserve">
         <source>Display Notch</source>
         <target state="translated">Kijelző bevágás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is configured to be always active regardless of the presence of group members." xml:space="preserve">
+        <source>Display group is configured to be always active regardless of the presence of group members.</source>
+        <target state="translated">A csoport megjelenítése úgy van beállítva, hogy mindig aktív legyen, függetlenül a csoporttagok jelenlététől.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is currently active" xml:space="preserve">
+        <source>Display group is currently active</source>
+        <target state="translated">A kijelzőcsoport jelenleg aktív</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is inactive" xml:space="preserve">
+        <source>Display group is inactive</source>
+        <target state="translated">A kijelzőcsoport inaktív</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group is not enabled." xml:space="preserve">
+        <source>Display group is not enabled.</source>
+        <target state="translated">A kijelzőcsoport nincs engedélyezve</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group name" xml:space="preserve">
+        <source>Display group name</source>
+        <target state="translated">Kijelzőcsoport neve</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display group settings will be available at the created group's settings pane." xml:space="preserve">
+        <source>Display group settings will be available at the created group's settings pane.</source>
+        <target state="translated">A kijelző csoport beállításai a létrehozott csoport beállítási oldalán lesznek elérhetők.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups" xml:space="preserve">
+        <source>Display groups</source>
+        <target state="translated">Kijelzőcsoportok</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups are sorted by activation priority (higher priority first)." xml:space="preserve">
+        <source>Display groups are sorted by activation priority (higher priority first).</source>
+        <target state="translated">A kijelzőcsoportok aktiválási prioritás szerint vannak rendezve (a magasabb prioritásúak elől).</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display groups provide a way to let various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, UI scale matching, display layout management and more." xml:space="preserve">
+        <source>Display groups provide a way to let various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, UI scale matching, display layout management and more.</source>
+        <target state="translated">A kijelzőcsoportok lehetőséget biztosítanak arra, hogy a különböző műveletek több kijelzőt is érintsenek. A kijelzőcsoportokon alapuló funkciók közé tartozik a fényerő és más képbeállítások szinkronizálása, a felhasználói felület méretezésének egyeztetése, a kijelzők elrendezésének kezelése.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display identification method" xml:space="preserve">
@@ -2228,9 +2583,19 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Kijelző menü lehetőségek</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Display mode submenu settings" xml:space="preserve">
+        <source>Display mode submenu settings</source>
+        <target state="translated">Képernyő mód almenü beállítások</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Display name" xml:space="preserve">
         <source>Display name</source>
         <target state="translated">Kijelző neve</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display physical dimensions" xml:space="preserve">
+        <source>Display physical dimensions</source>
+        <target state="translated">Fizikai képernyő méretek</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display status" xml:space="preserve">
@@ -2263,6 +2628,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Kijelzők és virtuális képernyők</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Displays that were added to the list previously are shown even when not detected." xml:space="preserve">
+        <source>Displays that were added to the list previously are shown even when not detected.</source>
+        <target state="translated">A listához korábban hozzáadott kijelzők akkor is megjelennek, ha jelenleg nincsenek csatlakoztatva.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Displays will turn blank for a while and you will not be able to interact with your Mac. The process should take about 2-4 seconds.&#10;&#10;The process does not work for the built-in display (reboot needed). The operation might cause some Macs to enter sleep mode." xml:space="preserve">
         <source>Displays will turn blank for a while and you will not be able to interact with your Mac. The process should take about 2-4 seconds.
 
@@ -2270,11 +2640,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">A kijelzők egy időre elérhetetlenné válnak. A folyamat körülbelül 2-4 másodpercig tart.
 
 A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A művelet hatására egyes Mac-ek alvó üzemmódba kerülhetnek.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do Not Disconnect" xml:space="preserve">
-        <source>Do Not Disconnect</source>
-        <target state="translated">Ne legyen leválasztva</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
@@ -2290,6 +2655,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Do not restore combined brightness and software adjustments" xml:space="preserve">
         <source>Do not restore combined brightness and software adjustments</source>
         <target state="translated">Ne legyenek helyreállítva a kombinált fényerő és a szoftveres képbeállítások</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Do not synchronize brightness changes made using the app." xml:space="preserve">
+        <source>Do not synchronize brightness changes made using the app.</source>
+        <target state="translated">Ne szinkronizálja az app által végrehajtott fényerő változtatásokat.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to deactivate the license?" xml:space="preserve">
@@ -2310,11 +2680,6 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Do you want to discard the virtual screen?" xml:space="preserve">
         <source>Do you want to discard the virtual screen?</source>
         <target state="translated">Törölni akarja a virtuális képernyőt?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Do you want to disconnect the virtual screen?" xml:space="preserve">
-        <source>Do you want to disconnect the virtual screen?</source>
-        <target state="translated">Le akarja választani a virtuális képernyőt?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do you want to proceed?" xml:space="preserve">
@@ -2377,6 +2742,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">EDID verzió</target>
         <note/>
       </trans-unit>
+      <trans-unit id="EDID write communication settings" xml:space="preserve">
+        <source>EDID write communication settings</source>
+        <target state="translated">EDID írás kommunikációs beállítások</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
         <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
         <target state="translated">Az EDID vagy Extended Display Identification Data (bővített kijelzőazonosító adatok) egy olyan szabvány, amely a kijelzők számára lehetővé teszi, hogy a csatlakoztatott számítógép felé jelezzék képességeiket, beleértve a felbontást, a támogatott videoformátumokat, a video időzítésekett és a gyártó adatait.</target>
@@ -2400,6 +2770,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Edit native panel pixel resolution" xml:space="preserve">
         <source>Edit native panel pixel resolution</source>
         <target state="translated">Natív panel pixel felbontás szerkesztése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Edit system display name" xml:space="preserve">
+        <source>Edit system display name</source>
+        <target state="translated">Rendszer kijelzőnév szerkesztése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Edit the system configuration of this display model" xml:space="preserve">
@@ -2477,9 +2852,9 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">True Tone engedélyezése</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable by selecting &quot;%@&quot; under the XDR Preset menu." xml:space="preserve">
-        <source>Enable by selecting "%@" under the XDR Preset menu.</source>
-        <target state="translated">Engedélyezhető a "%@" kiválasztásával az XDR előbeállítás menüben.</target>
+      <trans-unit id="Enable UI scale matching" xml:space="preserve">
+        <source>Enable UI scale matching</source>
+        <target state="translated">Skálázásának egyeztetés engedélyezése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable color table adjustments" xml:space="preserve">
@@ -2499,17 +2874,17 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       </trans-unit>
       <trans-unit id="Enable flexible scaling" xml:space="preserve">
         <source>Enable flexible scaling</source>
-        <target state="translated">Flexibilis skálázás engedélyezése</target>
+        <target state="translated">Rugalmas skálázás engedélyezése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">Flexibilis skálázás engedélyezése, egyéni skálázott felbontások létrehozása, natív és alapértelmezett felbontások módosítása, a kijelző nevének és szerepének módosítása, a kijelző EDID-jének felülírása. A módosítások minden azonos gyártóval és modellszámmal rendelkező kijelzőt érintenek!</target>
+        <target state="translated">Rugalmas skálázás engedélyezése, egyéni skálázott felbontások létrehozása, natív és alapértelmezett felbontások módosítása, a kijelző nevének és szerepének módosítása, a kijelző EDID-jének felülírása. A módosítások minden azonos gyártóval és modellszámmal rendelkező kijelzőt érintenek!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">Flexibilis skálázás engedélyezése, egyéni skálázott felbontások létrehozása, natív és alapértelmezett felbontások módosítása, a kijelző nevének és szerepének módosítása. A módosítások minden azonos gyártóval és modellszámmal rendelkező kijelzőt érintenek!</target>
+        <target state="translated">Rugalmas skálázás engedélyezése, egyéni skálázott felbontások létrehozása, natív és alapértelmezett felbontások módosítása, a kijelző nevének és szerepének módosítása. A módosítások minden azonos gyártóval és modellszámmal rendelkező kijelzőt érintenek!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -2522,9 +2897,19 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Integrált HTTP szerver engedélyezése</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable layout protection" xml:space="preserve">
+        <source>Enable layout protection</source>
+        <target state="translated">Elrendezés védelem engedélyezése</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable lower than 720p resolutions" xml:space="preserve">
         <source>Enable lower than 720p resolutions</source>
         <target state="translated">720p alatti felbontások engedélyezése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable native XDR brightness upscaling" xml:space="preserve">
+        <source>Enable native XDR brightness upscaling</source>
+        <target state="translated">Natív XDR fényerő felskálázás engedélyezése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
@@ -2552,6 +2937,16 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Szoftveres video képmódosítások engedélyezése</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable synchronization for this display group" xml:space="preserve">
+        <source>Enable synchronization for this display group</source>
+        <target state="translated">Szinkronizálás engedélyezése a kijelzőcsoporthoz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enabled" xml:space="preserve">
+        <source>Enabled</source>
+        <target state="translated">Engedélyezve</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well." xml:space="preserve">
         <source>Enables low-level resolution change for mirror targets. Allows Refresh Rate and Color Depth submenus as well.</source>
         <target state="translated">Alacsonyszintű felbontás váltás támogatása tükrözési célpont esetén. Engedélyezi a Frissítési Ráta és Színmélység menüket is.</target>
@@ -2564,12 +2959,52 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
         <source>Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type.</source>
-        <target state="translated">Akár 16Kx16K (8Kx8K HiDPI) felbontást tesz lehetővé a virtuális képernyők és a flexibilis méretezés számára. A 8K+ virtuális képernyők használata stabilitási problémákat okozhat. A flexiblis skálázás beállítását újra el kell végezni. A maximális natív felbontásoknak az adott macOS-verziótól és a GPU-típustól függő korlátai vannak.</target>
+        <target state="translated">Akár 16Kx16K (8Kx8K HiDPI) felbontást tesz lehetővé a virtuális képernyők és a rugalmas méretezés számára. A 8K+ virtuális képernyők használata stabilitási problémákat okozhat. A flexiblis skálázás beállítását újra el kell végezni. A maximális natív felbontásoknak az adott macOS-verziótól és a GPU-típustól függő korlátai vannak.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
+        <source>Enforce UI scale match upon connecting a display</source>
+        <target state="translated">Felhasználói felület méretezés egyezés alkalmazása kijelző csatlakoztatásakor</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
         <source>Enforce virtual screen mirroring</source>
-        <target state="translated">Virtuális képernyő tükrözés erőltetése</target>
+        <target state="translated">Virtuális képernyő tükrözés kényszerítése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some displays from the group" xml:space="preserve">
+        <source>Exclude some displays from the group</source>
+        <target state="translated">Egyes kijelzők kizárása a csoportból</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync source list" xml:space="preserve">
+        <source>Exclude some members from sync source list</source>
+        <target state="translated">Egyes tagok kizárása a szinkronizációs források listájából</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from sync target list" xml:space="preserve">
+        <source>Exclude some members from sync target list</source>
+        <target state="translated">Egyes tagok kizárása a szinkronizációs célok listájából</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from the list of affected displays" xml:space="preserve">
+        <source>Exclude some members from the list of affected displays</source>
+        <target state="translated">Egyes tagok kizárása az érintett kijelzők listájából</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclude some members from watch list" xml:space="preserve">
+        <source>Exclude some members from watch list</source>
+        <target state="translated">Egyes tagok kizárása a megfigyelési listáról</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Excluded displays" xml:space="preserve">
+        <source>Excluded displays</source>
+        <target state="translated">Kizárt kijelzők</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Exclusive display group" xml:space="preserve">
+        <source>Exclusive display group</source>
+        <target state="translated">Kizárólagos kijelzőcsoport</target>
         <note/>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
@@ -2580,6 +3015,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Expanding menu items" xml:space="preserve">
         <source>Expanding menu items</source>
         <target state="translated">Lenyitható menü elemek</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Experimental feature" xml:space="preserve">
+        <source>Experimental feature</source>
+        <target state="translated">Kísérleti funkció</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
@@ -2687,6 +3127,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Kijelzők elfelejtése egy idő után</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Framerate" xml:space="preserve">
+        <source>Framerate</source>
+        <target state="translated">Képráta</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Free Aspect Ratio" xml:space="preserve">
         <source>Free Aspect Ratio</source>
         <target state="translated">Szabad képarány</target>
@@ -2715,6 +3160,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods." xml:space="preserve">
         <source>Fully expands the available brightness range for SDR content at a system level and allows for more dimming range as well. Superior to all other upscaling methods. When inactive, the app falls back to software based XDR upscaling methods.</source>
         <target state="translated">Rendszerszinten kibővíti az SDR-tartalmakhoz rendelkezésre álló fényerősségtartományt, így nagyobb fényerősség-tartományt tesz lehetővé. Minden más felskálázási módszernél fejlettebb megoldás. Ha nem aktív, az alkalmazás visszalép a szoftveres XDR-felskálázási módszerekhez.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="GPU Dithering" xml:space="preserve">
+        <source>GPU Dithering</source>
+        <target state="translated">GPU ditherelés</target>
         <note/>
       </trans-unit>
       <trans-unit id="Gain" xml:space="preserve">
@@ -2787,6 +3237,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Valamely beállítás aktuális értékének lekérése a kijelzőhöz. Az érték 0-1 közti skálára konvertálódik.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Grayscale Framebuffer" xml:space="preserve">
+        <source>Grayscale Framebuffer</source>
+        <target state="translated">Szürkeárnyalatos képpuffer</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
         <source>Green Black Level (DDC)</source>
         <target state="translated">Zöld feketeszint (DDC)</target>
@@ -2795,6 +3250,26 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Green Gain (DDC)" xml:space="preserve">
         <source>Green Gain (DDC)</source>
         <target state="translated">Zöld erősítés (DDC)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Group %lld" xml:space="preserve">
+        <source>Group %lld</source>
+        <target state="translated">Csoport %lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Group Membership" xml:space="preserve">
+        <source>Group Membership</source>
+        <target state="translated">Csoporttagság</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Groups" xml:space="preserve">
+        <source>Groups</source>
+        <target state="translated">Csoportok</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
+        <source>HDR Color Profile changed for %@.</source>
+        <target state="translated">A HDR színprofil módosítva a(z) %@ kijelzőn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Profile%@" xml:space="preserve">
@@ -2817,6 +3292,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">HDR státusz%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="HDR mode changed for %@." xml:space="preserve">
+        <source>HDR mode changed for %@.</source>
+        <target state="translated">A HDR mód módosítva a(z) %@ kijelzőn.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="HEX editor styled blocks" xml:space="preserve">
         <source>HEX editor styled blocks</source>
         <target state="translated">Hexa szerkesztő stílusú blokkok</target>
@@ -2835,6 +3315,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="Hardware control (Apple)" xml:space="preserve">
         <source>Hardware control (Apple)</source>
         <target state="translated">Hardveres vezérlés (Apple)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Has Home button" xml:space="preserve">
+        <source>Has Home button</source>
+        <target state="translated">Van </target>
         <note/>
       </trans-unit>
       <trans-unit id="Have fun by creating an endless mirror from your desktop!" xml:space="preserve">
@@ -2887,6 +3372,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Tartsa lenyomva a SHIFT billentyűt az alkalmazás indítása közben, a biztonságos mód bekapcsolásához és a mentett érték írásának megakadályozásához. Kombinált vezérlés engedélyezése esetén a DDC-fényerő újra alkalmazásra kerülhet, még akkor is, ha ez az opció nincs kiválasztva.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hold ⇧ Shift for multi-select." xml:space="preserve">
+        <source>Hold ⇧ Shift for multi-select.</source>
+        <target state="translated">Többes választás: ⇧ Shift.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select. Sub-720p modes are hidden." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select. Sub-720p modes are hidden.</source>
         <target state="translated">Többes választás: ⇧ Shift. 720p alatti módok rejtve.</target>
@@ -2902,9 +3392,19 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Többes választás: ⇧ Shift. Nem biztonságos módok rejtve.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hold ⌥ OPTION + reopen this menu for more!" xml:space="preserve">
+        <source>Hold ⌥ OPTION + reopen this menu for more!</source>
+        <target state="translated">További opciók: ⌥ OPTION lenyomása a menü megnyitásakor!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
         <source>Horizontal</source>
         <target state="translated">Horizontális</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Horizontal GPU resolution limit" xml:space="preserve">
+        <source>Horizontal GPU resolution limit</source>
+        <target state="translated">Horizontális GPU felbontás korlát</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hz" xml:space="preserve">
@@ -2942,6 +3442,16 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Ha a billentyűzetvezérlés az aktuális hangeszköz nevének megfelelő kijelzőre van állítva (ezt a Billentyűzet menüpontban állíthatja be), akkor a kijelző neve helyett ezt az értéket fogja használni az alkalmazás a hangeszköz megfeleltetésére.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
+        <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
+        <target state="translated">Ha nem áll rendelkezésre megfelelő felbontás a tökéletes méretarány-illesztéshez, az alkalmazás a megadott tűréshatáron belül a legközelebbi másik felbontást keresi meg.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If source and target control ranges differ, synchronized values are remaped (rebased) accordingly." xml:space="preserve">
+        <source>If source and target control ranges differ, synchronized values are remaped (rebased) accordingly.</source>
+        <target state="translated">Ha a forrás- és cél vezérlési tartományai eltérnek, a szinkronizált értékek ennek megfelelően módosulnak.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
         <target state="translated">Ha a kijelző gyári visszaállítása megfelelően megtörtént, akkor az összes alkalmazás által tárolt DDC-értéket is javasolt visszaállítani az alapértelmezett értékekre.</target>
@@ -2962,6 +3472,11 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Ha a frissített EDID új kijelzőazonosítót tartalmaz (sorozatszám, modellazonosító, gyártóazonosító), a macOS a kijelzőt egy másik kijelzőként érzékeli. Ha ez az opció engedélyezve van, a %@ megőrzi a régi és az új identitás folytonosságát az aktuális alkalmazás-munkamenet alatt.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active." xml:space="preserve">
+        <source>If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active.</source>
+        <target state="translated">Ha ez a kijelzőcsoport aktív, más, alacsonyabb prioritású kijelzőcsoportok nem lehetnek aktívak. Ha bármely más, magasabb prioritású kijelzőcsoport aktív, ez a kijelzőcsoport nem lehet aktív.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information." xml:space="preserve">
         <source>If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information.</source>
         <target state="translated">Ha az Értesítési központot használja, győződjön meg róla, hogy az értesítések engedélyezve vannak az alkalmazás számára. Fontos értesítések némán jelenhetnek meg bizonyos esetekben. A hagyományos felugró ablakok többletinformációkat tartalmazhatnak.</target>
@@ -2979,6 +3494,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Ha a kijelző nem teljesen kompatibilis ezzel a funkcióval, előfordulhat, hogy az alkalmazás nem tudja kikapcsolni vagy visszakapcsolni a háttérvilágítást!
 
 Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápellátási műveletek egyes kijelzőkkel (akár komoly) problémákat okozhatnak!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
+        <source>Ignore checksum check error on read</source>
+        <target state="translated">Ellenőrzőösszeg hibájának figyelmen kívül hagyása olvasáskor</target>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustment" xml:space="preserve">
@@ -3106,9 +3626,24 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Hibás felbontás (kihagyva)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Invert Colors" xml:space="preserve">
+        <source>Invert Colors</source>
+        <target state="translated">Színek invertálása</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Invert DDC value scale" xml:space="preserve">
         <source>Invert DDC value scale</source>
         <target state="translated">DDC értékskála megfordítása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Inverted Framebuffer" xml:space="preserve">
+        <source>Inverted Framebuffer</source>
+        <target state="translated">Inverz képpuffer</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Inverted Grayscale Framebuffer" xml:space="preserve">
+        <source>Inverted Grayscale Framebuffer</source>
+        <target state="translated">Inverz szürkeárnyalatos képpuffer</target>
         <note/>
       </trans-unit>
       <trans-unit id="Issue mute command first, then set volume level to lowest setting" xml:space="preserve">
@@ -3134,6 +3669,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Keep Above Other Windows" xml:space="preserve">
         <source>Keep Above Other Windows</source>
         <target state="translated">Tartsa a többi ablak felett</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Keep Sidecar displays in display list after being disconnected" xml:space="preserve">
+        <source>Keep Sidecar displays in display list after being disconnected</source>
+        <target state="translated">A Sidecar kijelzők megtartása a kijelző listában leválasztás után is</target>
         <note/>
       </trans-unit>
       <trans-unit id="Keyboard" xml:space="preserve">
@@ -3171,14 +3711,39 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Utoljára nem detektálva</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Layout Protection" xml:space="preserve">
+        <source>Layout Protection</source>
+        <target state="translated">Elrendezés védelem</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Layout protection enforces a configured arrangement for group member displays relative to each other. The feature can be used to make sure the displays are arranged properly after changing display resolutions, connecting new displays that are not part of the display group or dealing with displays that are not properly handled by the built-in display layout management of the operating system." xml:space="preserve">
+        <source>Layout protection enforces a configured arrangement for group member displays relative to each other. The feature can be used to make sure the displays are arranged properly after changing display resolutions, connecting new displays that are not part of the display group or dealing with displays that are not properly handled by the built-in display layout management of the operating system.</source>
+        <target state="translated">A kijelző elrendezés védelme megőrzi a csoporttag kijelzők egymáshoz viszonyított elrendezését. Ezt a funkciót arra lehet használni, hogy a kijelzők elrendezése megfelelő maradjon felbontás változtatás után, olyan új kijelzők csatlakoztatásakor, amelyek nem részei a kijelzőcsoportnak, vagy olyan kijelzők kezelésénél, amelyeket az operációs rendszer beépített kijelző elrendezés kezelése nem megfelelően kezel.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Leave mute key under OS control" xml:space="preserve">
         <source>Leave mute key under OS control</source>
         <target state="translated">Némítás billentyű operációs rendszer vezérlés alatt hagyása</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Left" xml:space="preserve">
+        <source>Left</source>
+        <target state="translated">Bal</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left of %@" xml:space="preserve">
+        <source>Left of %@</source>
+        <target state="translated">%@ mellett balra</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Length only" xml:space="preserve">
         <source>Length only</source>
         <target state="translated">Csak hossz megjelenítése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled." xml:space="preserve">
+        <source>Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled.</source>
+        <target state="translated">Lehetővé teszi, hogy az felhasználói felület méretezésének egyeztetését a megjelenítési csoport tagjai között, amikor a figyelt csoporttagok képernyőfelbontása megváltozik. Ez a funkció a rugalmas skálázással rendelkező kijelzőkön működik a legjobban.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
@@ -3214,6 +3779,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Let the virtual screen follow the orientation of the associated display when it is rotated." xml:space="preserve">
         <source>Let the virtual screen follow the orientation of the associated display when it is rotated.</source>
         <target state="translated">A virtuális képernyő kövesse a hozzátartozó kijelző tájolását annak forgatásakor.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let various adjustments like display brightness, contrast, etc. synchronize among members of the display group based on the configured rules." xml:space="preserve">
+        <source>Let various adjustments like display brightness, contrast, etc. synchronize among members of the display group based on the configured rules.</source>
+        <target state="translated">Lehetővé teszi, hogy a különböző beállítások, például a kijelző fényereje, kontrasztja stb. a bekonfigurált szabályok alapján szinkronizálódjanak a kijelzőcsoport tagjai között.</target>
         <note/>
       </trans-unit>
       <trans-unit id="License management allows Pro features, purchasing, license activation and free trial. If you disable this, you can only use free features. License management requires communication with the payment and licensing provider Paddle ([paddle.com/privacy](https://paddle.com/privacy))." xml:space="preserve">
@@ -3321,6 +3891,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Fő app menü megjelenés animáció</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Main status changed for %@." xml:space="preserve">
+        <source>Main status changed for %@.</source>
+        <target state="translated">A főképernyő státusz módosítva a(z) %@ kijelzőn.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Make Tools menu collapsible instead of closable" xml:space="preserve">
         <source>Make Tools menu collapsible instead of closable</source>
         <target state="translated">Legyen az eszközök menü összecsukható bezárható helyett</target>
@@ -3371,6 +3946,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Rendszerkonfiguráció megjelölése nem alkalmazottként</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Match UI scale of all group members" xml:space="preserve">
+        <source>Match UI scale of all group members</source>
+        <target state="translated">Összes csoporttag felhasználói felület méretezésének egyeztetése</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Match aspect ratio of and associate to a display" xml:space="preserve">
         <source>Match aspect ratio of and associate to a display</source>
         <target state="translated">Képarányok egyeztetése és társítása egy kijelzőhöz</target>
@@ -3406,6 +3986,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Egyeztetett hangeszköz neve</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Matching tolerance" xml:space="preserve">
+        <source>Matching tolerance</source>
+        <target state="translated">Méretezés egyeztetés tűréshatár</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Max HW" xml:space="preserve">
         <source>Max HW</source>
         <target state="translated">Max HW</target>
@@ -3424,6 +4009,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">XDR/HDR felskálázott fényerő maximális fényerőértéke a kombinált fényerőskálán.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Member displays" xml:space="preserve">
+        <source>Member displays</source>
+        <target state="translated">Csoporttagok</target>
         <note/>
       </trans-unit>
       <trans-unit id="Menu" xml:space="preserve">
@@ -3526,6 +4116,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Tükrözve több kijelzőre</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Model" xml:space="preserve">
+        <source>Model</source>
+        <target state="translated">Model</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Model ID" xml:space="preserve">
         <source>Model ID</source>
         <target state="translated">Model azonosító</target>
@@ -3544,6 +4139,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="More system configuration options" xml:space="preserve">
         <source>More system configuration options</source>
         <target state="translated">További rendszerkonfigurációs opciók</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mouse Click-through" xml:space="preserve">
+        <source>Mouse Click-through</source>
+        <target state="translated">Egérkattintás-átlátszóság</target>
         <note/>
       </trans-unit>
       <trans-unit id="Move Display" xml:space="preserve">
@@ -3566,6 +4166,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Több kijelző</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Multiple display groups" xml:space="preserve">
+        <source>Multiple display groups</source>
+        <target state="translated">Több képernyő csoport</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Multiple identical entries" xml:space="preserve">
         <source>Multiple identical entries</source>
         <target state="translated">Több azonos tétel</target>
@@ -3576,6 +4181,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Szorzó</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Mute" xml:space="preserve">
+        <source>Mute</source>
+        <target state="translated">Némítás</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Mute (DDC)" xml:space="preserve">
         <source>Mute (DDC)</source>
         <target state="translated">Némítás (DDC)</target>
@@ -3584,6 +4194,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Mute method" xml:space="preserve">
         <source>Mute method</source>
         <target state="translated">Némítás módszere</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Name" xml:space="preserve">
+        <source>Name</source>
+        <target state="translated">Név</target>
         <note/>
       </trans-unit>
       <trans-unit id="Native" xml:space="preserve">
@@ -3609,11 +4224,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Native XDR brightness upscaling settings" xml:space="preserve">
         <source>Native XDR brightness upscaling settings</source>
         <target state="translated">Natív XDR fényerő felskálázás beállítások</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Native XDR upscaling is active. Deactivate it under the XDR Preset menu." xml:space="preserve">
-        <source>Native XDR upscaling is active. Deactivate it under the XDR Preset menu.</source>
-        <target state="translated">Natív XDR felskálázás aktív. Deaktiválás az XDR előbeállítás menüben.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Native audio key settings" xml:space="preserve">
@@ -3651,9 +4261,19 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Soha</target>
         <note/>
       </trans-unit>
+      <trans-unit id="New Display Group" xml:space="preserve">
+        <source>New Display Group</source>
+        <target state="translated">Új kijelzőcsoport</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="New Virtual Screen Configuration" xml:space="preserve">
         <source>New Virtual Screen Configuration</source>
         <target state="translated">Új virtuális képernyő beállítás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Newly connected displays are normally treated as possible affected displays only. With this enabled newly connected displays will be checked against watched display list as well." xml:space="preserve">
+        <source>Newly connected displays are normally treated as possible affected displays only. With this enabled newly connected displays will be checked against watched display list as well.</source>
+        <target state="translated">Alapesetben az újonnan csatlakoztatott kijelzőket az egyeztetés során csak mint a méretezés által esetlegesen érintett kijelzőként kezeli az alkalmazás. Ha ez engedélyezve van, az újonnan csatlakoztatott kijelzőket a figyelt kijelzők listáján is figyelembe veszi a rendszer.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -3711,9 +4331,34 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Nincs képernyő forgatás</target>
         <note/>
       </trans-unit>
+      <trans-unit id="No selection" xml:space="preserve">
+        <source>No selection</source>
+        <target state="translated">Nincs megadva</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-affected displays" xml:space="preserve">
+        <source>Non-affected displays</source>
+        <target state="translated">Nem érintett kijelzők</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Non-natively connected display" xml:space="preserve">
         <source>Non-natively connected display</source>
         <target state="translated">Nem natív módon csatlakoztatott kijelző</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-sync-source member displays" xml:space="preserve">
+        <source>Non-sync-source member displays</source>
+        <target state="translated">Nem szinkronizációs forrás csoporttagok</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-sync-target member displays" xml:space="preserve">
+        <source>Non-sync-target member displays</source>
+        <target state="translated">Nem szinkronizációs cél csoporttagok</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Non-watched member displays" xml:space="preserve">
+        <source>Non-watched member displays</source>
+        <target state="translated">Nem figyelt kijelzők</target>
         <note/>
       </trans-unit>
       <trans-unit id="Normal Window Priority" xml:space="preserve">
@@ -3724,6 +4369,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Normally the header is not visible when a single display is present." xml:space="preserve">
         <source>Normally the header is not visible when a single display is present.</source>
         <target state="translated">Alapesetben a fejléc nem látható, ha csak egy kijelző van csatlakoztatva.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Not all display group members are present." xml:space="preserve">
+        <source>Not all display group members are present.</source>
+        <target state="translated">Nincs az összes csoporttag jelen</target>
         <note/>
       </trans-unit>
       <trans-unit id="Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!" xml:space="preserve">
@@ -3759,6 +4409,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Notifications and Dock" xml:space="preserve">
         <source>Notifications and Dock</source>
         <target state="translated">Értesítések és dock</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1" xml:space="preserve">
+        <source>Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1</source>
+        <target state="translated">Az egy csomagban kiírt bájtok száma - megfelelő értékek: 16, 8, 4, 2, 1</target>
         <note/>
       </trans-unit>
       <trans-unit id="Number of retry attempts on failure" xml:space="preserve">
@@ -3806,9 +4461,19 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Indításkor és ébredéskor</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Only group members can be present" xml:space="preserve">
+        <source>Only group members can be present</source>
+        <target state="translated">Csak csoporttagok lehetnek jelen</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Only non-brightness settings (color adjustments) are restored." xml:space="preserve">
         <source>Only non-brightness settings (color adjustments) are restored.</source>
         <target state="translated">Csak nem fényerő beállítások (színbeállítások) helyreállítása.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!" xml:space="preserve">
+        <source>Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!</source>
+        <target state="translated">Ehhez csak egy figyelt kijelzőnek javasolt jelen lennie a félreérthetőség elkerülése érdekében. Konfigurálja a megfigyelt kijelzőket ennek megfelelően!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Only resolutions that match native aspect ratio" xml:space="preserve">
@@ -3891,6 +4556,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Rendszeresen ellenőrizze a frissítések meglétét, és értesítsen, ha új frissítés áll rendelkezésre. Hálózati kapcsolatot igényel. Nem gyűjt adatokat ([betterdisplay.pro/privacy](https://betterdisplay.pro/privacy)).</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Phyiscal dimensions are used by the app for UI scale matching among display group members. Dimensions reported by the display might not be accurate - make sure the correct figures are specified for this feature to work properly!" xml:space="preserve">
+        <source>Phyiscal dimensions are used by the app for UI scale matching among display group members. Dimensions reported by the display might not be accurate - make sure the correct figures are specified for this feature to work properly!</source>
+        <target state="translated">Az alkalmazás a fizikai méret információt használja a felhasználói felület skálázásának (méretének) egyeztetésére a megjelenítési csoport tagjai között. Előfordulhat, hogy a kijelző által jelentett méretek nem pontosak - győződjön meg róla, hogy a helyes számok vannak megadva, hogy ez a funkció megfelelően működjön!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Picture in Picture" xml:space="preserve">
         <source>Picture in Picture</source>
         <target state="translated">Kép a képben</target>
@@ -3924,6 +4594,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Portrait 270° (Sidecar port up)" xml:space="preserve">
         <source>Portrait 270° (Sidecar port up)</source>
         <target state="translated">Álló 270° (Sidecar csatlakozó felül)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Position of %@" xml:space="preserve">
+        <source>Position of %@</source>
+        <target state="translated">%@ elrendezése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Potential EDR" xml:space="preserve">
@@ -3991,9 +4666,19 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Tovább</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Proceed With EDID Write" xml:space="preserve">
+        <source>Proceed With EDID Write</source>
+        <target state="translated">Folytatás az EDID írásával</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">Terméknév</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Protect the position of %@" xml:space="preserve">
+        <source>Protect the position of %@</source>
+        <target state="translated">%@ elrendezésének védelme</target>
         <note/>
       </trans-unit>
       <trans-unit id="Provided by EDID" xml:space="preserve">
@@ -4008,7 +4693,17 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       </trans-unit>
       <trans-unit id="Provides additional display modes on some configurations." xml:space="preserve">
         <source>Provides additional display modes on some configurations.</source>
-        <target state="translated">További megjelenítési módokat biztosít egyes konfigurációk esetén.</target>
+        <target state="translated">További képernyő módokat biztosít egyes konfigurációk esetén.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quantization" xml:space="preserve">
+        <source>Quantization</source>
+        <target state="translated">Kvantálás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Quick mode switch" xml:space="preserve">
+        <source>Quick mode switch</source>
+        <target state="translated">Gyors módváltás</target>
         <note/>
       </trans-unit>
       <trans-unit id="Quit %@" xml:space="preserve">
@@ -4049,6 +4744,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Reads EDID data acquired by the operating system. This data might be altered by the system for various reasons." xml:space="preserve">
         <source>Reads EDID data acquired by the operating system. This data might be altered by the system for various reasons.</source>
         <target state="translated">Olvassa az operációs rendszer által letöltött EDID-adatokat. Ezeket az adatokat a rendszer különböző okokból módosíthatja.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reapply DDC settings on wake" xml:space="preserve">
+        <source>Reapply DDC settings on wake</source>
+        <target state="translated">DDC beállítások újraalkalmazása ébredéskor</target>
         <note/>
       </trans-unit>
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
@@ -4156,9 +4856,9 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Külső kijelzők újrainicializálása</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reinitialize external displays with flexible scaling enabled if needed" xml:space="preserve">
-        <source>Reinitialize external displays with flexible scaling enabled if needed</source>
-        <target state="translated">Flexibilis skálázást használó kijelzők újrainicializálása szükség esetén</target>
+      <trans-unit id="Reinitialize external displays with flexible scaling if needed" xml:space="preserve">
+        <source>Reinitialize external displays with flexible scaling if needed</source>
+        <target state="translated">Rugalmas skálázást használó kijelzők újrainicializálása szükség esetén</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reinitialize this display on unlock" xml:space="preserve">
@@ -4181,6 +4881,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Ismeretlen kijelzők megjegyzési időtartama</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove" xml:space="preserve">
+        <source>Remove</source>
+        <target state="translated">Eltávolítás</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove Color Profiles" xml:space="preserve">
         <source>Remove Color Profiles</source>
         <target state="translated">Színprofilok törlése</target>
@@ -4191,9 +4896,29 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Gyári színprofil törlése?</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove Protection…" xml:space="preserve">
+        <source>Remove Protection…</source>
+        <target state="translated">Védelem törlése…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove Synchronization…" xml:space="preserve">
+        <source>Remove Synchronization…</source>
+        <target state="translated">Szinkronizáció eltávolítása…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove from Favorite %lld" xml:space="preserve">
         <source>Remove from Favorite %lld</source>
         <target state="translated">Kedvenc %lld eltávolítása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove layout protection for %@" xml:space="preserve">
+        <source>Remove layout protection for %@</source>
+        <target state="translated">%@ elrendezés védelmének törlése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove synchronization for %@" xml:space="preserve">
+        <source>Remove synchronization for %@</source>
+        <target state="translated">%@ szinkronizációjának eltávolítása</target>
         <note/>
       </trans-unit>
       <trans-unit id="Render all other app menu icons in hierarchical style (with grayscales)" xml:space="preserve">
@@ -4326,11 +5051,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Felbontási lépések, amelyekkel a megadott virtuális képernyő képarány szélességi és magassági értékeit megszorozzuk a felbontási beállítások létrehozásához. A kisebb szorzó finomabb lépcsőzetességgel rendelkező skálát eredményez.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Resolution submenu settings" xml:space="preserve">
-        <source>Resolution submenu settings</source>
-        <target state="translated">Felbontás almenü beállítások</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Resolution unavailable" xml:space="preserve">
         <source>Resolution unavailable</source>
         <target state="translated">Felbontás nem elérhető</target>
@@ -4421,6 +5141,16 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Letöltött EDID adat</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Right" xml:space="preserve">
+        <source>Right</source>
+        <target state="translated">Jobb</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Right of %@" xml:space="preserve">
+        <source>Right of %@</source>
+        <target state="translated">%@ mellett jobbra</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Rosetta emulation layer detected" xml:space="preserve">
         <source>Rosetta emulation layer detected</source>
         <target state="translated">Rozetta emulációs réteg detektálva</target>
@@ -4491,6 +5221,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Elforgatás (álló mód)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Rotation changed for %@." xml:space="preserve">
+        <source>Rotation changed for %@.</source>
+        <target state="translated">A felbontás módosítva a(z) %@ kijelzőn.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Rotation shortcut keys toggle the screen between rotated and non-rotated modes." xml:space="preserve">
         <source>Rotation shortcut keys toggle the screen between rotated and non-rotated modes.</source>
         <target state="translated">Az elforgatás gyorsbillentyűkkel a képernyő elforgatott és nem elforgatott módjai között váltogathat.</target>
@@ -4499,6 +5234,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Rotation%@" xml:space="preserve">
         <source>Rotation%@</source>
         <target state="translated">Elforgatás%@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="SDR Color Profile changed for %@." xml:space="preserve">
+        <source>SDR Color Profile changed for %@.</source>
+        <target state="translated">Az SDR színprofil módosítva a(z) %@ kijelzőn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="SDR Color Profile%@" xml:space="preserve">
@@ -4563,7 +5303,72 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       </trans-unit>
       <trans-unit id="Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this." xml:space="preserve">
         <source>Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this.</source>
-        <target state="translated">Válassza ki a virtuális képernyő képarányát. Az alkalmazás ez alapján flexibilis felbontási listát hoz létre.</target>
+        <target state="translated">Válassza ki a virtuális képernyő képarányát. Az alkalmazás ez alapján rugalmas felbontási listát hoz létre.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select display" xml:space="preserve">
+        <source>Select display</source>
+        <target state="translated">Kijelző</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select one or more filters to specify which displays are allowed be sync sources for this configuration!" xml:space="preserve">
+        <source>Select one or more filters to specify which displays are allowed be sync sources for this configuration!</source>
+        <target state="translated">Válasszon ki egy vagy több szűrőt annak meghatározásához, hogy mely kijelzők lehetnek szinkronizálási források ebben a konfigurációban!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select position" xml:space="preserve">
+        <source>Select position</source>
+        <target state="translated">Elhelyezkedés</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays can be sync sources for this configuration!" xml:space="preserve">
+        <source>Select which displays can be sync sources for this configuration!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők lehetnek szinkronizálási források ebben a konfigurációban!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be affected by UI scale matching!" xml:space="preserve">
+        <source>Select which displays should be affected by UI scale matching!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzőkre legyen hatással a felhasználói felület méretezés egyeztetése!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be excluded from being sync sources for this configuration!" xml:space="preserve">
+        <source>Select which displays should be excluded from being sync sources for this configuration!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők ne legyenek szinkronizálási források ebben a konfigurációban!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be excluded from being sync targets for this configuration!" xml:space="preserve">
+        <source>Select which displays should be excluded from being sync targets for this configuration!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők ne legyenek szinkronizálási célpontok ebben a konfigurációban!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be members of this display group!" xml:space="preserve">
+        <source>Select which displays should be members of this display group!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők legyenek tagjai ennek a kijelzőcsoportnak!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be sync targets for this configuration!" xml:space="preserve">
+        <source>Select which displays should be sync targets for this configuration!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők legyenek szinkronizációs célpontok ebben a konfigurációban!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should be watched for resolution change to initiate a scale matching operation!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzőket felbontásának megváltozását kell figyelni a felhasználói felület méretezés egyeztetéséhez!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be affected by UI scale matching!" xml:space="preserve">
+        <source>Select which displays should not be affected by UI scale matching!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzőket ne érintse a felhasználói felület méretezés egyeztetése!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be members of this display group!" xml:space="preserve">
+        <source>Select which displays should not be members of this display group!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők ne legyenek tagjai ennek a kijelzőcsoportnak!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select which displays should not be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
+        <source>Select which displays should not be watched for resolution change to initiate a scale matching operation!</source>
+        <target state="translated">Válassza ki, hogy mely kijelzők esetén ne figyelje az alkalmazás a képernyő felbontás megváltozását a méretezés egyeztetési művelet elindításához!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Selected display is not available" xml:space="preserve">
@@ -4656,6 +5461,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Főképernyő</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set as Main protection is turned off for %@." xml:space="preserve">
+        <source>Set as Main protection is turned off for %@.</source>
+        <target state="translated">A főképernyő védelem kikapcsolva a(z) %@ kijelzőn.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set audio volume level only" xml:space="preserve">
         <source>Set audio volume level only</source>
         <target state="translated">Csak hangerő beállítása</target>
@@ -4726,8 +5536,8 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Hangerő beállítása a legalacsonyabb szintre</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
-        <source>Sets the minimum allowed hardware brightness value (on it's own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
+      <trans-unit id="Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
+        <source>Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
         <target state="translated">Beállítja a minimálisan megengedett hardveres fényerő értéket (a saját skáláján), amely alatt a szoftveres fényerőszabályozás érvényesül, amennyiben kombinált fényerőszabályozást használ. Ez a beállítás hasznos a PWM-érzékenységgel rendelkezők számára, mivel megakadályozza, hogy a háttérvilágítás-szabályozás PWM-tartományba lépjen - ezt szoftveres fényerőszabályozással helyettesíti.</target>
         <note/>
       </trans-unit>
@@ -4796,9 +5606,14 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Jelenlegi felbontás megjelenítése</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show currently off-line (past disconnected) displays in Settings" xml:space="preserve">
-        <source>Show currently off-line (past disconnected) displays in Settings</source>
-        <target state="translated">Jelenleg off-line (korábban leválasztott) kijelzők megjelenítése a Beállítások kijelző-listájában</target>
+      <trans-unit id="Show currently not detected displays in list" xml:space="preserve">
+        <source>Show currently not detected displays in list</source>
+        <target state="translated">Jelenleg nem észlelt kijelzők megjelenítése a listában</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show currently off-line displays in Settings" xml:space="preserve">
+        <source>Show currently off-line displays in Settings</source>
+        <target state="translated">Jelenleg off-line kijelzők megjelenítése a Beállítások kijelző-listájában</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show custom OSD icons" xml:space="preserve">
@@ -4823,7 +5638,7 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       </trans-unit>
       <trans-unit id="Show display modes marked as unsafe or invalid" xml:space="preserve">
         <source>Show display modes marked as unsafe or invalid</source>
-        <target state="translated">Nem biztonságos vagy hibás megjelenítési módok mutatása</target>
+        <target state="translated">Nem biztonságos vagy hibás képernyő módok mutatása</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show extra OSD icon if keyboard adjustment causes upscaling or extra dimming" xml:space="preserve">
@@ -4891,9 +5706,19 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Megjeleníti az alkalmazás által korábban észlelt összes kijelzőt. Lehetővé tesz bizonyos konfigurációs módosításokat akkor is, ha a kijelző leválasztott állapotban van.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Sidecar Configuration" xml:space="preserve">
+        <source>Sidecar Configuration</source>
+        <target state="translated">Sidecar konfiguráció</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Sidecar Display" xml:space="preserve">
         <source>Sidecar Display</source>
         <target state="translated">Sidecar kijelző</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sidecar UUID" xml:space="preserve">
+        <source>Sidecar UUID</source>
+        <target state="translated">Sidecar UUID</target>
         <note/>
       </trans-unit>
       <trans-unit id="Simplifies navigation greatly." xml:space="preserve">
@@ -4906,14 +5731,19 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Vevő típusa</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Size" xml:space="preserve">
-        <source>Size</source>
-        <target state="translated">Méret</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Skip" xml:space="preserve">
         <source>Skip</source>
         <target state="translated">Kihagyás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Skip displays in HDR or reference XDR mode" xml:space="preserve">
+        <source>Skip displays in HDR or reference XDR mode</source>
+        <target state="translated">HDR vagy referencia XDR módban levő kijelző kihagyása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Skip the standard macOS fade-out and fade-in animations during mode change and display layout operations performed by the app." xml:space="preserve">
+        <source>Skip the standard macOS fade-out and fade-in animations during mode change and display layout operations performed by the app.</source>
+        <target state="translated">Hagyd ki a szokásos macOS elhalványuló és felbukkanó animációkat az app által végrehajtott módváltoztatás és kijelző elrendezési műveletek során.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Slider visibility" xml:space="preserve">
@@ -4946,9 +5776,59 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Egyes kijelzők nem támogatják a DDC fényerőszabályozást HDR módban. Engedélyezése a kompatibilis kijelzők esetében lehetővé teszi a fényerőszabályozást úgy, hogy A HDR fényerő vágatlan marad (HDR clipping elkerülése).</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Some displays forget changes made via DDC commands after sleep. With this enabled, the app reapplies DDC settings every time the display wakes." xml:space="preserve">
+        <source>Some displays forget changes made via DDC commands after sleep. With this enabled, the app reapplies DDC settings every time the display wakes.</source>
+        <target state="translated">Néhány kijelző elfelejti az alvás utáni DDC parancsokkal végrehajtott módosításokat. Ha ez be van kapcsolva, az alkalmazás minden alkalommal újraalkalmazza a DDC beállításokat, amikor a kijelző felébred.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source member must be an Apple display" xml:space="preserve">
+        <source>Source member must be an Apple display</source>
+        <target state="translated">A forrás csoporttagnak Apple kijelzőnek kell lennie</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source member must be an external display" xml:space="preserve">
+        <source>Source member must be an external display</source>
+        <target state="translated">A forrás csoporttagnak külső kijelzőnek kell lennie</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source member must be set as the main display" xml:space="preserve">
+        <source>Source member must be set as the main display</source>
+        <target state="translated">A forrás csoporttag fő kijelző kell, hogy legyen</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Source must be on the list of specified members" xml:space="preserve">
+        <source>Source must be on the list of specified members</source>
+        <target state="translated">A forrásnak szerepelnie kell a megadott csoporttagok listáján</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of displays to be excluded from the display group." xml:space="preserve">
+        <source>Specify a list of displays to be excluded from the display group.</source>
+        <target state="translated">Adja meg a kijelzőcsoportból kizárandó kijelzők listáját.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that should not be watched." xml:space="preserve">
+        <source>Specify a list of members that should not be watched.</source>
+        <target state="translated">Csoporttagok listájának meghatározása, amelyeket nem kell figyelni.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that will not be affected by UI scale matching." xml:space="preserve">
+        <source>Specify a list of members that will not be affected by UI scale matching.</source>
+        <target state="translated">Csoporttagok listájának meghatározása, amelyekre nincs hatással a méretezés egyeztetés.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
+        <source>Specify a list of members that will not be affected by this synchronization.</source>
+        <target state="translated">Adja meg azon tagok listáját, amelyeket ez a szinkronizálás nem érint.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <target state="translated">Adja meg, hogy mi történjen az alkalmazás menü ki-/bekapcsolójának megnyomásakor. Nem minden beállítás feltétlenül érvényes erre a kijelzőre.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Standard Framebuffer" xml:space="preserve">
+        <source>Standard Framebuffer</source>
+        <target state="translated">Hagyományos képpuffer</target>
         <note/>
       </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
@@ -4964,6 +5844,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Start/Stop PIP window" xml:space="preserve">
         <source>Start/Stop PIP window</source>
         <target state="translated">Kép a képben indítása/leállítása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="State" xml:space="preserve">
+        <source>State</source>
+        <target state="translated">Státusz</target>
         <note/>
       </trans-unit>
       <trans-unit id="Status: Licensing Disabled (Settings &gt; Application &gt; Advanced)" xml:space="preserve">
@@ -5083,12 +5968,62 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       </trans-unit>
       <trans-unit id="Switch to this display mode" xml:space="preserve">
         <source>Switch to this display mode</source>
-        <target state="translated">Váltás a megjelenítési módra</target>
+        <target state="translated">Váltás a képernyő módra</target>
         <note/>
       </trans-unit>
       <trans-unit id="Symbol name" xml:space="preserve">
         <source>Symbol name</source>
         <target state="translated">Szimbólum neve</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sync source group member display filters" xml:space="preserve">
+        <source>Sync source group member display filters</source>
+        <target state="translated">Szinkronizálási forrás csoporttag kijelző szűrők</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sync source group member displays" xml:space="preserve">
+        <source>Sync source group member displays</source>
+        <target state="translated">Szinkronizálási forrás csoporttag kijelzők</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sync target group member displays" xml:space="preserve">
+        <source>Sync target group member displays</source>
+        <target state="translated">Szinkronizálási cél csoporttag kijelzők</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronization Settings" xml:space="preserve">
+        <source>Synchronization Settings</source>
+        <target state="translated">Szinkronizálási beállítások</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronization source configuration" xml:space="preserve">
+        <source>Synchronization source configuration</source>
+        <target state="translated">Szinkronizálási forrás konfigurációja</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronization target configuration" xml:space="preserve">
+        <source>Synchronization target configuration</source>
+        <target state="translated">Szinkronizációs cél konfiguráció</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize %@" xml:space="preserve">
+        <source>Synchronize %@</source>
+        <target state="translated">%@ szinkronizálása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
+        <source>Synchronize brightness changes triggered externally</source>
+        <target state="translated">Külsőleg kiváltott fényerő-változások szinkronizálása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize external changes only" xml:space="preserve">
+        <source>Synchronize external changes only</source>
+        <target state="translated">Csak a külső változtatások szinkronizálása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced." xml:space="preserve">
+        <source>Synchronize value changes (delta) from sources to targets. This helps keep initial value differences between source and target (until minimum or maximum is reached). When this is disabled, absolute values are synced.</source>
+        <target state="translated">Értékváltozások (delta) szinkronizálása. Segít megtartani a kezdeti értékkülönbségeket a forrás és a cél között (a minimum vagy maximum eléréséig). Ha nincs engedélyezve, az abszolút értékek szinkronizálása történik.</target>
         <note/>
       </trans-unit>
       <trans-unit id="System Colors" xml:space="preserve">
@@ -5114,11 +6049,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="System UUID match (recommended)" xml:space="preserve">
         <source>System UUID match (recommended)</source>
         <target state="translated">Rendszer UUID azonosság (javasolt)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="System display name" xml:space="preserve">
-        <source>System display name</source>
-        <target state="translated">Rendszer kijelzőnév</target>
         <note/>
       </trans-unit>
       <trans-unit id="TARGET" xml:space="preserve">
@@ -5195,8 +6125,8 @@ This operation does not reset the display itself.</source>
 Ez a művelet nem állítja vissza magát a kijelzőt.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
-        <source>The built-in display is configured to be disconnected when an external display is connected. This setting will will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
+      <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
+        <source>The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
         <target state="translated">A beépített kijelző úgy van beállítva, hogy külső kijelző csatlakoztatása esetén a kijelzőt leválasztásra kerül. Ez a beállítás újra aktiválódik, amikor a beépített kijelzőt manuálisan ismét leválasztja, vagy az alkalmazás újraindul.</target>
         <note/>
       </trans-unit>
@@ -5208,6 +6138,21 @@ Ez a művelet nem állítja vissza magát a kijelzőt.</target>
       <trans-unit id="The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the &quot;LG alt&quot; toggle for some newer LG displays if input control does not work!" xml:space="preserve">
         <source>The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the "LG alt" toggle for some newer LG displays if input control does not work!</source>
         <target state="translated">Az alapértelmezett bemeneti forráslista a gyakran előforduló hozzárendeléseket tükrözi, de a tényleges lista kijelzőgyártónként/modellenként változik. Próbálja meg az "LG alt" kapcsolót használni néhány újabb LG kijelző esetén, ha a bemenetvezérlés nem működik!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group is marked as exclusive while at least one other display group with higher priority is active." xml:space="preserve">
+        <source>The display group is marked as exclusive while at least one other display group with higher priority is active.</source>
+        <target state="translated">A kijelzőcsoport kizárólagosként van beállítva, miközben legalább egy másik, magasabb prioritású kijelzőcsoport már aktív.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group will be activated or deactivated depending on the activation settings, configured group members and various other factors." xml:space="preserve">
+        <source>The display group will be activated or deactivated depending on the activation settings, configured group members and various other factors.</source>
+        <target state="translated">A kijelzőcsoport az aktiválási beállításoktól, a konfigurált csoporttagoktól és számos más tényezőtől függően aktiválódik vagy deaktiválódik.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display group will not activate when other displays are connected beyond group members." xml:space="preserve">
+        <source>The display group will not activate when other displays are connected beyond group members.</source>
+        <target state="translated">A kijelzőcsoport nem aktiválódik, ha a csoporttagokon kívül más kijelzők is csatlakoztatva vannak.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
@@ -5233,6 +6178,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
 Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the `reported diagonal size` setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected." xml:space="preserve">
+        <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the `reported diagonal size` setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected.</source>
+        <target state="translated">A virtuális képernyőhöz tartozó fizikai méretet (amelyet a felhasználói felület méretezésének kiszámításához használnak) elsősorban a `jelentett átmérő` beállítás határozza meg, amelyet a virtuális képernyő csatlakoztatásakor a `fizikai képernyő méretek` beállítással lehet tovább pontosítani.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well.</source>
         <target state="translated">A csúszka kihagyja azokat a felbontásokat, amelyek nem felelnek meg a kijelző méretének, hogy megkönnyítse a csúszka használatát. Hatással van a felbontás billentyűkombinációira is.</target>
@@ -5243,25 +6193,34 @@ Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</targ
         <target state="translated">A rendszer az alvó állapotból való felébredés után újracsatlakoztathatja a beépített kijelzőt és más kijelzőket, hogy biztosítsa a felületekhez való hozzáférést. Ha ez az opció engedélyezve van, az alkalmazás újra leválasztja ezeket a kijelzőket. Az ébredés utáni fő kijelző nem lesz leválasztva.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The time it takes for the app to enter into an active state after the system wakes from a sleep." xml:space="preserve">
+        <source>The time it takes for the app to enter into an active state after the system wakes from a sleep.</source>
+        <target state="translated">Az az idő, amíg az app aktív állapotba kerül, miután a rendszer felébred.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The time it takes for the app to respond to a configuration change." xml:space="preserve">
+        <source>The time it takes for the app to respond to a configuration change.</source>
+        <target state="translated">A konfigurációs változásra adott válaszidő az app részéről.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="The virtual screen created with this aspect ratio does not seem to be viable." xml:space="preserve">
         <source>The virtual screen created with this aspect ratio does not seem to be viable.</source>
         <target state="translated">Az ezzel a képaránnyal létrehozott virtuális képernyő nem tűnik életképesnek.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings)." xml:space="preserve">
-        <source>The virtual screen is now associated with a display that is connected therefore the virtual screen should automatically connect. Alternatively you can disable auto-connect (you can enable it any time under association settings).</source>
-        <target state="translated">A virtuális képernyő most egy csatlakoztatott kijelzőhöz van társítva, ezért a virtuális képernyőnek automatikusan csatlakoznia kell. Alternatívaként letilthatja az automatikus csatlakozást (bármikor újra engedélyezheti a társítási beállítások között).
-</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The virtual screen was disassociated from a connected display but the virtual screen is still connected." xml:space="preserve">
-        <source>The virtual screen was disassociated from a connected display but the virtual screen is still connected.</source>
-        <target state="translated">A virtuális képernyő társítása megszűnt egy csatlakoztatott kijelzőhöz, de a virtuális képernyő továbbra is csatlakoztatva van.</target>
+      <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings)." xml:space="preserve">
+        <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enable any time under association settings).</source>
+        <target state="translated">A virtuális képernyő mostantól egy kijelzőhöz van társítva, és a társítási beállításoknak való megfelelés érdekében a virtuális képernyőnek automatikusan meg kell változtatnia a kapcsolati állapotát. Alternatívaként letilthatja az automatikus kapcsolódást (a társítási beállítások között bármikor engedélyezhető).</target>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
         <source>The virtual screen was not created.</source>
         <target state="translated">A virtuális képernyő nem került létrehozásra.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There are no at least two display group members present." xml:space="preserve">
+        <source>There are no at least two display group members present.</source>
+        <target state="translated">Nincs legalább két kijelzőcsoport-tag jelen.</target>
         <note/>
       </trans-unit>
       <trans-unit id="There are some unapplied system configuration changes." xml:space="preserve">
@@ -5274,6 +6233,16 @@ Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</targ
         <target state="translated">Legalább egy vezérelhető kijelző csatlakoztatva van</target>
         <note/>
       </trans-unit>
+      <trans-unit id="There is no at least one display group member present." xml:space="preserve">
+        <source>There is no at least one display group member present.</source>
+        <target state="translated">Nincs legalább egy kijelzőcsoport-tag jelen.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="There is no group member present." xml:space="preserve">
+        <source>There is no group member present.</source>
+        <target state="translated">Egyetlen csoporttag sincs jelen.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serves as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display." xml:space="preserve">
         <source>These three identifiers (serial number, vendor and model ID) serves as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display.</source>
         <target state="translated">Ez a három azonosító (szériaszám, gyártó és modell azonosító) szolgál a kijelző azonosításának alapjául a macOS-ben. Ha e három azonosító bármelyike megváltozik, a rendszer új azonosítót (UUID) rendel a virtuális képernyőhöz, és újonnan csatlakoztatott kijelzőként kezeli.</target>
@@ -5284,6 +6253,11 @@ Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</targ
         <target state="translated">Harmadik fél által gyártott külső kijelző</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This allows additional image adjustment control options when color table adjustments are not enabled or available. Comes with a slight performance penalty. This feature is always active when software brightness upscaling is turned on while color table adjustments are not available." xml:space="preserve">
+        <source>This allows additional image adjustment control options when color table adjustments are not enabled or available. Comes with a slight performance penalty. This feature is always active when software brightness upscaling is turned on while color table adjustments are not available.</source>
+        <target state="translated">További képbeállítási beállítási lehetőségeket tesz lehetővé, ha a színtábla-beállítások nem engedélyezettek vagy nem állnak rendelkezésre. Enyhe teljesítménycsökkenéssel jár. Ez a funkció mindig aktív, ha a szoftveres fényerő-növelés be van kapcsolva, miközben a színtábla-beállítások nem állnak rendelkezésre.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <target state="translated">Ez lehetővé teszi a fejlett fényerőszabályozást, a színbeállításokat valamint egyéb funkciókat, mint például a szoftveres XDR/HDR felskálázás. Megjegyzés: a színbeállítások aktív használat közben limitálják a HDR-tartalmak fényességét. Ha ez az opció ki van kapcsolva, az alkalmazás átáll az árnyékolóablak-alapú fényerőszabályozásra, szoftveres XDR/HDR-felskálázáshoz pedig a Metal-t használja.</target>
@@ -5292,6 +6266,11 @@ Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</targ
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data.</source>
         <target state="translated">Meghatározza, hogy az aktuálisan konfigurált kijelzőhöz tartozó adatok hogyan illeszkedjenek az észlelt kijelzőhöz a kijelző-felismerési folyamat során. Ennek a beállításnak a megváltoztatása azt eredményezheti, hogy a kijelzőt az alkalmazás korábban nem csatlakoztatottként ismeri fel, és a meglévő, mentett konfigurációs adatok így nem érvényesülnek. A rendszer UUID-illesztés a macOS alapértelmezett azonosítóját használja. Ha az alap azonosítók használatára van beállítva, az alkalmazás a kijelzőt a gyártó/modell azonosító és a szériaszám alapján azonosítja. Kiterjesztett azonosítás esetén a termék nevét, az alfanumerikus szériaszámot és a gyártási dátumot is használja. Csatlakozási hely figyelembevétele esetén az alkalmazás felhasználja a hardvercsatlakozási adatokat is.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This display group does not have member displays." xml:space="preserve">
+        <source>This display group does not have member displays.</source>
+        <target state="translated">Ennek a kijelzőcsoportnak nincsenek csoporttagjai.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This display is the main display. Are you sure you want to turn the backlight off?" xml:space="preserve">
@@ -5308,19 +6287,24 @@ Please note that not all displays support DDC power operations and some displays
 Nem minden kijelző támogatja a DDC tápellátási műveleteket, így előfordulhat, hogy egyes kijelzők nem az elvárt módon viselkednek. Ha kikapcsolja a kijelzőt, akkor azt kézzel kell visszakapcsolnia!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty." xml:space="preserve">
-        <source>This enables some image adjustment controls even if support color table adjustments are not available. Comes with a slight performance penalty.</source>
-        <target state="translated">Lehetővé tesz néhány képbeállító vezérlőt  akkor is, ha a színtábla módosítás nem áll rendelkezésre. Kisebb teljesítménycsökkenéssel jár.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing." xml:space="preserve">
         <source>This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing.</source>
         <target state="translated">Ez egy kerülőmegoldás a macOS Sonoma egyes verzióiban előforduló problémára, amely esetenként akadályozza a kijelző egyéni konfigurációjának betöltését. Ezzel a beállítással az alkalmazás megpróbálja újra inicializálni a kijelzőt, ha úgy érzékeli, hogy a rugalmas skálázás felbontásai hiányoznak.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This is in addition to the configured wake delay (%@ seconds), configuration delay (%@ seconds) and the time it takes to configure the displays." xml:space="preserve">
+        <source>This is in addition to the configured wake delay (%1$@ seconds), configuration delay (%2$@ seconds) and the time it takes to configure the displays.</source>
+        <target state="translated">Ez a beállított ébresztési késleltetésen (%@ másodperc), a konfigurációs késleltetésen (%@ másodperc) és a kijelzők konfigurálásához szükséges időn túl értendő.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
         <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
         <target state="translated">Ez a színbeállításokhoz, a fejlettebb szoftveres sötétítéshez, valamint az XDR/HDR-felskálázáshoz szükséges. Ajánlott bekapcsolva hagyni. Kapcsolja ki a rendszer színeit is módosító egyes harmadik féltől származó alkalmazásokkal való kompatibilitás érdekében.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This is the default display group. This group cannot be removed but can be disabled or made inactive by changing activation settings." xml:space="preserve">
+        <source>This is the default display group. This group cannot be removed but can be disabled or made inactive by changing activation settings.</source>
+        <target state="translated">Ez az alapértelmezett kijelzőcsoport. Ez a csoport nem távolítható el, de az aktiválási beállítások módosításával letiltható vagy inaktívvá tehető.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is the recommended setting." xml:space="preserve">
@@ -5428,7 +6412,7 @@ FONTOS: Amíg a kijelző (az alkalmazás által) leválasztott állapotban van, 
       </trans-unit>
       <trans-unit id="This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
         <source>This shows options for the current resolution. See Display Modes menu for the full list.</source>
-        <target state="translated">Az aktuális felbontás lehetőségeit mutatja. A teljes lista a Megjelenítési Mód menüben látható.</target>
+        <target state="translated">Az aktuális felbontás lehetőségeit mutatja. A teljes lista a Képernyő mód menüben látható.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This virtual screen cannot be manually connected!" xml:space="preserve">
@@ -5453,6 +6437,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
         <source>This virtual screen should now be connected</source>
         <target state="translated">Ennek a virtuális képernyőnek most csatlakoznia kellene</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
+        <source>This virtual screen should now be disconnected</source>
+        <target state="translated">Ezt a virtuális képernyőt most le kell választani</target>
         <note/>
       </trans-unit>
       <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
@@ -5515,6 +6504,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Eszközök</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Top" xml:space="preserve">
+        <source>Top</source>
+        <target state="translated">Fent</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Traditional popups" xml:space="preserve">
         <source>Traditional popups</source>
         <target state="translated">Hagyományos felugró ablak</target>
@@ -5525,9 +6519,19 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Csatorna</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
+        <source>Treat all currently connected displays as group members</source>
+        <target state="translated">Az összes csatlakoztatott kijelző csoporttagnak számít</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Treat as generic third-party (non-Apple) display" xml:space="preserve">
         <source>Treat as generic third-party (non-Apple) display</source>
         <target state="translated">Általános, harmadik fél által gyártott (nem Apple) kijelzőként kezelés</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Treat newly connected displays as possible watched displays" xml:space="preserve">
+        <source>Treat newly connected displays as possible watched displays</source>
+        <target state="translated">Újonnan csatlakoztatott kijelzők lehetséges figyelt kijelzőként való kezelése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat shortcuts as rotation toggles" xml:space="preserve">
@@ -5605,6 +6609,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Háttérvilágítás kikapcsolása amikor a kombinált fényerő nullára van állítva</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu." xml:space="preserve">
+        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu.</source>
+        <target state="translated">Kapcsolja ki, hogy a natív XDR-felskálázás ne aktiválódjon az alkalmazás indításakor, illetve ne legyen elérhető az XDR előbeállítás menüben.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Turning this off reduces system load for XDR displays when auto brightness is enabled but makes upscaling a less smooth experience." xml:space="preserve">
         <source>Turning this off reduces system load for XDR displays when auto brightness is enabled but makes upscaling a less smooth experience.</source>
         <target state="translated">Kikapcsolása csökkenti a rendszerterhelést XDR-kijelzők esetén, ha az automatikus fényerő engedélyezve van, azonban a fényerő felskálázás kevésbé zökkenőmentes élményt nyújt.</target>
@@ -5622,7 +6631,7 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       </trans-unit>
       <trans-unit id="Typical value is 100%." xml:space="preserve">
         <source>Typical value is 100%.</source>
-        <target state="translated">A tipikus érték 100%</target>
+        <target state="translated">A tipikus érték 100%.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Typical values include: 100, 200 or 255 (note: 255 works for most old DDC compatible Apple Cinema / LED displays and helps avoid permanent dimming issue)." xml:space="preserve">
@@ -5632,7 +6641,17 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       </trans-unit>
       <trans-unit id="Typical values include: 100, 200 or 255." xml:space="preserve">
         <source>Typical values include: 100, 200 or 255.</source>
-        <target state="translated">Tipikus értékek: 100, 200 vagy 255</target>
+        <target state="translated">Tipikus értékek: 100, 200 vagy 255.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="UI Scale Matching" xml:space="preserve">
+        <source>UI Scale Matching</source>
+        <target state="translated">Felhasználói felület skálázás egyeztetése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="USB" xml:space="preserve">
+        <source>USB</source>
+        <target state="translated">USB</target>
         <note/>
       </trans-unit>
       <trans-unit id="UUID" xml:space="preserve">
@@ -5685,9 +6704,19 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Stream felfedése</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Uniformity Correction" xml:space="preserve">
+        <source>Uniformity Correction</source>
+        <target state="translated">Uniformitás-korrekció</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unknown" xml:space="preserve">
         <source>Unknown</source>
         <target state="translated">Ismeretlen</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unknown (%@)" xml:space="preserve">
+        <source>Unknown (%@)</source>
+        <target state="translated">Ismeretlen (%@)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unknown Display" xml:space="preserve">
@@ -5695,9 +6724,24 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Ismeretlen Kijelző</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unlimited" xml:space="preserve">
+        <source>Unlimited</source>
+        <target state="translated">Korlátlan</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
         <source>Unlock Color Profile management for XDR displays</source>
         <target state="translated">Színprofil választás engedélyezése XDR kijelzők esetén</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
+        <source>Unlock EDID write - I understand the risks involved</source>
+        <target state="translated">EDID írás engedélyezése - kockázatok elfogadása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unmovable Window (Lock)" xml:space="preserve">
+        <source>Unmovable Window (Lock)</source>
+        <target state="translated">Mozdíthatatlan ablak (rögzítés)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
@@ -5733,6 +6777,16 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="Unsupported" xml:space="preserve">
         <source>Unsupported</source>
         <target state="translated">Nem átmogatott</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update resolution configuration protections" xml:space="preserve">
+        <source>Update resolution configuration protections</source>
+        <target state="translated">Felbontás konfigurációs védelmek frissítése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Update virtual screens as well" xml:space="preserve">
+        <source>Update virtual screens as well</source>
+        <target state="translated">Virtuális képernyők frissítése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Updates" xml:space="preserve">
@@ -5865,6 +6919,16 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">A virtuális képernyő követi a kijelző tájolását</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync sources." xml:space="preserve">
+        <source>Virtual screen group members can be sync sources.</source>
+        <target state="translated">Virtuális képernyő csoporttagok is lehetnek szinkronizációs források.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Virtual screen group members can be sync targets." xml:space="preserve">
+        <source>Virtual screen group members can be sync targets.</source>
+        <target state="translated">Virtuális képernyő csoporttagok is lehetnek szinkronizációs célok.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Virtual screen name" xml:space="preserve">
         <source>Virtual screen name</source>
         <target state="translated">Virtuális képernyő név</target>
@@ -5940,6 +7004,31 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Várakozási idő olvasás esetén</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Wake delay" xml:space="preserve">
+        <source>Wake delay</source>
+        <target state="translated">Ébredési késleltetés</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch all group members for resolution changes" xml:space="preserve">
+        <source>Watch all group members for resolution changes</source>
+        <target state="translated">Felbontás változás figyelése az összes csoporttag esetén</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch for resolution changes made outside of the app" xml:space="preserve">
+        <source>Watch for resolution changes made outside of the app</source>
+        <target state="translated">Figyelje az alkalmazáson kívül végrehajtott felbontásmódosításokat</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watch virtual screens" xml:space="preserve">
+        <source>Watch virtual screens</source>
+        <target state="translated">Virtuális képernyők figyelése</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Watched group member displays" xml:space="preserve">
+        <source>Watched group member displays</source>
+        <target state="translated">Figyelt csoporttag kijelzők</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Week of manufacture" xml:space="preserve">
         <source>Week of manufacture</source>
         <target state="translated">Gyártási hét</target>
@@ -5960,6 +7049,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Amikor a Beállítások nyitott</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display." xml:space="preserve">
+        <source>When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
+        <target state="translated">Amikor egy figyelt kijelző felbontása megváltozik, a kijelzőcsoport összes erre alkalmas tagjának felbontása ennek következtében frissül, hogy megfeleljen a figyelt kijelző felhasználói felületének méretezésének.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">Egy menüpont megnyitásakor automatikusan elrejti az adott eszköz / menüblokk alatti elemeket. Ez segít csökkenteni a menü méretét.</target>
@@ -5968,6 +7062,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness." xml:space="preserve">
         <source>When the display is set as main, the lower limit is 30% for combined or software brightness, 10% for Apple hardware brightness, 0% for DDC hardware brightness.</source>
         <target state="translated">Ha a kijelző főképernyőként van beállítva, az alsó határérték 30% a kombinált vagy szoftveres fényerőnél, 10% az Apple hardveres fényerőnél, 0% a DDC hardveres fényerőnél.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset." xml:space="preserve">
+        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset.</source>
+        <target state="translated">Ha ez engedélyezve van, a szinkronizálás nem érinti a HDR módban lévő kijelzőket vagy valamely referencia XDR-előbeállításra beállított XDR-kijelzőket.</target>
         <note/>
       </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
@@ -5995,6 +7094,26 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Ablak árnyék</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Wireless" xml:space="preserve">
+        <source>Wireless</source>
+        <target state="translated">Vezeték nélkül</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
+        <source>With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed.</source>
+        <target state="translated">Ha ez engedélyezve van, akkor az alkalmazással leválasztott Sidecar kijelzők továbbra is a kijelzők listájában maradnak, így könnyen újra csatlakoztathatók. Az alkalmazáson kívül vagy az alkalmazás indítása előtt leválasztott Sidecar-kijelzők nem szerepelnek a listában.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well." xml:space="preserve">
+        <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
+        <target state="translated">Ha ez engedélyezve van, a méretezés (skálázás) egyeztetése azon kijelzőket is érintheti, amelyeknél van a felbontás konfiguráció védelme aktív. A védett felbontás automatikusan frissítésre kerül.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
+        <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
+        <target state="translated">Ha ez engedélyezve van, az alkalmazás elvégzi a skálázás-egyeztetési műveletet, amikor a rendszer vagy egy másik alkalmazás megváltoztatta a figyelt kijelző felbontását. Ha több figyelt kijelző felbontása változik (például elrendezés-váltás miatt), a félreérthetőség elkerülése érdekében nem történik semmilyen művelet.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
         <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
         <target state="translated">Ha ez az opció be van jelölve, az alkalmazás a natív fényerőszabályozó billentyűket a macOS vezérlése alatt hagyja, ha csak Apple-kijelzők vannak csatlakoztatva, és nincsenek engedélyezve további szoftveres fényerőszabályozó funkciók. Ebben az esetben a különböző beállítások (például a "Finom skála alapértelmezetté tétele" vagy az "Összes alkalmas képernyő" egyidejű vezérlése), amelyek módosítják a fényerőgombok alapértelmezett viselkedését, nem lesznek alkalmazhatók.</target>
@@ -6020,6 +7139,16 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Szeretné az összes kijelzőt csatlakoztatni a kapcsolatkezelés kikapcsolása előtt?</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Write EDID Data to Device" xml:space="preserve">
+        <source>Write EDID Data to Device</source>
+        <target state="translated">EDID írás a készülékre</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Write EDID to Device" xml:space="preserve">
+        <source>Write EDID to Device</source>
+        <target state="translated">EDID írás a készülékre</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Write last used values to display" xml:space="preserve">
         <source>Write last used values to display</source>
         <target state="translated">Utolsó beállított érték küldése a kijelzőnek</target>
@@ -6033,6 +7162,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="XDR Preset" xml:space="preserve">
         <source>XDR Preset</source>
         <target state="translated">XDR előbeállítás</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="XDR Preset &amp; Brightness" xml:space="preserve">
+        <source>XDR Preset &amp; Brightness</source>
+        <target state="translated">XDR előbeállítás és fényerő</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
@@ -6090,8 +7224,8 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Az SF Symbols alkalmazás letölthető a [developer.apple.com/sf-symbols] (https://developer.apple.com/sf-symbols) oldalról (addg is próbaként egy lehetőség: `face.smiling`).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You can override the default meaning of the on/off switch under Settings/Displays." xml:space="preserve">
-        <source>You can override the default meaning of the on/off switch under Settings/Displays.</source>
+      <trans-unit id="You can override the default meaning of the on/off switch under Settings &gt; Displays." xml:space="preserve">
+        <source>You can override the default meaning of the on/off switch under Settings &gt; Displays.</source>
         <target state="translated">A ki/be kapcsoló alapértelmezett jelentése a Beállítások/Kijelzők alatt írható felül.</target>
         <note/>
       </trans-unit>
@@ -6105,8 +7239,8 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Érdemes lehet elrejteni a macOS hangerő OSD-jét, ha az eszköz rendelkezik az alkalmazás által kezelt hangvezérléssel. Hasznos olyan kijelzők esetére, amelyek saját, nem letiltható hangerő OSD-vel rendelkeznek.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable `Allow color adjustments` under Settings/Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable `Allow color table adjustments` under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable `Allow color table adjustments` under Settings &gt; Displays to fix this!</source>
         <target state="translated">A probléma kezeléséhez lépjen ki a másik alkalmazásból, vagy kapcsolja ki a `Színtábla módosítások engedélyezése` opciót a Beállítások/Kijelzők menüpontban!</target>
         <note/>
       </trans-unit>
@@ -6150,6 +7284,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">bit</target>
         <note/>
       </trans-unit>
+      <trans-unit id="bytes" xml:space="preserve">
+        <source>bytes</source>
+        <target state="translated">byte</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="days" xml:space="preserve">
         <source>days</source>
         <target state="translated">nap</target>
@@ -6168,6 +7307,16 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="milliseconds" xml:space="preserve">
         <source>milliseconds</source>
         <target state="translated">miliszekundum</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="mm" xml:space="preserve">
+        <source>mm</source>
+        <target state="translated">mm</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="n/a" xml:space="preserve">
+        <source>n/a</source>
+        <target state="translated">n/a</target>
         <note/>
       </trans-unit>
       <trans-unit id="nits" xml:space="preserve">
@@ -6195,6 +7344,26 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">⚠ Társított kijelző tükrözése kényszerítve!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
+        <source>⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
+        <target state="translated">⚠ A kijelzőcsoport elrendezés védelme érvényben van. Ez módosíthatja vagy felülírhatja egy mozgatási művelet eredményét!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Image adjustment controls are unavailable." xml:space="preserve">
+        <source>⚠ Image adjustment controls are unavailable.</source>
+        <target state="translated">⚠ A képbeállítás vezérlők nem állnak rendelkezésre.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
+        <source>⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
+        <target state="translated">⚠ A szoftveres XDR-felskálázás aktív az extra fényerő érdekében, miközben a natív felskálázás is elérhető. Aktiválja a %@ előbeállítást a jobb élményért!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Some adjustments may clip HDR content!" xml:space="preserve">
+        <source>⚠ Some adjustments may clip HDR content!</source>
+        <target state="translated">⚠ Egyes műveletek HDR korlátozással járnak!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠ Stream auto-starts to associated display!" xml:space="preserve">
         <source>⚠ Stream auto-starts to associated display!</source>
         <target state="translated">⚠ Automatikus társított kijelző streamelés!</target>
@@ -6208,6 +7377,20 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="⚠ Virtual Screen as Stream Target?" xml:space="preserve">
         <source>⚠ Virtual Screen as Stream Target?</source>
         <target state="translated">⚠ Virtuális képernyő stream célként?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!&#10;&#10;Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI." xml:space="preserve">
+        <source>⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!
+
+Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI.</source>
+        <target state="translated">⚠️ Az EDID írási művelet módosítja az EDID és DisplayID adatokat magán az eszközön. Hibás EDID-adatok vagy az EDID-írás során fellépő probléma a kijelzőt véglegesen használhatatlanná teheti!
+
+A legtöbb kijelző biztonsági okokból nem engedélyezi az EDID írást, néhány kijelzőnél az EDID írást egy szervizmenüben kell aktiválni. A legtöbb EDID emulátor vagy pass-thru dongle támogatja az EDID írást. Az EDID-írás (ha támogatott) általában HDMI-n keresztül működik.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
+        <source>⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
+        <target state="translated">⚠️ Egy alternatív EDID-azonosító van érvényben - a rendszer konfigurációjának módosításai ehhez az azonosítóhoz lesznek kötve!</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
@@ -6255,6 +7438,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">⚠️ Javasolt valamennyivel nagyobb mozgásteret hagyni a tartományban!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Layout protection is disabled for this display group." xml:space="preserve">
+        <source>⚠️ Layout protection is disabled for this display group.</source>
+        <target state="translated">⚠️ Az elrendezés védelme le van tiltva ennél a kijelzőcsoportnál.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Metal performance might be degraded on this device with integrated Intel GPU." xml:space="preserve">
         <source>⚠️ Metal performance might be degraded on this device with integrated Intel GPU.</source>
         <target state="translated">⚠️ A Metal teljesítménye csökkentett lehet ezen az Intel integrált GPU-t tartalmazó eszközön.</target>
@@ -6265,9 +7453,53 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">⚠️ A minimum szélesség/magasság kisebb kell, hogy legyen, mint a maximum!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected." xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected.</source>
+        <target state="translated">⚠️ A natív XDR-felskálázás engedélyezve van, de nincs érvényben - lehet, hogy egy másik XDR előbeállítás lett kiválasztva az alkalmazáson kívül. A %@ továbbra is megpróbálja aktiválni a natív XDR-felskálázást az alkalmazás újraindításakor, ha az alapértelmezett XDR előbeállítás van kiválasztva.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ No display groups are available." xml:space="preserve">
+        <source>⚠️ No display groups are available.</source>
+        <target state="translated">⚠️ Nincs elérhető kijelzőcsoport.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
         <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
         <target state="translated">⚠️ Az értesítések nincsenek engedélyezve az alkalmazás számára. Módosítsa a Rendszerbeállítások &gt; Értesítések alatt!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!" xml:space="preserve">
+        <source>⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!</source>
+        <target state="translated">⚠️ A szoftveres XDR-felskálázás aktív az extra fényerő érdekében, miközben a natív XDR-felskálázás is elérhető. A jobb sötétítési, felskálázási és szinkronizálási élmény érdekében ajánlott inkább a natív XDR-fényerő-felskálázás engedélyezése!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">
+        <source>⚠️ Synchronization is disabled for this display group.</source>
+        <target state="translated">⚠️ A szinkronizálás nincs engedélyezve ehhez a kijelzőcsoporthoz.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The protection is not in effect unless all participating displays are connected." xml:space="preserve">
+        <source>⚠️ The protection is not in effect unless all participating displays are connected.</source>
+        <target state="translated">⚠️ A védelem nem érvényes, amíg az összes résztvevő kijelző nincs csatlakoztatva.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The protection is not in effect unless relative position is defined." xml:space="preserve">
+        <source>⚠️ The protection is not in effect unless relative position is defined.</source>
+        <target state="translated">⚠️ A védelem nem érvényes, amíg az elhelyezkedés nincs meghatározva.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
+        <source>⚠️ This feature is not available in this version.</source>
+        <target state="translated">⚠️ Ez a funkció ebben a verzióban nem érhető el.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">
+        <source>⚠️ This operation might permanently render your display unusable!
+
+Are sure you want to continue?</source>
+        <target state="translated">⚠️ Ez a művelet tartósan használhatatlanná teheti a kijelzőt!
+
+Biztos, hogy folytatni szeretné?</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
@@ -6289,7 +7521,7 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
   </file>
   <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.3" build-num="15E5194e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
