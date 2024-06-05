@@ -83,6 +83,10 @@
         <target state="translated">%@%@%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%@%@%@" xml:space="preserve">
+        <source>%1$@%2$@%3$@%4$@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@%@%@%@" xml:space="preserve">
         <source>%1$@%2$@%3$@%4$@%5$@</source>
         <target state="translated">%1$@%2$@%3$@%4$@%5$@</target>
@@ -205,7 +209,7 @@
       </trans-unit>
       <trans-unit id="A controllable display is present" xml:space="preserve">
         <source>A controllable display is present</source>
-        <target state="translated">制御可能なディスプレイがある</target>
+        <target state="translated">制御可能なディスプレイが存在</target>
         <note/>
       </trans-unit>
       <trans-unit id="A display group can cover all displays (with an optionally specified list of exceptions) or may consist of a specific list of displays. Display group membership may determine the activation status of the display group (depending on activation policy settings) and influence how display group based features behave." xml:space="preserve">
@@ -215,7 +219,7 @@
       </trans-unit>
       <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
         <source>A display is present which is not fully controllable without the app</source>
-        <target state="translated">アプリなしで完全には制御できないディスプレイがある</target>
+        <target state="translated">アプリ以外から完全に制御できないディスプレイが存在</target>
         <note/>
       </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
@@ -549,7 +553,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="All suitable screens" xml:space="preserve">
         <source>All suitable screens</source>
-        <target state="translated">すべての適切な画面</target>
+        <target state="translated">適用できるすべての画面</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow DDC hardware brightness control in HDR mode" xml:space="preserve">
@@ -799,6 +803,10 @@ AliPayは中国で使用可能です。</target>
         <target state="translated">アプリケーション</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Applied" xml:space="preserve">
+        <source>Applied</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
         <source>Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
         <target state="translated">外付けディスプレイを物理的に接続する場合や、アプリを使って再接続する場合の両方に適用されます。すべてのディスプレイの切断を許可した場合、内蔵ディスプレイは再接続されません!</target>
@@ -882,6 +890,10 @@ AliPayは中国で使用可能です。</target>
       <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
         <source>Are sure you want to quit the app?</source>
         <target state="translated">アプリを終了してもよろしいですか?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to reapply manufacturer specific adaptations for this display?" xml:space="preserve">
+        <source>Are sure you want to reapply manufacturer specific adaptations for this display?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
@@ -1473,9 +1485,17 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">アクティベーションルールを設定</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure flexible scaling for %@" xml:space="preserve">
+        <source>Configure flexible scaling for %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure full screen stream to this display" xml:space="preserve">
         <source>Configure full screen stream to this display</source>
         <target state="translated">このディスプレイにフルスクリーンストリーミングを構成</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure layout protection for %@" xml:space="preserve">
+        <source>Configure layout protection for %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure virtual screen mirroring" xml:space="preserve">
@@ -2390,7 +2410,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
-        <target state="translated">拒否</target>
+        <target state="translated">閉じる</target>
         <note/>
       </trans-unit>
       <trans-unit id="Dispatch OSD notifications" xml:space="preserve">
@@ -2401,6 +2421,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Display" xml:space="preserve">
         <source>Display</source>
         <target state="translated">ディスプレイ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display Adaptations" xml:space="preserve">
+        <source>Display Adaptations</source>
         <note/>
       </trans-unit>
       <trans-unit id="Display Attributes" xml:space="preserve">
@@ -2997,6 +3021,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">PCキーボードでは、F14/F15はスクロールロックとポーズ、一部のロジクール製キーボードでは輝度キーです。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Failed" xml:space="preserve">
+        <source>Failed</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Favorite" xml:space="preserve">
         <source>Favorite</source>
         <target state="translated">お気に入り</target>
@@ -3453,6 +3481,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
         <source>Ignore checksum check error on read</source>
+        <target state="translated">読み込み時のチェックサムエラーを無視</target>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustment" xml:space="preserve">
@@ -3548,6 +3577,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling" xml:space="preserve">
         <source>Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling</source>
         <target state="translated">HDRアップスケーリングのため、ニュートラル100%のキーボード/OSD中間ステップを挿入</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Install Display Adaptation…" xml:space="preserve">
+        <source>Install Display Adaptation…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Integer Scaling" xml:space="preserve">
@@ -4440,6 +4473,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ネイティブアスペクト比と一致する解像度のみ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Opted-out" xml:space="preserve">
+        <source>Opted-out</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Optional display specific adaptation is awaiting installation:" xml:space="preserve">
+        <source>Optional display specific adaptation is awaiting installation:</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Other Apple display" xml:space="preserve">
         <source>Other Apple display</source>
         <target state="translated">他のApple製ディスプレイ</target>
@@ -4635,9 +4676,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">製品名</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Protect the position of %@" xml:space="preserve">
-        <source>Protect the position of %@</source>
-        <target state="translated">%@の位置を保護</target>
+      <trans-unit id="Protect the position of %@%@" xml:space="preserve">
+        <source>Protect the position of %1$@%2$@</source>
+        <target state="translated">%1$@%2$@の位置を保護</target>
         <note/>
       </trans-unit>
       <trans-unit id="Provided by EDID" xml:space="preserve">
@@ -4705,9 +4746,21 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">オペレーティングシステムによって取得したEDIDデータを読み込みます。このデータはさまざまな理由でシステムによって変更されることがあります。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Reapply" xml:space="preserve">
+        <source>Reapply</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reapply Adaptations" xml:space="preserve">
+        <source>Reapply Adaptations</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Reapply DDC settings on wake" xml:space="preserve">
         <source>Reapply DDC settings on wake</source>
         <target state="translated">スリープ解除時にDDC設定を再適用</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reapply Display Adaptations" xml:space="preserve">
+        <source>Reapply Display Adaptations</source>
         <note/>
       </trans-unit>
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
@@ -4870,9 +4923,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">お気に入り%lldから削除</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Remove layout protection for %@" xml:space="preserve">
-        <source>Remove layout protection for %@</source>
-        <target state="translated">%@のレイアウト保護を削除</target>
+      <trans-unit id="Remove layout protection for %@%@" xml:space="preserve">
+        <source>Remove layout protection for %1$@%2$@</source>
+        <target state="translated">%1$@%2$@のレイアウト保護を削除</target>
         <note/>
       </trans-unit>
       <trans-unit id="Remove synchronization for %@" xml:space="preserve">
@@ -4903,6 +4956,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Reset All Display Settings" xml:space="preserve">
         <source>Reset All Display Settings</source>
         <target state="translated">すべてのディスプレイ設定をリセット</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset All Settings" xml:space="preserve">
+        <source>Reset All Settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reset App Settings…" xml:space="preserve">
@@ -4957,7 +5014,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reset Warning Dismissals" xml:space="preserve">
         <source>Reset Warning Dismissals</source>
-        <target state="translated">警告の拒否をリセット</target>
+        <target state="translated">棄却警告をリセット</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset all VMM7100 devices before wake or unlock reinitialization for this display" xml:space="preserve">
@@ -5542,7 +5599,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show and snap to slider markers for favorites and special resolutions." xml:space="preserve">
         <source>Show and snap to slider markers for favorites and special resolutions.</source>
-        <target state="translated">お気に入りや特別な解像度のスライダのマーカを表示しスナップ</target>
+        <target state="translated">お気に入りや特別な解像度のマーカを表示してスナップ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show app icon in the menu bar" xml:space="preserve">
@@ -6084,6 +6141,12 @@ This operation does not reset the display itself.</source>
 この操作ではディスプレイそのものはリセットされません。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The app will reset all DDC feature settings to its defaults.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
+        <source>The app will reset all DDC feature settings to its defaults.
+
+This operation does not reset the display itself.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
         <source>The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
         <target state="translated">外部ディスプレイの接続で、内蔵ディスプレイが切断されるよう構成されています。内蔵ディスプレイを手動で切断するか、アプリを再起動すれば、この機能が再度有効となります。</target>
@@ -6117,6 +6180,26 @@ This operation does not reset the display itself.</source>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
         <target state="translated">あらかじめディスプレイを切断している場合、ディスプレイの検出時または物理的接続時に自動的に切断します。この設定は予期しない問題（互換性のないディスプレイとの接続-切断の繰り返しや、ディスプレイを接続できない）を引き起こすことがありますので、注意してください!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully." xml:space="preserve">
+        <source>The operation completed successfully.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully. Go to Settings &gt; Groups to further configure display groups and the layout protection feature!" xml:space="preserve">
+        <source>The operation completed successfully. Go to Settings &gt; Groups to further configure display groups and the layout protection feature!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully. Please Apply the configuration changes and follow further instructions!" xml:space="preserve">
+        <source>The operation completed successfully. Please Apply the configuration changes and follow further instructions!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation could not be performed at this time." xml:space="preserve">
+        <source>The operation could not be performed at this time.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation could not be performed." xml:space="preserve">
+        <source>The operation could not be performed.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
@@ -6390,7 +6473,7 @@ Intel Mac（このMacなど）では、この機能が期待通りに動作し�
 You can dismiss this notification - in this case the changes will be applied when the virtual screen is connected next time.</source>
         <target state="translated">すべての構成変更を行うには、この仮想スクリーンを再接続する必要があります! この操作中は、ディスプレイをしばらく使用できなくなります!
 
-この通知を拒否することができます - この場合、次に仮想スクリーンを接続したときに変更を適用します。</target>
+この通知を閉じることができます - この場合、次に仮想スクリーンを接続したときに変更を適用します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This virtual screen should now be connected" xml:space="preserve">
@@ -6665,7 +6748,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Uniformity Correction" xml:space="preserve">
         <source>Uniformity Correction</source>
-        <target state="translated">同一性補正</target>
+        <target state="translated">均一性補正</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unknown" xml:space="preserve">
@@ -6963,6 +7046,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">読み込み時の応答待ち時間</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Waiting for approval" xml:space="preserve">
+        <source>Waiting for approval</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Wake delay" xml:space="preserve">
         <source>Wake delay</source>
         <target state="translated">スリープ解除遅延時間</target>
@@ -7075,7 +7162,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like &quot;Make fine scale default&quot; or control &quot;All suitable screens&quot; simultaneously) that modify the default behavior of the brightness keys will not apply." xml:space="preserve">
         <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
-        <target state="translated">このオプションを選択すると、追加のソフトウェア輝度制御機能を使わずApple製ディスプレイを接続しても、ネイティブ輝度キーをmacOSの制御下に置きます。しかしながらこの場合は、輝度キーのデフォルト動作を変更するさまざまな設定（「微細スケールをデフォルトにする」や「すべての適切な画面」を同時に制御するなど）は適用しません。</target>
+        <target state="translated">このオプションを選択すると、追加のソフトウェア輝度制御機能を使わずApple製ディスプレイを接続しても、ネイティブ輝度キーをmacOSの制御下に置きます。しかしながらこの場合は、輝度キーのデフォルト動作を変更するさまざまな設定（「微細スケールをデフォルトにする」や「適用できるすべての画面」を同時に制御するなど）には適用しません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Without Screen Recording permissions this feature will not work!" xml:space="preserve">
@@ -7524,6 +7611,10 @@ Are sure you want to continue?</source>
       <trans-unit id="⚠️ Unable to present EDID data." xml:space="preserve">
         <source>⚠️ Unable to present EDID data.</source>
         <target state="translated">⚠️ EDIDデータを表示できません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
+        <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <note/>
       </trans-unit>
     </body>

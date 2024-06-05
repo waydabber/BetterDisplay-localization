@@ -83,6 +83,10 @@
         <target state="translated">%@%@%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@%@%@%@" xml:space="preserve">
+        <source>%1$@%2$@%3$@%4$@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@%@%@%@%@" xml:space="preserve">
         <source>%1$@%2$@%3$@%4$@%5$@</source>
         <target state="translated">%1$@%2$@%3$@%4$@%5$@</target>
@@ -799,6 +803,10 @@ Az AliPay Kínában érhető el.</target>
         <target state="translated">Alkalmazás</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Applied" xml:space="preserve">
+        <source>Applied</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
         <source>Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
         <target state="translated">Mind külső kijelző fizikai csatlakoztatására, mind az alkalmazás használatával történő újbóli csatlakoztatására vonatkozik. Az alkalmazás nem fogja újracsatlakoztatni a beépített kijelzőt, ha engedélyezi az összes kijelző szétkapcsolását!</target>
@@ -882,6 +890,10 @@ Az AliPay Kínában érhető el.</target>
       <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
         <source>Are sure you want to quit the app?</source>
         <target state="translated">Biztos, hogy ki akar lépni az alkalmazásból?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are sure you want to reapply manufacturer specific adaptations for this display?" xml:space="preserve">
+        <source>Are sure you want to reapply manufacturer specific adaptations for this display?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
@@ -1473,9 +1485,17 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Aktivációs szabályok beállítása</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure flexible scaling for %@" xml:space="preserve">
+        <source>Configure flexible scaling for %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure full screen stream to this display" xml:space="preserve">
         <source>Configure full screen stream to this display</source>
         <target state="translated">Streamelés konfigurálása erre a kijelzőre</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure layout protection for %@" xml:space="preserve">
+        <source>Configure layout protection for %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure virtual screen mirroring" xml:space="preserve">
@@ -2403,6 +2423,10 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Kijelző</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Display Adaptations" xml:space="preserve">
+        <source>Display Adaptations</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Display Attributes" xml:space="preserve">
         <source>Display Attributes</source>
         <target state="translated">Kijelző tulajdonságok</target>
@@ -2997,6 +3021,10 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Az F14/F15 a PC-s billentyűzeteken a Scroll Lock és a Pause, egyes Logitech billentyűzeteken pedig a fényerőgombokat jelenti.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Failed" xml:space="preserve">
+        <source>Failed</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Favorite" xml:space="preserve">
         <source>Favorite</source>
         <target state="translated">Kedvenc</target>
@@ -3549,6 +3577,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling" xml:space="preserve">
         <source>Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling</source>
         <target state="translated">Köztes billentyű/OSD lépés semleges 100%-nál HDR felskálázáskor</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Install Display Adaptation…" xml:space="preserve">
+        <source>Install Display Adaptation…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Integer Scaling" xml:space="preserve">
@@ -4441,6 +4473,14 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Csak natív képaránnyal egyező felbontások</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Opted-out" xml:space="preserve">
+        <source>Opted-out</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Optional display specific adaptation is awaiting installation:" xml:space="preserve">
+        <source>Optional display specific adaptation is awaiting installation:</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Other Apple display" xml:space="preserve">
         <source>Other Apple display</source>
         <target state="translated">Egyéb Apple kijelző</target>
@@ -4636,9 +4676,9 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Terméknév</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Protect the position of %@" xml:space="preserve">
-        <source>Protect the position of %@</source>
-        <target state="translated">%@ elrendezésének védelme</target>
+      <trans-unit id="Protect the position of %@%@" xml:space="preserve">
+        <source>Protect the position of %1$@%2$@</source>
+        <target state="translated">%1$@%2$@ elrendezésének védelme</target>
         <note/>
       </trans-unit>
       <trans-unit id="Provided by EDID" xml:space="preserve">
@@ -4706,9 +4746,21 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Olvassa az operációs rendszer által letöltött EDID-adatokat. Ezeket az adatokat a rendszer különböző okokból módosíthatja.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Reapply" xml:space="preserve">
+        <source>Reapply</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reapply Adaptations" xml:space="preserve">
+        <source>Reapply Adaptations</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Reapply DDC settings on wake" xml:space="preserve">
         <source>Reapply DDC settings on wake</source>
         <target state="translated">DDC beállítások újraalkalmazása ébredéskor</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reapply Display Adaptations" xml:space="preserve">
+        <source>Reapply Display Adaptations</source>
         <note/>
       </trans-unit>
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
@@ -4871,9 +4923,9 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Kedvenc %lld eltávolítása</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Remove layout protection for %@" xml:space="preserve">
-        <source>Remove layout protection for %@</source>
-        <target state="translated">%@ elrendezés védelmének törlése</target>
+      <trans-unit id="Remove layout protection for %@%@" xml:space="preserve">
+        <source>Remove layout protection for %1$@%2$@</source>
+        <target state="translated">%1$@%2$@ elrendezés védelmének törlése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Remove synchronization for %@" xml:space="preserve">
@@ -4904,6 +4956,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Reset All Display Settings" xml:space="preserve">
         <source>Reset All Display Settings</source>
         <target state="translated">Kijelző beállítások reset</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset All Settings" xml:space="preserve">
+        <source>Reset All Settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reset App Settings…" xml:space="preserve">
@@ -6085,6 +6141,12 @@ This operation does not reset the display itself.</source>
 Ez a művelet nem állítja vissza magát a kijelzőt.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The app will reset all DDC feature settings to its defaults.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
+        <source>The app will reset all DDC feature settings to its defaults.
+
+This operation does not reset the display itself.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted." xml:space="preserve">
         <source>The built-in display is configured to be disconnected when an external display is connected. This setting will be re-enabled when the built-in display is manually disconnected again or the app is restarted.</source>
         <target state="translated">A beépített kijelző úgy van beállítva, hogy külső kijelző csatlakoztatása esetén a kijelzőt leválasztásra kerül. Ez a beállítás újra aktiválódik, amikor a beépített kijelzőt manuálisan ismét leválasztja, vagy az alkalmazás újraindul.</target>
@@ -6118,6 +6180,26 @@ Ez a művelet nem állítja vissza magát a kijelzőt.</target>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
         <target state="translated">A kijelző automatikusan leválasztásra került az érzékelésekor, vagy a fizikai csatlakoztatáskor, ha az alkalmazás segítségével korábban már le lett választva. Ez a beállítás nem várt problémákat okozhat (csatlakoztatás-leválasztás ciklus nem kompatibilis kijelzőkkel, legalább egy csatlakoztatott kijelző hiánya) - óvatosan használja!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully." xml:space="preserve">
+        <source>The operation completed successfully.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully. Go to Settings &gt; Groups to further configure display groups and the layout protection feature!" xml:space="preserve">
+        <source>The operation completed successfully. Go to Settings &gt; Groups to further configure display groups and the layout protection feature!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully. Please Apply the configuration changes and follow further instructions!" xml:space="preserve">
+        <source>The operation completed successfully. Please Apply the configuration changes and follow further instructions!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation could not be performed at this time." xml:space="preserve">
+        <source>The operation could not be performed at this time.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation could not be performed." xml:space="preserve">
+        <source>The operation could not be performed.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the factory EDID. The display will be redetected as a different display if the current EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
@@ -6964,6 +7046,10 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Várakozási idő olvasás esetén</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Waiting for approval" xml:space="preserve">
+        <source>Waiting for approval</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Wake delay" xml:space="preserve">
         <source>Wake delay</source>
         <target state="translated">Ébredési késleltetés</target>
@@ -7525,6 +7611,10 @@ Biztos, hogy folytatni szeretné?</target>
       <trans-unit id="⚠️ Unable to present EDID data." xml:space="preserve">
         <source>⚠️ Unable to present EDID data.</source>
         <target state="translated">⚠️ Az EDID adat nem megjeleníthető.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
+        <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <note/>
       </trans-unit>
     </body>
