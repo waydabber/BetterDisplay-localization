@@ -88,11 +88,6 @@
         <target state="translated">%1$@%2$@%3$@%4$@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@%@%@%@%@" xml:space="preserve">
-        <source>%1$@%2$@%3$@%4$@%5$@</source>
-        <target state="translated">%1$@%2$@%3$@%4$@%5$@</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%@, %@" xml:space="preserve">
         <source>%@, %@</source>
         <target state="translated">%@、%@</target>
@@ -220,6 +215,7 @@
       </trans-unit>
       <trans-unit id="A display group with the name '%@' already exists." xml:space="preserve">
         <source>A display group with the name '%@' already exists.</source>
+        <target state="translated">ディスプレイグループに「%@」という名前はすでに使われています。</target>
         <note/>
       </trans-unit>
       <trans-unit id="A display is present which is not fully controllable without the app" xml:space="preserve">
@@ -731,6 +727,11 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">他のアプリが画面のカラーや輝度を繰り返し変更しています - これは%@が行ってる動作と衝突しています。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Any Image Adjustment" xml:space="preserve">
+        <source>Any Image Adjustment</source>
+        <target state="translated">画像調整</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Any group member can be a sync source" xml:space="preserve">
         <source>Any group member can be a sync source</source>
         <target state="translated">どのグループメンバーも同期ソースに設定可能</target>
@@ -900,7 +901,7 @@ AliPayは中国で使用可能です。</target>
       </trans-unit>
       <trans-unit id="Are sure you want to reapply model specific adaptations for this display?" xml:space="preserve">
         <source>Are sure you want to reapply model specific adaptations for this display?</source>
-        <target state="translated">このディスプレイ用のメーカー固有アダプテーションを再適用してもよろしいですか?</target>
+        <target state="translated">このディスプレイ用のメーカー固有カスタム設定を再適用してもよろしいですか?</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
@@ -2434,7 +2435,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Display Adaptations" xml:space="preserve">
         <source>Display Adaptations</source>
-        <target state="translated">ディスプレイアダプテーション</target>
+        <target state="translated">ディスプレイカスタム設定</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display Attributes" xml:space="preserve">
@@ -3592,7 +3593,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Install Display Adaptation…" xml:space="preserve">
         <source>Install Display Adaptation…</source>
-        <target state="translated">ディスプレイアダプテーションをインストール...</target>
+        <target state="translated">ディスプレイカスタム設定をインストール...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Integer Scaling" xml:space="preserve">
@@ -3977,7 +3978,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Match vendor, model, name" xml:space="preserve">
         <source>Match vendor, model, name</source>
-        <target state="translated">ベンダー、モデル、名称が一致</target>
+        <target state="translated">ベンダー、モデル、名前が一致</target>
         <note/>
       </trans-unit>
       <trans-unit id="Matches default resolution" xml:space="preserve">
@@ -4487,12 +4488,12 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Opted-out" xml:space="preserve">
         <source>Opted-out</source>
-        <target state="translated">オプトアウト</target>
+        <target state="translated">使用しない</target>
         <note/>
       </trans-unit>
       <trans-unit id="Optional display specific adaptation is awaiting installation:" xml:space="preserve">
         <source>Optional display specific adaptation is awaiting installation:</source>
-        <target state="translated">オプションのディスプレイ固有アダプテーションがインストール待機中:</target>
+        <target state="translated">オプションのディスプレイ固有カスタム設定のインストール待機中:</target>
         <note/>
       </trans-unit>
       <trans-unit id="Other Apple display" xml:space="preserve">
@@ -4767,7 +4768,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reapply Adaptations" xml:space="preserve">
         <source>Reapply Adaptations</source>
-        <target state="translated">アダプテーションを再適用</target>
+        <target state="translated">カスタム設定を再適用</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reapply DDC settings on wake" xml:space="preserve">
@@ -6209,6 +6210,11 @@ This operation does not reset the display itself.</source>
 A new display group with the name '%@' was created. The display group is currently not enabled.
 
 Enable and configure the created display group (including layout protection) under Settings &gt; Groups!</source>
+        <target state="translated">操作は正しく完了しました。
+
+「%@」 という名前の新規ディスプレイグループが作成されました。ディスプレイグループは現在有効化されていません。
+
+設定 &gt; グループ からディスプレイグループを有効化と構成を行ってください（レイアウト保護を含みます）!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully. Please Apply the configuration changes and follow further instructions!" xml:space="preserve">
@@ -6447,7 +6453,7 @@ If you can't turn the display back on using the app, try reconnecting the displa
 
 一部のディスプレイはこの機能に対応していないため、電源がオフにならなかったり、オフのままになることがあります。
 
-アプリからディスプレイをオンに戻せない場合は、ディスプレイを手動で再接続してみてください（MacBookのディスプレイの場合は、蓋を閉じてから開けてください）。</target>
+アプリからディスプレイをオンに戻せない場合は、ディスプレイを手動で再接続してみてください（MacBookのディスプレイの場合は、ディスプレイを一度閉じてから開けてください）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should remove the display from the display layout and make the display enter standby mode.&#10;&#10;Some displays are not compatible with this feature and may not turn off or remain off.&#10;&#10;If you can't turn the display back on using the app, try reconnecting the display manually (or in case of the MacBook display, close and open the lid)." xml:space="preserve">
@@ -6460,7 +6466,7 @@ If you can't turn the display back on using the app, try reconnecting the displa
 
 一部のディスプレイはこの機能に対応していないため、電源がオフにならなかったり、オフのままになることがあります。
 
-アプリからディスプレイをオンに戻せない場合は、ディスプレイを手動で再接続してみてください（MacBookのディスプレイの場合は、蓋を開閉し直してください）。</target>
+アプリからディスプレイをオンに戻せない場合は、ディスプレイを手動で再接続してみてください（MacBookのディスプレイの場合は、ディスプレイを一度閉じてから開けてください）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should remove the display from the display layout.&#10;&#10;Please note that on Intel Macs (such as this Mac) the feature might not work as expected!&#10;&#10;IMPORTANT: While the display is in a disconnected state (via the app), physically turning the display off, removing the cable or (for a built-in display) closing the lid may result in an inability to turn any displays back on (until a reboot)!" xml:space="preserve">
@@ -7282,7 +7288,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>
-        <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目にアプリをドラッグできます。</target>
+        <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目 にアプリをドラッグできます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can change DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
@@ -7365,29 +7371,14 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">バイト</target>
         <note/>
       </trans-unit>
-      <trans-unit id="connected" xml:space="preserve">
-        <source>connected</source>
-        <target state="translated">接続済み</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="days" xml:space="preserve">
         <source>days</source>
         <target state="translated">日</target>
         <note/>
       </trans-unit>
-      <trans-unit id="disabled" xml:space="preserve">
-        <source>disabled</source>
-        <target state="translated">無効化</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="disconnected" xml:space="preserve">
         <source>disconnected</source>
         <target state="translated">切断済み</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="disconnected (with sleep)" xml:space="preserve">
-        <source>disconnected (with sleep)</source>
-        <target state="translated">切断済み（スリープ中）</target>
         <note/>
       </trans-unit>
       <trans-unit id="forced" xml:space="preserve">
@@ -7398,11 +7389,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="hexadecimal numbers" xml:space="preserve">
         <source>hexadecimal numbers</source>
         <target state="translated">16進数</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="inactive" xml:space="preserve">
-        <source>inactive</source>
-        <target state="translated">アクティブでない</target>
         <note/>
       </trans-unit>
       <trans-unit id="inch" xml:space="preserve">
