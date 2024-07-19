@@ -6,4 +6,9 @@ For more info on how to contribute to the BetterDisplay localization effort, che
 
 https://github.com/waydabber/BetterDisplay/discussions/2165
 
-For the German localization, there is a [glossary](Localization%20Glossary%20German.markdown) available.
+### Glossaries
+
+For the some localizations, a glossary is available:
+
+- [German](Localization%20Glossary%20German.markdown)
+- [Polish](Localization%20Glossary%20Polish.markdown)
