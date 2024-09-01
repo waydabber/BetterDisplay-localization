@@ -1,34 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="BetterDisplay/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
+  <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5230g"/>
     </header>
     <body>
-      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+      <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">Brighten displays with ${applicationName}</mrk>
+        </source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dim displays with ${applicationName}" xml:space="preserve">
+        <source>
+          <mrk mtype="x-set" mid="0">Dim displays with ${applicationName}</mrk>
+        </source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5230g"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
         <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
         <note>Bundle display name</note>
       </trans-unit>
-      <trans-unit id="CFBundleName" xml:space="preserve">
+      <trans-unit id="CFBundleName" translate="no" xml:space="preserve">
         <source>BetterDisplay</source>
-        <target state="translated">BetterDisplay</target>
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSFileProviderDomainUsageDescription" xml:space="preserve">
         <source>The app needs to modify the system configuration to save the edited display data.</source>
-        <target state="translated">L'app deve modificare la configurazione del sistema per salvare i dati di visualizzazione modificati.</target>
+        <target state="translated">L'app deve modificare la configurazione di sistema per salvare le impostazioni modificate relative al display.</target>
         <note>Privacy - Access to a File Provide Domain Usage Description</note>
       </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+      <trans-unit id="NSHumanReadableCopyright" translate="no" xml:space="preserve">
         <source>Copyright Ⓒ waydabber/KodeON</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
-  <file original="BetterDisplay/Localizable.xcstrings" source-language="en" target-language="it" datatype="plaintext">
+  <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5230g"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -142,8 +159,20 @@
         <source>%1$lld%2$@</source>
         <note/>
       </trans-unit>
-      <trans-unit id="%lld, %@" xml:space="preserve">
-        <source>%1$lld, %2$@</source>
+      <trans-unit id="%lld-bit" xml:space="preserve">
+        <source>%lld-bit</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%llu" xml:space="preserve">
+        <source>%llu</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%llu bits per sample" xml:space="preserve">
+        <source>%llu bits per sample</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%llu x %llu" xml:space="preserve">
+        <source>%1$llu x %2$llu</source>
         <note/>
       </trans-unit>
       <trans-unit id="%u" xml:space="preserve">
@@ -289,6 +318,14 @@
         <target state="translated">L'accessibilità è configurata correttamente</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Acquired" xml:space="preserve">
+        <source>Acquired</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Acquiring…" xml:space="preserve">
+        <source>Acquiring…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Activate" xml:space="preserve">
         <source>Activate</source>
         <target state="translated">Attivo</target>
@@ -345,11 +382,6 @@
       <trans-unit id="Add and remove favorite resolutions via long press" xml:space="preserve">
         <source>Add and remove favorite resolutions via long press</source>
         <target state="translated">Aggiungi e rimuovi le risoluzioni preferite tramite pressione prolungata</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Add near-native HiDPI resolution with flexible scaling" xml:space="preserve">
-        <source>Add near-native HiDPI resolution with flexible scaling</source>
-        <target state="translated">Aggiungi risoluzione HiDPI quasi nativa con ridimensionamento flessibile</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
@@ -625,11 +657,6 @@ Puoi farlo in Impostazioni di sistema o l'app può farlo per te (sono necessarie
       <trans-unit id="Alphanumeric serial" xml:space="preserve">
         <source>Alphanumeric serial</source>
         <target state="translated">Serie alfanumerica</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Alphanumeric serial number" xml:space="preserve">
-        <source>Alphanumeric serial number</source>
-        <target state="translated">Numero di serie alfanumerico</target>
         <note/>
       </trans-unit>
       <trans-unit id="Already Have a License?" xml:space="preserve">
@@ -968,6 +995,14 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">La luminosità automatica (sensore di luce ambiente) potrebbe spegnere l'upscaling XDR a seconda delle condizioni di illuminazione quando viene utilizzata la luminosità combinata.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Auto-Configuration Done" xml:space="preserve">
+        <source>Auto-Configuration Done</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Auto-Configure DDC Features" xml:space="preserve">
+        <source>Auto-Configure DDC Features</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Auto-connect all displays on quit" xml:space="preserve">
         <source>Auto-connect all displays on quit</source>
         <target state="translated">Connessione automatica di tutti gli schermi all'uscita</target>
@@ -1005,6 +1040,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Automatic (based on display type)" xml:space="preserve">
         <source>Automatic (based on display type)</source>
         <target state="translated">Automatico (basato sul tipo di visualizzazione)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatic configuration of DDC features is not available. If DDC control does not work properly based on manual configuration and testing, you should disable DDC support." xml:space="preserve">
+        <source>Automatic configuration of DDC features is not available. If DDC control does not work properly based on manual configuration and testing, you should disable DDC support.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
@@ -1065,6 +1104,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Riordina automaticamente il menu delle app</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Available" xml:space="preserve">
+        <source>Available</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Base64 encoded string" xml:space="preserve">
         <source>Base64 encoded string</source>
         <target state="translated">Stringa codificata Base64</target>
@@ -1104,6 +1147,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Al di sotto di questo livello sulla scala combinata di luminosità l'app utilizza un software aggiuntivo dimming (come il controllo della retroilluminazione hardware ha raggiunto il livello più basso possibile).</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Bit Depth" xml:space="preserve">
+        <source>Bit Depth</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
         <source>Blue Black Level (DDC)</source>
         <target state="translated">Livello Nero Blu (DDC)</target>
@@ -1136,6 +1183,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Brighten Displays" xml:space="preserve">
         <source>Brighten Displays</source>
         <target state="translated">Schermi Luminosi</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brighten all displays." xml:space="preserve">
+        <source>Brighten all displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness" xml:space="preserve">
@@ -1254,7 +1305,6 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       </trans-unit>
       <trans-unit id="Calibrate (Requires Enabled HDR)…" xml:space="preserve">
         <source>Calibrate (Requires Enabled HDR)…</source>
-        <target state="translated">…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Calibrate Upscaling…" xml:space="preserve">
@@ -1272,8 +1322,36 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Permessi</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Centered menu bar icon" xml:space="preserve">
+        <source>Centered menu bar icon</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
+        <source>Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${rangedFeature} of ${displayEntity} with an offset of ${valueParameter} percent." xml:space="preserve">
+        <source>Change ${rangedFeature} of ${displayEntity} with an offset of ${valueParameter} percent.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${rangedFeature} to value ${valueParameter} for all displays." xml:space="preserve">
+        <source>Change ${rangedFeature} to value ${valueParameter} for all displays.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Change Activation Priority…" xml:space="preserve">
         <source>Change Activation Priority…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change DDC audio volume of ${displayEntity} to ${volume}." xml:space="preserve">
+        <source>Change DDC audio volume of ${displayEntity} to ${volume}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change brightness of ${displayEntity} to ${brightness}." xml:space="preserve">
+        <source>Change brightness of ${displayEntity} to ${brightness}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change brightness to ${brightness} for all displays." xml:space="preserve">
+        <source>Change brightness to ${brightness} for all displays.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -1291,6 +1369,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Controllo gli Aggiornamenti…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Checking…" xml:space="preserve">
+        <source>Checking…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Chunk size" xml:space="preserve">
         <source>Chunk size</source>
         <note/>
@@ -1300,9 +1382,9 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Clicca sull'icona per aprire/chiudere il menu dell'app!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Click to show/hide features..." xml:space="preserve">
-        <source>Click to show/hide features...</source>
-        <target state="translated">Fare clic per mostrare/nascondere le caratteristiche...</target>
+      <trans-unit id="Click to show/hide features…" xml:space="preserve">
+        <source>Click to show/hide features…</source>
+        <target state="translated">Fare clic per mostrare/nascondere le caratteristiche…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -1315,6 +1397,14 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Profondità Colori</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Color Gamut" xml:space="preserve">
+        <source>Color Gamut</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color Mode" xml:space="preserve">
+        <source>Color Mode</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Color Profile" xml:space="preserve">
         <source>Color Profile</source>
         <target state="translated">Profilo colore</target>
@@ -1325,6 +1415,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Configurazione del profilo utente</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Color Profile changed for %@." xml:space="preserve">
+        <source>Color Profile changed for %@.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">Temperatura Colore</target>
@@ -1333,6 +1427,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
         <target state="translated">Cambiamenti di colore, upscaling e dimming tramite regolazioni della tabella di colore clip contenuto HDR. Con questo abilitato, l'app ripristina la tabella dei colori quando non sono necessarie regolazioni. Questo potrebbe distrarre o causare uno schermo nero su alcune configurazioni.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color mode changed for %@." xml:space="preserve">
+        <source>Color mode changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1414,6 +1512,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Configura Controlli Ddc…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure DDC Features…" xml:space="preserve">
+        <source>Configure DDC Features…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
         <source>Configure Input Sources…</source>
         <target state="translated">Configura Sorgenti Di Ingresso…</target>
@@ -1426,6 +1528,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       </trans-unit>
       <trans-unit id="Configure activation rules" xml:space="preserve">
         <source>Configure activation rules</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure current values as neutral (default) values for relevant features" xml:space="preserve">
+        <source>Configure current values as neutral (default) values for relevant features</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure flexible scaling for %@" xml:space="preserve">
@@ -1529,11 +1635,6 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Connection management settings" xml:space="preserve">
         <source>Connection management settings</source>
         <target state="translated">Impostazioni di gestione della connessione</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Connection status" xml:space="preserve">
-        <source>Connection status</source>
-        <target state="translated">Stato della connessione</target>
         <note/>
       </trans-unit>
       <trans-unit id="Connects the virtual screen and starts full screen streaming from the virtual screen to the display. Also sets up the full screen stream to automatically start whenever the display is connected." xml:space="preserve">
@@ -1673,6 +1774,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Identificatori Attuali (Alternativi)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Current Display Mode (Connection Level)" xml:space="preserve">
+        <source>Current Display Mode (Connection Level)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Current audio device has no native volume control" xml:space="preserve">
         <source>Current audio device has no native volume control</source>
         <target state="translated">Il dispositivo audio attuale non ha il controllo nativo del volume</target>
@@ -1711,6 +1816,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Current system display name" xml:space="preserve">
         <source>Current system display name</source>
         <target state="translated">Nome attuale dello schermo di sistema</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Current value: %u" xml:space="preserve">
+        <source>Current value: %u</source>
         <note/>
       </trans-unit>
       <trans-unit id="Currently available as HiDPI" xml:space="preserve">
@@ -1852,11 +1961,6 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Sorgenti di Ingresso DDC</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC Mute control" xml:space="preserve">
-        <source>DDC Mute control</source>
-        <target state="translated">Controllo muto DDC</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="DDC Power" xml:space="preserve">
         <source>DDC Power</source>
         <target state="translated">DDC Accensione</target>
@@ -1872,14 +1976,21 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Effetti del controllo del volume DDC:</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC Volume control" xml:space="preserve">
-        <source>DDC Volume control</source>
-        <target state="translated">Regolazione volume DDC</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="DDC allows for hardware backlight, volume control, input selection and various other features. Requires a compatible external display. Most televisions don't have support DDC while most displays do." xml:space="preserve">
         <source>DDC allows for hardware backlight, volume control, input selection and various other features. Requires a compatible external display. Most televisions don't have support DDC while most displays do.</source>
         <target state="translated">DDC consente la retroilluminazione hardware, controllo del volume, selezione degli ingressi e varie altre funzionalità. Richiede un display esterno compatibile. La maggior parte dei televisori non supporta DDC mentre la maggior parte degli schermi lo fa.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC capabilities report" xml:space="preserve">
+        <source>DDC capabilities report</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC channel" xml:space="preserve">
+        <source>DDC channel</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC communication" xml:space="preserve">
+        <source>DDC communication</source>
         <note/>
       </trans-unit>
       <trans-unit id="DDC communication settings" xml:space="preserve">
@@ -1902,6 +2013,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">I dati DDC per il valore ON sono</target>
         <note/>
       </trans-unit>
+      <trans-unit id="DDC features &amp; capabilities" xml:space="preserve">
+        <source>DDC features &amp; capabilities</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="DDC hardware brightness might be restored according to the per-display settings." xml:space="preserve">
         <source>DDC hardware brightness might be restored according to the per-display settings.</source>
         <target state="translated">La luminosità hardware DDC potrebbe essere ripristinata secondo le impostazioni per display.</target>
@@ -1915,6 +2030,11 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="DDC messaging" xml:space="preserve">
         <source>DDC messaging</source>
         <target state="translated">Messaggistica DDC</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC mute control" xml:space="preserve">
+        <source>DDC mute control</source>
+        <target state="translated">Controllo muto DDC</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC read is not universally supported by otherwise DDC capable displays." xml:space="preserve">
@@ -1940,6 +2060,11 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="DDC values on startup" xml:space="preserve">
         <source>DDC values on startup</source>
         <target state="translated">Valori DDC all'avvio</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC volume control" xml:space="preserve">
+        <source>DDC volume control</source>
+        <target state="translated">Regolazione volume DDC</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC, XDR/HDR upscaling, EDID overrides are not available. Please open the app in native mode - to achieve this, unselect `Open using Rosetta` in the app's Info sheet!" xml:space="preserve">
@@ -2095,9 +2220,17 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Livello alfa del menu app rimovibile</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Detected some interference..." xml:space="preserve">
-        <source>Detected some interference...</source>
-        <target state="translated">Rilevata qualche interferenza...</target>
+      <trans-unit id="Detailed DDC capabilities report" xml:space="preserve">
+        <source>Detailed DDC capabilities report</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Detect DDC Capabilities…" xml:space="preserve">
+        <source>Detect DDC Capabilities…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Detected some interference…" xml:space="preserve">
+        <source>Detected some interference…</source>
+        <target state="translated">Rilevata qualche interferenza…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately." xml:space="preserve">
@@ -2127,6 +2260,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Schermi con luminosità più bassa</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Dim all displays." xml:space="preserve">
+        <source>Dim all displays.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Dim display brightness on screen saver or lock" xml:space="preserve">
         <source>Dim display brightness on screen saver or lock</source>
         <target state="translated">Diminuisci la luminosità del display sul salvaschermo o sulla schermata di blocco</target>
@@ -2135,6 +2272,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Dim the disconnected display (using the currently selected control method for the display) on platforms that do not enable putting a disconnected display to sleep. Fully turns off backlight on compatible devices." xml:space="preserve">
         <source>Dim the disconnected display (using the currently selected control method for the display) on platforms that do not enable putting a disconnected display to sleep. Fully turns off backlight on compatible devices.</source>
         <target state="translated">Diminuisci la luminosità dello schermo disconnesso (usando il metodo di controllo attualmente selezionato per lo schermo) su piattaforme che non consentono di mettere uno schermo disconnesso in sospensione. Spegni completamente la retroilluminazione su dispositivi compatibili.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dimensions" xml:space="preserve">
+        <source>Dimensions</source>
         <note/>
       </trans-unit>
       <trans-unit id="Dimensions (unrotated)" xml:space="preserve">
@@ -2165,6 +2306,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Disable Both in HDR Mode" xml:space="preserve">
         <source>Disable Both in HDR Mode</source>
         <target state="translated">Disabilita entrambi in modalità HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Disable DDC For This Display" xml:space="preserve">
+        <source>Disable DDC For This Display</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disabled" xml:space="preserve">
@@ -2353,11 +2498,6 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       </trans-unit>
       <trans-unit id="Display Adaptations" xml:space="preserve">
         <source>Display Adaptations</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Display Attributes" xml:space="preserve">
-        <source>Display Attributes</source>
-        <target state="translated">Attributi del Display</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display Connect" xml:space="preserve">
@@ -2615,11 +2755,6 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <target state="translated">Metodo Recupero EDID</target>
         <note/>
       </trans-unit>
-      <trans-unit id="EDID UUID" xml:space="preserve">
-        <source>EDID UUID</source>
-        <target state="translated">EDID UUID</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="EDID data not loaded." xml:space="preserve">
         <source>EDID data not loaded.</source>
         <target state="translated">Dati EDID non caricati.</target>
@@ -2628,11 +2763,6 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
       <trans-unit id="EDID data not retrieved." xml:space="preserve">
         <source>EDID data not retrieved.</source>
         <target state="translated">Dati EDID non recuperati.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="EDID serial number" xml:space="preserve">
-        <source>EDID serial number</source>
-        <target state="translated">Numero di serie EDID</target>
         <note/>
       </trans-unit>
       <trans-unit id="EDID version" xml:space="preserve">
@@ -3027,6 +3157,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <target state="translated">Rapporto d'aspetto libero</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Full Range" xml:space="preserve">
+        <source>Full Range</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Full Screen Stream" xml:space="preserve">
         <source>Full Screen Stream</source>
         <target state="translated">Stream a Schermo Intero</target>
@@ -3112,6 +3246,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <target state="translated">Ottieni valore DDC</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get DDC value of ${ddcCommand} from ${displayEntity}." xml:space="preserve">
+        <source>Get DDC value of ${ddcCommand} from ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Ottieni Valore Di Regolazione Immagine</target>
@@ -3125,6 +3263,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
       <trans-unit id="Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." xml:space="preserve">
         <source>Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1.</source>
         <target state="translated">Ottenere il valore corrente di qualsiasi regolazione per il display. Il valore sarà convertito in una scala di 0-1.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get value of ${rangedFeature} for ${displayEntity}." xml:space="preserve">
+        <source>Get value of ${rangedFeature} for ${displayEntity}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Grayscale Framebuffer" xml:space="preserve">
@@ -3155,13 +3297,21 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <source>Groups</source>
         <note/>
       </trans-unit>
+      <trans-unit id="HDR Color Mode" xml:space="preserve">
+        <source>HDR Color Mode</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR Color Profile" xml:space="preserve">
+        <source>HDR Color Profile</source>
+        <target state="translated">Profilo Colore HDR</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
         <source>HDR Color Profile changed for %@.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="HDR Color Profile%@" xml:space="preserve">
-        <source>HDR Color Profile%@</source>
-        <target state="translated">%@ Profilo Colore HDR</target>
+      <trans-unit id="HDR Color mode changed for %@." xml:space="preserve">
+        <source>HDR Color mode changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
@@ -3174,13 +3324,17 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <target state="translated">HDR Attivo</target>
         <note/>
       </trans-unit>
-      <trans-unit id="HDR Status%@" xml:space="preserve">
-        <source>HDR Status%@</source>
-        <target state="translated">Stato HDR %@</target>
+      <trans-unit id="HDR Status" xml:space="preserve">
+        <source>HDR Status</source>
+        <target state="translated">Stato HDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR mode changed for %@." xml:space="preserve">
         <source>HDR mode changed for %@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR/SDR Mode" xml:space="preserve">
+        <source>HDR/SDR Mode</source>
         <note/>
       </trans-unit>
       <trans-unit id="HEX editor styled blocks" xml:space="preserve">
@@ -3234,6 +3388,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
       <trans-unit id="Hidden" xml:space="preserve">
         <source>Hidden</source>
         <target state="translated">Nascosto</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hide Detailed Report…" xml:space="preserve">
+        <source>Hide Detailed Report…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Hide Stream" xml:space="preserve">
@@ -3298,6 +3456,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
       <trans-unit id="Hz" xml:space="preserve">
         <source>Hz</source>
         <target state="translated">Hz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="I2C service name" xml:space="preserve">
+        <source>I2C service name</source>
         <note/>
       </trans-unit>
       <trans-unit id="Icon" xml:space="preserve">
@@ -3370,6 +3532,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
         <source>If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved.</source>
         <target state="translated">Se si desidera utilizzare le schermate virtuali più tardi, è meglio utilizzare la disconnessione in modo da mantenere i dati di configurazione del display macOS.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If your configuration relies on configuration protection for standard operation, you might want to mute notifications about it." xml:space="preserve">
+        <source>If your configuration relies on configuration protection for standard operation, you might want to mute notifications about it.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If your display is not fully compatible with this feature, the app may not be able to turn the backlight off or turn it back on again!&#10;&#10;Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!" xml:space="preserve">
@@ -3504,6 +3670,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Intel</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Internal Pre-Release" xml:space="preserve">
+        <source>Internal Pre-Release</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Invalid mode" xml:space="preserve">
         <source>Invalid mode</source>
         <target state="translated">Modalità non valida</target>
@@ -3551,6 +3721,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="It is advised to leave this on, especially if the custom EDID alters display identity. Without this the app may detect the display as different upon next startup." xml:space="preserve">
         <source>It is advised to leave this on, especially if the custom EDID alters display identity. Without this the app may detect the display as different upon next startup.</source>
         <target state="translated">Si consiglia di lasciare questo su, soprattutto se l'EDID personalizzato altera l'identità di visualizzazione. Senza questo l'app potrebbe rilevare il display come diverso all'avvio successivo.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="It is best to let the app configure relevant features (contrast, color controls) to have the current value set as default. If the currently displayed image is not optimal, use the display's OSD to fix things first and then run detection again before proceeding!" xml:space="preserve">
+        <source>It is best to let the app configure relevant features (contrast, color controls) to have the current value set as default. If the currently displayed image is not optimal, use the display's OSD to fix things first and then run detection again before proceeding!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Keep Above Other Windows" xml:space="preserve">
@@ -3696,6 +3870,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Limita risoluzione cursore e intervallo di scorciatoie da tastiera</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Limited Range" xml:space="preserve">
+        <source>Limited Range</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Limits the resolution range based on the aspect ratio values and the multiplier." xml:space="preserve">
         <source>Limits the resolution range based on the aspect ratio values and the multiplier.</source>
         <target state="translated">Limita l'intervallo di risoluzione in base ai valori del rapporto di aspetto e del moltiplicatore.</target>
@@ -3746,11 +3924,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Dati EDID Caricato</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Location" xml:space="preserve">
-        <source>Location</source>
-        <target state="translated">Posizione</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Long press the mouse button to set and cycle through favorites in the slider." xml:space="preserve">
         <source>Long press the mouse button to set and cycle through favorites in the slider.</source>
         <target state="translated">Premere a lungo il pulsante del mouse per impostare e scorrere i preferiti nel cursore.</target>
@@ -3769,11 +3942,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Main Status" xml:space="preserve">
         <source>Main Status</source>
         <target state="translated">Stato Principale</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Main app menu popup animation" xml:space="preserve">
-        <source>Main app menu popup animation</source>
-        <target state="translated">Animazione popup menu app principale</target>
         <note/>
       </trans-unit>
       <trans-unit id="Main status changed for %@." xml:space="preserve">
@@ -3818,11 +3986,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Manually define the list of resolutions available for this virtual screen. If disabled, the app will create resolutions that match the virtual screen's aspect ratio." xml:space="preserve">
         <source>Manually define the list of resolutions available for this virtual screen. If disabled, the app will create resolutions that match the virtual screen's aspect ratio.</source>
         <target state="translated">Definisci manualmente l'elenco di risoluzioni disponibili per questo schermo virtuale. Se disabilitato, l'app creerà risoluzioni corrispondenti alle proporzioni del display virtuale.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Manufacturer" xml:space="preserve">
-        <source>Manufacturer</source>
-        <target state="translated">Produttore</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mark System Configuration As Unapplied" xml:space="preserve">
@@ -3886,6 +4049,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Max Width" xml:space="preserve">
         <source>Max Width</source>
         <target state="translated">Larghezza massima</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Max value: %u" xml:space="preserve">
+        <source>Max value: %u</source>
         <note/>
       </trans-unit>
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
@@ -4021,6 +4188,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Altre opzioni di configurazione di sistema</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Most displays support hardware controls via the DDC/CI protocol, but features vary. Some, especially TVs and Smart Monitors, may lack DDC support. For the app to function correctly, configure DDC support to match your display’s capabilities. The app can assist if DDC detection is supported." xml:space="preserve">
+        <source>Most displays support hardware controls via the DDC/CI protocol, but features vary. Some, especially TVs and Smart Monitors, may lack DDC support. For the app to function correctly, configure DDC support to match your display’s capabilities. The app can assist if DDC detection is supported.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Mouse Click-through" xml:space="preserve">
         <source>Mouse Click-through</source>
         <target state="translated">Mouse Click-through</target>
@@ -4028,7 +4199,7 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       </trans-unit>
       <trans-unit id="Move Display" xml:space="preserve">
         <source>Move Display</source>
-        <target state="translated">Dimentica Display</target>
+        <target state="translated">Posizione schermo</target>
         <note/>
       </trans-unit>
       <trans-unit id="Move Virtual Screen" xml:space="preserve">
@@ -4058,11 +4229,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Multiplier" xml:space="preserve">
         <source>Multiplier</source>
         <target state="translated">Moltiplicatore</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Mute" xml:space="preserve">
-        <source>Mute</source>
-        <target state="translated">Silenzioso</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mute (DDC)" xml:space="preserve">
@@ -4324,11 +4490,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Valore Di Scostamento</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later." xml:space="preserve">
-        <source>Older macOS versions disallow the use of the HiDPI variant of the native resolution - this adds a near-native mode with 1px vertical row removed as a substitute. Not recommended for macOS Ventura 13.2 and later.</source>
-        <target state="translated">Le versioni più vecchie di macOS non consentono l'uso della variante HiDPI della risoluzione nativa - questo aggiunge una modalità quasi nativa con 1px riga verticale rimossa come sostituzione. Non raccomandato per macOS Ventura 13.2 e successivi.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="On startup &amp; wake" xml:space="preserve">
         <source>On startup &amp; wake</source>
         <target state="translated">All'avvio &amp; risveglio</target>
@@ -4448,9 +4609,17 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Picture in Picture</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Pixel Aspect Ratio" xml:space="preserve">
+        <source>Pixel Aspect Ratio</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Platform" xml:space="preserve">
         <source>Platform</source>
         <target state="translated">Piattaforma</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Please consult the list of supported DDC features below. Use auto-configuration and/or configure each feature manually as needed." xml:space="preserve">
+        <source>Please consult the list of supported DDC features below. Use auto-configuration and/or configure each feature manually as needed.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Please make sure you have your license details saved so you can activate again later!" xml:space="preserve">
@@ -4515,6 +4684,14 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Prefer software over hardware (DDC) for contrast control via main slider and keyboard." xml:space="preserve">
         <source>Prefer software over hardware (DDC) for contrast control via main slider and keyboard.</source>
         <target state="translated">Preferisci software all'hardware (DDC) per il controllo del contrasto tramite cursore principale e tastiera.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Preferred Display Mode (Connection Level)" xml:space="preserve">
+        <source>Preferred Display Mode (Connection Level)</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Preferred Scale" xml:space="preserve">
+        <source>Preferred Scale</source>
         <note/>
       </trans-unit>
       <trans-unit id="Preserve continuity in case of an EDID display identity change" xml:space="preserve">
@@ -4612,9 +4789,17 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <source>Read &amp; Update From Display</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Read failed" xml:space="preserve">
+        <source>Read failed</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Read length (bytes)" xml:space="preserve">
         <source>Read length (bytes)</source>
         <target state="translated">Lunghezza lettura (byte)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Read unsupported" xml:space="preserve">
+        <source>Read unsupported</source>
         <note/>
       </trans-unit>
       <trans-unit id="Read values from display" xml:space="preserve">
@@ -4641,6 +4826,14 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       </trans-unit>
       <trans-unit id="Reapply DDC settings on wake" xml:space="preserve">
         <source>Reapply DDC settings on wake</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Receive configuration protection notifications" xml:space="preserve">
+        <source>Receive configuration protection notifications</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Receive internal pre-release updates" xml:space="preserve">
+        <source>Receive internal pre-release updates</source>
         <note/>
       </trans-unit>
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
@@ -4708,6 +4901,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Green Gain (DDC)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Redetect DDC Capabilities…" xml:space="preserve">
+        <source>Redetect DDC Capabilities…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Redetect Displays" xml:space="preserve">
         <source>Redetect Displays</source>
         <target state="translated">Rilevare i Display</target>
@@ -4723,19 +4920,9 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Frequenza di Aggiornamento</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Refresh Rate%@" xml:space="preserve">
-        <source>Refresh Rate%@</source>
-        <target state="translated">Frequenza di Aggiornamento%@</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Registry location" xml:space="preserve">
         <source>Registry location</source>
         <target state="translated">Posizione del registro</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Registry path" xml:space="preserve">
-        <source>Registry path</source>
-        <target state="translated">Percorso del registro</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reinitialize External Displays" xml:space="preserve">
@@ -4947,11 +5134,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Risoluzione non disponibile</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Resolution%@" xml:space="preserve">
-        <source>Resolution%@</source>
-        <target state="translated">Risoluzione%@</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Restart" xml:space="preserve">
         <source>Restart</source>
         <target state="translated">Riavvia</target>
@@ -5119,20 +5301,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">I tasti scorciatoia di rotazione attivano lo schermo tra modalità ruotare e non ruotare.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Rotation%@" xml:space="preserve">
-        <source>Rotation%@</source>
-        <target state="translated">Rotazione%@</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="SDR Color Profile changed for %@." xml:space="preserve">
-        <source>SDR Color Profile changed for %@.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="SDR Color Profile%@" xml:space="preserve">
-        <source>SDR Color Profile%@</source>
-        <target state="translated">Profilo Colore SDR%@</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="SDR peak brightness adjustment is available in macOS Sequoia and newer. With this enabled, the app deals with this HDR display like it would on macOS Sonoma or earlier. You can still use the Control Center for SDR peak brightness adjustment." xml:space="preserve">
         <source>SDR peak brightness adjustment is available in macOS Sequoia and newer. With this enabled, the app deals with this HDR display like it would on macOS Sonoma or earlier. You can still use the Control Center for SDR peak brightness adjustment.</source>
         <note/>
@@ -5254,6 +5422,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Il display selezionato non è disponibile</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Send DDC ${ddcCommand} with ${valueParameter} to ${displayEntity}." xml:space="preserve">
+        <source>Send DDC ${ddcCommand} with ${valueParameter} to ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Send DDC command" xml:space="preserve">
         <source>Send DDC command</source>
         <target state="translated">Invia comando DDC</target>
@@ -5276,16 +5448,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Serves as a confirmation that the app has launched and adds the app to recent items in the Dock (if the app is installed in the Applications folder)." xml:space="preserve">
         <source>Serves as a confirmation that the app has launched and adds the app to recent items in the Dock (if the app is installed in the Applications folder).</source>
         <target state="translated">Serve come conferma che l'app si sia avviata e aggiunge l'app agli elementi recenti nel Dock (se l'app è installata nella cartella Applicazioni).</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Service Information" xml:space="preserve">
-        <source>Service Information</source>
-        <target state="translated">Informazioni sul servizio</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Service match score" xml:space="preserve">
-        <source>Service match score</source>
-        <target state="translated">Punteggio del servizio</target>
         <note/>
       </trans-unit>
       <trans-unit id="Set All to Hidden" xml:space="preserve">
@@ -5429,6 +5591,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
         <source>Show %@ in the macOS Dock</source>
         <target state="translated">Mostra %@ nel dock macOS</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Detailed Report…" xml:space="preserve">
+        <source>Show Detailed Report…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -5615,11 +5781,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Semplifica notevolmente la navigazione.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Sink type" xml:space="preserve">
-        <source>Sink type</source>
-        <target state="translated">Tipo di lavello</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Skip" xml:space="preserve">
         <source>Skip</source>
         <target state="translated">Salta</target>
@@ -5669,6 +5830,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       </trans-unit>
       <trans-unit id="Some displays require an SCS (Save Current Settings) signal after DDC write so the operation takes effect. For the overwhelming majority of displays it is best to leave this setting off." xml:space="preserve">
         <source>Some displays require an SCS (Save Current Settings) signal after DDC write so the operation takes effect. For the overwhelming majority of displays it is best to leave this setting off.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates." xml:space="preserve">
+        <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Source member must be an Apple display" xml:space="preserve">
@@ -5802,11 +5967,6 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Supportato</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Supported by the display" xml:space="preserve">
-        <source>Supported by the display</source>
-        <target state="translated">Supportato dal display</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Supports Color Profiles" xml:space="preserve">
         <source>Supports Color Profiles</source>
         <target state="translated">Supporta Profili di Colore</target>
@@ -5835,6 +5995,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
       <trans-unit id="Supports variable refresh rate" xml:space="preserve">
         <source>Supports variable refresh rate</source>
         <target state="translated">Supporta la frequenza di aggiornamento variabile</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Suspend Color Adjustments" xml:space="preserve">
+        <source>Suspend Color Adjustments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Swap identical displays" xml:space="preserve">
@@ -6033,9 +6197,29 @@ This operation does not reset the display itself.</source>
         <source>The display group will not activate when other displays are connected beyond group members.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="The display is DDC capable" xml:space="preserve">
+        <source>The display is DDC capable</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
+        <source>The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display might have limited DDC support" xml:space="preserve">
+        <source>The display might have limited DDC support</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The display or connection does not support DDC" xml:space="preserve">
+        <source>The display or connection does not support DDC</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
         <target state="translated">Il display verrà disconnesso automaticamente al rilevamento o alla connessione fisica se è stato disconnesso utilizzando l'app in precedenza. Questa impostazione potrebbe causare problemi inattesi (ciclo di connessione disconnessione con display incompatibili, mancanza di display connessi) - usare con cautela!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu)." xml:space="preserve">
+        <source>The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu).</source>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully." xml:space="preserve">
@@ -6155,6 +6339,10 @@ In caso di guasto, disconnetti e ricollegare fisicamente il display.</target>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <target state="translated">Questo permette il dimmeramento avanzato, le regolazioni del colore e altre caratteristiche come il software XDR/HDR upscaling. Nota: le regolazioni del colore clip contenuto HDR quando in uso attivo. Se questa opzione è disabilitata, l'app farà ricorso al controllo di oscuramento basato su sovrapposizione e utilizza Metal per l'upscaling software XDR/HDR.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support." xml:space="preserve">
+        <source>This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
@@ -6334,8 +6522,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>This virtual screen should now be disconnected</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Title bar &amp; Window Controls" xml:space="preserve">
-        <source>Title bar &amp; Window Controls</source>
+      <trans-unit id="Title Bar &amp; Window Controls" xml:space="preserve">
+        <source>Title Bar &amp; Window Controls</source>
         <target state="translated">Barra del titolo &amp; Controlli della finestra</target>
         <note/>
       </trans-unit>
@@ -6401,11 +6589,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Traditional popups" xml:space="preserve">
         <source>Traditional popups</source>
         <target state="translated">Popup tradizionali</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Transport" xml:space="preserve">
-        <source>Transport</source>
-        <target state="translated">Trasporti</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
@@ -6543,6 +6726,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">UUID</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unable to acquire" xml:space="preserve">
+        <source>Unable to acquire</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unable to configure virtual display" xml:space="preserve">
         <source>Unable to configure virtual display</source>
         <target state="translated">Impossibile configurare il display virtuale</target>
@@ -6659,6 +6846,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Non disponibile</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unsupported by the display" xml:space="preserve">
+        <source>Unsupported by the display</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Update frequency" xml:space="preserve">
         <source>Update frequency</source>
         <note/>
@@ -6729,6 +6920,14 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Value (optional)" xml:space="preserve">
         <source>Value (optional)</source>
         <target state="translated">Valore (opzionale)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Values: %@" xml:space="preserve">
+        <source>Values: %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Variable Refresh Rate" xml:space="preserve">
+        <source>Variable Refresh Rate</source>
         <note/>
       </trans-unit>
       <trans-unit id="Vendor ID" xml:space="preserve">
@@ -7016,12 +7215,12 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Vuoi collegare tutti gli schermi prima di disattivare la gestione della connessione?</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Write EDID Data to Device" xml:space="preserve">
-        <source>Write EDID Data to Device</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Write EDID to Device" xml:space="preserve">
         <source>Write EDID to Device</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Write EDID to Device…" xml:space="preserve">
+        <source>Write EDID to Device…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Write last used values to display" xml:space="preserve">
@@ -7068,6 +7267,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">XDR/HDR compatibile con l'upscaling</target>
         <note/>
       </trans-unit>
+      <trans-unit id="YCbCr" xml:space="preserve">
+        <source>YCbCr</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Year %lld, week %lld" xml:space="preserve">
         <source>Year %1$lld, week %2$lld</source>
         <note/>
@@ -7087,8 +7290,12 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Puoi anche trascinare l'app per accedere agli elementi di sistema in Impostazioni di sistema &gt; Generale.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You can change DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
-        <source>You can change DDC volume and mute control support for this display under "DDC Features…".</source>
+      <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
+        <source>You can detect and configure DDC input select support for this display under "DDC Features…".</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You can detect and configure DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
+        <source>You can detect and configure DDC volume and mute control support for this display under "DDC Features…".</source>
         <target state="translated">Puoi modificare il volume DDC e silenziare il supporto di controllo per questo display sotto "DDC Caratteristiche…".</target>
         <note/>
       </trans-unit>
@@ -7242,6 +7449,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⚠ Si applica il mirroring del display associato!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
+        <source>⚠ Connection color depth (%1$lld-bit) is lower than the framebuffer depth (%2$u-bit). The GPU may use temporal dithering to improve colors.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
         <source>⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
         <note/>
@@ -7249,6 +7460,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="⚠ Image adjustment controls are unavailable." xml:space="preserve">
         <source>⚠ Image adjustment controls are unavailable.</source>
         <target state="translated">⚠ I controlli di regolazione dell'immagine non sono disponibili.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
+        <source>⚠ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
@@ -7296,9 +7511,8 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ Recupero dati EDID non riuscito.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac." xml:space="preserve">
-        <source>⚠️ EDID operations might not available for the built-in display of this Apple Silicon Mac.</source>
-        <target state="translated">⚠️ Le operazioni EDID potrebbero non essere disponibili per la visualizzazione integrata di questo Apple Silicon Mac.</target>
+      <trans-unit id="⚠️ EDID write is not available for the supplied EDID as its size exceeds 256 bytes." xml:space="preserve">
+        <source>⚠️ EDID write is not available for the supplied EDID as its size exceeds 256 bytes.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ For best results stick close to the display aspect ratio!" xml:space="preserve">
@@ -7402,28 +7616,6 @@ Are sure you want to continue?</source>
       <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
         <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <note/>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="BetterDisplayHelper/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.4" build-num="15F31d"/>
-    </header>
-    <body>
-      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
-        <source/>
-        <target state="translated"/>
-        <note>Bundle display name</note>
-      </trans-unit>
-      <trans-unit id="CFBundleName" xml:space="preserve">
-        <source>BetterDisplayHelper</source>
-        <target state="translated">BetterDisplayHelper</target>
-        <note>Bundle name</note>
-      </trans-unit>
-      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source/>
-        <target state="translated"/>
-        <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
