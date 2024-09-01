@@ -2,6 +2,11 @@
 
 In the table below, adjectives have been used in their genderless form, whereas when actually translating, the appropriate genus relating to the noun should be used. Verbs whose person is not specified have been written in the unpersonalized form, whereas when actually translating they should be conjugated with the appropriate form depending on the context.
 
+### Example
+| Glossary word | English example       | ❌ Incorrect translation  | ✅ Correct translation    |
+|---------------|-----------------------|---------------------------|----------------------------|
+| software      | Brightness (software) | Jasność (programow**e**)  | Jasność (programow**a**)   |
+
 ## Glossary (based on the [Apple Glossar (Polish)](https://developer.apple.com/download/all/?q=glossaries))
 
 The following tables contains the translations used for _BetterDisplay_ from English to Polish.
@@ -9,7 +14,7 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 
 | English                   | Polish                                  | Reasoning / Explanation                               |
 | ------------------------- | --------------------------------------- | ----------------------------------------------------- |
-| Accessibility             | Dostępność                              |                                                       |
+| Accessibility             | Dostępność, Ułatwienia dostępu          |                                                       |
 | Accessibility Permissions | Uprawnienia do ułatwień dostępu         | Dictionary translation.                               |
 | Activation                | Aktywacja                               |                                                       |
 | Agressive                 | Agresywne                               |                                                       |
@@ -96,21 +101,23 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 
 ### G
 
-| English      | Polish          | Reasoning / Explanation |
-| ------------ | --------------- | ----------------------- |
-| Gain         | Wzmocnienie     |                         |
-| Gain (color) | Podbicie        | Dictionary translation. |
-| Gamma        | Gamma           |                         |
-| Generic      | Ogólne          |                         |
-| Grayscale    | Skala szarości  |                         |
+| English              | Polish                        | Reasoning / Explanation |
+| -------------------- | ----------------------------- | ----------------------- |
+| Gain                 | Wzmocnienie                   |                         |
+| Gain (color)         | Podbicie                      | Dictionary translation. |
+| Gamma                | Gamma                         |                         |
+| Generic              | Ogólne                        |                         |
+| Grayscale            | Skala szarości                |                         |
+| Group member display | Wyświetlacz powiązany z grupą |                         |
 
 
 ### H
 
-| English     | Polish              | Reasoning / Explanation |
-| ----------- | ------------------- | ----------------------- |
-| Hide        | Ukryj               |                         |
-| Home button | Przycisk początkowy |                         |
+| English          | Polish              | Reasoning / Explanation |
+| ---------------- | ------------------- | ----------------------- |
+| Hardware Control | Sterowanie sprzętem |                         |
+| Hide             | Ukryj               |                         |
+| Home button      | Przycisk początkowy |                         |
 
 ### I
 
@@ -123,7 +130,7 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | Input source     | Źródło                |                         |
 | Interference     | Interferencja         |                         |
 | Invert colors    | Odwrócenie barw       |                         |
-| Item             | Objekt                |                         |
+| Item             | Obiekt                |                         |
 
 ### L
 
@@ -203,6 +210,7 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | English          | Polish                     | Reasoning / Explanation |
 | ---------------- | -------------------------- | ----------------------- |
 | Range            | Zakres                     |                         |
+| Recommended      | Zalecane                   |                         |
 | Reconnect        | Ponowne po(d)łączenie      |                         |
 | Redo             | Cofnięcie                  |                         |
 | Refresh rate     | Częstotliwość odświeżania  |                         |
@@ -232,6 +240,7 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | Sleep                | Uśpić                             |                                                                                                                                                            |
 | Slider               | Suwak                             |                                                                                                                                                            |
 | Smooth               | Płynne                            |                                                                                                                                                            |
+| software             | oprogramowanie, programowe        |                                                                                                                                                            |
 | software dimming     | Jasność programowa                |                                                                                                                                                            |
 | Source Screen        | Wyświetlacz źródłowy              |                                                                                                                                                            |
 | Standby              | Czuwanie, Tryb czuwania           |                                                                                                                                                            |
