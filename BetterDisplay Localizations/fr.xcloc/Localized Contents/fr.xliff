@@ -63,6 +63,15 @@
         <target state="translated">%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ %@" xml:space="preserve">
+        <source>%1$@ %2$@</source>
+        <target state="translated">%1$@ %2$@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ %lld additional color modes are available with different refresh rates." xml:space="preserve">
+        <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ (%@)" xml:space="preserve">
         <source>%1$@ (%2$@)</source>
         <target state="translated">%1$@ (%2$@)</target>
@@ -78,9 +87,63 @@
         <target state="translated">%@ - Échanger les positions</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Associated display mirroring is enforced!" xml:space="preserve">
+        <source>%@ Associated display mirroring is enforced!</source>
+        <target state="translated">%@ La mise en miroir est obligatoire pour l'écran associée</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
+        <source>%@ Configuration Protection can make color mode changes persistent.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
+        <source>%1$@ Connection color depth (%2$lld-bit) is lower than the framebuffer depth (%3$u-bit). The GPU may use temporal dithering to improve colors.</source>
+        <target state="translated">%1$@ La profondeur de couleur de la connexion (%2$lld-bit) est inférieure à celle de la mémoire tampon (%3$u-bit). La carte graphique (GPU) pourrait temporairement utiliser le tramage temporel pour améliorer les couleurs.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
+        <source>%@ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
+        <target state="translated">%@ La protection contre la modification de la disposition des écrans du groupe est activée. Cela pourrait altérer ou prendre le dessus sur le résultat d'une opération de déplacement des affichages.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Image adjustment controls are unavailable." xml:space="preserve">
+        <source>%@ Image adjustment controls are unavailable.</source>
+        <target state="translated">%@ Les paramètres d'ajustement de l'image sont indisponibles.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
+        <source>%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
+        <target state="translated">%@ Le mode négocié peut différer des paramètres indiqués. Vérifiez les informations visuelles ou de l'affichage OSD.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro est activé.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
+        <source>%@ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
+        <target state="translated">%@ La montée en échelle logicielle XDR est activée pour une luminosité supplémentaire alors que la montée en échelle native est aussi disponible. Activez le préréglage %@ pour une meilleure expérience !</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Some adjustments may clip HDR content!" xml:space="preserve">
+        <source>%@ Some adjustments may clip HDR content!</source>
+        <target state="translated">%@ Certains ajustements pourrais tronquer le contenu HDR !</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Stream auto-starts to associated display!" xml:space="preserve">
+        <source>%@ Stream auto-starts to associated display!</source>
+        <target state="translated">%@ La projection commencera automatiquement sur l'écran associé !</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
+        <source>%@ Virtual Screen as Mirror Target?</source>
+        <target state="translated">%@ Sélectionner l'écran virtuel en tant que cible de la mise en miroir ?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Virtual Screen as Stream Target?" xml:space="preserve">
+        <source>%@ Virtual Screen as Stream Target?</source>
+        <target state="translated">%@ Sélectionner l'écran virtuel en tant que cible de projection ?</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
@@ -3600,11 +3663,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Maintenez ⇧ Maj Pour sélectionner plusieurs éléments. Les modes en dessous de 720p sont cachés. Les modes potentiellement dangereux sont cachés.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Hold ⌥ OPTION + reopen this menu for more!" xml:space="preserve">
-        <source>Hold ⌥ OPTION + reopen this menu for more!</source>
-        <target state="translated">Maintenez ⌥ OPTION + pour rouvrir ce menu !</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
         <source>Horizontal</source>
         <target state="translated">Horizontal</target>
@@ -6226,14 +6284,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Projeter le contenu de cet écran vers:</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Streaming from" xml:space="preserve">
-        <source>Streaming from</source>
-        <target state="translated">Projection depuis</target>
+      <trans-unit id="Streaming from %@" xml:space="preserve">
+        <source>Streaming from %@</source>
+        <target state="translated">Projection depuis %@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Streaming to" xml:space="preserve">
-        <source>Streaming to</source>
-        <target state="translated">Projection vers</target>
+      <trans-unit id="Streaming to %@" xml:space="preserve">
+        <source>Streaming to %@</source>
+        <target state="translated">Projection vers %@</target>
         <note/>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
@@ -7777,56 +7835,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="x" xml:space="preserve">
         <source>x</source>
         <target state="translated">x</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Associated display mirroring is enforced!" xml:space="preserve">
-        <source>⚠ Associated display mirroring is enforced!</source>
-        <target state="translated">⚠ La mise en miroir est obligatoire pour l'écran associée</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
-        <source>⚠ Connection color depth (%1$lld-bit) is lower than the framebuffer depth (%2$u-bit). The GPU may use temporal dithering to improve colors.</source>
-        <target state="translated">⚠ La profondeur de couleur de la connexion (%1$lld-bit) est inférieure à celle de la mémoire tampon (%2$u-bit). La carte graphique (GPU) pourrait temporairement utiliser le tramage temporel pour améliorer les couleurs.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
-        <source>⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
-        <target state="translated">⚠ La protection contre la modification de la disposition des écrans du groupe est activée. Cela pourrait altérer ou prendre le dessus sur le résultat d'une opération de déplacement des affichages.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Image adjustment controls are unavailable." xml:space="preserve">
-        <source>⚠ Image adjustment controls are unavailable.</source>
-        <target state="translated">⚠ Les paramètres d'ajustement de l'image sont indisponibles.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
-        <source>⚠ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
-        <target state="translated">⚠ Le mode négocié peut différer des paramètres indiqués. Vérifiez les informations visuelles ou de l'affichage OSD.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
-        <source>⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
-        <target state="translated">⚠ La montée en échelle logicielle XDR est activée pour une luminosité supplémentaire alors que la montée en échelle native est aussi disponible. Activez le préréglage %@ pour une meilleure expérience !</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Some adjustments may clip HDR content!" xml:space="preserve">
-        <source>⚠ Some adjustments may clip HDR content!</source>
-        <target state="translated">⚠ Certains ajustements pourrais tronquer le contenu HDR !</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Stream auto-starts to associated display!" xml:space="preserve">
-        <source>⚠ Stream auto-starts to associated display!</source>
-        <target state="translated">⚠ La projection commencera automatiquement sur l'écran associé !</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Virtual Screen as Mirror Target?" xml:space="preserve">
-        <source>⚠ Virtual Screen as Mirror Target?</source>
-        <target state="translated">⚠ Sélectionner l'écran virtuel en tant que cible de la mise en miroir ?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Virtual Screen as Stream Target?" xml:space="preserve">
-        <source>⚠ Virtual Screen as Stream Target?</source>
-        <target state="translated">⚠ Sélectionner l'écran virtuel en tant que cible de projection ?</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!&#10;&#10;Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI." xml:space="preserve">

@@ -63,6 +63,15 @@
         <target state="translated">%@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ %@" xml:space="preserve">
+        <source>%1$@ %2$@</source>
+        <target state="translated">%1$@ %2$@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ %lld additional color modes are available with different refresh rates." xml:space="preserve">
+        <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ (%@)" xml:space="preserve">
         <source>%1$@ (%2$@)</source>
         <target state="translated">%1$@ (%2$@)</target>
@@ -78,9 +87,63 @@
         <target state="translated">%@ - 위치 스왑</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Associated display mirroring is enforced!" xml:space="preserve">
+        <source>%@ Associated display mirroring is enforced!</source>
+        <target state="translated">%@ 연관된 디스플레이 미러링이 적용됩니다!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
+        <source>%@ Configuration Protection can make color mode changes persistent.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
+        <source>%1$@ Connection color depth (%2$lld-bit) is lower than the framebuffer depth (%3$u-bit). The GPU may use temporal dithering to improve colors.</source>
+        <target state="translated">%1$@ 연결 색상 심도(%2$lld-비트)가 프레임버퍼 심도(%3$u-비트)보다 낮습니다. GPU가 색상을 개선하기 위해 템포럴 디더링을 사용할 수 있습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
+        <source>%@ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
+        <target state="translated">%@ 디스플레이 그룹 레이아웃 보호가 적용 중입니다. 이로 인해 이동 작업의 결과가 변경되거나 재정의될 수 있습니다!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Image adjustment controls are unavailable." xml:space="preserve">
+        <source>%@ Image adjustment controls are unavailable.</source>
+        <target state="translated">%@ 이미지 조정 제어를 사용할 수 없습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
+        <source>%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
+        <target state="translated">%@ 협상 모드는 나열된 매개변수와 다를 수 있습니다. 실제 화면에 표시되는 정보나 OSD를 확인하세요.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro 활성화됨</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
+        <source>%@ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
+        <target state="translated">%@ 소프트웨어 XDR 업스케일링은 추가 밝기를 위해 활성화되어 있으며 기본 업스케일링도 사용할 수 있습니다. 더 나은 경험을 위해 %@ 프리셋을 활성화 하세요!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Some adjustments may clip HDR content!" xml:space="preserve">
+        <source>%@ Some adjustments may clip HDR content!</source>
+        <target state="translated">%@ 일부 조정으로 인해 HDR 콘텐츠가 잘릴 수 있습니다!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Stream auto-starts to associated display!" xml:space="preserve">
+        <source>%@ Stream auto-starts to associated display!</source>
+        <target state="translated">%@ 연관 디스플레이로 스트리밍이 자동 시작됩니다!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
+        <source>%@ Virtual Screen as Mirror Target?</source>
+        <target state="translated">%@ 가상 화면을 미러링 대상으로 하시겠습니까?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Virtual Screen as Stream Target?" xml:space="preserve">
+        <source>%@ Virtual Screen as Stream Target?</source>
+        <target state="translated">%@ 가상 화면을 스트리밍 대상으로 하시겠습니까?</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
@@ -3609,11 +3672,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">다중 선택을 위해 ⇧ Shift 키를 길게 누릅니다. 안전하지 않은 모드는 숨겨집니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Hold ⌥ OPTION + reopen this menu for more!" xml:space="preserve">
-        <source>Hold ⌥ OPTION + reopen this menu for more!</source>
-        <target state="translated">옵션 ⌥ 키를 누른 상태에서 이 메뉴를 다시 열면 더 많은 정보를 확인할 수 있습니다!</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
         <source>Horizontal</source>
         <target state="translated">수평</target>
@@ -6238,14 +6296,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">이 디스플레이의 콘텐츠를 다음으로 스트리밍:</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Streaming from" xml:space="preserve">
-        <source>Streaming from</source>
-        <target state="translated">다음으로부터 스트리밍</target>
+      <trans-unit id="Streaming from %@" xml:space="preserve">
+        <source>Streaming from %@</source>
+        <target state="translated">다음으로부터 스트리밍 %@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Streaming to" xml:space="preserve">
-        <source>Streaming to</source>
-        <target state="translated">스트리밍 대상</target>
+      <trans-unit id="Streaming to %@" xml:space="preserve">
+        <source>Streaming to %@</source>
+        <target state="translated">스트리밍 대상 %@</target>
         <note/>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
@@ -7822,56 +7880,6 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
       <trans-unit id="x" xml:space="preserve">
         <source>x</source>
         <target state="translated">x</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Associated display mirroring is enforced!" xml:space="preserve">
-        <source>⚠ Associated display mirroring is enforced!</source>
-        <target state="translated">⚠ 연관된 디스플레이 미러링이 적용됩니다!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
-        <source>⚠ Connection color depth (%1$lld-bit) is lower than the framebuffer depth (%2$u-bit). The GPU may use temporal dithering to improve colors.</source>
-        <target state="translated">⚠ 연결 색상 심도(%1$lld-비트)가 프레임버퍼 심도(%2$u-비트)보다 낮습니다. GPU가 색상을 개선하기 위해 템포럴 디더링을 사용할 수 있습니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
-        <source>⚠ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
-        <target state="translated">⚠ 디스플레이 그룹 레이아웃 보호가 적용 중입니다. 이로 인해 이동 작업의 결과가 변경되거나 재정의될 수 있습니다!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Image adjustment controls are unavailable." xml:space="preserve">
-        <source>⚠ Image adjustment controls are unavailable.</source>
-        <target state="translated">⚠ 이미지 조정 제어를 사용할 수 없습니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
-        <source>⚠ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
-        <target state="translated">⚠ 협상 모드는 나열된 매개변수와 다를 수 있습니다. 실제 화면에 표시되는 정보나 OSD를 확인하세요.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!" xml:space="preserve">
-        <source>⚠ Software XDR upscaling is active for extra brightness while native upscaling is also available. Enable the %@ preset for a better experience!</source>
-        <target state="translated">⚠ 소프트웨어 XDR 업스케일링은 추가 밝기를 위해 활성화되어 있으며 기본 업스케일링도 사용할 수 있습니다. 더 나은 경험을 위해 %@ 프리셋을 활성화 하세요!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Some adjustments may clip HDR content!" xml:space="preserve">
-        <source>⚠ Some adjustments may clip HDR content!</source>
-        <target state="translated">⚠ 일부 조정으로 인해 HDR 콘텐츠가 잘릴 수 있습니다!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Stream auto-starts to associated display!" xml:space="preserve">
-        <source>⚠ Stream auto-starts to associated display!</source>
-        <target state="translated">⚠ 연관 디스플레이로 스트리밍이 자동 시작됩니다!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Virtual Screen as Mirror Target?" xml:space="preserve">
-        <source>⚠ Virtual Screen as Mirror Target?</source>
-        <target state="translated">⚠ 가상 화면을 미러링 대상으로 하시겠습니까?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="⚠ Virtual Screen as Stream Target?" xml:space="preserve">
-        <source>⚠ Virtual Screen as Stream Target?</source>
-        <target state="translated">⚠ 가상 화면을 스트리밍 대상으로 하시겠습니까?</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!&#10;&#10;Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI." xml:space="preserve">
