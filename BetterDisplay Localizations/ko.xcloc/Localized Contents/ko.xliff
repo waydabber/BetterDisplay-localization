@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5230g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5230g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A5230g"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.0" build-num="16A242"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -56,6 +56,10 @@
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.3fHz" xml:space="preserve">
+        <source>%.3fHz</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@" xml:space="preserve">
@@ -92,6 +96,10 @@
         <target state="translated">%@ 연관된 디스플레이 미러링이 적용됩니다!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Built-in display panels have a single fixed internal connection mode." xml:space="preserve">
+        <source>%@ Built-in display panels have a single fixed internal connection mode.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
         <source>%@ Configuration Protection can make color mode changes persistent.</source>
         <note/>
@@ -109,6 +117,10 @@
       <trans-unit id="%@ Image adjustment controls are unavailable." xml:space="preserve">
         <source>%@ Image adjustment controls are unavailable.</source>
         <target state="translated">%@ 이미지 조정 제어를 사용할 수 없습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
+        <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
@@ -271,6 +283,10 @@
         <target state="translated">(%@)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="(Variable)" xml:space="preserve">
+        <source>(Variable)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="(next to %@)" xml:space="preserve">
         <source>(next to %@)</source>
         <target state="translated">(%@ 옆에)</target>
@@ -289,6 +305,14 @@
       <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
         <source>1:1 Pixel Mapping</source>
         <target state="translated">1:1 픽셀 매핑</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="9" xml:space="preserve">
+        <source>9</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="16" xml:space="preserve">
+        <source>16</source>
         <note/>
       </trans-unit>
       <trans-unit id="100" xml:space="preserve">
@@ -3647,8 +3671,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">고해상도 (HiDPI)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Hold SHIFT during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected." xml:space="preserve">
-        <source>Hold SHIFT during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected.</source>
+      <trans-unit id="Hold ⇧ Shift during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected." xml:space="preserve">
+        <source>Hold ⇧ Shift during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected.</source>
         <target state="translated">앱을 시작하는 동안 SHIFT 키를 길게 누르면 안전 모드가 활성화되고 저장된 값이 기록되지 않습니다. 통합 제어를 활성화하면 선택하지 않은 경우에도 DDC 밝기가 다시 적용될 수 있습니다.</target>
         <note/>
       </trans-unit>
@@ -3670,6 +3694,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Hold ⇧ Shift for multi-select. Unsafe modes are hidden." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select. Unsafe modes are hidden.</source>
         <target state="translated">다중 선택을 위해 ⇧ Shift 키를 길게 누릅니다. 안전하지 않은 모드는 숨겨집니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
+        <source>Hold ⌥ Option when opening this menu to measure refresh rate!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
@@ -3904,6 +3932,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Intel" xml:space="preserve">
         <source>Intel</source>
         <target state="translated">Intel</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Internal (%lld-bit)" xml:space="preserve">
+        <source>Internal (%lld-bit)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Internal Pre-Release" xml:space="preserve">
@@ -4313,6 +4345,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">통합 밝기 제어 모드에서 XDR/HDR 업스케일 밝기에 대한 최대 밝기 값입니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Measured refresh rate:" xml:space="preserve">
+        <source>Measured refresh rate:</source>
         <note/>
       </trans-unit>
       <trans-unit id="Member displays" xml:space="preserve">
@@ -5306,9 +5342,17 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">메뉴 헤더 아이콘을 계층적 스타일로 렌더링 (그레이 스케일 사용)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Reported actual refresh rate:" xml:space="preserve">
+        <source>Reported actual refresh rate:</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Reported diagonal size" xml:space="preserve">
         <source>Reported diagonal size</source>
         <target state="translated">보고된 대각선 크기</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reported nominal refresh rate:" xml:space="preserve">
+        <source>Reported nominal refresh rate:</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reset" xml:space="preserve">
@@ -6509,8 +6553,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Rosetta를 사용하여 앱을 실행했습니다. 일부 기능은 작동하지 않습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold SHIFT on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble." xml:space="preserve">
-        <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold SHIFT on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble.</source>
+      <trans-unit id="The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble." xml:space="preserve">
+        <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect  display to revert back to the original in case of serious trouble.</source>
         <target state="translated">이 디스플레이가 연결되면 앱이 로드된 EDID를 적용합니다. 업데이트된 EDID로 기존 모드를 사용할 수 없는 경우 화면이 깜빡이고 모드가 전환됩니다. 새 EDID에 다른 ID 데이터(공급업체, 모델, 일련 번호)가 있는 경우 디스플레이가 다른 디스플레이로 다시 감지됩니다. 안전 모드를 활성화하고 자동 적용을 방지하려면 시작 시 SHIFT 키를 길게 누릅니다. 심각한 문제가 발생하면 디스플레이를 물리적으로 다시 연결하여 원래대로 되돌립니다.</target>
         <note/>
       </trans-unit>
