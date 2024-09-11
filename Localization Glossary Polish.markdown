@@ -103,9 +103,10 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 
 | English              | Polish                        | Reasoning / Explanation |
 | -------------------- | ----------------------------- | ----------------------- |
-| Gain                 | Wzmocnienie                   |                         |
-| Gain (color)         | Podbicie                      | Dictionary translation. |
+| Gain                 | Podbicie kolorów              |                         |
+| Gain (color)         | Podbicie koloru               |                         |
 | Gamma                | Gamma                         |                         |
+| Gamma (color)        | Gamma (kolor)                 |                         |
 | Generic              | Ogólne                        |                         |
 | Grayscale            | Skala szarości                |                         |
 | Group member display | Wyświetlacz powiązany z grupą |                         |
