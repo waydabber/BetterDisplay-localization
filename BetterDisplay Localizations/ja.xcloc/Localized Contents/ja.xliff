@@ -158,24 +158,29 @@
         <target state="translated">%@ 関連するディスプレイへのストリーミングを自動的に開始します!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app currently listens to the volume keys (if permissions permit) but not the mute key." xml:space="preserve">
-        <source>%@ The app currently listens to the volume keys (if permissions permit) but not the mute key.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ The app is currently disengaged from native volume and mute keys." xml:space="preserve">
-        <source>%@ The app is currently disengaged from native volume and mute keys.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="%@ The app is disengaged from native brightness keys." xml:space="preserve">
         <source>%@ The app is disengaged from native brightness keys.</source>
+        <target state="translated">%@ ネイティブの輝度キーとは連動していません。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to both the native brightness keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to both the native brightness keys (if permissions permit)</source>
+      <trans-unit id="%@ The app is disengaged from native volume and mute keys." xml:space="preserve">
+        <source>%@ The app is disengaged from native volume and mute keys.</source>
+        <target state="translated">%@ 現在はネイティブの音量キーおよびミュートキーとは連動していません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)" xml:space="preserve">
         <source>%@ The app listens to both the native volume and mute keys (if permissions permit)</source>
+        <target state="translated">%@ ネイティブ音量とミュートキーをチェック（アクセス権の許可が必要）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)" xml:space="preserve">
+        <source>%@ The app listens to the native brightness keys (if permissions permit)</source>
+        <target state="translated">%@ ネイティブの輝度キーをチェック（アクセス権の許可が必要）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ The app listens to the volume keys (if permissions permit) but not the mute key." xml:space="preserve">
+        <source>%@ The app listens to the volume keys (if permissions permit) but not the mute key.</source>
+        <target state="translated">%@ 現在は音量キーをチェックしています（アクセス権の許可が必要）が、ミュートキーはチェックしていません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
@@ -290,6 +295,7 @@
       </trans-unit>
       <trans-unit id="%lld°" xml:space="preserve">
         <source>%lld°</source>
+        <target state="translated">%lld°</target>
         <note/>
       </trans-unit>
       <trans-unit id="%llu" xml:space="preserve">
@@ -469,12 +475,12 @@
       </trans-unit>
       <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
         <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
-        <target state="translated">アクセシビリティ許可は構成されていますが、**変更を有効化するには**アプリの再起動が必要です! ダイアログを閉じて都合の良いときに再起動するか、下の 「%@再起動」ボタンを押して今すぐアプリを再起動してください!</target>
+        <target state="translated">アクセス権の許可は構成されていますが、**変更を有効化するには**アプリの再起動が必要です! ダイアログを閉じて都合の良いときに再起動するか、下の 「%@再起動」ボタンを押して今すぐアプリを再起動してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
         <source>Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
-        <target state="translated">アクセシビリティ許可は適切に構成されています。アップル純正キーボードの明るさと音量キーは、機能が設定されていれば動作するはずです。動作しない場合は、アプリを再起動してください!</target>
+        <target state="translated">アクセス権の許可は適切に構成されています。アップル純正キーボードの明るさと音量キーは、機能が設定されていれば動作するはずです。動作しない場合は、アプリを再起動してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Accessibility is Configured Properly" xml:space="preserve">
@@ -748,7 +754,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
         <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
-        <target state="translated">カラーテーブル調整を許可（注：互換モードではオフにすること）</target>
+        <target state="translated">カラーテーブル調整を許可（注意：互換モードではオフにすること）</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allow combined brightness in native XDR upscaling mode" xml:space="preserve">
@@ -1045,6 +1051,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Apply all layout protections on startup" xml:space="preserve">
         <source>Apply all layout protections on startup</source>
+        <target state="translated">起動時にすべてのレイアウト保護を適用</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apply resolution favorite 1" xml:space="preserve">
@@ -1413,7 +1420,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
         <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
-        <target state="translated">ソフトウェア調整によって追加ディミングまたは輝度アップスケーリングが生じる場合に、上向き（XDR/HDRアップスケーリング）または下向き（ソフトウェアディミング）のポインティングアイコンをOSDに一時表示します。</target>
+        <target state="translated">ソフトウェア調整によって追加のディミングまたは輝度アップスケーリングが生じる場合に、上向き（XDR/HDRアップスケーリング）または下向き（ソフトウェアディミング）のポインティングアイコンをOSDに一時表示します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brighten Displays" xml:space="preserve">
@@ -1678,7 +1685,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">カラー変更、アップスケール、カラーテーブル調整によるディミングはHDRコンテンツをクリップします。有効化した場合は、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり黒くなったりすることがあります。</target>
+        <target state="translated">カラー変更、アップスケール、カラーテーブル調整によるディミングはHDRコンテンツをクリップします。有効化した場合は、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり暗転したりすることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color mode changed for %@." xml:space="preserve">
@@ -1788,7 +1795,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Configure current values as neutral (default) values for relevant features" xml:space="preserve">
         <source>Configure current values as neutral (default) values for relevant features</source>
-        <target state="translated">関連する機能に対して、現在の値を中央値（デフォルト値）として構成します。</target>
+        <target state="translated">関連する機能に対して、現在の値を中央値（デフォルト値）として構成を行い。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure flexible scaling for %@" xml:space="preserve">
@@ -1808,10 +1815,12 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Configure the nits counter shown within the native OSD icon under Settings &gt; Keyboard &gt; OSD." xml:space="preserve">
         <source>Configure the nits counter shown within the native OSD icon under Settings &gt; Keyboard &gt; OSD.</source>
+        <target state="translated">設定 &gt; キーボード &gt; OSD のネイティブOSDアイコン内に表示するニトカウンタの構成を行います。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure the upscaling and dimming indicator OSD icon (chevron) under Settings &gt; Keyboard &gt; OSD." xml:space="preserve">
         <source>Configure the upscaling and dimming indicator OSD icon (chevron) under Settings &gt; Keyboard &gt; OSD.</source>
+        <target state="translated">設定 &gt; キーボード &gt; OSD のアップスケーリングとディミング用インジケータOSDアイコン（シェブロン（⌄））の構成を行います。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure virtual screen mirroring" xml:space="preserve">
@@ -3310,6 +3319,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enforce layout protection configurations shortly after app startup." xml:space="preserve">
         <source>Enforce layout protection configurations shortly after app startup.</source>
+        <target state="translated">アプリ起動後すぐに、レイアウト保護を強制的に行います。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce virtual screen mirroring" xml:space="preserve">
@@ -4118,6 +4128,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Keep unmirrored" xml:space="preserve">
         <source>Keep unmirrored</source>
+        <target state="translated">ミラーリング停止を継続</target>
         <note/>
       </trans-unit>
       <trans-unit id="Keyboard" xml:space="preserve">
@@ -4202,7 +4213,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Let the app handle native brightness keys on your Apple keyboard. This lets you control the brightness of external displays with your Apple keyboard and also allows XDR upscaling keyboard control and extra dimming for native Apple displays." xml:space="preserve">
         <source>Let the app handle native brightness keys on your Apple keyboard. This lets you control the brightness of external displays with your Apple keyboard and also allows XDR upscaling keyboard control and extra dimming for native Apple displays.</source>
-        <target state="translated">Appleキーボードのネイティブ輝度キーをアプリが処理します。これにより、Appleキーボードで外付けディスプレイの明るさを制御できるようになり、XDRアップスケーリングキーボード制御や、ネイティブAppleディスプレイの追加ディミングが可能になります。</target>
+        <target state="translated">Appleキーボードのネイティブ輝度キーをアプリが処理します。これにより、Appleキーボードで外付けディスプレイの明るさを制御できるようになり、XDRアップスケーリングキーボード制御や、ネイティブAppleディスプレイに追加のディミングが可能になります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let the application control display hardware luminance (backlight for backlit displays) if this DDC feature is enabled." xml:space="preserve">
@@ -4572,6 +4583,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Mirror configuration changed for %@." xml:space="preserve">
         <source>Mirror configuration changed for %@.</source>
+        <target state="translated">%@ のミラーリング構成を変更しました。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mirror of %@" xml:space="preserve">
@@ -4596,6 +4608,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Mirroring" xml:space="preserve">
         <source>Mirroring</source>
+        <target state="translated">ミラーリング</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mode number" xml:space="preserve">
@@ -4700,7 +4713,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!" xml:space="preserve">
         <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!</source>
-        <target state="translated">輝度キーやオーディオキーを使うネイティブ（Apple）キーボード制御は、システム設定でアクセシビリティの許可を設定しないと機能しません!</target>
+        <target state="translated">輝度キーやオーディオキーを使うネイティブ（Apple）キーボード制御は、システム設定でアクセス権の許可を設定しないと機能しません!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Native XDR Upscaling" xml:space="preserve">
@@ -4725,7 +4738,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Native keyboard control requires accessibility permissions!" xml:space="preserve">
         <source>Native keyboard control requires accessibility permissions!</source>
-        <target state="translated">ネイティブキーボードの制御にはアクセシビリティの許可が必要です!</target>
+        <target state="translated">ネイティブキーボードの制御にはアクセス権の許可が必要です!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Native mode (1:1 mapping)" xml:space="preserve">
@@ -4880,7 +4893,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Note: Additional configuration options will be available at the created virtual screen's settings pane." xml:space="preserve">
         <source>Note: Additional configuration options will be available at the created virtual screen's settings pane.</source>
-        <target state="translated">注：作成した仮想スクリーンの設定ペインで、追加設定オプションの構成を利用できます。</target>
+        <target state="translated">注意：作成した仮想スクリーンの設定ペインで、追加設定オプションの構成を利用できます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Note: they way resolution/magnification shortcuts work depends on resolution slider settings." xml:space="preserve">
@@ -4890,6 +4903,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs." xml:space="preserve">
         <source>Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs.</source>
+        <target state="translated">注意：独自の音量OSDを持つディスプレイの場合、設定 &gt; ディスプレイ &gt; （個々のディスプレイ） &gt; 音量コントロール… で、ディスプレイごとに音量OSDを無効化することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Notification Center" xml:space="preserve">
@@ -6019,7 +6033,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
-        <target state="translated">アクセス許可を設定</target>
+        <target state="translated">アクセス権の許可を設定</target>
         <note/>
       </trans-unit>
       <trans-unit id="Set any adjustment control of a display by a specified offset. The percentage value will be converted to the feature's own specific min-max range." xml:space="preserve">
@@ -6134,6 +6148,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
         <source>Settings…</source>
+        <target state="translated">設定…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show %@ in the macOS Dock" xml:space="preserve">
@@ -6141,8 +6156,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">%@をmacOSのDockに表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show All" xml:space="preserve">
+        <source>Show All</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
         <source>Show Currently Disconnected</source>
+        <target state="translated">現在接続解除中のものを表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Detailed Report…" xml:space="preserve">
@@ -6177,6 +6197,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show Settings in the button bar" xml:space="preserve">
         <source>Show Settings in the button bar</source>
+        <target state="translated">ボタンバーに設定を表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
@@ -6201,6 +6222,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show brightness level in nits in the brightness OSD icon for native XDR upscaling" xml:space="preserve">
         <source>Show brightness level in nits in the brightness OSD icon for native XDR upscaling</source>
+        <target state="translated">ネイティブXDRアップスケーリング用の輝度OSDアイコン内に輝度レベルをニト表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show brightness, volume, mute OSD" xml:space="preserve">
@@ -6260,6 +6282,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show extra OSD icon if keyboard adjustment causes software brightness upscaling or extra dimming" xml:space="preserve">
         <source>Show extra OSD icon if keyboard adjustment causes software brightness upscaling or extra dimming</source>
+        <target state="translated">キーボード調整でソフトウェア輝度アップスケーリングまたは追加のディミングが生じる場合、追加のOSDアイコンを表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show extra OSD icon if keyboard adjustment causes upscaling or extra dimming" xml:space="preserve">
@@ -6384,6 +6407,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
         <source>Software XDR/HDR Upscaling and Dimming</source>
+        <target state="translated">ソフトウェアXDR/HDRアップスケーリングとディミング</target>
         <note/>
       </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
@@ -6902,11 +6926,12 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the 'display physical dimensions' setting when the virtual screen is connected." xml:space="preserve">
         <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the 'display physical dimensions' setting when the virtual screen is connected.</source>
-        <target state="translated">仮想スクリーンに関連する物理的サイズ（UIサイズを計算するために使用）は、主に「報告された対角サイズ」設定によって決定されますが、仮想スクリーンが接続されている場合は、「ディスプレイの物理的サイズ」設定によりさらに変更することができます。</target>
+        <target state="translated">仮想スクリーンに関連する物理的サイズ（UIサイズを計算するために使用）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続している場合は、「ディスプレイの物理的サイズ」設定により変更される場合があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected." xml:space="preserve">
         <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected.</source>
+        <target state="translated">仮想スクリーンの物理的な寸法（UIのスケーリングを計算するために使用される）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続する場合に、「ディスプレイの物理的サイズ」設定により変更される場合があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
@@ -6996,7 +7021,7 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data.</source>
-        <target state="translated">構成/検出処理中に、現在構成しているディスプレイに関連付けたデータを、検出したディスプレイにどのように適合させるかを構成します。この設定を変更すると、接続したことがないディスプレイであると認識し、保存している既存のディスプレイ構成データの関連付けを解除することがあります。システムUUIDの一致は、macOSのデフォルト識別子を使用します。基本識別子を使用するよう設定すると、ベンダー/モデルIDおよびシリアル番号によってディスプレイを識別します。拡張識別子では、製品名、英数字のシリアル番号、製造日も使用します。位置情報を使用する場合、ハードウェア接続データも考慮します。</target>
+        <target state="translated">構成/検出処理中に、現在構成しているディスプレイに関連付けたデータを、検出したディスプレイにどのように適合させるかの構成を行います。この設定を変更すると、接続したことがないディスプレイであると認識し、保存している既存のディスプレイ構成データの関連付けを解除することがあります。システムUUIDの一致は、macOSのデフォルト識別子を使用します。基本識別子を使用するよう設定すると、ベンダー/モデルIDおよびシリアル番号によってディスプレイを識別します。拡張識別子では、製品名、英数字のシリアル番号、製造日も使用します。位置情報を使用する場合、ハードウェア接続データも考慮します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This display group does not have member displays." xml:space="preserve">
@@ -7362,7 +7387,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Typical values include: 100, 200 or 255 (note: 255 works for most old DDC compatible Apple Cinema / LED displays and helps avoid permanent dimming issue)." xml:space="preserve">
         <source>Typical values include: 100, 200 or 255 (note: 255 works for most old DDC compatible Apple Cinema / LED displays and helps avoid permanent dimming issue).</source>
-        <target state="translated">一般的な値は次の通りです：100、200または255（注：255は、ほとんどの古いDDC互換Apple Cinema / LEDディスプレイで機能し、永続的なディミングの問題を回避するのに役立ちます）。</target>
+        <target state="translated">一般的な値は次の通りです：100、200または255（注意：255は、ほとんどの古いDDC互換Apple Cinema / LEDディスプレイで機能し、永続的なディミングの問題を回避するのに役立ちます）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Typical values include: 100, 200 or 255." xml:space="preserve">
@@ -8017,11 +8042,12 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can use the Tools menu, hold ⎇ OPTION while clicking on the app menu icon or launch the app again while it is already running to open Settings ." xml:space="preserve">
         <source>You can use the Tools menu, hold ⎇ OPTION while clicking on the app menu icon or launch the app again while it is already running to open Settings .</source>
+        <target state="translated">ツールメニューを使用するには、⎇ OPTIONを押しながらメニューアイコンをクリックします。設定を開いている場合はアプリを開き直してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
         <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
-        <target state="translated">デバイスがアプリによって管理されているオーディオ制御を持つ場合、macOSの音量OSDを隠したいことがあります。無効化できない独自の音量OSDを持つディスプレイに便利です。</target>
+        <target state="translated">デバイスがアプリによって管理されているオーディオ制御を持つ場合、macOSの音量OSDを隠したいことがあります。無効化することができない独自の音量OSDを持つディスプレイ場合に便利です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!" xml:space="preserve">
