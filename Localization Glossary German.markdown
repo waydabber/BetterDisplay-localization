@@ -46,6 +46,7 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | -------------------- | ----------------------------------- | ------------------------------------------------------------ |
 | Calibrate            | kalibrieren                         |                                                              |
 | Capabilities         | Fähigkeiten                         |                                                              |
+| Chevron              | Spitzzeichen                        | Dictionary translation.                                      |
 | Chiclet              | Gummitaste                          | Comes from "chiclet keyboard" = Kaugummitastatur (lit. "chewing gum keyboard"), which is shortened to describe just one key and drop the "chewing". This short form is also supported by another name for it: (Radier)gummitastatur (lit. "eraser keyboard") |
 | Color depth          | Farbtiefe                           | General tanslation. Not used by _Apple_, anywhere.           |
 | Color table          | Farbpalette                         |                                                              |
