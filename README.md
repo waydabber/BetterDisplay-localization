@@ -5,3 +5,10 @@
 For more info on how to contribute to the BetterDisplay localization effort, check out this discussion:
 
 https://github.com/waydabber/BetterDisplay/discussions/2165
+
+### Glossaries
+
+For the some localizations, a glossary is available:
+
+- [German](Localization%20Glossary%20German.markdown)
+- [Polish](Localization%20Glossary%20Polish.markdown)
