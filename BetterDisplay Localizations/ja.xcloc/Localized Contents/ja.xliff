@@ -58,6 +58,14 @@
         <target state="translated">%</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%.1f%%" xml:space="preserve">
+        <source>%.1f%%</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%% x %.1f%%" xml:space="preserve">
+        <source>%1$.1f%% x %2$.1f%%</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%.3fHz" xml:space="preserve">
         <source>%.3fHz</source>
         <target state="translated">%.3fHz</target>
@@ -1628,6 +1636,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">チャンクサイズ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
+        <source>Click Here To Configure DDC…</source>
+        <target state="translated">DDC機能を構成…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
         <source>Click icon to open/close app menu!</source>
         <target state="translated">アイコンをクリックしてアプリメニューを開閉できます!</target>
@@ -1636,6 +1649,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
         <target state="translated">クリックして機能を表示/非表示します…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio." xml:space="preserve">
+        <source>Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -1766,11 +1783,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure DDC Controls…" xml:space="preserve">
         <source>Configure DDC Controls…</source>
         <target state="translated">DDC制御を構成…</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure DDC Features…" xml:space="preserve">
-        <source>Configure DDC Features…</source>
-        <target state="translated">DDC機能を構成…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
@@ -4326,6 +4338,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ロードしたEDIDデータ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Lock Window Position" xml:space="preserve">
+        <source>Lock Window Position</source>
+        <target state="translated">固定ウインドウ</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Logical height" xml:space="preserve">
         <source>Logical height</source>
         <target state="translated">高さ（論理的）</target>
@@ -5219,6 +5236,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">製品名</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prohibit Resizing" xml:space="preserve">
+        <source>Prohibit Resizing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Protect the position of %@%@" xml:space="preserve">
@@ -6156,6 +6177,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">すべてを表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show Crop Boundaries" xml:space="preserve">
+        <source>Show Crop Boundaries</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
         <source>Show Currently Disconnected</source>
         <target state="translated">現在接続解除中のものを表示</target>
@@ -6394,6 +6419,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Smooth transitions" xml:space="preserve">
         <source>Smooth transitions</source>
         <target state="translated">スムーズなトランジション</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Snap Size Near 25% Increments" xml:space="preserve">
+        <source>Snap Size Near 25% Increments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
@@ -6874,7 +6903,7 @@ Enable and configure the created display group (including layout protection) und
 
 「%@」 という名前の新規ディスプレイグループが作成されました。ディスプレイグループは現在有効化されていません。
 
-設定 &gt; グループ からディスプレイグループを有効化と構成を行ってください（レイアウト保護を含みます）!</target>
+設定 &gt; グループ から作成したディスプレイグループ（レイアウト保護を含む）の有効化と構成を行ってください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully. Please Apply the configuration changes and follow further instructions!" xml:space="preserve">
@@ -7491,11 +7520,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">EDID書き込み制限を解除 - リスクを理解しています</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unmovable Window (Lock)" xml:space="preserve">
-        <source>Unmovable Window (Lock)</source>
-        <target state="translated">固定ウインドウ（ロック）</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
         <source>Unmute (DDC)</source>
         <target state="translated">ミュート解除（DDC）</target>
@@ -7798,6 +7822,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
         <source>Warp Mouse Cursor</source>
+        <target state="translated">マウスポインタをワープ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Warp mouse cursor from screen" xml:space="preserve">
@@ -8012,7 +8037,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>
-        <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目 にアプリをドラッグできます。</target>
+        <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目 にアプリをドラッグすることもできます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
@@ -8042,6 +8067,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!" xml:space="preserve">
         <source>You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!</source>
+        <target state="translated">⌘ コマンド + クリック を使ってソース画面にワープさせることもできます。設定 &gt; キーボード でワープからの復帰用ショートカットを設定することができます!</target>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
