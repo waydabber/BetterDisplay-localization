@@ -53,6 +53,11 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
+      <trans-unit id=" %lld x %lld" xml:space="preserve">
+        <source> %1$lld x %2$lld</source>
+        <target state="translated"> %1$lld x %2$lld</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
@@ -60,10 +65,12 @@
       </trans-unit>
       <trans-unit id="%.1f%%" xml:space="preserve">
         <source>%.1f%%</source>
+        <target state="translated">%.1f%%</target>
         <note/>
       </trans-unit>
       <trans-unit id="%.1f%% x %.1f%%" xml:space="preserve">
         <source>%1$.1f%% x %2$.1f%%</source>
+        <target state="translated">%1$.1f%% × %2$.1f%%</target>
         <note/>
       </trans-unit>
       <trans-unit id="%.3fHz" xml:space="preserve">
@@ -269,6 +276,11 @@
       <trans-unit id="%lld" xml:space="preserve">
         <source>%lld</source>
         <target state="translated">%lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld : %lld" xml:space="preserve">
+        <source>%1$lld : %2$lld</source>
+        <target state="translated">%1$lld : %2$lld</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -1653,6 +1665,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio." xml:space="preserve">
         <source>Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio.</source>
+        <target state="translated">クリックスルーには、透明度を保ちながら位置をロックする必要があります。ウインドウシャドウのコントロールには、タイトルバーを非表示に、アスペクト比を自由にする必要があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -2012,42 +2025,42 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Crop area height - decrease" xml:space="preserve">
         <source>Crop area height - decrease</source>
-        <target state="translated">クロップ領域高さ - 減少</target>
+        <target state="translated">切り取り領域高さ - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop area height - increase" xml:space="preserve">
         <source>Crop area height - increase</source>
-        <target state="translated">クロップ領域高さ - 増加</target>
+        <target state="translated">切り取り領域高さ - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop area width - decrease" xml:space="preserve">
         <source>Crop area width - decrease</source>
-        <target state="translated">クロップ領域幅 - 減少</target>
+        <target state="translated">切り取り領域幅 - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop area width - increase" xml:space="preserve">
         <source>Crop area width - increase</source>
-        <target state="translated">クロップ領域幅 - 増加</target>
+        <target state="translated">切り取り領域幅 - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin X - decrease" xml:space="preserve">
         <source>Crop origin X - decrease</source>
-        <target state="translated">クロップ原点X座標 - 減少</target>
+        <target state="translated">切り取り原点X座標 - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin X - increase" xml:space="preserve">
         <source>Crop origin X - increase</source>
-        <target state="translated">クロップ原点X座標 - 増加</target>
+        <target state="translated">切り取り原点X座標 - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin Y - decrease" xml:space="preserve">
         <source>Crop origin Y - decrease</source>
-        <target state="translated">クロップ原点Y座標 - 減少</target>
+        <target state="translated">切り取り原点Y座標 - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin Y - increase" xml:space="preserve">
         <source>Crop origin Y - increase</source>
-        <target state="translated">クロップ原点Y座標 - 増加</target>
+        <target state="translated">切り取り原点Y座標 - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Current" xml:space="preserve">
@@ -2472,7 +2485,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Define the crop area either by drawing the crop rectangle on the stream source screen or by keyboard shortcuts." xml:space="preserve">
         <source>Define the crop area either by drawing the crop rectangle on the stream source screen or by keyboard shortcuts.</source>
-        <target state="translated">クロップ領域を定義するには、ストリーミングソース画面上にクロップ矩形を描画するか、キーボードショートカットを使用してください。</target>
+        <target state="translated">切り取り領域を定義するには、ストリーミングソース画面上に切り取り矩形を描画するか、キーボードショートカットを使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Defines the TCP port the built-in HTTP server listens to." xml:space="preserve">
@@ -3081,7 +3094,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Draw Crop Area On Screen…" xml:space="preserve">
         <source>Draw Crop Area On Screen…</source>
-        <target state="translated">スクリーンをクロップする領域を描画…</target>
+        <target state="translated">スクリーンを切り取る領域を描画…</target>
         <note/>
       </trans-unit>
       <trans-unit id="EDID Retrieval Method" xml:space="preserve">
@@ -3181,7 +3194,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
-        <target state="translated">クロッピングを有効化</target>
+        <target state="translated">切り取りを有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable DDC control" xml:space="preserve">
@@ -5240,6 +5253,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Prohibit Resizing" xml:space="preserve">
         <source>Prohibit Resizing</source>
+        <target state="translated">サイズ変更を禁止</target>
         <note/>
       </trans-unit>
       <trans-unit id="Protect the position of %@%@" xml:space="preserve">
@@ -6177,8 +6191,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">すべてを表示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show Crop Boundaries" xml:space="preserve">
-        <source>Show Crop Boundaries</source>
+      <trans-unit id="Show Crop Rectangle Boundary" xml:space="preserve">
+        <source>Show Crop Rectangle Boundary</source>
+        <target state="translated">切り取り境界を表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
@@ -6233,7 +6248,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show and snap to slider markers for favorites and special resolutions." xml:space="preserve">
         <source>Show and snap to slider markers for favorites and special resolutions.</source>
-        <target state="translated">お気に入りや特別な解像度のマーカを表示してスナップ</target>
+        <target state="translated">お気に入りや特別な解像度のマーカを表示してスライダにスナップ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show app icon in the menu bar" xml:space="preserve">
@@ -6423,6 +6438,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Snap Size Near 25% Increments" xml:space="preserve">
         <source>Snap Size Near 25% Increments</source>
+        <target state="translated">25%刻みのスナップサイズ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
@@ -6840,7 +6856,7 @@ This operation does not reset the display itself.</source>
       </trans-unit>
       <trans-unit id="The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the &quot;LG alt&quot; toggle for some newer LG displays if input control does not work!" xml:space="preserve">
         <source>The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the "LG alt" toggle for some newer LG displays if input control does not work!</source>
-        <target state="translated">デフォルトの入力ソースリストは、一般的な割り当てを反映したものですが、実際にはディスプレイのベンダー/モデルによって異なります。新しいLGディスプレイで入力制御が機能しない場合は、「LG alt」トグルを使用してみてください!</target>
+        <target state="translated">デフォルトの入力ソースリストは、一般的な割り当てを反映したものですが、実際にはディスプレイのベンダー/モデルによって異なります。新しいLGディスプレイで入力制御が機能しない場合は、「LG alt」切り替えを使用してみてください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The display group is marked as exclusive while at least one other display group with higher priority is active." xml:space="preserve">
@@ -7237,32 +7253,32 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Toggle Dark Mode" xml:space="preserve">
         <source>Toggle Dark Mode</source>
-        <target state="translated">ダークモードをトグル</target>
+        <target state="translated">ダークモードを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle HDR for display" xml:space="preserve">
         <source>Toggle HDR for display</source>
-        <target state="translated">ディスプレイのHDRをトグル</target>
+        <target state="translated">ディスプレイのHDRを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle HiDPI resolution for display" xml:space="preserve">
         <source>Toggle HiDPI resolution for display</source>
-        <target state="translated">ディスプレイのHiDPI解像度をトグル</target>
+        <target state="translated">ディスプレイのHiDPI解像度を切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Night Shift" xml:space="preserve">
         <source>Toggle Night Shift</source>
-        <target state="translated">Night Shiftをトグル</target>
+        <target state="translated">Night Shiftを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle True Tone" xml:space="preserve">
         <source>Toggle True Tone</source>
-        <target state="translated">True Toneをトグル</target>
+        <target state="translated">True Toneを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle cropping" xml:space="preserve">
         <source>Toggle cropping</source>
-        <target state="translated">クロップをトグル</target>
+        <target state="translated">切り取りを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle mute (DDC)" xml:space="preserve">
@@ -7277,7 +7293,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Toggles" xml:space="preserve">
         <source>Toggles</source>
-        <target state="translated">トグル</target>
+        <target state="translated">切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
@@ -7312,7 +7328,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Treat shortcuts as rotation toggles" xml:space="preserve">
         <source>Treat shortcuts as rotation toggles</source>
-        <target state="translated">ショートカットを回転トグルとして扱う</target>
+        <target state="translated">ショートカットを回転の切り替えとして扱う</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat this display (identified as Apple-made) as generic and allow DDC control to be enabled. Might cause permanent issues on some older Apple displays!" xml:space="preserve">
@@ -7322,7 +7338,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="True Tone turned off by HDR toggle" xml:space="preserve">
         <source>True Tone turned off by HDR toggle</source>
-        <target state="translated">HDRによるTrue Toneオフをトグル</target>
+        <target state="translated">HDRによるTrue Toneオフを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled." xml:space="preserve">
