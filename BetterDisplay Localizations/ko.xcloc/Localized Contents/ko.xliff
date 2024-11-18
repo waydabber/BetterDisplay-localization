@@ -830,6 +830,10 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">니트 카운터에 대한 일부 화려한 애니메이션을 허용하고 스타일 업스케일링에 대한 시각적 피드백을 제공합니다. 다소 더 절제된 프레젠테이션을 원할 경우 비활성화하세요.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting." xml:space="preserve">
+        <source>Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
         <source>Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality.</source>
         <target state="translated">시스템 전체 URL([문서](https://betterdisplay.pro/integration) 참조)을 통해 다양한 앱 기능에 액세스할 수 있도록 허용합니다. 이를 통해 다른 앱과의 통합 및 앱 기능에 대한 스크립트 액세스가 가능합니다.</target>
@@ -1665,11 +1669,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">색상 프로파일 설정</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Profile changed for %@." xml:space="preserve">
-        <source>Color Profile changed for %@.</source>
-        <target state="translated">SDR 색상 프로파일이 %@(으)로 변경되었습니다.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">색온도</target>
@@ -1683,6 +1682,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Color mode changed for %@." xml:space="preserve">
         <source>Color mode changed for %@.</source>
         <target state="translated">%@의 색상 모드가 변경되었습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color profile changed for %@." xml:space="preserve">
+        <source>Color profile changed for %@.</source>
+        <target state="translated">SDR 색상 프로파일이 %@(으)로 변경되었습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -2863,11 +2867,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">디스플레이 모드 메뉴</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display Mode changed for %@." xml:space="preserve">
-        <source>Display Mode changed for %@.</source>
-        <target state="translated">디스플레이 모드가 %@(으)로 변경되었습니다.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display Notch" xml:space="preserve">
         <source>Display Notch</source>
         <target state="translated">노치 표시</target>
@@ -2931,6 +2930,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Display menu options" xml:space="preserve">
         <source>Display menu options</source>
         <target state="translated">디스플레이 메뉴 옵션</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display mode changed for %@." xml:space="preserve">
+        <source>Display mode changed for %@.</source>
+        <target state="translated">디스플레이 모드가 %@(으)로 변경되었습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display mode submenu settings" xml:space="preserve">
@@ -3668,16 +3672,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">HDR 색상 프로파일</target>
         <note/>
       </trans-unit>
-      <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
-        <source>HDR Color Profile changed for %@.</source>
-        <target state="translated">HDR 색상 프로파일이 %@(으)로 변경되었습니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR Color mode changed for %@." xml:space="preserve">
-        <source>HDR Color mode changed for %@.</source>
-        <target state="translated">%@의 HDR 색상 모드가 변경되었습니다.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
         <target state="translated">HDR 끄기</target>
@@ -3691,6 +3685,16 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="HDR Status" xml:space="preserve">
         <source>HDR Status</source>
         <target state="translated">HDR 상태</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color mode changed for %@." xml:space="preserve">
+        <source>HDR color mode changed for %@.</source>
+        <target state="translated">%@의 HDR 색상 모드가 변경되었습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color profile changed for %@." xml:space="preserve">
+        <source>HDR color profile changed for %@.</source>
+        <target state="translated">HDR 색상 프로파일이 %@(으)로 변경되었습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR mode changed for %@." xml:space="preserve">
@@ -5442,6 +5446,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Refresh Rate" xml:space="preserve">
         <source>Refresh Rate</source>
         <target state="translated">주사율</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Refresh rate (unexposed) changed for %@." xml:space="preserve">
+        <source>Refresh rate (unexposed) changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh string" xml:space="preserve">
@@ -7481,6 +7489,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Undo/redo last mode change" xml:space="preserve">
         <source>Undo/redo last mode change</source>
         <target state="translated">마지막 모드 변경 취소/다시 실행</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unexposed refresh rate switch for Configuration Protection" xml:space="preserve">
+        <source>Unexposed refresh rate switch for Configuration Protection</source>
         <note/>
       </trans-unit>
       <trans-unit id="Unhide Stream" xml:space="preserve">
