@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5013f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5013f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5013f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -135,7 +135,7 @@
       </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
-        <target state="translated">%1$@ NTSC（または一般的では無い）リフレッシュレートは、 %2$@ 構成保護を強制しない限り、モード変更後に継続しない可能性があります。</target>
+        <target state="translated">%1$@ NTSC（または非公開）のリフレッシュレートは、 %2$@ 構成保護で強制しないと、モード変更後に継続しなくなる可能性があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
@@ -834,6 +834,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting." xml:space="preserve">
         <source>Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting.</source>
+        <target state="translated">適切な標準モードが利用できない場合に、構成保護機能で設定した非公開リフレッシュレートに切り替えることを許可します。リフレッシュレートの設定を保護しようとして問題が発生した場合には、このオプションを無効化してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
@@ -5457,6 +5458,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Refresh rate (unexposed) changed for %@." xml:space="preserve">
         <source>Refresh rate (unexposed) changed for %@.</source>
+        <target state="translated">リフレッシュレート（非公開）が %@ に変更されました。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh string" xml:space="preserve">
@@ -6826,7 +6828,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble." xml:space="preserve">
         <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble.</source>
-        <target state="translated">このディスプレイを接続すると、読み込んだEDIDを適用します。この操作によりアップデートしたEDIDで既存のモードを使用できない場合には、画面がちらついてモードが切り替わります。新しいEDIDが異なるIDデータ（ベンダー、モデル、シリアル）を持つ場合、異なるディスプレイとして再検出されます。Shiftを押したまま起動すると、セーフモードが有効となり、EDIDが自動的に適用されることを防げます。深刻な問題が生じた場合には、ディスプレイを物理的に接続し直して最初の状態に戻してみてください。</target>
+        <target state="translated">このディスプレイを接続すると、読み込んだEDIDを適用します。この操作によりアップデートしたEDIDで既存のモードを使用できない場合には、画面がちらついてモードが切り替わります。新しいEDIDが異なるIDデータ（ベンダー、モデル、シリアル）を持つ場合、異なるディスプレイとして再検出されます。Shiftを押したまま起動すると、セーフモードが有効となり、EDIDが自動的に適用されることを防げます。深刻な問題が発生した場合には、ディスプレイを物理的に接続し直して最初の状態に戻してみてください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
@@ -6905,6 +6907,10 @@ This operation does not reset the display itself.</source>
       <trans-unit id="The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu)." xml:space="preserve">
         <source>The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu).</source>
         <target state="translated">メニューバーアイコンは、アプリメニューの中央に配置されます。無効化すると、より伝統的な外観（メニューバーアイコンをアプリメニューの左側に揃える）になります。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
+        <source>The mouse hovers over the streamed content and does not interact with it.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully." xml:space="preserve">
@@ -7501,6 +7507,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Unexposed refresh rate switch for Configuration Protection" xml:space="preserve">
         <source>Unexposed refresh rate switch for Configuration Protection</source>
+        <target state="translated">構成保護用の非公開リフレッシュレートスイッチ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unhide Stream" xml:space="preserve">
