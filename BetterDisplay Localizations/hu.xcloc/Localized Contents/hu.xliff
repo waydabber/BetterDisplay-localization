@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -53,9 +53,24 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
+      <trans-unit id=" %lld x %lld" xml:space="preserve">
+        <source> %1$lld x %2$lld</source>
+        <target state="translated"> %1$lld x %2$lld</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%%" xml:space="preserve">
+        <source>%.1f%%</source>
+        <target state="translated">%.1f%%</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%% x %.1f%%" xml:space="preserve">
+        <source>%1$.1f%% x %2$.1f%%</source>
+        <target state="translated">%1$.1f%% x %2$.1f%%</target>
         <note/>
       </trans-unit>
       <trans-unit id="%.3fHz" xml:space="preserve">
@@ -81,16 +96,6 @@
       <trans-unit id="%@ %lld additional color modes are available with different refresh rates." xml:space="preserve">
         <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
         <target state="translated">%1$@ %2$lld további színmód érhető el különböző frissítési rátákkal.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ (%@)" xml:space="preserve">
-        <source>%1$@ (%2$@)</source>
-        <target state="translated">%1$@ (%2$@)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ (%@)%@" xml:space="preserve">
-        <source>%1$@ (%2$@)%3$@</source>
-        <target state="translated">%1$@ (%2$@)%3$@</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ - Swap Position" xml:space="preserve">
@@ -183,8 +188,13 @@
         <target state="translated">%@ Az alkalmazás figyeli a natív hangerőszabályzó gombokat (ha a jogosultságok ezt megengedik).</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
+        <source>%@ The mouse hovers over the streamed content and does not interact with it.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
         <source>%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!</source>
+        <target state="translated">%@ Használd a ⌘ Command + Kattintás kombinációt az egérkurzor forrásképernyőre ugrásához!</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
@@ -227,19 +237,9 @@
         <target state="translated">%1$@, %2$@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@Hz" xml:space="preserve">
-        <source>%@Hz</source>
-        <target state="translated">%@Hz</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%@mm" xml:space="preserve">
         <source>%@mm</source>
         <target state="translated">%@mm</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@mm x %@mm" xml:space="preserve">
-        <source>%1$@mm x %2$@mm</source>
-        <target state="translated">%1$@mm x %2$@mm</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@x%@" xml:space="preserve">
@@ -252,14 +252,14 @@
         <target state="translated">%1$@x%2$@%3$@ %4$@ %5$lld%6$@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%lf" xml:space="preserve">
-        <source>%lf</source>
-        <target state="translated">%lf</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%lld" xml:space="preserve">
         <source>%lld</source>
         <target state="translated">%lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld : %lld" xml:space="preserve">
+        <source>%1$lld : %2$lld</source>
+        <target state="translated">%1$lld : %2$lld</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -297,19 +297,9 @@
         <target state="translated">%lld°</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%llu" xml:space="preserve">
-        <source>%llu</source>
-        <target state="translated">%llu</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%llu bits per sample" xml:space="preserve">
         <source>%llu bits per sample</source>
         <target state="translated">%llu bit mintánként</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%llu x %llu" xml:space="preserve">
-        <source>%1$llu x %2$llu</source>
-        <target state="translated">%1$llu x %2$llu</target>
         <note/>
       </trans-unit>
       <trans-unit id="%u" xml:space="preserve">
@@ -350,6 +340,10 @@
       <trans-unit id="-" xml:space="preserve">
         <source>-</source>
         <target state="translated">-</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
         <note/>
       </trans-unit>
       <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
@@ -839,6 +833,10 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
       <trans-unit id="Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation." xml:space="preserve">
         <source>Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation.</source>
         <target state="translated">Lehetővé teszi a nit-számláló stílusos animációját és vizuális visszajelzést nyújt a felskálázásról. Letiltva visszafogottabb megjelenítést biztosít.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting." xml:space="preserve">
+        <source>Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
@@ -1627,6 +1625,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Csomag méret</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
+        <source>Click Here To Configure DDC…</source>
+        <target state="translated">DDC funkciók konfigurálása…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
         <source>Click icon to open/close app menu!</source>
         <target state="translated">Menü nyitása, zárása.</target>
@@ -1635,6 +1638,10 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
         <target state="translated">További funkciók mutatása…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio." xml:space="preserve">
+        <source>Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -1667,11 +1674,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Színprofil konfiguráció</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Profile changed for %@." xml:space="preserve">
-        <source>Color Profile changed for %@.</source>
-        <target state="translated">A színprofil módosítva a(z) %@ kijelzőn.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">Színhőmérséklet</target>
@@ -1685,6 +1687,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Color mode changed for %@." xml:space="preserve">
         <source>Color mode changed for %@.</source>
         <target state="translated">A színmód megváltozott a %@ számára.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color profile changed for %@." xml:space="preserve">
+        <source>Color profile changed for %@.</source>
+        <target state="translated">A színprofil módosítva a(z) %@ kijelzőn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1732,6 +1739,10 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Az alapértelmezett beállításoknál nincs szükség kombinált fényerőre, mivel a natív XDR-fényerőskála a teljes konfigurálható skálát lefedi. Csak akkor használja, ha a fényerőgörbét a konfigurált XDR-fényerőskála minimumánál alacsonyabb szinteken szeretné finomhangolni.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero." xml:space="preserve">
+        <source>Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
         <source>Computer monitor</source>
         <target state="translated">Számítógép monitor</target>
@@ -1765,11 +1776,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Configure DDC Controls…" xml:space="preserve">
         <source>Configure DDC Controls…</source>
         <target state="translated">DDC vezérlés konfigurálása…</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure DDC Features…" xml:space="preserve">
-        <source>Configure DDC Features…</source>
-        <target state="translated">DDC funkciók konfigurálása…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
@@ -2787,6 +2793,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Kihagyás</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Dismiss Hint" xml:space="preserve">
+        <source>Dismiss Hint</source>
+        <target state="translated">Tipp elrejtése</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Dispatch OSD notifications" xml:space="preserve">
         <source>Dispatch OSD notifications</source>
         <target state="translated">OSD üzenetek küldése</target>
@@ -2862,11 +2873,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Képernyő mód Menü</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display Mode changed for %@." xml:space="preserve">
-        <source>Display Mode changed for %@.</source>
-        <target state="translated">A képernyőmód módosítva a(z) %@ kijelzőn.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display Notch" xml:space="preserve">
         <source>Display Notch</source>
         <target state="translated">Kijelző bevágás</target>
@@ -2930,6 +2936,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Display menu options" xml:space="preserve">
         <source>Display menu options</source>
         <target state="translated">Kijelző menü lehetőségek</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display mode changed for %@." xml:space="preserve">
+        <source>Display mode changed for %@.</source>
+        <target state="translated">A képernyőmód módosítva a(z) %@ kijelzőn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display mode submenu settings" xml:space="preserve">
@@ -3371,6 +3382,10 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Kísérleti funkció</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Export Display Information…" xml:space="preserve">
+        <source>Export Display Information…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
         <source>Export EDID Data…</source>
         <target state="translated">EDID adat exportálása…</target>
@@ -3661,16 +3676,6 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">HDR színprofil</target>
         <note/>
       </trans-unit>
-      <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
-        <source>HDR Color Profile changed for %@.</source>
-        <target state="translated">A HDR színprofil módosítva a(z) %@ kijelzőn.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR Color mode changed for %@." xml:space="preserve">
-        <source>HDR Color mode changed for %@.</source>
-        <target state="translated">HDR színmód megváltozott: %@.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
         <target state="translated">HDR ki</target>
@@ -3684,6 +3689,16 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
       <trans-unit id="HDR Status" xml:space="preserve">
         <source>HDR Status</source>
         <target state="translated">HDR státusz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color mode changed for %@." xml:space="preserve">
+        <source>HDR color mode changed for %@.</source>
+        <target state="translated">HDR színmód megváltozott: %@.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color profile changed for %@." xml:space="preserve">
+        <source>HDR color profile changed for %@.</source>
+        <target state="translated">A HDR színprofil módosítva a(z) %@ kijelzőn.</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR mode changed for %@." xml:space="preserve">
@@ -4318,6 +4333,11 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
         <source>Loaded EDID Data</source>
         <target state="translated">Betöltött EDID adat</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Lock Window Position" xml:space="preserve">
+        <source>Lock Window Position</source>
+        <target state="translated">Ablak pozició rögzítése</target>
         <note/>
       </trans-unit>
       <trans-unit id="Logical height" xml:space="preserve">
@@ -5070,6 +5090,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Kép a képben</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Pipe horizontal limit values" xml:space="preserve">
+        <source>Pipe horizontal limit values</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Pixel Aspect Ratio" xml:space="preserve">
         <source>Pixel Aspect Ratio</source>
         <target state="translated">Pixel oldalarány</target>
@@ -5180,6 +5204,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Folyamatosság megőrzése EDID kijelző azonosítók megváltozása esetén</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Preset Index" xml:space="preserve">
+        <source>Preset Index</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
         <source>Prevent accidental rotation of the internal display.</source>
         <target state="translated">Megakadályozza a beépített kijelző véletlenszerű elforgatását.</target>
@@ -5213,6 +5241,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">Terméknév</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prohibit Resizing" xml:space="preserve">
+        <source>Prohibit Resizing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Protect the position of %@%@" xml:space="preserve">
@@ -5395,6 +5427,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Vörös erősítés (DDC)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Redefine 0% software brightness level" xml:space="preserve">
+        <source>Redefine 0% software brightness level</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Redetect DDC Capabilities…" xml:space="preserve">
         <source>Redetect DDC Capabilities…</source>
         <target state="translated">DDC képességek felderítése…</target>
@@ -5413,6 +5449,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Refresh Rate" xml:space="preserve">
         <source>Refresh Rate</source>
         <target state="translated">Frissítési ráta</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Refresh rate (unexposed) changed for %@." xml:space="preserve">
+        <source>Refresh rate (unexposed) changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh string" xml:space="preserve">
@@ -6150,6 +6190,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">Mutat mind</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show Crop Rectangle Boundary" xml:space="preserve">
+        <source>Show Crop Rectangle Boundary</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
         <source>Show Currently Disconnected</source>
         <target state="translated">Leválasztottak megjelenítése</target>
@@ -6388,6 +6432,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Smooth transitions" xml:space="preserve">
         <source>Smooth transitions</source>
         <target state="translated">Finom átmenetek</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Snap Size Near 25% Increments" xml:space="preserve">
+        <source>Snap Size Near 25% Increments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
@@ -7445,6 +7493,10 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Utolsó módváltás visszavonása</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unexposed refresh rate switch for Configuration Protection" xml:space="preserve">
+        <source>Unexposed refresh rate switch for Configuration Protection</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unhide Stream" xml:space="preserve">
         <source>Unhide Stream</source>
         <target state="translated">Stream felfedése</target>
@@ -7483,11 +7535,6 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
         <source>Unlock EDID write - I understand the risks involved</source>
         <target state="translated">EDID írás engedélyezése - kockázatok elfogadása</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Unmovable Window (Lock)" xml:space="preserve">
-        <source>Unmovable Window (Lock)</source>
-        <target state="translated">Mozdíthatatlan ablak (rögzítés)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
@@ -7790,8 +7837,13 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Ébredési késleltetés</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
+        <source>Warp Mouse Cursor</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Warp mouse cursor from screen" xml:space="preserve">
         <source>Warp mouse cursor from screen</source>
+        <target state="translated">Egérkurzor ugrása a képernyőről</target>
         <note/>
       </trans-unit>
       <trans-unit id="Watch all group members for resolution changes" xml:space="preserve">
@@ -8027,6 +8079,10 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
         <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
         <target state="translated">Az EDID-adatokat lekérheti, módosíthatja és betöltheti/alkalmazhatja, ezáltal megváltoztva a Mac által érzékelt kijelzőképességeket.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!" xml:space="preserve">
+        <source>You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!</source>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">

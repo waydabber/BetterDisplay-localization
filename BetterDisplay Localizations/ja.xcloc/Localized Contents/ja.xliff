@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -53,9 +53,24 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
+      <trans-unit id=" %lld x %lld" xml:space="preserve">
+        <source> %1$lld x %2$lld</source>
+        <target state="translated"> %1$lld x %2$lld</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%%" xml:space="preserve">
+        <source>%.1f%%</source>
+        <target state="translated">%.1f%%</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%% x %.1f%%" xml:space="preserve">
+        <source>%1$.1f%% x %2$.1f%%</source>
+        <target state="translated">%1$.1f%% × %2$.1f%%</target>
         <note/>
       </trans-unit>
       <trans-unit id="%.3fHz" xml:space="preserve">
@@ -81,16 +96,6 @@
       <trans-unit id="%@ %lld additional color modes are available with different refresh rates." xml:space="preserve">
         <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
         <target state="translated">%1$@ %2$lld リフレッシュレートが異なる追加のカラーモードが利用可能です。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ (%@)" xml:space="preserve">
-        <source>%1$@ (%2$@)</source>
-        <target state="translated">%1$@ (%2$@)</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ (%@)%@" xml:space="preserve">
-        <source>%1$@ (%2$@)%3$@</source>
-        <target state="translated">%1$@（%2$@）%3$@</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ - Swap Position" xml:space="preserve">
@@ -130,7 +135,7 @@
       </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
-        <target state="translated">%1$@ NTSC（または一般的では無い）リフレッシュレートは、 %2$@ 構成保護を強制しない限り、モード変更後に継続しない可能性があります。</target>
+        <target state="translated">%1$@ NTSC（または非公開）のリフレッシュレートは、 %2$@ 構成保護で強制しないと、モード変更後に継続しなくなる可能性があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
@@ -183,8 +188,14 @@
         <target state="translated">%@ 現在は音量キーをチェックしています（アクセス権の許可が必要）が、ミュートキーはチェックしていません。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
+        <source>%@ The mouse hovers over the streamed content and does not interact with it.</source>
+        <target state="translated">%@ マウスはストリームされたコンテンツ上をホバーし、操作することはできません。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
         <source>%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!</source>
+        <target state="translated">%@ ⌘ コマンド + クリック を使ってマウスポインタをソース画面にワープさせます!</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
@@ -227,19 +238,9 @@
         <target state="translated">%1$@, %2$@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@Hz" xml:space="preserve">
-        <source>%@Hz</source>
-        <target state="translated">%@Hz</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%@mm" xml:space="preserve">
         <source>%@mm</source>
         <target state="translated">%@mm</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@mm x %@mm" xml:space="preserve">
-        <source>%1$@mm x %2$@mm</source>
-        <target state="translated">%1$@mm × %2$@mm</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@x%@" xml:space="preserve">
@@ -252,14 +253,14 @@
         <target state="translated">%1$@x%2$@%3$@ %4$@ %5$lld%6$@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%lf" xml:space="preserve">
-        <source>%lf</source>
-        <target state="translated">%lf</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%lld" xml:space="preserve">
         <source>%lld</source>
         <target state="translated">%lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld : %lld" xml:space="preserve">
+        <source>%1$lld : %2$lld</source>
+        <target state="translated">%1$lld : %2$lld</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -297,19 +298,9 @@
         <target state="translated">%lld°</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%llu" xml:space="preserve">
-        <source>%llu</source>
-        <target state="translated">%llu</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%llu bits per sample" xml:space="preserve">
         <source>%llu bits per sample</source>
         <target state="translated">%lluビット/サンプル</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%llu x %llu" xml:space="preserve">
-        <source>%1$llu x %2$llu</source>
-        <target state="translated">%1$llu × %2$llu</target>
         <note/>
       </trans-unit>
       <trans-unit id="%u" xml:space="preserve">
@@ -350,6 +341,11 @@
       <trans-unit id="-" xml:space="preserve">
         <source>-</source>
         <target state="translated">-</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
+        <target state="translated">0</target>
         <note/>
       </trans-unit>
       <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
@@ -419,7 +415,7 @@
       </trans-unit>
       <trans-unit id="A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app." xml:space="preserve">
         <source>A virtual screen is similar to a real display but exists only in the virtual space (in the computer's memory). You can use it to show it in a PIP window, stream or mirror its content to a real display or use it as a source for screen recording or screencast via an appropriate app.</source>
-        <target state="translated">仮想スクリーンは実ディスプレイと似ていますが、仮想空間（コンピュータのメモリ内）にのみ存在します。これを使用して、PIPウインドウを表示したり、その内容を実ディスプレイにストリーミングまたはミラーリングしたり、適切なアプリを使った画面集録やスクリーンキャストのソースとして使用したりできます。</target>
+        <target state="translated">仮想スクリーンは実ディスプレイと似ていますが、仮想空間（コンピュータのメモリ内）にのみ存在します。これを使用して、PIPウインドウを表示したり、そのコンテンツを実ディスプレイにストリーミングまたはミラーリングしたり、適切なアプリを使った画面集録やスクリーンキャストのソースとして使用したりできます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="A virtual screen which is associated with a display will automatically connect or disconnect when the associated display is connected or disconnected. You can disable auto-connect for associated virtual screens." xml:space="preserve">
@@ -733,7 +729,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
         <source>All previously dismissed warnings will now be back.</source>
-        <target state="translated">これまで無視した警告がすべて復活します。</target>
+        <target state="translated">これまで閉じた警告がすべて復活します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="All suitable screens" xml:space="preserve">
@@ -839,6 +835,11 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation." xml:space="preserve">
         <source>Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation.</source>
         <target state="translated">凝ったアニメーションのニトカウンタ表示により、アップスケーリングの視覚的フィードバックを行うことを許可。無効化した場合は控えめな表示を行います。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting." xml:space="preserve">
+        <source>Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting.</source>
+        <target state="translated">適切な標準モードが利用できない場合に、構成保護機能で設定した非公開リフレッシュレートに切り替えることを許可します。リフレッシュレートの設定を保護しようとして問題が発生した場合には、このオプションを無効化してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
@@ -1284,12 +1285,12 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Automatically configure mirroring to show the virtual screen's content on the associated display." xml:space="preserve">
         <source>Automatically configure mirroring to show the virtual screen's content on the associated display.</source>
-        <target state="translated">仮想スクリーンの内容を関連づけたディスプレイに表示するミラーリングの構成を自動的に行います。</target>
+        <target state="translated">仮想スクリーンのコンテンツを、関連づけたディスプレイに表示するようミラーリングを自動的に構成します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically configure mirroring to show the virtual screen's content on the associated display. If multiple associated displays are connected, only one will be mirror target." xml:space="preserve">
         <source>Automatically configure mirroring to show the virtual screen's content on the associated display. If multiple associated displays are connected, only one will be mirror target.</source>
-        <target state="translated">関連づけたディスプレイへの仮想スクリーン内容のミラーリング表示を自動的に構成します。関連づけたディスプレイが複数接続されている場合は、1つだけがミラーリング先になります。</target>
+        <target state="translated">関連づけたディスプレイへの仮想スクリーンコンテンツのミラーリング表示を自動的に構成します。関連づけたディスプレイが複数接続されている場合は、1つだけがミラーリング先になります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
@@ -1304,7 +1305,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
         <source>Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content.</source>
-        <target state="translated">HDRモードに設定しているサードパーティ製外付けディスプレイのNight ShiftとTrue Toneの両方を自動的に無効化し、SDRモードに切り替えたときには有効化します。HDRコンテンツを視聴する際に、より正確なカラーを再現するのに便利です。</target>
+        <target state="translated">HDRモードに設定しているサードパーティ製外付けディスプレイのNight ShiftとTrue Toneの両方を自動的に無効化し、SDRモードに切り替えたときには有効化します。HDRコンテンツを視聴する際に、より正確なカラーを再現するのに役立ちます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically launch on login" xml:space="preserve">
@@ -1627,6 +1628,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">チャンクサイズ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
+        <source>Click Here To Configure DDC…</source>
+        <target state="translated">DDC機能を構成…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
         <source>Click icon to open/close app menu!</source>
         <target state="translated">アイコンをクリックしてアプリメニューを開閉できます!</target>
@@ -1635,6 +1641,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
         <target state="translated">クリックして機能を表示/非表示します…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio." xml:space="preserve">
+        <source>Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio.</source>
+        <target state="translated">クリックスルーには、透明度を保ちながら位置をロックする必要があります。ウインドウシャドウのコントロールには、タイトルバーを非表示に、アスペクト比を自由にする必要があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -1667,11 +1678,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">カラープロファイル構成</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Profile changed for %@." xml:space="preserve">
-        <source>Color Profile changed for %@.</source>
-        <target state="translated">%@のSDRカラープロファイルを変更しました。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">色温度</target>
@@ -1685,6 +1691,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Color mode changed for %@." xml:space="preserve">
         <source>Color mode changed for %@.</source>
         <target state="translated">%@のカラーモードを変更しました。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color profile changed for %@." xml:space="preserve">
+        <source>Color profile changed for %@.</source>
+        <target state="translated">%@のSDRカラープロファイルを変更しました。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1732,6 +1743,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">XDRのネイティブ輝度スケールは設定可能なスケール全体をカバーしているため、デフォルト設定で複合輝度を使う必要はありません。構成したXDR輝度スケール以下にディミングカーブを微調整したい場合にのみ使用してください。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero." xml:space="preserve">
+        <source>Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero.</source>
+        <target state="translated">指定された値から100%までの間のソフトウェア輝度の許容範囲を圧縮し、複合輝度制御のソフトウェアコンポーネントにも同様な影響を与えます。ソフトウェア輝度レベルを誤って低すぎたり、ゼロに設定したりしてしまうことを防止します。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
         <source>Computer monitor</source>
         <target state="translated">コンピュータモニター</target>
@@ -1765,11 +1781,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure DDC Controls…" xml:space="preserve">
         <source>Configure DDC Controls…</source>
         <target state="translated">DDC制御を構成…</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure DDC Features…" xml:space="preserve">
-        <source>Configure DDC Features…</source>
-        <target state="translated">DDC機能を構成…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
@@ -1999,42 +2010,42 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Crop area height - decrease" xml:space="preserve">
         <source>Crop area height - decrease</source>
-        <target state="translated">クロップ領域高さ - 減少</target>
+        <target state="translated">切り取り領域高さ - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop area height - increase" xml:space="preserve">
         <source>Crop area height - increase</source>
-        <target state="translated">クロップ領域高さ - 増加</target>
+        <target state="translated">切り取り領域高さ - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop area width - decrease" xml:space="preserve">
         <source>Crop area width - decrease</source>
-        <target state="translated">クロップ領域幅 - 減少</target>
+        <target state="translated">切り取り領域幅 - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop area width - increase" xml:space="preserve">
         <source>Crop area width - increase</source>
-        <target state="translated">クロップ領域幅 - 増加</target>
+        <target state="translated">切り取り領域幅 - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin X - decrease" xml:space="preserve">
         <source>Crop origin X - decrease</source>
-        <target state="translated">クロップ原点X座標 - 減少</target>
+        <target state="translated">切り取り原点X座標 - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin X - increase" xml:space="preserve">
         <source>Crop origin X - increase</source>
-        <target state="translated">クロップ原点X座標 - 増加</target>
+        <target state="translated">切り取り原点X座標 - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin Y - decrease" xml:space="preserve">
         <source>Crop origin Y - decrease</source>
-        <target state="translated">クロップ原点Y座標 - 減少</target>
+        <target state="translated">切り取り原点Y座標 - 減少</target>
         <note/>
       </trans-unit>
       <trans-unit id="Crop origin Y - increase" xml:space="preserve">
         <source>Crop origin Y - increase</source>
-        <target state="translated">クロップ原点Y座標 - 増加</target>
+        <target state="translated">切り取り原点Y座標 - 増加</target>
         <note/>
       </trans-unit>
       <trans-unit id="Current" xml:space="preserve">
@@ -2174,7 +2185,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Customize App Menu Contents…" xml:space="preserve">
         <source>Customize App Menu Contents…</source>
-        <target state="translated">アプリメニュー内容をカスタマイズ…</target>
+        <target state="translated">アプリメニューのコンテンツをカスタマイズ…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Customize Menu Options" xml:space="preserve">
@@ -2194,7 +2205,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Customize the contents of the app menu - set which items are visible always, which only when the menu is expanded and which ones should be hidden." xml:space="preserve">
         <source>Customize the contents of the app menu - set which items are visible always, which only when the menu is expanded and which ones should be hidden.</source>
-        <target state="translated">アプリメニュー内容をカスタマイズ - 常に表示する項目、メニューが展開された時のみ表示する項目や非表示にする項目を設定します。</target>
+        <target state="translated">アプリメニューのコンテンツをカスタマイズ - 常に表示する項目、メニューが展開された時のみ表示する項目や非表示にする項目を設定します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Cut" xml:space="preserve">
@@ -2454,17 +2465,17 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Define a custom app icon from Apple's SF Symbol icon library. You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`)." xml:space="preserve">
         <source>Define a custom app icon from Apple's SF Symbol icon library. You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`).</source>
-        <target state="translated">AppleのSF Symbolアイコンライブラリからカスタムアイコンを設定します。SF Symbols アプリを[developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) からダウンロードし、適切なSF Symbolアイコン文字列を見つけることができます（「face.smiling」を試してみてください）。</target>
+        <target state="translated">AppleのSF Symbolアイコンライブラリからカスタムアイコンを定義します。SF Symbols アプリを[developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) からダウンロードし、適切なSF Symbolアイコン文字列を見つけることができます（「face.smiling」を試してみてください）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Define the crop area either by drawing the crop rectangle on the stream source screen or by keyboard shortcuts." xml:space="preserve">
         <source>Define the crop area either by drawing the crop rectangle on the stream source screen or by keyboard shortcuts.</source>
-        <target state="translated">クロップ領域を定義するには、ストリーミングソース画面上にクロップ矩形を描画するか、キーボードショートカットを使用してください。</target>
+        <target state="translated">切り取り領域を定義するには、ストリーミングソース画面上に切り取り枠を描画するか、キーボードショートカットを使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Defines the TCP port the built-in HTTP server listens to." xml:space="preserve">
         <source>Defines the TCP port the built-in HTTP server listens to.</source>
-        <target state="translated">ビルトインHTTPサーバが待ち受けるTCPポートを設定</target>
+        <target state="translated">ビルトインHTTPサーバが待ち受けるTCPポートを定義します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different." xml:space="preserve">
@@ -2474,12 +2485,12 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black." xml:space="preserve">
         <source>Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black.</source>
-        <target state="translated">輝度制御の下限をニトで設定します。ブラックまで完全に連続的ディミングする場合には0を使用してください。</target>
+        <target state="translated">輝度制御の下限をニトで定義します。ブラックまで完全に連続的ディミングする場合には0を使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
         <source>Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness.</source>
-        <target state="translated">輝度制御の上限をニトで設定します。フルスクリーンの輝度を維持したい場合にのみ1000を使用してください。</target>
+        <target state="translated">輝度制御の上限をニトで定義します。フルスクリーンの輝度を維持したい場合にのみ1000を使用してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Delay between commands" xml:space="preserve">
@@ -2774,7 +2785,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
         <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">すべてのディスプレイの接続を解除すると、Macとのやりとりができなくなることがあります!</target>
+        <target state="translated">すべてのディスプレイの接続を解除すると、Macを操作できなくなることがあります!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnecting virtual screens" xml:space="preserve">
@@ -2785,6 +2796,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
         <target state="translated">閉じる</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dismiss Hint" xml:space="preserve">
+        <source>Dismiss Hint</source>
+        <target state="translated">ヒントを閉じる</target>
         <note/>
       </trans-unit>
       <trans-unit id="Dispatch OSD notifications" xml:space="preserve">
@@ -2862,11 +2878,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">ディスプレイモードメニュー</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display Mode changed for %@." xml:space="preserve">
-        <source>Display Mode changed for %@.</source>
-        <target state="translated">%@のディスプレイモードを変更しました。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display Notch" xml:space="preserve">
         <source>Display Notch</source>
         <target state="translated">ディスプレイノッチ</target>
@@ -2930,6 +2941,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Display menu options" xml:space="preserve">
         <source>Display menu options</source>
         <target state="translated">ディスプレイメニューオプション</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display mode changed for %@." xml:space="preserve">
+        <source>Display mode changed for %@.</source>
+        <target state="translated">%@のディスプレイモードを変更しました。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Display mode submenu settings" xml:space="preserve">
@@ -3063,7 +3079,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Draw Crop Area On Screen…" xml:space="preserve">
         <source>Draw Crop Area On Screen…</source>
-        <target state="translated">スクリーンをクロップする領域を描画…</target>
+        <target state="translated">スクリーンを切り取る領域を描画…</target>
         <note/>
       </trans-unit>
       <trans-unit id="EDID Retrieval Method" xml:space="preserve">
@@ -3163,7 +3179,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
-        <target state="translated">クロッピングを有効化</target>
+        <target state="translated">切り取りを有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable DDC control" xml:space="preserve">
@@ -3228,7 +3244,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">フレキシブルスケーリング、カスタムスケール解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割。 の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+        <target state="translated">フレキシブルスケーリング、カスタムスケール解像度の作成、ネイティブ解像度とデフォルト解像度の変更、ディスプレイ名と役割の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -3371,9 +3387,14 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">実験的機能</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Export Display Information…" xml:space="preserve">
+        <source>Export Display Information…</source>
+        <target state="translated">ディスプレイ情報をエクスポート…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
         <source>Export EDID Data…</source>
-        <target state="translated">EDIDデータをエクスポート</target>
+        <target state="translated">EDIDデータをエクスポート…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export…" xml:space="preserve">
@@ -3661,16 +3682,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">HDRカラープロファイル</target>
         <note/>
       </trans-unit>
-      <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
-        <source>HDR Color Profile changed for %@.</source>
-        <target state="translated">%@のHDRカラープロファイルを変更しました。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR Color mode changed for %@." xml:space="preserve">
-        <source>HDR Color mode changed for %@.</source>
-        <target state="translated">%@のHDRカラーモードを変更しました。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
         <target state="translated">HDRオフ</target>
@@ -3684,6 +3695,16 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="HDR Status" xml:space="preserve">
         <source>HDR Status</source>
         <target state="translated">HDRの状態</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color mode changed for %@." xml:space="preserve">
+        <source>HDR color mode changed for %@.</source>
+        <target state="translated">%@のHDRカラーモードを変更しました。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color profile changed for %@." xml:space="preserve">
+        <source>HDR color profile changed for %@.</source>
+        <target state="translated">%@のHDRカラープロファイルを変更しました。</target>
         <note/>
       </trans-unit>
       <trans-unit id="HDR mode changed for %@." xml:space="preserve">
@@ -4012,7 +4033,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Input Sources…" xml:space="preserve">
         <source>Input Sources…</source>
-        <target state="translated">入力ソース</target>
+        <target state="translated">入力ソース…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling" xml:space="preserve">
@@ -4320,6 +4341,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ロードしたEDIDデータ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Lock Window Position" xml:space="preserve">
+        <source>Lock Window Position</source>
+        <target state="translated">固定ウインドウ</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Logical height" xml:space="preserve">
         <source>Logical height</source>
         <target state="translated">高さ（論理的）</target>
@@ -4582,7 +4608,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Mirror the contents of this display to:" xml:space="preserve">
         <source>Mirror the contents of this display to:</source>
-        <target state="translated">このディスプレイのミラーリング先：</target>
+        <target state="translated">このディスプレイのコンテンツのミラーリング先：</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mirrored to %@" xml:space="preserve">
@@ -5070,6 +5096,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ピクチャインピクチャ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Pipe horizontal limit values" xml:space="preserve">
+        <source>Pipe horizontal limit values</source>
+        <target state="translated">水平制限値をパイプ</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Pixel Aspect Ratio" xml:space="preserve">
         <source>Pixel Aspect Ratio</source>
         <target state="translated">ピクセルアスペクト比</target>
@@ -5180,6 +5211,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">EDIDディスプレイのアイデンティティが変更された場合も、連続性を維持します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Preset Index" xml:space="preserve">
+        <source>Preset Index</source>
+        <target state="translated">プリセットの索引</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
         <source>Prevent accidental rotation of the internal display.</source>
         <target state="translated">内蔵ディスプレイの思いがけない回転を防ぎます。</target>
@@ -5213,6 +5249,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">製品名</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prohibit Resizing" xml:space="preserve">
+        <source>Prohibit Resizing</source>
+        <target state="translated">サイズ変更を禁止</target>
         <note/>
       </trans-unit>
       <trans-unit id="Protect the position of %@%@" xml:space="preserve">
@@ -5395,6 +5436,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">レッドゲイン（DDC）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Redefine 0% software brightness level" xml:space="preserve">
+        <source>Redefine 0% software brightness level</source>
+        <target state="translated">0%ソフトウェア輝度レベルを再定義</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Redetect DDC Capabilities…" xml:space="preserve">
         <source>Redetect DDC Capabilities…</source>
         <target state="translated">DDC能力を再検出…</target>
@@ -5413,6 +5459,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Refresh Rate" xml:space="preserve">
         <source>Refresh Rate</source>
         <target state="translated">リフレッシュレート</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Refresh rate (unexposed) changed for %@." xml:space="preserve">
+        <source>Refresh rate (unexposed) changed for %@.</source>
+        <target state="translated">リフレッシュレート（非公開）が %@ に変更されました。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh string" xml:space="preserve">
@@ -5592,7 +5643,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reset Warning Dismissals" xml:space="preserve">
         <source>Reset Warning Dismissals</source>
-        <target state="translated">無視した警告をリセット</target>
+        <target state="translated">閉じた警告をリセット</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset all VMM7100 devices before wake or unlock reinitialization for this display" xml:space="preserve">
@@ -5662,7 +5713,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Restart App…" xml:space="preserve">
         <source>Restart App…</source>
-        <target state="translated">アプリを再起動</target>
+        <target state="translated">アプリを再起動…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Restart the app" xml:space="preserve">
@@ -6127,7 +6178,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
         <source>Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks-in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering heavy PWM range, substituting it with software dimming instead.</source>
-        <target state="translated">複合輝度制御を使用する場合に、ソフトウェアディミングを開始するハードウェア輝度値（独自スケールでの）の最小値を設定します。この設定は、PWM感度が高い場合に有効で、バックライト制御が重いPWMレンジに入ることを禁止し、代わりにソフトウェアディミングを使用します。</target>
+        <target state="translated">複合輝度制御を使用する場合に、ソフトウェアディミングを開始するハードウェア輝度値（独自スケールでの）で許容できる最小値を設定します。この設定は、PWMに対する感受性が敏感な場合に有効で、バックライト制御が耐えがたいPWMレンジに入ることを禁止して、代わりにソフトウェアディミングを使用します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
@@ -6148,6 +6199,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show All" xml:space="preserve">
         <source>Show All</source>
         <target state="translated">すべてを表示</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Crop Rectangle Boundary" xml:space="preserve">
+        <source>Show Crop Rectangle Boundary</source>
+        <target state="translated">切り取り境界の枠を表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
@@ -6202,7 +6258,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show and snap to slider markers for favorites and special resolutions." xml:space="preserve">
         <source>Show and snap to slider markers for favorites and special resolutions.</source>
-        <target state="translated">お気に入りや特別な解像度のマーカを表示してスナップ</target>
+        <target state="translated">お気に入りや特別な解像度のマーカを表示してスライダにスナップ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show app icon in the menu bar" xml:space="preserve">
@@ -6390,6 +6446,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">スムーズなトランジション</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Snap Size Near 25% Increments" xml:space="preserve">
+        <source>Snap Size Near 25% Increments</source>
+        <target state="translated">25%刻みのスナップサイズ</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
         <source>Software XDR/HDR Upscaling and Dimming</source>
         <target state="translated">ソフトウェアXDR/HDRアップスケーリングとディミング</target>
@@ -6552,7 +6613,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Stream the contents of this display to:" xml:space="preserve">
         <source>Stream the contents of this display to:</source>
-        <target state="translated">このディスプレイの内容を次にストリーミング：</target>
+        <target state="translated">このディスプレイのコンテンツを次にストリーミング：</target>
         <note/>
       </trans-unit>
       <trans-unit id="Streaming from %@" xml:space="preserve">
@@ -6752,7 +6813,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
         <source>The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…</source>
-        <target state="translated">アプリメニューアイコンに、現在の主ディスプレイのアイコンを反映します。デフォルトのアイコンが気に入らない場合に有効化してください。</target>
+        <target state="translated">アプリメニューアイコンに、現在の主ディスプレイのアイコンを反映します。デフォルトのアイコンが気に入らない場合に有効化してください…</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app menu will show this name instead of the system name for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name." xml:space="preserve">
@@ -6772,7 +6833,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble." xml:space="preserve">
         <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble.</source>
-        <target state="translated">このディスプレイを接続すると、読み込んだEDIDを適用します。この操作によりアップデートしたEDIDで既存のモードを使用できない場合には、画面がちらついてモードが切り替わります。新しいEDIDが異なるIDデータ（ベンダー、モデル、シリアル）を持つ場合、異なるディスプレイとして再検出されます。Shiftを押したまま起動すると、セーフモードが有効となり、EDIDが自動的に適用されることを防げます。深刻な問題が生じた場合には、ディスプレイを物理的に接続し直して最初の状態に戻してみてください。</target>
+        <target state="translated">このディスプレイを接続すると、読み込んだEDIDを適用します。この操作によりアップデートしたEDIDで既存のモードを使用できない場合には、画面がちらついてモードが切り替わります。新しいEDIDが異なるIDデータ（ベンダー、モデル、シリアル）を持つ場合、異なるディスプレイとして再検出されます。Shiftを押したまま起動すると、セーフモードが有効となり、EDIDが自動的に適用されることを防げます。深刻な問題が発生した場合には、ディスプレイを物理的に接続し直して最初の状態に戻してみてください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
@@ -6805,7 +6866,7 @@ This operation does not reset the display itself.</source>
       </trans-unit>
       <trans-unit id="The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the &quot;LG alt&quot; toggle for some newer LG displays if input control does not work!" xml:space="preserve">
         <source>The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the "LG alt" toggle for some newer LG displays if input control does not work!</source>
-        <target state="translated">デフォルトの入力ソースリストは、一般的な割り当てを反映したものですが、実際にはディスプレイのベンダー/モデルによって異なります。新しいLGディスプレイで入力制御が機能しない場合は、「LG alt」トグルを使用してみてください!</target>
+        <target state="translated">デフォルトの入力ソースリストは、一般的な割り当てを反映したものですが、実際にはディスプレイのベンダー/モデルによって異なります。新しいLGディスプレイで入力制御が機能しない場合は、「LG alt」切り替えを使用してみてください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The display group is marked as exclusive while at least one other display group with higher priority is active." xml:space="preserve">
@@ -6868,7 +6929,7 @@ Enable and configure the created display group (including layout protection) und
 
 「%@」 という名前の新規ディスプレイグループが作成されました。ディスプレイグループは現在有効化されていません。
 
-設定 &gt; グループ からディスプレイグループを有効化と構成を行ってください（レイアウト保護を含みます）!</target>
+設定 &gt; グループ から作成したディスプレイグループ（レイアウト保護を含む）の有効化と構成を行ってください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully. Please Apply the configuration changes and follow further instructions!" xml:space="preserve">
@@ -7202,32 +7263,32 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Toggle Dark Mode" xml:space="preserve">
         <source>Toggle Dark Mode</source>
-        <target state="translated">ダークモードをトグル</target>
+        <target state="translated">ダークモードを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle HDR for display" xml:space="preserve">
         <source>Toggle HDR for display</source>
-        <target state="translated">ディスプレイのHDRをトグル</target>
+        <target state="translated">ディスプレイのHDRを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle HiDPI resolution for display" xml:space="preserve">
         <source>Toggle HiDPI resolution for display</source>
-        <target state="translated">ディスプレイのHiDPI解像度をトグル</target>
+        <target state="translated">ディスプレイのHiDPI解像度を切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Night Shift" xml:space="preserve">
         <source>Toggle Night Shift</source>
-        <target state="translated">Night Shiftをトグル</target>
+        <target state="translated">Night Shiftを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle True Tone" xml:space="preserve">
         <source>Toggle True Tone</source>
-        <target state="translated">True Toneをトグル</target>
+        <target state="translated">True Toneを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle cropping" xml:space="preserve">
         <source>Toggle cropping</source>
-        <target state="translated">クロップをトグル</target>
+        <target state="translated">切り取りを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle mute (DDC)" xml:space="preserve">
@@ -7242,7 +7303,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Toggles" xml:space="preserve">
         <source>Toggles</source>
-        <target state="translated">トグル</target>
+        <target state="translated">切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
@@ -7277,7 +7338,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Treat shortcuts as rotation toggles" xml:space="preserve">
         <source>Treat shortcuts as rotation toggles</source>
-        <target state="translated">ショートカットを回転トグルとして扱う</target>
+        <target state="translated">ショートカットを回転の切り替えとして扱う</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat this display (identified as Apple-made) as generic and allow DDC control to be enabled. Might cause permanent issues on some older Apple displays!" xml:space="preserve">
@@ -7287,7 +7348,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="True Tone turned off by HDR toggle" xml:space="preserve">
         <source>True Tone turned off by HDR toggle</source>
-        <target state="translated">HDRによるTrue Toneオフをトグル</target>
+        <target state="translated">HDRによるTrue Toneオフを切り替え</target>
         <note/>
       </trans-unit>
       <trans-unit id="Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled." xml:space="preserve">
@@ -7445,6 +7506,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">前回のモード変更を取り消す/やり直す</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unexposed refresh rate switch for Configuration Protection" xml:space="preserve">
+        <source>Unexposed refresh rate switch for Configuration Protection</source>
+        <target state="translated">構成保護用の非公開リフレッシュレートスイッチ</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unhide Stream" xml:space="preserve">
         <source>Unhide Stream</source>
         <target state="translated">ストリーミングを表示</target>
@@ -7483,11 +7549,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
         <source>Unlock EDID write - I understand the risks involved</source>
         <target state="translated">EDID書き込み制限を解除 - リスクを理解しています</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Unmovable Window (Lock)" xml:space="preserve">
-        <source>Unmovable Window (Lock)</source>
-        <target state="translated">固定ウインドウ（ロック）</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
@@ -7790,8 +7851,14 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">スリープ解除遅延時間</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
+        <source>Warp Mouse Cursor</source>
+        <target state="translated">マウスポインタをワープ</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Warp mouse cursor from screen" xml:space="preserve">
         <source>Warp mouse cursor from screen</source>
+        <target state="translated">スクリーンからマウスポインタをワープ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Watch all group members for resolution changes" xml:space="preserve">
@@ -7826,7 +7893,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100% brightness is inserted." xml:space="preserve">
         <source>When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100% brightness is inserted.</source>
-        <target state="translated">ハードウェア輝度制御を無効化した状態でHDRアップスケーリングが有効な場合、ゼロとキャリブレーションされた最大アップスケール値との間の連続的な輝度スケールを使用します。このため、ニュートラル設定（画面上のHDR内容がクリップされていないときの輝度100%）は、OSDのチクレット範囲に収まらないことがあり、ショートカットキーで達成することが難しくなります。この問題を解決するため、輝度100%に追加のチクレット中間ステップを挿入します。</target>
+        <target state="translated">ハードウェア輝度制御を無効化した状態でHDRアップスケーリングが有効な場合、ゼロとキャリブレーションされた最大アップスケール値との間の連続的な輝度スケールを使用します。このため、ニュートラル設定（画面上のHDRコンテンツがクリップされていないときの輝度100%）は、OSDのチクレット範囲に収まらないことがあり、ショートカットキーで達成することが難しくなります。この問題を解決するため、輝度100%に追加のチクレット中間ステップを挿入します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="When Settings is Open" xml:space="preserve">
@@ -7951,7 +8018,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="XDR Preset" xml:space="preserve">
         <source>XDR Preset</source>
-        <target state="translated">XDR設定</target>
+        <target state="translated">XDRプリセット</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR Preset &amp; Brightness" xml:space="preserve">
@@ -8001,7 +8068,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>
-        <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目 にアプリをドラッグできます。</target>
+        <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目 にアプリをドラッグすることもできます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
@@ -8027,6 +8094,11 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
         <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
         <target state="translated">EDIDデータを取得、変更、ロード/適用することで、Macが認識するディスプレイの能力を変更することができます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!" xml:space="preserve">
+        <source>You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!</source>
+        <target state="translated">⌘ コマンド + クリック を使ってソース画面にワープさせることもできます。設定 &gt; キーボード でワープからの復帰用ショートカットを定義することができます!</target>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">

@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="uk" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="uk" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="uk" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16B5100e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -53,9 +53,21 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
+      <trans-unit id=" %lld x %lld" xml:space="preserve">
+        <source> %1$lld x %2$lld</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%%" xml:space="preserve">
+        <source>%.1f%%</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%.1f%% x %.1f%%" xml:space="preserve">
+        <source>%1$.1f%% x %2$.1f%%</source>
         <note/>
       </trans-unit>
       <trans-unit id="%.3fHz" xml:space="preserve">
@@ -78,14 +90,6 @@
       </trans-unit>
       <trans-unit id="%@ %lld additional color modes are available with different refresh rates." xml:space="preserve">
         <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ (%@)" xml:space="preserve">
-        <source>%1$@ (%2$@)</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ (%@)%@" xml:space="preserve">
-        <source>%1$@ (%2$@)%3$@</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ - Swap Position" xml:space="preserve">
@@ -165,6 +169,10 @@
         <source>%@ The app listens to the volume keys (if permissions permit) but not the mute key.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
+        <source>%@ The mouse hovers over the streamed content and does not interact with it.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
         <source>%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!</source>
         <note/>
@@ -204,17 +212,8 @@
         <source>%1$@, %2$@</source>
         <note/>
       </trans-unit>
-      <trans-unit id="%@Hz" xml:space="preserve">
-        <source>%@Hz</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="%@mm" xml:space="preserve">
         <source>%@mm</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@mm x %@mm" xml:space="preserve">
-        <source>%1$@mm x %2$@mm</source>
-        <target state="translated">%1$@мм x %2$@мм</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@x%@" xml:space="preserve">
@@ -225,14 +224,13 @@
         <source>%1$@x%2$@%3$@ %4$@ %5$lld%6$@</source>
         <note/>
       </trans-unit>
-      <trans-unit id="%lf" xml:space="preserve">
-        <source>%lf</source>
-        <target state="translated">%lf</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%lld" xml:space="preserve">
         <source>%lld</source>
         <target state="translated">%lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld : %lld" xml:space="preserve">
+        <source>%1$lld : %2$lld</source>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -264,16 +262,8 @@
         <source>%lld°</source>
         <note/>
       </trans-unit>
-      <trans-unit id="%llu" xml:space="preserve">
-        <source>%llu</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="%llu bits per sample" xml:space="preserve">
         <source>%llu bits per sample</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%llu x %llu" xml:space="preserve">
-        <source>%1$llu x %2$llu</source>
         <note/>
       </trans-unit>
       <trans-unit id="%u" xml:space="preserve">
@@ -310,6 +300,10 @@
       <trans-unit id="-" xml:space="preserve">
         <source>-</source>
         <target state="translated">-</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
         <note/>
       </trans-unit>
       <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
@@ -767,6 +761,10 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation." xml:space="preserve">
         <source>Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting." xml:space="preserve">
+        <source>Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
@@ -1510,6 +1508,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Chunk size</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
+        <source>Click Here To Configure DDC…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Click icon to open/close app menu!" xml:space="preserve">
         <source>Click icon to open/close app menu!</source>
         <target state="translated">Натисніть значок, щоб відкрити/закрити меню програми!</target>
@@ -1518,6 +1520,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
         <target state="translated">Натисніть, щоб показати/приховати функції…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio." xml:space="preserve">
+        <source>Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -1548,10 +1554,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Конфігурація кольорового профілю</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Color Profile changed for %@." xml:space="preserve">
-        <source>Color Profile changed for %@.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Color Temperature" xml:space="preserve">
         <source>Color Temperature</source>
         <target state="translated">Колірна Температура</target>
@@ -1564,6 +1566,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Color mode changed for %@." xml:space="preserve">
         <source>Color mode changed for %@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color profile changed for %@." xml:space="preserve">
+        <source>Color profile changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
@@ -1611,6 +1617,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Комбінована яскравість не потрібна з налаштуваннями за замовчуванням, оскільки власна шкала яскравості XDR покриває всю шкалу, яку можна налаштувати. Використовуйте, лише якщо ви хочете точно налаштувати криву затемнення нижче налаштованого мінімуму шкали яскравості XDR</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero." xml:space="preserve">
+        <source>Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
         <source>Computer monitor</source>
         <target state="translated">Монітор комп'ютера</target>
@@ -1643,10 +1653,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure DDC Controls…" xml:space="preserve">
         <source>Configure DDC Controls…</source>
         <target state="translated">Налаштувати елементи керування DDC…</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Configure DDC Features…" xml:space="preserve">
-        <source>Configure DDC Features…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
@@ -2634,6 +2640,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Відхилити</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Dismiss Hint" xml:space="preserve">
+        <source>Dismiss Hint</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Dispatch OSD notifications" xml:space="preserve">
         <source>Dispatch OSD notifications</source>
         <target state="translated">Надсилання сповіщень екранного меню</target>
@@ -2708,10 +2718,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Меню режимів Дисплею</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display Mode changed for %@." xml:space="preserve">
-        <source>Display Mode changed for %@.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display Notch" xml:space="preserve">
         <source>Display Notch</source>
         <target state="translated">Чілка Дисплею</target>
@@ -2766,6 +2772,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Display menu options" xml:space="preserve">
         <source>Display menu options</source>
         <target state="translated">Відображення параметрів меню</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Display mode changed for %@." xml:space="preserve">
+        <source>Display mode changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Display mode submenu settings" xml:space="preserve">
@@ -3187,6 +3197,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Experimental feature</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Export Display Information…" xml:space="preserve">
+        <source>Export Display Information…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
         <source>Export EDID Data…</source>
         <target state="translated">Експорт даних EDID…</target>
@@ -3463,14 +3477,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Колірний профіль HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="HDR Color Profile changed for %@." xml:space="preserve">
-        <source>HDR Color Profile changed for %@.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR Color mode changed for %@." xml:space="preserve">
-        <source>HDR Color mode changed for %@.</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
         <target state="translated">HDR вимкнено</target>
@@ -3484,6 +3490,14 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="HDR Status" xml:space="preserve">
         <source>HDR Status</source>
         <target state="translated">Статус HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color mode changed for %@." xml:space="preserve">
+        <source>HDR color mode changed for %@.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR color profile changed for %@." xml:space="preserve">
+        <source>HDR color profile changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="HDR mode changed for %@." xml:space="preserve">
@@ -4087,6 +4101,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
         <source>Loaded EDID Data</source>
         <target state="translated">Завантажені дані EDID</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Lock Window Position" xml:space="preserve">
+        <source>Lock Window Position</source>
         <note/>
       </trans-unit>
       <trans-unit id="Logical height" xml:space="preserve">
@@ -4804,6 +4822,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Картинка в картинці</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Pipe horizontal limit values" xml:space="preserve">
+        <source>Pipe horizontal limit values</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Pixel Aspect Ratio" xml:space="preserve">
         <source>Pixel Aspect Ratio</source>
         <note/>
@@ -4906,6 +4928,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Зберігайте безперервність у разі зміни ідентичності дисплею EDID</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Preset Index" xml:space="preserve">
+        <source>Preset Index</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
         <source>Prevent accidental rotation of the internal display.</source>
         <target state="translated">Запобігайте випадковому повороту внутрішнього дисплею.</target>
@@ -4938,6 +4964,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">Назва продукту</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prohibit Resizing" xml:space="preserve">
+        <source>Prohibit Resizing</source>
         <note/>
       </trans-unit>
       <trans-unit id="Protect the position of %@%@" xml:space="preserve">
@@ -5108,6 +5138,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Посилення червоного (DDC)</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Redefine 0% software brightness level" xml:space="preserve">
+        <source>Redefine 0% software brightness level</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Redetect DDC Capabilities…" xml:space="preserve">
         <source>Redetect DDC Capabilities…</source>
         <note/>
@@ -5125,6 +5159,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Refresh Rate" xml:space="preserve">
         <source>Refresh Rate</source>
         <target state="translated">Частота оновлення</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Refresh rate (unexposed) changed for %@." xml:space="preserve">
+        <source>Refresh rate (unexposed) changed for %@.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh string" xml:space="preserve">
@@ -5827,6 +5865,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Show All</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Show Crop Rectangle Boundary" xml:space="preserve">
+        <source>Show Crop Rectangle Boundary</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
         <source>Show Currently Disconnected</source>
         <note/>
@@ -6051,6 +6093,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Smooth transitions" xml:space="preserve">
         <source>Smooth transitions</source>
         <target state="translated">Плавні переходи</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Snap Size Near 25% Increments" xml:space="preserve">
+        <source>Snap Size Near 25% Increments</source>
         <note/>
       </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
@@ -7038,6 +7084,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Скасувати/повторити останню зміну режиму</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unexposed refresh rate switch for Configuration Protection" xml:space="preserve">
+        <source>Unexposed refresh rate switch for Configuration Protection</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unhide Stream" xml:space="preserve">
         <source>Unhide Stream</source>
         <target state="translated">Показати потік</target>
@@ -7072,10 +7122,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
         <source>Unlock EDID write - I understand the risks involved</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Unmovable Window (Lock)" xml:space="preserve">
-        <source>Unmovable Window (Lock)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Unmute (DDC)" xml:space="preserve">
@@ -7366,6 +7412,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Wake delay</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
+        <source>Warp Mouse Cursor</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Warp mouse cursor from screen" xml:space="preserve">
         <source>Warp mouse cursor from screen</source>
         <note/>
@@ -7586,6 +7636,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">
         <source>You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac.</source>
         <target state="translated">Ви можете отримувати, змінювати та завантажувати/застосовувати дані EDID для зміни можливостей відображення, які сприймаються вашим комп'ютером Mac.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!" xml:space="preserve">
+        <source>You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!</source>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
