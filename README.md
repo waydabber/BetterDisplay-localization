@@ -1,4 +1,4 @@
-## BetterDisplay Localization Repository
+33## BetterDisplay Localization Repository
 
 [BetterDisplay](https://betterdisplay.pro) (as of app version v2.0.9) supports localization. The latest XCode localization strings (dictionary files) are available in this repository.
 
@@ -12,3 +12,9 @@ For the some localizations, a glossary is available:
 
 - [German](Localization%20Glossary%20German.markdown)
 - [Polish](Localization%20Glossary%20Polish.markdown)
+
+### Apple Localization Terms Glossary
+
+Non official Glossary site by Kishikawa Katsumi (https://github.com/kishikawakatsumi)
+
+https://applelocalization.com/macos
