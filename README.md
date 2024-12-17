@@ -15,6 +15,6 @@ For the some localizations, a glossary is available:
 
 ### Apple Localization Terms Glossary
 
-Non official Glossary site by Kishikawa Katsumi (https://github.com/kishikawakatsumi)
+Non official Glossary site by [Kishikawa Katsumi](https://github.com/kishikawakatsumi)
 
-https://applelocalization.com/macos
+- [Apple Localization Terms Glossary](https://applelocalization.com/macos)
