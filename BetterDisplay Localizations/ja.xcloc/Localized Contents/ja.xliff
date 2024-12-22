@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5031c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5031c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5031c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -115,6 +115,10 @@
       <trans-unit id="%@ Built-in display panels have a single fixed internal connection mode." xml:space="preserve">
         <source>%@ Built-in display panels have a single fixed internal connection mode.</source>
         <target state="translated">%@ 内蔵ディスプレイパネルは内部接続モードが1つに固定されています。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Certain displays are set to hide the menu bar icon, which may override this setting." xml:space="preserve">
+        <source>%@ Certain displays are set to hide the menu bar icon, which may override this setting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
@@ -990,11 +994,6 @@ AliPayは中国で利用可能です。</target>
       <trans-unit id="Applied" xml:space="preserve">
         <source>Applied</source>
         <target state="translated">適用済み</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
-        <source>Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
-        <target state="translated">外付けディスプレイを物理的に接続する場合や、アプリを使って再接続する場合の両方に適用されます。すべてのディスプレイの切断を許可した場合、内蔵ディスプレイは再接続されません!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apply" xml:space="preserve">
@@ -3332,6 +3331,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">16K×16K（8K×8K HiDPI）までの解像度を、仮想スクリーンとネイティブのフレキシブルスケーリングで有効化します。8K以上の仮想スクリーンを使用すると、安定性に問題が生じることがあります。ネイティブのフレキシブルスケーリングを再適用する必要があります。最大ネイティブ解像度は、macOSバージョンとGPUタイプによる制限があります。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space." xml:space="preserve">
+        <source>Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
         <source>Enforce UI scale match upon connecting a display</source>
         <target state="translated">ディスプレイ接続時にUIサイズ調整を強制</target>
@@ -3801,6 +3804,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">すべてのフルスクリーンストリーミングを非表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hide menu bar icon when no other displays are present" xml:space="preserve">
+        <source>Hide menu bar icon when no other displays are present</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hide other unexpanded menu items" xml:space="preserve">
         <source>Hide other unexpanded menu items</source>
         <target state="translated">展開されていないその他のメニュー項目を非表示</target>
@@ -3962,6 +3969,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
         <source>Ignore checksum check error on read</source>
         <target state="translated">読み込み時のチェックサムエラーを無視</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ignore for built-in display auto-disconnect" xml:space="preserve">
+        <source>Ignore for built-in display auto-disconnect</source>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustment" xml:space="preserve">
@@ -7101,6 +7112,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">高度なディミング、カラー調整、その他ソフトウェアXDR/HDRアップスケーリングなどの機能が使用可能になります。注意：カラー調整はアクティブな場合にはHDRコンテンツをクリップします。このオプションを無効化すると、アプリはオーバーレイベースのディミング制御に戻り、ソフトウェアXDR/HDRアップスケーリングにMetalを使用します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
+        <source>This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
+        <target state="translated">外付けディスプレイを物理的に接続する場合や、アプリを使って再接続する場合の両方に適用されます。すべてのディスプレイの切断を許可した場合、内蔵ディスプレイは再接続されません!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support." xml:space="preserve">
         <source>This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support.</source>
         <target state="translated">DDC/CIサポートが無効化されている（ディスプレイのOSDを確認）か、ディスプレイのファームウェア制限または接続に問題がある可能性があります。テレビやテレビ由来のスマートモニターの多くはDDCをサポートしていません。ディスプレイの設定を変更したり、ケーブルの課題を解決したりしても問題が残る場合は、DDCサポートを無効化する必要があります。</target>
@@ -7957,6 +7973,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display." xml:space="preserve">
         <source>When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
         <target state="translated">監視対象のディスプレイ解像度を変更した場合に、適切なグループのメンバー間すべてで解像度を更新して、このディスプレイとUIサイズを一致させます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When enabled, this display will not trigger the disconnection of the built-in display when it is set to disconnect upon the connection of an external display." xml:space="preserve">
+        <source>When enabled, this display will not trigger the disconnection of the built-in display when it is set to disconnect upon the connection of an external display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">

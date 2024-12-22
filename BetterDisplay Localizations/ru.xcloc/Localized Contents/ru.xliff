@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="ru" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5031c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ru" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5031c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ru" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5031c"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -105,6 +105,10 @@
       </trans-unit>
       <trans-unit id="%@ Built-in display panels have a single fixed internal connection mode." xml:space="preserve">
         <source>%@ Built-in display panels have a single fixed internal connection mode.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Certain displays are set to hide the menu bar icon, which may override this setting." xml:space="preserve">
+        <source>%@ Certain displays are set to hide the menu bar icon, which may override this setting.</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
@@ -901,11 +905,6 @@ AliPay доступен в Китае.</target>
       </trans-unit>
       <trans-unit id="Applied" xml:space="preserve">
         <source>Applied</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
-        <source>Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
-        <target state="translated">Это касается как физического подключения внешнего дисплея, так и использования приложения для его повторного подключения. Приложение не подключит встроенный дисплей, если вы разрешите отключить все дисплеи!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apply" xml:space="preserve">
@@ -3117,6 +3116,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Позволяет использовать разрешения до 16Kx16K (8Kx8K HiDPI) для виртуальных экранов и гибкого масштабирования. Использование виртуальных экранов с разрешением 8K+ может привести к проблемам со стабильностью. Гибкое масштабирование должно быть применено заново. Максимальное нативное разрешение имеет ограничения в зависимости от версии macOS и типа GPU.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space." xml:space="preserve">
+        <source>Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
         <source>Enforce UI scale match upon connecting a display</source>
         <note/>
@@ -3545,6 +3548,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Скрыть все полноэкранные потоки</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hide menu bar icon when no other displays are present" xml:space="preserve">
+        <source>Hide menu bar icon when no other displays are present</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hide other unexpanded menu items" xml:space="preserve">
         <source>Hide other unexpanded menu items</source>
         <target state="translated">Скрыть другие нераскрытые пункты меню</target>
@@ -3691,6 +3698,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
         <source>Ignore checksum check error on read</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ignore for built-in display auto-disconnect" xml:space="preserve">
+        <source>Ignore for built-in display auto-disconnect</source>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustment" xml:space="preserve">
@@ -6296,6 +6307,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Это позволяет расширить возможности регулировки яркости, цвета и других функций, таких как программное масштабирование XDR/HDR. Примечание: при активном использовании регулировки цвета HDR-контент будет корректироваться. Если эта опция отключена, приложение вернется к управлению яркостью на основе оверлея и будет использовать Metal для программного XDR/HDR апскейлинга.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
+        <source>This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
+        <target state="translated">Это касается как физического подключения внешнего дисплея, так и использования приложения для его повторного подключения. Приложение не подключит встроенный дисплей, если вы разрешите отключить все дисплеи!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support." xml:space="preserve">
         <source>This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support.</source>
         <note/>
@@ -7004,6 +7020,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display." xml:space="preserve">
         <source>When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When enabled, this display will not trigger the disconnection of the built-in display when it is set to disconnect upon the connection of an external display." xml:space="preserve">
+        <source>When enabled, this display will not trigger the disconnection of the built-in display when it is set to disconnect upon the connection of an external display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">
