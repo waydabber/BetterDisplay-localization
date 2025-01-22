@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
@@ -21,7 +21,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -45,7 +45,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5023f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="" xml:space="preserve">
@@ -98,6 +98,11 @@
         <target state="translated">%1$@ %2$lld 추가 색상 모드가 다른 주사율과 함께 사용 가능합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ - Duplicate" xml:space="preserve">
+        <source>%@ - Duplicate</source>
+        <target state="translated">%@ - 복제</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ - Swap Position" xml:space="preserve">
         <source>%@ - Swap Position</source>
         <target state="translated">%@ - 위치 스왑</target>
@@ -113,9 +118,14 @@
         <target state="translated">%@ 내장 디스플레이 패널은 내부 연결 모드가 하나로 고정되어 있습니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Certain displays are set to hide the menu bar icon, which may override this setting." xml:space="preserve">
+        <source>%@ Certain displays are set to hide the menu bar icon, which may override this setting.</source>
+        <target state="translated">%@ 특정 디스플레이는 메뉴 바 아이콘을 숨기도록 설정되어 있으며, 이 설정이 우선 적용될 수 있습니다.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
         <source>%@ Configuration Protection can make color mode changes persistent.</source>
-        <target state="translated">%@ 구성 보호 기능을 사용하면 색상 모드 변경이 영구적으로 저장됩니다.</target>
+        <target state="translated">%@ 설정 보호 기능을 사용하면 색상 모드 변경이 영구적으로 저장됩니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
@@ -135,7 +145,7 @@
       </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
-        <target state="translated">%1$@ NTSC (또는 다른 노출되지 않은) 주사율은 모드 변경 후 유지되지 않을 수 있습니다. %2$@ 구성 보호 기능을 사용하여 강제로 설정하지 않은 경우에는 주사율이 변경될 수 있습니다.</target>
+        <target state="translated">%1$@ NTSC (또는 다른 노출되지 않은) 주사율은 모드 변경 후 유지되지 않을 수 있습니다. %2$@ 설정 보호 기능을 사용하여 강제로 설정하지 않은 경우에는 주사율이 변경될 수 있습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
@@ -190,10 +200,22 @@
       </trans-unit>
       <trans-unit id="%@ The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
         <source>%@ The mouse hovers over the streamed content and does not interact with it.</source>
+        <target state="translated">%@ 마우스가 스트리밍 콘텐츠 위에 떠 있으며 상호작용하지 않습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ This license is currently active on %lld installations." xml:space="preserve">
+        <source>%1$@ This license is currently active on %2$lld installations.</source>
+        <target state="translated">%1$@ 이 라이선스는 현재 %2$lld개의 장치에서 활성화되어 있습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
         <source>%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!</source>
+        <target state="translated">%@ ⌘ 커맨드 + 클릭을 사용하여 마우스 포인터를 소스 화면으로 이동시킵니다!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Use ⌥ Option + click on the display menu header for a quick identification." xml:space="preserve">
+        <source>%@ Use ⌥ Option + click on the display menu header for a quick identification.</source>
+        <target state="translated">%@ 디스플레이 메뉴 헤더에서 ⌥ Option 키를 누른 상태로 클릭하여 빠르게 식별하세요.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
@@ -334,6 +356,19 @@
       <trans-unit id="(next to unspecified)" xml:space="preserve">
         <source>(next to unspecified)</source>
         <target state="translated">(지정되지 않은 항목 옆에)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="**%@ License Issue Detected**&#10;&#10;This installation has been remotely deactivated, or the hardware identifiers have changed since the last license activation. This may have occurred due to a hardware upgrade or migration to a new device.&#10;&#10;Please reactivate this installation to continue using Pro features." xml:space="preserve">
+        <source>**%@ License Issue Detected**
+
+This installation has been remotely deactivated, or the hardware identifiers have changed since the last license activation. This may have occurred due to a hardware upgrade or migration to a new device.
+
+Please reactivate this installation to continue using Pro features.</source>
+        <target state="translated">**%@ 라이선스에 문제가 감지됨**
+
+이 장치는 원격으로 비활성화되었거나, 마지막 라이선스 활성화 이후 하드웨어 식별자가 변경되었습니다. 이는 하드웨어 업그레이드 또는 새 장치로의 이전으로 인해 발생할 수 있습니다.
+
+Pro 기능을 계속 사용하려면 이 장치를 다시 활성화하세요.</target>
         <note/>
       </trans-unit>
       <trans-unit id="-" xml:space="preserve">
@@ -817,6 +852,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting." xml:space="preserve">
         <source>Allows switching to an unexposed refresh rate configured through the Configuration Protection feature when an appropriate standard mode is unavailable. Disable this option if you encounter issues while attempting to protect a refresh rate setting.</source>
+        <target state="translated">적절한 표준 모드를 사용할 수 없을 때 설정 보호 기능을 통해 설정된 비공개 주사율로 전환을 허용합니다. 주사율 설정 보호 시도 중 문제가 발생하면 이 옵션을 비활성화하세요.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Allows systemwide URLs (see [documentation](https://betterdisplay.pro/integration)) to reach various app features. This allows integration with other apps and scripted access to app functionality." xml:space="preserve">
@@ -846,7 +882,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="Always show both low (non-HiDPI) and high (HiDPI) resolutions" xml:space="preserve">
         <source>Always show both low (non-HiDPI) and high (HiDPI) resolutions</source>
-        <target state="translated">항상 저해상도(non-HiDPI)와 고해상도(HiDPI)를 모두 표시합니다.</target>
+        <target state="translated">항상 저해상도(non-HiDPI)와 고해상도(HiDPI) 모두 표시</target>
         <note/>
       </trans-unit>
       <trans-unit id="Always show in app menu when available for connect" xml:space="preserve">
@@ -887,6 +923,11 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="An other group member display next to which the protected display should be positioned in the display arrangement." xml:space="preserve">
         <source>An other group member display next to which the protected display should be positioned in the display arrangement.</source>
         <target state="translated">보호된 디스플레이가 디스플레이 배열에서 배치되어야 하는 다른 그룹 구성원 디스플레이 옆에 있습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="An update to %@ is available!" xml:space="preserve">
+        <source>An update to %@ is available!</source>
+        <target state="translated">%@의 업데이트가 가능합니다!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Another app altered screen colors or brightness - this clashes with what %@ is doing." xml:space="preserve">
@@ -979,11 +1020,6 @@ AliPay available in China.</source>
       <trans-unit id="Applied" xml:space="preserve">
         <source>Applied</source>
         <target state="translated">적용됨</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
-        <source>Applies to both to physically connecting an external display or using the app to reconnect one. The app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
-        <target state="translated">외부 디스플레이를 물리적으로 연결하거나 앱을 사용하여 디스플레이를 다시 연결할 때 모두 적용됩니다. 모든 디스플레이의 연결을 해제하도록 허용하면 앱이 내장 디스플레이를 다시 연결하지 않습니다!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Apply" xml:space="preserve">
@@ -1285,6 +1321,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">외부 타사 디스플레이가 HDR 모드로 설정되어 있으면 자동으로 Night Shift와 True Tone을 모두 비활성화하고 SDR 모드로 다시 전환하면 활성화합니다. HDR 콘텐츠를 시청할 때 보다 정확한 색상을 구현하는 데 유용합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Automatically download updates" xml:space="preserve">
+        <source>Automatically download updates</source>
+        <target state="translated">업데이트를 자동으로 다운로드</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Automatically download updates when they are available. If permissions allow it, the app will also install them automatically." xml:space="preserve">
+        <source>Automatically download updates when they are available. If permissions allow it, the app will also install them automatically.</source>
+        <target state="translated">업데이트가 가능할 때 자동으로 다운로드합니다. 권한이 허용되면, 앱이 업데이트를 자동으로 설치합니다.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Automatically launch on login" xml:space="preserve">
         <source>Automatically launch on login</source>
         <target state="translated">로그인 시 자동 시작</target>
@@ -1323,6 +1369,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Basic + extended + location" xml:space="preserve">
         <source>Basic + extended + location</source>
         <target state="translated">기본 + 확장 + 위치</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Basic + extended + port" xml:space="preserve">
+        <source>Basic + extended + port</source>
+        <target state="translated">기본 + 확장 + 포트</target>
         <note/>
       </trans-unit>
       <trans-unit id="Basic + extended identifiers" xml:space="preserve">
@@ -1460,6 +1511,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">밝기, 비디오 조정 단축키가 제어할 디스플레이:</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness Upscaling" xml:space="preserve">
+        <source>Brightness Upscaling</source>
+        <target state="translated">밝기 업스케일링</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness Upscaling (Native)" xml:space="preserve">
+        <source>Brightness Upscaling (Native)</source>
+        <target state="translated">밝기 업스케일링 (기본)</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness and Video" xml:space="preserve">
         <source>Brightness and Video</source>
         <target state="translated">밝기 및 비디오</target>
@@ -1473,6 +1534,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
         <source>Brightness control using native brightness keys</source>
         <target state="translated">기본 밝기 키를 사용한 밝기 제어</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Bring to Screen With Mouse" xml:space="preserve">
+        <source>Bring to Screen With Mouse</source>
+        <target state="translated">마우스로 화면 가져오기</target>
         <note/>
       </trans-unit>
       <trans-unit id="Broadcast OSD notifications to third party apps (see [documentation](https://betterdisplay.pro/integration))." xml:space="preserve">
@@ -1495,6 +1561,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">%@ Pro 구매</target>
         <note/>
       </trans-unit>
+      <trans-unit id="By default the app orders display first, then virtual screens, alphabetically. By providing an ordering string, you can redefine the data which serves as the basis of the alphabetical order and mix the virtual screen among the displays as well." xml:space="preserve">
+        <source>By default the app orders display first, then virtual screens, alphabetically. By providing an ordering string, you can redefine the data which serves as the basis of the alphabetical order and mix the virtual screen among the displays as well.</source>
+        <target state="translated">기본적으로 이 앱은 디스플레이를 먼저, 가상 화면을 그다음으로 알파벳 순서대로 정렬합니다. 정렬 문자열을 제공하면 알파벳 순서의 기준이 되는 데이터를 재정의하고 가상 화면을 디스플레이 사이에 섞어 배치할 수 있습니다.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="By default the app orders displays alphabetically in the app menu by their (displayed) name. By providing an ordering string, you can redefine the data which serves as the basis of the ordering." xml:space="preserve">
         <source>By default the app orders displays alphabetically in the app menu by their (displayed) name. By providing an ordering string, you can redefine the data which serves as the basis of the ordering.</source>
         <target state="translated">기본적으로 앱은 이름에 따라 알파벳 순으로 앱 메뉴의  디스플레이를 정렬합니다. 정렬 문자열을 제공하여 정렬 기준을 재정의할 수 있습니다.</target>
@@ -1507,7 +1578,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="By default the keyboard controls change one OSD chiclet worth of value and you have to press ⇧ Shift + ⌥ Option for fine-tuning." xml:space="preserve">
         <source>By default the keyboard controls change one OSD chiclet worth of value and you have to press ⇧ Shift + ⌥ Option for fine-tuning.</source>
-        <target state="translated">기본적으로 키 컨트롤은 OSD 치클릿(사각형) 하나에 해당하는 값을 변경하며, 미세 조정을 위해서는 Shift+Option을 눌러야 합니다.</target>
+        <target state="translated">기본적으로 키 컨트롤은 OSD 치클릿(사각형) 하나에 해당하는 값을 변경하며, 미세 조정을 위해서는 ⇧ Shift+⌥ Option을 눌러야 합니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="C style array" xml:space="preserve">
@@ -1590,9 +1661,9 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">업데이트 확인</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Check for Updates…" xml:space="preserve">
-        <source>Check for Updates…</source>
-        <target state="translated">업데이트 확인…</target>
+      <trans-unit id="Checking for Updates…" xml:space="preserve">
+        <source>Checking for Updates…</source>
+        <target state="translated">업데이트 확인 중...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Checking…" xml:space="preserve">
@@ -1603,6 +1674,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Chunk size" xml:space="preserve">
         <source>Chunk size</source>
         <target state="translated">Chunk 크기</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Click Here To Allow Sleep" xml:space="preserve">
+        <source>Click Here To Allow Sleep</source>
+        <target state="translated">여기를 클릭하여 잠자기 허용</target>
         <note/>
       </trans-unit>
       <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
@@ -1622,6 +1698,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio." xml:space="preserve">
         <source>Click-through requires locked position with transparency, window shadow control requires hidden title bar and free aspect ratio.</source>
+        <target state="translated">클릭스루 기능을 사용하려면 투명도가 있는 고정 위치가 필요하며, 창 그림자 제어를 위해서는 제목 표시줄 숨김과 자유 종횡비가 필요합니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
@@ -1721,6 +1798,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero." xml:space="preserve">
         <source>Compresses the allowed software brightness range between the specified value and 100%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero.</source>
+        <target state="translated">지정된 값과 100% 사이로 허용되는 소프트웨어 밝기 범위를 압축하며, 이는 통합 밝기 제어의 소프트웨어 구성 요소에도 영향을 미칩니다. 이를 통해 실수로 소프트웨어 밝기 수준을 너무 낮게 설정하거나 0으로 설정하는 것을 방지할 수 있습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
@@ -1756,6 +1834,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure DDC Controls…" xml:space="preserve">
         <source>Configure DDC Controls…</source>
         <target state="translated">DDC 제어 구성…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure Display…" xml:space="preserve">
+        <source>Configure Display…</source>
+        <target state="translated">디스플레이 구성...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
@@ -1901,6 +1984,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Consider range differences" xml:space="preserve">
         <source>Consider range differences</source>
         <target state="translated">표시 범위 차이 고려</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Contacting server…" xml:space="preserve">
+        <source>Contacting server…</source>
+        <target state="translated">서버 연결 중...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Continuous XDR upscaling readiness" xml:space="preserve">
@@ -2775,6 +2863,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Dismiss Hint" xml:space="preserve">
         <source>Dismiss Hint</source>
+        <target state="translated">힌트 닫기</target>
         <note/>
       </trans-unit>
       <trans-unit id="Dispatch OSD notifications" xml:space="preserve">
@@ -2942,6 +3031,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">디스플레이 상태</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Display the brightness level in nits on the brightness OSD icon for native XDR upscaling" xml:space="preserve">
+        <source>Display the brightness level in nits on the brightness OSD icon for native XDR upscaling</source>
+        <target state="translated">네이티브 XDR 업스케일링을 위한 밝기 OSD 아이콘에 니트 단위의 밝기 수준 표시</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Display to match" xml:space="preserve">
         <source>Display to match</source>
         <target state="translated">일치하는 디스플레이</target>
@@ -3054,6 +3148,16 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Draw Crop Area On Screen…" xml:space="preserve">
         <source>Draw Crop Area On Screen…</source>
         <target state="translated">화면에 크롭 영역 그리기…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Duplicate Display Group" xml:space="preserve">
+        <source>Duplicate Display Group</source>
+        <target state="translated">디스플레이 그룹 복제</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Duplicate…" xml:space="preserve">
+        <source>Duplicate…</source>
+        <target state="translated">복제...</target>
         <note/>
       </trans-unit>
       <trans-unit id="EDID Retrieval Method" xml:space="preserve">
@@ -3296,6 +3400,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">가상 화면과 유연한 스케일링을 위해 최대 16Kx16K(8Kx8K HiDPI) 해상도를 활성화합니다. 8K 이상의 가상 화면을 사용하면 안정성 문제가 발생할 수 있고 유연한 스케일링을 다시 적용해야 합니다. 최대 기본 해상도는 특정 macOS 버전과 GPU 유형에 따라 제한됩니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space." xml:space="preserve">
+        <source>Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space.</source>
+        <target state="translated">이 옵션을 활성화하면, 이 디스플레이와 동일하게 표시된 다른 디스플레이만 연결되어 있을 경우 메뉴 바 아이콘이 제거됩니다. 이 디스플레이에서 앱의 기능이 필요하지 않고 메뉴 바 공간을 확보하고 싶을 때 이 설정을 사용하세요.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
         <source>Enforce UI scale match upon connecting a display</source>
         <target state="translated">디스플레이 연결 시 UI 스케일 일치 적용</target>
@@ -3363,6 +3472,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
+        <target state="translated">디스플레이 정보 내보내기...</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
@@ -3498,6 +3608,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Free Aspect Ratio" xml:space="preserve">
         <source>Free Aspect Ratio</source>
         <target state="translated">자유 종횡비</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Full EDID match" xml:space="preserve">
+        <source>Full EDID match</source>
+        <target state="translated">전체 EDID 매칭</target>
         <note/>
       </trans-unit>
       <trans-unit id="Full Range" xml:space="preserve">
@@ -3762,6 +3877,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">모든 전체화면 스트리밍 숨기기</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hide menu bar icon when no other displays are present" xml:space="preserve">
+        <source>Hide menu bar icon when no other displays are present</source>
+        <target state="translated">다른 디스플레이가 없을 때 메뉴 바 아이콘 숨기기</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hide other unexpanded menu items" xml:space="preserve">
         <source>Hide other unexpanded menu items</source>
         <target state="translated">확장되지 않은 메뉴 아이템 숨기기</target>
@@ -3799,7 +3919,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
         <source>Hold ⌥ Option when opening this menu to measure refresh rate!</source>
-        <target state="translated">이 메뉴를 열 때 ⌥ 옵션을 길게 누르면 주사율을 측정할 수 있습니다!</target>
+        <target state="translated">이 메뉴를 열 때 ⌥ Option 키를 길게 누르면 주사율을 측정할 수 있습니다!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
@@ -3835,6 +3955,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Identifiers" xml:space="preserve">
         <source>Identifiers</source>
         <target state="translated">식별자</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Identify Visually" xml:space="preserve">
+        <source>Identify Visually</source>
+        <target state="translated">시각적으로 식별</target>
         <note/>
       </trans-unit>
       <trans-unit id="If Dock visibility is set to 'Never', the Edit menu and Copy/Paste keyboard shortcut keys will not be available in Settings." xml:space="preserve">
@@ -3919,6 +4044,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
         <source>Ignore checksum check error on read</source>
         <target state="translated">읽기 시 체크섬 검사 오류 무시</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ignore for built-in display auto-disconnect" xml:space="preserve">
+        <source>Ignore for built-in display auto-disconnect</source>
+        <target state="translated">내장 디스플레이 자동 연결 해제 무시</target>
         <note/>
       </trans-unit>
       <trans-unit id="Image Adjustment" xml:space="preserve">
@@ -4014,6 +4144,16 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling" xml:space="preserve">
         <source>Insert intermediate keyboard/OSD step at neutral 100% for HDR upscaling</source>
         <target state="translated">HDR 밝기 업스케일링 시 키보드/OSD 단계에 패널 기본 100% 밝기 추가</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Install %@ Update" xml:space="preserve">
+        <source>Install %@ Update</source>
+        <target state="translated">%@ 업데이트 설치</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Install App Update" xml:space="preserve">
+        <source>Install App Update</source>
+        <target state="translated">앱 업데이트 설치</target>
         <note/>
       </trans-unit>
       <trans-unit id="Install Display Adaptation…" xml:space="preserve">
@@ -4366,6 +4506,16 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">볼륨 키의 미세 조정을 기본값으로 설정</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Manage Activations" xml:space="preserve">
+        <source>Manage Activations</source>
+        <target state="translated">활성화 관리</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Manage Display" xml:space="preserve">
+        <source>Manage Display</source>
+        <target state="translated">디스플레이 관리</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Manage License" xml:space="preserve">
         <source>Manage License</source>
         <target state="translated">라이선스 관리</target>
@@ -4413,22 +4563,22 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Match name only" xml:space="preserve">
         <source>Match name only</source>
-        <target state="translated">이름만 일치</target>
+        <target state="translated">이름만 매칭</target>
         <note/>
       </trans-unit>
       <trans-unit id="Match vendor, model" xml:space="preserve">
         <source>Match vendor, model</source>
-        <target state="translated">공급업체, 모델 일치</target>
+        <target state="translated">공급업체, 모델 매칭</target>
         <note/>
       </trans-unit>
       <trans-unit id="Match vendor, model, name" xml:space="preserve">
         <source>Match vendor, model, name</source>
-        <target state="translated">공급업체, 모델, 이름 일치</target>
+        <target state="translated">공급업체, 모델, 이름 매칭</target>
         <note/>
       </trans-unit>
       <trans-unit id="Match vendor, serial" xml:space="preserve">
         <source>Match vendor, serial</source>
-        <target state="translated">공급업체, 일련 번호 일치</target>
+        <target state="translated">공급업체, 일련 번호 매칭</target>
         <note/>
       </trans-unit>
       <trans-unit id="Matches default resolution" xml:space="preserve">
@@ -4776,6 +4926,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">HDR 토글을 통해 Night Shift 끄기</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Nits counter turns orange and inflates when upscaling" xml:space="preserve">
+        <source>Nits counter turns orange and inflates when upscaling</source>
+        <target state="translated">업스케일링 시 니트 카운터가 주황색으로 변하고 커짐</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="No" xml:space="preserve">
         <source>No</source>
         <target state="translated">아니오</target>
@@ -5073,6 +5228,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Pipe horizontal limit values" xml:space="preserve">
         <source>Pipe horizontal limit values</source>
+        <target state="translated">화면 수평 제한값</target>
         <note/>
       </trans-unit>
       <trans-unit id="Pixel Aspect Ratio" xml:space="preserve">
@@ -5188,6 +5344,12 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Preset Index" xml:space="preserve">
         <source>Preset Index</source>
+        <target state="translated">프리셋 색인</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Prevent Sleep While Connected" xml:space="preserve">
+        <source>Prevent Sleep While Connected</source>
+        <target state="translated">연결된 동안 잠자기 방지</target>
         <note/>
       </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
@@ -5227,6 +5389,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Prohibit Resizing" xml:space="preserve">
         <source>Prohibit Resizing</source>
+        <target state="translated">크기 조절 금지</target>
         <note/>
       </trans-unit>
       <trans-unit id="Protect the position of %@%@" xml:space="preserve">
@@ -5411,6 +5574,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Redefine 0% software brightness level" xml:space="preserve">
         <source>Redefine 0% software brightness level</source>
+        <target state="translated">소프트웨어 밝기 0% 수준 재정의</target>
         <note/>
       </trans-unit>
       <trans-unit id="Redetect DDC Capabilities…" xml:space="preserve">
@@ -5435,6 +5599,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Refresh rate (unexposed) changed for %@." xml:space="preserve">
         <source>Refresh rate (unexposed) changed for %@.</source>
+        <target state="translated">%@의 주사율(비공개)이 변경되었습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Refresh string" xml:space="preserve">
@@ -5445,6 +5610,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Registry location" xml:space="preserve">
         <source>Registry location</source>
         <target state="translated">레지스트리 위치</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reinitialize Display" xml:space="preserve">
+        <source>Reinitialize Display</source>
+        <target state="translated">디스플레이 초기화</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reinitialize External Displays" xml:space="preserve">
@@ -5487,6 +5657,16 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">제거</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove All Activations" xml:space="preserve">
+        <source>Remove All Activations</source>
+        <target state="translated">모든 장치의 활성화 제거</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove All Other Activations" xml:space="preserve">
+        <source>Remove All Other Activations</source>
+        <target state="translated">다른 모든 장치의 활성화 제거</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove Color Profiles" xml:space="preserve">
         <source>Remove Color Profiles</source>
         <target state="translated">색상 프로파일 제거</target>
@@ -5507,6 +5687,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">동기화 제거…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove This Activation" xml:space="preserve">
+        <source>Remove This Activation</source>
+        <target state="translated">이 장치의 활성화 제거</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove from Favorite %lld" xml:space="preserve">
         <source>Remove from Favorite %lld</source>
         <target state="translated">즐겨찾기 %lld에서 제거</target>
@@ -5520,6 +5705,16 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Remove synchronization for %@" xml:space="preserve">
         <source>Remove synchronization for %@</source>
         <target state="translated">%@에 대한 동기화 제거</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Removing all other activations will impact all installations associated with this license except this one. Removing this activation will affect only this installation.&#10;&#10;Removing all activations will give you a blank slate." xml:space="preserve">
+        <source>Removing all other activations will impact all installations associated with this license except this one. Removing this activation will affect only this installation.
+
+Removing all activations will give you a blank slate.</source>
+        <target state="translated">다른 모든 장치의 활성화를 제거하면 이 라이선스와 연결되어있는 이 장치를 제외한 모든 장치에 영향을 미칩니다.
+이 장치의 활성화를 제거하면 이 장치에만 영향을 미칩니다.
+
+모든 장치의 활성화를 제거하면 초기 상태로 복원됩니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Render all other app menu icons in hierarchical style (with grayscales)" xml:space="preserve">
@@ -5690,6 +5885,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Restart the app" xml:space="preserve">
         <source>Restart the app</source>
         <target state="translated">앱 재시작</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Restore Factory EDID" xml:space="preserve">
+        <source>Restore Factory EDID</source>
+        <target state="translated">공장 초기 EDID 복원</target>
         <note/>
       </trans-unit>
       <trans-unit id="Restore combined brightness and software adjustments" xml:space="preserve">
@@ -6174,6 +6374,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show Crop Rectangle Boundary" xml:space="preserve">
         <source>Show Crop Rectangle Boundary</source>
+        <target state="translated">크롭 사각형 경계선 표시</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Currently Disconnected" xml:space="preserve">
@@ -6239,11 +6440,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show app menu" xml:space="preserve">
         <source>Show app menu</source>
         <target state="translated">앱 메뉴 표시</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Show brightness level in nits in the brightness OSD icon for native XDR upscaling" xml:space="preserve">
-        <source>Show brightness level in nits in the brightness OSD icon for native XDR upscaling</source>
-        <target state="translated">네이티브 XDR 업스케일링을 위한 밝기 OSD 아이콘에 니트 단위의 밝기 수준 표시</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show brightness, volume, mute OSD" xml:space="preserve">
@@ -6353,7 +6549,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show slider markers only while dragging the knob" xml:space="preserve">
         <source>Show slider markers only while dragging the knob</source>
-        <target state="translated">노브를 드래그하는 동안에만 슬라이더 마커를 표시합니다.</target>
+        <target state="translated">슬라이더 노브를 드래그하는 동안에만 마커 표시</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show subsliders for combined brightness control" xml:space="preserve">
@@ -6418,6 +6614,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Snap to 25% Steps" xml:space="preserve">
         <source>Snap to 25% Steps</source>
+        <target state="translated">25% 단위로 맞추기</target>
         <note/>
       </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
@@ -6535,8 +6732,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">상태: 라이선스 사용 안 함(설정 &gt; 애플리케이션 &gt; 고급)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Status: Pro License Activated." xml:space="preserve">
-        <source>Status: Pro License Activated.</source>
+      <trans-unit id="Status: Pro License Activated" xml:space="preserve">
+        <source>Status: Pro License Activated</source>
         <target state="translated">상태: Pro 라이선스 활성화됨</target>
         <note/>
       </trans-unit>
@@ -6545,9 +6742,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">상태: 라이선스 없음, 평가판 활성 (%@).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Status: Unlicensed, Trial Expired." xml:space="preserve">
-        <source>Status: Unlicensed, Trial Expired.</source>
-        <target state="translated">상태: 라이선스 없음, 평가판 만료됨.</target>
+      <trans-unit id="Status: Unlicensed, Trial Expired" xml:space="preserve">
+        <source>Status: Unlicensed, Trial Expired</source>
+        <target state="translated">상태: 라이선스 없음, 평가판 만료됨</target>
         <note/>
       </trans-unit>
       <trans-unit id="Stop Mirroring" xml:space="preserve">
@@ -6730,11 +6927,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">시스템 구성 및 유연한 스케일링</target>
         <note/>
       </trans-unit>
-      <trans-unit id="System Settings" xml:space="preserve">
-        <source>System Settings</source>
-        <target state="translated">시스템 설정</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="System UUID match" xml:space="preserve">
         <source>System UUID match</source>
         <target state="translated">시스템 UUID 매칭</target>
@@ -6878,9 +7070,19 @@ This operation does not reset the display itself.</source>
         <target state="translated">디스플레이가 감지되면 자동으로 연결이 끊어지거나, 미리 앱을 사용하여 연결이 끊어진 경우 물리적으로 연결됩니다. 이 설정은 예기치 않은 문제(호환되지 않는 디스플레이의 연결-연결 해제 주기, 연결된 디스플레이가 없는 경우)를 일으킬 수 있으므로 주의해서 사용하세요!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The duplicated group will be disabled by default." xml:space="preserve">
+        <source>The duplicated group will be disabled by default.</source>
+        <target state="translated">복제된 그룹은 기본적으로 비활성화됩니다.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu)." xml:space="preserve">
         <source>The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu).</source>
         <target state="translated">앱 메뉴가 메뉴 바 아이콘을 기준으로 중앙에 정렬되어 있습니다. 더 전통적인 모양을 원한다면 이 기능을 비활성화하세요 (앱 메뉴를 메뉴 바 아이콘 기준 왼쪽에 정렬).</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The nits counter will offer clear (and slightly exaggerated) visual feedback during upscaling." xml:space="preserve">
+        <source>The nits counter will offer clear (and slightly exaggerated) visual feedback during upscaling.</source>
+        <target state="translated">업스케일링 중 니트 카운터가 명확하고 (약간 과장된) 시각적 피드백을 제공합니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully." xml:space="preserve">
@@ -7030,13 +7232,18 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">이를 통해 고급 디밍, 색상 조정 및 소프트웨어 XDR/HDR 업스케일링과 같은 기타 기능을 사용할 수 있습니다. 참고: 색상 조정은 활성 사용 중일 때 HDR 콘텐츠를 클립합니다. 이 옵션을 비활성화하면 앱은 오버레이 기반 디밍 제어로 돌아가며 소프트웨어 XDR/HDR 업스케일링에 Metal을 사용합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
+        <source>This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!</source>
+        <target state="translated">외부 디스플레이를 물리적으로 연결하거나 앱을 사용하여 디스플레이를 다시 연결할 때 모두 적용됩니다. 모든 디스플레이의 연결을 해제하도록 허용하면 앱이 내장 디스플레이를 다시 연결하지 않습니다!</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support." xml:space="preserve">
         <source>This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support.</source>
         <target state="translated">이는 비활성화된 DDC/CI 지원(디스플레이의 OSD에서 확인), 디스플레이 펌웨어 제한 또는 연결 문제의 결과일 수 있습니다. 많은 TV와 TV에서 파생된 스마트 모니터는 DDC를 지원하지 않습니다. 디스플레이 설정을 변경하거나 케이블 문제를 해결해도 문제가 해결되지 않으면 DDC 지원을 비활성화해야 합니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data." xml:space="preserve">
-        <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With location the app also considers hardware connectivity data.</source>
+      <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data." xml:space="preserve">
+        <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data.</source>
         <target state="translated">이 설정은 구성 또는 감지 과정 중에 현재 구성된 디스플레이와 연관된 데이터를 감지된 디스플레이와 일치시키는 방법을 설정합니다. 이 설정을 변경하면 디스플레이가 이전에 연결되지 않은 것으로 인식되어 기존에 저장된 디스플레이 구성 데이터의 연결이 해제될 수 있습니다. "시스템 UUID 매칭"은 MacOS 기본 식별자를 사용합니다. 기본 식별자를 사용하도록 설정하면 앱은 공급업체/모델 ID 및 일련 번호로 디스플레이를 식별합니다. 확장된 경우 제품 이름, 영숫자 일련 번호 및 생산 날짜도 사용합니다. 위치와 함께 앱은 하드웨어 연결 데이터도 고려합니다.</target>
         <note/>
       </trans-unit>
@@ -7228,7 +7435,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
         <source>To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running.</source>
-        <target state="translated">설정을 열려면 도구 메뉴를 사용하거나 ⌥ OPTION 키를 누른 상태에서 앱 메뉴 아이콘을 클릭하거나 이미 실행 중인 앱을 다시 실행하세요.</target>
+        <target state="translated">설정을 열려면 도구 메뉴를 사용하거나 ⌥ Option 키를 누른 상태에서 앱 메뉴 아이콘을 클릭하거나 이미 실행 중인 앱을 다시 실행하세요.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Dark Mode" xml:space="preserve">
@@ -7256,6 +7463,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">True Tone 토글</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Toggle brightness upscaling" xml:space="preserve">
+        <source>Toggle brightness upscaling</source>
+        <target state="translated">밝기 업스케일링 토글</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Toggle built-in display" xml:space="preserve">
+        <source>Toggle built-in display</source>
+        <target state="translated">내장 디스플레이 전환</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Toggle cropping" xml:space="preserve">
         <source>Toggle cropping</source>
         <target state="translated">크롭 토글</target>
@@ -7274,6 +7491,11 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Toggles" xml:space="preserve">
         <source>Toggles</source>
         <target state="translated">토글</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." xml:space="preserve">
+        <source>Toggles are available under the Manage Display (or Virtual Screen) menu when hidden.</source>
+        <target state="translated">토글은 디스플레이(또는 가상 화면) 관리 메뉴에서 숨겨져 있을 때 사용할 수 있습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
@@ -7478,6 +7700,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Unexposed refresh rate switch for Configuration Protection" xml:space="preserve">
         <source>Unexposed refresh rate switch for Configuration Protection</source>
+        <target state="translated">설정 보호를 위한 비공개 주사율 전환</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unhide Stream" xml:space="preserve">
@@ -7580,9 +7803,19 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">업데이트</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use %@ as menu icon when the app is preventing display sleep" xml:space="preserve">
+        <source>Use %@ as menu icon when the app is preventing display sleep</source>
+        <target state="translated">앱이 디스플레이 절전을 방지할 때 메뉴 아이콘으로 %@ 사용</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
         <target state="translated">이미지 조정에 Metal 사용</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use an alternate icon when the app is configured to prevent display sleep." xml:space="preserve">
+        <source>Use an alternate icon when the app is configured to prevent display sleep.</source>
+        <target state="translated">앱이 디스플레이 절전을 방지하도록 설정된 경우 대체 아이콘을 사용합니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Use custom resolution list" xml:space="preserve">
@@ -7822,10 +8055,12 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
         <source>Warp Mouse Cursor</source>
+        <target state="translated">마우스 커서 이동</target>
         <note/>
       </trans-unit>
       <trans-unit id="Warp mouse cursor from screen" xml:space="preserve">
         <source>Warp mouse cursor from screen</source>
+        <target state="translated">화면에서 마우스 커서 이동</target>
         <note/>
       </trans-unit>
       <trans-unit id="Watch all group members for resolution changes" xml:space="preserve">
@@ -7871,6 +8106,11 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display." xml:space="preserve">
         <source>When a watched display's resolution changes, the resolution of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
         <target state="translated">모니터링 대상 디스플레이의 해상도가 변경되면, 해당 디스플레이의 UI 크기에 맞춰 모든 적합한 그룹 구성원의 해상도가 자동으로 업데이트됩니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="When enabled, this display will not trigger the disconnection of the built-in display when it is set to disconnect upon the connection of an external display." xml:space="preserve">
+        <source>When enabled, this display will not trigger the disconnection of the built-in display when it is set to disconnect upon the connection of an external display.</source>
+        <target state="translated">이 옵션을 활성화하면 외부 디스플레이가 연결될 때 내장 디스플레이의 연결 해제를 트리거하도록 설정된 경우에도 내장 디스플레이의 연결이 해제되지 않습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller." xml:space="preserve">
@@ -7932,7 +8172,7 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
       </trans-unit>
       <trans-unit id="With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well." xml:space="preserve">
         <source>With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well.</source>
-        <target state="translated">이 옵션을 활성화하면 해상도 구성 보호가 활성화된 디스플레이에 스케일 매칭이 영향을 미칩니다. 보호된 해상도도 함께 업데이트됩니다.</target>
+        <target state="translated">이 옵션을 활성화하면 해상도 설정 보호가 활성화된 디스플레이에 스케일 매칭이 영향을 미칩니다. 보호된 해상도도 함께 업데이트됩니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display was changed by the system or by some other app. If the resolution of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
@@ -7988,11 +8228,6 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
       <trans-unit id="XDR Preset" xml:space="preserve">
         <source>XDR Preset</source>
         <target state="translated">XDR 프리셋</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR Preset &amp; Brightness" xml:space="preserve">
-        <source>XDR Preset &amp; Brightness</source>
-        <target state="translated">XDR 프리셋 및 밝기</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
@@ -8067,11 +8302,21 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
       </trans-unit>
       <trans-unit id="You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!" xml:space="preserve">
         <source>You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings &gt; Keyboard!</source>
+        <target state="translated">⌘ 커맨드 + 클릭으로 소스 화면으로 이동할 수도 있습니다. 설정 &gt; 키보드에서 되돌아오는 이동 단축키를 지정하세요!</target>
         <note/>
       </trans-unit>
       <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
         <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
         <target state="translated">장치에 앱으로 관리되는 오디오 컨트롤이 있는 경우 macOS 볼륨 OSD를 숨길 수 있습니다. 비활성화할 수 없는 자체 볼륨 OSD가 있는 디스플레이에 유용합니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You reached the maximum number of activations for this license key!&#10;&#10;A previous activation was automatically removed to make room for this new one." xml:space="preserve">
+        <source>You reached the maximum number of activations for this license key!
+
+A previous activation was automatically removed to make room for this new one.</source>
+        <target state="translated">이 라이선스 키로 활성 가능한 최대 개수에 도달했습니다!
+
+새로운 활성화를 위해 이전 장치의 활성화가 자동으로 제거되었습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!" xml:space="preserve">
