@@ -53,10 +53,6 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
-      <trans-unit id=" %lld x %lld" xml:space="preserve">
-        <source> %1$lld x %2$lld</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
@@ -168,12 +164,12 @@
         <source>%@ The app is disengaged from native volume and mute keys.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to both the native volume and mute keys (if permissions permit)</source>
+      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)." xml:space="preserve">
+        <source>%@ The app listens to both the native volume and mute keys (if permissions permit).</source>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to the native brightness keys (if permissions permit)</source>
+      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
+        <source>%@ The app listens to the native brightness keys (if permissions permit).</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ The app listens to the volume keys (if permissions permit) but not the mute key." xml:space="preserve">
@@ -258,6 +254,11 @@
       </trans-unit>
       <trans-unit id="%lld : %lld" xml:space="preserve">
         <source>%1$lld : %2$lld</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld Days Remaining" xml:space="preserve">
+        <source>%lld Days Remaining</source>
+        <target state="translated">%lld zile rămase</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -863,8 +864,8 @@ Puteți face acest lucru în Setări de sistem sau aplicația poate face acest l
         <target state="translated">A apărut o eroare în timpul calculării dimensiunilor ecranului virtual. Încercați să creați ecranul virtual manual!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An error occurred while configuring the connected virtual display." xml:space="preserve">
-        <source>An error occurred while configuring the connected virtual display.</source>
+      <trans-unit id="An error occurred while configuring the connected virtual screen." xml:space="preserve">
+        <source>An error occurred while configuring the connected virtual screen.</source>
         <target state="translated">A apărut o eroare în timpul configurării ecranului virtual conectat.</target>
         <note/>
       </trans-unit>
@@ -3778,8 +3779,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select. Sub-720p modes are hidden." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select. Sub-720p modes are hidden.</source>
-        <target state="translated">Tineți apăsată tasta ⇧ Shift pentru selecție multiplă. Modurile sub 720p sunt ascunse.
-</target>
+        <target state="translated">Tineți apăsată tasta ⇧ Shift pentru selecție multiplă. Modurile sub 720p sunt ascunse.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select. Unsafe and sub-720p modes are hidden." xml:space="preserve">
@@ -3850,8 +3850,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
-        <target state="translated">Dacă controlul tastaturii este setat pe ecranul care se potrivește cu numele dispozitivului audio curent (setați acest lucru în setările tastaturii), această valoare va fi folosită pentru potrivirea dispozitivului audio în locul numelui ecranului.
-</target>
+        <target state="translated">Dacă controlul tastaturii este setat pe ecranul care se potrivește cu numele dispozitivului audio curent (setați acest lucru în setările tastaturii), această valoare va fi folosită pentru potrivirea dispozitivului audio în locul numelui ecranului.</target>
         <note/>
       </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
@@ -3866,8 +3865,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." xml:space="preserve">
         <source>If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults.</source>
-        <target state="translated">Dacă resetarea la valorile implicite de fabrică a ecranului a fost efectuată corect, ar trebui să resetezi și toate valorile aplicației stocate la valorile implicite.
-</target>
+        <target state="translated">Dacă resetarea la valorile implicite de fabrică a ecranului a fost efectuată corect, ar trebui să resetezi și toate valorile aplicației stocate la valorile implicite.</target>
         <note/>
       </trans-unit>
       <trans-unit id="If the display is used as a &quot;Television&quot; (as opposed to &quot;Computer monitor&quot;), it won't be affected by Night Shift and True Tone." xml:space="preserve">
@@ -3877,14 +3875,12 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="If the menu icon is hidden, you can reveal the icon by re-launching the app while the app is already running." xml:space="preserve">
         <source>If the menu icon is hidden, you can reveal the icon by re-launching the app while the app is already running.</source>
-        <target state="translated">Dacă iconița meniului este ascunsă, o puteți afișa relansând aplicația în timp ce aceasta rulează deja.
-</target>
+        <target state="translated">Dacă iconița meniului este ascunsă, o puteți afișa relansând aplicația în timp ce aceasta rulează deja.</target>
         <note/>
       </trans-unit>
       <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
         <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
-        <target state="translated">Dacă EDID-ul actualizat conține o nouă identitate a ecranului (număr de serie, ID model, ID producător), macOS va trata ecranul ca un ecran separat. Cu această opțiune activată, %@ păstrează continuitatea între vechea și noua identitate în timpul sesiunii curente a aplicației.
-</target>
+        <target state="translated">Dacă EDID-ul actualizat conține o nouă identitate a ecranului (număr de serie, ID model, ID producător), macOS va trata ecranul ca un ecran separat. Cu această opțiune activată, %@ păstrează continuitatea între vechea și noua identitate în timpul sesiunii curente a aplicației.</target>
         <note/>
       </trans-unit>
       <trans-unit id="If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active." xml:space="preserve">
@@ -3912,8 +3908,7 @@ The process does not work for the built-in display (reboot needed). The operatio
 Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!</source>
         <target state="translated">Dacă ecranul dvs. nu este complet compatibil cu această funcție, este posibil ca aplicația să nu poate stinge sau să repornească retroiluminarea!
 
-Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de alimentare DDC pot cauza (chiar și probleme grave) cu unele ecrane!
-</target>
+Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de alimentare DDC pot cauza (chiar și probleme grave) cu unele ecrane!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Ignore checksum check error on read" xml:space="preserve">
@@ -3947,8 +3942,7 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency)." xml:space="preserve">
         <source>In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency).</source>
-        <target state="translated">Într-o stare separată, meniul aplicației plutește peste desktop ca o fereastră de nivel superior. Puteți specifica nivelul alfa pentru a vedea meniul prin (reduceți valoarea pentru o transparență mai mare).
-</target>
+        <target state="translated">Într-o stare separată, meniul aplicației plutește peste desktop ca o fereastră de nivel superior. Puteți specifica nivelul alfa pentru a vedea meniul prin (reduceți valoarea pentru o transparență mai mare).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Increase Apple Keyboard brightness" xml:space="preserve">
@@ -4093,8 +4087,7 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Issue mute command first, then set volume level to lowest setting" xml:space="preserve">
         <source>Issue mute command first, then set volume level to lowest setting</source>
-        <target state="translated">Emite comanda de oprire a sunetului mai întâi, apoi setați nivelul volumului la cel mai mic setaj
-</target>
+        <target state="translated">Emite comanda de oprire a sunetului mai întâi, apoi setați nivelul volumului la cel mai mic setaj</target>
         <note/>
       </trans-unit>
       <trans-unit id="Issue mute command only" xml:space="preserve">
@@ -4232,8 +4225,7 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Let the virtual screen follow the orientation of the associated display when it is rotated." xml:space="preserve">
         <source>Let the virtual screen follow the orientation of the associated display when it is rotated.</source>
-        <target state="translated">Permiteți ecranului virtual să urmeze orientarea ecranului fizic asociat atunci când este rotit.
-</target>
+        <target state="translated">Permiteți ecranului virtual să urmeze orientarea ecranului fizic asociat atunci când este rotit.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let various adjustments like display brightness, contrast, etc. synchronize among members of the display group based on the configured rules." xml:space="preserve">
@@ -4268,8 +4260,7 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Limit resolution slider and keyboard shortcut range" xml:space="preserve">
         <source>Limit resolution slider and keyboard shortcut range</source>
-        <target state="translated">Limitați  intervalul glisorul de rezoluție și al scurtăturii de la tastatură
-</target>
+        <target state="translated">Limitați  intervalul glisorul de rezoluție și al scurtăturii de la tastatură</target>
         <note/>
       </trans-unit>
       <trans-unit id="Limited Range" xml:space="preserve">
@@ -4879,8 +4870,7 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!" xml:space="preserve">
         <source>Not all displays support DDC power operations. DDC power operations can cause (even serious) issues with some displays!</source>
-        <target state="translated">Nu toate ecranele acceptă operațiuni de alimentare DDC. Operațiunile de alimentare DDC pot cauza (chiar și grave) probleme cu unele ecrane!
-</target>
+        <target state="translated">Nu toate ecranele acceptă operațiuni de alimentare DDC. Operațiunile de alimentare DDC pot cauza (chiar și grave) probleme cu unele ecrane!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Not detected (past disconnected)" xml:space="preserve">
@@ -5115,12 +5105,11 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Please note that not all displays support DDC power operations and some displays may not behave as expected. If you power off your display, you will have to power it back on manually." xml:space="preserve">
         <source>Please note that not all displays support DDC power operations and some displays may not behave as expected. If you power off your display, you will have to power it back on manually.</source>
-        <target state="translated">Vă rugăm să rețineți că nu toate ecranele fizice acceptă operațiuni de alimentare DDC și unele ecrane pot să nu se comporte așa cum vă așteptați. Dacă opriți alimentarea ecranului, va trebui să o porniți din nou manual.
-</target>
+        <target state="translated">Vă rugăm să rețineți că nu toate ecranele fizice acceptă operațiuni de alimentare DDC și unele ecrane pot să nu se comporte așa cum vă așteptați. Dacă opriți alimentarea ecranului, va trebui să o porniți din nou manual.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Please select a display you want to match the virtual display!" xml:space="preserve">
-        <source>Please select a display you want to match the virtual display!</source>
+      <trans-unit id="Please select a display you want to match the virtual screen!" xml:space="preserve">
+        <source>Please select a display you want to match the virtual screen!</source>
         <target state="translated">Vă rugăm să selectați un ecran fizic pe care doriți să-l asociați ecranului virtual</target>
         <note/>
       </trans-unit>
@@ -5387,8 +5376,7 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="Reconnecting virtual screens after sleep might improve stability and help fix color space issues (flickering) when mirroring a virtual screen." xml:space="preserve">
         <source>Reconnecting virtual screens after sleep might improve stability and help fix color space issues (flickering) when mirroring a virtual screen.</source>
-        <target state="translated">Reconectarea ecranelor virtuale după somn poate îmbunătăți stabilitatea și poate ajuta la rezolvarea problemelor de spațiu de culoare (clipire) atunci când se face reflecție a unui ecran virtual.
-</target>
+        <target state="translated">Reconectarea ecranelor virtuale după somn poate îmbunătăți stabilitatea și poate ajuta la rezolvarea problemelor de spațiu de culoare (clipire) atunci când se face reflecție a unui ecran virtual.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Recording keyboard shortcuts" xml:space="preserve">
@@ -6136,8 +6124,7 @@ Removing all activations will give you a blank slate.</source>
       </trans-unit>
       <trans-unit id="Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem." xml:space="preserve">
         <source>Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem.</source>
-        <target state="translated">Setați glisorul de luminozitate cât mai sus posibil! Asigurați-vă, de asemenea, că încă vedeți fața zâmbitoare! Dacă nu vedeți fața zâmbitoare când glisorul este setat la setarea cea mai joasă, trebuie să ajustați mai întâi controalele hardware ale ecranului (contrast, gamma) pentru a rezolva problema de saturație albă.
-</target>
+        <target state="translated">Setați glisorul de luminozitate cât mai sus posibil! Asigurați-vă, de asemenea, că încă vedeți fața zâmbitoare! Dacă nu vedeți fața zâmbitoare când glisorul este setat la setarea cea mai joasă, trebuie să ajustați mai întâi controalele hardware ale ecranului (contrast, gamma) pentru a rezolva problema de saturație albă.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
@@ -6307,8 +6294,7 @@ Removing all activations will give you a blank slate.</source>
       </trans-unit>
       <trans-unit id="Show header when only one device is present" xml:space="preserve">
         <source>Show header when only one device is present</source>
-        <target state="translated">Afișează antetul atunci când este prezent doar un dispozitiv
-</target>
+        <target state="translated">Afișează antetul atunci când este prezent doar un dispozitiv</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show in the app menu" xml:space="preserve">
@@ -6759,8 +6745,7 @@ Removing all activations will give you a blank slate.</source>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
         <source>The app automatically attempts to reconnect all displays when no connected display is present.</source>
-        <target state="translated">Aplicația încearcă automat să reconecteze toate ecranele atunci când nu este prezent niciun ecran conectat.
-</target>
+        <target state="translated">Aplicația încearcă automat să reconecteze toate ecranele atunci când nu este prezent niciun ecran conectat.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
@@ -6775,14 +6760,12 @@ Removing all activations will give you a blank slate.</source>
       </trans-unit>
       <trans-unit id="The app menu will show this name instead of the system name for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name." xml:space="preserve">
         <source>The app menu will show this name instead of the system name for the display. If you want to change the system-wide name, you can do so by enabling the configuration override option and editing the system display name.</source>
-        <target state="translated">Meniul aplicației va afișa acest nume în loc de numele sistemului din meniul aplicației pentru ecrane. Dacă doriți să schimbați numele la nivel de sistem, puteți face acest lucru activând opțiunea de suprascriere a configurației și editând numele ecranului în format brut.
-</target>
+        <target state="translated">Meniul aplicației va afișa acest nume în loc de numele sistemului din meniul aplicației pentru ecrane. Dacă doriți să schimbați numele la nivel de sistem, puteți face acest lucru activând opțiunea de suprascriere a configurației și editând numele ecranului în format brut.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app normally does not restore full dimming upon wake or app startup to avoid confusion." xml:space="preserve">
         <source>The app normally does not restore full dimming upon wake or app startup to avoid confusion.</source>
-        <target state="translated">În mod normal, aplicația nu restaurează întunecarea completă la trezire sau la pornirea aplicației pentru a evita confuzii.
-</target>
+        <target state="translated">În mod normal, aplicația nu restaurează întunecarea completă la trezire sau la pornirea aplicației pentru a evita confuzii.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app was launched using Rosetta. Some features won't work." xml:space="preserve">
@@ -6792,8 +6775,7 @@ Removing all activations will give you a blank slate.</source>
       </trans-unit>
       <trans-unit id="The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble." xml:space="preserve">
         <source>The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble.</source>
-        <target state="translated">Aplicația va aplica EDID-ul încărcat atunci când acest ecran este conectat. Operația poate provoca clipiri ale ecranului și comutarea modurilor dacă modul existent nu este disponibil cu EDID-ul actualizat. Dacă noul EDID are date ID diferite (producător, model, serial), ecranul va fi redetectat ca altul. Mențineți apăsată tasta SHIFT la pornire pentru a activa modul sigur și pentru a evita aplicarea automată. Reconectați fizic ecranul pentru a reveni la original în caz de probleme grave.
-</target>
+        <target state="translated">Aplicația va aplica EDID-ul încărcat atunci când acest ecran este conectat. Operația poate provoca clipiri ale ecranului și comutarea modurilor dacă modul existent nu este disponibil cu EDID-ul actualizat. Dacă noul EDID are date ID diferite (producător, model, serial), ecranul va fi redetectat ca altul. Mențineți apăsată tasta SHIFT la pornire pentru a activa modul sigur și pentru a evita aplicarea automată. Reconectați fizic ecranul pentru a reveni la original în caz de probleme grave.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.&#10;&#10;This operation does not reset the display itself." xml:space="preserve">
@@ -6823,8 +6805,7 @@ This operation does not reset the display itself.</source>
       </trans-unit>
       <trans-unit id="The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the &quot;LG alt&quot; toggle for some newer LG displays if input control does not work!" xml:space="preserve">
         <source>The default input source list reflects commonly occurring assignments, but the actual list varies by display vendor/model. Try using the "LG alt" toggle for some newer LG displays if input control does not work!</source>
-        <target state="translated">Lista implicită de surse de intrare reflectă asignările care apar în mod obișnuit, dar lista reală variază în funcție de producătorul/modelul ecranului. Încercați să utilizați comutatorul „LG alt” pentru unele ecranele LG mai noi, dacă controlul sursei de intrare nu funcționează!
-</target>
+        <target state="translated">Lista implicită de surse de intrare reflectă asignările care apar în mod obișnuit, dar lista reală variază în funcție de producătorul/modelul ecranului. Încercați să utilizați comutatorul „LG alt” pentru unele ecranele LG mai noi, dacă controlul sursei de intrare nu funcționează!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The display group is marked as exclusive while at least one other display group with higher priority is active." xml:space="preserve">
@@ -6846,8 +6827,8 @@ This operation does not reset the display itself.</source>
         <source>The display is DDC capable</source>
         <note/>
       </trans-unit>
-      <trans-unit id="The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
-        <source>The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
+      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
+        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The display might have limited DDC support" xml:space="preserve">
@@ -6860,8 +6841,7 @@ This operation does not reset the display itself.</source>
       </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
-        <target state="translated">Ecranul va fi deconectat automat la detectare sau la conectare fizică dacă a fost deconectat anterior folosind aplicația. Această setare poate cauza probleme neașteptate (ciclul de conectare-deconectare cu ecrane incompatibile, lipsa oricărui ecran conectat) - utilizați cu atenție!
-</target>
+        <target state="translated">Ecranul va fi deconectat automat la detectare sau la conectare fizică dacă a fost deconectat anterior folosind aplicația. Această setare poate cauza probleme neașteptate (ciclul de conectare-deconectare cu ecrane incompatibile, lipsa oricărui ecran conectat) - utilizați cu atenție!</target>
         <note/>
       </trans-unit>
       <trans-unit id="The duplicated group will be disabled by default." xml:space="preserve">
@@ -6906,8 +6886,7 @@ Enable and configure the created display group (including layout protection) und
 In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Operația ar putea determina ecranul să clipească și să comute modul dacă modul curent nu este disponibil cu EDID-ul de fabrică. Ecranul va fi redetectat ca un ecran diferit dacă EDID-ul curent are identificatori diferiți.
 
-În caz de eșec, deconectați și reconectați ecranul fizic.
-</target>
+În caz de eșec, deconectați și reconectați ecranul fizic.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation might cause the screen to flicker and switch mode if the existing mode is not available with the updated EDID. The display will be redetected as a different display if the EDID has different identifiers.&#10;&#10;In case of a failure, disconnect and reconnect the display physically." xml:space="preserve">
@@ -6930,14 +6909,12 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well.</source>
-        <target state="translated">Glisorul va omite rezoluțiile care nu se potrivesc cu dimensiunea ecranului pentru a reduce dezordinea și pentru a face glisorul mai ușor de utilizat. Afectează, de asemenea, scurtăturile de tastatură pentru rezoluții.
-</target>
+        <target state="translated">Glisorul va omite rezoluțiile care nu se potrivesc cu dimensiunea ecranului pentru a reduce dezordinea și pentru a face glisorul mai ușor de utilizat. Afectează, de asemenea, scurtăturile de tastatură pentru rezoluții.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The system might reconnect the built-in display and other displays after wake from sleep to ensure GUI access. With this option enabled, the app forcefully disconnects these displays again. Post-wake main display will not be disconnected." xml:space="preserve">
         <source>The system might reconnect the built-in display and other displays after wake from sleep to ensure GUI access. With this option enabled, the app forcefully disconnects these displays again. Post-wake main display will not be disconnected.</source>
-        <target state="translated">Sistemul ar putea reconecta ecranul încorporat și alte ecrane după trezirea din somn pentru a asigura accesul la interfața grafică. Cu această opțiune activată, aplicația deconectează din nou în mod forțat aceste ecrane. Ecranul principal post-trezire nu va fi deconectat.
-</target>
+        <target state="translated">Sistemul ar putea reconecta ecranul încorporat și alte ecrane după trezirea din somn pentru a asigura accesul la interfața grafică. Cu această opțiune activată, aplicația deconectează din nou în mod forțat aceste ecrane. Ecranul principal post-trezire nu va fi deconectat.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The time it takes for the app to enter into an active state after the system wakes from a sleep." xml:space="preserve">
@@ -6952,8 +6929,7 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The virtual screen created with this aspect ratio does not seem to be viable." xml:space="preserve">
         <source>The virtual screen created with this aspect ratio does not seem to be viable.</source>
-        <target state="translated">Ecranul virtual creat cu acest raport de aspect nu pare să fie viabil.
-</target>
+        <target state="translated">Ecranul virtual creat cu acest raport de aspect nu pare să fie viabil.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enabled any time under association settings)." xml:space="preserve">
@@ -6986,14 +6962,14 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Există cel puțin un ecran fizic controlabil conectat.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="There is no at least one display group member present." xml:space="preserve">
+        <source>There is no at least one display group member present.</source>
+        <target state="translated">Nu există cel puțin un membru al grupului de ecrane prezent.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="There is no group member present." xml:space="preserve">
         <source>There is no group member present.</source>
         <target state="translated">Nu este prezent niciun membru al grupului.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="There is not at least one display group member present." xml:space="preserve">
-        <source>There is not at least one display group member present.</source>
-        <target state="translated">Nu există cel puțin un membru al grupului de ecrane prezent.</target>
         <note/>
       </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serve as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display." xml:space="preserve">
@@ -7418,8 +7394,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Unable to acquire</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Unable to configure virtual display" xml:space="preserve">
-        <source>Unable to configure virtual display</source>
+      <trans-unit id="Unable to configure virtual screen" xml:space="preserve">
+        <source>Unable to configure virtual screen</source>
         <target state="translated">Nu s-a putut configura ecranul virtual</target>
         <note/>
       </trans-unit>
@@ -7731,8 +7707,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Virtual screens are not connected automatically, brightness and other adjustments are not restored and reverted to defaults, custom EDIDs are not automatically applied." xml:space="preserve">
         <source>Virtual screens are not connected automatically, brightness and other adjustments are not restored and reverted to defaults, custom EDIDs are not automatically applied.</source>
-        <target state="translated">Ecranele virtuale nu sunt conectate automat, luminozitatea și alte ajustări nu sunt restaurate și se revin la valorile implicite, EDID-urile personalizate nu sunt aplicate automat.
-</target>
+        <target state="translated">Ecranele virtuale nu sunt conectate automat, luminozitatea și alte ajustări nu sunt restaurate și se revin la valorile implicite, EDID-urile personalizate nu sunt aplicate automat.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screens associated with displays cannot be manually connected or disconnected!" xml:space="preserve">
@@ -7844,8 +7819,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100% brightness is inserted." xml:space="preserve">
         <source>When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100% brightness is inserted.</source>
-        <target state="translated">Când este activată escaladarea HDR și controlul luminozității hardware este dezactivat, aplicația utilizează o scală continuă de luminozitate între zero și valoarea maximă calibrată a escaladării. Din cauza acestui fapt, setarea neutră (luminozitate de 100%, când conținutul HDR de pe ecran nu este tăiat) s-ar putea să nu se încadreze într-un anumit interval al tastelor de comandă OSD, ceea ce face dificilă menținerea starii prin tastele rapide. Pentru a remedia aceasta, se introduce un pas intermediar la 100% luminozitate.
-</target>
+        <target state="translated">Când este activată escaladarea HDR și controlul luminozității hardware este dezactivat, aplicația utilizează o scală continuă de luminozitate între zero și valoarea maximă calibrată a escaladării. Din cauza acestui fapt, setarea neutră (luminozitate de 100%, când conținutul HDR de pe ecran nu este tăiat) s-ar putea să nu se încadreze într-un anumit interval al tastelor de comandă OSD, ceea ce face dificilă menținerea starii prin tastele rapide. Pentru a remedia aceasta, se introduce un pas intermediar la 100% luminozitate.</target>
         <note/>
       </trans-unit>
       <trans-unit id="When Settings is Open" xml:space="preserve">
@@ -7943,8 +7917,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC." xml:space="preserve">
         <source>Works with combined brightness and DDC hardware control. Most displays do not support turning the backlight off or back on via DDC.</source>
-        <target state="translated">Funcționează cu controlul de luminozitate combinat și controlul hardware DDC. Majoritatea ecranelor nu suportă oprirea sau repornirea iluminării prin DDC.
-</target>
+        <target state="translated">Funcționează cu controlul de luminozitate combinat și controlul hardware DDC. Majoritatea ecranelor nu suportă oprirea sau repornirea iluminării prin DDC.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Would you like to connect all displays before turning off connection management?" xml:space="preserve">
@@ -8018,8 +7991,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>
-        <target state="translated">Puteți, de asemenea, adauga aplicația în elementele de conectare la pornire din Setările Sistemului &gt; General.
-</target>
+        <target state="translated">Puteți, de asemenea, adauga aplicația în elementele de conectare la pornire din Setările Sistemului &gt; General.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
@@ -8033,14 +8005,12 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`)." xml:space="preserve">
         <source>You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`).</source>
-        <target state="translated">Puteți descărca aplicația SF Symbols de pe [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) pentru a găsi stringul de iconuri SF Symbol potrivit (încercați: `face.smiling`).
-</target>
+        <target state="translated">Puteți descărca aplicația SF Symbols de pe [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) pentru a găsi stringul de iconuri SF Symbol potrivit (încercați: `face.smiling`).</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can override the default meaning of the on/off switch under Settings &gt; Displays." xml:space="preserve">
         <source>You can override the default meaning of the on/off switch under Settings &gt; Displays.</source>
-        <target state="translated">Puteți forța înțelesul implicit al comutatorului pornit/oprit în Setări/Ecrane.
-</target>
+        <target state="translated">Puteți forța înțelesul implicit al comutatorului pornit/oprit în Setări/Ecrane.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can retrieve, modify and load/apply EDID data to alter display capabilities perceived by your Mac." xml:space="preserve">

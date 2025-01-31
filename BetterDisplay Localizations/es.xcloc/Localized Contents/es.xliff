@@ -53,11 +53,6 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
-      <trans-unit id=" %lld x %lld" xml:space="preserve">
-        <source> %1$lld x %2$lld</source>
-        <target state="translated"> %1$lld x %2$lld</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
@@ -183,13 +178,13 @@
         <target state="translated">%@ La app se ha desvinculado de las teclas de volumen y silencio nativas.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to both the native volume and mute keys (if permissions permit)</source>
+      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)." xml:space="preserve">
+        <source>%@ The app listens to both the native volume and mute keys (if permissions permit).</source>
         <target state="translated">%@ La app escucha tanto las teclas de volumen como las de silencio nativas (si los permisos lo permiten).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to the native brightness keys (if permissions permit)</source>
+      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
+        <source>%@ The app listens to the native brightness keys (if permissions permit).</source>
         <target state="translated">%@ La app escucha las teclas de brillo nativas (si los permisos lo permiten).</target>
         <note/>
       </trans-unit>
@@ -281,6 +276,11 @@
       <trans-unit id="%lld : %lld" xml:space="preserve">
         <source>%1$lld : %2$lld</source>
         <target state="translated">%1$lld : %2$lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld Days Remaining" xml:space="preserve">
+        <source>%lld Days Remaining</source>
+        <target state="translated">%lld días restantes</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -905,8 +905,8 @@ Puedes hacerlo en Configuración del sistema, o la aplicación puede hacerlo por
         <target state="translated">Ocurrió un error al calcular las dimensiones de la pantalla virtual. ¡Intenta crear la pantalla virtual manualmente!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An error occurred while configuring the connected virtual display." xml:space="preserve">
-        <source>An error occurred while configuring the connected virtual display.</source>
+      <trans-unit id="An error occurred while configuring the connected virtual screen." xml:space="preserve">
+        <source>An error occurred while configuring the connected virtual screen.</source>
         <target state="translated">Ocurrió un error al configurar la pantalla virtual conectada.</target>
         <note/>
       </trans-unit>
@@ -5269,8 +5269,8 @@ No todas las pantallas admiten operaciones de alimentación DDC. ¡Las operacion
         <target state="translated">Ten en cuenta que no todas las pantallas admiten operaciones de alimentación DDC y es posible que algunas pantallas no funcionen como deberían. Si apaga la pantalla, tendrá que volver a encenderla manualmente.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Please select a display you want to match the virtual display!" xml:space="preserve">
-        <source>Please select a display you want to match the virtual display!</source>
+      <trans-unit id="Please select a display you want to match the virtual screen!" xml:space="preserve">
+        <source>Please select a display you want to match the virtual screen!</source>
         <target state="translated">¡Seleccione una pantalla que desee que coincida con la pantalla virtual!</target>
         <note/>
       </trans-unit>
@@ -7046,8 +7046,8 @@ Esta operación no restablece la pantalla en sí.</target>
         <target state="translated">La pantalla es compatible con DDC.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
-        <source>The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
+      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
+        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
         <target state="translated">La pantalla puede no estar configurada correctamente para el control de brillo de hardware DDC y otras funciones similares. Utiliza la detección y la autoconfiguración o ajusta los ajustes DDC manualmente.</target>
         <note/>
       </trans-unit>
@@ -7197,14 +7197,14 @@ En caso de error, desconecte y vuelva a conectar la pantalla físicamente.</targ
         <target state="translated">Hay al menos una pantalla controlable conectada</target>
         <note/>
       </trans-unit>
+      <trans-unit id="There is no at least one display group member present." xml:space="preserve">
+        <source>There is no at least one display group member present.</source>
+        <target state="translated">No hay al menos un miembro del grupo de pantallas presente.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="There is no group member present." xml:space="preserve">
         <source>There is no group member present.</source>
         <target state="translated">No hay ningún miembro del grupo presente.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="There is not at least one display group member present." xml:space="preserve">
-        <source>There is not at least one display group member present.</source>
-        <target state="translated">No hay al menos un miembro del grupo de pantallas presente.</target>
         <note/>
       </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serve as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display." xml:space="preserve">
@@ -7653,8 +7653,8 @@ Puede descartar esta notificación; en este caso, los cambios se aplicarán la p
         <target state="translated">Imposible de adquirir</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unable to configure virtual display" xml:space="preserve">
-        <source>Unable to configure virtual display</source>
+      <trans-unit id="Unable to configure virtual screen" xml:space="preserve">
+        <source>Unable to configure virtual screen</source>
         <target state="translated">No se puede configurar la pantalla virtual</target>
         <note/>
       </trans-unit>

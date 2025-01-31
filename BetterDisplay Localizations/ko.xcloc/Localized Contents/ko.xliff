@@ -53,11 +53,6 @@
         <target state="translated"/>
         <note/>
       </trans-unit>
-      <trans-unit id=" %lld x %lld" xml:space="preserve">
-        <source> %1$lld x %2$lld</source>
-        <target state="translated"> %1$lld x %2$lld</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%" xml:space="preserve">
         <source>%</source>
         <target state="translated">%</target>
@@ -183,13 +178,13 @@
         <target state="translated">%@ 앱이 기본 볼륨 및 음소거 키와 연동되지 않습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to both the native volume and mute keys (if permissions permit)</source>
+      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)." xml:space="preserve">
+        <source>%@ The app listens to both the native volume and mute keys (if permissions permit).</source>
         <target state="translated">%@ 앱이 기본 볼륨 및 음소거 키를 감지함 (권한 허용 시)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)" xml:space="preserve">
-        <source>%@ The app listens to the native brightness keys (if permissions permit)</source>
+      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
+        <source>%@ The app listens to the native brightness keys (if permissions permit).</source>
         <target state="translated">%@ 앱이 기본 밝기 키를 감지함 (권한 허용 시)</target>
         <note/>
       </trans-unit>
@@ -281,6 +276,11 @@
       <trans-unit id="%lld : %lld" xml:space="preserve">
         <source>%1$lld : %2$lld</source>
         <target state="translated">%1$lld : %2$lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%lld Days Remaining" xml:space="preserve">
+        <source>%lld Days Remaining</source>
+        <target state="translated">%lld일 남음</target>
         <note/>
       </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
@@ -905,8 +905,8 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">가상 화면의 크기를 계산하는 중 오류가 발생했습니다. 가상 화면을 수동으로 생성해 보세요!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="An error occurred while configuring the connected virtual display." xml:space="preserve">
-        <source>An error occurred while configuring the connected virtual display.</source>
+      <trans-unit id="An error occurred while configuring the connected virtual screen." xml:space="preserve">
+        <source>An error occurred while configuring the connected virtual screen.</source>
         <target state="translated">연결된 가상 화면을 구성하는 중 오류가 발생했습니다.</target>
         <note/>
       </trans-unit>
@@ -3707,9 +3707,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Get DDC value of ${ddcCommand} from ${displayEntity}." xml:space="preserve">
         <source>Get DDC value of ${ddcCommand} from ${displayEntity}.</source>
-        <target state="translated">${displayEntity}에서 ${ddcCommand}의 DDC 값 가져오기
-
-</target>
+        <target state="translated">${displayEntity}에서 ${ddcCommand}의 DDC 값 가져오기</target>
         <note/>
       </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
@@ -5271,8 +5269,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">모든 디스플레이가 DDC 전원 작동을 지원하는 것은 아니며, 일부 디스플레이는 예상대로 작동하지 않을 수 있다는 점에 유의하세요. 디스플레이 전원을 끄는 경우 수동으로 전원을 다시 켜야 합니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Please select a display you want to match the virtual display!" xml:space="preserve">
-        <source>Please select a display you want to match the virtual display!</source>
+      <trans-unit id="Please select a display you want to match the virtual screen!" xml:space="preserve">
+        <source>Please select a display you want to match the virtual screen!</source>
         <target state="translated">가상 디스플레이와 매칭할 디스플레이를 선택하세요!</target>
         <note/>
       </trans-unit>
@@ -7050,8 +7048,8 @@ This operation does not reset the display itself.</source>
         <target state="translated">디스플레이가 DDC를 지원합니다</target>
         <note/>
       </trans-unit>
-      <trans-unit id="The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
-        <source>The display may not be propery configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
+      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
+        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
         <target state="translated">디스플레이가 DDC 하드웨어 밝기 제어 및 기타 유사한 기능에 맞게 구성되지 않았을 수 있습니다. 감지 및 자동 구성을 사용하거나 DDC 설정을 수동으로 조정하세요.</target>
         <note/>
       </trans-unit>
@@ -7202,14 +7200,14 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">제어 가능한 디스플레이가 하나 이상 연결되어 있을 때</target>
         <note/>
       </trans-unit>
+      <trans-unit id="There is no at least one display group member present." xml:space="preserve">
+        <source>There is no at least one display group member present.</source>
+        <target state="translated">한 명 이상의 디스플레이 그룹 구성원이 참석하지 않았습니다.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="There is no group member present." xml:space="preserve">
         <source>There is no group member present.</source>
         <target state="translated">현재 그룹 구성원이 없습니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="There is not at least one display group member present." xml:space="preserve">
-        <source>There is not at least one display group member present.</source>
-        <target state="translated">한 명 이상의 디스플레이 그룹 구성원이 참석하지 않았습니다.</target>
         <note/>
       </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serve as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as newly connected display." xml:space="preserve">
@@ -7658,8 +7656,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">가져올 수 없음</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unable to configure virtual display" xml:space="preserve">
-        <source>Unable to configure virtual display</source>
+      <trans-unit id="Unable to configure virtual screen" xml:space="preserve">
+        <source>Unable to configure virtual screen</source>
         <target state="translated">가상 화면을 구성할 수 없음</target>
         <note/>
       </trans-unit>
