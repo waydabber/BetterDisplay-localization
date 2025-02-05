@@ -241,6 +241,10 @@
         <source>%1$lld : %2$lld</source>
         <note/>
       </trans-unit>
+      <trans-unit id="%lld Days Remaining" xml:space="preserve">
+        <source>%lld Days Remaining</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%lld Trial Days Left" xml:space="preserve">
         <source>%lld Trial Days Left</source>
         <target state="translated">%lld ознакомительный период закончился</target>
@@ -648,8 +652,8 @@ You can do this in System Settings or the app can do it for you (administrator c
         <source>All group members can be synchronization sources.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="All members (except the the source of the sync event) will be sync targets." xml:space="preserve">
-        <source>All members (except the the source of the sync event) will be sync targets.</source>
+      <trans-unit id="All members (except the source of the sync event) will be sync targets." xml:space="preserve">
+        <source>All members (except the source of the sync event) will be sync targets.</source>
         <note/>
       </trans-unit>
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
@@ -986,40 +990,36 @@ AliPay доступен в Китае.</target>
         <source>Appropriate displays are available for a configured synchronization, UI scale matching or layout protection.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Are sure you want to discard this display group and all its settings?" xml:space="preserve">
-        <source>Are sure you want to discard this display group and all its settings?</source>
+      <trans-unit id="Are you sure you want to discard this display group and all its settings?" xml:space="preserve">
+        <source>Are you sure you want to discard this display group and all its settings?</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Are sure you want to quit the app?" xml:space="preserve">
-        <source>Are sure you want to quit the app?</source>
-        <target state="translated">Вы уверены, что хотите выйти из приложения?</target>
+      <trans-unit id="Are you sure you want to quit the app?" xml:space="preserve">
+        <source>Are you sure you want to quit the app?</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Are sure you want to reapply model specific adaptations for this display?" xml:space="preserve">
-        <source>Are sure you want to reapply model specific adaptations for this display?</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Are sure you want to remove this synchronization with all its settings?" xml:space="preserve">
-        <source>Are sure you want to remove this synchronization with all its settings?</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
-        <source>Are sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions.</source>
-        <target state="translated">Вы уверены, что хотите сбросить (забыть) все настройки, связанные с этим дисплеем? Сброс не влияет на настройки конфигурации системы, такие как гибкое масштабирование, пользовательские разрешения.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Are sure you want to reset app settings?" xml:space="preserve">
-        <source>Are sure you want to reset app settings?</source>
-        <target state="translated">Вы уверены, что хотите сбросить настройки приложения?</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Are sure you want to restart the app?" xml:space="preserve">
-        <source>Are sure you want to restart the app?</source>
-        <target state="translated">Вы уверены, что хотите перезапустить приложение?</target>
+      <trans-unit id="Are you sure you want to reapply model specific adaptations for this display?" xml:space="preserve">
+        <source>Are you sure you want to reapply model specific adaptations for this display?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Are you sure you want to remove the layout protection for this display with all its settings?" xml:space="preserve">
         <source>Are you sure you want to remove the layout protection for this display with all its settings?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to remove this synchronization with all its settings?" xml:space="preserve">
+        <source>Are you sure you want to remove this synchronization with all its settings?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
+        <source>Are you sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to reset app settings?" xml:space="preserve">
+        <source>Are you sure you want to reset app settings?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Are you sure you want to restart the app?" xml:space="preserve">
+        <source>Are you sure you want to restart the app?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Arrange %@ next to" xml:space="preserve">
@@ -2364,9 +2364,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Определяет TCP-порт, к который прислушивается встроенным HTTP-сервером.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different." xml:space="preserve">
-        <source>Defines the diagonal size the system percieves the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different.</source>
-        <target state="translated">Определяет размер диагонали, по которой система воспринимает дисплей. Если используется для зеркалирования/потоковой передачи, он может быть дополнительно сопоставлен с целевым экраном. По умолчанию можно оставить пустым. При использовании списка пользовательских разрешений с разным соотношением сторон фактический размер может отличаться.</target>
+      <trans-unit id="Defines the diagonal size the system perceives the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different." xml:space="preserve">
+        <source>Defines the diagonal size the system perceives the display. If used for mirroring/streaming, it might optionally be matched to the target screen. Safe to leave empty as default. With custom resolution list of varying aspect ratios the actual reported size may be different.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black." xml:space="preserve">
@@ -2421,8 +2420,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Обнаружены помехи…</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately." xml:space="preserve">
-        <source>Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horiztontal or vertical side and specify the offsets appropriately.</source>
+      <trans-unit id="Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horizontal or vertical side and specify the offsets appropriately." xml:space="preserve">
+        <source>Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horizontal or vertical side and specify the offsets appropriately.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Determines whether display is affected by keyboard adjustments (video/audio controls)." xml:space="preserve">
@@ -2873,8 +2872,8 @@ The process does not work for the built-in display (reboot needed). The operatio
 На встроенном дисплее процесс не работает (требуется перезагрузка). Эта операция может привести к переходу некоторых компьютеров Mac в спящий режим.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Disregard SDR peak brightness adjustment availibility" xml:space="preserve">
-        <source>Disregard SDR peak brightness adjustment availibility</source>
+      <trans-unit id="Disregard SDR peak brightness adjustment availability" xml:space="preserve">
+        <source>Disregard SDR peak brightness adjustment availability</source>
         <note/>
       </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
@@ -3721,9 +3720,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>If this display group is active, no other display groups with lower priority can be active. If any other display group with higher priority is active, this display group cannot be active.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information." xml:space="preserve">
-        <source>If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on varius circumstances. Traditional popups may contain additional information.</source>
-        <target state="translated">Если вы используете Центр уведомлений, убедитесь, что уведомления включены для этого приложения. Важные уведомления могут появляться без звука в зависимости от различных обстоятельств. Традиционные всплывающие окна могут содержать дополнительную информацию.</target>
+      <trans-unit id="If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on various circumstances. Traditional popups may contain additional information." xml:space="preserve">
+        <source>If you are using Notification Center, make sure notifications are enabled for the app. Important notifications may appear silently, depending on various circumstances. Traditional popups may contain additional information.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
@@ -4561,9 +4559,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Примечание: Дополнительные параметры конфигурации будут доступны в панели настроек созданного виртуального экрана.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Note: they way resolution/magnification shortcuts work depends on resolution slider settings." xml:space="preserve">
-        <source>Note: they way resolution/magnification shortcuts work depends on resolution slider settings.</source>
-        <target state="translated">Примечание: работа сочетаний клавиш разрешения/ увеличения зависит от настроек ползунка разрешения.</target>
+      <trans-unit id="Note: the way resolution/magnification shortcuts work depends on resolution slider settings." xml:space="preserve">
+        <source>Note: the way resolution/magnification shortcuts work depends on resolution slider settings.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs." xml:space="preserve">
@@ -5092,16 +5089,16 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Remove All Activations</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Remove All Other Activations" xml:space="preserve">
-        <source>Remove All Other Activations</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Remove Color Profiles" xml:space="preserve">
         <source>Remove Color Profiles</source>
         <note/>
       </trans-unit>
       <trans-unit id="Remove Factory Color Profiles?" xml:space="preserve">
         <source>Remove Factory Color Profiles?</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Remove Other Activation(s)" xml:space="preserve">
+        <source>Remove Other Activation(s)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Remove Protection…" xml:space="preserve">
@@ -5128,10 +5125,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Remove synchronization for %@</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Removing all other activations will impact all installations associated with this license except this one. Removing this activation will affect only this installation.&#10;&#10;Removing all activations will give you a blank slate." xml:space="preserve">
-        <source>Removing all other activations will impact all installations associated with this license except this one. Removing this activation will affect only this installation.
-
-Removing all activations will give you a blank slate.</source>
+      <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
+        <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Render all other app menu icons in hierarchical style (with grayscales)" xml:space="preserve">
@@ -7520,10 +7515,10 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <source>⚠️ This feature is not available in this version.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are sure you want to continue?" xml:space="preserve">
+      <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are you sure you want to continue?" xml:space="preserve">
         <source>⚠️ This operation might permanently render your display unusable!
 
-Are sure you want to continue?</source>
+Are you sure you want to continue?</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This platform (Intel) does not support upscaling when color table adjustments are enabled." xml:space="preserve">
