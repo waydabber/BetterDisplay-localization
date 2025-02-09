@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
-    </header>
-    <body>
-      <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
-        <source>
-          <mrk mtype="x-set" mid="0">Brighten displays with ${applicationName}</mrk>
-        </source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Dim displays with ${applicationName}" xml:space="preserve">
-        <source>
-          <mrk mtype="x-set" mid="0">Dim displays with ${applicationName}</mrk>
-        </source>
-        <note/>
-      </trans-unit>
-    </body>
-  </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
@@ -253,6 +234,10 @@
         <target state="translated">%1$@, %2$@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@-bit" xml:space="preserve">
+        <source>%@-bit</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@mm" xml:space="preserve">
         <source>%@mm</source>
         <target state="translated">%@mm</target>
@@ -376,6 +361,10 @@ Please reactivate this installation to continue using Pro features.</source>
         <target state="translated">-</target>
         <note/>
       </trans-unit>
+      <trans-unit id="0°" xml:space="preserve">
+        <source>0°</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
         <source>1:1 Pixel Mapping</source>
         <target state="translated">1:1 像素映射</target>
@@ -384,6 +373,18 @@ Please reactivate this installation to continue using Pro features.</source>
       <trans-unit id="1:1 pixel mapped resolution" xml:space="preserve">
         <source>1:1 pixel mapped resolution</source>
         <target state="translated">1:1像素映射分辨率</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="90°" xml:space="preserve">
+        <source>90°</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="180°" xml:space="preserve">
+        <source>180°</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="270°" xml:space="preserve">
+        <source>270°</source>
         <note/>
       </trans-unit>
       <trans-unit id="@" xml:space="preserve">
@@ -1651,6 +1652,18 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">将所有显示器的亮度改为 ${brightness}。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Change the XDR Preset of a display." xml:space="preserve">
+        <source>Change the XDR Preset of a display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change the color profile of a display." xml:space="preserve">
+        <source>Change the color profile of a display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen." xml:space="preserve">
+        <source>Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
         <source>Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings.</source>
         <target state="translated">更改此设置不会影响现有的已知显示器。显示器识别方式可在每个显示器的 其他设置 中进行更改。</target>
@@ -2554,6 +2567,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
         <source>Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness.</source>
         <target state="translated">以尼特 (nit) 单位定义亮度控制上限。只许用 1000 达到全屏持续亮度。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Degrees" xml:space="preserve">
+        <source>Degrees</source>
         <note/>
       </trans-unit>
       <trans-unit id="Delay between commands" xml:space="preserve">
@@ -3700,6 +3717,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">获取专业版</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get Custom DDC value" xml:space="preserve">
+        <source>Get Custom DDC value</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get DDC value" xml:space="preserve">
         <source>Get DDC value</source>
         <target state="translated">获得 DDC 值</target>
@@ -3710,9 +3731,17 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">从 ${displayEntity} 获取 ${ddcCommand} 的 DDC 值。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get DDC value of ${vcpCode} from ${displayEntity}." xml:space="preserve">
+        <source>Get DDC value of ${vcpCode} from ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">获取图像调节值</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get a control value using DDC from a display for a custom VCP." xml:space="preserve">
+        <source>Get a control value using DDC from a display for a custom VCP.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Get a control value using DDC from a display." xml:space="preserve">
@@ -6066,6 +6095,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">保存校准</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Scaling" xml:space="preserve">
+        <source>Scaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Screen Recording Permission" xml:space="preserve">
         <source>Screen Recording Permission</source>
         <target state="translated">屏幕录制权限</target>
@@ -6181,9 +6214,17 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">所选显示器不可用</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Send Custom DDC command" xml:space="preserve">
+        <source>Send Custom DDC command</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Send DDC ${ddcCommand} with ${valueParameter} to ${displayEntity}." xml:space="preserve">
         <source>Send DDC ${ddcCommand} with ${valueParameter} to ${displayEntity}.</source>
         <target state="translated">将 DDC ${ddcCommand} 和 ${valueParameter} 传送到 ${displayEntity}。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send DDC ${vcpCode} with ${valueParameter} to ${displayEntity}." xml:space="preserve">
+        <source>Send DDC ${vcpCode} with ${valueParameter} to ${displayEntity}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Send DDC command" xml:space="preserve">
@@ -6194,6 +6235,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Send SCS command after write" xml:space="preserve">
         <source>Send SCS command after write</source>
         <target state="translated">写入后发送SCS命令</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send a DDC command (with value) to a display." xml:space="preserve">
+        <source>Send a DDC command (with value) to a display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Send a custom DDC command (with value) to a display." xml:space="preserve">
@@ -6301,6 +6346,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">设置原生分辨率</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
+        <source>Set the (hardware) orientation of a display. Not all displays may support the feature.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
+        <source>Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
         <source>Set the audio volume of a display using DDC to a specified value.</source>
         <target state="translated">通过 DDC 将显示器的音频音量设置为指定值。</target>
@@ -6319,6 +6372,18 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem." xml:space="preserve">
         <source>Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem.</source>
         <target state="translated">将亮度滑块设置得越高越好！您还需要确保能勉强看到笑脸！如果滑块设置到最低时看不到笑脸，则需要先调整显示器的硬件控制（对比度、伽马值）解决白色饱和度问题。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the color profile of ${displayEntity} to ${colorProfileEntity}." xml:space="preserve">
+        <source>Set the color profile of ${displayEntity} to ${colorProfileEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}." xml:space="preserve">
+        <source>Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
+        <source>Set the rotation of ${displayEntity} to ${degrees}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
@@ -7844,6 +7909,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Use zero to disable transition animation." xml:space="preserve">
         <source>Use zero to disable transition animation.</source>
         <target state="translated">采用 0 值禁用过渡动画。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="VCP Code" xml:space="preserve">
+        <source>VCP Code</source>
         <note/>
       </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">

@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="BetterDisplay/Localizable/AppShortcuts.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
-    <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
-    </header>
-    <body>
-      <trans-unit id="Brighten displays with ${applicationName}" xml:space="preserve">
-        <source>
-          <mrk mtype="x-set" mid="0">Brighten displays with ${applicationName}</mrk>
-        </source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Dim displays with ${applicationName}" xml:space="preserve">
-        <source>
-          <mrk mtype="x-set" mid="0">Dim displays with ${applicationName}</mrk>
-        </source>
-        <note/>
-      </trans-unit>
-    </body>
-  </file>
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
@@ -224,6 +205,10 @@
         <source>%1$@, %2$@</source>
         <note/>
       </trans-unit>
+      <trans-unit id="%@-bit" xml:space="preserve">
+        <source>%@-bit</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@mm" xml:space="preserve">
         <source>%@mm</source>
         <note/>
@@ -327,6 +312,10 @@ Please reactivate this installation to continue using Pro features.</source>
         <target state="translated">-</target>
         <note/>
       </trans-unit>
+      <trans-unit id="0°" xml:space="preserve">
+        <source>0°</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="1:1 Pixel Mapping" xml:space="preserve">
         <source>1:1 Pixel Mapping</source>
         <target state="translated">Mapeamento de píxeis 1:1</target>
@@ -334,6 +323,18 @@ Please reactivate this installation to continue using Pro features.</source>
       </trans-unit>
       <trans-unit id="1:1 pixel mapped resolution" xml:space="preserve">
         <source>1:1 pixel mapped resolution</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="90°" xml:space="preserve">
+        <source>90°</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="180°" xml:space="preserve">
+        <source>180°</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="270°" xml:space="preserve">
+        <source>270°</source>
         <note/>
       </trans-unit>
       <trans-unit id="@" xml:space="preserve">
@@ -1517,6 +1518,18 @@ Especificar o comprimento de leitura é opcional - deixar o campo vazio para aut
         <source>Change brightness to ${brightness} for all displays.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Change the XDR Preset of a display." xml:space="preserve">
+        <source>Change the XDR Preset of a display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change the color profile of a display." xml:space="preserve">
+        <source>Change the color profile of a display.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen." xml:space="preserve">
+        <source>Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
         <source>Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings.</source>
         <target state="translated">A alteração desta definição não afeta os ecrãs conhecidos existentes. O método de identificação do ecrã pode ser alterado por cada ecrã nas definições adicionais de cada ecrã.</target>
@@ -2386,6 +2399,10 @@ Especificar o comprimento de leitura é opcional - deixar o campo vazio para aut
       <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
         <source>Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness.</source>
         <target state="translated">Define o limite superior do controlo de brilho em nits. Para permitir apenas o brilho sustentado do ecrã inteiro, utilize 1000.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Degrees" xml:space="preserve">
+        <source>Degrees</source>
         <note/>
       </trans-unit>
       <trans-unit id="Delay between commands" xml:space="preserve">
@@ -3481,6 +3498,10 @@ O processo não funciona com o ecrã incorporado (é necessário reiniciar). A o
         <target state="translated">Obter %@ Pro</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get Custom DDC value" xml:space="preserve">
+        <source>Get Custom DDC value</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get DDC value" xml:space="preserve">
         <source>Get DDC value</source>
         <target state="translated">Obter o valor de DDC</target>
@@ -3490,9 +3511,17 @@ O processo não funciona com o ecrã incorporado (é necessário reiniciar). A o
         <source>Get DDC value of ${ddcCommand} from ${displayEntity}.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Get DDC value of ${vcpCode} from ${displayEntity}." xml:space="preserve">
+        <source>Get DDC value of ${vcpCode} from ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Obter o valor de ajuste da imagem</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get a control value using DDC from a display for a custom VCP." xml:space="preserve">
+        <source>Get a control value using DDC from a display for a custom VCP.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Get a control value using DDC from a display." xml:space="preserve">
@@ -5694,6 +5723,10 @@ Nem todos os ecrãs suportam operações de alimentação de DDC. As operações
         <target state="translated">Guardar a calibração</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Scaling" xml:space="preserve">
+        <source>Scaling</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Screen Recording Permission" xml:space="preserve">
         <source>Screen Recording Permission</source>
         <note/>
@@ -5788,8 +5821,16 @@ Nem todos os ecrãs suportam operações de alimentação de DDC. As operações
         <source>Selected display is not available</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Send Custom DDC command" xml:space="preserve">
+        <source>Send Custom DDC command</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Send DDC ${ddcCommand} with ${valueParameter} to ${displayEntity}." xml:space="preserve">
         <source>Send DDC ${ddcCommand} with ${valueParameter} to ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send DDC ${vcpCode} with ${valueParameter} to ${displayEntity}." xml:space="preserve">
+        <source>Send DDC ${vcpCode} with ${valueParameter} to ${displayEntity}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Send DDC command" xml:space="preserve">
@@ -5798,6 +5839,10 @@ Nem todos os ecrãs suportam operações de alimentação de DDC. As operações
       </trans-unit>
       <trans-unit id="Send SCS command after write" xml:space="preserve">
         <source>Send SCS command after write</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Send a DDC command (with value) to a display." xml:space="preserve">
+        <source>Send a DDC command (with value) to a display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Send a custom DDC command (with value) to a display." xml:space="preserve">
@@ -5889,6 +5934,14 @@ Nem todos os ecrãs suportam operações de alimentação de DDC. As operações
         <source>Set native resolution</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
+        <source>Set the (hardware) orientation of a display. Not all displays may support the feature.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
+        <source>Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
         <source>Set the audio volume of a display using DDC to a specified value.</source>
         <note/>
@@ -5904,6 +5957,18 @@ Nem todos os ecrãs suportam operações de alimentação de DDC. As operações
       <trans-unit id="Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem." xml:space="preserve">
         <source>Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem.</source>
         <target state="translated">Colocar o deslizador de brilho o mais alto possível! Certifica-te também sempre de que mal consegues ver o rosto sorridente! Se não consegues ver o rosto sorridente quando a barra deslizante está na definição mais baixa, tens de ajustar primeiro os controlos de hardware do teu ecrã (contraste, gama) para resolver o problema da saturação de branco.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the color profile of ${displayEntity} to ${colorProfileEntity}." xml:space="preserve">
+        <source>Set the color profile of ${displayEntity} to ${colorProfileEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}." xml:space="preserve">
+        <source>Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
+        <source>Set the rotation of ${displayEntity} to ${degrees}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
@@ -7278,6 +7343,10 @@ Pode dispensar esta notificação - neste caso, as alterações serão aplicadas
       <trans-unit id="Use zero to disable transition animation." xml:space="preserve">
         <source>Use zero to disable transition animation.</source>
         <target state="translated">Usar zero para desativar a animação de transição.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="VCP Code" xml:space="preserve">
+        <source>VCP Code</source>
         <note/>
       </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
