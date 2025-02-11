@@ -375,6 +375,18 @@ Vui lòng kích hoạt lại cài đặt này để tiếp tục sử dụng cá
         <target state="translated">Độ phân giải đối chiếu 1:1 pixel</target>
         <note/>
       </trans-unit>
+      <trans-unit id="4:2:0" xml:space="preserve">
+        <source>4:2:0</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="4:2:2" xml:space="preserve">
+        <source>4:2:2</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="4:4:4" xml:space="preserve">
+        <source>4:4:4</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="90°" xml:space="preserve">
         <source>90°</source>
         <note/>
@@ -1660,6 +1672,10 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <source>Change the color profile of a display.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Change the display connection color mode (bit depth, encoding, chroma subsampling, range)." xml:space="preserve">
+        <source>Change the display connection color mode (bit depth, encoding, chroma subsampling, range).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen." xml:space="preserve">
         <source>Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen.</source>
         <note/>
@@ -1682,6 +1698,14 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
       <trans-unit id="Checking…" xml:space="preserve">
         <source>Checking…</source>
         <target state="translated">Đang kiểm tra…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chroma Subsampling" xml:space="preserve">
+        <source>Chroma Subsampling</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chrome Subsampling" xml:space="preserve">
+        <source>Chrome Subsampling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Chunk size" xml:space="preserve">
@@ -3420,6 +3444,10 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
       <trans-unit id="Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space." xml:space="preserve">
         <source>Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space.</source>
         <target state="translated">Bật tùy chọn này sẽ xóa biểu tượng thanh menu khi chỉ có màn hình này và các màn hình tương tự được đánh dấu khác. Sử dụng cài đặt này khi bạn không cần bất kỳ tính năng nào của ứng dụng cho màn hình này và muốn giải phóng không gian trên thanh menu.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Encoding" xml:space="preserve">
+        <source>Encoding</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
@@ -5468,6 +5496,14 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Thoát ứng dụng</target>
         <note/>
       </trans-unit>
+      <trans-unit id="RGB" xml:space="preserve">
+        <source>RGB</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Range" xml:space="preserve">
+        <source>Range</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Range includes software brightness upscaling" xml:space="preserve">
         <source>Range includes software brightness upscaling</source>
         <target state="translated">Phạm vi bao gồm việc tăng cường độ sáng phần mềm</target>
@@ -6372,6 +6408,10 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
       <trans-unit id="Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem." xml:space="preserve">
         <source>Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem.</source>
         <target state="translated">Đặt thanh trượt độ sáng càng cao càng tốt! Hãy đảm bảo rằng bạn vẫn có thể nhìn thấy mặt cười! Nếu bạn không thấy mặt cười khi thanh trượt được đặt ở mức thấp nhất, bạn cần điều chỉnh các điều khiển phần cứng của màn hình (tương phản, gamma) trước để sửa chữa vấn đề bão hòa màu trắng.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the color mode of ${displayEntity} to ${depth}-bit with ${encoding} ${subsampling} encoding and ${range} range if supported by the current display mode." xml:space="preserve">
+        <source>Set the color mode of ${displayEntity} to ${depth}-bit with ${encoding} ${subsampling} encoding and ${range} range if supported by the current display mode.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the color profile of ${displayEntity} to ${colorProfileEntity}." xml:space="preserve">
@@ -7831,6 +7871,10 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Chế độ không an toàn</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unspecified" xml:space="preserve">
+        <source>Unspecified</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unsupported" xml:space="preserve">
         <source>Unsupported</source>
         <target state="translated">Không hỗ trợ</target>
@@ -8308,6 +8352,10 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
         <source>XDR/HDR upscaling compatible</source>
         <target state="translated">Tương thích tăng cường XDR/HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="YCbCR" xml:space="preserve">
+        <source>YCbCR</source>
         <note/>
       </trans-unit>
       <trans-unit id="YCbCr" xml:space="preserve">

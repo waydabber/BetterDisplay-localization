@@ -375,6 +375,18 @@ Pro 기능을 계속 사용하려면 이 장치를 다시 활성화하세요.</t
         <target state="translated">1:1 픽셀 매핑 해상도</target>
         <note/>
       </trans-unit>
+      <trans-unit id="4:2:0" xml:space="preserve">
+        <source>4:2:0</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="4:2:2" xml:space="preserve">
+        <source>4:2:2</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="4:4:4" xml:space="preserve">
+        <source>4:4:4</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="90°" xml:space="preserve">
         <source>90°</source>
         <note/>
@@ -1660,6 +1672,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Change the color profile of a display.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Change the display connection color mode (bit depth, encoding, chroma subsampling, range)." xml:space="preserve">
+        <source>Change the display connection color mode (bit depth, encoding, chroma subsampling, range).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen." xml:space="preserve">
         <source>Change the display mode (resolution, scaling, exposed refresh rate, color depth) of a screen.</source>
         <note/>
@@ -1682,6 +1698,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Checking…" xml:space="preserve">
         <source>Checking…</source>
         <target state="translated">확인 중…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chroma Subsampling" xml:space="preserve">
+        <source>Chroma Subsampling</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Chrome Subsampling" xml:space="preserve">
+        <source>Chrome Subsampling</source>
         <note/>
       </trans-unit>
       <trans-unit id="Chunk size" xml:space="preserve">
@@ -3420,6 +3444,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space." xml:space="preserve">
         <source>Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space.</source>
         <target state="translated">이 옵션을 활성화하면, 이 디스플레이와 동일하게 표시된 다른 디스플레이만 연결되어 있을 경우 메뉴 바 아이콘이 제거됩니다. 이 디스플레이에서 앱의 기능이 필요하지 않고 메뉴 바 공간을 확보하고 싶을 때 이 설정을 사용하세요.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Encoding" xml:space="preserve">
+        <source>Encoding</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enforce UI scale match upon connecting a display" xml:space="preserve">
@@ -5469,6 +5497,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">앱 종료</target>
         <note/>
       </trans-unit>
+      <trans-unit id="RGB" xml:space="preserve">
+        <source>RGB</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Range" xml:space="preserve">
+        <source>Range</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Range includes software brightness upscaling" xml:space="preserve">
         <source>Range includes software brightness upscaling</source>
         <target state="translated">소프트웨어 밝기 업스케일링을 범위에 포함</target>
@@ -6374,6 +6410,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem." xml:space="preserve">
         <source>Set the brightness slider as high as possible! Also make sure you still barely see the smiling face! If you don't see the smiling face when the slider is set to the lowest setting, you need to adjust your display's hardware controls (contrast, gamma) first to fix the white saturation problem.</source>
         <target state="translated">밝기 슬라이더를 최대한 높게 설정하세요! 또한 웃는 얼굴이 거의 보이지 않는지 확인하세요! 슬라이더를 가장 낮은 설정으로 설정했을 때 웃는 얼굴이 보이지 않는다면 먼저 디스플레이의 하드웨어 컨트롤(대비, 감마)을 조정하여 백색 채도 문제를 해결해야 합니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set the color mode of ${displayEntity} to ${depth}-bit with ${encoding} ${subsampling} encoding and ${range} range if supported by the current display mode." xml:space="preserve">
+        <source>Set the color mode of ${displayEntity} to ${depth}-bit with ${encoding} ${subsampling} encoding and ${range} range if supported by the current display mode.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the color profile of ${displayEntity} to ${colorProfileEntity}." xml:space="preserve">
@@ -7834,6 +7874,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">안전하지 않은 모드</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unspecified" xml:space="preserve">
+        <source>Unspecified</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Unsupported" xml:space="preserve">
         <source>Unsupported</source>
         <target state="translated">지원되지 않음</target>
@@ -8313,6 +8357,10 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
         <source>XDR/HDR upscaling compatible</source>
         <target state="translated">XDR/HDR 업스케일링 호환</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="YCbCR" xml:space="preserve">
+        <source>YCbCR</source>
         <note/>
       </trans-unit>
       <trans-unit id="YCbCr" xml:space="preserve">
