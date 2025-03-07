@@ -570,9 +570,17 @@ Please reactivate this installation to continue using Pro features.</source>
         <target state="translated">Aktywacja wymaga obecności odpowiednich wyświetlaczy dla skonfigurowanej synchronizacji, dopasowania skali interfejsu użytkownika lub ochrony układu.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Add Custom Control" xml:space="preserve">
+        <source>Add Custom Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">Dodaj niestandardową rozdzielczość</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add New Custom Control…" xml:space="preserve">
+        <source>Add New Custom Control…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add New Protection…" xml:space="preserve">
@@ -1544,12 +1552,20 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>CGDirectDisplayID</source>
         <note/>
       </trans-unit>
+      <trans-unit id="CLI designation" xml:space="preserve">
+        <source>CLI designation</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Calibrate (Requires Enabled HDR)…" xml:space="preserve">
         <source>Calibrate (Requires Enabled HDR)…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Calibrate Upscaling…" xml:space="preserve">
         <source>Calibrate Upscaling…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either." xml:space="preserve">
+        <source>Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
@@ -1852,6 +1868,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configure layout protection for %@</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure steps for range-based controls" xml:space="preserve">
+        <source>Configure steps for range-based controls</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure the custom EDID for a display." xml:space="preserve">
         <source>Configure the custom EDID for a display.</source>
         <note/>
@@ -1978,6 +1998,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Control" xml:space="preserve">
         <source>Control</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Control icon" xml:space="preserve">
+        <source>Control icon</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Control name" xml:space="preserve">
+        <source>Control name</source>
         <note/>
       </trans-unit>
       <trans-unit id="Copy" xml:space="preserve">
@@ -2138,6 +2166,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Currently not available</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Custom Controls" xml:space="preserve">
+        <source>Custom Controls</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Custom Controls…" xml:space="preserve">
+        <source>Custom Controls…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Custom Keyboard Shortcuts" xml:space="preserve">
         <source>Custom Keyboard Shortcuts</source>
         <target state="translated">Niestandardowe skróty klawiszowe</target>
@@ -2150,6 +2186,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Custom aspect ratio" xml:space="preserve">
         <source>Custom aspect ratio</source>
         <target state="translated">Niestandardowe proporcje obrazu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Custom controls can be assigned to custom DDC, CLI or network based features for various devices and can be used for syncing with display groups." xml:space="preserve">
+        <source>Custom controls can be assigned to custom DDC, CLI or network based features for various devices and can be used for syncing with display groups.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Custom display groups require Pro." xml:space="preserve">
@@ -2441,6 +2481,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Define the crop area either by drawing the crop rectangle on the stream source screen or by keyboard shortcuts.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Defines how many logical steps the entire range is divided into. By default, it matches the number of fine steps available in the native macOS OSD (64)." xml:space="preserve">
+        <source>Defines how many logical steps the entire range is divided into. By default, it matches the number of fine steps available in the native macOS OSD (64).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Defines the TCP port the built-in HTTP server listens to." xml:space="preserve">
         <source>Defines the TCP port the built-in HTTP server listens to.</source>
         <note/>
@@ -2451,6 +2495,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black." xml:space="preserve">
         <source>Defines the lower bound of brightness control in nits. Use 0 to allow full continuous dimming to black.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the number of logical steps in a fine adjustment step. By default, this equals one-quarter of a chiclet in the native macOS OSD (1 logical step)." xml:space="preserve">
+        <source>Defines the number of logical steps in a fine adjustment step. By default, this equals one-quarter of a chiclet in the native macOS OSD (1 logical step).</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Defines the number of logical steps in a standard adjustment step. By default, this equals one full chiclet of the native macOS OSD (4 steps per chiclet; 16 chiclets × 4 steps = 64 total steps)." xml:space="preserve">
+        <source>Defines the number of logical steps in a standard adjustment step. By default, this equals one full chiclet of the native macOS OSD (4 steps per chiclet; 16 chiclets × 4 steps = 64 total steps).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Defines the upper bound of brightness control in nits. Use 1000 for only allowing up to sustained full screen brightness." xml:space="preserve">
@@ -3361,6 +3413,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Filter…" xml:space="preserve">
         <source>Filter…</source>
         <target state="translated">Filtr…</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Fine step size" xml:space="preserve">
+        <source>Fine step size</source>
         <note/>
       </trans-unit>
       <trans-unit id="First added" xml:space="preserve">
@@ -4283,6 +4339,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Zarządzaj wirtualnymi wyświetlaczami</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Manage custom controls" xml:space="preserve">
+        <source>Manage custom controls</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Manage…" xml:space="preserve">
         <source>Manage…</source>
         <target state="translated">Zarządzaj…</target>
@@ -4778,6 +4838,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1" xml:space="preserve">
         <source>Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Number of logical steps in the entire range" xml:space="preserve">
+        <source>Number of logical steps in the entire range</source>
         <note/>
       </trans-unit>
       <trans-unit id="Number of retry attempts on failure" xml:space="preserve">
@@ -6313,6 +6377,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Standardowy bufor ramki</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Standard step size" xml:space="preserve">
+        <source>Standard step size</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
         <target state="translated">Rozpocznij automatycznie</target>
@@ -6905,6 +6973,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="This virtual screen should now be disconnected" xml:space="preserve">
         <source>This virtual screen should now be disconnected</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This will appear as the control's name throughout the app. Should be unique to avoid confusion." xml:space="preserve">
+        <source>This will appear as the control's name throughout the app. Should be unique to avoid confusion.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Title Bar &amp; Window Controls" xml:space="preserve">
@@ -7891,6 +7963,10 @@ Większość wyświetlaczy nie zezwala na zapis EDID ze względów bezpieczeńst
       <trans-unit id="⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
         <source>⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
         <target state="translated">⚠️ Obowiązuje alternatywna tożsamość EDID - zmiany konfiguracji systemu będą powiązane z tą tożsamością!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ CLI designation clashes with the designation of an existing control." xml:space="preserve">
+        <source>⚠️ CLI designation clashes with the designation of an existing control.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
