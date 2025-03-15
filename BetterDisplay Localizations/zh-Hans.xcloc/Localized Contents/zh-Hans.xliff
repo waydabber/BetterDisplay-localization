@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.3" build-num="16E5121h"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -26,7 +26,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.3" build-num="16E5121h"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1444,6 +1444,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">可用的</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Back to DDC Features…" xml:space="preserve">
+        <source>Back to DDC Features…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Base64 Encoded EDID" xml:space="preserve">
         <source>Base64 Encoded EDID</source>
         <target state="translated">Base64 编码的 EDID</target>
@@ -2418,6 +2422,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">目前不可用</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Custom" xml:space="preserve">
+        <source>Custom</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Custom Controls" xml:space="preserve">
         <source>Custom Controls</source>
         <note/>
@@ -2599,9 +2607,13 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">DDC 通信设置</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC control code override (comma delimited hex values)" xml:space="preserve">
-        <source>DDC control code override (comma delimited hex values)</source>
+      <trans-unit id="DDC control code(s) (comma delimited hex values)" xml:space="preserve">
+        <source>DDC control code(s) (comma delimited hex values)</source>
         <target state="translated">DDC 控件代码覆盖（逗号分隔的十六进制值）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC data" xml:space="preserve">
+        <source>DDC data</source>
         <note/>
       </trans-unit>
       <trans-unit id="DDC data for the OFF value" xml:space="preserve">
@@ -2821,8 +2833,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">命令之间的延迟</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Delete Control…" xml:space="preserve">
         <source>Delete Control…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete Custom Control?" xml:space="preserve">
+        <source>Delete Custom Control?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Delete Data" xml:space="preserve">
@@ -4890,6 +4910,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">管理激活</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Manage Custom Controls…" xml:space="preserve">
+        <source>Manage Custom Controls…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Manage Display" xml:space="preserve">
         <source>Manage Display</source>
         <target state="translated">管理显示器</target>
@@ -6125,6 +6149,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">移除颜色描述文件</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove Custom Feature" xml:space="preserve">
+        <source>Remove Custom Feature</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove Factory Color Profiles?" xml:space="preserve">
         <source>Remove Factory Color Profiles?</source>
         <target state="translated">移除出厂颜色描述文件？</target>
@@ -6627,6 +6655,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Select All" xml:space="preserve">
         <source>Select All</source>
         <target state="translated">全选</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select Custom Control…" xml:space="preserve">
+        <source>Select Custom Control…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this." xml:space="preserve">
@@ -7840,6 +7872,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data.</source>
         <target state="translated">此项配置在配置/检测过程中如何将与当前配置的显示器关联数据与识别的显示器匹配。更改此设置可能导致显示器被识别为以前未连接的显示器，并使现有保存的显示器配置数据失去关联。系统 UUID 匹配使用 macOS 默认标识符。设为使用基本标识符时此应用程序会通过供应商/型号 ID 和序列号来识别显示器。扩展屏幕时还会使用产品名称、字母数字序列号和生产日期。应用程序还会根据硬件连接位置数据提供功能。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them." xml:space="preserve">
+        <source>This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This display group does not have member displays." xml:space="preserve">
@@ -9282,6 +9318,10 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ The protection is not in effect unless relative position is defined." xml:space="preserve">
         <source>⚠️ The protection is not in effect unless relative position is defined.</source>
         <target state="translated">⚠️ 只有定义了相对位置，保护功能才会生效。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
+        <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">

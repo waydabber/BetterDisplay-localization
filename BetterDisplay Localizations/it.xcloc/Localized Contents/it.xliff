@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.3" build-num="16E5121h"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -26,7 +26,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.3" build-num="16E5121h"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.2" build-num="16C5032a"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1444,6 +1444,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Disponibile</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Back to DDC Features…" xml:space="preserve">
+        <source>Back to DDC Features…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Base64 Encoded EDID" xml:space="preserve">
         <source>Base64 Encoded EDID</source>
         <target state="translated">EDID codificato in Base64</target>
@@ -2418,6 +2422,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Al momento non disponibile</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Custom" xml:space="preserve">
+        <source>Custom</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Custom Controls" xml:space="preserve">
         <source>Custom Controls</source>
         <note/>
@@ -2599,9 +2607,13 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Impostazioni della comunicazione DDC</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC control code override (comma delimited hex values)" xml:space="preserve">
-        <source>DDC control code override (comma delimited hex values)</source>
+      <trans-unit id="DDC control code(s) (comma delimited hex values)" xml:space="preserve">
+        <source>DDC control code(s) (comma delimited hex values)</source>
         <target state="translated">Sovrascrivere il codice di controllo DDC (valori esadecimali delimitati da virgola)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="DDC data" xml:space="preserve">
+        <source>DDC data</source>
         <note/>
       </trans-unit>
       <trans-unit id="DDC data for the OFF value" xml:space="preserve">
@@ -2821,8 +2833,16 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Tempo d'attesa tra i comandi</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Delete Control…" xml:space="preserve">
         <source>Delete Control…</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Delete Custom Control?" xml:space="preserve">
+        <source>Delete Custom Control?</source>
         <note/>
       </trans-unit>
       <trans-unit id="Delete Data" xml:space="preserve">
@@ -4890,6 +4910,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Gestisci attivazioni</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Manage Custom Controls…" xml:space="preserve">
+        <source>Manage Custom Controls…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Manage Display" xml:space="preserve">
         <source>Manage Display</source>
         <target state="translated">Gestisci display</target>
@@ -6125,6 +6149,10 @@ Non tutti i display supportano le operazioni di alimentazione DDC. Le operazioni
         <target state="translated">Rimuovi Profili Di Colore</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Remove Custom Feature" xml:space="preserve">
+        <source>Remove Custom Feature</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Remove Factory Color Profiles?" xml:space="preserve">
         <source>Remove Factory Color Profiles?</source>
         <target state="translated">Rimuovere I Profili di Colore Di Fabbrica?</target>
@@ -6627,6 +6655,10 @@ Rimuovere tutte le attivazioni ripristinerà la situazione iniziale.</target>
       <trans-unit id="Select All" xml:space="preserve">
         <source>Select All</source>
         <target state="translated">Seleziona tutto</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Select Custom Control…" xml:space="preserve">
+        <source>Select Custom Control…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this." xml:space="preserve">
@@ -7840,6 +7872,10 @@ In caso di guasto, disconnetti e ricollegare fisicamente il display.</target>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the MacOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data.</source>
         <target state="translated">Questo configura come i dati associati al display attualmente configurato sono abbinati a un display rilevato durante il processo di configurazione/rilevamento. Modificare questa impostazione potrebbe causare il riconoscimento di un display come precedentemente non connesso e dissociare i dati di configurazione del display già salvati. La corrispondenza UUID di sistema utilizza l'identificazione predefinita di MacOS. Se impostato per utilizzare gli identificatori di base, l'app identifica il display dal suo venditore/ID modello e numero di serie. Con estensione utilizza anche il nome del prodotto, il numero di serie alfanumerico e la data di produzione. Con la posizione l'applicazione considera anche i dati di connettività hardware.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them." xml:space="preserve">
+        <source>This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This display group does not have member displays." xml:space="preserve">
@@ -9283,6 +9319,10 @@ La maggior parte dei display non consente la scrittura EDID per motivi di sicure
       <trans-unit id="⚠️ The protection is not in effect unless relative position is defined." xml:space="preserve">
         <source>⚠️ The protection is not in effect unless relative position is defined.</source>
         <target state="translated">⚠️ La protezione non è attiva a meno che la posizione relativa non sia definita.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
+        <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
