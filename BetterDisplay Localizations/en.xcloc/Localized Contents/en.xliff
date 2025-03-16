@@ -1525,14 +1525,14 @@ Specifying read length is optional - leave the field empty for autodetect.</targ
         <target state="new">Bits per sample</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Blue Black Level (DDC)" xml:space="preserve">
-        <source>Blue Black Level (DDC)</source>
-        <target state="new">Blue Black Level (DDC)</target>
+      <trans-unit id="Blue Black Level (Hardware)" xml:space="preserve">
+        <source>Blue Black Level (Hardware)</source>
+        <target state="new">Blue Black Level (Hardware)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Blue Gain (DDC)" xml:space="preserve">
-        <source>Blue Gain (DDC)</source>
-        <target state="new">Blue Gain (DDC)</target>
+      <trans-unit id="Blue Gain (Hardware)" xml:space="preserve">
+        <source>Blue Gain (Hardware)</source>
+        <target state="new">Blue Gain (Hardware)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Both turned off by HDR toggle" xml:space="preserve">
@@ -2240,9 +2240,9 @@ Specifying read length is optional - leave the field empty for autodetect.</targ
         <target state="new">Contrast</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Contrast (DDC)" xml:space="preserve">
-        <source>Contrast (DDC)</source>
-        <target state="new">Contrast (DDC)</target>
+      <trans-unit id="Contrast (Hardware)" xml:space="preserve">
+        <source>Contrast (Hardware)</source>
+        <target state="new">Contrast (Hardware)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Control" xml:space="preserve">
@@ -2565,11 +2565,6 @@ Specifying read length is optional - leave the field empty for autodetect.</targ
         <target state="new">DDC Command</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC Control" xml:space="preserve">
-        <source>DDC Control</source>
-        <target state="new">DDC Control</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="DDC Display Input Source" xml:space="preserve">
         <source>DDC Display Input Source</source>
         <target state="new">DDC Display Input Source</target>
@@ -2578,11 +2573,6 @@ Specifying read length is optional - leave the field empty for autodetect.</targ
       <trans-unit id="DDC Features…" xml:space="preserve">
         <source>DDC Features…</source>
         <target state="new">DDC Features…</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC Input Source" xml:space="preserve">
-        <source>DDC Input Source</source>
-        <target state="new">DDC Input Source</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC Input Source Control" xml:space="preserve">
@@ -2775,14 +2765,14 @@ Specifying read length is optional - leave the field empty for autodetect.</targ
         <target state="new">Decrease resolution or magnification</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Decrease volume (DDC)" xml:space="preserve">
-        <source>Decrease volume (DDC)</source>
-        <target state="new">Decrease volume (DDC)</target>
+      <trans-unit id="Decrease volume" xml:space="preserve">
+        <source>Decrease volume</source>
+        <target state="new">Decrease volume</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Decrease volume (DDC) - fine scale" xml:space="preserve">
-        <source>Decrease volume (DDC) - fine scale</source>
-        <target state="new">Decrease volume (DDC) - fine scale</target>
+      <trans-unit id="Decrease volume - fine scale" xml:space="preserve">
+        <source>Decrease volume - fine scale</source>
+        <target state="new">Decrease volume - fine scale</target>
         <note/>
       </trans-unit>
       <trans-unit id="Default" xml:space="preserve">
@@ -4134,14 +4124,14 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="new">Grayscale Framebuffer</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Green Black Level (DDC)" xml:space="preserve">
-        <source>Green Black Level (DDC)</source>
-        <target state="new">Green Black Level (DDC)</target>
+      <trans-unit id="Green Black Level (Hardware)" xml:space="preserve">
+        <source>Green Black Level (Hardware)</source>
+        <target state="new">Green Black Level (Hardware)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Green Gain (DDC)" xml:space="preserve">
-        <source>Green Gain (DDC)</source>
-        <target state="new">Green Gain (DDC)</target>
+      <trans-unit id="Green Gain (Hardware)" xml:space="preserve">
+        <source>Green Gain (Hardware)</source>
+        <target state="new">Green Gain (Hardware)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Group %lld" xml:space="preserve">
@@ -4533,14 +4523,24 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="new">Increase resolution or magnification</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Increase volume (DDC)" xml:space="preserve">
-        <source>Increase volume (DDC)</source>
-        <target state="new">Increase volume (DDC)</target>
+      <trans-unit id="Increase volume" xml:space="preserve">
+        <source>Increase volume</source>
+        <target state="new">Increase volume</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Increase volume (DDC) - fine scale" xml:space="preserve">
-        <source>Increase volume (DDC) - fine scale</source>
-        <target state="new">Increase volume (DDC) - fine scale</target>
+      <trans-unit id="Increase volume - fine scale" xml:space="preserve">
+        <source>Increase volume - fine scale</source>
+        <target state="new">Increase volume - fine scale</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Initial (default) setting" xml:space="preserve">
+        <source>Initial (default) setting</source>
+        <target state="new">Initial (default) setting</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Input Source" xml:space="preserve">
+        <source>Input Source</source>
+        <target state="new">Input Source</target>
         <note/>
       </trans-unit>
       <trans-unit id="Input Sources…" xml:space="preserve">
@@ -5303,9 +5303,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="new">Multiplier</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Mute (DDC)" xml:space="preserve">
-        <source>Mute (DDC)</source>
-        <target state="new">Mute (DDC)</target>
+      <trans-unit id="Mute" xml:space="preserve">
+        <source>Mute</source>
+        <target state="new">Mute</target>
         <note/>
       </trans-unit>
       <trans-unit id="Mute method" xml:space="preserve">
@@ -5823,9 +5823,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="new">Prefer software contrast control</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Prefer software over hardware (DDC) for contrast control via main slider and keyboard." xml:space="preserve">
-        <source>Prefer software over hardware (DDC) for contrast control via main slider and keyboard.</source>
-        <target state="new">Prefer software over hardware (DDC) for contrast control via main slider and keyboard.</target>
+      <trans-unit id="Prefer software over hardware for contrast control via main slider and keyboard." xml:space="preserve">
+        <source>Prefer software over hardware for contrast control via main slider and keyboard.</source>
+        <target state="new">Prefer software over hardware for contrast control via main slider and keyboard.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Preferred Display Mode (Connection Level)" xml:space="preserve">
@@ -6078,14 +6078,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="new">Recording keyboard shortcuts</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Red Black Level (DDC)" xml:space="preserve">
-        <source>Red Black Level (DDC)</source>
-        <target state="new">Red Black Level (DDC)</target>
+      <trans-unit id="Red Black Level (Hardware)" xml:space="preserve">
+        <source>Red Black Level (Hardware)</source>
+        <target state="new">Red Black Level (Hardware)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Red Gain (DDC)" xml:space="preserve">
-        <source>Red Gain (DDC)</source>
-        <target state="new">Red Gain (DDC)</target>
+      <trans-unit id="Red Gain (Hardware)" xml:space="preserve">
+        <source>Red Gain (Hardware)</source>
+        <target state="new">Red Gain (Hardware)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Redefine 0% software brightness level" xml:space="preserve">
@@ -7403,11 +7403,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="new">State</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Status: Licensing Disabled (Settings &gt; Application &gt; Advanced)" xml:space="preserve">
-        <source>Status: Licensing Disabled (Settings &gt; Application &gt; Advanced)</source>
-        <target state="new">Status: Licensing Disabled (Settings &gt; Application &gt; Advanced)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Status: Pro License Activated" xml:space="preserve">
         <source>Status: Pro License Activated</source>
         <target state="new">Status: Pro License Activated</target>
@@ -8228,9 +8223,9 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="new">Toggle cropping</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Toggle mute (DDC)" xml:space="preserve">
-        <source>Toggle mute (DDC)</source>
-        <target state="new">Toggle mute (DDC)</target>
+      <trans-unit id="Toggle mute" xml:space="preserve">
+        <source>Toggle mute</source>
+        <target state="new">Toggle mute</target>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle notch for display" xml:space="preserve">
@@ -8548,9 +8543,9 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="new">Unlock EDID write - I understand the risks involved</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unmute (DDC)" xml:space="preserve">
-        <source>Unmute (DDC)</source>
-        <target state="new">Unmute (DDC)</target>
+      <trans-unit id="Unmute" xml:space="preserve">
+        <source>Unmute</source>
+        <target state="new">Unmute</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unmute method" xml:space="preserve">
@@ -8831,11 +8826,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Volume" xml:space="preserve">
         <source>Volume</source>
         <target state="new">Volume</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Volume (DDC)" xml:space="preserve">
-        <source>Volume (DDC)</source>
-        <target state="new">Volume (DDC)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Volume Control Settings" xml:space="preserve">
