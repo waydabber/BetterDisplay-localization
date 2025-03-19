@@ -819,11 +819,6 @@ Dies kann in den Systemeinstellungen gemacht werden oder die App kann es für di
         <target state="translated">Alle geeigneten Bildschirme</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow DDC hardware brightness control in HDR mode" xml:space="preserve">
-        <source>Allow DDC hardware brightness control in HDR mode</source>
-        <target state="translated">Steuerung der DDC Hardware-Helligkeit im HDR-Modus erlauben</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow auto brightness when combined XDR brightness upscaling is used" xml:space="preserve">
         <source>Allow auto brightness when combined XDR brightness upscaling is used</source>
         <target state="translated">Automatische Helligkeit erlauben, wenn die kombinierte XDR-Helligkeitshochskalierung benutzt wird</target>
@@ -839,8 +834,8 @@ Dies kann in den Systemeinstellungen gemacht werden oder die App kann es für di
         <target state="translated">Kombinierte Helligkeit im nativen XDR-Hochskalierungsmodus erlauben</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow customized control via CLI and scripted commands, network or macOS dispatch notification system." xml:space="preserve">
-        <source>Allow customized control via CLI and scripted commands, network or macOS dispatch notification system.</source>
+      <trans-unit id="Allow customized control via CLI and scripted commands, network or macOS notification dispatch mechanism." xml:space="preserve">
+        <source>Allow customized control via CLI and scripted commands, network or macOS notification dispatch mechanism.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow disconnecting all connected displays" xml:space="preserve">
@@ -1757,6 +1752,10 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Zentriertes Menüleistensymbol</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast." xml:space="preserve">
+        <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
         <source>Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}.</source>
         <target state="translated">Ändere ${rangedFeature} von ${displayEntity} auf den Wert ${valueParameter}.</target>
@@ -2609,11 +2608,6 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
       <trans-unit id="DDC communication" xml:space="preserve">
         <source>DDC communication</source>
         <target state="translated">DDC-Kommunikation</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC communication settings" xml:space="preserve">
-        <source>DDC communication settings</source>
-        <target state="translated">DDC-Kommunikationseinstellungen</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC control code(s) (comma delimited hex values)" xml:space="preserve">
@@ -4761,11 +4755,6 @@ Nicht alle Displays unterstützen DDC-Stromaktionen. DDC-Stromaktionen können b
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
         <source>Let the Tools menu behave like the display menus.</source>
         <target state="translated">Das Werkzeuge-Menü sich wie die Display-Menüs verhalten lassen.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Let the app control display hardware luminance (backlight for backlit displays) if this DDC feature is enabled." xml:space="preserve">
-        <source>Let the app control display hardware luminance (backlight for backlit displays) if this DDC feature is enabled.</source>
-        <target state="translated">Die App die Hardware-Luminanz des Displays steuern lassen (Hintergrundbeleuchtung für hintergrundbeleuchtete Displays), wenn diese DDC-Funktion aktiviert ist.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let the app control display hardware luminance (backlight for backlit displays) if this feature is available." xml:space="preserve">
@@ -7287,14 +7276,17 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <target state="translated">Die Software-basierte Steuerung ermöglicht das Dimmen auch ohne Hardware-Unterstützung und bietet verschiedene andere Videoanpassungen. Erforderlich für kombinierte Helligkeit und XDR/HDR-Hochskalierung.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Software dimming gamma adjustment strength" xml:space="preserve">
+        <source>Software dimming gamma adjustment strength</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Some displays are still disconnected!" xml:space="preserve">
         <source>Some displays are still disconnected!</source>
         <target state="translated">Ein paar Displays sind immer noch getrennt!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
-        <source>Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
-        <target state="translated">Einige Displays unterstützen die DDC-Helligkeitssteuerung im HDR-Modus nicht. Die Aktivierung dieser Funktion bei kompatiblen Displays ermöglicht die Helligkeitssteuerung unter Beibehaltung der nicht beschnittenen HDR-Inhalte.</target>
+      <trans-unit id="Some displays do not support hardware brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
+        <source>Some displays do not support hardware brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Some displays forget changes made via DDC commands after sleep. With this enabled, the app reapplies DDC settings every time the display wakes." xml:space="preserve">
@@ -8920,13 +8912,8 @@ Du kannst diese Mitteilung schließen - in diesem Fall werden die Änderungen ü
         <target state="translated">Wenn diese Option aktiviert ist, wirkt sich die Synchronisierung nicht auf Displays im HDR-Modus oder auf XDR-Displays aus, die auf eine XDR-Referenzvoreinstellung eingestellt sind.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use DDC brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode." xml:space="preserve">
-        <source>When this is enabled, the app will use DDC brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode.</source>
-        <target state="translated">Wenn diese Option aktiviert ist, verwendet die App die DDC-Helligkeit für die kombinierte Helligkeitssteuerung anstelle der von macOS bereitgestellten SDR-Spitzenhelligkeitssteuerung (HDR-Helligkeitssteuerung). Du kannst die SDR-Spitzenhelligkeit immer noch im Kontrollzentrum anpassen - diese Anpassungen beeinflussen den von der App bereitgestellten Spielraum für die Hochskalierung (falls verfügbar). Nicht alle Displays unterstützen die DDC-Helligkeitssteuerung im HDR-Modus.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode." xml:space="preserve">
-        <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode.</source>
+      <trans-unit id="When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode." xml:space="preserve">
+        <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">

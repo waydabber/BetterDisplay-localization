@@ -816,11 +816,6 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <target state="translated">Összes alkalmas képernyő</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow DDC hardware brightness control in HDR mode" xml:space="preserve">
-        <source>Allow DDC hardware brightness control in HDR mode</source>
-        <target state="translated">DDC hardveres fényerővezérlés engedélyezése HDR módban</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow auto brightness when combined XDR brightness upscaling is used" xml:space="preserve">
         <source>Allow auto brightness when combined XDR brightness upscaling is used</source>
         <target state="translated">Automatikus fényerő engedélyezése amikor kombinált XDR felskálázás történik</target>
@@ -836,8 +831,8 @@ Az eltávolítás elvégezhető a Rendszerbeállításokban, vagy az alkalmazás
         <target state="translated">Kombinált fényerő engedélyezése natív XDR felskálázás esetén</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow customized control via CLI and scripted commands, network or macOS dispatch notification system." xml:space="preserve">
-        <source>Allow customized control via CLI and scripted commands, network or macOS dispatch notification system.</source>
+      <trans-unit id="Allow customized control via CLI and scripted commands, network or macOS notification dispatch mechanism." xml:space="preserve">
+        <source>Allow customized control via CLI and scripted commands, network or macOS notification dispatch mechanism.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow disconnecting all connected displays" xml:space="preserve">
@@ -1754,6 +1749,10 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Középre igazított menüsor ikon</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast." xml:space="preserve">
+        <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
         <source>Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}.</source>
         <target state="translated">A ${rangedFeature} módosítása a ${displayEntity} esetében ${valueParameter} értékre.</target>
@@ -2606,11 +2605,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="DDC communication" xml:space="preserve">
         <source>DDC communication</source>
         <target state="translated">DDC kommunikáció</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC communication settings" xml:space="preserve">
-        <source>DDC communication settings</source>
-        <target state="translated">DDC kommunikációs beállítások</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC control code(s) (comma delimited hex values)" xml:space="preserve">
@@ -4758,11 +4752,6 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
         <source>Let the Tools menu behave like the display menus.</source>
         <target state="translated">Az Eszközök menü viselkedjen úgy, mint a kijelző menük.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Let the app control display hardware luminance (backlight for backlit displays) if this DDC feature is enabled." xml:space="preserve">
-        <source>Let the app control display hardware luminance (backlight for backlit displays) if this DDC feature is enabled.</source>
-        <target state="translated">Lehetővé teszi, hogy az alkalmazás vezérelje a kijelző hardveres fényerejét (háttérvilágítását megfelelő kijelzők esetén), ha ez a DDC funkció engedélyezve van.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let the app control display hardware luminance (backlight for backlit displays) if this feature is available." xml:space="preserve">
@@ -7284,14 +7273,17 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
         <target state="translated">A szoftveres vezérlés hardveres támogatás nélkül is lehetővé teszi a fényerőszabályozást és számos egyéb video-beállítást is biztosít. Kombinált fényerő és XDR/HDR felskálázás számára is szükséges.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Software dimming gamma adjustment strength" xml:space="preserve">
+        <source>Software dimming gamma adjustment strength</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Some displays are still disconnected!" xml:space="preserve">
         <source>Some displays are still disconnected!</source>
         <target state="translated">Néhány kijelző még le van választva!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
-        <source>Some displays do not support DDC brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
-        <target state="translated">Egyes kijelzők nem támogatják a DDC fényerőszabályozást HDR módban. Engedélyezése a kompatibilis kijelzők esetében lehetővé teszi a fényerőszabályozást úgy, hogy A HDR fényerő vágatlan marad (HDR clipping elkerülése).</target>
+      <trans-unit id="Some displays do not support hardware brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content." xml:space="preserve">
+        <source>Some displays do not support hardware brightness control in HDR mode. Enabling this for compatible displays allows brightness control while preserving unclipped HDR content.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Some displays forget changes made via DDC commands after sleep. With this enabled, the app reapplies DDC settings every time the display wakes." xml:space="preserve">
@@ -8917,13 +8909,8 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Ha ez engedélyezve van, a szinkronizálás nem érinti a HDR módban lévő kijelzőket vagy valamely referencia XDR-előbeállításra beállított XDR-kijelzőket.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use DDC brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode." xml:space="preserve">
-        <source>When this is enabled, the app will use DDC brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode.</source>
-        <target state="translated">Ha ez engedélyezve van, az alkalmazás a DDC fényerőt használja a kombinált fényerőszabályozáshoz a macOS által biztosított SDR fényerőcsúcs módosítás (HDR fényerőszabályozás) helyett. Az SDR fényerőcsúcs módosítást továbbra is beállíthatja a Vezérlőközpontban - ezek a beállítások befolyásolják az alkalmazás által biztosított felskálázási tartalékot (ha elérhető). Nem minden kijelző támogatja a DDC fényerőszabályozást HDR módban.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode." xml:space="preserve">
-        <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support DDC brightness control in HDR mode.</source>
+      <trans-unit id="When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode." xml:space="preserve">
+        <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
