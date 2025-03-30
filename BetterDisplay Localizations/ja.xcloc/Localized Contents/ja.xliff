@@ -1114,6 +1114,11 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">次の場合に、ネイティブ輝度キーの制御を引き継ぐ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Apple Display Preset" xml:space="preserve">
+        <source>Apple Display Preset</source>
+        <target state="translated">XDRプリセット</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
@@ -1940,14 +1945,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">${displayEntity}のフレームバッファモードを${framebufferMode}に変更します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Change the Apple Display Preset of a display." xml:space="preserve">
+        <source>Change the Apple Display Preset of a display.</source>
+        <target state="translated">ディスプレイのXDRプリセットを変更します。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Change the HDR mode of ${displayEntity} to ${onOff}." xml:space="preserve">
         <source>Change the HDR mode of ${displayEntity} to ${onOff}.</source>
         <target state="translated">${displayEntity}のHDRモードを${onOff}に変更します。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Change the XDR Preset of a display." xml:space="preserve">
-        <source>Change the XDR Preset of a display.</source>
-        <target state="translated">ディスプレイのXDRプリセットを変更します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Change the brightness upscaling of ${displayEntity} to ${onOff}." xml:space="preserve">
@@ -2829,19 +2834,9 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">DDCのハードウェア輝度は、ディスプレイごとの設定によって元に戻ることがあります。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC is Unavailable" xml:space="preserve">
-        <source>DDC is Unavailable</source>
-        <target state="translated">DDCは利用不可</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="DDC messaging" xml:space="preserve">
         <source>DDC messaging</source>
         <target state="translated">DDCメッセージング</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC mute control" xml:space="preserve">
-        <source>DDC mute control</source>
-        <target state="translated">DDCミュート制御</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC read is not universally supported by otherwise DDC capable displays." xml:space="preserve">
@@ -2867,11 +2862,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="DDC values on startup" xml:space="preserve">
         <source>DDC values on startup</source>
         <target state="translated">起動時のDDC値</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC volume control" xml:space="preserve">
-        <source>DDC volume control</source>
-        <target state="translated">DDC音量制御</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC, XDR/HDR upscaling, EDID overrides are not available. Please open the app in native mode - to achieve this, unselect 'Open using Rosetta' in the app's Info sheet!" xml:space="preserve">
@@ -4181,11 +4171,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">しばらく使われていないディスプレイを登録解除</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Format String" xml:space="preserve">
-        <source>Format String</source>
-        <target state="translated">文字列をフォーマット</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Framebuffer Mode" xml:space="preserve">
         <source>Framebuffer Mode</source>
         <target state="translated">フレームバッファモード</target>
@@ -4939,11 +4924,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Invert colors" xml:space="preserve">
         <source>Invert colors</source>
         <target state="translated">カラーを反転</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Invert value scale" xml:space="preserve">
-        <source>Invert value scale</source>
-        <target state="translated">値スケールを反転</target>
         <note/>
       </trans-unit>
       <trans-unit id="Inverted Framebuffer" xml:space="preserve">
@@ -5784,6 +5764,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">いいえ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="No Apple Display Presets Found." xml:space="preserve">
+        <source>No Apple Display Presets Found.</source>
+        <target state="translated">XDRプリセットが見つかりません。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="No Mirror Targets Available" xml:space="preserve">
         <source>No Mirror Targets Available</source>
         <target state="translated">ミラーリングターゲットがありません</target>
@@ -5797,11 +5782,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
         <target state="translated">ストリーミングターゲットがありません</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="No XDR Presets Found." xml:space="preserve">
-        <source>No XDR Presets Found.</source>
-        <target state="translated">XDRプリセットが見つかりません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="No color profiles found." xml:space="preserve">
@@ -6079,11 +6059,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%@My parameter%@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
         <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%1$@My parameter%2$@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `[*-My parameter-*]` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
-        <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `[*-My parameter-*]` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
-        <target state="translated">パラメータは再利用可能なコード/テキスト群で、その識別子を参照することで、どのような統合構成でも呼び出すことができます。例えば、「[*-My parameter-*]」というコードは「My parameter」というパラメータコンテンツを呼び出します。識別子は大文字/小文字を区別します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
@@ -6444,9 +6419,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">レート</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Read &amp; Update From Display" xml:space="preserve">
-        <source>Read &amp; Update From Display</source>
-        <target state="translated">ディスプレイから読み取り更新</target>
+      <trans-unit id="Read &amp; Update From Device" xml:space="preserve">
+        <source>Read &amp; Update From Device</source>
         <note/>
       </trans-unit>
       <trans-unit id="Read failed" xml:space="preserve">
@@ -7462,8 +7436,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ディスプレイの（ハードウェア的）向きを設定します。すべてのディスプレイがこの機能に対応しているわけではありません。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
-        <source>Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}.</source>
+      <trans-unit id="Set the Apple Display Preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
+        <source>Set the Apple Display Preset of ${displayEntity} to ${xdrPresetEntity}.</source>
         <target state="translated">${displayEntity}のXDRプリセットを${xdrPresetEntity}に設定します。</target>
         <note/>
       </trans-unit>
@@ -7856,6 +7830,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ソフトウェアディミングによるガンマ調整強度</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Some Apple displays use Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however Presets work best when the factory default Color Profile is configured for the Apple display." xml:space="preserve">
+        <source>Some Apple displays use Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however Presets work best when the factory default Color Profile is configured for the Apple display.</source>
+        <target state="translated">XDRディスプレイは、XDRプリセットを使用して、ディスプレイの色再現、ガンマ、ホワイトポイント設定を管理します。カラープロファイルも表示に影響を与えますが、工場出荷時のデフォルトのカラープロファイルをXDRディスプレイに構成した場合に、XDRプリセットはもっとも効果的に機能します。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Some displays are still disconnected!" xml:space="preserve">
         <source>Some displays are still disconnected!</source>
         <target state="translated">接続されていないディスプレイがまだあります!</target>
@@ -8041,6 +8020,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">対応</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Supports Apple Display Presets" xml:space="preserve">
+        <source>Supports Apple Display Presets</source>
+        <target state="translated">XDRプリセットへの対応</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Supports Color Profiles" xml:space="preserve">
         <source>Supports Color Profiles</source>
         <target state="translated">カラープロファイル対応</target>
@@ -8049,11 +8033,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Supports HDR" xml:space="preserve">
         <source>Supports HDR</source>
         <target state="translated">HDR対応</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Supports XDR presets" xml:space="preserve">
-        <source>Supports XDR presets</source>
-        <target state="translated">XDRプリセットへの対応</target>
         <note/>
       </trans-unit>
       <trans-unit id="Supports changing orientation" xml:space="preserve">
@@ -8970,8 +8949,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">${displayEntity}から${targetDisplayEntity}へのストリーミング（構成${streamId}）を${onOff}。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu." xml:space="preserve">
-        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu.</source>
+      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the Apple Display Preset menu." xml:space="preserve">
+        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the Apple Display Preset menu.</source>
         <target state="translated">アプリ起動時にネイティブXDRアップスケーリングが起動しないようにしたり、XDRプリセットメニューで利用する場合はオフにしてください。</target>
         <note/>
       </trans-unit>
@@ -9125,8 +9104,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">無制限</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
-        <source>Unlock Color Profile management for XDR displays</source>
+      <trans-unit id="Unlock Color Profile management for Apple displays" xml:space="preserve">
+        <source>Unlock Color Profile management for Apple displays</source>
         <target state="translated">XDRディスプレイのカラープロファイル管理制限を解除</target>
         <note/>
       </trans-unit>
@@ -9552,8 +9531,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">ディスプレイをメインに設定している場合、複合またはソフトウェア輝度の下限は30％、Appleハードウェアの輝度で10％、DDCハードウェアの輝度で0％です。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset." xml:space="preserve">
-        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset.</source>
+      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset." xml:space="preserve">
+        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset.</source>
         <target state="translated">有効化した場合、HDRモードのディスプレイまたは参考XDRプリセットに設定したXDRディスプレイには、同期は影響しません。</target>
         <note/>
       </trans-unit>
@@ -9662,11 +9641,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">XDR構成</target>
         <note/>
       </trans-unit>
-      <trans-unit id="XDR Preset" xml:space="preserve">
-        <source>XDR Preset</source>
-        <target state="translated">XDRプリセット</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
         <source>XDR brightness scale maximum</source>
         <target state="translated">XDR輝度スケール最大</target>
@@ -9675,11 +9649,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="XDR brightness scale minimum" xml:space="preserve">
         <source>XDR brightness scale minimum</source>
         <target state="translated">XDR輝度スケール最小</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
-        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display.</source>
-        <target state="translated">XDRディスプレイは、XDRプリセットを使用して、ディスプレイの色再現、ガンマ、ホワイトポイント設定を管理します。カラープロファイルも表示に影響を与えますが、工場出荷時のデフォルトのカラープロファイルをXDRディスプレイに構成した場合に、XDRプリセットはもっとも効果的に機能します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
@@ -9715,11 +9684,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
         <source>You can detect and configure DDC input select support for this display under "DDC Features…".</source>
         <target state="translated">「DDC機能…」で、このディスプレイの入力選択DDC対応を検出し、構成することができます。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="You can detect and configure DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
-        <source>You can detect and configure DDC volume and mute control support for this display under "DDC Features…".</source>
-        <target state="translated">「DDC機能… 」で、このディスプレイの音量とミュート制御へのDDC対応を検出し、構成することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`)." xml:space="preserve">
@@ -9938,8 +9902,8 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ 最良の結果を得るには、ディスプレイのアスペクト比に近づけてください!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
-        <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
+      <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
+        <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
         <target state="translated"> ⚠️ このXDRディスプレイでは、キャリブレーションをデフォルトにするのが最適です - 自動キャリブレーションにより、現在選択しているXDRプリセットと環境要素にアップスケーリングを自動的に適応させます。手動でキャリブレーションする場合は、笑顔が見える範囲で、明るさスライダーを可能な限り高く設定してください!</target>
         <note/>
       </trans-unit>
@@ -9983,8 +9947,8 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ 識別子が存在しないか、重複しています - 予期しない結果が生じることがあります!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected." xml:space="preserve">
-        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected.</source>
+      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different Apple Display Preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default Apple Display Preset is selected." xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different Apple Display Preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default Apple Display Preset is selected.</source>
         <target state="translated">⚠️ ネイティブXDRアップスケーリングが有効化されていますが、機能していません - アプリ外で別のXDRプリセットが選択されている可能性があります。デフォルトのXDRプロファイルを選択している場合でも、%@はアプリの再起動時にネイティブXDRアップスケーリングを有効化しようとします。</target>
         <note/>
       </trans-unit>
