@@ -1094,6 +1094,11 @@ Bạn có thể thao tác trong Cài đặt Hệ thống hoặc ứng dụng có
         <target state="translated">Ứng dụng nên giả định quyền kiểm soát các phím độ sáng khi</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Apple Display Preset" xml:space="preserve">
+        <source>Apple Display Preset</source>
+        <target state="translated">Preset XDR</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
@@ -1887,12 +1892,12 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <source>Change framebuffer mode of ${displayEntity} to ${framebufferMode}.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Change the HDR mode of ${displayEntity} to ${onOff}." xml:space="preserve">
-        <source>Change the HDR mode of ${displayEntity} to ${onOff}.</source>
+      <trans-unit id="Change the Apple Display Preset of a display." xml:space="preserve">
+        <source>Change the Apple Display Preset of a display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Change the XDR Preset of a display." xml:space="preserve">
-        <source>Change the XDR Preset of a display.</source>
+      <trans-unit id="Change the HDR mode of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change the HDR mode of ${displayEntity} to ${onOff}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Change the brightness upscaling of ${displayEntity} to ${onOff}." xml:space="preserve">
@@ -2742,19 +2747,9 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <target state="translated">Độ sáng phần cứng DDC có thể được khôi phục theo cài đặt từng màn hình.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC is Unavailable" xml:space="preserve">
-        <source>DDC is Unavailable</source>
-        <target state="translated">DDC không khả dụng</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="DDC messaging" xml:space="preserve">
         <source>DDC messaging</source>
         <target state="translated">Truyền thông DDC</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC mute control" xml:space="preserve">
-        <source>DDC mute control</source>
-        <target state="translated">Điều khiển DDC tắt tiếng</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC read is not universally supported by otherwise DDC capable displays." xml:space="preserve">
@@ -2780,11 +2775,6 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
       <trans-unit id="DDC values on startup" xml:space="preserve">
         <source>DDC values on startup</source>
         <target state="translated">Giá trị DDC khi khởi động</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC volume control" xml:space="preserve">
-        <source>DDC volume control</source>
-        <target state="translated">Điều khiển âm lượng DDC</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC, XDR/HDR upscaling, EDID overrides are not available. Please open the app in native mode - to achieve this, unselect 'Open using Rosetta' in the app's Info sheet!" xml:space="preserve">
@@ -4069,10 +4059,6 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Quên màn hình sau một thời gian</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Format String" xml:space="preserve">
-        <source>Format String</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Framebuffer Mode" xml:space="preserve">
         <source>Framebuffer Mode</source>
         <note/>
@@ -4806,10 +4792,6 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
       <trans-unit id="Invert colors" xml:space="preserve">
         <source>Invert colors</source>
         <target state="translated">Đảo ngược màu</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Invert value scale" xml:space="preserve">
-        <source>Invert value scale</source>
         <note/>
       </trans-unit>
       <trans-unit id="Inverted Framebuffer" xml:space="preserve">
@@ -5629,6 +5611,11 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Không</target>
         <note/>
       </trans-unit>
+      <trans-unit id="No Apple Display Presets Found." xml:space="preserve">
+        <source>No Apple Display Presets Found.</source>
+        <target state="translated">Không có Apple Display Preset được tìm thấy.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="No Mirror Targets Available" xml:space="preserve">
         <source>No Mirror Targets Available</source>
         <target state="translated">Không có mục tiêu phản chiếu khả dụng</target>
@@ -5642,11 +5629,6 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
         <target state="translated">Không có mục tiêu trình chiếu khả dụng</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="No XDR Presets Found." xml:space="preserve">
-        <source>No XDR Presets Found.</source>
-        <target state="translated">Không có XDR preset được tìm thấy.</target>
         <note/>
       </trans-unit>
       <trans-unit id="No color profiles found." xml:space="preserve">
@@ -5918,10 +5900,6 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
       </trans-unit>
       <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%@My parameter%@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
         <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%1$@My parameter%2$@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `[*-My parameter-*]` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
-        <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `[*-My parameter-*]` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
@@ -6267,9 +6245,8 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Đánh giá</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Read &amp; Update From Display" xml:space="preserve">
-        <source>Read &amp; Update From Display</source>
-        <target state="translated">Đọc &amp; Cập nhật từ Màn hình</target>
+      <trans-unit id="Read &amp; Update From Device" xml:space="preserve">
+        <source>Read &amp; Update From Device</source>
         <note/>
       </trans-unit>
       <trans-unit id="Read failed" xml:space="preserve">
@@ -7255,8 +7232,8 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
         <source>Set the (hardware) orientation of a display. Not all displays may support the feature.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
-        <source>Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}.</source>
+      <trans-unit id="Set the Apple Display Preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
+        <source>Set the Apple Display Preset of ${displayEntity} to ${xdrPresetEntity}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
@@ -7640,6 +7617,11 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
         <source>Software dimming gamma adjustment strength</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Some Apple displays use Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however Presets work best when the factory default Color Profile is configured for the Apple display." xml:space="preserve">
+        <source>Some Apple displays use Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however Presets work best when the factory default Color Profile is configured for the Apple display.</source>
+        <target state="translated">Các màn hình XDR sử dụng Preset XDR để quản lý việc tái tạo màu sắc, gamma, cài đặt điểm trắng. Hồ sơ Màu vẫn có thể được sử dụng để ảnh hưởng đến quá trình hiển thị một cách hạn chế, tuy nhiên, các cài đặt XDR hoạt động tốt nhất khi Hồ sơ Màu mặc định của nhà máy được cấu hình cho màn hình XDR.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Some displays are still disconnected!" xml:space="preserve">
         <source>Some displays are still disconnected!</source>
         <target state="translated">Một số màn hình vẫn đang ngắt kết nối!</target>
@@ -7820,6 +7802,11 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
         <target state="translated">Được hỗ trợ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Supports Apple Display Presets" xml:space="preserve">
+        <source>Supports Apple Display Presets</source>
+        <target state="translated">Hỗ trợ preset XDR</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Supports Color Profiles" xml:space="preserve">
         <source>Supports Color Profiles</source>
         <target state="translated">Hỗ trợ các hồ sơ màu</target>
@@ -7828,11 +7815,6 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
       <trans-unit id="Supports HDR" xml:space="preserve">
         <source>Supports HDR</source>
         <target state="translated">Hỗ trợ HDR</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Supports XDR presets" xml:space="preserve">
-        <source>Supports XDR presets</source>
-        <target state="translated">Hỗ trợ preset XDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="Supports changing orientation" xml:space="preserve">
@@ -8724,8 +8706,8 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <source>Turn streaming from ${displayEntity} to ${targetDisplayEntity} with stream configuration ${streamId} to ${onOff}.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu." xml:space="preserve">
-        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu.</source>
+      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the Apple Display Preset menu." xml:space="preserve">
+        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the Apple Display Preset menu.</source>
         <target state="translated">Tắt tính năng này để ngăn chặn việc tự kích hoạt tăng cường XDR nguyên bản khi khởi chạy ứng dụng hoặc không có sẵn trong menu Preset XDR.</target>
         <note/>
       </trans-unit>
@@ -8878,9 +8860,9 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Không giới hạn</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
-        <source>Unlock Color Profile management for XDR displays</source>
-        <target state="translated">Mở khóa quản lý Hồ sơ Màu cho các màn hình XDR</target>
+      <trans-unit id="Unlock Color Profile management for Apple displays" xml:space="preserve">
+        <source>Unlock Color Profile management for Apple displays</source>
+        <target state="translated">Mở khóa quản lý Hồ sơ Màu cho các màn hình Apple</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
@@ -9299,8 +9281,8 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Khi màn hình được đặt là chính, giới hạn thất nhất là 30% cho độ sáng kết hợp hoặc phần mềm, 10% cho độ sáng phần cứng của Apple, 0% cho độ sáng phần cứng DDC.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset." xml:space="preserve">
-        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset.</source>
+      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset." xml:space="preserve">
+        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset.</source>
         <target state="translated">Khi tính năng này được bật, việc đồng bộ hóa sẽ không ảnh hưởng đến các màn hình ở chế độ HDR hoặc các màn hình XDR được thiết lập theo cài đặt XDR tham chiếu.</target>
         <note/>
       </trans-unit>
@@ -9406,11 +9388,6 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Cấu hình XDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="XDR Preset" xml:space="preserve">
-        <source>XDR Preset</source>
-        <target state="translated">Preset XDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
         <source>XDR brightness scale maximum</source>
         <target state="translated">Điều chỉnh độ sáng XDR tối đa</target>
@@ -9419,11 +9396,6 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
       <trans-unit id="XDR brightness scale minimum" xml:space="preserve">
         <source>XDR brightness scale minimum</source>
         <target state="translated">Điều chỉnh độ sáng XDR tối thiểu</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
-        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display.</source>
-        <target state="translated">Các màn hình XDR sử dụng Preset XDR để quản lý việc tái tạo màu sắc, gamma, cài đặt điểm trắng. Hồ sơ Màu vẫn có thể được sử dụng để ảnh hưởng đến quá trình hiển thị một cách hạn chế, tuy nhiên, các cài đặt XDR hoạt động tốt nhất khi Hồ sơ Màu mặc định của nhà máy được cấu hình cho màn hình XDR.</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
@@ -9459,11 +9431,6 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
       <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
         <source>You can detect and configure DDC input select support for this display under "DDC Features…".</source>
         <target state="translated">Bạn có thể phát hiện và cấu hình hỗ trợ chọn đầu vào DDC cho màn hình này trong mục “Tính năng DDC…”</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="You can detect and configure DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
-        <source>You can detect and configure DDC volume and mute control support for this display under "DDC Features…".</source>
-        <target state="translated">Bạn có thể thay đổi hỗ trợ điều khiển âm lương và tắt tiếng DDC cho màn hình trong "Tính năng DDC..."</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`)." xml:space="preserve">
@@ -9681,8 +9648,8 @@ Hầu hết các màn hình không phép việc ghi EDID vì lý do bảo mật,
         <target state="translated">⚠️ Để có kết quả tốt nhất, giữ gần tỷ lệ khung hình của màn hình!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
-        <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
+      <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
+        <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
         <target state="translated">⚠️ Đối với màn hình XDR này, tốt nhất là thiết lập hiệu chuẩn thành Mặc định - Tự động Hiệu chuẩn để ứng dụng có thể tự động điều chỉnh tỷ lệ phóng to cho bộ hiệu chuẩn XDR hiện tại đã chọn và các yếu tố môi trường. Đối với hiệu chuẩn thủ công, hãy đặt độ sáng càng cao càng tốt và đồng thời đảm bảo rằng bạn vẫn nhìn thấy mặt cười!</target>
         <note/>
       </trans-unit>
@@ -9725,8 +9692,8 @@ Hầu hết các màn hình không phép việc ghi EDID vì lý do bảo mật,
         <source>⚠️ Missing or duplicated identifier present - this will yield unexpected results!</source>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected." xml:space="preserve">
-        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected.</source>
+      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different Apple Display Preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default Apple Display Preset is selected." xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different Apple Display Preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default Apple Display Preset is selected.</source>
         <target state="translated">⚠️ Tăng cường XDR nguyên bản được kích hoạt nhưng không có hiệu lực - một preset XDR khác có thể đã được chọn bên ngoài ứng dụng. %@ sẽ vẫn cố gắng kích hoạt tăng cường XDR nguyên bản khi khởi động lại ứng dụng mỗi khi hồ sơ XDR mặc định được chọn.</target>
         <note/>
       </trans-unit>

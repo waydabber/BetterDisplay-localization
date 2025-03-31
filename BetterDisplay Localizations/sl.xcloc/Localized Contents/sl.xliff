@@ -1096,6 +1096,11 @@ To lahko storite v sistemskih nastavitvah ali pa aplikacija namesto vas (potrebn
         <target state="translated">Aplikacija bi morala prevzeti nadzor nad izvornimi tipkami za svetlost, ko</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Apple Display Preset" xml:space="preserve">
+        <source>Apple Display Preset</source>
+        <target state="translated">Prednastavitev XDR</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
@@ -1895,12 +1900,12 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <source>Change framebuffer mode of ${displayEntity} to ${framebufferMode}.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Change the HDR mode of ${displayEntity} to ${onOff}." xml:space="preserve">
-        <source>Change the HDR mode of ${displayEntity} to ${onOff}.</source>
+      <trans-unit id="Change the Apple Display Preset of a display." xml:space="preserve">
+        <source>Change the Apple Display Preset of a display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Change the XDR Preset of a display." xml:space="preserve">
-        <source>Change the XDR Preset of a display.</source>
+      <trans-unit id="Change the HDR mode of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change the HDR mode of ${displayEntity} to ${onOff}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Change the brightness upscaling of ${displayEntity} to ${onOff}." xml:space="preserve">
@@ -2753,19 +2758,9 @@ Community Verified icon
         <target state="translated">Svetlost strojne opreme DDC se lahko obnovi glede na nastavitve zaslona.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="DDC is Unavailable" xml:space="preserve">
-        <source>DDC is Unavailable</source>
-        <target state="translated">DDC ni na voljo</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="DDC messaging" xml:space="preserve">
         <source>DDC messaging</source>
         <target state="translated">DDC sporočila</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC mute control" xml:space="preserve">
-        <source>DDC mute control</source>
-        <target state="translated">DDC utišanje zvoka</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC read is not universally supported by otherwise DDC capable displays." xml:space="preserve">
@@ -2791,11 +2786,6 @@ Community Verified icon
       <trans-unit id="DDC values on startup" xml:space="preserve">
         <source>DDC values on startup</source>
         <target state="translated">DDC vrednosti ob zagonu</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC volume control" xml:space="preserve">
-        <source>DDC volume control</source>
-        <target state="translated">DDC nadzor glasnosti</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC, XDR/HDR upscaling, EDID overrides are not available. Please open the app in native mode - to achieve this, unselect 'Open using Rosetta' in the app's Info sheet!" xml:space="preserve">
@@ -4080,10 +4070,6 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
         <target state="translated">Čez nekaj časa pozabite na zaslone</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Format String" xml:space="preserve">
-        <source>Format String</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Framebuffer Mode" xml:space="preserve">
         <source>Framebuffer Mode</source>
         <note/>
@@ -4817,10 +4803,6 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
       <trans-unit id="Invert colors" xml:space="preserve">
         <source>Invert colors</source>
         <target state="translated">Obrni barve</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Invert value scale" xml:space="preserve">
-        <source>Invert value scale</source>
         <note/>
       </trans-unit>
       <trans-unit id="Inverted Framebuffer" xml:space="preserve">
@@ -5640,6 +5622,11 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <target state="translated">Ne</target>
         <note/>
       </trans-unit>
+      <trans-unit id="No Apple Display Presets Found." xml:space="preserve">
+        <source>No Apple Display Presets Found.</source>
+        <target state="translated">Ni prednastavitev XDR.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="No Mirror Targets Available" xml:space="preserve">
         <source>No Mirror Targets Available</source>
         <target state="translated">Zrcalni cilji niso na voljo</target>
@@ -5653,11 +5640,6 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
         <target state="translated">Ni na voljo nobenih ciljev toka</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="No XDR Presets Found." xml:space="preserve">
-        <source>No XDR Presets Found.</source>
-        <target state="translated">Ni prednastavitev XDR.</target>
         <note/>
       </trans-unit>
       <trans-unit id="No color profiles found." xml:space="preserve">
@@ -5929,10 +5911,6 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
       </trans-unit>
       <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%@My parameter%@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
         <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%1$@My parameter%2$@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `[*-My parameter-*]` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
-        <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `[*-My parameter-*]` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
@@ -6278,9 +6256,8 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <target state="translated">Ocena</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Read &amp; Update From Display" xml:space="preserve">
-        <source>Read &amp; Update From Display</source>
-        <target state="translated">Branje in posodobitev z zaslona</target>
+      <trans-unit id="Read &amp; Update From Device" xml:space="preserve">
+        <source>Read &amp; Update From Device</source>
         <note/>
       </trans-unit>
       <trans-unit id="Read failed" xml:space="preserve">
@@ -7266,8 +7243,8 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <source>Set the (hardware) orientation of a display. Not all displays may support the feature.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
-        <source>Set the XDR preset of ${displayEntity} to ${xdrPresetEntity}.</source>
+      <trans-unit id="Set the Apple Display Preset of ${displayEntity} to ${xdrPresetEntity}." xml:space="preserve">
+        <source>Set the Apple Display Preset of ${displayEntity} to ${xdrPresetEntity}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
@@ -7651,6 +7628,11 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <source>Software dimming gamma adjustment strength</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Some Apple displays use Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however Presets work best when the factory default Color Profile is configured for the Apple display." xml:space="preserve">
+        <source>Some Apple displays use Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however Presets work best when the factory default Color Profile is configured for the Apple display.</source>
+        <target state="translated">Zasloni XDR uporabljajo prednastavitve XDR za upravljanje barvne reprodukcije zaslona, ​​nastavitev gama in bele točke. Barvne profile je še vedno mogoče uporabiti za vplivanje na upodabljanje v omejenem obsegu, vendar prednastavitve XDR delujejo najbolje, če je tovarniško privzeti barvni profil konfiguriran za zaslon XDR.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Some displays are still disconnected!" xml:space="preserve">
         <source>Some displays are still disconnected!</source>
         <target state="translated">Nekateri zasloni so še vedno odklopljeni!</target>
@@ -7831,6 +7813,11 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <target state="translated">Podprto</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Supports Apple Display Presets" xml:space="preserve">
+        <source>Supports Apple Display Presets</source>
+        <target state="translated">Podpira prednastavitve XDR</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Supports Color Profiles" xml:space="preserve">
         <source>Supports Color Profiles</source>
         <target state="translated">Podpira barvne profile</target>
@@ -7839,11 +7826,6 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
       <trans-unit id="Supports HDR" xml:space="preserve">
         <source>Supports HDR</source>
         <target state="translated">Podpira HDR</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Supports XDR presets" xml:space="preserve">
-        <source>Supports XDR presets</source>
-        <target state="translated">Podpira prednastavitve XDR</target>
         <note/>
       </trans-unit>
       <trans-unit id="Supports changing orientation" xml:space="preserve">
@@ -8738,8 +8720,8 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo vi
         <source>Turn streaming from ${displayEntity} to ${targetDisplayEntity} with stream configuration ${streamId} to ${onOff}.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu." xml:space="preserve">
-        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the XDR Preset menu.</source>
+      <trans-unit id="Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the Apple Display Preset menu." xml:space="preserve">
+        <source>Turn this off to prohibit the native XDR upscaling from activating on app start or be available in the Apple Display Preset menu.</source>
         <target state="translated">To izklopite, če želite preprečiti, da bi se izvirno povečanje velikosti XDR aktiviralo ob zagonu aplikacije, ali pa bo na voljo v meniju prednastavitev XDR.</target>
         <note/>
       </trans-unit>
@@ -8895,9 +8877,9 @@ Community Verified icon
         <target state="translated">Neomejeno</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Unlock Color Profile management for XDR displays" xml:space="preserve">
-        <source>Unlock Color Profile management for XDR displays</source>
-        <target state="translated">Odklenite upravljanje barvnega profila za zaslone XDR</target>
+      <trans-unit id="Unlock Color Profile management for Apple displays" xml:space="preserve">
+        <source>Unlock Color Profile management for Apple displays</source>
+        <target state="translated">Odklenite upravljanje barvnega profila za zaslone Apple</target>
         <note/>
       </trans-unit>
       <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
@@ -9318,8 +9300,8 @@ Community Verified icon
         <target state="translated">Ko je zaslon nastavljen kot glavni, je spodnja meja 30 % za kombinirano ali programsko svetlost, 10 % za svetlost strojne opreme Apple, 0 % za svetlost strojne opreme DDC.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset." xml:space="preserve">
-        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference XDR preset.</source>
+      <trans-unit id="When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset." xml:space="preserve">
+        <source>When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset.</source>
         <target state="translated">Ko je to omogočeno, sinhronizacija ne bo vplivala na zaslone v načinu HDR ali zaslone XDR, nastavljene na referenčno prednastavitev XDR.</target>
         <note/>
       </trans-unit>
@@ -9425,11 +9407,6 @@ Community Verified icon
         <target state="translated">Konfiguracija XDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="XDR Preset" xml:space="preserve">
-        <source>XDR Preset</source>
-        <target state="translated">Prednastavitev XDR</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="XDR brightness scale maximum" xml:space="preserve">
         <source>XDR brightness scale maximum</source>
         <target state="translated">Največja lestvica svetlosti XDR</target>
@@ -9438,11 +9415,6 @@ Community Verified icon
       <trans-unit id="XDR brightness scale minimum" xml:space="preserve">
         <source>XDR brightness scale minimum</source>
         <target state="translated">Najmanjša lestvica svetlosti XDR</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display." xml:space="preserve">
-        <source>XDR displays use XDR Presets to manage display color reproduction, gamma, white point settings. Color Profiles can still be used to influence rendering to a limited extent however XDR presets work best when the factory default Color Profile is configured for the XDR display.</source>
-        <target state="translated">Zasloni XDR uporabljajo prednastavitve XDR za upravljanje barvne reprodukcije zaslona, ​​nastavitev gama in bele točke. Barvne profile je še vedno mogoče uporabiti za vplivanje na upodabljanje v omejenem obsegu, vendar prednastavitve XDR delujejo najbolje, če je tovarniško privzeti barvni profil konfiguriran za zaslon XDR.</target>
         <note/>
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
@@ -9478,11 +9450,6 @@ Community Verified icon
       <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
         <source>You can detect and configure DDC input select support for this display under "DDC Features…".</source>
         <target state="translated">Podporo za izbiro vhoda DDC za ta zaslon lahko zaznate in konfigurirate pod »Funkcije DDC…«.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="You can detect and configure DDC volume and mute control support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
-        <source>You can detect and configure DDC volume and mute control support for this display under "DDC Features…".</source>
-        <target state="translated">Za ta zaslon lahko zaznate in konfigurirate glasnost DDC in podporo za utišanje zvoka pod »Funkcije DDC…«.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You can download the SF Symbols app from [developer.apple.com/sf-symbols](https://developer.apple.com/sf-symbols) to find the right SF Symbol icon string (try: `face.smiling`)." xml:space="preserve">
@@ -9700,8 +9667,8 @@ Večina zaslonov ne dovoljuje zapisovanja EDID iz varnostnih razlogov, nekateri 
         <target state="translated">⚠️ Za najboljše rezultate se držite blizu razmerja stranic zaslona!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
-        <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected XDR preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
+      <trans-unit id="⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
+        <source>⚠️ For this XDR display it best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
         <target state="translated">⚠️ Za ta zaslon XDR je najbolje, da kalibracijo nastavite na Privzeto - Samodejna kalibracija, tako da lahko aplikacija samodejno prilagodi povečanje ločljivosti trenutno izbrani prednastavitvi XDR in okoljskim dejavnikom. Za ročno kalibracijo nastavite drsnik za svetlost čim višje, hkrati pa poskrbite, da še vedno vidite nasmejan obraz!</target>
         <note/>
       </trans-unit>
@@ -9744,8 +9711,8 @@ Večina zaslonov ne dovoljuje zapisovanja EDID iz varnostnih razlogov, nekateri 
         <source>⚠️ Missing or duplicated identifier present - this will yield unexpected results!</source>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected." xml:space="preserve">
-        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different XDR preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default XDR preset is selected.</source>
+      <trans-unit id="⚠️ Native XDR upscaling is enabled but not in effect - a different Apple Display Preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default Apple Display Preset is selected." xml:space="preserve">
+        <source>⚠️ Native XDR upscaling is enabled but not in effect - a different Apple Display Preset might have been selected outside of the app. %@ will still attempt to activate native XDR upscaling upon app restart whenever the default Apple Display Preset is selected.</source>
         <target state="translated">⚠️ Izvorno povečanje ločljivosti XDR je omogočeno, vendar ni v veljavi - zunaj aplikacije je bila morda izbrana druga prednastavitev XDR. %@ bo ob ponovnem zagonu aplikacije še vedno poskušal aktivirati izvorno povečanje velikosti XDR, kadar koli je izbrana privzeta prednastavitev XDR.</target>
         <note/>
       </trans-unit>
