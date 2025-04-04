@@ -611,6 +611,11 @@ Pro機能を引き続き使用するには、このインストールを再度�
         <target state="translated">アクティベーションには、同期構成、UIサイズ調整またはレイアウト保護を行った適切なディスプレイが必要です。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Add Control…" xml:space="preserve">
+        <source>Add Control…</source>
+        <target state="translated">機能を追加…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Add Custom Control" xml:space="preserve">
         <source>Add Custom Control</source>
         <target state="translated">カスタム制御を追加</target>
@@ -624,11 +629,6 @@ Pro機能を引き続き使用するには、このインストールを再度�
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">カスタム解像度を追加</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Add Feature…" xml:space="preserve">
-        <source>Add Feature…</source>
-        <target state="translated">機能を追加…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Add Filter Window Configuration" xml:space="preserve">
@@ -690,8 +690,8 @@ Pro機能を引き続き使用するには、このインストールを再度�
         <target state="translated">制御機能を追加</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Adding a custom DDC feature" xml:space="preserve">
-        <source>Adding a custom DDC feature</source>
+      <trans-unit id="Adding a custom DDC control" xml:space="preserve">
+        <source>Adding a custom DDC control</source>
         <target state="translated">カスタムDDC機能を追加中</target>
         <note/>
       </trans-unit>
@@ -1515,8 +1515,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">制御統合構成に戻る…</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Back to DDC Features…" xml:space="preserve">
-        <source>Back to DDC Features…</source>
+      <trans-unit id="Back to DDC Controls…" xml:space="preserve">
+        <source>Back to DDC Controls…</source>
         <target state="translated">DDC機能に戻る…</target>
         <note/>
       </trans-unit>
@@ -2200,6 +2200,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">制御統合を構成…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure Controls…" xml:space="preserve">
+        <source>Configure Controls…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure Custom EDID" xml:space="preserve">
         <source>Configure Custom EDID</source>
         <target state="translated">カスタムEDIDを構成</target>
@@ -2210,8 +2214,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">DDC制御を構成…</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Configure DDC volume and mute control support under &quot;DDC Features…&quot; or set up an alternative control method using control integration." xml:space="preserve">
-        <source>Configure DDC volume and mute control support under "DDC Features…" or set up an alternative control method using control integration.</source>
+      <trans-unit id="Configure DDC volume and mute control support under &quot;DDC Controls…&quot; or set up an alternative control method using control integration." xml:space="preserve">
+        <source>Configure DDC volume and mute control support under "DDC Controls…" or set up an alternative control method using control integration.</source>
         <target state="translated">「DDC機能…」でDDC音量とミュート制御の対応を構成するか、制御統合を使用して別の制御方法を設定します。</target>
         <note/>
       </trans-unit>
@@ -2750,14 +2754,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">DDCコマンド</target>
         <note/>
       </trans-unit>
+      <trans-unit id="DDC Controls…" xml:space="preserve">
+        <source>DDC Controls…</source>
+        <target state="translated">DDC機能…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="DDC Display Input Source" xml:space="preserve">
         <source>DDC Display Input Source</source>
         <target state="translated">DDCディスプレイ入力ソース</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC Features…" xml:space="preserve">
-        <source>DDC Features…</source>
-        <target state="translated">DDC機能…</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC Input Source Control" xml:space="preserve">
@@ -3859,6 +3863,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">統合HTTPサーバを有効化</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable integration features" xml:space="preserve">
+        <source>Enable integration features</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable layout protection" xml:space="preserve">
         <source>Enable layout protection</source>
         <target state="translated">レイアウト保護を有効化</target>
@@ -4434,9 +4442,21 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">HTTPサーバは現在実行中で、ポート%@からのコマンドを待ち受けています。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hardware &amp; Integration Control" xml:space="preserve">
+        <source>Hardware &amp; Integration Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
         <source>Hardware Control</source>
         <target state="translated">ハードウェア制御</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hardware Control &amp; Integration" xml:space="preserve">
+        <source>Hardware Control &amp; Integration</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hardware control &amp; integration settings" xml:space="preserve">
+        <source>Hardware control &amp; integration settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware control (Apple)" xml:space="preserve">
@@ -4851,6 +4871,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
         <target state="translated">統合</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Integration Control" xml:space="preserve">
+        <source>Integration Control</source>
         <note/>
       </trans-unit>
       <trans-unit id="Integration control values on startup" xml:space="preserve">
@@ -9759,8 +9783,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">システム設定 &gt; 一般 &gt; ログイン項目 にアプリをドラッグすることもできます。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
-        <source>You can detect and configure DDC input select support for this display under "DDC Features…".</source>
+      <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Controls…&quot;." xml:space="preserve">
+        <source>You can detect and configure DDC input select support for this display under "DDC Controls…".</source>
         <target state="translated">「DDC機能…」で、このディスプレイの入力選択DDC対応を検出し、構成することができます。</target>
         <note/>
       </trans-unit>
