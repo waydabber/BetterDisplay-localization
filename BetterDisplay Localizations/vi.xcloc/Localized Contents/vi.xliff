@@ -603,6 +603,10 @@ Vui lòng kích hoạt lại cài đặt này để tiếp tục sử dụng cá
         <target state="translated">Kích hoạt yêu cầu sự hiện diễn của các màn hình phù hợp cho sự đồng bộ hóa đã cấu hình, đồng bộ tỉ lệ UI hoặc bảo vệ bố cục.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Add Control…" xml:space="preserve">
+        <source>Add Control…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Add Custom Control" xml:space="preserve">
         <source>Add Custom Control</source>
         <note/>
@@ -614,10 +618,6 @@ Vui lòng kích hoạt lại cài đặt này để tiếp tục sử dụng cá
       <trans-unit id="Add Custom Resolution" xml:space="preserve">
         <source>Add Custom Resolution</source>
         <target state="translated">Thêm độ phân giải tùy chọn</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Add Feature…" xml:space="preserve">
-        <source>Add Feature…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add Filter Window Configuration" xml:space="preserve">
@@ -673,8 +673,8 @@ Vui lòng kích hoạt lại cài đặt này để tiếp tục sử dụng cá
         <source>Adding a control feature</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Adding a custom DDC feature" xml:space="preserve">
-        <source>Adding a custom DDC feature</source>
+      <trans-unit id="Adding a custom DDC control" xml:space="preserve">
+        <source>Adding a custom DDC control</source>
         <note/>
       </trans-unit>
       <trans-unit id="Additional Settings…" xml:space="preserve">
@@ -1489,8 +1489,8 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <source>Back to Control Integration Configuration…</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Back to DDC Features…" xml:space="preserve">
-        <source>Back to DDC Features…</source>
+      <trans-unit id="Back to DDC Controls…" xml:space="preserve">
+        <source>Back to DDC Controls…</source>
         <note/>
       </trans-unit>
       <trans-unit id="Base64 Encoded EDID" xml:space="preserve">
@@ -2131,6 +2131,10 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <source>Configure Control Integration…</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure Controls…" xml:space="preserve">
+        <source>Configure Controls…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure Custom EDID" xml:space="preserve">
         <source>Configure Custom EDID</source>
         <note/>
@@ -2140,8 +2144,8 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <target state="translated">Cấu hình Điều khiển DDC</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Configure DDC volume and mute control support under &quot;DDC Features…&quot; or set up an alternative control method using control integration." xml:space="preserve">
-        <source>Configure DDC volume and mute control support under "DDC Features…" or set up an alternative control method using control integration.</source>
+      <trans-unit id="Configure DDC volume and mute control support under &quot;DDC Controls…&quot; or set up an alternative control method using control integration." xml:space="preserve">
+        <source>Configure DDC volume and mute control support under "DDC Controls…" or set up an alternative control method using control integration.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Display…" xml:space="preserve">
@@ -2662,14 +2666,14 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <target state="translated">Lệnh DDC</target>
         <note/>
       </trans-unit>
+      <trans-unit id="DDC Controls…" xml:space="preserve">
+        <source>DDC Controls…</source>
+        <target state="translated">Tính năng DDC</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="DDC Display Input Source" xml:space="preserve">
         <source>DDC Display Input Source</source>
         <target state="translated">Nguồn đầu vào Màn hình DDC</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="DDC Features…" xml:space="preserve">
-        <source>DDC Features…</source>
-        <target state="translated">Tính năng DDC</target>
         <note/>
       </trans-unit>
       <trans-unit id="DDC Input Source Control" xml:space="preserve">
@@ -3753,6 +3757,10 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Kích hoạt máy chủ HTTP tích hợp</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable integration features" xml:space="preserve">
+        <source>Enable integration features</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable layout protection" xml:space="preserve">
         <source>Enable layout protection</source>
         <target state="translated">Bật bảo vệ bố cục</target>
@@ -4309,9 +4317,21 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Máy chủ HTTP hiện đang chạy và lắng nghe các lệnh trên cổng %@.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hardware &amp; Integration Control" xml:space="preserve">
+        <source>Hardware &amp; Integration Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
         <source>Hardware Control</source>
         <target state="translated">Điều khiển phần cứng</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hardware Control &amp; Integration" xml:space="preserve">
+        <source>Hardware Control &amp; Integration</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hardware control &amp; integration settings" xml:space="preserve">
+        <source>Hardware control &amp; integration settings</source>
         <note/>
       </trans-unit>
       <trans-unit id="Hardware control (Apple)" xml:space="preserve">
@@ -4714,6 +4734,10 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
       <trans-unit id="Integration" xml:space="preserve">
         <source>Integration</source>
         <target state="translated">Tích hợp</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Integration Control" xml:space="preserve">
+        <source>Integration Control</source>
         <note/>
       </trans-unit>
       <trans-unit id="Integration control values on startup" xml:space="preserve">
@@ -9459,8 +9483,8 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Bạn cũng có thể kéo ứng dụng vào mục Mục đăng nhập trong Cài đặt Hệ thống &gt; Chung.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Features…&quot;." xml:space="preserve">
-        <source>You can detect and configure DDC input select support for this display under "DDC Features…".</source>
+      <trans-unit id="You can detect and configure DDC input select support for this display under &quot;DDC Controls…&quot;." xml:space="preserve">
+        <source>You can detect and configure DDC input select support for this display under "DDC Controls…".</source>
         <target state="translated">Bạn có thể phát hiện và cấu hình hỗ trợ chọn đầu vào DDC cho màn hình này trong mục “Tính năng DDC…”</target>
         <note/>
       </trans-unit>
