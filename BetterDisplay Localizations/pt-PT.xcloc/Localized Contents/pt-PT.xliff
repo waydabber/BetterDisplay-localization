@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F1t"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -30,7 +30,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F1t"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -72,6 +72,10 @@
         <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ - Active" xml:space="preserve">
+        <source>%@ - Active</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ - Duplicate" xml:space="preserve">
         <source>%@ - Duplicate</source>
         <note/>
@@ -94,6 +98,10 @@
         <source>%@ Certain displays are set to hide the menu bar icon, which may override this setting.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one!" xml:space="preserve">
+        <source>%@ Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one!</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
         <source>%@ Configuration Protection can make color mode changes persistent.</source>
         <note/>
@@ -104,6 +112,10 @@
       </trans-unit>
       <trans-unit id="%@ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
         <source>%@ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
+        <source>%@ Hold ⌥ Option when opening this menu to measure refresh rate!</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Image adjustment controls are unavailable." xml:space="preserve">
@@ -168,6 +180,11 @@
       </trans-unit>
       <trans-unit id="%@ This license is currently active on %lld installations." xml:space="preserve">
         <source>%1$@ This license is currently active on %2$lld installations.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
+        <source>%@ This shows options for the current resolution. See Display Modes menu for the full list.</source>
+        <target state="translated">%@ Esta opção mostra as opções para a resolução atual. Consulte o menu Modos de Visualização para obter a lista completa.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
@@ -2003,6 +2020,10 @@ Especificar o comprimento de leitura é opcional - deixar o campo vazio para aut
         <source>Configure Display…</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure Groups…" xml:space="preserve">
+        <source>Configure Groups…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure Input Sources…" xml:space="preserve">
         <source>Configure Input Sources…</source>
         <target state="translated">Configurar as Fontes de Entrada…</target>
@@ -2887,6 +2908,10 @@ Especificar o comprimento de leitura é opcional - deixar o campo vazio para aut
         <target state="translated">Desativar</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Disable All Groups" xml:space="preserve">
+        <source>Disable All Groups</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Disable All Protections" xml:space="preserve">
         <source>Disable All Protections</source>
         <target state="translated">Desativar todas as protecções</target>
@@ -3465,6 +3490,10 @@ O processo não funciona com o ecrã incorporado (é necessário reiniciar). A o
       <trans-unit id="Edited system display name" xml:space="preserve">
         <source>Edited system display name</source>
         <target state="translated">Nome do ecrã do sistema editado</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable All Groups" xml:space="preserve">
+        <source>Enable All Groups</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable All Protections" xml:space="preserve">
@@ -4221,10 +4250,6 @@ O processo não funciona com o ecrã incorporado (é necessário reiniciar). A o
       <trans-unit id="Hold ⇧ Shift for multi-select. Unsafe modes are hidden." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select. Unsafe modes are hidden.</source>
         <target state="translated">Mantenha premida a tecla ⇧ Shift para fazer uma seleção múltipla. Os modos inseguros estão ocultos.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
-        <source>Hold ⌥ Option when opening this menu to measure refresh rate!</source>
         <note/>
       </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
@@ -7914,11 +7939,6 @@ IMPORTANT: While the display is in a disconnected state (via the app), physicall
 Tenha em atenção que nos Macs Intel (como este Mac) esta ação pode não funcionar como esperado!
 
 IMPORTANTE: Enquanto o ecrã estiver desligado (através da aplicação), desligar fisicamente o ecrã, remover o cabo ou (no caso de um ecrã incorporado) fechar a tampa pode resultar na impossibilidade de voltar a ligar qualquer ecrã (até ser reiniciado)!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
-        <source>This shows options for the current resolution. See Display Modes menu for the full list.</source>
-        <target state="translated">Esta opção mostra as opções para a resolução atual. Consulte o menu Modos de Visualização para obter a lista completa.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This virtual screen cannot be manually connected!" xml:space="preserve">
