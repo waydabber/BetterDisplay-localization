@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5241o"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="16.4" build-num="16F6"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5241o"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -237,6 +237,10 @@
       <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
         <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
         <target state="translated">%@ 無法識別任何顯示器。這可能表明應用程式或系統存在錯誤。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ nits" xml:space="preserve">
+        <source>%@ nits</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ pixels HiDPI (%@ pixels LoDPI)" xml:space="preserve">
@@ -1737,11 +1741,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">啟動時短暫顯示 Dock 圖示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
-        <source>Briefly show an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
-        <target state="translated">進行額外調光或亮度提升的軟體調整時在調整浮動視窗 (OSD) 中簡單顯示為向上 (XDR/HDR 提升) 或向下（軟體調光）的指向圖示。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brighten Displays" xml:space="preserve">
         <source>Brighten Displays</source>
         <target state="translated">提升顯示器亮度</target>
@@ -1762,14 +1761,14 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">亮度 (組合)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Combined, Metal Upscaling)" xml:space="preserve">
-        <source>Brightness (Combined, Metal Upscaling)</source>
-        <target state="translated">亮度（組合，Metal 增強）</target>
+      <trans-unit id="Brightness (Combined, Metal)" xml:space="preserve">
+        <source>Brightness (Combined, Metal)</source>
+        <target state="translated">亮度（組合，Metal）</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Combined, Software Upscaling)" xml:space="preserve">
-        <source>Brightness (Combined, Software Upscaling)</source>
-        <target state="translated">亮度 (組合，軟體增強)</target>
+      <trans-unit id="Brightness (Combined, Upscaling)" xml:space="preserve">
+        <source>Brightness (Combined, Upscaling)</source>
+        <target state="translated">亮度 (組合，增強)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
@@ -2622,8 +2621,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">目前原生解析度</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Current resolution (width x height) is shown as text inside when enabled." xml:space="preserve">
-        <source>Current resolution (width x height) is shown as text inside when enabled.</source>
+      <trans-unit id="Current resolution (width x height) is shown as text when enabled." xml:space="preserve">
+        <source>Current resolution (width x height) is shown as text when enabled.</source>
         <target state="translated">啟用內部顯示目前解析度（寬度 x 高度）文本。</target>
         <note/>
       </trans-unit>
@@ -3577,8 +3576,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">顯示器狀態</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display the brightness level in nits on the brightness OSD icon for native XDR upscaling" xml:space="preserve">
-        <source>Display the brightness level in nits on the brightness OSD icon for native XDR upscaling</source>
+      <trans-unit id="Display the brightness level in nits on the brightness OSD for native XDR upscaling" xml:space="preserve">
+        <source>Display the brightness level in nits on the brightness OSD for native XDR upscaling</source>
         <target state="translated">在原生XDR升頻時，在亮度OSD圖示中顯示以尼特為單位的亮度級別</target>
         <note/>
       </trans-unit>
@@ -3605,6 +3604,15 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Displays And Virtual Screens" xml:space="preserve">
         <source>Displays And Virtual Screens</source>
         <target state="translated">顯示器和虛擬螢幕</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Displays labels for sliders to help you quickly identify their function." xml:space="preserve">
+        <source>Displays labels for sliders to help you quickly identify their function.</source>
+        <target state="translated">便於識別滑感功能。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Displays slider labels and their current values for easier identification and greater precision." xml:space="preserve">
+        <source>Displays slider labels and their current values for easier identification and greater precision.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Displays that were added to the list previously are shown even when not detected." xml:space="preserve">
@@ -4206,11 +4214,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">用於觸發功能或操作的控制元件</target>
         <note/>
       </trans-unit>
-      <trans-unit id="For easier identification of slider functionality." xml:space="preserve">
-        <source>For easier identification of slider functionality.</source>
-        <target state="translated">便於識別滑感功能。</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
         <target state="translated">強制支援色表調整</target>
@@ -4416,8 +4419,8 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">朦朧</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Grayscale Framebuffer" xml:space="preserve">
-        <source>Grayscale Framebuffer</source>
+      <trans-unit id="Grayscale Appearance" xml:space="preserve">
+        <source>Grayscale Appearance</source>
         <target state="translated">灰階幀緩存 </target>
         <note/>
       </trans-unit>
@@ -4591,6 +4594,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">隱藏串流</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Hide accessibility permission and licensing related warnings in the app menu." xml:space="preserve">
+        <source>Hide accessibility permission and licensing related warnings in the app menu.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Hide all full screen streams" xml:space="preserve">
         <source>Hide all full screen streams</source>
         <target state="translated">隱藏所有全螢幕串流</target>
@@ -4604,6 +4611,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="Hide other unexpanded menu items" xml:space="preserve">
         <source>Hide other unexpanded menu items</source>
         <target state="translated">隱藏其他未展開的選單</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hide warnings in the button bar" xml:space="preserve">
+        <source>Hide warnings in the button bar</source>
         <note/>
       </trans-unit>
       <trans-unit id="High Resolution (HiDPI)" xml:space="preserve">
@@ -4990,13 +5001,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">反轉色彩</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Inverted Framebuffer" xml:space="preserve">
-        <source>Inverted Framebuffer</source>
+      <trans-unit id="Inverted Appearance" xml:space="preserve">
+        <source>Inverted Appearance</source>
         <target state="translated"> 反色幀緩存</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Inverted Grayscale Framebuffer" xml:space="preserve">
-        <source>Inverted Grayscale Framebuffer</source>
+      <trans-unit id="Inverted Grayscale Appearance" xml:space="preserve">
+        <source>Inverted Grayscale Appearance</source>
         <target state="translated">反色灰度幀緩存</target>
         <note/>
       </trans-unit>
@@ -7906,9 +7917,17 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">顯示滑桿標籤</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show slider labels and values" xml:space="preserve">
+        <source>Show slider labels and values</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show slider markers only during knob adjustment" xml:space="preserve">
+        <source>Show slider markers only during knob adjustment</source>
+        <target state="translated">僅拖動旋鈕時顯示滑桿標記</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show slider markers only while dragging the knob" xml:space="preserve">
         <source>Show slider markers only while dragging the knob</source>
-        <target state="translated">僅拖動旋鈕時顯示滑桿標記</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show subsliders for combined brightness control" xml:space="preserve">
@@ -7924,6 +7943,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">顯示應用程式之前識別的所有顯示器。即使顯示器處於離線狀態也允許更改某些設定。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Shows an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
+        <source>Shows an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments.</source>
+        <target state="translated">進行額外調光或亮度提升的軟體調整時在調整浮動視窗 (OSD) 中簡單顯示為向上 (XDR/HDR 提升) 或向下（軟體調光）的指向圖示。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Sidecar Configuration" xml:space="preserve">
@@ -8086,8 +8110,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">指定當按下應用程式選單開或關切換時應發生什麽。並非所有選項都對顯示器有效。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Standard Framebuffer" xml:space="preserve">
-        <source>Standard Framebuffer</source>
+      <trans-unit id="Standard Appearance" xml:space="preserve">
+        <source>Standard Appearance</source>
         <target state="translated">標準幀緩存</target>
         <note/>
       </trans-unit>
@@ -8742,9 +8766,13 @@ Please note that not all displays support DDC power operations and some displays
         <target state="translated">此操作將斷開並重連目前所有已連接的虛擬螢幕！</target>
         <note/>
       </trans-unit>
+      <trans-unit id="This provides a cleaner look when sliders are not in active use." xml:space="preserve">
+        <source>This provides a cleaner look when sliders are not in active use.</source>
+        <target state="translated">當滑桿不在使用狀態時外觀更整潔。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="This provides a cleaner look when the slider is not in active use." xml:space="preserve">
         <source>This provides a cleaner look when the slider is not in active use.</source>
-        <target state="translated">當滑桿不在使用狀態時外觀更整潔。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This resolution is used as default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
@@ -9466,6 +9494,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="VCP Code" xml:space="preserve">
         <source>VCP Code</source>
         <target state="translated">VCP 代碼</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="VCP: 0x%@ parsed as: `%@`" xml:space="preserve">
+        <source>VCP: 0x%1$@ parsed as: `%2$@`</source>
         <note/>
       </trans-unit>
       <trans-unit id="VIRTUAL" xml:space="preserve">
