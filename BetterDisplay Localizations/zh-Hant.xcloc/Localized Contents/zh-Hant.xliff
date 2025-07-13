@@ -655,8 +655,12 @@ Thank you for your understanding and continued support.</source>
         <target state="translated">啟用需要存在適當的顯示器來設定同步、UI 比例匹配或佈局保護。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Adaptive glass OSD appearance" xml:space="preserve">
-        <source>Adaptive glass OSD appearance</source>
+      <trans-unit id="Active menu icons use white background" xml:space="preserve">
+        <source>Active menu icons use white background</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Adaptive OSD background" xml:space="preserve">
+        <source>Adaptive OSD background</source>
         <note/>
       </trans-unit>
       <trans-unit id="Add Control…" xml:space="preserve">
@@ -2073,6 +2077,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">分塊大小</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Classic" xml:space="preserve">
+        <source>Classic</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Click Here To Allow Sleep" xml:space="preserve">
         <source>Click Here To Allow Sleep</source>
         <target state="translated">點擊此處允許睡眠</target>
@@ -3137,6 +3145,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">檢測到一些干擾…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Determines the placement of the OSD. Use 'Classic' for a more traditional (pre-macOS Tahoe) OSD placement and appearance." xml:space="preserve">
+        <source>Determines the placement of the OSD. Use 'Classic' for a more traditional (pre-macOS Tahoe) OSD placement and appearance.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horizontal or vertical side and specify the offsets appropriately." xml:space="preserve">
         <source>Determines where the protected display should be positioned relative to the specified display. If you want to position the protected display to one of the corners, select either the relevant horizontal or vertical side and specify the offsets appropriately.</source>
         <target state="translated">確定受保護顯示器相對於指定顯示器的位置。如果要將受保護顯示器放置在某個角上，請選擇相關的水平或垂直側，並適當指定偏移量。</target>
@@ -3230,6 +3242,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Disable DDC For This Display" xml:space="preserve">
         <source>Disable DDC For This Display</source>
         <target state="translated">為此顯示器禁用 DDC</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Disable this for a classic look (like macOS Sequoia and earlier)." xml:space="preserve">
+        <source>Disable this for a classic look (like macOS Sequoia and earlier).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Disabled" xml:space="preserve">
@@ -6099,8 +6115,12 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">調整浮動視窗 (OSD)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="OSD colors adapt to the environment. When disabled, the glass OSD will follow to the current system appearance (light or dark)." xml:space="preserve">
-        <source>OSD colors adapt to the environment. When disabled, the glass OSD will follow to the current system appearance (light or dark).</source>
+      <trans-unit id="OSD background adapts to the environment. When disabled, the glass OSD will follow to the current system appearance (light or dark)." xml:space="preserve">
+        <source>OSD background adapts to the environment. When disabled, the glass OSD will follow to the current system appearance (light or dark).</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="OSD location" xml:space="preserve">
+        <source>OSD location</source>
         <note/>
       </trans-unit>
       <trans-unit id="Off" xml:space="preserve">
@@ -7802,6 +7822,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">顯示滑鼠指標</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show OSD on affected display" xml:space="preserve">
+        <source>Show OSD on affected display</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
         <source>Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead.</source>
         <target state="translated">使用鍵盤快捷鍵基本控制時顯示調整浮動視窗 (OSD)。如果無需顯示調整浮動視窗 (OSD) UI 或正在使用第三方調整浮動視窗 (OSD) 演示應用程式時請禁用此選項。</target>
@@ -8430,6 +8454,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD)." xml:space="preserve">
         <source>The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD).</source>
         <target state="translated">DDC 重置命令可能無法對所有顯示器生效。您也可嘗試顯示器的內置出廠重置（通常可通過顯示器調整浮動視窗 (OSD) 連接）。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The OSD appears on the affected display instead of the display with the active menu bar (similar to older macOS versions)." xml:space="preserve">
+        <source>The OSD appears on the affected display instead of the display with the active menu bar (similar to older macOS versions).</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
@@ -9110,6 +9138,14 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">上方 → 右側 - 角落</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Top-center" xml:space="preserve">
+        <source>Top-center</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Top-right corner" xml:space="preserve">
+        <source>Top-right corner</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Traditional popups" xml:space="preserve">
         <source>Traditional popups</source>
         <target state="translated">傳統彈窗</target>
@@ -9348,6 +9384,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Unavailable" xml:space="preserve">
         <source>Unavailable</source>
         <target state="translated">不可用</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Under the app menu" xml:space="preserve">
+        <source>Under the app menu</source>
         <note/>
       </trans-unit>
       <trans-unit id="Underscan" xml:space="preserve">
@@ -9926,6 +9966,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Without Screen Recording permissions this feature will not work!" xml:space="preserve">
         <source>Without Screen Recording permissions this feature will not work!</source>
         <target state="translated">沒有螢幕錄影權限，該功能將無法運作！</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Without this, toggles are rendered as checkboxes and radio buttons." xml:space="preserve">
+        <source>Without this, toggles are rendered as checkboxes and radio buttons.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Works only when an associated virtual screen is not set to follow the associated display's orientation" xml:space="preserve">
