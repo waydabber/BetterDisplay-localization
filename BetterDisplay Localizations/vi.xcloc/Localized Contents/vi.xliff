@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="vi" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="vi" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1365,9 +1365,17 @@ AliPay khả dụng ở Trung Quốc.</target>
         <target state="translated">Liên kết màn hình ảo với màn hình này</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Associate this display with an audio device that has native volume controls" xml:space="preserve">
+        <source>Associate this display with an audio device that has native volume controls</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Associate this virtual screen with real display(s)" xml:space="preserve">
         <source>Associate this virtual screen with real display(s)</source>
         <target state="translated">Liên kết màn hình ảo này với (các) màn hình thực</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Associated audio device name" xml:space="preserve">
+        <source>Associated audio device name</source>
         <note/>
       </trans-unit>
       <trans-unit id="Associated displays" xml:space="preserve">
@@ -1839,11 +1847,6 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <target state="translated">Độ sáng và Video</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
-        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
-        <target state="translated">Các thay đổi về độ sáng có thể được kích hoạt bên ngoài ứng dụng (Touch Bar, cảm biến ánh sáng, Trung tâm Kiểm soát, v.v.) khi nguồn đồng bộ là một màn Apple. Đồng bộ các thay đổi này không được khuyến khích khi sử dụng độ sáng kết hợp và tăng cường XDR phần mềm (thay vào đó, hãy dùng tăng cường XDR nguyên bản).</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
         <source>Brightness control using native brightness keys</source>
         <target state="translated">Điều khiển độ sáng bằng các phím độ sáng tự nhiên</target>
@@ -2047,6 +2050,11 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
       <trans-unit id="Change the native brightness upscaling of ${displayEntity} to ${onOff}." xml:space="preserve">
         <source>Change the native brightness upscaling of ${displayEntity} to ${onOff}.</source>
         <target state="translated">Thay đổi tăng cường độ sáng gốc của ${displayEntity} thành ${onOff}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.)." xml:space="preserve">
+        <source>Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.).</source>
+        <target state="translated">Các thay đổi có thể được kích hoạt bên ngoài ứng dụng (Touch Bar, cảm biến ánh sáng môi trường, Trung tâm kiểm soát, tích hợp điều khiển, v.v.).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -3683,9 +3691,9 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Không khôi phục độ sáng kết hợp và điều chỉnh phần mềm</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do not synchronize brightness changes made using the app." xml:space="preserve">
-        <source>Do not synchronize brightness changes made using the app.</source>
-        <target state="translated">Không đồng bộ hóa thay đổi độ sáng được thực hiện qua ứng dụng.</target>
+      <trans-unit id="Do not synchronize changes made via the app." xml:space="preserve">
+        <source>Do not synchronize changes made via the app.</source>
+        <target state="translated">Không đồng bộ hóa thay đổi được thực hiện qua ứng dụng.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do nothing" xml:space="preserve">
@@ -6261,6 +6269,10 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Tham số là các đoạn mã/văn bản có thể tái sử dụng có thể được gọi trong bất kỳ cấu hình tích hợp nào bằng cách tham chiếu đến định danh của chúng. Ví dụ, mã `%1$@My parameter%2$@` sẽ gọi nội dung tham số được xác định là `My parameter`. Các định danh phân biệt chữ hoa chữ thường.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead." xml:space="preserve">
+        <source>Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
         <source>Paste</source>
         <target state="translated">Dán</target>
@@ -7983,11 +7995,6 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
         <target state="translated">Hiển thị trong menu ứng dụng</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show macOS volume OSD with keyboard control" xml:space="preserve">
-        <source>Show macOS volume OSD with keyboard control</source>
-        <target state="translated">Hiển thị âm lượng OSD của macOS khi điều khiển bằng bàn phím</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show main display at the top" xml:space="preserve">
         <source>Show main display at the top</source>
         <target state="translated">Hiển thị màn hình chính ở trên cùng</target>
@@ -8041,6 +8048,11 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
       <trans-unit id="Show subsliders for combined brightness control" xml:space="preserve">
         <source>Show subsliders for combined brightness control</source>
         <target state="translated">Hiển thị các thanh trượt phụ cho điều khiển độ sáng kết hợp</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show volume OSD with keyboard control" xml:space="preserve">
+        <source>Show volume OSD with keyboard control</source>
+        <target state="translated">Hiển thị âm lượng OSD của macOS khi điều khiển bằng bàn phím</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
@@ -8211,6 +8223,10 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
       <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <target state="translated">Chỉ định một danh sách các thành viên sẽ không bị ảnh hưởng bởi đồng bộ hóa này.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify an audio device that has native volume controls which will be associated with the display." xml:space="preserve">
+        <source>Specify an audio device that has native volume controls which will be associated with the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -8433,9 +8449,9 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
         <target state="translated">Đồng bộ %@</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
-        <source>Synchronize brightness changes triggered externally</source>
-        <target state="translated">Đồng bộ hóa các thay đổi độ sáng được kích hoạt từ bên ngoài</target>
+      <trans-unit id="Synchronize changes triggered externally" xml:space="preserve">
+        <source>Synchronize changes triggered externally</source>
+        <target state="translated">Đồng bộ hóa các thay đổi được kích hoạt từ bên ngoài</target>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize external changes only" xml:space="preserve">
@@ -8511,6 +8527,10 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
         <target state="translated">Ứng dụng có thể tự động kết nối và ngắt kết nối một màn hình ảo dựa trên sự có sẵn của các màn hình mà nó được liên kết. Nó cũng có thể tự động bắt đầu phản chiếu hoặc trình chiếu hoặc tuân theo hướng của màn hình liên kết.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The app controls the associated audio device specified below using the native audio control methods provided by macOS." xml:space="preserve">
+        <source>The app controls the associated audio device specified below using the native audio control methods provided by macOS.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
@@ -9440,8 +9460,8 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Không khả dụng</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Under the app menu" xml:space="preserve">
-        <source>Under the app menu</source>
+      <trans-unit id="Under the app menu icon" xml:space="preserve">
+        <source>Under the app menu icon</source>
         <target state="translated">Dưới menu ứng dụng</target>
         <note/>
       </trans-unit>
@@ -9990,6 +10010,10 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Khi tính năng này được bật, ứng dụng sẽ sử dụng độ sáng phần cứng để điều khiển độ sáng kết hợp thay vì điều khiển điều chỉnh độ sáng đỉnh SDR (điều khiển độ sáng HDR) được cung cấp bởi macOS. Bạn vẫn có thể điều chỉnh độ sáng đỉnh SDR trong Control Center - những điều chỉnh này sẽ ảnh hưởng đến việc tăng cường (nếu có) không gian đầu được cung cấp bởi ứng dụng. Không phải tất cả các màn hình đều hỗ trợ điều khiển độ sáng phần cứng trong chế độ HDR.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">Khi âm lượng đạt đến 0%…</target>
@@ -10155,8 +10179,8 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Bạn cũng có thể sử dụng ⌘ Command + Nhấp để di chuyển đến màn hình nguồn. Đặt phím tắt để quay lại trong Cài Đặt &gt; Bàn Phím!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
-        <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
+      <trans-unit id="You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
+        <source>You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
         <target state="translated">Bạn có thể muốn ẩn OSD âm lượng của macOS nếu thiết bị có các điều khiển âm thanh được quản lý bởi ứng dụng. Hữu ích cho các màn hình có OSD âm lượng riêng không thể tắt.</target>
         <note/>
       </trans-unit>
@@ -10438,6 +10462,14 @@ Hầu hết các màn hình không phép việc ghi EDID vì lý do bảo mật,
         <target state="translated">⚠️ Bảo vệ sẽ không có hiệu lực trừ khi vị trí tương đối được xác định.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ The specified audio device does not have native volume controls." xml:space="preserve">
+        <source>⚠️ The specified audio device does not have native volume controls.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
+        <source>⚠️ The specified audio device is not found or currently unavailable.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
         <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
         <target state="translated">⚠️ Không có điều khiển tùy chỉnh nào được cấu hình phù hợp như một tính năng DDC tùy chỉnh mới.</target>
@@ -10446,6 +10478,10 @@ Hầu hết các màn hình không phép việc ghi EDID vì lý do bảo mật,
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
         <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
         <target state="translated">⚠️ Màn hình này không hỗ trợ điều chỉnh bảng màu hoặc điều chỉnh bảng màu bị vô hiệu hóa. Ứng dụng sử dụng làm tối dựa trên lớp phủ hoặc điều chỉnh hình ảnh thay thế.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This display or connection does not support hardware control features." xml:space="preserve">
+        <source>⚠️ This display or connection does not support hardware control features.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
@@ -10480,6 +10516,10 @@ Bạn có chắc muốn tiếp tục không?</target>
       <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
         <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <target state="translated">⚠️ Hình ảnh không phản ánh đúng vì màn hình không ở hướng đúng cho cấu hình bảo vệ bố cục này!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." xml:space="preserve">
+        <source>⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
         <note/>
       </trans-unit>
     </body>

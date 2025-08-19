@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1366,9 +1366,17 @@ AliPay available in China.</source>
         <target state="translated">가상 화면을 이 디스플레이와 연결</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Associate this display with an audio device that has native volume controls" xml:space="preserve">
+        <source>Associate this display with an audio device that has native volume controls</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Associate this virtual screen with real display(s)" xml:space="preserve">
         <source>Associate this virtual screen with real display(s)</source>
         <target state="translated">가상 화면을 실제 디스플레이(들)에 연결</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Associated audio device name" xml:space="preserve">
+        <source>Associated audio device name</source>
         <note/>
       </trans-unit>
       <trans-unit id="Associated displays" xml:space="preserve">
@@ -1840,11 +1848,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">밝기 및 비디오</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
-        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
-        <target state="translated">Apple 디스플레이가 동기화 원본인 경우, Touch Bar, 주변 광 센서, 제어 센터 등을 통해 앱 외부에서 밝기 변경이 트리거될 수 있습니다. 통합 밝기와 소프트웨어 XDR 업스케일링을 사용할 때 이러한 동기화는 권장되지 않습니다 (네이티브 XDR 업스케일링을 대신 사용하세요).</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
         <source>Brightness control using native brightness keys</source>
         <target state="translated">기본 밝기 키를 사용한 밝기 제어</target>
@@ -2048,6 +2051,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Change the native brightness upscaling of ${displayEntity} to ${onOff}." xml:space="preserve">
         <source>Change the native brightness upscaling of ${displayEntity} to ${onOff}.</source>
         <target state="translated">${displayEntity}의 기본 밝기 업스케일링을 ${onOff} 상태로 변경합니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.)." xml:space="preserve">
+        <source>Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.).</source>
+        <target state="translated">변경은 앱 외부에서 트리거될 수 있습니다 (Touch Bar, 주변 광 센서, 제어 센터, 제어 통합 등).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -3684,9 +3692,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">통합 밝기 제어 및 소프트웨어 조정 복원 안 함</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do not synchronize brightness changes made using the app." xml:space="preserve">
-        <source>Do not synchronize brightness changes made using the app.</source>
-        <target state="translated">앱을 사용하여 변경한 밝기 변경 사항을 동기화하지 마세요.</target>
+      <trans-unit id="Do not synchronize changes made via the app." xml:space="preserve">
+        <source>Do not synchronize changes made via the app.</source>
+        <target state="translated">앱을 사용하여 변경한 사항을 동기화하지 마세요.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do nothing" xml:space="preserve">
@@ -6262,6 +6270,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">매개변수는 재사용 가능한 코드/텍스트 조각으로, 식별자를 참조하여 모든 통합 구성에서 호출할 수 있습니다. 예를 들어, ‘%1$@My parameter%2$@’ 코드는 ‘My parameter’로 식별된 매개변수 내용을 호출합니다. 식별자는 대소문자를 구분합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead." xml:space="preserve">
+        <source>Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
         <source>Paste</source>
         <target state="translated">붙여넣기</target>
@@ -7986,11 +7998,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">앱 메뉴에 표시</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show macOS volume OSD with keyboard control" xml:space="preserve">
-        <source>Show macOS volume OSD with keyboard control</source>
-        <target state="translated">키보드 컨트롤로 macOS 볼륨 OSD 표시</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show main display at the top" xml:space="preserve">
         <source>Show main display at the top</source>
         <target state="translated">상단에 메인 디스플레이 표시</target>
@@ -8044,6 +8051,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show subsliders for combined brightness control" xml:space="preserve">
         <source>Show subsliders for combined brightness control</source>
         <target state="translated">통합 밝기를 제어하기 위한 보조 슬라이더 표시</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show volume OSD with keyboard control" xml:space="preserve">
+        <source>Show volume OSD with keyboard control</source>
+        <target state="translated">키보드 컨트롤로 macOS 볼륨 OSD 표시</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
@@ -8214,6 +8226,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <target state="translated">이 동기화 항목에 영향을 받지 않을 그룹 구성원을 지정합니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify an audio device that has native volume controls which will be associated with the display." xml:space="preserve">
+        <source>Specify an audio device that has native volume controls which will be associated with the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -8436,9 +8452,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">%@ 동기화</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
-        <source>Synchronize brightness changes triggered externally</source>
-        <target state="translated">외부에 의한 밝기 변화 동기화</target>
+      <trans-unit id="Synchronize changes triggered externally" xml:space="preserve">
+        <source>Synchronize changes triggered externally</source>
+        <target state="translated">외부에 의해 트리거된 변경 사항 동기화</target>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize external changes only" xml:space="preserve">
@@ -8514,6 +8530,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
         <target state="translated">앱은 연결된 디스플레이의 사용 가능 여부에 따라 가상 화면을 자동으로 연결하거나 연결 해제할 수 있습니다. 또한 미러링 또는 스트리밍을 자동으로 시작하거나 연결된 디스플레이의 방향을 따라갈 수도 있습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The app controls the associated audio device specified below using the native audio control methods provided by macOS." xml:space="preserve">
+        <source>The app controls the associated audio device specified below using the native audio control methods provided by macOS.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
@@ -9444,8 +9464,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">사용 불가</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Under the app menu" xml:space="preserve">
-        <source>Under the app menu</source>
+      <trans-unit id="Under the app menu icon" xml:space="preserve">
+        <source>Under the app menu icon</source>
         <target state="translated">앱 메뉴 아래</target>
         <note/>
       </trans-unit>
@@ -9996,6 +10016,10 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
         <target state="translated">이 기능이 활성화되면 앱은 macOS에서 제공하는 SDR 최대 밝기 조정 제어(HDR 밝기 제어) 대신 하드웨어 밝기를 사용하여 통합된 밝기 제어를 수행합니다. 여전히 제어 센터에서 SDR 최대 밝기를 조정할 수 있으며, 이러한 조정은 앱이 제공하는 업스케일링(사용 가능한 경우) 여유에 영향을 미칩니다. 모든 디스플레이가 HDR 모드에서 하드웨어 밝기 제어를 지원하는 것은 아닙니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">볼륨이 0%에 도달하면…</target>
@@ -10161,8 +10185,8 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
         <target state="translated">⌘ 커맨드 + 클릭으로 소스 화면으로 이동할 수도 있습니다. 설정 &gt; 키보드에서 되돌아오는 이동 단축키를 지정하세요!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
-        <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
+      <trans-unit id="You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
+        <source>You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
         <target state="translated">장치에 앱으로 관리되는 오디오 컨트롤이 있는 경우 macOS 볼륨 OSD를 숨길 수 있습니다. 비활성화할 수 없는 자체 볼륨 OSD가 있는 디스플레이에 유용합니다.</target>
         <note/>
       </trans-unit>
@@ -10443,6 +10467,14 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ 상대 위치가 정의되지 않으면 보호 기능이 적용되지 않습니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ The specified audio device does not have native volume controls." xml:space="preserve">
+        <source>⚠️ The specified audio device does not have native volume controls.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
+        <source>⚠️ The specified audio device is not found or currently unavailable.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
         <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
         <target state="translated">⚠️ 새로운 사용자 정의 DDC 기능으로 적합하게 구성된 사용자 정의 컨트롤이 없습니다. </target>
@@ -10451,6 +10483,10 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
         <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
         <target state="translated">⚠️ 이 디스플레이는 색상표 조정을 지원하지 않거나 색상표 조정이 비활성화되어 있습니다. 앱은 대신 오버레이 기반의 화면 어둡게 처리나 이미지 조정을 사용합니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This display or connection does not support hardware control features." xml:space="preserve">
+        <source>⚠️ This display or connection does not support hardware control features.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
@@ -10485,6 +10521,10 @@ Are you sure you want to continue?</source>
       <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
         <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <target state="translated">⚠️ 디스플레이가 이 레이아웃 보호 구성에 적합한 방향이 아니므로 시각화가 표시되지 않습니다!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." xml:space="preserve">
+        <source>⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
         <note/>
       </trans-unit>
     </body>

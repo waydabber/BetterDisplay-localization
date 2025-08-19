@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1355,9 +1355,17 @@ Az AliPay Kínában érhető el.</target>
         <target state="translated">A virtuális képernyő társítása ehhez a kijelzőhöz</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Associate this display with an audio device that has native volume controls" xml:space="preserve">
+        <source>Associate this display with an audio device that has native volume controls</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Associate this virtual screen with real display(s)" xml:space="preserve">
         <source>Associate this virtual screen with real display(s)</source>
         <target state="translated">Ennek a virtuális képernyőnek a társítása valós kijelzőkkel</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Associated audio device name" xml:space="preserve">
+        <source>Associated audio device name</source>
         <note/>
       </trans-unit>
       <trans-unit id="Associated displays" xml:space="preserve">
@@ -1829,11 +1837,6 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <target state="translated">Fényerő és Video</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
-        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
-        <target state="translated">A fényerőt alkalmazáson események kívüli események is megváltoztathatják (Touch Bar, fényérzékelő, Vezérlőközpont stb.), ha a szinkronizálási forrás egy Apple kijelző. Ezek szinkronizálása nem ajánlott, ha kombinált fényerő- és szoftveres XDR-felskálázás van használatban (helyette a natív XDR-felskálázás használata javasolt).</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
         <source>Brightness control using native brightness keys</source>
         <target state="translated">Fényerő szabályozás a natív fényerő billentyűk használatával</target>
@@ -2036,6 +2039,11 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
       <trans-unit id="Change the native brightness upscaling of ${displayEntity} to ${onOff}." xml:space="preserve">
         <source>Change the native brightness upscaling of ${displayEntity} to ${onOff}.</source>
         <target state="translated">A(z) ${displayEntity} natív fényerő-felskálázásás beállítás módosítása ${onOff} állapotra.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.)." xml:space="preserve">
+        <source>Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.).</source>
+        <target state="translated">A változásokat alkalmazáson kívüli események is kiválthatják (Touch Bar, fényérzékelő, Vezérlőközpont, vezérlőintegráció stb.).</target>
         <note/>
       </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
@@ -3666,9 +3674,9 @@ A folyamat nem működik a beépített kijelzőn (újraindítás szükséges). A
         <target state="translated">Ne legyenek helyreállítva a kombinált fényerő és a szoftveres képbeállítások</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do not synchronize brightness changes made using the app." xml:space="preserve">
-        <source>Do not synchronize brightness changes made using the app.</source>
-        <target state="translated">Ne szinkronizálja az app által végrehajtott fényerő változtatásokat.</target>
+      <trans-unit id="Do not synchronize changes made via the app." xml:space="preserve">
+        <source>Do not synchronize changes made via the app.</source>
+        <target state="translated">Ne szinkronizálja az app által végrehajtott változtatásokat.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do nothing" xml:space="preserve">
@@ -6229,6 +6237,10 @@ Nem minden kijelző támogatja a DDC tápellátási műveleteket. A DDC tápell�
         <target state="translated">A paraméterek újrahasznosítható kódrészletek vagy szövegek, amelyekre bármely integrációs konfigurációban hivatkozni lehet az azonosítójuk alapján. Például a `%@My parameter%@` kód a `My parameter` nevű paraméter tartalmát fogja meghívni. Az azonosítók kis- és nagybetűérzékenyek.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead." xml:space="preserve">
+        <source>Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
         <source>Paste</source>
         <target state="translated">Beillesztés</target>
@@ -7943,11 +7955,6 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
         <target state="translated">Megjelenítés az alkalmazás menüben</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show macOS volume OSD with keyboard control" xml:space="preserve">
-        <source>Show macOS volume OSD with keyboard control</source>
-        <target state="translated">Hangerő OSD megjelenítése a billentyűs vezérlés során</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show main display at the top" xml:space="preserve">
         <source>Show main display at the top</source>
         <target state="translated">Főképernyő megjelenítése legelől</target>
@@ -7999,6 +8006,11 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
       <trans-unit id="Show subsliders for combined brightness control" xml:space="preserve">
         <source>Show subsliders for combined brightness control</source>
         <target state="translated">Kombinált fényerővezérlés al-csúszkáinak mutatása</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show volume OSD with keyboard control" xml:space="preserve">
+        <source>Show volume OSD with keyboard control</source>
+        <target state="translated">Hangerő OSD megjelenítése a billentyűs vezérlés során</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
@@ -8169,6 +8181,10 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
       <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <target state="translated">Adja meg azon tagok listáját, amelyeket ez a szinkronizálás nem érint.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify an audio device that has native volume controls which will be associated with the display." xml:space="preserve">
+        <source>Specify an audio device that has native volume controls which will be associated with the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -8390,9 +8406,9 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
         <target state="translated">%@ szinkronizálása</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
-        <source>Synchronize brightness changes triggered externally</source>
-        <target state="translated">Külsőleg kiváltott fényerő-változások szinkronizálása</target>
+      <trans-unit id="Synchronize changes triggered externally" xml:space="preserve">
+        <source>Synchronize changes triggered externally</source>
+        <target state="translated">Külsőleg kiváltott változások szinkronizálása</target>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize external changes only" xml:space="preserve">
@@ -8466,6 +8482,10 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
         <target state="translated">Az alkalmazás képes automatikusan csatlakoztatni és leválasztani egy virtuális képernyőt a hozzá tartozó kijelző(k) elérhetősége alapján. Emellett képes automatikusan elindítani a tükrözést vagy a streaminget, illetve követni a társított kijelző tájolását.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The app controls the associated audio device specified below using the native audio control methods provided by macOS." xml:space="preserve">
+        <source>The app controls the associated audio device specified below using the native audio control methods provided by macOS.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
@@ -9384,8 +9404,8 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Nem elérhető</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Under the app menu" xml:space="preserve">
-        <source>Under the app menu</source>
+      <trans-unit id="Under the app menu icon" xml:space="preserve">
+        <source>Under the app menu icon</source>
         <note/>
       </trans-unit>
       <trans-unit id="Underscan" xml:space="preserve">
@@ -9927,6 +9947,10 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Ha ez be van kapcsolva, az alkalmazás a hardveres fényerőszabályzást fogja használni a kombinált fényerő kezeléséhez a macOS által biztosított SDR csúcsfényerő (HDR fényerő) helyett. Az SDR csúcsfényerő továbbra is módosítható a Vezérlőközpontban – ezek a beállítások hatással lesznek az alkalmazás által biztosított (ha elérhető) felskálázási tartományra. Nem minden kijelző támogatja a hardveres fényerőszabályzást HDR módban.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">Amikor a hangerő 0%-ra csökken…</target>
@@ -10091,9 +10115,9 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">A forrásképernyőre való ugráshoz használhatja a ⌘ Command + Kattintás kombinációt is. Állítson be egy billentyűparancsot a visszaugráshoz a Beállítások &gt; Billentyűzet menüben!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
-        <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
-        <target state="translated">Érdemes lehet elrejteni a macOS hangerő OSD-jét, ha az eszköz rendelkezik az alkalmazás által kezelt hangvezérléssel. Hasznos olyan kijelzők esetére, amelyek saját, nem letiltható hangerő OSD-vel rendelkeznek.</target>
+      <trans-unit id="You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
+        <source>You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
+        <target state="translated">Érdemes lehet elrejteni a hangerő OSD-jét, ha az eszköz rendelkezik az alkalmazás által kezelt hangvezérléssel. Hasznos olyan kijelzők esetére, amelyek saját, nem letiltható hangerő OSD-vel rendelkeznek.</target>
         <note/>
       </trans-unit>
       <trans-unit id="You reached the maximum number of activations for this license key!&#10;&#10;A previous activation was automatically removed to make room for this new one." xml:space="preserve">
@@ -10373,6 +10397,14 @@ A legtöbb kijelző biztonsági okokból nem engedélyezi az EDID írást, néh�
         <target state="translated">⚠️ A védelem nem érvényes, amíg az elhelyezkedés nincs meghatározva.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ The specified audio device does not have native volume controls." xml:space="preserve">
+        <source>⚠️ The specified audio device does not have native volume controls.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
+        <source>⚠️ The specified audio device is not found or currently unavailable.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
         <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
         <target state="translated">⚠️ Nincs olyan egyéni vezérlő konfigurálva, amely új egyéni DDC-funkcióként használható lenne.</target>
@@ -10381,6 +10413,10 @@ A legtöbb kijelző biztonsági okokból nem engedélyezi az EDID írást, néh�
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
         <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
         <target state="translated">⚠️ Ez a kijelző nem támogatja a színtábla-módosításokat, vagy azok le vannak tiltva. Az alkalmazás helyette overlay alapú (átfedéses) sötétítést vagy képmódosítást használ.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This display or connection does not support hardware control features." xml:space="preserve">
+        <source>⚠️ This display or connection does not support hardware control features.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
@@ -10415,6 +10451,10 @@ Biztos, hogy folytatni szeretné?</target>
       <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
         <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <target state="translated">⚠️ A vizualizáció nem reprezentatív, mivel a kijelző nincs megfelelően forgatva ehhez az elrendezés-védelmi konfigurációhoz!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." xml:space="preserve">
+        <source>⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
         <note/>
       </trans-unit>
     </body>

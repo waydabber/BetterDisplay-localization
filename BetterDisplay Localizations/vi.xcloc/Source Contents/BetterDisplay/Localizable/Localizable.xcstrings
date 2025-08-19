@@ -458,10 +458,19 @@
     "⚠️ The protection is not in effect unless relative position is defined." : {
 
     },
+    "⚠️ The specified audio device does not have native volume controls." : {
+
+    },
+    "⚠️ The specified audio device is not found or currently unavailable." : {
+
+    },
     "⚠️ There is no custom control configured suitable as a new custom DDC feature." : {
 
     },
     "⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." : {
+
+    },
+    "⚠️ This display or connection does not support hardware control features." : {
 
     },
     "⚠️ This feature is not available in this version." : {
@@ -480,6 +489,9 @@
 
     },
     "⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" : {
+
+    },
+    "⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." : {
 
     },
     "0.5x" : {
@@ -1046,10 +1058,16 @@
     "Associate the virtual screen with this display" : {
 
     },
+    "Associate this display with an audio device that has native volume controls" : {
+
+    },
     "Associate this virtual screen with real display(s)" : {
 
     },
     "associated" : {
+
+    },
+    "Associated audio device name" : {
 
     },
     "Associated displays" : {
@@ -1325,9 +1343,6 @@
     "Brightness and Video" : {
 
     },
-    "Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." : {
-
-    },
     "Brightness control using native brightness keys" : {
 
     },
@@ -1456,6 +1471,9 @@
     },
     "Change the native brightness upscaling of ${displayEntity} to ${onOff}." : {
 
+    },
+    "Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.)." : {
+      "extractionState" : "manual"
     },
     "Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." : {
 
@@ -2447,8 +2465,8 @@
     "Do not restore combined brightness and software adjustments" : {
 
     },
-    "Do not synchronize brightness changes made using the app." : {
-
+    "Do not synchronize changes made via the app." : {
+      "extractionState" : "manual"
     },
     "Do nothing" : {
 
@@ -4029,6 +4047,9 @@
         }
       }
     },
+    "Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead." : {
+
+    },
     "Paste" : {
 
     },
@@ -5067,9 +5088,6 @@
     "Show in the app menu" : {
 
     },
-    "Show macOS volume OSD with keyboard control" : {
-
-    },
     "Show main display at the top" : {
 
     },
@@ -5122,6 +5140,9 @@
 
     },
     "Show subsliders for combined brightness control" : {
+
+    },
+    "Show volume OSD with keyboard control" : {
 
     },
     "Show warning notifications about color table anomalies" : {
@@ -5227,6 +5248,9 @@
 
     },
     "Specify a list of members that will not be affected by UI scale matching." : {
+
+    },
+    "Specify an audio device that has native volume controls which will be associated with the display." : {
 
     },
     "Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." : {
@@ -5361,8 +5385,8 @@
     "Synchronize %@" : {
 
     },
-    "Synchronize brightness changes triggered externally" : {
-
+    "Synchronize changes triggered externally" : {
+      "extractionState" : "manual"
     },
     "Synchronize external changes only" : {
 
@@ -5404,6 +5428,9 @@
 
     },
     "The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." : {
+
+    },
+    "The app controls the associated audio device specified below using the native audio control methods provided by macOS." : {
 
     },
     "The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" : {
@@ -5915,7 +5942,7 @@
     "Unavailable" : {
 
     },
-    "Under the app menu" : {
+    "Under the app menu icon" : {
 
     },
     "Underscan" : {
@@ -6276,6 +6303,9 @@
     "When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode." : {
 
     },
+    "When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." : {
+
+    },
     "When volume reaches 0%…" : {
 
     },
@@ -6385,7 +6415,7 @@
     "You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings > Keyboard!" : {
 
     },
-    "You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." : {
+    "You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." : {
 
     },
     "You reached the maximum number of activations for this license key!\n\nA previous activation was automatically removed to make room for this new one." : {
