@@ -79,6 +79,10 @@
         <target state="translated">%1$@ %2$lld Farklı yenileme hızlarına sahip ek renk modları mevcuttur.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ (tag ID: %lld)" xml:space="preserve">
+        <source>%1$@ (tag ID: %2$lld)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ - Active" xml:space="preserve">
         <source>%@ - Active</source>
         <target state="translated">%@ - Etkin</target>
@@ -237,6 +241,14 @@
       <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
         <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
         <target state="translated">%@ herhangi bir görüntü algılayamıyor. Bu, bir uygulama veya sistem hatasına işaret ediyor olabilir.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ must restart to apply the imported settings.&#10;&#10;If you imported settings from a different installation, macOS display identifiers (UUIDs) may not match with this installation. As a result, various imported settings may not get immediately applied to the connected displays.&#10;&#10;Use the 'Transfer display settings' feature under all affected display's additional settings to fix the identifier mismatch issue." xml:space="preserve">
+        <source>%@ must restart to apply the imported settings.
+
+If you imported settings from a different installation, macOS display identifiers (UUIDs) may not match with this installation. As a result, various imported settings may not get immediately applied to the connected displays.
+
+Use the 'Transfer display settings' feature under all affected display's additional settings to fix the identifier mismatch issue.</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ nits" xml:space="preserve">
@@ -916,6 +928,12 @@ Bunu Sistem Ayarları'ndan yapabilir veya uygulama sizin için yapabilir (yönet
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
         <source>All previously dismissed warnings will now be back.</source>
         <target state="translated">Daha önce reddedilen tüm uyarılar şimdi geri alınacaktır.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All settings of this display will be replaced by the settings of the currently disconnected display %@ and the currently disconnected display %@ will be forgotten by the app.&#10;&#10;This change cannot be undone. Are you sure you want to do this?" xml:space="preserve">
+        <source>All settings of this display will be replaced by the settings of the currently disconnected display %1$@ and the currently disconnected display %2$@ will be forgotten by the app.
+
+This change cannot be undone. Are you sure you want to do this?</source>
         <note/>
       </trans-unit>
       <trans-unit id="All suitable screens" xml:space="preserve">
@@ -4123,6 +4141,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Deneysel özellik</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Export App Settings…" xml:space="preserve">
+        <source>Export App Settings…</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
         <target state="translated">Ekran Bilgilerini Dışa Aktar…</target>
@@ -4867,6 +4889,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Image adjustments for ${displayEntity} is ${onOff}." xml:space="preserve">
         <source>Image adjustments for ${displayEntity} is ${onOff}.</source>
         <target state="translated">${displayEntity} için görüntü ayarlamaları ${onOff} şeklindedir.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Import App Settings…" xml:space="preserve">
+        <source>Import App Settings…</source>
         <note/>
       </trans-unit>
       <trans-unit id="In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency)." xml:space="preserve">
@@ -6168,6 +6194,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <source>Open in ColorSync Utility</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Operation failed: %@" xml:space="preserve">
+        <source>Operation failed: %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Opted-out" xml:space="preserve">
         <source>Opted-out</source>
         <target state="translated">Devre dışı bırakılmış</target>
@@ -7445,6 +7475,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <target state="translated">Sanal ekran için ortak bir en boy oranı seçin. Uygulama buna göre esnek bir çözünürlük listesi oluşturur.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Select a disconnected display" xml:space="preserve">
+        <source>Select a disconnected display</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`." xml:space="preserve">
         <source>Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`.</source>
         <note/>
@@ -7752,6 +7786,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
         <source>Settings made with the app are protected.</source>
         <target state="translated">Uygulama ile yapılan ayarlar korunmaktadır.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settings successfully imported" xml:space="preserve">
+        <source>Settings successfully imported</source>
         <note/>
       </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
@@ -9166,6 +9204,18 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
         <target state="translated">Geleneksel açılır pencereler</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Transfer" xml:space="preserve">
+        <source>Transfer</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer Display Settings" xml:space="preserve">
+        <source>Transfer Display Settings</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer display settings" xml:space="preserve">
+        <source>Transfer display settings</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
         <source>Treat all currently connected displays as group members</source>
         <target state="translated">Şu anda bağlı olan tüm ekranları grup üyesi olarak değerlendirin</target>
@@ -9976,6 +10026,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       <trans-unit id="Wireless" xml:space="preserve">
         <source>Wireless</source>
         <target state="translated">Kablosuz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation." xml:space="preserve">
+        <source>With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation.</source>
         <note/>
       </trans-unit>
       <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
