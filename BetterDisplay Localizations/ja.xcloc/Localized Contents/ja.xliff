@@ -120,6 +120,7 @@
       </trans-unit>
       <trans-unit id="%@ (tag ID: %lld)" xml:space="preserve">
         <source>%1$@ (tag ID: %2$lld)</source>
+        <target state="translated">%1$@ （タグID: %2$lld）</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ - Active" xml:space="preserve">
@@ -288,6 +289,11 @@
 If you imported settings from a different installation, macOS display identifiers (UUIDs) may not match with this installation. As a result, various imported settings may not get immediately applied to the connected displays.
 
 Use the 'Transfer display settings' feature under all affected display's additional settings to fix the identifier mismatch issue.</source>
+        <target state="translated">読み込んだ設定を適用するには、%@ を再起動する必要があります。
+
+別のインストールから設定を読み込んだ場合、macOS のディスプレイ識別子 (UUID) がこのインストールと一致しないことがあります。そのため、読み込んださまざまな設定が、接続されたディスプレイにすぐに適用されないことがあります。
+
+影響を受けたすべてのディスプレイの追加設定にある「ディスプレイ設定を転送」機能を使用して、識別子が一致しない問題を解決してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ nits" xml:space="preserve">
@@ -983,6 +989,9 @@ You can do this in System Settings or the app can do it for you (administrator c
         <source>All settings of this display will be replaced by the settings of the currently disconnected display %1$@ and the currently disconnected display %2$@ will be forgotten by the app.
 
 This change cannot be undone. Are you sure you want to do this?</source>
+        <target state="translated">このディスプレイのすべての設定は、現在切断したディスプレイ %1$@ の設定に置き換えられ、現在切断しているディスプレイ %2$@ の設定はアプリから削除されます。
+
+この変更は取り消せません。本当に実行してもよろしいですか?</target>
         <note/>
       </trans-unit>
       <trans-unit id="All suitable screens" xml:space="preserve">
@@ -4202,21 +4211,22 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Export App Settings…" xml:space="preserve">
         <source>Export App Settings…</source>
+        <target state="translated">アプリ設定を書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
-        <target state="translated">ディスプレイ情報をエクスポート…</target>
+        <target state="translated">ディスプレイ情報を書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
         <source>Export EDID Data…</source>
-        <target state="translated">EDIDデータをエクスポート…</target>
+        <target state="translated">EDIDデータを書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export…" xml:space="preserve">
         <source>Export…</source>
-        <target state="translated">エクスポート…</target>
+        <target state="translated">書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Exposure" xml:space="preserve">
@@ -4959,6 +4969,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Import App Settings…" xml:space="preserve">
         <source>Import App Settings…</source>
+        <target state="translated">アプリ設定を読み込む…</target>
         <note/>
       </trans-unit>
       <trans-unit id="In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency)." xml:space="preserve">
@@ -5393,7 +5404,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
         <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
-        <target state="translated">%@（またはその他のツール）によってエクスポートしたEDIDバイナリイメージをロードします。AW EDID EditorのようなEDIDエディタで作成/変更したEDIDバイナリも使用できます。EDIDイメージのBase64テキスト表現がある場合は、「Base64をペースト」ボタンを使用してロードします。</target>
+        <target state="translated">%@（またはその他のツール）によって書き出したEDIDバイナリイメージをロードします。AW EDID EditorのようなEDIDエディタで作成/変更したEDIDバイナリも使用できます。EDIDイメージのBase64テキスト表現がある場合は、「Base64をペースト」ボタンを使用してロードします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -6268,6 +6279,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Operation failed: %@" xml:space="preserve">
         <source>Operation failed: %@</source>
+        <target state="translated">操作が失敗しました：%@</target>
         <note/>
       </trans-unit>
       <trans-unit id="Opted-out" xml:space="preserve">
@@ -6787,7 +6799,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reconnect all disconnected displays that are detected on startup. Helps if a display is stranded as disconnected in case of an app crash or forced quit." xml:space="preserve">
         <source>Reconnect all disconnected displays that are detected on startup. Helps if a display is stranded as disconnected in case of an app crash or forced quit.</source>
-        <target state="translated">起動時に検出したすべての切断されたディスプレイを再接続します。アプリのクラッシュや強制終了した場合に、ディスプレイが切断されたままになっている場合に役立ちます。</target>
+        <target state="translated">起動時に検出されたすべての切断したディスプレイを再接続します。アプリのクラッシュや強制終了した場合に、ディスプレイが切断されたままになっている場合に役立ちます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reconnect all remaining connected virtual screens after disconnecting one" xml:space="preserve">
@@ -7559,6 +7571,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Select a disconnected display" xml:space="preserve">
         <source>Select a disconnected display</source>
+        <target state="translated">切断したディスプレイを選択</target>
         <note/>
       </trans-unit>
       <trans-unit id="Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`." xml:space="preserve">
@@ -7873,6 +7886,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Settings successfully imported" xml:space="preserve">
         <source>Settings successfully imported</source>
+        <target state="translated">設定を正常に読み込み完了</target>
         <note/>
       </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
@@ -8142,7 +8156,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
-        <target state="translated">以前に検出したすべてのディスプレイを表示します。ディスプレイがオフラインの場合でも、構成を変更することが可能です。</target>
+        <target state="translated">以前に検出されたすべてのディスプレイを表示します。ディスプレイがオフラインの場合でも、構成を変更することが可能です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Shows an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
@@ -8739,7 +8753,7 @@ This operation does not reset the display itself.</source>
 A new display group with the name '%@' was created. The display group is currently not enabled.
 
 Enable and configure the created display group (including layout protection) under Settings &gt; Groups!</source>
-        <target state="translated">操作は正しく完了しました。
+        <target state="translated">操作は正常に完了しました。
 
 「%@」 という名前の新規ディスプレイグループが作成されました。ディスプレイグループは現在有効化されていません。
 
@@ -9309,14 +9323,17 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Transfer" xml:space="preserve">
         <source>Transfer</source>
+        <target state="translated">転送</target>
         <note/>
       </trans-unit>
       <trans-unit id="Transfer Display Settings" xml:space="preserve">
         <source>Transfer Display Settings</source>
+        <target state="translated">ディスプレイ設定を転送</target>
         <note/>
       </trans-unit>
       <trans-unit id="Transfer display settings" xml:space="preserve">
         <source>Transfer display settings</source>
+        <target state="translated">ディスプレイ設定を転送</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
@@ -10141,6 +10158,8 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation." xml:space="preserve">
         <source>With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation.</source>
+        <target state="translated">設定転送により、このディスプレイの設定は、選択された切断したディスプレイの設定に置き換えられます。これはディスプレイの識別子が変更された場合や、アプリの設定が別のインストールから読み込みまたは移行された場合に、ディスプレイ設定を割り当て直すために使用できます。
+</target>
         <note/>
       </trans-unit>
       <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
