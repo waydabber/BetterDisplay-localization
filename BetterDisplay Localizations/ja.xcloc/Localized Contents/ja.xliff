@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -29,14 +29,53 @@
       </trans-unit>
     </body>
   </file>
+  <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
+    </header>
+    <body>
+      <trans-unit id="Error Reporting" xml:space="preserve">
+        <source>Error Reporting</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If you deny these connections, the app will not send crash reports to the developer. Crash reporting is handled by Sentry (sentry.io)." xml:space="preserve">
+        <source>If you deny these connections, the app will not send crash reports to the developer. Crash reporting is handled by Sentry (sentry.io).</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If you deny these connections, you will not be able to purchase or activate a Pro license. Licensing is managed by Paddle (paddle.com)." xml:space="preserve">
+        <source>If you deny these connections, you will not be able to purchase or activate a Pro license. Licensing is managed by Paddle (paddle.com).</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="If you deny these connections, you will not be notified about new versions and will not be able to update to newer app versions using the app's UI." xml:space="preserve">
+        <source>If you deny these connections, you will not be notified about new versions and will not be able to update to newer app versions using the app's UI.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Licensing" xml:space="preserve">
+        <source>Licensing</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Software Update" xml:space="preserve">
+        <source>Software Update</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="User Defined Custom Integration" xml:space="preserve">
+        <source>User Defined Custom Integration</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You may create network based custom controls (for example to control a network-enabled device like a TV, ampliifer) in the app that can connect to any hosts you specify on your local network or over the Internet. If you deny these connections, these custom controls will not work." xml:space="preserve">
+        <source>You may create network based custom controls (for example to control a network-enabled device like a TV, ampliifer) in the app that can connect to any hosts you specify on your local network or over the Internet. If you deny these connections, these custom controls will not work.</source>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ja" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5295f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0" build-num="17A5305f"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
         <source/>
-        <target state="translated"/>
+        <target state="needs-translation"/>
         <note/>
       </trans-unit>
       <trans-unit id="%" xml:space="preserve">
@@ -79,6 +118,11 @@
         <target state="translated">%1$@ %2$lldリフレッシュレートが異なる追加のカラーモードが使用可能です。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ (tag ID: %lld)" xml:space="preserve">
+        <source>%1$@ (tag ID: %2$lld)</source>
+        <target state="translated">%1$@ （タグID: %2$lld）</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ - Active" xml:space="preserve">
         <source>%@ - Active</source>
         <target state="translated">%@ - 有効</target>
@@ -96,7 +140,7 @@
       </trans-unit>
       <trans-unit id="%@ Associated display mirroring is enforced!" xml:space="preserve">
         <source>%@ Associated display mirroring is enforced!</source>
-        <target state="translated">%@ ディスプレイミラーリングが強制されます!</target>
+        <target state="translated">%@ 関連付けたディスプレイミラーリングが強制されます!</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Built-in display panels have a single fixed internal connection mode." xml:space="preserve">
@@ -171,7 +215,7 @@
       </trans-unit>
       <trans-unit id="%@ Stream auto-starts to associated display!" xml:space="preserve">
         <source>%@ Stream auto-starts to associated display!</source>
-        <target state="translated">%@ 関連するディスプレイへのストリーミングを自動的に開始します!</target>
+        <target state="translated">%@ 関連付けたディスプレイへのストリーミングを自動的に開始します!</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ The app is disengaged from native brightness keys." xml:space="preserve">
@@ -237,6 +281,19 @@
       <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
         <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
         <target state="translated">%@はディスプレイを検出できません。アプリケーションまたはシステムのエラーの可能性があります。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ must restart to apply the imported settings.&#10;&#10;If you imported settings from a different installation, macOS display identifiers (UUIDs) may not match with this installation. As a result, various imported settings may not get immediately applied to the connected displays.&#10;&#10;Use the 'Transfer display settings' feature under all affected display's additional settings to fix the identifier mismatch issue." xml:space="preserve">
+        <source>%@ must restart to apply the imported settings.
+
+If you imported settings from a different installation, macOS display identifiers (UUIDs) may not match with this installation. As a result, various imported settings may not get immediately applied to the connected displays.
+
+Use the 'Transfer display settings' feature under all affected display's additional settings to fix the identifier mismatch issue.</source>
+        <target state="translated">読み込んだ設定を適用するには、%@ を再起動する必要があります。
+
+別のインストールから設定を読み込んだ場合、macOS のディスプレイ識別子 (UUID) がこのインストールと一致しないことがあります。そのため、読み込んださまざまな設定が、接続されたディスプレイにすぐに適用されないことがあります。
+
+影響を受けたすべてのディスプレイの追加設定にある「ディスプレイ設定を転送」機能を使用して、識別子が一致しない問題を解決してください。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ nits" xml:space="preserve">
@@ -541,12 +598,12 @@ Thank you for your understanding and continued support.</source>
       </trans-unit>
       <trans-unit id="A virtual screen which is associated with a display will automatically connect when the associated display is connected. All other virtual screens were connected. You can disable auto-connect for associated virtual screens." xml:space="preserve">
         <source>A virtual screen which is associated with a display will automatically connect when the associated display is connected. All other virtual screens were connected. You can disable auto-connect for associated virtual screens.</source>
-        <target state="translated">ディスプレイに関連づけた仮想スクリーンは、関連づけたディスプレイを接続する場合に自動的に接続されます。その他のすべての仮想スクリーンは接続されたままです。関連づけた仮想スクリーンの自動接続を無効化することができます。</target>
+        <target state="translated">ディスプレイに関連付けた仮想スクリーンは、関連付けたディスプレイを接続すると、自動的に接続されます。その他のすべての仮想スクリーンは接続されたままです。関連付けた仮想スクリーンの自動接続を無効化することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="A virtual screen which is associated with a display will automatically disconnect when the associated display is disconnected. All other virtual screens were disconnected. You can disable auto-disconnect for associated virtual screens." xml:space="preserve">
         <source>A virtual screen which is associated with a display will automatically disconnect when the associated display is disconnected. All other virtual screens were disconnected. You can disable auto-disconnect for associated virtual screens.</source>
-        <target state="translated">ディスプレイに関連づけた仮想スクリーンは、関連づけたディスプレイを切断すると自動的に切断されます。その他の仮想スクリーンもすべて切断されます。関連づけた仮想スクリーンの自動切断を無効化することができます。</target>
+        <target state="translated">ディスプレイに関連付けた仮想スクリーンは、関連付けたディスプレイを切断すると、自動的に切断されます。その他の仮想スクリーンもすべて切断されます。関連付けた仮想スクリーンの自動切断を無効化することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="A virtual screen which is associated with a display will connect or disconnect automatically when the associated display is connected or disconnected." xml:space="preserve">
@@ -926,6 +983,15 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="All previously dismissed warnings will now be back." xml:space="preserve">
         <source>All previously dismissed warnings will now be back.</source>
         <target state="translated">これまで閉じた警告がすべて復活します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="All settings of this display will be replaced by the settings of the currently disconnected display %@ and the currently disconnected display %@ will be forgotten by the app.&#10;&#10;This change cannot be undone. Are you sure you want to do this?" xml:space="preserve">
+        <source>All settings of this display will be replaced by the settings of the currently disconnected display %1$@ and the currently disconnected display %2$@ will be forgotten by the app.
+
+This change cannot be undone. Are you sure you want to do this?</source>
+        <target state="translated">このディスプレイのすべての設定は、現在切断したディスプレイ %1$@ の設定に置き換えられ、現在切断しているディスプレイ %2$@ の設定はアプリから削除されます。
+
+この変更は取り消せません。本当に実行してもよろしいですか?</target>
         <note/>
       </trans-unit>
       <trans-unit id="All suitable screens" xml:space="preserve">
@@ -1365,9 +1431,19 @@ AliPayは中国で利用可能です。</target>
         <target state="translated">仮想スクリーンをこのディスプレイに関連付ける</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Associate this display with an audio device that has native volume controls" xml:space="preserve">
+        <source>Associate this display with an audio device that has native volume controls</source>
+        <target state="translated">このディスプレイを、ネイティブ音量制御を持つデバイスに関連付ける</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Associate this virtual screen with real display(s)" xml:space="preserve">
         <source>Associate this virtual screen with real display(s)</source>
         <target state="translated">この仮想スクリーンを実ディスプレイに関連付ける</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Associated audio device name" xml:space="preserve">
+        <source>Associated audio device name</source>
+        <target state="translated">関連付けたオーディオデバイス名</target>
         <note/>
       </trans-unit>
       <trans-unit id="Associated displays" xml:space="preserve">
@@ -1377,7 +1453,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Associated to" xml:space="preserve">
         <source>Associated to</source>
-        <target state="translated">関連付けた</target>
+        <target state="translated">次に関連付け: </target>
         <note/>
       </trans-unit>
       <trans-unit id="Association settings" xml:space="preserve">
@@ -1471,7 +1547,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Auto-connect virtual screen when all associated screens are offline" xml:space="preserve">
         <source>Auto-connect virtual screen when all associated screens are offline</source>
-        <target state="translated">関連するすべてのスクリーンがオフラインのときに仮想スクリーンを自動接続</target>
+        <target state="translated">関連付けたすべてのスクリーンがオフラインのときに仮想スクリーンを自動接続</target>
         <note/>
       </trans-unit>
       <trans-unit id="Auto-disconnect on external display connection is now suspended." xml:space="preserve">
@@ -1511,22 +1587,22 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Automatically configure mirroring to show the virtual screen's content on the associated display." xml:space="preserve">
         <source>Automatically configure mirroring to show the virtual screen's content on the associated display.</source>
-        <target state="translated">仮想スクリーンのコンテンツを、関連づけたディスプレイに表示するよう、ミラーリングの構成を自動的に行います。</target>
+        <target state="translated">仮想スクリーンのコンテンツを、関連付けたディスプレイに表示するよう、ミラーリングの構成を自動的に行います。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically configure mirroring to show the virtual screen's content on the associated display. If multiple associated displays are connected, only one will be mirror target." xml:space="preserve">
         <source>Automatically configure mirroring to show the virtual screen's content on the associated display. If multiple associated displays are connected, only one will be mirror target.</source>
-        <target state="translated">関連づけたディスプレイへの仮想スクリーンコンテンツのミラーリング表示を自動的に構成します。関連づけたディスプレイが複数接続されている場合は、1つだけがミラーリングターゲットになります。</target>
+        <target state="translated">関連付けたディスプレイへの仮想スクリーンコンテンツのミラーリング表示を自動的に構成します。関連付けたディスプレイが複数接続されている場合は、1つだけがミラーリングターゲットになります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically connect the virtual screen when all associated displays are offline and disconnect when not." xml:space="preserve">
         <source>Automatically connect the virtual screen when all associated displays are offline and disconnect when not.</source>
-        <target state="translated">関連するすべてのディスプレイがオフラインのときに仮想スクリーンを自動的に接続し、そうでないときには切断します。</target>
+        <target state="translated">関連付けたすべてのディスプレイがオフラインのときに仮想スクリーンを自動的に接続し、そうでないときには切断します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically connect the virtual screen when an associated display is online and disconnect when it is not." xml:space="preserve">
         <source>Automatically connect the virtual screen when an associated display is online and disconnect when it is not.</source>
-        <target state="translated">関連するディスプレイがオンラインになった場合は自動的に仮想スクリーンを接続し、オンラインでないときには切断します。</target>
+        <target state="translated">関連付けたディスプレイがオンラインになった場合は自動的に仮想スクリーンを接続し、オンラインでないときには切断します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Automatically disable off both Night Shift and True Tone when an external third party display is set to HDR mode and enable them when switching back to SDR mode. Useful for more accurate colors when watching HDR content." xml:space="preserve">
@@ -1571,7 +1647,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Back to Control Integration Configuration…" xml:space="preserve">
         <source>Back to Control Integration Configuration…</source>
-        <target state="translated">統合制御構成に戻る…</target>
+        <target state="translated">制御統合構成に戻る…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Back to DDC Controls…" xml:space="preserve">
@@ -1789,6 +1865,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">輝度（複合、アップスケーリング）</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
+        <source>Brightness (Compositor Upscaling)</source>
+        <target state="translated">輝度（コンポジターアップスケーリング）</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
         <source>Brightness (Hardware)</source>
         <target state="translated">輝度（ハードウェア）</target>
@@ -1806,7 +1887,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Brightness (Native XDR Upscaling)" xml:space="preserve">
         <source>Brightness (Native XDR Upscaling)</source>
-        <target state="translated">輝度（ネイティブXDRスケーリング）</target>
+        <target state="translated">輝度（ネイティブXDRアップスケーリング）</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Software Upscaling)" xml:space="preserve">
@@ -1837,11 +1918,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Brightness and Video" xml:space="preserve">
         <source>Brightness and Video</source>
         <target state="translated">輝度とビデオ</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." xml:space="preserve">
-        <source>Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead).</source>
-        <target state="translated">同期ソースがApple製ディスプレイの場合、輝度変化はアプリ以外（Touch Bar、環境光センサー、コントロールセンターなど）によって引き起こされることがあります。輝度とソフトウェアXDRアップスケーリングを組み合わせて使用する場合には、これらを同期させないでください（代わりにネイティブXDRアップスケーリングを使用してください）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness control using native brightness keys" xml:space="preserve">
@@ -2049,6 +2125,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">${displayEntity}のネイティブ輝度アップスケーリングを${onOff}に変更します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.)." xml:space="preserve">
+        <source>Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.).</source>
+        <target state="translated">変更はアプリ以外（Touch Bar、環境光センサー、コントロールセンター、制御統合など）によって引き起こされる場合があります。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." xml:space="preserve">
         <source>Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings.</source>
         <target state="translated">この設定を変更しても、既存のディスプレイには影響しません。ディスプレイの識別方法は、各ディスプレイの追加設定でディスプレイごとに変更することができます。</target>
@@ -2146,7 +2227,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations." xml:space="preserve">
         <source>Color changes, upscaling and dimming via color table adjustments clip HDR content. With this enabled, the app resets the color table when no adjustments are needed. This might be distracting or cause a black screen on some configurations.</source>
-        <target state="translated">カラー変更、アップスケール、カラーテーブル調整によるディミングはHDRコンテンツをクリップします。有効化した場合は、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり暗転したままになることがあります。</target>
+        <target state="translated">カラー変更、アップスケーリング、カラーテーブル調整によるディミングはHDRコンテンツをクリップします。有効化した場合は、調整が不要な場合にカラーテーブルをリセットします。このため構成によっては、画面がおかしくなったり暗転したままになることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Color mode changed for %@." xml:space="preserve">
@@ -2391,7 +2472,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Connect all disassociated virtual screens" xml:space="preserve">
         <source>Connect all disassociated virtual screens</source>
-        <target state="translated">切断したすべての仮想スクリーンを接続</target>
+        <target state="translated">関連付けを解除したすべての仮想スクリーンを接続</target>
         <note/>
       </trans-unit>
       <trans-unit id="Connect all displays" xml:space="preserve">
@@ -2621,12 +2702,12 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Current audio device has no native volume control" xml:space="preserve">
         <source>Current audio device has no native volume control</source>
-        <target state="translated">現在のオーディオ装置にはネイティブ音量制御なし</target>
+        <target state="translated">現在のオーディオデバイスにはネイティブ音量制御なし</target>
         <note/>
       </trans-unit>
       <trans-unit id="Current audio device matches a controllable display's name" xml:space="preserve">
         <source>Current audio device matches a controllable display's name</source>
-        <target state="translated">制御可能なディスプレイ名と現在のオーディオ装置とが一致</target>
+        <target state="translated">制御可能なディスプレイ名と現在のオーディオデバイスとが一致</target>
         <note/>
       </trans-unit>
       <trans-unit id="Current default resolution" xml:space="preserve">
@@ -3346,7 +3427,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Disconnect all disassociated virtual screens" xml:space="preserve">
         <source>Disconnect all disassociated virtual screens</source>
-        <target state="translated">すべての仮想スクリーンを切断</target>
+        <target state="translated">関連付けを解除したすべての仮想スクリーンを切断</target>
         <note/>
       </trans-unit>
       <trans-unit id="Disconnect all displays except main" xml:space="preserve">
@@ -3626,7 +3707,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Display with the same name as current audio device" xml:space="preserve">
         <source>Display with the same name as current audio device</source>
-        <target state="translated">現在のオーディオ装置と同じ名前のディスプレイ</target>
+        <target state="translated">現在のオーディオデバイスと同じ名前のディスプレイ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Displays" xml:space="preserve">
@@ -3683,9 +3764,9 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">複合輝度とソフトウェア調整を復元しない</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Do not synchronize brightness changes made using the app." xml:space="preserve">
-        <source>Do not synchronize brightness changes made using the app.</source>
-        <target state="translated">アプリを使用した輝度変更は同期しません。</target>
+      <trans-unit id="Do not synchronize changes made via the app." xml:space="preserve">
+        <source>Do not synchronize changes made via the app.</source>
+        <target state="translated">アプリを使用した変更は同期しません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Do nothing" xml:space="preserve">
@@ -3958,6 +4039,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">フレキシブルスケーリング、カスタムスケール解像度の作成、ネイティブ解像度とデフォルトの解像度の変更、ディスプレイ名と役割の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable glass compositor filter (experimental)" xml:space="preserve">
+        <source>Enable glass compositor filter (experimental)</source>
+        <target state="translated">グラスコンポジターフィルタを有効化（実験的）</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
         <source>Enable hardware brightness control</source>
         <target state="translated">ハードウェア輝度制御を有効化</target>
@@ -3986,6 +4072,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable native XDR brightness upscaling" xml:space="preserve">
         <source>Enable native XDR brightness upscaling</source>
         <target state="translated">ネイティブXDR輝度アップスケーリングを有効化</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable native auto brightness management" xml:space="preserve">
+        <source>Enable native auto brightness management</source>
+        <target state="translated">ネイティブ自動輝度マネージメントを有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable or disable auto brightness for an Apple display." xml:space="preserve">
@@ -4133,19 +4224,24 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">実験的機能</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Export App Settings…" xml:space="preserve">
+        <source>Export App Settings…</source>
+        <target state="translated">アプリ設定を書き出す…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
-        <target state="translated">ディスプレイ情報をエクスポート…</target>
+        <target state="translated">ディスプレイ情報を書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export EDID Data…" xml:space="preserve">
         <source>Export EDID Data…</source>
-        <target state="translated">EDIDデータをエクスポート…</target>
+        <target state="translated">EDIDデータを書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Export…" xml:space="preserve">
         <source>Export…</source>
-        <target state="translated">エクスポート…</target>
+        <target state="translated">書き出す…</target>
         <note/>
       </trans-unit>
       <trans-unit id="Exposure" xml:space="preserve">
@@ -4609,7 +4705,7 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       </trans-unit>
       <trans-unit id="Helps with certain displays with DDC read issues." xml:space="preserve">
         <source>Helps with certain displays with DDC read issues.</source>
-        <target state="translated">DDC読み取りに失敗する特定のディスプレイを支援します。</target>
+        <target state="translated">DDC読み取りに問題がある特定のディスプレイを支援します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Hex value" xml:space="preserve">
@@ -4774,7 +4870,7 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       </trans-unit>
       <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
         <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
-        <target state="translated">キーボード制御が現在のオーディオ装置と同じ名前のディスプレイに設定されているとき（キーボード設定）、ディスプレイ名の代わりにこの値をオーディオ装置のマッチングに使用します。</target>
+        <target state="translated">キーボード制御が現在のオーディオデバイスと同じ名前のディスプレイに設定されているとき（キーボード設定）、ディスプレイ名の代わりにこの値をオーディオ装置のマッチングに使用します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
@@ -4884,6 +4980,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Image adjustments for ${displayEntity} is ${onOff}." xml:space="preserve">
         <source>Image adjustments for ${displayEntity} is ${onOff}.</source>
         <target state="translated">${displayEntity}の画像調整は${onOff}です。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Import App Settings…" xml:space="preserve">
+        <source>Import App Settings…</source>
+        <target state="translated">アプリ設定を読み込む…</target>
         <note/>
       </trans-unit>
       <trans-unit id="In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency)." xml:space="preserve">
@@ -5223,12 +5324,12 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Let the virtual screen auto-connect when the associated display is connected. Enabling this will cause the virtual screen to be connected right after creation!" xml:space="preserve">
         <source>Let the virtual screen auto-connect when the associated display is connected. Enabling this will cause the virtual screen to be connected right after creation!</source>
-        <target state="translated">関連づけたディスプレイを接続したとき、仮想スクリーンを自動的に接続します。これを有効化すると、作成と同時に仮想スクリーンを接続します!</target>
+        <target state="translated">関連付けたディスプレイを接続したとき、仮想スクリーンを自動的に接続します。これを有効化すると、作成と同時に仮想スクリーンを接続します!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let the virtual screen follow the orientation of the associated display when it is rotated." xml:space="preserve">
         <source>Let the virtual screen follow the orientation of the associated display when it is rotated.</source>
-        <target state="translated">関連づけたディスプレイを回転させた場合、仮想スクリーンをその向きに合わせます。</target>
+        <target state="translated">関連付けたディスプレイを回転させた場合、仮想スクリーンをその向きに合わせます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let various adjustments like display brightness, contrast, etc. synchronize among members of the display group based on the configured rules." xml:space="preserve">
@@ -5318,7 +5419,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it." xml:space="preserve">
         <source>Load an EDID binary image exported by %@ (or other tools). You can also use an EDID binary created/modified by an EDID editor like AW EDID Editor. If you have a Base64 text representation of an EDID image, use the 'Paste Base64' button to load it.</source>
-        <target state="translated">%@（またはその他のツール）によってエクスポートしたEDIDバイナリイメージをロードします。AW EDID EditorのようなEDIDエディタで作成/変更したEDIDバイナリも使用できます。EDIDイメージのBase64テキスト表現がある場合は、「Base64をペースト」ボタンを使用してロードします。</target>
+        <target state="translated">%@（またはその他のツール）によって書き出したEDIDバイナリイメージをロードします。AW EDID EditorのようなEDIDエディタで作成/変更したEDIDバイナリも使用できます。EDIDイメージのBase64テキスト表現がある場合は、「Base64をペースト」ボタンを使用してロードします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Loaded EDID Data" xml:space="preserve">
@@ -5483,7 +5584,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Matching audio device name" xml:space="preserve">
         <source>Matching audio device name</source>
-        <target state="translated">オーディオ装置名を一致させる</target>
+        <target state="translated">オーディオデバイス名を一致させる</target>
         <note/>
       </trans-unit>
       <trans-unit id="Matching tolerance" xml:space="preserve">
@@ -5903,7 +6004,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Newly connected displays are normally treated as possibly affected displays only. With this enabled newly connected displays will be checked against watched display list as well." xml:space="preserve">
         <source>Newly connected displays are normally treated as possibly affected displays only. With this enabled newly connected displays will be checked against watched display list as well.</source>
-        <target state="translated">通常は、新規に接続したディスプレイは、影響を受ける可能性のあるディスプレイとしてのみ扱います。有効化した場合は、新規に接続したディスプレイも監視対象ディスプレイリストと照合します。</target>
+        <target state="translated">通常は、新規に接続したディスプレイは、影響を浮ける可能性のあるディスプレイとしてのみ扱います。有効化した場合は、新規に接続したディスプレイも監視対象ディスプレイリストと照合します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
@@ -6048,7 +6149,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs." xml:space="preserve">
         <source>Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs.</source>
-        <target state="translated">注意：独自の音量OSDを持つディスプレイの場合、設定 &gt; ディスプレイ &gt; （個々のディスプレイ） &gt; 音量コントロール… で、ディスプレイごとに音量OSDを無効化することができます。</target>
+        <target state="translated">注意：独自の音量OSDを持つディスプレイの場合、設定 &gt; ディスプレイ &gt; （個々のディスプレイ） &gt; 音量制御 … で、ディスプレイごとに音量OSDを無効化することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Notification Center" xml:space="preserve">
@@ -6191,6 +6292,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ColorSyncユーティリティで開く</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Operation failed: %@" xml:space="preserve">
+        <source>Operation failed: %@</source>
+        <target state="translated">操作が失敗しました：%@</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Opted-out" xml:space="preserve">
         <source>Opted-out</source>
         <target state="translated">使用しない</target>
@@ -6259,6 +6365,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%@My parameter%@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive." xml:space="preserve">
         <source>Parameters are reusable chunks of code/text that can be invoked in any integration configuration by referring to their identifiers. For example the `%1$@My parameter%2$@` code will invoke a parameter content identified as `My parameter`. Identifiers are case sensitive.</source>
         <target state="translated">パラメータは再使用可能なコード/テキスト群で、その識別子を参照することで、どのような統合設定でも呼び出すことができます。たとえば、「%1$@My parameter%2$@」というコードは「My parameter」というパラメータコンテンツを呼び出します。識別子は大文字/小文字を区別します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead." xml:space="preserve">
+        <source>Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead.</source>
+        <target state="translated">部分的な文字列のマッチングに対応しています。⌥ Optionを押したまま現在のデバイス名をコピーすると、代わりにデバイスの一意な識別子を使用します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
@@ -6556,6 +6667,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">ディスプレイのネイティブ解像度のアスペクト比と一致する解像度の詳細リストを提供します。これにより、解像度スライダでGUIサイズ（ディスプレイのスケーリング）を自由に変更できます。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Provides a menu option to toggle the Apple display's auto brightness (ambient light sensor) feature and lets the app automatically enable or disable auto brightness when needed." xml:space="preserve">
+        <source>Provides a menu option to toggle the Apple display's auto brightness (ambient light sensor) feature and lets the app automatically enable or disable auto brightness when needed.</source>
+        <target state="translated">Appleディスプレイの自動輝度（環境光センサー）機能を切り替えるメニューオプションを提供することで、必要に応じて自動輝度を自動的に有効化または無効化できるようになります。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Provides additional display modes on some configurations." xml:space="preserve">
         <source>Provides additional display modes on some configurations.</source>
         <target state="translated">一部の構成で、追加の便利なディスプレイモードオプションを提供します。</target>
@@ -6564,6 +6680,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
         <source>Provides precise feedback on the current control value with additional information when relevant.</source>
         <target state="translated">現在の制御値に関する正確なフィードバックを、関連する追加情報とともに提供します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems." xml:space="preserve">
+        <source>Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems.</source>
+        <target state="translated">彩度、色相回転、ブラーなどの画像調整オプションを追加します。一部のシステムでは画像の解像度が低下する場合があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Quantization" xml:space="preserve">
@@ -6703,7 +6824,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reconnect all disconnected displays that are detected on startup. Helps if a display is stranded as disconnected in case of an app crash or forced quit." xml:space="preserve">
         <source>Reconnect all disconnected displays that are detected on startup. Helps if a display is stranded as disconnected in case of an app crash or forced quit.</source>
-        <target state="translated">起動時に検出したすべての切断されたディスプレイを再接続します。アプリのクラッシュや強制終了した場合に、ディスプレイが切断されたままになっている場合に役立ちます。</target>
+        <target state="translated">起動時に検出されたすべての切断したディスプレイを再接続します。アプリのクラッシュや強制終了した場合に、ディスプレイが切断されたままになっている場合に役立ちます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reconnect all remaining connected virtual screens after disconnecting one" xml:space="preserve">
@@ -7473,6 +7594,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">仮想スクリーンの一般的なアスペクト比を選択します。これに基づいて柔軟な解像度リストを作成します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Select a disconnected display" xml:space="preserve">
+        <source>Select a disconnected display</source>
+        <target state="translated">切断したディスプレイを選択</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`." xml:space="preserve">
         <source>Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`.</source>
         <target state="translated">AppleのSF Symbolsライブラリからアイコンを選択してください。これはAppleのプラットフォーム全体のシステムフォントであるSan Franciscoとシームレスに統合できるようデザインされています。「face.smiling」を試してみてください。</target>
@@ -7783,6 +7909,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">アプリによる設定値を保護しました。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Settings successfully imported" xml:space="preserve">
+        <source>Settings successfully imported</source>
+        <target state="translated">設定を正常に読み込み完了</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Settings…" xml:space="preserve">
         <source>Settings…</source>
         <target state="translated">設定…</target>
@@ -7860,7 +7991,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Show OSD on affected display" xml:space="preserve">
         <source>Show OSD on affected display</source>
-        <target state="translated">影響するディスプレイにOSDを表示</target>
+        <target state="translated">対象とするディスプレイにOSDを表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show OSD when using a keyboard shortcut for basic controls. Disable this if you don't want the OSD UI to be shown or when a third party OSD presentation app is being used instead." xml:space="preserve">
@@ -7983,11 +8114,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">アプリメニューに表示</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Show macOS volume OSD with keyboard control" xml:space="preserve">
-        <source>Show macOS volume OSD with keyboard control</source>
-        <target state="translated">キーボード制御でmacOSの音量OSDを表示</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Show main display at the top" xml:space="preserve">
         <source>Show main display at the top</source>
         <target state="translated">主ディスプレイを上端に表示</target>
@@ -8043,6 +8169,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">複合輝度制御用サブスライダを表示</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Show volume OSD with keyboard control" xml:space="preserve">
+        <source>Show volume OSD with keyboard control</source>
+        <target state="translated">キーボード制御でmacOSの音量OSDを表示</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show warning notifications about color table anomalies" xml:space="preserve">
         <source>Show warning notifications about color table anomalies</source>
         <target state="translated">カラーテーブルの異常に関する警告を通知</target>
@@ -8050,7 +8181,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
-        <target state="translated">以前に検出したすべてのディスプレイを表示します。ディスプレイがオフラインの場合でも、構成を変更することが可能です。</target>
+        <target state="translated">以前に検出されたすべてのディスプレイを表示します。ディスプレイがオフラインの場合でも、構成を変更することが可能です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Shows an upward (XDR/HDR upscaling) or downward (software dimming) pointing icon in the OSD when extra dimming or brightness upscaling is happening via software adjustments." xml:space="preserve">
@@ -8211,6 +8342,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
         <source>Specify a list of members that will not be affected by this synchronization.</source>
         <target state="translated">この同期により影響を受けないメンバーのリストを指定します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Specify an audio device that has native volume controls which will be associated with the display." xml:space="preserve">
+        <source>Specify an audio device that has native volume controls which will be associated with the display.</source>
+        <target state="translated">ディスプレイに関連付ける、ネイティブの音量制御を持つオーディオデバイスを指定します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
@@ -8433,9 +8569,9 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">%@を同期</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Synchronize brightness changes triggered externally" xml:space="preserve">
-        <source>Synchronize brightness changes triggered externally</source>
-        <target state="translated">外部から引き起こされる輝度変化を同期</target>
+      <trans-unit id="Synchronize changes triggered externally" xml:space="preserve">
+        <source>Synchronize changes triggered externally</source>
+        <target state="translated">外部から引き起こされる変更を同期</target>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize external changes only" xml:space="preserve">
@@ -8500,7 +8636,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="The OSD appears on the affected display instead of the display with the active menu bar (similar to older macOS versions)." xml:space="preserve">
         <source>The OSD appears on the affected display instead of the display with the active menu bar (similar to older macOS versions).</source>
-        <target state="translated">アクティブなメニューバーがあるディスプレイ（旧バージョンのmacOSのように）ではなく、影響するディスプレイにOSDを表示します。</target>
+        <target state="translated">アクティブなメニューバーがあるディスプレイではなく、（旧バージョンのmacOSのように）対象とするディスプレイにOSDを表示します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
@@ -8511,6 +8647,11 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
         <target state="translated">このアプリは、関連付けているディスプレイの可用性に基づいて、仮想スクリーンを自動的に接続したり切断したりすることができます。また、ミラーリングやストリーミングを自動的に開始したり、関連付けたディスプレイの向きに合わせることもできます。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The app controls the associated audio device specified below using the native audio control methods provided by macOS." xml:space="preserve">
+        <source>The app controls the associated audio device specified below using the native audio control methods provided by macOS.</source>
+        <target state="translated">macOSが提供するネイティブのオーディオ制御方法を使用して、以下に指定する関連付けたオーディオデバイスを制御します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
@@ -8637,7 +8778,7 @@ This operation does not reset the display itself.</source>
 A new display group with the name '%@' was created. The display group is currently not enabled.
 
 Enable and configure the created display group (including layout protection) under Settings &gt; Groups!</source>
-        <target state="translated">操作は正しく完了しました。
+        <target state="translated">操作は正常に完了しました。
 
 「%@」 という名前の新規ディスプレイグループが作成されました。ディスプレイグループは現在有効化されていません。
 
@@ -8679,12 +8820,12 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the 'display physical dimensions' setting when the virtual screen is connected." xml:space="preserve">
         <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the 'display physical dimensions' setting when the virtual screen is connected.</source>
-        <target state="translated">仮想スクリーンに関連する物理的サイズ（UIサイズを計算するために使用）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続している場合は、「ディスプレイの物理的サイズ」設定により変更されることがあります。</target>
+        <target state="translated">仮想スクリーンに関連付けた物理的サイズ（UIサイズを計算するために使用）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続している場合は、「ディスプレイの物理的サイズ」設定により変更されることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected." xml:space="preserve">
         <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected.</source>
-        <target state="translated">仮想スクリーンの物理的な寸法（UIのスケーリングを計算するために使用される）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続する場合に、「ディスプレイの物理的サイズ」設定により変更されることがあります。</target>
+        <target state="translated">仮想スクリーンに関連付けた物理的な寸法（UIのスケーリングを計算するために使用される）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続する場合に、「ディスプレイの物理的サイズ」設定により変更されることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
@@ -8714,7 +8855,7 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enabled any time under association settings)." xml:space="preserve">
         <source>The virtual screen is now associated with a display and to comply with association settings, the virtual screen should automatically change its connection status. Alternatively you can disable auto-connect (it can be enabled any time under association settings).</source>
-        <target state="translated">これで仮想スクリーンはディスプレイと関連付けられ、関連付け設定に準拠するため、仮想スクリーンは自動的に接続状態を変更します。自動接続を無効化することも可能です（関連付け設定でいつでも有効化できます）。</target>
+        <target state="translated">仮想スクリーンはディスプレイと関連付けられました。この設定に従って、仮想スクリーンの接続状態は自動的に変更されます。自動接続を無効化することも可能です（関連付け設定でいつでも有効化できます）。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The virtual screen was not created." xml:space="preserve">
@@ -8905,12 +9046,12 @@ Thank you for your understanding and continued support.</source>
       </trans-unit>
       <trans-unit id="This provides a cleaner look when sliders are not in active use." xml:space="preserve">
         <source>This provides a cleaner look when sliders are not in active use.</source>
-        <target state="translated">スライダがアクティブでない状態にすると、見かけがすっきりします。</target>
+        <target state="translated">スライダを使用しない場合に、見かけがすっきりします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This provides a cleaner look when the slider is not in active use." xml:space="preserve">
         <source>This provides a cleaner look when the slider is not in active use.</source>
-        <target state="translated">スライダを使用していない場合に、見た目がすっきりします。</target>
+        <target state="translated">スライダを使用しない場合に、見た目がすっきりします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This resolution is used as default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
@@ -9205,6 +9346,21 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">従来型のポップアップ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Transfer" xml:space="preserve">
+        <source>Transfer</source>
+        <target state="translated">転送</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer Display Settings" xml:space="preserve">
+        <source>Transfer Display Settings</source>
+        <target state="translated">ディスプレイ設定を転送</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Transfer display settings" xml:space="preserve">
+        <source>Transfer display settings</source>
+        <target state="translated">ディスプレイ設定を転送</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
         <source>Treat all currently connected displays as group members</source>
         <target state="translated">現在接続中のディスプレイをグループメンバーとして扱う</target>
@@ -9440,8 +9596,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">使用不可</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Under the app menu" xml:space="preserve">
-        <source>Under the app menu</source>
+      <trans-unit id="Under the app menu icon" xml:space="preserve">
+        <source>Under the app menu icon</source>
         <target state="translated">アプリメニュー下</target>
         <note/>
       </trans-unit>
@@ -9990,6 +10146,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">これを有効化した場合、macOSが提供するSDRピーク輝度調整制御（HDR輝度制御）の代わりに、ハードウェア輝度を使用した複合輝度制御を行います。コントロールセンターでSDRピーク輝度を調整することはできますが、これらの調整は、アプリが提供するアップスケーリング（使用可能な場合）の余裕に影響します。すべてのディスプレイがHDRモードのハードウェア輝度制御に対応しているとは限りません。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+        <target state="translated">この機能を有効化した場合、（DDCまたは制御統合を介した）直接的なハードウェア制御の代わりに、対応するオーディオデバイスのネイティブオーディオ制御（利用可能な場合）を使用します。対応するオーディオデバイス名が正しく指定されていることを確認してください。この機能は、アプリが管理するハードウェア（DDC、制御統合）音量制御とネイティブ音量制御を備えたディスプレイを含むマルチ出力オーディオデバイスの音量を制御に便利です。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">
         <source>When volume reaches 0%…</source>
         <target state="translated">音量が0%になったとき…</target>
@@ -10018,6 +10179,12 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Wireless" xml:space="preserve">
         <source>Wireless</source>
         <target state="translated">ワイヤレス</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation." xml:space="preserve">
+        <source>With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation.</source>
+        <target state="translated">設定転送により、このディスプレイの設定は、選択された切断したディスプレイの設定に置き換えられます。これはディスプレイの識別子が変更された場合や、アプリの設定が別のインストールから読み込みまたは移行された場合に、ディスプレイ設定を割り当て直すために使用できます。
+</target>
         <note/>
       </trans-unit>
       <trans-unit id="With this enabled Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
@@ -10155,8 +10322,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">⌘ コマンド + クリック を使ってソース画面にワープさせることもできます。設定 &gt; キーボード でワープからの復帰用ショートカットを定義することができます!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
-        <source>You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
+      <trans-unit id="You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." xml:space="preserve">
+        <source>You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled.</source>
         <target state="translated">デバイスがアプリによって管理されているオーディオ制御を持つ場合、macOSの音量OSDを隠したいことがあります。無効化することができない独自の音量OSDを持つディスプレイ場合に便利です。</target>
         <note/>
       </trans-unit>
@@ -10211,7 +10378,7 @@ A previous activation was automatically removed to make room for this new one.</
       </trans-unit>
       <trans-unit id="associated" xml:space="preserve">
         <source>associated</source>
-        <target state="translated">関連する</target>
+        <target state="translated">関連付けた</target>
         <note/>
       </trans-unit>
       <trans-unit id="bit" xml:space="preserve">
@@ -10438,6 +10605,16 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ 相対位置が定義されるまで、保護は有効化されません。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ The specified audio device does not have native volume controls." xml:space="preserve">
+        <source>⚠️ The specified audio device does not have native volume controls.</source>
+        <target state="translated">⚠️ 指定したオーディオデバイスにはネイティブ音量制御がありません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
+        <source>⚠️ The specified audio device is not found or currently unavailable.</source>
+        <target state="translated">⚠️ 指定したオーディオデバイスは見つからないか、現在使用できません。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
         <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
         <target state="translated">⚠️ 新規カスタムDDC機能として適切なカスタム制御が構成されていません。</target>
@@ -10446,6 +10623,11 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
         <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
         <target state="translated">⚠️ このディスプレイはカラーテーブル調整に未対応か、カラーテーブル調整が無効化されています。代わりにオーバーレイベースのディミングまたは画像調整を使用します。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This display or connection does not support hardware control features." xml:space="preserve">
+        <source>⚠️ This display or connection does not support hardware control features.</source>
+        <target state="translated">⚠️ このディスプレイまたは接続には、ハードウェア制御機能がありません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
@@ -10480,6 +10662,11 @@ Are you sure you want to continue?</source>
       <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
         <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
         <target state="translated">⚠️ このレイアウト保護の構成では、ディスプレイが適切な配置に無いため、正しく表示することができません!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." xml:space="preserve">
+        <source>⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
+        <target state="translated">⚠️ ネイティブ音量制御によりオーディオデバイスが使用できるよう、音量制御が構成されています。このため機能を有効化しても、これを制御することができません。</target>
         <note/>
       </trans-unit>
     </body>

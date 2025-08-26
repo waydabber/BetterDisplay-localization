@@ -92,6 +92,16 @@
     "%@ - Swap Position" : {
 
     },
+    "%@ (tag ID: %lld)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ (tag ID: %2$lld)"
+          }
+        }
+      }
+    },
     "%@ %@" : {
       "localizations" : {
         "en" : {
@@ -147,6 +157,9 @@
 
     },
     "%@ is unable to detect any display. This might indicate an application or system error." : {
+
+    },
+    "%@ must restart to apply the imported settings.\n\nIf you imported settings from a different installation, macOS display identifiers (UUIDs) may not match with this installation. As a result, various imported settings may not get immediately applied to the connected displays.\n\nUse the 'Transfer display settings' feature under all affected display's additional settings to fix the identifier mismatch issue." : {
 
     },
     "%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." : {
@@ -458,10 +471,19 @@
     "⚠️ The protection is not in effect unless relative position is defined." : {
 
     },
+    "⚠️ The specified audio device does not have native volume controls." : {
+
+    },
+    "⚠️ The specified audio device is not found or currently unavailable." : {
+
+    },
     "⚠️ There is no custom control configured suitable as a new custom DDC feature." : {
 
     },
     "⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." : {
+
+    },
+    "⚠️ This display or connection does not support hardware control features." : {
 
     },
     "⚠️ This feature is not available in this version." : {
@@ -480,6 +502,9 @@
 
     },
     "⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" : {
+
+    },
+    "⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." : {
 
     },
     "0.5x" : {
@@ -782,6 +807,16 @@
     "All previously dismissed warnings will now be back." : {
 
     },
+    "All settings of this display will be replaced by the settings of the currently disconnected display %@ and the currently disconnected display %@ will be forgotten by the app.\n\nThis change cannot be undone. Are you sure you want to do this?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "All settings of this display will be replaced by the settings of the currently disconnected display %1$@ and the currently disconnected display %2$@ will be forgotten by the app.\n\nThis change cannot be undone. Are you sure you want to do this?"
+          }
+        }
+      }
+    },
     "All suitable screens" : {
 
     },
@@ -1046,10 +1081,16 @@
     "Associate the virtual screen with this display" : {
 
     },
+    "Associate this display with an audio device that has native volume controls" : {
+
+    },
     "Associate this virtual screen with real display(s)" : {
 
     },
     "associated" : {
+
+    },
+    "Associated audio device name" : {
 
     },
     "Associated displays" : {
@@ -1304,6 +1345,9 @@
     "Brightness (Combined)" : {
 
     },
+    "Brightness (Compositor Upscaling)" : {
+
+    },
     "Brightness (Hardware)" : {
 
     },
@@ -1323,9 +1367,6 @@
 
     },
     "Brightness and Video" : {
-
-    },
-    "Brightness changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, etc.) when the sync source is an Apple display. Syncing these is not recommended when combined brightness and software XDR upscaling is used (use native XDR upscaling instead)." : {
 
     },
     "Brightness control using native brightness keys" : {
@@ -1456,6 +1497,9 @@
     },
     "Change the native brightness upscaling of ${displayEntity} to ${onOff}." : {
 
+    },
+    "Changes may be triggered outside of the app (Touch Bar, ambient light sensor, Control Center, control integration etc.)." : {
+      "extractionState" : "manual"
     },
     "Changing this setting does not affect existing known displays. The display identification method can be changed on a per display basis under each display's additional settings." : {
 
@@ -2447,8 +2491,8 @@
     "Do not restore combined brightness and software adjustments" : {
 
     },
-    "Do not synchronize brightness changes made using the app." : {
-
+    "Do not synchronize changes made via the app." : {
+      "extractionState" : "manual"
     },
     "Do nothing" : {
 
@@ -2591,6 +2635,9 @@
     "Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" : {
 
     },
+    "Enable glass compositor filter (experimental)" : {
+
+    },
     "Enable hardware brightness control" : {
 
     },
@@ -2610,6 +2657,9 @@
 
     },
     "Enable lower than 720p resolutions" : {
+
+    },
+    "Enable native auto brightness management" : {
 
     },
     "Enable native XDR brightness upscaling" : {
@@ -2718,6 +2768,9 @@
 
     },
     "Experimental feature" : {
+
+    },
+    "Export App Settings…" : {
 
     },
     "Export Display Information…" : {
@@ -3171,6 +3224,9 @@
 
     },
     "Image adjustments for ${displayEntity} is ${onOff}." : {
+
+    },
+    "Import App Settings…" : {
 
     },
     "In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency)." : {
@@ -3968,6 +4024,9 @@
     "Open in ColorSync Utility" : {
 
     },
+    "Operation failed: %@" : {
+
+    },
     "Opted-out" : {
 
     },
@@ -4028,6 +4087,9 @@
           }
         }
       }
+    },
+    "Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead." : {
+
     },
     "Paste" : {
 
@@ -4216,10 +4278,16 @@
     "Provides a fine-grained list of resolutions matching the aspect ratio of the display's native resolution. This lets you change the GUI size (display scaling) freely via the resolution slider." : {
 
     },
+    "Provides a menu option to toggle the Apple display's auto brightness (ambient light sensor) feature and lets the app automatically enable or disable auto brightness when needed." : {
+
+    },
     "Provides additional display modes on some configurations." : {
 
     },
     "Provides precise feedback on the current control value with additional information when relevant." : {
+
+    },
+    "Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems." : {
 
     },
     "Quantization" : {
@@ -4763,6 +4831,9 @@
     "Select a common aspect ratio for the virtual screen. The app creates a flexible resolution list based on this." : {
 
     },
+    "Select a disconnected display" : {
+
+    },
     "Select All" : {
 
     },
@@ -4968,6 +5039,9 @@
     "Settings made with the app are protected." : {
 
     },
+    "Settings successfully imported" : {
+
+    },
     "Settings…" : {
 
     },
@@ -5067,9 +5141,6 @@
     "Show in the app menu" : {
 
     },
-    "Show macOS volume OSD with keyboard control" : {
-
-    },
     "Show main display at the top" : {
 
     },
@@ -5122,6 +5193,9 @@
 
     },
     "Show subsliders for combined brightness control" : {
+
+    },
+    "Show volume OSD with keyboard control" : {
 
     },
     "Show warning notifications about color table anomalies" : {
@@ -5227,6 +5301,9 @@
 
     },
     "Specify a list of members that will not be affected by UI scale matching." : {
+
+    },
+    "Specify an audio device that has native volume controls which will be associated with the display." : {
 
     },
     "Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." : {
@@ -5361,8 +5438,8 @@
     "Synchronize %@" : {
 
     },
-    "Synchronize brightness changes triggered externally" : {
-
+    "Synchronize changes triggered externally" : {
+      "extractionState" : "manual"
     },
     "Synchronize external changes only" : {
 
@@ -5404,6 +5481,9 @@
 
     },
     "The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." : {
+
+    },
+    "The app controls the associated audio device specified below using the native audio control methods provided by macOS." : {
 
     },
     "The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" : {
@@ -5798,6 +5878,15 @@
     "Traditional popups" : {
 
     },
+    "Transfer" : {
+
+    },
+    "Transfer display settings" : {
+
+    },
+    "Transfer Display Settings" : {
+
+    },
     "Treat all currently connected displays as group members" : {
 
     },
@@ -5915,7 +6004,7 @@
     "Unavailable" : {
 
     },
-    "Under the app menu" : {
+    "Under the app menu icon" : {
 
     },
     "Underscan" : {
@@ -6276,6 +6365,9 @@
     "When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode." : {
 
     },
+    "When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." : {
+
+    },
     "When volume reaches 0%…" : {
 
     },
@@ -6292,6 +6384,9 @@
 
     },
     "Wireless" : {
+
+    },
+    "With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation." : {
 
     },
     "With this enabled scale matching will affect displays that have resolution configuration protection enabled. The protected resolution will be updated as well." : {
@@ -6385,7 +6480,7 @@
     "You may also use ⌘ Command + Click to warp to the source screen. Define a shortcut to warp back under Settings > Keyboard!" : {
 
     },
-    "You might want to hide the macOS volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." : {
+    "You might want to hide the volume OSD if the device has audio controls managed by the app. Useful for displays which has their own volume OSD that cannot be disabled." : {
 
     },
     "You reached the maximum number of activations for this license key!\n\nA previous activation was automatically removed to make room for this new one." : {
