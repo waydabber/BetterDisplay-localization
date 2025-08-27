@@ -1162,6 +1162,10 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">시스템에서 연결할 수 있다고 보고하면 항상 앱 메뉴에 이 Sidecar 디스플레이를 표시합니다. 디스플레이 연결 관리를 활성화해야 합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Ambient Light Sensor" xml:space="preserve">
+        <source>Ambient Light Sensor</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
         <source>An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!</source>
         <target state="translated">가상 화면의 크기를 계산하는 중 오류가 발생했습니다. 가상 화면을 수동으로 생성해 보세요!</target>
@@ -3603,8 +3607,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">노치 표시</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display current value on the OSD" xml:space="preserve">
-        <source>Display current value on the OSD</source>
+      <trans-unit id="Display current value in the OSD" xml:space="preserve">
+        <source>Display current value in the OSD</source>
         <target state="translated">OSD에 현재 값 표시</target>
         <note/>
       </trans-unit>
@@ -4022,6 +4026,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">색상표 조정 활성화</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable compositor filter layer (experimental)" xml:space="preserve">
+        <source>Enable compositor filter layer (experimental)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
         <source>Enable connect/disconnect option for displays</source>
         <target state="translated">디스플레이 연결/연결 해제 옵션 활성화</target>
@@ -4045,10 +4053,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
         <target state="translated">유연한 스케일링, 사용자 정의 크기 조정 해상도 생성, 기본 및 네이티브 해상도 수정, 표시 이름 및 역할 변경을 활성화할 수 있습니다. 제조업체와 모델 번호가 동일한 모든 디스플레이가 변경 사항의 영향을 받습니다!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable glass compositor filter (experimental)" xml:space="preserve">
-        <source>Enable glass compositor filter (experimental)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -4362,6 +4366,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
         <target state="translated">색상표 조정 강제 지원</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Force system OSD" xml:space="preserve">
+        <source>Force system OSD</source>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -6248,9 +6256,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">OSD 배경은 주변 환경에 맞게 조정됩니다. 비할성화하면 글래스 OSD는 현재 시스템 모양(라이트 및 다크)을 따릅니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="OSD location" xml:space="preserve">
-        <source>OSD location</source>
-        <target state="translated">OSD 위치</target>
+      <trans-unit id="OSD location and style" xml:space="preserve">
+        <source>OSD location and style</source>
         <note/>
       </trans-unit>
       <trans-unit id="Off" xml:space="preserve">
@@ -6683,13 +6690,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">일부 구성에서 편리한 추가 디스플레이 모드 옵션을 제공합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
         <source>Provides precise feedback on the current control value with additional information when relevant.</source>
         <target state="translated">현재 제어 값에 대한 정확한 피드백을 제공하며, 관련 추가 정보를 포함합니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems." xml:space="preserve">
-        <source>Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Quantization" xml:space="preserve">
@@ -10621,6 +10628,10 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
         <source>⚠️ The specified audio device is not found or currently unavailable.</source>
         <target state="translated">⚠️ 지정된 오디오 장치를 찾을 수 없거나 지금은 사용할 수 없습니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
+        <source>⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">

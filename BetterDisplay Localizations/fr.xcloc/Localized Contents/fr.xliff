@@ -1162,6 +1162,10 @@ Cette action est irréversible. Souhaitez vous continuer ?</target>
         <target state="translated">Toujours afficher cet écran side-car dans le menu de l'application quand le système le détecte comme disponible à la connexion. Requiert d'activer la gestion des connexions d'écrans.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Ambient Light Sensor" xml:space="preserve">
+        <source>Ambient Light Sensor</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
         <source>An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!</source>
         <target state="translated">Une erreur est survenue pendant le calcul des dimensions de l'écran virtuel. Essayez de créer l'écran virtuel manuellement !</target>
@@ -3603,8 +3607,8 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
         <target state="translated">Encoche de l'écran</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display current value on the OSD" xml:space="preserve">
-        <source>Display current value on the OSD</source>
+      <trans-unit id="Display current value in the OSD" xml:space="preserve">
+        <source>Display current value in the OSD</source>
         <target state="translated">Afficher la valeur actuelle sur l’OSD</target>
         <note/>
       </trans-unit>
@@ -4020,6 +4024,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Activer les ajustements de la table de couleur</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable compositor filter layer (experimental)" xml:space="preserve">
+        <source>Enable compositor filter layer (experimental)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
         <source>Enable connect/disconnect option for displays</source>
         <target state="translated">Activer les options de connexion/déconnexion pour les écrans</target>
@@ -4043,11 +4051,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
         <target state="translated">Activer la mise à l'échelle flexible, créé des résolutions à échelle personnalisée, modifie les résolution natives et les résolutions par défaut et change le nom de l'écran et son rôle. Notez que tous les écrans avec le même fabriquant et n° de modèle sont affectés par ces changements !</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable glass compositor filter (experimental)" xml:space="preserve">
-        <source>Enable glass compositor filter (experimental)</source>
-        <target state="translated">Activer le filtre compositeur “verre” (experimental)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -4362,6 +4365,10 @@ Les supprimer n’est pas dangereux - macOS recréera n’importe quels profils 
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
         <target state="translated">Force la prise en charge de la modification de la table de couleur</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Force system OSD" xml:space="preserve">
+        <source>Force system OSD</source>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -6248,9 +6255,8 @@ Tous les écrans ne prennent pas en charge les opérations d'alimentation DDC. L
         <target state="translated">L’arrière plan de l’OSD s’adapte à l’environnement. Quand cela est désactivé, le verre de l’OSD suivra l’apparence actuelle du système (clair ou sombre).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="OSD location" xml:space="preserve">
-        <source>OSD location</source>
-        <target state="translated">Position de l’OSD</target>
+      <trans-unit id="OSD location and style" xml:space="preserve">
+        <source>OSD location and style</source>
         <note/>
       </trans-unit>
       <trans-unit id="Off" xml:space="preserve">
@@ -6683,14 +6689,13 @@ Tous les écrans ne prennent pas en charge les opérations d'alimentation DDC. L
         <target state="translated">Fournit des modes d'affichage supplémentaires sur certaines configurations.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
         <source>Provides precise feedback on the current control value with additional information when relevant.</source>
         <target state="translated">Fourni un retour précis sur la valeur actuelle du contrôle avec des informations complémentaires quand nécessaire.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems." xml:space="preserve">
-        <source>Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems.</source>
-        <target state="translated">Fournis des ajustements d’image supplémentaires comme la saturation, luminosité, rotation, flou. Pourrait dégrader la qualité de l’image sur certains systèmes.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Quantization" xml:space="preserve">
@@ -10615,6 +10620,10 @@ La plupart des écrans n'autorisent pas l'écriture d'EDID pour des raisons de s
       <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
         <source>⚠️ The specified audio device is not found or currently unavailable.</source>
         <target state="translated">⚠️ L’appareil audio spécifié n’est pas détecté, ou actuellement indisponible.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
+        <source>⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">

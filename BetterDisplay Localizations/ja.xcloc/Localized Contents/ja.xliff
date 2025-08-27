@@ -75,7 +75,7 @@
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
         <source/>
-        <target state="needs-translation"/>
+        <target state="translated"/>
         <note/>
       </trans-unit>
       <trans-unit id="%" xml:space="preserve">
@@ -1152,6 +1152,10 @@ This change cannot be undone. Are you sure you want to do this?</source>
       <trans-unit id="Always show this Sidecar display in the app menu when the system reports it as available for connect. Requires enabled display connection management." xml:space="preserve">
         <source>Always show this Sidecar display in the app menu when the system reports it as available for connect. Requires enabled display connection management.</source>
         <target state="translated">接続可能とシステムが報告した場合は、このSidecarディスプレイを常にアプリメニューに表示します。ディスプレイ接続管理を有効化する必要があります。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Ambient Light Sensor" xml:space="preserve">
+        <source>Ambient Light Sensor</source>
         <note/>
       </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
@@ -3595,8 +3599,8 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">ディスプレイノッチ</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display current value on the OSD" xml:space="preserve">
-        <source>Display current value on the OSD</source>
+      <trans-unit id="Display current value in the OSD" xml:space="preserve">
+        <source>Display current value in the OSD</source>
         <target state="translated">現在の値をOSDに表示</target>
         <note/>
       </trans-unit>
@@ -4014,6 +4018,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">カラーテーブル調整を有効化</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable compositor filter layer (experimental)" xml:space="preserve">
+        <source>Enable compositor filter layer (experimental)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
         <source>Enable connect/disconnect option for displays</source>
         <target state="translated">ディスプレイの接続/切断オプションを有効化</target>
@@ -4037,11 +4045,6 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
         <target state="translated">フレキシブルスケーリング、カスタムスケール解像度の作成、ネイティブ解像度とデフォルトの解像度の変更、ディスプレイ名と役割の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable glass compositor filter (experimental)" xml:space="preserve">
-        <source>Enable glass compositor filter (experimental)</source>
-        <target state="translated">グラスコンポジターフィルタを有効化（実験的）</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -4356,6 +4359,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
         <target state="translated">カラーテーブル調整に強制的に対応</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Force system OSD" xml:space="preserve">
+        <source>Force system OSD</source>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -6242,9 +6249,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">OSDの背景を環境に適応させます。無効化すると、Glass OSDは現在のシステム外観モード（ライトまたはダーク）に従います。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="OSD location" xml:space="preserve">
-        <source>OSD location</source>
-        <target state="translated">OSD位置</target>
+      <trans-unit id="OSD location and style" xml:space="preserve">
+        <source>OSD location and style</source>
         <note/>
       </trans-unit>
       <trans-unit id="Off" xml:space="preserve">
@@ -6677,14 +6683,13 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">一部の構成で、追加の便利なディスプレイモードオプションを提供します。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
         <source>Provides precise feedback on the current control value with additional information when relevant.</source>
         <target state="translated">現在の制御値に関する正確なフィードバックを、関連する追加情報とともに提供します。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems." xml:space="preserve">
-        <source>Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems.</source>
-        <target state="translated">彩度、色相回転、ブラーなどの画像調整オプションを追加します。一部のシステムでは画像の解像度が低下する場合があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Quantization" xml:space="preserve">
@@ -10613,6 +10618,10 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
         <source>⚠️ The specified audio device is not found or currently unavailable.</source>
         <target state="translated">⚠️ 指定したオーディオデバイスは見つからないか、現在使用できません。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
+        <source>⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
