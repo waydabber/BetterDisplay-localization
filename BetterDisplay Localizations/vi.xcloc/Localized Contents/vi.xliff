@@ -1145,6 +1145,10 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">Luôn hiện màn hình Sidecar này trong menu ứng dụng khi hệ thống báo cáo nó là khả dụng để kết nối. Yêu cầu quản lý kết nối màn hình được kích hoạt.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Ambient Light Sensor" xml:space="preserve">
+        <source>Ambient Light Sensor</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
         <source>An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!</source>
         <target state="translated">Có lỗi xảy ra trong quá trình tính toán kích thước màn hình ảo. Hãy thử tạo màn hình ảo bằng cách thủ công!</target>
@@ -3583,8 +3587,8 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <target state="translated">Notch Màn hình</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display current value on the OSD" xml:space="preserve">
-        <source>Display current value on the OSD</source>
+      <trans-unit id="Display current value in the OSD" xml:space="preserve">
+        <source>Display current value in the OSD</source>
         <target state="translated">Hiển thị giá trị hiện tại trên OSD</target>
         <note/>
       </trans-unit>
@@ -4002,6 +4006,10 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
         <target state="translated">Kích hoạt điều chỉnh bảng màu</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable compositor filter layer (experimental)" xml:space="preserve">
+        <source>Enable compositor filter layer (experimental)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
         <source>Enable connect/disconnect option for displays</source>
         <target state="translated">Kích hoạt tùy chọn kết nối/ngắt kết nối cho màn hình</target>
@@ -4025,10 +4033,6 @@ Quá trình này không khả dụng cho màn hình tích hợp (cần khởi đ
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
         <target state="translated">Kích hoạt thu phóng linh hoạt, tạo độ phân giải tùy chỉnh, chỉnh sửa độ phân giải tự nhiên và mặc định, thay đổi tên và vai trò của màn hình. Vui lòng lưu ý rằng tất cả các màn hình cùng NSX và số hiệu model sẽ bị ảnh hưởng bởi các thay đổi!</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Enable glass compositor filter (experimental)" xml:space="preserve">
-        <source>Enable glass compositor filter (experimental)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -4341,6 +4345,10 @@ Việc xóa chúng là an toàn—macOS sẽ tạo lại bất kỳ hồ sơ c�
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
         <target state="translated">Bắt buộc hỗ trợ cho điều chỉnh bảng màu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Force system OSD" xml:space="preserve">
+        <source>Force system OSD</source>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -6226,9 +6234,8 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Nền OSD thích ứng với môi trường. Khi bị tắt, OSD trong suốt sẽ theo giao diện hệ thống hiện tại (sáng hoặc tối).</target>
         <note/>
       </trans-unit>
-      <trans-unit id="OSD location" xml:space="preserve">
-        <source>OSD location</source>
-        <target state="translated">Vị trí OSD</target>
+      <trans-unit id="OSD location and style" xml:space="preserve">
+        <source>OSD location and style</source>
         <note/>
       </trans-unit>
       <trans-unit id="Off" xml:space="preserve">
@@ -6658,13 +6665,13 @@ Không phải tất cả màn hình đều hỗ trợ các hoạt động nguồ
         <target state="translated">Cung cấp thêm các chế độ màn hình trên một số cấu hình.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause performance issues on some systems.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
         <source>Provides precise feedback on the current control value with additional information when relevant.</source>
         <target state="translated">Cung cấp phản hồi chính xác về giá trị điều khiển hiện tại với thông tin bổ sung khi cần thiết.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems." xml:space="preserve">
-        <source>Provides some additional image adjustments options like saturation, hue rotation, blur. May degrade image resolution on some systems.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Quantization" xml:space="preserve">
@@ -10581,6 +10588,10 @@ Hầu hết các màn hình không phép việc ghi EDID vì lý do bảo mật,
       </trans-unit>
       <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
         <source>⚠️ The specified audio device is not found or currently unavailable.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
+        <source>⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
