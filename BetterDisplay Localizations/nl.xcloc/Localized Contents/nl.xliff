@@ -181,6 +181,10 @@
         <target state="translated">%@ Bediening aanpassing afbeelding is niet beschikbaar.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Left" xml:space="preserve">
+        <source>%@ Left</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">%1$@ De NTSC-verversingsfrequenties of andere niet-genoemde frequenties, zijn mogelijk niet permanent na wijzigingen van modus tenzij deze afgedwongen worden door Bescherming configuratie %2$@.</target>
@@ -194,6 +198,10 @@
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro is actief</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Right" xml:space="preserve">
+        <source>%@ Right</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Search for actions by %@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!" xml:space="preserve">
@@ -251,9 +259,17 @@
         <target state="translated">%1$@ Deze licentie is momenteel actief op %2$lld installaties.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ This license is outdated for the current app version (v%@)." xml:space="preserve">
+        <source>%1$@ This license is outdated for the current app version (v%2$@).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
         <source>%@ This shows options for the current resolution. See Display Modes menu for the full list.</source>
         <target state="translated">%@ Hiermee worden opties getoond voor de huidige resolutie. Bekijk het menu Schermmodi voor de volledige lijst.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Tri-Screen" xml:space="preserve">
+        <source>%@ Tri-Screen</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
@@ -1843,10 +1859,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Brightness (Combined, Upscaling)</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
-        <source>Brightness (Compositor Upscaling)</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
         <source>Brightness (Hardware)</source>
         <target state="translated">Helderheid (apparatuur)</target>
@@ -2303,6 +2315,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Configure ${customEDID} as custom EDID for ${displayEntity}." xml:space="preserve">
         <source>Configure ${customEDID} as custom EDID for ${displayEntity}.</source>
         <target state="translated">Configureer ${customEDID} als eigen EDID voor ${displayEntity}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure %@ tri-screen setup synchronization" xml:space="preserve">
+        <source>Configure %@ tri-screen setup synchronization</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Accessibility" xml:space="preserve">
@@ -4292,6 +4308,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">Vlaggen</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Flexible scaling could not be configured for the participating displays." xml:space="preserve">
+        <source>Flexible scaling could not be configured for the participating displays.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Flexible scaling options" xml:space="preserve">
         <source>Flexible scaling options</source>
         <target state="translated">Flexibele schalingsopties</target>
@@ -5144,6 +5164,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Left of %@" xml:space="preserve">
         <source>Left of %@</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left or right display of the tri-screen setup is missing." xml:space="preserve">
+        <source>Left or right display of the tri-screen setup is missing.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Left → Bottom" xml:space="preserve">
@@ -6270,8 +6294,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Provides additional display modes on some configurations.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems.</source>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
@@ -7942,6 +7966,12 @@ This operation does not reset the display itself.</source>
         <source>The operation completed successfully.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
+        <source>The operation completed successfully.
+
+A new display group with the name '%@' was created and enabled.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created. The display group is currently not enabled.&#10;&#10;Enable and configure the created display group (including layout protection) under Settings &gt; Groups!" xml:space="preserve">
         <source>The operation completed successfully.
 
@@ -8116,12 +8146,12 @@ Please note that not all displays support DDC power operations and some displays
         <source>This is the recommended setting.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
+      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
         <source>This license was originally issued for an earlier version of %1$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
 
 This license no longer covers the current app version (v%2$@). To continue using this version of %3$@, please purchase a new license.
 
-To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.
+To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.
 
 Thank you for your understanding and continued support.</source>
         <note/>
@@ -9022,8 +9052,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
-        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
         <note/>
       </trans-unit>
       <trans-unit id="When volume reaches 0%…" xml:space="preserve">

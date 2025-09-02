@@ -191,6 +191,10 @@
         <target state="translated">%@ Les contrôles d'ajustement d'image sont indisponibles.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Left" xml:space="preserve">
+        <source>%@ Left</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">%1$@ Les taux de rafraîchissement NTSC (ou autres taux pas proposés) peuvent ne pas persister après le changement de mode, à moins qu'ils ne soient forcés par la %2$@ Protection de la configuration.</target>
@@ -204,6 +208,10 @@
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro est activé</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Right" xml:space="preserve">
+        <source>%@ Right</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Search for actions by %@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!" xml:space="preserve">
@@ -261,9 +269,18 @@
         <target state="translated">%1$@ Cette licence est actuellement active sur %2$lld installation(s).</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ This license is outdated for the current app version (v%@)." xml:space="preserve">
+        <source>%1$@ This license is outdated for the current app version (v%2$@).</source>
+        <target state="translated">%1$@ Cette licence est obsolète pour la version actuelle de l’app (v%2$@).</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
         <source>%@ This shows options for the current resolution. See Display Modes menu for the full list.</source>
         <target state="translated">%@ Sont affichées, les options pour la résolution actuelle. Regardez la section Modes d'Écran dans le menu pour voir la liste complète.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Tri-Screen" xml:space="preserve">
+        <source>%@ Tri-Screen</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
@@ -1164,6 +1181,7 @@ Cette action est irréversible. Souhaitez vous continuer ?</target>
       </trans-unit>
       <trans-unit id="Ambient Light Sensor" xml:space="preserve">
         <source>Ambient Light Sensor</source>
+        <target state="translated">Capteur de lumière ambiante</target>
         <note/>
       </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
@@ -1877,11 +1895,6 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
         <target state="translated">Luminosité (combinée, démultiplication)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
-        <source>Brightness (Compositor Upscaling)</source>
-        <target state="translated">Luminosité (Démultiplication Compositeur)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
         <source>Brightness (Hardware)</source>
         <target state="translated">Luminosité (matérielle)</target>
@@ -2269,7 +2282,7 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
       </trans-unit>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
-        <target state="translated">Combine le contrôle matériel de la luminosité (si disponible), l'atténuation de luminosité logiciel et la démultiplication XDR/HDR en un seul contrôle de luminosité.</target>
+        <target state="translated">Combine le contrôle matériel de la luminosité (si disponible), l'atténuation de luminosité logicielle et la démultiplication XDR/HDR en un seul contrôle de luminosité.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
@@ -2340,6 +2353,10 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
       <trans-unit id="Configure ${customEDID} as custom EDID for ${displayEntity}." xml:space="preserve">
         <source>Configure ${customEDID} as custom EDID for ${displayEntity}.</source>
         <target state="translated">Configurer ${customEDID} comme EDID personnalisé pour ${displayEntity}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure %@ tri-screen setup synchronization" xml:space="preserve">
+        <source>Configure %@ tri-screen setup synchronization</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Accessibility" xml:space="preserve">
@@ -4026,6 +4043,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enable compositor filter layer (experimental)" xml:space="preserve">
         <source>Enable compositor filter layer (experimental)</source>
+        <target state="translated">Activer le calque de filtre compositeur (expérimental)</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable connect/disconnect option for displays" xml:space="preserve">
@@ -4342,6 +4360,10 @@ Les supprimer n’est pas dangereux - macOS recréera n’importe quels profils 
         <target state="translated">Drapeaux</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Flexible scaling could not be configured for the participating displays." xml:space="preserve">
+        <source>Flexible scaling could not be configured for the participating displays.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Flexible scaling options" xml:space="preserve">
         <source>Flexible scaling options</source>
         <target state="translated">Options de la mise à l'échelle flexible</target>
@@ -4369,6 +4391,7 @@ Les supprimer n’est pas dangereux - macOS recréera n’importe quels profils 
       </trans-unit>
       <trans-unit id="Force system OSD" xml:space="preserve">
         <source>Force system OSD</source>
+        <target state="translated">Forcer l'OSD Système</target>
         <note/>
       </trans-unit>
       <trans-unit id="Force-enable underscan slider" xml:space="preserve">
@@ -5042,7 +5065,7 @@ Tous les écrans ne prennent pas en charge les opérations d'alimentation DDC. L
       </trans-unit>
       <trans-unit id="Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
         <source>Increase display brightness beyond 100%. Requires an Apple XDR display or a HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or with it disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
-        <target state="translated">Augmente la luminosité de l'écran au-delà de 100%. Nécessite un écran Apple XDR ou un écran externe compatible HDR en mode HDR. La fonction marche avec les ajustements de la table de couleur activés sur les Mac avec puce Apple; ou désactivés sur toutes les plates-formes (en utilisant le contrôle de la luminosité par sur-couche basé sur Metal). La démultiplication à l'aide de Metal peut augmenter la charge du processeur et du processeur graphique sur certains systèmes.</target>
+        <target state="translated">Augmente la luminosité de l'écran au-delà de 100%. Nécessite un écran Apple XDR ou un écran externe compatible HDR en mode HDR. La fonction marche avec les ajustements de la table de couleur activés sur les Mac avec puce Apple; ou désactivés sur toutes les plates-formes (en utilisant le contrôle de la luminosité par surcouche basé sur Metal). La démultiplication à l'aide de Metal peut augmenter la charge du processeur et du processeur graphique sur certains systèmes.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
@@ -5283,6 +5306,10 @@ Tous les écrans ne prennent pas en charge les opérations d'alimentation DDC. L
       <trans-unit id="Left of %@" xml:space="preserve">
         <source>Left of %@</source>
         <target state="translated">À gauche de %@</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Left or right display of the tri-screen setup is missing." xml:space="preserve">
+        <source>Left or right display of the tri-screen setup is missing.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Left → Bottom" xml:space="preserve">
@@ -6257,6 +6284,7 @@ Tous les écrans ne prennent pas en charge les opérations d'alimentation DDC. L
       </trans-unit>
       <trans-unit id="OSD location and style" xml:space="preserve">
         <source>OSD location and style</source>
+        <target state="translated">Style et emplacement de l'OSD</target>
         <note/>
       </trans-unit>
       <trans-unit id="Off" xml:space="preserve">
@@ -6689,8 +6717,9 @@ Tous les écrans ne prennent pas en charge les opérations d'alimentation DDC. L
         <target state="translated">Fournit des modes d'affichage supplémentaires sur certaines configurations.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems.</source>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
+        <target state="translated">Fournit des options supplémentaires de réglage de l'image telles que la saturation, le changement de teinte ou le flou. Peut entraîner des problèmes de performance ou de qualité d'image notables sur certains systèmes.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Provides precise feedback on the current control value with additional information when relevant." xml:space="preserve">
@@ -8781,6 +8810,12 @@ Cette opération ne réinitialise pas l'écran.</target>
         <target state="translated">L'opération a réussi.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
+        <source>The operation completed successfully.
+
+A new display group with the name '%@' was created and enabled.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created. The display group is currently not enabled.&#10;&#10;Enable and configure the created display group (including layout protection) under Settings &gt; Groups!" xml:space="preserve">
         <source>The operation completed successfully.
 
@@ -8924,12 +8959,12 @@ En cas d'échec, déconnectez et reconnectez physiquement l'écran.</target>
       </trans-unit>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
-        <target state="translated">Cela permet l'atténuation avancée, l'ajustement des couleurs et d'autres fonctionnalités comme la démultiplication XDR/HDR. Note : l'ajustement des couleurs tronque le contenu HDR en utilisation active. Si cette option est désactivée, l'application va réaliser l'atténuation par sur-couche et utiliser Metal pour la démultiplication XDR/HDR logicielle.</target>
+        <target state="translated">Cela permet l'atténuation avancée, l'ajustement des couleurs et d'autres fonctionnalités comme la démultiplication XDR/HDR. Note : l'ajustement des couleurs tronque le contenu HDR en utilisation active. Si cette option est désactivée, l'application va réaliser l'atténuation par surcouche et utiliser Metal pour la démultiplication XDR/HDR logicielle.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This allows the dimming or image adjustment overlay to take effect on the lock screen and on spaces where it is normally ineffective." xml:space="preserve">
         <source>This allows the dimming or image adjustment overlay to take effect on the lock screen and on spaces where it is normally ineffective.</source>
-        <target state="translated">Cela permet à une sur-couche d’atténuation ou d’ajustement d’image d’être active sur l’écran verrouillé.</target>
+        <target state="translated">Cela permet à une surcouche d’atténuation ou d’ajustement d’image d’être active sur l’écran verrouillé.</target>
         <note/>
       </trans-unit>
       <trans-unit id="This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!" xml:space="preserve">
@@ -9006,19 +9041,19 @@ Veuillez noter que tous les écrans ne prennent pas en charge les opérations d'
         <target state="translated">Ceci est le paramètre recommandé.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
+      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
         <source>This license was originally issued for an earlier version of %1$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
 
 This license no longer covers the current app version (v%2$@). To continue using this version of %3$@, please purchase a new license.
 
-To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.
+To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.
 
 Thank you for your understanding and continued support.</source>
-        <target state="translated">Cette licence a été délivrée pour une version antérieure de %2$@ et a déjà été entendue une fois pour supporter une mise à jour majeure vers une version précédente.
+        <target state="translated">Cette licence a été délivrée pour une version antérieure de %1$@ et a déjà été prolongée une fois avec une mise à jour gratuite vers une version majeure ultérieure.
 
-Cette licence ne couvre plus la version actuelle de l’app (v%3$@). Pour utiliser cette version de %4$@, veuillez acheter une nouvelle licence.
+Cette licence ne couvre plus la version actuelle de l’app (v%2$@). Pour utiliser cette version de %3$@, veuillez acheter une nouvelle licence.
 
-Pour assurer une expérience fluide de mise à jour de l’app, votre activation actuelle restera valide jusqu’à ce que vous la désactiviez. Notez que : une fois désactivée, cette version de l’app ne peut être réactivée avec cette licence. Les futures mises à jours ou réinstallations peuvent causer une désactivation sans avertissement préalable. 
+Pour assurer une expérience fluide de mise à jour de l’app, votre activation actuelle restera valide jusqu’à ce que vous la désactiviez. Veuillez noter : une fois désactivée ou réinstallée, cette version de l’app ne peut être réactivée avec cette licence.
 
 Merci pour votre compréhension et votre soutien continu.</target>
         <note/>
@@ -9366,7 +9401,7 @@ Vous pouvez ignorer cette notification - dans ce cas les changements seront appl
       </trans-unit>
       <trans-unit id="Transfer display settings" xml:space="preserve">
         <source>Transfer display settings</source>
-        <target state="translated">Transférer les paramètres de l’écran </target>
+        <target state="translated">Transférer les paramètres de l’écran</target>
         <note/>
       </trans-unit>
       <trans-unit id="Treat all currently connected displays as group members" xml:space="preserve">
@@ -9801,7 +9836,7 @@ Vous pouvez ignorer cette notification - dans ce cas les changements seront appl
       </trans-unit>
       <trans-unit id="Use this to limit the rate of performed actions in order to avoid overwhelming the integrated device or tool." xml:space="preserve">
         <source>Use this to limit the rate of performed actions in order to avoid overwhelming the integrated device or tool.</source>
-        <target state="translated">Utilisez cela pour limiter la fréquence de l’action effectuée pour éviter de surcharger l’appareil ou outil intégré. </target>
+        <target state="translated">Cette option permet de limiter la fréquence des actions effectuées afin d'éviter de surcharger l'appareil ou l'outil intégré</target>
         <note/>
       </trans-unit>
       <trans-unit id="Use zero to disable transition animation." xml:space="preserve">
@@ -10154,8 +10189,8 @@ Vous pouvez ignorer cette notification - dans ce cas les changements seront appl
         <target state="translated">Si cette option est activée, l’application utilisera la luminosité matérielle pour le contrôle de luminosité combinée à la place du contrôle de luminosité maximale SDR (contrôle de luminosité HDR) fourni par macOS. Vous pouvez toujours ajuster la luminosité maximale SDR dans le Centre de contrôle - ces ajustements influenceront la marge de la démultiplication (si disponible) fournie par l’application. Certains écrans ne supportent pas le contrôle de la luminosité matérielle en mode HDR.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
-        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
         <target state="translated">Quand ceci est activé, l’application utilisera le contrôle audio natif de l’appareil correspondant (si disponible) à la place du contrôle matériel direct (via DDC ou intégrations de contrôle). Vérifiez que le nom correspondant de l’appareil est spécifié de façon correcte. Cette fonctionnalité est utile pour controller le volume d’un appareil avec de multiple sorties audio qui incluent des écrans gérés au niveau matériel par une application (contrôle d’intégration DDC) pour le contrôle du volume, et le contrôle natif du volume.</target>
         <note/>
       </trans-unit>
@@ -10624,6 +10659,7 @@ La plupart des écrans n'autorisent pas l'écriture d'EDID pour des raisons de s
       </trans-unit>
       <trans-unit id="⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
         <source>⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
+        <target state="translated">⚠️ L'OSD système est disponible uniquement pour la luminosité et le volume et peut ne pas afficher le nom et la valeur corrects de l'appareil sur cette version de macOS.</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
@@ -10633,7 +10669,7 @@ La plupart des écrans n'autorisent pas l'écriture d'EDID pour des raisons de s
       </trans-unit>
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
         <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
-        <target state="translated">⚠️ Cet écran ne supporte pas les ajustements de la table de couleurs ou alors ils sont désactivés. L’application utilise une sur-couche pour l’atténuation et les ajustements couleur. </target>
+        <target state="translated">⚠️ Cet écran ne prend pas en charge les ajustements de la table de couleurs ou ceux-ci sont désactivés. L'application utilise à la place une atténuation par surcouche ou des réglages d'image.</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This display or connection does not support hardware control features." xml:space="preserve">

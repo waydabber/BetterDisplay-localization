@@ -183,6 +183,10 @@
         <target state="translated">%@ 画像調整制御を使用できません。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Left" xml:space="preserve">
+        <source>%@ Left</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">%1$@ NTSC（または非公開）のリフレッシュレートは、%2$@構成保護で強制しないと、モード変更後に継続しなくなる可能性があります。</target>
@@ -196,6 +200,10 @@
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Proは有効です</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Right" xml:space="preserve">
+        <source>%@ Right</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Search for actions by %@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!" xml:space="preserve">
@@ -253,9 +261,18 @@
         <target state="translated">%1$@ 本ライセンスは有効で、%2$lld台にインストールされています。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ This license is outdated for the current app version (v%@)." xml:space="preserve">
+        <source>%1$@ This license is outdated for the current app version (v%2$@).</source>
+        <target state="translated">%1$@ このライセンスは現在のアプリバージョン (v%2$@) には古くなっています。</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
         <source>%@ This shows options for the current resolution. See Display Modes menu for the full list.</source>
         <target state="translated">%@ 現在の解像度のオプションを表示します。すべてのリストはディスプレイモードメニューを参照してください。</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Tri-Screen" xml:space="preserve">
+        <source>%@ Tri-Screen</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
@@ -967,7 +984,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="All group members are watched for resolution changes and can initiate a UI scale matching operation." xml:space="preserve">
         <source>All group members are watched for resolution changes and can initiate a UI scale matching operation.</source>
-        <target state="translated">すべてのグループメンバーは解像度の変更を監視され、UIサイズ調整の操作を開始することができます。</target>
+        <target state="translated">すべてのグループメンバーは解像度の変更を監視され、UIサイズ調整操作を開始することができます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="All group members can be synchronization sources." xml:space="preserve">
@@ -1403,7 +1420,7 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Are you sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions." xml:space="preserve">
         <source>Are you sure you want to reset (forget) all settings related to this display? Reset does not affect system configuration settings like flexible scaling, custom resolutions.</source>
-        <target state="translated">このディスプレイに関連するすべての設定をリセット（登録解除）してもよろしいですか? フレキシブルサイズ調整やカスタム解像度などのシステム構成の設定には影響しません。</target>
+        <target state="translated">このディスプレイに関連するすべての設定をリセット（登録解除）してもよろしいですか? フレキシブルケーリングやカスタム解像度などのシステム構成の設定には影響しません。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Are you sure you want to reset app settings?" xml:space="preserve">
@@ -1870,11 +1887,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">輝度（複合、アップスケーリング）</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
-        <source>Brightness (Compositor Upscaling)</source>
-        <target state="translated">輝度（コンポジターアップスケーリング）</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
         <source>Brightness (Hardware)</source>
         <target state="translated">輝度（ハードウェア）</target>
@@ -2335,6 +2347,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">${customEDID}を${displayEntity}のカスタムEDIDとして構成を行います。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Configure %@ tri-screen setup synchronization" xml:space="preserve">
+        <source>Configure %@ tri-screen setup synchronization</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Configure Accessibility" xml:space="preserve">
         <source>Configure Accessibility</source>
         <target state="translated">アクセシビリティを構成</target>
@@ -2397,7 +2413,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Configure flexible scaling for %@" xml:space="preserve">
         <source>Configure flexible scaling for %@</source>
-        <target state="translated">%@のフレキシブルサイズ調整を構成</target>
+        <target state="translated">%@のフレキシブルスケーリングを構成</target>
         <note/>
       </trans-unit>
       <trans-unit id="Configure full screen stream to this display" xml:space="preserve">
@@ -2867,7 +2883,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Customize flexible scaling resolution range" xml:space="preserve">
         <source>Customize flexible scaling resolution range</source>
-        <target state="translated">フレキシブルサイズ調整解像度の範囲をカスタマイズ</target>
+        <target state="translated">フレキシブルスケーリング解像度の範囲をカスタマイズ</target>
         <note/>
       </trans-unit>
       <trans-unit id="Customize input source list for this display" xml:space="preserve">
@@ -4036,17 +4052,17 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enable flexible scaling" xml:space="preserve">
         <source>Enable flexible scaling</source>
-        <target state="translated">フレキシブルサイズ調整を有効化</target>
+        <target state="translated">フレキシブルスケーリングを有効化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role, override display EDID. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">フレキシブルサイズ調整、カスタムスケール解像度の作成、ネイティブおよびデフォルトの解像度の変更、ディスプレイ名と役割の変更、ディスプレイEDIDの上書きを有効化します。同一ベンダーとモデル番号のすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+        <target state="translated">フレキシブルスケーリング、カスタムスケール解像度の作成、ネイティブおよびデフォルトの解像度の変更、ディスプレイ名と役割の変更、ディスプレイEDIDの上書きを有効化します。同一ベンダーとモデル番号のすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!" xml:space="preserve">
         <source>Enable flexible scaling, create custom scaled resolutions, modify native and default resolutions, change display name and role. Please note that all displays with the same vendor and model number are affected by the changes!</source>
-        <target state="translated">フレキシブルサイズ調整、カスタムスケール解像度の作成、ネイティブ解像度とデフォルトの解像度の変更、ディスプレイ名と役割の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
+        <target state="translated">フレキシブルスケーリング、カスタムスケール解像度の作成、ネイティブ解像度とデフォルトの解像度の変更、ディスプレイ名と役割の変更を有効化します。同じベンダーの同一モデル番号を持つすべてのディスプレイが、この変更の影響を受けることに注意してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable hardware brightness control" xml:space="preserve">
@@ -4146,7 +4162,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
         <source>Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type.</source>
-        <target state="translated">16K×16K（8K×8K HiDPI）までの解像度を、仮想スクリーンとネイティブのフレキシブルサイズ調整で有効化します。8K以上の仮想スクリーンを使用すると、安定性に問題が生じることがあります。ネイティブのフレキシブルサイズ調整を再適用する必要があります。最大ネイティブ解像度は、macOSバージョンとGPUタイプによる制限があります。</target>
+        <target state="translated">16K×16K（8K×8K HiDPI）までの解像度を、仮想スクリーンとネイティブのフレキシブルスケーリングで有効化します。8K以上の仮想スクリーンを使用すると、安定性に問題が生じることがあります。ネイティブのフレキシブルスケーリングを再適用する必要があります。最大ネイティブ解像度は、macOSバージョンとGPUタイプによる制限があります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enabling this option removes the menu bar icon when only this and other similarly marked displays are present. Use this setting when you don't need any of the app's features for this display and want to free up menu bar space." xml:space="preserve">
@@ -4338,9 +4354,13 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">フラグ</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Flexible scaling could not be configured for the participating displays." xml:space="preserve">
+        <source>Flexible scaling could not be configured for the participating displays.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Flexible scaling options" xml:space="preserve">
         <source>Flexible scaling options</source>
-        <target state="translated">フレキシブルサイズ調整のオプション</target>
+        <target state="translated">フレキシブルスケーリングのオプション</target>
         <note/>
       </trans-unit>
       <trans-unit id="Flip" xml:space="preserve">
@@ -5282,6 +5302,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">%@の左</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Left or right display of the tri-screen setup is missing." xml:space="preserve">
+        <source>Left or right display of the tri-screen setup is missing.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Left → Bottom" xml:space="preserve">
         <source>Left → Bottom</source>
         <target state="translated">左 → 下</target>
@@ -5304,7 +5328,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled." xml:space="preserve">
         <source>Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled.</source>
-        <target state="translated">監視対象のグループメンバーディスプレイの解像度が変更された場合に、ディスプレイグループのメンバー間でUIサイズを一致させます。この機能は、フレキシブルサイズ調整を有効化しているディスプレイで、もっともよく機能します。</target>
+        <target state="translated">監視対象のグループメンバーディスプレイの解像度が変更された場合に、ディスプレイグループのメンバー間でUIサイズを一致させます。この機能は、フレキシブルスケーリングを有効化しているディスプレイで、もっともよく機能します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
@@ -6687,8 +6711,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">一部の構成で、追加の便利なディスプレイモードオプションを提供します。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems.</source>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
         <target state="translated">彩度、色相回転、ブラーなどの画像調整オプションを追加します。一部のシステムではパフォーマンスの問題が発生する可能性があります。</target>
         <note/>
       </trans-unit>
@@ -6949,7 +6973,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Reinitialize external displays with flexible scaling if needed" xml:space="preserve">
         <source>Reinitialize external displays with flexible scaling if needed</source>
-        <target state="translated">必要な場合はフレキシブルサイズ調整が有効な外部ディスプレイを再初期化</target>
+        <target state="translated">必要な場合はフレキシブルスケーリングが有効な外部ディスプレイを再初期化</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reinitialize this display on unlock" xml:space="preserve">
@@ -7661,12 +7685,12 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Select which displays should be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
         <source>Select which displays should be watched for resolution change to initiate a scale matching operation!</source>
-        <target state="translated">サイズ調整を行う場合に、解像度変更の監視対象とするディスプレイを選択してください!</target>
+        <target state="translated">サイズ（スケーリング）調整を行う場合に、解像度変更の監視対象とするディスプレイを選択してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Select which displays should not be affected by UI scale matching!" xml:space="preserve">
         <source>Select which displays should not be affected by UI scale matching!</source>
-        <target state="translated">UIサイズ調整を行わないディスプレイを選択してください!</target>
+        <target state="translated">UIサイズ（スケーリング）調整を行わないディスプレイを選択してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Select which displays should not be members of this display group!" xml:space="preserve">
@@ -7676,7 +7700,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Select which displays should not be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
         <source>Select which displays should not be watched for resolution change to initiate a scale matching operation!</source>
-        <target state="translated">サイズ調整を行う場合に、解像度変更の監視対象としないディスプレイを選択してください!</target>
+        <target state="translated">サイズ（スケーリング）調整を行う場合に、解像度変更の監視対象としないディスプレイを選択してください!</target>
         <note/>
       </trans-unit>
       <trans-unit id="Selected display is not available" xml:space="preserve">
@@ -7881,7 +7905,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}." xml:space="preserve">
         <source>Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}.</source>
-        <target state="translated">${displayEntity}のディスプレイモードを、解像度${resolutionEntity}、サイズ調整${scaleFactorEntity}、リフレッシュレート${refreshRateEntity}、色深度${colorDepthEntity}に設定します。</target>
+        <target state="translated">${displayEntity}のディスプレイモードを、解像度${resolutionEntity}、スケーリング${scaleFactorEntity}、リフレッシュレート${refreshRateEntity}、色深度${colorDepthEntity}に設定します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
@@ -8346,7 +8370,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Specify a list of members that will not be affected by UI scale matching." xml:space="preserve">
         <source>Specify a list of members that will not be affected by UI scale matching.</source>
-        <target state="translated">UIサイズ調整が影響しないメンバーのリストを指定します。</target>
+        <target state="translated">UIサイズ（スケーリング）調整が影響しないメンバーのリストを指定します。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Specify a list of members that will not be affected by this synchronization." xml:space="preserve">
@@ -8571,7 +8595,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="Synchronization, UI scale matching or layout protection displays are present" xml:space="preserve">
         <source>Synchronization, UI scale matching or layout protection displays are present</source>
-        <target state="translated">同期、UIサイズ調整、レイアウト保護ディスプレイが存在</target>
+        <target state="translated">同期、UIサイズ（スケーリング）調整、レイアウト保護ディスプレイが存在</target>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize %@" xml:space="preserve">
@@ -8606,7 +8630,7 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       </trans-unit>
       <trans-unit id="System Configuration and Flexible Scaling" xml:space="preserve">
         <source>System Configuration and Flexible Scaling</source>
-        <target state="translated">システム構成とフレキシブルサイズ調整</target>
+        <target state="translated">システム構成とフレキシブルスケーリング</target>
         <note/>
       </trans-unit>
       <trans-unit id="System UUID match" xml:space="preserve">
@@ -8782,6 +8806,12 @@ This operation does not reset the display itself.</source>
         <target state="translated">操作は正常に完了しました。</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
+        <source>The operation completed successfully.
+
+A new display group with the name '%@' was created and enabled.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created. The display group is currently not enabled.&#10;&#10;Enable and configure the created display group (including layout protection) under Settings &gt; Groups!" xml:space="preserve">
         <source>The operation completed successfully.
 
@@ -8835,7 +8865,7 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected." xml:space="preserve">
         <source>The physical dimension (used to calculate UI scaling) associated with a virtual screen is determined primarily by the 'reported diagonal size' setting which can be further modified by the `display physical dimensions` setting when the virtual screen is connected.</source>
-        <target state="translated">仮想スクリーンに関連付けた物理的な寸法（UIサイズを計算するために使用される）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続する場合に、「ディスプレイの物理的サイズ」設定により変更されることがあります。</target>
+        <target state="translated">仮想スクリーンに関連付けた物理的な寸法（UIのスケーリングを計算するために使用される）は、まず「報告された対角サイズ」設定により決定しますが、仮想スクリーンを接続する場合に、「ディスプレイの物理的サイズ」設定により変更されることがあります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
@@ -8984,7 +9014,7 @@ Please note that not all displays support DDC power operations and some displays
       </trans-unit>
       <trans-unit id="This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing." xml:space="preserve">
         <source>This is a workaround of an issue present in some versions of macOS Sonoma which occasionally prevents a display's custom configuration to be loaded properly. With this setting the app attempts to reinitialize the display if flexible scaling resolutions seem to be missing.</source>
-        <target state="translated">macOS Sonomaの一部バージョンで、ディスプレイのカスタム構成が正しく読み込まれないことがある問題への回避策です。この設定では、フレキシブルサイズ調整の解像度が見つからない場合に、ディスプレイの再初期化を試みます。</target>
+        <target state="translated">macOS Sonomaの一部バージョンで、ディスプレイのカスタム構成が正しく読み込まれないことがある問題への回避策です。この設定では、フレキシブルスケーリング解像度が見つからない場合に、ディスプレイの再初期化を試みます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This is in addition to the configured wake delay (%@ seconds), configuration delay (%@ seconds) and the time it takes to configure the displays." xml:space="preserve">
@@ -9007,19 +9037,19 @@ Please note that not all displays support DDC power operations and some displays
         <target state="translated">これが推奨される設定です。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
+      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
         <source>This license was originally issued for an earlier version of %1$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
 
 This license no longer covers the current app version (v%2$@). To continue using this version of %3$@, please purchase a new license.
 
-To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.
+To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.
 
 Thank you for your understanding and continued support.</source>
         <target state="translated">このライセンスは以前のバージョン%1$@向けに発行されたもので、すでに後継のメジャーバージョンへのアップグレードを含む延長が一度行なわれています。
 
 このライセンスは現在のアプリバージョン（v%2$@）をカバーしていません。本バージョン %3$@を継続使用するには、新規ライセンスをご購入ください。
 
-スムーズにアップグレードできるよう、無効化を行うまでは現在のアクティベーションは有効なままになります。次の事項にご注意ください：一度無効化すると、このライセンスでは再度アクティベーションすることができなくなります。今度のアップデートや再インストールでライセンスが解除される可能性があります。
+スムーズにアップグレードできるよう、無効化を行うまでは現在のアクティベーションは有効なままになります。次の事項にご注意ください：一度無効化または再インストールすると、このライセンスでは再度アクティベーションすることができなくなります。
 
 ご理解とご支援の継続をお願い申し上げます。</target>
         <note/>
@@ -9085,7 +9115,7 @@ Please note that previously stored custom display configurations won't be remove
       </trans-unit>
       <trans-unit id="This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100%." xml:space="preserve">
         <source>This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100%.</source>
-        <target state="translated">この設定は、スケーラブルなスクリーン/ディスプレイ（仮想スクリーン、フレキシブルサイズ調整を有効化した実ディスプレイ）に適用されます。デフォルト解像度は100%です。</target>
+        <target state="translated">この設定は、スケーラブルなスクリーン/ディスプレイ（仮想スクリーン、フレキシブルスケーリングを有効化した実ディスプレイ）に適用されます。デフォルト解像度は100%です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="This should match the physical resolution of the display panel (actual number of pixels vertically and horizontally)." xml:space="preserve">
@@ -10156,8 +10186,8 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">これを有効化した場合、macOSが提供するSDRピーク輝度調整制御（HDR輝度制御）の代わりに、ハードウェア輝度を使用した複合輝度制御を行います。コントロールセンターでSDRピーク輝度を調整することはできますが、これらの調整は、アプリが提供するアップスケーリング（使用可能な場合）の余裕に影響します。すべてのディスプレイがHDRモードのハードウェア輝度制御に対応しているとは限りません。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
-        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
         <target state="translated">この機能を有効化した場合、（DDCまたは制御統合を介した）直接的なハードウェア制御の代わりに、対応するオーディオデバイスのネイティブオーディオ制御（利用可能な場合）を使用します。対応するオーディオデバイス名が正しく指定されていることを確認してください。この機能は、アプリが管理するハードウェア（DDC、制御統合）音量制御とネイティブ音量制御を備えたディスプレイを含むマルチ出力オーディオデバイスの音量を制御に便利です。</target>
         <note/>
       </trans-unit>
@@ -10552,7 +10582,7 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen was connected." xml:space="preserve">
         <source>⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen was connected.</source>
-        <target state="translated">⚠️ 柔軟なHiDPI解像度を得るため、仮想スクリーンをネイティブ接続されたディスプレイのみにミラーリング/ストリーミングする場合は、可能ならにフレキシブルサイズ調整機能を代わりに使用してください! ストリーミングの代わりにミラーリングを使用する場合は、仮想スクリーンの接続後にアプリメニューで有効化できます。</target>
+        <target state="translated">⚠️ 柔軟なHiDPI解像度を得るため、仮想スクリーンをネイティブ接続されたディスプレイのみにミラーリング/ストリーミングする場合は、可能ならにフレキシブルスケーリング機能を代わりに使用してください! ストリーミングの代わりにミラーリングを使用する場合は、仮想スクリーンの接続後にアプリメニューで有効化できます。</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ It is recommended to have some more leeway in the range!" xml:space="preserve">
