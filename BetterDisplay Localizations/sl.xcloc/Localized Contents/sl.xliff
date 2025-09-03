@@ -195,6 +195,10 @@
         <target state="translated">%@ Kontrolniki za prilagajanje slike niso na voljo.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Left" xml:space="preserve">
+        <source>%@ Left</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">Stopnje osveževanja %1$@ NTSC (ali druge neizpostavljene) po spremembah načina morda ne bodo vztrajale, razen če jih prisili %2$@ zaščita konfiguracije.</target>
@@ -208,6 +212,10 @@
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro je aktiven</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Right" xml:space="preserve">
+        <source>%@ Right</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Search for actions by %@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!" xml:space="preserve">
@@ -265,9 +273,18 @@
         <target state="translated">%1$@ Ta licenca je trenutno aktivna pri namestitvah %2$lld.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ This license is outdated for the current app version (v%@)." xml:space="preserve">
+        <source>%1$@ This license is outdated for the current app version (v%2$@).</source>
+        <target state="translated">%1$@ Ta licenca je zastarela za trenutno različico aplikacije (v%2$@).</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
         <source>%@ This shows options for the current resolution. See Display Modes menu for the full list.</source>
         <target state="translated">%@ To prikazuje možnosti za trenutno ločljivost. Za celoten seznam glejte meni Načini zaslona.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="%@ Tri-Screen" xml:space="preserve">
+        <source>%@ Tri-Screen</source>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
@@ -1891,11 +1908,6 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Svetlost (kombinirana, nadgradnja)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
-        <source>Brightness (Compositor Upscaling)</source>
-        <target state="translated">Svetlost (zvišanje skale s kompozitorjem)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Hardware)" xml:space="preserve">
         <source>Brightness (Hardware)</source>
         <target state="translated">Svetlost (strojna oprema)</target>
@@ -2354,6 +2366,10 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
       <trans-unit id="Configure ${customEDID} as custom EDID for ${displayEntity}." xml:space="preserve">
         <source>Configure ${customEDID} as custom EDID for ${displayEntity}.</source>
         <target state="translated">Konfigurirajte ${customEDID} kot EDID po meri za ${displayEntity}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Configure %@ tri-screen synchronization" xml:space="preserve">
+        <source>Configure %@ tri-screen synchronization</source>
         <note/>
       </trans-unit>
       <trans-unit id="Configure Accessibility" xml:space="preserve">
@@ -5306,6 +5322,10 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <target state="translated">Levo od %@</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Left or right display of the tri-screen setup is missing." xml:space="preserve">
+        <source>Left or right display of the tri-screen setup is missing.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Left → Bottom" xml:space="preserve">
         <source>Left → Bottom</source>
         <target state="translated">Levo → Spodaj</target>
@@ -6712,8 +6732,8 @@ Vsi zasloni ne podpirajo napajalnih operacij DDC. Napajanje DDC lahko povzroči 
         <target state="translated">Zagotavlja dodatne načine prikaza pri nekaterih konfiguracijah.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticable performance or image quality issues on some systems.</source>
+      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
+        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
         <target state="translated">Ponuja dodatne možnosti prilagajanja slike, kot so nasičenost, vrtenje odtenkov in zameglitev. V nekaterih sistemih lahko povzroči opazne težave z delovanjem ali kakovostjo slike.</target>
         <note/>
       </trans-unit>
@@ -8804,9 +8824,21 @@ Ta postopek ne ponastavi samega zaslona.</target>
         <target state="translated">Števec nits bo ponudil jasne (in nekoliko pretirane) vizualne povratne informacije med povečanjem ločljivosti.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The operation completed successfully, but some configuration changes could not be applied for the participating external displays.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
+        <source>The operation completed successfully, but some configuration changes could not be applied for the participating external displays.
+
+A new display group with the name '%@' was created and enabled.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="The operation completed successfully." xml:space="preserve">
         <source>The operation completed successfully.</source>
         <target state="translated">Operacija uspešno zaključena.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
+        <source>The operation completed successfully.
+
+A new display group with the name '%@' was created and enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully.&#10;&#10;A new display group with the name '%@' was created. The display group is currently not enabled.&#10;&#10;Enable and configure the created display group (including layout protection) under Settings &gt; Groups!" xml:space="preserve">
@@ -9035,19 +9067,19 @@ Upoštevajte, da vsi zasloni ne podpirajo napajalnih operacij DDC in da se nekat
         <target state="translated">To je priporočena nastavitev.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
+      <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
         <source>This license was originally issued for an earlier version of %1$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
 
 This license no longer covers the current app version (v%2$@). To continue using this version of %3$@, please purchase a new license.
 
-To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated, this app version cannot be reactivated with this license. Future updates or reinstallations may also result in deactivation without prior notice.
+To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.
 
 Thank you for your understanding and continued support.</source>
         <target state="translated">Ta licenca je bila prvotno izdana za starejšo različico programa %1$@ in je bila že enkrat podaljšana z brezplačno nadgradnjo na naslednjo večjo različico.
 
 Ta licenca ne krije več trenutne različice aplikacije (v%2$@). Če želite še naprej uporabljati to različico programa %3$@, kupite novo licenco.
 
-Za nemoteno nadgradnjo aplikacije bo vaša trenutna aktivacija ostala veljavna, dokler je ne deaktivirate. Opomba: ko je deaktivirana, te različice aplikacije ni mogoče ponovno aktivirati s to licenco. Prihodnje posodobitve ali ponovne namestitve lahko prav tako povzročijo deaktivacijo brez predhodnega obvestila.
+Za nemoteno nadgradnjo aplikacije bo vaša trenutna aktivacija ostala veljavna, dokler je ne deaktivirate. Opomba: ko je deaktivirana ali ponovno nameščena, te različice aplikacije ni mogoče ponovno aktivirati s to licenco.
 
 Zahvaljujemo se vam za razumevanje in nadaljnjo podporo.</target>
         <note/>
@@ -10189,8 +10221,8 @@ Community Verified icon
         <target state="translated">Ko je to omogočeno, bo aplikacija uporabljala svetlost strojne opreme za kombiniran nadzor svetlosti namesto nadzora prilagoditve največje svetlosti SDR (nadzor svetlosti HDR), ki ga zagotavlja macOS. Najvišjo svetlost SDR lahko še vedno prilagodite v Nadzornem centru – te prilagoditve bodo vplivale na višino povečanja (če je na voljo), ki jo zagotavlja aplikacija. Vsi zasloni ne podpirajo strojnega nadzora svetlosti v načinu HDR.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control." xml:space="preserve">
-        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio device involving displays with app-managed hardware (DDC, control integration) volume control and native volume control.</source>
+      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control." xml:space="preserve">
+        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of a multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
         <target state="translated">Ko je to omogočeno, bo aplikacija namesto neposrednega strojnega upravljanja (prek DDC ali integracije krmilnikov) uporabila izvorne krmilnike zvoka ustrezne zvočne naprave (če so na voljo). Prepričajte se, da je ime ustrezne zvočne naprave ustrezno določeno. Ta funkcija je uporabna za nadzor glasnosti zvočne naprave z več izhodi, ki vključuje zaslone z nadzorom glasnosti strojne opreme, ki jo upravlja aplikacija (DDC, integracija krmilnikov), in izvornim nadzorom glasnosti.</target>
         <note/>
       </trans-unit>
