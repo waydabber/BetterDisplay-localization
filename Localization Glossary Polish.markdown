@@ -164,7 +164,7 @@ The following tables contains the translations used for _BetterDisplay_ from Eng
 | English             | Polish              | Reasoning / Explanation                                     |
 | ------------------- | ------------------- | ----------------------------------------------------------- |
 | Natively connected  | Natywnie połączenie | **Uncertain** about how to translate native, at the moment. |
-| Near-native         | nahe der nativen    | **Uncertain** about how to translate native, at the moment. |
+| Near-native         | Prawie natywne      | **Uncertain** about how to translate native, at the moment. |
 | Night Shift         | Night Shift         |                                                             |
 | Notch               | Notch               |                                                             |
 | Notifications       | Powiadomienia       |                                                             |
