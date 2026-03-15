@@ -2,7 +2,8 @@
 
 [BetterDisplay](https://betterdisplay.pro) supports localization. The latest Xcode localization strings (dictionary files) are available in this repository.
 
-_Please note that localizations with completion level below ~90% (with some leeway) are marked as "Not Ready" and not included in releases. They will be re-added upon proper completion._
+> [!NOTE]
+> Localizations with completion level below ~90% (with some leeway) are marked as incomplete and not included in stable releases. These localizations are added upon proper completion.
 
 ### How to help?
 
