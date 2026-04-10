@@ -215,6 +215,10 @@
         <target state="translated">%@ 退出服务菜单</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in corrupted image, green or blank screen." xml:space="preserve">
+        <source>%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in corrupted image, green or blank screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
         <source>%@ Hold ⌥ Option when opening this menu to measure refresh rate!</source>
         <target state="translated">%@ 打开此菜单时按住 ⌥ Option 键以测量刷新率!</target>
@@ -245,14 +249,13 @@
         <target state="translated">%@ 左側</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result unexpected behavior or blank screen." xml:space="preserve">
+        <source>%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result unexpected behavior or blank screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">%1$@ NTSC (或其他未公开的) 刷新率在模式更改后可能不会持续, 除非通过%2$@配置保护强制设置。</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
-        <source>%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
-        <target state="translated">%@ 协商模式可能与所列的参数不同。检查视觉效果或显示调整浮窗 (OSD) 信息。</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
@@ -503,11 +506,6 @@ Use the 'Transfer display settings' feature under all affected display's additio
         <target state="translated">每个样本 %llu 位</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%u" xml:space="preserve">
-        <source>%u</source>
-        <target state="translated">%u</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%u (interpreted as %lf)" xml:space="preserve">
         <source>%1$u (interpreted as %2$lf)</source>
         <target state="translated">%1$u (解释为%2$lf)</target>
@@ -640,11 +638,6 @@ Thank you for your understanding and continued support.</source>
       <trans-unit id="90°" xml:space="preserve">
         <source>90°</source>
         <target state="translated">90°</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="100" xml:space="preserve">
-        <source>100</source>
-        <target state="translated">100</target>
         <note/>
       </trans-unit>
       <trans-unit id="180°" xml:space="preserve">
@@ -1156,6 +1149,10 @@ This change cannot be undone. Are you sure you want to do this?</source>
       <trans-unit id="Allocation limits - vertical" xml:space="preserve">
         <source>Allocation limits - vertical</source>
         <target state="translated">分配限制（垂直）</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow Forced HDR" xml:space="preserve">
+        <source>Allow Forced HDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow auto brightness when combined XDR brightness upscaling is used" xml:space="preserve">
@@ -4381,6 +4378,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">启用 HDR 模式</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable HDR Mode (Forced)" xml:space="preserve">
+        <source>Enable HDR Mode (Forced)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable HDR support" xml:space="preserve">
         <source>Enable HDR support</source>
         <note/>
@@ -4817,6 +4818,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">强制启用欠扫描滑块</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Forced" xml:space="preserve">
+        <source>Forced</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Forget" xml:space="preserve">
         <source>Forget</source>
         <target state="translated">忽略</target>
@@ -5114,10 +5119,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="HDR/SDR Mode" xml:space="preserve">
         <source>HDR/SDR Mode</source>
         <target state="translated">HDR/SDR 模式</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR→%@" xml:space="preserve">
-        <source>HDR→%@</source>
         <note/>
       </trans-unit>
       <trans-unit id="HEX editor styled blocks" xml:space="preserve">
@@ -5584,9 +5585,8 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">Intel</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Internal (%lld-bit)" xml:space="preserve">
-        <source>Internal (%lld-bit)</source>
-        <target state="translated">内部 (%lld-bit)</target>
+      <trans-unit id="Internal" xml:space="preserve">
+        <source>Internal</source>
         <note/>
       </trans-unit>
       <trans-unit id="Internal Pre-Release" xml:space="preserve">
@@ -6302,6 +6302,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Mirroring" xml:space="preserve">
         <source>Mirroring</source>
         <target state="translated">镜像</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mixed" xml:space="preserve">
+        <source>Mixed</source>
         <note/>
       </trans-unit>
       <trans-unit id="Mode number" xml:space="preserve">
@@ -7177,6 +7181,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Preserve continuity in case of an EDID display identity change" xml:space="preserve">
         <source>Preserve continuity in case of an EDID display identity change</source>
         <target state="translated">在 EDID 显示标识发生变化时保持连续性</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Preset %@" xml:space="preserve">
+        <source>Preset %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Preset Index" xml:space="preserve">
@@ -8165,10 +8173,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">SDR 峰值亮度调整在 macOS Sequoia 及更新版本中可用。启用此功能后, 该应用程序将像在 macOS Sonoma 或更早版本中一样处理HDR显示器。你仍然可以使用控制中心来调整SDR峰值亮度。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="SDR→%@" xml:space="preserve">
-        <source>SDR→%@</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="SOURCE" xml:space="preserve">
         <source>SOURCE</source>
         <target state="translated">源</target>
@@ -8717,6 +8721,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">显示 LG 遥控器</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Mixed Modes" xml:space="preserve">
+        <source>Show Mixed Modes</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -10787,11 +10795,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">虚拟屏幕模式</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Virtual Screen Resolutions" xml:space="preserve">
-        <source>Virtual Screen Resolutions</source>
-        <target state="translated">虚拟屏幕分辨率</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Virtual screen" xml:space="preserve">
         <source>Virtual screen</source>
         <target state="translated">虚拟屏幕</target>
@@ -10849,11 +10852,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes are not supported on some older Macs." xml:space="preserve">
         <source>Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes are not supported on some older Macs.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes might not work in practice." xml:space="preserve">
-        <source>Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes might not work in practice.</source>
-        <target state="translated">虚拟屏幕的默认刷新率为 60Hz, 但可创建其他/不同的刷新率模式。高于 60Hz 的模式实际上可能无法生效。</target>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screens can be connected/disconnected on demand any time. Some settings appear only when the screen is connected. Changing some of the settings below require the screen to be reconnected when it is already connected." xml:space="preserve">
@@ -11165,11 +11163,6 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling available" xml:space="preserve">
         <source>XDR/HDR upscaling available</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
-        <source>XDR/HDR upscaling compatible</source>
-        <target state="translated">兼容 XDR/HDR 亮度提升</target>
         <note/>
       </trans-unit>
       <trans-unit id="YCbCr" xml:space="preserve">

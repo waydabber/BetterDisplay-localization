@@ -215,6 +215,10 @@
         <target state="translated">%@ Servis Menüsünden Çık</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in corrupted image, green or blank screen." xml:space="preserve">
+        <source>%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in corrupted image, green or blank screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
         <source>%@ Hold ⌥ Option when opening this menu to measure refresh rate!</source>
         <target state="translated">%@ Yenileme hızını ölçmek için bu menüyü açarken ⌥ Seçeneğini basılı tutun!</target>
@@ -245,14 +249,13 @@
         <target state="translated">%@ Solunda</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result unexpected behavior or blank screen." xml:space="preserve">
+        <source>%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result unexpected behavior or blank screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">NTSC (veya diğer pozlanmamış) yenileme hızları, %@ Yapılandırma Koruması tarafından zorlanmadığı sürece mod değişikliklerinden sonra devam etmeyebilir.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
-        <source>%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
-        <target state="translated">%@ Anlaşmalı mod, listelenen parametrelerden farklı olabilir. Görselleri kontrol edin veya OSD bilgilerini görüntüleyin.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
@@ -503,11 +506,6 @@ Tanımlayıcı uyuşmazlığı sorununu gidermek için etkilenen tüm ekranları
         <target state="translated">Örnek başına %llu bit</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%u" xml:space="preserve">
-        <source>%u</source>
-        <target state="translated">%u</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%u (interpreted as %lf)" xml:space="preserve">
         <source>%1$u (interpreted as %2$lf)</source>
         <target state="translated">%1$u (%2$lf Hz olarak yorumlanır)</target>
@@ -640,11 +638,6 @@ Anlayışınız ve devam eden desteğiniz için teşekkür ederiz.</target>
       <trans-unit id="90°" xml:space="preserve">
         <source>90°</source>
         <target state="translated">90°</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="100" xml:space="preserve">
-        <source>100</source>
-        <target state="translated">100</target>
         <note/>
       </trans-unit>
       <trans-unit id="180°" xml:space="preserve">
@@ -1156,6 +1149,10 @@ Bu değişiklik geri alınamaz. Bunu yapmak istediğinizden emin misiniz?</targe
       <trans-unit id="Allocation limits - vertical" xml:space="preserve">
         <source>Allocation limits - vertical</source>
         <target state="translated">Ayrılan çözünürlük sınırları – dikey</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow Forced HDR" xml:space="preserve">
+        <source>Allow Forced HDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow auto brightness when combined XDR brightness upscaling is used" xml:space="preserve">
@@ -4380,6 +4377,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">HDR Modunu Etkinleştir</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable HDR Mode (Forced)" xml:space="preserve">
+        <source>Enable HDR Mode (Forced)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable HDR support" xml:space="preserve">
         <source>Enable HDR support</source>
         <note/>
@@ -4816,6 +4817,10 @@ Bunları kaldırmak güvenlidir - macOS, ekran bir sonraki bağlanışında gere
         <target state="translated">Alt taramayı zorla etkinleştirme kaydırıcısı</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Forced" xml:space="preserve">
+        <source>Forced</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Forget" xml:space="preserve">
         <source>Forget</source>
         <target state="translated">Unut</target>
@@ -5113,10 +5118,6 @@ Bunları kaldırmak güvenlidir - macOS, ekran bir sonraki bağlanışında gere
       <trans-unit id="HDR/SDR Mode" xml:space="preserve">
         <source>HDR/SDR Mode</source>
         <target state="translated">HDR/SDR Modu</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR→%@" xml:space="preserve">
-        <source>HDR→%@</source>
         <note/>
       </trans-unit>
       <trans-unit id="HEX editor styled blocks" xml:space="preserve">
@@ -5583,9 +5584,8 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <target state="translated">Intel</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Internal (%lld-bit)" xml:space="preserve">
-        <source>Internal (%lld-bit)</source>
-        <target state="translated">Dahili (%lld-bit)</target>
+      <trans-unit id="Internal" xml:space="preserve">
+        <source>Internal</source>
         <note/>
       </trans-unit>
       <trans-unit id="Internal Pre-Release" xml:space="preserve">
@@ -6301,6 +6301,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Mirroring" xml:space="preserve">
         <source>Mirroring</source>
         <target state="translated">Yansıtma</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mixed" xml:space="preserve">
+        <source>Mixed</source>
         <note/>
       </trans-unit>
       <trans-unit id="Mode number" xml:space="preserve">
@@ -7176,6 +7180,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Preserve continuity in case of an EDID display identity change" xml:space="preserve">
         <source>Preserve continuity in case of an EDID display identity change</source>
         <target state="translated">Bir EDID ekran kimliği değişikliği durumunda sürekliliği koruyun</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Preset %@" xml:space="preserve">
+        <source>Preset %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Preset Index" xml:space="preserve">
@@ -8162,10 +8170,6 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <target state="translated">SDR tepe parlaklık ayarı macOS Sequoia ve daha yeni sürümlerde mevcuttur. Bu özellik etkinleştirildiğinde, uygulama bu HDR ekranla macOS Sonoma veya önceki sürümlerde olduğu gibi ilgilenir. SDR tepe parlaklığı ayarı için Kontrol Merkezi'ni kullanmaya devam edebilirsiniz.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="SDR→%@" xml:space="preserve">
-        <source>SDR→%@</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="SOURCE" xml:space="preserve">
         <source>SOURCE</source>
         <target state="translated">KAYNAK</target>
@@ -8714,6 +8718,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">LG uzaktan kumandasını göster</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Mixed Modes" xml:space="preserve">
+        <source>Show Mixed Modes</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -10784,11 +10792,6 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
         <target state="translated">Sanal Ekran Modu</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Virtual Screen Resolutions" xml:space="preserve">
-        <source>Virtual Screen Resolutions</source>
-        <target state="translated">Sanal Ekran Çözünürlükleri</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Virtual screen" xml:space="preserve">
         <source>Virtual screen</source>
         <target state="translated">Sanal ekran</target>
@@ -10846,11 +10849,6 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       </trans-unit>
       <trans-unit id="Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes are not supported on some older Macs." xml:space="preserve">
         <source>Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes are not supported on some older Macs.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes might not work in practice." xml:space="preserve">
-        <source>Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes might not work in practice.</source>
-        <target state="translated">Sanal ekranlar varsayılan olarak 60Hz yenileme hızında çalışır, ancak ek/farklı bildirilen yenileme hızı modları oluşturulabilir. 60Hz'den daha yüksek modlar pratikte çalışmayabilir.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screens can be connected/disconnected on demand any time. Some settings appear only when the screen is connected. Changing some of the settings below require the screen to be reconnected when it is already connected." xml:space="preserve">
@@ -11160,11 +11158,6 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling available" xml:space="preserve">
         <source>XDR/HDR upscaling available</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
-        <source>XDR/HDR upscaling compatible</source>
-        <target state="translated">XDR/HDR yükseltmeyle uyumlu</target>
         <note/>
       </trans-unit>
       <trans-unit id="YCbCr" xml:space="preserve">
