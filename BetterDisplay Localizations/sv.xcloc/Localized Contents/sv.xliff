@@ -215,6 +215,10 @@
         <target state="translated">%@ Avsluta servicemenyn</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in corrupted image, green or blank screen." xml:space="preserve">
+        <source>%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in corrupted image, green or blank screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
         <source>%@ Hold ⌥ Option when opening this menu to measure refresh rate!</source>
         <target state="translated">%@ Håll in ⌥ Option när du öppnar den här menyn för att mäta uppdateringsfrekvensen!</target>
@@ -245,14 +249,13 @@
         <target state="translated">%@ vänster</target>
         <note/>
       </trans-unit>
+      <trans-unit id="%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result unexpected behavior or blank screen." xml:space="preserve">
+        <source>%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result unexpected behavior or blank screen.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
         <target state="translated">%1$@ NTSC (eller andra oexponerade) uppdateringsfrekvenser kanske inte kvarstår efter lägesändringar om de inte tvingas fram av %2$@ Configuration Protection.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info." xml:space="preserve">
-        <source>%@ Negotiated mode may differ from the listed parameters. Check visuals or display OSD info.</source>
-        <target state="translated">%@ Förhandlat läge kan skilja sig från de listade parametrarna. Kontrollera bilderna eller visa OSD-information.</target>
         <note/>
       </trans-unit>
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
@@ -503,11 +506,6 @@ Använd funktionen "Överför skärmsinställningar" under alla berörda bildsk�
         <target state="translated">%llu bitar per sample</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%u" xml:space="preserve">
-        <source>%u</source>
-        <target state="translated">%u</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%u (interpreted as %lf)" xml:space="preserve">
         <source>%1$u (interpreted as %2$lf)</source>
         <target state="translated">%1$u (tolkad som %2$lf)</target>
@@ -640,11 +638,6 @@ Tack för din förståelse och ditt fortsatta stöd.</target>
       <trans-unit id="90°" xml:space="preserve">
         <source>90°</source>
         <target state="translated">90°</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="100" xml:space="preserve">
-        <source>100</source>
-        <target state="translated">100</target>
         <note/>
       </trans-unit>
       <trans-unit id="180°" xml:space="preserve">
@@ -1156,6 +1149,10 @@ Den här ändringen kan inte ångras. Är du säker på att du vill göra det h�
       <trans-unit id="Allocation limits - vertical" xml:space="preserve">
         <source>Allocation limits - vertical</source>
         <target state="translated">Tilldelningsgränser – vertikala</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow Forced HDR" xml:space="preserve">
+        <source>Allow Forced HDR</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow auto brightness when combined XDR brightness upscaling is used" xml:space="preserve">
@@ -4381,6 +4378,10 @@ Processen fungerar inte för den inbyggda bildskärmen (omstart krävs). Åtgär
         <target state="translated">Aktivera HDR-läge</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable HDR Mode (Forced)" xml:space="preserve">
+        <source>Enable HDR Mode (Forced)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable HDR support" xml:space="preserve">
         <source>Enable HDR support</source>
         <note/>
@@ -4817,6 +4818,10 @@ Det är säkert att ta bort dem - macOS återskapar alla nödvändiga profiler n
         <target state="translated">Tvångaktivera draglist för underskanning</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Forced" xml:space="preserve">
+        <source>Forced</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Forget" xml:space="preserve">
         <source>Forget</source>
         <target state="translated">Glöm</target>
@@ -5114,10 +5119,6 @@ Det är säkert att ta bort dem - macOS återskapar alla nödvändiga profiler n
       <trans-unit id="HDR/SDR Mode" xml:space="preserve">
         <source>HDR/SDR Mode</source>
         <target state="translated">HDR/SDR-läge</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="HDR→%@" xml:space="preserve">
-        <source>HDR→%@</source>
         <note/>
       </trans-unit>
       <trans-unit id="HEX editor styled blocks" xml:space="preserve">
@@ -5584,9 +5585,8 @@ Alla bildskärmar stöder inte DDC-strömförsörjning. DDC-strömförsörjning 
         <target state="translated">Intel</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Internal (%lld-bit)" xml:space="preserve">
-        <source>Internal (%lld-bit)</source>
-        <target state="translated">Intern (%lld-bit)</target>
+      <trans-unit id="Internal" xml:space="preserve">
+        <source>Internal</source>
         <note/>
       </trans-unit>
       <trans-unit id="Internal Pre-Release" xml:space="preserve">
@@ -6302,6 +6302,10 @@ Alla bildskärmar stöder inte DDC-strömförsörjning. DDC-strömförsörjning 
       <trans-unit id="Mirroring" xml:space="preserve">
         <source>Mirroring</source>
         <target state="translated">Spegling</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mixed" xml:space="preserve">
+        <source>Mixed</source>
         <note/>
       </trans-unit>
       <trans-unit id="Mode number" xml:space="preserve">
@@ -7177,6 +7181,10 @@ Alla bildskärmar stöder inte DDC-strömförsörjning. DDC-strömförsörjning 
       <trans-unit id="Preserve continuity in case of an EDID display identity change" xml:space="preserve">
         <source>Preserve continuity in case of an EDID display identity change</source>
         <target state="translated">Bevara kontinuiteten i händelse av en ändring av EDID-skärmens identitet</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Preset %@" xml:space="preserve">
+        <source>Preset %@</source>
         <note/>
       </trans-unit>
       <trans-unit id="Preset Index" xml:space="preserve">
@@ -8165,10 +8173,6 @@ Om du tar bort alla aktiveringar får du ett oskrivet blad.</target>
         <target state="translated">SDR-justering av högsta ljusstyrka är tillgänglig i macOS Sequoia och nyare. När detta är aktiverat hanterar appen denna HDR-skärm som den skulle göra på macOS Sonoma eller tidigare. Du kan fortfarande använda Kontrollcenter för justering av SDR-toppljusstyrka.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="SDR→%@" xml:space="preserve">
-        <source>SDR→%@</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="SOURCE" xml:space="preserve">
         <source>SOURCE</source>
         <target state="translated">KÄLLA</target>
@@ -8717,6 +8721,10 @@ Om du tar bort alla aktiveringar får du ett oskrivet blad.</target>
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">Visa LG-fjärrkontroll</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Show Mixed Modes" xml:space="preserve">
+        <source>Show Mixed Modes</source>
         <note/>
       </trans-unit>
       <trans-unit id="Show Mouse Pointer" xml:space="preserve">
@@ -10787,11 +10795,6 @@ Du kan avvisa detta meddelande - i så fall kommer ändringarna att tillämpas n
         <target state="translated">Läge för virtuell skärm</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Virtual Screen Resolutions" xml:space="preserve">
-        <source>Virtual Screen Resolutions</source>
-        <target state="translated">Upplösningar för virtuell skärm</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Virtual screen" xml:space="preserve">
         <source>Virtual screen</source>
         <target state="translated">Virtuell skärm</target>
@@ -10849,11 +10852,6 @@ Du kan avvisa detta meddelande - i så fall kommer ändringarna att tillämpas n
       </trans-unit>
       <trans-unit id="Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes are not supported on some older Macs." xml:space="preserve">
         <source>Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes are not supported on some older Macs.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes might not work in practice." xml:space="preserve">
-        <source>Virtual screens by default work at 60Hz refresh rate but additional/different reported refresh rate modes can be created. Higher than 60Hz modes might not work in practice.</source>
-        <target state="translated">Virtuella skärmar arbetar som standard med 60Hz uppdateringsfrekvens men ytterligare/olika rapporterade uppdateringsfrekvenslägen kan skapas. Högre än 60Hz-lägen kanske inte fungerar i praktiken.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Virtual screens can be connected/disconnected on demand any time. Some settings appear only when the screen is connected. Changing some of the settings below require the screen to be reconnected when it is already connected." xml:space="preserve">
@@ -11163,11 +11161,6 @@ Du kan avvisa detta meddelande - i så fall kommer ändringarna att tillämpas n
       </trans-unit>
       <trans-unit id="XDR/HDR upscaling available" xml:space="preserve">
         <source>XDR/HDR upscaling available</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="XDR/HDR upscaling compatible" xml:space="preserve">
-        <source>XDR/HDR upscaling compatible</source>
-        <target state="translated">Kompatibel med XDR/HDR-uppskalning</target>
         <note/>
       </trans-unit>
       <trans-unit id="YCbCr" xml:space="preserve">
