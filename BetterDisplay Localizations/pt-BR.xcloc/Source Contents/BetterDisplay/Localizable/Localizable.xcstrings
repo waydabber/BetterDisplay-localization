@@ -855,6 +855,9 @@
     "Additional Settings…" : {
 
     },
+    "Additional Yamaha AVR settings" : {
+
+    },
     "Adds additional resolutions on some configurations but usually just breaks the slider. Affects resolution keyboard shortcuts as well." : {
 
     },
@@ -974,6 +977,15 @@
 
     },
     "Allow native XDR upscaling" : {
+
+    },
+    "Allow power control only when the selected macOS audio device matches the configured audio device for the display." : {
+
+    },
+    "Allow powering the device off" : {
+
+    },
+    "Allow powering the device on" : {
 
     },
     "Allow resolution change for mirror target displays" : {
@@ -1307,6 +1319,9 @@
     "Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used." : {
 
     },
+    "Auto switch the device to the Mac input after the app powers the device on." : {
+
+    },
     "Auto-Configuration Done" : {
 
     },
@@ -1599,6 +1614,9 @@
 
     },
     "By specifying which input this Mac uses on the webOS device, the app can auto-switch input on wake and take into account the current input when powering the display off." : {
+
+    },
+    "By specifying which input this Mac uses on the Yamaha device, the app can auto-switch input on wake or volume change and take into account the current input for power control." : {
 
     },
     "bytes" : {
@@ -2777,6 +2795,9 @@
     "Do not restore combined brightness and software adjustments" : {
 
     },
+    "Do not steal input when already powered on" : {
+
+    },
     "Do not synchronize changes made via the app." : {
       "extractionState" : "manual"
     },
@@ -2805,7 +2826,7 @@
 
     },
     "Don't switch input" : {
-
+      "extractionState" : "stale"
     },
     "Done" : {
 
@@ -3516,6 +3537,9 @@
 
     },
     "If specified, this regex is performed on the response to extract the return value." : {
+
+    },
+    "If the device is already powered on by the time the app would power the device on, do not switch to the Mac input." : {
 
     },
     "If the display factory reset was performed properly, you should also reset all stored app DDC values to defaults." : {
@@ -4638,6 +4662,12 @@
     "Potentially DDC compatible" : {
 
     },
+    "Power control with matching audio device name only" : {
+
+    },
+    "Power off only when device is on Mac input" : {
+
+    },
     "Power-off on Mac input only" : {
 
     },
@@ -4669,6 +4699,9 @@
 
     },
     "Preserve continuity in case of an EDID display identity change" : {
+
+    },
+    "Preserve soft-disconnected state on startup" : {
 
     },
     "Preset %@" : {
@@ -5508,6 +5541,9 @@
     "Set display as main screen" : {
 
     },
+    "Set Mac input after powering on" : {
+
+    },
     "Set native halved HiDPI resolution (if available)" : {
 
     },
@@ -5655,9 +5691,6 @@
     "Show Detailed Report…" : {
 
     },
-    "Show details" : {
-
-    },
     "Show device input source list in the Input Source app menu." : {
 
     },
@@ -5671,6 +5704,9 @@
 
     },
     "Show header when only one device is present" : {
+
+    },
+    "Show help" : {
 
     },
     "Show in Finder" : {
@@ -6063,8 +6099,11 @@
     "The app normally does not restore full dimming upon wake or app startup to avoid confusion." : {
 
     },
-    "The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity." : {
+    "The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control." : {
 
+    },
+    "The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity." : {
+      "extractionState" : "stale"
     },
     "The app requests information about DisplayLink displays during configuration. Requires up-to-date DisplayLink drivers. Disable this feature if you experience issues with DisplayLink attached displays." : {
 
@@ -6073,6 +6112,9 @@
 
     },
     "The app will apply the loaded EDID when this display is connected. The operation causes the screen to flicker and switch modes if existing mode is not available with the updated EDID. If the new EDID has different id data (vendor, model, serial), the display will be redetected as a different one. Hold ⇧ Shift on startup to enable safe mode and avoid auto-apply. Physically reconnect display to revert back to the original in case of serious trouble." : {
+
+    },
+    "The app will continue to list display soft-disconnected in a previous session as physically connected even after app restart." : {
 
     },
     "The app will forget all stored DDC values and treat all controls as untouched. Sliders will revert to default neutral values.\n\nThis operation does not reset the display itself." : {
