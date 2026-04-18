@@ -1212,12 +1212,12 @@ Această modificare nu poate fi anulată. Ești sigur că vrei să continui?</ta
         <source>Allow power control only when the selected macOS audio device matches the configured audio device for the display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow powering the device off" xml:space="preserve">
-        <source>Allow powering the device off</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow powering the device on" xml:space="preserve">
         <source>Allow powering the device on</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow putting the device to standby" xml:space="preserve">
+        <source>Allow putting the device to standby</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -1752,10 +1752,6 @@ Specificarea lungimii de citire este opțională - lăsați câmpul gol pentru d
       <trans-unit id="Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used." xml:space="preserve">
         <source>Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used.</source>
         <target state="translated">Luminozitatea automată (senzor de lumină ambientală) poate dezactiva scalarea XDR în funcție de condițiile de iluminare atunci când se utilizează luminozitatea combinată.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Auto switch the device to the Mac input after the app powers the device on." xml:space="preserve">
-        <source>Auto switch the device to the Mac input after the app powers the device on.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Auto-Configuration Done" xml:space="preserve">
@@ -2427,6 +2423,10 @@ Specificarea lungimii de citire este opțională - lăsați câmpul gol pentru d
       <trans-unit id="Check for Updates" xml:space="preserve">
         <source>Check for Updates</source>
         <target state="translated">Verifică actualizări</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Check whether the display is connected after system wake before powering on (configured app level wake and configuration delays are introduced)." xml:space="preserve">
+        <source>Check whether the display is connected after system wake before powering on (configured app level wake and configuration delays are introduced).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Checking for Updates…" xml:space="preserve">
@@ -4213,11 +4213,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Nu mai arăta această avertizare!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Don't switch input" xml:space="preserve">
-        <source>Don't switch input</source>
-        <target state="translated">Nu schimba sursa de intrare</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Done" xml:space="preserve">
         <source>Done</source>
         <target state="translated">Gata</target>
@@ -4535,6 +4530,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable power control" xml:space="preserve">
         <source>Enable power control</source>
         <target state="translated">Activează controlul energiei</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable power control on detection" xml:space="preserve">
+        <source>Enable power control on detection</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
@@ -7163,10 +7162,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <source>Power control with matching audio device name only</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Power off only when device is on Mac input" xml:space="preserve">
-        <source>Power off only when device is on Mac input</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Power-off on Mac input only" xml:space="preserve">
         <source>Power-off on Mac input only</source>
         <target state="translated">Oprire doar pe intrarea Mac</target>
@@ -7488,6 +7483,10 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
         <source>Receive pre-release updates</source>
         <target state="translated">Primește actualizări pre-lansare</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recheck connection on wake" xml:space="preserve">
+        <source>Recheck connection on wake</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reconnect" xml:space="preserve">
@@ -8474,9 +8473,8 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Trimite semnal de pornire și comută intrarea la schimbarea volumului</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Send the power-off signal only when the TV input is set to this Mac." xml:space="preserve">
-        <source>Send the power-off signal only when the TV input is set to this Mac.</source>
-        <target state="translated">Trimite semnalul de oprire doar atunci când intrarea TV este setată pe acest Mac.</target>
+      <trans-unit id="Send the power-off signal only when the device input is set to this Mac." xml:space="preserve">
+        <source>Send the power-off signal only when the device input is set to this Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Sepia" xml:space="preserve">
@@ -8522,10 +8520,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       <trans-unit id="Set Default - Auto Calibrate" xml:space="preserve">
         <source>Set Default - Auto Calibrate</source>
         <target state="translated">Setați implicit - Auto-calibrare</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Set Mac input after powering on" xml:space="preserve">
-        <source>Set Mac input after powering on</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set Screen as Main" xml:space="preserve">
@@ -9327,9 +9321,8 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
         <target state="translated">Interschimbă ecrane identice</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Switch to Mac input on wake" xml:space="preserve">
-        <source>Switch to Mac input on wake</source>
-        <target state="translated">Comută la intrarea Mac la trezire</target>
+      <trans-unit id="Switch to Mac input on power-on" xml:space="preserve">
+        <source>Switch to Mac input on power-on</source>
         <note/>
       </trans-unit>
       <trans-unit id="Switch to native mode for full screen stream target" xml:space="preserve">
@@ -9514,11 +9507,6 @@ Nu toate ecranele acceptă operațiunile de alimentare DDC. Operațiunile de ali
       </trans-unit>
       <trans-unit id="The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control." xml:space="preserve">
         <source>The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity." xml:space="preserve">
-        <source>The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity.</source>
-        <target state="translated">Aplicația pornește dispozitivul și comută la intrarea selectată când volumul dispozitivului este modificat după o perioadă de inactivitate.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app requests information about DisplayLink displays during configuration. Requires up-to-date DisplayLink drivers. Disable this feature if you experience issues with DisplayLink attached displays." xml:space="preserve">
@@ -9817,6 +9805,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <target state="translated">Această optiune permite întunecare avansată, ajustări de culoare și alte funcții precum scalarea software XDR/HDR. Notă: ajustările de culoare taie conținutul HDR când sunt în uz activ. Dacă această opțiune este dezactivată, aplicația va folosi controlul de întunecare bazat pe suprapunere și va utiliza Metal pentru scalarea software XDR/HDR.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons)." xml:space="preserve">
+        <source>This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons).</source>
         <note/>
       </trans-unit>
       <trans-unit id="This allows the dimming or image adjustment overlay to take effect on the lock screen and on spaces where it is normally ineffective." xml:space="preserve">
@@ -10496,6 +10488,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Under the app menu icon" xml:space="preserve">
         <source>Under the app menu icon</source>
         <target state="translated">Sub iconița meniului aplicației</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Under the menu bar" xml:space="preserve">
+        <source>Under the menu bar</source>
         <note/>
       </trans-unit>
       <trans-unit id="Underscan" xml:space="preserve">
@@ -11649,9 +11645,17 @@ Majoritatea ecranelor nu permit scrierea EDID din motive de securitate, unele ec
         <target state="translated">⚠️ Notificările sunt dezactivate pentru aplicație. Remediați în Setări de sistem &gt; Notificări!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby')." xml:space="preserve">
+        <source>⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby').</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!" xml:space="preserve">
         <source>⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!</source>
         <target state="translated">⚠️ Scalarea software XDR este activă pentru o luminozitate suplimentară, în timp ce scalarea nativă XDR este disponibilă. Se recomandă activarea scalării native a luminozității XDR pentru o experiență îmbunătățită de întunecare, scalare și sincronizare!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%@' in the app menu first and then activate '%@' in the app menu to use this feature." xml:space="preserve">
+        <source>⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%1$@' in the app menu first and then activate '%2$@' in the app menu to use this feature.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">

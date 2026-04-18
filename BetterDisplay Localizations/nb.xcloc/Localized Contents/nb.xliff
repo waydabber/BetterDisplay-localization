@@ -1213,12 +1213,12 @@ Denne endringen kan ikke angres. Er du sikker på at du vil fortsette?</target>
         <source>Allow power control only when the selected macOS audio device matches the configured audio device for the display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow powering the device off" xml:space="preserve">
-        <source>Allow powering the device off</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow powering the device on" xml:space="preserve">
         <source>Allow powering the device on</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow putting the device to standby" xml:space="preserve">
+        <source>Allow putting the device to standby</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -1754,10 +1754,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used." xml:space="preserve">
         <source>Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used.</source>
         <target state="translated">Automatisk lysstyrke (omgivelseslyssensor) kan slå av XDR-oppskalering avhengig av lysforhold når kombinert lysstyrke brukes.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Auto switch the device to the Mac input after the app powers the device on." xml:space="preserve">
-        <source>Auto switch the device to the Mac input after the app powers the device on.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Auto-Configuration Done" xml:space="preserve">
@@ -2429,6 +2425,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Check for Updates" xml:space="preserve">
         <source>Check for Updates</source>
         <target state="translated">Søk etter oppdateringer</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Check whether the display is connected after system wake before powering on (configured app level wake and configuration delays are introduced)." xml:space="preserve">
+        <source>Check whether the display is connected after system wake before powering on (configured app level wake and configuration delays are introduced).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Checking for Updates…" xml:space="preserve">
@@ -4217,11 +4217,6 @@ Den fungerer ikke på innebygd skjerm (krever omstart). Operasjonen kan sette no
         <target state="translated">Ikke vis denne advarselen igjen!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Don't switch input" xml:space="preserve">
-        <source>Don't switch input</source>
-        <target state="translated">Ikke bytt inngang</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Done" xml:space="preserve">
         <source>Done</source>
         <target state="translated">Ferdig</target>
@@ -4538,6 +4533,10 @@ Den fungerer ikke på innebygd skjerm (krever omstart). Operasjonen kan sette no
       <trans-unit id="Enable power control" xml:space="preserve">
         <source>Enable power control</source>
         <target state="translated">Aktiver av/på-kontroll</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable power control on detection" xml:space="preserve">
+        <source>Enable power control on detection</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
@@ -7165,10 +7164,6 @@ Ikke alle skjermer støtter DDC-strømoperasjoner. Slike operasjoner kan forårs
         <source>Power control with matching audio device name only</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Power off only when device is on Mac input" xml:space="preserve">
-        <source>Power off only when device is on Mac input</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Power-off on Mac input only" xml:space="preserve">
         <source>Power-off on Mac input only</source>
         <target state="translated">Slå av kun på Mac-inngang</target>
@@ -7490,6 +7485,10 @@ Ikke alle skjermer støtter DDC-strømoperasjoner. Slike operasjoner kan forårs
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
         <source>Receive pre-release updates</source>
         <target state="translated">Motta forhåndsutgivelser</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recheck connection on wake" xml:space="preserve">
+        <source>Recheck connection on wake</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reconnect" xml:space="preserve">
@@ -8476,9 +8475,8 @@ Ikke alle skjermer støtter DDC-strømoperasjoner. Slike operasjoner kan forårs
         <target state="translated">Send på-slåingssignal og bytt inngang ved volumendring</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Send the power-off signal only when the TV input is set to this Mac." xml:space="preserve">
-        <source>Send the power-off signal only when the TV input is set to this Mac.</source>
-        <target state="translated">Send avslåingssignalet kun når TV-inngangen er satt til denne Macen.</target>
+      <trans-unit id="Send the power-off signal only when the device input is set to this Mac." xml:space="preserve">
+        <source>Send the power-off signal only when the device input is set to this Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Sepia" xml:space="preserve">
@@ -8524,10 +8522,6 @@ Ikke alle skjermer støtter DDC-strømoperasjoner. Slike operasjoner kan forårs
       <trans-unit id="Set Default - Auto Calibrate" xml:space="preserve">
         <source>Set Default - Auto Calibrate</source>
         <target state="translated">Angi standard – automatisk kalibrering</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Set Mac input after powering on" xml:space="preserve">
-        <source>Set Mac input after powering on</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set Screen as Main" xml:space="preserve">
@@ -9324,9 +9318,8 @@ Ikke alle skjermer støtter DDC-strømoperasjoner. Slike operasjoner kan forårs
         <target state="translated">Bytt om identiske skjermer</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Switch to Mac input on wake" xml:space="preserve">
-        <source>Switch to Mac input on wake</source>
-        <target state="translated">Bytt til Mac-inngang ved oppvåkning</target>
+      <trans-unit id="Switch to Mac input on power-on" xml:space="preserve">
+        <source>Switch to Mac input on power-on</source>
         <note/>
       </trans-unit>
       <trans-unit id="Switch to native mode for full screen stream target" xml:space="preserve">
@@ -9511,11 +9504,6 @@ Ikke alle skjermer støtter DDC-strømoperasjoner. Slike operasjoner kan forårs
       </trans-unit>
       <trans-unit id="The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control." xml:space="preserve">
         <source>The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity." xml:space="preserve">
-        <source>The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity.</source>
-        <target state="translated">Appen slår på enheten og bytter til valgt inngang når volumet endres etter en periode med inaktivitet.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app requests information about DisplayLink displays during configuration. Requires up-to-date DisplayLink drivers. Disable this feature if you experience issues with DisplayLink attached displays." xml:space="preserve">
@@ -9812,6 +9800,10 @@ Ved feil, koble fra og til skjermen fysisk igjen.</target>
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <target state="translated">Dette muliggjør avansert demping, fargejusteringer og andre funksjoner som programvarebasert XDR/HDR-oppskalering. Merk: fargejusteringer klipper HDR-innhold ved aktiv bruk. Hvis dette alternativet er deaktivert, vil appen bruke demping via overlegg og Metal for programvarebasert XDR/HDR-oppskalering.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons)." xml:space="preserve">
+        <source>This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons).</source>
         <note/>
       </trans-unit>
       <trans-unit id="This allows the dimming or image adjustment overlay to take effect on the lock screen and on spaces where it is normally ineffective." xml:space="preserve">
@@ -10504,6 +10496,10 @@ Du kan avvise denne meldingen – i så fall vil endringene bli brukt når den v
       <trans-unit id="Under the app menu icon" xml:space="preserve">
         <source>Under the app menu icon</source>
         <target state="translated">Under appens menyikon</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Under the menu bar" xml:space="preserve">
+        <source>Under the menu bar</source>
         <note/>
       </trans-unit>
       <trans-unit id="Underscan" xml:space="preserve">
@@ -11650,9 +11646,17 @@ De fleste skjermer tillater ikke EDID-skriving av sikkerhetsgrunner; noen skjerm
         <target state="translated">⚠️ Varsler er slått av for appen. Rett opp dette under Systeminnstillinger &gt; Varsler!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby')." xml:space="preserve">
+        <source>⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby').</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!" xml:space="preserve">
         <source>⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!</source>
         <target state="translated">⚠️ Programvare-XDR-opp skalering er aktiv for ekstra lysstyrke, mens native XDR-opp skalering også er tilgjengelig. Det anbefales å aktivere native XDR-lysopp skalering for en bedre dimming-, opp skalerings- og synkroniseringsopplevelse!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%@' in the app menu first and then activate '%@' in the app menu to use this feature." xml:space="preserve">
+        <source>⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%1$@' in the app menu first and then activate '%2$@' in the app menu to use this feature.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">

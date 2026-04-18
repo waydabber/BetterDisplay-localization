@@ -1212,12 +1212,12 @@ Bu değişiklik geri alınamaz. Bunu yapmak istediğinizden emin misiniz?</targe
         <source>Allow power control only when the selected macOS audio device matches the configured audio device for the display.</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow powering the device off" xml:space="preserve">
-        <source>Allow powering the device off</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Allow powering the device on" xml:space="preserve">
         <source>Allow powering the device on</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Allow putting the device to standby" xml:space="preserve">
+        <source>Allow putting the device to standby</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allow resolution change for mirror target displays" xml:space="preserve">
@@ -1752,10 +1752,6 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       <trans-unit id="Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used." xml:space="preserve">
         <source>Auto brightness (ambient light sensor) might turn off XDR upscaling depending on lighting conditions when combined brightness is used.</source>
         <target state="translated">Otomatik parlaklık (ortam ışığı sensörü), birden fazla parlaklık kullanıldığında aydınlatma koşullarına bağlı olarak XDR yükseltmeyi kapatabilir.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Auto switch the device to the Mac input after the app powers the device on." xml:space="preserve">
-        <source>Auto switch the device to the Mac input after the app powers the device on.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Auto-Configuration Done" xml:space="preserve">
@@ -2427,6 +2423,10 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       <trans-unit id="Check for Updates" xml:space="preserve">
         <source>Check for Updates</source>
         <target state="translated">Güncellemeleri Kontrol Et</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Check whether the display is connected after system wake before powering on (configured app level wake and configuration delays are introduced)." xml:space="preserve">
+        <source>Check whether the display is connected after system wake before powering on (configured app level wake and configuration delays are introduced).</source>
         <note/>
       </trans-unit>
       <trans-unit id="Checking for Updates…" xml:space="preserve">
@@ -4215,11 +4215,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Bu uyarıyı bir daha göstermeyin!</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Don't switch input" xml:space="preserve">
-        <source>Don't switch input</source>
-        <target state="translated">Girişi değiştirme</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Done" xml:space="preserve">
         <source>Done</source>
         <target state="translated">Tamam</target>
@@ -4536,6 +4531,10 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable power control" xml:space="preserve">
         <source>Enable power control</source>
         <target state="translated">Açma/kapatma kontrolünü etkinleştir</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable power control on detection" xml:space="preserve">
+        <source>Enable power control on detection</source>
         <note/>
       </trans-unit>
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
@@ -7163,10 +7162,6 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <source>Power control with matching audio device name only</source>
         <note/>
       </trans-unit>
-      <trans-unit id="Power off only when device is on Mac input" xml:space="preserve">
-        <source>Power off only when device is on Mac input</source>
-        <note/>
-      </trans-unit>
       <trans-unit id="Power-off on Mac input only" xml:space="preserve">
         <source>Power-off on Mac input only</source>
         <target state="translated">Yalnızca Mac girişinde kapat</target>
@@ -7488,6 +7483,10 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Receive pre-release updates" xml:space="preserve">
         <source>Receive pre-release updates</source>
         <target state="translated">Ön sürüm (Beta) güncelleştirmeleri alın</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Recheck connection on wake" xml:space="preserve">
+        <source>Recheck connection on wake</source>
         <note/>
       </trans-unit>
       <trans-unit id="Reconnect" xml:space="preserve">
@@ -8474,9 +8473,8 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <target state="translated">Açma sinyali gönder ve ses değiştiğinde girişi değiştir</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Send the power-off signal only when the TV input is set to this Mac." xml:space="preserve">
-        <source>Send the power-off signal only when the TV input is set to this Mac.</source>
-        <target state="translated">TV girişi bu Mac olarak ayarlandığında yalnızca kapatma sinyalini gönder.</target>
+      <trans-unit id="Send the power-off signal only when the device input is set to this Mac." xml:space="preserve">
+        <source>Send the power-off signal only when the device input is set to this Mac.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Sepia" xml:space="preserve">
@@ -8522,10 +8520,6 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       <trans-unit id="Set Default - Auto Calibrate" xml:space="preserve">
         <source>Set Default - Auto Calibrate</source>
         <target state="translated">Varsayılanı Ayarla - Otomatik Kalibre Et</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Set Mac input after powering on" xml:space="preserve">
-        <source>Set Mac input after powering on</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set Screen as Main" xml:space="preserve">
@@ -9322,9 +9316,8 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
         <target state="translated">Özdeş ekranları değiştirin</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Switch to Mac input on wake" xml:space="preserve">
-        <source>Switch to Mac input on wake</source>
-        <target state="translated">Uyanma sırasında Mac girişine geç</target>
+      <trans-unit id="Switch to Mac input on power-on" xml:space="preserve">
+        <source>Switch to Mac input on power-on</source>
         <note/>
       </trans-unit>
       <trans-unit id="Switch to native mode for full screen stream target" xml:space="preserve">
@@ -9509,11 +9502,6 @@ Tüm ekranlar DDC güç işlemlerini desteklemez. DDC güç işlemleri bazı ekr
       </trans-unit>
       <trans-unit id="The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control." xml:space="preserve">
         <source>The app powers the device on and switches to the Mac input when the device volume is changed after some period of inactivity. The power-on aspect of this feature requires enabled power control.</source>
-        <note/>
-      </trans-unit>
-      <trans-unit id="The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity." xml:space="preserve">
-        <source>The app powers the device on and switches to the selected input when the device volume is changed after some period of inactivity.</source>
-        <target state="translated">Uygulama, bir süre kullanılmadıktan sonra ses değiştirildiğinde cihazı açar ve seçili girişe geçer.</target>
         <note/>
       </trans-unit>
       <trans-unit id="The app requests information about DisplayLink displays during configuration. Requires up-to-date DisplayLink drivers. Disable this feature if you experience issues with DisplayLink attached displays." xml:space="preserve">
@@ -9810,6 +9798,10 @@ Bir arıza durumunda, ekranın bağlantısını fiziksel olarak kesin ve yeniden
       <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
         <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
         <target state="translated">Bu, gelişmiş karartma, renk ayarlamaları ve yazılım XDR/HDR yükseltme gibi diğer özelliklere olanak tanır. Not: Renk ayarlamaları, aktif kullanımdayken HDR içeriğini kaydeder. Bu seçenek devre dışı bırakılırsa, uygulama yerleşim tabanlı karartma kontrolüne geri döner ve yazılım XDR/HDR yükseltme için Metal'i kullanır.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons)." xml:space="preserve">
+        <source>This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons).</source>
         <note/>
       </trans-unit>
       <trans-unit id="This allows the dimming or image adjustment overlay to take effect on the lock screen and on spaces where it is normally ineffective." xml:space="preserve">
@@ -10502,6 +10494,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       <trans-unit id="Under the app menu icon" xml:space="preserve">
         <source>Under the app menu icon</source>
         <target state="translated">Uygulama menüsü simgesinin altında</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Under the menu bar" xml:space="preserve">
+        <source>Under the menu bar</source>
         <note/>
       </trans-unit>
       <trans-unit id="Underscan" xml:space="preserve">
@@ -11648,9 +11644,17 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ Uygulama için bildirimler kapalı. Bunu Sistem Ayarları &gt; Bildirimler altında düzeltin!</target>
         <note/>
       </trans-unit>
+      <trans-unit id="⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby')." xml:space="preserve">
+        <source>⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby').</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!" xml:space="preserve">
         <source>⚠️ Software XDR upscaling is active for extra brightness while native XDR upscaling is also available. It is recommended to enable native XDR brightness upscaling instead for an improved dimming, upscaling and syncing experience!</source>
         <target state="translated">⚠️ Ekstra parlaklık için Yazılım XDR yükseltme etkinken, yerel XDR yükseltme de kullanılabilir. Daha iyi bir karartma, yükseltme ve senkronizasyon deneyimi için bunun yerine yerel XDR parlaklık yükseltmeyi etkinleştirmeniz önerilir!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%@' in the app menu first and then activate '%@' in the app menu to use this feature." xml:space="preserve">
+        <source>⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%1$@' in the app menu first and then activate '%2$@' in the app menu to use this feature.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">
