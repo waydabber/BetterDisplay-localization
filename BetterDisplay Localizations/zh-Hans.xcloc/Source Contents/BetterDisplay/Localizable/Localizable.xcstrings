@@ -447,16 +447,6 @@
     "%lld-bit" : {
 
     },
-    "%lld%@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$lld%2$@"
-          }
-        }
-      }
-    },
     "%lld°" : {
 
     },
@@ -1044,9 +1034,6 @@
 
     },
     "Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration))." : {
-
-    },
-    "Allows showing nits values (if available) in the OSD and app menu for brightness control if relevant features are enabled." : {
 
     },
     "Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation." : {
@@ -3081,6 +3068,9 @@
     "Enables native XDR brightness upscaling and extended dimming for this display." : {
 
     },
+    "Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for this virtual screen. Using 8K+ virtual screens may cause stability issues." : {
+
+    },
     "Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." : {
 
     },
@@ -3220,6 +3210,9 @@
 
     },
     "For controls that trigger a feature or functionality." : {
+
+    },
+    "Force EDR mode" : {
 
     },
     "Force support for color table adjustments" : {
@@ -3426,6 +3419,12 @@
     "HDR Filter Pipeline" : {
 
     },
+    "HDR mode - peak HDR brightness" : {
+
+    },
+    "HDR mode - peak SDR brightness" : {
+
+    },
     "HDR mode changed for %@." : {
 
     },
@@ -3577,9 +3576,6 @@
 
     },
     "If the display is used as a \"Television\" (as opposed to \"Computer monitor\"), it won't be affected by Night Shift and True Tone." : {
-
-    },
-    "If the display or the current brightness controllers do not support brightnes level reading in nits, the nits range has to be manually configured for nits output and for nits based synchronization. Useful for third party displays and some older Apple displays and Macs." : {
 
     },
     "If the menu icon is hidden, you can reveal the icon by re-launching the app while the app is already running." : {
@@ -3987,6 +3983,9 @@
     "Manual nits range configuration" : {
 
     },
+    "Manual ranges may be used by the app when the brightness controller does not support nits reporting or reported values are considered unreliable." : {
+
+    },
     "Manually define the created resolution range. System specific limitations still apply. Some resolution variants are added even if outside of defined range." : {
 
     },
@@ -4042,6 +4041,9 @@
 
     },
     "Max Width" : {
+
+    },
+    "Maximum average HDR luminance" : {
 
     },
     "Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." : {
@@ -4123,6 +4125,9 @@
 
     },
     "Minimize" : {
+
+    },
+    "Minimum HDR luminance" : {
 
     },
     "Minimum time between actions" : {
@@ -4330,9 +4335,6 @@
 
     },
     "No Mirror Targets Available" : {
-
-    },
-    "No Modes Available" : {
 
     },
     "No screen rotation" : {
@@ -4580,6 +4582,15 @@
 
     },
     "Peak brightness level when hardware control is set to minimum." : {
+
+    },
+    "Peak HDR brightness level. If not specified, the app calculates it based on the the peak SDR brightness and available EDR headroom." : {
+
+    },
+    "Peak luminance" : {
+
+    },
+    "Peak SDR brightness level when brightness is set to 100%. Applies only when the macOS peak SDR adjustment (HDR brightness slider) is being used." : {
 
     },
     "Percentage reflects the size of the GUI elements (Windows, Linux style) instead of the resolution. Native size is 100%. Affects resolution keyboard shortcut as well." : {
@@ -5701,6 +5712,9 @@
     "Show brightness nits" : {
 
     },
+    "Show brightness nits values in the app OSD and menu brightness slider for brightness control (relevant features must be enabled)." : {
+
+    },
     "Show brightness slider nits values" : {
 
     },
@@ -6082,6 +6096,12 @@
     "Synchronize %@" : {
 
     },
+    "Synchronize brightness nits" : {
+
+    },
+    "Synchronize calculated brightness levels in nits from sources to targets. This helps when displays with different minimum and maximum brigthness levels are involved. Make sure nits ranges are properly configured for each display." : {
+
+    },
     "Synchronize changes triggered externally" : {
       "extractionState" : "manual"
     },
@@ -6424,6 +6444,9 @@
 
     },
     "This should remove the display from the display layout.\n\nPlease note that on Intel Macs (such as this Mac) the feature might not work as expected!\n\nIMPORTANT: While the display is in a disconnected state (via the app), physically turning the display off, removing the cable or (for a built-in display) closing the lid may result in an inability to turn any displays back on (until a reboot)!" : {
+
+    },
+    "This to prevents momentary brightness flucations after HDR content was presented on the display. Please note that while keeping the built-in display in EDR mode for direct brightness control does not have any drawbacks, this setting may force other external Apple displays into EDR mode as well." : {
 
     },
     "This upscaling method expands the available brightness range for SDR content and allows HDR without clipping by directly controlling the display's brightness. Incompatible with the default brightness control features of macOS. Make sure the app properly listens to the keyboard brightness control keys." : {

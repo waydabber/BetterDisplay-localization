@@ -486,11 +486,6 @@ Use the 'Transfer display settings' feature under all affected display's additio
         <target state="translated">%1$lld x %2$lld %3$@ @ %4$lldHz</target>
         <note/>
       </trans-unit>
-      <trans-unit id="%lld%@" xml:space="preserve">
-        <source>%1$lld%2$@</source>
-        <target state="translated">%1$lld%2$@</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="%lld-bit" xml:space="preserve">
         <source>%lld-bit</source>
         <target state="translated">%lld-비트</target>
@@ -1293,10 +1288,6 @@ This change cannot be undone. Are you sure you want to do this?</source>
       <trans-unit id="Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration))." xml:space="preserve">
         <source>Allows scripted CLI access and third party app integration using notification dispatch (see [documentation](https://betterdisplay.pro/integration)).</source>
         <target state="translated">스크립트 기반 CLI 접근 및 알림 발송을 통한 타사 앱 통합을 허용합니다 ([문서](https://betterdisplay.pro/integration)를 참조하세요).</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Allows showing nits values (if available) in the OSD and app menu for brightness control if relevant features are enabled." xml:space="preserve">
-        <source>Allows showing nits values (if available) in the OSD and app menu for brightness control if relevant features are enabled.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Allows some fancy animation for the nits counter and provides visual feedback for upscaling in style. Disable for a somewhat more muted presentation." xml:space="preserve">
@@ -4619,6 +4610,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">이 디스플레이에 네이티브 XDR 밝기 업스케일링과 확장된 디밍을 허용합니다.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for this virtual screen. Using 8K+ virtual screens may cause stability issues." xml:space="preserve">
+        <source>Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for this virtual screen. Using 8K+ virtual screens may cause stability issues.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type." xml:space="preserve">
         <source>Enables resolutions up to 16Kx16K (8Kx8K HiDPI) for virtual screens and flexible scaling. Using 8K+ virtual screens might cause stability issues. Flexible scaling needs to be reapplied. Maximum native resolutions have limitations depending on specific macOS version and GPU type.</source>
         <target state="translated">가상 화면과 유연한 스케일링을 위해 최대 16Kx16K(8Kx8K HiDPI) 해상도를 활성화합니다. 8K 이상의 가상 화면을 사용하면 안정성 문제가 발생할 수 있고 유연한 스케일링을 다시 적용해야 합니다. 최대 기본 해상도는 특정 macOS 버전과 GPU 유형에 따라 제한됩니다.</target>
@@ -4845,6 +4840,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="For controls that trigger a feature or functionality." xml:space="preserve">
         <source>For controls that trigger a feature or functionality.</source>
         <target state="translated">기능이나 기능을 트리거하는 기능들을 위한 것입니다.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Force EDR mode" xml:space="preserve">
+        <source>Force EDR mode</source>
         <note/>
       </trans-unit>
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
@@ -5155,6 +5154,14 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>HDR enabled</source>
         <note/>
       </trans-unit>
+      <trans-unit id="HDR mode - peak HDR brightness" xml:space="preserve">
+        <source>HDR mode - peak HDR brightness</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="HDR mode - peak SDR brightness" xml:space="preserve">
+        <source>HDR mode - peak SDR brightness</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="HDR mode changed for %@." xml:space="preserve">
         <source>HDR mode changed for %@.</source>
         <target state="translated">HDR 모드가 %@(으)로 변경되었습니다.</target>
@@ -5430,10 +5437,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="If the display is used as a &quot;Television&quot; (as opposed to &quot;Computer monitor&quot;), it won't be affected by Night Shift and True Tone." xml:space="preserve">
         <source>If the display is used as a "Television" (as opposed to "Computer monitor"), it won't be affected by Night Shift and True Tone.</source>
         <target state="translated">디스플레이를 '컴퓨터 모니터'가 아닌 'TV'로 사용하는 경우, Night Shift 및 True Tone의 영향을 받지 않습니다.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="If the display or the current brightness controllers do not support brightnes level reading in nits, the nits range has to be manually configured for nits output and for nits based synchronization. Useful for third party displays and some older Apple displays and Macs." xml:space="preserve">
-        <source>If the display or the current brightness controllers do not support brightnes level reading in nits, the nits range has to be manually configured for nits output and for nits based synchronization. Useful for third party displays and some older Apple displays and Macs.</source>
         <note/>
       </trans-unit>
       <trans-unit id="If the menu icon is hidden, you can reveal the icon by re-launching the app while the app is already running." xml:space="preserve">
@@ -6087,6 +6090,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Manual nits range configuration</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Manual ranges may be used by the app when the brightness controller does not support nits reporting or reported values are considered unreliable." xml:space="preserve">
+        <source>Manual ranges may be used by the app when the brightness controller does not support nits reporting or reported values are considered unreliable.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Manually define the created resolution range. System specific limitations still apply. Some resolution variants are added even if outside of defined range." xml:space="preserve">
         <source>Manually define the created resolution range. System specific limitations still apply. Some resolution variants are added even if outside of defined range.</source>
         <target state="translated">생성된 해상도 범위를 수동으로 정의합니다. 시스템별 제한 사항은 여전히 적용됩니다. 정의된 범위를 벗어나더라도 일부 해상도 변형이 추가됩니다.</target>
@@ -6195,6 +6202,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Maximum Source Width" xml:space="preserve">
         <source>Maximum Source Width</source>
         <target state="translated">최대 소스 너비</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Maximum average HDR luminance" xml:space="preserve">
+        <source>Maximum average HDR luminance</source>
         <note/>
       </trans-unit>
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
@@ -6310,6 +6321,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Minimize" xml:space="preserve">
         <source>Minimize</source>
         <target state="translated">최소화</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Minimum HDR luminance" xml:space="preserve">
+        <source>Minimum HDR luminance</source>
         <note/>
       </trans-unit>
       <trans-unit id="Minimum time between actions" xml:space="preserve">
@@ -6619,11 +6634,6 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="No Mirror Targets Available" xml:space="preserve">
         <source>No Mirror Targets Available</source>
         <target state="translated">사용 가능한 미러링 대상 없음</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="No Modes Available" xml:space="preserve">
-        <source>No Modes Available</source>
-        <target state="translated">사용 가능한 모드 없음</target>
         <note/>
       </trans-unit>
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
@@ -7001,12 +7011,24 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <target state="translated">모든 스트리밍 일시 정지</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Peak HDR brightness level. If not specified, the app calculates it based on the the peak SDR brightness and available EDR headroom." xml:space="preserve">
+        <source>Peak HDR brightness level. If not specified, the app calculates it based on the the peak SDR brightness and available EDR headroom.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Peak SDR brightness level when brightness is set to 100%. Applies only when the macOS peak SDR adjustment (HDR brightness slider) is being used." xml:space="preserve">
+        <source>Peak SDR brightness level when brightness is set to 100%. Applies only when the macOS peak SDR adjustment (HDR brightness slider) is being used.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Peak brightness level when hardware control is set to maximum. If hardware brightness control is disabled or unavailable, this value is taken as maximum brightness level for software control." xml:space="preserve">
         <source>Peak brightness level when hardware control is set to maximum. If hardware brightness control is disabled or unavailable, this value is taken as maximum brightness level for software control.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Peak brightness level when hardware control is set to minimum." xml:space="preserve">
         <source>Peak brightness level when hardware control is set to minimum.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Peak luminance" xml:space="preserve">
+        <source>Peak luminance</source>
         <note/>
       </trans-unit>
       <trans-unit id="Percentage reflects the size of the GUI elements (Windows, Linux style) instead of the resolution. Native size is 100%. Affects resolution keyboard shortcut as well." xml:space="preserve">
@@ -8882,6 +8904,10 @@ Not all displays support DDC power operations. DDC power operations can cause (e
         <source>Show brightness nits</source>
         <note/>
       </trans-unit>
+      <trans-unit id="Show brightness nits values in the app OSD and menu brightness slider for brightness control (relevant features must be enabled)." xml:space="preserve">
+        <source>Show brightness nits values in the app OSD and menu brightness slider for brightness control (relevant features must be enabled).</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Show brightness slider nits values" xml:space="preserve">
         <source>Show brightness slider nits values</source>
         <note/>
@@ -9433,6 +9459,14 @@ Not all displays support DDC power operations. DDC power operations can cause (e
       <trans-unit id="Synchronize %@" xml:space="preserve">
         <source>Synchronize %@</source>
         <target state="translated">%@ 동기화</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize brightness nits" xml:space="preserve">
+        <source>Synchronize brightness nits</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Synchronize calculated brightness levels in nits from sources to targets. This helps when displays with different minimum and maximum brigthness levels are involved. Make sure nits ranges are properly configured for each display." xml:space="preserve">
+        <source>Synchronize calculated brightness levels in nits from sources to targets. This helps when displays with different minimum and maximum brigthness levels are involved. Make sure nits ranges are properly configured for each display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Synchronize changes triggered externally" xml:space="preserve">
@@ -10062,6 +10096,10 @@ IMPORTANT: While the display is in a disconnected state (via the app), physicall
 인텔 Mac(예: 이 Mac)에서는 이 기능이 예상대로 작동하지 않을 수 있다는 점에 유의하세요!
 
 중요: 디스플레이가 (앱을 통해) 연결이 끊긴 상태에서 디스플레이를 물리적으로 끄거나 케이블을 제거하거나 (내장형 디스플레이의 경우) 덮개를 닫으면 재부팅할 때까지 디스플레이를 다시 켜지 못할 수 있습니다(재부팅할 때까지)!</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="This to prevents momentary brightness flucations after HDR content was presented on the display. Please note that while keeping the built-in display in EDR mode for direct brightness control does not have any drawbacks, this setting may force other external Apple displays into EDR mode as well." xml:space="preserve">
+        <source>This to prevents momentary brightness flucations after HDR content was presented on the display. Please note that while keeping the built-in display in EDR mode for direct brightness control does not have any drawbacks, this setting may force other external Apple displays into EDR mode as well.</source>
         <note/>
       </trans-unit>
       <trans-unit id="This upscaling method expands the available brightness range for SDR content and allows HDR without clipping by directly controlling the display's brightness. Incompatible with the default brightness control features of macOS. Make sure the app properly listens to the keyboard brightness control keys." xml:space="preserve">
