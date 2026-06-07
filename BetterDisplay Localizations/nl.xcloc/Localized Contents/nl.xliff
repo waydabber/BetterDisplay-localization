@@ -2202,6 +2202,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>CEC supports remote-style volume up/down and mute commands. It does not support setting a specific volume level.</source>
         <note/>
       </trans-unit>
+      <trans-unit id="CEC tunnel: %@" xml:space="preserve">
+        <source>CEC tunnel: %@</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="CGDirectDisplayID" xml:space="preserve">
         <source>CGDirectDisplayID</source>
         <target state="translated">CGDirectDisplayID</target>
@@ -2377,6 +2381,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Als je deze instelling wijzigt heeft dit geen invloed op bestaande bekende schermen. De wijze waarop schermen worden geïdentificeerd kan op individuele basis worden gewijzigd onder de aanvullende instellingen van dat specifieke scherm.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Check HDMI-CEC capability/status without sending discovery messages. Turn this off to use an active CEC probe." xml:space="preserve">
+        <source>Check HDMI-CEC capability/status without sending discovery messages. Turn this off to use an active CEC probe.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Check for Updates" xml:space="preserve">
         <source>Check for Updates</source>
         <target state="translated">Controleer op updates</target>
@@ -2407,9 +2415,21 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Blokgrootte</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Claim logical source address" xml:space="preserve">
+        <source>Claim logical source address</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Classic" xml:space="preserve">
         <source>Classic</source>
         <target state="translated">Klassiek</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear pending CEC tunnel status after sending. This avoids leaving pending transmit/receive flags behind." xml:space="preserve">
+        <source>Clear pending CEC tunnel status after sending. This avoids leaving pending transmit/receive flags behind.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear pending tunnel status" xml:space="preserve">
+        <source>Clear pending tunnel status</source>
         <note/>
       </trans-unit>
       <trans-unit id="Click Here To Allow Sleep" xml:space="preserve">
@@ -4424,6 +4444,10 @@ Het proces werkt niet voor het ingebouwde scherm (hiervoor is een herstart nodig
         <target state="translated">Schakel helderheidsbediening in van Apple-schermapparatuur</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state." xml:space="preserve">
+        <source>Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable CLI access and notification based integration" xml:space="preserve">
         <source>Enable CLI access and notification based integration</source>
         <target state="translated">Schakel CLI-toegang in en de op meldingen gebaseerde integratie</target>
@@ -5164,8 +5188,8 @@ Ze kunnen veilig verwijderd worden — macOS zal ze opnieuw aanmaken als het sch
         <source>HDMI-CEC</source>
         <note/>
       </trans-unit>
-      <trans-unit id="HDMI-CEC connection test" xml:space="preserve">
-        <source>HDMI-CEC connection test</source>
+      <trans-unit id="HDMI-CEC connection status" xml:space="preserve">
+        <source>HDMI-CEC connection status</source>
         <note/>
       </trans-unit>
       <trans-unit id="HDR Color Mode" xml:space="preserve">
@@ -6149,6 +6173,10 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
       <trans-unit id="Manage Activations" xml:space="preserve">
         <source>Manage Activations</source>
         <target state="translated">Beheer activeringen</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Manage CEC tunnel state" xml:space="preserve">
+        <source>Manage CEC tunnel state</source>
         <note/>
       </trans-unit>
       <trans-unit id="Manage Custom Controls…" xml:space="preserve">
@@ -8797,6 +8825,10 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <target state="translated">Stel de voorinstelling in van het Apple-scherm in van ${displayEntity} naar ${xdrPresetEntity}.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set the CEC logical source address before sending and restore the previous mask afterward. Turn this off for bare send behavior." xml:space="preserve">
+        <source>Set the CEC logical source address before sending and restore the previous mask afterward. Turn this off for bare send behavior.</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
         <source>Set the audio volume of a display using DDC to a specified value.</source>
         <target state="translated">Stel de geluidsvolume in van een scherm via DDC naar een opgegeven waarde.</target>
@@ -10878,6 +10910,10 @@ Je kunt deze melding wegklikken - in dit geval zullen de wijzigingen worden toeg
         <target state="translated">Gebruik dempen/dempen-opheffingswijzen</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Use passive connection status check" xml:space="preserve">
+        <source>Use passive connection status check</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Use this multiplier to convert the control's internal value to the value expected (or provided) by the integrated device." xml:space="preserve">
         <source>Use this multiplier to convert the control's internal value to the value expected (or provided) by the integrated device.</source>
         <target state="translated">Gebruik deze vermenigvuldingswaarde om de interne waarde van de bediening om te zetten naar de waarde verwacht (of verstrekt) door het geïntegreerde apparaat.</target>
@@ -11519,6 +11555,10 @@ Een eerdere activering is automatisch verwijderd om ruimte te maken voor deze ni
         <source>available</source>
         <note/>
       </trans-unit>
+      <trans-unit id="available (response not tested)" xml:space="preserve">
+        <source>available (response not tested)</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="bit" xml:space="preserve">
         <source>bit</source>
         <target state="translated">bit</target>
@@ -11527,6 +11567,10 @@ Een eerdere activering is automatisch verwijderd om ruimte te maken voor deze ni
       <trans-unit id="bytes" xml:space="preserve">
         <source>bytes</source>
         <target state="translated">bytes</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="capable but not enabled by macOS" xml:space="preserve">
+        <source>capable but not enabled by macOS</source>
         <note/>
       </trans-unit>
       <trans-unit id="checking connection" xml:space="preserve">
@@ -11636,6 +11680,10 @@ Een eerdere activering is automatisch verwijderd om ruimte te maken voor deze ni
         <target state="translated">niet gevonden</target>
         <note/>
       </trans-unit>
+      <trans-unit id="not enabled by macOS" xml:space="preserve">
+        <source>not enabled by macOS</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="not supported (capability read failed)" xml:space="preserve">
         <source>not supported (capability read failed)</source>
         <note/>
@@ -11688,6 +11736,10 @@ Een eerdere activering is automatisch verwijderd om ruimte te maken voor deze ni
         <target state="translated">staand</target>
         <note/>
       </trans-unit>
+      <trans-unit id="ready" xml:space="preserve">
+        <source>ready</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="reconnecting" xml:space="preserve">
         <source>reconnecting</source>
         <target state="translated">opnieuw verbinden</target>
@@ -11729,10 +11781,6 @@ Een eerdere activering is automatisch verwijderd om ruimte te maken voor deze ni
       <trans-unit id="unpaired" xml:space="preserve">
         <source>unpaired</source>
         <target state="translated">niet gepaard</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="unverified (no response, may work)" xml:space="preserve">
-        <source>unverified (no response, may work)</source>
         <note/>
       </trans-unit>
       <trans-unit id="unverified (unexpected response, may work)" xml:space="preserve">
@@ -11918,6 +11966,10 @@ Are you sure you want to continue?</source>
         <target state="translated">⚠️ Deze handeling kan je scherm permanent onbruikbaar maken!
 
 Weet je zeker dat je wilt doorgaan?</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="⚠️ This setting is known to cause lack of signal on wake for some adapters, including the built-in HDMI port of several Mac models." xml:space="preserve">
+        <source>⚠️ This setting is known to cause lack of signal on wake for some adapters, including the built-in HDMI port of several Mac models.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This setting may prevent DisplayLink displays from showing the overlay effect and, with some DisplayLink driver versions, may lead to increased CPU usage. It also prevents dimming and color adjustments from taking effect in screen streams and PIP windows." xml:space="preserve">
