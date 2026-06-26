@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="tr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1137,8 +1137,8 @@ Bu değişiklik geri alınamaz. Bunu yapmak istediğinizden emin misiniz?</targe
         <target state="translated">Zorlanmış HDR’ye izin ver</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+      <trans-unit id="Allow color table control (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table control (note: turn this off for compatibility mode)</source>
         <target state="translated">Renk tablosu ayarlamalarına izin ver (not: uyumluluk modu için bunu kapatın)</target>
         <note/>
       </trans-unit>
@@ -2061,14 +2061,13 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <target state="translated">Parlaklık (Birleşik)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Combined, Metal)" xml:space="preserve">
-        <source>Brightness (Combined, Metal)</source>
-        <target state="translated">Parlaklık (Birleşik, Metal)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Combined, Upscaling)" xml:space="preserve">
         <source>Brightness (Combined, Upscaling)</source>
         <target state="translated">Parlaklık (Birleşik, Yükseltme)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
+        <source>Brightness (Compositor Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Direct XDR Upscaling)" xml:space="preserve">
@@ -2267,6 +2266,10 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
       <trans-unit id="Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast." xml:space="preserve">
         <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
         <target state="translated">Bazı ekranlar (tipik olarak arka ışık teknolojisi kullananlar), yazılım karartmasında gama ince bir şekilde ayarlandığında daha doğal bir görüntü üretir - bu, görüntüye daha iyi bir kontrast sağlar.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${boolFeature} of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change ${boolFeature} of ${displayEntity} to ${onOff}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
@@ -3778,6 +3781,11 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <target state="translated">Devre Dışı Bırak</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Disabled by default to avoid accidental value changes." xml:space="preserve">
+        <source>Disabled by default to avoid accidental value changes.</source>
+        <target state="translated">Yanlışlıkla değer değişikliklerini önlemek için varsayılan olarak devre dışıdır.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control." xml:space="preserve">
         <source>Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control.</source>
         <target state="translated">Bunun devre dışı bırakılması, zarif geçiş yumuşatmasını kaldırarak daha doğrudan video ayarlarına olanak tanır. Ayrıca DDC kontrolü için işlem sayısını azaltır.</target>
@@ -4133,11 +4141,6 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <target state="translated">Desteklenen ekranlarda parlaklik OSD'sinde parlaklik duzeyini nit cinsinden goster</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display tiling" xml:space="preserve">
-        <source>Display tiling</source>
-        <target state="translated">Ekran döşeme</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display to match" xml:space="preserve">
         <source>Display to match</source>
         <target state="translated">Eşleşecek ekran</target>
@@ -4456,6 +4459,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">CLI erişimini ve bildirim tabanlı entegrasyonu etkinleştirin</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable Color Table Control" xml:space="preserve">
+        <source>Enable Color Table Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
         <target state="translated">Kırpmayı Etkinleştir</target>
@@ -4525,8 +4532,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Video Filtre Penceresini Etkinleştir</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable color table adjustments" xml:space="preserve">
-        <source>Enable color table adjustments</source>
+      <trans-unit id="Enable color table control" xml:space="preserve">
+        <source>Enable color table control</source>
         <target state="translated">Renk tablosu ayarlamalarını etkinleştirin</target>
         <note/>
       </trans-unit>
@@ -4618,6 +4625,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
         <source>Enable resolutions over 8K (4K HiDPI)</source>
         <target state="translated">8K üzerindeki çözünürlükleri etkinleştir (4K HiDPI)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable scroll/swipe gesture for sliders" xml:space="preserve">
+        <source>Enable scroll/swipe gesture for sliders</source>
+        <target state="translated">Kaydırıcılar için fare tekerleği ile kaydırma/dokunmatik kaydırma hareketini etkinleştirme</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
@@ -5109,6 +5121,10 @@ Bunları kaldırmak güvenlidir - macOS, ekran bir sonraki bağlanışında gere
         <target state="translated">${displayEntity} öğesinden ${vcpCode} DDC değerini alın.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get Image Adjustment Filter State" xml:space="preserve">
+        <source>Get Image Adjustment Filter State</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Görüntü Ayarlama Değerlerini Alın</target>
@@ -5122,6 +5138,14 @@ Bunları kaldırmak güvenlidir - macOS, ekran bir sonraki bağlanışında gere
       <trans-unit id="Get a control value using DDC from a display." xml:space="preserve">
         <source>Get a control value using DDC from a display.</source>
         <target state="translated">Bir ekrandan DDC kullanarak bir kontrol değeri alın.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get state of ${boolFeature} for ${displayEntity}." xml:space="preserve">
+        <source>Get state of ${boolFeature} for ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get the current state of an on/off image adjustment filter for the display." xml:space="preserve">
+        <source>Get the current state of an on/off image adjustment filter for the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." xml:space="preserve">
@@ -6337,34 +6361,14 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Maksimum Kaynak Genişliği</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum active pixel rate" xml:space="preserve">
-        <source>Maximum active pixel rate</source>
-        <target state="translated">Maksimum aktif piksel hızı</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum average HDR luminance" xml:space="preserve">
         <source>Maximum average HDR luminance</source>
         <target state="translated">Maksimum ortalama HDR parlaklığı</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum bits per component" xml:space="preserve">
-        <source>Maximum bits per component</source>
-        <target state="translated">Bileşen başına maksimum bit</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">Birleşik parlaklık ölçeğinde XDR/HDR yükseltilmiş parlaklık için maksimum parlaklık değeri.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum hinted resolution" xml:space="preserve">
-        <source>Maximum hinted resolution</source>
-        <target state="translated">Bildirilen maksimum çözünürlük</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum total pixel rate" xml:space="preserve">
-        <source>Maximum total pixel rate</source>
-        <target state="translated">Maksimum toplam piksel hızı</target>
         <note/>
       </trans-unit>
       <trans-unit id="Maximum value" xml:space="preserve">
@@ -7541,9 +7545,8 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Bazı yapılandırmalarda ek görüntüleme modları sağlar.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
-        <target state="translated">Doygunluk, renk tonu döndürme, bulanıklaştırma gibi ek görüntü ayarlama seçenekleri sunar. Bazı sistemlerde gözle görülür performans veya görüntü kalitesi sorunlarına neden olabilir.</target>
+      <trans-unit id="Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available." xml:space="preserve">
+        <source>Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Provides basic TV control through HDMI-CEC commands if supported by the current connection and display." xml:space="preserve">
@@ -7632,16 +7635,6 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
       <trans-unit id="Rate" xml:space="preserve">
         <source>Rate</source>
         <target state="translated">Oran</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DPCD payload" xml:space="preserve">
-        <source>Raw DPCD payload</source>
-        <target state="translated">Ham DPCD yükü</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DSC PPS payload" xml:space="preserve">
-        <source>Raw DSC PPS payload</source>
-        <target state="translated">Ham DSC PPS yükü</target>
         <note/>
       </trans-unit>
       <trans-unit id="Raw link bandwidth" xml:space="preserve">
@@ -8054,11 +8047,6 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Uygulama Ayarlarını Sıfırla…</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Color Adjustments" xml:space="preserve">
-        <source>Reset Color Adjustments</source>
-        <target state="translated">Renk Ayarlamalarını Sıfırla</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset Default" xml:space="preserve">
         <source>Reset Default</source>
         <target state="translated">Varsayılanlara Sıfırla</target>
@@ -8082,6 +8070,11 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
       <trans-unit id="Reset Factory EDID (Unapply)" xml:space="preserve">
         <source>Reset Factory EDID (Unapply)</source>
         <target state="translated">Fabrika EDID'sini Sıfırla (Uygulamayı Kaldır)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset Image Adjustments" xml:space="preserve">
+        <source>Reset Image Adjustments</source>
+        <target state="translated">Görüntü Ayarlamalarını Sıfırla</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
@@ -8124,19 +8117,19 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Sıfırla ve Yeniden Başlat</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset color adjustments for ${displayEntity}." xml:space="preserve">
-        <source>Reset color adjustments for ${displayEntity}.</source>
-        <target state="translated">${displayEntity} için renk ayarlamalarını sıfırlayın.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset color adjustments for a display." xml:space="preserve">
-        <source>Reset color adjustments for a display.</source>
-        <target state="translated">Bir ekran için renk ayarlarını sıfırlayın.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset colors on neutral settings for HDR capable screens" xml:space="preserve">
         <source>Reset colors on neutral settings for HDR capable screens</source>
         <target state="translated">HDR özellikli ekranlar için renkleri nötr ayarlara sıfırlayın</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for ${displayEntity}." xml:space="preserve">
+        <source>Reset image adjustments for ${displayEntity}.</source>
+        <target state="translated">${displayEntity} için görüntü ayarlamalarını sıfırlayın.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for a display." xml:space="preserve">
+        <source>Reset image adjustments for a display.</source>
+        <target state="translated">Bir ekran için görüntü ayarlamalarını sıfırlayın.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset software adjustments" xml:space="preserve">
@@ -8816,6 +8809,10 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
       <trans-unit id="Set native resolution" xml:space="preserve">
         <source>Set native resolution</source>
         <target state="translated">Yerel çözünürlüğü ayarla</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set or toggle an on/off image adjustment filter of a display." xml:space="preserve">
+        <source>Set or toggle an on/off image adjustment filter of a display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
@@ -9525,9 +9522,9 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Değişken yenileme hızını destekler</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Suspend Color Adjustments" xml:space="preserve">
-        <source>Suspend Color Adjustments</source>
-        <target state="translated">Renk Ayarlamalarını Askıya Al</target>
+      <trans-unit id="Suspend Image Adjustments" xml:space="preserve">
+        <source>Suspend Image Adjustments</source>
+        <target state="translated">Görüntü Ayarlamalarını Askıya Al</target>
         <note/>
       </trans-unit>
       <trans-unit id="Suspend adjustments (except brightness)" xml:space="preserve">
@@ -10268,11 +10265,6 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
         <target state="translated">Bu, uygulama boyunca kontrolün adı olarak görünecektir. Karışıklığı önlemek için benzersiz olmalıdır.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Tile size" xml:space="preserve">
-        <source>Tile size</source>
-        <target state="translated">Döşeme boyutu</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Timeout" xml:space="preserve">
         <source>Timeout</source>
         <target state="translated">Zaman aşımı</target>
@@ -10323,6 +10315,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
         <target state="translated">Parlaklık Yükseltme Aç/Kapat</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Toggle Control" xml:space="preserve">
+        <source>Toggle Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Toggle DDC Mute" xml:space="preserve">
         <source>Toggle DDC Mute</source>
         <target state="translated">DDC Sessiz Aç/Kapat</target>
@@ -10351,6 +10347,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       <trans-unit id="Toggle HiDPI resolution for display" xml:space="preserve">
         <source>Toggle HiDPI resolution for display</source>
         <target state="translated">Ekran için HiDPI çözünürlüğü Aç/Kapat</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Toggle Image Adjustment Filter" xml:space="preserve">
+        <source>Toggle Image Adjustment Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Image Adjustments" xml:space="preserve">
@@ -10866,6 +10866,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
       <trans-unit id="Use %@ as menu icon when the app is preventing display sleep" xml:space="preserve">
         <source>Use %@ as menu icon when the app is preventing display sleep</source>
         <target state="translated">Uygulama ekran uykusunu engellediğinde %@￼ öğesini menü simgesi olarak kullanın</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use Compositor Filter" xml:space="preserve">
+        <source>Use Compositor Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
@@ -11489,8 +11493,8 @@ A previous activation was automatically removed to make room for this new one.</
 Önceki bir etkinleştirme, bu yenisine yer açmak için otomatik olarak kaldırılmıştır.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!</source>
         <target state="translated">Bunu düzeltmek için diğer uygulamadan çıkmalı veya Ayarlar/Görüntüler altında 'Renk ayarlamalarına izin ver' seçeneğini devre dışı bırakmalısınız!</target>
         <note/>
       </trans-unit>
@@ -11952,9 +11956,8 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ Yeni bir özel DDC özelliği olarak uygun yapılandırılmış özel bir kontrol yoktur.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
-        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
-        <target state="translated">⚠️ Bu ekran renk tablosu ayarlamalarını desteklemiyor veya bu ayarlamalar devre dışı. Uygulama bunun yerine bindirme tabanlı karartma veya görüntü ayarlamaları kullanır.</target>
+      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
+        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">

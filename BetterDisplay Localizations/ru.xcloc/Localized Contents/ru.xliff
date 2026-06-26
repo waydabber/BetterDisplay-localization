@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ru" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="ru" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ru" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1137,8 +1137,8 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">Разрешить принудительный HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+      <trans-unit id="Allow color table control (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table control (note: turn this off for compatibility mode)</source>
         <target state="translated">Разрешить настройку таблицы цветов (примечание: отключите эту функцию для режима совместимости)</target>
         <note/>
       </trans-unit>
@@ -2062,14 +2062,13 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Яркость (Комбинированная)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Combined, Metal)" xml:space="preserve">
-        <source>Brightness (Combined, Metal)</source>
-        <target state="translated">Яркость (комбинированная, Metal)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Combined, Upscaling)" xml:space="preserve">
         <source>Brightness (Combined, Upscaling)</source>
         <target state="translated">Яркость (комбинированная, масштабирование)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
+        <source>Brightness (Compositor Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Direct XDR Upscaling)" xml:space="preserve">
@@ -2268,6 +2267,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       <trans-unit id="Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast." xml:space="preserve">
         <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
         <target state="translated">Некоторые дисплеи (обычно с подсветкой) дают более естественное изображение, если при программном затемнении слегка скорректировать гамму — это улучшает контраст.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${boolFeature} of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change ${boolFeature} of ${displayEntity} to ${onOff}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
@@ -3779,6 +3782,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Отключено</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Disabled by default to avoid accidental value changes." xml:space="preserve">
+        <source>Disabled by default to avoid accidental value changes.</source>
+        <target state="translated">По умолчанию отключено, чтобы избежать случайного изменения значения.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control." xml:space="preserve">
         <source>Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control.</source>
         <target state="translated">Отключение этой функции позволяет выполнять более прямую настройку видео за счет устранения сглаживания плавного перехода. Также уменьшается количество операций для управления DDC.</target>
@@ -4134,11 +4142,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Показывать уровень яркости в нитах в OSD яркости для поддерживаемых дисплеев</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display tiling" xml:space="preserve">
-        <source>Display tiling</source>
-        <target state="translated">Тайлинг дисплея</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display to match" xml:space="preserve">
         <source>Display to match</source>
         <target state="translated">Дисплей в соответствии с требованиями</target>
@@ -4457,6 +4460,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Обеспечьте доступ к CLI (Command Line Interface) и интеграцию на основе уведомлений</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable Color Table Control" xml:space="preserve">
+        <source>Enable Color Table Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
         <target state="translated">Включить обрезку</target>
@@ -4526,8 +4533,8 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Включить окно видеофильтра</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable color table adjustments" xml:space="preserve">
-        <source>Enable color table adjustments</source>
+      <trans-unit id="Enable color table control" xml:space="preserve">
+        <source>Enable color table control</source>
         <target state="translated">Включить корректировку цветовой таблицы</target>
         <note/>
       </trans-unit>
@@ -4619,6 +4626,11 @@ The process does not work for the built-in display (reboot needed). The operatio
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
         <source>Enable resolutions over 8K (4K HiDPI)</source>
         <target state="translated">Включить разрешение более 8K (4K HiDPI)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable scroll/swipe gesture for sliders" xml:space="preserve">
+        <source>Enable scroll/swipe gesture for sliders</source>
+        <target state="translated">Включение жеста прокрутки/пролистывания для ползунков</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
@@ -5110,6 +5122,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">Получить значение DDC кода ${vcpCode} с ${displayEntity}.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get Image Adjustment Filter State" xml:space="preserve">
+        <source>Get Image Adjustment Filter State</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Получить значение регулировки изображения</target>
@@ -5123,6 +5139,14 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="Get a control value using DDC from a display." xml:space="preserve">
         <source>Get a control value using DDC from a display.</source>
         <target state="translated">Получение управляющего значения с помощью DDC с дисплея.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get state of ${boolFeature} for ${displayEntity}." xml:space="preserve">
+        <source>Get state of ${boolFeature} for ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get the current state of an on/off image adjustment filter for the display." xml:space="preserve">
+        <source>Get the current state of an on/off image adjustment filter for the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." xml:space="preserve">
@@ -6338,34 +6362,14 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Максимальная ширина источника</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum active pixel rate" xml:space="preserve">
-        <source>Maximum active pixel rate</source>
-        <target state="translated">Максимальная частота активных пикселей</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum average HDR luminance" xml:space="preserve">
         <source>Maximum average HDR luminance</source>
         <target state="translated">Максимальная средняя яркость HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum bits per component" xml:space="preserve">
-        <source>Maximum bits per component</source>
-        <target state="translated">Максимум бит на компонент</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">Максимальное значение яркости для увеличенной XDR/HDR яркости на комбинированной шкале яркости.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum hinted resolution" xml:space="preserve">
-        <source>Maximum hinted resolution</source>
-        <target state="translated">Максимальное заявленное разрешение</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum total pixel rate" xml:space="preserve">
-        <source>Maximum total pixel rate</source>
-        <target state="translated">Максимальная общая частота пикселей</target>
         <note/>
       </trans-unit>
       <trans-unit id="Maximum value" xml:space="preserve">
@@ -7542,9 +7546,8 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Обеспечивает дополнительные режимы отображения в некоторых конфигурациях.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
-        <target state="translated">Предоставляет дополнительные параметры изображения: насыщенность, сдвиг оттенка, размытие. Может влиять на производительность или качество изображения на некоторых системах.</target>
+      <trans-unit id="Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available." xml:space="preserve">
+        <source>Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Provides basic TV control through HDMI-CEC commands if supported by the current connection and display." xml:space="preserve">
@@ -7633,16 +7636,6 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Rate" xml:space="preserve">
         <source>Rate</source>
         <target state="translated">Оценка</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DPCD payload" xml:space="preserve">
-        <source>Raw DPCD payload</source>
-        <target state="translated">Необработанные данные DPCD</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DSC PPS payload" xml:space="preserve">
-        <source>Raw DSC PPS payload</source>
-        <target state="translated">Необработанные данные DSC PPS</target>
         <note/>
       </trans-unit>
       <trans-unit id="Raw link bandwidth" xml:space="preserve">
@@ -8055,11 +8048,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Сброс настроек приложения…</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Color Adjustments" xml:space="preserve">
-        <source>Reset Color Adjustments</source>
-        <target state="translated">Сброс настроек цвета</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset Default" xml:space="preserve">
         <source>Reset Default</source>
         <target state="translated">Сбросить по умолчанию</target>
@@ -8083,6 +8071,11 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Reset Factory EDID (Unapply)" xml:space="preserve">
         <source>Reset Factory EDID (Unapply)</source>
         <target state="translated">Сброс заводских настроек EDID (отменить применение)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset Image Adjustments" xml:space="preserve">
+        <source>Reset Image Adjustments</source>
+        <target state="translated">Сбросить настройки изображения</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
@@ -8125,19 +8118,19 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Сброс и перезагрузка</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset color adjustments for ${displayEntity}." xml:space="preserve">
-        <source>Reset color adjustments for ${displayEntity}.</source>
-        <target state="translated">Сбросить настройки цвета для ${displayEntity}.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset color adjustments for a display." xml:space="preserve">
-        <source>Reset color adjustments for a display.</source>
-        <target state="translated">Сбросить настройки цвета для дисплея.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset colors on neutral settings for HDR capable screens" xml:space="preserve">
         <source>Reset colors on neutral settings for HDR capable screens</source>
         <target state="translated">Сброс цвета на нейтральные настройки для экранов с поддержкой HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for ${displayEntity}." xml:space="preserve">
+        <source>Reset image adjustments for ${displayEntity}.</source>
+        <target state="translated">Сбросить настройки изображения для ${displayEntity}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for a display." xml:space="preserve">
+        <source>Reset image adjustments for a display.</source>
+        <target state="translated">Сбросить настройки изображения для дисплея.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset software adjustments" xml:space="preserve">
@@ -8817,6 +8810,10 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Set native resolution" xml:space="preserve">
         <source>Set native resolution</source>
         <target state="translated">Установить родное разрешение</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set or toggle an on/off image adjustment filter of a display." xml:space="preserve">
+        <source>Set or toggle an on/off image adjustment filter of a display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
@@ -9526,9 +9523,9 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Поддержка переменной частоты обновления</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Suspend Color Adjustments" xml:space="preserve">
-        <source>Suspend Color Adjustments</source>
-        <target state="translated">Приостановить корректировку цвета</target>
+      <trans-unit id="Suspend Image Adjustments" xml:space="preserve">
+        <source>Suspend Image Adjustments</source>
+        <target state="translated">Приостановить настройку изображения</target>
         <note/>
       </trans-unit>
       <trans-unit id="Suspend adjustments (except brightness)" xml:space="preserve">
@@ -10269,11 +10266,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Это имя элемента управления будет отображаться по всему приложению. Оно должно быть уникальным, чтобы избежать путаницы.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Tile size" xml:space="preserve">
-        <source>Tile size</source>
-        <target state="translated">Размер тайла</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Timeout" xml:space="preserve">
         <source>Timeout</source>
         <target state="translated">Тайм-аут</target>
@@ -10324,6 +10316,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Переключить повышение яркости</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Toggle Control" xml:space="preserve">
+        <source>Toggle Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Toggle DDC Mute" xml:space="preserve">
         <source>Toggle DDC Mute</source>
         <target state="translated">Переключить DDC Mute</target>
@@ -10352,6 +10348,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Toggle HiDPI resolution for display" xml:space="preserve">
         <source>Toggle HiDPI resolution for display</source>
         <target state="translated">Переключить разрешение HiDPI для дисплея</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Toggle Image Adjustment Filter" xml:space="preserve">
+        <source>Toggle Image Adjustment Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Image Adjustments" xml:space="preserve">
@@ -10867,6 +10867,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Use %@ as menu icon when the app is preventing display sleep" xml:space="preserve">
         <source>Use %@ as menu icon when the app is preventing display sleep</source>
         <target state="translated">Использовать %@ как значок меню, когда приложение предотвращает сон дисплея</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use Compositor Filter" xml:space="preserve">
+        <source>Use Compositor Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
@@ -11490,8 +11494,8 @@ A previous activation was automatically removed to make room for this new one.</
 Предыдущая активация была автоматически удалена, чтобы освободить место для новой.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!</source>
         <target state="translated">Вы должны выйти из другого приложения или отключить 'Разрешить регулировку цвета' в разделе Настройки/Дисплеи, чтобы исправить это!</target>
         <note/>
       </trans-unit>
@@ -11953,9 +11957,8 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">⚠️ Не настроено ни одного пользовательского элемента управления, подходящего как новая функция DDC.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
-        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
-        <target state="translated">⚠️ Этот дисплей не поддерживает настройку цветовой таблицы или она отключена. Приложение использует затемнение или корректировку изображения на основе наложения.</target>
+      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
+        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">

@@ -555,7 +555,7 @@
     "⚠️ There is no custom control configured suitable as a new custom DDC feature." : {
 
     },
-    "⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." : {
+    "⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." : {
 
     },
     "⚠️ This feature is not available in this version." : {
@@ -931,7 +931,7 @@
     "Allocation limits - vertical" : {
 
     },
-    "Allow color table adjustments (note: turn this off for compatibility mode)" : {
+    "Allow color table control (note: turn this off for compatibility mode)" : {
 
     },
     "Allow direct control and XDR upscaling" : {
@@ -1505,13 +1505,13 @@
     "Brightness" : {
 
     },
-    "Brightness (Combined, Metal)" : {
-
-    },
     "Brightness (Combined, Upscaling)" : {
 
     },
     "Brightness (Combined)" : {
+
+    },
+    "Brightness (Compositor Upscaling)" : {
 
     },
     "Brightness (Direct XDR Upscaling)" : {
@@ -1632,6 +1632,9 @@
 
     },
     "CGDirectDisplayID" : {
+
+    },
+    "Change ${boolFeature} of ${displayEntity} to ${onOff}." : {
 
     },
     "Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." : {
@@ -2519,6 +2522,9 @@
     "Disabled" : {
 
     },
+    "Disabled by default to avoid accidental value changes." : {
+
+    },
     "Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control." : {
 
     },
@@ -2734,9 +2740,6 @@
     },
     "Display the brightness level in nits on the brightness OSD for supported displays" : {
 
-    },
-    "Display tiling" : {
-      "extractionState" : "stale"
     },
     "Display to match" : {
 
@@ -2972,7 +2975,10 @@
     "Enable CLI access and notification based integration" : {
 
     },
-    "Enable color table adjustments" : {
+    "Enable color table control" : {
+
+    },
+    "Enable Color Table Control" : {
 
     },
     "Enable compositor filter layer" : {
@@ -3060,6 +3066,9 @@
 
     },
     "Enable resolutions over 8K (4K HiDPI)" : {
+
+    },
+    "Enable scroll/swipe gesture for sliders" : {
 
     },
     "Enable software HDR brightness upscaling (if available)" : {
@@ -3374,7 +3383,16 @@
     "Get DDC value of ${vcpCode} from ${displayEntity}." : {
 
     },
+    "Get Image Adjustment Filter State" : {
+
+    },
     "Get Image Adjustment Value" : {
+
+    },
+    "Get state of ${boolFeature} for ${displayEntity}." : {
+
+    },
+    "Get the current state of an on/off image adjustment filter for the display." : {
 
     },
     "Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." : {
@@ -4129,20 +4147,11 @@
     "Max Width" : {
 
     },
-    "Maximum active pixel rate" : {
-      "extractionState" : "stale"
-    },
     "Maximum average HDR luminance" : {
 
     },
-    "Maximum bits per component" : {
-      "extractionState" : "stale"
-    },
     "Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." : {
 
-    },
-    "Maximum hinted resolution" : {
-      "extractionState" : "stale"
     },
     "Maximum Source Bandwidth" : {
 
@@ -4152,9 +4161,6 @@
     },
     "Maximum Source Width" : {
 
-    },
-    "Maximum total pixel rate" : {
-      "extractionState" : "stale"
     },
     "Maximum value" : {
 
@@ -4942,7 +4948,7 @@
     "Provides additional display modes on some configurations." : {
 
     },
-    "Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." : {
+    "Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available." : {
 
     },
     "Provides basic TV control through HDMI-CEC commands if supported by the current connection and display." : {
@@ -4995,12 +5001,6 @@
     },
     "Rate" : {
 
-    },
-    "Raw DPCD payload" : {
-      "extractionState" : "stale"
-    },
-    "Raw DSC PPS payload" : {
-      "extractionState" : "stale"
     },
     "Raw link bandwidth" : {
 
@@ -5277,15 +5277,6 @@
     "Reset App Settings…" : {
 
     },
-    "Reset Color Adjustments" : {
-
-    },
-    "Reset color adjustments for ${displayEntity}." : {
-
-    },
-    "Reset color adjustments for a display." : {
-
-    },
     "Reset colors on neutral settings for HDR capable screens" : {
 
     },
@@ -5302,6 +5293,15 @@
 
     },
     "Reset Factory EDID (Unapply)" : {
+
+    },
+    "Reset Image Adjustments" : {
+
+    },
+    "Reset image adjustments for ${displayEntity}." : {
+
+    },
+    "Reset image adjustments for a display." : {
 
     },
     "Reset Menu Layout…" : {
@@ -5732,6 +5732,9 @@
 
     },
     "Set native resolution" : {
+
+    },
+    "Set or toggle an on/off image adjustment filter of a display." : {
 
     },
     "Set Screen as Main" : {
@@ -6172,7 +6175,7 @@
     "Suspend adjustments (except brightness)" : {
 
     },
-    "Suspend Color Adjustments" : {
+    "Suspend Image Adjustments" : {
 
     },
     "Swap identical displays" : {
@@ -6599,9 +6602,6 @@
     "This will appear as the control's name throughout the app. Should be unique to avoid confusion." : {
 
     },
-    "Tile size" : {
-      "extractionState" : "stale"
-    },
     "Timeout" : {
 
     },
@@ -6641,6 +6641,9 @@
     "Toggle built-in display" : {
 
     },
+    "Toggle Control" : {
+
+    },
     "Toggle cropping" : {
 
     },
@@ -6660,6 +6663,9 @@
 
     },
     "Toggle HiDPI resolution for display" : {
+
+    },
+    "Toggle Image Adjustment Filter" : {
 
     },
     "Toggle Image Adjustments" : {
@@ -6987,6 +6993,9 @@
 
     },
     "Use app menu icon above to open/close." : {
+
+    },
+    "Use Compositor Filter" : {
 
     },
     "Use custom resolution list" : {
@@ -7384,7 +7393,7 @@
     "You reached the maximum number of activations for this license key!\n\nA previous activation was automatically removed to make room for this new one." : {
 
     },
-    "You should exit the other app or disable 'Allow color table adjustments' under Settings > Displays to fix this!" : {
+    "You should exit the other app or disable 'Allow color table control' under Settings > Displays to fix this!" : {
 
     },
     "Zone 2" : {

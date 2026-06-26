@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="sl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="sl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -82,7 +82,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="sl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1144,8 +1144,8 @@ Te spremembe ni mogoče razveljaviti. Ali ste prepričani, da želite to storiti
         <target state="translated">Dovoli vsiljeni HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+      <trans-unit id="Allow color table control (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table control (note: turn this off for compatibility mode)</source>
         <target state="translated">Dovoli prilagoditve barvne tabele (opomba: to izklopite za način združljivosti)</target>
         <note/>
       </trans-unit>
@@ -2075,14 +2075,13 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Svetlost (kombinirano)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Combined, Metal)" xml:space="preserve">
-        <source>Brightness (Combined, Metal)</source>
-        <target state="translated">Svetlost (kombinirano, Metal)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Combined, Upscaling)" xml:space="preserve">
         <source>Brightness (Combined, Upscaling)</source>
         <target state="translated">Svetlost (kombinirana, nadgradnja)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
+        <source>Brightness (Compositor Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Direct XDR Upscaling)" xml:space="preserve">
@@ -2281,6 +2280,10 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
       <trans-unit id="Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast." xml:space="preserve">
         <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
         <target state="translated">Nekateri zasloni (običajno tisti, ki uporabljajo tehnologijo osvetlitve ozadja) ustvarijo bolj naravno sliko, ko je gama subtilno prilagojena s programsko zatemnitvijo - to daje sliki boljši kontrast.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${boolFeature} of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change ${boolFeature} of ${displayEntity} to ${onOff}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
@@ -3796,6 +3799,11 @@ Community Verified icon
         <target state="translated">Onemogočen</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Disabled by default to avoid accidental value changes." xml:space="preserve">
+        <source>Disabled by default to avoid accidental value changes.</source>
+        <target state="translated">Privzeto onemogočeno, da se izognete nenamernim spremembam vrednosti.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control." xml:space="preserve">
         <source>Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control.</source>
         <target state="translated">Če to onemogočite, omogočite bolj neposredne prilagoditve videa z odstranitvijo elegantnega glajenja prehodov. Prav tako zmanjša število operacij za nadzor DDC.</target>
@@ -4151,11 +4159,6 @@ Community Verified icon
         <target state="translated">Prikazi raven svetlosti v nitih v OSD-ju svetlosti za podprte zaslone</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display tiling" xml:space="preserve">
-        <source>Display tiling</source>
-        <target state="translated">Razpostavljanje zaslona</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display to match" xml:space="preserve">
         <source>Display to match</source>
         <target state="translated">Zaslon, ki se ujema</target>
@@ -4474,6 +4477,10 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
         <target state="translated">Omogoči dostop CLI in integracijo na podlagi obvestil</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable Color Table Control" xml:space="preserve">
+        <source>Enable Color Table Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
         <target state="translated">Omogoči obrezovanje</target>
@@ -4543,8 +4550,8 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
         <target state="translated">Omogoči okno video filtra</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable color table adjustments" xml:space="preserve">
-        <source>Enable color table adjustments</source>
+      <trans-unit id="Enable color table control" xml:space="preserve">
+        <source>Enable color table control</source>
         <target state="translated">Omogoči prilagoditve barvne tabele</target>
         <note/>
       </trans-unit>
@@ -4636,6 +4643,11 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
         <source>Enable resolutions over 8K (4K HiDPI)</source>
         <target state="translated">Omogoči ločljivosti nad 8K (4K HiDPI)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable scroll/swipe gesture for sliders" xml:space="preserve">
+        <source>Enable scroll/swipe gesture for sliders</source>
+        <target state="translated">Omogoči drsenje/poteg za drsnike</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
@@ -5127,6 +5139,10 @@ Odstranjevanje je varno – macOS bo ponovno ustvaril vse potrebne profile, ko b
         <target state="translated">Pridobite vrednost DDC ${vcpCode} od ${displayEntity}.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get Image Adjustment Filter State" xml:space="preserve">
+        <source>Get Image Adjustment Filter State</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Pridobite vrednost prilagoditve slike</target>
@@ -5140,6 +5156,14 @@ Odstranjevanje je varno – macOS bo ponovno ustvaril vse potrebne profile, ko b
       <trans-unit id="Get a control value using DDC from a display." xml:space="preserve">
         <source>Get a control value using DDC from a display.</source>
         <target state="translated">Pridobite kontrolno vrednost z uporabo DDC z zaslona.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get state of ${boolFeature} for ${displayEntity}." xml:space="preserve">
+        <source>Get state of ${boolFeature} for ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get the current state of an on/off image adjustment filter for the display." xml:space="preserve">
+        <source>Get the current state of an on/off image adjustment filter for the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." xml:space="preserve">
@@ -6355,34 +6379,14 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Največja širina vira</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum active pixel rate" xml:space="preserve">
-        <source>Maximum active pixel rate</source>
-        <target state="translated">Največja frekvenca aktivnih slikovnih pik</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum average HDR luminance" xml:space="preserve">
         <source>Maximum average HDR luminance</source>
         <target state="translated">Največja povprečna svetilnost HDR</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum bits per component" xml:space="preserve">
-        <source>Maximum bits per component</source>
-        <target state="translated">Največ bitov na komponento</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">Največja vrednost svetlosti za povečano svetlost XDR/HDR na kombinirani lestvici svetlosti.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum hinted resolution" xml:space="preserve">
-        <source>Maximum hinted resolution</source>
-        <target state="translated">Največja navedena ločljivost</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum total pixel rate" xml:space="preserve">
-        <source>Maximum total pixel rate</source>
-        <target state="translated">Največja skupna frekvenca slikovnih pik</target>
         <note/>
       </trans-unit>
       <trans-unit id="Maximum value" xml:space="preserve">
@@ -7560,9 +7564,8 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Zagotavlja dodatne načine prikaza pri nekaterih konfiguracijah.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
-        <target state="translated">Ponuja dodatne možnosti prilagajanja slike, kot so nasičenost, vrtenje odtenkov in zameglitev. V nekaterih sistemih lahko povzroči opazne težave z delovanjem ali kakovostjo slike.</target>
+      <trans-unit id="Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available." xml:space="preserve">
+        <source>Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Provides basic TV control through HDMI-CEC commands if supported by the current connection and display." xml:space="preserve">
@@ -7651,16 +7654,6 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
       <trans-unit id="Rate" xml:space="preserve">
         <source>Rate</source>
         <target state="translated">Ocena</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DPCD payload" xml:space="preserve">
-        <source>Raw DPCD payload</source>
-        <target state="translated">Surovi podatki DPCD</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DSC PPS payload" xml:space="preserve">
-        <source>Raw DSC PPS payload</source>
-        <target state="translated">Surovi podatki DSC PPS</target>
         <note/>
       </trans-unit>
       <trans-unit id="Raw link bandwidth" xml:space="preserve">
@@ -8075,11 +8068,6 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Ponastavi nastavitve aplikacije …</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Color Adjustments" xml:space="preserve">
-        <source>Reset Color Adjustments</source>
-        <target state="translated">Ponastavi barvne prilagoditve</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset Default" xml:space="preserve">
         <source>Reset Default</source>
         <target state="translated">Ponastavi privzeto</target>
@@ -8103,6 +8091,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
       <trans-unit id="Reset Factory EDID (Unapply)" xml:space="preserve">
         <source>Reset Factory EDID (Unapply)</source>
         <target state="translated">Ponastavi tovarniški EDID (prekliči uporabo)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset Image Adjustments" xml:space="preserve">
+        <source>Reset Image Adjustments</source>
+        <target state="translated">Ponastavi prilagoditve slike</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
@@ -8145,19 +8138,19 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Ponastavi in ​​znova zaženi</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset color adjustments for ${displayEntity}." xml:space="preserve">
-        <source>Reset color adjustments for ${displayEntity}.</source>
-        <target state="translated">Ponastavi nastavitve barv za ${displayEntity}.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset color adjustments for a display." xml:space="preserve">
-        <source>Reset color adjustments for a display.</source>
-        <target state="translated">Ponastavite nastavitve barv za zaslon.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset colors on neutral settings for HDR capable screens" xml:space="preserve">
         <source>Reset colors on neutral settings for HDR capable screens</source>
         <target state="translated">Ponastavite barve na nevtralne nastavitve za zaslone, ki podpirajo HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for ${displayEntity}." xml:space="preserve">
+        <source>Reset image adjustments for ${displayEntity}.</source>
+        <target state="translated">Ponastavi prilagoditve slike za ${displayEntity}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for a display." xml:space="preserve">
+        <source>Reset image adjustments for a display.</source>
+        <target state="translated">Ponastavite prilagoditve slike za zaslon.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset software adjustments" xml:space="preserve">
@@ -8837,6 +8830,10 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
       <trans-unit id="Set native resolution" xml:space="preserve">
         <source>Set native resolution</source>
         <target state="translated">Nastavite izvorno ločljivost</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set or toggle an on/off image adjustment filter of a display." xml:space="preserve">
+        <source>Set or toggle an on/off image adjustment filter of a display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
@@ -9548,9 +9545,9 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Podpira spremenljivo hitrost osveževanja</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Suspend Color Adjustments" xml:space="preserve">
-        <source>Suspend Color Adjustments</source>
-        <target state="translated">Začasno ustavi prilagoditve barv</target>
+      <trans-unit id="Suspend Image Adjustments" xml:space="preserve">
+        <source>Suspend Image Adjustments</source>
+        <target state="translated">Začasno ustavi prilagoditve slike</target>
         <note/>
       </trans-unit>
       <trans-unit id="Suspend adjustments (except brightness)" xml:space="preserve">
@@ -10292,11 +10289,6 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo vi
         <target state="translated">To bo prikazano kot ime kontrolnika v celotni aplikaciji. Moral bi biti edinstven, da se izognete zmedi.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Tile size" xml:space="preserve">
-        <source>Tile size</source>
-        <target state="translated">Velikost ploščice</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Timeout" xml:space="preserve">
         <source>Timeout</source>
         <target state="translated">Čas izklopa</target>
@@ -10347,6 +10339,10 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo vi
         <target state="translated">Preklop povečanje svetlosti</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Toggle Control" xml:space="preserve">
+        <source>Toggle Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Toggle DDC Mute" xml:space="preserve">
         <source>Toggle DDC Mute</source>
         <target state="translated">Preklop DDC tišina</target>
@@ -10375,6 +10371,10 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo vi
       <trans-unit id="Toggle HiDPI resolution for display" xml:space="preserve">
         <source>Toggle HiDPI resolution for display</source>
         <target state="translated">Preklopi ločljivost HiDPI za prikaz</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Toggle Image Adjustment Filter" xml:space="preserve">
+        <source>Toggle Image Adjustment Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Image Adjustments" xml:space="preserve">
@@ -10895,6 +10895,10 @@ Community Verified icon
         <target state="translated">Uporabite %@ kot ikono menija, ko aplikacija preprečuje spanje zaslona
 
 </target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use Compositor Filter" xml:space="preserve">
+        <source>Use Compositor Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
@@ -11519,8 +11523,8 @@ A previous activation was automatically removed to make room for this new one.</
 Prejšnja aktivacija je bila samodejno odstranjena, da se naredi prostor za to novo.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!</source>
         <target state="translated">Zaprite drugo aplikacijo ali onemogočite »Dovoli prilagoditve barvne tabele« pod Nastavitve &gt; Zasloni, da to popravite!</target>
         <note/>
       </trans-unit>
@@ -11982,9 +11986,8 @@ Večina zaslonov ne dovoljuje zapisovanja EDID iz varnostnih razlogov, nekateri 
         <target state="translated">⚠️ Noben nadzor po meri ni konfiguriran kot nova funkcija DDC.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
-        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
-        <target state="translated">⚠️ Ta zaslon ne podpira prilagoditev barvne tabele ali pa so prilagoditve barvne tabele onemogočene. Aplikacija namesto tega uporablja zatemnitev ali prilagoditve slike na podlagi prekrivanja.</target>
+      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
+        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">

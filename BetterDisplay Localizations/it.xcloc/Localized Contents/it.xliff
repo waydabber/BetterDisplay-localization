@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="it" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.5" build-num="17F42"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5194q"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1135,8 +1135,8 @@ Questa modifica non potrà essere annullata. Sei sicuro di continuare?</target>
         <target state="translated">Consenti HDR forzato</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Allow color table adjustments (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color table adjustments (note: turn this off for compatibility mode)</source>
+      <trans-unit id="Allow color table control (note: turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table control (note: turn this off for compatibility mode)</source>
         <target state="translated">Consenti le regolazioni della tabella dei colori (nota: disattiva per la modalità compatibilità)</target>
         <note/>
       </trans-unit>
@@ -2060,14 +2060,13 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Luminosità (Combinata)</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Brightness (Combined, Metal)" xml:space="preserve">
-        <source>Brightness (Combined, Metal)</source>
-        <target state="translated">Luminosità (Miglia, Metal)</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Brightness (Combined, Upscaling)" xml:space="preserve">
         <source>Brightness (Combined, Upscaling)</source>
         <target state="translated">Luminosità (Combinata, Upscaling)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Brightness (Compositor Upscaling)" xml:space="preserve">
+        <source>Brightness (Compositor Upscaling)</source>
         <note/>
       </trans-unit>
       <trans-unit id="Brightness (Direct XDR Upscaling)" xml:space="preserve">
@@ -2266,6 +2265,10 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
       <trans-unit id="Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast." xml:space="preserve">
         <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
         <target state="translated">Alcuni display (in particolare quelli che utilizzano una retroilluminazione) producono un’immagine più naturale quando il gamma viene regolato delicatamente durante l’attenuazione software, migliorando così il contrasto dell’immagine.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Change ${boolFeature} of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change ${boolFeature} of ${displayEntity} to ${onOff}.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Change ${rangedFeature} of ${displayEntity} to value ${valueParameter}." xml:space="preserve">
@@ -3777,6 +3780,11 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Disattivato</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Disabled by default to avoid accidental value changes." xml:space="preserve">
+        <source>Disabled by default to avoid accidental value changes.</source>
+        <target state="translated">Disabilita di default per evitare modifiche accidentali del valore.</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control." xml:space="preserve">
         <source>Disabling this allows more direct video adjustments by removing graceful transition smoothing. Also reduces the number of operations for DDC control.</source>
         <target state="translated">Disabilitare questo permette più regolazioni video dirette rimuovendo transizioni fluide. Riduce anche il numero di operazioni per il controllo DDC.</target>
@@ -4132,11 +4140,6 @@ Specificare la lunghezza di lettura è facoltativo - lasciare vuoto il campo per
         <target state="translated">Mostra il livello di luminosita in nit nell'OSD della luminosita per i display supportati</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Display tiling" xml:space="preserve">
-        <source>Display tiling</source>
-        <target state="translated">Tiling del display</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Display to match" xml:space="preserve">
         <source>Display to match</source>
         <target state="translated">Display da abbinare</target>
@@ -4455,6 +4458,10 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <target state="translated">Abilita l'integrazione basata sull'accesso alla CLI e sulla notifica</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Enable Color Table Control" xml:space="preserve">
+        <source>Enable Color Table Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
         <target state="translated">Abilita Ritaglio</target>
@@ -4524,8 +4531,8 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
         <target state="translated">Abilita finestra filtro video</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Enable color table adjustments" xml:space="preserve">
-        <source>Enable color table adjustments</source>
+      <trans-unit id="Enable color table control" xml:space="preserve">
+        <source>Enable color table control</source>
         <target state="translated">Abilita regolazioni tabella colore</target>
         <note/>
       </trans-unit>
@@ -4617,6 +4624,11 @@ Il processo non funziona per il display integrato (necessario riavvio). L'operaz
       <trans-unit id="Enable resolutions over 8K (4K HiDPI)" xml:space="preserve">
         <source>Enable resolutions over 8K (4K HiDPI)</source>
         <target state="translated">Abilita risoluzioni su 8K (4K HiDPI)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Enable scroll/swipe gesture for sliders" xml:space="preserve">
+        <source>Enable scroll/swipe gesture for sliders</source>
+        <target state="translated">Abilita il gesto di scorrimento/swipe per i cursori</target>
         <note/>
       </trans-unit>
       <trans-unit id="Enable software HDR brightness upscaling (if available)" xml:space="preserve">
@@ -5108,6 +5120,10 @@ Rimuoverli è sicuro - macOS ricreerà qualsiasi profilo necessario la prossima 
         <target state="translated">Ottieni il valore DDC di ${vcpCode} da ${displayEntity}.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Get Image Adjustment Filter State" xml:space="preserve">
+        <source>Get Image Adjustment Filter State</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Ottieni Valore Di Regolazione Immagine</target>
@@ -5121,6 +5137,14 @@ Rimuoverli è sicuro - macOS ricreerà qualsiasi profilo necessario la prossima 
       <trans-unit id="Get a control value using DDC from a display." xml:space="preserve">
         <source>Get a control value using DDC from a display.</source>
         <target state="translated">Ottieni un valore di controllo usando DDC da un display.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get state of ${boolFeature} for ${displayEntity}." xml:space="preserve">
+        <source>Get state of ${boolFeature} for ${displayEntity}.</source>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get the current state of an on/off image adjustment filter for the display." xml:space="preserve">
+        <source>Get the current state of an on/off image adjustment filter for the display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." xml:space="preserve">
@@ -6336,34 +6360,14 @@ Non tutti i display supportano il controllo dello schermo. Queste operazioni pos
         <target state="translated">Larghezza massima della fonte</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum active pixel rate" xml:space="preserve">
-        <source>Maximum active pixel rate</source>
-        <target state="translated">Frequenza massima pixel attivi</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum average HDR luminance" xml:space="preserve">
         <source>Maximum average HDR luminance</source>
         <target state="translated">Luminanza HDR media massima</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Maximum bits per component" xml:space="preserve">
-        <source>Maximum bits per component</source>
-        <target state="translated">Bit massimi per componente</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale." xml:space="preserve">
         <source>Maximum brightness value for XDR/HDR upscaled brightness on the combined brightness scale.</source>
         <target state="translated">Valore massimo di luminosità per la luminosità XDR/HDR aumentata sulla scala combinata di luminosità.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum hinted resolution" xml:space="preserve">
-        <source>Maximum hinted resolution</source>
-        <target state="translated">Risoluzione massima indicata</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Maximum total pixel rate" xml:space="preserve">
-        <source>Maximum total pixel rate</source>
-        <target state="translated">Frequenza pixel totale massima</target>
         <note/>
       </trans-unit>
       <trans-unit id="Maximum value" xml:space="preserve">
@@ -7540,9 +7544,8 @@ Non tutti i display supportano il controllo dello schermo. Queste operazioni pos
         <target state="translated">Fornisce opzioni aggiuntive di modalità di visualizzazione utili per determinate configurazioni.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems." xml:space="preserve">
-        <source>Provides additional image adjustment options like saturation, hue rotation, blur. May cause noticeable performance or image quality issues on some systems.</source>
-        <target state="translated">Fornisce opzioni aggiuntive di regolazione dell’immagine come saturazione, rotazione della tonalità e sfocatura. Può causare problemi evidenti di prestazioni o qualità dell’immagine su alcuni sistemi.</target>
+      <trans-unit id="Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available." xml:space="preserve">
+        <source>Provides advanced image adjustment options using a video filter overlay. Also used for basic dimming and image control when color table adjustments are not available.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Provides basic TV control through HDMI-CEC commands if supported by the current connection and display." xml:space="preserve">
@@ -7631,16 +7634,6 @@ Non tutti i display supportano il controllo dello schermo. Queste operazioni pos
       <trans-unit id="Rate" xml:space="preserve">
         <source>Rate</source>
         <target state="translated">Voto</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DPCD payload" xml:space="preserve">
-        <source>Raw DPCD payload</source>
-        <target state="translated">Payload DPCD grezzo</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Raw DSC PPS payload" xml:space="preserve">
-        <source>Raw DSC PPS payload</source>
-        <target state="translated">Payload DSC PPS grezzo</target>
         <note/>
       </trans-unit>
       <trans-unit id="Raw link bandwidth" xml:space="preserve">
@@ -8055,11 +8048,6 @@ Rimuovere tutte le attivazioni ripristinerà la situazione iniziale.</target>
         <target state="translated">Ripristina le impostazioni dell'app…</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset Color Adjustments" xml:space="preserve">
-        <source>Reset Color Adjustments</source>
-        <target state="translated">Ripristina Regolazioni Colore</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset Default" xml:space="preserve">
         <source>Reset Default</source>
         <target state="translated">Ripristina ai valori di default</target>
@@ -8083,6 +8071,11 @@ Rimuovere tutte le attivazioni ripristinerà la situazione iniziale.</target>
       <trans-unit id="Reset Factory EDID (Unapply)" xml:space="preserve">
         <source>Reset Factory EDID (Unapply)</source>
         <target state="translated">Reimposta EDID di Fabbrica (Non Applicare)</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset Image Adjustments" xml:space="preserve">
+        <source>Reset Image Adjustments</source>
+        <target state="translated">Ripristina regolazioni immagine</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset Menu Layout…" xml:space="preserve">
@@ -8125,19 +8118,19 @@ Rimuovere tutte le attivazioni ripristinerà la situazione iniziale.</target>
         <target state="translated">Reimposta e Riavvia</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Reset color adjustments for ${displayEntity}." xml:space="preserve">
-        <source>Reset color adjustments for ${displayEntity}.</source>
-        <target state="translated">Reimposta le regolazioni del colore per ${displayEntity}.</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset color adjustments for a display." xml:space="preserve">
-        <source>Reset color adjustments for a display.</source>
-        <target state="translated">Reimposta le regolazioni del colore per un display.</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Reset colors on neutral settings for HDR capable screens" xml:space="preserve">
         <source>Reset colors on neutral settings for HDR capable screens</source>
         <target state="translated">Reimposta i colori sulle impostazioni neutre per gli schermi HDR</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for ${displayEntity}." xml:space="preserve">
+        <source>Reset image adjustments for ${displayEntity}.</source>
+        <target state="translated">Reimposta le regolazioni dell'immagine per ${displayEntity}.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Reset image adjustments for a display." xml:space="preserve">
+        <source>Reset image adjustments for a display.</source>
+        <target state="translated">Reimposta le regolazioni dell'immagine per un display.</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset software adjustments" xml:space="preserve">
@@ -8817,6 +8810,10 @@ Rimuovere tutte le attivazioni ripristinerà la situazione iniziale.</target>
       <trans-unit id="Set native resolution" xml:space="preserve">
         <source>Set native resolution</source>
         <target state="translated">Imposta risoluzione nativa</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set or toggle an on/off image adjustment filter of a display." xml:space="preserve">
+        <source>Set or toggle an on/off image adjustment filter of a display.</source>
         <note/>
       </trans-unit>
       <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
@@ -9526,9 +9523,9 @@ Rimuovere tutte le attivazioni ripristinerà la situazione iniziale.</target>
         <target state="translated">Supporta la frequenza di aggiornamento variabile</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Suspend Color Adjustments" xml:space="preserve">
-        <source>Suspend Color Adjustments</source>
-        <target state="translated">Sospendi le regolazioni del colore</target>
+      <trans-unit id="Suspend Image Adjustments" xml:space="preserve">
+        <source>Suspend Image Adjustments</source>
+        <target state="translated">Sospendi le regolazioni dell'immagine</target>
         <note/>
       </trans-unit>
       <trans-unit id="Suspend adjustments (except brightness)" xml:space="preserve">
@@ -10269,11 +10266,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Questo nome apparirà come nome del controllo in tutta l'app. Deve essere univoco per evitare confusione.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Tile size" xml:space="preserve">
-        <source>Tile size</source>
-        <target state="translated">Dimensione tile</target>
-        <note/>
-      </trans-unit>
       <trans-unit id="Timeout" xml:space="preserve">
         <source>Timeout</source>
         <target state="translated">Timeout</target>
@@ -10324,6 +10316,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Attiva/Disattiva upscaling della luminosità</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Toggle Control" xml:space="preserve">
+        <source>Toggle Control</source>
+        <note/>
+      </trans-unit>
       <trans-unit id="Toggle DDC Mute" xml:space="preserve">
         <source>Toggle DDC Mute</source>
         <target state="translated">Attiva/Disattiva muto DDC</target>
@@ -10352,6 +10348,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Toggle HiDPI resolution for display" xml:space="preserve">
         <source>Toggle HiDPI resolution for display</source>
         <target state="translated">Attiva/disattiva risoluzione HiDPI per il display</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Toggle Image Adjustment Filter" xml:space="preserve">
+        <source>Toggle Image Adjustment Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Toggle Image Adjustments" xml:space="preserve">
@@ -10867,6 +10867,10 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="Use %@ as menu icon when the app is preventing display sleep" xml:space="preserve">
         <source>Use %@ as menu icon when the app is preventing display sleep</source>
         <target state="translated">Usa %@ come icona del menu quando l’app impedisce il sonno del display.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Use Compositor Filter" xml:space="preserve">
+        <source>Use Compositor Filter</source>
         <note/>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
@@ -11490,8 +11494,8 @@ A previous activation was automatically removed to make room for this new one.</
 È stata rimossa automaticamente un’attivazione precedente per fare spazio a questa nuova.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!" xml:space="preserve">
-        <source>You should exit the other app or disable 'Allow color table adjustments' under Settings &gt; Displays to fix this!</source>
+      <trans-unit id="You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!" xml:space="preserve">
+        <source>You should exit the other app or disable 'Allow color table control' under Settings &gt; Displays to fix this!</source>
         <target state="translated">Dovresti uscire dall'altra app o disabilitare 'Consenti regolazioni del colore' in Impostazioni/Visualizzatori per risolvere il problema!</target>
         <note/>
       </trans-unit>
@@ -11953,9 +11957,8 @@ La maggior parte dei display non consente la scrittura EDID per motivi di sicure
         <target state="translated">⚠️ Nessun controllo personalizzato configurato è adatto come nuova funzione DDC personalizzata.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead." xml:space="preserve">
-        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming or image adjustments instead.</source>
-        <target state="translated">⚠️ Questo display non supporta la regolazione della tabella colori o questa è disabilitata. L'app utilizza invece oscuramento o regolazioni dell'immagine basati su overlay.</target>
+      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
+        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead.</source>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
