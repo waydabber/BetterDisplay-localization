@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
     </header>
@@ -29,7 +29,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
     </header>
@@ -79,7 +79,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="hu" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
     </header>
@@ -383,6 +383,11 @@ Ha másik telepítésből importálta a beállításokat, a macOS kijelző-azono
 Használja a „Kijelzőbeállítások átvitele” funkciót az összes érintett kijelző további beállításai alatt az azonosító-eltérés kijavításához.
 </target>
         <note/>
+      </trans-unit>
+      <trans-unit id="%@ needs administrator access to modify system display configuration." xml:space="preserve">
+        <source>%@ needs administrator access to modify system display configuration.</source>
+        <target state="translated">%@ rendszergazdai hozzáférést igényel a rendszer kijelzőkonfigurációjának módosításához.</target>
+        <note>53273 - Prompt shown by macOS when BetterDisplay requests administrator authorization to change system display configuration. %@ is the app name configured for the current build.</note>
       </trans-unit>
       <trans-unit id="%@ nits" xml:space="preserve">
         <source>%@ nits</source>
@@ -973,6 +978,11 @@ Köszönjük megértését és folyamatos támogatását.</target>
         <target state="translated">A két kijelző eltolásának módosítása az illesztési pontok beállításával. Az elrendezésvédelem igyekszik úgy elrendezni a kijelzőket, hogy azok vízszintesen vagy függőlegesen az illesztési pontoknál igazodjanak. Az alapértelmezett beállítás a kijelzők középre igazítása.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
+        <source>Administrator authorization failed (%d).</source>
+        <target state="translated">A rendszergazdai hitelesítés sikertelen (%d).</target>
+        <note>52329 - Fallback error shown when macOS administrator authorization fails and no system-provided description is available. ‘Authorization’ refers to macOS Authorization Services; %d is the OSStatus error code.</note>
+      </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
         <source>Advanced</source>
         <target state="translated">Speciális</target>
@@ -1130,6 +1140,11 @@ Ez a módosítás nem vonható vissza. Biztosan folytatja?</target>
         <source>Allocation limits - vertical</source>
         <target state="translated">Allokációs korlátok – függőleges</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Allow %@ to Make Changes" xml:space="preserve">
+        <source>Allow %@ to Make Changes</source>
+        <target state="translated">Módosítások engedélyezése %@ számára</target>
+        <note>53273 - Title of an informational alert shown when macOS requires the user to approve the app’s privileged background helper. %@ is the app name configured for the current build.</note>
       </trans-unit>
       <trans-unit id="Allow Forced HDR" xml:space="preserve">
         <source>Allow Forced HDR</source>
@@ -1573,10 +1588,19 @@ Az AliPay Kínában érhető el.</target>
         <target state="translated">Megfelelő kijelzők állnak rendelkezésre a beállított szinkronizációhoz, felhasználói felület méretarány-illesztéshez vagy elrendezésvédelemhez.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Are you sure you want the app to reset macOS display settings? After reset, the system will reboot!" xml:space="preserve">
-        <source>Are you sure you want the app to reset macOS display settings? After reset, the system will reboot!</source>
-        <target state="translated">Biztosan vissza szeretné állítani a macOS kijelző beállításait az alkalmazással? A visszaállítás után a rendszer újraindul!</target>
-        <note/>
+      <trans-unit id="Approve %@'s background item in the macOS notification or System Settings, then try again." xml:space="preserve">
+        <source>Approve %@'s background item in the macOS notification or System Settings, then try again.</source>
+        <target state="translated">Engedélyezze %@ háttérelemét a macOS-értesítésben vagy a Rendszerbeállításokban, majd próbálja újra.</target>
+        <note>52329 - Error instructing the user to approve BetterDisplay’s privileged background helper through the macOS notification or System Settings. %@ is the app name, and ‘background item’ should use the macOS Login Items terminology.</note>
+      </trans-unit>
+      <trans-unit id="Are you sure you want the app to reset macOS display settings? The system will reboot after the reset.&#10;&#10;Clearing NVRAM also removes low-level firmware preferences, such as startup disk and boot-related settings. macOS will recreate or reset them as appropriate after restart." xml:space="preserve">
+        <source>Are you sure you want the app to reset macOS display settings? The system will reboot after the reset.
+
+Clearing NVRAM also removes low-level firmware preferences, such as startup disk and boot-related settings. macOS will recreate or reset them as appropriate after restart.</source>
+        <target state="translated">Biztosan vissza szeretné állítani a macOS kijelzőbeállításait az alkalmazással? A rendszer a visszaállítás után újraindul.
+
+Az NVRAM törlése az alacsony szintű firmware-beállításokat is eltávolítja, például az indítólemez és a rendszerindítás beállításait. A macOS szükség szerint újra létrehozza vagy alaphelyzetbe állítja ezeket az újraindítás után.</target>
+        <note>53260 - Confirmation text shown before resetting macOS display settings. It explains that either reset restarts the Mac and warns that the optional NVRAM action also clears low-level firmware preferences such as startup-disk and boot settings, which macOS recreates or resets after restart.</note>
       </trans-unit>
       <trans-unit id="Are you sure you want to discard this display group and all its settings?" xml:space="preserve">
         <source>Are you sure you want to discard this display group and all its settings?</source>
@@ -3016,6 +3040,31 @@ A méret megadása opcionális - hagyja üresen a mezőt automatikus meghatároz
         <source>Copy Current Device Name</source>
         <target state="translated">Jelenlegi eszköznév másolása</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Could not connect to the privileged helper." xml:space="preserve">
+        <source>Could not connect to the privileged helper.</source>
+        <target state="translated">Nem sikerült kapcsolódni a kiemelt jogosultságú segédprogramhoz.</target>
+        <note>52329 - Error shown when the app cannot establish its XPC connection to the privileged helper. ‘Privileged helper’ is BetterDisplay’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="Could not create an administrator authorization session." xml:space="preserve">
+        <source>Could not create an administrator authorization session.</source>
+        <target state="translated">Nem sikerült rendszergazdai hitelesítési munkamenetet létrehozni.</target>
+        <note>52329 - Error shown when macOS cannot create the Authorization Services session needed for an administrator-level operation.</note>
+      </trans-unit>
+      <trans-unit id="Could not register the administrator authorization right (%d)." xml:space="preserve">
+        <source>Could not register the administrator authorization right (%d).</source>
+        <target state="translated">Nem sikerült regisztrálni a rendszergazdai hitelesítési jogosultságot (%d).</target>
+        <note>52329 - Error shown when the app cannot register its custom macOS Authorization Services right. ‘Authorization right’ is a technical macOS security term; %d is the OSStatus error code.</note>
+      </trans-unit>
+      <trans-unit id="Could not register the privileged helper." xml:space="preserve">
+        <source>Could not register the privileged helper.</source>
+        <target state="translated">Nem sikerült regisztrálni a kiemelt jogosultságú segédprogramot.</target>
+        <note>52329 - Error shown when BetterDisplay cannot register its privileged helper with macOS. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="Could not transfer the administrator authorization to the privileged helper." xml:space="preserve">
+        <source>Could not transfer the administrator authorization to the privileged helper.</source>
+        <target state="translated">Nem sikerült átadni a rendszergazdai hitelesítést a kiemelt jogosultságú segédprogramnak.</target>
+        <note>52329 - Error shown when administrator authorization cannot be converted and passed to the privileged helper. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
       </trans-unit>
       <trans-unit id="Crash reporting" xml:space="preserve">
         <source>Crash reporting</source>
@@ -5820,6 +5869,11 @@ Eltávolításuk biztonságos — a macOS újra létrehozza a szükséges profil
         <target state="translated">Ha a billentyűzetvezérlés az aktuális hangeszköz nevének megfelelő kijelzőre van állítva (ezt a Billentyűzet menüpontban állíthatja be), akkor a kijelző neve helyett ezt az értéket fogja használni az alkalmazás a hangeszköz megfeleltetésére.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
+        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
+        <target state="translated">Ha a macOS rendszergazdai hitelesítési adatokat kér, adja meg azokat a macOS párbeszédablakában a folytatáshoz. Ez az üzenet eltűnik, amikor a kérés teljesül vagy megszakításra kerül.</target>
+        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
+      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">Ha nem áll rendelkezésre megfelelő felbontás a tökéletes méretarány-illesztéshez, az alkalmazás a megadott tűréshatáron belül a legközelebbi másik felbontást keresi meg.</target>
@@ -7224,6 +7278,11 @@ Nem minden kijelző támogatja a képernyővezérlést. Ezek a műveletek egyes 
         <target state="translated">Nem elérhető</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Not Now" xml:space="preserve">
+        <source>Not Now</source>
+        <target state="translated">Most nem</target>
+        <note>53273 - Cancel button in the privileged background-helper approval alert; it dismisses the alert without opening System Settings or using the alternate administrator prompt.</note>
+      </trans-unit>
       <trans-unit id="Not all display group members are present." xml:space="preserve">
         <source>Not all display group members are present.</source>
         <target state="translated">Nincs az összes csoporttag jelen</target>
@@ -7408,6 +7467,11 @@ Nem minden kijelző támogatja a képernyővezérlést. Ezek a műveletek egyes 
         <source>Only resolutions that match native aspect ratio</source>
         <target state="translated">Csak natív képaránnyal egyező felbontások</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Open System Settings" xml:space="preserve">
+        <source>Open System Settings</source>
+        <target state="translated">Rendszerbeállítások megnyitása</target>
+        <note>53273 - Primary button in the privileged background-helper approval alert. It opens macOS System Settings to the Login Items page.</note>
       </trans-unit>
       <trans-unit id="Open in ColorSync Utility" xml:space="preserve">
         <source>Open in ColorSync Utility</source>
@@ -8389,6 +8453,11 @@ Nem minden kijelző támogatja a képernyővezérlést. Ezek a műveletek egyes 
         <target state="translated">Eltávolítja az SDR bejegyzéseket a kijelzőmódok listájából – ezzel további hely szabadul fel a rugalmas skálázási bejegyzéseknek. Ha ez engedélyezve van, a HDR mód nem kapcsolható ki az app menüjében.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
+        <source>Removing Color Profiles…</source>
+        <target state="translated">Színprofilok eltávolítása…</target>
+        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
+      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">Az összes egyéb aktiválás eltávolítása hatással lesz az ezzel a licenccel társított összes telepítésre, kivéve ezt. Ennek az aktiválásnak az eltávolítása csak ezt a telepítést érinti.
@@ -8420,6 +8489,11 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
         <source>Reset</source>
         <target state="translated">Reset</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Reset &amp; Clear NVRAM" xml:space="preserve">
+        <source>Reset &amp; Clear NVRAM</source>
+        <target state="translated">Visszaállítás és az NVRAM törlése</target>
+        <note>53260 - Destructive action in the Reset System Settings confirmation. It performs the display-system reset, additionally clears NVRAM firmware preferences, and then restarts the Mac.</note>
       </trans-unit>
       <trans-unit id="Reset All Display Settings" xml:space="preserve">
         <source>Reset All Display Settings</source>
@@ -8499,11 +8573,6 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
       <trans-unit id="Reset all VMM7100 devices before wake or unlock reinitialization for this display" xml:space="preserve">
         <source>Reset all VMM7100 devices before wake or unlock reinitialization for this display</source>
         <target state="translated">Minden VMM7100 eszköz reset-je ébredéskori vagy feloldási újrainicializálás során</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset and Reboot" xml:space="preserve">
-        <source>Reset and Reboot</source>
-        <target state="translated">Visszaállítás és újraindítás</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset colors on neutral settings for HDR capable screens" xml:space="preserve">
@@ -9331,6 +9400,11 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
         <target state="translated">Kisegítő lehetőségek beállítása…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set up Device Control and Data Access…" xml:space="preserve">
+        <source>Set up Device Control and Data Access…</source>
+        <target state="translated">Eszközvezérlés és adathozzáférés beállítása…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set volume level first, then issue unmute command" xml:space="preserve">
         <source>Set volume level first, then issue unmute command</source>
         <target state="translated">Hangerő beállítása, majd a némítás megszüntetése parancs kiadása</target>
@@ -9810,6 +9884,11 @@ Az összes aktiválás eltávolítása tiszta lapot biztosít.</target>
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">Néhány ezek közül instabil lehet, súlyos hibákat, kísérleti vagy befejezetlen funkciókat tartalmazhat. Nem minden belső kiadás érhető el automatikus frissítésként.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Something went wrong…" xml:space="preserve">
+        <source>Something went wrong…</source>
+        <target state="translated">Hiba történt…</target>
+        <note>53255 - Title of a critical alert shown only when applying display overrides or removing factory color profiles still fails after the app has automatically tried the alternate administrator prompt where applicable.</note>
       </trans-unit>
       <trans-unit id="Source Content Shadow" xml:space="preserve">
         <source>Source Content Shadow</source>
@@ -10568,6 +10647,21 @@ Hiba esetén fizikailag válassza le és csatlakoztassa újra a kijelzőt!</targ
         <target state="translated">A virtuális képernyőhöz társított fizikai méret (amelyet a felhasználói felület méretezésének kiszámításához használnak) elsősorban a „jelentett átlóméret” beállítás alapján kerül meghatározásra, amelyet tovább lehet módosítani a „kijelző fizikai méretei” beállítással, amikor a virtuális képernyő csatlakoztatva van.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The privileged helper did not reply in time." xml:space="preserve">
+        <source>The privileged helper did not reply in time.</source>
+        <target state="translated">A kiemelt jogosultságú segédprogram nem válaszolt időben.</target>
+        <note>52329 - Error shown when the privileged helper does not respond to the app within the allowed time. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="The privileged helper is missing from the app." xml:space="preserve">
+        <source>The privileged helper is missing from the app.</source>
+        <target state="translated">A kiemelt jogosultságú segédprogram hiányzik az alkalmazásból.</target>
+        <note>52329 - Error shown when the privileged helper executable or its launch daemon configuration is absent from the app bundle. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="The privileged helper needs to be refreshed." xml:space="preserve">
+        <source>The privileged helper needs to be refreshed.</source>
+        <target state="translated">A kiemelt jogosultságú segédprogram frissítésre szorul.</target>
+        <note>52329 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface.</note>
+      </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well.</source>
         <target state="translated">A csúszka kihagyja azokat a felbontásokat, amelyek nem felelnek meg a kijelző méretének, hogy megkönnyítse a csúszka használatát. Hatással van a felbontás billentyűkombinációira is.</target>
@@ -10962,6 +11056,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
       <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
         <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
         <target state="translated">Ahhoz, hogy az Apple billentyűzet fényerő és hangerő gombjai vezéreljék a külső kijelzőt, hozzá kell adni az alkalmazást a **Rendszerbeállítások &gt; Adatvédelem és biztonság &gt; Kisegítő lehetőségek** listához! Ezt követően az alkalmazás újraindítására van szükség. Alternatív megoldásként letilthatja a natív billentyűzetvezérlést a Beállításokban.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
+        <target state="translated">Ahhoz, hogy az Apple billentyűzet fényerő és hangerő gombjai vezéreljék a külső kijelzőt, hozzá kell adni az alkalmazást a **Rendszerbeállítások &gt; Adatvédelem és biztonság &gt; Eszközvezérlés és adathozzáférés** listához! Ezt követően az alkalmazás újraindítására van szükség. Alternatív megoldásként letilthatja a natív billentyűzetvezérlést a Beállításokban.</target>
         <note/>
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
@@ -11464,6 +11563,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <target state="translated">Ismeretlen Kijelző</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unknown error" xml:space="preserve">
+        <source>Unknown error</source>
+        <target state="translated">Ismeretlen hiba</target>
+        <note>52329 - Fallback error text in the privileged-operation alert when no specific error message is available.</note>
+      </trans-unit>
       <trans-unit id="Unlimited" xml:space="preserve">
         <source>Unlimited</source>
         <target state="translated">Korlátlan</target>
@@ -11568,6 +11672,11 @@ Az értesítést elutasítása esetén a módosítások a virtuális képernyő 
         <source>Use %@ as menu icon when the app is preventing display sleep</source>
         <target state="translated">A %@ ikon használata menüsáv ikonként, amikor az alkalmazás akadályozza a kijelző alvó módba lépését.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Use Admin Prompt Instead" xml:space="preserve">
+        <source>Use Admin Prompt Instead</source>
+        <target state="translated">Rendszergazdai hitelesítés használata helyette</target>
+        <note>53255 - Alternate button in the privileged background-helper approval alert that uses the traditional macOS administrator authorization prompt. ‘Admin Prompt’ means the system authentication dialog, not a command-line prompt.</note>
       </trans-unit>
       <trans-unit id="Use Compositor Filter" xml:space="preserve">
         <source>Use Compositor Filter</source>
@@ -12367,6 +12476,15 @@ Egy korábbi aktiválás automatikusan eltávolításra került, hogy helyet biz
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
         <target state="translated">A macOS alapállapotban is képes elnémítani a digitális adatfolyamokat - ha a némítás nem működik megfelelően a kijelzővel, akkor ennek a funkciónak az engedélyezése segíthet.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
+        <source>macOS needs your approval before %@ can apply this system configuration change.
+
+Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again.</source>
+        <target state="translated">A macOS jóváhagyást igényel, mielőtt %1$@ végrehajthatná ezt a rendszerkonfiguráció-módosítást.
+
+Nyissa meg a Rendszerbeállítások &gt; Általános &gt; Indítóelemek oldalt, és engedélyezze %2$@ háttérben történő futtatását, majd térjen vissza, és próbálja újra.</target>
+        <note>53273 - Two-paragraph explanation in the privileged background-helper approval alert. Both %@ placeholders are the app name configured for the current build; System Settings &gt; General &gt; Login Items is the macOS navigation path.</note>
       </trans-unit>
       <trans-unit id="milliseconds" xml:space="preserve">
         <source>milliseconds</source>

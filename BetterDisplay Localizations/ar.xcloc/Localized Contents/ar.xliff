@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
-  <file original="BetterDisplay/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
+  <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
     </header>
@@ -29,7 +29,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="BetterDisplay/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
+  <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
     </header>
@@ -76,7 +76,7 @@
       </trans-unit>
     </body>
   </file>
-  <file original="BetterDisplay/Localizable/Localizable.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
+  <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
     <header>
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
     </header>
@@ -379,6 +379,11 @@ Use the 'Transfer display settings' feature under all affected displays' additio
 
 استخدم ميزة 'نقل إعدادات الشاشة' ضمن الإعدادات الإضافية لكل شاشة متأثرة لحل مشكلة عدم تطابق المعرّفات.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="%@ needs administrator access to modify system display configuration." xml:space="preserve">
+        <source>%@ needs administrator access to modify system display configuration.</source>
+        <target state="translated">يحتاج %@ إلى صلاحيات المسؤول لتعديل إعدادات شاشات العرض في النظام.</target>
+        <note>53273 - Prompt shown by macOS when BetterDisplay requests administrator authorization to change system display configuration. %@ is the app name configured for the current build.</note>
       </trans-unit>
       <trans-unit id="%@ nits" xml:space="preserve">
         <source>%@ nits</source>
@@ -969,6 +974,11 @@ Thank you for your understanding and continued support.</source>
         <target state="translated">اضبط إزاحة الشاشتين بتعديل نقاط الارتكاز. تحاول حماية الترتيب ترتيب الشاشات بحيث تتحاذى عند نقاط الارتكاز المحدّدة أفقياً أو عمودياً. الإعداد الافتراضي هو محاذاة الشاشات بشكل متمركز.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
+        <source>Administrator authorization failed (%d).</source>
+        <target state="translated">فشل تفويض المسؤول (%d).</target>
+        <note>52329 - Fallback error shown when macOS administrator authorization fails and no system-provided description is available. ‘Authorization’ refers to macOS Authorization Services; %d is the OSStatus error code.</note>
+      </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
         <source>Advanced</source>
         <target state="translated">متقدم</target>
@@ -1126,6 +1136,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <source>Allocation limits - vertical</source>
         <target state="translated">حدود التخصيص - عمودي</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Allow %@ to Make Changes" xml:space="preserve">
+        <source>Allow %@ to Make Changes</source>
+        <target state="translated">السماح لـ %@ بإجراء تغييرات</target>
+        <note>53273 - Title of an informational alert shown when macOS requires the user to approve the app’s privileged background helper. %@ is the app name configured for the current build.</note>
       </trans-unit>
       <trans-unit id="Allow Forced HDR" xml:space="preserve">
         <source>Allow Forced HDR</source>
@@ -1569,10 +1584,19 @@ AliPay available in China.</source>
         <target state="translated">تتوفر شاشات مناسبة للمزامنة أو مطابقة مقياس الواجهة أو حماية الترتيب المُعدّة.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Are you sure you want the app to reset macOS display settings? After reset, the system will reboot!" xml:space="preserve">
-        <source>Are you sure you want the app to reset macOS display settings? After reset, the system will reboot!</source>
-        <target state="translated">هل أنت متأكد من رغبتك في أن يعيد التطبيق ضبط إعدادات الشاشة في macOS؟ سيُعاد تشغيل النظام بعد إعادة الضبط!</target>
-        <note/>
+      <trans-unit id="Approve %@'s background item in the macOS notification or System Settings, then try again." xml:space="preserve">
+        <source>Approve %@'s background item in the macOS notification or System Settings, then try again.</source>
+        <target state="translated">وافق على عنصر الخلفية الخاص بـ %@ في إشعار macOS أو إعدادات النظام، ثم حاول مرة أخرى.</target>
+        <note>52329 - Error instructing the user to approve BetterDisplay’s privileged background helper through the macOS notification or System Settings. %@ is the app name, and ‘background item’ should use the macOS Login Items terminology.</note>
+      </trans-unit>
+      <trans-unit id="Are you sure you want the app to reset macOS display settings? The system will reboot after the reset.&#10;&#10;Clearing NVRAM also removes low-level firmware preferences, such as startup disk and boot-related settings. macOS will recreate or reset them as appropriate after restart." xml:space="preserve">
+        <source>Are you sure you want the app to reset macOS display settings? The system will reboot after the reset.
+
+Clearing NVRAM also removes low-level firmware preferences, such as startup disk and boot-related settings. macOS will recreate or reset them as appropriate after restart.</source>
+        <target state="translated">هل أنت متأكد من رغبتك في أن يعيد التطبيق ضبط إعدادات الشاشة في macOS؟ سيُعاد تشغيل النظام بعد إعادة الضبط.
+
+يؤدي مسح NVRAM أيضًا إلى إزالة تفضيلات البرامج الثابتة منخفضة المستوى، مثل إعدادات قرص بدء التشغيل والإقلاع. سيعيد macOS إنشاءها أو ضبطها حسب الاقتضاء بعد إعادة التشغيل.</target>
+        <note>53260 - Confirmation text shown before resetting macOS display settings. It explains that either reset restarts the Mac and warns that the optional NVRAM action also clears low-level firmware preferences such as startup-disk and boot settings, which macOS recreates or resets after restart.</note>
       </trans-unit>
       <trans-unit id="Are you sure you want to discard this display group and all its settings?" xml:space="preserve">
         <source>Are you sure you want to discard this display group and all its settings?</source>
@@ -3012,6 +3036,31 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Copy Current Device Name</source>
         <target state="translated">نسخ اسم الجهاز الحالي</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Could not connect to the privileged helper." xml:space="preserve">
+        <source>Could not connect to the privileged helper.</source>
+        <target state="translated">تعذّر الاتصال بأداة المساعدة ذات الامتيازات.</target>
+        <note>52329 - Error shown when the app cannot establish its XPC connection to the privileged helper. ‘Privileged helper’ is BetterDisplay’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="Could not create an administrator authorization session." xml:space="preserve">
+        <source>Could not create an administrator authorization session.</source>
+        <target state="translated">تعذّر إنشاء جلسة تفويض للمسؤول.</target>
+        <note>52329 - Error shown when macOS cannot create the Authorization Services session needed for an administrator-level operation.</note>
+      </trans-unit>
+      <trans-unit id="Could not register the administrator authorization right (%d)." xml:space="preserve">
+        <source>Could not register the administrator authorization right (%d).</source>
+        <target state="translated">تعذّر تسجيل صلاحية تفويض المسؤول (%d).</target>
+        <note>52329 - Error shown when the app cannot register its custom macOS Authorization Services right. ‘Authorization right’ is a technical macOS security term; %d is the OSStatus error code.</note>
+      </trans-unit>
+      <trans-unit id="Could not register the privileged helper." xml:space="preserve">
+        <source>Could not register the privileged helper.</source>
+        <target state="translated">تعذّر تسجيل أداة المساعدة ذات الامتيازات.</target>
+        <note>52329 - Error shown when BetterDisplay cannot register its privileged helper with macOS. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="Could not transfer the administrator authorization to the privileged helper." xml:space="preserve">
+        <source>Could not transfer the administrator authorization to the privileged helper.</source>
+        <target state="translated">تعذّر نقل تفويض المسؤول إلى أداة المساعدة ذات الامتيازات.</target>
+        <note>52329 - Error shown when administrator authorization cannot be converted and passed to the privileged helper. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
       </trans-unit>
       <trans-unit id="Crash reporting" xml:space="preserve">
         <source>Crash reporting</source>
@@ -5816,6 +5865,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">إذا ضُبط التحكم بلوحة المفاتيح على الشاشة التي تطابق اسم جهاز الصوت الحالي (يُضبط ذلك ضمن إعدادات لوحة المفاتيح)، فستُستخدم هذه القيمة لمطابقة جهاز الصوت بدلاً من اسم الشاشة.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
+        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
+        <target state="translated">إذا طلب macOS بيانات اعتماد المسؤول، فيُرجى إدخالها في نافذة مطالبة macOS للمتابعة. ستختفي هذه الرسالة عند اكتمال الطلب أو إلغائه.</target>
+        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
+      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">إذا لم تتوفر دقة مثالية للمطابقة التامة للمقياس، فسيبحث التطبيق عن أقرب دقة ضمن هامش التسامح المحدّد.</target>
@@ -7220,6 +7274,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">غير متاح</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Not Now" xml:space="preserve">
+        <source>Not Now</source>
+        <target state="translated">ليس الآن</target>
+        <note>53273 - Cancel button in the privileged background-helper approval alert; it dismisses the alert without opening System Settings or using the alternate administrator prompt.</note>
+      </trans-unit>
       <trans-unit id="Not all display group members are present." xml:space="preserve">
         <source>Not all display group members are present.</source>
         <target state="translated">ليست كل شاشات المجموعة متصلة.</target>
@@ -7404,6 +7463,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Only resolutions that match native aspect ratio</source>
         <target state="translated">الدقة المطابقة لنسبة الأبعاد الأصلية فقط</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Open System Settings" xml:space="preserve">
+        <source>Open System Settings</source>
+        <target state="translated">فتح إعدادات النظام</target>
+        <note>53273 - Primary button in the privileged background-helper approval alert. It opens macOS System Settings to the Login Items page.</note>
       </trans-unit>
       <trans-unit id="Open in ColorSync Utility" xml:space="preserve">
         <source>Open in ColorSync Utility</source>
@@ -8385,6 +8449,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">يزيل مدخلات SDR من قائمة أوضاع العرض – وهذا يوفّر مساحة إضافية لمدخلات التحجيم المرن. بتفعيله لا يمكن إيقاف وضع HDR من قائمة التطبيق.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
+        <source>Removing Color Profiles…</source>
+        <target state="translated">جارٍ إزالة ملفات الألوان…</target>
+        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
+      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">إزالة هذا التفعيل ستؤثّر على هذا التثبيت فقط. يمكن إزالة التفعيلات الأخرى دون التأثير على هذا التثبيت. إزالة جميع التفعيلات تعيد كل شيء إلى نقطة الصفر.</target>
@@ -8414,6 +8483,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Reset</source>
         <target state="translated">إعادة تعيين</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Reset &amp; Clear NVRAM" xml:space="preserve">
+        <source>Reset &amp; Clear NVRAM</source>
+        <target state="translated">إعادة التعيين ومسح NVRAM</target>
+        <note>53260 - Destructive action in the Reset System Settings confirmation. It performs the display-system reset, additionally clears NVRAM firmware preferences, and then restarts the Mac.</note>
       </trans-unit>
       <trans-unit id="Reset All Display Settings" xml:space="preserve">
         <source>Reset All Display Settings</source>
@@ -8493,11 +8567,6 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Reset all VMM7100 devices before wake or unlock reinitialization for this display" xml:space="preserve">
         <source>Reset all VMM7100 devices before wake or unlock reinitialization for this display</source>
         <target state="translated">إعادة ضبط جميع أجهزة VMM7100 قبل إعادة التهيئة عند الاستيقاظ أو إلغاء القفل لهذه الشاشة</target>
-        <note/>
-      </trans-unit>
-      <trans-unit id="Reset and Reboot" xml:space="preserve">
-        <source>Reset and Reboot</source>
-        <target state="translated">إعادة التعيين والتشغيل</target>
         <note/>
       </trans-unit>
       <trans-unit id="Reset colors on neutral settings for HDR capable screens" xml:space="preserve">
@@ -9325,6 +9394,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">إعداد صلاحيات تسهيلات الاستخدام…</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Set up Device Control and Data Access…" xml:space="preserve">
+        <source>Set up Device Control and Data Access…</source>
+        <target state="translated">إعداد التحكم في الأجهزة والوصول إلى البيانات…</target>
+        <note/>
+      </trans-unit>
       <trans-unit id="Set volume level first, then issue unmute command" xml:space="preserve">
         <source>Set volume level first, then issue unmute command</source>
         <target state="translated">ضبط مستوى الصوت أولاً ثم إرسال أمر إلغاء الكتم</target>
@@ -9804,6 +9878,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">بعض هذه النسخ غير مستقرة، وقد تحتوي على أخطاء كبيرة أو مزايا تجريبية أو غير مكتملة. لا تتوفر جميع النسخ الداخلية كتحديثات تلقائية.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Something went wrong…" xml:space="preserve">
+        <source>Something went wrong…</source>
+        <target state="translated">حدث خطأ ما…</target>
+        <note>53255 - Title of a critical alert shown only when applying display overrides or removing factory color profiles still fails after the app has automatically tried the alternate administrator prompt where applicable.</note>
       </trans-unit>
       <trans-unit id="Source Content Shadow" xml:space="preserve">
         <source>Source Content Shadow</source>
@@ -10562,6 +10641,21 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">يُحدَّد البُعد الفيزيائي المرتبط بشاشة افتراضية (المستخدم في حساب تحجيم الواجهة) بناءً على إعداد 'الحجم القُطري المُبلَّغ عنه' بالدرجة الأولى، ويمكن تعديله أكثر عبر إعداد `الأبعاد الفيزيائية للشاشة` عندما تكون الشاشة الافتراضية متصلة.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="The privileged helper did not reply in time." xml:space="preserve">
+        <source>The privileged helper did not reply in time.</source>
+        <target state="translated">لم تستجب أداة المساعدة ذات الامتيازات في الوقت المحدد.</target>
+        <note>52329 - Error shown when the privileged helper does not respond to the app within the allowed time. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="The privileged helper is missing from the app." xml:space="preserve">
+        <source>The privileged helper is missing from the app.</source>
+        <target state="translated">أداة المساعدة ذات الامتيازات مفقودة من التطبيق.</target>
+        <note>52329 - Error shown when the privileged helper executable or its launch daemon configuration is absent from the app bundle. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="The privileged helper needs to be refreshed." xml:space="preserve">
+        <source>The privileged helper needs to be refreshed.</source>
+        <target state="translated">يجب تحديث أداة المساعدة ذات الامتيازات.</target>
+        <note>52329 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface.</note>
+      </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well.</source>
         <target state="translated">سيتجاهل شريط التمرير الدقةَ التي لا تطابق حجم الشاشة تقليلاً للازدحام وتسهيلاً لاستخدام الشريط. يؤثّر ذلك على اختصارات الدقة في لوحة المفاتيح أيضاً.</target>
@@ -10954,6 +11048,11 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
         <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
         <target state="translated">لجعل مفاتيح السطوع والصوت في لوحة مفاتيح Apple تتحكم بشاشتك الخارجية، أضف التطبيق في **إعدادات النظام &gt; الخصوصية والأمان &gt; تسهيلات الاستخدام**! بعد ذلك سيلزمك إعادة تشغيل التطبيق. أو يمكنك تعطيل التحكم بلوحة المفاتيح الأصلية من الإعدادات.</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
+        <target state="translated">لجعل مفاتيح السطوع والصوت في لوحة مفاتيح Apple تتحكم بشاشتك الخارجية، أضف التطبيق في **إعدادات النظام &gt; الخصوصية والأمان &gt; التحكم في الأجهزة والوصول إلى البيانات**! بعد ذلك سيلزمك إعادة تشغيل التطبيق. أو يمكنك تعطيل التحكم بلوحة المفاتيح الأصلية من الإعدادات.</target>
         <note/>
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
@@ -11456,6 +11555,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">شاشة غير معروفة</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Unknown error" xml:space="preserve">
+        <source>Unknown error</source>
+        <target state="translated">خطأ غير معروف</target>
+        <note>52329 - Fallback error text in the privileged-operation alert when no specific error message is available.</note>
+      </trans-unit>
       <trans-unit id="Unlimited" xml:space="preserve">
         <source>Unlimited</source>
         <target state="translated">بلا حد</target>
@@ -11560,6 +11664,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Use %@ as menu icon when the app is preventing display sleep</source>
         <target state="translated">استخدام %@ كأيقونة قائمة عندما يمنع التطبيق سكون الشاشة</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Use Admin Prompt Instead" xml:space="preserve">
+        <source>Use Admin Prompt Instead</source>
+        <target state="translated">استخدام مصادقة المسؤول بدلاً من ذلك</target>
+        <note>53255 - Alternate button in the privileged background-helper approval alert that uses the traditional macOS administrator authorization prompt. ‘Admin Prompt’ means the system authentication dialog, not a command-line prompt.</note>
       </trans-unit>
       <trans-unit id="Use Compositor Filter" xml:space="preserve">
         <source>Use Compositor Filter</source>
@@ -12360,6 +12469,15 @@ A previous activation was automatically removed to make room for this new one.</
         <target state="translated">يستطيع macOS كتم البثّ الرقمي أصلياً - وإذا لم يعمل الكتم بشكل صحيح مع شاشتك فينبغي تفعيل هذه الميزة.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
+        <source>macOS needs your approval before %@ can apply this system configuration change.
+
+Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again.</source>
+        <target state="translated">يحتاج macOS إلى موافقتك قبل أن يتمكّن %1$@ من تطبيق هذا التغيير على إعدادات النظام.
+
+افتح إعدادات النظام &gt; عام &gt; عناصر الدخول واسمح لـ %2$@ بالعمل في الخلفية، ثم عُد وحاول مرة أخرى.</target>
+        <note>53273 - Two-paragraph explanation in the privileged background-helper approval alert. Both %@ placeholders are the app name configured for the current build; System Settings &gt; General &gt; Login Items is the macOS navigation path.</note>
+      </trans-unit>
       <trans-unit id="milliseconds" xml:space="preserve">
         <source>milliseconds</source>
         <target state="translated">ميلي ثانية</target>
@@ -12686,7 +12804,7 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ This OSD style is available for brightness and volume only." xml:space="preserve">
         <source>⚠️ This OSD style is available for brightness and volume only.</source>
-        <target state="translated">⚠️ نمط الـ OSD هذا متاح للسطوع ومستوى الصوت فقط.</target>
+        <target state="translated">⚠️ نمط OSD هذا متاح للسطوع ومستوى الصوت فقط.</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
