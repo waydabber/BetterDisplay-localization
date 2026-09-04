@@ -1427,6 +1427,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">활성화 시 앱 메뉴 아이콘의 바운스 애니메이션</target>
         <note/>
       </trans-unit>
+      <trans-unit id="App menu presentation" xml:space="preserve">
+        <source>App menu presentation</source>
+        <target state="translated">앱 메뉴 표시 방식</target>
+        <note>53360 - Settings label for choosing how the app menu is visually presented. “Classic” is the standard menu below its menu-bar icon, while “Sidebar” is a screen-edge, corner-attached layout.</note>
+      </trans-unit>
       <trans-unit id="App notification style" xml:space="preserve">
         <source>App notification style</source>
         <target state="translated">앱 알림 스타일</target>
@@ -2497,6 +2502,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">클래식</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." xml:space="preserve">
+        <source>Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar.</source>
+        <target state="translated">클래식은 표준 메뉴 배경으로 앱 메뉴 아이콘 아래에 열립니다. 사이드바는 화면 가장자리에 제어 센터 스타일의 유리 블록과 같은 메뉴 안에서 펼쳐지는 메뉴 항목으로 열립니다. 사이드바를 가장 자연스럽게 배치하려면 앱 메뉴 아이콘을 메뉴 막대의 해당 가장자리에 최대한 가깝게 이동하십시오.</target>
+        <note>53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction.</note>
+      </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
         <source>Clear Console</source>
         <target state="translated">콘솔 지우기</target>
@@ -2841,6 +2851,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported).</source>
         <target state="translated">TV가 허용하는 최소 및 최대 음량 범위를 구성합니다. 동기화 버튼을 사용하여 기기에서 값을 가져오세요(지원되는 경우).</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Configuring System…" xml:space="preserve">
+        <source>Configuring System…</source>
+        <target state="translated">시스템 구성 중…</target>
+        <note>53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress.</note>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
         <source>Connect</source>
@@ -5865,11 +5880,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">키보드 제어가 현재 오디오 장치 이름과 일치하는 디스플레이로 설정되어 있는 경우(키보드 설정에서 설정), 디스플레이 이름 대신 이 값이 오디오 장치 일치에 사용됩니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
-        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
-        <target state="translated">macOS에서 관리자 자격 증명을 요청하면 macOS 인증 대화상자에 입력하여 계속하십시오. 이 메시지는 요청이 완료되거나 취소되면 사라집니다.</target>
-        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
-      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">완벽한 크기를 조정하기 위한 완벽한 해상도가 없는 경우, 앱은 주어진 오차 범위 내에서 가장 가까운 해상도를 찾습니다.</target>
@@ -8450,11 +8460,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">디스플레이 모드 목록에서 SDR 항목을 제거하여 유연한 스케일링 항목을 위한 추가 공간을 확보합니다. 이 옵션을 활성화하면 앱 메뉴에서 HDR 모드를 끌 수 없습니다.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
-        <source>Removing Color Profiles…</source>
-        <target state="translated">색상 프로파일 제거 중…</target>
-        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
-      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">이 활성화를 제거해도 현재 설치된 앱에만 영향을 미칩니다. 다른 활성화를 제거하는 것은 현재 설치된 앱에 영향을 주지 않으며, 모든 활성화를 제거하면 모든 것이 초기 상태로 재설정됩니다.</target>
@@ -9739,6 +9744,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">이전에 앱에서 감지한 모든 디스플레이를 표시합니다. 활성화하면 디스플레이가 오프라인 상태일 때도 일부 설정을 변경할 수 있습니다.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Sidebar" xml:space="preserve">
+        <source>Sidebar</source>
+        <target state="translated">사이드바</target>
+        <note>53360 - App-menu presentation option using a dark glass side panel anchored to a physical top corner of the screen. Translate “Sidebar” as the familiar UI term for a side panel and use it consistently in the associated help text.</note>
       </trans-unit>
       <trans-unit id="Sidecar Configuration" xml:space="preserve">
         <source>Sidecar Configuration</source>
@@ -11229,10 +11239,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">상단 중앙</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Top-right corner" xml:space="preserve">
-        <source>Top-right corner</source>
-        <target state="translated">상단 오른쪽 모서리</target>
-        <note/>
+      <trans-unit id="Top-corner" xml:space="preserve">
+        <source>Top-corner</source>
+        <target state="translated">상단 모서리</target>
+        <note>53317 - OSD placement option. The physical top corner follows the current macOS menu bar presentation direction.</note>
       </trans-unit>
       <trans-unit id="Traditional OSD" xml:space="preserve">
         <source>Traditional OSD</source>
@@ -12474,6 +12484,11 @@ A previous activation was automatically removed to make room for this new one.</
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
         <target state="translated">macOS는 디지털 스트림을 기본적으로 음소거할 수 있습니다. 디스플레이에서 음소거가 제대로 작동하지 않는다면 이 기능을 활성화하세요.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
+        <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
+        <target state="translated">macOS에서 관리자 자격 증명을 요청할 수 있습니다. 이 메시지는 요청이 완료되거나 취소되면 사라집니다.</target>
+        <note>53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app.</note>
       </trans-unit>
       <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
         <source>macOS needs your approval before %@ can apply this system configuration change.

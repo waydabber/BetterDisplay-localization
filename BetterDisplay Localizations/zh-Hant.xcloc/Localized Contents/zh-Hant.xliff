@@ -1427,6 +1427,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">應用程式選單圖示活動時的彈跳動畫</target>
         <note/>
       </trans-unit>
+      <trans-unit id="App menu presentation" xml:space="preserve">
+        <source>App menu presentation</source>
+        <target state="translated">應用程式選單顯示方式</target>
+        <note>53360 - Settings label for choosing how the app menu is visually presented. “Classic” is the standard menu below its menu-bar icon, while “Sidebar” is a screen-edge, corner-attached layout.</note>
+      </trans-unit>
       <trans-unit id="App notification style" xml:space="preserve">
         <source>App notification style</source>
         <target state="translated">程式通知樣式</target>
@@ -2497,6 +2502,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">經典</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." xml:space="preserve">
+        <source>Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar.</source>
+        <target state="translated">「經典」會在應用程式選單圖示下方以標準選單背景開啟。「側邊欄」會在螢幕邊緣開啟，其中包含控制中心風格的玻璃區塊和原位展開的選單項目。為了讓「側邊欄」的位置最自然，請將應用程式選單圖示盡量移到選單列的對應邊緣。</target>
+        <note>53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction.</note>
+      </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
         <source>Clear Console</source>
         <target state="translated">清除控制台</target>
@@ -2841,6 +2851,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported).</source>
         <target state="translated">設定電視可接受的最小與最大音量範圍。使用同步按鈕從裝置擷取數值（若支援）。</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Configuring System…" xml:space="preserve">
+        <source>Configuring System…</source>
+        <target state="translated">正在設定系統…</target>
+        <note>53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress.</note>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
         <source>Connect</source>
@@ -5865,11 +5880,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">鍵盤控制設定為與目前聲音設備名稱匹配的顯示器名稱（在鍵盤設定下可進行設定）時將該值用於匹配聲音設備而非顯示器名稱。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
-        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
-        <target state="translated">如果 macOS 要求提供管理員憑證，請在 macOS 提示視窗中輸入以繼續。此訊息會在要求完成或取消後消失。</target>
-        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
-      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">如果沒有完美的解析度來實現完美的比例匹配，應用程式會在給定的容差範圍內尋找最接近的解析度。</target>
@@ -8449,11 +8459,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">從顯示模式清單中移除 SDR 項目，為彈性縮放項目騰出更多空間。啟用後，無法在 App 選單中關閉 HDR 模式。</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
-        <source>Removing Color Profiles…</source>
-        <target state="translated">正在移除色彩描述檔…</target>
-        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
-      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">移除所有其他啟用將影響與此授權相關的所有安裝，唯獨此安裝不會受到影響。移除此啟用將僅影響此安裝。
@@ -9740,6 +9745,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">顯示應用程式之前識別的所有顯示器。即使顯示器處於離線狀態也允許更改某些設定。</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Sidebar" xml:space="preserve">
+        <source>Sidebar</source>
+        <target state="translated">側邊欄</target>
+        <note>53360 - App-menu presentation option using a dark glass side panel anchored to a physical top corner of the screen. Translate “Sidebar” as the familiar UI term for a side panel and use it consistently in the associated help text.</note>
       </trans-unit>
       <trans-unit id="Sidecar Configuration" xml:space="preserve">
         <source>Sidecar Configuration</source>
@@ -11229,10 +11239,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">頂端中央</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Top-right corner" xml:space="preserve">
-        <source>Top-right corner</source>
-        <target state="translated">右上角</target>
-        <note/>
+      <trans-unit id="Top-corner" xml:space="preserve">
+        <source>Top-corner</source>
+        <target state="translated">頂端角落</target>
+        <note>53317 - OSD placement option. The physical top corner follows the current macOS menu bar presentation direction.</note>
       </trans-unit>
       <trans-unit id="Traditional OSD" xml:space="preserve">
         <source>Traditional OSD</source>
@@ -12473,6 +12483,11 @@ A previous activation was automatically removed to make room for this new one.</
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
         <target state="translated">MacOS 可原生靜音數位串流 - 靜音功能在顯示器上無效時應啟用此功能。</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
+        <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
+        <target state="translated">macOS 可能會要求提供管理員憑證。此訊息會在要求完成或取消後消失。</target>
+        <note>53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app.</note>
       </trans-unit>
       <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
         <source>macOS needs your approval before %@ can apply this system configuration change.

@@ -1427,6 +1427,11 @@ Bu değişiklik geri alınamaz. Bunu yapmak istediğinizden emin misiniz?</targe
         <target state="translated">Uygulama menüsü simgesi, etkinlik sırasında zıplama animasyonu yapsın.</target>
         <note/>
       </trans-unit>
+      <trans-unit id="App menu presentation" xml:space="preserve">
+        <source>App menu presentation</source>
+        <target state="translated">Uygulama menüsü sunumu</target>
+        <note>53360 - Settings label for choosing how the app menu is visually presented. “Classic” is the standard menu below its menu-bar icon, while “Sidebar” is a screen-edge, corner-attached layout.</note>
+      </trans-unit>
       <trans-unit id="App notification style" xml:space="preserve">
         <source>App notification style</source>
         <target state="translated">Uygulama bildirim stili</target>
@@ -2496,6 +2501,11 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <target state="translated">Klasik</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." xml:space="preserve">
+        <source>Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar.</source>
+        <target state="translated">Klasik, standart menü arka planıyla uygulama menüsü simgesinin altında açılır. Kenar Çubuğu, Denetim Merkezi tarzı cam bloklar ve aynı yerde genişleyen menü öğeleriyle ekran kenarında açılır. Kenar Çubuğunu en doğal konuma yerleştirmek için uygulama menüsü simgesini menü çubuğunun ilgili kenarına mümkün olduğunca yaklaştırın.</target>
+        <note>53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction.</note>
+      </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
         <source>Clear Console</source>
         <target state="translated">Konsolu Temizle</target>
@@ -2840,6 +2850,11 @@ Okuma uzunluğunu belirtmek isteğe bağlıdır - otomatik algılama için alan�
         <source>Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported).</source>
         <target state="translated">TV tarafından kabul edilen minimum ve maksimum ses aralıklarını yapılandırır. Değerleri cihazdan almak için senkronizasyon düğmesini kullanın (destekleniyorsa).</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Configuring System…" xml:space="preserve">
+        <source>Configuring System…</source>
+        <target state="translated">Sistem Yapılandırılıyor…</target>
+        <note>53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress.</note>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
         <source>Connect</source>
@@ -5864,11 +5879,6 @@ Bunları kaldırmak güvenlidir - macOS, ekran bir sonraki bağlanışında gere
         <target state="translated">Klavye kontrolü, geçerli ses aygıtı adıyla eşleşen ekrana ayarlanmışsa (bunu Klavye ayarları altında ayarlayın), ses aygıtı eşleştirmesi için görünen ad yerine bu değer kullanılır.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
-        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
-        <target state="translated">macOS yönetici kimlik bilgilerini isterse devam etmek için bunları macOS iletişim kutusuna girin. İstek tamamlandığında veya iptal edildiğinde bu mesaj kaybolacaktır.</target>
-        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
-      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">Mükemmel ölçek eşleştirme için mükemmel bir çözünürlük mevcut değilse, uygulama verilen tolerans dahilinde çevredeki en yakın çözünürlüğü arayacaktır.</target>
@@ -8448,11 +8458,6 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Ekran modu listesinden SDR girişlerini kaldırır; bu, esnek ölçekleme girişleri için ek alan açar. Bu etkin olduğunda HDR modu uygulama menüsünden kapatılamaz.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
-        <source>Removing Color Profiles…</source>
-        <target state="translated">Renk Profilleri Kaldırılıyor…</target>
-        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
-      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">Bu etkinleştirilmenin kaldırılması sadece bu kurulumu etkileyecektir. Diğer etkinleştirmeler bu kurulumu etkilemeden kaldırılabilir. Tüm etkinleştirmelerin kaldırılması her şeyi boş bir sayfaya sıfırlayacaktır.</target>
@@ -9737,6 +9742,11 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">Uygulama tarafından daha önce algılanan tüm ekranları gösterir. Bir ekran çevrimdışı olduğunda bile bazı yapılandırma değişikliklerine izin verir.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Sidebar" xml:space="preserve">
+        <source>Sidebar</source>
+        <target state="translated">Kenar Çubuğu</target>
+        <note>53360 - App-menu presentation option using a dark glass side panel anchored to a physical top corner of the screen. Translate “Sidebar” as the familiar UI term for a side panel and use it consistently in the associated help text.</note>
       </trans-unit>
       <trans-unit id="Sidecar Configuration" xml:space="preserve">
         <source>Sidecar Configuration</source>
@@ -11226,10 +11236,10 @@ Bu bildirimi kapatabilirsiniz - bu durumda değişiklikler sanal ekran bir dahak
         <target state="translated">Üst-merkez</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Top-right corner" xml:space="preserve">
-        <source>Top-right corner</source>
-        <target state="translated">Üst-sağ köşe</target>
-        <note/>
+      <trans-unit id="Top-corner" xml:space="preserve">
+        <source>Top-corner</source>
+        <target state="translated">Üst-köşe</target>
+        <note>53317 - OSD placement option. The physical top corner follows the current macOS menu bar presentation direction.</note>
       </trans-unit>
       <trans-unit id="Traditional OSD" xml:space="preserve">
         <source>Traditional OSD</source>
@@ -12469,6 +12479,11 @@ A previous activation was automatically removed to make room for this new one.</
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
         <target state="translated">macOS, dijital yayınları yerel olarak sessize alabilir - sessize alma ekranınızla düzgün çalışmıyorsa, bu özelliği etkinleştirmeniz gerekir.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
+        <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
+        <target state="translated">macOS yönetici kimlik bilgilerini isteyebilir. İstek tamamlandığında veya iptal edildiğinde bu mesaj kaybolur.</target>
+        <note>53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app.</note>
       </trans-unit>
       <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
         <source>macOS needs your approval before %@ can apply this system configuration change.

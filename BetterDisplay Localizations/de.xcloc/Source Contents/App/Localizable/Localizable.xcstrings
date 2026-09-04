@@ -1059,6 +1059,9 @@
     "App menu icon bounce animation on activity" : {
 
     },
+    "App menu presentation" : {
+      "comment" : "53360 - Settings label for choosing how the app menu is visually presented. “Classic” is the standard menu below its menu-bar icon, while “Sidebar” is a screen-edge, corner-attached layout."
+    },
     "App notification style" : {
 
     },
@@ -1707,6 +1710,9 @@
     "Classic" : {
 
     },
+    "Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." : {
+      "comment" : "53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction."
+    },
     "Clear Console" : {
 
     },
@@ -1919,6 +1925,9 @@
     },
     "Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported)." : {
 
+    },
+    "Configuring System…" : {
+      "comment" : "53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress."
     },
     "Connect" : {
 
@@ -3766,9 +3775,6 @@
     "If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." : {
 
     },
-    "If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." : {
-      "comment" : "53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app."
-    },
     "If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." : {
 
     },
@@ -4177,6 +4183,9 @@
     },
     "macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature." : {
 
+    },
+    "macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." : {
+      "comment" : "53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app."
     },
     "macOS needs your approval before %@ can apply this system configuration change.\n\nOpen System Settings > General > Login Items and allow %@ to run in the background, then return and try again." : {
       "comment" : "53273 - Two-paragraph explanation in the privileged background-helper approval alert. Both %@ placeholders are the app name configured for the current build; System Settings > General > Login Items is the macOS navigation path."
@@ -5434,9 +5443,6 @@
     "Removes SDR entries from the display mode list – this frees up additional room for flexible scaling entries. With this enabled, HDR mode cannot be turned off in the app menu." : {
 
     },
-    "Removing Color Profiles…" : {
-      "comment" : "53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles."
-    },
     "Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." : {
 
     },
@@ -6217,6 +6223,9 @@
     },
     "Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." : {
 
+    },
+    "Sidebar" : {
+      "comment" : "53360 - App-menu presentation option using a dark glass side panel anchored to a physical top corner of the screen. Translate “Sidebar” as the familiar UI term for a side panel and use it consistently in the associated help text."
     },
     "Sidecar Configuration" : {
 
@@ -7105,8 +7114,8 @@
     "Top-center" : {
 
     },
-    "Top-right corner" : {
-
+    "Top-corner" : {
+      "comment" : "53317 - OSD placement option. The physical top corner follows the current macOS menu bar presentation direction."
     },
     "Traditional OSD" : {
 

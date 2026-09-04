@@ -1427,6 +1427,11 @@ Cette action est irréversible. Souhaitez vous continuer ?</target>
         <target state="translated">Animation de rebond de l'icône de l'application en fonction de l'activité</target>
         <note/>
       </trans-unit>
+      <trans-unit id="App menu presentation" xml:space="preserve">
+        <source>App menu presentation</source>
+        <target state="translated">Présentation du menu de l’application</target>
+        <note>53360 - Settings label for choosing how the app menu is visually presented. “Classic” is the standard menu below its menu-bar icon, while “Sidebar” is a screen-edge, corner-attached layout.</note>
+      </trans-unit>
       <trans-unit id="App notification style" xml:space="preserve">
         <source>App notification style</source>
         <target state="translated">Style des notifications de l'application</target>
@@ -2497,6 +2502,11 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
         <target state="translated">Classique</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." xml:space="preserve">
+        <source>Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar.</source>
+        <target state="translated">Classique s’ouvre sous l’icône du menu de l’application avec l’arrière-plan de menu standard. Barre latérale s’ouvre au bord de l’écran avec des blocs en verre inspirés du Centre de contrôle et des éléments de menu qui se déploient sur place. Pour un placement plus naturel de la Barre latérale, rapprochez autant que possible l’icône du menu de l’application du bord correspondant de la barre des menus.</target>
+        <note>53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction.</note>
+      </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
         <source>Clear Console</source>
         <target state="translated">Effacer la console</target>
@@ -2841,6 +2851,11 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
         <source>Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported).</source>
         <target state="translated">Configure les valeurs minimale et maximales du volume accepté par la Télévision. Utilisez le bouton de synchronisation pour récupérer les valeurs depuis l’appareil (si pris en charge).</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Configuring System…" xml:space="preserve">
+        <source>Configuring System…</source>
+        <target state="translated">Configuration du système…</target>
+        <note>53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress.</note>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
         <source>Connect</source>
@@ -5863,11 +5878,6 @@ Les supprimer n’est pas dangereux - macOS recréera n’importe quels profils 
         <target state="translated">Si le contrôle clavier est configuré pour l'affichage qui correspond au nom du périphérique audio actuel (configurez cela dans les réglages clavier), cette valeur sera utilisée pour la correspondance du périphérique audio au lieu du nom de l'affichage.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
-        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
-        <target state="translated">Si macOS demande des identifiants d’administrateur, saisissez-les dans la boîte de dialogue de macOS pour continuer. Ce message disparaîtra lorsque la demande sera terminée ou annulée.</target>
-        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
-      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">Si aucune résolution parfaite n'est disponible pour la correspondance de la mise à l'échelle parfaite, l'application recherchera la résolution la plus proche en prenant en compte la tolérance donnée.</target>
@@ -8447,11 +8457,6 @@ Tous les écrans ne prennent pas en charge le contrôle de l’écran. Ces opér
         <target state="translated">Supprime les entrées SDR de la liste des modes d’affichage, ce qui libère de la place pour les entrées de mise à l’échelle flexible. Lorsque cette option est activée, le mode HDR ne peut pas être désactivé dans le menu de l’app.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
-        <source>Removing Color Profiles…</source>
-        <target state="translated">Suppression des profils de couleur…</target>
-        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
-      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">La suppression de cette activation n'affectera que cette installation. D'autres activations peuvent être supprimées sans avoir d'impact sur cette installation. Si vous supprimez toutes les activations, tout sera réinitialisé.</target>
@@ -9736,6 +9741,11 @@ Tous les écrans ne prennent pas en charge le contrôle de l’écran. Ces opér
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">Affiche tous les écrans précédemment détectés par l'application. Permet certaines modifications de configuration même lorsqu'un écran est hors ligne.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Sidebar" xml:space="preserve">
+        <source>Sidebar</source>
+        <target state="translated">Barre latérale</target>
+        <note>53360 - App-menu presentation option using a dark glass side panel anchored to a physical top corner of the screen. Translate “Sidebar” as the familiar UI term for a side panel and use it consistently in the associated help text.</note>
       </trans-unit>
       <trans-unit id="Sidecar Configuration" xml:space="preserve">
         <source>Sidecar Configuration</source>
@@ -11224,10 +11234,10 @@ Vous pouvez ignorer cette notification - dans ce cas les changements seront appl
         <target state="translated">En haut au centre</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Top-right corner" xml:space="preserve">
-        <source>Top-right corner</source>
-        <target state="translated">Coin du haut a droite</target>
-        <note/>
+      <trans-unit id="Top-corner" xml:space="preserve">
+        <source>Top-corner</source>
+        <target state="translated">Coin supérieur</target>
+        <note>53317 - OSD placement option. The physical top corner follows the current macOS menu bar presentation direction.</note>
       </trans-unit>
       <trans-unit id="Traditional OSD" xml:space="preserve">
         <source>Traditional OSD</source>
@@ -12467,6 +12477,11 @@ Une activation précédente a été automatiquement supprimée pour laisser plac
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
         <target state="translated">macOS peut couper le son des diffusions numériques en mode natif - si la coupure du son ne fonctionne pas correctement avec votre écran, vous devriez activer cette fonction.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
+        <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
+        <target state="translated">macOS peut demander des identifiants d’administrateur. Ce message disparaîtra lorsque la demande sera terminée ou annulée.</target>
+        <note>53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app.</note>
       </trans-unit>
       <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
         <source>macOS needs your approval before %@ can apply this system configuration change.

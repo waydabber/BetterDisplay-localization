@@ -1427,6 +1427,11 @@ Thay đổi này không thể hoàn tác. Bạn có chắc chắn muốn thực 
         <target state="translated">Hiệu ứng nhảy của biểu tượng menu khi có hoạt động</target>
         <note/>
       </trans-unit>
+      <trans-unit id="App menu presentation" xml:space="preserve">
+        <source>App menu presentation</source>
+        <target state="translated">Cách hiển thị menu ứng dụng</target>
+        <note>53360 - Settings label for choosing how the app menu is visually presented. “Classic” is the standard menu below its menu-bar icon, while “Sidebar” is a screen-edge, corner-attached layout.</note>
+      </trans-unit>
       <trans-unit id="App notification style" xml:space="preserve">
         <source>App notification style</source>
         <target state="translated">Kiểu thông báo ứng dụng</target>
@@ -2497,6 +2502,11 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <target state="translated">Cổ Điển</target>
         <note/>
       </trans-unit>
+      <trans-unit id="Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." xml:space="preserve">
+        <source>Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar.</source>
+        <target state="translated">Kiểu Cổ Điển mở bên dưới biểu tượng menu ứng dụng với nền menu tiêu chuẩn. Thanh bên mở ở cạnh màn hình với các khối kính theo phong cách Trung tâm Điều khiển và các mục menu mở rộng ngay tại chỗ. Để Thanh bên được đặt ở vị trí tự nhiên nhất, hãy di chuyển biểu tượng menu ứng dụng đến gần cạnh tương ứng của thanh menu nhất có thể.</target>
+        <note>53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction.</note>
+      </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
         <source>Clear Console</source>
         <target state="translated">Xóa bảng điều khiển</target>
@@ -2841,6 +2851,11 @@ Việc chỉ định chiều dài đọc là tùy chọn - để trống thườ
         <source>Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported).</source>
         <target state="translated">Cấu hình phạm vi âm lượng tối thiểu và tối đa mà TV chấp nhận. Sử dụng nút đồng bộ để lấy giá trị từ thiết bị (nếu được hỗ trợ).</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Configuring System…" xml:space="preserve">
+        <source>Configuring System…</source>
+        <target state="translated">Đang cấu hình hệ thống…</target>
+        <note>53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress.</note>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
         <source>Connect</source>
@@ -5865,11 +5880,6 @@ Việc xóa chúng là an toàn—macOS sẽ tạo lại bất kỳ hồ sơ c�
         <target state="translated">Nếu điều khiển bàn phím được đặt cho màn hình tương ứng với tên thiết bị âm thanh hiện tại (thiết lập trong cài đặt Bàn phím), giá trị này sẽ được sử dụng cho thiết bị âm thanh tương ứng thay vì tên màn hình.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled." xml:space="preserve">
-        <source>If macOS asks for administrator credentials, please provide them in the macOS prompt to continue. This message will disappear when the request is complete or cancelled.</source>
-        <target state="translated">Nếu macOS yêu cầu thông tin xác thực của quản trị viên, hãy nhập thông tin đó vào hộp thoại macOS để tiếp tục. Thông báo này sẽ biến mất khi yêu cầu hoàn tất hoặc bị hủy.</target>
-        <note>53273 - Informational text shown without app buttons while color-profile removal waits for macOS authorization and completion. Administrator credentials are authentication details entered in the macOS system dialog, not in the app.</note>
-      </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
         <target state="translated">Nếu không có độ phân giải hoàn hảo cho việc điều chỉnh tỉ lệ hoàn hảo, ứng dụng sẽ tìm kiếm độ phân giải gần nhất trong phạm vi có độ chấp nhận được.</target>
@@ -8449,11 +8459,6 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Xóa các mục SDR khỏi danh sách chế độ màn hình, giải phóng thêm chỗ cho các mục tỷ lệ linh hoạt. Khi bật tùy chọn này, không thể tắt chế độ HDR trong menu ứng dụng.</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Removing Color Profiles…" xml:space="preserve">
-        <source>Removing Color Profiles…</source>
-        <target state="translated">Đang xóa hồ sơ màu…</target>
-        <note>53273 - Title of the temporary, buttonless app-menu alert shown while color-profile removal waits for macOS authorization and completion. Color profiles are display color-management files, not user profiles.</note>
-      </trans-unit>
       <trans-unit id="Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." xml:space="preserve">
         <source>Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate.</source>
         <target state="translated">Việc xóa tất cả các kích hoạt khác sẽ ảnh hưởng đến tất cả các cài đặt liên quan đến bản quyền này ngoại trừ cài đặt này. Việc xóa kích hoạt này chỉ ảnh hưởng đến cài đặt này.
@@ -9740,6 +9745,11 @@ Việc xóa tất cả các kích hoạt sẽ giúp bạn bắt đầu lại t�
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">Hiển thị tất cả các màn hình đã được phát hiện trước bởi ứng dụng. Cho phép một số thay đổi cấu hình ngay cả khi một màn hình không hoạt động.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="Sidebar" xml:space="preserve">
+        <source>Sidebar</source>
+        <target state="translated">Thanh bên</target>
+        <note>53360 - App-menu presentation option using a dark glass side panel anchored to a physical top corner of the screen. Translate “Sidebar” as the familiar UI term for a side panel and use it consistently in the associated help text.</note>
       </trans-unit>
       <trans-unit id="Sidecar Configuration" xml:space="preserve">
         <source>Sidecar Configuration</source>
@@ -11229,10 +11239,10 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Trên-giữa</target>
         <note/>
       </trans-unit>
-      <trans-unit id="Top-right corner" xml:space="preserve">
-        <source>Top-right corner</source>
-        <target state="translated">Góc trên-phải</target>
-        <note/>
+      <trans-unit id="Top-corner" xml:space="preserve">
+        <source>Top-corner</source>
+        <target state="translated">Trên-góc</target>
+        <note>53317 - OSD placement option. The physical top corner follows the current macOS menu bar presentation direction.</note>
       </trans-unit>
       <trans-unit id="Traditional OSD" xml:space="preserve">
         <source>Traditional OSD</source>
@@ -12472,6 +12482,11 @@ Một lần kích hoạt trước đó đã được tự động xóa để t�
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
         <target state="translated">macOS có thể tắt tiếng các trình chiếu điện tử một cách tự nhiên - nếu chức năng tắt tiếng không hoạt động đúng cách với màn hình của bạn, bạn nên bật tính năng này.</target>
         <note/>
+      </trans-unit>
+      <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
+        <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
+        <target state="translated">macOS có thể yêu cầu thông tin xác thực của quản trị viên. Thông báo này sẽ biến mất khi yêu cầu hoàn tất hoặc bị hủy.</target>
+        <note>53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app.</note>
       </trans-unit>
       <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
         <source>macOS needs your approval before %@ can apply this system configuration change.
