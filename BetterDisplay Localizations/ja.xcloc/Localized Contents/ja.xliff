@@ -976,7 +976,7 @@ Thank you for your understanding and continued support.</source>
       </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
-        <target state="translated">管理者認証に失敗しました（%d）。</target>
+        <target state="translated">管理者による承認ができませんでした（%d）。</target>
         <note>52329 - Fallback error shown when macOS administrator authorization fails and no system-provided description is available. ‘Authorization’ refers to macOS Authorization Services; %d is the OSStatus error code.</note>
       </trans-unit>
       <trans-unit id="Advanced" xml:space="preserve">
@@ -1591,16 +1591,16 @@ AliPayは中国で利用可能です。</target>
       </trans-unit>
       <trans-unit id="Approve %@'s background item in the macOS notification or System Settings, then try again." xml:space="preserve">
         <source>Approve %@'s background item in the macOS notification or System Settings, then try again.</source>
-        <target state="translated">macOSの通知または「システム設定」で%@のバックグラウンドでの実行を許可してから、もう一度お試しください。</target>
+        <target state="translated">macOSの通知またはシステム設定で%@のバックグラウンドでの実行を許可してから、やり直してください。</target>
         <note>52329 - Error instructing the user to approve BetterDisplay’s privileged background helper through the macOS notification or System Settings. %@ is the app name, and ‘background item’ should use the macOS Login Items terminology.</note>
       </trans-unit>
       <trans-unit id="Are you sure you want the app to reset macOS display settings? The system will reboot after the reset.&#10;&#10;Clearing NVRAM also removes low-level firmware preferences, such as startup disk and boot-related settings. macOS will recreate or reset them as appropriate after restart." xml:space="preserve">
         <source>Are you sure you want the app to reset macOS display settings? The system will reboot after the reset.
 
 Clearing NVRAM also removes low-level firmware preferences, such as startup disk and boot-related settings. macOS will recreate or reset them as appropriate after restart.</source>
-        <target state="translated">アプリでmacOSのディスプレイ設定をリセットしてもよろしいですか？リセット後にシステムが再起動します。
+        <target state="translated">macOSのディスプレイ設定をリセットしてもよろしいですか? リセット後にシステムが再起動します。
 
-NVRAMを消去すると、起動ディスクや起動関連の設定など、低レベルのファームウェア設定も削除されます。再起動後、macOSが必要に応じて再作成またはリセットします。</target>
+NVRAMを消去すると、起動ドライブや起動関連の設定など、低レベルのファームウェア設定も削除されます。これらは再起動時に、必要に応じて再作成されるかリセットされます。</target>
         <note>53260 - Confirmation text shown before resetting macOS display settings. It explains that either reset restarts the Mac and warns that the optional NVRAM action also clears low-level firmware preferences such as startup-disk and boot settings, which macOS recreates or resets after restart.</note>
       </trans-unit>
       <trans-unit id="Are you sure you want to discard this display group and all its settings?" xml:space="preserve">
@@ -1655,7 +1655,7 @@ NVRAMを消去すると、起動ディスクや起動関連の設定など、低
       </trans-unit>
       <trans-unit id="Arrange %@ next to" xml:space="preserve">
         <source>Arrange %@ next to</source>
-        <target state="translated">%@に隣接するディスプレイ</target>
+        <target state="translated">★%@を次の隣に配置:</target>
         <note/>
       </trans-unit>
       <trans-unit id="Aspect ratio" xml:space="preserve">
@@ -2504,7 +2504,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar." xml:space="preserve">
         <source>Classic opens below the app menu icon with the standard menu background. Sidebar opens at the screen edge with Control Center-style glass blocks and inline expanding menu items. For the most natural Sidebar placement, move the app menu icon as close as possible to the corresponding edge of the menu bar.</source>
-        <target state="translated">「クラシック」は、アプリメニューアイコンの下に標準のメニュー背景で開きます。「サイドバー」は画面の端に開き、コントロールセンター風のガラスブロックと、その場で展開するメニュー項目が表示されます。「サイドバー」を自然な位置に表示するには、アプリメニューアイコンをメニューバーの対応する端にできるだけ近づけてください。</target>
+        <target state="translated">“クラシック”は、アプリメニューアイコンの下に標準のメニュー背景で開きます。”サイドバー”は画面の端に開き、コントロールセンタースタイルのガラスブロックと、インラインで展開するメニュー項目を表示します。”サイドバー”を自然な位置に表示するには、アプリメニューアイコンをメニューバーの端にできるだけ近づけてください。</target>
         <note>53360 - Settings help text comparing the Classic and Sidebar app-menu presentations. “Control Center-style glass blocks” describes the visual design, “inline expanding” means items open inside the same menu, and the corresponding edge follows the interface layout direction.</note>
       </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
@@ -2854,7 +2854,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Configuring System…" xml:space="preserve">
         <source>Configuring System…</source>
-        <target state="translated">システムを設定中…</target>
+        <target state="translated">システムを構成中…</target>
         <note>53277 - Generic title of a temporary, buttonless progress alert while the app changes system configuration, currently used for color-profile removal. System refers to macOS, and the ellipsis indicates an operation in progress.</note>
       </trans-unit>
       <trans-unit id="Connect" xml:space="preserve">
@@ -3064,7 +3064,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Could not register the administrator authorization right (%d)." xml:space="preserve">
         <source>Could not register the administrator authorization right (%d).</source>
-        <target state="translated">管理者認証権限を登録できませんでした（%d）。</target>
+        <target state="translated">管理者の認可権限を登録できませんでした（%d）。</target>
         <note>52329 - Error shown when the app cannot register its custom macOS Authorization Services right. ‘Authorization right’ is a technical macOS security term; %d is the OSStatus error code.</note>
       </trans-unit>
       <trans-unit id="Could not register the privileged helper." xml:space="preserve">
@@ -3074,7 +3074,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Could not transfer the administrator authorization to the privileged helper." xml:space="preserve">
         <source>Could not transfer the administrator authorization to the privileged helper.</source>
-        <target state="translated">管理者認証を特権ヘルパーに転送できませんでした。</target>
+        <target state="translated">管理者認証権を特権ヘルパーに転送できませんでした。</target>
         <note>52329 - Error shown when administrator authorization cannot be converted and passed to the privileged helper. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
       </trans-unit>
       <trans-unit id="Crash reporting" xml:space="preserve">
@@ -5217,7 +5217,7 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       </trans-unit>
       <trans-unit id="For better reachability." xml:space="preserve">
         <source>For better reachability.</source>
-        <target state="translated">より良いアクセス性のため。</target>
+        <target state="translated">★アクセス性を良くします。</target>
         <note/>
       </trans-unit>
       <trans-unit id="For controls that trigger a feature or functionality." xml:space="preserve">
@@ -9561,7 +9561,7 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="Show Quit %@ in the button bar" xml:space="preserve">
         <source>Show Quit %@ in the button bar</source>
-        <target state="translated">ボタンバーの最後に%@の終了を表示</target>
+        <target state="translated">★ボタンバーの最後に”%@を終了”を表示</target>
         <note/>
       </trans-unit>
       <trans-unit id="Show Samsung Remote" xml:space="preserve">
@@ -10564,7 +10564,7 @@ This operation does not reset the display itself.</source>
       </trans-unit>
       <trans-unit id="The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu)." xml:space="preserve">
         <source>The menu bar icon is aligned to the center relative to the app menu. Disable this for a more traditional look (align the menu bar icon to the left side of the app menu).</source>
-        <target state="translated">メニューバーアイコンは、アプリメニューの中央に配置されます。無効にすると、より伝統的な外観（メニューバーアイコンをアプリメニューの左側に揃える）になります。</target>
+        <target state="translated">★メニューバーアイコンを、アプリメニューの中央に配置します。無効にすると、従来の外観（メニューバーアイコンをアプリメニューの左側に配置）になります。</target>
         <note/>
       </trans-unit>
       <trans-unit id="The operation completed successfully, but some configuration changes could not be applied for the participating external displays.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
@@ -10658,7 +10658,7 @@ In case of a failure, disconnect and reconnect the display physically.</source>
       </trans-unit>
       <trans-unit id="The privileged helper is missing from the app." xml:space="preserve">
         <source>The privileged helper is missing from the app.</source>
-        <target state="translated">特権ヘルパーがアプリに含まれていません。</target>
+        <target state="translated">特権ヘルパーがアプリにありません。</target>
         <note>52329 - Error shown when the privileged helper executable or its launch daemon configuration is absent from the app bundle. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
       </trans-unit>
       <trans-unit id="The privileged helper needs to be refreshed." xml:space="preserve">
@@ -11677,7 +11677,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       </trans-unit>
       <trans-unit id="Use Admin Prompt Instead" xml:space="preserve">
         <source>Use Admin Prompt Instead</source>
-        <target state="translated">代わりに管理者認証を使用</target>
+        <target state="translated">代わりに管理者承認ダイアログを使用</target>
         <note>53255 - Alternate button in the privileged background-helper approval alert that uses the traditional macOS administrator authorization prompt. ‘Admin Prompt’ means the system authentication dialog, not a command-line prompt.</note>
       </trans-unit>
       <trans-unit id="Use Compositor Filter" xml:space="preserve">
@@ -12482,16 +12482,16 @@ A previous activation was automatically removed to make room for this new one.</
       </trans-unit>
       <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
         <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
-        <target state="translated">macOSで管理者の資格情報を求められる場合があります。このメッセージは、処理が完了またはキャンセルされると消えます。</target>
+        <target state="translated">macOSから管理者の資格情報を求められる場合があります。このメッセージは、処理が完了またはキャンセルされると消えます。</target>
         <note>53277 - Informational text in a buttonless system-configuration progress alert that closes when the operation completes or is cancelled. Administrator credentials are authentication details requested by macOS, not entered in the app.</note>
       </trans-unit>
       <trans-unit id="macOS needs your approval before %@ can apply this system configuration change.&#10;&#10;Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again." xml:space="preserve">
         <source>macOS needs your approval before %@ can apply this system configuration change.
 
 Open System Settings &gt; General &gt; Login Items and allow %@ to run in the background, then return and try again.</source>
-        <target state="translated">%1$@がこのシステム構成の変更を適用するには、macOSでの承認が必要です。
+        <target state="translated">%1$@がこのシステム構成の変更を適用するには、macOSの承認が必要です。
 
-「システム設定 &gt; 一般 &gt; ログイン項目」を開き、%2$@のバックグラウンドでの実行を許可してから、ここに戻ってもう一度お試しください。</target>
+“システム設定 &gt; 一般 &gt; ログイン項目と機能拡張”を開き、%2$@のバックグラウンドでのアクティビティを許可してから、もう一度やり直してください。</target>
         <note>53273 - Two-paragraph explanation in the privileged background-helper approval alert. Both %@ placeholders are the app name configured for the current build; System Settings &gt; General &gt; Login Items is the macOS navigation path.</note>
       </trans-unit>
       <trans-unit id="milliseconds" xml:space="preserve">
@@ -12820,7 +12820,7 @@ Most displays do not allow EDID write for security reasons, some displays requir
       </trans-unit>
       <trans-unit id="⚠️ This OSD style is available for brightness and volume only." xml:space="preserve">
         <source>⚠️ This OSD style is available for brightness and volume only.</source>
-        <target state="translated">⚠️ このOSDスタイルは輝度と音量のみに使用できます。</target>
+        <target state="translated">⚠️ このOSDスタイルは輝度と音量のみに使用可能です。</target>
         <note/>
       </trans-unit>
       <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
