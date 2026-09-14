@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A266a"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A266a"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="pt-PT" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A5252f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A266a"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1114,7 +1114,7 @@ Pode fazê-lo nas Definições do Sistema ou deixar que a aplicação o faça (s
       <trans-unit id="All group members are watched for resolution changes and can initiate a UI scale matching operation." xml:space="preserve">
         <source>All group members are watched for resolution changes and can initiate a UI scale matching operation.</source>
         <target state="translated">As alterações de resolução de todos os membros do grupo são monitorizadas e qualquer um pode iniciar uma operação de correspondência de escala da interface.</target>
-        <note>53477 - UI scale matching help allowing any member to initiate matching.</note>
+        <note>53496 - Display-group UI scale matching: watched displays are observed for resolution changes that may trigger matching on other group members.</note>
       </trans-unit>
       <trans-unit id="All group members can be synchronization sources." xml:space="preserve">
         <source>All group members can be synchronization sources.</source>
@@ -4053,17 +4053,17 @@ Indicar o comprimento da leitura é opcional — deixe o campo vazio para deteç
       <trans-unit id="Discard" xml:space="preserve">
         <source>Discard</source>
         <target state="translated">Eliminar</target>
-        <note>53477 - Destructive action discarding a display group or virtual screen.</note>
+        <note>53496 - Destructive action that permanently removes saved virtual screens or a display group, rather than dismissing a dialog or abandoning unsaved edits.</note>
       </trans-unit>
       <trans-unit id="Discard &amp; Remove Color Profile" xml:space="preserve">
         <source>Discard &amp; Remove Color Profile</source>
         <target state="translated">Eliminar e remover perfil de cor</target>
-        <note>53477 - Action discarding a virtual screen and removing its unused color profile.</note>
+        <note>53496 - Deletes the virtual screen and removes its factory color profile; both objects are removed.</note>
       </trans-unit>
       <trans-unit id="Discard All" xml:space="preserve">
         <source>Discard All</source>
         <target state="translated">Eliminar todos</target>
-        <note>53477 - Action discarding all applicable app-created items.</note>
+        <note>53496 - Destructive action that permanently removes saved virtual screens or a display group, rather than dismissing a dialog or abandoning unsaved edits.</note>
       </trans-unit>
       <trans-unit id="Discard Calibration" xml:space="preserve">
         <source>Discard Calibration</source>
@@ -4083,7 +4083,7 @@ Indicar o comprimento da leitura é opcional — deixe o campo vazio para deteç
       <trans-unit id="Discard…" xml:space="preserve">
         <source>Discard…</source>
         <target state="translated">Eliminar…</target>
-        <note>53477 - Discard action opening confirmation.</note>
+        <note>53496 - Destructive action that permanently removes saved virtual screens or a display group, rather than dismissing a dialog or abandoning unsaved edits.</note>
       </trans-unit>
       <trans-unit id="Disconnect" xml:space="preserve">
         <source>Disconnect</source>
@@ -4358,7 +4358,7 @@ Indicar o comprimento da leitura é opcional — deixe o campo vazio para deteç
       <trans-unit id="Display groups provide a way to let various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, UI scale matching, display layout management and more." xml:space="preserve">
         <source>Display groups provide a way to let various operations affect multiple displays. Features based on display groups include brightness and other image adjustment synchronization, UI scale matching, display layout management and more.</source>
         <target state="translated">Os grupos de monitores permitem aplicar várias operações a vários monitores. As funcionalidades baseadas em grupos incluem a sincronização de brilho e de outros ajustes de imagem, a correspondência de escala da interface, a gestão da disposição dos monitores e outras.</target>
-        <note>53477 - Display groups feature overview.</note>
+        <note>53496 - Display groups feature overview. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Display identification method" xml:space="preserve">
         <source>Display identification method</source>
@@ -4702,7 +4702,7 @@ O processo não funciona com o ecrã integrado (é necessário reiniciar). A ope
       <trans-unit id="Elevated dimming or image adjustment overlay priority" xml:space="preserve">
         <source>Elevated dimming or image adjustment overlay priority</source>
         <target state="translated">Prioridade elevada da sobreposição de redução de brilho ou ajuste de imagem</target>
-        <note>53477 - Rendering overlay window priority setting.</note>
+        <note>53496 - Rendering overlay window priority setting. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Enable" xml:space="preserve">
         <source>Enable</source>
@@ -5451,12 +5451,12 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="Get Image Adjustment Filter State" xml:space="preserve">
         <source>Get Image Adjustment Filter State</source>
         <target state="translated">Obter estado do filtro de ajuste de imagem</target>
-        <note>53477 - Shortcut action to read a Boolean image adjustment state.</note>
+        <note>53496 - Shortcut action to read a Boolean image adjustment state. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Get Image Adjustment Value" xml:space="preserve">
         <source>Get Image Adjustment Value</source>
         <target state="translated">Obter valor de ajuste de imagem</target>
-        <note>53477 - Shortcut action to read a numeric image adjustment.</note>
+        <note>53496 - Shortcut action to read a numeric image adjustment. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Get a control value using DDC from a display for a custom VCP." xml:space="preserve">
         <source>Get a control value using DDC from a display for a custom VCP.</source>
@@ -5476,7 +5476,7 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       <trans-unit id="Get the current state of an on/off image adjustment filter for the display." xml:space="preserve">
         <source>Get the current state of an on/off image adjustment filter for the display.</source>
         <target state="translated">Obter o estado atual de um filtro de ajuste de imagem do monitor que pode ser ativado ou desativado.</target>
-        <note>53477 - Boolean image adjustment query description.</note>
+        <note>53496 - Boolean image adjustment query description. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1." xml:space="preserve">
         <source>Get the current value of any adjustment for the display. The value will be converted to a scale of 0-1.</source>
@@ -5995,17 +5995,17 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Image Adjustment" xml:space="preserve">
         <source>Image Adjustment</source>
         <target state="translated">Ajuste de imagem</target>
-        <note>53477 - Image adjustment feature label.</note>
+        <note>53496 - Image adjustment feature label. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Image Adjustment Offset" xml:space="preserve">
         <source>Image Adjustment Offset</source>
         <target state="translated">Desvio do ajuste de imagem</target>
-        <note>53477 - Relative image adjustment offset.</note>
+        <note>53496 - Relative image adjustment offset. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Image Adjustment for All Displays" xml:space="preserve">
         <source>Image Adjustment for All Displays</source>
         <target state="translated">Ajuste de imagem para todos os monitores</target>
-        <note>53477 - Global image adjustment action.</note>
+        <note>53496 - Global image adjustment action. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Image Adjustments" xml:space="preserve">
         <source>Image Adjustments</source>
@@ -6015,7 +6015,7 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Image adjustments for ${displayEntity} are ${onOff}." xml:space="preserve">
         <source>Image adjustments for ${displayEntity} are ${onOff}.</source>
         <target state="translated">Estado dos ajustes de imagem de ${displayEntity}: ${onOff}.</target>
-        <note>53477 - Shortcuts summary for enabling or suspending image adjustments on a display. ${onOff} uses the shared On/Off labels; preserve both interpolation tokens and avoid requiring them to agree with a plural noun.</note>
+        <note>53496 - Shortcuts summary for enabling or suspending image adjustments on a display. ${onOff} uses the shared On/Off labels; preserve both interpolation tokens and avoid requiring them to agree with a plural noun.</note>
       </trans-unit>
       <trans-unit id="Import Custom LUT…" xml:space="preserve">
         <source>Import Custom LUT…</source>
@@ -7485,7 +7485,7 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!" xml:space="preserve">
         <source>Only one watched display should be present to avoid ambiguity. Configure watched displays accordingly!</source>
         <target state="translated">Deve estar presente apenas um monitor sob monitorização para evitar ambiguidades. Configure a lista em conformidade!</target>
-        <note>53477 - Display group watched source configuration warning.</note>
+        <note>53496 - Display-group UI scale matching: watched displays are observed for resolution changes that may trigger matching on other group members.</note>
       </trans-unit>
       <trans-unit id="Only resolutions that match native aspect ratio" xml:space="preserve">
         <source>Only resolutions that match native aspect ratio</source>
@@ -9115,7 +9115,7 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Select which displays should be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
         <source>Select which displays should be watched for resolution change to initiate a scale matching operation!</source>
         <target state="translated">Selecione os monitores cujas alterações de resolução devem ser monitorizadas para iniciar uma operação de correspondência de escala!</target>
-        <note>53477 - Display group scale matching source selection help.</note>
+        <note>53496 - Display-group UI scale matching: watched displays are observed for resolution changes that may trigger matching on other group members.</note>
       </trans-unit>
       <trans-unit id="Select which displays should not be affected by UI scale matching!" xml:space="preserve">
         <source>Select which displays should not be affected by UI scale matching!</source>
@@ -9130,7 +9130,7 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Select which displays should not be watched for resolution change to initiate a scale matching operation!" xml:space="preserve">
         <source>Select which displays should not be watched for resolution change to initiate a scale matching operation!</source>
         <target state="translated">Selecione os monitores cujas alterações de resolução não devem iniciar uma operação de correspondência de escala!</target>
-        <note>53477 - Display group scale matching source exclusion help.</note>
+        <note>53496 - Display-group UI scale matching: watched displays are observed for resolution changes that may trigger matching on other group members.</note>
       </trans-unit>
       <trans-unit id="Selected content available" xml:space="preserve">
         <source>Selected content available</source>
@@ -9295,7 +9295,7 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Set any image adjustment control for all displays to a specified value. The percentage value will be converted to the feature's own specific min-max range." xml:space="preserve">
         <source>Set any image adjustment control for all displays to a specified value. The percentage value will be converted to the feature's own specific min-max range.</source>
         <target state="translated">Definir qualquer controlo de ajuste de imagem para um valor especificado em todos os monitores. O valor percentual será convertido para o intervalo mínimo-máximo da funcionalidade.</target>
-        <note>53477 - Global image adjustment shortcut description.</note>
+        <note>53496 - Global image adjustment shortcut description. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Set as Favorite %lld%@" xml:space="preserve">
         <source>Set as Favorite %1$lld%2$@</source>
@@ -9345,7 +9345,7 @@ Nem todos os monitores suportam operações de controlo do ecrã. Estas operaç�
       <trans-unit id="Set or toggle an on/off image adjustment filter of a display." xml:space="preserve">
         <source>Set or toggle an on/off image adjustment filter of a display.</source>
         <target state="translated">Definir ou alternar o estado de um filtro de ajuste de imagem do monitor que pode ser ativado ou desativado.</target>
-        <note>53477 - Boolean image filter shortcut description.</note>
+        <note>53496 - Boolean image filter shortcut description. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Set the (hardware) orientation of a display. Not all displays may support the feature." xml:space="preserve">
         <source>Set the (hardware) orientation of a display. Not all displays may support the feature.</source>
@@ -11165,7 +11165,7 @@ Pode dispensar esta notificação — nesse caso, as alterações serão aplicad
       <trans-unit id="Toggle Image Adjustment Filter" xml:space="preserve">
         <source>Toggle Image Adjustment Filter</source>
         <target state="translated">Alternar filtro de ajuste de imagem</target>
-        <note>53477 - Image adjustment filter toggle shortcut.</note>
+        <note>53496 - Image adjustment filter toggle shortcut. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
       <trans-unit id="Toggle Image Adjustments" xml:space="preserve">
         <source>Toggle Image Adjustments</source>
@@ -12090,7 +12090,7 @@ Pode dispensar esta notificação — nesse caso, as alterações serão aplicad
       <trans-unit id="Watch for resolution changes made outside of the app" xml:space="preserve">
         <source>Watch for resolution changes made outside of the app</source>
         <target state="translated">Monitorizar alterações de resolução efetuadas fora da aplicação</target>
-        <note>53477 - UI scale matching external changes setting.</note>
+        <note>53496 - Display-group UI scale matching: watched displays are observed for resolution changes that may trigger matching on other group members.</note>
       </trans-unit>
       <trans-unit id="Watch virtual screens" xml:space="preserve">
         <source>Watch virtual screens</source>
@@ -12225,7 +12225,7 @@ Pode dispensar esta notificação — nesse caso, as alterações serão aplicad
       <trans-unit id="With this enabled the app will perform the scale matching operation when the resolution of a watched display is changed by the system or by some other app. If the resolutions of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity." xml:space="preserve">
         <source>With this enabled the app will perform the scale matching operation when the resolution of a watched display is changed by the system or by some other app. If the resolutions of multiple watched displays are changed (for example, because of a layout change), no action is taken to avoid ambiguity.</source>
         <target state="translated">Com esta opção ativada, a aplicação efetua a correspondência de escala quando o sistema ou outra aplicação altera a resolução de um monitor sob monitorização. Se forem alteradas as resoluções de vários desses monitores, por exemplo devido a uma mudança de disposição, não é executada nenhuma ação para evitar ambiguidades.</target>
-        <note>53477 - UI scale matching external changes setting help.</note>
+        <note>53496 - Display-group UI scale matching: watched displays are observed for resolution changes that may trigger matching on other group members.</note>
       </trans-unit>
       <trans-unit id="With this enabled, Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed." xml:space="preserve">
         <source>With this enabled, Sidecar displays disconnected using the app will remain in the display list for easy reconnect. Sidecar displays disconnected outside of the app or before app startup are not listed.</source>
