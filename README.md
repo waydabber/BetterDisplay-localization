@@ -13,13 +13,6 @@ If you want to help out with a localization either as a one-time contributor or 
 
 ### Glossaries
 
-For the some localizations, a glossary is available:
+Glossaries are available under the `Glossary` folder.
 
-- [Arabic](Localization%20Glossary%20Arabic.markdown)
-- [German](Localization%20Glossary%20German.markdown)
-- [Polish](Localization%20Glossary%20Polish.markdown)
-
-### Apple Localization Terms Glossary
-
-- Non official Glossary site by [Kishikawa Katsumi](https://github.com/kishikawakatsumi)
 - [Apple Localization Terms Glossary](https://applelocalization.com/macos)
