@@ -1252,6 +1252,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">iMac का बिल्ट-इन डिस्प्ले डिस्कनेक्ट करने की अनुमति दें</target>
         <note>53477 - Connection management option allowing the iMac built-in display to disconnect.</note>
       </trans-unit>
+      <trans-unit id="Allow disconnecting the built-in display on this M3 Mac" xml:space="preserve">
+        <source>Allow disconnecting the built-in display on this M3 Mac</source>
+        <target state="translated">इस M3 Mac के बिल्ट-इन डिस्प्ले को डिस्कनेक्ट करने की अनुमति दें</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
+      </trans-unit>
       <trans-unit id="Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience." xml:space="preserve">
         <source>Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience.</source>
         <target state="translated">हार्डवेयर बैकलाइट/OLED पिक्सेल ब्राइटनेस स्तर, कंट्रास्ट और सैचुरेशन नियंत्रित करने की अनुमति दें। इन नियंत्रणों की उपलब्धता मौजूदा पिक्चर मोड पर निर्भर कर सकती है। नियंत्रणों की प्रतिक्रिया धीमी हो सकती है। OLED मॉडल पर केवल सॉफ़्टवेयर तस्वीर समायोजन का उपयोग करना बेहतर अनुभव दे सकता है।</target>
@@ -2136,6 +2141,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Bottom</source>
         <target state="translated">नीचे</target>
         <note>53477 - Bottom position or edge option.</note>
+      </trans-unit>
+      <trans-unit id="Bottom Corner Radius" xml:space="preserve">
+        <source>Bottom Corner Radius</source>
+        <target state="translated">निचले कोनों की त्रिज्या</target>
+        <note>53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Bottom → Center" xml:space="preserve">
         <source>Bottom → Center</source>
@@ -4242,10 +4252,15 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">ग़ैर-नेटिव तरीके से कनेक्ट की गई या वर्चुअल स्क्रीन को डिस्कनेक्ट करने से वह डिस्प्ले लेआउट से हट जाती है — लेकिन आमतौर पर इसका मतलब यह नहीं होता कि स्क्रीन वास्तव में डिस्कनेक्ट हो गई है।</target>
         <note>53477 - Non-native display soft-disconnection behavior help.</note>
       </trans-unit>
-      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
-        <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">सभी डिस्प्ले डिस्कनेक्ट करने से आप अपने Mac का उपयोग करने में असमर्थ हो सकते हैं!</target>
-        <note>53477 - Warning before disconnecting all displays.</note>
+      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions." xml:space="preserve">
+        <source>Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions.</source>
+        <target state="translated">सभी डिस्प्ले डिस्कनेक्ट करने से आप अपने Mac का उपयोग करने में असमर्थ हो सकते हैं! कोई उपयुक्त डिस्प्ले न बचने पर यह सेटिंग अपने आप दोबारा कनेक्ट करने की सुविधा को निष्क्रिय कर देती है। वर्चुअल डिस्प्ले उपयुक्त अतिरिक्त डिस्प्ले के रूप में नहीं गिने जाते, जिनमें कुछ वर्चुअल बाहरी डिस्प्ले समाधान भी शामिल हैं।</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
+      </trans-unit>
+      <trans-unit id="Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!" xml:space="preserve">
+        <source>Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!</source>
+        <target state="translated">इस Mac के बिल्ट-इन डिस्प्ले को डिस्कनेक्ट करने पर, Mac को रीस्टार्ट किए जाने तक उसे दोबारा कनेक्ट करना संभव नहीं हो सकता है। यह सेटिंग अतिरिक्त सावधानी से चालू करें!</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
       </trans-unit>
       <trans-unit id="Disconnecting virtual screens" xml:space="preserve">
         <source>Disconnecting virtual screens</source>
@@ -10479,10 +10494,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">नियंत्रित करने के लिए ऐम्प्लिफ़ायर ज़ोन।</target>
         <note>53477 - AV amplifier zone setting help.</note>
       </trans-unit>
-      <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
-        <source>The app automatically attempts to reconnect all displays when no connected display is present.</source>
-        <target state="translated">कोई कनेक्ट किया गया डिस्प्ले मौजूद न होने पर ऐप सभी डिस्प्ले अपने आप दोबारा कनेक्ट करने की कोशिश करता है।</target>
-        <note>53477 - No connected display recovery behavior help.</note>
+      <trans-unit id="The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected." xml:space="preserve">
+        <source>The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected.</source>
+        <target state="translated">कोई उपयुक्त डिस्प्ले कनेक्ट न रहने पर ऐप सभी डिस्प्ले अपने आप दोबारा कनेक्ट करने की कोशिश करता है। वर्चुअल डिस्प्ले उपयुक्त अतिरिक्त डिस्प्ले के रूप में नहीं गिने जाते, जिनमें कुछ वर्चुअल बाहरी डिस्प्ले समाधान भी शामिल हैं। जब तक सभी डिस्प्ले डिस्कनेक्ट करने की अनुमति है, यह विकल्प निष्क्रिय रहता है।</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
       </trans-unit>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
@@ -11294,6 +11309,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Top</source>
         <target state="translated">ऊपर</target>
         <note>53477 - Physical top position option.</note>
+      </trans-unit>
+      <trans-unit id="Top Corner Radius" xml:space="preserve">
+        <source>Top Corner Radius</source>
+        <target state="translated">ऊपरी कोनों की त्रिज्या</target>
+        <note>53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Top → Center" xml:space="preserve">
         <source>Top → Center</source>

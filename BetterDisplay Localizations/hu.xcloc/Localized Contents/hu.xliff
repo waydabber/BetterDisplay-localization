@@ -1252,6 +1252,11 @@ Ez a módosítás nem vonható vissza. Biztosan folytatja?</target>
         <target state="translated">Az iMac beépített kijelzője leválasztásának engedélyezése</target>
         <note>53477 - Connection management option allowing the iMac built-in display to disconnect.</note>
       </trans-unit>
+      <trans-unit id="Allow disconnecting the built-in display on this M3 Mac" xml:space="preserve">
+        <source>Allow disconnecting the built-in display on this M3 Mac</source>
+        <target state="translated">A beépített kijelző leválasztásának engedélyezése ezen az M3-as Macen</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
+      </trans-unit>
       <trans-unit id="Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience." xml:space="preserve">
         <source>Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience.</source>
         <target state="translated">Engedélyezi a hardveres háttérvilágítás, az OLED-képpontok fényereje, a kontraszt és a telítettség szabályozását. A vezérlők elérhetősége az aktuális képmódtól függhet. A vezérlés reakcióideje hosszú lehet. OLED-modelleken jobb eredményt adhat, ha kizárólag szoftveres képbeállításokat használ.</target>
@@ -2136,6 +2141,11 @@ Az olvasási hossz megadása nem kötelező – automatikus felismeréshez hagyj
         <source>Bottom</source>
         <target state="translated">Alul</target>
         <note>53477 - Bottom position or edge option.</note>
+      </trans-unit>
+      <trans-unit id="Bottom Corner Radius" xml:space="preserve">
+        <source>Bottom Corner Radius</source>
+        <target state="translated">Alsó sarkok sugara</target>
+        <note>53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Bottom → Center" xml:space="preserve">
         <source>Bottom → Center</source>
@@ -4242,10 +4252,15 @@ Az olvasási hossz megadása nem kötelező – automatikus felismeréshez hagyj
         <target state="translated">Nem natívan csatlakoztatott vagy virtuális képernyő leválasztásakor a képernyő eltűnik a kijelzőelrendezésből, de ez általában nem jelent tényleges leválasztást.</target>
         <note>53477 - Non-native display soft-disconnection behavior help.</note>
       </trans-unit>
-      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
-        <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">Az összes kijelző leválasztása megakadályozhatja a Mac kezelését!</target>
-        <note>53477 - Warning before disconnecting all displays.</note>
+      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions." xml:space="preserve">
+        <source>Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions.</source>
+        <target state="translated">Az összes kijelző leválasztása megakadályozhatja a Mac kezelését! Ez felülbírálja az automatikus újracsatlakoztatást, ha nem marad megfelelő kijelző. A virtuális kijelzők nem számítanak megfelelő további kijelzőnek, beleértve egyes virtuális külsőkijelző-megoldásokat is.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
+      </trans-unit>
+      <trans-unit id="Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!" xml:space="preserve">
+        <source>Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!</source>
+        <target state="translated">A beépített kijelző leválasztása ezen a Macen megakadályozhatja annak újracsatlakoztatását a Mac újraindításáig. Fokozott óvatossággal engedélyezze ezt a beállítást!</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
       </trans-unit>
       <trans-unit id="Disconnecting virtual screens" xml:space="preserve">
         <source>Disconnecting virtual screens</source>
@@ -10479,10 +10494,10 @@ Nem minden kijelző támogatja a képernyővezérlési műveleteket. Ezek egyes 
         <target state="translated">A vezérelni kívánt erősítőzóna.</target>
         <note>53477 - AV amplifier zone setting help.</note>
       </trans-unit>
-      <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
-        <source>The app automatically attempts to reconnect all displays when no connected display is present.</source>
-        <target state="translated">Az alkalmazás automatikusan megpróbálja újracsatlakoztatni az összes kijelzőt, ha egyetlen csatlakoztatott kijelző sincs.</target>
-        <note>53477 - No connected display recovery behavior help.</note>
+      <trans-unit id="The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected." xml:space="preserve">
+        <source>The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected.</source>
+        <target state="translated">Az alkalmazás automatikusan megpróbálja újracsatlakoztatni az összes kijelzőt, ha egyetlen megfelelő kijelző sem marad csatlakoztatva. A virtuális kijelzők nem számítanak megfelelő további kijelzőnek, beleértve egyes virtuális külsőkijelző-megoldásokat is. Ez a beállítás inaktív, amíg az összes kijelző leválasztása engedélyezett.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
       </trans-unit>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
@@ -11294,6 +11309,11 @@ Bezárhatja ezt az értesítést; ekkor a módosítások a virtuális képernyő
         <source>Top</source>
         <target state="translated">Felül</target>
         <note>53477 - Physical top position option.</note>
+      </trans-unit>
+      <trans-unit id="Top Corner Radius" xml:space="preserve">
+        <source>Top Corner Radius</source>
+        <target state="translated">Felső sarkok sugara</target>
+        <note>53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Top → Center" xml:space="preserve">
         <source>Top → Center</source>

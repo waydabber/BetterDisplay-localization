@@ -1252,6 +1252,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">iMac의 내장 디스플레이 연결 해제 허용하기</target>
         <note>53477 - Connection management option allowing the iMac built-in display to disconnect.</note>
       </trans-unit>
+      <trans-unit id="Allow disconnecting the built-in display on this M3 Mac" xml:space="preserve">
+        <source>Allow disconnecting the built-in display on this M3 Mac</source>
+        <target state="translated">이 M3 Mac의 내장 디스플레이 연결 해제 허용</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
+      </trans-unit>
       <trans-unit id="Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience." xml:space="preserve">
         <source>Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience.</source>
         <target state="translated">하드웨어 백라이트/OLED 픽셀 밝기 레벨, 대비 및 채도 제어를 허용합니다. 이 제어 기능의 사용 가능 여부는 현재 영상 모드에 따라 다를 수 있습니다. 제어 반응이 느릴 수 있습니다. OLED 모델의 경우 소프트웨어 이미지 조정만 사용하는 것이 더 나은 경험을 제공할 수 있습니다.</target>
@@ -2136,6 +2141,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Bottom</source>
         <target state="translated">아래</target>
         <note>53477 - Bottom position or edge option.</note>
+      </trans-unit>
+      <trans-unit id="Bottom Corner Radius" xml:space="preserve">
+        <source>Bottom Corner Radius</source>
+        <target state="translated">하단 모서리 반경</target>
+        <note>53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Bottom → Center" xml:space="preserve">
         <source>Bottom → Center</source>
@@ -4242,10 +4252,15 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">기본 연결이 아닌 디스플레이나 가상 화면의 연결을 해제하면 디스플레이 레이아웃에서 제거되지만, 일반적으로 화면이 실제로 연결 해제되는 것은 아닙니다.</target>
         <note>53477 - Non-native display soft-disconnection behavior help.</note>
       </trans-unit>
-      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
-        <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">모든 디스플레이를 연결 해제하면 Mac과 상호작용하지 못할 수 있습니다!</target>
-        <note>53477 - Warning before disconnecting all displays.</note>
+      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions." xml:space="preserve">
+        <source>Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions.</source>
+        <target state="translated">모든 디스플레이를 연결 해제하면 Mac과 상호작용하지 못할 수 있습니다! 이 설정은 조건에 맞는 디스플레이가 남아 있지 않을 때 자동 재연결보다 우선합니다. 일부 가상 외부 디스플레이 솔루션을 포함한 가상 디스플레이는 조건에 맞는 추가 디스플레이로 간주되지 않습니다.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
+      </trans-unit>
+      <trans-unit id="Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!" xml:space="preserve">
+        <source>Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!</source>
+        <target state="translated">이 Mac의 내장 디스플레이를 연결 해제하면 Mac을 재시동할 때까지 다시 연결하지 못할 수 있습니다. 이 설정은 각별히 주의해서 사용하세요!</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
       </trans-unit>
       <trans-unit id="Disconnecting virtual screens" xml:space="preserve">
         <source>Disconnecting virtual screens</source>
@@ -10480,10 +10495,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">제어할 앰프 영역입니다.</target>
         <note>53477 - AV amplifier zone setting help.</note>
       </trans-unit>
-      <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
-        <source>The app automatically attempts to reconnect all displays when no connected display is present.</source>
-        <target state="translated">연결된 디스플레이가 없는 경우 앱이 자동으로 모든 디스플레이를 다시 연결하려고 시도합니다.</target>
-        <note>53477 - No connected display recovery behavior help.</note>
+      <trans-unit id="The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected." xml:space="preserve">
+        <source>The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected.</source>
+        <target state="translated">연결된 적격 디스플레이가 남아 있지 않은 경우 앱이 자동으로 모든 디스플레이를 다시 연결하려고 시도합니다. 일부 가상 외부 디스플레이 솔루션을 포함한 가상 디스플레이는 조건에 맞는 추가 디스플레이로 간주되지 않습니다. 모든 디스플레이의 연결 해제를 허용하는 동안에는 이 옵션이 비활성화됩니다.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
       </trans-unit>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
@@ -11296,6 +11311,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Top</source>
         <target state="translated">상단</target>
         <note>53477 - Physical top position option.</note>
+      </trans-unit>
+      <trans-unit id="Top Corner Radius" xml:space="preserve">
+        <source>Top Corner Radius</source>
+        <target state="translated">상단 모서리 반경</target>
+        <note>53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Top → Center" xml:space="preserve">
         <source>Top → Center</source>

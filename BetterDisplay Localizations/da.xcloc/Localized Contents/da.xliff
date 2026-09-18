@@ -1252,6 +1252,11 @@ Denne ændring kan ikke fortrydes. Er du sikker på, at du vil gøre dette?</tar
         <target state="translated">Tillad afbrydelse af iMacs indbyggede skærm</target>
         <note>53477 - Connection management option allowing the iMac built-in display to disconnect.</note>
       </trans-unit>
+      <trans-unit id="Allow disconnecting the built-in display on this M3 Mac" xml:space="preserve">
+        <source>Allow disconnecting the built-in display on this M3 Mac</source>
+        <target state="translated">Tillad afbrydelse af den indbyggede skærm på denne Mac med M3</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
+      </trans-unit>
       <trans-unit id="Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience." xml:space="preserve">
         <source>Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience.</source>
         <target state="translated">Tillad hardwarestyring af baggrundsbelysning/OLED-pixellysstyrke, kontrast og mætning. Tilgængeligheden kan afhænge af den aktuelle billedtilstand. Styringen kan reagere langsomt. På OLED-modeller kan det give en bedre oplevelse udelukkende at bruge softwarebaserede billedjusteringer.</target>
@@ -2136,6 +2141,11 @@ Læselængden er valgfri. Lad feltet være tomt for automatisk registrering.</ta
         <source>Bottom</source>
         <target state="translated">Nederst</target>
         <note>53477 - Bottom position or edge option.</note>
+      </trans-unit>
+      <trans-unit id="Bottom Corner Radius" xml:space="preserve">
+        <source>Bottom Corner Radius</source>
+        <target state="translated">Radius for nederste hjørner</target>
+        <note>53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Bottom → Center" xml:space="preserve">
         <source>Bottom → Center</source>
@@ -4242,10 +4252,15 @@ Læselængden er valgfri. Lad feltet være tomt for automatisk registrering.</ta
         <target state="translated">Afbrydelse af en virtuel skærm eller en skærm uden direkte systemtilslutning fjerner den fra skærmopstillingen, men betyder normalt ikke, at skærmen faktisk afbrydes.</target>
         <note>53477 - Non-native display soft-disconnection behavior help.</note>
       </trans-unit>
-      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
-        <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">Afbrydelse af alle skærme kan forhindre dig i at betjene din Mac!</target>
-        <note>53477 - Warning before disconnecting all displays.</note>
+      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions." xml:space="preserve">
+        <source>Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions.</source>
+        <target state="translated">Afbrydelse af alle skærme kan forhindre dig i at betjene din Mac! Dette tilsidesætter automatisk gentilslutning, når der ikke er nogen kvalificeret skærm tilbage. Virtuelle skærme tæller ikke som en kvalificeret ekstra skærm, herunder visse løsninger til virtuelle eksterne skærme.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
+      </trans-unit>
+      <trans-unit id="Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!" xml:space="preserve">
+        <source>Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!</source>
+        <target state="translated">Hvis du afbryder forbindelsen til den indbyggede skærm på denne Mac, kan den muligvis ikke tilsluttes igen, før Mac er genstartet. Slå denne indstilling til med ekstra forsigtighed!</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
       </trans-unit>
       <trans-unit id="Disconnecting virtual screens" xml:space="preserve">
         <source>Disconnecting virtual screens</source>
@@ -10479,10 +10494,10 @@ Ikke alle skærme understøtter skærmstyringshandlinger. Disse handlinger kan g
         <target state="translated">Den forstærkerzone, der skal styres.</target>
         <note>53477 - AV amplifier zone setting help.</note>
       </trans-unit>
-      <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
-        <source>The app automatically attempts to reconnect all displays when no connected display is present.</source>
-        <target state="translated">Appen forsøger automatisk at tilslutte alle skærme igen, når ingen skærme er tilsluttet.</target>
-        <note>53477 - No connected display recovery behavior help.</note>
+      <trans-unit id="The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected." xml:space="preserve">
+        <source>The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected.</source>
+        <target state="translated">Appen forsøger automatisk at tilslutte alle skærme igen, når ingen kvalificerede skærme længere er tilsluttet. Virtuelle skærme tæller ikke som en kvalificeret ekstra skærm, herunder visse løsninger til virtuelle eksterne skærme. Denne indstilling er inaktiv, mens det er tilladt at afbryde forbindelsen til alle skærme.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
       </trans-unit>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
@@ -11294,6 +11309,11 @@ Du kan lukke denne besked. Så anvendes ændringerne, næste gang den virtuelle 
         <source>Top</source>
         <target state="translated">Øverst</target>
         <note>53477 - Physical top position option.</note>
+      </trans-unit>
+      <trans-unit id="Top Corner Radius" xml:space="preserve">
+        <source>Top Corner Radius</source>
+        <target state="translated">Radius for øverste hjørner</target>
+        <note>53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Top → Center" xml:space="preserve">
         <source>Top → Center</source>
