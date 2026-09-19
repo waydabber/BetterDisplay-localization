@@ -1106,6 +1106,17 @@
     "Allow disconnecting the built-in display of the iMac" : {
       "comment" : "53477 - Connection management option allowing the iMac built-in display to disconnect."
     },
+    "Allow disconnecting the built-in display on this M3 Mac" : {
+      "comment" : "53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow disconnecting the built-in display on this M3 Mac"
+          }
+        }
+      }
+    },
     "Allow Forced HDR" : {
       "comment" : "53477 - Setting permitting forced HDR modes."
     },
@@ -1668,6 +1679,9 @@
     },
     "Bottom → Right - Corner" : {
       "comment" : "53477 - Bottom-right corner position option."
+    },
+    "Bottom Corner Radius" : {
+      "comment" : "53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%."
     },
     "Bottom-center" : {
       "comment" : "53477 - Bottom-center position option."
@@ -2902,11 +2916,30 @@
     "Disconnecting a non-natively connected or virtual screen works in a sense that it is removed from the display layout - but usually it does not mean the screen is really disconnected." : {
       "comment" : "53477 - Non-native display soft-disconnection behavior help."
     },
-    "Disconnecting all displays might prevent you from interacting with your Mac!" : {
-      "comment" : "53477 - Warning before disconnecting all displays."
+    "Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions." : {
+      "comment" : "53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions."
+          }
+        }
+      }
     },
     "Disconnecting Displays" : {
       "comment" : "53477 - Multiple display disconnection operation heading."
+    },
+    "Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!" : {
+      "comment" : "53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!"
+          }
+        }
+      }
     },
     "Disconnecting virtual screens" : {
       "comment" : "53477 - Virtual screen disconnection operation heading."
@@ -6809,8 +6842,16 @@
     "The amplifier zone to control." : {
       "comment" : "53477 - AV amplifier zone setting help."
     },
-    "The app automatically attempts to reconnect all displays when no connected display is present." : {
-      "comment" : "53477 - No connected display recovery behavior help."
+    "The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected." : {
+      "comment" : "53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected."
+          }
+        }
+      }
     },
     "The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." : {
       "comment" : "53477 - Virtual screen display association help."
@@ -7340,6 +7381,9 @@
     },
     "Top → Right - Corner" : {
       "comment" : "53477 - Display layout corner anchor alignment option."
+    },
+    "Top Corner Radius" : {
+      "comment" : "53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%."
     },
     "Top-center" : {
       "comment" : "53477 - Top-center position option."

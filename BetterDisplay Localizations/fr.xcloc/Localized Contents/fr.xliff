@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="fr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A266a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5019j"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="fr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A266a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5019j"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="fr" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.0" build-num="27A266a"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5019j"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -1252,6 +1252,11 @@ Cette action est irréversible. Souhaitez vous continuer ?</target>
         <target state="translated">Autoriser la déconnexion de l'écran intégré de l'iMac</target>
         <note>53477 - Connection management option allowing the iMac built-in display to disconnect.</note>
       </trans-unit>
+      <trans-unit id="Allow disconnecting the built-in display on this M3 Mac" xml:space="preserve">
+        <source>Allow disconnecting the built-in display on this M3 Mac</source>
+        <target state="translated">Autoriser la déconnexion de l’écran intégré de ce Mac M3</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
+      </trans-unit>
       <trans-unit id="Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience." xml:space="preserve">
         <source>Allow hardware backlight/OLED pixel brightness level, contrast and saturation control. Availability of these controls may depend on the current picture mode. Control responsiveness may be slow. On OLED models, using software image adjustments exclusively might result in a superior experience.</source>
         <target state="translated">Autorise le contrôle matériel du rétroéclairage ou de la luminosité des pixels OLED, du contraste et de la saturation. La disponibilité de ces contrôles peut dépendre du mode d’image actuel. Leur réactivité peut être lente. Sur les modèles OLED, l’utilisation exclusive des ajustements logiciels de l’image peut offrir une meilleure expérience.</target>
@@ -2136,6 +2141,11 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
         <source>Bottom</source>
         <target state="translated">Bas</target>
         <note>53477 - Bottom position or edge option.</note>
+      </trans-unit>
+      <trans-unit id="Bottom Corner Radius" xml:space="preserve">
+        <source>Bottom Corner Radius</source>
+        <target state="translated">Rayon des coins inférieurs</target>
+        <note>53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Bottom → Center" xml:space="preserve">
         <source>Bottom → Center</source>
@@ -4242,10 +4252,15 @@ Spécifier une longueur de lecture est optionnel - Laissez le champ vide pour un
         <target state="translated">Déconnecter un écran non nativement connecté ou un écran virtuel entraîne sa suppression de la disposition d'écrans, mais généralement cela ne signifie pas que l'écran est réellement déconnecté.</target>
         <note>53477 - Non-native display soft-disconnection behavior help.</note>
       </trans-unit>
-      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac!" xml:space="preserve">
-        <source>Disconnecting all displays might prevent you from interacting with your Mac!</source>
-        <target state="translated">Déconnecter tous les écrans pourrait vous empêcher d'interagir avec votre Mac !</target>
-        <note>53477 - Warning before disconnecting all displays.</note>
+      <trans-unit id="Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions." xml:space="preserve">
+        <source>Disconnecting all displays might prevent you from interacting with your Mac! This overrides automatic reconnection when no eligible display remains. Virtual displays do not count as an eligible additional display, including some virtual external display solutions.</source>
+        <target state="translated">Déconnecter tous les écrans pourrait vous empêcher d'interagir avec votre Mac ! Cette option prend le pas sur la reconnexion automatique lorsqu'aucun écran admissible ne reste connecté. Les écrans virtuels ne comptent pas comme un écran supplémentaire admissible, y compris certaines solutions d’écrans externes virtuels.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
+      </trans-unit>
+      <trans-unit id="Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!" xml:space="preserve">
+        <source>Disconnecting the built-in display on this Mac may prevent it from reconnecting until the Mac is restarted. Enable this setting with extra caution!</source>
+        <target state="translated">Déconnecter l’écran intégré de ce Mac peut empêcher sa reconnexion jusqu’au redémarrage du Mac. Activez ce réglage avec une grande prudence !</target>
+        <note>53576 - Opt-in safety override for disconnecting the built-in display on non-iMac Macs with the base M3 chip, excluding M3 Pro and M3 Max. Reconnecting this display may require restarting the Mac.</note>
       </trans-unit>
       <trans-unit id="Disconnecting virtual screens" xml:space="preserve">
         <source>Disconnecting virtual screens</source>
@@ -10479,10 +10494,10 @@ Tous les écrans ne prennent pas en charge le contrôle de l’écran. Ces opér
         <target state="translated">Zone de l’ampli à contrôler.</target>
         <note>53477 - AV amplifier zone setting help.</note>
       </trans-unit>
-      <trans-unit id="The app automatically attempts to reconnect all displays when no connected display is present." xml:space="preserve">
-        <source>The app automatically attempts to reconnect all displays when no connected display is present.</source>
-        <target state="translated">L'application tente de reconnecter automatiquement tous les écrans quand aucun écran connecté n'est présent.</target>
-        <note>53477 - No connected display recovery behavior help.</note>
+      <trans-unit id="The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected." xml:space="preserve">
+        <source>The app automatically attempts to reconnect all displays when no eligible display remains connected. Virtual displays do not count as an eligible additional display, including some virtual external display solutions. This option is inactive while allowing all displays to be disconnected.</source>
+        <target state="translated">L'application tente de reconnecter automatiquement tous les écrans quand aucun écran admissible ne reste connecté. Les écrans virtuels ne comptent pas comme un écran supplémentaire admissible, y compris certaines solutions d’écrans externes virtuels. Cette option est inactive tant que la déconnexion de tous les écrans est autorisée.</target>
+        <note>53575 - Connection management safety help. Virtual displays, including some virtual external display solutions, do not count as an eligible additional display for either disconnect safety or automatic recovery; keep the wording generic.</note>
       </trans-unit>
       <trans-unit id="The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation." xml:space="preserve">
         <source>The app can automatically connect and disconnect a virtual screen based on the availability of the display(s) it is associated with. It can also auto-start mirroring or streaming or follow the associated display's orientation.</source>
@@ -11294,6 +11309,11 @@ Vous pouvez ignorer cette notification : les modifications seront alors appliqu�
         <source>Top</source>
         <target state="translated">Haut</target>
         <note>53477 - Physical top position option.</note>
+      </trans-unit>
+      <trans-unit id="Top Corner Radius" xml:space="preserve">
+        <source>Top Corner Radius</source>
+        <target state="translated">Rayon des coins supérieurs</target>
+        <note>53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
       </trans-unit>
       <trans-unit id="Top → Center" xml:space="preserve">
         <source>Top → Center</source>
