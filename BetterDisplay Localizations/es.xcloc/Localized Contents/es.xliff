@@ -1372,6 +1372,10 @@ Este cambio no se puede deshacer. ¿Estás seguro de que quieres continuar?</tar
         <target state="translated">Permite que las URLs a nivel del sistema (ver [documentación](https://betterdisplay.pro/integration)) accedan a varias funciones de la aplicación. Esto permite la integración con otras aplicaciones y el acceso programático a la funcionalidad de la aplicación.</target>
         <note>53477 - URL scheme integration setting help.</note>
       </trans-unit>
+      <trans-unit id="Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility." xml:space="preserve">
+        <source>Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility.</source>
+        <note>53600 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility.</note>
+      </trans-unit>
       <trans-unit id="Alpha" xml:space="preserve">
         <source>Alpha</source>
         <target state="translated">Alfa</target>
@@ -2145,7 +2149,7 @@ Especificar la longitud de lectura es opcional; deja el campo vacío para autode
       <trans-unit id="Bottom Corner Radius" xml:space="preserve">
         <source>Bottom Corner Radius</source>
         <target state="translated">Radio de las esquinas inferiores</target>
-        <note>53591 - Manage Display slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
+        <note>53598 - Manage Display and Manage Virtual Screen slider for the bottom pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 3.00%.</note>
       </trans-unit>
       <trans-unit id="Bottom → Center" xml:space="preserve">
         <source>Bottom → Center</source>
@@ -11313,7 +11317,7 @@ Puedes descartar esta notificación; en ese caso, los cambios se aplicarán la p
       <trans-unit id="Top Corner Radius" xml:space="preserve">
         <source>Top Corner Radius</source>
         <target state="translated">Radio de las esquinas superiores</target>
-        <note>53591 - Manage Display slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 2.00%.</note>
+        <note>53598 - Manage Display and Manage Virtual Screen slider for the top pair of black rounded screen corners. The radius is a percentage of the shorter display dimension, from 0.00% (disabled) to 3.00%.</note>
       </trans-unit>
       <trans-unit id="Top → Center" xml:space="preserve">
         <source>Top → Center</source>
@@ -11824,6 +11828,10 @@ Puedes descartar esta notificación; en ese caso, los cambios se aplicarán la p
         <source>Use custom resolution list</source>
         <target state="translated">Usar lista de resoluciones personalizada</target>
         <note>53477 - Custom resolution list setting.</note>
+      </trans-unit>
+      <trans-unit id="Use dedicated queue" xml:space="preserve">
+        <source>Use dedicated queue</source>
+        <note>53600 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue.</note>
       </trans-unit>
       <trans-unit id="Use magnification slider instead of resolution slider" xml:space="preserve">
         <source>Use magnification slider instead of resolution slider</source>
