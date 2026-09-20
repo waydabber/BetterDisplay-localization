@@ -945,9 +945,6 @@
     "Additional Apple Brightness Settings" : {
       "comment" : "53477 - Additional native Apple display brightness settings section."
     },
-    "Additional controllers" : {
-      "comment" : "53477 - Additional device controllers section."
-    },
     "Additional delay after wake to reapply DDC settings" : {
       "comment" : "53477 - Delay setting before restoring DDC settings after wake."
     },
@@ -992,9 +989,6 @@
     },
     "Advanced" : {
       "comment" : "53477 - Advanced options section or level."
-    },
-    "Advanced Control Settings" : {
-      "comment" : "53477 - Advanced device control settings section."
     },
     "Advanced DDC Settings" : {
       "comment" : "53477 - Advanced DDC communication settings section."
@@ -1190,7 +1184,7 @@
       "comment" : "53477 - URL scheme integration setting help."
     },
     "Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility." : {
-      "comment" : "53600 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility."
+      "comment" : "53627 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility."
     },
     "Alpha" : {
       "comment" : "53477 - Alpha channel control for stream/PIP or menu opacity; lower values are more transparent."
@@ -1302,8 +1296,16 @@
     "App UI animation speed" : {
       "comment" : "53477 - Application user interface animation speed setting."
     },
-    "Apple" : {
-      "comment" : "53477 - Manufacturer name; retain the brand."
+    "Apple Brightness Control" : {
+      "comment" : "53627 - Controller name shown in Device Control settings and the Add Controller menu. This controls Apple display brightness through the existing native or built-in direct brightness controller, according to the display settings.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Brightness Control"
+          }
+        }
+      }
     },
     "Apple Built-in XDR Direct" : {
       "comment" : "53477 - Controller name for native built-in Apple XDR brightness control."
@@ -1440,8 +1442,8 @@
     "Associated audio device name" : {
       "comment" : "53477 - Associated audio device name field."
     },
-    "Associated displays" : {
-      "comment" : "53477 - Associated display list label."
+    "Associated Displays" : {
+      "comment" : "53627 - Settings section listing physical displays associated with a virtual screen. Association links the virtual screen to the selected displays."
     },
     "Associated to" : {
       "comment" : "53477 - Association target label."
@@ -1924,6 +1926,17 @@
     "Checking…" : {
       "comment" : "53477 - General check progress status."
     },
+    "Choose control methods for your device, including hardware controllers and custom integrations." : {
+      "comment" : "53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose control methods for your device, including hardware controllers and custom integrations."
+          }
+        }
+      }
+    },
     "Chroma Subsampling" : {
       "comment" : "53477 - Chroma subsampling format: reduced chroma resolution relative to luminance."
     },
@@ -2089,6 +2102,17 @@
     "Configure DDC volume and mute control support under \"DDC Controls…\" or set up an alternative control method using control integration." : {
       "comment" : "53477 - Volume/mute setup help pointing to DDC controls or control integration."
     },
+    "Configure Device Control" : {
+      "comment" : "53627 - Heading for the controller picker in per-display Device Control settings, above the configured controllers. Users can add hardware control methods suitable for the selected device.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configure Device Control"
+          }
+        }
+      }
+    },
     "Configure Display…" : {
       "comment" : "53477 - Display configuration action."
     },
@@ -2127,6 +2151,17 @@
     },
     "Configure Samsung Smart Device…" : {
       "comment" : "53477 - Samsung device controller setup action."
+    },
+    "Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options." : {
+      "comment" : "53627 - Help above the Volume Control and Device Control Settings buttons below the configured controllers. Volume feedback is the onscreen volume indicator; associating an audio device links its volume control to this display.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options."
+          }
+        }
+      }
     },
     "Configure Steps for Range-Based Controls" : {
       "comment" : "53477 - Step size configuration for ranged controls."
@@ -2262,6 +2297,17 @@
     },
     "Control integration" : {
       "comment" : "53477 - Control integration feature or section."
+    },
+    "Control Integration" : {
+      "comment" : "53627 - Controller name shown in Device Control settings and the Add Controller menu. This enables custom device controls and display event actions while preserving their saved configuration.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control Integration"
+          }
+        }
+      }
     },
     "Control name" : {
       "comment" : "53477 - Custom control name field."
@@ -2491,6 +2537,17 @@
     "Customize Blend Mode" : {
       "comment" : "53477 - Blend mode customization action."
     },
+    "Customize device controls and automate display events using shell commands, URLs and macOS notifications." : {
+      "comment" : "53627 - Description of Control Integration in per-display settings. Controls and display events can invoke shell commands, URLs or macOS interprocess notifications, not user-visible notification banners.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customize device controls and automate display events using shell commands, URLs and macOS notifications."
+          }
+        }
+      }
+    },
     "Customize Flexible Scaling Resolution Range" : {
       "comment" : "53477 - Flexible scaling resolution range customization."
     },
@@ -2524,9 +2581,6 @@
     "days" : {
       "comment" : "53477 - Day count unit."
     },
-    "DDC" : {
-      "comment" : "53477 - Display Data Channel protocol abbreviation; retain it."
-    },
     "DDC allows for hardware backlight, volume control, input selection and various other features. Requires a compatible external display. Most televisions don't support DDC while most displays do." : {
       "comment" : "53477 - DDC controller overview and hardware compatibility help."
     },
@@ -2541,6 +2595,17 @@
     },
     "DDC communication" : {
       "comment" : "53477 - DDC communication settings/status."
+    },
+    "DDC Control" : {
+      "comment" : "53627 - Controller name shown in the Device Control settings block and Add Controller menu. DDC is the external display hardware control protocol used for brightness, volume, input selection and other monitor features.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DDC Control"
+          }
+        }
+      }
     },
     "DDC control code(s) (comma delimited hex values)" : {
       "comment" : "53477 - DDC VCP control code list input; values are hexadecimal."
@@ -3037,6 +3102,9 @@
     "Display menu options" : {
       "comment" : "53477 - Per-display menu options."
     },
+    "Display Menu Options" : {
+      "comment" : "53627 - Settings section for the ordering, headers, and controls of per-display menus in the app menu."
+    },
     "Display Miscellaneous" : {
       "comment" : "53477 - Miscellaneous display settings section."
     },
@@ -3308,9 +3376,6 @@
     "Enable All Protections" : {
       "comment" : "53477 - Action enabling all configuration protections."
     },
-    "Enable Apple display hardware brightness control" : {
-      "comment" : "53477 - Native Apple hardware brightness control setting."
-    },
     "Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state." : {
       "comment" : "53477 - Adapter CEC tunnel enablement workaround setting help."
     },
@@ -3337,9 +3402,6 @@
     },
     "Enable Dark Mode" : {
       "comment" : "53477 - Dark appearance action or setting."
-    },
-    "Enable DDC control" : {
-      "comment" : "53477 - DDC control enablement setting."
     },
     "Enable DisplayLink DDC control" : {
       "comment" : "53477 - DisplayLink DDC controller enablement setting."
@@ -3373,9 +3435,6 @@
     },
     "Enable integrated HTTP server" : {
       "comment" : "53477 - Built-in HTTP integration server enablement setting."
-    },
-    "Enable integration features" : {
-      "comment" : "53477 - Toggle for external integration features."
     },
     "Enable layout protection" : {
       "comment" : "53477 - Display group layout protection toggle."
@@ -3538,6 +3597,9 @@
     },
     "Expanding menu items" : {
       "comment" : "53477 - In-menu expansion setting label."
+    },
+    "Expanding Menu Items" : {
+      "comment" : "53627 - Settings section for the behavior of menu items that expand inside the app menu, including hiding other items and closing expanded items."
     },
     "Experimental" : {
       "comment" : "53477 - Experimental feature status."
@@ -4093,6 +4155,17 @@
     "Image Adjustment Offset" : {
       "comment" : "53496 - Relative image adjustment offset. Image adjustment means changing properties such as brightness, contrast, or color."
     },
+    "Image Adjustment Settings" : {
+      "comment" : "53627 - Title of the per-display image adjustment settings sheet and its opening button. The sheet contains additional options for software image adjustments, dimming, combined brightness and related display behavior.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Image Adjustment Settings"
+          }
+        }
+      }
+    },
     "Image Adjustments" : {
       "comment" : "53477 - Image adjustments menu heading."
     },
@@ -4617,6 +4690,9 @@
     "Menu item icons" : {
       "comment" : "53477 - Menu item icon visibility setting."
     },
+    "Menu Item Icons" : {
+      "comment" : "53627 - Settings section for the visibility of menu item and header icons and animation of the app menu icon."
+    },
     "Menu item visibility" : {
       "comment" : "53477 - Heading for the setting that opens customization of menu-item visibility."
     },
@@ -4779,8 +4855,8 @@
     "Mute control" : {
       "comment" : "53477 - Mute control setting."
     },
-    "Mute method" : {
-      "comment" : "53477 - Mute implementation selection."
+    "Mute Method" : {
+      "comment" : "53627 - Audio settings section for choosing the order of volume changes and mute commands when muting a display."
     },
     "Mute or unmute display using DDC (if the display is configured so)." : {
       "comment" : "53477 - DDC mute shortcut action description."
@@ -5415,9 +5491,6 @@
     "Provides precise feedback on the current control value with additional information when relevant." : {
       "comment" : "53477 - Detailed control value feedback help."
     },
-    "Provides specialized control methods for various devices." : {
-      "comment" : "53477 - Device-specific controller help."
-    },
     "Provides various image control, volume control and virtual remote control capabilities for compatible LG webOS based smart TVs and displays." : {
       "comment" : "53477 - LG webOS controller help."
     },
@@ -5887,9 +5960,6 @@
     },
     "Returned content - ON (%@)" : {
       "comment" : "53477 - Expected on-state return content; placeholder is the matching mode."
-    },
-    "Review and configure volume control settings for this device." : {
-      "comment" : "53477 - Device volume control settings help."
     },
     "RGB" : {
       "comment" : "53477 - Standard red-green-blue color format identifier."
@@ -7592,8 +7662,8 @@
     "Unmute" : {
       "comment" : "53477 - Audio unmute action."
     },
-    "Unmute method" : {
-      "comment" : "53477 - Audio unmute method setting."
+    "Unmute Method" : {
+      "comment" : "53627 - Audio settings section for choosing the order of volume changes and unmute commands when restoring sound."
     },
     "Unmute only (except for volume change induced unmute, when set volume as well)" : {
       "comment" : "53477 - Unmute behavior option."
@@ -7689,7 +7759,7 @@
       "comment" : "53477 - Custom resolution list setting."
     },
     "Use dedicated queue" : {
-      "comment" : "53600 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue."
+      "comment" : "53627 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue."
     },
     "Use magnification slider instead of resolution slider" : {
       "comment" : "53477 - Scalable display slider presentation setting."
@@ -7783,9 +7853,6 @@
     "Vibrance" : {
       "comment" : "53477 - Vibrance image adjustment filter."
     },
-    "Video Control Settings" : {
-      "comment" : "53477 - Video control settings section."
-    },
     "Video Filter Window" : {
       "comment" : "53477 - Video filter window title."
     },
@@ -7863,9 +7930,6 @@
     },
     "Volume control" : {
       "comment" : "53477 - Volume control setting."
-    },
-    "Volume Control" : {
-      "comment" : "53477 - Volume control section title."
     },
     "Volume Control Affects:" : {
       "comment" : "53477 - Volume control target selection heading."
@@ -7972,8 +8036,8 @@
     "When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control." : {
       "comment" : "53477 - Prefer associated native audio device volume control setting help."
     },
-    "When volume reaches 0⁠%…" : {
-      "comment" : "53477 - Zero volume behavior setting heading."
+    "When Volume Reaches 0⁠%…" : {
+      "comment" : "53627 - Audio settings section for choosing what happens when the volume reaches zero percent, including whether to use the configured mute and unmute methods."
     },
     "Width" : {
       "comment" : "53477 - Width field."

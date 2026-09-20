@@ -1099,11 +1099,6 @@ Táto licencia už nepokrýva aktuálnu verziu aplikácie (v%@). Ak chcete použ
         <target state="translated">Ďalšie nastavenia…</target>
         <note>53477 - Action opening additional settings.</note>
       </trans-unit>
-      <trans-unit id="Additional controllers" xml:space="preserve">
-        <source>Additional controllers</source>
-        <target state="translated">Ďalšie ovládače</target>
-        <note>53477 - Additional device controllers section.</note>
-      </trans-unit>
       <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
         <source>Additional delay after wake to reapply DDC settings</source>
         <target state="translated">Dodatočné oneskorenie po prebudení pred opätovným použitím nastavení DDC</target>
@@ -1148,11 +1143,6 @@ Táto licencia už nepokrýva aktuálnu verziu aplikácie (v%@). Ak chcete použ
         <source>Advanced</source>
         <target state="translated">Pokročilé</target>
         <note>53477 - Advanced options section or level.</note>
-      </trans-unit>
-      <trans-unit id="Advanced Control Settings" xml:space="preserve">
-        <source>Advanced Control Settings</source>
-        <target state="translated">Pokročilé nastavenia ovládania</target>
-        <note>53477 - Advanced device control settings section.</note>
       </trans-unit>
       <trans-unit id="Advanced DDC Settings" xml:space="preserve">
         <source>Advanced DDC Settings</source>
@@ -1459,7 +1449,8 @@ Táto zmena sa nedá vrátiť späť. Naozaj chcete pokračovať?</target>
       </trans-unit>
       <trans-unit id="Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility." xml:space="preserve">
         <source>Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility.</source>
-        <note>53600 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility.</note>
+        <target state="translated">Umožňuje vykonávať príkazy DDC tohto displeja nezávisle od ostatných displejov, čím zlepšuje odozvu pri používaní viacerých displejov. Ak majú displeje problémy s komunikáciou, vypnutie tejto možnosti pre všetky dotknuté displeje môže zlepšiť kompatibilitu.</target>
+        <note>53627 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility.</note>
       </trans-unit>
       <trans-unit id="Alpha" xml:space="preserve">
         <source>Alpha</source>
@@ -1631,10 +1622,10 @@ Táto zmena sa nedá vrátiť späť. Naozaj chcete pokračovať?</target>
         <target state="translated">Aplikácia sa má pri každej sieťovej chybe pokúsiť znovu pripojiť k zariadeniu.</target>
         <note>53477 - Network controller automatic reconnection help.</note>
       </trans-unit>
-      <trans-unit id="Apple" xml:space="preserve">
-        <source>Apple</source>
-        <target state="translated">Apple</target>
-        <note>53477 - Manufacturer name; retain the brand.</note>
+      <trans-unit id="Apple Brightness Control" xml:space="preserve">
+        <source>Apple Brightness Control</source>
+        <target state="translated">Ovládanie jasu Apple</target>
+        <note>53627 - Controller name shown in Device Control settings and the Add Controller menu. This controls Apple display brightness through the existing native or built-in direct brightness controller, according to the display settings.</note>
       </trans-unit>
       <trans-unit id="Apple Built-in XDR Direct" xml:space="preserve">
         <source>Apple Built-in XDR Direct</source>
@@ -1857,15 +1848,15 @@ Vymazanie NVRAM odstráni aj nízkoúrovňové nastavenia firmvéru, napríklad 
         <target state="translated">Pridružiť túto virtuálnu obrazovku k skutočným displejom</target>
         <note>53477 - Virtual screen association setting allowing one or more real displays.</note>
       </trans-unit>
+      <trans-unit id="Associated Displays" xml:space="preserve">
+        <source>Associated Displays</source>
+        <target state="translated">Pridružené displeje</target>
+        <note>53627 - Settings section listing physical displays associated with a virtual screen. Association links the virtual screen to the selected displays.</note>
+      </trans-unit>
       <trans-unit id="Associated audio device name" xml:space="preserve">
         <source>Associated audio device name</source>
         <target state="translated">Názov pridruženého zvukového zariadenia</target>
         <note>53477 - Associated audio device name field.</note>
-      </trans-unit>
-      <trans-unit id="Associated displays" xml:space="preserve">
-        <source>Associated displays</source>
-        <target state="translated">Pridružené displeje</target>
-        <note>53477 - Associated display list label.</note>
       </trans-unit>
       <trans-unit id="Associated to" xml:space="preserve">
         <source>Associated to</source>
@@ -2661,6 +2652,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Overuje sa…</target>
         <note>53477 - General check progress status.</note>
       </trans-unit>
+      <trans-unit id="Choose control methods for your device, including hardware controllers and custom integrations." xml:space="preserve">
+        <source>Choose control methods for your device, including hardware controllers and custom integrations.</source>
+        <target state="translated">Vyberte metódy ovládania zariadenia vrátane hardvérových ovládačov a vlastných integrácií.</target>
+        <note>53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.</note>
+      </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
         <target state="translated">Podvzorkovanie farieb</target>
@@ -2921,6 +2917,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Nakonfigurujte podporu ovládania hlasitosti a stíšenia cez DDC v časti „Ovládacie prvky DDC…“ alebo nastavte alternatívny spôsob pomocou integrácie ovládania.</target>
         <note>53477 - Volume/mute setup help pointing to DDC controls or control integration.</note>
       </trans-unit>
+      <trans-unit id="Configure Device Control" xml:space="preserve">
+        <source>Configure Device Control</source>
+        <target state="translated">Nastaviť ovládanie zariadenia</target>
+        <note>53627 - Heading for the controller picker in per-display Device Control settings, above the configured controllers. Users can add hardware control methods suitable for the selected device.</note>
+      </trans-unit>
       <trans-unit id="Configure DisplayLink…" xml:space="preserve">
         <source>Configure DisplayLink…</source>
         <target state="translated">Nakonfigurovať DisplayLink…</target>
@@ -3005,6 +3006,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <source>Configure resolution options for %@</source>
         <target state="translated">Nakonfigurovať možnosti rozlíšenia pre %@</target>
         <note>53477 - Display resolution configuration action.</note>
+      </trans-unit>
+      <trans-unit id="Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options." xml:space="preserve">
+        <source>Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options.</source>
+        <target state="translated">Nastavte možnosti spoločné pre ovládače tohto displeja. „Ovládanie hlasitosti“ umožňuje priradiť zvukové zariadenie, prispôsobiť správanie stíšenia a zobraziť alebo skryť indikátor hlasitosti na obrazovke. „Nastavenia ovládania“ poskytujú predvoľby jasu a ďalšie všeobecné možnosti ovládania zariadenia.</target>
+        <note>53627 - Help above the Volume Control and Device Control Settings buttons below the configured controllers. Volume feedback is the onscreen volume indicator; associating an audio device links its volume control to this display.</note>
       </trans-unit>
       <trans-unit id="Configure the custom EDID for a display." xml:space="preserve">
         <source>Configure the custom EDID for a display.</source>
@@ -3190,6 +3196,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <source>Control</source>
         <target state="translated">Ovládací prvok</target>
         <note>53477 - Individual controllable feature label.</note>
+      </trans-unit>
+      <trans-unit id="Control Integration" xml:space="preserve">
+        <source>Control Integration</source>
+        <target state="translated">Integrácia ovládania</target>
+        <note>53627 - Controller name shown in Device Control settings and the Add Controller menu. This enables custom device controls and display event actions while preserving their saved configuration.</note>
       </trans-unit>
       <trans-unit id="Control Settings" xml:space="preserve">
         <source>Control Settings</source>
@@ -3576,6 +3587,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Prispôsobiť možnosti menu</target>
         <note>53477 - Menu option customization action.</note>
       </trans-unit>
+      <trans-unit id="Customize device controls and automate display events using shell commands, URLs and macOS notifications." xml:space="preserve">
+        <source>Customize device controls and automate display events using shell commands, URLs and macOS notifications.</source>
+        <target state="translated">Prispôsobte ovládacie prvky zariadenia a automatizujte udalosti displeja pomocou príkazov shellu, URL a notifikácií macOS.</target>
+        <note>53627 - Description of Control Integration in per-display settings. Controls and display events can invoke shell commands, URLs or macOS interprocess notifications, not user-visible notification banners.</note>
+      </trans-unit>
       <trans-unit id="Customize input source list for this display" xml:space="preserve">
         <source>Customize input source list for this display</source>
         <target state="translated">Prispôsobiť zoznam vstupných zdrojov tohto displeja</target>
@@ -3601,15 +3617,15 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Vystrihnúť</target>
         <note>53477 - Cut editing action.</note>
       </trans-unit>
-      <trans-unit id="DDC" xml:space="preserve">
-        <source>DDC</source>
-        <target state="translated">DDC</target>
-        <note>53477 - Display Data Channel protocol abbreviation; retain it.</note>
-      </trans-unit>
       <trans-unit id="DDC Command" xml:space="preserve">
         <source>DDC Command</source>
         <target state="translated">Príkaz DDC</target>
         <note>53477 - DDC command label.</note>
+      </trans-unit>
+      <trans-unit id="DDC Control" xml:space="preserve">
+        <source>DDC Control</source>
+        <target state="translated">Ovládanie DDC</target>
+        <note>53627 - Controller name shown in the Device Control settings block and Add Controller menu. DDC is the external display hardware control protocol used for brightness, volume, input selection and other monitor features.</note>
       </trans-unit>
       <trans-unit id="DDC Input Source Control" xml:space="preserve">
         <source>DDC Input Source Control</source>
@@ -4441,6 +4457,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Informácie o displeji…</target>
         <note>53477 - Action opening display information.</note>
       </trans-unit>
+      <trans-unit id="Display Menu Options" xml:space="preserve">
+        <source>Display Menu Options</source>
+        <target state="translated">Možnosti menu displeja</target>
+        <note>53627 - Settings section for the ordering, headers, and controls of per-display menus in the app menu.</note>
+      </trans-unit>
       <trans-unit id="Display Miscellaneous" xml:space="preserve">
         <source>Display Miscellaneous</source>
         <target state="translated">Rôzne nastavenia displeja</target>
@@ -4885,11 +4906,6 @@ Proces nefunguje pre vstavaný displej (vyžaduje reštart). Operácia môže na
         <target state="translated">Zapnúť všetky ochrany</target>
         <note>53477 - Action enabling all configuration protections.</note>
       </trans-unit>
-      <trans-unit id="Enable Apple display hardware brightness control" xml:space="preserve">
-        <source>Enable Apple display hardware brightness control</source>
-        <target state="translated">Zapnúť hardvérové ovládanie jasu displejov Apple</target>
-        <note>53477 - Native Apple hardware brightness control setting.</note>
-      </trans-unit>
       <trans-unit id="Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state." xml:space="preserve">
         <source>Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state.</source>
         <target state="translated">Zapnúť tunel CEC, keď macOS automaticky nezapne stav ovládania tunela CEC adaptéra.</target>
@@ -4909,11 +4925,6 @@ Proces nefunguje pre vstavaný displej (vyžaduje reštart). Operácia môže na
         <source>Enable Cropping</source>
         <target state="translated">Zapnúť orezanie</target>
         <note>53477 - Stream crop enablement setting.</note>
-      </trans-unit>
-      <trans-unit id="Enable DDC control" xml:space="preserve">
-        <source>Enable DDC control</source>
-        <target state="translated">Zapnúť ovládanie DDC</target>
-        <note>53477 - DDC control enablement setting.</note>
       </trans-unit>
       <trans-unit id="Enable Dark Mode" xml:space="preserve">
         <source>Enable Dark Mode</source>
@@ -5024,11 +5035,6 @@ Proces nefunguje pre vstavaný displej (vyžaduje reštart). Operácia môže na
         <source>Enable integrated HTTP server</source>
         <target state="translated">Zapnúť integrovaný server HTTP</target>
         <note>53477 - Built-in HTTP integration server enablement setting.</note>
-      </trans-unit>
-      <trans-unit id="Enable integration features" xml:space="preserve">
-        <source>Enable integration features</source>
-        <target state="translated">Zapnúť integračné funkcie</target>
-        <note>53477 - Toggle for external integration features.</note>
       </trans-unit>
       <trans-unit id="Enable layout protection" xml:space="preserve">
         <source>Enable layout protection</source>
@@ -5259,6 +5265,11 @@ Proces nefunguje pre vstavaný displej (vyžaduje reštart). Operácia môže na
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
         <target state="translated">Rozbaľovacie položky sa otvárajú priamo v hlavnom menu aplikácie. Keď je voľba vypnutá, aplikácia zobrazí plávajúce podmenu vpravo alebo vľavo (podľa dostupného miesta).</target>
         <note>53477 - Expandable menu item behavior help.</note>
+      </trans-unit>
+      <trans-unit id="Expanding Menu Items" xml:space="preserve">
+        <source>Expanding Menu Items</source>
+        <target state="translated">Rozbaľovanie položiek menu</target>
+        <note>53627 - Settings section for the behavior of menu items that expand inside the app menu, including hiding other items and closing expanded items.</note>
       </trans-unit>
       <trans-unit id="Expanding menu items" xml:space="preserve">
         <source>Expanding menu items</source>
@@ -6168,6 +6179,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Posun úpravy obrazu</target>
         <note>53496 - Relative image adjustment offset. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
+      <trans-unit id="Image Adjustment Settings" xml:space="preserve">
+        <source>Image Adjustment Settings</source>
+        <target state="translated">Nastavenia úprav obrazu</target>
+        <note>53627 - Title of the per-display image adjustment settings sheet and its opening button. The sheet contains additional options for software image adjustments, dimming, combined brightness and related display behavior.</note>
+      </trans-unit>
       <trans-unit id="Image Adjustment for All Displays" xml:space="preserve">
         <source>Image Adjustment for All Displays</source>
         <target state="translated">Úprava obrazu pre všetky displeje</target>
@@ -6993,6 +7009,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Možnosti ikony v lište</target>
         <note>53477 - Menu bar icon settings heading.</note>
       </trans-unit>
+      <trans-unit id="Menu Item Icons" xml:space="preserve">
+        <source>Menu Item Icons</source>
+        <target state="translated">Ikony položiek menu</target>
+        <note>53627 - Settings section for the visibility of menu item and header icons and animation of the app menu icon.</note>
+      </trans-unit>
       <trans-unit id="Menu header icons" xml:space="preserve">
         <source>Menu header icons</source>
         <target state="translated">Ikony hlavičiek menu</target>
@@ -7253,15 +7274,15 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Stíšenie</target>
         <note>53477 - Audio mute control.</note>
       </trans-unit>
+      <trans-unit id="Mute Method" xml:space="preserve">
+        <source>Mute Method</source>
+        <target state="translated">Spôsob stíšenia</target>
+        <note>53627 - Audio settings section for choosing the order of volume changes and mute commands when muting a display.</note>
+      </trans-unit>
       <trans-unit id="Mute control" xml:space="preserve">
         <source>Mute control</source>
         <target state="translated">Ovládanie stíšenia</target>
         <note>53477 - Mute control setting.</note>
-      </trans-unit>
-      <trans-unit id="Mute method" xml:space="preserve">
-        <source>Mute method</source>
-        <target state="translated">Spôsob stíšenia</target>
-        <note>53477 - Mute implementation selection.</note>
       </trans-unit>
       <trans-unit id="Mute or unmute display using DDC (if the display is configured so)." xml:space="preserve">
         <source>Mute or unmute display using DDC (if the display is configured so).</source>
@@ -8198,11 +8219,6 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Poskytuje presné informácie o aktuálnej hodnote ovládacieho prvku a podľa potreby ďalšie údaje.</target>
         <note>53477 - Detailed control value feedback help.</note>
       </trans-unit>
-      <trans-unit id="Provides specialized control methods for various devices." xml:space="preserve">
-        <source>Provides specialized control methods for various devices.</source>
-        <target state="translated">Poskytuje špecializované spôsoby ovládania rôznych zariadení.</target>
-        <note>53477 - Device-specific controller help.</note>
-      </trans-unit>
       <trans-unit id="Provides various image control, volume control and virtual remote control capabilities for compatible LG webOS based smart TVs and displays." xml:space="preserve">
         <source>Provides various image control, volume control and virtual remote control capabilities for compatible LG webOS based smart TVs and displays.</source>
         <target state="translated">Poskytuje rôzne možnosti ovládania obrazu, hlasitosti a virtuálneho diaľkového ovládania pre kompatibilné inteligentné televízory a displeje LG webOS.</target>
@@ -8962,11 +8978,6 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <source>Returned content - ON (%@)</source>
         <target state="translated">Vrátený obsah – ZAPNUTÉ (%@)</target>
         <note>53477 - Expected on-state return content; placeholder is the matching mode.</note>
-      </trans-unit>
-      <trans-unit id="Review and configure volume control settings for this device." xml:space="preserve">
-        <source>Review and configure volume control settings for this device.</source>
-        <target state="translated">Skontrolovať a nakonfigurovať nastavenia ovládania hlasitosti tohto zariadenia.</target>
-        <note>53477 - Device volume control settings help.</note>
       </trans-unit>
       <trans-unit id="Right" xml:space="preserve">
         <source>Right</source>
@@ -11824,10 +11835,10 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <target state="translated">Zrušiť stíšenie</target>
         <note>53477 - Audio unmute action.</note>
       </trans-unit>
-      <trans-unit id="Unmute method" xml:space="preserve">
-        <source>Unmute method</source>
+      <trans-unit id="Unmute Method" xml:space="preserve">
+        <source>Unmute Method</source>
         <target state="translated">Spôsob zrušenia stíšenia</target>
-        <note>53477 - Audio unmute method setting.</note>
+        <note>53627 - Audio settings section for choosing the order of volume changes and unmute commands when restoring sound.</note>
       </trans-unit>
       <trans-unit id="Unmute only (except for volume change induced unmute, when set volume as well)" xml:space="preserve">
         <source>Unmute only (except for volume change induced unmute, when set volume as well)</source>
@@ -11951,7 +11962,8 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
       </trans-unit>
       <trans-unit id="Use dedicated queue" xml:space="preserve">
         <source>Use dedicated queue</source>
-        <note>53600 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue.</note>
+        <target state="translated">Používať vyhradený front</target>
+        <note>53627 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue.</note>
       </trans-unit>
       <trans-unit id="Use magnification slider instead of resolution slider" xml:space="preserve">
         <source>Use magnification slider instead of resolution slider</source>
@@ -12078,11 +12090,6 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <target state="translated">Živosť</target>
         <note>53477 - Vibrance image adjustment filter.</note>
       </trans-unit>
-      <trans-unit id="Video Control Settings" xml:space="preserve">
-        <source>Video Control Settings</source>
-        <target state="translated">Nastavenia ovládania obrazu</target>
-        <note>53477 - Video control settings section.</note>
-      </trans-unit>
       <trans-unit id="Video Filter Window" xml:space="preserve">
         <source>Video Filter Window</source>
         <target state="translated">Okno filtra videa</target>
@@ -12203,11 +12210,6 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <target state="translated">Hlasitosť</target>
         <note>53477 - Volume control label.</note>
       </trans-unit>
-      <trans-unit id="Volume Control" xml:space="preserve">
-        <source>Volume Control</source>
-        <target state="translated">Ovládanie hlasitosti</target>
-        <note>53477 - Volume control section title.</note>
-      </trans-unit>
       <trans-unit id="Volume Control Affects:" xml:space="preserve">
         <source>Volume Control Affects:</source>
         <target state="translated">Ovládanie hlasitosti ovplyvňuje:</target>
@@ -12323,6 +12325,11 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <target state="translated">Keď sú otvorené Nastavenia</target>
         <note>53477 - Settings-dependent visibility option.</note>
       </trans-unit>
+      <trans-unit id="When Volume Reaches 0⁠%…" xml:space="preserve">
+        <source>When Volume Reaches 0⁠%…</source>
+        <target state="translated">Keď hlasitosť dosiahne 0⁠%…</target>
+        <note>53627 - Audio settings section for choosing what happens when the volume reaches zero percent, including whether to use the configured mute and unmute methods.</note>
+      </trans-unit>
       <trans-unit id="When a Window is Open" xml:space="preserve">
         <source>When a Window is Open</source>
         <target state="translated">Keď je otvorené okno</target>
@@ -12382,11 +12389,6 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
         <target state="translated">Keď je voľba zapnutá, aplikácia použije systémové ovládanie zvuku zodpovedajúceho zvukového zariadenia (ak je dostupné) namiesto priameho hardvérového ovládania (cez DDC alebo integráciu ovládania). Správne zadajte názov zodpovedajúceho zvukového zariadenia. Funkcia je užitočná pri ovládaní hlasitosti zariadení s viacerými výstupmi, ktoré zahŕňajú displeje s hardvérovou hlasitosťou spravovanou aplikáciou (DDC, integrácia ovládania) aj displeje so systémovým ovládaním hlasitosti.</target>
         <note>53477 - Prefer associated native audio device volume control setting help.</note>
-      </trans-unit>
-      <trans-unit id="When volume reaches 0⁠%…" xml:space="preserve">
-        <source>When volume reaches 0⁠%…</source>
-        <target state="translated">Keď hlasitosť dosiahne 0⁠%…</target>
-        <note>53477 - Zero volume behavior setting heading.</note>
       </trans-unit>
       <trans-unit id="Width" xml:space="preserve">
         <source>Width</source>

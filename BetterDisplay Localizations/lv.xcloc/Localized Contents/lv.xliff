@@ -1054,11 +1054,6 @@ Paldies par sapratni un pastāvīgo atbalstu.</target>
         <target state="translated">Papildu iestatījumi…</target>
         <note>53477 - Action opening additional settings.</note>
       </trans-unit>
-      <trans-unit id="Additional controllers" xml:space="preserve">
-        <source>Additional controllers</source>
-        <target state="translated">Papildu kontrolieri</target>
-        <note>53477 - Additional device controllers section.</note>
-      </trans-unit>
       <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
         <source>Additional delay after wake to reapply DDC settings</source>
         <target state="translated">Papildu aizkave pēc pamošanās, lai atkārtoti lietotu DDC iestatījumus</target>
@@ -1103,11 +1098,6 @@ Paldies par sapratni un pastāvīgo atbalstu.</target>
         <source>Advanced</source>
         <target state="translated">Papildu</target>
         <note>53477 - Advanced options section or level.</note>
-      </trans-unit>
-      <trans-unit id="Advanced Control Settings" xml:space="preserve">
-        <source>Advanced Control Settings</source>
-        <target state="translated">Papildu vadības iestatījumi</target>
-        <note>53477 - Advanced device control settings section.</note>
       </trans-unit>
       <trans-unit id="Advanced DDC Settings" xml:space="preserve">
         <source>Advanced DDC Settings</source>
@@ -1414,7 +1404,8 @@ This change cannot be undone. Are you sure you want to do this?</source>
       </trans-unit>
       <trans-unit id="Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility." xml:space="preserve">
         <source>Allows this display’s DDC commands to run independently of other displays, improving responsiveness in multi-display setups. If displays experience communication difficulties, turning this off for all affected displays may improve compatibility.</source>
-        <note>53600 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility.</note>
+        <target state="translated">Ļauj šī displeja DDC komandas izpildīt neatkarīgi no citiem displejiem, uzlabojot reaģētspēju vairāku displeju konfigurācijās. Ja displejiem rodas saziņas grūtības, šīs opcijas izslēgšana visiem skartajiem displejiem var uzlabot saderību.</target>
+        <note>53627 - Help for the per-display dedicated DDC queue switch. Disabling the switch on every affected display makes their DDC operations share a serial queue, which may help with dock or adapter compatibility.</note>
       </trans-unit>
       <trans-unit id="Alpha" xml:space="preserve">
         <source>Alpha</source>
@@ -1586,10 +1577,10 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">Lietotnei jāmēģina atkārtoti izveidot savienojumu ar ierīci ikreiz, kad rodas tīkla kļūda.</target>
         <note>53477 - Network controller automatic reconnection help.</note>
       </trans-unit>
-      <trans-unit id="Apple" xml:space="preserve">
-        <source>Apple</source>
-        <target state="translated">Apple</target>
-        <note>53477 - Manufacturer name; retain the brand.</note>
+      <trans-unit id="Apple Brightness Control" xml:space="preserve">
+        <source>Apple Brightness Control</source>
+        <target state="translated">Apple spilgtuma vadība</target>
+        <note>53627 - Controller name shown in Device Control settings and the Add Controller menu. This controls Apple display brightness through the existing native or built-in direct brightness controller, according to the display settings.</note>
       </trans-unit>
       <trans-unit id="Apple Built-in XDR Direct" xml:space="preserve">
         <source>Apple Built-in XDR Direct</source>
@@ -1812,15 +1803,15 @@ NVRAM notīrīšana noņem arī zema līmeņa programmaparatūras preferences, p
         <target state="translated">Saistīt šo virtuālo ekrānu ar īstu(-iem) displeju(-iem)</target>
         <note>53477 - Virtual screen association setting allowing one or more real displays.</note>
       </trans-unit>
+      <trans-unit id="Associated Displays" xml:space="preserve">
+        <source>Associated Displays</source>
+        <target state="translated">Saistītie displeji</target>
+        <note>53627 - Settings section listing physical displays associated with a virtual screen. Association links the virtual screen to the selected displays.</note>
+      </trans-unit>
       <trans-unit id="Associated audio device name" xml:space="preserve">
         <source>Associated audio device name</source>
         <target state="translated">Saistītās audio ierīces nosaukums</target>
         <note>53477 - Associated audio device name field.</note>
-      </trans-unit>
-      <trans-unit id="Associated displays" xml:space="preserve">
-        <source>Associated displays</source>
-        <target state="translated">Saistītie displeji</target>
-        <note>53477 - Associated display list label.</note>
       </trans-unit>
       <trans-unit id="Associated to" xml:space="preserve">
         <source>Associated to</source>
@@ -2616,6 +2607,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Notiek pārbaude…</target>
         <note>53477 - General check progress status.</note>
       </trans-unit>
+      <trans-unit id="Choose control methods for your device, including hardware controllers and custom integrations." xml:space="preserve">
+        <source>Choose control methods for your device, including hardware controllers and custom integrations.</source>
+        <target state="translated">Izvēlieties ierīces vadības metodes, tostarp aparatūras kontrolierus un pielāgotas integrācijas.</target>
+        <note>53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.</note>
+      </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
         <target state="translated">Hromas iztveršana</target>
@@ -2876,6 +2872,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Konfigurējiet DDC skaļuma un skaņas izslēgšanas vadības atbalstu sadaļā „DDC vadīklas…” vai iestatiet alternatīvu vadības metodi, izmantojot vadības integrāciju.</target>
         <note>53477 - Volume/mute setup help pointing to DDC controls or control integration.</note>
       </trans-unit>
+      <trans-unit id="Configure Device Control" xml:space="preserve">
+        <source>Configure Device Control</source>
+        <target state="translated">Konfigurēt ierīces vadību</target>
+        <note>53627 - Heading for the controller picker in per-display Device Control settings, above the configured controllers. Users can add hardware control methods suitable for the selected device.</note>
+      </trans-unit>
       <trans-unit id="Configure DisplayLink…" xml:space="preserve">
         <source>Configure DisplayLink…</source>
         <target state="translated">Konfigurēt DisplayLink…</target>
@@ -2960,6 +2961,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <source>Configure resolution options for %@</source>
         <target state="translated">Konfigurēt izšķirtspējas opcijas displejam %@</target>
         <note>53477 - Display resolution configuration action.</note>
+      </trans-unit>
+      <trans-unit id="Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options." xml:space="preserve">
+        <source>Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options.</source>
+        <target state="translated">Konfigurējiet šī displeja kontrolieru kopīgos iestatījumus. „Skaļuma vadība” ļauj piesaistīt audioierīci, pielāgot skaņas izslēgšanas darbību un rādīt vai slēpt skaļuma indikatoru ekrānā. „Vadības iestatījumi” nodrošina spilgtuma preferences un citas vispārīgas ierīces vadības opcijas.</target>
+        <note>53627 - Help above the Volume Control and Device Control Settings buttons below the configured controllers. Volume feedback is the onscreen volume indicator; associating an audio device links its volume control to this display.</note>
       </trans-unit>
       <trans-unit id="Configure the custom EDID for a display." xml:space="preserve">
         <source>Configure the custom EDID for a display.</source>
@@ -3145,6 +3151,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <source>Control</source>
         <target state="translated">Vadīkla</target>
         <note>53477 - Individual controllable feature label.</note>
+      </trans-unit>
+      <trans-unit id="Control Integration" xml:space="preserve">
+        <source>Control Integration</source>
+        <target state="translated">Vadības integrācija</target>
+        <note>53627 - Controller name shown in Device Control settings and the Add Controller menu. This enables custom device controls and display event actions while preserving their saved configuration.</note>
       </trans-unit>
       <trans-unit id="Control Settings" xml:space="preserve">
         <source>Control Settings</source>
@@ -3531,6 +3542,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Pielāgot izvēlnes opcijas</target>
         <note>53477 - Menu option customization action.</note>
       </trans-unit>
+      <trans-unit id="Customize device controls and automate display events using shell commands, URLs and macOS notifications." xml:space="preserve">
+        <source>Customize device controls and automate display events using shell commands, URLs and macOS notifications.</source>
+        <target state="translated">Pielāgojiet ierīces vadīklas un automatizējiet displeja notikumus, izmantojot čaulas komandas, URL un macOS paziņojumus.</target>
+        <note>53627 - Description of Control Integration in per-display settings. Controls and display events can invoke shell commands, URLs or macOS interprocess notifications, not user-visible notification banners.</note>
+      </trans-unit>
       <trans-unit id="Customize input source list for this display" xml:space="preserve">
         <source>Customize input source list for this display</source>
         <target state="translated">Pielāgot šī displeja ievades avotu sarakstu</target>
@@ -3556,15 +3572,15 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Izgriezt</target>
         <note>53477 - Cut editing action.</note>
       </trans-unit>
-      <trans-unit id="DDC" xml:space="preserve">
-        <source>DDC</source>
-        <target state="translated">DDC</target>
-        <note>53477 - Display Data Channel protocol abbreviation; retain it.</note>
-      </trans-unit>
       <trans-unit id="DDC Command" xml:space="preserve">
         <source>DDC Command</source>
         <target state="translated">DDC komanda</target>
         <note>53477 - DDC command label.</note>
+      </trans-unit>
+      <trans-unit id="DDC Control" xml:space="preserve">
+        <source>DDC Control</source>
+        <target state="translated">DDC vadība</target>
+        <note>53627 - Controller name shown in the Device Control settings block and Add Controller menu. DDC is the external display hardware control protocol used for brightness, volume, input selection and other monitor features.</note>
       </trans-unit>
       <trans-unit id="DDC Input Source Control" xml:space="preserve">
         <source>DDC Input Source Control</source>
@@ -4396,6 +4412,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Displeja informācija…</target>
         <note>53477 - Action opening display information.</note>
       </trans-unit>
+      <trans-unit id="Display Menu Options" xml:space="preserve">
+        <source>Display Menu Options</source>
+        <target state="translated">Displeja izvēlnes opcijas</target>
+        <note>53627 - Settings section for the ordering, headers, and controls of per-display menus in the app menu.</note>
+      </trans-unit>
       <trans-unit id="Display Miscellaneous" xml:space="preserve">
         <source>Display Miscellaneous</source>
         <target state="translated">Citi displeja iestatījumi</target>
@@ -4840,11 +4861,6 @@ Process nedarbojas ar iebūvēto displeju (nepieciešama restartēšana). Darbī
         <target state="translated">Iespējot visas aizsardzības</target>
         <note>53477 - Action enabling all configuration protections.</note>
       </trans-unit>
-      <trans-unit id="Enable Apple display hardware brightness control" xml:space="preserve">
-        <source>Enable Apple display hardware brightness control</source>
-        <target state="translated">Iespējot Apple displeja aparatūras spilgtuma vadību</target>
-        <note>53477 - Native Apple hardware brightness control setting.</note>
-      </trans-unit>
       <trans-unit id="Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state." xml:space="preserve">
         <source>Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state.</source>
         <target state="translated">Iespējot CEC tuneli, ja macOS automātiski neiespējo adaptera CEC tuneļa vadības stāvokli.</target>
@@ -4864,11 +4880,6 @@ Process nedarbojas ar iebūvēto displeju (nepieciešama restartēšana). Darbī
         <source>Enable Cropping</source>
         <target state="translated">Iespējot apgriešanu</target>
         <note>53477 - Stream crop enablement setting.</note>
-      </trans-unit>
-      <trans-unit id="Enable DDC control" xml:space="preserve">
-        <source>Enable DDC control</source>
-        <target state="translated">Iespējot DDC vadību</target>
-        <note>53477 - DDC control enablement setting.</note>
       </trans-unit>
       <trans-unit id="Enable Dark Mode" xml:space="preserve">
         <source>Enable Dark Mode</source>
@@ -4979,11 +4990,6 @@ Process nedarbojas ar iebūvēto displeju (nepieciešama restartēšana). Darbī
         <source>Enable integrated HTTP server</source>
         <target state="translated">Iespējot iebūvēto HTTP serveri</target>
         <note>53477 - Built-in HTTP integration server enablement setting.</note>
-      </trans-unit>
-      <trans-unit id="Enable integration features" xml:space="preserve">
-        <source>Enable integration features</source>
-        <target state="translated">Iespējot integrācijas funkcijas</target>
-        <note>53477 - Toggle for external integration features.</note>
       </trans-unit>
       <trans-unit id="Enable layout protection" xml:space="preserve">
         <source>Enable layout protection</source>
@@ -5214,6 +5220,11 @@ Process nedarbojas ar iebūvēto displeju (nepieciešama restartēšana). Darbī
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
         <target state="translated">Paplašināmie izvēlnes vienumi atveras galvenajā lietotnes izvēlnē. Kad šī opcija ir izslēgta, lietotne rāda peldošu uznirstošo apakšizvēlni pa labi vai pa kreisi (atkarībā no pieejamās vietas).</target>
         <note>53477 - Expandable menu item behavior help.</note>
+      </trans-unit>
+      <trans-unit id="Expanding Menu Items" xml:space="preserve">
+        <source>Expanding Menu Items</source>
+        <target state="translated">Paplašināmie izvēlnes vienumi</target>
+        <note>53627 - Settings section for the behavior of menu items that expand inside the app menu, including hiding other items and closing expanded items.</note>
       </trans-unit>
       <trans-unit id="Expanding menu items" xml:space="preserve">
         <source>Expanding menu items</source>
@@ -6123,6 +6134,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Attēla regulējuma nobīde</target>
         <note>53496 - Relative image adjustment offset. Image adjustment means changing properties such as brightness, contrast, or color.</note>
       </trans-unit>
+      <trans-unit id="Image Adjustment Settings" xml:space="preserve">
+        <source>Image Adjustment Settings</source>
+        <target state="translated">Attēla regulējumu iestatījumi</target>
+        <note>53627 - Title of the per-display image adjustment settings sheet and its opening button. The sheet contains additional options for software image adjustments, dimming, combined brightness and related display behavior.</note>
+      </trans-unit>
       <trans-unit id="Image Adjustment for All Displays" xml:space="preserve">
         <source>Image Adjustment for All Displays</source>
         <target state="translated">Attēla regulējums visiem displejiem</target>
@@ -6948,6 +6964,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Izvēlņu joslas ikonas opcijas</target>
         <note>53477 - Menu bar icon settings heading.</note>
       </trans-unit>
+      <trans-unit id="Menu Item Icons" xml:space="preserve">
+        <source>Menu Item Icons</source>
+        <target state="translated">Izvēlnes vienumu ikonas</target>
+        <note>53627 - Settings section for the visibility of menu item and header icons and animation of the app menu icon.</note>
+      </trans-unit>
       <trans-unit id="Menu header icons" xml:space="preserve">
         <source>Menu header icons</source>
         <target state="translated">Izvēlnes galvenes ikonas</target>
@@ -7208,15 +7229,15 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Skaņas izslēgšana</target>
         <note>53477 - Audio mute control.</note>
       </trans-unit>
+      <trans-unit id="Mute Method" xml:space="preserve">
+        <source>Mute Method</source>
+        <target state="translated">Skaņas izslēgšanas metode</target>
+        <note>53627 - Audio settings section for choosing the order of volume changes and mute commands when muting a display.</note>
+      </trans-unit>
       <trans-unit id="Mute control" xml:space="preserve">
         <source>Mute control</source>
         <target state="translated">Skaņas izslēgšanas vadība</target>
         <note>53477 - Mute control setting.</note>
-      </trans-unit>
-      <trans-unit id="Mute method" xml:space="preserve">
-        <source>Mute method</source>
-        <target state="translated">Skaņas izslēgšanas metode</target>
-        <note>53477 - Mute implementation selection.</note>
       </trans-unit>
       <trans-unit id="Mute or unmute display using DDC (if the display is configured so)." xml:space="preserve">
         <source>Mute or unmute display using DDC (if the display is configured so).</source>
@@ -8153,11 +8174,6 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Sniedz precīzu atgriezenisko saiti par pašreizējo vadīklas vērtību ar papildu informāciju, ja tas ir būtiski.</target>
         <note>53477 - Detailed control value feedback help.</note>
       </trans-unit>
-      <trans-unit id="Provides specialized control methods for various devices." xml:space="preserve">
-        <source>Provides specialized control methods for various devices.</source>
-        <target state="translated">Nodrošina specializētas vadības metodes dažādām ierīcēm.</target>
-        <note>53477 - Device-specific controller help.</note>
-      </trans-unit>
       <trans-unit id="Provides various image control, volume control and virtual remote control capabilities for compatible LG webOS based smart TVs and displays." xml:space="preserve">
         <source>Provides various image control, volume control and virtual remote control capabilities for compatible LG webOS based smart TVs and displays.</source>
         <target state="translated">Nodrošina dažādas attēla vadības, skaļuma vadības un virtuālās tālvadības iespējas saderīgiem LG webOS viedajiem televizoriem un displejiem.</target>
@@ -8917,11 +8933,6 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Returned content - ON (%@)</source>
         <target state="translated">Atgrieztais saturs — ON (%@)</target>
         <note>53477 - Expected on-state return content; placeholder is the matching mode.</note>
-      </trans-unit>
-      <trans-unit id="Review and configure volume control settings for this device." xml:space="preserve">
-        <source>Review and configure volume control settings for this device.</source>
-        <target state="translated">Pārskatiet un konfigurējiet šīs ierīces skaļuma vadības iestatījumus.</target>
-        <note>53477 - Device volume control settings help.</note>
       </trans-unit>
       <trans-unit id="Right" xml:space="preserve">
         <source>Right</source>
@@ -11754,10 +11765,10 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Ieslēgt skaņu</target>
         <note>53477 - Audio unmute action.</note>
       </trans-unit>
-      <trans-unit id="Unmute method" xml:space="preserve">
-        <source>Unmute method</source>
+      <trans-unit id="Unmute Method" xml:space="preserve">
+        <source>Unmute Method</source>
         <target state="translated">Skaņas ieslēgšanas metode</target>
-        <note>53477 - Audio unmute method setting.</note>
+        <note>53627 - Audio settings section for choosing the order of volume changes and unmute commands when restoring sound.</note>
       </trans-unit>
       <trans-unit id="Unmute only (except for volume change induced unmute, when set volume as well)" xml:space="preserve">
         <source>Unmute only (except for volume change induced unmute, when set volume as well)</source>
@@ -11881,7 +11892,8 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
       </trans-unit>
       <trans-unit id="Use dedicated queue" xml:space="preserve">
         <source>Use dedicated queue</source>
-        <note>53600 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue.</note>
+        <target state="translated">Lietot atsevišķu rindu</target>
+        <note>53627 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue.</note>
       </trans-unit>
       <trans-unit id="Use magnification slider instead of resolution slider" xml:space="preserve">
         <source>Use magnification slider instead of resolution slider</source>
@@ -12008,11 +12020,6 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Dzīvīgums</target>
         <note>53477 - Vibrance image adjustment filter.</note>
       </trans-unit>
-      <trans-unit id="Video Control Settings" xml:space="preserve">
-        <source>Video Control Settings</source>
-        <target state="translated">Video vadības iestatījumi</target>
-        <note>53477 - Video control settings section.</note>
-      </trans-unit>
       <trans-unit id="Video Filter Window" xml:space="preserve">
         <source>Video Filter Window</source>
         <target state="translated">Video filtra logs</target>
@@ -12133,11 +12140,6 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Skaļums</target>
         <note>53477 - Volume control label.</note>
       </trans-unit>
-      <trans-unit id="Volume Control" xml:space="preserve">
-        <source>Volume Control</source>
-        <target state="translated">Skaļuma vadība</target>
-        <note>53477 - Volume control section title.</note>
-      </trans-unit>
       <trans-unit id="Volume Control Affects:" xml:space="preserve">
         <source>Volume Control Affects:</source>
         <target state="translated">Skaļuma vadība ietekmē:</target>
@@ -12253,6 +12255,11 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Kad iestatījumi ir atvērti</target>
         <note>53477 - Settings-dependent visibility option.</note>
       </trans-unit>
+      <trans-unit id="When Volume Reaches 0⁠%…" xml:space="preserve">
+        <source>When Volume Reaches 0⁠%…</source>
+        <target state="translated">Kad skaļums sasniedz 0⁠%…</target>
+        <note>53627 - Audio settings section for choosing what happens when the volume reaches zero percent, including whether to use the configured mute and unmute methods.</note>
+      </trans-unit>
       <trans-unit id="When a Window is Open" xml:space="preserve">
         <source>When a Window is Open</source>
         <target state="translated">Kad logs ir atvērts</target>
@@ -12312,11 +12319,6 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
         <target state="translated">Kad šī opcija ir iespējota, lietotne izmantos atbilstošās audio ierīces sistēmas audio vadīklas (ja pieejamas), nevis tiešu aparatūras vadību (izmantojot DDC vai vadīklas integrāciju). Pārliecinieties, ka atbilstošās audio ierīces nosaukums ir norādīts pareizi. Šī funkcija ir noderīga, lai vadītu tādu audio ierīču ar vairākām izejām skaļumu, kurās ir gan displeji ar lietotnes pārvaldītu aparatūras (DDC, vadīklas integrācijas) skaļuma vadību, gan displeji ar sistēmas skaļuma vadību.</target>
         <note>53477 - Prefer associated native audio device volume control setting help.</note>
-      </trans-unit>
-      <trans-unit id="When volume reaches 0⁠%…" xml:space="preserve">
-        <source>When volume reaches 0⁠%…</source>
-        <target state="translated">Kad skaļums sasniedz 0⁠%…</target>
-        <note>53477 - Zero volume behavior setting heading.</note>
       </trans-unit>
       <trans-unit id="Width" xml:space="preserve">
         <source>Width</source>
