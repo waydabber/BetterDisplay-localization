@@ -240,7 +240,7 @@ window.BD_LOCALIZATION = {
       "fa": "لطفاً مراقب وب‌سایت‌های تقلّبی باشید که دانلود ارائه می‌کنند یا درخواست پرداخت دارند.",
       "hi": "कृपया डाउनलोड की पेशकश करने या भुगतान माँगने वाली नकली वेबसाइटों से सावधान रहें।",
       "th": "โปรดระวังเว็บไซต์เลียนแบบที่ให้ดาวน์โหลดหรือขอให้ชำระเงิน",
-      "ja": "ダウンロードを提供したり、支払いを求めたりする偽サイトにご注意ください。",
+      "ja": "ダウンロードを提供したり、支払いを求めたりする偽のWebサイトにご注意ください。",
       "zh-Hans": "请警惕提供下载或要求付款的仿冒网站。",
       "zh-Hant": "請留意提供下載或要求付款的仿冒網站。",
       "ko": "다운로드를 제공하거나 결제를 요구하는 사칭 웹사이트에 주의하세요."
@@ -281,7 +281,7 @@ window.BD_LOCALIZATION = {
       "fa": "وب‌سایت رسمی <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a> و مخزن GitHub ‏<a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a> است.",
       "hi": "आधिकारिक साइट <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a> है और GitHub रिपॉज़िटरी <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a> है।",
       "th": "เว็บไซต์ทางการคือ <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a> และคลัง GitHub คือ <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a>",
-      "ja": "公式サイトは <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a>、GitHub リポジトリは <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a> です。",
+      "ja": "公式サイトは <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a>、GitHubリポジトリは <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a> です。",
       "zh-Hans": "官方网站为 <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a>，GitHub 仓库为 <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a>。",
       "zh-Hant": "官方網站為 <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a>，GitHub 儲存庫為 <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a>。",
       "ko": "공식 사이트는 <a href=\"https://betterdisplay.pro\">betterdisplay.pro</a>이며, GitHub 저장소는 <a href=\"https://github.com/waydabber/BetterDisplay\">waydabber/BetterDisplay</a>입니다."
@@ -404,7 +404,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل‌های پوسته برای اشکال‌زدایی",
       "hi": "थीम डीबग नियंत्रण",
       "th": "ตัวควบคุมธีมสำหรับแก้จุดบกพร่อง",
-      "ja": "テーマのデバッグコントロール",
+      "ja": "テーマのデバッグ制御を操作",
       "zh-Hans": "主题调试控件",
       "zh-Hant": "主題除錯控制項",
       "ko": "테마 디버그 제어"
@@ -609,7 +609,7 @@ window.BD_LOCALIZATION = {
       "fa": "صفحهٔ اصلی BetterDisplay",
       "hi": "BetterDisplay का मुख्य पृष्ठ",
       "th": "หน้าแรก BetterDisplay",
-      "ja": "BetterDisplay ホーム",
+      "ja": "BetterDisplayホーム",
       "zh-Hans": "BetterDisplay 首页",
       "zh-Hant": "BetterDisplay 首頁",
       "ko": "BetterDisplay 홈"
@@ -691,7 +691,7 @@ window.BD_LOCALIZATION = {
       "fa": "مشاهدهٔ BetterDisplay در GitHub و ستاره دادن به آن",
       "hi": "GitHub पर BetterDisplay देखें और स्टार दें",
       "th": "ดูและติดดาว BetterDisplay บน GitHub",
-      "ja": "GitHubでBetterDisplayを表示してスターを付ける",
+      "ja": "GitHubでBetterDisplayを表示して★を付ける",
       "zh-Hans": "在 GitHub 上查看 BetterDisplay 并加星标",
       "zh-Hant": "在 GitHub 上查看 BetterDisplay 並加上星號",
       "ko": "GitHub에서 BetterDisplay를 보고 별표 추가"
@@ -1388,7 +1388,7 @@ window.BD_LOCALIZATION = {
       "fa": "آمار پروژه",
       "hi": "प्रोजेक्ट के आँकड़े",
       "th": "สถิติโครงการ",
-      "ja": "プロジェクトの統計",
+      "ja": "プロジェクトメトリクス",
       "zh-Hans": "项目统计",
       "zh-Hant": "專案統計",
       "ko": "프로젝트 통계"
@@ -1511,7 +1511,7 @@ window.BD_LOCALIZATION = {
       "fa": "تصویری از برنامهٔ BetterDisplay روی میزکار macOS",
       "hi": "macOS डेस्कटॉप पर BetterDisplay ऐप का स्क्रीनशॉट",
       "th": "ภาพหน้าจอแอป BetterDisplay บนเดสก์ท็อป macOS",
-      "ja": "macOSデスクトップ上のBetterDisplayアプリのスクリーンショット",
+      "ja": "macOSデスクトップのBetterDisplayアプリのスクリーンショット",
       "zh-Hans": "macOS 桌面上的 BetterDisplay 应用截图",
       "zh-Hant": "macOS 桌面上的 BetterDisplay App 螢幕截圖",
       "ko": "macOS 데스크탑의 BetterDisplay 앱 스크린샷"
@@ -1552,7 +1552,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong> ابزاری واقعاً عالی است! با آن می‌توانید نمایشگرهایتان را به <strong>صفحه‌هایی با مقیاس کاملاً قابل تنظیم</strong> تبدیل کنید، <strong>بازنویسی‌های پیکربندی نمایشگر</strong> را مدیریت کنید، <strong>روشنایی و رنگ را کنترل کنید</strong>، از <strong>افزایش روشنایی XDR/HDR</strong> (روشنایی بیشتر) بهره ببرید، صفحه را <strong>کاملاً تاریک کنید</strong> تا سیاه شود، برای Mac خود <strong>صفحه‌های مجازی بسازید و مدیریت کنید</strong> و از نمایشگرها پنجره‌های <strong>تصویر در تصویر</strong> ایجاد کنید. همچنین امکانات فراوانی برای <strong>مدیریت تنظیمات نمایشگر</strong>، مانند حالت‌های نمایش و رنگ، به‌سادگی از نوار منو در اختیار شما قرار می‌دهد. حتی می‌توانید هنگام کار <strong>اتصال نمایشگرها را قطع و دوباره برقرار کنید</strong>!",
       "hi": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong> वाकई एक शानदार टूल है! यह आपके डिस्प्ले को <strong>पूरी तरह स्केल की जा सकने वाली स्क्रीन</strong> में बदलने, <strong>डिस्प्ले कॉन्फ़िगरेशन ओवरराइड</strong> प्रबंधित करने, <strong>ब्राइटनेस और रंग नियंत्रित करने</strong>, <strong>XDR/HDR ब्राइटनेस की अपस्केलिंग करने</strong> (अतिरिक्त ब्राइटनेस), स्क्रीन की <strong>रोशनी पूरी तरह कम करके उसे काला करने</strong>, अपने Mac के लिए <strong>वर्चुअल स्क्रीन बनाने और प्रबंधित करने</strong> तथा डिस्प्ले से <strong>पिक्चर इन पिक्चर</strong> विंडो बनाने की सुविधा देता है। साथ ही, मेनू बार से डिस्प्ले और रंग मोड जैसी <strong>डिस्प्ले सेटिंग्ज़ प्रबंधित करने</strong> के लिए कई अन्य सुविधाएँ भी देता है। आप काम करते-करते <strong>डिस्प्ले डिस्कनेक्ट और फिर से कनेक्ट</strong> भी कर सकते हैं!",
       "th": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong> เป็นเครื่องมือที่ยอดเยี่ยมจริง ๆ! ช่วยให้คุณเปลี่ยนจอภาพเป็น<strong>หน้าจอที่ปรับสเกลได้อย่างเต็มรูปแบบ</strong> จัดการ<strong>การแทนที่การกำหนดค่าจอภาพ</strong> <strong>ควบคุมความสว่างและสี</strong> ใช้<strong>การเพิ่มความสว่าง XDR/HDR</strong> (ความสว่างเพิ่มเติม) <strong>หรี่แสงจนมืดสนิท</strong>เป็นสีดำ <strong>สร้างและจัดการหน้าจอเสมือน</strong>สำหรับ Mac และสร้าง<strong>หน้าต่างย่อยในหน้าต่างหลัก</strong>จากจอภาพของคุณ พร้อมคุณสมบัติอื่นอีกมากมายเพื่อ<strong>จัดการการตั้งค่าจอภาพ</strong> เช่น โหมดการแสดงผลและสี ได้อย่างง่ายดายจากแถบเมนู คุณยังสามารถ<strong>ตัดการเชื่อมต่อและเชื่อมต่อจอภาพใหม่</strong>ได้ทันทีขณะใช้งาน!",
-      "ja": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong>は、実に素晴らしいツールです! ディスプレイの画面を<strong>自由にサイズ調整</strong>できたり、<strong>ディスプレイ構成のオーバーライド</strong>の管理、<strong>輝度やカラーを制御</strong>できます。さらに、<strong>XDR/HDRの輝度アップスケーリング</strong>（追加輝度）、ブラックまでの<strong>フルディミング</strong>（完全な減光）、Mac用の<strong>仮想スクリーンの作成と管理</strong>、ディスプレイの<strong>ピクチャインピクチャ</strong>ウインドウの作成に対応しています。表示モードやカラーモードなどの<strong>ディスプレイ設定を管理する</strong>ための機能も豊富にあり、メニューバーから簡単に操作できます。使用中の<strong>ディスプレイを直接切断したり再接続</strong>することも可能です!",
+      "ja": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong>は、本当にすばらしいツールです! ディスプレイの画面を<strong>自由にサイズ調整</strong>したり、<strong>ディスプレイ構成をオーバーライド</strong>管理したり、<strong>輝度やカラーを制御</strong>したりできます。さらに、<strong>XDR/HDRの輝度アップスケーリング</strong>（追加輝度）、ブラック（完全減光）までの<strong>フルディミング</strong>、Mac用の<strong>仮想スクリーンの作成と管理</strong>、ディスプレイの<strong>ピクチャインピクチャ</strong>ウインドウの作成に対応しています。表示モードやカラーモードなどの<strong>ディスプレイ設定を管理する</strong>ための機能も豊富にあり、メニューバーから簡単に操作できます。使用中の<strong>ディスプレイを切断したり再接続</strong>することも可能です!",
       "zh-Hans": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong> 是一款出色的工具！它能将显示器变成<strong>可自由缩放的屏幕</strong>，管理<strong>显示器配置覆盖</strong>，提供<strong>亮度和色彩控制</strong>、<strong>XDR/HDR 亮度提升</strong>（额外亮度）以及直至全黑的<strong>完全调暗</strong>功能。它还可以为 Mac <strong>创建和管理虚拟屏幕</strong>，将显示器内容放入<strong>画中画</strong>窗口，并提供丰富的功能，让你从菜单栏轻松<strong>管理显示器设置</strong>，例如显示模式和色彩模式。你甚至可以随时<strong>断开和重新连接显示器</strong>！",
       "zh-Hant": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong> 是一款非常出色的工具！它能將顯示器變成<strong>可自由縮放的螢幕</strong>，管理<strong>顯示器設定覆寫</strong>，提供<strong>亮度與色彩控制</strong>、<strong>XDR/HDR 亮度提升</strong>（額外亮度），以及直到全黑的<strong>完全調暗</strong>功能。它還能為 Mac <strong>建立及管理虛擬螢幕</strong>，將顯示器內容放入<strong>子母畫面</strong>視窗，並提供豐富的功能，讓你從選單列輕鬆<strong>管理顯示器設定</strong>，例如顯示模式與色彩模式。你甚至可以隨時<strong>中斷並重新連接顯示器</strong>！",
       "ko": "<strong><span class=\"quote-inline\">&ldquo;</span>BetterDisplay</strong>는 정말 훌륭한 도구입니다! 디스플레이를 <strong>자유롭게 크기를 조절할 수 있는 화면</strong>으로 바꾸고, <strong>디스플레이 구성 재정의</strong>를 관리하며, <strong>밝기와 색상을 제어</strong>할 수 있습니다. 또한 <strong>XDR/HDR 밝기 업스케일링</strong>(추가 밝기), 검은색까지의 <strong>완전한 디밍</strong>, Mac용 <strong>가상 화면 생성 및 관리</strong>, 디스플레이의 <strong>화면 속 화면</strong> 윈도우 생성을 지원합니다. 디스플레이 모드와 색상 모드 같은 <strong>디스플레이 설정을 관리</strong>하는 다양한 기능도 메뉴 막대에서 간편하게 사용할 수 있습니다. 사용 중에 <strong>디스플레이 연결을 해제하고 다시 연결</strong>할 수도 있습니다!"
@@ -1634,7 +1634,7 @@ window.BD_LOCALIZATION = {
       "fa": "قابلیت‌های برجستهٔ BetterDisplay",
       "hi": "BetterDisplay की प्रमुख सुविधाएँ",
       "th": "คุณสมบัติเด่นของ BetterDisplay",
-      "ja": "BetterDisplayの主な機能",
+      "ja": "BetterDisplayの主な特徴",
       "zh-Hans": "BetterDisplay 特色功能",
       "zh-Hant": "BetterDisplay 特色功能",
       "ko": "BetterDisplay 주요 기능"
@@ -1716,7 +1716,7 @@ window.BD_LOCALIZATION = {
       "fa": "صفحه را با <strong>افزایش وضوح لبه‌ها</strong>، <strong>هندسه</strong> و <strong>تنظیمات رنگ</strong> پیشرفته دقیق تنظیم کنید.",
       "hi": "<strong>शार्पनिंग</strong>, <strong>ज्यामिति</strong> और उन्नत <strong>रंग समायोजन</strong> से स्क्रीन को बारीकी से सेट करें।",
       "th": "ปรับหน้าจออย่างละเอียดด้วย<strong>การเพิ่มความคมชัด</strong> <strong>เรขาคณิต</strong> และ<strong>การปรับสี</strong>ขั้นสูง",
-      "ja": "<strong>シャープネス</strong>、<strong>ジオメトリ</strong>、高度な<strong>色調整</strong>で画面を細かく調整できます。",
+      "ja": "<strong>シャープネス</strong>、<strong>ジオメトリ</strong>、高度な<strong>カラー調整</strong>で画面を細かく調整できます。",
       "zh-Hans": "通过<strong>锐化</strong>、<strong>几何调整</strong>和高级<strong>色彩调整</strong>精细调节屏幕。",
       "zh-Hant": "透過<strong>銳利化</strong>、<strong>幾何調整</strong>與進階<strong>色彩調整</strong>微調螢幕。",
       "ko": "<strong>선명도</strong>, <strong>기하 조정</strong>, 고급 <strong>색상 조정</strong>으로 화면을 세밀하게 조절하세요."
@@ -1757,7 +1757,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>جدول‌های 3D LUT سفارشی</strong> را روی نمایشگر یا فیلترهای ویدیویی <strong>تصویر در تصویر و ارسال تصویر</strong> اعمال کنید.",
       "hi": "अपने डिस्प्ले या <strong>PIP और स्ट्रीमिंग</strong> वीडियो फ़िल्टर पर <strong>कस्टम 3D LUT</strong> लागू करें।",
       "th": "ใช้ <strong>3D LUT แบบกำหนดเอง</strong>กับจอภาพหรือตัวกรองวิดีโอสำหรับ <strong>PIP และการสตรีม</strong>",
-      "ja": "ディスプレイや<strong>PIP・ストリーミング</strong>のビデオフィルタに、<strong>カスタム3D LUT</strong>を適用できます。",
+      "ja": "ディスプレイや<strong>PIP、ストリーミング</strong>のビデオフィルタに、<strong>カスタム3D LUT</strong>を適用できます。",
       "zh-Hans": "将<strong>自定义 3D LUT</strong> 应用于显示器或 <strong>画中画和串流</strong>视频滤镜。",
       "zh-Hant": "將<strong>自訂 3D LUT</strong> 套用至顯示器或 <strong>PIP 與串流</strong>影像濾鏡。",
       "ko": "디스플레이 또는 <strong>PIP 및 스트리밍</strong> 비디오 필터에 <strong>사용자 지정 3D LUT</strong>를 적용하세요."
@@ -1839,7 +1839,7 @@ window.BD_LOCALIZATION = {
       "fa": "پشتیبانی از <strong>میان‌برهای macOS ‏(App Intents)</strong> برای بسیاری از عملیات.",
       "hi": "कई कार्यों के लिए <strong>macOS शॉर्टकट (App Intents)</strong> का समर्थन।",
       "th": "รองรับ<strong>คำสั่งลัด macOS (App Intents)</strong> สำหรับการทำงานหลายอย่าง",
-      "ja": "多くの操作で<strong>macOSのショートカット（App Intents）</strong>に対応しています。",
+      "ja": "多くの操作が<strong>macOSのショートカット（App Intents）</strong>に対応しています。",
       "zh-Hans": "多种操作支持 <strong>macOS 快捷指令（App Intents）</strong>。",
       "zh-Hant": "多種操作支援 <strong>macOS 捷徑（App Intents）</strong>。",
       "ko": "다양한 작업에 <strong>macOS 단축어(App Intents)</strong>를 지원합니다."
@@ -1880,7 +1880,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>پنجره‌ها یا گروه‌های پنجرهٔ انتخاب‌شده</strong> را با <strong>تصویر در تصویر</strong> در دید نگه دارید.",
       "hi": "<strong>चुनी हुई विंडो या विंडो के समूह</strong> को <strong>पिक्चर इन पिक्चर</strong> से नज़र में रखें।",
       "th": "ให้<strong>หน้าต่างหรือกลุ่มหน้าต่างที่เลือก</strong>อยู่ในสายตาด้วย<strong>หน้าต่างย่อยในหน้าต่างหลัก</strong>",
-      "ja": "<strong>選択したウインドウやウインドウグループ</strong>を<strong>ピクチャ・イン・ピクチャ</strong>で表示し続けられます。",
+      "ja": "<strong>選択したウインドウやウインドウグループ</strong>を<strong>ピクチャインピクチャ</strong>に表示することができます。",
       "zh-Hans": "通过<strong>画中画</strong>让<strong>选定的窗口或窗口组</strong>始终可见。",
       "zh-Hant": "透過<strong>子母畫面</strong>讓<strong>所選視窗或視窗群組</strong>保持可見。",
       "ko": "<strong>화면 속 화면</strong>으로 <strong>선택한 윈도우 또는 윈도우 그룹</strong>을 계속 볼 수 있습니다."
@@ -1921,7 +1921,7 @@ window.BD_LOCALIZATION = {
       "fa": "تنها برنامه با <strong>پشتیبانی از کنترل DDC</strong> در همهٔ Macهای جدید، از جمله درگاه‌های HDMI داخلی Apple Silicon و درگاه HDMI داخلی Mac mini مدل ۲۰۱۸.",
       "hi": "सभी आधुनिक Mac पर <strong>DDC नियंत्रण का समर्थन</strong> करने वाला एकमात्र ऐप, जिसमें Apple Silicon के बिल्ट-इन HDMI पोर्ट और 2018 Mac mini का बिल्ट-इन HDMI पोर्ट भी शामिल हैं।",
       "th": "แอปเดียวที่<strong>รองรับการควบคุม DDC</strong> บน Mac รุ่นใหม่ทุกเครื่อง รวมถึงพอร์ต HDMI ในตัวของ Apple Silicon และพอร์ต HDMI ในตัวของ Mac mini ปี 2018",
-      "ja": "Apple Siliconの内蔵HDMIポートや2018年モデルのMac miniの内蔵HDMIポートを含む、すべての現行世代のMacで<strong>DDC制御に対応</strong>する唯一のアプリです。",
+      "ja": "Appleシリコンの内蔵HDMIポートや2018年モデルのMac miniの内蔵HDMIポートを含む、すべての現行Macで<strong>DDC制御に対応</strong>する唯一のアプリです。",
       "zh-Hans": "唯一在所有现代 Mac 上<strong>支持 DDC 控制</strong>的应用，包括 Apple Silicon 的内置 HDMI 端口和 2018 款 Mac mini 的内置 HDMI 端口。",
       "zh-Hant": "唯一在所有現代 Mac 上<strong>支援 DDC 控制</strong>的 App，包括 Apple Silicon 的內建 HDMI 埠與 2018 年款 Mac mini 的內建 HDMI 埠。",
       "ko": "Apple Silicon 내장 HDMI 포트와 2018년형 Mac mini 내장 HDMI 포트를 포함한 모든 최신 Mac에서 <strong>DDC 제어를 지원</strong>하는 유일한 앱입니다."
@@ -2044,7 +2044,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>حفاظت از چیدمان</strong> با <strong>نقاط لنگر</strong> برای جابه‌جایی طبیعی میان صفحه‌ها در چیدمان‌های تطبیقی نمایشگر.",
       "hi": "अनुकूलनीय डिस्प्ले व्यवस्था में स्क्रीन के बीच सहज आवाजाही के लिए <strong>एंकर बिंदुओं</strong> के साथ <strong>लेआउट सुरक्षा</strong>।",
       "th": "<strong>การป้องกันตำแหน่งจอภาพ</strong>พร้อม<strong>จุดยึด</strong> เพื่อเลื่อนข้ามระหว่างหน้าจออย่างเป็นธรรมชาติในการจัดวางจอภาพแบบปรับตัว",
-      "ja": "<strong>アンカーポイント</strong>を備えた<strong>レイアウト保護</strong>により、変化するディスプレイ配置でも画面間を自然に移動できます。",
+      "ja": "<strong>アンカーポイント</strong>を備えた<strong>レイアウト保護</strong>により、多様なディスプレイ配置環境でも、画面間を自然に移動できます。",
       "zh-Hans": "带<strong>锚点</strong>的<strong>布局保护</strong>，让指针在自适应显示器排列中的屏幕之间自然移动。",
       "zh-Hant": "具備<strong>錨點</strong>的<strong>佈局保護</strong>，讓游標在自適應顯示器排列中的螢幕之間自然移動。",
       "ko": "<strong>앵커 포인트</strong>를 갖춘 <strong>레이아웃 보호</strong>로 가변적인 디스플레이 배치에서도 화면 사이를 자연스럽게 이동할 수 있습니다."
@@ -2085,7 +2085,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>افزایش مستقیم روشنایی</strong> برای <strong>نمایشگرهای XDR</strong> داخلی در macOS 26.3 و جدیدتر.",
       "hi": "macOS 26.3 और बाद के संस्करणों पर बिल्ट-इन <strong>XDR डिस्प्ले</strong> के लिए <strong>सीधी ब्राइटनेस अपस्केलिंग</strong>।",
       "th": "<strong>เพิ่มความสว่างโดยตรง</strong>สำหรับ<strong>จอภาพ XDR</strong> ในตัวบน macOS 26.3 ขึ้นไป",
-      "ja": "macOS 26.3以降では、内蔵<strong>XDRディスプレイ</strong>の<strong>直接輝度拡張</strong>に対応しています。",
+      "ja": "macOS 26.3以降では、内蔵<strong>XDRディスプレイ</strong>の<strong>ダイレクトアップスケーリング</strong>に対応しています。",
       "zh-Hans": "在 macOS 26.3 及更高版本上，为内置 <strong>XDR 显示器</strong>提供<strong>直接亮度提升</strong>。",
       "zh-Hant": "在 macOS 26.3 或以上版本，為內建 <strong>XDR 顯示器</strong>提供<strong>直接亮度提升</strong>。",
       "ko": "macOS 26.3 이상에서 내장 <strong>XDR 디스플레이</strong>의 <strong>직접 밝기 업스케일링</strong>을 지원합니다."
@@ -2126,7 +2126,7 @@ window.BD_LOCALIZATION = {
       "fa": "امکانات CLI و یکپارچه‌سازی برنامه، شامل ابزارهای خط فرمان، <strong>betterdisplaycli</strong>، <strong>طرح URL سفارشی</strong>، HTTP و اعلان‌ها.",
       "hi": "CLI और ऐप एकीकरण सुविधाएँ, जिनमें कमांड-लाइन टूल, <strong>betterdisplaycli</strong>, <strong>कस्टम URL स्कीम</strong>, HTTP और सूचनाएँ शामिल हैं।",
       "th": "คุณสมบัติ CLI และการผสานรวมแอป รวมถึงเครื่องมือบรรทัดคำสั่ง <strong>betterdisplaycli</strong> <strong>รูปแบบ URL แบบกำหนดเอง</strong> HTTP และการแจ้งเตือน",
-      "ja": "コマンドラインツール、<strong>betterdisplaycli</strong>、<strong>カスタムURLスキーム</strong>、HTTP、通知など、CLIとアプリ連携機能を備えています。",
+      "ja": "コマンドラインツール、<strong>betterdisplaycli</strong>、<strong>カスタムURLスキーマ</strong>、HTTP、通知などを含む、CLIおよびアプリ連携機能を備えています。",
       "zh-Hans": "CLI 和应用集成功能，包括命令行工具、<strong>betterdisplaycli</strong>、<strong>自定义 URL 方案</strong>、HTTP 和通知。",
       "zh-Hant": "CLI 與 App 整合功能，包括命令列工具、<strong>betterdisplaycli</strong>、<strong>自訂 URL 配置</strong>、HTTP 與通知。",
       "ko": "명령줄 도구, <strong>betterdisplaycli</strong>, <strong>사용자 지정 URL 스킴</strong>, HTTP, 알림 등 CLI 및 앱 연동 기능을 제공합니다."
@@ -2249,7 +2249,7 @@ window.BD_LOCALIZATION = {
       "fa": "نمایشگرهای داخلی و نمایشگرهای خارجی با اتصال مستقیم را به <strong>نمایشگرهای HiDPI با مقیاس‌بندی انعطاف‌پذیر</strong> تبدیل کنید، با پشتیبانی از بریدگی صفحه، HDR،‏ HDCP و <strong>نرخ نوسازی بالا</strong>.",
       "hi": "आंतरिक और सीधे जुड़े बाहरी डिस्प्ले को <strong>फ़्लेक्सिबल स्केलिंग वाले HiDPI डिस्प्ले</strong> में बदलें, जिसमें नॉच, HDR, HDCP और <strong>उच्च रिफ़्रेश रेट</strong> का समर्थन शामिल है।",
       "th": "เปลี่ยนจอภาพภายในและจอภาพภายนอกที่เชื่อมต่อโดยตรงเป็น<strong>จอภาพ HiDPI ที่ปรับขนาดได้ยืดหยุ่น</strong> รองรับรอยบาก HDR, HDCP และ<strong>อัตรารีเฟรชสูง</strong>",
-      "ja": "内蔵ディスプレイや直接接続した外部ディスプレイを、<strong>柔軟にスケーリングできるHiDPIディスプレイ</strong>に変換できます。ノッチ、HDR、HDCP、<strong>高リフレッシュレート</strong>にも対応しています。",
+      "ja": "内蔵ディスプレイや直接接続した外部ディスプレイを、<strong>フレキシブルサイズ調整したHiDPIディスプレイ</strong>に変換できます。ノッチ、HDR、HDCP、<strong>高リフレッシュレート</strong>にも対応しています。",
       "zh-Hans": "将内置显示器和直接连接的外接显示器转换为<strong>可平滑缩放的 HiDPI 显示器</strong>，支持刘海、HDR、HDCP 和<strong>高刷新率</strong>。",
       "zh-Hant": "將內建顯示器及直接連接的外接顯示器轉換為<strong>可平滑縮放的 HiDPI 顯示器</strong>，支援瀏海、HDR、HDCP 與<strong>高更新率</strong>。",
       "ko": "내장 디스플레이와 직접 연결한 외장 디스플레이를 <strong>유연하게 크기를 조절할 수 있는 HiDPI 디스플레이</strong>로 바꾸세요. 노치, HDR, HDCP, <strong>높은 주사율</strong>도 지원합니다."
@@ -2331,7 +2331,7 @@ window.BD_LOCALIZATION = {
       "fa": "روشنایی، بلندی صدا و رنگ‌ها را به‌صورت نرم‌افزاری و با <strong>کنترل سخت‌افزاری DDC</strong> از طریق لغزنده‌ها، میان‌برهای سیستم یا میان‌برهای سفارشی تغییر دهید.",
       "hi": "स्लाइडर, सिस्टम शॉर्टकट या कस्टम शॉर्टकट से सॉफ़्टवेयर और हार्डवेयर <strong>DDC नियंत्रण</strong> के ज़रिए ब्राइटनेस, आवाज़ और रंग बदलें।",
       "th": "เปลี่ยนความสว่าง ระดับเสียง และสีผ่านซอฟต์แวร์และ<strong>การควบคุม DDC</strong> ของฮาร์ดแวร์ ด้วยแถบเลื่อน ปุ่มลัดระบบ หรือปุ่มลัดที่กำหนดเอง",
-      "ja": "スライダ、標準ショートカット、カスタムショートカットを使い、ソフトウェアとハードウェアの<strong>DDC制御</strong>で明るさ、音量、色を変更できます。",
+      "ja": "スライダ、標準ショートカット、カスタムショートカットを使い、ソフトウェアとハードウェアの<strong>DDC制御</strong>により輝度、音量、カラーを変更できます。",
       "zh-Hans": "通过滑块、系统快捷键或自定义快捷键，使用软件和硬件 <strong>DDC 控制</strong>调节亮度、音量和色彩。",
       "zh-Hant": "透過滑桿、系統快速鍵或自訂快速鍵，使用軟體與硬體 <strong>DDC 控制</strong>調整亮度、音量及色彩。",
       "ko": "슬라이더, 기본 단축키 또는 사용자 지정 단축키로 소프트웨어와 하드웨어 <strong>DDC 제어</strong>를 통해 밝기, 음량, 색상을 바꾸세요."
@@ -2413,7 +2413,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>همگام‌سازی روشنایی نرمال‌شده بر پایهٔ نیت</strong> میان نمایشگرها.",
       "hi": "डिस्प्ले के बीच <strong>निट-आधारित सामान्यीकृत ब्राइटनेस सिंक्रनाइज़ेशन</strong>।",
       "th": "<strong>ซิงค์ความสว่างที่ปรับเป็นมาตรฐานตามหน่วยนิต</strong>ระหว่างจอภาพ",
-      "ja": "ディスプレイ間で<strong>ニトに基づく正規化された明るさの同期</strong>ができます。",
+      "ja": "ディスプレイ間で<strong>ニトに基づく正規化された輝度の同期</strong>ができます。",
       "zh-Hans": "在显示器之间进行<strong>基于尼特的标准化亮度同步</strong>。",
       "zh-Hant": "在顯示器之間進行<strong>以尼特為基礎的標準化亮度同步</strong>。",
       "ko": "디스플레이 간 <strong>니트 기반 정규화된 밝기 동기화</strong>."
@@ -2536,7 +2536,7 @@ window.BD_LOCALIZATION = {
       "fa": "ساخت <strong>مجموعه‌های نمایشگر با همسان‌سازی تصویر</strong> را ساده کنید.",
       "hi": "<strong>मिरर किए गए डिस्प्ले समूह</strong> बनाना आसान करें।",
       "th": "สร้าง<strong>กลุ่มจอภาพที่สะท้อนภาพ</strong>ได้ง่ายขึ้น",
-      "ja": "<strong>ミラーリングするディスプレイの組み合わせ</strong>を簡単に作成できます。",
+      "ja": "<strong>ミラーリングするディスプレイの設定</strong>を簡単に作成できます。",
       "zh-Hans": "简化<strong>镜像显示器组</strong>的创建。",
       "zh-Hant": "簡化<strong>鏡像顯示器群組</strong>的建立。",
       "ko": "<strong>미러링 디스플레이 세트</strong>를 더 쉽게 만드세요."
@@ -2618,7 +2618,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>میان‌برهای صفحه‌کلید</strong> برای کنترل روشنایی و صدا.",
       "hi": "ब्राइटनेस और ऑडियो नियंत्रण के लिए <strong>कीबोर्ड शॉर्टकट</strong>।",
       "th": "<strong>ปุ่มลัด</strong>สำหรับควบคุมความสว่างและเสียง",
-      "ja": "明るさとオーディオを制御する<strong>キーボードショートカット</strong>を利用できます。",
+      "ja": "輝度とオーディオを制御する<strong>キーボードショートカット</strong>を利用できます。",
       "zh-Hans": "用于亮度和音频控制的<strong>键盘快捷键</strong>。",
       "zh-Hant": "用於亮度及音訊控制的<strong>鍵盤快速鍵</strong>。",
       "ko": "밝기와 오디오 제어를 위한 <strong>키보드 단축키</strong>."
@@ -2659,7 +2659,7 @@ window.BD_LOCALIZATION = {
       "fa": "از تمام <strong>ظرفیت روشنایی XDR یا HDR</strong> با <strong>افزایش تا ۱۶۰۰ نیت</strong> در نمایشگرهای XDR و افزایش متناسب با قابلیت نمایشگرهای HDR خارجی استفاده کنید.",
       "hi": "XDR डिस्प्ले पर <strong>1600 निट तक ब्राइटनेस बढ़ाकर</strong> और बाहरी HDR स्क्रीन की क्षमता के अनुसार बढ़ोतरी करके <strong>XDR या HDR की पूरी ब्राइटनेस क्षमता</strong> का लाभ लें।",
       "th": "ใช้<strong>ศักยภาพความสว่าง XDR หรือ HDR</strong>ได้เต็มที่ด้วย<strong>การเพิ่มสูงสุดถึง 1600 นิต</strong>บนจอภาพ XDR และเพิ่มตามขีดความสามารถของหน้าจอ HDR ภายนอก",
-      "ja": "XDRディスプレイでは<strong>最大1600ニトまで輝度を拡張</strong>し、外部HDR画面ではディスプレイに応じた輝度拡張で、<strong>XDRやHDRの明るさを最大限に活用</strong>できます。",
+      "ja": "XDRディスプレイでは<strong>最大1600ニトまで輝度をアップスケーリング</strong>し、外部HDR画面ではディスプレイに応じた輝度アップスケーリングで、<strong>XDRやHDRの輝度を最大限に活用</strong>できます。",
       "zh-Hans": "充分发挥 <strong>XDR 或 HDR 的亮度潜力</strong>：XDR 显示器<strong>最高可增强至 1600 尼特</strong>，外接 HDR 屏幕则可根据显示器能力提升亮度。",
       "zh-Hant": "充分發揮 <strong>XDR 或 HDR 的亮度潛力</strong>：XDR 顯示器<strong>最高可增強至 1600 尼特</strong>，外接 HDR 螢幕則可依顯示器能力提升亮度。",
       "ko": "XDR 디스플레이에서 <strong>최대 1600니트까지 밝기를 확장</strong>하고 외장 HDR 화면에서는 디스플레이에 맞게 밝기를 높여 <strong>XDR 또는 HDR의 밝기 잠재력을 모두 활용</strong>하세요."
@@ -2700,7 +2700,7 @@ window.BD_LOCALIZATION = {
       "fa": "دسترسی سریع به منوهای <strong>نرخ نوسازی</strong> و <strong>چرخش صفحه</strong>.",
       "hi": "आसानी से उपलब्ध <strong>रिफ़्रेश रेट</strong> और <strong>स्क्रीन घुमाव</strong> मेनू।",
       "th": "เมนู<strong>อัตรารีเฟรช</strong>และ<strong>การหมุนหน้าจอ</strong>ที่เข้าถึงได้รวดเร็ว",
-      "ja": "<strong>リフレッシュレート</strong>と<strong>画面の回転</strong>のメニューにすばやくアクセスできます。",
+      "ja": "<strong>リフレッシュレート</strong>や<strong>画面の回転</strong>メニューにすばやくアクセスできます。",
       "zh-Hans": "快速访问<strong>刷新率</strong>和<strong>屏幕旋转</strong>菜单。",
       "zh-Hant": "快速取用<strong>更新率</strong>與<strong>螢幕旋轉</strong>選單。",
       "ko": "빠르게 접근할 수 있는 <strong>주사율</strong> 및 <strong>화면 회전</strong> 메뉴."
@@ -2782,7 +2782,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>گروه‌های نمایشگر</strong> و امکانات همگام‌سازی برای هماهنگ کردن روشنایی و دیگر تنظیمات تصویر در چند نمایشگر.",
       "hi": "कई डिस्प्ले पर ब्राइटनेस और अन्य तस्वीर नियंत्रण मिलाने के लिए <strong>डिस्प्ले समूह</strong> और सिंक्रनाइज़ेशन सुविधाएँ।",
       "th": "<strong>กลุ่มจอภาพ</strong>และคุณสมบัติการซิงค์เพื่อปรับความสว่างและการควบคุมภาพอื่น ๆ ให้ตรงกันในหลายจอภาพ",
-      "ja": "<strong>ディスプレイグループ</strong>と同期機能で、複数のディスプレイの明るさやその他の画像設定を揃えられます。",
+      "ja": "<strong>ディスプレイグループ</strong>と同期機能により、複数のディスプレイの輝度やその他の画像設定を揃えることができます。",
       "zh-Hans": "使用<strong>显示组</strong>和同步功能，使多台显示器的亮度及其他图像设置保持一致。",
       "zh-Hant": "使用<strong>顯示器群組</strong>及同步功能，讓多台顯示器的亮度與其他影像設定保持一致。",
       "ko": "<strong>디스플레이 그룹</strong>과 동기화 기능으로 여러 디스플레이의 밝기와 기타 이미지 설정을 일치시키세요."
@@ -2823,7 +2823,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>ورودی‌های نمایشگر</strong> را با DDC در نمایشگرهای پشتیبانی‌شده عوض کنید.",
       "hi": "समर्थित डिस्प्ले पर DDC से <strong>डिस्प्ले इनपुट</strong> बदलें।",
       "th": "เปลี่ยน<strong>อินพุตจอภาพ</strong>ด้วย DDC บนจอภาพที่รองรับ",
-      "ja": "対応ディスプレイではDDCで<strong>ディスプレイの入力</strong>を切り替えられます。",
+      "ja": "対応ディスプレイでは、DDCにより<strong>ディスプレイの入力</strong>を切り替えられます。",
       "zh-Hans": "在受支持的显示器上使用 DDC 切换<strong>显示器输入源</strong>。",
       "zh-Hant": "在支援的顯示器上使用 DDC 切換<strong>顯示器輸入來源</strong>。",
       "ko": "지원되는 디스플레이에서 DDC로 <strong>디스플레이 입력</strong>을 전환하세요."
@@ -2864,7 +2864,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>صفحه‌های مجازی با پشتیبانی از HDR</strong> و <strong>نرخ نوسازی بالا</strong> (نیازمند Mac سازگار).",
       "hi": "<strong>HDR-सक्षम</strong> और <strong>उच्च रिफ़्रेश रेट वाली वर्चुअल स्क्रीन</strong> (संगत Mac आवश्यक)।",
       "th": "<strong>หน้าจอเสมือนที่รองรับ HDR</strong> และ<strong>อัตรารีเฟรชสูง</strong> (ต้องใช้ Mac ที่เข้ากันได้)",
-      "ja": "<strong>HDR対応</strong>で<strong>高リフレッシュレートの仮想画面</strong>を利用できます（対応するMacが必要）。",
+      "ja": "<strong>HDR対応</strong>で<strong>高リフレッシュレートの仮想スクリーン</strong>を利用できます（対応するMacが必要）。",
       "zh-Hans": "支持 <strong>HDR</strong> 和<strong>高刷新率的虚拟屏幕</strong>（需要兼容的 Mac）。",
       "zh-Hant": "支援 <strong>HDR</strong> 與<strong>高更新率的虛擬螢幕</strong>（需要相容的 Mac）。",
       "ko": "<strong>HDR을 지원</strong>하는 <strong>높은 주사율의 가상 화면</strong>(호환되는 Mac 필요)."
@@ -2987,7 +2987,7 @@ window.BD_LOCALIZATION = {
       "fa": "در صورت تمایل، هنگام اتصال نمایشگر خارجی در Macهای Apple Silicon، اتصال صفحهٔ داخلی را <strong>خودکار قطع کنید</strong>.",
       "hi": "Apple Silicon Mac पर बाहरी डिस्प्ले जोड़ने पर बिल्ट-इन स्क्रीन को वैकल्पिक रूप से <strong>अपने आप डिस्कनेक्ट करें</strong>।",
       "th": "เลือก<strong>ตัดการเชื่อมต่ออัตโนมัติ</strong>จากหน้าจอในตัวเมื่อเชื่อมต่อจอภาพภายนอกบน Mac ที่ใช้ Apple Silicon",
-      "ja": "Apple Silicon搭載Macで外部ディスプレイを接続した際、内蔵画面を<strong>自動切断</strong>するよう設定できます。",
+      "ja": "Appleシリコン搭載Macに外部ディスプレイを接続した場合に、内蔵ディスプレイを<strong>自動切断</strong>するよう設定できます。",
       "zh-Hans": "在 Apple Silicon Mac 上连接外接显示器时，可选择<strong>自动断开</strong>内置屏幕。",
       "zh-Hant": "在 Apple Silicon Mac 上連接外接顯示器時，可選擇<strong>自動中斷</strong>內建螢幕的連線。",
       "ko": "Apple Silicon Mac에서 외장 디스플레이를 연결할 때 내장 화면을 <strong>자동으로 연결 해제</strong>하도록 설정할 수 있습니다."
@@ -3028,7 +3028,7 @@ window.BD_LOCALIZATION = {
       "fa": "از <strong>Macهای بدون نمایشگر</strong> با هر وضوح و حالت HiDPI برای <strong>دسترسی از راه دور</strong> استفاده کنید.",
       "hi": "<strong>रिमोट एक्सेस</strong> के लिए <strong>बिना मॉनिटर वाले Mac</strong> को किसी भी रिज़ोल्यूशन और HiDPI मोड में इस्तेमाल करें।",
       "th": "ใช้<strong>Mac ที่ไม่มีจอภาพ</strong>ด้วยความละเอียดและโหมด HiDPI ใดก็ได้เพื่อ<strong>เข้าถึงจากระยะไกล</strong>",
-      "ja": "<strong>ディスプレイのないMac</strong>を任意の解像度とHiDPIモードで<strong>リモートアクセス</strong>に利用できます。",
+      "ja": "<strong>ディスプレイを接続していないMac</strong>に、任意の解像度とHiDPIモードで<strong>リモートアクセス</strong>するために利用できます。",
       "zh-Hans": "使用<strong>无头 Mac</strong>以任意分辨率和 HiDPI 模式进行<strong>远程访问</strong>。",
       "zh-Hant": "使用<strong>無螢幕的 Mac</strong>以任意解析度及 HiDPI 模式進行<strong>遠端存取</strong>。",
       "ko": "<strong>모니터 없는 Mac</strong>을 원하는 해상도와 HiDPI 모드로 <strong>원격 접속</strong>에 사용하세요."
@@ -3069,7 +3069,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>تصویر در تصویر</strong> و ارسال تصویر را با <strong>فیلترهای ویدیویی</strong> و <strong>نرخ فریم هدف</strong> سفارشی کنید.",
       "hi": "<strong>वीडियो फ़िल्टर</strong> और <strong>लक्षित फ़्रेम दर</strong> से <strong>पिक्चर इन पिक्चर</strong> और स्ट्रीमिंग अनुकूलित करें।",
       "th": "ปรับแต่ง<strong>หน้าต่างย่อยในหน้าต่างหลัก</strong>และการสตรีมด้วย<strong>ตัวกรองวิดีโอ</strong>และ<strong>อัตราเฟรมเป้าหมาย</strong>",
-      "ja": "<strong>ビデオフィルタ</strong>と<strong>目標フレームレート</strong>で、<strong>ピクチャ・イン・ピクチャ</strong>とストリーミングをカスタマイズできます。",
+      "ja": "<strong>ビデオフィルタ</strong>と<strong>目標フレームレート</strong>で、<strong>ピクチャインピクチャ</strong>とストリーミングをカスタマイズできます。",
       "zh-Hans": "通过<strong>视频滤镜</strong>和<strong>目标帧率</strong>自定义<strong>画中画</strong>和串流。",
       "zh-Hant": "透過<strong>影像濾鏡</strong>與<strong>目標影格率</strong>自訂<strong>子母畫面</strong>及串流。",
       "ko": "<strong>비디오 필터</strong>와 <strong>목표 프레임률</strong>로 <strong>화면 속 화면</strong>과 스트리밍을 맞춤 설정하세요."
@@ -3110,7 +3110,7 @@ window.BD_LOCALIZATION = {
       "fa": "خروجی باکیفیت‌تر <strong>بزرگ‌نمایی دسترس‌پذیری macOS</strong> و تصاویر صفحهٔ باکیفیت حتی روی نمایشگرهای 1080p.",
       "hi": "1080p डिस्प्ले पर भी <strong>macOS ज़ूम ऐक्सेसिबिलिटी</strong> का बेहतर गुणवत्ता वाला आउटपुट और उच्च गुणवत्ता के स्क्रीनशॉट।",
       "th": "ภาพจาก<strong>การซูมในคุณสมบัติการช่วยการเข้าถึงของ macOS</strong>ที่มีคุณภาพดีขึ้น และภาพหน้าจอคุณภาพสูงแม้บนจอภาพ 1080p",
-      "ja": "1080pディスプレイでも、<strong>macOSのアクセシビリティのズーム機能</strong>をより高画質で表示し、高品質なスクリーンショットを撮影できます。",
+      "ja": "1080pディスプレイでも、<strong>macOSのアクセシビリティのズーム機能</strong>をより高画質で表示することで、高品質なスクリーンショットを撮影できます。",
       "zh-Hans": "即使在 1080p 显示器上，也能获得更高质量的 <strong>macOS 辅助功能缩放</strong>画面和高质量截图。",
       "zh-Hant": "即使在 1080p 顯示器上，也能獲得更高品質的 <strong>macOS 輔助使用縮放</strong>畫面與高品質螢幕截圖。",
       "ko": "1080p 디스플레이에서도 더 높은 품질의 <strong>macOS 손쉬운 사용 확대/축소</strong> 화면과 고품질 스크린샷을 제공합니다."
@@ -3151,7 +3151,7 @@ window.BD_LOCALIZATION = {
       "fa": "پشتیبانی از <strong>بازنویسی EDID</strong> در Macهای Intel و Apple Silicon.",
       "hi": "Intel और Apple Silicon, दोनों Mac पर <strong>EDID ओवरराइड</strong> का समर्थन।",
       "th": "รองรับ<strong>การแทนที่ EDID</strong> บน Mac ทั้ง Intel และ Apple Silicon",
-      "ja": "Intel搭載MacとApple Silicon搭載Macの両方で<strong>EDIDの上書き</strong>に対応しています。",
+      "ja": "Intel搭載MacとAppleシリコン搭載Macの両方で、<strong>EDIDの上書き</strong>に対応しています。",
       "zh-Hans": "在 Intel 和 Apple Silicon Mac 上均支持 <strong>EDID 覆盖</strong>。",
       "zh-Hant": "在 Intel 與 Apple Silicon Mac 上均支援 <strong>EDID 覆寫</strong>。",
       "ko": "Intel 및 Apple Silicon Mac 모두에서 <strong>EDID 재정의</strong>를 지원합니다."
@@ -3192,7 +3192,7 @@ window.BD_LOCALIZATION = {
       "fa": "پشتیبانی داخلی از کنترل شبکه‌ای <strong>LG webOS TV</strong>، <strong>Samsung Tizen TV</strong>، <strong>Philips Android TV</strong> و <strong>Yamaha AVR</strong>.",
       "hi": "<strong>LG webOS TV</strong>, <strong>Samsung Tizen TV</strong>, <strong>Philips Android TV</strong> और <strong>Yamaha AVR</strong> के लिए बिल्ट-इन नेटवर्क नियंत्रण समर्थन।",
       "th": "รองรับการควบคุมผ่านเครือข่ายในตัวสำหรับ <strong>LG webOS TV</strong>, <strong>Samsung Tizen TV</strong>, <strong>Philips Android TV</strong> และ <strong>Yamaha AVR</strong>",
-      "ja": "<strong>LG webOS TV</strong>、<strong>Samsung Tizen TV</strong>、<strong>Philips Android TV</strong>、<strong>Yamaha AVR</strong>のネットワーク制御機能を内蔵しています。",
+      "ja": "<strong>LG webOSテレビ</strong>、<strong>Samsung Tizenテレビ</strong>、<strong>Philips Androidテレビ</strong>、<strong>ヤマハAVR</strong>のネットワーク制御機能を内蔵しています。",
       "zh-Hans": "内置 <strong>LG webOS TV</strong>、<strong>Samsung Tizen TV</strong>、<strong>Philips Android TV</strong> 和 <strong>Yamaha AVR</strong> 网络控制支持。",
       "zh-Hant": "內建 <strong>LG webOS TV</strong>、<strong>Samsung Tizen TV</strong>、<strong>Philips Android TV</strong> 與 <strong>Yamaha AVR</strong> 網路控制支援。",
       "ko": "<strong>LG webOS TV</strong>, <strong>Samsung Tizen TV</strong>, <strong>Philips Android TV</strong>, <strong>Yamaha AVR</strong>의 네트워크 제어를 기본 지원합니다."
@@ -3233,7 +3233,7 @@ window.BD_LOCALIZATION = {
       "fa": "در Macهای Apple Silicon و Intel، <strong>اتصال نمایشگرها را قطع و دوباره برقرار کنید</strong>.",
       "hi": "Apple Silicon और Intel Mac पर <strong>डिस्प्ले डिस्कनेक्ट और फिर से कनेक्ट करें</strong>।",
       "th": "<strong>ตัดการเชื่อมต่อและเชื่อมต่อจอภาพใหม่</strong>บน Mac ที่ใช้ Apple Silicon และ Intel",
-      "ja": "Apple Silicon搭載MacとIntel搭載Macで<strong>ディスプレイを切断・再接続</strong>できます。",
+      "ja": "Appleシリコン搭載MacとIntel搭載Macで、<strong>ディスプレイを切断/再接続</strong>できます。",
       "zh-Hans": "在 Apple Silicon 和 Intel Mac 上<strong>断开和重新连接显示器</strong>。",
       "zh-Hant": "在 Apple Silicon 與 Intel Mac 上<strong>中斷並重新連接顯示器</strong>。",
       "ko": "Apple Silicon 및 Intel Mac에서 <strong>디스플레이 연결을 해제하고 다시 연결</strong>하세요."
@@ -3274,7 +3274,7 @@ window.BD_LOCALIZATION = {
       "fa": "از نیمهٔ پایین تلویزیون به‌عنوان <strong>فضای کار عریض با جابه‌جایی از مرکز</strong> استفاده کنید.",
       "hi": "टीवी के निचले आधे हिस्से को <strong>केंद्र से हटे हुए चौड़े कार्यक्षेत्र</strong> की तरह इस्तेमाल करें।",
       "th": "ใช้ครึ่งล่างของทีวีเป็น<strong>พื้นที่ทำงานจอกว้างที่เยื้องจากกึ่งกลาง</strong>",
-      "ja": "テレビの下半分を、<strong>中央からずらしたワイドな作業領域</strong>として使えます。",
+      "ja": "テレビの下半分を、<strong>中心からずらしたワイドスクリーンのワークスペース</strong>として使えます。",
       "zh-Hans": "将电视的下半部分用作<strong>偏离中心的宽屏工作区</strong>。",
       "zh-Hant": "將電視的下半部用作<strong>偏離中心的寬螢幕工作區</strong>。",
       "ko": "TV 아래쪽 절반을 <strong>중앙에서 벗어난 와이드 작업 공간</strong>으로 사용하세요."
@@ -3397,7 +3397,7 @@ window.BD_LOCALIZATION = {
       "fa": "برای نمایشگرهای فیزیکی <strong>وضوح‌های HiDPI سفارشی</strong> بسازید و پارامترهای پیشرفتهٔ نمایشگر سیستم را بازتعریف کنید.",
       "hi": "वास्तविक डिस्प्ले के लिए <strong>कस्टम HiDPI रिज़ोल्यूशन</strong> बनाएँ और सिस्टम के उन्नत डिस्प्ले पैरामीटर फिर से निर्धारित करें।",
       "th": "สร้าง<strong>ความละเอียด HiDPI แบบกำหนดเอง</strong>สำหรับจอภาพจริง และกำหนดพารามิเตอร์การแสดงผลขั้นสูงของระบบใหม่",
-      "ja": "実際のディスプレイ用に<strong>カスタムHiDPI解像度</strong>を作成し、システムの高度なディスプレイパラメータを再定義できます。",
+      "ja": "実ディスプレイ用の<strong>カスタムHiDPI解像度</strong>を作成し、システムの高度なディスプレイパラメータを再定義できます。",
       "zh-Hans": "为真实显示器创建<strong>自定义 HiDPI 分辨率</strong>，并重新定义系统的高级显示参数。",
       "zh-Hant": "為實體顯示器建立<strong>自訂 HiDPI 解析度</strong>，並重新定義系統的進階顯示參數。",
       "ko": "실제 디스플레이용 <strong>사용자 지정 HiDPI 해상도</strong>를 만들고 고급 시스템 디스플레이 매개변수를 다시 정의하세요."
@@ -3520,7 +3520,7 @@ window.BD_LOCALIZATION = {
       "fa": "کمک به کاهش سوسوی قابل مشاهدهٔ ناشی از <strong>PWM</strong> و <strong>dithering زمانی</strong>.",
       "hi": "<strong>PWM</strong> और <strong>टेम्पोरल डिथरिंग</strong> से होने वाली दिखाई देने वाली स्क्रीन झिलमिलाहट कम करने में मदद करें।",
       "th": "ช่วยลดการกะพริบที่มองเห็นได้จาก <strong>PWM</strong> และ<strong>temporal dithering</strong>",
-      "ja": "<strong>PWM</strong>や<strong>テンポラルディザリング</strong>による目に見える画面のちらつきを軽減できます。",
+      "ja": "<strong>PWM</strong>や<strong>テンポラルディザリング</strong>によるディスプレイのフリッカー（ちらつき）を軽減できます。",
       "zh-Hans": "帮助减少 <strong>PWM</strong> 和<strong>时间抖动</strong>引起的可见屏幕闪烁。",
       "zh-Hant": "協助減少 <strong>PWM</strong> 與<strong>時間抖色</strong>造成的可見螢幕閃爍。",
       "ko": "<strong>PWM</strong>과 <strong>시간 디더링</strong>으로 인한 눈에 보이는 화면 깜박임을 줄이는 데 도움을 줍니다."
@@ -3561,7 +3561,7 @@ window.BD_LOCALIZATION = {
       "fa": "هر تعداد <strong>صفحهٔ مجازی</strong> با نسبت تصویر و وضوح متفاوت بسازید.",
       "hi": "अलग-अलग आस्पेक्ट रेशियो और रिज़ोल्यूशन वाली जितनी चाहें <strong>वर्चुअल स्क्रीन</strong> बनाएँ।",
       "th": "สร้าง<strong>หน้าจอเสมือน</strong>ได้ไม่จำกัดจำนวน ด้วยอัตราส่วนภาพและความละเอียดต่าง ๆ",
-      "ja": "異なるアスペクト比や解像度の<strong>仮想画面</strong>を必要なだけ作成できます。",
+      "ja": "異なるアスペクト比や解像度の<strong>仮想スクリーン</strong>を必要なだけ作成できます。",
       "zh-Hans": "创建任意数量的<strong>虚拟屏幕</strong>，使用不同的宽高比和分辨率。",
       "zh-Hant": "建立任意數量的<strong>虛擬螢幕</strong>，使用不同的長寬比與解析度。",
       "ko": "다양한 화면 비율과 해상도로 원하는 만큼 <strong>가상 화면</strong>을 만드세요."
@@ -3602,7 +3602,7 @@ window.BD_LOCALIZATION = {
       "fa": "محتوای صفحه‌های فیزیکی یا مجازی را با <strong>ارسال تصویر محلی</strong> به صفحهٔ دیگری هدایت کنید.",
       "hi": "वास्तविक या वर्चुअल स्क्रीन की सामग्री <strong>लोकल स्ट्रीमिंग</strong> से दूसरी स्क्रीन पर भेजें।",
       "th": "ส่งเนื้อหาจากหน้าจอจริงหรือหน้าจอเสมือนไปยังอีกหน้าจอด้วย<strong>การสตรีมภายในเครื่อง</strong>",
-      "ja": "<strong>ローカルストリーミング</strong>で、実際の画面や仮想画面の内容を別の画面に転送できます。",
+      "ja": "<strong>ローカルストリーミング</strong>により、実際の画面や仮想スクリーンの内容を別の画面に転送できます。",
       "zh-Hans": "通过<strong>本地串流</strong>，将真实或虚拟屏幕的内容转发到另一块屏幕。",
       "zh-Hant": "透過<strong>本機串流</strong>，將實體或虛擬螢幕的內容轉送至另一個螢幕。",
       "ko": "<strong>로컬 스트리밍</strong>으로 실제 또는 가상 화면의 내용을 다른 화면으로 보내세요."
@@ -3643,7 +3643,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>هماهنگ‌سازی مقیاس رابط نمایشگرها</strong> برای همگام کردن مقیاس رابط و وضوح در چند نمایشگر.",
       "hi": "कई डिस्प्ले के बीच इंटरफ़ेस स्केल और रिज़ोल्यूशन सिंक्रनाइज़ करने के लिए <strong>डिस्प्ले UI स्केल मिलान</strong>।",
       "th": "<strong>ปรับขนาด UI ของจอภาพให้ตรงกัน</strong>เพื่อซิงค์ขนาด UI และความละเอียดระหว่างหลายจอภาพ",
-      "ja": "<strong>ディスプレイのUIサイズ調整</strong>で、複数のディスプレイのUIスケールと解像度を同期できます。",
+      "ja": "<strong>ディスプレイのUIサイズ調整</strong>で、複数のディスプレイのUIサイズと解像度を同期できます。",
       "zh-Hans": "通过<strong>显示器 UI 比例匹配</strong>，同步多台显示器的 UI 缩放比例和分辨率。",
       "zh-Hant": "透過<strong>顯示器介面縮放比例匹配</strong>，同步多台顯示器的 UI 縮放比例與解析度。",
       "ko": "<strong>디스플레이 UI 스케일 매칭</strong>으로 여러 디스플레이의 UI 배율과 해상도를 동기화하세요."
@@ -3725,7 +3725,7 @@ window.BD_LOCALIZATION = {
       "fa": "برای هر نمایشگر فیزیکی یا صفحهٔ مجازی یک <strong>پنجرهٔ تصویر در تصویر</strong> بسازید.",
       "hi": "किसी भी वास्तविक डिस्प्ले या वर्चुअल स्क्रीन के लिए <strong>पिक्चर इन पिक्चर विंडो</strong> बनाएँ।",
       "th": "สร้าง<strong>หน้าต่างย่อยในหน้าต่างหลัก</strong>สำหรับจอภาพจริงหรือหน้าจอเสมือนใดก็ได้",
-      "ja": "実際のディスプレイや仮想画面の<strong>ピクチャ・イン・ピクチャウインドウ</strong>を作成できます。",
+      "ja": "実ディスプレイや仮想スクリーンの<strong>ピクチャインピクチャウインドウ</strong>を作成できます。",
       "zh-Hans": "为任意真实显示器或虚拟屏幕创建<strong>画中画窗口</strong>。",
       "zh-Hant": "為任意實體顯示器或虛擬螢幕建立<strong>子母畫面視窗</strong>。",
       "ko": "실제 디스플레이나 가상 화면의 <strong>화면 속 화면 윈도우</strong>를 만드세요."
@@ -3766,7 +3766,7 @@ window.BD_LOCALIZATION = {
       "fa": "وضوح‌های مقیاس‌شدهٔ <strong>Sidecar</strong> و پشتیبانی از Sidecar عمودی از طریق <strong>ارسال تصویر صفحهٔ مجازی</strong>.",
       "hi": "<strong>वर्चुअल स्क्रीन स्ट्रीमिंग</strong> से स्केल किए गए <strong>Sidecar</strong> रिज़ोल्यूशन और पोर्ट्रेट Sidecar का समर्थन।",
       "th": "ความละเอียด <strong>Sidecar</strong> แบบปรับสเกลและรองรับ Sidecar แนวตั้งผ่าน<strong>การสตรีมหน้าจอเสมือน</strong>",
-      "ja": "<strong>仮想画面ストリーミング</strong>により、スケーリングした<strong>Sidecar</strong>の解像度や縦向きSidecarを利用できます。",
+      "ja": "<strong>仮想スクリーンストリーミング</strong>により、サイズ調整した<strong>Sidecar</strong>の解像度や縦位置Sidecarを利用できます。",
       "zh-Hans": "通过<strong>虚拟屏幕串流</strong>，支持缩放后的<strong>随航（Sidecar）</strong>分辨率和竖屏随航。",
       "zh-Hant": "透過<strong>虛擬螢幕串流</strong>，支援縮放後的<strong>並行（Sidecar）</strong>解析度及直向並行。",
       "ko": "<strong>가상 화면 스트리밍</strong>을 통해 크기가 조절된 <strong>Sidecar</strong> 해상도와 세로 방향 Sidecar를 지원합니다."
@@ -3848,7 +3848,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>EDID</strong> نمایشگر را صادر کنید و اطلاعات دقیق نمایشگر را در Intel و Apple Silicon ببینید.",
       "hi": "डिस्प्ले का <strong>EDID</strong> निर्यात करें और Intel व Apple Silicon पर डिस्प्ले की विस्तृत जानकारी देखें।",
       "th": "ส่งออก <strong>EDID</strong> ของจอภาพ และดูข้อมูลจอภาพโดยละเอียดบน Intel และ Apple Silicon",
-      "ja": "IntelとApple Siliconで、ディスプレイの<strong>EDID</strong>をエクスポートし、詳細なディスプレイ情報を確認できます。",
+      "ja": "IntelとAppleシリコンで、ディスプレイの<strong>EDID</strong>を書き出して、詳細なディスプレイ情報を確認できます。",
       "zh-Hans": "在 Intel 和 Apple Silicon 上导出显示器的 <strong>EDID</strong>，并查看详细显示器信息。",
       "zh-Hant": "在 Intel 與 Apple Silicon 上輸出顯示器的 <strong>EDID</strong>，並檢視詳細顯示器資訊。",
       "ko": "Intel과 Apple Silicon에서 디스플레이 <strong>EDID</strong>를 내보내고 자세한 디스플레이 정보를 확인하세요."
@@ -3889,7 +3889,7 @@ window.BD_LOCALIZATION = {
       "fa": "<strong>پیکربندی خودکار DDC</strong> که قابلیت‌ها را خودکار شناسایی و تنظیم می‌کند.",
       "hi": "<strong>DDC ऑटो-कॉन्फ़िगरेशन</strong>, जो क्षमताएँ अपने आप पहचानता और कॉन्फ़िगर करता है।",
       "th": "<strong>การกำหนดค่า DDC อัตโนมัติ</strong>ที่ตรวจจับและกำหนดค่าความสามารถโดยอัตโนมัติ",
-      "ja": "<strong>DDCの自動構成</strong>で、対応機能を自動的に検出して設定できます。",
+      "ja": "<strong>DDCの自動構成</strong>で、対応している機能を自動的に検出して設定することができます。",
       "zh-Hans": "<strong>DDC 自动配置</strong>，自动检测并配置支持的功能。",
       "zh-Hant": "<strong>DDC 自動設定</strong>，自動偵測並設定支援的功能。",
       "ko": "<strong>DDC 자동 구성</strong>으로 기능을 자동 감지하고 설정합니다."
@@ -3971,7 +3971,7 @@ window.BD_LOCALIZATION = {
       "fa": "فهرست قابلیت‌های رایگان و PRO",
       "hi": "मुफ़्त + PRO सुविधाओं की सूची",
       "th": "รายการคุณสมบัติฟรี + PRO",
-      "ja": "無料版とPROの機能一覧",
+      "ja": "無料版とPROの機能リスト",
       "zh-Hans": "免费版 + PRO 功能列表",
       "zh-Hant": "免費版 + PRO 功能列表",
       "ko": "무료 + PRO 기능 목록"
@@ -4135,7 +4135,7 @@ window.BD_LOCALIZATION = {
       "fa": "مقیاس‌بندی انعطاف‌پذیر HiDPI",
       "hi": "फ़्लेक्सिबल HiDPI स्केलिंग",
       "th": "การปรับขนาด HiDPI ที่ยืดหยุ่น",
-      "ja": "柔軟なHiDPIスケーリング",
+      "ja": "フレキシブルHiDPIサイズ調整",
       "zh-Hans": "HiDPI 平滑缩放",
       "zh-Hant": "HiDPI 平滑縮放",
       "ko": "유연한 HiDPI 크기 조절"
@@ -4258,7 +4258,7 @@ window.BD_LOCALIZATION = {
       "fa": "چندین روش کنترل روشنایی",
       "hi": "ब्राइटनेस नियंत्रित करने के कई तरीके",
       "th": "วิธีควบคุมความสว่างหลายรูปแบบ",
-      "ja": "複数の明るさ制御方式",
+      "ja": "複数の輝度制御方式",
       "zh-Hans": "多种亮度控制方式",
       "zh-Hant": "多種亮度控制方式",
       "ko": "여러 가지 밝기 제어 방식"
@@ -4299,7 +4299,7 @@ window.BD_LOCALIZATION = {
       "fa": "کلیدهای استاندارد روشنایی و بلندی صدا",
       "hi": "सिस्टम की ब्राइटनेस और आवाज़ की कुंजियाँ",
       "th": "ปุ่มความสว่างและระดับเสียงของระบบ",
-      "ja": "標準の明るさ・音量キー",
+      "ja": "ネイティブ輝度・音量キー",
       "zh-Hans": "系统亮度和音量按键",
       "zh-Hant": "系統亮度與音量按鍵",
       "ko": "기본 밝기 및 음량 키"
@@ -4340,7 +4340,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل روشنایی با DDC",
       "hi": "DDC से ब्राइटनेस नियंत्रण",
       "th": "ควบคุมความสว่างผ่าน DDC",
-      "ja": "DDCによる明るさ制御",
+      "ja": "DDCによる輝度制御",
       "zh-Hans": "DDC 亮度控制",
       "zh-Hant": "DDC 亮度控制",
       "ko": "DDC 밝기 제어"
@@ -4422,7 +4422,7 @@ window.BD_LOCALIZATION = {
       "fa": "افزایش مستقیم روشنایی XDR در Macهای سازگار Apple Silicon",
       "hi": "संगत Apple Silicon Mac पर सीधी XDR ब्राइटनेस अपस्केलिंग",
       "th": "เพิ่มความสว่าง XDR โดยตรงบน Mac ที่ใช้ Apple Silicon ที่เข้ากันได้",
-      "ja": "対応するApple Silicon搭載Macでの直接XDR輝度拡張",
+      "ja": "対応するAppleシリコン搭載MacでのダイレクトXDR輝度アップスケーリング",
       "zh-Hans": "在兼容的 Apple Silicon Mac 上直接提升 XDR 亮度",
       "zh-Hant": "在相容的 Apple Silicon Mac 上直接提升 XDR 亮度",
       "ko": "호환되는 Apple Silicon Mac에서 직접 XDR 밝기 업스케일링"
@@ -4463,7 +4463,7 @@ window.BD_LOCALIZATION = {
       "fa": "افزایش روشنایی XDR/HDR با جدول رنگ در Apple Silicon",
       "hi": "Apple Silicon पर रंग तालिका से XDR/HDR ब्राइटनेस अपस्केलिंग",
       "th": "เพิ่มความสว่าง XDR/HDR ด้วยตารางสีบน Apple Silicon",
-      "ja": "Apple Siliconでのカラーテーブル方式によるXDR/HDR輝度拡張",
+      "ja": "Appleシリコンでのカラーテーブル方式によるXDR/HDR輝度アップスケーリング",
       "zh-Hans": "在 Apple Silicon 上通过色表提升 XDR/HDR 亮度",
       "zh-Hant": "在 Apple Silicon 上透過色表提升 XDR/HDR 亮度",
       "ko": "Apple Silicon에서 색상표를 통한 XDR/HDR 밝기 업스케일링"
@@ -4504,7 +4504,7 @@ window.BD_LOCALIZATION = {
       "fa": "افزایش روشنایی XDR/HDR با Metal در Apple Silicon و Intel",
       "hi": "Apple Silicon और Intel पर Metal से XDR/HDR ब्राइटनेस अपस्केलिंग",
       "th": "เพิ่มความสว่าง XDR/HDR ด้วย Metal บน Apple Silicon และ Intel",
-      "ja": "Apple SiliconとIntelでのMetal方式によるXDR/HDR輝度拡張",
+      "ja": "AppleシリコンとIntelでのMetal方式によるXDR/HDR輝度アップスケーリング",
       "zh-Hans": "在 Apple Silicon 和 Intel 上通过 Metal 提升 XDR/HDR 亮度",
       "zh-Hant": "在 Apple Silicon 與 Intel 上透過 Metal 提升 XDR/HDR 亮度",
       "ko": "Apple Silicon 및 Intel에서 Metal을 통한 XDR/HDR 밝기 업스케일링"
@@ -4545,7 +4545,7 @@ window.BD_LOCALIZATION = {
       "fa": "افزایش روشنایی نمایشگرهای HDR سازگارِ سازندگان دیگر",
       "hi": "संगत तृतीय-पक्ष HDR डिस्प्ले की ब्राइटनेस अपस्केलिंग",
       "th": "เพิ่มความสว่างสำหรับจอภาพ HDR จากผู้ผลิตอื่นที่เข้ากันได้",
-      "ja": "対応する他社製HDRディスプレイの輝度拡張",
+      "ja": "対応する他社製HDRディスプレイの輝度アップスケーリング",
       "zh-Hans": "为兼容的第三方 HDR 显示器提升亮度",
       "zh-Hant": "為相容的第三方 HDR 顯示器提升亮度",
       "ko": "호환되는 타사 HDR 디스플레이의 밝기 업스케일링"
@@ -4586,7 +4586,7 @@ window.BD_LOCALIZATION = {
       "fa": "تاریک کردن تا سیاهی کامل",
       "hi": "काला होने तक रोशनी कम करना",
       "th": "หรี่แสงจนเป็นสีดำ",
-      "ja": "黒までの減光",
+      "ja": "ブラックまでのディミング",
       "zh-Hans": "调暗至全黑",
       "zh-Hant": "調暗至全黑",
       "ko": "검은색까지 디밍"
@@ -4627,7 +4627,7 @@ window.BD_LOCALIZATION = {
       "fa": "تاریک‌سازی ترکیبی سخت‌افزاری و نرم‌افزاری",
       "hi": "हार्डवेयर और सॉफ़्टवेयर से संयुक्त रूप से रोशनी कम करना",
       "th": "หรี่แสงด้วยฮาร์ดแวร์และซอฟต์แวร์ร่วมกัน",
-      "ja": "ハードウェアとソフトウェアを組み合わせた減光",
+      "ja": "ハードウェアとソフトウェアを組み合わせたディミング",
       "zh-Hans": "结合硬件与软件调暗",
       "zh-Hant": "結合硬體與軟體調暗",
       "ko": "하드웨어와 소프트웨어를 결합한 디밍"
@@ -4668,7 +4668,7 @@ window.BD_LOCALIZATION = {
       "fa": "تاریک‌سازی نرم‌افزاری با جدول‌های رنگ",
       "hi": "रंग तालिका से सॉफ़्टवेयर द्वारा रोशनी कम करना",
       "th": "หรี่แสงด้วยซอฟต์แวร์ผ่านตารางสี",
-      "ja": "カラーテーブルによるソフトウェア減光",
+      "ja": "カラーテーブルによるソフトウェアディミング",
       "zh-Hans": "通过色表进行软件调暗",
       "zh-Hant": "透過色表進行軟體調暗",
       "ko": "색상표를 통한 소프트웨어 디밍"
@@ -4709,7 +4709,7 @@ window.BD_LOCALIZATION = {
       "fa": "تاریک‌سازی نرم‌افزاری با لایه‌های پوشاننده",
       "hi": "ओवरले से सॉफ़्टवेयर द्वारा रोशनी कम करना",
       "th": "หรี่แสงด้วยซอฟต์แวร์ผ่านเลเยอร์ซ้อนทับ",
-      "ja": "オーバーレイによるソフトウェア減光",
+      "ja": "オーバーレイによるソフトウェアディミング",
       "zh-Hans": "通过叠加层进行软件调暗",
       "zh-Hant": "透過疊加層進行軟體調暗",
       "ko": "오버레이를 통한 소프트웨어 디밍"
@@ -4791,7 +4791,7 @@ window.BD_LOCALIZATION = {
       "fa": "ویرایش وضوح‌های مقیاس‌شدهٔ سفارشی",
       "hi": "कस्टम स्केल किए गए रिज़ोल्यूशन का संपादन",
       "th": "แก้ไขความละเอียดแบบปรับสเกลที่กำหนดเอง",
-      "ja": "カスタムのスケーリング解像度の編集",
+      "ja": "カスタムスケール解像度の編集",
       "zh-Hans": "编辑自定义缩放分辨率",
       "zh-Hant": "編輯自訂縮放解析度",
       "ko": "사용자 지정 크기 조절 해상도 편집"
@@ -5037,7 +5037,7 @@ window.BD_LOCALIZATION = {
       "fa": "حفاظت تطبیقی از چیدمان و مدیریت پیشرفتهٔ چیدمان¹",
       "hi": "अनुकूलनीय लेआउट सुरक्षा और उन्नत लेआउट प्रबंधन¹",
       "th": "ป้องกันตำแหน่งจอภาพแบบปรับตัวและจัดการการจัดวางขั้นสูง¹",
-      "ja": "適応型のレイアウト保護と高度な配置管理¹",
+      "ja": "適応型レイアウト保護と高度な配置管理¹",
       "zh-Hans": "自适应布局保护和高级布局管理¹",
       "zh-Hant": "自適應佈局保護與進階佈局管理¹",
       "ko": "적응형 레이아웃 보호 및 고급 배치 관리¹"
@@ -5119,7 +5119,7 @@ window.BD_LOCALIZATION = {
       "fa": "همگام‌سازی پایهٔ روشنایی",
       "hi": "बुनियादी ब्राइटनेस सिंक्रनाइज़ेशन",
       "th": "ซิงค์ความสว่างพื้นฐาน",
-      "ja": "基本的な明るさの同期",
+      "ja": "基本的な輝度の同期",
       "zh-Hans": "基本亮度同步",
       "zh-Hant": "基本亮度同步",
       "ko": "기본 밝기 동기화"
@@ -5160,7 +5160,7 @@ window.BD_LOCALIZATION = {
       "fa": "همگام‌سازی روشنایی نرمال‌شده بر حسب نیت",
       "hi": "निट में सामान्यीकृत ब्राइटनेस सिंक्रनाइज़ेशन",
       "th": "ซิงค์ความสว่างที่ปรับเป็นมาตรฐานในหน่วยนิต",
-      "ja": "ニトで正規化した明るさの同期",
+      "ja": "ニトで正規化した輝度の同期",
       "zh-Hans": "以尼特为单位的标准化亮度同步",
       "zh-Hant": "以尼特為單位的標準化亮度同步",
       "ko": "니트 단위로 정규화된 밝기 동기화"
@@ -5201,7 +5201,7 @@ window.BD_LOCALIZATION = {
       "fa": "همگام‌سازی پیشرفتهٔ روشنایی و تنظیمات تصویر",
       "hi": "ब्राइटनेस और तस्वीर समायोजन का उन्नत सिंक्रनाइज़ेशन",
       "th": "ซิงค์ความสว่างและการปรับภาพขั้นสูง",
-      "ja": "明るさと画像調整の高度な同期",
+      "ja": "輝度と画像調整の詳細な同期",
       "zh-Hans": "高级亮度和图像调整同步",
       "zh-Hant": "進階亮度與影像調整同步",
       "ko": "고급 밝기 및 이미지 조정 동기화"
@@ -5365,7 +5365,7 @@ window.BD_LOCALIZATION = {
       "fa": "تنظیمات نرم‌افزاری پیشرفتهٔ رنگ",
       "hi": "उन्नत सॉफ़्टवेयर रंग समायोजन",
       "th": "ปรับสีด้วยซอฟต์แวร์ขั้นสูง",
-      "ja": "高度なソフトウェア色調整",
+      "ja": "高度なソフトウェアカラー調整",
       "zh-Hans": "高级软件色彩调整",
       "zh-Hant": "進階軟體色彩調整",
       "ko": "고급 소프트웨어 색상 조정"
@@ -5529,7 +5529,7 @@ window.BD_LOCALIZATION = {
       "fa": "تغییر خودکار نمایهٔ رنگ بین SDR و HDR",
       "hi": "SDR और HDR के बीच स्वचालित रंग प्रोफ़ाइल बदलाव",
       "th": "สลับโปรไฟล์สีอัตโนมัติระหว่าง SDR และ HDR",
-      "ja": "SDRとHDRの間でのカラープロファイル自動切り替え",
+      "ja": "SDRとHDR間でのカラープロファイル自動切り替え",
       "zh-Hans": "在 SDR 与 HDR 之间自动切换颜色描述文件",
       "zh-Hant": "在 SDR 與 HDR 之間自動切換色彩描述檔",
       "ko": "SDR과 HDR 간 자동 색상 프로파일 전환"
@@ -5611,7 +5611,7 @@ window.BD_LOCALIZATION = {
       "fa": "ساخت صفحه‌های مجازی",
       "hi": "वर्चुअल स्क्रीन बनाना",
       "th": "สร้างหน้าจอเสมือน",
-      "ja": "仮想画面の作成",
+      "ja": "仮想スクリーンの作成",
       "zh-Hans": "创建虚拟屏幕",
       "zh-Hant": "建立虛擬螢幕",
       "ko": "가상 화면 생성"
@@ -5652,7 +5652,7 @@ window.BD_LOCALIZATION = {
       "fa": "تصویر در تصویر برای نمایشگرهای فیزیکی و صفحه‌های مجازی",
       "hi": "भौतिक डिस्प्ले और वर्चुअल स्क्रीन के लिए पिक्चर इन पिक्चर",
       "th": "หน้าต่างย่อยในหน้าต่างหลักสำหรับจอภาพจริงและหน้าจอเสมือน",
-      "ja": "物理ディスプレイと仮想画面のピクチャ・イン・ピクチャ",
+      "ja": "物理ディスプレイと仮想スクリーンのピクチャインピクチャ",
       "zh-Hans": "物理显示器和虚拟屏幕的画中画",
       "zh-Hant": "實體顯示器與虛擬螢幕的子母畫面",
       "ko": "물리적 디스플레이와 가상 화면의 화면 속 화면"
@@ -5693,7 +5693,7 @@ window.BD_LOCALIZATION = {
       "fa": "ضبط پنجره‌ها یا گروه‌های پنجرهٔ انتخاب‌شده برای تصویر در تصویر/ارسال تصویر",
       "hi": "PIP/स्ट्रीम के लिए चुनी हुई विंडो या विंडो समूह कैप्चर करना",
       "th": "จับภาพหน้าต่างหรือกลุ่มหน้าต่างที่เลือกสำหรับ PIP/สตรีม",
-      "ja": "選択したウインドウやウインドウグループのPIP・ストリーミング用キャプチャ",
+      "ja": "選択したウインドウやウインドウグループのPIP/ストリーミングのキャプチャ",
       "zh-Hans": "为画中画/串流捕获选定窗口或窗口组",
       "zh-Hant": "為 PIP/串流擷取所選視窗或視窗群組",
       "ko": "선택한 윈도우 또는 윈도우 그룹의 PIP/스트리밍 캡처"
@@ -5775,7 +5775,7 @@ window.BD_LOCALIZATION = {
       "fa": "پیکربندی‌های سفارشی صفحهٔ مجازی",
       "hi": "कस्टम वर्चुअल स्क्रीन कॉन्फ़िगरेशन",
       "th": "การกำหนดค่าหน้าจอเสมือนแบบกำหนดเอง",
-      "ja": "カスタム仮想画面構成",
+      "ja": "カスタム仮想スクリーンの構成",
       "zh-Hans": "自定义虚拟屏幕配置",
       "zh-Hant": "自訂虛擬螢幕設定",
       "ko": "사용자 지정 가상 화면 구성"
@@ -5816,7 +5816,7 @@ window.BD_LOCALIZATION = {
       "fa": "صفحه‌های مجازی HDR و نرخ نوسازی بالا در Macهای سازگار",
       "hi": "संगत Mac पर HDR और उच्च रिफ़्रेश रेट वाली वर्चुअल स्क्रीन",
       "th": "หน้าจอเสมือน HDR และอัตรารีเฟรชสูงบน Mac ที่เข้ากันได้",
-      "ja": "対応するMacでのHDR・高リフレッシュレートの仮想画面",
+      "ja": "対応するMacでのHDR、高リフレッシュレートの仮想スクリーン",
       "zh-Hans": "兼容 Mac 上的 HDR 和高刷新率虚拟屏幕",
       "zh-Hant": "相容 Mac 上的 HDR 與高更新率虛擬螢幕",
       "ko": "호환되는 Mac에서 HDR 및 높은 주사율의 가상 화면"
@@ -5857,7 +5857,7 @@ window.BD_LOCALIZATION = {
       "fa": "مرتبط کردن صفحه‌های مجازی با نمایشگرها",
       "hi": "वर्चुअल स्क्रीन को डिस्प्ले से जोड़ना",
       "th": "เชื่อมโยงหน้าจอเสมือนกับจอภาพ",
-      "ja": "仮想画面とディスプレイの関連付け",
+      "ja": "仮想スクリーンとディスプレイの関連付け",
       "zh-Hans": "将虚拟屏幕与显示器关联",
       "zh-Hant": "將虛擬螢幕與顯示器關聯",
       "ko": "가상 화면과 디스플레이 연관"
@@ -5980,7 +5980,7 @@ window.BD_LOCALIZATION = {
       "fa": "کشیدن و جای‌گذاری تصویر در تصویر/ارسال تصویر",
       "hi": "PIP/स्ट्रीम को फैलाना और स्थिति तय करना",
       "th": "ยืดและจัดตำแหน่ง PIP/สตรีม",
-      "ja": "PIP・ストリーミングの引き伸ばしと配置",
+      "ja": "PIP/ストリーミングの引き伸ばしと配置",
       "zh-Hans": "画中画/串流拉伸与定位",
       "zh-Hant": "PIP/串流延展與定位",
       "ko": "PIP/스트리밍 늘이기 및 위치 지정"
@@ -6021,7 +6021,7 @@ window.BD_LOCALIZATION = {
       "fa": "برش تصویر در تصویر/ارسال تصویر",
       "hi": "PIP/स्ट्रीम को क्रॉप करना",
       "th": "ครอบตัด PIP/สตรีม",
-      "ja": "PIP・ストリーミングの切り抜き",
+      "ja": "PIP・ストリーミングの切り取り",
       "zh-Hans": "画中画/串流裁剪",
       "zh-Hant": "PIP/串流裁切",
       "ko": "PIP/스트리밍 자르기"
@@ -6062,7 +6062,7 @@ window.BD_LOCALIZATION = {
       "fa": "چرخش تصویر در تصویر/ارسال تصویر و Sidecar عمودی",
       "hi": "PIP/स्ट्रीम घुमाना और पोर्ट्रेट Sidecar",
       "th": "หมุน PIP/สตรีมและ Sidecar แนวตั้ง",
-      "ja": "PIP・ストリーミングの回転と縦向きSidecar",
+      "ja": "PIP/ストリーミングの回転と縦位置Sidecar",
       "zh-Hans": "画中画/串流旋转和竖屏随航",
       "zh-Hant": "PIP/串流旋轉與直向並行",
       "ko": "PIP/스트리밍 회전 및 세로 방향 Sidecar"
@@ -6103,7 +6103,7 @@ window.BD_LOCALIZATION = {
       "fa": "حالت متن‌خوان با وارونه کردن تصویر ارسالی",
       "hi": "स्ट्रीम पलटकर टेलीप्रॉम्प्टर मोड",
       "th": "โหมดเครื่องบอกบทด้วยการพลิกภาพสตรีม",
-      "ja": "ストリーミングの反転によるテレプロンプターモード",
+      "ja": "ストリーミングのフリップによるテレプロンプターモード",
       "zh-Hans": "通过翻转串流实现提词器模式",
       "zh-Hant": "透過翻轉串流實現提詞機模式",
       "ko": "스트리밍 뒤집기를 통한 텔레프롬프터 모드"
@@ -6144,7 +6144,7 @@ window.BD_LOCALIZATION = {
       "fa": "رندر با compositor برای پنجره‌های فیلتر ویدیو",
       "hi": "वीडियो फ़िल्टर विंडो के लिए कंपोज़िटर रेंडरिंग",
       "th": "เรนเดอร์ด้วยคอมโพสิตสำหรับหน้าต่างตัวกรองวิดีโอ",
-      "ja": "ビデオフィルタウインドウのコンポジタレンダリング",
+      "ja": "ビデオフィルタウインドウのコンポジターレンダリング",
       "zh-Hans": "视频滤镜窗口的合成器渲染",
       "zh-Hant": "影像濾鏡視窗的合成器算繪",
       "ko": "비디오 필터 윈도우의 컴포지터 렌더링"
@@ -6185,7 +6185,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل DDC در اتصال‌های پشتیبانی‌شدهٔ Apple Silicon",
       "hi": "समर्थित Apple Silicon कनेक्शन पर DDC नियंत्रण",
       "th": "ควบคุม DDC ผ่านการเชื่อมต่อ Apple Silicon ที่รองรับ",
-      "ja": "対応するApple Siliconの接続でのDDC制御",
+      "ja": "対応するAppleシリコン接続でのDDC制御",
       "zh-Hans": "受支持的 Apple Silicon 连接上的 DDC 控制",
       "zh-Hant": "支援的 Apple Silicon 連線上的 DDC 控制",
       "ko": "지원되는 Apple Silicon 연결에서 DDC 제어"
@@ -6226,7 +6226,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل DDC در اتصال‌های پشتیبانی‌شدهٔ Intel",
       "hi": "समर्थित Intel कनेक्शन पर DDC नियंत्रण",
       "th": "ควบคุม DDC ผ่านการเชื่อมต่อ Intel ที่รองรับ",
-      "ja": "対応するIntelの接続でのDDC制御",
+      "ja": "対応するIntel接続でのDDC制御",
       "zh-Hans": "受支持的 Intel 连接上的 DDC 控制",
       "zh-Hant": "支援的 Intel 連線上的 DDC 控制",
       "ko": "지원되는 Intel 연결에서 DDC 제어"
@@ -6431,7 +6431,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل بهرهٔ کانال‌های رنگ با DDC",
       "hi": "DDC से रंग चैनल गेन नियंत्रण",
       "th": "ควบคุมเกนช่องสีผ่าน DDC",
-      "ja": "DDCによる色チャンネルのゲイン制御",
+      "ja": "DDCによるカラーチャンネルのゲイン制御",
       "zh-Hans": "DDC 色彩通道增益控制",
       "zh-Hant": "DDC 色彩通道增益控制",
       "ko": "DDC 색상 채널 게인 제어"
@@ -6513,7 +6513,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل LG webOS TV",
       "hi": "LG webOS TV नियंत्रण",
       "th": "ควบคุม LG webOS TV",
-      "ja": "LG webOS TVの制御",
+      "ja": "LG webOSテレビの制御",
       "zh-Hans": "LG webOS TV 控制",
       "zh-Hant": "LG webOS TV 控制",
       "ko": "LG webOS TV 제어"
@@ -6554,7 +6554,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل Samsung Tizen TV",
       "hi": "Samsung Tizen TV नियंत्रण",
       "th": "ควบคุม Samsung Tizen TV",
-      "ja": "Samsung Tizen TVの制御",
+      "ja": "Samsung Tizenテレビの制御",
       "zh-Hans": "Samsung Tizen TV 控制",
       "zh-Hant": "Samsung Tizen TV 控制",
       "ko": "Samsung Tizen TV 제어"
@@ -6595,7 +6595,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل Philips Android TV",
       "hi": "Philips Android TV नियंत्रण",
       "th": "ควบคุม Philips Android TV",
-      "ja": "Philips Android TVの制御",
+      "ja": "Philips Androidテレビの制御",
       "zh-Hans": "Philips Android TV 控制",
       "zh-Hant": "Philips Android TV 控制",
       "ko": "Philips Android TV 제어"
@@ -6636,7 +6636,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل Yamaha AVR",
       "hi": "Yamaha AVR नियंत्रण",
       "th": "ควบคุม Yamaha AVR",
-      "ja": "Yamaha AVRの制御",
+      "ja": "ヤマハAVRの制御",
       "zh-Hans": "Yamaha AVR 控制",
       "zh-Hant": "Yamaha AVR 控制",
       "ko": "Yamaha AVR 제어"
@@ -6677,7 +6677,7 @@ window.BD_LOCALIZATION = {
       "fa": "پشتیبانی Night Shift برای تلویزیون‌ها",
       "hi": "टीवी के लिए Night Shift समर्थन",
       "th": "รองรับ Night Shift สำหรับทีวี",
-      "ja": "テレビでのNight Shift対応",
+      "ja": "テレビのNight Shift対応",
       "zh-Hans": "电视夜览支持",
       "zh-Hant": "電視夜覽支援",
       "ko": "TV용 Night Shift 지원"
@@ -6800,7 +6800,7 @@ window.BD_LOCALIZATION = {
       "fa": "میان‌برهای سفارشی پایهٔ صفحه‌کلید",
       "hi": "बुनियादी कस्टम कीबोर्ड शॉर्टकट",
       "th": "ปุ่มลัดพื้นฐานแบบกำหนดเอง",
-      "ja": "基本的なカスタムキーボードショートカット",
+      "ja": "基本カスタムキーボードショートカット",
       "zh-Hans": "基本自定义键盘快捷键",
       "zh-Hant": "基本自訂鍵盤快速鍵",
       "ko": "기본 사용자 지정 키보드 단축키"
@@ -6841,7 +6841,7 @@ window.BD_LOCALIZATION = {
       "fa": "میان‌برهای سفارشی پیشرفتهٔ صفحه‌کلید",
       "hi": "उन्नत कस्टम कीबोर्ड शॉर्टकट",
       "th": "ปุ่มลัดขั้นสูงแบบกำหนดเอง",
-      "ja": "高度なカスタムキーボードショートカット",
+      "ja": "詳細カスタムキーボードショートカット",
       "zh-Hans": "高级自定义键盘快捷键",
       "zh-Hant": "進階自訂鍵盤快速鍵",
       "ko": "고급 사용자 지정 키보드 단축키"
@@ -6882,7 +6882,7 @@ window.BD_LOCALIZATION = {
       "fa": "OSD سیستم یا سفارشی (بسته به نسخهٔ macOS)",
       "hi": "सिस्टम या कस्टम OSD (macOS संस्करण पर निर्भर)",
       "th": "OSD ของระบบหรือแบบกำหนดเอง (ขึ้นอยู่กับเวอร์ชัน macOS)",
-      "ja": "標準またはカスタムのOSD（macOSのバージョンによる）",
+      "ja": "標準/カスタムOSD（macOSのバージョンによる）",
       "zh-Hans": "系统或自定义 OSD（取决于 macOS 版本）",
       "zh-Hant": "系統或自訂 OSD（依 macOS 版本而定）",
       "ko": "기본 또는 사용자 지정 OSD(macOS 버전에 따라 다름)"
@@ -6923,7 +6923,7 @@ window.BD_LOCALIZATION = {
       "fa": "سبک‌های بهبودیافتهٔ OSD و گزینهٔ OSD سنتی",
       "hi": "बेहतर OSD शैलियाँ और पारंपरिक OSD विकल्प",
       "th": "สไตล์ OSD ที่ปรับปรุงและตัวเลือก OSD แบบดั้งเดิม",
-      "ja": "洗練されたOSDスタイルと従来型OSDの選択肢",
+      "ja": "洗練されたOSDスタイルと従来型OSDとを選択可能",
       "zh-Hans": "改进的 OSD 样式和传统 OSD 选项",
       "zh-Hant": "改良的 OSD 樣式與傳統 OSD 選項",
       "ko": "개선된 OSD 스타일 및 전통적인 OSD 옵션"
@@ -6964,7 +6964,7 @@ window.BD_LOCALIZATION = {
       "fa": "نمایش روشنایی بر حسب نیت در OSD",
       "hi": "OSD में निट में ब्राइटनेस दिखाना",
       "th": "แสดงความสว่างในหน่วยนิตบน OSD",
-      "ja": "OSDでのニト単位の明るさ表示",
+      "ja": "OSDにニト単位の輝度を表示",
       "zh-Hans": "在 OSD 上显示以尼特为单位的亮度",
       "zh-Hant": "在 OSD 上顯示以尼特為單位的亮度",
       "ko": "OSD에 니트 단위 밝기 표시"
@@ -7005,7 +7005,7 @@ window.BD_LOCALIZATION = {
       "fa": "بازنویسی نام نمایشگرها",
       "hi": "डिस्प्ले नाम ओवरराइड",
       "th": "แทนที่ชื่อจอภาพ",
-      "ja": "ディスプレイ名の上書き",
+      "ja": "ディスプレイ名のオーバーライド",
       "zh-Hans": "显示器名称覆盖",
       "zh-Hant": "顯示器名稱覆寫",
       "ko": "디스플레이 이름 재정의"
@@ -7374,7 +7374,7 @@ window.BD_LOCALIZATION = {
       "fa": "بازنویسی وضوح بومی و پیش‌فرض",
       "hi": "नेटिव और डिफ़ॉल्ट रिज़ोल्यूशन ओवरराइड",
       "th": "แทนที่ความละเอียดจริงและค่าเริ่มต้น",
-      "ja": "ネイティブ解像度とデフォルト解像度の上書き",
+      "ja": "ネイティブ解像度とデフォルト解像度のオーバーライド",
       "zh-Hans": "原生和默认分辨率覆盖",
       "zh-Hant": "原生與預設解析度覆寫",
       "ko": "기본 해상도와 기본 설정 해상도 재정의"
@@ -7415,7 +7415,7 @@ window.BD_LOCALIZATION = {
       "fa": "انتخاب حالت رنگ در پیکربندی‌های پشتیبانی‌شدهٔ Apple Silicon",
       "hi": "समर्थित Apple Silicon कॉन्फ़िगरेशन में रंग मोड चयन",
       "th": "เลือกโหมดสีในการกำหนดค่า Apple Silicon ที่รองรับ",
-      "ja": "対応するApple Silicon構成でのカラーモード選択",
+      "ja": "対応するAppleシリコン構成でのカラーモード選択",
       "zh-Hans": "受支持的 Apple Silicon 配置上的色彩模式选择",
       "zh-Hant": "支援的 Apple Silicon 設定上的色彩模式選擇",
       "ko": "지원되는 Apple Silicon 구성에서 색상 모드 선택"
@@ -7456,7 +7456,7 @@ window.BD_LOCALIZATION = {
       "fa": "نرخ‌های نوسازی اضافی و NTSC در Macهای سازگار Apple Silicon",
       "hi": "संगत Apple Silicon Mac पर अतिरिक्त और NTSC रिफ़्रेश रेट",
       "th": "อัตรารีเฟรชเพิ่มเติมและ NTSC บน Mac ที่ใช้ Apple Silicon ที่เข้ากันได้",
-      "ja": "対応するApple Silicon搭載Macでの追加・NTSCリフレッシュレート",
+      "ja": "対応するAppleシリコン搭載Macでの追加、NTSCリフレッシュレート",
       "zh-Hans": "兼容 Apple Silicon Mac 上的额外刷新率和 NTSC 刷新率",
       "zh-Hant": "相容 Apple Silicon Mac 上的額外更新率與 NTSC 更新率",
       "ko": "호환되는 Apple Silicon Mac에서 추가 주사율 및 NTSC 주사율"
@@ -7620,7 +7620,7 @@ window.BD_LOCALIZATION = {
       "fa": "بازنویسی EDID در Apple Silicon و Intel",
       "hi": "Apple Silicon और Intel पर EDID ओवरराइड",
       "th": "แทนที่ EDID บน Apple Silicon และ Intel",
-      "ja": "Apple SiliconとIntelでのEDID上書き",
+      "ja": "AppleシリコンとIntelでのEDIDオーバーライド",
       "zh-Hans": "Apple Silicon 和 Intel 上的 EDID 覆盖",
       "zh-Hant": "Apple Silicon 與 Intel 上的 EDID 覆寫",
       "ko": "Apple Silicon 및 Intel의 EDID 재정의"
@@ -7661,7 +7661,7 @@ window.BD_LOCALIZATION = {
       "fa": "دریافت و صدور EDID",
       "hi": "EDID प्राप्त करना और निर्यात करना",
       "th": "ดึงข้อมูลและส่งออก EDID",
-      "ja": "EDIDの取得とエクスポート",
+      "ja": "EDIDの取得と書き出し",
       "zh-Hans": "获取和导出 EDID",
       "zh-Hant": "取得及輸出 EDID",
       "ko": "EDID 가져오기 및 내보내기"
@@ -7702,7 +7702,7 @@ window.BD_LOCALIZATION = {
       "fa": "اطلاعات گستردهٔ نمایشگر و گزارش‌های عیب‌یابی",
       "hi": "विस्तृत डिस्प्ले जानकारी और डायग्नोस्टिक रिपोर्ट",
       "th": "ข้อมูลจอภาพที่ครอบคลุมขึ้นและรายงานการวินิจฉัย",
-      "ja": "拡張されたディスプレイ情報と診断レポート",
+      "ja": "拡張ディスプレイ情報と診断レポート",
       "zh-Hans": "扩展显示器信息和诊断报告",
       "zh-Hant": "擴充顯示器資訊與診斷報告",
       "ko": "확장된 디스플레이 정보 및 진단 보고서"
@@ -7784,7 +7784,7 @@ window.BD_LOCALIZATION = {
       "fa": "کنترل DDC و رنگ با DisplayLink، در صورت پشتیبانی",
       "hi": "जहाँ समर्थित हो, DisplayLink DDC और रंग नियंत्रण",
       "th": "ควบคุม DDC และสีผ่าน DisplayLink เมื่อรองรับ",
-      "ja": "対応環境でのDisplayLinkのDDC・色制御",
+      "ja": "対応環境でのDisplayLinkのDDCおよびカラー制御",
       "zh-Hans": "在受支持的情况下进行 DisplayLink DDC 和色彩控制",
       "zh-Hant": "在支援的情況下進行 DisplayLink DDC 與色彩控制",
       "ko": "지원되는 환경에서 DisplayLink DDC 및 색상 제어"
@@ -8071,7 +8071,7 @@ window.BD_LOCALIZATION = {
       "fa": "¹ چیدمان بصری رایگان است. برخی گزینه‌های پیشرفتهٔ چسبیدن به شبکه و حفاظت از چیدمان به Pro نیاز دارند.",
       "hi": "¹ दृश्य व्यवस्था मुफ़्त है। कुछ उन्नत ग्रिड-स्नैप विकल्पों और लेआउट सुरक्षा के लिए Pro चाहिए।",
       "th": "¹ การจัดวางด้วยภาพใช้งานได้ฟรี ตัวเลือกการจัดชิดกริดขั้นสูงบางรายการและการป้องกันตำแหน่งจอภาพต้องใช้ Pro",
-      "ja": "¹ 視覚的な配置は無料です。一部の高度なグリッドスナップ設定とレイアウト保護にはProが必要です。",
+      "ja": "¹ 視覚的配置は無料機能です。一部の高度なグリッドスナップ設定とレイアウト保護にはProが必要です。",
       "zh-Hans": "¹ 直观排列功能免费。部分高级网格吸附选项和布局保护需要 Pro。",
       "zh-Hant": "¹ 視覺排列功能免費。部分進階格線貼齊選項與佈局保護需要 Pro。",
       "ko": "¹ 시각적 배치는 무료입니다. 일부 고급 격자 맞춤 옵션과 레이아웃 보호에는 Pro가 필요합니다."
@@ -8112,7 +8112,7 @@ window.BD_LOCALIZATION = {
       "fa": "² دسترسی به رابط‌های خودکارسازی رایگان است؛ عملیاتی که قابلیت‌های Pro را کنترل می‌کنند همچنان به Pro نیاز دارند.",
       "hi": "² ऑटोमेशन इंटरफ़ेस का एक्सेस मुफ़्त है; Pro सुविधाएँ नियंत्रित करने वाले कार्यों के लिए फिर भी Pro चाहिए।",
       "th": "² เข้าถึงอินเทอร์เฟซระบบอัตโนมัติได้ฟรี แต่การทำงานที่ควบคุมคุณสมบัติ Pro ยังคงต้องใช้ Pro",
-      "ja": "² 自動化インターフェイスへのアクセスは無料ですが、Pro機能を制御する操作にはProが必要です。",
+      "ja": "² オートメーションのインターフェイスは無料でアクセスできますが、Pro機能を制御するにはProが必要です。",
       "zh-Hans": "² 自动化接口可免费访问；控制 Pro 功能的操作仍需要 Pro。",
       "zh-Hant": "² 自動化介面可免費存取；控制 Pro 功能的操作仍需要 Pro。",
       "ko": "² 자동화 인터페이스는 무료로 이용할 수 있지만, Pro 기능을 제어하는 작업에는 여전히 Pro가 필요합니다."
@@ -8153,7 +8153,7 @@ window.BD_LOCALIZATION = {
       "fa": "از توسعه حمایت کنید.<br/>همهٔ قابلیت‌ها را باز کنید.<br/>Pro بگیرید.",
       "hi": "विकास में सहयोग दें।<br/>सभी सुविधाएँ अनलॉक करें।<br/>Pro लें।",
       "th": "สนับสนุนการพัฒนา<br/>ปลดล็อกทุกคุณสมบัติ<br/>ซื้อ Pro",
-      "ja": "開発を支援。<br/>すべての機能を解放。<br/>Proを購入。",
+      "ja": "開発を支援<br/>すべての機能を解放<br/>Proを購入",
       "zh-Hans": "支持开发。<br/>解锁全部功能。<br/>购买 Pro。",
       "zh-Hant": "支持開發。<br/>解鎖所有功能。<br/>購買 Pro。",
       "ko": "개발을 지원하세요.<br/>모든 기능을 잠금 해제하세요.<br/>Pro를 구매하세요."
@@ -9875,7 +9875,7 @@ window.BD_LOCALIZATION = {
       "fa": "BetterDisplay ابزاری قدرتمند برای نمایشگرهای macOS است، با مقیاس‌بندی انعطاف‌پذیر HiDPI، کنترل روشنایی و رنگ، نمایشگرهای مجازی، تصویر در تصویر، همگام‌سازی نمایشگرها و امکانات بیشتر.",
       "hi": "BetterDisplay macOS के लिए एक शक्तिशाली डिस्प्ले टूल है, जिसमें फ़्लेक्सिबल HiDPI स्केलिंग, ब्राइटनेस और रंग नियंत्रण, वर्चुअल डिस्प्ले, पिक्चर इन पिक्चर, डिस्प्ले सिंक्रनाइज़ेशन और बहुत कुछ है।",
       "th": "BetterDisplay คือเครื่องมือจอภาพ macOS ที่ทรงพลัง สำหรับการปรับขนาด HiDPI ที่ยืดหยุ่น การควบคุมความสว่างและสี จอภาพเสมือน หน้าต่างย่อยในหน้าต่างหลัก การซิงค์จอภาพ และอื่น ๆ",
-      "ja": "BetterDisplayは、柔軟なHiDPIスケーリング、明るさと色の制御、仮想ディスプレイ、ピクチャ・イン・ピクチャ、ディスプレイ同期などに対応する、強力なmacOS用ディスプレイユーティリティです。",
+      "ja": "BetterDisplayは、フレキシブルHiDPIサイズ調整、輝度とカラー制御、仮想ディスプレイ、ピクチャインピクチャ、ディスプレイ同期などに対応する、強力なmacOS用ディスプレイユーティリティです。",
       "zh-Hans": "BetterDisplay 是一款强大的 macOS 显示器工具，提供 HiDPI 平滑缩放、亮度与色彩控制、虚拟显示器、画中画、显示器同步等功能。",
       "zh-Hant": "BetterDisplay 是一款強大的 macOS 顯示器工具，提供 HiDPI 平滑縮放、亮度與色彩控制、虛擬顯示器、子母畫面、顯示器同步等功能。",
       "ko": "BetterDisplay는 유연한 HiDPI 크기 조절, 밝기 및 색상 제어, 가상 디스플레이, 화면 속 화면, 디스플레이 동기화 등을 제공하는 강력한 macOS 디스플레이 유틸리티입니다."
@@ -10121,7 +10121,7 @@ window.BD_LOCALIZATION = {
       "fa": "این زبان بارگیری نشد. دوباره تلاش کنید.",
       "hi": "यह भाषा लोड नहीं हो सकी। कृपया फिर से कोशिश करें।",
       "th": "โหลดภาษานี้ไม่ได้ โปรดลองอีกครั้ง",
-      "ja": "この言語を読み込めませんでした。もう一度お試しください。",
+      "ja": "この言語を読み込めませんでした。やり直してください。",
       "zh-Hans": "无法加载此语言。请重试。",
       "zh-Hant": "無法載入此語言。請再試一次。",
       "ko": "이 언어를 불러올 수 없습니다. 다시 시도해 주세요."
