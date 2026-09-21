@@ -1563,20 +1563,20 @@ AliPay available in China.</source>
         <target state="translated">Apple Pay için Safari, Google Pay için Chrome gerekli. AliPay Çin'de geçerlidir.</target>
         <note>53477 - Payment method browser and regional availability help.</note>
       </trans-unit>
-      <trans-unit id="Apple Silicon" xml:space="preserve">
-        <source>Apple Silicon</source>
-        <target state="translated">Apple Silicon</target>
-        <note>53477 - Apple processor family name; retain the established technical identifier.</note>
-      </trans-unit>
-      <trans-unit id="Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
-        <source>Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
-        <target state="translated">Apple Silicon Mac'ler, sanal bir ekran yansıtıldığında uyku moduna geçtikten sonra ekranın bekleme moduna geçmesine izin vermek yerine ekranı dondurma eğilimindedir. Bu geçici çözüm bu sorunu çözmeye çalışır.</target>
-        <note>53477 - Sleep workaround for mirrored virtual screens on Apple Silicon Macs.</note>
-      </trans-unit>
       <trans-unit id="Apple external display" xml:space="preserve">
         <source>Apple external display</source>
         <target state="translated">Apple harici ekranı</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon" xml:space="preserve">
+        <source>Apple silicon</source>
+        <target state="translated">Apple silicon</target>
+        <note>53668 - Apple processor family name shown in display information. Use lowercase silicon when retaining the English name Apple silicon; preserve established localized names.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
+        <source>Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
+        <target state="translated">Apple silicon Mac'ler, sanal bir ekran yansıtıldığında uyku moduna geçtikten sonra ekranın bekleme moduna geçmesine izin vermek yerine ekranı dondurma eğilimindedir. Bu geçici çözüm bu sorunu çözmeye çalışır.</target>
+        <note>53668 - Sleep workaround for mirrored virtual screens on Apple silicon Macs.</note>
       </trans-unit>
       <trans-unit id="Application" xml:space="preserve">
         <source>Application</source>
@@ -6188,10 +6188,10 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <target state="translated">Kontrastı arttır - hassas ölçek</target>
         <note>53477 - Fine contrast increase action.</note>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
-        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
-        <target state="translated">Ekran parlaklığını %100'ün üzerine çıkarın. Apple XDR ekran veya HDR modunda HDR özellikli harici ekran gerekir. Bu özellik, Apple Silicon Mac'lerde etkinleştirilen renk tablosu ayarlamalarıyla veya tüm platformlarda devre dışı bırakıldığında (Metal tabanlı kaplama parlaklık kontrolü kullanılarak) çalışır. Metal kullanarak yükseltme, bazı sistemlerde CPU ve GPU kullanımını artırabilir.</target>
-        <note>53477 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
+      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
+        <target state="translated">Ekran parlaklığını %100'ün üzerine çıkarın. Apple XDR ekran veya HDR modunda HDR özellikli harici ekran gerekir. Bu özellik, Apple silicon Mac'lerde etkinleştirilen renk tablosu ayarlamalarıyla veya tüm platformlarda devre dışı bırakıldığında (Metal tabanlı kaplama parlaklık kontrolü kullanılarak) çalışır. Metal kullanarak yükseltme, bazı sistemlerde CPU ve GPU kullanımını artırabilir.</target>
+        <note>53668 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
         <source>Increase gamma</source>
@@ -8122,6 +8122,11 @@ Her ekran ekran kontrolünü desteklemez. Bu işlemler bazı ekranlarda sorunlar
         <source>Provides basic TV control through HDMI-CEC commands if supported by the current connection and display.</source>
         <target state="translated">Geçerli bağlantı ve ekran tarafından destekleniyorsa, HDMI-CEC komutları aracılığıyla temel TV kontrolü sağlar.</target>
         <note>53477 - HDMI-CEC controller help.</note>
+      </trans-unit>
+      <trans-unit id="Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)." xml:space="preserve">
+        <source>Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928).</source>
+        <target state="translated">HDMI-CEC komutları aracılığıyla temel TV kontrolü sağlar. Desteklenen bir yerleşik HDMI bağlantı noktası veya HDMI-CEC tünelleme desteği olan bir adaptör üzerinden bağlanan uyumlu bir ekran ve Apple silicon Mac gerektirir. Apple, giriş seviyesi M3 MacBook Pro hariç, 2023 veya sonrasında tanıtılan M3 serisi ya da daha yeni çiplere sahip belirli Mac modellerinde yerleşik destek bulunduğunu belirtir. [Daha fazla bilgi](https://support.apple.com/en-us/108928).</target>
+        <note>53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.</note>
       </trans-unit>
       <trans-unit id="Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
         <source>Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>

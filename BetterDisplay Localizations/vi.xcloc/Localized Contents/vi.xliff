@@ -1564,20 +1564,20 @@ AliPay available in China.</source>
 AliPay khả dụng ở Trung Quốc.</target>
         <note>53477 - Payment method browser and regional availability help.</note>
       </trans-unit>
-      <trans-unit id="Apple Silicon" xml:space="preserve">
-        <source>Apple Silicon</source>
-        <target state="translated">Apple Silicon</target>
-        <note>53477 - Apple processor family name; retain the established technical identifier.</note>
-      </trans-unit>
-      <trans-unit id="Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
-        <source>Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
-        <target state="translated">Các Mac dùng chip Apple Silicon thường đóng băng màn hình thay vì để nó vào chế độ chờ lúc ngủ khi có một màn hình ảo được phản chiếu. Đây là một giải pháp tạm thời cố gắng khắc phục vấn đề này.</target>
-        <note>53477 - Sleep workaround for mirrored virtual screens on Apple Silicon Macs.</note>
-      </trans-unit>
       <trans-unit id="Apple external display" xml:space="preserve">
         <source>Apple external display</source>
         <target state="translated">Màn hình rời Apple</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon" xml:space="preserve">
+        <source>Apple silicon</source>
+        <target state="translated">Apple silicon</target>
+        <note>53668 - Apple processor family name shown in display information. Use lowercase silicon when retaining the English name Apple silicon; preserve established localized names.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
+        <source>Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
+        <target state="translated">Các Mac dùng chip Apple silicon thường đóng băng màn hình thay vì để nó vào chế độ chờ lúc ngủ khi có một màn hình ảo được phản chiếu. Đây là một giải pháp tạm thời cố gắng khắc phục vấn đề này.</target>
+        <note>53668 - Sleep workaround for mirrored virtual screens on Apple silicon Macs.</note>
       </trans-unit>
       <trans-unit id="Application" xml:space="preserve">
         <source>Application</source>
@@ -6189,10 +6189,10 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Tăng tương phản - tinh chỉnh nhỏ</target>
         <note>53477 - Fine contrast increase action.</note>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
-        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
-        <target state="translated">Tăng độ sáng màn hình vượt quá 100⁠%. Yêu cầu màn hình Apple XDR hoặc màn hình ngoài hỗ trợ HDR đang ở chế độ HDR. Tính năng hoạt động khi bật điều chỉnh bảng màu trên máy Mac Apple Silicon, hoặc khi tắt điều chỉnh bảng màu (sử dụng điều khiển độ sáng bằng lớp phủ Metal) trên mọi nền tảng. Tăng độ sáng bằng Metal có thể tăng mức sử dụng CPU và GPU trên một số hệ thống.</target>
-        <note>53477 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
+      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
+        <target state="translated">Tăng độ sáng màn hình vượt quá 100⁠%. Yêu cầu màn hình Apple XDR hoặc màn hình ngoài hỗ trợ HDR đang ở chế độ HDR. Tính năng hoạt động khi bật điều chỉnh bảng màu trên máy Mac Apple silicon, hoặc khi tắt điều chỉnh bảng màu (sử dụng điều khiển độ sáng bằng lớp phủ Metal) trên mọi nền tảng. Tăng độ sáng bằng Metal có thể tăng mức sử dụng CPU và GPU trên một số hệ thống.</target>
+        <note>53668 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
         <source>Increase gamma</source>
@@ -8123,6 +8123,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Provides basic TV control through HDMI-CEC commands if supported by the current connection and display.</source>
         <target state="translated">Cung cấp khả năng điều khiển TV cơ bản thông qua các lệnh HDMI-CEC nếu được kết nối và màn hình hiện tại hỗ trợ.</target>
         <note>53477 - HDMI-CEC controller help.</note>
+      </trans-unit>
+      <trans-unit id="Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)." xml:space="preserve">
+        <source>Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928).</source>
+        <target state="translated">Cung cấp khả năng điều khiển TV cơ bản thông qua các lệnh HDMI-CEC. Yêu cầu máy Mac dùng Apple silicon và màn hình tương thích, kết nối qua cổng HDMI tích hợp được hỗ trợ hoặc bộ chuyển đổi hỗ trợ truyền lệnh HDMI-CEC qua đường hầm. Apple liệt kê khả năng hỗ trợ tích hợp trên một số mẫu Mac ra mắt từ năm 2023 trở đi dùng chip dòng M3 hoặc mới hơn, ngoại trừ MacBook Pro bản cơ bản dùng M3. [Thông tin thêm](https://support.apple.com/en-us/108928).</target>
+        <note>53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.</note>
       </trans-unit>
       <trans-unit id="Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
         <source>Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>

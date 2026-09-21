@@ -1564,20 +1564,20 @@ AliPay available in China.</source>
 AliPay चीन में उपलब्ध है।</target>
         <note>53477 - Payment method browser and regional availability help.</note>
       </trans-unit>
-      <trans-unit id="Apple Silicon" xml:space="preserve">
-        <source>Apple Silicon</source>
-        <target state="translated">Apple Silicon</target>
-        <note>53477 - Apple processor family name; retain the established technical identifier.</note>
-      </trans-unit>
-      <trans-unit id="Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
-        <source>Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
-        <target state="translated">वर्चुअल स्क्रीन की मिररिंग के दौरान Apple Silicon Mac स्लीप में जाने पर अक्सर डिस्प्ले को स्टैंडबाय में जाने देने के बजाय उसकी तस्वीर स्थिर कर देते हैं। यह उपाय इस समस्या को ठीक करने की कोशिश करता है।</target>
-        <note>53477 - Sleep workaround for mirrored virtual screens on Apple Silicon Macs.</note>
-      </trans-unit>
       <trans-unit id="Apple external display" xml:space="preserve">
         <source>Apple external display</source>
         <target state="translated">Apple का बाहरी डिस्प्ले</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon" xml:space="preserve">
+        <source>Apple silicon</source>
+        <target state="translated">Apple silicon</target>
+        <note>53668 - Apple processor family name shown in display information. Use lowercase silicon when retaining the English name Apple silicon; preserve established localized names.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
+        <source>Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
+        <target state="translated">वर्चुअल स्क्रीन की मिररिंग के दौरान Apple silicon Mac स्लीप में जाने पर अक्सर डिस्प्ले को स्टैंडबाय में जाने देने के बजाय उसकी तस्वीर स्थिर कर देते हैं। यह उपाय इस समस्या को ठीक करने की कोशिश करता है।</target>
+        <note>53668 - Sleep workaround for mirrored virtual screens on Apple silicon Macs.</note>
       </trans-unit>
       <trans-unit id="Application" xml:space="preserve">
         <source>Application</source>
@@ -6189,10 +6189,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">कंट्रास्ट बढ़ाएँ - छोटे चरणों में</target>
         <note>53477 - Fine contrast increase action.</note>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
-        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
-        <target state="translated">डिस्प्ले की ब्राइटनेस 100⁠% से ऊपर बढ़ाएँ। इसके लिए Apple XDR डिस्प्ले या HDR मोड में HDR समर्थित बाहरी डिस्प्ले ज़रूरी है। यह सुविधा Apple Silicon Mac पर रंग तालिका समायोजन चालू होने पर, या सभी प्लेटफ़ॉर्म पर उसे बंद करके (Metal आधारित ओवरले ब्राइटनेस नियंत्रण से) काम करती है। Metal से अपस्केलिंग कुछ सिस्टम पर CPU और GPU का उपयोग बढ़ा सकती है।</target>
-        <note>53477 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
+      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
+        <target state="translated">डिस्प्ले की ब्राइटनेस 100⁠% से ऊपर बढ़ाएँ। इसके लिए Apple XDR डिस्प्ले या HDR मोड में HDR समर्थित बाहरी डिस्प्ले ज़रूरी है। यह सुविधा Apple silicon Mac पर रंग तालिका समायोजन चालू होने पर, या सभी प्लेटफ़ॉर्म पर उसे बंद करके (Metal आधारित ओवरले ब्राइटनेस नियंत्रण से) काम करती है। Metal से अपस्केलिंग कुछ सिस्टम पर CPU और GPU का उपयोग बढ़ा सकती है।</target>
+        <note>53668 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
         <source>Increase gamma</source>
@@ -8123,6 +8123,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Provides basic TV control through HDMI-CEC commands if supported by the current connection and display.</source>
         <target state="translated">मौजूदा कनेक्शन और डिस्प्ले के समर्थन पर HDMI-CEC कमांड से बुनियादी TV नियंत्रण देता है।</target>
         <note>53477 - HDMI-CEC controller help.</note>
+      </trans-unit>
+      <trans-unit id="Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)." xml:space="preserve">
+        <source>Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928).</source>
+        <target state="translated">HDMI-CEC कमांड से बुनियादी TV नियंत्रण प्रदान करता है। इसके लिए Apple silicon वाला Mac और संगत डिस्प्ले चाहिए, जो समर्थित बिल्ट-इन HDMI पोर्ट या HDMI-CEC टनलिंग का समर्थन करने वाले अडैप्टर से जुड़ा हो। Apple के अनुसार बिल्ट-इन समर्थन 2023 या उसके बाद पेश किए गए चुनिंदा Mac मॉडल में उपलब्ध है, जिनमें M3 सीरीज़ या उससे नए चिप हैं; M3 वाले एंट्री-लेवल MacBook Pro को छोड़कर। [अधिक जानकारी](https://support.apple.com/en-us/108928).</target>
+        <note>53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.</note>
       </trans-unit>
       <trans-unit id="Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
         <source>Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>

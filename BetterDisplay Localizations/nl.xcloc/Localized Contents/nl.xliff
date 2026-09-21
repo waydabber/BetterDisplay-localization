@@ -1564,20 +1564,20 @@ AliPay available in China.</source>
 AliPay is beschikbaar in China.</target>
         <note>53477 - Payment method browser and regional availability help.</note>
       </trans-unit>
-      <trans-unit id="Apple Silicon" xml:space="preserve">
-        <source>Apple Silicon</source>
-        <target state="translated">Apple Silicon</target>
-        <note>53477 - Apple processor family name; retain the established technical identifier.</note>
-      </trans-unit>
-      <trans-unit id="Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
-        <source>Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
-        <target state="translated">Apple Silicon-Macs hebben de neiging om het scherm stil te zetten in plaats van het naar standby te laten gaan wanneer een virtueel scherm wordt gebruikt voor Synchrone weergave. Deze workaround probeert dit probleem op te lossen.</target>
-        <note>53477 - Sleep workaround for mirrored virtual screens on Apple Silicon Macs.</note>
-      </trans-unit>
       <trans-unit id="Apple external display" xml:space="preserve">
         <source>Apple external display</source>
         <target state="translated">Extern Apple-scherm</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon" xml:space="preserve">
+        <source>Apple silicon</source>
+        <target state="translated">Apple silicon</target>
+        <note>53668 - Apple processor family name shown in display information. Use lowercase silicon when retaining the English name Apple silicon; preserve established localized names.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
+        <source>Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
+        <target state="translated">Apple silicon-Macs hebben de neiging om het scherm stil te zetten in plaats van het naar standby te laten gaan wanneer een virtueel scherm wordt gebruikt voor Synchrone weergave. Deze workaround probeert dit probleem op te lossen.</target>
+        <note>53668 - Sleep workaround for mirrored virtual screens on Apple silicon Macs.</note>
       </trans-unit>
       <trans-unit id="Application" xml:space="preserve">
         <source>Application</source>
@@ -3659,7 +3659,7 @@ Het opgeven van de leeslengte is optioneel. Laat het veld leeg voor automatische
       </trans-unit>
       <trans-unit id="DDC, XDR/HDR upscaling, EDID overrides are not available. Please open the app in native mode - to achieve this, unselect 'Open using Rosetta' in the app's Info sheet!" xml:space="preserve">
         <source>DDC, XDR/HDR upscaling, EDID overrides are not available. Please open the app in native mode - to achieve this, unselect 'Open using Rosetta' in the app's Info sheet!</source>
-        <target state="translated">DDC, XDR-/HDR-opschaling en EDID-overschrijvingen zijn niet beschikbaar. Open de app in Apple Silicon-modus door 'Open met Rosetta' uit te schakelen in het infovenster van de app!</target>
+        <target state="translated">DDC, XDR-/HDR-opschaling en EDID-overschrijvingen zijn niet beschikbaar. Open de app in Apple silicon-modus door 'Open met Rosetta' uit te schakelen in het infovenster van de app!</target>
         <note>53477 - Unsupported translated execution warning; launch the app natively rather than under Rosetta.</note>
       </trans-unit>
       <trans-unit id="DPCD" xml:space="preserve">
@@ -6189,10 +6189,10 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <target state="translated">Verhoog contrast - fijne schaal</target>
         <note>53477 - Fine contrast increase action.</note>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
-        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
-        <target state="translated">Verhoog schermhelderheid boven de 100%. Vereist een Apple XDR-scherm of een HDR-ondersteunend extern scherm in HDR-modus. Deze functie werkt met kleurentabelaanpassingen ingeschakeld op Apple Silicon-Macs of wanneer dit uitgeschakeld is (via op Metal-gebaseerde overlay voor helderheidsbediening) op alle platforms. Opschalen via Metal verhoogt mogelijk het CPU- en GPU-gebruik op bepaalde systemen.</target>
-        <note>53477 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
+      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
+        <target state="translated">Verhoog schermhelderheid boven de 100%. Vereist een Apple XDR-scherm of een HDR-ondersteunend extern scherm in HDR-modus. Deze functie werkt met kleurentabelaanpassingen ingeschakeld op Apple silicon-Macs of wanneer dit uitgeschakeld is (via op Metal-gebaseerde overlay voor helderheidsbediening) op alle platforms. Opschalen via Metal verhoogt mogelijk het CPU- en GPU-gebruik op bepaalde systemen.</target>
+        <note>53668 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
         <source>Increase gamma</source>
@@ -8123,6 +8123,11 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <source>Provides basic TV control through HDMI-CEC commands if supported by the current connection and display.</source>
         <target state="translated">Biedt basisbediening van de tv via HDMI-CEC-opdrachten, indien ondersteund door de huidige verbinding en het scherm.</target>
         <note>53477 - HDMI-CEC controller help.</note>
+      </trans-unit>
+      <trans-unit id="Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)." xml:space="preserve">
+        <source>Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928).</source>
+        <target state="translated">Biedt basisbediening van de tv via HDMI-CEC-opdrachten. Vereist een Mac met Apple silicon en een compatibel scherm, aangesloten via een ondersteunde ingebouwde HDMI-poort of een adapter met ondersteuning voor HDMI-CEC-tunneling. Apple vermeldt ingebouwde ondersteuning voor bepaalde Mac-modellen die in 2023 of later zijn geïntroduceerd met chips uit de M3-serie of nieuwer, met uitzondering van het instapmodel van de MacBook Pro met M3. [Meer informatie](https://support.apple.com/en-us/108928).</target>
+        <note>53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.</note>
       </trans-unit>
       <trans-unit id="Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
         <source>Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>

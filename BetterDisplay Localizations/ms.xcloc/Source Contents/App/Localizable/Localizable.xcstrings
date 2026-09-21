@@ -1338,11 +1338,11 @@
     "Apple Pay requires Safari, Google Pay requires Chrome.\nAliPay available in China." : {
       "comment" : "53477 - Payment method browser and regional availability help."
     },
-    "Apple Silicon" : {
-      "comment" : "53477 - Apple processor family name; retain the established technical identifier."
+    "Apple silicon" : {
+      "comment" : "53668 - Apple processor family name shown in display information. Use lowercase silicon when retaining the English name Apple silicon; preserve established localized names."
     },
-    "Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." : {
-      "comment" : "53477 - Sleep workaround for mirrored virtual screens on Apple Silicon Macs."
+    "Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." : {
+      "comment" : "53668 - Sleep workaround for mirrored virtual screens on Apple silicon Macs."
     },
     "Application" : {
       "comment" : "53477 - Application label."
@@ -4276,8 +4276,8 @@
     "Increase contrast - fine scale" : {
       "comment" : "53477 - Fine contrast increase action."
     },
-    "Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." : {
-      "comment" : "53477 - Software brightness upscaling help; preserve the word joiner before the percent sign."
+    "Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." : {
+      "comment" : "53668 - Software brightness upscaling help; preserve the word joiner before the percent sign."
     },
     "Increase gamma" : {
       "comment" : "53477 - Gamma increase action."
@@ -5539,7 +5539,19 @@
       "comment" : "53477 - Video filter overlay controller help."
     },
     "Provides basic TV control through HDMI-CEC commands if supported by the current connection and display." : {
-      "comment" : "53477 - HDMI-CEC controller help."
+      "comment" : "53477 - HDMI-CEC controller help.",
+      "extractionState" : "stale"
+    },
+    "Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)." : {
+      "comment" : "53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)."
+          }
+        }
+      }
     },
     "Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." : {
       "comment" : "53477 - Yamaha audio controller help."

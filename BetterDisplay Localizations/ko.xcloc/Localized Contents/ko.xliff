@@ -1564,20 +1564,20 @@ AliPay available in China.</source>
 알리페이는 중국에서 사용할 수 있습니다.</target>
         <note>53477 - Payment method browser and regional availability help.</note>
       </trans-unit>
-      <trans-unit id="Apple Silicon" xml:space="preserve">
-        <source>Apple Silicon</source>
-        <target state="translated">Apple Silicon</target>
-        <note>53477 - Apple processor family name; retain the established technical identifier.</note>
-      </trans-unit>
-      <trans-unit id="Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
-        <source>Apple Silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
-        <target state="translated">Apple Silicon Mac은 가상 화면이 미러링되고 있는 상태에서 절전 모드로 진입할 때 대기 모드로 전환되지 않고 디스플레이가 정지되는 경향이 있습니다. 이 옵션은 해당 문제를 해결하려고 시도합니다.</target>
-        <note>53477 - Sleep workaround for mirrored virtual screens on Apple Silicon Macs.</note>
-      </trans-unit>
       <trans-unit id="Apple external display" xml:space="preserve">
         <source>Apple external display</source>
         <target state="translated">Apple 외장 디스플레이</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon" xml:space="preserve">
+        <source>Apple silicon</source>
+        <target state="translated">Apple silicon</target>
+        <note>53668 - Apple processor family name shown in display information. Use lowercase silicon when retaining the English name Apple silicon; preserve established localized names.</note>
+      </trans-unit>
+      <trans-unit id="Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue." xml:space="preserve">
+        <source>Apple silicon Macs tend to freeze the display instead of letting it go to standby upon sleep when a virtual screen is being mirrored. This workaround tries to fix this issue.</source>
+        <target state="translated">Apple silicon Mac은 가상 화면이 미러링되고 있는 상태에서 절전 모드로 진입할 때 대기 모드로 전환되지 않고 디스플레이가 정지되는 경향이 있습니다. 이 옵션은 해당 문제를 해결하려고 시도합니다.</target>
+        <note>53668 - Sleep workaround for mirrored virtual screens on Apple silicon Macs.</note>
       </trans-unit>
       <trans-unit id="Application" xml:space="preserve">
         <source>Application</source>
@@ -6189,10 +6189,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">대비 증가 - 미세 조정</target>
         <note>53477 - Fine contrast increase action.</note>
       </trans-unit>
-      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
-        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple Silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
-        <target state="translated">디스플레이 밝기를 100% 이상으로 증가시킵니다. 이 기능은 Apple XDR 디스플레이 또는 HDR 모드의 HDR 지원 외부 디스플레이가 필요합니다. Apple Silicon Mac에서는 색상표 조정이 활성화된 상태에서도 작동하며, 모든 플랫폼에서는 비활성화된 상태에서도 Metal 기반 오버레이 밝기 조정을 사용하여 작동합니다. Metal을 사용한 업스케일링은 일부 시스템에서 CPU 및 GPU 사용량을 증가시킬 수 있습니다.</target>
-        <note>53477 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
+      <trans-unit id="Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems." xml:space="preserve">
+        <source>Increase display brightness beyond 100⁠%. Requires an Apple XDR display or an HDR capable external display in HDR mode. The feature works with color table adjustments enabled on Apple silicon Macs or disabled (using Metal based overlay brightness control) on all platforms. Upscaling using Metal may increase CPU and GPU usage on some systems.</source>
+        <target state="translated">디스플레이 밝기를 100% 이상으로 증가시킵니다. 이 기능은 Apple XDR 디스플레이 또는 HDR 모드의 HDR 지원 외부 디스플레이가 필요합니다. Apple silicon Mac에서는 색상표 조정이 활성화된 상태에서도 작동하며, 모든 플랫폼에서는 비활성화된 상태에서도 Metal 기반 오버레이 밝기 조정을 사용하여 작동합니다. Metal을 사용한 업스케일링은 일부 시스템에서 CPU 및 GPU 사용량을 증가시킬 수 있습니다.</target>
+        <note>53668 - Software brightness upscaling help; preserve the word joiner before the percent sign.</note>
       </trans-unit>
       <trans-unit id="Increase gamma" xml:space="preserve">
         <source>Increase gamma</source>
@@ -8124,6 +8124,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Provides basic TV control through HDMI-CEC commands if supported by the current connection and display.</source>
         <target state="translated">현재 연결 및 디스플레이에서 지원되는 경우 HDMI-CEC 명령을 통해 기본 TV 제어를 제공합니다.</target>
         <note>53477 - HDMI-CEC controller help.</note>
+      </trans-unit>
+      <trans-unit id="Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928)." xml:space="preserve">
+        <source>Provides basic TV control through HDMI-CEC commands. Requires an Apple silicon Mac and a compatible display, using either a supported built-in HDMI port or an adapter with HDMI-CEC tunneling support. Apple lists built-in support for select Mac models introduced in 2023 or later with M3-series or newer chips, excluding the entry-level M3 MacBook Pro. [More information](https://support.apple.com/en-us/108928).</source>
+        <target state="translated">HDMI-CEC 명령을 통해 기본 TV 제어를 제공합니다. Apple silicon Mac과 호환되는 디스플레이가 필요하며, 지원되는 내장 HDMI 포트 또는 HDMI-CEC 터널링을 지원하는 어댑터를 사용해야 합니다. Apple은 2023년 이후 출시된 M3 시리즈 이상의 칩을 탑재한 일부 Mac 모델에서 내장 지원을 제공한다고 안내하며, M3를 탑재한 기본형 MacBook Pro는 제외됩니다. [추가 정보](https://support.apple.com/en-us/108928).</target>
+        <note>53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.</note>
       </trans-unit>
       <trans-unit id="Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
         <source>Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>
