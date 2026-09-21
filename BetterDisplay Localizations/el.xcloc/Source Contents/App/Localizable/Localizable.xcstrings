@@ -879,6 +879,17 @@
     "Adaptive OSD background" : {
       "comment" : "53477 - OSD background setting that adapts to content or appearance."
     },
+    "Add" : {
+      "comment" : "53658 - Button in the controller selection sheet that enables a device controller. This selects an existing control method, rather than creating a new controller definition.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        }
+      }
+    },
     "Add a soft shadow around the OSD so it stands out more." : {
       "comment" : "53477 - OSD shadow appearance setting help."
     },
@@ -887,9 +898,6 @@
     },
     "Add Control…" : {
       "comment" : "53477 - Action opening control creation."
-    },
-    "Add Controller…" : {
-      "comment" : "53477 - Action opening controller creation."
     },
     "Add Custom Control" : {
       "comment" : "53477 - Custom control creation action."
@@ -917,6 +925,17 @@
     },
     "Add New Synchronization…" : {
       "comment" : "53477 - Action opening a new display group synchronization configuration."
+    },
+    "Add or Remove Controllers…" : {
+      "comment" : "53658 - Button in Configure Device Control that opens a scrollable sheet for choosing the selected display’s controllers. Each controller can be added or removed without deleting its saved settings.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add or Remove Controllers…"
+          }
+        }
+      }
     },
     "Add Parameter…" : {
       "comment" : "53477 - Action adding a parameter to a configured operation."
@@ -1550,6 +1569,17 @@
     "Automatically launch on login" : {
       "comment" : "53477 - Launch at user login setting."
     },
+    "Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings." : {
+      "comment" : "53658 - Help for the disabled Remove button of an automatically detected DisplayLink controller. Manual configuration refers to the existing switch in the DisplayLink controller settings.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings."
+          }
+        }
+      }
+    },
     "Automatically remove stored configuration details for displays that have not been connected for a while." : {
       "comment" : "53477 - Automatic cleanup of stale display configurations."
     },
@@ -1937,6 +1967,17 @@
         }
       }
     },
+    "Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance." : {
+      "comment" : "53658 - Introduction in the Add or Remove Controllers sheet. Hardware control changes the device's own settings; software image adjustments remain an alternative for dimming and changing the displayed image when no hardware controller is suitable.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance."
+          }
+        }
+      }
+    },
     "Chroma Subsampling" : {
       "comment" : "53477 - Chroma subsampling format: reduced chroma resolution relative to luminance."
     },
@@ -1963,9 +2004,6 @@
     },
     "Click Here To Allow Sleep" : {
       "comment" : "53477 - Action allowing system sleep."
-    },
-    "Click Here To Configure DDC…" : {
-      "comment" : "53477 - Navigation to DDC configuration."
     },
     "Click to show/hide features…" : {
       "comment" : "53477 - Feature visibility selector help."
@@ -2109,6 +2147,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configure Device Control"
+          }
+        }
+      }
+    },
+    "Configure Device Control…" : {
+      "comment" : "53648 - Compact app-menu setup notice for configuring the selected display’s hardware control. Opens DDC detection first; unsupported or limited DDC results offer a route to other controllers. Keep translations short enough for a narrow menu notice.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configure Device Control…"
           }
         }
       }
@@ -2885,8 +2934,16 @@
     "Disable Both in HDR Mode" : {
       "comment" : "53484 - System Colors menu option that automatically disables both Night Shift and True Tone in HDR mode."
     },
-    "Disable DDC For This Display" : {
-      "comment" : "53477 - Action disabling DDC for the selected display."
+    "Disable DDC and Explore Other Control Options" : {
+      "comment" : "53658 - Button shown when DDC detection finds no communication support. Disables DDC for the selected display, closes its configuration sheet, and opens the controller selection sheet to explore alternative control methods.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disable DDC and Explore Other Control Options"
+          }
+        }
+      }
     },
     "Disabled" : {
       "comment" : "53477 - Disabled state."
@@ -3607,6 +3664,17 @@
     "Experimental feature" : {
       "comment" : "53477 - Experimental feature label."
     },
+    "Explore Other Control Options" : {
+      "comment" : "53658 - Button shown when DDC detection suggests limited support but cannot offer automatic feature configuration. Closes DDC configuration and opens the controller selection sheet without disabling DDC or changing its settings.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore Other Control Options"
+          }
+        }
+      }
+    },
     "Export Display Information…" : {
       "comment" : "53477 - Export display diagnostic information action."
     },
@@ -3624,9 +3692,6 @@
     },
     "Extended luminance range and 16-bpc for greater color accuracy (default is 8-bpc, SDR). With an HDR compatible Color Profile (`Display P3` recommended), HDR content is preserved when mirroring to an HDR/EDR display. Full screen stream and PIP window with both `Video Filters` and `HDR Filter Pipeline` enabled show proper HDR content or can be manually tone-mapped using an appropriate `Exposure` filter to differentiate HDR luminances up to virtual 10.000 nits." : {
       "comment" : "53555 - Help for virtual-screen HDR and 16-bit color support. Backticked Video Filters, HDR Filter Pipeline and Exposure refer to localized UI controls; Display P3 is a color profile name, and 10,000 nits is the virtual luminance ceiling."
-    },
-    "External and Built-In Displays" : {
-      "comment" : "53477 - Display category heading."
     },
     "Extra wait time after failure" : {
       "comment" : "53477 - Hardware communication retry delay setting."
@@ -3688,8 +3753,8 @@
     "For controls that trigger a feature or functionality." : {
       "comment" : "53477 - Help describing action-type controls."
     },
-    "Force EDR mode" : {
-      "comment" : "53477 - Force extended dynamic range mode setting."
+    "Force EDR mode during direct brightness control" : {
+      "comment" : "53641 - Keeps the display in EDR (extended dynamic range) mode while direct brightness control is used. Direct brightness control refers to adjusting Apple display brightness directly in nits."
     },
     "Force support for color table adjustments" : {
       "comment" : "53477 - Override color table capability detection setting."
@@ -7030,11 +7095,19 @@
     "The display is DDC capable" : {
       "comment" : "53477 - DDC detection result."
     },
-    "The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." : {
-      "comment" : "53477 - DDC configuration warning help."
+    "The display may have limited DDC support" : {
+      "comment" : "53648 - DDC detection result indicating possible limited support when automatic feature configuration is unavailable. DDC is the protocol used to control a display’s hardware settings."
     },
-    "The display might have limited DDC support" : {
-      "comment" : "53477 - DDC detection result."
+    "The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations." : {
+      "comment" : "53658 - Initial DDC setup guidance. DDC controls display hardware; some TVs and devices require alternatives such as HDMI-CEC, network controllers or custom integrations, available through the adjacent button.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations."
+          }
+        }
+      }
     },
     "The display or connection does not support DDC" : {
       "comment" : "53477 - DDC detection result."

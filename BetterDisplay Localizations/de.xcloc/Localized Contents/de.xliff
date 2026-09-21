@@ -877,10 +877,10 @@ Vielen Dank für dein Verständnis und deine weitere Unterstützung.</target>
         <target state="translated">Adaptiver OSD-Hintergrund</target>
         <note>53477 - OSD background setting that adapts to content or appearance.</note>
       </trans-unit>
-      <trans-unit id="Add Controller…" xml:space="preserve">
-        <source>Add Controller…</source>
-        <target state="translated">Controller hinzufügen…</target>
-        <note>53477 - Action opening controller creation.</note>
+      <trans-unit id="Add" xml:space="preserve">
+        <source>Add</source>
+        <target state="translated">Hinzufügen</target>
+        <note>53658 - Button in the controller selection sheet that enables a device controller. This selects an existing control method, rather than creating a new controller definition.</note>
       </trans-unit>
       <trans-unit id="Add Control…" xml:space="preserve">
         <source>Add Control…</source>
@@ -961,6 +961,11 @@ Vielen Dank für dein Verständnis und deine weitere Unterstützung.</target>
         <source>Add another screen as a mirror target for a screen.</source>
         <target state="translated">Einen weiteren Bildschirm als Spiegelziel für einen Bildschirm hinzufügen.</target>
         <note>53477 - Mirroring action help for adding another destination screen.</note>
+      </trans-unit>
+      <trans-unit id="Add or Remove Controllers…" xml:space="preserve">
+        <source>Add or Remove Controllers…</source>
+        <target state="translated">Controller hinzufügen oder entfernen…</target>
+        <note>53658 - Button in Configure Device Control that opens a scrollable sheet for choosing the selected display’s controllers. Each controller can be added or removed without deleting its saved settings.</note>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
@@ -1950,6 +1955,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Bei der Anmeldung automatisch starten</target>
         <note>53477 - Launch at user login setting.</note>
       </trans-unit>
+      <trans-unit id="Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings." xml:space="preserve">
+        <source>Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings.</source>
+        <target state="translated">Automatisch verwaltete DisplayLink-Controller können entfernt werden, nachdem du „Manuelle Konfiguration“ in ihren Einstellungen aktiviert hast.</target>
+        <note>53658 - Help for the disabled Remove button of an automatically detected DisplayLink controller. Manual configuration refers to the existing switch in the DisplayLink controller settings.</note>
+      </trans-unit>
       <trans-unit id="Automatically remove stored configuration details for displays that have not been connected for a while." xml:space="preserve">
         <source>Automatically remove stored configuration details for displays that have not been connected for a while.</source>
         <target state="translated">Gespeicherte Einstellungen für Displays automatisch entfernen, wenn diese für eine Weile nicht verbunden waren.</target>
@@ -2575,6 +2585,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Wähle Steuerungsmethoden für dein Gerät, einschließlich Hardware-Controllern und benutzerdefinierten Integrationen.</target>
         <note>53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.</note>
       </trans-unit>
+      <trans-unit id="Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance." xml:space="preserve">
+        <source>Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance.</source>
+        <target state="translated">Wähle Hardware-Steuerungsmethoden für dein Gerät, einschließlich unterstützter Controller und benutzerdefinierter Integrationen. Wenn keine geeignete Hardware-Steuerungsoption verfügbar ist, kannst du weiterhin softwarebasierte Bildanpassungen verwenden, um den Bildschirm abzudunkeln und die Bilddarstellung anzupassen.</target>
+        <note>53658 - Introduction in the Add or Remove Controllers sheet. Hardware control changes the device's own settings; software image adjustments remain an alternative for dimming and changing the displayed image when no hardware controller is suitable.</note>
+      </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
         <target state="translated">Chroma-Subsampling</target>
@@ -2614,11 +2629,6 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>Click Here To Allow Sleep</source>
         <target state="translated">Hier klicken, um den Ruhezustand zuzulassen</target>
         <note>53477 - Action allowing system sleep.</note>
-      </trans-unit>
-      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
-        <source>Click Here To Configure DDC…</source>
-        <target state="translated">Konfiguration der DDC-Funktionen…</target>
-        <note>53477 - Navigation to DDC configuration.</note>
       </trans-unit>
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
@@ -2839,6 +2849,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>Configure Device Control</source>
         <target state="translated">Gerätesteuerung konfigurieren</target>
         <note>53627 - Heading for the controller picker in per-display Device Control settings, above the configured controllers. Users can add hardware control methods suitable for the selected device.</note>
+      </trans-unit>
+      <trans-unit id="Configure Device Control…" xml:space="preserve">
+        <source>Configure Device Control…</source>
+        <target state="translated">Gerätesteuerung konfigurieren…</target>
+        <note>53648 - Compact app-menu setup notice for configuring the selected display’s hardware control. Opens DDC detection first; unsupported or limited DDC results offer a route to other controllers. Keep translations short enough for a narrow menu notice.</note>
       </trans-unit>
       <trans-unit id="Configure DisplayLink…" xml:space="preserve">
         <source>Configure DisplayLink…</source>
@@ -4110,10 +4125,10 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Beides im HDR-Modus deaktivieren</target>
         <note>53484 - System Colors menu option that automatically disables both Night Shift and True Tone in HDR mode.</note>
       </trans-unit>
-      <trans-unit id="Disable DDC For This Display" xml:space="preserve">
-        <source>Disable DDC For This Display</source>
-        <target state="translated">DDC für dieses Display deaktivieren</target>
-        <note>53477 - Action disabling DDC for the selected display.</note>
+      <trans-unit id="Disable DDC and Explore Other Control Options" xml:space="preserve">
+        <source>Disable DDC and Explore Other Control Options</source>
+        <target state="translated">DDC deaktivieren und andere Steuerungsoptionen erkunden</target>
+        <note>53658 - Button shown when DDC detection finds no communication support. Disables DDC for the selected display, closes its configuration sheet, and opens the controller selection sheet to explore alternative control methods.</note>
       </trans-unit>
       <trans-unit id="Disabled" xml:space="preserve">
         <source>Disabled</source>
@@ -5204,6 +5219,11 @@ Dieser Vorgang kann nicht auf das integrierte Display angewendet werden (Neustar
         <target state="translated">Experimentelle Funktion</target>
         <note>53477 - Experimental feature label.</note>
       </trans-unit>
+      <trans-unit id="Explore Other Control Options" xml:space="preserve">
+        <source>Explore Other Control Options</source>
+        <target state="translated">Andere Steuerungsoptionen erkunden</target>
+        <note>53658 - Button shown when DDC detection suggests limited support but cannot offer automatic feature configuration. Closes DDC configuration and opens the controller selection sheet without disabling DDC or changing its settings.</note>
+      </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
         <target state="translated">Displayinformationen exportieren…</target>
@@ -5233,11 +5253,6 @@ Dieser Vorgang kann nicht auf das integrierte Display angewendet werden (Neustar
         <source>Extended luminance range and 16-bpc for greater color accuracy (default is 8-bpc, SDR). With an HDR compatible Color Profile (`Display P3` recommended), HDR content is preserved when mirroring to an HDR/EDR display. Full screen stream and PIP window with both `Video Filters` and `HDR Filter Pipeline` enabled show proper HDR content or can be manually tone-mapped using an appropriate `Exposure` filter to differentiate HDR luminances up to virtual 10.000 nits.</source>
         <target state="translated">Erweiterter Leuchtdichtebereich und 16 bpc für höhere Farbgenauigkeit (Standard ist 8 bpc, SDR). Mit einem HDR-kompatiblen Farbprofil (`Display P3` empfohlen) bleiben HDR-Inhalte beim Synchronisieren auf ein HDR/EDR-Display erhalten. Vollbildstreams und PIP-Fenster mit aktivierten `Videofiltern` und aktivierter `HDR-Filterverarbeitung` zeigen HDR-Inhalte korrekt an. Alternativ lässt sich mit einem geeigneten `Belichtungsfilter` ein manuelles Tone-Mapping vornehmen, um HDR-Leuchtdichten bis zu virtuellen 10.000 Nits unterscheidbar zu machen.</target>
         <note>53555 - Help for virtual-screen HDR and 16-bit color support. Backticked Video Filters, HDR Filter Pipeline and Exposure refer to localized UI controls; Display P3 is a color profile name, and 10,000 nits is the virtual luminance ceiling.</note>
-      </trans-unit>
-      <trans-unit id="External and Built-In Displays" xml:space="preserve">
-        <source>External and Built-In Displays</source>
-        <target state="translated">Externe und integrierte Displays</target>
-        <note>53477 - Display category heading.</note>
       </trans-unit>
       <trans-unit id="Extra wait time after failure" xml:space="preserve">
         <source>Extra wait time after failure</source>
@@ -5338,10 +5353,10 @@ Das Entfernen ist unbedenklich — macOS erstellt alle erforderlichen Profile ne
         <target state="translated">Für Steuerungen, die eine Funktion oder Aktion auslösen.</target>
         <note>53477 - Help describing action-type controls.</note>
       </trans-unit>
-      <trans-unit id="Force EDR mode" xml:space="preserve">
-        <source>Force EDR mode</source>
-        <target state="translated">EDR-Modus erzwingen</target>
-        <note>53477 - Force extended dynamic range mode setting.</note>
+      <trans-unit id="Force EDR mode during direct brightness control" xml:space="preserve">
+        <source>Force EDR mode during direct brightness control</source>
+        <target state="translated">EDR-Modus bei direkter Helligkeitssteuerung erzwingen</target>
+        <note>53641 - Keeps the display in EDR (extended dynamic range) mode while direct brightness control is used. Direct brightness control refers to adjusting Apple display brightness directly in nits.</note>
       </trans-unit>
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
@@ -10652,15 +10667,15 @@ Dieser Vorgang setzt das Display selbst nicht zurück.</target>
         <target state="translated">Das Display ist DDC-fähig</target>
         <note>53477 - DDC detection result.</note>
       </trans-unit>
-      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
-        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
-        <target state="translated">Das Display ist möglicherweise nicht richtig für die DDC-Hardware-Helligkeitssteuerung und andere ähnliche Funktionen konfiguriert. Verwende die Erkennung und automatische Konfiguration oder passe die DDC-Einstellungen manuell an.</target>
-        <note>53477 - DDC configuration warning help.</note>
-      </trans-unit>
-      <trans-unit id="The display might have limited DDC support" xml:space="preserve">
-        <source>The display might have limited DDC support</source>
+      <trans-unit id="The display may have limited DDC support" xml:space="preserve">
+        <source>The display may have limited DDC support</source>
         <target state="translated">Das Display hat möglicherweise eine eingeschränkte DDC-Unterstützung</target>
-        <note>53477 - DDC detection result.</note>
+        <note>53648 - DDC detection result indicating possible limited support when automatic feature configuration is unavailable. DDC is the protocol used to control a display’s hardware settings.</note>
+      </trans-unit>
+      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations." xml:space="preserve">
+        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations.</source>
+        <target state="translated">Das Display ist möglicherweise nicht richtig für die DDC-Hardware-Helligkeitssteuerung und andere ähnliche Funktionen konfiguriert. Verwende die Erkennung und automatische Konfiguration oder passe die DDC-Einstellungen manuell an. Einige Fernseher und andere Geräte unterstützen DDC nicht. Du kannst stattdessen andere Methoden zur Gerätesteuerung erkunden, etwa HDMI-CEC, Netzwerk-Controller oder benutzerdefinierte Integrationen.</target>
+        <note>53658 - Initial DDC setup guidance. DDC controls display hardware; some TVs and devices require alternatives such as HDMI-CEC, network controllers or custom integrations, available through the adjacent button.</note>
       </trans-unit>
       <trans-unit id="The display or connection does not support DDC" xml:space="preserve">
         <source>The display or connection does not support DDC</source>

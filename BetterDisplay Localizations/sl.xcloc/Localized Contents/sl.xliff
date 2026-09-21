@@ -874,10 +874,10 @@ Hvala za razumevanje in nadaljnjo podporo.</target>
         <target state="translated">Prilagodljivo ozadje OSD-ja</target>
         <note>53477 - OSD background setting that adapts to content or appearance.</note>
       </trans-unit>
-      <trans-unit id="Add Controller…" xml:space="preserve">
-        <source>Add Controller…</source>
-        <target state="translated">Dodaj krmilnik …</target>
-        <note>53477 - Action opening controller creation.</note>
+      <trans-unit id="Add" xml:space="preserve">
+        <source>Add</source>
+        <target state="translated">Dodaj</target>
+        <note>53658 - Button in the controller selection sheet that enables a device controller. This selects an existing control method, rather than creating a new controller definition.</note>
       </trans-unit>
       <trans-unit id="Add Control…" xml:space="preserve">
         <source>Add Control…</source>
@@ -958,6 +958,11 @@ Hvala za razumevanje in nadaljnjo podporo.</target>
         <source>Add another screen as a mirror target for a screen.</source>
         <target state="translated">Dodajte drug zaslon kot cilj zrcaljenja za zaslon.</target>
         <note>53477 - Mirroring action help for adding another destination screen.</note>
+      </trans-unit>
+      <trans-unit id="Add or Remove Controllers…" xml:space="preserve">
+        <source>Add or Remove Controllers…</source>
+        <target state="translated">Dodaj ali odstrani krmilnike…</target>
+        <note>53658 - Button in Configure Device Control that opens a scrollable sheet for choosing the selected display’s controllers. Each controller can be added or removed without deleting its saved settings.</note>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
@@ -1948,6 +1953,11 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Samodejni zagon ob prijavi</target>
         <note>53477 - Launch at user login setting.</note>
       </trans-unit>
+      <trans-unit id="Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings." xml:space="preserve">
+        <source>Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings.</source>
+        <target state="translated">Samodejno upravljane krmilnike DisplayLink lahko odstranite, ko v njihovih nastavitvah omogočite možnost »Ročna konfiguracija«.</target>
+        <note>53658 - Help for the disabled Remove button of an automatically detected DisplayLink controller. Manual configuration refers to the existing switch in the DisplayLink controller settings.</note>
+      </trans-unit>
       <trans-unit id="Automatically remove stored configuration details for displays that have not been connected for a while." xml:space="preserve">
         <source>Automatically remove stored configuration details for displays that have not been connected for a while.</source>
         <target state="translated">Samodejno odstranite shranjene podrobnosti konfiguracije za zaslone, ki nekaj časa niso bili povezani.</target>
@@ -2573,6 +2583,11 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Izberite načine upravljanja naprave, vključno s strojnimi krmilniki in integracijami po meri.</target>
         <note>53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.</note>
       </trans-unit>
+      <trans-unit id="Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance." xml:space="preserve">
+        <source>Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance.</source>
+        <target state="translated">Izberite načine strojnega upravljanja naprave, vključno s podprtimi krmilniki in integracijami po meri. Če ustrezna možnost strojnega upravljanja ni na voljo, lahko še vedno uporabite programske prilagoditve slike za zatemnitev zaslona in spremembo njegovega videza.</target>
+        <note>53658 - Introduction in the Add or Remove Controllers sheet. Hardware control changes the device's own settings; software image adjustments remain an alternative for dimming and changing the displayed image when no hardware controller is suitable.</note>
+      </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
         <target state="translated">Podvzorčenje barvnosti</target>
@@ -2612,11 +2627,6 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <source>Click Here To Allow Sleep</source>
         <target state="translated">Kliknite tukaj, da omogočite stanje spanja</target>
         <note>53477 - Action allowing system sleep.</note>
-      </trans-unit>
-      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
-        <source>Click Here To Configure DDC…</source>
-        <target state="translated">Kliknite tukaj za konfiguracijo DDC…</target>
-        <note>53477 - Navigation to DDC configuration.</note>
       </trans-unit>
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
@@ -2837,6 +2847,11 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <source>Configure Device Control</source>
         <target state="translated">Konfiguriraj nadzor naprav</target>
         <note>53627 - Heading for the controller picker in per-display Device Control settings, above the configured controllers. Users can add hardware control methods suitable for the selected device.</note>
+      </trans-unit>
+      <trans-unit id="Configure Device Control…" xml:space="preserve">
+        <source>Configure Device Control…</source>
+        <target state="translated">Nastavi upravljanje naprave…</target>
+        <note>53648 - Compact app-menu setup notice for configuring the selected display’s hardware control. Opens DDC detection first; unsupported or limited DDC results offer a route to other controllers. Keep translations short enough for a narrow menu notice.</note>
       </trans-unit>
       <trans-unit id="Configure DisplayLink…" xml:space="preserve">
         <source>Configure DisplayLink…</source>
@@ -4108,10 +4123,10 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Onemogoči oboje v načinu HDR</target>
         <note>53484 - System Colors menu option that automatically disables both Night Shift and True Tone in HDR mode.</note>
       </trans-unit>
-      <trans-unit id="Disable DDC For This Display" xml:space="preserve">
-        <source>Disable DDC For This Display</source>
-        <target state="translated">Onemogoči DDC za ta zaslon</target>
-        <note>53477 - Action disabling DDC for the selected display.</note>
+      <trans-unit id="Disable DDC and Explore Other Control Options" xml:space="preserve">
+        <source>Disable DDC and Explore Other Control Options</source>
+        <target state="translated">Onemogoči DDC in razišči druge možnosti upravljanja</target>
+        <note>53658 - Button shown when DDC detection finds no communication support. Disables DDC for the selected display, closes its configuration sheet, and opens the controller selection sheet to explore alternative control methods.</note>
       </trans-unit>
       <trans-unit id="Disabled" xml:space="preserve">
         <source>Disabled</source>
@@ -5202,6 +5217,11 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
         <target state="translated">Eksperimentalna funkcija</target>
         <note>53477 - Experimental feature label.</note>
       </trans-unit>
+      <trans-unit id="Explore Other Control Options" xml:space="preserve">
+        <source>Explore Other Control Options</source>
+        <target state="translated">Razišči druge možnosti upravljanja</target>
+        <note>53658 - Button shown when DDC detection suggests limited support but cannot offer automatic feature configuration. Closes DDC configuration and opens the controller selection sheet without disabling DDC or changing its settings.</note>
+      </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
         <target state="translated">Izvozi informacije o zaslonu…</target>
@@ -5231,11 +5251,6 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
         <source>Extended luminance range and 16-bpc for greater color accuracy (default is 8-bpc, SDR). With an HDR compatible Color Profile (`Display P3` recommended), HDR content is preserved when mirroring to an HDR/EDR display. Full screen stream and PIP window with both `Video Filters` and `HDR Filter Pipeline` enabled show proper HDR content or can be manually tone-mapped using an appropriate `Exposure` filter to differentiate HDR luminances up to virtual 10.000 nits.</source>
         <target state="translated">Razširjen razpon svetilnosti in 16 bpc za večjo barvno natančnost (privzeto 8 bpc, SDR). Z barvnim profilom, združljivim s HDR (priporočen je `Display P3`), se vsebina HDR ohrani pri zrcaljenju na zaslon HDR/EDR. Celozaslonski tok in okno PIP z omogočenima možnostma `Video filtri` in `Obdelava filtrov HDR` pravilno prikažeta vsebino HDR. Tone lahko preslikate tudi ročno z ustreznim filtrom `Osvetlitev`, da razlikujete ravni svetilnosti HDR do navideznih 10.000 nitov.</target>
         <note>53555 - Help for virtual-screen HDR and 16-bit color support. Backticked Video Filters, HDR Filter Pipeline and Exposure refer to localized UI controls; Display P3 is a color profile name, and 10,000 nits is the virtual luminance ceiling.</note>
-      </trans-unit>
-      <trans-unit id="External and Built-In Displays" xml:space="preserve">
-        <source>External and Built-In Displays</source>
-        <target state="translated">Zunanji in vgrajeni zasloni</target>
-        <note>53477 - Display category heading.</note>
       </trans-unit>
       <trans-unit id="Extra wait time after failure" xml:space="preserve">
         <source>Extra wait time after failure</source>
@@ -5336,10 +5351,10 @@ Odstranjevanje je varno – macOS bo ponovno ustvaril vse potrebne profile, ko b
         <target state="translated">Za kontrole, ki sprožijo funkcijo ali možnost</target>
         <note>53477 - Help describing action-type controls.</note>
       </trans-unit>
-      <trans-unit id="Force EDR mode" xml:space="preserve">
-        <source>Force EDR mode</source>
-        <target state="translated">Vsili način EDR</target>
-        <note>53477 - Force extended dynamic range mode setting.</note>
+      <trans-unit id="Force EDR mode during direct brightness control" xml:space="preserve">
+        <source>Force EDR mode during direct brightness control</source>
+        <target state="translated">Vsili način EDR med neposrednim upravljanjem svetlosti</target>
+        <note>53641 - Keeps the display in EDR (extended dynamic range) mode while direct brightness control is used. Direct brightness control refers to adjusting Apple display brightness directly in nits.</note>
       </trans-unit>
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
@@ -10648,15 +10663,15 @@ Ta postopek ne ponastavi samega zaslona.</target>
         <target state="translated">Zaslon podpira DDC</target>
         <note>53477 - DDC detection result.</note>
       </trans-unit>
-      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
-        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
-        <target state="translated">Zaslon morda ni pravilno konfiguriran za nadzor svetlosti strojne opreme DDC in druge podobne funkcije. Uporabite zaznavanje in samodejno konfiguracijo ali prilagodite nastavitve DDC ročno.</target>
-        <note>53477 - DDC configuration warning help.</note>
-      </trans-unit>
-      <trans-unit id="The display might have limited DDC support" xml:space="preserve">
-        <source>The display might have limited DDC support</source>
+      <trans-unit id="The display may have limited DDC support" xml:space="preserve">
+        <source>The display may have limited DDC support</source>
         <target state="translated">Zaslon ima morda omejeno podporo za DDC</target>
-        <note>53477 - DDC detection result.</note>
+        <note>53648 - DDC detection result indicating possible limited support when automatic feature configuration is unavailable. DDC is the protocol used to control a display’s hardware settings.</note>
+      </trans-unit>
+      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations." xml:space="preserve">
+        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations.</source>
+        <target state="translated">Zaslon morda ni pravilno konfiguriran za strojno upravljanje svetlosti prek DDC in druge podobne funkcije. Uporabite zaznavanje in samodejno konfiguracijo ali prilagodite nastavitve DDC ročno. Nekateri televizorji in druge naprave ne podpirajo DDC. Namesto tega lahko raziščete druge načine upravljanja naprave, kot so HDMI-CEC, omrežni krmilniki ali integracije po meri.</target>
+        <note>53658 - Initial DDC setup guidance. DDC controls display hardware; some TVs and devices require alternatives such as HDMI-CEC, network controllers or custom integrations, available through the adjacent button.</note>
       </trans-unit>
       <trans-unit id="The display or connection does not support DDC" xml:space="preserve">
         <source>The display or connection does not support DDC</source>

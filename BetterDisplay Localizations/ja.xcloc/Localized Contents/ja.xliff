@@ -874,10 +874,10 @@ Thank you for your understanding and continued support.</source>
         <target state="translated">適応型OSD背景</target>
         <note>53477 - OSD background setting that adapts to content or appearance.</note>
       </trans-unit>
-      <trans-unit id="Add Controller…" xml:space="preserve">
-        <source>Add Controller…</source>
-        <target state="translated">コントローラを追加…</target>
-        <note>53477 - Action opening controller creation.</note>
+      <trans-unit id="Add" xml:space="preserve">
+        <source>Add</source>
+        <target state="translated">追加</target>
+        <note>53658 - Button in the controller selection sheet that enables a device controller. This selects an existing control method, rather than creating a new controller definition.</note>
       </trans-unit>
       <trans-unit id="Add Control…" xml:space="preserve">
         <source>Add Control…</source>
@@ -958,6 +958,11 @@ Thank you for your understanding and continued support.</source>
         <source>Add another screen as a mirror target for a screen.</source>
         <target state="translated">ミラーリングターゲットに、ほかの画面を追加します。</target>
         <note>53477 - Mirroring action help for adding another destination screen.</note>
+      </trans-unit>
+      <trans-unit id="Add or Remove Controllers…" xml:space="preserve">
+        <source>Add or Remove Controllers…</source>
+        <target state="translated">コントローラを追加または削除…</target>
+        <note>53658 - Button in Configure Device Control that opens a scrollable sheet for choosing the selected display’s controllers. Each controller can be added or removed without deleting its saved settings.</note>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
@@ -1947,6 +1952,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">ログイン時に自動的に開く</target>
         <note>53477 - Launch at user login setting.</note>
       </trans-unit>
+      <trans-unit id="Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings." xml:space="preserve">
+        <source>Automatically managed DisplayLink controllers can be removed after enabling Manual configuration in their settings.</source>
+        <target state="translated">自動管理されているDisplayLinkコントローラは、その設定で「手動構成」を有効にすると削除できます。</target>
+        <note>53658 - Help for the disabled Remove button of an automatically detected DisplayLink controller. Manual configuration refers to the existing switch in the DisplayLink controller settings.</note>
+      </trans-unit>
       <trans-unit id="Automatically remove stored configuration details for displays that have not been connected for a while." xml:space="preserve">
         <source>Automatically remove stored configuration details for displays that have not been connected for a while.</source>
         <target state="translated">しばらく接続されていないディスプレイについて、保存した構成の詳細を自動的に削除します。</target>
@@ -2572,6 +2582,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">ハードウェアコントローラやカスタム統合など、デバイスの制御方法を選択します。</target>
         <note>53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.</note>
       </trans-unit>
+      <trans-unit id="Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance." xml:space="preserve">
+        <source>Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance.</source>
+        <target state="translated">サポートされているコントローラやカスタム統合など、デバイスのハードウェア制御方法を選択します。適切なハードウェア制御オプションがない場合でも、ソフトウェアによる画像調整で画面を暗くしたり、見た目を調整したりできます。</target>
+        <note>53658 - Introduction in the Add or Remove Controllers sheet. Hardware control changes the device's own settings; software image adjustments remain an alternative for dimming and changing the displayed image when no hardware controller is suitable.</note>
+      </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
         <target state="translated">クロマサブサンプリング</target>
@@ -2611,11 +2626,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Click Here To Allow Sleep</source>
         <target state="translated">スリープを許可</target>
         <note>53477 - Action allowing system sleep.</note>
-      </trans-unit>
-      <trans-unit id="Click Here To Configure DDC…" xml:space="preserve">
-        <source>Click Here To Configure DDC…</source>
-        <target state="translated">クリックしてDDC機能を構成…</target>
-        <note>53477 - Navigation to DDC configuration.</note>
       </trans-unit>
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
@@ -2836,6 +2846,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configure Device Control</source>
         <target state="translated">デバイス制御を設定</target>
         <note>53627 - Heading for the controller picker in per-display Device Control settings, above the configured controllers. Users can add hardware control methods suitable for the selected device.</note>
+      </trans-unit>
+      <trans-unit id="Configure Device Control…" xml:space="preserve">
+        <source>Configure Device Control…</source>
+        <target state="translated">デバイス制御を設定…</target>
+        <note>53648 - Compact app-menu setup notice for configuring the selected display’s hardware control. Opens DDC detection first; unsupported or limited DDC results offer a route to other controllers. Keep translations short enough for a narrow menu notice.</note>
       </trans-unit>
       <trans-unit id="Configure DisplayLink…" xml:space="preserve">
         <source>Configure DisplayLink…</source>
@@ -4107,10 +4122,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">HDRモードでどちらも無効にする</target>
         <note>53484 - System Colors menu option that automatically disables both Night Shift and True Tone in HDR mode.</note>
       </trans-unit>
-      <trans-unit id="Disable DDC For This Display" xml:space="preserve">
-        <source>Disable DDC For This Display</source>
-        <target state="translated">このディスプレイのDDCを無効にする</target>
-        <note>53477 - Action disabling DDC for the selected display.</note>
+      <trans-unit id="Disable DDC and Explore Other Control Options" xml:space="preserve">
+        <source>Disable DDC and Explore Other Control Options</source>
+        <target state="translated">DDCを無効にして他の制御オプションを確認</target>
+        <note>53658 - Button shown when DDC detection finds no communication support. Disables DDC for the selected display, closes its configuration sheet, and opens the controller selection sheet to explore alternative control methods.</note>
       </trans-unit>
       <trans-unit id="Disabled" xml:space="preserve">
         <source>Disabled</source>
@@ -5201,6 +5216,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">実験的機能</target>
         <note>53477 - Experimental feature label.</note>
       </trans-unit>
+      <trans-unit id="Explore Other Control Options" xml:space="preserve">
+        <source>Explore Other Control Options</source>
+        <target state="translated">他の制御オプションを確認</target>
+        <note>53658 - Button shown when DDC detection suggests limited support but cannot offer automatic feature configuration. Closes DDC configuration and opens the controller selection sheet without disabling DDC or changing its settings.</note>
+      </trans-unit>
       <trans-unit id="Export Display Information…" xml:space="preserve">
         <source>Export Display Information…</source>
         <target state="translated">ディスプレイ情報を書き出す…</target>
@@ -5230,11 +5250,6 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Extended luminance range and 16-bpc for greater color accuracy (default is 8-bpc, SDR). With an HDR compatible Color Profile (`Display P3` recommended), HDR content is preserved when mirroring to an HDR/EDR display. Full screen stream and PIP window with both `Video Filters` and `HDR Filter Pipeline` enabled show proper HDR content or can be manually tone-mapped using an appropriate `Exposure` filter to differentiate HDR luminances up to virtual 10.000 nits.</source>
         <target state="translated">拡張輝度範囲と16-bpcによる色精度の向上（デフォルトは8-bpc、SDR）。HDR対応のカラープロファイル（`Display P3`を推奨）を使用することで、HDR/EDRディスプレイへミラーリングする場合も、HDRコンテンツが維持されます。フルスクリーンストリーミングおよびPIPウィンドウでは、`ビデオフィルタ`と`HDRフィルタパイプライン`の両方を有効にすることで、HDRコンテンツが正しく表示されます。また、適切な`露出`フィルタを使用して手動でトーンマッピングを行うことで、最大仮想10,000ニトのHDR輝度を区別することができます。</target>
         <note>53555 - Help for virtual-screen HDR and 16-bit color support. Backticked Video Filters, HDR Filter Pipeline and Exposure refer to localized UI controls; Display P3 is a color profile name, and 10,000 nits is the virtual luminance ceiling.</note>
-      </trans-unit>
-      <trans-unit id="External and Built-In Displays" xml:space="preserve">
-        <source>External and Built-In Displays</source>
-        <target state="translated">外部および内蔵ディスプレイ</target>
-        <note>53477 - Display category heading.</note>
       </trans-unit>
       <trans-unit id="Extra wait time after failure" xml:space="preserve">
         <source>Extra wait time after failure</source>
@@ -5335,10 +5350,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">特徴や機能性を引き出す制御機能です。</target>
         <note>53477 - Help describing action-type controls.</note>
       </trans-unit>
-      <trans-unit id="Force EDR mode" xml:space="preserve">
-        <source>Force EDR mode</source>
-        <target state="translated">EDRモードを強制</target>
-        <note>53477 - Force extended dynamic range mode setting.</note>
+      <trans-unit id="Force EDR mode during direct brightness control" xml:space="preserve">
+        <source>Force EDR mode during direct brightness control</source>
+        <target state="translated">輝度の直接制御中にEDRモードを強制</target>
+        <note>53641 - Keeps the display in EDR (extended dynamic range) mode while direct brightness control is used. Direct brightness control refers to adjusting Apple display brightness directly in nits.</note>
       </trans-unit>
       <trans-unit id="Force support for color table adjustments" xml:space="preserve">
         <source>Force support for color table adjustments</source>
@@ -10647,15 +10662,15 @@ This operation does not reset the display itself.</source>
         <target state="translated">ディスプレイはDDCに対応しています</target>
         <note>53477 - DDC detection result.</note>
       </trans-unit>
-      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually." xml:space="preserve">
-        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually.</source>
-        <target state="translated">このディスプレイは、DDCハードウェア輝度制御やその他の類似機能を正しく構成していない可能性があります。検出と自動構成を使用するか、手動でDDC設定を構成してください。</target>
-        <note>53477 - DDC configuration warning help.</note>
-      </trans-unit>
-      <trans-unit id="The display might have limited DDC support" xml:space="preserve">
-        <source>The display might have limited DDC support</source>
+      <trans-unit id="The display may have limited DDC support" xml:space="preserve">
+        <source>The display may have limited DDC support</source>
         <target state="translated">DDC対応が限定的なディスプレイ</target>
-        <note>53477 - DDC detection result.</note>
+        <note>53648 - DDC detection result indicating possible limited support when automatic feature configuration is unavailable. DDC is the protocol used to control a display’s hardware settings.</note>
+      </trans-unit>
+      <trans-unit id="The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations." xml:space="preserve">
+        <source>The display may not be properly configured for DDC hardware brightness control and other similar features. Use detection and auto-configuration or adjust DDC settings manually. Some TVs and other devices do not support DDC. You can explore other device control methods instead, such as HDMI-CEC, network controllers or custom integrations.</source>
+        <target state="translated">このディスプレイは、DDCハードウェア輝度制御やその他の類似機能を正しく構成していない可能性があります。検出と自動構成を使用するか、手動でDDC設定を構成してください。一部のテレビやデバイスはDDCをサポートしていません。代わりに、HDMI-CEC、ネットワークコントローラ、カスタム統合など、他のデバイス制御方法を確認できます。</target>
+        <note>53658 - Initial DDC setup guidance. DDC controls display hardware; some TVs and devices require alternatives such as HDMI-CEC, network controllers or custom integrations, available through the adjacent button.</note>
       </trans-unit>
       <trans-unit id="The display or connection does not support DDC" xml:space="preserve">
         <source>The display or connection does not support DDC</source>
