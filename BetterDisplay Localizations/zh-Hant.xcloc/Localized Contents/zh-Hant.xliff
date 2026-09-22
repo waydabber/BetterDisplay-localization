@@ -100,12 +100,7 @@
       <trans-unit id="%@ %@" xml:space="preserve">
         <source>%1$@ %2$@</source>
         <target state="translated">%1$@ %2$@</target>
-        <note>53477 - Combines two dynamic values, including an inline status icon followed by an update message in the About pane; preserve both placeholders in order. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ %lld additional color modes are available with different refresh rates." xml:space="preserve">
-        <source>%1$@ %2$lld additional color modes are available with different refresh rates.</source>
-        <target state="translated">%1$@ %2$lld 種具有不同更新率的額外色彩模式可用。</target>
-        <note>53477 - Color mode menu help reporting how many additional modes are available at other refresh rates. Preserve the icon placeholder at the beginning of the translation.</note>
+        <note>53689 - Combines two separately rendered values, such as an image and independently localized text; preserve both placeholders and their order.</note>
       </trans-unit>
       <trans-unit id="%@ (LG)" xml:space="preserve">
         <source>%@ (LG)</source>
@@ -137,230 +132,25 @@
         <target state="translated">%@ - 交換位置</target>
         <note>53477 - Display arrangement action to swap positions with the named display.</note>
       </trans-unit>
-      <trans-unit id="%@ An active layout protection main status configured under Groups takes precedence." xml:space="preserve">
-        <source>%@ An active layout protection main status configured under Groups takes precedence.</source>
-        <target state="translated">%@ 在「群組」中設定的主顯示器狀態保護具有優先權。</target>
-        <note>53477 - Main display setting help: active group layout protection can override the selected main display. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Associated display mirroring is enforced!" xml:space="preserve">
-        <source>%@ Associated display mirroring is enforced!</source>
-        <target state="translated">%@ 已強制關聯顯示器鏡像！</target>
-        <note>53477 - Status indicating that mirroring to the associated display is enforced. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Built-in display panels have a single fixed internal connection mode." xml:space="preserve">
-        <source>%@ Built-in display panels have a single fixed internal connection mode.</source>
-        <target state="translated">%@ 內建顯示面板具有單一固定的內部連接模式。</target>
-        <note>53477 - Connection mode help for built-in display panels. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Certain displays are set to hide the menu bar icon, which may override this setting." xml:space="preserve">
-        <source>%@ Certain displays are set to hide the menu bar icon, which may override this setting.</source>
-        <target state="translated">%@ 某些顯示器已設定為隱藏選單列圖示，這可能會覆蓋此設定。</target>
-        <note>53477 - Menu bar icon visibility setting help; per-display settings may override it. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one." xml:space="preserve">
-        <source>%@ Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one.</source>
-        <target state="translated">%@ 點擊以啟用/停用群組。按住 ⌥ Option 鍵可在啟用選定群組的同時停用所有其他群組！</target>
-        <note>53477 - Group activation help describing the Option-click exclusive activation shortcut. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Configuration Protection can make color mode changes persistent." xml:space="preserve">
-        <source>%@ Configuration Protection can make color mode changes persistent.</source>
-        <target state="translated">%@ 設定保護可以持續保存色彩模式變更。</target>
-        <note>53477 - Color mode help referring to the Configuration Protection feature. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
-        <source>%1$@ Connection color depth (%2$lld-bit) is lower than the framebuffer depth (%3$u-bit). The GPU may use temporal dithering to improve colors.</source>
-        <target state="translated">%1$@ 連接顏色深度（%2$lld 位元）低於影格緩衝區深度（%3$u 位元）。 GPU 可以使用時間抖動來改善顏色。</target>
-        <note>53477 - Color depth warning comparing the display connection with the framebuffer; Temporal dithering alternates pixel values across frames. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
-        <source>%@ Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
-        <target state="translated">%@ 顯示器群組的佈局保護已生效。這可能會改變或覆寫移動操作的結果！</target>
-        <note>53477 - Display movement warning when group layout protection is active. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Enter Hospitality Menu" xml:space="preserve">
-        <source>%@ Enter Hospitality Menu</source>
-        <target state="translated">%@ 進入飯店模式選單</target>
-        <note>53477 - TV remote action to enter Hospitality Menu, the hotel installation configuration menu. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Enter Service Menu" xml:space="preserve">
-        <source>%@ Enter Service Menu</source>
-        <target state="translated">%@ 進入服務選單</target>
-        <note>53477 - TV remote action to open the technical service menu. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Exit Service Menu" xml:space="preserve">
-        <source>%@ Exit Service Menu</source>
-        <target state="translated">%@ 退出服務選單</target>
-        <note>53477 - TV remote action to leave the technical service menu. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in a corrupted image, green screen, or blank screen." xml:space="preserve">
-        <source>%@ Forced HDR modes exceed macOS resolution and refresh rate limits. May result in a corrupted image, green screen, or blank screen.</source>
-        <target state="translated">%@ 強制 HDR 模式超出 macOS 的解析度與更新率限制。可能導致影像損壞、綠色或空白畫面。</target>
-        <note>53477 - Warning for forced HDR connection modes exceeding operating system limits. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
-        <source>%@ Hold ⌥ Option when opening this menu to measure refresh rate!</source>
-        <target state="translated">%@ 打開此選單時按住 ⌥ Option 鍵以測量更新率！</target>
-        <note>53477 - Refresh rate menu help for the Option modifier shortcut. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Hold ⌥ Option when opening this menu to show advanced LG webOS features." xml:space="preserve">
-        <source>%@ Hold ⌥ Option when opening this menu to show advanced LG webOS features.</source>
-        <target state="translated">%@ 打開此選單時按住 ⌥ Option 鍵以顯示進階 LG webOS 功能。</target>
-        <note>53477 - Device menu help revealing advanced LG webOS remote control actions. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Hold ⌥ Option when opening this menu to show advanced Samsung device features." xml:space="preserve">
-        <source>%@ Hold ⌥ Option when opening this menu to show advanced Samsung device features.</source>
-        <target state="translated">%@ 打開此選單時按住 ⌥ Option 鍵以顯示進階 Samsung 裝置功能。</target>
-        <note>53477 - Device menu help revealing advanced Samsung remote control actions. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ If the modern way does not work, you can try this legacy way for older Samsung TVs." xml:space="preserve">
-        <source>%@ If the modern way does not work, you can try this legacy way for older Samsung TVs.</source>
-        <target state="translated">%@ 如果現代方式無效，您可以嘗試這個適用於舊款 Samsung 電視的傳統方式。</target>
-        <note>53477 - Samsung service menu help describing the legacy access method. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Image adjustment controls are unavailable." xml:space="preserve">
-        <source>%@ Image adjustment controls are unavailable.</source>
-        <target state="translated">%@ 影像調整控制無法使用。</target>
-        <note>53477 - Status shown when image adjustment controls are unavailable. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
       <trans-unit id="%@ Left" xml:space="preserve">
         <source>%@ Left</source>
         <target state="translated">%@ 左側</target>
         <note>53477 - Name of the left or right physical panel in a Monduo multi-screen setup; %@ is the product name.</note>
-      </trans-unit>
-      <trans-unit id="%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result in unexpected behavior or a blank screen." xml:space="preserve">
-        <source>%@ Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result in unexpected behavior or a blank screen.</source>
-        <target state="translated">%@ 混合模式是與目前影格緩衝區或顯示器預設模式設定不符的色彩模式。選擇這類模式可能導致非預期行為或空白畫面。</target>
-        <note>53477 - Color mode menu help: mixed modes do not match the current framebuffer or Display Preset configuration. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
-        <source>%1$@ NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %2$@ Configuration Protection.</source>
-        <target state="translated">%1$@ NTSC（或其他未公開的）更新率在模式更改後可能不會持續，除非通過%2$@設定保護強制設定。</target>
-        <note>53477 - Refresh-rate warning shown below the rate list. The two placeholders are warning and shield icons, not device names; Configuration Protection can reapply rates after mode changes.</note>
-      </trans-unit>
-      <trans-unit id="%@ No source selected" xml:space="preserve">
-        <source>%@ No source selected</source>
-        <target state="translated">%@ 未選取來源</target>
-        <note>53477 - Streaming status indicating that no capture source is selected. Preserve the icon placeholder at the beginning of the translation.</note>
       </trans-unit>
       <trans-unit id="%@ Pro is Active" xml:space="preserve">
         <source>%@ Pro is Active</source>
         <target state="translated">%@ Pro 已啟用</target>
         <note>53477 - License status indicating that Pro features are activated; %@ is the app name.</note>
       </trans-unit>
-      <trans-unit id="%@ Protections are reapplied whenever a group is activated or deactivated using the app menu." xml:space="preserve">
-        <source>%@ Protections are reapplied whenever a group is activated or deactivated using the app menu.</source>
-        <target state="translated">%@ 每當使用應用程式選單啟動或停用群組時，都會重新套用保護。</target>
-        <note>53477 - Group protection help describing when protected settings are reapplied. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
       <trans-unit id="%@ Right" xml:space="preserve">
         <source>%@ Right</source>
         <target state="translated">%@ 右側</target>
         <note>53477 - Name of the left or right physical panel in a Monduo multi-screen setup; %@ is the product name.</note>
       </trans-unit>
-      <trans-unit id="%@ Search for actions by %@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!" xml:space="preserve">
-        <source>%1$@ Search for actions by %2$@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!</source>
-        <target state="translated">%1$@ 在 [macOS 捷徑](shortcuts://create-shortcut)中搜尋 %2$@ 的操作以了解更多！</target>
-        <note>53477 - Automation help linking to Shortcuts; placeholders are an icon and the app name. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Some adjustments may clip HDR content!" xml:space="preserve">
-        <source>%@ Some adjustments may clip HDR content!</source>
-        <target state="translated">%@ 某些調整可能導致 HDR 內容的明暗細節遺失！</target>
-        <note>53477 - Image adjustment warning: clipping loses highlight or shadow detail in HDR content. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Stream auto-starts to associated display!" xml:space="preserve">
-        <source>%@ Stream auto-starts to associated display!</source>
-        <target state="translated">%@ 自動啟用關聯顯示器串流！</target>
-        <note>53477 - Streaming status describing automatic output to the associated display. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ The app is disengaged from native brightness keys." xml:space="preserve">
-        <source>%@ The app is disengaged from native brightness keys.</source>
-        <target state="translated">%@ 應用程式不再對應原生亮度鍵。</target>
-        <note>53477 - Keyboard status: the app is disengaged from the native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ The app is disengaged from native volume and mute keys." xml:space="preserve">
-        <source>%@ The app is disengaged from native volume and mute keys.</source>
-        <target state="translated">%@ 應用程式不再回應原生音量和靜音鍵。</target>
-        <note>53477 - Keyboard status: the app is disengaged from native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ The app listens to both the native volume and mute keys (if permissions permit)." xml:space="preserve">
-        <source>%@ The app listens to both the native volume and mute keys (if permissions permit).</source>
-        <target state="translated">%@ 應用程式監聽原生音量和靜音鍵（如果權限允許）</target>
-        <note>53477 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
-        <source>%@ The app listens to the native brightness keys (if permissions permit).</source>
-        <target state="translated">%@ 應用程式會監聽原生亮度鍵（如果權限允許）</target>
-        <note>53477 - Keyboard status describing interception of native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ The app listens to the volume keys (if permissions permit) but not the mute key." xml:space="preserve">
-        <source>%@ The app listens to the volume keys (if permissions permit) but not the mute key.</source>
-        <target state="translated">%@ 應用程式監聽音量鍵（如果權限允許），但不監聽靜音鍵。</target>
-        <note>53477 - Keyboard status describing volume key interception without mute key interception. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
-        <source>%@ The mouse hovers over the streamed content and does not interact with it.</source>
-        <target state="translated">%@ 滑鼠懸停在串流媒體內容上，未與之互動。</target>
-        <note>53477 - Stream interaction help when pointer events are not sent to the captured source. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %@ for your display type." xml:space="preserve">
-        <source>%1$@ These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %2$@ for your display type.</source>
-        <target state="translated">%1$@ 這些步驟提供進入與退出服務選單，以及解鎖進階服務選單選項的現代方式——適用於較新的 Samsung 智慧顯示器。請使用適合你的顯示器類型的 %2$@ 步驟。</target>
-        <note>53477 - Samsung service menu instructions; the second placeholder identifies the appropriate step for the display type. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ This license is currently active on %lld installations." xml:space="preserve">
-        <source>%1$@ This license is currently active on %2$lld installations.</source>
-        <target state="translated">%1$@ 此授權目前在 %2$lld 個安裝上處於啟用狀態。</target>
-        <note>53477 - Pro license status showing the current number of activated installations. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ This license is outdated for the current app version (v%@)." xml:space="preserve">
-        <source>%1$@ This license is outdated for the current app version (v%2$@).</source>
-        <target state="translated">%1$@ 此授權已過期，無法用於當前的應用程式版本 (v%2$@)。</target>
-        <note>53477 - License eligibility warning; the second placeholder is the current app version. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
-        <source>%@ This shows options for the current resolution. See Display Modes menu for the full list.</source>
-        <target state="translated">%@ 此處顯示目前解析度的選項。完整列表請參閱「顯示模式」選單。</target>
-        <note>53477 - Resolution-specific mode menu help pointing to the Display Mode submenu. Preserve the leading icon placeholder and use the same localized menu name.</note>
-      </trans-unit>
       <trans-unit id="%@ Tri-Screen" xml:space="preserve">
         <source>%@ Tri-Screen</source>
         <target state="translated">%@ 三螢幕</target>
         <note>53477 - Monduo product configuration label; %@ is the product name and Tri-Screen is the retained product setup name, not a generic screen-count label.</note>
-      </trans-unit>
-      <trans-unit id="%@ Typical LG service menu passwords include 0413, 1925, 8741, 8743, 8878, 3195, 1105, 0000, 1111, 7777. Use the virtual remote to enter the appropriate digits when prompted. Enable the full service menu to access expert settings." xml:space="preserve">
-        <source>%@ Typical LG service menu passwords include 0413, 1925, 8741, 8743, 8878, 3195, 1105, 0000, 1111, 7777. Use the virtual remote to enter the appropriate digits when prompted. Enable the full service menu to access expert settings.</source>
-        <target state="translated">%@ 常見的 LG 服務選單密碼包括：0413、1925、8741、8743、8878、3195、1105、0000、1111、7777。當電視要求輸入時，請使用虛擬遙控器輸入相應的數字。啟用完整服務選單以存取進階設定。</target>
-        <note>53477 - LG service menu help; Preserve the numeric passwords including leading zeros. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Unlock Advanced" xml:space="preserve">
-        <source>%@ Unlock Advanced</source>
-        <target state="translated">%@ 解鎖進階服務選單模式</target>
-        <note>53477 - Device service menu action to unlock advanced options. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Unlock Service Menu" xml:space="preserve">
-        <source>%@ Unlock Service Menu</source>
-        <target state="translated">%@ 解鎖服務選單</target>
-        <note>53477 - Device remote action to unlock access to the service menu. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
-        <source>%@ Use ⌘ Command + Click to warp the mouse cursor to the source screen!</source>
-        <target state="translated">%@ 按住 ⌘ Command 並點按，即可將滑鼠游標移至來源螢幕！</target>
-        <note>53477 - Stream interaction shortcut that moves the pointer directly to the source screen. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Use ⌥ Option + click on the display menu header for a quick identification." xml:space="preserve">
-        <source>%@ Use ⌥ Option + click on the display menu header for a quick identification.</source>
-        <target state="translated">%@ 使用 ⌥ Option + 點擊顯示選單標題以快速識別。</target>
-        <note>53477 - Display identification help for Option-clicking a display menu header. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Virtual Screen as Mirror Target?" xml:space="preserve">
-        <source>%@ Virtual Screen as Mirror Target?</source>
-        <target state="translated">%@ 鏡像到此虛擬螢幕？</target>
-        <note>53477 - Prompt about using the virtual screen as a mirroring destination. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@ Virtual Screen as Stream Target?" xml:space="preserve">
-        <source>%@ Virtual Screen as Stream Target?</source>
-        <target state="translated">%@ 串流到此虛擬螢幕？</target>
-        <note>53477 - Prompt about using the virtual screen as a streaming destination. Preserve the icon placeholder at the beginning of the translation.</note>
       </trans-unit>
       <trans-unit id="%@ is unable to detect any display. This might indicate an application or system error." xml:space="preserve">
         <source>%@ is unable to detect any display. This might indicate an application or system error.</source>
@@ -403,15 +193,9 @@ Use the 'Transfer display settings' feature under all affected displays' additio
         <source>%@%@</source>
         <note>50000 - Non-translatable concatenation of two dynamic string fragments without an inserted separator.</note>
       </trans-unit>
-      <trans-unit id="%@%@ Unlock Advanced (Monitor)" xml:space="preserve">
-        <source>%1$@%2$@ Unlock Advanced (Monitor)</source>
-        <target state="translated">%1$@%2$@ 解鎖進階模式（顯示器）</target>
-        <note>53477 - Samsung service menu unlock action for computer monitors; both leading placeholders are step icons and must remain together in their original order. Preserve the icon placeholder at the beginning of the translation.</note>
-      </trans-unit>
-      <trans-unit id="%@%@ Unlock Advanced (TV)" xml:space="preserve">
-        <source>%1$@%2$@ Unlock Advanced (TV)</source>
-        <target state="translated">%1$@%2$@ 解鎖進階模式（TV）</target>
-        <note>53477 - Samsung service menu unlock action for televisions; both leading placeholders are step icons and must remain together in their original order. Preserve the icon placeholder at the beginning of the translation.</note>
+      <trans-unit id="%@%@ %@" translate="no" xml:space="preserve">
+        <source>%@%@ %@</source>
+        <note>53689 - Non-translatable composition of two inline images and independently localized text.</note>
       </trans-unit>
       <trans-unit id="%@, %@" translate="no" xml:space="preserve">
         <source>%@, %@</source>
@@ -444,6 +228,11 @@ Use the 'Transfer display settings' feature under all affected displays' additio
         <source>%lld Trial Days Left</source>
         <target state="translated">剩餘 %lld 天試用期</target>
         <note>53486 - App-menu footer countdown; %lld is the number of trial days remaining. Keep all plural forms compact enough for a 180-point button including its icon and padding.</note>
+      </trans-unit>
+      <trans-unit id="%lld additional color modes are available with different refresh rates." xml:space="preserve">
+        <source>%1$lld additional color modes are available with different refresh rates.</source>
+        <target state="translated">%1$lld 種具有不同更新率的額外色彩模式可用。</target>
+        <note>53689 - Color mode menu help reporting how many additional modes are available at other refresh rates.</note>
       </trans-unit>
       <trans-unit id="%lld°" translate="no" xml:space="preserve">
         <source>%lld°</source>
@@ -487,35 +276,35 @@ Use the 'Transfer display settings' feature under all affected displays' additio
         <target state="translated">（覆寫）</target>
         <note>53477 - Favorite display mode slot suffix: saving here replaces the existing favorite.</note>
       </trans-unit>
-      <trans-unit id="**%@ License Issue Detected**&#10;&#10;This installation has been remotely deactivated, or the hardware identifiers have changed since the last license activation. This may have occurred due to a hardware upgrade or migration to a new device.&#10;&#10;Please reactivate this installation to continue using Pro features." xml:space="preserve">
-        <source>**%@ License Issue Detected**
+      <trans-unit id="**License Issue Detected**&#10;&#10;This installation has been remotely deactivated, or the hardware identifiers have changed since the last license activation. This may have occurred due to a hardware upgrade or migration to a new device.&#10;&#10;Please reactivate this installation to continue using Pro features." xml:space="preserve">
+        <source>**License Issue Detected**
 
 This installation has been remotely deactivated, or the hardware identifiers have changed since the last license activation. This may have occurred due to a hardware upgrade or migration to a new device.
 
 Please reactivate this installation to continue using Pro features.</source>
-        <target state="translated">**%@ 偵測到授權問題**
+        <target state="translated">**偵測到授權問題**
 
 此安裝已被遠端停用，或自上次授權啟用以來硬體識別碼已更改。這可能是由於硬體升級或遷移到新裝置導致的。
 
 請重新啟用此安裝，以繼續使用 Pro 功能。</target>
-        <note>53477 - License activation alert. %@ is the app name; reactivation refers to this installation, not restarting the app.</note>
+        <note>53689 - License activation alert; reactivation refers to this installation, not restarting the app.</note>
       </trans-unit>
-      <trans-unit id="**%@ Outdated License**&#10;&#10;The provided license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To use this version of %@, please purchase a new license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
-        <source>**%1$@ Outdated License**
+      <trans-unit id="**Outdated License**&#10;&#10;The provided license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To use this version of %@, please purchase a new license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
+        <source>**Outdated License**
 
-The provided license was originally issued for an earlier version of %2$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
+The provided license was originally issued for an earlier version of %1$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
 
-This license no longer covers the current app version (v%3$@). To use this version of %4$@, please purchase a new license.
+This license no longer covers the current app version (v%2$@). To use this version of %3$@, please purchase a new license.
 
 Thank you for your understanding and continued support.</source>
-        <target state="translated">**%1$@ 過期的授權**
+        <target state="translated">**舊版授權**
 
-所提供的授權最初是為較早版本的 %2$@ 發行的，並且已經透過一次免費升級延長到後續主要版本。
+所提供的授權最初是為較早版本的 %1$@ 發行的，並且已經透過一次免費升級延長到後續主要版本。
 
-此授權不再涵蓋當前的應用版本 (v%3$@)。要使用此版本的 %4$@，請購買新的授權。
+此授權不再涵蓋當前的應用版本 (v%2$@)。要使用此版本的 %3$@，請購買新的授權。
 
 感謝您的理解與持續支持。</target>
-        <note>53477 - License version eligibility alert. Placeholders are the app name, app name, current version, and app name.</note>
+        <note>53689 - License version eligibility alert; the three placeholders are the app name, current version, and app name, in that order.</note>
       </trans-unit>
       <trans-unit id="-" translate="no" xml:space="preserve">
         <source>-</source>
@@ -1222,10 +1011,15 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">允許強制 HDR</target>
         <note>53477 - Setting permitting forced HDR modes.</note>
       </trans-unit>
-      <trans-unit id="Allow color table control (note: turn this off for compatibility mode)" xml:space="preserve">
-        <source>Allow color table control (note: turn this off for compatibility mode)</source>
-        <target state="translated">允許色表控制（注意：相容模式下請關閉此選項）</target>
-        <note>53477 - Color-table control toggle; disabling it enables the compatibility path.</note>
+      <trans-unit id="Allow color table control (turn this off for compatibility mode)" xml:space="preserve">
+        <source>Allow color table control (turn this off for compatibility mode)</source>
+        <target state="translated">允許色表控制（相容模式下請關閉此選項）</target>
+        <note>53681 - Global color table control switch under Settings &gt; Displays &gt; Overview. Turning it off enables compatibility mode by using alternative image adjustment methods.</note>
+      </trans-unit>
+      <trans-unit id="Allow color table control when a display uses a custom color profile" xml:space="preserve">
+        <source>Allow color table control when a display uses a custom color profile</source>
+        <target state="translated">當顯示器使用自訂色彩描述檔時允許色表調整</target>
+        <note>53695 - Global compatibility option in Settings &gt; Displays &gt; Overview, disabled by default. If turned off, any connected display using a user or shared custom color profile disables color table adjustments for all displays.</note>
       </trans-unit>
       <trans-unit id="Allow direct control and XDR upscaling" xml:space="preserve">
         <source>Allow direct control and XDR upscaling</source>
@@ -1337,6 +1131,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">允許透過應用程式控制音量。</target>
         <note>53477 - Volume control enablement help.</note>
       </trans-unit>
+      <trans-unit id="Allowing color table control when a connected display uses a custom color profile may result in a black screen. Turn this off to disable color table adjustments for all displays whenever any connected display uses a user or shared custom color profile." xml:space="preserve">
+        <source>Allowing color table control when a connected display uses a custom color profile may result in a black screen. Turn this off to disable color table adjustments for all displays whenever any connected display uses a user or shared custom color profile.</source>
+        <target state="translated">當連接的顯示器使用自訂色彩描述檔時，允許色表調整可能導致黑畫面。關閉此選項後，只要任何已連接的顯示器使用使用者或共享的自訂色彩描述檔，就會停用所有顯示器的色表調整。</target>
+        <note>53695 - Help for the global custom-profile compatibility option. Color table control modifies display gamma tables; the restriction affects every display, not just the one using a custom profile.</note>
+      </trans-unit>
       <trans-unit id="Allows access to app functionality via HTTP requests." xml:space="preserve">
         <source>Allows access to app functionality via HTTP requests.</source>
         <target state="translated">允許透過 HTTP 請求存取應用程式功能。</target>
@@ -1427,6 +1226,15 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <target state="translated">擴大機區域</target>
         <note>53477 - Audio amplifier zone selector, such as a separate room/output zone.</note>
       </trans-unit>
+      <trans-unit id="An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!&#10;&#10;Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI." xml:space="preserve">
+        <source>An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!
+
+Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI.</source>
+        <target state="translated">EDID 寫入操作會修改裝置本身的 EDID 和 DisplayID 資料。錯誤的 EDID 資料或寫入過程中的問題可能導致顯示器永久無法使用！
+
+基於安全考量，大多數顯示器不允許寫入 EDID，部分顯示器則需要先在服務選單中啟用 EDID 寫入。大多數 EDID 模擬器或直通轉接器支援 EDID 寫入。若裝置支援，EDID 寫入通常可透過 HDMI 進行。</target>
+        <note>53688 - Hardware EDID write warning. This changes device-stored identification data, not a software override.</note>
+      </trans-unit>
       <trans-unit id="An IP address at which the device can be accessed by the app for communication." xml:space="preserve">
         <source>An IP address at which the device can be accessed by the app for communication.</source>
         <target state="translated">應用程式可用於與裝置通訊的 IP 位址。</target>
@@ -1441,6 +1249,16 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <source>An IP address at which the device can be accessed by the app for communication. Upon connecting to a new device the first time, you might have to pair the device first.</source>
         <target state="translated">應用程式可用於與裝置通訊的 IP 位址。首次連接新裝置時，你可能需要先完成配對。</target>
         <note>53477 - Network controller address help including first-time device pairing.</note>
+      </trans-unit>
+      <trans-unit id="An active layout protection main status configured under Groups takes precedence." xml:space="preserve">
+        <source>An active layout protection main status configured under Groups takes precedence.</source>
+        <target state="translated">在「群組」中設定的主顯示器狀態保護具有優先權。</target>
+        <note>53689 - Main display setting help: active group layout protection can override the selected main display.</note>
+      </trans-unit>
+      <trans-unit id="An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
+        <source>An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
+        <target state="translated">目前使用的是備用 EDID - 系統設定更改將綁定到此 EDID！</target>
+        <note>53688 - Display configuration warning when overridden EDID identification data is active; system settings are associated with that identity, not the original one.</note>
       </trans-unit>
       <trans-unit id="An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!" xml:space="preserve">
         <source>An error occurred while calculating virtual screen dimensions. Try creating the virtual screen manually!</source>
@@ -1471,6 +1289,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <source>Another app altered screen colors or brightness - this clashes with what %@ is doing.</source>
         <target state="translated">另一個應用程式更改了螢幕色彩或亮度，與 %@ 的調整衝突。</target>
         <note>53477 - Color-table interference warning; %@ is the app name.</note>
+      </trans-unit>
+      <trans-unit id="Another controller (%@) is taking precedence for %@." xml:space="preserve">
+        <source>Another controller (%1$@) is taking precedence for %2$@.</source>
+        <target state="translated">另一個控制器（%1$@）對 %2$@ 具有優先權。</target>
+        <note>53688 - Controller conflict warning; placeholders identify the controller and affected control or device.</note>
       </trans-unit>
       <trans-unit id="Another group member display next to which the protected display should be positioned in the display arrangement." xml:space="preserve">
         <source>Another group member display next to which the protected display should be positioned in the display arrangement.</source>
@@ -1777,6 +1600,11 @@ Clearing NVRAM also removes low-level firmware preferences, such as startup disk
         <source>Associated audio device name</source>
         <target state="translated">關聯的音訊裝置名稱</target>
         <note>53477 - Associated audio device name field.</note>
+      </trans-unit>
+      <trans-unit id="Associated display mirroring is enforced!" xml:space="preserve">
+        <source>Associated display mirroring is enforced!</source>
+        <target state="translated">已強制關聯顯示器鏡像！</target>
+        <note>53689 - Status indicating that mirroring to the associated display is enforced.</note>
       </trans-unit>
       <trans-unit id="Associated to" xml:space="preserve">
         <source>Associated to</source>
@@ -2307,6 +2135,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">內建 DisplayPort 接收器</target>
         <note>53477 - Built-in DisplayPort receiver information label.</note>
       </trans-unit>
+      <trans-unit id="Built-in display panels have a single fixed internal connection mode." xml:space="preserve">
+        <source>Built-in display panels have a single fixed internal connection mode.</source>
+        <target state="translated">內建顯示面板具有單一固定的內部連接模式。</target>
+        <note>53689 - Connection mode help for built-in display panels.</note>
+      </trans-unit>
       <trans-unit id="Buy %@ Pro" xml:space="preserve">
         <source>Buy %@ Pro</source>
         <target state="translated">購買 %@ Pro</target>
@@ -2372,6 +2205,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">CLI 識別碼</target>
         <note>53477 - Custom control identifier used by CLI commands.</note>
       </trans-unit>
+      <trans-unit id="CLI designation clashes with the designation of an existing control." xml:space="preserve">
+        <source>CLI designation clashes with the designation of an existing control.</source>
+        <target state="translated">CLI 命名與現有控制項的命名衝突。</target>
+        <note>53688 - Custom control validation: CLI designations must be unique.</note>
+      </trans-unit>
       <trans-unit id="CMYK Halftone" xml:space="preserve">
         <source>CMYK Halftone</source>
         <target state="translated">CMYK 半色調</target>
@@ -2431,6 +2269,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Certain displays (typically those utilizing a backlight technology) produce a more natural image when the gamma is subtly adjusted on software dimming - this gives the image a better contrast.</source>
         <target state="translated">某些顯示器（通常採用背光技術）在軟體調光時稍微調整伽瑪值，可產生更自然的影像並改善對比度。</target>
         <note>53477 - Software dimming gamma compensation help.</note>
+      </trans-unit>
+      <trans-unit id="Certain displays are set to hide the menu bar icon, which may override this setting." xml:space="preserve">
+        <source>Certain displays are set to hide the menu bar icon, which may override this setting.</source>
+        <target state="translated">某些顯示器已設定為隱藏選單列圖示，這可能會覆蓋此設定。</target>
+        <note>53689 - Menu bar icon visibility setting help; per-display settings may override it.</note>
       </trans-unit>
       <trans-unit id="Change ${boolFeature} of ${displayEntity} to ${onOff}." xml:space="preserve">
         <source>Change ${boolFeature} of ${displayEntity} to ${onOff}.</source>
@@ -2627,6 +2470,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">點擊此處允許睡眠</target>
         <note>53477 - Action allowing system sleep.</note>
       </trans-unit>
+      <trans-unit id="Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one." xml:space="preserve">
+        <source>Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one.</source>
+        <target state="translated">點擊以啟用/停用群組。按住 ⌥ Option 鍵可在啟用選定群組的同時停用所有其他群組！</target>
+        <note>53689 - Group activation help describing the Option-click exclusive activation shortcut.</note>
+      </trans-unit>
       <trans-unit id="Click to show/hide features…" xml:space="preserve">
         <source>Click to show/hide features…</source>
         <target state="translated">點擊顯示或隱藏功能…</target>
@@ -2697,6 +2545,31 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">可更改色表</target>
         <note>53477 - Boolean display capability indicating whether the color table can be altered.</note>
       </trans-unit>
+      <trans-unit id="Color table control is disabled app-wide under Settings &gt; Displays &gt; Overview." xml:space="preserve">
+        <source>Color table control is disabled app-wide under Settings &gt; Displays &gt; Overview.</source>
+        <target state="translated">已在「設定 &gt; 顯示器 &gt; 概覽」中為整個 App 停用色表調整。</target>
+        <note>53695 - Warning below the color table control switch in display Settings and the Image Adjustments menu when the global switch is off. Settings &gt; Displays &gt; Overview is the navigation path to the app-wide switch; the warning icon is supplied separately.</note>
+      </trans-unit>
+      <trans-unit id="Color table control is disabled because this display does not support it." xml:space="preserve">
+        <source>Color table control is disabled because this display does not support it.</source>
+        <target state="translated">由於此顯示器不支援色表調整，該功能已停用。</target>
+        <note>53695 - Warning below the color table control switch in display Settings and the Image Adjustments menu when the global switch is on but the display does not support color table adjustments. The warning icon is supplied separately.</note>
+      </trans-unit>
+      <trans-unit id="Color table control is disabled for all displays because a connected display uses a custom color profile." xml:space="preserve">
+        <source>Color table control is disabled for all displays because a connected display uses a custom color profile.</source>
+        <target state="translated">由於連接的顯示器使用自訂色彩描述檔，所有顯示器的色表調整均已停用。</target>
+        <note>53695 - Warning in display Settings and the Image Adjustments menu when custom-profile compatibility protection blocks color table control globally. The warning icon is supplied separately.</note>
+      </trans-unit>
+      <trans-unit id="Color table control is disabled for all displays while this custom color profile is selected." xml:space="preserve">
+        <source>Color table control is disabled for all displays while this custom color profile is selected.</source>
+        <target state="translated">選取此自訂色彩描述檔期間，所有顯示器的色表調整均停用。</target>
+        <note>53695 - Warning beneath the selected user or shared custom color profile in the app menu when app-wide color table control is enabled but custom profiles are configured to block it for all connected displays.</note>
+      </trans-unit>
+      <trans-unit id="Color table control provides an efficient way to apply certain color-related image adjustments and software XDR/HDR upscaling. When it is unavailable or disabled, the app may use other methods based on overlay layers to achieve similar effects." xml:space="preserve">
+        <source>Color table control provides an efficient way to apply certain color-related image adjustments and software XDR/HDR upscaling. When it is unavailable or disabled, the app may use other methods based on overlay layers to achieve similar effects.</source>
+        <target state="translated">色表調整可有效率地套用某些與色彩相關的影像調整及軟體 XDR/HDR 亮度提升。當該功能無法使用或停用時，App 可能使用以疊加層為基礎的其他方式來達到類似效果。</target>
+        <note>53695 - Help for the global and per-display color table control switches. Color tables adjust display color output directly; overlay layers are an alternative rendering method, and software XDR/HDR upscaling increases brightness.</note>
+      </trans-unit>
       <trans-unit id="Color temperature cooler" xml:space="preserve">
         <source>Color temperature cooler</source>
         <target state="translated">更冷色溫</target>
@@ -2737,6 +2610,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">組合亮度軟體調光切換點</target>
         <note>53477 - Combined brightness software dimming transition threshold.</note>
       </trans-unit>
+      <trans-unit id="Combined brightness is active with %@." xml:space="preserve">
+        <source>Combined brightness is active with %@.</source>
+        <target state="translated">組合亮度已啟用，使用 %@。</target>
+        <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is the effective brightness control. %@ is the already localized name supplied by its selected hardware brightness controller.</note>
+      </trans-unit>
+      <trans-unit id="Combined brightness is not active." xml:space="preserve">
+        <source>Combined brightness is not active.</source>
+        <target state="translated">組合亮度未啟用。</target>
+        <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
+      </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
         <target state="translated">漫畫效果</target>
@@ -2776,6 +2659,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configuration Protection</source>
         <target state="translated">設定保護</target>
         <note>53477 - Feature reapplying protected display configuration settings.</note>
+      </trans-unit>
+      <trans-unit id="Configuration Protection can make color mode changes persistent." xml:space="preserve">
+        <source>Configuration Protection can make color mode changes persistent.</source>
+        <target state="translated">設定保護可以持續保存色彩模式變更。</target>
+        <note>53689 - Color mode help referring to the Configuration Protection feature.</note>
       </trans-unit>
       <trans-unit id="Configuration changes require reboot or activation." xml:space="preserve">
         <source>Configuration changes require reboot or activation.</source>
@@ -3067,10 +2955,20 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">連接管理設定</target>
         <note>53477 - Display connection management settings section.</note>
       </trans-unit>
+      <trans-unit id="Connection color depth (%lld-bit) is lower than the framebuffer depth (%u-bit). The GPU may use temporal dithering to improve colors." xml:space="preserve">
+        <source>Connection color depth (%1$lld-bit) is lower than the framebuffer depth (%2$u-bit). The GPU may use temporal dithering to improve colors.</source>
+        <target state="translated">連接顏色深度（%1$lld 位元）低於影格緩衝區深度（%2$u 位元）。 GPU 可以使用時間抖動來改善顏色。</target>
+        <note>53689 - Color depth warning comparing the display connection with the framebuffer; Temporal dithering alternates pixel values across frames.</note>
+      </trans-unit>
       <trans-unit id="Connection mode" xml:space="preserve">
         <source>Connection mode</source>
         <target state="translated">連線模式</target>
         <note>53477 - Device connection protocol or display link mode selector.</note>
+      </trans-unit>
+      <trans-unit id="Connection mode was automatically switched to Simple Manifest because the full manifest signature was denied by the device." xml:space="preserve">
+        <source>Connection mode was automatically switched to Simple Manifest because the full manifest signature was denied by the device.</source>
+        <target state="translated">由於裝置拒絕了完整資訊清單的簽章，連線模式已自動切換為「簡易資訊清單」。</target>
+        <note>53688 - Device connection status for fallback to the Simple Manifest protocol mode.</note>
       </trans-unit>
       <trans-unit id="Connection status: %@" xml:space="preserve">
         <source>Connection status: %@</source>
@@ -3341,6 +3239,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Current display role</source>
         <target state="translated">目前顯示角色</target>
         <note>53477 - Display role, such as computer monitor or television; not main or secondary position.</note>
+      </trans-unit>
+      <trans-unit id="Current method:" xml:space="preserve">
+        <source>Current method:</source>
+        <target state="translated">目前方式：</target>
+        <note>53695 - Label beneath the software-based video adjustments switch in display Settings. A separately localized description of the loaded image adjustment controllers follows this label.</note>
       </trans-unit>
       <trans-unit id="Current mode" xml:space="preserve">
         <source>Current mode</source>
@@ -4452,6 +4355,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">未啟用顯示器群組。</target>
         <note>53477 - Display group disabled status.</note>
       </trans-unit>
+      <trans-unit id="Display group layout protection is in effect. This might alter or override the result of a move operation!" xml:space="preserve">
+        <source>Display group layout protection is in effect. This might alter or override the result of a move operation!</source>
+        <target state="translated">顯示器群組的佈局保護已生效。這可能會改變或覆寫移動操作的結果！</target>
+        <note>53689 - Display movement warning when group layout protection is active.</note>
+      </trans-unit>
       <trans-unit id="Display group name" xml:space="preserve">
         <source>Display group name</source>
         <target state="translated">顯示器群組名稱</target>
@@ -4716,6 +4624,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">EDID 寫入通信設定</target>
         <note>53477 - Hardware EDID write communication settings.</note>
       </trans-unit>
+      <trans-unit id="EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
+        <source>EDID data cannot be interpreted (might be invalid).</source>
+        <target state="translated">無法解析 EDID 資料(可能無效)。</target>
+        <note>53688 - Warning for unparseable display identification data.</note>
+      </trans-unit>
       <trans-unit id="EDID data not loaded." xml:space="preserve">
         <source>EDID data not loaded.</source>
         <target state="translated">EDID 資料未載入</target>
@@ -4726,10 +4639,20 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">EDID 資料未檢索</target>
         <note>53477 - EDID data retrieval status.</note>
       </trans-unit>
+      <trans-unit id="EDID data retrieval failed." xml:space="preserve">
+        <source>EDID data retrieval failed.</source>
+        <target state="translated">EDID 資料檢索失敗。</target>
+        <note>53688 - Warning when display identification data could not be retrieved.</note>
+      </trans-unit>
       <trans-unit id="EDID version" xml:space="preserve">
         <source>EDID version</source>
         <target state="translated">EDID 版本</target>
         <note>53477 - Display identification data format version.</note>
+      </trans-unit>
+      <trans-unit id="EDID write is not available for the supplied EDID as its size exceeds 256 bytes." xml:space="preserve">
+        <source>EDID write is not available for the supplied EDID as its size exceeds 256 bytes.</source>
+        <target state="translated">提供的 EDID 大小超過 256 位元組，無法寫入。</target>
+        <note>53688 - EDID write size limit warning; the supplied data exceeds 256 bytes.</note>
       </trans-unit>
       <trans-unit id="EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information." xml:space="preserve">
         <source>EDID, or Extended Display Identification Data, is a standard for displays to convey their capabilities to a connected computer, including resolution, supported video formats, timings, and manufacturer information.</source>
@@ -5121,6 +5044,16 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">增強框架</target>
         <note>53477 - DisplayPort enhanced framing capability in display information.</note>
       </trans-unit>
+      <trans-unit id="Enter Hospitality Menu" xml:space="preserve">
+        <source>Enter Hospitality Menu</source>
+        <target state="translated">進入飯店模式選單</target>
+        <note>53689 - TV remote action to enter Hospitality Menu, the hotel installation configuration menu.</note>
+      </trans-unit>
+      <trans-unit id="Enter Service Menu" xml:space="preserve">
+        <source>Enter Service Menu</source>
+        <target state="translated">進入服務選單</target>
+        <note>53689 - TV remote action to open the technical service menu.</note>
+      </trans-unit>
       <trans-unit id="Estimated compressed payload" xml:space="preserve">
         <source>Estimated compressed payload</source>
         <target state="translated">估計壓縮負載</target>
@@ -5190,6 +5123,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Exclusive display group</source>
         <target state="translated">獨占顯示器群組</target>
         <note>53477 - Group exclusivity setting; priority determines which exclusive group can be active.</note>
+      </trans-unit>
+      <trans-unit id="Exit Service Menu" xml:space="preserve">
+        <source>Exit Service Menu</source>
+        <target state="translated">退出服務選單</target>
+        <note>53689 - TV remote action to leave the technical service menu.</note>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
@@ -5340,6 +5278,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">翻轉</target>
         <note>53477 - Streaming image horizontal or vertical flip control.</note>
       </trans-unit>
+      <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
+        <source>For best results, stick close to the display aspect ratio!</source>
+        <target state="translated">請接近顯示寬高比以獲得最佳效果！</target>
+        <note>53688 - Aspect ratio advice for custom display dimensions or resolutions.</note>
+      </trans-unit>
       <trans-unit id="For better reachability." xml:space="preserve">
         <source>For better reachability.</source>
         <target state="translated">方便操作。</target>
@@ -5349,6 +5292,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>For controls that trigger a feature or functionality.</source>
         <target state="translated">用於觸發功能或操作的控制元件</target>
         <note>53477 - Help describing action-type controls.</note>
+      </trans-unit>
+      <trans-unit id="For this XDR display it is best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
+        <source>For this XDR display it is best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
+        <target state="translated">建議將此 XDR 顯示器的校準設為「設定預設 - 自動校準」，讓應用程式根據目前的 Apple 顯示器預設模式和環境因素，自動調整亮度提升。手動校準時，請在仍能看見笑臉的前提下，將亮度滑桿調到最高！</target>
+        <note>53688 - XDR brightness upscaling calibration help; the smiling face is a visual calibration target.</note>
       </trans-unit>
       <trans-unit id="Force EDR mode during direct brightness control" xml:space="preserve">
         <source>Force EDR mode during direct brightness control</source>
@@ -5369,6 +5317,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Forced</source>
         <target state="translated">已強制</target>
         <note>53477 - Forced mode status label.</note>
+      </trans-unit>
+      <trans-unit id="Forced HDR modes exceed macOS resolution and refresh rate limits. May result in a corrupted image, green screen, or blank screen." xml:space="preserve">
+        <source>Forced HDR modes exceed macOS resolution and refresh rate limits. May result in a corrupted image, green screen, or blank screen.</source>
+        <target state="translated">強制 HDR 模式超出 macOS 的解析度與更新率限制。可能導致影像損壞、綠色或空白畫面。</target>
+        <note>53689 - Warning for forced HDR connection modes exceeding operating system limits.</note>
       </trans-unit>
       <trans-unit id="Forget" xml:space="preserve">
         <source>Forget</source>
@@ -5464,6 +5417,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Full manifest without signature</source>
         <target state="translated">不含簽章的完整資訊清單</target>
         <note>53477 - LG webOS connection registration mode; manifest is the permission declaration.</note>
+      </trans-unit>
+      <trans-unit id="Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
+        <source>Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
+        <target state="translated">全螢幕串流不可用，此設定需要螢幕錄影權限。您可在 "系統設定 &gt; 隱私與安全性 &gt; 螢幕錄影" 下授予權限！</target>
+        <note>53688 - Full-screen streaming permission warning pointing to macOS Screen Recording settings.</note>
       </trans-unit>
       <trans-unit id="Full screen streams look best when the target display is set to its native resolution." xml:space="preserve">
         <source>Full screen streams look best when the target display is set to its native resolution.</source>
@@ -5935,6 +5893,21 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">按住 ⇧ Shift 多選。不安全模式已隱藏。</target>
         <note>53477 - Resolution list multiple selection hint.</note>
       </trans-unit>
+      <trans-unit id="Hold ⌥ Option when opening this menu to measure refresh rate!" xml:space="preserve">
+        <source>Hold ⌥ Option when opening this menu to measure refresh rate!</source>
+        <target state="translated">打開此選單時按住 ⌥ Option 鍵以測量更新率！</target>
+        <note>53689 - Refresh rate menu help for the Option modifier shortcut.</note>
+      </trans-unit>
+      <trans-unit id="Hold ⌥ Option when opening this menu to show advanced LG webOS features." xml:space="preserve">
+        <source>Hold ⌥ Option when opening this menu to show advanced LG webOS features.</source>
+        <target state="translated">打開此選單時按住 ⌥ Option 鍵以顯示進階 LG webOS 功能。</target>
+        <note>53689 - Device menu help revealing advanced LG webOS remote control actions.</note>
+      </trans-unit>
+      <trans-unit id="Hold ⌥ Option when opening this menu to show advanced Samsung device features." xml:space="preserve">
+        <source>Hold ⌥ Option when opening this menu to show advanced Samsung device features.</source>
+        <target state="translated">打開此選單時按住 ⌥ Option 鍵以顯示進階 Samsung 裝置功能。</target>
+        <note>53689 - Device menu help revealing advanced Samsung remote control actions.</note>
+      </trans-unit>
       <trans-unit id="Horizontal" xml:space="preserve">
         <source>Horizontal</source>
         <target state="translated">水平</target>
@@ -5989,6 +5962,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>If Dock visibility is set to 'Never', the Edit menu and Copy/Paste keyboard shortcut keys will not be available in Settings.</source>
         <target state="translated">當 Dock 可見性設為「永不」時，「編輯」選單與複製/貼上快速鍵將無法在應用程式設定中使用。</target>
         <note>53477 - Dock visibility setting limitation.</note>
+      </trans-unit>
+      <trans-unit id="If a third party app is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!" xml:space="preserve">
+        <source>If a third party app is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!</source>
+        <target state="translated">如果使用第三方應用程式顯示 OSD，建議在「鍵盤/OSD」中停用內建 OSD，以避免出現重複或樣式混雜的 OSD！</target>
+        <note>53688 - OSD integration help: disable the built-in on-screen indicator when using a third-party provider.</note>
       </trans-unit>
       <trans-unit id="If configured, the token must be specified in the URL (see [documentation](https://betterdisplay.pro/integration)). This prevents external links to perform unwanted actions." xml:space="preserve">
         <source>If configured, the token must be specified in the URL (see [documentation](https://betterdisplay.pro/integration)). This prevents external links to perform unwanted actions.</source>
@@ -6050,6 +6028,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">選單圖示被隱藏時可在應用程運作時重新開啟應用程式來顯示圖示。</target>
         <note>53477 - Hidden menu icon recovery hint.</note>
       </trans-unit>
+      <trans-unit id="If the modern way does not work, you can try this legacy way for older Samsung TVs." xml:space="preserve">
+        <source>If the modern way does not work, you can try this legacy way for older Samsung TVs.</source>
+        <target state="translated">如果現代方式無效，您可以嘗試這個適用於舊款 Samsung 電視的傳統方式。</target>
+        <note>53689 - Samsung service menu help describing the legacy access method.</note>
+      </trans-unit>
       <trans-unit id="If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session." xml:space="preserve">
         <source>If the updated EDID contains new display identity (serial number, model ID, vendor ID), macOS will treat the display as a separate display. With this option enabled, %@ preserves continuity between the old and new identity during the current app session.</source>
         <target state="translated">如果更新後的 EDID 包含新的顯示器識別資訊（序號、型號 ID、供應商 ID），macOS 會將該顯示器視為不同的裝置。啟用此選項後，%@ 將在本次應用程式使用期間保留新舊識別資訊的一致性。</target>
@@ -6069,6 +6052,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>If you have an amplifier connected to your TV with HDMI-CEC control, use the '%@' option.</source>
         <target state="translated">如果您的電視連接了支援 HDMI-CEC 控制的擴大機，請使用「%@」選項。</target>
         <note>53477 - TV amplifier control option help; placeholder is an option label.</note>
+      </trans-unit>
+      <trans-unit id="If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen is connected." xml:space="preserve">
+        <source>If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen is connected.</source>
+        <target state="translated">如果您需要將虛擬螢幕鏡像或串流到原生連接的顯示器僅為取得靈活的 HiDPI 解析度，建議盡可能採用平滑縮放功能！如果您需要鏡像而非串流，可在連接虛擬螢幕後在應用程式選單中啟用。</target>
+        <note>53688 - Virtual screen help recommending flexible scaling for native displays when only flexible HiDPI resolutions are needed.</note>
       </trans-unit>
       <trans-unit id="If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved." xml:space="preserve">
         <source>If you would like to use the virtual screens later, it is better to use disconnect so macOS display configuration data is preserved.</source>
@@ -6123,6 +6111,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Image Adjustments</source>
         <target state="translated">影像調整</target>
         <note>53477 - Image adjustments menu heading.</note>
+      </trans-unit>
+      <trans-unit id="Image adjustment controls are unavailable." xml:space="preserve">
+        <source>Image adjustment controls are unavailable.</source>
+        <target state="translated">影像調整控制無法使用。</target>
+        <note>53689 - Status shown when image adjustment controls are unavailable.</note>
       </trans-unit>
       <trans-unit id="Image adjustments for ${displayEntity} are ${onOff}." xml:space="preserve">
         <source>Image adjustments for ${displayEntity} are ${onOff}.</source>
@@ -6279,6 +6272,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Intel</target>
         <note>53477 - Processor manufacturer identifier.</note>
       </trans-unit>
+      <trans-unit id="Intel Macs do not support software brightness upscaling while color-table adjustments are enabled. Disable color-table control to use the compositor or Metal overlay path." xml:space="preserve">
+        <source>Intel Macs do not support software brightness upscaling while color-table adjustments are enabled. Disable color-table control to use the compositor or Metal overlay path.</source>
+        <target state="translated">Intel Mac 在啟用色表調整時不支援軟體亮度提升。請停用色表控制，以使用合成器或 Metal 疊加方式。</target>
+        <note>53688 - Intel GPU limitation affecting software brightness upscaling with color-table adjustments.</note>
+      </trans-unit>
       <trans-unit id="Internal" xml:space="preserve">
         <source>Internal</source>
         <target state="translated">內部</target>
@@ -6353,6 +6351,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>It is best to let the app configure relevant features (contrast, color controls) to have the current value set as default. If the currently displayed image is not optimal, use the display's OSD to fix things first and then run detection again before proceeding!</source>
         <target state="translated">建議讓應用程式將相關功能（對比度、色彩控制）的目前值設為預設值。若目前影像不理想，請先使用顯示器的 OSD 調整，再重新執行偵測後繼續！</target>
         <note>53477 - Hardware control detection default value guidance.</note>
+      </trans-unit>
+      <trans-unit id="It is recommended to have more leeway in the range!" xml:space="preserve">
+        <source>It is recommended to have more leeway in the range!</source>
+        <target state="translated">建議在範圍內留有更多的空餘空間！</target>
+        <note>53688 - Warning when configured minimum and maximum resolution dimensions leave too little flexibility.</note>
       </trans-unit>
       <trans-unit id="Keep Above Other Windows" xml:space="preserve">
         <source>Keep Above Other Windows</source>
@@ -6443,6 +6446,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Layout protection enforces a configured arrangement for group member displays relative to each other. The feature can be used to make sure the displays are arranged properly after changing display resolutions, connecting new displays that are not part of the display group or dealing with displays that are not properly handled by the built-in display layout management of the operating system.</source>
         <target state="translated">佈局保護功能會強制執行群組成員顯示器之間的排列設定。此功能可用於確保在更改顯示器解析度、連接不屬於顯示器群組的新顯示器或處理作業系統內建顯示佈局管理無法正確處理的顯示器後，依然能維持顯示器排列正確。</target>
         <note>53477 - Display group layout protection help.</note>
+      </trans-unit>
+      <trans-unit id="Layout protection is disabled for this display group." xml:space="preserve">
+        <source>Layout protection is disabled for this display group.</source>
+        <target state="translated">此顯示器群組的佈局保護已停用。</target>
+        <note>53688 - Display group layout protection status.</note>
       </trans-unit>
       <trans-unit id="Leave mute key under OS control" xml:space="preserve">
         <source>Leave mute key under OS control</source>
@@ -6974,6 +6982,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Metal 裝置</target>
         <note>53477 - Graphics device used for Metal rendering.</note>
       </trans-unit>
+      <trans-unit id="Metal performance might be degraded on this device with an integrated Intel GPU." xml:space="preserve">
+        <source>Metal performance might be degraded on this device with an integrated Intel GPU.</source>
+        <target state="translated">此裝置使用 Intel 整合式 GPU，Metal 效能可能較差。</target>
+        <note>53688 - Metal rendering performance warning for integrated Intel graphics.</note>
+      </trans-unit>
       <trans-unit id="Might help if the display misbehaves after sleep." xml:space="preserve">
         <source>Might help if the display misbehaves after sleep.</source>
         <target state="translated">如果顯示器在睡眠後出現問題，請嘗試此操作。</target>
@@ -7029,6 +7042,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">最小值</target>
         <note>53477 - Control range minimum setting.</note>
       </trans-unit>
+      <trans-unit id="Minimum width/height value should be lower than the maximum!" xml:space="preserve">
+        <source>Minimum width/height value should be lower than the maximum!</source>
+        <target state="translated">最小寬度/高度值應低於最大值！</target>
+        <note>53688 - Validation warning for minimum and maximum display dimensions.</note>
+      </trans-unit>
       <trans-unit id="Mirror ${displayEntity} to ${targetDisplayEntity}." xml:space="preserve">
         <source>Mirror ${displayEntity} to ${targetDisplayEntity}.</source>
         <target state="translated">將 ${displayEntity} 鏡像至 ${targetDisplayEntity}。</target>
@@ -7079,10 +7097,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">鏡像</target>
         <note>53477 - Mirroring feature heading.</note>
       </trans-unit>
+      <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
+        <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
+        <target state="translated">存在遺失或重複的識別符號，這將導致意外結果！</target>
+        <note>53688 - Validation warning for missing or duplicate identifiers.</note>
+      </trans-unit>
       <trans-unit id="Mixed" xml:space="preserve">
         <source>Mixed</source>
         <target state="translated">混合</target>
         <note>53477 - Mixed state across multiple selected items.</note>
+      </trans-unit>
+      <trans-unit id="Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result in unexpected behavior or a blank screen." xml:space="preserve">
+        <source>Mixed modes are color modes that do not match the current framebuffer or Display Preset configuration. Choosing such a mode may result in unexpected behavior or a blank screen.</source>
+        <target state="translated">混合模式是與目前影格緩衝區或顯示器預設模式設定不符的色彩模式。選擇這類模式可能導致非預期行為或空白畫面。</target>
+        <note>53689 - Color mode menu help: mixed modes do not match the current framebuffer or Display Preset configuration.</note>
       </trans-unit>
       <trans-unit id="Mode number" xml:space="preserve">
         <source>Mode number</source>
@@ -7219,6 +7247,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">使用 DDC 使顯示器靜音或取消靜音（如果顯示器如此設定）。</target>
         <note>53477 - DDC mute shortcut action description.</note>
       </trans-unit>
+      <trans-unit id="NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
+        <source>NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %1$@ Configuration Protection.</source>
+        <target state="translated">NTSC（或其他未公開的）更新率在模式更改後可能不會持續，除非通過%1$@設定保護強制設定。</target>
+        <note>53689 - Refresh-rate warning shown below the rate list; the placeholder is an inline shield before Configuration Protection, which can reapply rates after mode changes.</note>
+      </trans-unit>
       <trans-unit id="Name" xml:space="preserve">
         <source>Name</source>
         <target state="translated">名稱</target>
@@ -7338,6 +7371,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>No color profiles found.</source>
         <target state="translated">未找到色彩描述檔。</target>
         <note>53477 - Empty color profile list.</note>
+      </trans-unit>
+      <trans-unit id="No display groups are available." xml:space="preserve">
+        <source>No display groups are available.</source>
+        <target state="translated">沒有可用的顯示器群組。</target>
+        <note>53688 - Empty state warning when no display groups exist.</note>
       </trans-unit>
       <trans-unit id="No display is selected" xml:space="preserve">
         <source>No display is selected</source>
@@ -7499,6 +7537,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">通知與 Dock</target>
         <note>53477 - Notification and Dock settings section.</note>
       </trans-unit>
+      <trans-unit id="Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
+        <source>Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
+        <target state="translated">此應用程式的通知已關閉。前往「系統設定」&gt;「通知」進行設定。</target>
+        <note>53688 - macOS notification permission warning; Notifications is the system settings pane, not software updates.</note>
+      </trans-unit>
       <trans-unit id="Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1" xml:space="preserve">
         <source>Number of bytes written in one command - appropriate values: 16, 8, 4, 2, 1</source>
         <target state="translated">每個指令寫入的位元組數 - 適用值：16、8、4、2、1</target>
@@ -7651,7 +7694,7 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="Outdated License" xml:space="preserve">
         <source>Outdated License</source>
-        <target state="translated">過期的授權</target>
+        <target state="translated">舊版授權</target>
         <note>53486 - App-menu footer status for a license covering an earlier app version, not the current version. Keep the translation short enough for a 180-point button including its icon and padding.</note>
       </trans-unit>
       <trans-unit id="Overlay" xml:space="preserve">
@@ -8089,6 +8132,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">保護 %1$@%2$@ 的位置</target>
         <note>53555 - Group layout protection toggle. The first placeholder is an unchanged display name; the second is an optional orientation suffix including its leading separator.</note>
       </trans-unit>
+      <trans-unit id="Protections are reapplied whenever a group is activated or deactivated using the app menu." xml:space="preserve">
+        <source>Protections are reapplied whenever a group is activated or deactivated using the app menu.</source>
+        <target state="translated">每當使用應用程式選單啟動或停用群組時，都會重新套用保護。</target>
+        <note>53689 - Group protection help describing when protected settings are reapplied.</note>
+      </trans-unit>
       <trans-unit id="Protocol version" xml:space="preserve">
         <source>Protocol version</source>
         <target state="translated">協定版本</target>
@@ -8489,6 +8537,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">至少記住未知顯示器</target>
         <note>53477 - Unknown display retention duration setting.</note>
       </trans-unit>
+      <trans-unit id="Remote control operations seem to be denied by the unit with the selected connection mode." xml:space="preserve">
+        <source>Remote control operations seem to be denied by the unit with the selected connection mode.</source>
+        <target state="translated">裝置似乎在所選連線模式下拒絕執行遙控操作。</target>
+        <note>53688 - Device controller warning for denied remote operations under the selected connection mode.</note>
+      </trans-unit>
       <trans-unit id="Remove" xml:space="preserve">
         <source>Remove</source>
         <target state="translated">移除</target>
@@ -8613,6 +8666,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Require PIN for pairing</source>
         <target state="translated">配對時需要 PIN</target>
         <note>53477 - TV PIN pairing setting.</note>
+      </trans-unit>
+      <trans-unit id="Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby')." xml:space="preserve">
+        <source>Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby').</source>
+        <target state="translated">需要在裝置上進行適當設定：停用 'Auto Power Sync' 或 'HDMI-CEC' 以避免控制衝突，並啟用 'QuickStart+'、'Always Ready' 和 'Turn on via Wi‑Fi'（'Networked Standby'）。</target>
+        <note>53688 - TV power control prerequisites; retain recognizable device firmware setting names.</note>
       </trans-unit>
       <trans-unit id="Reset" xml:space="preserve">
         <source>Reset</source>
@@ -9119,6 +9177,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">用於取得目前值的腳本（%@）</target>
         <note>53477 - Integration script field; placeholder describes the expected return type.</note>
       </trans-unit>
+      <trans-unit id="Search for actions by %@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!" xml:space="preserve">
+        <source>Search for actions by %1$@ in the [macOS Shortcuts app](shortcuts://create-shortcut) for more!</source>
+        <target state="translated">在 [macOS 捷徑](shortcuts://create-shortcut)中搜尋 %1$@ 的操作以了解更多！</target>
+        <note>53689 - Automation help linking to Shortcuts; the placeholder is the app name.</note>
+      </trans-unit>
       <trans-unit id="Search…" xml:space="preserve">
         <source>Search…</source>
         <target state="translated">搜尋…</target>
@@ -9569,6 +9632,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">陰影</target>
         <note>53477 - Image adjustment for the dark tonal regions of an image, paired with Highlight. This is photographic shadows, not a window shadow.</note>
       </trans-unit>
+      <trans-unit id="Shared Custom Profile" xml:space="preserve">
+        <source>Shared Custom Profile</source>
+        <target state="translated">共享自訂描述檔</target>
+        <note>53695 - Color profile category for a custom ICC profile installed in the shared Library for use by all users. Profiles in the shared Displays folder whose filenames end in a display UUID are classified as factory profiles instead.</note>
+      </trans-unit>
       <trans-unit id="Sharpness" xml:space="preserve">
         <source>Sharpness</source>
         <target state="translated">銳利度</target>
@@ -9984,10 +10052,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">調光時的伽瑪調整強度</target>
         <note>53477 - Software dimming gamma strength setting.</note>
       </trans-unit>
+      <trans-unit id="Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%@' in the app menu first and then activate '%@' in the app menu to use this feature." xml:space="preserve">
+        <source>Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%1$@' in the app menu first and then activate '%2$@' in the app menu to use this feature.</source>
+        <target state="translated">軟體亮度提升已啟用，同時也允許直接控制與 XDR 亮度提升。若要使用此功能，請先在應用程式選單中關閉「%1$@」，再啟用「%2$@」。</target>
+        <note>53688 - Brightness upscaling conflict warning; placeholders are the menu settings to disable and enable.</note>
+      </trans-unit>
       <trans-unit id="Some Apple displays use Presets to manage display color reproduction, gamma, and white point settings. Color Profiles can still be used to influence rendering to a limited extent; however, Presets work best when the factory default Color Profile is configured for the Apple display." xml:space="preserve">
         <source>Some Apple displays use Presets to manage display color reproduction, gamma, and white point settings. Color Profiles can still be used to influence rendering to a limited extent; however, Presets work best when the factory default Color Profile is configured for the Apple display.</source>
         <target state="translated">部分 Apple 顯示器使用預設模式管理色彩重現、伽瑪值和白點設定。色彩描述檔仍可在有限程度上影響影像呈現，但搭配顯示器的出廠預設色彩描述檔時，預設模式的效果最佳。</target>
         <note>53477 - Apple display preset and color profile interaction help.</note>
+      </trans-unit>
+      <trans-unit id="Some adjustments may clip HDR content!" xml:space="preserve">
+        <source>Some adjustments may clip HDR content!</source>
+        <target state="translated">某些調整可能導致 HDR 內容的明暗細節遺失！</target>
+        <note>53689 - Image adjustment warning: clipping loses highlight or shadow detail in HDR content.</note>
       </trans-unit>
       <trans-unit id="Some displays are still disconnected!" xml:space="preserve">
         <source>Some displays are still disconnected!</source>
@@ -10146,7 +10224,7 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="Status: Outdated License" xml:space="preserve">
         <source>Status: Outdated License</source>
-        <target state="translated">狀態：過期的授權</target>
+        <target state="translated">狀態：舊版授權</target>
         <note>53477 - License status label.</note>
       </trans-unit>
       <trans-unit id="Status: Pro License Activated" xml:space="preserve">
@@ -10203,6 +10281,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Stream Virtual Screen</source>
         <target state="translated">虛擬螢幕串流</target>
         <note>53477 - Expandable streaming menu for the virtual screen named in the enclosing device block. Keep the label compact; opening it only reveals stream options.</note>
+      </trans-unit>
+      <trans-unit id="Stream auto-starts to associated display!" xml:space="preserve">
+        <source>Stream auto-starts to associated display!</source>
+        <target state="translated">自動啟用關聯顯示器串流！</target>
+        <note>53689 - Streaming status describing automatic output to the associated display.</note>
       </trans-unit>
       <trans-unit id="Stream the contents of this display to:" xml:space="preserve">
         <source>Stream the contents of this display to:</source>
@@ -10338,6 +10421,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Synchronization Settings</source>
         <target state="translated">同步設定</target>
         <note>53477 - Synchronization settings section.</note>
+      </trans-unit>
+      <trans-unit id="Synchronization is disabled for this display group." xml:space="preserve">
+        <source>Synchronization is disabled for this display group.</source>
+        <target state="translated">已停用該顯示器群組同步功能。</target>
+        <note>53688 - Display group synchronization status.</note>
       </trans-unit>
       <trans-unit id="Synchronization source configuration" xml:space="preserve">
         <source>Synchronization source configuration</source>
@@ -10549,6 +10637,31 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">App 會建立並維持與裝置的持續連線。關閉此選項可能會降低與裝置互動的速度，但在連線不穩定時會有幫助。</target>
         <note>53477 - Persistent device connection setting help.</note>
       </trans-unit>
+      <trans-unit id="The app is disengaged from native brightness keys." xml:space="preserve">
+        <source>The app is disengaged from native brightness keys.</source>
+        <target state="translated">應用程式不再對應原生亮度鍵。</target>
+        <note>53689 - Keyboard status: the app is disengaged from the native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app is disengaged from native volume and mute keys." xml:space="preserve">
+        <source>The app is disengaged from native volume and mute keys.</source>
+        <target state="translated">應用程式不再回應原生音量和靜音鍵。</target>
+        <note>53689 - Keyboard status: the app is disengaged from native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app listens to both the native volume and mute keys (if permissions permit)." xml:space="preserve">
+        <source>The app listens to both the native volume and mute keys (if permissions permit).</source>
+        <target state="translated">應用程式監聽原生音量和靜音鍵（如果權限允許）</target>
+        <note>53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
+        <source>The app listens to the native brightness keys (if permissions permit).</source>
+        <target state="translated">應用程式會監聽原生亮度鍵（如果權限允許）</target>
+        <note>53689 - Keyboard status describing interception of native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app listens to the volume keys (if permissions permit) but not the mute key." xml:space="preserve">
+        <source>The app listens to the volume keys (if permissions permit) but not the mute key.</source>
+        <target state="translated">應用程式監聽音量鍵（如果權限允許），但不監聽靜音鍵。</target>
+        <note>53689 - Keyboard status describing volume key interception without mute key interception.</note>
+      </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
         <source>The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…</source>
         <target state="translated">應用程式選單圖示將反映目前主顯示器的圖示。如不喜歡預設圖示請啟用…</target>
@@ -10702,6 +10815,11 @@ This operation does not reset the display itself.</source>
         <target state="translated">選單列圖示與應用程式選單的中心對齊。停用此功能以獲得更傳統的外觀（將選單列圖示與應用程式選單依閱讀方向的起始側對齊）。</target>
         <note>53477 - Help for centering the menu bar icon relative to the app menu; this setting is unavailable in Sidebar presentation. Leading side means the starting edge in the menu’s reading direction (left in LTR, right in RTL).</note>
       </trans-unit>
+      <trans-unit id="The mouse hovers over the streamed content and does not interact with it." xml:space="preserve">
+        <source>The mouse hovers over the streamed content and does not interact with it.</source>
+        <target state="translated">滑鼠懸停在串流媒體內容上，未與之互動。</target>
+        <note>53689 - Stream interaction help when pointer events are not sent to the captured source.</note>
+      </trans-unit>
       <trans-unit id="The operation completed successfully, but some configuration changes could not be applied for the participating external displays.&#10;&#10;A new display group with the name '%@' was created and enabled." xml:space="preserve">
         <source>The operation completed successfully, but some configuration changes could not be applied for the participating external displays.
 
@@ -10801,6 +10919,16 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">特權輔助程式需要重新整理。</target>
         <note>53477 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface.</note>
       </trans-unit>
+      <trans-unit id="The protection is not in effect unless all participating displays are connected." xml:space="preserve">
+        <source>The protection is not in effect unless all participating displays are connected.</source>
+        <target state="translated">只有在所有參與的顯示器都連接的情況下，保護功能才會生效。</target>
+        <note>53688 - Group protection prerequisite requiring every participating display.</note>
+      </trans-unit>
+      <trans-unit id="The protection is not in effect unless relative position is defined." xml:space="preserve">
+        <source>The protection is not in effect unless relative position is defined.</source>
+        <target state="translated">只有定義了相對位置，保護功能才會生效。</target>
+        <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
+      </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well.</source>
         <target state="translated">滑桿會略過與顯示器尺寸不符的解析度，減少雜亂並方便操作。此選項也會影響解析度快速鍵。</target>
@@ -10811,6 +10939,16 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">所選來源不包含任何內容。</target>
         <note>53477 - Empty capture source selection error.</note>
       </trans-unit>
+      <trans-unit id="The specified audio device does not have native volume controls." xml:space="preserve">
+        <source>The specified audio device does not have native volume controls.</source>
+        <target state="translated">指定的音訊裝置沒有原生音量控制。</target>
+        <note>53688 - Audio device control warning for devices without native volume support.</note>
+      </trans-unit>
+      <trans-unit id="The specified audio device is not found or currently unavailable." xml:space="preserve">
+        <source>The specified audio device is not found or currently unavailable.</source>
+        <target state="translated">指定的音訊裝置未找到或目前無法使用。</target>
+        <note>53688 - Audio device control warning for an unavailable configured device.</note>
+      </trans-unit>
       <trans-unit id="The stored LUT data is missing or damaged." xml:space="preserve">
         <source>The stored LUT data is missing or damaged.</source>
         <target state="translated">儲存的 LUT 資料遺失或損壞。</target>
@@ -10820,6 +10958,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The stored custom filter record is invalid.</source>
         <target state="translated">儲存的自訂濾鏡記錄無效。</target>
         <note>53477 - Custom filter persistence validation error.</note>
+      </trans-unit>
+      <trans-unit id="The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
+        <source>The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
+        <target state="translated">系統 OSD 僅適用於亮度和音量，在此 macOS 版本中可能不會顯示正確的裝置名稱和值。</target>
+        <note>53688 - System OSD compatibility warning; only brightness and volume are supported.</note>
       </trans-unit>
       <trans-unit id="The system might reconnect the built-in display and other displays after wake from sleep to ensure GUI access. With this option enabled, the app forcefully disconnects these displays again. Post-wake main display will not be disconnected." xml:space="preserve">
         <source>The system might reconnect the built-in display and other displays after wake from sleep to ensure GUI access. With this option enabled, the app forcefully disconnects these displays again. Post-wake main display will not be disconnected.</source>
@@ -10876,6 +11019,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">至少連接一個可控顯示器</target>
         <note>53477 - Display group activation condition.</note>
       </trans-unit>
+      <trans-unit id="There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
+        <source>There is no custom control configured suitable as a new custom DDC feature.</source>
+        <target state="translated">尚未配置適合作為新自訂 DDC 功能的自訂控制項。</target>
+        <note>53688 - DDC feature setup warning when no suitable custom control is available.</note>
+      </trans-unit>
       <trans-unit id="There is no group member present." xml:space="preserve">
         <source>There is no group member present.</source>
         <target state="translated">未連接任何群組成員。</target>
@@ -10885,6 +11033,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>Thermal</source>
         <target state="translated">熱成像</target>
         <note>53477 - Core Image Thermal false-color image filter.</note>
+      </trans-unit>
+      <trans-unit id="These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %@ for your display type." xml:space="preserve">
+        <source>These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %1$@ for your display type.</source>
+        <target state="translated">這些步驟提供進入與退出服務選單，以及解鎖進階服務選單選項的現代方式——適用於較新的 Samsung 智慧顯示器。請使用適合你的顯示器類型的 %1$@ 步驟。</target>
+        <note>53689 - Samsung service menu instructions; the placeholder is an inline step-2 icon referring to the alternative TV and monitor actions.</note>
       </trans-unit>
       <trans-unit id="These three identifiers (serial number, vendor and model ID) serve as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as a newly connected display." xml:space="preserve">
         <source>These three identifiers (serial number, vendor and model ID) serve as the basis for display identification in macOS. If any of these three identifiers are changed, the system will assign a new identity (UUID) to the virtual screen and treat it as a newly connected display.</source>
@@ -10906,15 +11059,15 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">此 LUT 已在 %lld 個顯示器或串流設定中啟用。刪除後，也會停用這些設定中的 LUT。</target>
         <note>53477 - LUT in-use deletion warning; placeholder is assignment count.</note>
       </trans-unit>
+      <trans-unit id="This OSD style is available for brightness and volume only." xml:space="preserve">
+        <source>This OSD style is available for brightness and volume only.</source>
+        <target state="translated">此 OSD 樣式僅適用於亮度和音量。</target>
+        <note>53688 - OSD style limitation warning.</note>
+      </trans-unit>
       <trans-unit id="This allows additional image adjustment control options when color table adjustments are not enabled or available. Comes with a slight performance penalty. This feature is always active when software brightness upscaling is turned on while color table adjustments are not available." xml:space="preserve">
         <source>This allows additional image adjustment control options when color table adjustments are not enabled or available. Comes with a slight performance penalty. This feature is always active when software brightness upscaling is turned on while color table adjustments are not available.</source>
         <target state="translated">此功能可在未啟用或無法使用色表調整時，提供額外的影像調整選項，但會略微影響性能表現。 當軟體亮度提升啟用而色表調整不可用時，此功能將始終保持開啟。</target>
         <note>53477 - Metal image adjustment fallback help.</note>
-      </trans-unit>
-      <trans-unit id="This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling." xml:space="preserve">
-        <source>This allows advanced dimming, color adjustments and other features like software XDR/HDR upscaling. Note: color adjustments clip HDR content when in active use. If this option is disabled, the app will fall back to overlay based dimming control and uses Metal for software XDR/HDR upscaling.</source>
-        <target state="translated">此功能可進行進階調光、色彩調整及軟體 XDR/HDR 亮度提升。注意：套用色彩調整時會損失 HDR 明暗細節。停用後，應用程式會改用疊加層調光，並使用 Metal 進行軟體 XDR/HDR 亮度提升。</target>
-        <note>53477 - Color table control setting help.</note>
       </trans-unit>
       <trans-unit id="This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons)." xml:space="preserve">
         <source>This allows power control on physical connect/disconnect (or when the device is detected/undetected for other reasons).</source>
@@ -10970,6 +11123,11 @@ Please note that not all displays support DDC power operations and some displays
         <target state="translated">此顯示器是主要顯示器。確定要關閉螢幕嗎？</target>
         <note>53477 - Main screen off confirmation.</note>
       </trans-unit>
+      <trans-unit id="This feature is not available in this version." xml:space="preserve">
+        <source>This feature is not available in this version.</source>
+        <target state="translated">此功能在該版本中不可用。</target>
+        <note>53688 - Feature availability warning for the current app version.</note>
+      </trans-unit>
       <trans-unit id="This format string specifies how the control's internal value is formatted and sent to the device." xml:space="preserve">
         <source>This format string specifies how the control's internal value is formatted and sent to the device.</source>
         <target state="translated">此格式字串指定控制項的內部值如何格式化並傳送至裝置。</target>
@@ -10979,11 +11137,6 @@ Please note that not all displays support DDC power operations and some displays
         <source>This is in addition to the configured wake delay (%1$@ seconds), configuration delay (%2$@ seconds) and the time it takes to configure the displays.</source>
         <target state="translated">此項是除了已設定的喚醒延遲（%1$@秒）、設定延遲（%2$@秒）以及設定顯示器所需時間之外的額外時間。</target>
         <note>53477 - Additional delay help; placeholders are wake and configuration delay seconds.</note>
-      </trans-unit>
-      <trans-unit id="This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors." xml:space="preserve">
-        <source>This is required for color adjustments and a better software dimming and XDR/HDR upscaling experience. Recommended to leave enabled. Turn this off for compatibility with some third party apps that also alter system colors.</source>
-        <target state="translated">建議啟用此選項以滿足色彩調整、更好的軟體調光和 XDR/HDR 提升體驗要求。關閉此選項可與某些也會改變系統顏色的第三方應用程式相容。</target>
-        <note>53477 - Color table control compatibility help.</note>
       </trans-unit>
       <trans-unit id="This is the default display group. This group cannot be removed but can be disabled or made inactive by changing activation settings." xml:space="preserve">
         <source>This is the default display group. This group cannot be removed but can be disabled or made inactive by changing activation settings.</source>
@@ -11004,6 +11157,16 @@ Please note that not all displays support DDC power operations and some displays
         <source>This keyboard shortcut is used by the system.</source>
         <target state="translated">此快速鍵無法使用，因為它已是系統通用快速鍵。</target>
         <note>53477 - System keyboard shortcut conflict.</note>
+      </trans-unit>
+      <trans-unit id="This license is currently active on %lld installations." xml:space="preserve">
+        <source>This license is currently active on %1$lld installations.</source>
+        <target state="translated">此授權目前在 %1$lld 個安裝上處於啟用狀態。</target>
+        <note>53689 - Pro license status showing the current number of activated installations.</note>
+      </trans-unit>
+      <trans-unit id="This license is outdated for the current app version (v%@)." xml:space="preserve">
+        <source>This license is outdated for the current app version (v%1$@).</source>
+        <target state="translated">此授權僅適用於舊版，無法用於目前的應用程式版本 (v%1$@)。</target>
+        <note>53689 - License eligibility warning; the placeholder is the current app version.</note>
       </trans-unit>
       <trans-unit id="This license was originally issued for an earlier version of %@ and has already been extended once with a complimentary upgrade to a subsequent major version.&#10;&#10;This license no longer covers the current app version (v%@). To continue using this version of %@, please purchase a new license.&#10;&#10;To ensure a smooth app upgrade experience, your current activation will remain valid until you deactivate. Please note: once deactivated or reinstalled, this app version cannot be reactivated with this license.&#10;&#10;Thank you for your understanding and continued support." xml:space="preserve">
         <source>This license was originally issued for an earlier version of %1$@ and has already been extended once with a complimentary upgrade to a subsequent major version.
@@ -11052,6 +11215,15 @@ Thank you for your understanding and continued support.</source>
         <target state="translated">此名稱在 macOS 系統範圍使用。</target>
         <note>53477 - System display name field help.</note>
       </trans-unit>
+      <trans-unit id="This operation might permanently render your display unusable!&#10;&#10;Are you sure you want to continue?" xml:space="preserve">
+        <source>This operation might permanently render your display unusable!
+
+Are you sure you want to continue?</source>
+        <target state="translated">此操作可能導致顯示器永久無法使用！
+
+您確定要繼續嗎？</target>
+        <note>53688 - Confirmation warning before a potentially destructive display hardware operation.</note>
+      </trans-unit>
       <trans-unit id="This operation will disconnect and reconnect all currently connected virtual screens!" xml:space="preserve">
         <source>This operation will disconnect and reconnect all currently connected virtual screens!</source>
         <target state="translated">此操作將斷開並重連目前所有已連接的虛擬螢幕！</target>
@@ -11090,6 +11262,16 @@ Please note that previously stored custom display configurations won't be remove
         <source>This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100⁠%.</source>
         <target state="translated">此設定適用於可縮放螢幕/顯示器（虛擬螢幕或啟用原生平滑縮放功能的真實顯示器）。預設解析度為 100%。</target>
         <note>53477 - Scalable display percentage setting help.</note>
+      </trans-unit>
+      <trans-unit id="This setting is known to cause lack of signal on wake for some adapters, including the built-in HDMI port of several Mac models." xml:space="preserve">
+        <source>This setting is known to cause lack of signal on wake for some adapters, including the built-in HDMI port of several Mac models.</source>
+        <target state="translated">已知此設定會導致某些轉接器喚醒時缺乏訊號，包括多個 Mac 型號的內建 HDMI 連接埠。</target>
+        <note>53688 - Display connection setting warning about missing signal after wake.</note>
+      </trans-unit>
+      <trans-unit id="This setting may prevent DisplayLink displays from showing the overlay effect and, with some DisplayLink driver versions, may lead to increased CPU usage. It also prevents dimming and color adjustments from taking effect in screen streams and PIP windows." xml:space="preserve">
+        <source>This setting may prevent DisplayLink displays from showing the overlay effect and, with some DisplayLink driver versions, may lead to increased CPU usage. It also prevents dimming and color adjustments from taking effect in screen streams and PIP windows.</source>
+        <target state="translated">此設定可能使 DisplayLink 顯示器無法顯示疊加效果，並在某些 DisplayLink 驅動程式版本下增加 CPU 使用率。它也會讓調光和色彩調整無法作用於螢幕串流及畫中畫視窗。</target>
+        <note>53688 - Overlay setting warning for DisplayLink and captured streams/PIP windows.</note>
       </trans-unit>
       <trans-unit id="This should match the physical resolution of the display panel (actual number of pixels vertically and horizontally)." xml:space="preserve">
         <source>This should match the physical resolution of the display panel (actual number of pixels vertically and horizontally).</source>
@@ -11130,6 +11312,11 @@ On Intel Macs, soft-disconnecting a display does not put it fully to sleep and m
 
 在 Intel Mac 上，以軟體斷開連接不會讓顯示器完全進入睡眠，也可能無法如預期運作。透過應用程式斷開連接後，若關閉顯示器電源、拔除纜線或闔上內建顯示器的上蓋，可能導致 Mac 在重新啟動前都無法使用任何顯示器。</target>
         <note>53477 - Intel Mac soft disconnection warning.</note>
+      </trans-unit>
+      <trans-unit id="This shows options for the current resolution. See Display Modes menu for the full list." xml:space="preserve">
+        <source>This shows options for the current resolution. See Display Modes menu for the full list.</source>
+        <target state="translated">此處顯示目前解析度的選項。完整列表請參閱「顯示模式」選單。</target>
+        <note>53689 - Resolution-specific mode menu help pointing to the Display Mode submenu. Use the same localized menu name.</note>
       </trans-unit>
       <trans-unit id="This upscaling method expands the available brightness range for SDR content and allows HDR without clipping by directly controlling the display's brightness. Incompatible with the default brightness control features of macOS. Make sure the app properly listens to the keyboard brightness control keys." xml:space="preserve">
         <source>This upscaling method expands the available brightness range for SDR content and allows HDR without clipping by directly controlling the display's brightness. Incompatible with the default brightness control features of macOS. Make sure the app properly listens to the keyboard brightness control keys.</source>
@@ -11540,6 +11727,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">類型</target>
         <note>53477 - Type selector label.</note>
       </trans-unit>
+      <trans-unit id="Typical LG service menu passwords include 0413, 1925, 8741, 8743, 8878, 3195, 1105, 0000, 1111, 7777. Use the virtual remote to enter the appropriate digits when prompted. Enable the full service menu to access expert settings." xml:space="preserve">
+        <source>Typical LG service menu passwords include 0413, 1925, 8741, 8743, 8878, 3195, 1105, 0000, 1111, 7777. Use the virtual remote to enter the appropriate digits when prompted. Enable the full service menu to access expert settings.</source>
+        <target state="translated">常見的 LG 服務選單密碼包括：0413、1925、8741、8743、8878、3195、1105、0000、1111、7777。當電視要求輸入時，請使用虛擬遙控器輸入相應的數字。啟用完整服務選單以存取進階設定。</target>
+        <note>53689 - LG service menu help; Preserve the numeric passwords including leading zeros.</note>
+      </trans-unit>
       <trans-unit id="Typical optimal values for contrast are 50⁠%, 70⁠%, 75⁠%, 100⁠%. Make sure you select a value that does not create an issue with white saturation!" xml:space="preserve">
         <source>Typical optimal values for contrast are 50⁠%, 70⁠%, 75⁠%, 100⁠%. Make sure you select a value that does not create an issue with white saturation!</source>
         <target state="translated">最佳對比度值通常為 50%, 70%, 75%, 100%！您需要確保選中值不會造成白色飽和度問題！</target>
@@ -11635,6 +11827,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">無法新增虛擬螢幕</target>
         <note>53477 - Virtual screen creation error title.</note>
       </trans-unit>
+      <trans-unit id="Unable to enable DDC due to display or connection issues." xml:space="preserve">
+        <source>Unable to enable DDC due to display or connection issues.</source>
+        <target state="translated">由於顯示器或連接問題，無法啟用 DDC。</target>
+        <note>53688 - DDC enablement failure warning.</note>
+      </trans-unit>
+      <trans-unit id="Unable to present EDID data." xml:space="preserve">
+        <source>Unable to present EDID data.</source>
+        <target state="translated">無法顯示 EDID 資料。</target>
+        <note>53688 - Display identification data presentation failure.</note>
+      </trans-unit>
       <trans-unit id="Unavailable" xml:space="preserve">
         <source>Unavailable</source>
         <target state="translated">不可用</target>
@@ -11715,6 +11917,21 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">無限</target>
         <note>53477 - Slider snap badge for no frame-rate cap or no color quantization limit; keep it compact, ideally 8-10 characters, abbreviating naturally if needed.</note>
       </trans-unit>
+      <trans-unit id="Unlock Advanced" xml:space="preserve">
+        <source>Unlock Advanced</source>
+        <target state="translated">解鎖進階服務選單模式</target>
+        <note>53689 - Device service menu action to unlock advanced options.</note>
+      </trans-unit>
+      <trans-unit id="Unlock Advanced (Monitor)" xml:space="preserve">
+        <source>Unlock Advanced (Monitor)</source>
+        <target state="translated">解鎖進階模式（顯示器）</target>
+        <note>53689 - Samsung service menu action to unlock advanced options for computer monitors.</note>
+      </trans-unit>
+      <trans-unit id="Unlock Advanced (TV)" xml:space="preserve">
+        <source>Unlock Advanced (TV)</source>
+        <target state="translated">解鎖進階模式（TV）</target>
+        <note>53689 - Samsung service menu action to unlock advanced options for televisions.</note>
+      </trans-unit>
       <trans-unit id="Unlock Color Profile management for Apple displays" xml:space="preserve">
         <source>Unlock Color Profile management for Apple displays</source>
         <target state="translated">解鎖 Apple 顯示器的色彩描述檔管理</target>
@@ -11724,6 +11941,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Unlock EDID write - I understand the risks involved</source>
         <target state="translated">我已了解風險，解鎖 EDID 寫入。</target>
         <note>53477 - Hardware EDID write unlock acknowledgement.</note>
+      </trans-unit>
+      <trans-unit id="Unlock Service Menu" xml:space="preserve">
+        <source>Unlock Service Menu</source>
+        <target state="translated">解鎖服務選單</target>
+        <note>53689 - Device remote action to unlock access to the service menu.</note>
       </trans-unit>
       <trans-unit id="Unmute" xml:space="preserve">
         <source>Unmute</source>
@@ -11900,10 +12122,25 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">採用 0 值停用過渡動畫。</target>
         <note>53477 - Control transition duration setting help.</note>
       </trans-unit>
+      <trans-unit id="Use ⌘ Command + Click to warp the mouse cursor to the source screen!" xml:space="preserve">
+        <source>Use ⌘ Command + Click to warp the mouse cursor to the source screen!</source>
+        <target state="translated">按住 ⌘ Command 並點按，即可將滑鼠游標移至來源螢幕！</target>
+        <note>53689 - Stream interaction shortcut that moves the pointer directly to the source screen.</note>
+      </trans-unit>
+      <trans-unit id="Use ⌥ Option + click on the display menu header for a quick identification." xml:space="preserve">
+        <source>Use ⌥ Option + click on the display menu header for a quick identification.</source>
+        <target state="translated">使用 ⌥ Option + 點擊顯示選單標題以快速識別。</target>
+        <note>53689 - Display identification help for Option-clicking a display menu header.</note>
+      </trans-unit>
       <trans-unit id="User Color Profile" xml:space="preserve">
         <source>User Color Profile</source>
         <target state="translated">使用者色彩描述檔</target>
         <note>53477 - User color profile label.</note>
+      </trans-unit>
+      <trans-unit id="Using color table control with this custom color profile may cause a black screen." xml:space="preserve">
+        <source>Using color table control with this custom color profile may cause a black screen.</source>
+        <target state="translated">將色表調整與此自訂色彩描述檔一起使用可能導致黑畫面。</target>
+        <note>53695 - Warning beneath the selected user or shared custom color profile in the app menu when color table control is allowed with custom profiles. Such profiles can cause the display image to turn black when color table adjustments are applied.</note>
       </trans-unit>
       <trans-unit id="VCP Code" xml:space="preserve">
         <source>VCP Code</source>
@@ -12030,6 +12267,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">虛擬螢幕模式</target>
         <note>53477 - Virtual screen mode section.</note>
       </trans-unit>
+      <trans-unit id="Virtual Screen as Mirror Target?" xml:space="preserve">
+        <source>Virtual Screen as Mirror Target?</source>
+        <target state="translated">鏡像到此虛擬螢幕？</target>
+        <note>53689 - Prompt about using the virtual screen as a mirroring destination.</note>
+      </trans-unit>
+      <trans-unit id="Virtual Screen as Stream Target?" xml:space="preserve">
+        <source>Virtual Screen as Stream Target?</source>
+        <target state="translated">串流到此虛擬螢幕？</target>
+        <note>53689 - Prompt about using the virtual screen as a streaming destination.</note>
+      </trans-unit>
       <trans-unit id="Virtual screen" xml:space="preserve">
         <source>Virtual screen</source>
         <target state="translated">虛擬螢幕</target>
@@ -12100,6 +12347,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">始終可見</target>
         <note>53477 - Menu visibility choice that keeps the item visible even when its display or Tools section is collapsed.</note>
       </trans-unit>
+      <trans-unit id="Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
+        <source>Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
+        <target state="translated">顯示器目前的方向不符合此佈局保護設定，因此示意圖無法反映實際效果！</target>
+        <note>53688 - Layout protection preview warning when the display orientation differs from the configured layout.</note>
+      </trans-unit>
       <trans-unit id="Volume" xml:space="preserve">
         <source>Volume</source>
         <target state="translated">音量</target>
@@ -12134,6 +12386,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Volume control</source>
         <target state="translated">音量控制</target>
         <note>53477 - Volume control setting.</note>
+      </trans-unit>
+      <trans-unit id="Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." xml:space="preserve">
+        <source>Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
+        <target state="translated">音量控制已設定為使用具有原生音量控制的音訊裝置。這會阻止存取此控制，即使硬體控制功能已啟用。</target>
+        <note>53688 - Control availability warning when native audio device volume takes precedence.</note>
       </trans-unit>
       <trans-unit id="WOL broadcast address" xml:space="preserve">
         <source>WOL broadcast address</source>
@@ -12549,6 +12806,21 @@ A previous activation was automatically removed to make room for this new one.</
         <target state="translated">檢查連接</target>
         <note>53477 - Device connection check status.</note>
       </trans-unit>
+      <trans-unit id="color table control" xml:space="preserve">
+        <source>color table control</source>
+        <target state="translated">色表調整</target>
+        <note>53695 - Current image adjustment method when only the color table controller is loaded. It adjusts display output through the gamma tables.</note>
+      </trans-unit>
+      <trans-unit id="color table control with compositor filter layer for additional effects" xml:space="preserve">
+        <source>color table control with compositor filter layer for additional effects</source>
+        <target state="translated">色表調整，搭配合成器濾鏡層實現額外效果</target>
+        <note>53695 - Current image adjustment method when both the color table controller and compositor filter controller are loaded. Color tables provide the primary adjustments, while the compositor overlay supplies additional effects.</note>
+      </trans-unit>
+      <trans-unit id="compositor filter layer" xml:space="preserve">
+        <source>compositor filter layer</source>
+        <target state="translated">合成器濾鏡層</target>
+        <note>53695 - Current image adjustment method when the compositor filter controller is loaded without the color table controller. This is the software filter overlay used to adjust the display image.</note>
+      </trans-unit>
       <trans-unit id="connected" xml:space="preserve">
         <source>connected</source>
         <target state="translated">已連線</target>
@@ -12608,6 +12880,11 @@ A previous activation was automatically removed to make room for this new one.</
         <source>lux</source>
         <target state="translated">勒克斯</target>
         <note>53477 - Ambient illuminance unit.</note>
+      </trans-unit>
+      <trans-unit id="macOS already supports standby/wake over HDMI-CEC with most compatible hardware - leave this off to avoid conflict." xml:space="preserve">
+        <source>macOS already supports standby/wake over HDMI-CEC with most compatible hardware - leave this off to avoid conflict.</source>
+        <target state="translated">macOS 已經支援透過 HDMI-CEC 與大多數相容硬體進行待機/喚醒 - 將其關閉以避免衝突。</target>
+        <note>53688 - HDMI-CEC power control help warning about conflicts with native macOS behavior.</note>
       </trans-unit>
       <trans-unit id="macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature." xml:space="preserve">
         <source>macOS can mute digital streams natively - if mute does not work properly with your display, you should enable this feature.</source>
@@ -12677,6 +12954,16 @@ Open System Settings &gt; General &gt; Login Items and allow %@ to run in the ba
         <source>not supported (tunnel missing)</source>
         <target state="translated">不支援（隧道缺失）</target>
         <note>53477 - CEC tunnel unavailable status.</note>
+      </trans-unit>
+      <trans-unit id="overlay dimming only" xml:space="preserve">
+        <source>overlay dimming only</source>
+        <target state="translated">僅透過疊加層調暗</target>
+        <note>53695 - Current image adjustment method when the overlay controller uses a basic dimming overlay without Metal-based color adjustments.</note>
+      </trans-unit>
+      <trans-unit id="overlay dimming with Metal for additional adjustments" xml:space="preserve">
+        <source>overlay dimming with Metal for additional adjustments</source>
+        <target state="translated">透過疊加層調暗，搭配 Metal 進行額外調整</target>
+        <note>53695 - Current image adjustment method when the overlay controller has configured a Metal overlay. Metal is the Apple graphics API and should not be translated.</note>
       </trans-unit>
       <trans-unit id="paired" xml:space="preserve">
         <source>paired</source>
@@ -12787,229 +13074,6 @@ Open System Settings &gt; General &gt; Login Items and allow %@ to run in the ba
         <source>waiting for prompt</source>
         <target state="translated">等待配對提示</target>
         <note>53477 - Device pairing prompt state.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ A custom filter with this name already exists." xml:space="preserve">
-        <source>⚠️ A custom filter with this name already exists.</source>
-        <target state="translated">⚠️ 同名的自訂濾鏡已存在。</target>
-        <note>53477 - Validation warning for a duplicate custom image filter name.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!&#10;&#10;Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI." xml:space="preserve">
-        <source>⚠️ An EDID write operation modifies the EDID and DisplayID data on the device itself. Erroneous EDID data or a problem during EDID write might render the display permanently unusable!
-
-Most displays do not allow EDID write for security reasons, some displays require EDID write to be activated in a service menu. Most EDID emulators or pass-thru dongles support EDID write. EDID write (if supported) usually works over HDMI.</source>
-        <target state="translated">⚠️ EDID 寫入操作會修改裝置本身的 EDID 和 DisplayID 資料。錯誤的 EDID 資料或寫入過程中的問題可能導致顯示器永久無法使用！
-
-基於安全考量，大多數顯示器不允許寫入 EDID，部分顯示器則需要先在服務選單中啟用 EDID 寫入。大多數 EDID 模擬器或直通轉接器支援 EDID 寫入。若裝置支援，EDID 寫入通常可透過 HDMI 進行。</target>
-        <note>53477 - Hardware EDID write warning. This changes device-stored identification data, not a software override.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
-        <source>⚠️ An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
-        <target state="translated">⚠️ 目前使用的是備用 EDID - 系統設定更改將綁定到此 EDID！</target>
-        <note>53477 - Display configuration warning when overridden EDID identification data is active; system settings are associated with that identity, not the original one.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Another controller (%@) is taking precedence for %@." xml:space="preserve">
-        <source>⚠️ Another controller (%1$@) is taking precedence for %2$@.</source>
-        <target state="translated">⚠️ 另一個控制器（%1$@）對 %2$@ 具有優先權。</target>
-        <note>53477 - Controller conflict warning; placeholders identify the controller and affected control or device.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ CLI designation clashes with the designation of an existing control." xml:space="preserve">
-        <source>⚠️ CLI designation clashes with the designation of an existing control.</source>
-        <target state="translated">⚠️ CLI 命名與現有控制項的命名衝突。</target>
-        <note>53477 - Custom control validation: CLI designations must be unique.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Connection mode was automatically switched to Simple Manifest because the full manifest signature was denied by the device." xml:space="preserve">
-        <source>⚠️ Connection mode was automatically switched to Simple Manifest because the full manifest signature was denied by the device.</source>
-        <target state="translated">⚠️ 由於裝置拒絕了完整資訊清單的簽章，連線模式已自動切換為「簡易資訊清單」。</target>
-        <note>53477 - Device connection status for fallback to the Simple Manifest protocol mode.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ EDID data cannot be interpreted (might be invalid)." xml:space="preserve">
-        <source>⚠️ EDID data cannot be interpreted (might be invalid).</source>
-        <target state="translated">⚠️ 無法解析 EDID 資料(可能無效)。</target>
-        <note>53477 - Warning for unparseable display identification data.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ EDID data retrieval failed." xml:space="preserve">
-        <source>⚠️ EDID data retrieval failed.</source>
-        <target state="translated">⚠️ EDID 資料檢索失敗。</target>
-        <note>53477 - Warning when display identification data could not be retrieved.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ EDID write is not available for the supplied EDID as its size exceeds 256 bytes." xml:space="preserve">
-        <source>⚠️ EDID write is not available for the supplied EDID as its size exceeds 256 bytes.</source>
-        <target state="translated">⚠️ 提供的 EDID 大小超過 256 位元組，無法寫入。</target>
-        <note>53477 - EDID write size limit warning; the supplied data exceeds 256 bytes.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ For best results, stick close to the display aspect ratio!" xml:space="preserve">
-        <source>⚠️ For best results, stick close to the display aspect ratio!</source>
-        <target state="translated">⚠️ 請接近顯示寬高比以獲得最佳效果！</target>
-        <note>53477 - Aspect ratio advice for custom display dimensions or resolutions.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ For this XDR display it is best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
-        <source>⚠️ For this XDR display it is best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
-        <target state="translated">⚠️ 建議將此 XDR 顯示器的校準設為「設定預設 - 自動校準」，讓應用程式根據目前的 Apple 顯示器預設模式和環境因素，自動調整亮度提升。手動校準時，請在仍能看見笑臉的前提下，將亮度滑桿調到最高！</target>
-        <note>53477 - XDR brightness upscaling calibration help; the smiling face is a visual calibration target.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
-        <source>⚠️ Full screen streaming is unavailable as it requires Screen Recording permissions. You can grant this under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
-        <target state="translated">⚠️ 全螢幕串流不可用，此設定需要螢幕錄影權限。您可在 "系統設定 &gt; 隱私與安全性 &gt; 螢幕錄影" 下授予權限！</target>
-        <note>53477 - Full-screen streaming permission warning pointing to macOS Screen Recording settings.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ If a third party app is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!" xml:space="preserve">
-        <source>⚠️ If a third party app is being used to show the OSD, you might want to disable the built-in OSD under Keyboard/OSD to avoid having duplicated or mixed-style OSDs presented!</source>
-        <target state="translated">⚠️ 如果使用第三方應用程式顯示 OSD，建議在「鍵盤/OSD」中停用內建 OSD，以避免出現重複或樣式混雜的 OSD！</target>
-        <note>53477 - OSD integration help: disable the built-in on-screen indicator when using a third-party provider.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen is connected." xml:space="preserve">
-        <source>⚠️ If you want to mirror/stream the virtual screen to a natively connected display only to get flexible HiDPI resolutions, it is recommended to use the flexible scaling feature instead if possible! If you want to use mirroring instead of streaming, this can be enabled in the app menu once the virtual screen is connected.</source>
-        <target state="translated">⚠️ 如果您需要將虛擬螢幕鏡像或串流到原生連接的顯示器僅為取得靈活的 HiDPI 解析度，建議盡可能採用平滑縮放功能！如果您需要鏡像而非串流，可在連接虛擬螢幕後在應用程式選單中啟用。</target>
-        <note>53477 - Virtual screen help recommending flexible scaling for native displays when only flexible HiDPI resolutions are needed.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Intel Macs do not support software brightness upscaling while color-table adjustments are enabled. Disable color-table control to use the compositor or Metal overlay path." xml:space="preserve">
-        <source>⚠️ Intel Macs do not support software brightness upscaling while color-table adjustments are enabled. Disable color-table control to use the compositor or Metal overlay path.</source>
-        <target state="translated">⚠️ Intel Mac 在啟用色表調整時不支援軟體亮度提升。請停用色表控制，以使用合成器或 Metal 疊加方式。</target>
-        <note>53477 - Intel GPU limitation affecting software brightness upscaling with color-table adjustments.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ It is recommended to have more leeway in the range!" xml:space="preserve">
-        <source>⚠️ It is recommended to have more leeway in the range!</source>
-        <target state="translated">⚠️ 建議在範圍內留有更多的空餘空間！</target>
-        <note>53477 - Warning when configured minimum and maximum resolution dimensions leave too little flexibility.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Layout protection is disabled for this display group." xml:space="preserve">
-        <source>⚠️ Layout protection is disabled for this display group.</source>
-        <target state="translated">⚠️ 此顯示器群組的佈局保護已停用。</target>
-        <note>53477 - Display group layout protection status.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Metal performance might be degraded on this device with an integrated Intel GPU." xml:space="preserve">
-        <source>⚠️ Metal performance might be degraded on this device with an integrated Intel GPU.</source>
-        <target state="translated">⚠️ 此裝置使用 Intel 整合式 GPU，Metal 效能可能較差。</target>
-        <note>53477 - Metal rendering performance warning for integrated Intel graphics.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Minimum width/height value should be lower than the maximum!" xml:space="preserve">
-        <source>⚠️ Minimum width/height value should be lower than the maximum!</source>
-        <target state="translated">⚠️ 最小寬度/高度值應低於最大值！</target>
-        <note>53477 - Validation warning for minimum and maximum display dimensions.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
-        <source>⚠️ Missing or duplicated identifier present - this will yield unexpected results!</source>
-        <target state="translated">⚠️ 存在遺失或重複的識別符號，這將導致意外結果！</target>
-        <note>53477 - Validation warning for missing or duplicate identifiers.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ No display groups are available." xml:space="preserve">
-        <source>⚠️ No display groups are available.</source>
-        <target state="translated">⚠️ 沒有可用的顯示器群組。</target>
-        <note>53477 - Empty state warning when no display groups exist.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!" xml:space="preserve">
-        <source>⚠️ Notifications are turned off for the app. Fix this under System Settings &gt; Notifications!</source>
-        <target state="translated">⚠️ 此應用程式的通知已關閉。前往「系統設定」&gt;「通知」進行設定。</target>
-        <note>53477 - macOS notification permission warning; Notifications is the system settings pane, not software updates.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Remote control operations seem to be denied by the unit with the selected connection mode." xml:space="preserve">
-        <source>⚠️ Remote control operations seem to be denied by the unit with the selected connection mode.</source>
-        <target state="translated">⚠️ 裝置似乎在所選連線模式下拒絕執行遙控操作。</target>
-        <note>53477 - Device controller warning for denied remote operations under the selected connection mode.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby')." xml:space="preserve">
-        <source>⚠️ Requires appropriate configuration on the device: disabled 'Auto Power Sync' or 'HDMI-CEC' to avoid control conflict and enabled 'QuickStart+', 'Always Ready' and 'Turn on via Wi-Fi' ('Networked Standby').</source>
-        <target state="translated">⚠️ 需要在裝置上進行適當設定：停用 'Auto Power Sync' 或 'HDMI-CEC' 以避免控制衝突，並啟用 'QuickStart+'、'Always Ready' 和 'Turn on via Wi‑Fi'（'Networked Standby'）。</target>
-        <note>53477 - TV power control prerequisites; retain recognizable device firmware setting names.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%@' in the app menu first and then activate '%@' in the app menu to use this feature." xml:space="preserve">
-        <source>⚠️ Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%1$@' in the app menu first and then activate '%2$@' in the app menu to use this feature.</source>
-        <target state="translated">⚠️ 軟體亮度提升已啟用，同時也允許直接控制與 XDR 亮度提升。若要使用此功能，請先在應用程式選單中關閉「%1$@」，再啟用「%2$@」。</target>
-        <note>53477 - Brightness upscaling conflict warning; placeholders are the menu settings to disable and enable.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Synchronization is disabled for this display group." xml:space="preserve">
-        <source>⚠️ Synchronization is disabled for this display group.</source>
-        <target state="translated">⚠️ 已停用該顯示器群組同步功能。</target>
-        <note>53477 - Display group synchronization status.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ The protection is not in effect unless all participating displays are connected." xml:space="preserve">
-        <source>⚠️ The protection is not in effect unless all participating displays are connected.</source>
-        <target state="translated">⚠️ 只有在所有參與的顯示器都連接的情況下，保護功能才會生效。</target>
-        <note>53477 - Group protection prerequisite requiring every participating display.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ The protection is not in effect unless relative position is defined." xml:space="preserve">
-        <source>⚠️ The protection is not in effect unless relative position is defined.</source>
-        <target state="translated">⚠️ 只有定義了相對位置，保護功能才會生效。</target>
-        <note>53477 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ The specified audio device does not have native volume controls." xml:space="preserve">
-        <source>⚠️ The specified audio device does not have native volume controls.</source>
-        <target state="translated">⚠️ 指定的音訊裝置沒有原生音量控制。</target>
-        <note>53477 - Audio device control warning for devices without native volume support.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ The specified audio device is not found or currently unavailable." xml:space="preserve">
-        <source>⚠️ The specified audio device is not found or currently unavailable.</source>
-        <target state="translated">⚠️ 指定的音訊裝置未找到或目前無法使用。</target>
-        <note>53477 - Audio device control warning for an unavailable configured device.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version." xml:space="preserve">
-        <source>⚠️ The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
-        <target state="translated">⚠️ 系統 OSD 僅適用於亮度和音量，在此 macOS 版本中可能不會顯示正確的裝置名稱和值。</target>
-        <note>53477 - System OSD compatibility warning; only brightness and volume are supported.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ There is no custom control configured suitable as a new custom DDC feature." xml:space="preserve">
-        <source>⚠️ There is no custom control configured suitable as a new custom DDC feature.</source>
-        <target state="translated">⚠️ 尚未配置適合作為新自訂 DDC 功能的自訂控制項。</target>
-        <note>53477 - DDC feature setup warning when no suitable custom control is available.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ This OSD style is available for brightness and volume only." xml:space="preserve">
-        <source>⚠️ This OSD style is available for brightness and volume only.</source>
-        <target state="translated">⚠️ 此 OSD 樣式僅適用於亮度和音量。</target>
-        <note>53477 - OSD style limitation warning.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead." xml:space="preserve">
-        <source>⚠️ This display does not support color table adjustments or color table adjustments are disabled. The app uses overlay based dimming instead.</source>
-        <target state="translated">⚠️ 此顯示器不支援色表調整或色表調整已停用。該應用程式使用基於疊加的調光。</target>
-        <note>53477 - Software dimming fallback when color-table adjustments cannot be used.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ This feature is not available in this version." xml:space="preserve">
-        <source>⚠️ This feature is not available in this version.</source>
-        <target state="translated">⚠️ 此功能在該版本中不可用。</target>
-        <note>53477 - Feature availability warning for the current app version.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ This operation might permanently render your display unusable!&#10;&#10;Are you sure you want to continue?" xml:space="preserve">
-        <source>⚠️ This operation might permanently render your display unusable!
-
-Are you sure you want to continue?</source>
-        <target state="translated">⚠️ 此操作可能導致顯示器永久無法使用！
-
-您確定要繼續嗎？</target>
-        <note>53477 - Confirmation warning before a potentially destructive display hardware operation.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ This setting is known to cause lack of signal on wake for some adapters, including the built-in HDMI port of several Mac models." xml:space="preserve">
-        <source>⚠️ This setting is known to cause lack of signal on wake for some adapters, including the built-in HDMI port of several Mac models.</source>
-        <target state="translated">⚠️ 已知此設定會導致某些轉接器喚醒時缺乏訊號，包括多個 Mac 型號的內建 HDMI 連接埠。</target>
-        <note>53477 - Display connection setting warning about missing signal after wake.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ This setting may prevent DisplayLink displays from showing the overlay effect and, with some DisplayLink driver versions, may lead to increased CPU usage. It also prevents dimming and color adjustments from taking effect in screen streams and PIP windows." xml:space="preserve">
-        <source>⚠️ This setting may prevent DisplayLink displays from showing the overlay effect and, with some DisplayLink driver versions, may lead to increased CPU usage. It also prevents dimming and color adjustments from taking effect in screen streams and PIP windows.</source>
-        <target state="translated">⚠️ 此設定可能使 DisplayLink 顯示器無法顯示疊加效果，並在某些 DisplayLink 驅動程式版本下增加 CPU 使用率。它也會讓調光和色彩調整無法作用於螢幕串流及畫中畫視窗。</target>
-        <note>53477 - Overlay setting warning for DisplayLink and captured streams/PIP windows.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Unable to enable DDC due to display or connection issues." xml:space="preserve">
-        <source>⚠️ Unable to enable DDC due to display or connection issues.</source>
-        <target state="translated">⚠️ 由於顯示器或連接問題，無法啟用 DDC。</target>
-        <note>53477 - DDC enablement failure warning.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Unable to present EDID data." xml:space="preserve">
-        <source>⚠️ Unable to present EDID data.</source>
-        <target state="translated">⚠️ 無法顯示 EDID 資料。</target>
-        <note>53477 - Display identification data presentation failure.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!" xml:space="preserve">
-        <source>⚠️ Visualization is not indicative as the display is not in the proper orientation for this layout protection configuration!</source>
-        <target state="translated">⚠️ 顯示器目前的方向不符合此佈局保護設定，因此示意圖無法反映實際效果！</target>
-        <note>53477 - Layout protection preview warning when the display orientation differs from the configured layout.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled." xml:space="preserve">
-        <source>⚠️ Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
-        <target state="translated">⚠️ 音量控制已設定為使用具有原生音量控制的音訊裝置。這會阻止存取此控制，即使硬體控制功能已啟用。</target>
-        <note>53477 - Control availability warning when native audio device volume takes precedence.</note>
-      </trans-unit>
-      <trans-unit id="⚠️ macOS already supports standby/wake over HDMI-CEC with most compatible hardware - leave this off to avoid conflict." xml:space="preserve">
-        <source>⚠️ macOS already supports standby/wake over HDMI-CEC with most compatible hardware - leave this off to avoid conflict.</source>
-        <target state="translated">⚠️ macOS 已經支援透過 HDMI-CEC 與大多數相容硬體進行待機/喚醒 - 將其關閉以避免衝突。</target>
-        <note>53477 - HDMI-CEC power control help warning about conflicts with native macOS behavior.</note>
       </trans-unit>
     </body>
   </file>
