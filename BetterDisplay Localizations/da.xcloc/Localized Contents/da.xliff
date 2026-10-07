@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="da" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5019j"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5028f"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="da" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5019j"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5028f"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="da" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5019j"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5028f"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -305,6 +305,19 @@ Licensen dækker ikke længere den aktuelle appversion (v%2$@). Køb en ny licen
 
 Tak for din forståelse og fortsatte støtte.</target>
         <note>53689 - License version eligibility alert; the three placeholders are the app name, current version, and app name, in that order.</note>
+      </trans-unit>
+      <trans-unit id="**Unable to Reach Licensing Servers**&#10;&#10;For new license activations and license management, %@ needs to reach Paddle's licensing servers (*.paddleapi.com). These features may not work properly until connectivity is restored.&#10;&#10;Check your network connection and firewall settings." xml:space="preserve">
+        <source>**Unable to Reach Licensing Servers**
+
+For new license activations and license management, %@ needs to reach Paddle's licensing servers (*.paddleapi.com). These features may not work properly until connectivity is restored.
+
+Check your network connection and firewall settings.</source>
+        <target state="translated">**Kan ikke få adgang til licensservere**
+
+For at aktivere nye licenser og administrere licensen skal %@ have adgang til Paddles licensservere (*.paddleapi.com). Disse funktioner fungerer muligvis ikke korrekt, før forbindelsen er genoprettet.
+
+Kontrollér din netværksforbindelse og dine firewallindstillinger.</target>
+        <note>53777 - Connectivity warning in Settings &gt; Pro when Paddle licensing servers are unreachable; %@ is the app name. Preserve the bold heading, paragraph breaks, Paddle name, and server-domain pattern (*.paddleapi.com).</note>
       </trans-unit>
       <trans-unit id="-" translate="no" xml:space="preserve">
         <source>-</source>
@@ -5298,6 +5311,11 @@ De kan fjernes uden problemer. macOS opretter de nødvendige profiler igen, næs
         <target state="translated">Til kontrolfunktioner, der udløser en funktion eller handling.</target>
         <note>53477 - Help describing action-type controls.</note>
       </trans-unit>
+      <trans-unit id="For licensing questions and activation help, see the [Licensing FAQ](https://betterdisplay.pro/guide/faq/licensing/) and [activation troubleshooting](https://betterdisplay.pro/guide/faq/licensing/activation-errors/)." xml:space="preserve">
+        <source>For licensing questions and activation help, see the [Licensing FAQ](https://betterdisplay.pro/guide/faq/licensing/) and [activation troubleshooting](https://betterdisplay.pro/guide/faq/licensing/activation-errors/).</source>
+        <target state="translated">Hvis du har spørgsmål om licenser eller brug for hjælp til aktivering, kan du se [ofte stillede spørgsmål om licenser](https://betterdisplay.pro/guide/faq/licensing/) og [fejlfinding ved aktivering](https://betterdisplay.pro/guide/faq/licensing/activation-errors/).</target>
+        <note>53777 - Help sentence beneath License Terms in Settings &gt; Pro. Preserve both Markdown link destinations; the FAQ covers licensing questions and the second link addresses activation errors.</note>
+      </trans-unit>
       <trans-unit id="For this XDR display it is best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!" xml:space="preserve">
         <source>For this XDR display it is best to set calibration to Default - Auto Calibrate so the app can automatically adapt upscaling to the currently selected Apple Display Preset and environmental factors. For manual calibration set the brightness slider as high as possible while also making sure you still see the smiling face!</source>
         <target state="translated">På denne XDR-skærm er det bedst at sætte kalibreringen til Indstil standard - Automatisk kalibrering, så appen automatisk kan tilpasse forstærkningen til den valgte Apple-skærmforindstilling og omgivelserne. Ved manuel kalibrering skal du sætte lysstyrkemærket så højt som muligt, mens du stadig kan se det smilende ansigt!</target>
@@ -5597,6 +5615,11 @@ De kan fjernes uden problemer. macOS opretter de nødvendige profiler igen, næs
         <source>Groups</source>
         <target state="translated">Grupper</target>
         <note>53477 - Display groups heading.</note>
+      </trans-unit>
+      <trans-unit id="Guide" xml:space="preserve">
+        <source>Guide</source>
+        <target state="translated">Vejledning</target>
+        <note>53770 - Settings sidebar link below App Menu, and the tooltip and accessibility label of each pane's question-mark help button. Opens the online BetterDisplay user guide, with pane help linking to the relevant interface-reference article.</note>
       </trans-unit>
       <trans-unit id="HDCP support" xml:space="preserve">
         <source>HDCP support</source>
