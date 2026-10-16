@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="sk" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5028f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5038j"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -31,7 +31,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="sk" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5028f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5038j"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +78,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="sk" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5028f"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5038j"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -88,6 +88,11 @@
       <trans-unit id="%" translate="no" xml:space="preserve">
         <source>%</source>
         <note>50000 - Non-translatable percent unit symbol.</note>
+      </trans-unit>
+      <trans-unit id="% - skip when:" xml:space="preserve">
+        <source>% - skip when:</source>
+        <target state="translated">% – vynechať pre:</target>
+        <note>53849 - Fragment after the percentage field introducing the sole-display and main-display skip checkboxes; % is a literal unit and may move to the leading label in languages that prefix percentages. Keep wording concise and on one line: all four fragments share a roughly 475-point row with a 38-point numeric field, two checkboxes and spacing at the small font size.</note>
       </trans-unit>
       <trans-unit id="%08x" translate="no" xml:space="preserve">
         <source>%08x</source>
@@ -995,6 +1000,11 @@ Môžete to urobiť v Systémových nastaveniach alebo to za vás môže urobiť
         <target state="translated">Po odstránení virtuálnej obrazovky odporúčame v Systémových nastaveniach odstrániť aj jej nepoužívaný výrobný farebný profil.</target>
         <note>53477 - Virtual screen deletion cleanup advice for manual color profile removal.</note>
       </trans-unit>
+      <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. Uses the selected synchronization method and ignores zero or near-zero brightness readings." xml:space="preserve">
+        <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. Uses the selected synchronization method and ignores zero or near-zero brightness readings.</source>
+        <target state="translated">Po prebudení synchronizovať zmeny jasu aspoň o dva percentuálne body zo zdroja jasu Apple, ktorý bol pripojený pred uspaním. Použije sa vybraný spôsob synchronizácie a ignorujú sa nulové alebo takmer nulové hodnoty jasu.</target>
+        <note>53849 - Help for brightness synchronization after wake. Two percentage points means an absolute brightness difference such as 80% to 82%, rather than a two-percent proportional change; Apple brightness sources exclude DDC and software-only sources.</note>
+      </trans-unit>
       <trans-unit id="Aggressive disconnect" xml:space="preserve">
         <source>Aggressive disconnect</source>
         <target state="translated">Dôsledné odpájanie</target>
@@ -1708,6 +1718,11 @@ Vymazanie NVRAM odstráni aj nízkoúrovňové nastavenia firmvéru, napríklad 
         <source>At least one non-group member display is connected - this is prohibited by the activation rules.</source>
         <target state="translated">Je pripojený aspoň jeden displej mimo skupiny – pravidlá aktivácie to zakazujú.</target>
         <note>53477 - Group activation failure status caused by connected nonmembers.</note>
+      </trans-unit>
+      <trans-unit id="At least one other display (%@) shares the vendor and model number of this display (%@). Current and future matching displays are all affected by configuration changes performed in this section." xml:space="preserve">
+        <source>At least one other display (%@) shares the vendor and model number of this display (%@). Current and future matching displays are all affected by configuration changes performed in this section.</source>
+        <target state="translated">Aspoň jeden ďalší displej (%@) má rovnaké číslo dodávateľa a modelu ako tento displej (%@). Zmeny konfigurácie v tejto časti ovplyvnia všetky súčasné aj budúce displeje s rovnakými číslami.</target>
+        <note>53849 - Warning below the system display-model configuration switch when other known displays, including offline displays, share its effective vendor/model identity. The first %@ is a comma-separated list of unique display names; the second %@ is the vendor ID followed by the model ID in hexadecimal, kept left-to-right even in RTL text.</note>
       </trans-unit>
       <trans-unit id="At least two display group members are present." xml:space="preserve">
         <source>At least two display group members are present.</source>
@@ -3418,6 +3433,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Vlastná ikona aplikácie SF Symbol</target>
         <note>53484 - Label beside the custom menu-bar app icon name field and Browse button. SF Symbol refers to an Apple system symbol identifier.</note>
       </trans-unit>
+      <trans-unit id="Custom SF Symbol for dark appearance" xml:space="preserve">
+        <source>Custom SF Symbol for dark appearance</source>
+        <target state="translated">Vlastný SF Symbol pre tmavý vzhľad</target>
+        <note>53849 - Label beside the optional dark-appearance menu-bar icon name field and Browse button. SF Symbol is an Apple system symbol identifier, and dark appearance refers to the menu bar rather than the app or system theme.</note>
+      </trans-unit>
       <trans-unit id="Custom aspect ratio" xml:space="preserve">
         <source>Custom aspect ratio</source>
         <target state="translated">Vlastný pomer strán</target>
@@ -3833,6 +3853,16 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <target state="translated">Predvolené rozlíšenie</target>
         <note>53477 - Default display resolution label.</note>
       </trans-unit>
+      <trans-unit id="Define Crop Area" xml:space="preserve">
+        <source>Define Crop Area</source>
+        <target state="translated">Určiť oblasť orezania</target>
+        <note>53849 - Heading below the live selected-content stream while its crop rectangle is being edited. Crop means selecting the rectangular portion of captured content to show.</note>
+      </trans-unit>
+      <trans-unit id="Define Crop Area…" xml:space="preserve">
+        <source>Define Crop Area…</source>
+        <target state="translated">Určiť oblasť orezania…</target>
+        <note>53849 - Selected-content stream menu action that opens the live crop editor. The user moves and resizes a rectangle over the uncropped content.</note>
+      </trans-unit>
       <trans-unit id="Define action to get/pull data" xml:space="preserve">
         <source>Define action to get/pull data</source>
         <target state="translated">Definovať akciu na získanie/načítanie údajov</target>
@@ -4047,6 +4077,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <source>Dim the disconnected display using its selected brightness control because Intel Macs cannot put a soft-disconnected display fully to sleep. Compatible displays can also have their backlight switched off.</source>
         <target state="translated">Stlmiť odpojený displej jeho vybraným ovládaním jasu, pretože Macy s procesorom Intel nedokážu softvérovo odpojený displej úplne uspať. Na kompatibilných displejoch možno vypnúť aj podsvietenie.</target>
         <note>53477 - Intel software-disconnected display dimming workaround help.</note>
+      </trans-unit>
+      <trans-unit id="Dim to" xml:space="preserve">
+        <source>Dim to</source>
+        <target state="translated">Stlmiť na</target>
+        <note>53849 - Short leading label in the compact screen saver/lock dimming sentence before the percentage field; it may include the percent sign in languages that prefix percentages. Keep wording concise and on one line: all four fragments share a roughly 475-point row with a 38-point numeric field, two checkboxes and spacing at the small font size.</note>
       </trans-unit>
       <trans-unit id="Dimensions" xml:space="preserve">
         <source>Dimensions</source>
@@ -5926,6 +5961,11 @@ Ich odstránenie je bezpečné – macOS pri ďalšom pripojení displeja znovu 
         <target state="translated">Skryť upozornenia v paneli tlačidiel</target>
         <note>53477 - Button bar warning visibility setting.</note>
       </trans-unit>
+      <trans-unit id="Hierarchical rendering for SF Symbol menu icons" xml:space="preserve">
+        <source>Hierarchical rendering for SF Symbol menu icons</source>
+        <target state="translated">Hierarchické vykresľovanie ikon SF Symbol v menu</target>
+        <note>53849 - Toggle in Menu Bar Icon Options, enabled by default. Hierarchical rendering shades an Apple SF Symbol's layers differently; disabling it uses monochrome rendering for all SF Symbol menu bar icons, including the matched display or virtual-screen icon.</note>
+      </trans-unit>
       <trans-unit id="High Resolution (HiDPI)" xml:space="preserve">
         <source>High Resolution (HiDPI)</source>
         <target state="translated">Vysoké rozlíšenie (HiDPI)</target>
@@ -6544,6 +6584,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <source>Layout protection is disabled for this display group.</source>
         <target state="translated">Ochrana rozloženia je pre túto skupinu displejov vypnutá.</target>
         <note>53688 - Display group layout protection status.</note>
+      </trans-unit>
+      <trans-unit id="Leave empty to use the regular icon. The choice follows the menu bar’s appearance, which can differ from the system appearance depending on the wallpaper." xml:space="preserve">
+        <source>Leave empty to use the regular icon. The choice follows the menu bar’s appearance, which can differ from the system appearance depending on the wallpaper.</source>
+        <target state="translated">Ponechajte prázdne pre bežnú ikonu. Voľba sa riadi vzhľadom lišty, ktorý sa podľa pozadia môže líšiť od vzhľadu systému.</target>
+        <note>53849 - Details below the optional dark-appearance menu-bar symbol field. An empty field uses the regular icon selection, and the status button’s effective appearance determines when the override applies.</note>
       </trans-unit>
       <trans-unit id="Leave mute key under OS control" xml:space="preserve">
         <source>Leave mute key under OS control</source>
@@ -7284,6 +7329,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <source>Move a screen next to another one in the display layout.</source>
         <target state="translated">Presunúť obrazovku vedľa inej v rozložení displejov.</target>
         <note>53477 - Display arrangement shortcut action description.</note>
+      </trans-unit>
+      <trans-unit id="Move and resize the rectangle to select the area to stream, then click the checkmark to apply." xml:space="preserve">
+        <source>Move and resize the rectangle to select the area to stream, then click the checkmark to apply.</source>
+        <target state="translated">Presuňte obdĺžnik a zmeňte jeho veľkosť na výber oblasti na streamovanie. Potom výber potvrďte kliknutím na začiarknutie.</target>
+        <note>53849 - Instructions below the live selected-content crop editor. The checkmark button inside the crop rectangle confirms the selection; Cancel restores the previous crop and stream presentation.</note>
       </trans-unit>
       <trans-unit id="Move the display ${displayEntity} to the ${relativePosition} of ${targetDisplayEntity}." xml:space="preserve">
         <source>Move the display ${displayEntity} to the ${relativePosition} of ${targetDisplayEntity}.</source>
@@ -8225,10 +8275,10 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Chrániť polohu %@%@</target>
         <note>53555 - Group layout protection toggle. The first placeholder is an unchanged display name; the second is an optional orientation suffix including its leading separator.</note>
       </trans-unit>
-      <trans-unit id="Protections are reapplied whenever a group is activated or deactivated using the app menu." xml:space="preserve">
-        <source>Protections are reapplied whenever a group is activated or deactivated using the app menu.</source>
-        <target state="translated">Ochrany sa znovu použijú vždy, keď sa skupina zapne alebo vypne v menu aplikácie.</target>
-        <note>53689 - Group protection help describing when protected settings are reapplied.</note>
+      <trans-unit id="Protections are reapplied whenever a group is activated or deactivated." xml:space="preserve">
+        <source>Protections are reapplied whenever a group is activated or deactivated.</source>
+        <target state="translated">Ochrany sa znovu použijú vždy, keď sa skupina zapne alebo vypne.</target>
+        <note>53786 - Shared Apply Automatically help in Tools &gt; Groups and Settings &gt; Groups &gt; Overview &gt; Advanced. Protections restore active groups' configured display arrangement and main display whenever group activation changes.</note>
       </trans-unit>
       <trans-unit id="Protocol version" xml:space="preserve">
         <source>Protocol version</source>
@@ -9940,6 +9990,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Zobrazovať zoznam vstupných zdrojov zariadenia v menu aplikácie Vstupný zdroj.</target>
         <note>53477 - Device input list visibility help.</note>
       </trans-unit>
+      <trans-unit id="Show device name in the OSD" xml:space="preserve">
+        <source>Show device name in the OSD</source>
+        <target state="translated">Zobrazovať názov zariadenia v OSD</target>
+        <note>53823 - Keyboard settings toggle, off by default, to show the adjusted display or audio device name in the rounded on-screen display (OSD). Available only for rounded app-drawn styles other than Classic.</note>
+      </trans-unit>
       <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
         <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
         <target state="translated">Zobrazovať možnosť odpojenia/pripojenia displejov v menu. Odpojenie prepne displej do spánku a odstráni ho z rozloženia. Pripojenie ho obnoví. Odpojené displeje možno znovu pripojiť prepínačom v hlavičke (tlačidlo napájania), vypnutím a zapnutím displeja alebo zatvorením a otvorením veka MacBooku.</target>
@@ -10015,6 +10070,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Zobrazovať vedľajšie posuvníky kombinovaného jasu</target>
         <note>53477 - Combined brightness subslider setting.</note>
       </trans-unit>
+      <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
+        <source>Show the display or device name before the current value in the rounded OSD.</source>
+        <target state="translated">Zobrazí názov displeja alebo zariadenia pred aktuálnou hodnotou v zaoblenom OSD.</target>
+        <note>53824 - Help for the rounded OSD device-name toggle. The display or audio device name precedes the current value with a dot separator in one callout, or appears alone if no value is shown.</note>
+      </trans-unit>
       <trans-unit id="Show volume OSD with keyboard control" xml:space="preserve">
         <source>Show volume OSD with keyboard control</source>
         <target state="translated">Zobrazovať OSD hlasitosti pri ovládaní klávesnicou</target>
@@ -10079,6 +10139,16 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <source>Skip the standard macOS fade-out and fade-in animations during mode changes and display layout operations performed by the app.</source>
         <target state="translated">Preskočiť štandardné animácie stmavnutia a rozjasnenia macOS pri zmenách režimu a operáciách rozloženia displejov vykonaných aplikáciou.</target>
         <note>53477 - Skip system fade animation setting help.</note>
+      </trans-unit>
+      <trans-unit id="Skip when main display" xml:space="preserve">
+        <source>Skip when main display</source>
+        <target state="translated">Vynechať pre hlavný displej</target>
+        <note>53849 - Checkbox beside the screen saver or lock dimming percentage. Skips dimming for the main display and displays mirroring it.</note>
+      </trans-unit>
+      <trans-unit id="Skip when sole display" xml:space="preserve">
+        <source>Skip when sole display</source>
+        <target state="translated">Vynechať pre jediný displej</target>
+        <note>53849 - Checkbox beside the screen saver or lock dimming percentage. Skips dimming when this is the sole connected display, excluding virtual screens created by BetterDisplay.</note>
       </trans-unit>
       <trans-unit id="Slider format string" xml:space="preserve">
         <source>Slider format string</source>
@@ -10539,6 +10609,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <source>Synchronize %@</source>
         <target state="translated">Synchronizovať: %@</target>
         <note>53555 - Enable switch in the display-group synchronization editor. %@ is the localized control name in its original form, such as Brightness.</note>
+      </trans-unit>
+      <trans-unit id="Synchronize brightness changes after wake" xml:space="preserve">
+        <source>Synchronize brightness changes after wake</source>
+        <target state="translated">Synchronizovať zmeny jasu po prebudení</target>
+        <note>53849 - Default-enabled brightness group option shown when external-change synchronization is enabled. Reconciles changes from Apple brightness sources after sleep using the configured delta, absolute-value or nits synchronization method.</note>
       </trans-unit>
       <trans-unit id="Synchronize brightness nits" xml:space="preserve">
         <source>Synchronize brightness nits</source>
@@ -11250,6 +11325,16 @@ Nie všetky displeje podporujú operácie napájania DDC a niektoré sa nemusia 
         <source>This display is the main display. Are you sure you want to turn the screen off?</source>
         <target state="translated">Tento displej je hlavný. Naozaj chcete vypnúť obrazovku?</target>
         <note>53477 - Main screen off confirmation.</note>
+      </trans-unit>
+      <trans-unit id="This display uses a non-native connection, so %@ cannot retrieve or modify its EDID. Use the application that manages this display to configure the capabilities it reports to macOS." xml:space="preserve">
+        <source>This display uses a non-native connection, so %@ cannot retrieve or modify its EDID. Use the application that manages this display to configure the capabilities it reports to macOS.</source>
+        <target state="translated">Tento displej nepoužíva natívne pripojenie, preto %@ nemôže načítať ani upraviť jeho EDID. V aplikácii, ktorá ho spravuje, nastavte schopnosti, ktoré oznamuje systému macOS.</target>
+        <note>53849 - Persistent warning in Display EDID for virtual displays managed by another application, with EDID retrieval and custom-data actions disabled; %@ is the current app name from AppCore.shared.appName. EDID is Extended Display Identification Data, which describes a display's identity and capabilities to the computer.</note>
+      </trans-unit>
+      <trans-unit id="This display uses a non-native connection, so its system configuration cannot be edited. Use the application that manages this display to configure its resolutions and scaling, or mirror or stream a %@ virtual screen to it for additional resolution options." xml:space="preserve">
+        <source>This display uses a non-native connection, so its system configuration cannot be edited. Use the application that manages this display to configure its resolutions and scaling, or mirror or stream a %@ virtual screen to it for additional resolution options.</source>
+        <target state="translated">Tento displej nepoužíva natívne pripojenie, preto sa jeho systémová konfigurácia nedá upraviť. Rozlíšenia a škálovanie nastavte v aplikácii, ktorá ho spravuje, alebo naň zrkadlite či streamujte virtuálnu obrazovku aplikácie %@ pre ďalšie možnosti rozlíšenia.</target>
+        <note>53849 - Persistent warning below the disabled system display-model configuration switch for virtual displays managed by another application, such as DisplayLink Manager; %@ is the current app name from AppCore.shared.appName. A native connection means a display driven directly by macOS; mirroring or streaming an app-managed virtual screen is an alternative source of resolution options, not an edit to this display's configuration.</note>
       </trans-unit>
       <trans-unit id="This feature is not available in this version." xml:space="preserve">
         <source>This feature is not available in this version.</source>
@@ -12180,6 +12265,11 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <target state="translated">Načítať…</target>
         <note>53477 - Import/upload file action.</note>
       </trans-unit>
+      <trans-unit id="Use %@ as menu icon when a stream is paused" xml:space="preserve">
+        <source>Use %@ as menu icon when a stream is paused</source>
+        <target state="translated">Použiť %@ ako ikonu menu pri pozastavení streamu</target>
+        <note>53849 - Settings &gt; Menu &gt; Menu Bar Icon Options: optionally replace the menu bar icon when any active PIP, screen stream, or selected-content stream is paused. %@ is an inline preview of the pause symbol, not a stream name.</note>
+      </trans-unit>
       <trans-unit id="Use %@ as menu icon when the app is preventing display sleep" xml:space="preserve">
         <source>Use %@ as menu icon when the app is preventing display sleep</source>
         <target state="translated">Použiť %@ ako ikonu menu, keď aplikácia bráni spánku displeja</target>
@@ -12253,17 +12343,22 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
       <trans-unit id="Use rounded OSD style" xml:space="preserve">
         <source>Use rounded OSD style</source>
         <target state="translated">Používať zaoblený štýl OSD</target>
-        <note>53723 - Keyboard settings toggle for the rounded on-screen display (OSD). This hides the display or device name and close button; Classic keeps its existing size with rounder corners.</note>
+        <note>53823 - Keyboard settings toggle for the rounded on-screen display (OSD), which hides the close button and offers an optional device-name callout. Classic keeps its existing size with rounder corners.</note>
       </trans-unit>
       <trans-unit id="Use segmented OSD slider bar" xml:space="preserve">
         <source>Use segmented OSD slider bar</source>
         <target state="translated">Používať segmentovanú lištu posuvníka OSD</target>
         <note>53723 - Keyboard settings toggle for dividing the on-screen display (OSD) slider bar into 16 segments while the pointer is outside the OSD.</note>
       </trans-unit>
-      <trans-unit id="Use the recent circular macOS OSD design, without the display or device name and close icon. Classic keeps its size with more rounded corners." xml:space="preserve">
-        <source>Use the recent circular macOS OSD design, without the display or device name and close icon. Classic keeps its size with more rounded corners.</source>
-        <target state="translated">Použije nový kruhový dizajn OSD systému macOS bez názvu displeja alebo zariadenia a ikony zatvorenia. Štýl „Klasické“ si zachová veľkosť s viac zaoblenými rohmi.</target>
-        <note>53723 - Explanation of the rounded OSD option. Classic refers to the app-drawn Classic style in the OSD location and style picker.</note>
+      <trans-unit id="Use shaded layers for SF Symbol menu bar icons. Disable for a single shade, including the main display’s icon when used as the menu bar icon." xml:space="preserve">
+        <source>Use shaded layers for SF Symbol menu bar icons. Disable for a single shade, including the main display’s icon when used as the menu bar icon.</source>
+        <target state="translated">Používať pre ikony SF Symbol v lište vrstvy s rôznymi odtieňmi. Vypnutím sa použije jediný odtieň, a to aj pre ikonu hlavného displeja použitú v lište.</target>
+        <note>53849 - Help for the hierarchical menu bar icon rendering toggle. A single shade means monochrome SF Symbol rendering; the preference also applies when main-display matching supplies a display or linked virtual-screen symbol.</note>
+      </trans-unit>
+      <trans-unit id="Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners." xml:space="preserve">
+        <source>Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners.</source>
+        <target state="translated">Použije nový kruhový dizajn OSD systému macOS bez ikony zatvorenia. Štýl „Klasické“ si zachová veľkosť s viac zaoblenými rohmi.</target>
+        <note>53823 - Explanation of the rounded OSD option, which hides the close button. Classic refers to the app-drawn Classic style in the OSD location and style picker.</note>
       </trans-unit>
       <trans-unit id="Use this multiplier to convert the control's internal value to the value expected (or provided) by the integrated device." xml:space="preserve">
         <source>Use this multiplier to convert the control's internal value to the value expected (or provided) by the integrated device.</source>
@@ -12505,6 +12600,11 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <target state="translated">Virtuálne obrazovky možno podľa potreby kedykoľvek pripojiť alebo odpojiť. Niektoré nastavenia sa zobrazia iba pri pripojenej obrazovke. Zmena niektorých nastavení nižšie vyžaduje jej opätovné pripojenie, ak je už pripojená.</target>
         <note>53477 - Virtual display configuration help.</note>
       </trans-unit>
+      <trans-unit id="Virtual screens created by BetterDisplay do not count when determining the sole connected display. Displays mirroring the main display also count as main." xml:space="preserve">
+        <source>Virtual screens created by BetterDisplay do not count when determining the sole connected display. Displays mirroring the main display also count as main.</source>
+        <target state="translated">Virtuálne obrazovky vytvorené aplikáciou BetterDisplay sa nezapočítavajú pri určovaní jediného pripojeného displeja. Za hlavné sa považujú aj displeje zrkadliace hlavný displej.</target>
+        <note>53849 - Settings details explaining the two screen saver or lock dimming skip checkboxes. Only BetterDisplay-created virtual screens are excluded from the sole-display count; main-display skipping includes mirror targets.</note>
+      </trans-unit>
       <trans-unit id="Visible" xml:space="preserve">
         <source>Visible</source>
         <target state="translated">Viditeľné</target>
@@ -12654,6 +12754,11 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
         <source>When a watched display's resolution changes, the resolutions of all suitable group members are updated as a consequence to match the UI scaling of the watched display.</source>
         <target state="translated">Keď sa zmení rozlíšenie sledovaného displeja, aktualizujú sa rozlíšenia všetkých vhodných členov skupiny tak, aby zodpovedali mierke rozhrania sledovaného displeja.</target>
         <note>53477 - UI scale matching operation help.</note>
+      </trans-unit>
+      <trans-unit id="When any Picture in Picture, screen stream, or selected-content stream is paused, the menu bar icon changes to indicate this. This helps you monitor paused streams, for example while sharing your screen." xml:space="preserve">
+        <source>When any Picture in Picture, screen stream, or selected-content stream is paused, the menu bar icon changes to indicate this. This helps you monitor paused streams, for example while sharing your screen.</source>
+        <target state="translated">Pri pozastavení ľubovoľného obrazu v obraze, streamu obrazovky alebo vybraného obsahu sa ikona v lište zmení. Pomôže vám to sledovať pozastavené streamy, napríklad pri zdieľaní obrazovky.</target>
+        <note>53849 - Help for the paused-stream menu bar icon setting; Picture in Picture is a floating display capture, a screen stream sends a display to another display, and selected-content streaming captures chosen windows or applications. The indication remains while at least one active stream is paused.</note>
       </trans-unit>
       <trans-unit id="When disabled, brightness is controlled using software adjustments or dimming rather than hardware controls. This also affects the availability of combined brightness control." xml:space="preserve">
         <source>When disabled, brightness is controlled using software adjustments or dimming rather than hardware controls. This also affects the availability of combined brightness control.</source>
@@ -13068,6 +13173,11 @@ Open System Settings &gt; General &gt; Login Items and allow %@ to run in the ba
 Otvorte Systémové nastavenia &gt; Všeobecné &gt; Prihlasovacie položky, povoľte aplikácii %@ spúšťanie na pozadí a potom sa vráťte a skúste to znova.</target>
         <note>53477 - Two-paragraph explanation in the privileged background-helper approval alert. Both %@ placeholders are the app name configured for the current build; System Settings &gt; General &gt; Login Items is the macOS navigation path.</note>
       </trans-unit>
+      <trans-unit id="main display" xml:space="preserve">
+        <source>main display</source>
+        <target state="translated">hlavný displej</target>
+        <note>53849 - Short checkbox label after “skip when:” in the dimming sentence; main includes displays mirroring the main display. Keep wording concise and on one line: all four fragments share a roughly 475-point row with a 38-point numeric field, two checkboxes and spacing at the small font size.</note>
+      </trans-unit>
       <trans-unit id="milliseconds" xml:space="preserve">
         <source>milliseconds</source>
         <target state="translated">ms</target>
@@ -13192,6 +13302,11 @@ Otvorte Systémové nastavenia &gt; Všeobecné &gt; Prihlasovacie položky, pov
         <source>seconds</source>
         <target state="translated">s</target>
         <note>53477 - Time interval unit.</note>
+      </trans-unit>
+      <trans-unit id="sole display" xml:space="preserve">
+        <source>sole display</source>
+        <target state="translated">jediný displej</target>
+        <note>53849 - Short checkbox label after “skip when:” in the dimming sentence; means this is the only connected display, excluding virtual screens created by BetterDisplay. Keep wording concise and on one line: all four fragments share a roughly 475-point row with a 38-point numeric field, two checkboxes and spacing at the small font size.</note>
       </trans-unit>
       <trans-unit id="times" xml:space="preserve">
         <source>times</source>
