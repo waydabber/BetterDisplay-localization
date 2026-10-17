@@ -851,6 +851,11 @@ Tarkista verkkoyhteys ja palomuurin asetukset.</target>
         <target state="translated">Lisäviive heräämisen jälkeen ennen DDC-asetusten palauttamista</target>
         <note>53477 - Delay setting before restoring DDC settings after wake.</note>
       </trans-unit>
+      <trans-unit id="Additional factory profiles:" xml:space="preserve">
+        <source>Additional factory profiles:</source>
+        <target state="translated">Muut tehdasprofiilit:</target>
+        <note>53885 - Heading above factory ColorSync profiles other than the selected display’s own factory profile in the Color Profile menu.</note>
+      </trans-unit>
       <trans-unit id="Additional licenses:" xml:space="preserve">
         <source>Additional licenses:</source>
         <target state="translated">Lisälisenssit:</target>
@@ -1500,6 +1505,31 @@ AliPay on saatavilla Kiinassa.</target>
         <target state="translated">Ota EDID-korvaus käyttöön, kun näyttö seuraavan kerran kytketään tai Mac käynnistetään uudelleen. Muokatulla EDID:llä voit muuttaa macOS:n havaitsemia näytön ominaisuuksia.</target>
         <note>53477 - Software EDID override help; this changes system interpretation, not device-stored data.</note>
       </trans-unit>
+      <trans-unit id="Apply color profile favorite 1" xml:space="preserve">
+        <source>Apply color profile favorite 1</source>
+        <target state="translated">Ota väriprofiilisuosikki 1 käyttöön</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 1 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 2" xml:space="preserve">
+        <source>Apply color profile favorite 2</source>
+        <target state="translated">Ota väriprofiilisuosikki 2 käyttöön</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 2 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 3" xml:space="preserve">
+        <source>Apply color profile favorite 3</source>
+        <target state="translated">Ota väriprofiilisuosikki 3 käyttöön</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 3 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 4" xml:space="preserve">
+        <source>Apply color profile favorite 4</source>
+        <target state="translated">Ota väriprofiilisuosikki 4 käyttöön</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 4 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 5" xml:space="preserve">
+        <source>Apply color profile favorite 5</source>
+        <target state="translated">Ota väriprofiilisuosikki 5 käyttöön</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 5 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
       <trans-unit id="Apply configured custom EDID for ${displayEntity}." xml:space="preserve">
         <source>Apply configured custom EDID for ${displayEntity}.</source>
         <target state="translated">Ota määritetty oma EDID käyttöön näytölle ${displayEntity}.</target>
@@ -1613,6 +1643,11 @@ NVRAM-muistin tyhjentäminen poistaa myös laiteohjelmiston matalan tason asetuk
         <source>Aspect ratio</source>
         <target state="translated">Kuvasuhde</target>
         <note>53477 - Display width-to-height ratio setting.</note>
+      </trans-unit>
+      <trans-unit id="Assign current color profile to favorite:" xml:space="preserve">
+        <source>Assign current color profile to favorite:</source>
+        <target state="translated">Tallenna nykyinen väriprofiili suosikiksi:</target>
+        <note>53885 - Prompt above five numbered favorite slots in the Color Profile menu’s Manage panel; choosing a slot saves or replaces it with the display’s current ColorSync profile. Keep this prompt concise; “color” may be omitted where the menu context makes it clear.</note>
       </trans-unit>
       <trans-unit id="Assign current resolution to favorite:" xml:space="preserve">
         <source>Assign current resolution to favorite:</source>
@@ -2288,6 +2323,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Kalibroi kirkkauden tehostus…</target>
         <note>53477 - Brightness upscaling calibration action.</note>
       </trans-unit>
+      <trans-unit id="Calibration value" xml:space="preserve">
+        <source>Calibration value</source>
+        <target state="translated">Kalibrointiarvo</target>
+        <note>53872 - Accessibility label for the numeric input and up/down stepper in Calibrate Upscaling. The value is a software upscaling color-component factor, not a percentage or brightness in nits.</note>
+      </trans-unit>
       <trans-unit id="Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either." xml:space="preserve">
         <source>Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either.</source>
         <target state="translated">Tällä voi viitata omaan säätimeen komentoriviltä. Tunnuksen on oltava yksilöllinen, eikä se saa olla ristiriidassa myöskään valmiiden säätimien tunnusten kanssa.</target>
@@ -2513,10 +2553,10 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Tyhjennä tunnelin odottava tila</target>
         <note>53477 - CEC transport tunnel pending status cleanup setting.</note>
       </trans-unit>
-      <trans-unit id="Click Here To Allow Sleep" xml:space="preserve">
-        <source>Click Here To Allow Sleep</source>
+      <trans-unit id="Click Here to Allow Sleep" xml:space="preserve">
+        <source>Click Here to Allow Sleep</source>
         <target state="translated">Salli lepotila klikkaamalla tästä</target>
-        <note>53477 - Action allowing system sleep.</note>
+        <note>53862 - Pulsating action in display sections and Tools that disables global Prevent Sleep and Prevent Sleep While Connected for every known display, including disconnected displays. The standard toggles remain available for selective changes.</note>
       </trans-unit>
       <trans-unit id="Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one." xml:space="preserve">
         <source>Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one.</source>
@@ -2562,6 +2602,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <source>Color Profile Configuration</source>
         <target state="translated">Väriprofiilin määritys</target>
         <note>53477 - Display color profile configuration section.</note>
+      </trans-unit>
+      <trans-unit id="Color Profile Favorites" xml:space="preserve">
+        <source>Color Profile Favorites</source>
+        <target state="translated">Väriprofiilisuosikit</target>
+        <note>53885 - Heading in the custom keyboard shortcuts sheet above five Pro shortcuts that apply the color-profile favorite slot saved for the display under the pointer.</note>
       </trans-unit>
       <trans-unit id="Color Table" xml:space="preserve">
         <source>Color Table</source>
@@ -3437,6 +3482,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <source>Custom ordering string</source>
         <target state="translated">Oma lajittelumerkkijono</target>
         <note>53477 - Custom string used for display ordering.</note>
+      </trans-unit>
+      <trans-unit id="Custom profiles:" xml:space="preserve">
+        <source>Custom profiles:</source>
+        <target state="translated">Omat profiilit:</target>
+        <note>53885 - Heading above installed non-system, non-factory ColorSync profiles, including user and shared custom profiles, in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="Custom refresh rate list" xml:space="preserve">
         <source>Custom refresh rate list</source>
@@ -4398,6 +4448,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Display Stream Compression (DSC)</target>
         <note>53477 - Display Stream Compression protocol capability.</note>
       </trans-unit>
+      <trans-unit id="Display and Group Icons" xml:space="preserve">
+        <source>Display and Group Icons</source>
+        <target state="translated">Näyttöjen ja ryhmien kuvakkeet</target>
+        <note>53878 - Section title in the scrollable Menu Bar Icon Options sheet for main-display and sole-active-group icon matching.</note>
+      </trans-unit>
       <trans-unit id="Display current value in the OSD" xml:space="preserve">
         <source>Display current value in the OSD</source>
         <target state="translated">Näytä nykyinen arvo OSD-ilmaisimessa</target>
@@ -5277,6 +5332,11 @@ Toiminto ei toimi sisäiselle näytölle (vaatii uudelleenkäynnistyksen). Toimi
         <target state="translated">Tehdasväriprofiili</target>
         <note>53477 - System-created factory display color profile.</note>
       </trans-unit>
+      <trans-unit id="Factory color profile:" xml:space="preserve">
+        <source>Factory color profile:</source>
+        <target state="translated">Tehdasväriprofiili:</target>
+        <note>53885 - Heading above the selected display’s own factory ColorSync profile in the Color Profile menu. This section is hidden when that profile is unavailable.</note>
+      </trans-unit>
       <trans-unit id="Factory color profiles are automatically created by the system whenever a display is connected. Over time, these profiles can accumulate.&#10;&#10;Removing them is safe—macOS will recreate any necessary profiles the next time the display is connected." xml:space="preserve">
         <source>Factory color profiles are automatically created by the system whenever a display is connected. Over time, these profiles can accumulate.
 
@@ -5296,6 +5356,11 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <target state="translated">Suosikki</target>
         <note>53477 - Resolution slider snap badge followed by a space and the favorite slot number; keep the word within 8 characters so the complete badge stays around 10, using a recognizable abbreviation if needed.</note>
       </trans-unit>
+      <trans-unit id="Favorite color profiles:" xml:space="preserve">
+        <source>Favorite color profiles:</source>
+        <target state="translated">Suosikkiväriprofiilit:</target>
+        <note>53885 - Heading above the five color-profile favorite slots saved separately for each display in the Color Profile menu. Keep it concise beside the Manage button; “color” may be omitted where the menu context makes it clear.</note>
+      </trans-unit>
       <trans-unit id="Favorite modes:" xml:space="preserve">
         <source>Favorite modes:</source>
         <target state="translated">Suosikkitilat:</target>
@@ -5310,6 +5375,11 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <source>Feature Availability</source>
         <target state="translated">Toimintojen saatavuus</target>
         <note>53477 - Feature availability section heading.</note>
+      </trans-unit>
+      <trans-unit id="Filled circles indicate occupied slots. You can use the context menu of a color profile item to assign or remove favorites as well." xml:space="preserve">
+        <source>Filled circles indicate occupied slots. You can use the context menu of a color profile item to assign or remove favorites as well.</source>
+        <target state="translated">Täytetyt ympyrät ilmaisevat varatut paikat. Voit myös lisätä ja poistaa suosikkeja väriprofiilikohteen kontekstivalikosta.</target>
+        <note>53885 - Help beneath the five color-profile favorite slots in the Manage panel. Filled numbered circles contain saved profiles; a profile row’s context menu also offers favorite assignment and removal.</note>
       </trans-unit>
       <trans-unit id="Filled circles indicate occupied slots. You can use the context menu of a resolution item to assign or remove favorites as well." xml:space="preserve">
         <source>Filled circles indicate occupied slots. You can use the context menu of a resolution item to assign or remove favorites as well.</source>
@@ -5960,6 +6030,11 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <source>Hold ⇧ Shift during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected.</source>
         <target state="translated">Pidä ⇧ Shift painettuna sovelluksen käynnistyessä, jotta vikasietotila käynnistyy ja tallennetun arvon kirjoitus estetään. Kun yhdistetty ohjaus on käytössä, DDC-kirkkaus voidaan palauttaa, vaikka tätä ei ole valittu.</target>
         <note>53555 - Startup safe mode help for combined brightness control.</note>
+      </trans-unit>
+      <trans-unit id="Hold ⇧ Shift for 10× or ⌥ Option for 100× steps." xml:space="preserve">
+        <source>Hold ⇧ Shift for 10× or ⌥ Option for 100× steps.</source>
+        <target state="translated">Pidä ⇧ Shift painettuna: 10× askeleet, ⌥ Option: 100× askeleet.</target>
+        <note>53872 - Hint beside the numeric calibration input below the slider in Calibrate Upscaling. Steps are 0.001 normally, 0.010 with Shift and 0.100 with Option (which takes precedence); keep modifier glyph/name pairs together and the caption concise beside the 76-point field and stepper within a 700-point sheet.</note>
       </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select.</source>
@@ -6899,6 +6974,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Match aspect ratio of and associate to a display</source>
         <target state="translated">Sovita kuvasuhde näyttöön ja liitä siihen</target>
         <note>53477 - Virtual screen association setting.</note>
+      </trans-unit>
+      <trans-unit id="Match menu icon with current sole display group's custom icon" xml:space="preserve">
+        <source>Match menu icon with current sole display group's custom icon</source>
+        <target state="translated">Käytä ainoan aktiivisen näyttöryhmän omaa kuvaketta valikkokuvakkeena</target>
+        <note>53878 - Menu Bar Icon Options toggle, available only when main-display icon matching is off. Sole means exactly one active display group, including Default Group; only its valid custom icon is eligible.</note>
       </trans-unit>
       <trans-unit id="Match menu icon with main display icon" xml:space="preserve">
         <source>Match menu icon with main display icon</source>
@@ -8170,10 +8250,20 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Estä osoittimen siirtyminen ruudulle</target>
         <note>53477 - Prevent pointer from entering a display setting.</note>
       </trans-unit>
+      <trans-unit id="Prevent Sleep" xml:space="preserve">
+        <source>Prevent Sleep</source>
+        <target state="translated">Estä lepotila</target>
+        <note>53861 - Global menu toggle and keyboard OSD title keeping all displays and the Mac awake during user inactivity, independently of per-display connection preferences. The filled cup icon distinguishes this mode from Prevent Sleep While Connected.</note>
+      </trans-unit>
       <trans-unit id="Prevent Sleep While Connected" xml:space="preserve">
         <source>Prevent Sleep While Connected</source>
         <target state="translated">Estä lepotila näytön ollessa yhdistetty</target>
         <note>53555 - Compact display-management menu toggle preventing system sleep while this display is connected.</note>
+      </trans-unit>
+      <trans-unit id="Prevent Sleep is available under the Displays and Virtual Screens menu when hidden." xml:space="preserve">
+        <source>Prevent Sleep is available under the Displays and Virtual Screens menu when hidden.</source>
+        <target state="translated">Piilotettu Estä lepotila -valinta on käytettävissä Näytöt ja virtuaaliruudut -valikossa.</target>
+        <note>53861 - Help beneath the Tools Prevent Sleep visibility selector in Customize App Menu Contents. Hidden moves the toggle into Displays And Virtual Screens; the other visibility choices place it directly beneath System Colors.</note>
       </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
         <source>Prevent accidental rotation of the internal display.</source>
@@ -8723,7 +8813,7 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
       <trans-unit id="Remove from Favorite %lld" xml:space="preserve">
         <source>Remove from Favorite %lld</source>
         <target state="translated">Poista suosikista %lld</target>
-        <note>53477 - Remove mode from numbered favorite slot action.</note>
+        <note>53876 - Removes an assignment from a numbered Display Mode or Color Profile favorite slot without changing the active mode or profile. %lld is the slot number from 1 to 5.</note>
       </trans-unit>
       <trans-unit id="Remove layout protection for %@%@" xml:space="preserve">
         <source>Remove layout protection for %1$@%2$@</source>
@@ -10340,6 +10430,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Tila poimitaan vastauksesta ja sitä verrataan määritettyyn odotettuun sisältöön suoraan tai säännöllisinä lausekkeina.</target>
         <note>53477 - Integration response state parsing help.</note>
       </trans-unit>
+      <trans-unit id="Status Icons" xml:space="preserve">
+        <source>Status Icons</source>
+        <target state="translated">Tilakuvakkeet</target>
+        <note>53878 - Section title in the scrollable Menu Bar Icon Options sheet for the alternate sleep-prevention and paused-stream indicators.</note>
+      </trans-unit>
       <trans-unit id="Status: Outdated License" xml:space="preserve">
         <source>Status: Outdated License</source>
         <target state="translated">Tila: vanhentunut lisenssi</target>
@@ -10624,6 +10719,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>System UUID match (recommended)</source>
         <target state="translated">Järjestelmän UUID-vastaavuus (suositus)</target>
         <note>53477 - Recommended display identification method.</note>
+      </trans-unit>
+      <trans-unit id="System profiles:" xml:space="preserve">
+        <source>System profiles:</source>
+        <target state="translated">Järjestelmäprofiilit:</target>
+        <note>53885 - Heading above installed system ColorSync profiles other than factory profiles in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="System sleep" xml:space="preserve">
         <source>System sleep</source>
@@ -11605,6 +11705,11 @@ Voit sulkea tämän ilmoituksen, jolloin muutokset otetaan käyttöön virtuaali
         <target state="translated">Vaihda kuva kuvassa -tila</target>
         <note>53477 - PIP toggle shortcut.</note>
       </trans-unit>
+      <trans-unit id="Toggle Prevent Sleep" xml:space="preserve">
+        <source>Toggle Prevent Sleep</source>
+        <target state="translated">Vaihda lepotilan estoa</target>
+        <note>53861 - Keyboard shortcut label in Display Miscellaneous for toggling the global Prevent Sleep mode. It affects all displays and the Mac, rather than only the display under the pointer.</note>
+      </trans-unit>
       <trans-unit id="Toggle Screen Stream" xml:space="preserve">
         <source>Toggle Screen Stream</source>
         <target state="translated">Vaihda ruudun suoratoiston tila</target>
@@ -12255,6 +12360,11 @@ Voit sulkea tämän ilmoituksen, jolloin muutokset otetaan käyttöön virtuaali
         <target state="translated">Käytä valikkorivin SF Symbol -kuvakkeissa eri sävyisiä tasoja. Poista käytöstä, jos haluat vain yhden sävyn, myös päänäytön kuvakkeeseen, kun sitä käytetään valikkorivillä.</target>
         <note>53849 - Help for the hierarchical menu bar icon rendering toggle. A single shade means monochrome SF Symbol rendering; the preference also applies when main-display matching supplies a display or linked virtual-screen symbol.</note>
       </trans-unit>
+      <trans-unit id="Use the custom icon of the only active display group. This option has no effect if the group uses its default icon or multiple groups are active." xml:space="preserve">
+        <source>Use the custom icon of the only active display group. This option has no effect if the group uses its default icon or multiple groups are active.</source>
+        <target state="translated">Käytä ainoan aktiivisen näyttöryhmän omaa kuvaketta. Tällä valinnalla ei ole vaikutusta, jos ryhmä käyttää oletuskuvakettaan tai useita ryhmiä on aktiivisena.</target>
+        <note>53878 - Details for matching the menu bar icon to the sole active display group. A group's ordinary default icon is never substituted, and zero or multiple active groups disable this behavior.</note>
+      </trans-unit>
       <trans-unit id="Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners." xml:space="preserve">
         <source>Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners.</source>
         <target state="translated">Käytä macOS:n uudempaa pyöreää OSD-ulkoasua ilman sulkemiskuvaketta. Perinteinen-tyyli säilyttää kokonsa, mutta sen kulmat pyöristyvät enemmän.</target>
@@ -12844,6 +12954,11 @@ Voit sulkea tämän ilmoituksen, jolloin muutokset otetaan käyttöön virtuaali
         <source>Yes (EDR)</source>
         <target state="translated">Kyllä (EDR)</target>
         <note>53477 - Affirmative EDR capability state.</note>
+      </trans-unit>
+      <trans-unit id="You can also configure this custom icon to appear as the app menu icon in the menu bar icon settings." xml:space="preserve">
+        <source>You can also configure this custom icon to appear as the app menu icon in the menu bar icon settings.</source>
+        <target state="translated">Voit myös määrittää tämän oman kuvakkeen näkymään sovelluksen valikkokuvakkeena valikkorivin kuvakkeen asetuksissa.</target>
+        <note>53878 - Details below the custom icon field in a display group's Advanced sheet. Refers generally to menu bar icon settings, without a fixed navigation path.</note>
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>

@@ -831,6 +831,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">깨어난 후 DDC 설정을 다시 적용하기 위한 추가 지연 시간</target>
         <note>53477 - Delay setting before restoring DDC settings after wake.</note>
       </trans-unit>
+      <trans-unit id="Additional factory profiles:" xml:space="preserve">
+        <source>Additional factory profiles:</source>
+        <target state="translated">추가 초기 프로파일:</target>
+        <note>53885 - Heading above factory ColorSync profiles other than the selected display’s own factory profile in the Color Profile menu.</note>
+      </trans-unit>
       <trans-unit id="Additional licenses:" xml:space="preserve">
         <source>Additional licenses:</source>
         <target state="translated">추가 라이선스:</target>
@@ -1480,6 +1485,31 @@ AliPay available in China.</source>
         <target state="translated">디스플레이가 다음에 연결되거나 Mac이 재시동될 때 EDID 재정의를 적용합니다. 수정된 EDID를 사용하면 macOS에서 인식하는 디스플레이 기능을 변경할 수 있습니다.</target>
         <note>53477 - Software EDID override help; this changes system interpretation, not device-stored data.</note>
       </trans-unit>
+      <trans-unit id="Apply color profile favorite 1" xml:space="preserve">
+        <source>Apply color profile favorite 1</source>
+        <target state="translated">즐겨찾기 1 색상 프로파일 적용</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 1 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 2" xml:space="preserve">
+        <source>Apply color profile favorite 2</source>
+        <target state="translated">즐겨찾기 2 색상 프로파일 적용</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 2 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 3" xml:space="preserve">
+        <source>Apply color profile favorite 3</source>
+        <target state="translated">즐겨찾기 3 색상 프로파일 적용</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 3 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 4" xml:space="preserve">
+        <source>Apply color profile favorite 4</source>
+        <target state="translated">즐겨찾기 4 색상 프로파일 적용</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 4 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 5" xml:space="preserve">
+        <source>Apply color profile favorite 5</source>
+        <target state="translated">즐겨찾기 5 색상 프로파일 적용</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 5 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
       <trans-unit id="Apply configured custom EDID for ${displayEntity}." xml:space="preserve">
         <source>Apply configured custom EDID for ${displayEntity}.</source>
         <target state="translated">${displayEntity}에 대해 구성된 사용자 정의 EDID를 적용합니다.</target>
@@ -1593,6 +1623,11 @@ NVRAM을 지우면 시동 디스크 및 부팅 관련 설정과 같은 저수준
         <source>Aspect ratio</source>
         <target state="translated">화면비</target>
         <note>53477 - Display width-to-height ratio setting.</note>
+      </trans-unit>
+      <trans-unit id="Assign current color profile to favorite:" xml:space="preserve">
+        <source>Assign current color profile to favorite:</source>
+        <target state="translated">즐겨찾기에 현재 색상 프로파일 지정:</target>
+        <note>53885 - Prompt above five numbered favorite slots in the Color Profile menu’s Manage panel; choosing a slot saves or replaces it with the display’s current ColorSync profile. Keep this prompt concise; “color” may be omitted where the menu context makes it clear.</note>
       </trans-unit>
       <trans-unit id="Assign current resolution to favorite:" xml:space="preserve">
         <source>Assign current resolution to favorite:</source>
@@ -2268,6 +2303,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">업스케일링 보정…</target>
         <note>53477 - Brightness upscaling calibration action.</note>
       </trans-unit>
+      <trans-unit id="Calibration value" xml:space="preserve">
+        <source>Calibration value</source>
+        <target state="translated">보정 값</target>
+        <note>53872 - Accessibility label for the numeric input and up/down stepper in Calibrate Upscaling. The value is a software upscaling color-component factor, not a percentage or brightness in nits.</note>
+      </trans-unit>
       <trans-unit id="Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either." xml:space="preserve">
         <source>Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either.</source>
         <target state="translated">CLI를 통해 사용자 정의 컨트롤을 참조하는 데 사용될 수 있습니다. 이는 고유해야 하며 사전 정의된 컨트롤과 충돌하지 않아야 합니다.</target>
@@ -2493,10 +2533,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">보류 중인 터널 상태 지우기</target>
         <note>53477 - CEC transport tunnel pending status cleanup setting.</note>
       </trans-unit>
-      <trans-unit id="Click Here To Allow Sleep" xml:space="preserve">
-        <source>Click Here To Allow Sleep</source>
+      <trans-unit id="Click Here to Allow Sleep" xml:space="preserve">
+        <source>Click Here to Allow Sleep</source>
         <target state="translated">여기를 클릭하여 잠자기 허용</target>
-        <note>53477 - Action allowing system sleep.</note>
+        <note>53862 - Pulsating action in display sections and Tools that disables global Prevent Sleep and Prevent Sleep While Connected for every known display, including disconnected displays. The standard toggles remain available for selective changes.</note>
       </trans-unit>
       <trans-unit id="Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one." xml:space="preserve">
         <source>Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one.</source>
@@ -2542,6 +2582,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Color Profile Configuration</source>
         <target state="translated">색상 프로파일 구성</target>
         <note>53477 - Display color profile configuration section.</note>
+      </trans-unit>
+      <trans-unit id="Color Profile Favorites" xml:space="preserve">
+        <source>Color Profile Favorites</source>
+        <target state="translated">색상 프로파일 즐겨찾기</target>
+        <note>53885 - Heading in the custom keyboard shortcuts sheet above five Pro shortcuts that apply the color-profile favorite slot saved for the display under the pointer.</note>
       </trans-unit>
       <trans-unit id="Color Table" xml:space="preserve">
         <source>Color Table</source>
@@ -3417,6 +3462,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Custom ordering string</source>
         <target state="translated">사용자 정의 정렬 문자열</target>
         <note>53477 - Custom string used for display ordering.</note>
+      </trans-unit>
+      <trans-unit id="Custom profiles:" xml:space="preserve">
+        <source>Custom profiles:</source>
+        <target state="translated">사용자 정의 프로파일:</target>
+        <note>53885 - Heading above installed non-system, non-factory ColorSync profiles, including user and shared custom profiles, in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="Custom refresh rate list" xml:space="preserve">
         <source>Custom refresh rate list</source>
@@ -4378,6 +4428,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Display Stream Compression (DSC)</target>
         <note>53477 - Display Stream Compression protocol capability.</note>
       </trans-unit>
+      <trans-unit id="Display and Group Icons" xml:space="preserve">
+        <source>Display and Group Icons</source>
+        <target state="translated">디스플레이 및 그룹 아이콘</target>
+        <note>53878 - Section title in the scrollable Menu Bar Icon Options sheet for main-display and sole-active-group icon matching.</note>
+      </trans-unit>
       <trans-unit id="Display current value in the OSD" xml:space="preserve">
         <source>Display current value in the OSD</source>
         <target state="translated">OSD에 현재 값 표시</target>
@@ -5257,6 +5312,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">초기 색상 프로파일</target>
         <note>53477 - System-created factory display color profile.</note>
       </trans-unit>
+      <trans-unit id="Factory color profile:" xml:space="preserve">
+        <source>Factory color profile:</source>
+        <target state="translated">초기 색상 프로파일:</target>
+        <note>53885 - Heading above the selected display’s own factory ColorSync profile in the Color Profile menu. This section is hidden when that profile is unavailable.</note>
+      </trans-unit>
       <trans-unit id="Factory color profiles are automatically created by the system whenever a display is connected. Over time, these profiles can accumulate.&#10;&#10;Removing them is safe—macOS will recreate any necessary profiles the next time the display is connected." xml:space="preserve">
         <source>Factory color profiles are automatically created by the system whenever a display is connected. Over time, these profiles can accumulate.
 
@@ -5276,6 +5336,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">즐겨찾기</target>
         <note>53477 - Resolution slider snap badge followed by a space and the favorite slot number; keep the word within 8 characters so the complete badge stays around 10, using a recognizable abbreviation if needed.</note>
       </trans-unit>
+      <trans-unit id="Favorite color profiles:" xml:space="preserve">
+        <source>Favorite color profiles:</source>
+        <target state="translated">즐겨찾는 색상 프로파일:</target>
+        <note>53885 - Heading above the five color-profile favorite slots saved separately for each display in the Color Profile menu. Keep it concise beside the Manage button; “color” may be omitted where the menu context makes it clear.</note>
+      </trans-unit>
       <trans-unit id="Favorite modes:" xml:space="preserve">
         <source>Favorite modes:</source>
         <target state="translated">즐겨찾는 모드:</target>
@@ -5290,6 +5355,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Feature Availability</source>
         <target state="translated">기능 가용성</target>
         <note>53477 - Feature availability section heading.</note>
+      </trans-unit>
+      <trans-unit id="Filled circles indicate occupied slots. You can use the context menu of a color profile item to assign or remove favorites as well." xml:space="preserve">
+        <source>Filled circles indicate occupied slots. You can use the context menu of a color profile item to assign or remove favorites as well.</source>
+        <target state="translated">채워진 원은 사용 중인 슬롯을 나타냅니다. 색상 프로파일 항목의 상황에 맞는 메뉴를 사용하여 즐겨찾기를 지정하거나 제거할 수도 있습니다.</target>
+        <note>53885 - Help beneath the five color-profile favorite slots in the Manage panel. Filled numbered circles contain saved profiles; a profile row’s context menu also offers favorite assignment and removal.</note>
       </trans-unit>
       <trans-unit id="Filled circles indicate occupied slots. You can use the context menu of a resolution item to assign or remove favorites as well." xml:space="preserve">
         <source>Filled circles indicate occupied slots. You can use the context menu of a resolution item to assign or remove favorites as well.</source>
@@ -5940,6 +6010,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Hold ⇧ Shift during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected.</source>
         <target state="translated">앱을 시작하는 동안 ⇧ Shift 키를 길게 누르면 안전 모드가 활성화되고 저장된 값이 기록되지 않습니다. 통합 제어를 활성화하면 선택하지 않은 경우에도 DDC 밝기가 다시 적용될 수 있습니다.</target>
         <note>53555 - Startup safe mode help for combined brightness control.</note>
+      </trans-unit>
+      <trans-unit id="Hold ⇧ Shift for 10× or ⌥ Option for 100× steps." xml:space="preserve">
+        <source>Hold ⇧ Shift for 10× or ⌥ Option for 100× steps.</source>
+        <target state="translated">⇧ Shift를 누르면 10×, ⌥ Option을 누르면 100× 간격으로 조절합니다.</target>
+        <note>53872 - Hint beside the numeric calibration input below the slider in Calibrate Upscaling. Steps are 0.001 normally, 0.010 with Shift and 0.100 with Option (which takes precedence); keep modifier glyph/name pairs together and the caption concise beside the 76-point field and stepper within a 700-point sheet.</note>
       </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select.</source>
@@ -6879,6 +6954,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Match aspect ratio of and associate to a display</source>
         <target state="translated">디스플레이와 화면비를 맞추고 연관 설정</target>
         <note>53477 - Virtual screen association setting.</note>
+      </trans-unit>
+      <trans-unit id="Match menu icon with current sole display group's custom icon" xml:space="preserve">
+        <source>Match menu icon with current sole display group's custom icon</source>
+        <target state="translated">유일하게 활성화된 디스플레이 그룹의 사용자 정의 아이콘과 메뉴 아이콘 일치</target>
+        <note>53878 - Menu Bar Icon Options toggle, available only when main-display icon matching is off. Sole means exactly one active display group, including Default Group; only its valid custom icon is eligible.</note>
       </trans-unit>
       <trans-unit id="Match menu icon with main display icon" xml:space="preserve">
         <source>Match menu icon with main display icon</source>
@@ -8151,10 +8231,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">마우스 포인터 진입 방지</target>
         <note>53477 - Prevent pointer from entering a display setting.</note>
       </trans-unit>
+      <trans-unit id="Prevent Sleep" xml:space="preserve">
+        <source>Prevent Sleep</source>
+        <target state="translated">잠자기 방지</target>
+        <note>53861 - Global menu toggle and keyboard OSD title keeping all displays and the Mac awake during user inactivity, independently of per-display connection preferences. The filled cup icon distinguishes this mode from Prevent Sleep While Connected.</note>
+      </trans-unit>
       <trans-unit id="Prevent Sleep While Connected" xml:space="preserve">
         <source>Prevent Sleep While Connected</source>
         <target state="translated">연결된 동안 잠자기 방지</target>
         <note>53555 - Compact display-management menu toggle preventing system sleep while this display is connected.</note>
+      </trans-unit>
+      <trans-unit id="Prevent Sleep is available under the Displays and Virtual Screens menu when hidden." xml:space="preserve">
+        <source>Prevent Sleep is available under the Displays and Virtual Screens menu when hidden.</source>
+        <target state="translated">잠자기 방지를 숨기면 디스플레이 및 가상 화면 메뉴에서 사용할 수 있습니다.</target>
+        <note>53861 - Help beneath the Tools Prevent Sleep visibility selector in Customize App Menu Contents. Hidden moves the toggle into Displays And Virtual Screens; the other visibility choices place it directly beneath System Colors.</note>
       </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
         <source>Prevent accidental rotation of the internal display.</source>
@@ -8704,7 +8794,7 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Remove from Favorite %lld" xml:space="preserve">
         <source>Remove from Favorite %lld</source>
         <target state="translated">즐겨찾기 %lld(으)로부터 제거</target>
-        <note>53477 - Remove mode from numbered favorite slot action.</note>
+        <note>53876 - Removes an assignment from a numbered Display Mode or Color Profile favorite slot without changing the active mode or profile. %lld is the slot number from 1 to 5.</note>
       </trans-unit>
       <trans-unit id="Remove layout protection for %@%@" xml:space="preserve">
         <source>Remove layout protection for %1$@%2$@</source>
@@ -10321,6 +10411,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">상태는 응답에 따라 처리된 후, 지정된 예상 반환 내용과 직접 또는 정규 표현식으로 일치하는지 확인됩니다.</target>
         <note>53477 - Integration response state parsing help.</note>
       </trans-unit>
+      <trans-unit id="Status Icons" xml:space="preserve">
+        <source>Status Icons</source>
+        <target state="translated">상태 아이콘</target>
+        <note>53878 - Section title in the scrollable Menu Bar Icon Options sheet for the alternate sleep-prevention and paused-stream indicators.</note>
+      </trans-unit>
       <trans-unit id="Status: Outdated License" xml:space="preserve">
         <source>Status: Outdated License</source>
         <target state="translated">상태: 이전 버전용 라이선스</target>
@@ -10605,6 +10700,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>System UUID match (recommended)</source>
         <target state="translated">시스템 UUID 일치 (권장됨)</target>
         <note>53477 - Recommended display identification method.</note>
+      </trans-unit>
+      <trans-unit id="System profiles:" xml:space="preserve">
+        <source>System profiles:</source>
+        <target state="translated">시스템 프로파일:</target>
+        <note>53885 - Heading above installed system ColorSync profiles other than factory profiles in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="System sleep" xml:space="preserve">
         <source>System sleep</source>
@@ -11587,6 +11687,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">화면 속 화면 토글</target>
         <note>53477 - PIP toggle shortcut.</note>
       </trans-unit>
+      <trans-unit id="Toggle Prevent Sleep" xml:space="preserve">
+        <source>Toggle Prevent Sleep</source>
+        <target state="translated">잠자기 방지 토글</target>
+        <note>53861 - Keyboard shortcut label in Display Miscellaneous for toggling the global Prevent Sleep mode. It affects all displays and the Mac, rather than only the display under the pointer.</note>
+      </trans-unit>
       <trans-unit id="Toggle Screen Stream" xml:space="preserve">
         <source>Toggle Screen Stream</source>
         <target state="translated">화면 스트리밍 토글</target>
@@ -12237,6 +12342,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">메뉴 막대의 SF 심볼 아이콘에 서로 다른 명암의 레이어를 사용합니다. 끄면 단일 명암으로 표시하며, 주 디스플레이 아이콘을 메뉴 막대 아이콘으로 사용할 때도 적용됩니다.</target>
         <note>53849 - Help for the hierarchical menu bar icon rendering toggle. A single shade means monochrome SF Symbol rendering; the preference also applies when main-display matching supplies a display or linked virtual-screen symbol.</note>
       </trans-unit>
+      <trans-unit id="Use the custom icon of the only active display group. This option has no effect if the group uses its default icon or multiple groups are active." xml:space="preserve">
+        <source>Use the custom icon of the only active display group. This option has no effect if the group uses its default icon or multiple groups are active.</source>
+        <target state="translated">활성화된 디스플레이 그룹이 하나뿐일 때 해당 그룹의 사용자 정의 아이콘을 사용합니다. 그룹이 기본 아이콘을 사용하거나 여러 그룹이 활성화되어 있으면 이 옵션은 적용되지 않습니다.</target>
+        <note>53878 - Details for matching the menu bar icon to the sole active display group. A group's ordinary default icon is never substituted, and zero or multiple active groups disable this behavior.</note>
+      </trans-unit>
       <trans-unit id="Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners." xml:space="preserve">
         <source>Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners.</source>
         <target state="translated">닫기 아이콘이 없는 최신 macOS의 원형 OSD 디자인을 사용합니다. ‘클래식’은 크기를 유지하면서 모서리가 더 둥글게 표시됩니다.</target>
@@ -12828,6 +12938,11 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
         <source>Yes (EDR)</source>
         <target state="translated">예 (EDR)</target>
         <note>53477 - Affirmative EDR capability state.</note>
+      </trans-unit>
+      <trans-unit id="You can also configure this custom icon to appear as the app menu icon in the menu bar icon settings." xml:space="preserve">
+        <source>You can also configure this custom icon to appear as the app menu icon in the menu bar icon settings.</source>
+        <target state="translated">메뉴 막대 아이콘 설정에서 이 사용자 정의 아이콘을 앱 메뉴 아이콘으로 표시하도록 설정할 수도 있습니다.</target>
+        <note>53878 - Details below the custom icon field in a display group's Advanced sheet. Refers generally to menu bar icon settings, without a fixed navigation path.</note>
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>
