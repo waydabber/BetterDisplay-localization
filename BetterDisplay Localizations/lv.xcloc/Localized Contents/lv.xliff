@@ -621,11 +621,6 @@ Pārbaudiet tīkla savienojumu un ugunsmūra iestatījumus.</target>
         <target state="translated">Ir pievienots displejs, kuru bez lietotnes nevar pilnībā vadīt</target>
         <note>53477 - Conditional activation option for displays requiring the app for full control.</note>
       </trans-unit>
-      <trans-unit id="A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." xml:space="preserve">
-        <source>A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it.</source>
-        <target state="translated">Tika pieprasīta aparatūras skaļuma maiņa, bet kontrolieris nevar ziņot ierīces faktisko skaļumu. Programmatūras skaņas izslēgšana paliek ieslēgta, līdz jūs skaidri ieslēdzat skaņu.</target>
-        <note>53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.</note>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <target state="translated">Aktīva ir augstākas prioritātes displeja grupa, kas atzīmēta kā ekskluzīva.</target>
@@ -695,6 +690,11 @@ Pārbaudiet tīkla savienojumu un ugunsmūra iestatījumus.</target>
         <source>Absent</source>
         <target state="translated">Nav</target>
         <note>53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.</note>
+      </trans-unit>
+      <trans-unit id="Accent Color" xml:space="preserve">
+        <source>Accent Color</source>
+        <target state="translated">Akcenta krāsa</target>
+        <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
       <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
         <source>Accessibility Configuration Required!</source>
@@ -985,6 +985,11 @@ Pārbaudiet tīkla savienojumu un ugunsmūra iestatījumus.</target>
         <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <target state="translated">Pielāgojiet abu displeju nobīdi, mainot enkurpunktus. Izkārtojuma aizsardzība cenšas novietot displejus tā, lai tie sakristu noteiktajos enkurpunktos horizontāli vai vertikāli. Noklusējuma iestatījums ir centrēt displejus.</target>
         <note>53477 - Layout protection anchor point help explaining relative alignment and default centering.</note>
+      </trans-unit>
+      <trans-unit id="Adjustments affect mirror and stream targets" xml:space="preserve">
+        <source>Adjustments affect mirror and stream targets</source>
+        <target state="translated">Pielāgojumi ietekmē spoguļošanas un straumēšanas mērķus</target>
+        <note>53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.</note>
       </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
@@ -1893,6 +1898,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Audio mērītājiem nepieciešama aktīva programmatūras audio sesija.</target>
         <note>53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.</note>
       </trans-unit>
+      <trans-unit id="Audio processing could not be confirmed and may be ineffective." xml:space="preserve">
+        <source>Audio processing could not be confirmed and may be ineffective.</source>
+        <target state="translated">Audio apstrādi neizdevās apstiprināt, un tā var nebūt efektīva.</target>
+        <note>53967 - Warning when the brief startup or restoration wait ends without a processing acknowledgement. Requested changes still proceed and temporary muting is released; this warning clears once processing makes progress.</note>
+      </trans-unit>
       <trans-unit id="Audio recording permission" xml:space="preserve">
         <source>Audio recording permission</source>
         <target state="translated">Audio ierakstīšanas atļauja</target>
@@ -1942,6 +1952,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Automātiskā atvienošana, pievienojot ārēju displeju, pašlaik ir apturēta.</target>
         <note>53477 - Status indicating temporary suspension of automatic disconnection.</note>
+      </trans-unit>
+      <trans-unit id="Auto-expand current display when opening the menu" xml:space="preserve">
+        <source>Auto-expand current display when opening the menu</source>
+        <target state="translated">Atverot izvēlni, izvērst pašreizējo displeju</target>
+        <note>53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.</note>
       </trans-unit>
       <trans-unit id="Auto-start full screen streaming" xml:space="preserve">
         <source>Auto-start full screen streaming</source>
@@ -2913,10 +2928,10 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">„Kombinētā skaļuma vadība” ir iespējota un pārvalda aparatūras un programmatūras skaļuma un skaņas izslēgšanas vadīklas.</target>
         <note>53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.</note>
       </trans-unit>
-      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." xml:space="preserve">
-        <source>Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume.</source>
-        <target state="translated">Kombinētais režīms pievieno programmatūras vājinājumu zem zemākā lietojamā aparatūras skaļuma un prasa kontrolieri, kas spēj ziņot aparatūras skaļumu.</target>
-        <note>53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.</note>
+      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume." xml:space="preserve">
+        <source>Combined adds software attenuation below the hardware’s lowest usable volume.</source>
+        <target state="translated">Kombinētais režīms pievieno programmatūras vājinājumu zem zemākā lietojamā aparatūras skaļuma.</target>
+        <note>53967 - Help for the Combined volume method, which adds software attenuation below the physical output’s usable range. Hardware readback is optional and is not required to use this method.</note>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
@@ -2947,11 +2962,6 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <source>Combined brightness is not active.</source>
         <target state="translated">Kombinētais spilgtums nav aktīvs.</target>
         <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
-      </trans-unit>
-      <trans-unit id="Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." xml:space="preserve">
-        <source>Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller.</source>
-        <target state="translated">Kombinētajam skaļumam nepieciešams aparatūras kontrolieris, kas spēj ziņot ierīces faktisko skaļumu. Izvēlieties citu skaļuma metodi vai konfigurējiet saderīgu aparatūras kontrolieri.</target>
-        <note>53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.</note>
       </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
@@ -4263,6 +4273,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Atdalāma lietotnes izvēlne</target>
         <note>53477 - Setting allowing the app menu to detach into a floating window.</note>
       </trans-unit>
+      <trans-unit id="Detached Remote" xml:space="preserve">
+        <source>Detached Remote</source>
+        <target state="translated">Atdalīta virtuālā pults</target>
+        <note>53969 - Presentation toggle shown only while the controller’s Show Remote toggle is on. On displays the remote in a separate floating window; off displays it inline in the app menu, and the choice is remembered while the remote is hidden.</note>
+      </trans-unit>
       <trans-unit id="Detached app menu alpha level" xml:space="preserve">
         <source>Detached app menu alpha level</source>
         <target state="translated">Atdalītās lietotnes izvēlnes alfa līmenis</target>
@@ -4538,6 +4553,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Atvienot displeju</target>
         <note>53477 - Display disconnection action.</note>
       </trans-unit>
+      <trans-unit id="Disconnect Screen on Close" xml:space="preserve">
+        <source>Disconnect Screen on Close</source>
+        <target state="translated">Atvienot ekrānu, aizverot logu</target>
+        <note>53972 - Per-PIP preference shown only for BetterDisplay virtual screens with Start Automatically enabled. Closing this PIP window disconnects its source virtual screen only if no other PIP, screen stream or mirror target still uses it.</note>
+      </trans-unit>
       <trans-unit id="Disconnect Virtual Screen" xml:space="preserve">
         <source>Disconnect Virtual Screen</source>
         <target state="translated">Atvienot virtuālo ekrānu</target>
@@ -4617,6 +4637,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <source>Disconnecting virtual screens</source>
         <target state="translated">Virtuālo ekrānu atvienošana</target>
         <note>53477 - Virtual screen disconnection operation heading.</note>
+      </trans-unit>
+      <trans-unit id="Disconnects only when no other BetterDisplay streams or mirrors use this screen." xml:space="preserve">
+        <source>Disconnects only when no other BetterDisplay streams or mirrors use this screen.</source>
+        <target state="translated">Ekrāns tiek atvienots tikai tad, ja to neizmanto citas BetterDisplay straumes vai spoguļošanas sesijas.</target>
+        <note>53972 - Help shown beneath Disconnect Screen on Close only while enabled. Streams include other PIP windows and screen streams, including paused or hidden ones; mirrors are display mirroring targets of this virtual screen.</note>
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
@@ -5272,6 +5297,16 @@ Process nedarbojas ar iebūvēto displeju (nepieciešama restartēšana). Darbī
         <target state="translated">Iespējot straumēšanu</target>
         <note>53477 - Display streaming toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable System Settings and mirroring shortcuts" xml:space="preserve">
+        <source>Enable System Settings and mirroring shortcuts</source>
+        <target state="translated">Iespējot Sistēmas iestatījumu un spoguļošanas īsinājumtaustiņus</target>
+        <note>53983 - Native Brightness Key Settings switch, enabled by default. Enables Option with brightness keys to open Displays in System Settings and Command with Brightness Down to toggle display mirroring.</note>
+      </trans-unit>
+      <trans-unit id="Enable System Settings shortcuts" xml:space="preserve">
+        <source>Enable System Settings shortcuts</source>
+        <target state="translated">Iespējot Sistēmas iestatījumu īsinājumtaustiņus</target>
+        <note>53983 - Native Audio Key Settings switch, enabled by default. Enables Option with volume or mute keys to open Sound in System Settings.</note>
+      </trans-unit>
       <trans-unit id="Enable True Tone" xml:space="preserve">
         <source>Enable True Tone</source>
         <target state="translated">Iespējot True Tone</target>
@@ -5286,6 +5321,11 @@ Process nedarbojas ar iebūvēto displeju (nepieciešama restartēšana). Darbī
         <source>Enable Video Filter Window</source>
         <target state="translated">Iespējot video filtru logu</target>
         <note>53477 - Video filter window toggle.</note>
+      </trans-unit>
+      <trans-unit id="Enable additional modifier key functions" xml:space="preserve">
+        <source>Enable additional modifier key functions</source>
+        <target state="translated">Iespējot modifikatora taustiņu papildu funkcijas</target>
+        <note>53983 - Separate default-on switches in Native Brightness Key Settings and Native Audio Key Settings. Gates extra modifier actions but keeps Shift+Option fine adjustment available.</note>
       </trans-unit>
       <trans-unit id="Enable color table control" xml:space="preserve">
         <source>Enable color table control</source>
@@ -5770,6 +5810,11 @@ To noņemšana ir droša — macOS atkārtoti izveidos nepieciešamos profilus n
         <source>Flip</source>
         <target state="translated">Apgriezt</target>
         <note>53477 - Streaming image horizontal or vertical flip control.</note>
+      </trans-unit>
+      <trans-unit id="Follow System Appearance" xml:space="preserve">
+        <source>Follow System Appearance</source>
+        <target state="translated">Sekot sistēmas izskatam</target>
+        <note>53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
         <source>For best results, stick close to the display aspect ratio!</source>
@@ -6321,10 +6366,10 @@ To noņemšana ir droša — macOS atkārtoti izveidos nepieciešamos profilus n
         <target state="translated">Aparatūras vadība — minimums</target>
         <note>53477 - Hardware control range lower bound.</note>
       </trans-unit>
-      <trans-unit id="Hardware mute requires a controller that can set and report the mute state." xml:space="preserve">
-        <source>Hardware mute requires a controller that can set and report the mute state.</source>
-        <target state="translated">Aparatūras skaņas izslēgšanai nepieciešams kontrolieris, kas spēj iestatīt un ziņot skaņas izslēgšanas stāvokli.</target>
-        <note>53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.</note>
+      <trans-unit id="Hardware mute requires a controller that can set the mute state." xml:space="preserve">
+        <source>Hardware mute requires a controller that can set the mute state.</source>
+        <target state="translated">Aparatūras skaņas izslēgšanai nepieciešams kontrolieris, kas spēj iestatīt skaņas izslēgšanas stāvokli.</target>
+        <note>53967 - Shown when the Hardware mute method has no available provider. Setting mute is required, but reporting or confirming the state is optional.</note>
       </trans-unit>
       <trans-unit id="Has Home button" xml:space="preserve">
         <source>Has Home button</source>
@@ -6445,6 +6490,11 @@ To noņemšana ir droša — macOS atkārtoti izveidos nepieciešamos profilus n
         <source>Highlight</source>
         <target state="translated">Gaišie toņi</target>
         <note>53477 - Image adjustment for the bright tonal regions of an image, paired with the Shadow adjustment. This is photographic highlights, not UI selection highlighting.</note>
+      </trans-unit>
+      <trans-unit id="Highlight Window with Mouse" xml:space="preserve">
+        <source>Highlight Window with Mouse</source>
+        <target state="translated">Izcelt logu ar peles kursoru</target>
+        <note>53973 - Per-PIP toggle below Show Mouse Pointer. Highlights the PIP title bar, or glows around titlebar-hidden content, when the source-screen pointer lies within the displayed region, respecting cropping and transforms; this is visual emphasis, not the photographic Highlight adjustment.</note>
       </trans-unit>
       <trans-unit id="Hinted maximum active pixel rate" xml:space="preserve">
         <source>Hinted maximum active pixel rate</source>
@@ -7745,6 +7795,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Spoguļošana</target>
         <note>53477 - Mirroring feature heading.</note>
       </trans-unit>
+      <trans-unit id="Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets." xml:space="preserve">
+        <source>Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets.</source>
+        <target state="translated">Spoguļošana un straumēšana padara paredzēto displeju neviennozīmīgu. Atspējojiet šo opciju, lai atlasītu tikai avotu. Grupas sinhronizācija var neatkarīgi izplatīt izmaiņas, un avota attēla pārklājumi joprojām var ietekmēt mērķus.</target>
+        <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Trūkst identifikatora vai tas ir dublēts — tas radīs negaidītus rezultātus!</target>
@@ -8280,10 +8335,10 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">OSD</target>
         <note>53477 - On-screen display feature label.</note>
       </trans-unit>
-      <trans-unit id="OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark)." xml:space="preserve">
-        <source>OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark).</source>
-        <target state="translated">OSD fons pielāgojas apkārtējai videi. Kad šī opcija ir atspējota, stikla OSD sekos pašreizējam sistēmas izskatam (gaišs vai tumšs).</target>
-        <note>53477 - Glass OSD adaptive appearance help.</note>
+      <trans-unit id="OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance." xml:space="preserve">
+        <source>OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance.</source>
+        <target state="translated">OSD fons pielāgojas videi. Kad šī opcija ir atspējota, izvēlieties, vai OSD sekos sistēmas izskatam vai vienmēr izmantos gaišo vai tumšo izskatu.</target>
+        <note>53983 - Help for Adaptive OSD background in Keyboard settings. Disabling adaptation reveals a picker for system, light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="OSD location and style" xml:space="preserve">
         <source>OSD location and style</source>
@@ -8774,6 +8829,21 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Press Shortcut</source>
         <target state="translated">Nospiediet īsinājumtaustiņu</target>
         <note>53477 - Keyboard shortcut recording prompt.</note>
+      </trans-unit>
+      <trans-unit id="Press ⇧ Shift alone to bypass group synchronization and &quot;All suitable screens&quot;. Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference." xml:space="preserve">
+        <source>Press ⇧ Shift alone to bypass group synchronization and "All suitable screens". Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference.</source>
+        <target state="translated">Nospiediet tikai ⇧ Shift, lai apietu grupas sinhronizāciju un opciju „Visus piemērotos ekrānus”. Turot ⇧ Shift bez ⌥ Option, tiek arī apgriezta skaļuma atgriezeniskās saites skaņas preference.</target>
+        <note>53983 - Help for additional native audio modifiers affecting volume and mute keys. Shift alone bypasses synchronization/all-screen targeting; Shift without Option inverts the saved feedback-sound preference when feedback is emitted.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring." xml:space="preserve">
+        <source>Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring.</source>
+        <target state="translated">Nospiediet ⌥ Option kopā ar spilgtuma taustiņu, lai Sistēmas iestatījumos atvērtu sadaļu Displeji, vai ⌘ Command kopā ar spilgtuma samazināšanas taustiņu (F1), lai pārslēgtu displeju spoguļošanu.</target>
+        <note>53983 - Help for the combined native brightness System Settings and mirroring shortcut switch. Keep each modifier glyph with its key name; Brightness Down is the media action normally assigned to F1.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a volume or mute key to open Sound in System Settings." xml:space="preserve">
+        <source>Press ⌥ Option with a volume or mute key to open Sound in System Settings.</source>
+        <target state="translated">Nospiediet ⌥ Option kopā ar skaļuma vai skaņas izslēgšanas taustiņu, lai Sistēmas iestatījumos atvērtu sadaļu Skaņa.</target>
+        <note>53983 - Help for the native audio System Settings shortcut switch. Sound is the macOS System Settings pane; preserve the modifier glyph and key name together.</note>
       </trans-unit>
       <trans-unit id="Prevent Cursor Entering" xml:space="preserve">
         <source>Prevent Cursor Entering</source>
@@ -10225,6 +10295,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Iestatīt ekrānu kā galveno</target>
         <note>53477 - Primary screen shortcut title.</note>
       </trans-unit>
+      <trans-unit id="Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." xml:space="preserve">
+        <source>Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen).</source>
+        <target state="translated">Iestatiet Pārslēgi uz Paslēpts, lai pielāgotu katra pārslēga redzamību. Atsevišķi pārslēgi, kas iestatīti uz Paslēpts, joprojām ir pieejami sadaļā Pārvaldīt displeju (vai Pārvaldīt virtuālo ekrānu).</target>
+        <note>53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen.</note>
+      </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
         <target state="translated">Iestatīt atļaujas</target>
@@ -10508,12 +10583,12 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
       <trans-unit id="Show HDMI-CEC Remote" xml:space="preserve">
         <source>Show HDMI-CEC Remote</source>
         <target state="translated">Rādīt HDMI-CEC pulti</target>
-        <note>53477 - Open HDMI-CEC remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">Rādīt LG pulti</target>
-        <note>53477 - Open LG remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Mixed Modes" xml:space="preserve">
         <source>Show Mixed Modes</source>
@@ -10548,22 +10623,32 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
       <trans-unit id="Show Philips Remote" xml:space="preserve">
         <source>Show Philips Remote</source>
         <target state="translated">Rādīt Philips pulti</target>
-        <note>53477 - Philips remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Quit %@ in the button bar" xml:space="preserve">
         <source>Show Quit %@ in the button bar</source>
         <target state="translated">Rādīt „Iziet no %@” pogu joslā</target>
         <note>53477 - Toggle for showing the Quit command in the button bar. The quoted command must match Quit %@; the placeholder is the app name.</note>
       </trans-unit>
+      <trans-unit id="Show Remote" xml:space="preserve">
+        <source>Show Remote</source>
+        <target state="translated">Rādīt virtuālo pulti</target>
+        <note>53968 - Display menu toggle for floating remote-control windows. Shows any missing controller remotes for this display, or hides them all when all are already visible.</note>
+      </trans-unit>
       <trans-unit id="Show Samsung Remote" xml:space="preserve">
         <source>Show Samsung Remote</source>
         <target state="translated">Rādīt Samsung pulti</target>
-        <note>53477 - Samsung remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Settings in the button bar" xml:space="preserve">
         <source>Show Settings in the button bar</source>
         <target state="translated">Rādīt iestatījumus pogu joslā</target>
         <note>53477 - Settings button visibility setting.</note>
+      </trans-unit>
+      <trans-unit id="Show adaptive slider scales where appropriate" xml:space="preserve">
+        <source>Show adaptive slider scales where appropriate</source>
+        <target state="translated">Rādīt pielāgojamas slīdņu skalas, kur tas ir piemēroti</target>
+        <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
@@ -10614,6 +10699,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Show console</source>
         <target state="translated">Rādīt konsoli</target>
         <note>53477 - Show integration console action.</note>
+      </trans-unit>
+      <trans-unit id="Show current display at top" xml:space="preserve">
+        <source>Show current display at top</source>
+        <target state="translated">Rādīt pašreizējo displeju augšpusē</target>
+        <note>53983 - Toggle under Menu settings &gt; Additional Menu Options &gt; Display Menu Options, available when main-display priority is off. Current display means the screen where an attached app menu first opens, not the main display or the screen it moves to later.</note>
       </trans-unit>
       <trans-unit id="Show current resolution values" xml:space="preserve">
         <source>Show current resolution values</source>
@@ -10735,6 +10825,16 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Rādīt kombinētās skaļuma vadības apakšslīdņus</target>
         <note>53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.</note>
       </trans-unit>
+      <trans-unit id="Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point." xml:space="preserve">
+        <source>Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point.</source>
+        <target state="translated">Parāda neuzkrītošus pelēkus punktus piemērotos atstatumos uz skaitliskajiem slīdņiem. Skala pielāgojas vērtību diapazonam un pieejamajai vietai, izmantojot noklusējuma vai neitrālo vērtību kā atskaites punktu.</target>
+        <note>53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.</note>
+      </trans-unit>
+      <trans-unit id="Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." xml:space="preserve">
+        <source>Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close.</source>
+        <target state="translated">Atverot izvēlni, rādīt pašreizējā displeja vadīklas un papildu opcijas. Ja ir iespējota automātiskā sakārtošana, citu displeju papildu opcijas tiek aizvērtas.</target>
+        <note>53983 - Explanation of automatic expansion for the opening display. More Options is the device’s additional controls revealed by its chevron; automatic tidying permits only one device to show that area at a time, without collapsing other device headers.</note>
+      </trans-unit>
       <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
         <source>Show the display or device name before the current value in the rounded OSD.</source>
         <target state="translated">Rādīt displeja vai ierīces nosaukumu pirms pašreizējās vērtības noapaļotajā OSD.</target>
@@ -10749,6 +10849,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Show warning notifications about color table anomalies</source>
         <target state="translated">Rādīt brīdinājuma paziņojumus par krāsu tabulas anomālijām</target>
         <note>53477 - Toggle enabling notifications when another app interferes with display color-table adjustments. The enabled state shows warnings.</note>
+      </trans-unit>
+      <trans-unit id="Show/Hide Remote" xml:space="preserve">
+        <source>Show/Hide Remote</source>
+        <target state="translated">Rādīt/slēpt virtuālo pulti</target>
+        <note>53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference.</note>
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
@@ -10905,6 +11010,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Programmatūras XDR/HDR augšupmērogošana un aptumšošana</target>
         <note>53477 - Software brightness feature section.</note>
       </trans-unit>
+      <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
+        <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
+        <target state="translated">Programmatūras audio neizdevās atļaut automātisku sistēmas miegu. Audio apstrāde paliek aktīva.</target>
+        <note>53967 - Warning when macOS rejects the optional audio-process setting that allows automatic system sleep. The already running audio session continues and remains controllable.</note>
+      </trans-unit>
       <trans-unit id="Software audio is active." xml:space="preserve">
         <source>Software audio is active.</source>
         <target state="translated">Programmatūras audio ir aktīvs.</target>
@@ -10984,11 +11094,6 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">Dažas no šīm versijām ir nestabilas, var saturēt nopietnas kļūdas, eksperimentālas vai nepabeigtas funkcijas. Ne visi iekšējie laidieni ir pieejami kā automātiskie atjauninājumi.</target>
         <note>53477 - Internal prerelease channel warning.</note>
-      </trans-unit>
-      <trans-unit id="Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." xml:space="preserve">
-        <source>Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active.</source>
-        <target state="translated">Daži saglabātie aparatūras skaļuma vai skaņas izslēgšanas iestatījumi tika izlaisti, jo kontrolieris nevar ziņot ierīces faktisko stāvokli. Programmatūras audio paliek aktīvs.</target>
-        <note>53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.</note>
       </trans-unit>
       <trans-unit id="Something went wrong…" xml:space="preserve">
         <source>Something went wrong…</source>
@@ -11110,10 +11215,10 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Sāk programmatūras audio…</target>
         <note>53927 - Session status while constructing and starting the audio tap and aggregate output.</note>
       </trans-unit>
-      <trans-unit id="Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
-        <source>Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
-        <target state="translated">Palaišana un atjaunošana izslēdz apstrādāto skaņu, līdz tiek apstiprināti saglabātie aparatūras iestatījumi. „Restartēt audio sesiju” atjauno apstrādi un var īslaicīgi atjaunot ierīces sākotnējo skaļumu.</target>
-        <note>53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.</note>
+      <trans-unit id="Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
+        <source>Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
+        <target state="translated">Palaišana un atjaunošana īslaicīgi izslēdz apstrādāto skaņu, atjaunojot saglabātos aparatūras iestatījumus. „Restartēt audio sesiju” atjauno apstrādi un var īslaicīgi atjaunot ierīces sākotnējo skaļumu.</target>
+        <note>53966 - Software Audio Session help explaining brief muting while restoring saved hardware settings and the audible consequence of restarting. Unconfirmed hardware state shows a warning and releases temporary muting.</note>
       </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
@@ -11224,6 +11329,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Streaming to Multiple Screens</source>
         <target state="translated">Straumēšana uz vairākiem ekrāniem</target>
         <note>53477 - Multiple stream destinations status.</note>
+      </trans-unit>
+      <trans-unit id="Strength" xml:space="preserve">
+        <source>Strength</source>
+        <target state="translated">Intensitāte</target>
+        <note>53979 - Label beside the small slider in PIP-highlight (when title bar controls are off) and crop-boundary color selectors. PIP glow defaults to 50% and changes opacity below halfway and thickness above it, while crop-boundary strength defaults to 100% and controls only opacity, with zero invisible.</note>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
         <source>Supported</source>
@@ -11673,15 +11783,10 @@ This operation does not reset the display itself.</source>
         <target state="translated">Saistītā ierīce tiek izmantota programmatūras audio kontroliera skaļumam, skaņas izslēgšanai un efektiem. Tā arī nosaka izvadi sistēmas aparatūras audio vadībai, kad tā ir iespējota, un audio ierīces piesaistei tastatūrai.</target>
         <note>53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.</note>
       </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." xml:space="preserve">
-        <source>The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session.</source>
-        <target state="translated">Audio ierīce neapstiprināja izmaiņas. Skaņa paliek izslēgta. Pārbaudiet savienojumu un restartējiet audio sesiju.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.</note>
-      </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Check its connection and try again." xml:space="preserve">
-        <source>The audio device did not confirm the change. Check its connection and try again.</source>
-        <target state="translated">Audio ierīce neapstiprināja izmaiņas. Pārbaudiet savienojumu un mēģiniet vēlreiz.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.</note>
+      <trans-unit id="The audio device did not confirm the change. Audio processing may be ineffective." xml:space="preserve">
+        <source>The audio device did not confirm the change. Audio processing may be ineffective.</source>
+        <target state="translated">Audio ierīce neapstiprināja izmaiņas. Audio apstrāde var nebūt efektīva.</target>
+        <note>53966 - Warning after hardware volume or mute readback fails to match a requested change, including digital outputs with ineffective native controls. Temporary startup protection is released and the configured software volume and mute remain in effect; this warning does not establish that audio processing failed.</note>
       </trans-unit>
       <trans-unit id="The audio device or its format changed. Restart software audio to resume processing." xml:space="preserve">
         <source>The audio device or its format changed. Restart software audio to resume processing.</source>
@@ -11772,11 +11877,6 @@ This operation does not reset the display itself.</source>
         <source>The duplicated group will be disabled by default.</source>
         <target state="translated">Dublētā grupa pēc noklusējuma būs atspējota.</target>
         <note>53477 - Duplicate display group action help.</note>
-      </trans-unit>
-      <trans-unit id="The hardware mute provider does not support device readback. No mute request was sent." xml:space="preserve">
-        <source>The hardware mute provider does not support device readback. No mute request was sent.</source>
-        <target state="translated">Aparatūras skaņas izslēgšanas nodrošinātājs neatbalsta ierīces stāvokļa nolasīšanu. Skaņas izslēgšanas pieprasījums netika nosūtīts.</target>
-        <note>53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.</note>
       </trans-unit>
       <trans-unit id="The hardware mute state could not be confirmed. Software protection remains active." xml:space="preserve">
         <source>The hardware mute state could not be confirmed. Software protection remains active.</source>
@@ -11921,11 +12021,6 @@ Kļūmes gadījumā fiziski atvienojiet un atkārtoti pievienojiet displeju.</ta
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Aizsardzība nestrādā, ja vien nav definēts relatīvais novietojums.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." xml:space="preserve">
-        <source>The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller.</source>
-        <target state="translated">Izvēlētais aparatūras kontrolieris nevar ziņot ierīces skaņas izslēgšanas stāvokli. Aparatūras skaņas izslēgšana netika mainīta. Izvēlieties programmatūras skaņas izslēgšanu vai konfigurējiet citu aparatūras skaņas izslēgšanas kontrolieri.</target>
-        <note>53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12555,11 +12650,6 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Pārslēgi</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
-      <trans-unit id="Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." xml:space="preserve">
-        <source>Toggles are available under the Manage Display (or Virtual Screen) menu when hidden.</source>
-        <target state="translated">Kad pārslēgi ir paslēpti, tie ir pieejami izvēlnē „Pārvaldīt displeju” (vai „Virtuālo ekrānu”).</target>
-        <note>53477 - Hidden toggle control access help.</note>
-      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">Rīki</target>
@@ -13125,10 +13215,20 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Izmantot kompozitora filtru</target>
         <note>53477 - Use display compositor image filter option.</note>
       </trans-unit>
+      <trans-unit id="Use Dark Appearance" xml:space="preserve">
+        <source>Use Dark Appearance</source>
+        <target state="translated">Izmantot tumšo izskatu</target>
+        <note>53983 - OSD appearance picker option that forces a dark OSD independently of the system appearance, when adaptive background is disabled.</note>
+      </trans-unit>
       <trans-unit id="Use Enable Audio Access in Configure Software Audio… to request audio recording permission." xml:space="preserve">
         <source>Use Enable Audio Access in Configure Software Audio… to request audio recording permission.</source>
         <target state="translated">Lai pieprasītu audio ierakstīšanas atļauju, izmantojiet „Iespējot piekļuvi audio” sadaļā „Konfigurēt programmatūras audio…”.</target>
         <note>53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.</note>
+      </trans-unit>
+      <trans-unit id="Use Light Appearance" xml:space="preserve">
+        <source>Use Light Appearance</source>
+        <target state="translated">Izmantot gaišo izskatu</target>
+        <note>53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -13669,6 +13769,11 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">Izvēršot izvēlnes vienumu, automātiski paslēpt citus vienumus attiecīgajā ierīces/izvēlnes blokā. Tas palīdz saglabāt izvēlni mazāku.</target>
         <note>53477 - Menu automatic collapse setting help.</note>
+      </trans-unit>
+      <trans-unit id="When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected." xml:space="preserve">
+        <source>When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected.</source>
+        <target state="translated">Atverot lietotnes izvēlni, vispirms novietot displeju, kurā tā tiek atvērta. Tas neietekmē atdalītas izvēlnes vai jau atvērtas izvēlnes pārvietošanu uz citu displeju.</target>
+        <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
@@ -14242,6 +14347,17 @@ Atveriet Sistēmas iestatījumi &gt; Vispārīgi &gt; Pieteikšanās vienumi un 
         <source>waiting for prompt</source>
         <target state="translated">gaida pieprasījumu</target>
         <note>53477 - Device pairing prompt state.</note>
+      </trans-unit>
+      <trans-unit id="⇧ Shift alone bypasses group synchronization and &quot;All suitable screens&quot;.&#10;⌃ Control targets the built-in display.&#10;⌃ Control + ⌘ Command targets external displays.&#10;⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." xml:space="preserve">
+        <source>⇧ Shift alone bypasses group synchronization and "All suitable screens".
+⌃ Control targets the built-in display.
+⌃ Control + ⌘ Command targets external displays.
+⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets.</source>
+        <target state="translated">Tikai ⇧ Shift apiet grupas sinhronizāciju un opciju „Visus piemērotos ekrānus”.
+⌃ Control atlasa iebūvēto displeju.
+⌃ Control + ⌘ Command atlasa ārējos displejus.
+⇧ Shift + ⌘ Command atlasa displejus, izņemot pašreizējo displeju un tā spoguļošanas/straumēšanas mērķus.</target>
+        <note>53983 - Four-line help for additional native brightness modifier actions; All suitable screens is an existing keyboard target option. Shift+Command excludes the current display and all its mirror/stream targets; preserve line breaks and modifier glyph/name pairs.</note>
       </trans-unit>
     </body>
   </file>

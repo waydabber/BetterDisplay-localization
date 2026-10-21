@@ -611,11 +611,6 @@ Tarkista verkkoyhteys ja palomuurin asetukset.</target>
         <target state="translated">Kytkettynä on näyttö, jota ei voi täysin ohjata ilman sovellusta</target>
         <note>53477 - Conditional activation option for displays requiring the app for full control.</note>
       </trans-unit>
-      <trans-unit id="A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." xml:space="preserve">
-        <source>A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it.</source>
-        <target state="translated">Laitteiston äänenvoimakkuuden muutosta pyydettiin, mutta ohjain ei voi lukea laitteen todellista äänenvoimakkuutta. Ohjelmallinen mykistys pysyy päällä, kunnes poistat sen erikseen.</target>
-        <note>53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.</note>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <target state="translated">Aktiivisena on suuremman prioriteetin näyttöryhmä, joka on merkitty yksinomaiseksi.</target>
@@ -685,6 +680,11 @@ Tarkista verkkoyhteys ja palomuurin asetukset.</target>
         <source>Absent</source>
         <target state="translated">Puuttuu</target>
         <note>53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.</note>
+      </trans-unit>
+      <trans-unit id="Accent Color" xml:space="preserve">
+        <source>Accent Color</source>
+        <target state="translated">Korostusväri</target>
+        <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
       <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
         <source>Accessibility Configuration Required!</source>
@@ -975,6 +975,11 @@ Tarkista verkkoyhteys ja palomuurin asetukset.</target>
         <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <target state="translated">Säädä kahden näytön välistä siirtymää muuttamalla ankkuripisteitä. Asettelun suojaus pyrkii järjestämään näytöt niin, että määritetyt ankkuripisteet ovat samalla vaaka- tai pystylinjalla. Oletuksena näytöt kohdistetaan keskelle.</target>
         <note>53477 - Layout protection anchor point help explaining relative alignment and default centering.</note>
+      </trans-unit>
+      <trans-unit id="Adjustments affect mirror and stream targets" xml:space="preserve">
+        <source>Adjustments affect mirror and stream targets</source>
+        <target state="translated">Säädöt vaikuttavat peilaus- ja suoratoistokohteisiin</target>
+        <note>53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.</note>
       </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
@@ -1883,6 +1888,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Äänimittarit edellyttävät aktiivista ohjelmistoääni-istuntoa.</target>
         <note>53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.</note>
       </trans-unit>
+      <trans-unit id="Audio processing could not be confirmed and may be ineffective." xml:space="preserve">
+        <source>Audio processing could not be confirmed and may be ineffective.</source>
+        <target state="translated">Äänenkäsittelyä ei voitu vahvistaa, eikä se ehkä toimi tarkoitetulla tavalla.</target>
+        <note>53967 - Warning when the brief startup or restoration wait ends without a processing acknowledgement. Requested changes still proceed and temporary muting is released; this warning clears once processing makes progress.</note>
+      </trans-unit>
       <trans-unit id="Audio recording permission" xml:space="preserve">
         <source>Audio recording permission</source>
         <target state="translated">Äänen tallennusoikeus</target>
@@ -1932,6 +1942,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Automaattinen yhteyden katkaisu ulkoista näyttöä kytkettäessä on nyt keskeytetty.</target>
         <note>53477 - Status indicating temporary suspension of automatic disconnection.</note>
+      </trans-unit>
+      <trans-unit id="Auto-expand current display when opening the menu" xml:space="preserve">
+        <source>Auto-expand current display when opening the menu</source>
+        <target state="translated">Laajenna nykyinen näyttö valikkoa avattaessa</target>
+        <note>53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.</note>
       </trans-unit>
       <trans-unit id="Auto-start full screen streaming" xml:space="preserve">
         <source>Auto-start full screen streaming</source>
@@ -2903,10 +2918,10 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Yhdistetty äänenvoimakkuuden ohjaus on käytössä ja hallitsee laitteiston ja ohjelmiston äänenvoimakkuutta ja mykistystä.</target>
         <note>53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.</note>
       </trans-unit>
-      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." xml:space="preserve">
-        <source>Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume.</source>
-        <target state="translated">Yhdistetty tila lisää ohjelmallisen vaimennuksen laitteiston pienimmän käyttökelpoisen äänenvoimakkuuden alapuolelle ja edellyttää ohjainta, joka voi lukea laitteiston äänenvoimakkuuden.</target>
-        <note>53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.</note>
+      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume." xml:space="preserve">
+        <source>Combined adds software attenuation below the hardware’s lowest usable volume.</source>
+        <target state="translated">Yhdistetty tila lisää ohjelmallisen vaimennuksen laitteiston pienimmän käyttökelpoisen äänenvoimakkuuden alapuolelle.</target>
+        <note>53967 - Help for the Combined volume method, which adds software attenuation below the physical output’s usable range. Hardware readback is optional and is not required to use this method.</note>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
@@ -2937,11 +2952,6 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <source>Combined brightness is not active.</source>
         <target state="translated">Yhdistetty kirkkaus ei ole käytössä.</target>
         <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
-      </trans-unit>
-      <trans-unit id="Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." xml:space="preserve">
-        <source>Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller.</source>
-        <target state="translated">Yhdistetty äänenvoimakkuus tarvitsee laitteisto-ohjaimen, joka voi lukea laitteen todellisen äänenvoimakkuuden. Valitse toinen äänenvoimakkuuden menetelmä tai määritä yhteensopiva laitteisto-ohjain.</target>
-        <note>53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.</note>
       </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
@@ -4253,6 +4263,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Irrotettava sovellusvalikko</target>
         <note>53477 - Setting allowing the app menu to detach into a floating window.</note>
       </trans-unit>
+      <trans-unit id="Detached Remote" xml:space="preserve">
+        <source>Detached Remote</source>
+        <target state="translated">Irrotettu kaukosäädin</target>
+        <note>53969 - Presentation toggle shown only while the controller’s Show Remote toggle is on. On displays the remote in a separate floating window; off displays it inline in the app menu, and the choice is remembered while the remote is hidden.</note>
+      </trans-unit>
       <trans-unit id="Detached app menu alpha level" xml:space="preserve">
         <source>Detached app menu alpha level</source>
         <target state="translated">Irrotetun sovellusvalikon alfataso</target>
@@ -4528,6 +4543,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Katkaise näytön yhteys</target>
         <note>53477 - Display disconnection action.</note>
       </trans-unit>
+      <trans-unit id="Disconnect Screen on Close" xml:space="preserve">
+        <source>Disconnect Screen on Close</source>
+        <target state="translated">Katkaise ruudun yhteys suljettaessa</target>
+        <note>53972 - Per-PIP preference shown only for BetterDisplay virtual screens with Start Automatically enabled. Closing this PIP window disconnects its source virtual screen only if no other PIP, screen stream or mirror target still uses it.</note>
+      </trans-unit>
       <trans-unit id="Disconnect Virtual Screen" xml:space="preserve">
         <source>Disconnect Virtual Screen</source>
         <target state="translated">Katkaise virtuaaliruudun yhteys</target>
@@ -4607,6 +4627,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <source>Disconnecting virtual screens</source>
         <target state="translated">Virtuaaliruutujen yhteyden katkaiseminen</target>
         <note>53477 - Virtual screen disconnection operation heading.</note>
+      </trans-unit>
+      <trans-unit id="Disconnects only when no other BetterDisplay streams or mirrors use this screen." xml:space="preserve">
+        <source>Disconnects only when no other BetterDisplay streams or mirrors use this screen.</source>
+        <target state="translated">Ruudun yhteys katkaistaan vain, jos muut BetterDisplayn suoratoistot tai peilaukset eivät käytä sitä.</target>
+        <note>53972 - Help shown beneath Disconnect Screen on Close only while enabled. Streams include other PIP windows and screen streams, including paused or hidden ones; mirrors are display mirroring targets of this virtual screen.</note>
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
@@ -5262,6 +5287,16 @@ Toiminto ei toimi sisäiselle näytölle (vaatii uudelleenkäynnistyksen). Toimi
         <target state="translated">Ota suoratoisto käyttöön</target>
         <note>53477 - Display streaming toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable System Settings and mirroring shortcuts" xml:space="preserve">
+        <source>Enable System Settings and mirroring shortcuts</source>
+        <target state="translated">Ota Järjestelmäasetusten ja peilauksen oikotiet käyttöön</target>
+        <note>53983 - Native Brightness Key Settings switch, enabled by default. Enables Option with brightness keys to open Displays in System Settings and Command with Brightness Down to toggle display mirroring.</note>
+      </trans-unit>
+      <trans-unit id="Enable System Settings shortcuts" xml:space="preserve">
+        <source>Enable System Settings shortcuts</source>
+        <target state="translated">Ota Järjestelmäasetusten oikotiet käyttöön</target>
+        <note>53983 - Native Audio Key Settings switch, enabled by default. Enables Option with volume or mute keys to open Sound in System Settings.</note>
+      </trans-unit>
       <trans-unit id="Enable True Tone" xml:space="preserve">
         <source>Enable True Tone</source>
         <target state="translated">Ota True Tone käyttöön</target>
@@ -5276,6 +5311,11 @@ Toiminto ei toimi sisäiselle näytölle (vaatii uudelleenkäynnistyksen). Toimi
         <source>Enable Video Filter Window</source>
         <target state="translated">Ota videosuodatinikkuna käyttöön</target>
         <note>53477 - Video filter window toggle.</note>
+      </trans-unit>
+      <trans-unit id="Enable additional modifier key functions" xml:space="preserve">
+        <source>Enable additional modifier key functions</source>
+        <target state="translated">Ota muunnosnäppäinten lisätoiminnot käyttöön</target>
+        <note>53983 - Separate default-on switches in Native Brightness Key Settings and Native Audio Key Settings. Gates extra modifier actions but keeps Shift+Option fine adjustment available.</note>
       </trans-unit>
       <trans-unit id="Enable color table control" xml:space="preserve">
         <source>Enable color table control</source>
@@ -5760,6 +5800,11 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <source>Flip</source>
         <target state="translated">Käännä peilikuvaksi</target>
         <note>53477 - Streaming image horizontal or vertical flip control.</note>
+      </trans-unit>
+      <trans-unit id="Follow System Appearance" xml:space="preserve">
+        <source>Follow System Appearance</source>
+        <target state="translated">Seuraa järjestelmän ulkoasua</target>
+        <note>53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
         <source>For best results, stick close to the display aspect ratio!</source>
@@ -6311,10 +6356,10 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <target state="translated">Laitteisto-ohjaus – vähimmäisarvo</target>
         <note>53477 - Hardware control range lower bound.</note>
       </trans-unit>
-      <trans-unit id="Hardware mute requires a controller that can set and report the mute state." xml:space="preserve">
-        <source>Hardware mute requires a controller that can set and report the mute state.</source>
-        <target state="translated">Laitteiston mykistys edellyttää ohjainta, joka voi asettaa ja lukea mykistystilan.</target>
-        <note>53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.</note>
+      <trans-unit id="Hardware mute requires a controller that can set the mute state." xml:space="preserve">
+        <source>Hardware mute requires a controller that can set the mute state.</source>
+        <target state="translated">Laitteiston mykistys edellyttää ohjainta, joka voi asettaa mykistystilan.</target>
+        <note>53967 - Shown when the Hardware mute method has no available provider. Setting mute is required, but reporting or confirming the state is optional.</note>
       </trans-unit>
       <trans-unit id="Has Home button" xml:space="preserve">
         <source>Has Home button</source>
@@ -6435,6 +6480,11 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <source>Highlight</source>
         <target state="translated">Vaaleat sävyt</target>
         <note>53477 - Image adjustment for the bright tonal regions of an image, paired with the Shadow adjustment. This is photographic highlights, not UI selection highlighting.</note>
+      </trans-unit>
+      <trans-unit id="Highlight Window with Mouse" xml:space="preserve">
+        <source>Highlight Window with Mouse</source>
+        <target state="translated">Korosta ikkunaa, jossa osoitin on</target>
+        <note>53973 - Per-PIP toggle below Show Mouse Pointer. Highlights the PIP title bar, or glows around titlebar-hidden content, when the source-screen pointer lies within the displayed region, respecting cropping and transforms; this is visual emphasis, not the photographic Highlight adjustment.</note>
       </trans-unit>
       <trans-unit id="Hinted maximum active pixel rate" xml:space="preserve">
         <source>Hinted maximum active pixel rate</source>
@@ -7735,6 +7785,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Peilaus</target>
         <note>53477 - Mirroring feature heading.</note>
       </trans-unit>
+      <trans-unit id="Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets." xml:space="preserve">
+        <source>Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets.</source>
+        <target state="translated">Peilaus ja suoratoisto tekevät säädettävän näytön valinnasta epäselvän. Poista tämä käytöstä, jos haluat säätää vain lähdettä. Ryhmäsynkronointi voi välittää muutoksia tästä riippumatta, ja lähdekuvan peittokuvat voivat edelleen vaikuttaa kohteisiin.</target>
+        <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Tunniste puuttuu tai esiintyy useasti. Tämä aiheuttaa odottamattomia tuloksia!</target>
@@ -8270,10 +8325,10 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">OSD</target>
         <note>53477 - On-screen display feature label.</note>
       </trans-unit>
-      <trans-unit id="OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark)." xml:space="preserve">
-        <source>OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark).</source>
-        <target state="translated">OSD-tausta mukautuu ympäristöön. Kun tämä ei ole käytössä, lasinen OSD-ilmaisin seuraa järjestelmän nykyistä vaaleaa tai tummaa ulkoasua.</target>
-        <note>53477 - Glass OSD adaptive appearance help.</note>
+      <trans-unit id="OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance." xml:space="preserve">
+        <source>OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance.</source>
+        <target state="translated">OSD-tausta mukautuu ympäristöön. Kun tämä on pois käytöstä, valitse, seuraako OSD järjestelmän ulkoasua vai käyttääkö se aina vaaleaa tai tummaa ulkoasua.</target>
+        <note>53983 - Help for Adaptive OSD background in Keyboard settings. Disabling adaptation reveals a picker for system, light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="OSD location and style" xml:space="preserve">
         <source>OSD location and style</source>
@@ -8764,6 +8819,21 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Press Shortcut</source>
         <target state="translated">Paina näppäinoikotietä</target>
         <note>53477 - Keyboard shortcut recording prompt.</note>
+      </trans-unit>
+      <trans-unit id="Press ⇧ Shift alone to bypass group synchronization and &quot;All suitable screens&quot;. Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference." xml:space="preserve">
+        <source>Press ⇧ Shift alone to bypass group synchronization and "All suitable screens". Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference.</source>
+        <target state="translated">Ohita ryhmäsynkronointi ja valinta ”Kaikki sopivat ruudut” painamalla pelkkää ⇧ Shift -näppäintä. Kun pidät ⇧ Shift -näppäintä painettuna ilman ⌥ Option -näppäintä, myös äänenvoimakkuuden palauteääniasetus kääntyy päinvastaiseksi.</target>
+        <note>53983 - Help for additional native audio modifiers affecting volume and mute keys. Shift alone bypasses synchronization/all-screen targeting; Shift without Option inverts the saved feedback-sound preference when feedback is emitted.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring." xml:space="preserve">
+        <source>Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring.</source>
+        <target state="translated">Avaa Järjestelmäasetusten Näytöt painamalla ⌥ Option -näppäintä yhdessä kirkkausnäppäimen kanssa. Vaihda näyttöjen peilausta painamalla ⌘ Command -näppäintä yhdessä kirkkauden vähennysnäppäimen (F1) kanssa.</target>
+        <note>53983 - Help for the combined native brightness System Settings and mirroring shortcut switch. Keep each modifier glyph with its key name; Brightness Down is the media action normally assigned to F1.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a volume or mute key to open Sound in System Settings." xml:space="preserve">
+        <source>Press ⌥ Option with a volume or mute key to open Sound in System Settings.</source>
+        <target state="translated">Avaa Järjestelmäasetusten Ääni painamalla ⌥ Option -näppäintä yhdessä äänenvoimakkuus- tai mykistysnäppäimen kanssa.</target>
+        <note>53983 - Help for the native audio System Settings shortcut switch. Sound is the macOS System Settings pane; preserve the modifier glyph and key name together.</note>
       </trans-unit>
       <trans-unit id="Prevent Cursor Entering" xml:space="preserve">
         <source>Prevent Cursor Entering</source>
@@ -10215,6 +10285,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Aseta ruutu päänäytöksi</target>
         <note>53477 - Primary screen shortcut title.</note>
       </trans-unit>
+      <trans-unit id="Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." xml:space="preserve">
+        <source>Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen).</source>
+        <target state="translated">Aseta Kytkimet tilaan Piilotettu, jotta voit mukauttaa kunkin kytkimen näkyvyyttä erikseen. Tilaan Piilotettu asetetut yksittäiset kytkimet ovat edelleen käytettävissä kohdassa Hallitse näyttöä (tai Hallitse virtuaaliruutua).</target>
+        <note>53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen.</note>
+      </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
         <target state="translated">Määritä oikeudet</target>
@@ -10498,12 +10573,12 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
       <trans-unit id="Show HDMI-CEC Remote" xml:space="preserve">
         <source>Show HDMI-CEC Remote</source>
         <target state="translated">Näytä HDMI-CEC-kaukosäädin</target>
-        <note>53477 - Open HDMI-CEC remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">Näytä LG-kaukosäädin</target>
-        <note>53477 - Open LG remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Mixed Modes" xml:space="preserve">
         <source>Show Mixed Modes</source>
@@ -10538,22 +10613,32 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
       <trans-unit id="Show Philips Remote" xml:space="preserve">
         <source>Show Philips Remote</source>
         <target state="translated">Näytä Philips-kaukosäädin</target>
-        <note>53477 - Philips remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Quit %@ in the button bar" xml:space="preserve">
         <source>Show Quit %@ in the button bar</source>
         <target state="translated">Näytä Lopeta %@ painikerivillä</target>
         <note>53477 - Toggle for showing the Quit command in the button bar. The quoted command must match Quit %@; the placeholder is the app name.</note>
       </trans-unit>
+      <trans-unit id="Show Remote" xml:space="preserve">
+        <source>Show Remote</source>
+        <target state="translated">Näytä kaukosäädin</target>
+        <note>53968 - Display menu toggle for floating remote-control windows. Shows any missing controller remotes for this display, or hides them all when all are already visible.</note>
+      </trans-unit>
       <trans-unit id="Show Samsung Remote" xml:space="preserve">
         <source>Show Samsung Remote</source>
         <target state="translated">Näytä Samsung-kaukosäädin</target>
-        <note>53477 - Samsung remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Settings in the button bar" xml:space="preserve">
         <source>Show Settings in the button bar</source>
         <target state="translated">Näytä Asetukset painikerivillä</target>
         <note>53477 - Settings button visibility setting.</note>
+      </trans-unit>
+      <trans-unit id="Show adaptive slider scales where appropriate" xml:space="preserve">
+        <source>Show adaptive slider scales where appropriate</source>
+        <target state="translated">Näytä mukautuvat liukusäädinasteikot tarvittaessa</target>
+        <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
@@ -10604,6 +10689,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Show console</source>
         <target state="translated">Näytä konsoli</target>
         <note>53477 - Show integration console action.</note>
+      </trans-unit>
+      <trans-unit id="Show current display at top" xml:space="preserve">
+        <source>Show current display at top</source>
+        <target state="translated">Näytä nykyinen näyttö ylimpänä</target>
+        <note>53983 - Toggle under Menu settings &gt; Additional Menu Options &gt; Display Menu Options, available when main-display priority is off. Current display means the screen where an attached app menu first opens, not the main display or the screen it moves to later.</note>
       </trans-unit>
       <trans-unit id="Show current resolution values" xml:space="preserve">
         <source>Show current resolution values</source>
@@ -10725,6 +10815,16 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Näytä yhdistetyn äänenvoimakkuuden ohjauksen alisäätimet</target>
         <note>53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.</note>
       </trans-unit>
+      <trans-unit id="Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point." xml:space="preserve">
+        <source>Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point.</source>
+        <target state="translated">Näyttää hillittyjä harmaita pisteitä sopivin välein numeerisissa liukusäätimissä. Asteikko mukautuu arvoalueeseen ja käytettävissä olevaan tilaan ja käyttää oletusarvoa tai neutraalia arvoa vertailupisteenä.</target>
+        <note>53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.</note>
+      </trans-unit>
+      <trans-unit id="Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." xml:space="preserve">
+        <source>Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close.</source>
+        <target state="translated">Näytä nykyisen näytön säätimet ja lisävalinnat valikkoa avattaessa. Kun automaattinen siistiminen on käytössä, muiden näyttöjen lisävalinnat suljetaan.</target>
+        <note>53983 - Explanation of automatic expansion for the opening display. More Options is the device’s additional controls revealed by its chevron; automatic tidying permits only one device to show that area at a time, without collapsing other device headers.</note>
+      </trans-unit>
       <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
         <source>Show the display or device name before the current value in the rounded OSD.</source>
         <target state="translated">Näytä näytön tai laitteen nimi ennen nykyistä arvoa pyöristetyssä OSD-ilmaisimessa.</target>
@@ -10739,6 +10839,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Show warning notifications about color table anomalies</source>
         <target state="translated">Näytä varoitusilmoitukset väritaulukon poikkeamista</target>
         <note>53477 - Toggle enabling notifications when another app interferes with display color-table adjustments. The enabled state shows warnings.</note>
+      </trans-unit>
+      <trans-unit id="Show/Hide Remote" xml:space="preserve">
+        <source>Show/Hide Remote</source>
+        <target state="translated">Näytä/piilota kaukosäädin</target>
+        <note>53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference.</note>
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
@@ -10895,6 +11000,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Ohjelmallinen XDR/HDR-tehostus ja himmennys</target>
         <note>53477 - Software brightness feature section.</note>
       </trans-unit>
+      <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
+        <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
+        <target state="translated">Ohjelmistoääni ei voinut sallia järjestelmän automaattista nukkumista. Äänenkäsittely pysyy aktiivisena.</target>
+        <note>53967 - Warning when macOS rejects the optional audio-process setting that allows automatic system sleep. The already running audio session continues and remains controllable.</note>
+      </trans-unit>
       <trans-unit id="Software audio is active." xml:space="preserve">
         <source>Software audio is active.</source>
         <target state="translated">Ohjelmistoääni on aktiivinen.</target>
@@ -10974,11 +11084,6 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">Osa näistä on epävakaita ja voi sisältää vakavia virheitä sekä kokeellisia tai keskeneräisiä ominaisuuksia. Kaikkia sisäisiä julkaisuja ei ole saatavilla automaattisina päivityksinä.</target>
         <note>53477 - Internal prerelease channel warning.</note>
-      </trans-unit>
-      <trans-unit id="Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." xml:space="preserve">
-        <source>Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active.</source>
-        <target state="translated">Joitakin tallennettuja laitteiston äänenvoimakkuus- tai mykistysasetuksia ohitettiin, koska ohjain ei voi lukea laitteen todellista tilaa. Ohjelmistoääni pysyy aktiivisena.</target>
-        <note>53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.</note>
       </trans-unit>
       <trans-unit id="Something went wrong…" xml:space="preserve">
         <source>Something went wrong…</source>
@@ -11100,10 +11205,10 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Käynnistetään ohjelmistoääntä…</target>
         <note>53927 - Session status while constructing and starting the audio tap and aggregate output.</note>
       </trans-unit>
-      <trans-unit id="Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
-        <source>Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
-        <target state="translated">Käynnistys ja palautus mykistävät käsittelyn, kunnes tallennetut laitteistoasetukset on vahvistettu. Käynnistä ääni-istunto uudelleen luo käsittelyn uudestaan ja voi palauttaa hetkeksi laitteen alkuperäisen äänenvoimakkuuden.</target>
-        <note>53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.</note>
+      <trans-unit id="Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
+        <source>Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
+        <target state="translated">Käynnistys ja palautus mykistävät käsittelyn hetkeksi tallennettujen laitteistoasetusten palauttamisen ajaksi. Käynnistä ääni-istunto uudelleen luo käsittelyn uudestaan ja voi palauttaa hetkeksi laitteen alkuperäisen äänenvoimakkuuden.</target>
+        <note>53966 - Software Audio Session help explaining brief muting while restoring saved hardware settings and the audible consequence of restarting. Unconfirmed hardware state shows a warning and releases temporary muting.</note>
       </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
@@ -11214,6 +11319,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Streaming to Multiple Screens</source>
         <target state="translated">Suoratoisto useaan ruutuun</target>
         <note>53477 - Multiple stream destinations status.</note>
+      </trans-unit>
+      <trans-unit id="Strength" xml:space="preserve">
+        <source>Strength</source>
+        <target state="translated">Voimakkuus</target>
+        <note>53979 - Label beside the small slider in PIP-highlight (when title bar controls are off) and crop-boundary color selectors. PIP glow defaults to 50% and changes opacity below halfway and thickness above it, while crop-boundary strength defaults to 100% and controls only opacity, with zero invisible.</note>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
         <source>Supported</source>
@@ -11663,15 +11773,10 @@ Tämä toiminto ei nollaa itse näyttöä.</target>
         <target state="translated">Liitettyä laitetta käytetään ohjelmistoääniohjaimen tarjoamaan äänenvoimakkuuteen, mykistykseen ja tehosteisiin. Se myös määrittää ulostulon järjestelmän laitteistoäänen ohjaukselle, kun se on käytössä, sekä näppäimistön äänilaitevastaavuudelle.</target>
         <note>53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.</note>
       </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." xml:space="preserve">
-        <source>The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session.</source>
-        <target state="translated">Äänilaite ei vahvistanut muutosta. Ääni pysyy mykistettynä. Tarkista yhteys ja käynnistä ääni-istunto uudelleen.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.</note>
-      </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Check its connection and try again." xml:space="preserve">
-        <source>The audio device did not confirm the change. Check its connection and try again.</source>
-        <target state="translated">Äänilaite ei vahvistanut muutosta. Tarkista yhteys ja yritä uudelleen.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.</note>
+      <trans-unit id="The audio device did not confirm the change. Audio processing may be ineffective." xml:space="preserve">
+        <source>The audio device did not confirm the change. Audio processing may be ineffective.</source>
+        <target state="translated">Äänilaite ei vahvistanut muutosta. Äänenkäsittely ei ehkä toimi tarkoitetulla tavalla.</target>
+        <note>53966 - Warning after hardware volume or mute readback fails to match a requested change, including digital outputs with ineffective native controls. Temporary startup protection is released and the configured software volume and mute remain in effect; this warning does not establish that audio processing failed.</note>
       </trans-unit>
       <trans-unit id="The audio device or its format changed. Restart software audio to resume processing." xml:space="preserve">
         <source>The audio device or its format changed. Restart software audio to resume processing.</source>
@@ -11762,11 +11867,6 @@ Tämä toiminto ei nollaa itse näyttöä.</target>
         <source>The duplicated group will be disabled by default.</source>
         <target state="translated">Monistettu ryhmä on oletuksena pois käytöstä.</target>
         <note>53477 - Duplicate display group action help.</note>
-      </trans-unit>
-      <trans-unit id="The hardware mute provider does not support device readback. No mute request was sent." xml:space="preserve">
-        <source>The hardware mute provider does not support device readback. No mute request was sent.</source>
-        <target state="translated">Laitteiston mykistyksen toteuttaja ei tue laitteen tilan lukemista. Mykistyspyyntöä ei lähetetty.</target>
-        <note>53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.</note>
       </trans-unit>
       <trans-unit id="The hardware mute state could not be confirmed. Software protection remains active." xml:space="preserve">
         <source>The hardware mute state could not be confirmed. Software protection remains active.</source>
@@ -11911,11 +12011,6 @@ Jos toiminto epäonnistuu, irrota ja kytke näyttö fyysisesti uudelleen.</targe
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Suojaus on voimassa vain, kun suhteellinen sijainti on määritetty.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." xml:space="preserve">
-        <source>The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller.</source>
-        <target state="translated">Valittu laitteisto-ohjain ei voi lukea laitteen mykistystilaa. Laitteiston mykistystä ei muutettu. Valitse ohjelmallinen mykistys tai määritä toinen laitteiston mykistysohjain.</target>
-        <note>53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12525,11 +12620,6 @@ Voit sulkea tämän ilmoituksen, jolloin muutokset otetaan käyttöön virtuaali
         <target state="translated">Kytkimet</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
-      <trans-unit id="Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." xml:space="preserve">
-        <source>Toggles are available under the Manage Display (or Virtual Screen) menu when hidden.</source>
-        <target state="translated">Piilotetut kytkimet ovat käytettävissä Hallitse näyttöä- tai Hallitse virtuaaliruutua -valikossa.</target>
-        <note>53477 - Hidden toggle control access help.</note>
-      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">Työkalut</target>
@@ -13095,10 +13185,20 @@ Voit sulkea tämän ilmoituksen, jolloin muutokset otetaan käyttöön virtuaali
         <target state="translated">Käytä koostajan suodatinta</target>
         <note>53477 - Use display compositor image filter option.</note>
       </trans-unit>
+      <trans-unit id="Use Dark Appearance" xml:space="preserve">
+        <source>Use Dark Appearance</source>
+        <target state="translated">Käytä tummaa ulkoasua</target>
+        <note>53983 - OSD appearance picker option that forces a dark OSD independently of the system appearance, when adaptive background is disabled.</note>
+      </trans-unit>
       <trans-unit id="Use Enable Audio Access in Configure Software Audio… to request audio recording permission." xml:space="preserve">
         <source>Use Enable Audio Access in Configure Software Audio… to request audio recording permission.</source>
         <target state="translated">Pyydä äänen tallennusoikeutta valitsemalla Salli äänen käyttö kohdassa Määritä ohjelmistoääni….</target>
         <note>53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.</note>
+      </trans-unit>
+      <trans-unit id="Use Light Appearance" xml:space="preserve">
+        <source>Use Light Appearance</source>
+        <target state="translated">Käytä vaaleaa ulkoasua</target>
+        <note>53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -13639,6 +13739,11 @@ Voit sulkea tämän ilmoituksen, jolloin muutokset otetaan käyttöön virtuaali
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">Piilota automaattisesti saman laitteen tai valikkolohkon muut kohteet valikkokohdetta laajennettaessa. Tämä pitää valikon pienempänä.</target>
         <note>53477 - Menu automatic collapse setting help.</note>
+      </trans-unit>
+      <trans-unit id="When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected." xml:space="preserve">
+        <source>When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected.</source>
+        <target state="translated">Kun sovellusvalikko avataan, aseta ensimmäiseksi näyttö, jossa se avautuu. Tämä ei vaikuta irrotettuihin valikoihin eikä jo avoimen valikon siirtymiseen toiseen näyttöön.</target>
+        <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
@@ -14212,6 +14317,17 @@ Avaa Järjestelmäasetukset &gt; Yleiset &gt; Kirjautumiskohteet ja salli sovell
         <source>waiting for prompt</source>
         <target state="translated">odottaa kehotetta</target>
         <note>53477 - Device pairing prompt state.</note>
+      </trans-unit>
+      <trans-unit id="⇧ Shift alone bypasses group synchronization and &quot;All suitable screens&quot;.&#10;⌃ Control targets the built-in display.&#10;⌃ Control + ⌘ Command targets external displays.&#10;⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." xml:space="preserve">
+        <source>⇧ Shift alone bypasses group synchronization and "All suitable screens".
+⌃ Control targets the built-in display.
+⌃ Control + ⌘ Command targets external displays.
+⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets.</source>
+        <target state="translated">Pelkkä ⇧ Shift ohittaa ryhmäsynkronoinnin ja valinnan ”Kaikki sopivat ruudut”.
+⌃ Control kohdistaa säädöt sisäiseen näyttöön.
+⌃ Control + ⌘ Command kohdistaa säädöt ulkoisiin näyttöihin.
+⇧ Shift + ⌘ Command kohdistaa säädöt muihin kuin nykyiseen näyttöön ja sen peilaus-/suoratoistokohteisiin.</target>
+        <note>53983 - Four-line help for additional native brightness modifier actions; All suitable screens is an existing keyboard target option. Shift+Command excludes the current display and all its mirror/stream targets; preserve line breaks and modifier glyph/name pairs.</note>
       </trans-unit>
     </body>
   </file>

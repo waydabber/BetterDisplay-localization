@@ -611,11 +611,6 @@ Check your network connection and firewall settings.</source>
         <target state="translated">Има дисплей, който не може да се управлява напълно без приложението</target>
         <note>53477 - Conditional activation option for displays requiring the app for full control.</note>
       </trans-unit>
-      <trans-unit id="A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." xml:space="preserve">
-        <source>A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it.</source>
-        <target state="translated">Поискана е промяна на хардуерната сила на звука, но контролерът не може да отчита действителната сила на звука на устройството. Софтуерното заглушаване остава включено, докато изрично не го отмените.</target>
-        <note>53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.</note>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <target state="translated">Активна е група дисплеи с по-висок приоритет, маркирана като изключителна.</target>
@@ -685,6 +680,11 @@ Check your network connection and firewall settings.</source>
         <source>Absent</source>
         <target state="translated">Липсва</target>
         <note>53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.</note>
+      </trans-unit>
+      <trans-unit id="Accent Color" xml:space="preserve">
+        <source>Accent Color</source>
+        <target state="translated">Акцентен цвят</target>
+        <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
       <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
         <source>Accessibility Configuration Required!</source>
@@ -975,6 +975,11 @@ Check your network connection and firewall settings.</source>
         <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <target state="translated">Настройте отместването между двата дисплея чрез промяна на опорните точки. Защитата на подредбата се опитва да подреди дисплеите така, че да съвпадат по зададените опорни точки хоризонтално или вертикално. По подразбиране дисплеите се подравняват по центъра.</target>
         <note>53477 - Layout protection anchor point help explaining relative alignment and default centering.</note>
+      </trans-unit>
+      <trans-unit id="Adjustments affect mirror and stream targets" xml:space="preserve">
+        <source>Adjustments affect mirror and stream targets</source>
+        <target state="translated">Корекциите засягат целите за дублиране и предаване</target>
+        <note>53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.</note>
       </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
@@ -1883,6 +1888,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Аудиоиндикаторите изискват активна сесия на софтуерното аудио.</target>
         <note>53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.</note>
       </trans-unit>
+      <trans-unit id="Audio processing could not be confirmed and may be ineffective." xml:space="preserve">
+        <source>Audio processing could not be confirmed and may be ineffective.</source>
+        <target state="translated">Обработката на звука не може да бъде потвърдена и може да е неефективна.</target>
+        <note>53967 - Warning when the brief startup or restoration wait ends without a processing acknowledgement. Requested changes still proceed and temporary muting is released; this warning clears once processing makes progress.</note>
+      </trans-unit>
       <trans-unit id="Audio recording permission" xml:space="preserve">
         <source>Audio recording permission</source>
         <target state="translated">Разрешение за запис на аудио</target>
@@ -1932,6 +1942,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Автоматичното прекъсване при свързване на външен дисплей вече е временно спряно.</target>
         <note>53477 - Status indicating temporary suspension of automatic disconnection.</note>
+      </trans-unit>
+      <trans-unit id="Auto-expand current display when opening the menu" xml:space="preserve">
+        <source>Auto-expand current display when opening the menu</source>
+        <target state="translated">Разгъване на текущия дисплей при отваряне на менюто</target>
+        <note>53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.</note>
       </trans-unit>
       <trans-unit id="Auto-start full screen streaming" xml:space="preserve">
         <source>Auto-start full screen streaming</source>
@@ -2903,10 +2918,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">„Комбинирано управление на силата на звука“ е включено и управлява хардуерната и софтуерната сила на звука и заглушаването.</target>
         <note>53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.</note>
       </trans-unit>
-      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." xml:space="preserve">
-        <source>Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume.</source>
-        <target state="translated">Комбинираният режим добавя софтуерно затихване под най-ниската използваема хардуерна сила на звука и изисква контролер, който може да отчита хардуерната сила на звука.</target>
-        <note>53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.</note>
+      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume." xml:space="preserve">
+        <source>Combined adds software attenuation below the hardware’s lowest usable volume.</source>
+        <target state="translated">Комбинираният режим добавя софтуерно затихване под най-ниската използваема хардуерна сила на звука.</target>
+        <note>53967 - Help for the Combined volume method, which adds software attenuation below the physical output’s usable range. Hardware readback is optional and is not required to use this method.</note>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
@@ -2937,11 +2952,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Combined brightness is not active.</source>
         <target state="translated">Комбинираната яркост не е активна.</target>
         <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
-      </trans-unit>
-      <trans-unit id="Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." xml:space="preserve">
-        <source>Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller.</source>
-        <target state="translated">Комбинираната сила на звука изисква хардуерен контролер, който може да отчита действителната сила на звука на устройството. Изберете друг метод за силата на звука или настройте съвместим хардуерен контролер.</target>
-        <note>53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.</note>
       </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
@@ -4253,6 +4263,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Отделяемо меню на приложението</target>
         <note>53477 - Setting allowing the app menu to detach into a floating window.</note>
       </trans-unit>
+      <trans-unit id="Detached Remote" xml:space="preserve">
+        <source>Detached Remote</source>
+        <target state="translated">Отделено дистанционно</target>
+        <note>53969 - Presentation toggle shown only while the controller’s Show Remote toggle is on. On displays the remote in a separate floating window; off displays it inline in the app menu, and the choice is remembered while the remote is hidden.</note>
+      </trans-unit>
       <trans-unit id="Detached app menu alpha level" xml:space="preserve">
         <source>Detached app menu alpha level</source>
         <target state="translated">Ниво на непрозрачност на отделеното меню</target>
@@ -4528,6 +4543,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Прекъсване на дисплей</target>
         <note>53477 - Display disconnection action.</note>
       </trans-unit>
+      <trans-unit id="Disconnect Screen on Close" xml:space="preserve">
+        <source>Disconnect Screen on Close</source>
+        <target state="translated">Прекъсване на екрана при затваряне</target>
+        <note>53972 - Per-PIP preference shown only for BetterDisplay virtual screens with Start Automatically enabled. Closing this PIP window disconnects its source virtual screen only if no other PIP, screen stream or mirror target still uses it.</note>
+      </trans-unit>
       <trans-unit id="Disconnect Virtual Screen" xml:space="preserve">
         <source>Disconnect Virtual Screen</source>
         <target state="translated">Прекъсване на виртуалния екран</target>
@@ -4607,6 +4627,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Disconnecting virtual screens</source>
         <target state="translated">Прекъсване на виртуални екрани</target>
         <note>53477 - Virtual screen disconnection operation heading.</note>
+      </trans-unit>
+      <trans-unit id="Disconnects only when no other BetterDisplay streams or mirrors use this screen." xml:space="preserve">
+        <source>Disconnects only when no other BetterDisplay streams or mirrors use this screen.</source>
+        <target state="translated">Екранът се прекъсва само ако не се използва от други потоци или дублирания в BetterDisplay.</target>
+        <note>53972 - Help shown beneath Disconnect Screen on Close only while enabled. Streams include other PIP windows and screen streams, including paused or hidden ones; mirrors are display mirroring targets of this virtual screen.</note>
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
@@ -5262,6 +5287,16 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">Включване на потока</target>
         <note>53477 - Display streaming toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable System Settings and mirroring shortcuts" xml:space="preserve">
+        <source>Enable System Settings and mirroring shortcuts</source>
+        <target state="translated">Включване на комбинации за Системни настройки и дублиране</target>
+        <note>53983 - Native Brightness Key Settings switch, enabled by default. Enables Option with brightness keys to open Displays in System Settings and Command with Brightness Down to toggle display mirroring.</note>
+      </trans-unit>
+      <trans-unit id="Enable System Settings shortcuts" xml:space="preserve">
+        <source>Enable System Settings shortcuts</source>
+        <target state="translated">Включване на комбинации за Системни настройки</target>
+        <note>53983 - Native Audio Key Settings switch, enabled by default. Enables Option with volume or mute keys to open Sound in System Settings.</note>
+      </trans-unit>
       <trans-unit id="Enable True Tone" xml:space="preserve">
         <source>Enable True Tone</source>
         <target state="translated">Включване на True Tone</target>
@@ -5276,6 +5311,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Enable Video Filter Window</source>
         <target state="translated">Включване на прозореца с видеофилтър</target>
         <note>53477 - Video filter window toggle.</note>
+      </trans-unit>
+      <trans-unit id="Enable additional modifier key functions" xml:space="preserve">
+        <source>Enable additional modifier key functions</source>
+        <target state="translated">Включване на допълнителни функции на модификаторите</target>
+        <note>53983 - Separate default-on switches in Native Brightness Key Settings and Native Audio Key Settings. Gates extra modifier actions but keeps Shift+Option fine adjustment available.</note>
       </trans-unit>
       <trans-unit id="Enable color table control" xml:space="preserve">
         <source>Enable color table control</source>
@@ -5760,6 +5800,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Flip</source>
         <target state="translated">Обръщане</target>
         <note>53477 - Streaming image horizontal or vertical flip control.</note>
+      </trans-unit>
+      <trans-unit id="Follow System Appearance" xml:space="preserve">
+        <source>Follow System Appearance</source>
+        <target state="translated">Следване на системния облик</target>
+        <note>53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
         <source>For best results, stick close to the display aspect ratio!</source>
@@ -6311,10 +6356,10 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">Хардуерно управление — минимум</target>
         <note>53477 - Hardware control range lower bound.</note>
       </trans-unit>
-      <trans-unit id="Hardware mute requires a controller that can set and report the mute state." xml:space="preserve">
-        <source>Hardware mute requires a controller that can set and report the mute state.</source>
-        <target state="translated">Хардуерното заглушаване изисква контролер, който може да задава и отчита състоянието на заглушаване.</target>
-        <note>53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.</note>
+      <trans-unit id="Hardware mute requires a controller that can set the mute state." xml:space="preserve">
+        <source>Hardware mute requires a controller that can set the mute state.</source>
+        <target state="translated">Хардуерното заглушаване изисква контролер, който може да задава състоянието на заглушаване.</target>
+        <note>53967 - Shown when the Hardware mute method has no available provider. Setting mute is required, but reporting or confirming the state is optional.</note>
       </trans-unit>
       <trans-unit id="Has Home button" xml:space="preserve">
         <source>Has Home button</source>
@@ -6435,6 +6480,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Highlight</source>
         <target state="translated">Светли области</target>
         <note>53477 - Image adjustment for the bright tonal regions of an image, paired with the Shadow adjustment. This is photographic highlights, not UI selection highlighting.</note>
+      </trans-unit>
+      <trans-unit id="Highlight Window with Mouse" xml:space="preserve">
+        <source>Highlight Window with Mouse</source>
+        <target state="translated">Откроявай прозореца с мишката</target>
+        <note>53973 - Per-PIP toggle below Show Mouse Pointer. Highlights the PIP title bar, or glows around titlebar-hidden content, when the source-screen pointer lies within the displayed region, respecting cropping and transforms; this is visual emphasis, not the photographic Highlight adjustment.</note>
       </trans-unit>
       <trans-unit id="Hinted maximum active pixel rate" xml:space="preserve">
         <source>Hinted maximum active pixel rate</source>
@@ -7735,6 +7785,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Дублиране</target>
         <note>53477 - Mirroring feature heading.</note>
       </trans-unit>
+      <trans-unit id="Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets." xml:space="preserve">
+        <source>Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets.</source>
+        <target state="translated">Дублирането и предаването правят избора на желания дисплей нееднозначен. Изключете това, за да управлявате само източника. Груповата синхронизация може независимо да разпространява промените, а наслагванията в изображението на източника може да продължат да засягат целите.</target>
+        <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Има липсващ или дублиран идентификатор — това ще доведе до неочаквани резултати!</target>
@@ -8270,10 +8325,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">OSD</target>
         <note>53477 - On-screen display feature label.</note>
       </trans-unit>
-      <trans-unit id="OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark)." xml:space="preserve">
-        <source>OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark).</source>
-        <target state="translated">Фонът на OSD се приспособява към средата. При изключване стъкленият OSD следва текущия системен изглед (светъл или тъмен).</target>
-        <note>53477 - Glass OSD adaptive appearance help.</note>
+      <trans-unit id="OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance." xml:space="preserve">
+        <source>OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance.</source>
+        <target state="translated">Фонът на OSD се адаптира към средата. Когато това е изключено, изберете дали OSD да следва системния облик, или винаги да използва светъл или тъмен облик.</target>
+        <note>53983 - Help for Adaptive OSD background in Keyboard settings. Disabling adaptation reveals a picker for system, light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="OSD location and style" xml:space="preserve">
         <source>OSD location and style</source>
@@ -8764,6 +8819,21 @@ Not all displays support screen control operations. These operations can cause i
         <source>Press Shortcut</source>
         <target state="translated">Натиснете комбинация</target>
         <note>53477 - Keyboard shortcut recording prompt.</note>
+      </trans-unit>
+      <trans-unit id="Press ⇧ Shift alone to bypass group synchronization and &quot;All suitable screens&quot;. Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference." xml:space="preserve">
+        <source>Press ⇧ Shift alone to bypass group synchronization and "All suitable screens". Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference.</source>
+        <target state="translated">Натиснете само ⇧ Shift, за да заобиколите груповата синхронизация и „Всички подходящи екрани“. Задържането на ⇧ Shift без ⌥ Option също обръща предпочитанието за звукова обратна връзка при промяна на силата на звука.</target>
+        <note>53983 - Help for additional native audio modifiers affecting volume and mute keys. Shift alone bypasses synchronization/all-screen targeting; Shift without Option inverts the saved feedback-sound preference when feedback is emitted.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring." xml:space="preserve">
+        <source>Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring.</source>
+        <target state="translated">Натиснете ⌥ Option с клавиш за яркост, за да отворите „Дисплеи“ в Системни настройки, или ⌘ Command с клавиша за намаляване на яркостта (F1), за да превключите дублирането на дисплеите.</target>
+        <note>53983 - Help for the combined native brightness System Settings and mirroring shortcut switch. Keep each modifier glyph with its key name; Brightness Down is the media action normally assigned to F1.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a volume or mute key to open Sound in System Settings." xml:space="preserve">
+        <source>Press ⌥ Option with a volume or mute key to open Sound in System Settings.</source>
+        <target state="translated">Натиснете ⌥ Option с клавиш за сила на звука или заглушаване, за да отворите „Звук“ в Системни настройки.</target>
+        <note>53983 - Help for the native audio System Settings shortcut switch. Sound is the macOS System Settings pane; preserve the modifier glyph and key name together.</note>
       </trans-unit>
       <trans-unit id="Prevent Cursor Entering" xml:space="preserve">
         <source>Prevent Cursor Entering</source>
@@ -10215,6 +10285,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Задаване на екрана като основен</target>
         <note>53477 - Primary screen shortcut title.</note>
       </trans-unit>
+      <trans-unit id="Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." xml:space="preserve">
+        <source>Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen).</source>
+        <target state="translated">Задайте „Превключватели“ на „Скрито“, за да персонализирате видимостта на всеки превключвател. Отделните превключватели, зададени на „Скрито“, остават достъпни в „Управление на дисплея“ (или „Управление на виртуалния екран“).</target>
+        <note>53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen.</note>
+      </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
         <target state="translated">Настройка на достъпа</target>
@@ -10498,12 +10573,12 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Show HDMI-CEC Remote" xml:space="preserve">
         <source>Show HDMI-CEC Remote</source>
         <target state="translated">Показване на HDMI-CEC дистанционното</target>
-        <note>53477 - Open HDMI-CEC remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">Показване на дистанционното LG</target>
-        <note>53477 - Open LG remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Mixed Modes" xml:space="preserve">
         <source>Show Mixed Modes</source>
@@ -10538,22 +10613,32 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Show Philips Remote" xml:space="preserve">
         <source>Show Philips Remote</source>
         <target state="translated">Показване на дистанционното Philips</target>
-        <note>53477 - Philips remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Quit %@ in the button bar" xml:space="preserve">
         <source>Show Quit %@ in the button bar</source>
         <target state="translated">Показване на „Изход от %@“ в лентата с бутони</target>
         <note>53477 - Toggle for showing the Quit command in the button bar. The quoted command must match Quit %@; the placeholder is the app name.</note>
       </trans-unit>
+      <trans-unit id="Show Remote" xml:space="preserve">
+        <source>Show Remote</source>
+        <target state="translated">Показване на дистанционното</target>
+        <note>53968 - Display menu toggle for floating remote-control windows. Shows any missing controller remotes for this display, or hides them all when all are already visible.</note>
+      </trans-unit>
       <trans-unit id="Show Samsung Remote" xml:space="preserve">
         <source>Show Samsung Remote</source>
         <target state="translated">Показване на дистанционното Samsung</target>
-        <note>53477 - Samsung remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Settings in the button bar" xml:space="preserve">
         <source>Show Settings in the button bar</source>
         <target state="translated">Показване на Настройки в лентата с бутони</target>
         <note>53477 - Settings button visibility setting.</note>
+      </trans-unit>
+      <trans-unit id="Show adaptive slider scales where appropriate" xml:space="preserve">
+        <source>Show adaptive slider scales where appropriate</source>
+        <target state="translated">Показване на адаптивни скали на плъзгачите, където е подходящо</target>
+        <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
@@ -10604,6 +10689,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Show console</source>
         <target state="translated">Показване на конзолата</target>
         <note>53477 - Show integration console action.</note>
+      </trans-unit>
+      <trans-unit id="Show current display at top" xml:space="preserve">
+        <source>Show current display at top</source>
+        <target state="translated">Показване на текущия дисплей най-отгоре</target>
+        <note>53983 - Toggle under Menu settings &gt; Additional Menu Options &gt; Display Menu Options, available when main-display priority is off. Current display means the screen where an attached app menu first opens, not the main display or the screen it moves to later.</note>
       </trans-unit>
       <trans-unit id="Show current resolution values" xml:space="preserve">
         <source>Show current resolution values</source>
@@ -10725,6 +10815,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Показване на подплъзгачи за комбинираното управление на силата на звука</target>
         <note>53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.</note>
       </trans-unit>
+      <trans-unit id="Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point." xml:space="preserve">
+        <source>Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point.</source>
+        <target state="translated">Показва ненатрапчиви сиви точки през подходящи интервали върху числовите плъзгачи. Скалата се адаптира към диапазона и наличното място, като използва стойността по подразбиране или неутралната стойност за отправна точка.</target>
+        <note>53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.</note>
+      </trans-unit>
+      <trans-unit id="Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." xml:space="preserve">
+        <source>Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close.</source>
+        <target state="translated">Показване на контролите и допълнителните опции на текущия дисплей при отваряне на менюто. Когато автоматичното прибиране е включено, допълнителните опции на другите дисплеи се затварят.</target>
+        <note>53983 - Explanation of automatic expansion for the opening display. More Options is the device’s additional controls revealed by its chevron; automatic tidying permits only one device to show that area at a time, without collapsing other device headers.</note>
+      </trans-unit>
       <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
         <source>Show the display or device name before the current value in the rounded OSD.</source>
         <target state="translated">Показва името на дисплея или устройството пред текущата стойност в заобления екранен индикатор.</target>
@@ -10739,6 +10839,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Show warning notifications about color table anomalies</source>
         <target state="translated">Показване на предупреждения за аномалии в цветовата таблица</target>
         <note>53477 - Toggle enabling notifications when another app interferes with display color-table adjustments. The enabled state shows warnings.</note>
+      </trans-unit>
+      <trans-unit id="Show/Hide Remote" xml:space="preserve">
+        <source>Show/Hide Remote</source>
+        <target state="translated">Показване/скриване на дистанционното</target>
+        <note>53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference.</note>
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
@@ -10895,6 +11000,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Софтуерно увеличаване на XDR/HDR яркостта и затъмняване</target>
         <note>53477 - Software brightness feature section.</note>
       </trans-unit>
+      <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
+        <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
+        <target state="translated">Софтуерното аудио не успя да разреши автоматичното заспиване на системата. Обработката на звука остава активна.</target>
+        <note>53967 - Warning when macOS rejects the optional audio-process setting that allows automatic system sleep. The already running audio session continues and remains controllable.</note>
+      </trans-unit>
       <trans-unit id="Software audio is active." xml:space="preserve">
         <source>Software audio is active.</source>
         <target state="translated">Софтуерното аудио е активно.</target>
@@ -10974,11 +11084,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">Някои от тях са нестабилни и може да съдържат сериозни грешки, експериментални или незавършени функции. Не всички вътрешни версии са налични като автоматични актуализации.</target>
         <note>53477 - Internal prerelease channel warning.</note>
-      </trans-unit>
-      <trans-unit id="Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." xml:space="preserve">
-        <source>Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active.</source>
-        <target state="translated">Някои запазени настройки за хардуерната сила на звука или заглушаването са пропуснати, защото контролерът не може да отчита действителното състояние на устройството. Софтуерното аудио остава активно.</target>
-        <note>53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.</note>
       </trans-unit>
       <trans-unit id="Something went wrong…" xml:space="preserve">
         <source>Something went wrong…</source>
@@ -11100,10 +11205,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Стартиране на софтуерното аудио…</target>
         <note>53927 - Session status while constructing and starting the audio tap and aggregate output.</note>
       </trans-unit>
-      <trans-unit id="Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
-        <source>Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
-        <target state="translated">При стартиране и възстановяване обработваният звук се заглушава до потвърждаване на запазените хардуерни настройки. „Рестартиране на аудиосесията“ изгражда обработката отново и може за кратко да възстанови първоначалната сила на звука на устройството.</target>
-        <note>53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.</note>
+      <trans-unit id="Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
+        <source>Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
+        <target state="translated">При стартиране и възстановяване обработваният звук се заглушава за кратко, докато се възстановяват запазените хардуерни настройки. „Рестартиране на аудиосесията“ изгражда обработката отново и може за кратко да възстанови първоначалната сила на звука на устройството.</target>
+        <note>53966 - Software Audio Session help explaining brief muting while restoring saved hardware settings and the audible consequence of restarting. Unconfirmed hardware state shows a warning and releases temporary muting.</note>
       </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
@@ -11214,6 +11319,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Streaming to Multiple Screens</source>
         <target state="translated">Предаване към няколко екрана</target>
         <note>53477 - Multiple stream destinations status.</note>
+      </trans-unit>
+      <trans-unit id="Strength" xml:space="preserve">
+        <source>Strength</source>
+        <target state="translated">Интензивност</target>
+        <note>53979 - Label beside the small slider in PIP-highlight (when title bar controls are off) and crop-boundary color selectors. PIP glow defaults to 50% and changes opacity below halfway and thickness above it, while crop-boundary strength defaults to 100% and controls only opacity, with zero invisible.</note>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
         <source>Supported</source>
@@ -11663,15 +11773,10 @@ This operation does not reset the display itself.</source>
         <target state="translated">Обвързаното устройство се използва за силата на звука, заглушаването и ефектите на контролера за софтуерно аудио. То определя и изхода за системно хардуерно управление на звука, когато е включено, и за съпоставяне на аудиоустройството с клавиатурата.</target>
         <note>53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.</note>
       </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." xml:space="preserve">
-        <source>The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session.</source>
-        <target state="translated">Аудиоустройството не потвърди промяната. Звукът остава заглушен. Проверете връзката и рестартирайте аудиосесията.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.</note>
-      </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Check its connection and try again." xml:space="preserve">
-        <source>The audio device did not confirm the change. Check its connection and try again.</source>
-        <target state="translated">Аудиоустройството не потвърди промяната. Проверете връзката и опитайте отново.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.</note>
+      <trans-unit id="The audio device did not confirm the change. Audio processing may be ineffective." xml:space="preserve">
+        <source>The audio device did not confirm the change. Audio processing may be ineffective.</source>
+        <target state="translated">Аудиоустройството не потвърди промяната. Обработката на звука може да е неефективна.</target>
+        <note>53966 - Warning after hardware volume or mute readback fails to match a requested change, including digital outputs with ineffective native controls. Temporary startup protection is released and the configured software volume and mute remain in effect; this warning does not establish that audio processing failed.</note>
       </trans-unit>
       <trans-unit id="The audio device or its format changed. Restart software audio to resume processing." xml:space="preserve">
         <source>The audio device or its format changed. Restart software audio to resume processing.</source>
@@ -11762,11 +11867,6 @@ This operation does not reset the display itself.</source>
         <source>The duplicated group will be disabled by default.</source>
         <target state="translated">Дублираната група ще бъде изключена по подразбиране.</target>
         <note>53477 - Duplicate display group action help.</note>
-      </trans-unit>
-      <trans-unit id="The hardware mute provider does not support device readback. No mute request was sent." xml:space="preserve">
-        <source>The hardware mute provider does not support device readback. No mute request was sent.</source>
-        <target state="translated">Доставчикът на хардуерно заглушаване не поддържа прочитане на състоянието на устройството. Не е изпратена заявка за заглушаване.</target>
-        <note>53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.</note>
       </trans-unit>
       <trans-unit id="The hardware mute state could not be confirmed. Software protection remains active." xml:space="preserve">
         <source>The hardware mute state could not be confirmed. Software protection remains active.</source>
@@ -11911,11 +12011,6 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Защитата не действа, докато не бъде зададена относителна позиция.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." xml:space="preserve">
-        <source>The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller.</source>
-        <target state="translated">Избраният хардуерен контролер не може да отчита състоянието на заглушаване на устройството. Хардуерното заглушаване не е променено. Изберете софтуерно заглушаване или настройте друг хардуерен контролер за заглушаване.</target>
-        <note>53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12530,11 +12625,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Превключватели</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
-      <trans-unit id="Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." xml:space="preserve">
-        <source>Toggles are available under the Manage Display (or Virtual Screen) menu when hidden.</source>
-        <target state="translated">Когато са скрити, превключвателите са достъпни в менюто „Управление на дисплея“ (или на виртуалния екран).</target>
-        <note>53477 - Hidden toggle control access help.</note>
-      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">Инструменти</target>
@@ -13100,10 +13190,20 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Използване на филтъра на композитора</target>
         <note>53477 - Use display compositor image filter option.</note>
       </trans-unit>
+      <trans-unit id="Use Dark Appearance" xml:space="preserve">
+        <source>Use Dark Appearance</source>
+        <target state="translated">Използване на тъмен облик</target>
+        <note>53983 - OSD appearance picker option that forces a dark OSD independently of the system appearance, when adaptive background is disabled.</note>
+      </trans-unit>
       <trans-unit id="Use Enable Audio Access in Configure Software Audio… to request audio recording permission." xml:space="preserve">
         <source>Use Enable Audio Access in Configure Software Audio… to request audio recording permission.</source>
         <target state="translated">Използвайте „Разрешаване на достъпа до аудио“ в „Настройване на софтуерното аудио…“, за да поискате разрешение за запис на аудио.</target>
         <note>53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.</note>
+      </trans-unit>
+      <trans-unit id="Use Light Appearance" xml:space="preserve">
+        <source>Use Light Appearance</source>
+        <target state="translated">Използване на светъл облик</target>
+        <note>53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -13644,6 +13744,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">При разгръщане на елемент от менюто автоматично се скриват другите елементи в съответния блок на устройството/менюто. Това запазва менюто по-малко.</target>
         <note>53477 - Menu automatic collapse setting help.</note>
+      </trans-unit>
+      <trans-unit id="When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected." xml:space="preserve">
+        <source>When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected.</source>
+        <target state="translated">При отваряне на менюто на приложението поставете най-отгоре дисплея, на който то се отваря. Отделените менюта и вече отворено меню, преместено на друг дисплей, не се засягат.</target>
+        <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
@@ -14217,6 +14322,17 @@ Open System Settings &gt; General &gt; Login Items and allow %@ to run in the ba
         <source>waiting for prompt</source>
         <target state="translated">изчакване на диалог</target>
         <note>53477 - Device pairing prompt state.</note>
+      </trans-unit>
+      <trans-unit id="⇧ Shift alone bypasses group synchronization and &quot;All suitable screens&quot;.&#10;⌃ Control targets the built-in display.&#10;⌃ Control + ⌘ Command targets external displays.&#10;⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." xml:space="preserve">
+        <source>⇧ Shift alone bypasses group synchronization and "All suitable screens".
+⌃ Control targets the built-in display.
+⌃ Control + ⌘ Command targets external displays.
+⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets.</source>
+        <target state="translated">Самостоятелното натискане на ⇧ Shift заобикаля груповата синхронизация и „Всички подходящи екрани“.
+⌃ Control насочва управлението към вградения дисплей.
+⌃ Control + ⌘ Command насочва управлението към външните дисплеи.
+⇧ Shift + ⌘ Command насочва управлението към дисплеите извън текущия дисплей и неговите цели за дублиране/предаване.</target>
+        <note>53983 - Four-line help for additional native brightness modifier actions; All suitable screens is an existing keyboard target option. Shift+Command excludes the current display and all its mirror/stream targets; preserve line breaks and modifier glyph/name pairs.</note>
       </trans-unit>
     </body>
   </file>
