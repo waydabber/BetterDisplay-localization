@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5038j"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -12,6 +12,11 @@
       <trans-unit id="CFBundleName" translate="no" xml:space="preserve">
         <source>BetterDisplay</source>
         <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSAudioCaptureUsageDescription" xml:space="preserve">
+        <source>BetterDisplay needs system audio access to provide software volume, mute and audio tuning for your selected output.</source>
+        <target state="translated">يحتاج BetterDisplay إلى الوصول إلى صوت النظام لتوفير التحكم البرمجي بمستوى الصوت وكتمه وضبطه للخرج المحدد.</target>
+        <note>53927 - macOS permission-purpose text for optional software output volume, mute and audio tuning. The app requests System Audio Recording Only access, without microphone or screen recording access; BetterDisplay is the app name.</note>
       </trans-unit>
       <trans-unit id="NSFileProviderDomainUsageDescription" xml:space="preserve">
         <source>The app needs to modify the system configuration to save the edited display data.</source>
@@ -31,7 +36,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5038j"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -78,7 +83,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="ar" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B5038j"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -342,6 +347,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">0°</target>
         <note>53477 - Display rotation angle in degrees.</note>
       </trans-unit>
+      <trans-unit id="1 kHz" xml:space="preserve">
+        <source>1 kHz</source>
+        <target state="translated">⁦1 kHz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
+      </trans-unit>
       <trans-unit id="1.0x" xml:space="preserve">
         <source>1.0x</source>
         <target state="translated">1.0x</target>
@@ -367,6 +377,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">دقة مطابقة للبكسل 1:1</target>
         <note>53477 - Resolution where each source pixel maps to one physical display pixel.</note>
       </trans-unit>
+      <trans-unit id="2 kHz" xml:space="preserve">
+        <source>2 kHz</source>
+        <target state="translated">⁦2 kHz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
+      </trans-unit>
       <trans-unit id="2.0x" xml:space="preserve">
         <source>2.0x</source>
         <target state="translated">2.0x</target>
@@ -386,6 +401,11 @@ Check your network connection and firewall settings.</source>
         <source>4</source>
         <target state="translated">4</target>
         <note>53477 - Numeric input placeholder or remote control digit; preserve the number.</note>
+      </trans-unit>
+      <trans-unit id="4 kHz" xml:space="preserve">
+        <source>4 kHz</source>
+        <target state="translated">⁦4 kHz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
       </trans-unit>
       <trans-unit id="4:2:0" xml:space="preserve">
         <source>4:2:0</source>
@@ -417,6 +437,16 @@ Check your network connection and firewall settings.</source>
         <target state="translated">⁧⁦5:4⁩ - التصوير الفوتوغرافي⁩</target>
         <note>53553 - Preset label in the virtual screen creation aspect ratio picker; preserve the aspect ratio and technical or product names, translating descriptive words such as Square or Photography. In RTL languages, place the ratio on the right using an RTL isolate (U+2067…U+2069), and keep each ratio and Latin technical or product name intact with LTR isolates (U+2066…U+2069).</note>
       </trans-unit>
+      <trans-unit id="8 kHz" xml:space="preserve">
+        <source>8 kHz</source>
+        <target state="translated">⁦8 kHz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
+      </trans-unit>
+      <trans-unit id="10-band EQ has separate settings" xml:space="preserve">
+        <source>10-band EQ has separate settings</source>
+        <target state="translated">للمعادل ذي 10 نطاقات إعدادات منفصلة</target>
+        <note>53927 - Device Control equalizer help shown only while Use 10-band EQ is on. The ten frequency bands retain settings separate from the simple bass/treble EQ bank.</note>
+      </trans-unit>
       <trans-unit id="14.3:10 - iPad Pro 11&quot;" xml:space="preserve">
         <source>14.3:10 - iPad Pro 11"</source>
         <target state="translated">⁧⁦14.3:10⁩ - ⁦iPad Pro 11"⁩⁩</target>
@@ -431,6 +461,11 @@ Check your network connection and firewall settings.</source>
         <source>15.2:10 - iPad Mini 2021</source>
         <target state="translated">⁧⁦15.2:10⁩ - ⁦iPad Mini 2021⁩⁩</target>
         <note>53553 - Preset label in the virtual screen creation aspect ratio picker; preserve the aspect ratio and technical or product names, translating descriptive words such as Square or Photography. In RTL languages, place the ratio on the right using an RTL isolate (U+2067…U+2069), and keep each ratio and Latin technical or product name intact with LTR isolates (U+2066…U+2069).</note>
+      </trans-unit>
+      <trans-unit id="16 kHz" xml:space="preserve">
+        <source>16 kHz</source>
+        <target state="translated">⁦16 kHz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
       </trans-unit>
       <trans-unit id="16:9 - HD/4K/5K/6K" xml:space="preserve">
         <source>16:9 - HD/4K/5K/6K</source>
@@ -462,6 +497,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">⁧⁦24:10⁩ - ⁦UW-QHD+⁩⁩</target>
         <note>53553 - Preset label in the virtual screen creation aspect ratio picker; preserve the aspect ratio and technical or product names, translating descriptive words such as Square or Photography. In RTL languages, place the ratio on the right using an RTL isolate (U+2067…U+2069), and keep each ratio and Latin technical or product name intact with LTR isolates (U+2066…U+2069).</note>
       </trans-unit>
+      <trans-unit id="31.5 Hz" xml:space="preserve">
+        <source>31.5 Hz</source>
+        <target state="translated">⁦31.5 Hz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
+      </trans-unit>
       <trans-unit id="32:9 - D-HD/QHD" xml:space="preserve">
         <source>32:9 - D-HD/QHD</source>
         <target state="translated">⁧⁦32:9⁩ - ⁦D-HD/QHD⁩⁩</target>
@@ -471,6 +511,11 @@ Check your network connection and firewall settings.</source>
         <source>32:10 - D-W*XGA</source>
         <target state="translated">⁧⁦32:10⁩ - ⁦D-W*XGA⁩⁩</target>
         <note>53553 - Preset label in the virtual screen creation aspect ratio picker; preserve the aspect ratio and technical or product names, translating descriptive words such as Square or Photography. In RTL languages, place the ratio on the right using an RTL isolate (U+2067…U+2069), and keep each ratio and Latin technical or product name intact with LTR isolates (U+2066…U+2069).</note>
+      </trans-unit>
+      <trans-unit id="63 Hz" xml:space="preserve">
+        <source>63 Hz</source>
+        <target state="translated">⁦63 Hz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
       </trans-unit>
       <trans-unit id="90°" xml:space="preserve">
         <source>90°</source>
@@ -482,10 +527,20 @@ Check your network connection and firewall settings.</source>
         <target state="translated">100</target>
         <note>53477 - Numeric input placeholder; preserve the number.</note>
       </trans-unit>
+      <trans-unit id="125 Hz" xml:space="preserve">
+        <source>125 Hz</source>
+        <target state="translated">⁦125 Hz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
+      </trans-unit>
       <trans-unit id="180°" xml:space="preserve">
         <source>180°</source>
         <target state="translated">180°</target>
         <note>53477 - Display rotation angle in degrees.</note>
+      </trans-unit>
+      <trans-unit id="250 Hz" xml:space="preserve">
+        <source>250 Hz</source>
+        <target state="translated">⁦250 Hz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
       </trans-unit>
       <trans-unit id="255.255.255.255" translate="no" xml:space="preserve">
         <source>255.255.255.255</source>
@@ -495,6 +550,11 @@ Check your network connection and firewall settings.</source>
         <source>270°</source>
         <target state="translated">270°</target>
         <note>53477 - Display rotation angle in degrees.</note>
+      </trans-unit>
+      <trans-unit id="500 Hz" xml:space="preserve">
+        <source>500 Hz</source>
+        <target state="translated">⁦500 Hz⁩</target>
+        <note>53927 - Center-frequency label for a ten-band audio equalizer gain in Settings and Shortcuts. Hz means hertz and kHz means kilohertz; the adjustable value is gain in decibels.</note>
       </trans-unit>
       <trans-unit id="1000" xml:space="preserve">
         <source>1000</source>
@@ -531,10 +591,20 @@ Check your network connection and firewall settings.</source>
         <target state="translated">توجد شاشة لا يمكن التحكم بها بالكامل بدون التطبيق</target>
         <note>53477 - Conditional activation option for displays requiring the app for full control.</note>
       </trans-unit>
+      <trans-unit id="A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." xml:space="preserve">
+        <source>A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it.</source>
+        <target state="translated">طُلب تغيير مستوى صوت العتاد، لكن وحدة التحكم لا يمكنها الإبلاغ عن مستوى الصوت الفعلي للجهاز. يبقى الكتم البرمجي مفعّلًا حتى تلغيه صراحةً.</target>
+        <note>53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.</note>
+      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <target state="translated">توجد مجموعة ذات أولوية أعلى معلَّمة كحصرية وهي نشطة.</target>
         <note>53477 - Group activation status when an exclusive higher-priority group takes precedence.</note>
+      </trans-unit>
+      <trans-unit id="A noise gate can soften the start of sounds." xml:space="preserve">
+        <source>A noise gate can soften the start of sounds.</source>
+        <target state="translated">قد تخفف بوابة الضوضاء بداية الأصوات.</target>
+        <note>53927 - Device Control help shown only when the noise gate is enabled. Its attack time can attenuate the beginning of a sound.</note>
       </trans-unit>
       <trans-unit id="A popup notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting." xml:space="preserve">
         <source>A popup notification will appear when the app detects interference from other apps that adjust the color table. Useful for troubleshooting.</source>
@@ -590,6 +660,11 @@ Check your network connection and firewall settings.</source>
         <source>Above Menu, Dock, Spaces</source>
         <target state="translated">فوق شريط القوائم والـ Dock والمساحات</target>
         <note>53477 - PIP and streaming window priority option that places the window above the menu bar, Dock and Spaces. Keep this menu label compact.</note>
+      </trans-unit>
+      <trans-unit id="Absent" xml:space="preserve">
+        <source>Absent</source>
+        <target state="translated">غير موجود</target>
+        <note>53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.</note>
       </trans-unit>
       <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
         <source>Accessibility Configuration Required!</source>
@@ -751,6 +826,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">إضافة معدل تحديث</target>
         <note>53477 - Action adding a custom refresh rate.</note>
       </trans-unit>
+      <trans-unit id="Add Software Audio using Add or Remove Controllers…, then open Configure Software Audio… on its Device Control card." xml:space="preserve">
+        <source>Add Software Audio using Add or Remove Controllers…, then open Configure Software Audio… on its Device Control card.</source>
+        <target state="translated">أضف «الصوت البرمجي» عبر «إضافة وحدات التحكم أو إزالتها…»، ثم افتح «إعداد الصوت البرمجي…» في بطاقته ضمن التحكم بالجهاز.</target>
+        <note>53927 - Help beneath Software Audio Controller in Audio Device Configuration. Distinguishes adding Software Audio through Add or Remove Controllers… from configuring an added controller through Configure Software Audio… on its Device Control card.</note>
+      </trans-unit>
       <trans-unit id="Add Stream Configuration" xml:space="preserve">
         <source>Add Stream Configuration</source>
         <target state="translated">إضافة إعداد البث</target>
@@ -766,10 +846,20 @@ Check your network connection and firewall settings.</source>
         <target state="translated">أضف شاشة أخرى كهدف لمحاكاة شاشة.</target>
         <note>53477 - Mirroring action help for adding another destination screen.</note>
       </trans-unit>
+      <trans-unit id="Add hardware controllers using Add or Remove Controllers…, then configure them on their Device Control cards." xml:space="preserve">
+        <source>Add hardware controllers using Add or Remove Controllers…, then configure them on their Device Control cards.</source>
+        <target state="translated">أضف وحدات التحكم بالعتاد عبر «إضافة وحدات التحكم أو إزالتها…»، ثم اضبطها في بطاقاتها ضمن التحكم بالجهاز.</target>
+        <note>53927 - Help beneath Hardware Volume Control in Audio Device Configuration. Points to controller management under Device Control; native hardware control is selected separately by the preference in the Associated Audio Device block.</note>
+      </trans-unit>
       <trans-unit id="Add or Remove Controllers…" xml:space="preserve">
         <source>Add or Remove Controllers…</source>
         <target state="translated">إضافة وحدات التحكم أو إزالتها…</target>
         <note>53658 - Button in Configure Device Control that opens a scrollable sheet for choosing the selected display’s controllers. Each controller can be added or removed without deleting its saved settings.</note>
+      </trans-unit>
+      <trans-unit id="Add or enable a hardware volume control in Device Control." xml:space="preserve">
+        <source>Add or enable a hardware volume control in Device Control.</source>
+        <target state="translated">أضف وحدة تحكم بالعتاد لمستوى الصوت أو فعّلها في التحكم بالجهاز.</target>
+        <note>53927 - Actionable notice when the selected hardware or combined volume method has no available hardware volume control.</note>
       </trans-unit>
       <trans-unit id="Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!" xml:space="preserve">
         <source>Add the app under System Settings &gt; Privacy &amp; Security &gt; Screen Recording!</source>
@@ -830,6 +920,11 @@ Check your network connection and firewall settings.</source>
         <source>Additional delay after wake to reapply DDC settings</source>
         <target state="translated">تأخير إضافي بعد الاستيقاظ لإعادة تطبيق إعدادات DDC</target>
         <note>53477 - Delay setting before restoring DDC settings after wake.</note>
+      </trans-unit>
+      <trans-unit id="Additional factory profiles:" xml:space="preserve">
+        <source>Additional factory profiles:</source>
+        <target state="translated">ملفات مصنع إضافية:</target>
+        <note>53885 - Heading above factory ColorSync profiles other than the selected display’s own factory profile in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="Additional licenses:" xml:space="preserve">
         <source>Additional licenses:</source>
@@ -1318,6 +1413,11 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <target state="translated">هناك متحكّم آخر ‏(%1$@) له الأولوية على %2$@.</target>
         <note>53688 - Controller conflict warning; placeholders identify the controller and affected control or device.</note>
       </trans-unit>
+      <trans-unit id="Another display already owns software processing for this audio output." xml:space="preserve">
+        <source>Another display already owns software processing for this audio output.</source>
+        <target state="translated">تستخدم شاشة أخرى المعالجة البرمجية لخرج الصوت هذا بالفعل.</target>
+        <note>53927 - Output-association conflict: another display owns the single software-processing session for the same output UID.</note>
+      </trans-unit>
       <trans-unit id="Another group member display next to which the protected display should be positioned in the display arrangement." xml:space="preserve">
         <source>Another group member display next to which the protected display should be positioned in the display arrangement.</source>
         <target state="translated">شاشة أخرى من شاشات المجموعة يجب أن تُوضع الشاشة المحميّة بجانبها في ترتيب الشاشات.</target>
@@ -1480,6 +1580,31 @@ AliPay available in China.</source>
         <target state="translated">تطبيق تجاوز EDID عند اتصال الشاشة في المرة القادمة أو عند إعادة تشغيل الـ Mac. يتيح لك EDID المعدَّل تغييرَ إمكانيات الشاشة كما يراها macOS.</target>
         <note>53477 - Software EDID override help; this changes system interpretation, not device-stored data.</note>
       </trans-unit>
+      <trans-unit id="Apply color profile favorite 1" xml:space="preserve">
+        <source>Apply color profile favorite 1</source>
+        <target state="translated">تطبيق ملف الألوان المفضّل 1</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 1 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 2" xml:space="preserve">
+        <source>Apply color profile favorite 2</source>
+        <target state="translated">تطبيق ملف الألوان المفضّل 2</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 2 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 3" xml:space="preserve">
+        <source>Apply color profile favorite 3</source>
+        <target state="translated">تطبيق ملف الألوان المفضّل 3</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 3 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 4" xml:space="preserve">
+        <source>Apply color profile favorite 4</source>
+        <target state="translated">تطبيق ملف الألوان المفضّل 4</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 4 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
+      <trans-unit id="Apply color profile favorite 5" xml:space="preserve">
+        <source>Apply color profile favorite 5</source>
+        <target state="translated">تطبيق ملف الألوان المفضّل 5</target>
+        <note>53885 - Custom keyboard shortcut label. Applies color-profile favorite slot 5 for the display under the mouse pointer; an empty or unavailable slot has no effect.</note>
+      </trans-unit>
       <trans-unit id="Apply configured custom EDID for ${displayEntity}." xml:space="preserve">
         <source>Apply configured custom EDID for ${displayEntity}.</source>
         <target state="translated">تطبيق EDID المخصّص المُعدّ لـ ${displayEntity}.</target>
@@ -1594,6 +1719,11 @@ Clearing NVRAM also removes low-level firmware preferences, such as startup disk
         <target state="translated">نسبة العرض إلى الارتفاع</target>
         <note>53477 - Display width-to-height ratio setting.</note>
       </trans-unit>
+      <trans-unit id="Assign current color profile to favorite:" xml:space="preserve">
+        <source>Assign current color profile to favorite:</source>
+        <target state="translated">تعيين ملف الألوان الحالي للمفضلة:</target>
+        <note>53885 - Prompt above five numbered favorite slots in the Color Profile menu’s Manage panel; choosing a slot saves or replaces it with the display’s current ColorSync profile. Keep this prompt concise; “color” may be omitted where the menu context makes it clear.</note>
+      </trans-unit>
       <trans-unit id="Assign current resolution to favorite:" xml:space="preserve">
         <source>Assign current resolution to favorite:</source>
         <target state="translated">تعيين الدقة الحالية للمفضلة:</target>
@@ -1604,25 +1734,25 @@ Clearing NVRAM also removes low-level firmware preferences, such as startup disk
         <target state="translated">ربط الشاشة الافتراضية بهذه الشاشة</target>
         <note>53477 - Virtual screen association action.</note>
       </trans-unit>
-      <trans-unit id="Associate this display with an audio device that has native volume controls" xml:space="preserve">
-        <source>Associate this display with an audio device that has native volume controls</source>
-        <target state="translated">ربط هذه الشاشة بجهاز صوت يملك تحكماً أصلياً بمستوى الصوت</target>
-        <note>53477 - Audio device association setting.</note>
-      </trans-unit>
       <trans-unit id="Associate this virtual screen with real display(s)" xml:space="preserve">
         <source>Associate this virtual screen with real display(s)</source>
         <target state="translated">ربط هذه الشاشة الافتراضية بشاشة حقيقية أو أكثر</target>
         <note>53477 - Virtual screen association setting allowing one or more real displays.</note>
+      </trans-unit>
+      <trans-unit id="Associated Audio Device" xml:space="preserve">
+        <source>Associated Audio Device</source>
+        <target state="translated">جهاز الصوت المرتبط</target>
+        <note>53927 - Section heading near the top of Audio Device Configuration, above the mute-method sections. Groups the display’s native audio association switch, matching device name or UID, copy action and device status.</note>
       </trans-unit>
       <trans-unit id="Associated Displays" xml:space="preserve">
         <source>Associated Displays</source>
         <target state="translated">الشاشات المرتبطة</target>
         <note>53627 - Settings section listing physical displays associated with a virtual screen. Association links the virtual screen to the selected displays.</note>
       </trans-unit>
-      <trans-unit id="Associated audio device name" xml:space="preserve">
-        <source>Associated audio device name</source>
-        <target state="translated">اسم جهاز الصوت المرتبط</target>
-        <note>53477 - Associated audio device name field.</note>
+      <trans-unit id="Associated audio device" xml:space="preserve">
+        <source>Associated audio device</source>
+        <target state="translated">جهاز الصوت المرتبط</target>
+        <note>53927 - Name or unique-identifier field in Audio Device Configuration, shared by software audio processing, optional native hardware audio control and keyboard matching. Symbol generation is disabled to avoid a collision with the title-cased section heading.</note>
       </trans-unit>
       <trans-unit id="Associated display mirroring is enforced!" xml:space="preserve">
         <source>Associated display mirroring is enforced!</source>
@@ -1683,10 +1813,60 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
 تحديد طول القراءة اختياري - اترك الحقل فارغاً للاكتشاف التلقائي.</target>
         <note>53477 - Direct EDID read help including optional read length input.</note>
       </trans-unit>
+      <trans-unit id="Audio Access and Recovery" xml:space="preserve">
+        <source>Audio Access and Recovery</source>
+        <target state="translated">الوصول إلى الصوت والاسترداد</target>
+        <note>53927 - Section in Configure Software Audio grouping recording permission controls and the Software Audio Session explanation, status and Restart action.</note>
+      </trans-unit>
+      <trans-unit id="Audio Adjustment" xml:space="preserve">
+        <source>Audio Adjustment</source>
+        <target state="translated">ضبط الصوت</target>
+        <note>53927 - Shortcuts parameter selecting a numeric audio component or tuning parameter, or a Boolean audio option in the Set/Get Audio Option actions.</note>
+      </trans-unit>
+      <trans-unit id="Audio Balance" xml:space="preserve">
+        <source>Audio Balance</source>
+        <target state="translated">توازن الصوت</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Stereo balance from physical left to right, attenuating the opposite channel.</note>
+      </trans-unit>
       <trans-unit id="Audio Control" xml:space="preserve">
         <source>Audio Control</source>
         <target state="translated">التحكم بالصوت</target>
         <note>53477 - Audio control settings section.</note>
+      </trans-unit>
+      <trans-unit id="Audio Device Configuration…" xml:space="preserve">
+        <source>Audio Device Configuration…</source>
+        <target state="translated">إعداد جهاز الصوت…</target>
+        <note>53927 - Button in an individual display’s Device Control section that opens the shared audio-device association, mute-method and volume OSD settings sheet.</note>
+      </trans-unit>
+      <trans-unit id="Audio Gain" xml:space="preserve">
+        <source>Audio Gain</source>
+        <target state="translated">كسب الصوت</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Digital preamplifier gain in decibels before equalization; unrelated to image gain.</note>
+      </trans-unit>
+      <trans-unit id="Audio Volume" xml:space="preserve">
+        <source>Audio Volume</source>
+        <target state="translated">مستوى الصوت</target>
+        <note>53927 - Section in Configure Software Audio containing the software volume curve setting and help directing users to playback controls in the Device Control menu.</note>
+      </trans-unit>
+      <trans-unit id="Audio filters, dynamics and protection" xml:space="preserve">
+        <source>Audio filters, dynamics and protection</source>
+        <target state="translated">مرشحات الصوت والديناميكيات والحماية</target>
+        <note>53927 - Device Control Menu visibility toggle in the Software Audio sheet. Shows or hides frequency filters, compressor, noise gate and soft clipping together without changing processing.</note>
+      </trans-unit>
+      <trans-unit id="Audio meters" xml:space="preserve">
+        <source>Audio meters</source>
+        <target state="translated">مقاييس الصوت</target>
+        <note>53927 - Independent Device Control Menu visibility toggle in the Software Audio sheet for digital audio meters and the clipping indicator. Hiding meters does not disable audio processing.</note>
+      </trans-unit>
+      <trans-unit id="Audio meters require an active software audio session." xml:space="preserve">
+        <source>Audio meters require an active software audio session.</source>
+        <target state="translated">تتطلب مقاييس الصوت جلسة صوت برمجية نشطة.</target>
+        <note>53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.</note>
+      </trans-unit>
+      <trans-unit id="Audio recording permission" xml:space="preserve">
+        <source>Audio recording permission</source>
+        <target state="translated">إذن تسجيل الصوت</target>
+        <note>53927 - Heading above the permission-request explanation and the Enable Audio Access / System Settings buttons in Configure Software Audio.</note>
       </trans-unit>
       <trans-unit id="Auto Brightness" xml:space="preserve">
         <source>Auto Brightness</source>
@@ -1752,6 +1932,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Automatic configuration of DDC features is not available. If DDC control does not work properly based on manual configuration and testing, you should disable DDC support.</source>
         <target state="translated">الإعداد التلقائي لمزايا DDC غير متاح. إذا لم يعمل التحكم عبر DDC بشكل صحيح بعد الإعداد والاختبار اليدوي، فيُستحسن تعطيل دعم DDC.</target>
         <note>53477 - DDC setup help when automatic feature configuration is unavailable.</note>
+      </trans-unit>
+      <trans-unit id="Automatic headroom: %.1f dB" xml:space="preserve">
+        <source>Automatic headroom: %.1f dB</source>
+        <target state="translated">هامش أمان تلقائي: ⁦%.1f dB⁩</target>
+        <note>53927 - Software Audio meter showing automatic digital attenuation used to reserve headroom, not brightness headroom or acoustic loudness. %.1f is a signed decimal value in decibels; preserve its type and dB.</note>
       </trans-unit>
       <trans-unit id="Automatically apply custom EDID upon detection of this display" xml:space="preserve">
         <source>Automatically apply custom EDID upon detection of this display</source>
@@ -1877,6 +2062,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Basic Display Information</source>
         <target state="translated">معلومات الشاشة الأساسية</target>
         <note>53477 - Display information section heading.</note>
+      </trans-unit>
+      <trans-unit id="Bass" xml:space="preserve">
+        <source>Bass</source>
+        <target state="translated">الجهير</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Low-frequency shelf gain in decibels in the simple audio equalizer.</note>
+      </trans-unit>
+      <trans-unit id="Bass Boost" xml:space="preserve">
+        <source>Bass Boost</source>
+        <target state="translated">تعزيز الجهير</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Additional low-frequency shelf boost in decibels, separate from the equalizer.</note>
       </trans-unit>
       <trans-unit id="Below %@" xml:space="preserve">
         <source>Below %@</source>
@@ -2208,6 +2403,21 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">بتحديد المدخل الذي يستخدمه هذا الـ Mac على جهاز webOS، يستطيع التطبيق تبديل المدخل تلقائياً عند الاستيقاظ ومراعاة المدخل الحالي عند إيقاف الشاشة.</target>
         <note>53477 - LG webOS input association help for automatic input switching and power control.</note>
       </trans-unit>
+      <trans-unit id="Bypass Audio Tuning" xml:space="preserve">
+        <source>Bypass Audio Tuning</source>
+        <target state="translated">تجاوز ضبط الصوت</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Skip gain, equalization, channel tools and dynamics while retaining software volume and mute.</note>
+      </trans-unit>
+      <trans-unit id="Bypass retains software volume and mute protection. Soft clipping is optional and provides no true-peak guarantee. Meters show digital signal levels, not acoustic sound pressure." xml:space="preserve">
+        <source>Bypass retains software volume and mute protection. Soft clipping is optional and provides no true-peak guarantee. Meters show digital signal levels, not acoustic sound pressure.</source>
+        <target state="translated">يحتفظ التجاوز بالتحكم البرمجي بالصوت وحماية كتمه. القص الناعم اختياري ولا يضمن الحماية من الذروة الحقيقية. تعرض المقاييس مستويات الإشارة الرقمية، لا الضغط الصوتي.</target>
+        <note>53927 - Retained manual help text about bypass, optional soft saturation and digital signal meters. True peak includes reconstructed peaks between digital samples; it is not an acoustic measurement.</note>
+      </trans-unit>
+      <trans-unit id="Bypass skips tuning and keeps software volume and mute." xml:space="preserve">
+        <source>Bypass skips tuning and keeps software volume and mute.</source>
+        <target state="translated">يتخطى التجاوز ضبط الصوت ويحتفظ بمستوى الصوت وكتمه برمجيًا.</target>
+        <note>53927 - Information at the bottom of the Device Control reset block, below Bypass Audio Tuning and Reset Audio Tuning. Bypass retains provided software volume and mute controls.</note>
+      </trans-unit>
       <trans-unit id="C style array" xml:space="preserve">
         <source>C style array</source>
         <target state="translated">مصفوفة بنمط C</target>
@@ -2267,6 +2477,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Calibrate Upscaling…</source>
         <target state="translated">معايرة رفع السطوع…</target>
         <note>53477 - Brightness upscaling calibration action.</note>
+      </trans-unit>
+      <trans-unit id="Calibration value" xml:space="preserve">
+        <source>Calibration value</source>
+        <target state="translated">قيمة المعايرة</target>
+        <note>53872 - Accessibility label for the numeric input and up/down stepper in Calibrate Upscaling. The value is a software upscaling color-component factor, not a percentage or brightness in nits.</note>
       </trans-unit>
       <trans-unit id="Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either." xml:space="preserve">
         <source>Can be used to refer to the custom control via CLI. Must be unique and not clash with predefined controls either.</source>
@@ -2328,15 +2543,15 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">تغيير أولوية التفعيل…</target>
         <note>53477 - Display group activation priority action.</note>
       </trans-unit>
-      <trans-unit id="Change DDC audio mute of ${displayEntity} to ${onOff}." xml:space="preserve">
-        <source>Change DDC audio mute of ${displayEntity} to ${onOff}.</source>
-        <target state="translated">تغيير كتم صوت DDC لـ ${displayEntity} إلى ${onOff}.</target>
-        <note>53477 - App Intent summary toggling hardware audio mute through DDC.</note>
+      <trans-unit id="Change audio mute of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Change audio mute of ${displayEntity} to ${onOff}.</source>
+        <target state="translated">تغيير كتم صوت لـ ${displayEntity} إلى ${onOff}.</target>
+        <note>53887 - Summary of the Toggle Mute Shortcuts action; ${displayEntity} is the target display and ${onOff} is the requested mute state. The action uses the configured audio controller rather than only DDC.</note>
       </trans-unit>
-      <trans-unit id="Change DDC audio volume of ${displayEntity} to ${volume}." xml:space="preserve">
-        <source>Change DDC audio volume of ${displayEntity} to ${volume}.</source>
-        <target state="translated">تغيير مستوى صوت DDC لـ ${displayEntity} إلى ${volume}.</target>
-        <note>53477 - App Intent summary setting hardware audio volume through DDC.</note>
+      <trans-unit id="Change audio volume of ${displayEntity} to ${volume}." xml:space="preserve">
+        <source>Change audio volume of ${displayEntity} to ${volume}.</source>
+        <target state="translated">تعيين مستوى صوت الشاشة ${displayEntity} إلى ${volume}.</target>
+        <note>53927 - Shortcuts summary for Set Volume, using the display’s configured main audio controller. Preserve ${displayEntity} (display) and ${volume} (normalized zero-to-one volume) exactly.</note>
       </trans-unit>
       <trans-unit id="Change auto brightness of ${displayEntity} to ${onOff}." xml:space="preserve">
         <source>Change auto brightness of ${displayEntity} to ${onOff}.</source>
@@ -2423,6 +2638,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">لا يؤثّر تغيير هذا الإعداد على الشاشات المعروفة الموجودة. يمكن تغيير طريقة تعريف الشاشة لكل شاشة على حدة ضمن الإعدادات الإضافية الخاصة بها.</target>
         <note>53477 - Default display identification method help; existing devices retain their per-display method.</note>
       </trans-unit>
+      <trans-unit id="Channel trims apply after channel swapping." xml:space="preserve">
+        <source>Channel trims apply after channel swapping.</source>
+        <target state="translated">تُطبّق تعديلات مستوى القنوات بعد تبديل القناتين.</target>
+        <note>53927 - Device Control channel help. Trims adjust the final physical left and right output channels after any channel swap.</note>
+      </trans-unit>
       <trans-unit id="Check HDMI-CEC capability/status without sending discovery messages. Turn this off to use an active CEC probe." xml:space="preserve">
         <source>Check HDMI-CEC capability/status without sending discovery messages. Turn this off to use an active CEC probe.</source>
         <target state="translated">التحقق من إمكانية HDMI-CEC وحالته دون إرسال رسائل اكتشاف. أوقف هذا الخيار لاستخدام فحص CEC النشط.</target>
@@ -2453,10 +2673,25 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">اختر طرق التحكم بجهازك، بما في ذلك وحدات التحكم بالعتاد والتكاملات المخصصة.</target>
         <note>53627 - Help for the Configure Device Control picker in per-display settings. Users can add hardware controllers or Control Integration for custom device controls and event actions.</note>
       </trans-unit>
-      <trans-unit id="Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance." xml:space="preserve">
-        <source>Choose hardware control methods for your device, including supported controllers and custom integrations. If no suitable hardware control option is available, you can still use software image adjustments to dim the screen and adjust its appearance.</source>
-        <target state="translated">اختر طرق التحكم العتادي بجهازك، بما في ذلك وحدات التحكم المدعومة والتكاملات المخصصة. إذا لم يتوفر خيار مناسب للتحكم العتادي، فلا يزال بإمكانك استخدام ضبط الصورة برمجيًا لتعتيم الشاشة وتعديل مظهرها.</target>
-        <note>53658 - Introduction in the Add or Remove Controllers sheet. Hardware control changes the device's own settings; software image adjustments remain an alternative for dimming and changing the displayed image when no hardware controller is suitable.</note>
+      <trans-unit id="Choose hardware and software volume and mute providers independently, or combine hardware and software volume to extend the quiet range." xml:space="preserve">
+        <source>Choose hardware and software volume and mute providers independently, or combine hardware and software volume to extend the quiet range.</source>
+        <target state="translated">اختر مصادر التحكم بالعتاد والبرمجيات لمستوى الصوت والكتم بشكل مستقل، أو ادمج التحكم بالعتاد والبرمجيات بمستوى الصوت لتوسيع النطاق الهادئ.</target>
+        <note>53927 - Help for Enable combined volume control in Configure Software Audio. Explains explicit provider selection and extending quiet volume below the hardware floor.</note>
+      </trans-unit>
+      <trans-unit id="Choose hardware controllers, software audio processing and custom integrations for your device. Software image adjustments are available separately for dimming and appearance." xml:space="preserve">
+        <source>Choose hardware controllers, software audio processing and custom integrations for your device. Software image adjustments are available separately for dimming and appearance.</source>
+        <target state="translated">اختر وحدات التحكم بالعتاد والمعالجة البرمجية للصوت والتكاملات المخصصة لجهازك. تتوفر تعديلات الصورة البرمجية بشكل منفصل للتعتيم والمظهر.</target>
+        <note>53927 - Device Control overview distinguishing device controllers, audio processing and separate software image adjustments.</note>
+      </trans-unit>
+      <trans-unit id="Choose the lowest usable, audible hardware volume. Software attenuation supplies quieter levels." xml:space="preserve">
+        <source>Choose the lowest usable, audible hardware volume. Software attenuation supplies quieter levels.</source>
+        <target state="translated">اختر أدنى مستوى صوت مسموع وقابل للاستخدام في العتاد. يتيح التوهين البرمجي مستويات أهدأ.</target>
+        <note>53927 - Help beneath Minimum Audible Hardware Level. This is the hardware floor below which software attenuation supplies quieter levels.</note>
+      </trans-unit>
+      <trans-unit id="Choose the mute control used with the main volume slider and keyboard commands." xml:space="preserve">
+        <source>Choose the mute control used with the main volume slider and keyboard commands.</source>
+        <target state="translated">اختر وحدة التحكم بالكتم المستخدمة مع شريط الصوت الرئيسي وأوامر لوحة المفاتيح.</target>
+        <note>53927 - Help below Mute method, identifying the primary audio controls that use the selected mute provider.</note>
       </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
@@ -2478,6 +2713,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">كلاسيكي</target>
         <note>53478 - OSD style option in Keyboard/OSD settings for BetterDisplay’s app-drawn pre-Tahoe-style indicator, paired with Traditional OSD. This does not name the app menu presentation style.</note>
       </trans-unit>
+      <trans-unit id="Clear Clipping Indicator" xml:space="preserve">
+        <source>Clear Clipping Indicator</source>
+        <target state="translated">مسح مؤشر قص الصوت</target>
+        <note>53927 - Tooltip and accessibility label for the small reset icon beside the clipping-status line in Software Audio meters. Clears the latched digital output-clipping warning.</note>
+      </trans-unit>
       <trans-unit id="Clear Console" xml:space="preserve">
         <source>Clear Console</source>
         <target state="translated">مسح السجل</target>
@@ -2493,10 +2733,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">مسح حالة القناة المعلّقة</target>
         <note>53477 - CEC transport tunnel pending status cleanup setting.</note>
       </trans-unit>
-      <trans-unit id="Click Here To Allow Sleep" xml:space="preserve">
-        <source>Click Here To Allow Sleep</source>
+      <trans-unit id="Click Here to Allow Sleep" xml:space="preserve">
+        <source>Click Here to Allow Sleep</source>
         <target state="translated">اضغط هنا للسماح بالسكون</target>
-        <note>53477 - Action allowing system sleep.</note>
+        <note>53862 - Pulsating action in display sections and Tools that disables global Prevent Sleep and Prevent Sleep While Connected for every known display, including disconnected displays. The standard toggles remain available for selective changes.</note>
       </trans-unit>
       <trans-unit id="Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one." xml:space="preserve">
         <source>Click to enable/disable a group. Hold ⌥ Option to disable all other groups while enabling only the selected one.</source>
@@ -2507,6 +2747,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Click to show/hide features…</source>
         <target state="translated">اضغط لإظهار/إخفاء الميزات…</target>
         <note>53477 - Feature visibility selector help.</note>
+      </trans-unit>
+      <trans-unit id="Clipping: %@" xml:space="preserve">
+        <source>Clipping: %@</source>
+        <target state="translated">قص الصوت: %@</target>
+        <note>53927 - Software Audio meter status line. %@ is the separately localized Detected or Not detected status; clipping means digital sample overload, and the adjacent reset icon clears the latched warning.</note>
       </trans-unit>
       <trans-unit id="Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened." xml:space="preserve">
         <source>Close the expanded menu item when the app menu is closed. Disabling this preserves the menu layout for the next time the app menu is opened.</source>
@@ -2542,6 +2787,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Color Profile Configuration</source>
         <target state="translated">إعداد ملف الألوان</target>
         <note>53477 - Display color profile configuration section.</note>
+      </trans-unit>
+      <trans-unit id="Color Profile Favorites" xml:space="preserve">
+        <source>Color Profile Favorites</source>
+        <target state="translated">ملفات الألوان المفضّلة</target>
+        <note>53885 - Heading in the custom keyboard shortcuts sheet above five Pro shortcuts that apply the color-profile favorite slot saved for the display under the pointer.</note>
       </trans-unit>
       <trans-unit id="Color Table" xml:space="preserve">
         <source>Color Table</source>
@@ -2613,10 +2863,30 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">دمج التحكم العتادي بالسطوع (إن توفّر) والتعتيم البرمجي ورفع سطوع XDR/HDR في أداة تحكم موحّدة بالسطوع.</target>
         <note>53477 - Combined brightness control setting help.</note>
       </trans-unit>
+      <trans-unit id="Combined" xml:space="preserve">
+        <source>Combined</source>
+        <target state="translated">مدمج</target>
+        <note>53927 - Volume-method picker choice using coordinated hardware volume and software attenuation.</note>
+      </trans-unit>
       <trans-unit id="Combined Brightness" xml:space="preserve">
         <source>Combined Brightness</source>
         <target state="translated">السطوع المدمج</target>
         <note>53477 - Unified hardware/software brightness control title.</note>
+      </trans-unit>
+      <trans-unit id="Combined Volume Control" xml:space="preserve">
+        <source>Combined Volume Control</source>
+        <target state="translated">التحكم المدمج بالصوت</target>
+        <note>53927 - Section title in Configure Software Audio for optional hardware/software volume mapping and mute routing.</note>
+      </trans-unit>
+      <trans-unit id="Combined Volume Control is enabled and manages hardware and software volume and mute controls." xml:space="preserve">
+        <source>Combined Volume Control is enabled and manages hardware and software volume and mute controls.</source>
+        <target state="translated">التحكم المدمج بالصوت مفعّل ويدير عناصر التحكم بالعتاد والبرمجيات لمستوى الصوت والكتم.</target>
+        <note>53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.</note>
+      </trans-unit>
+      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." xml:space="preserve">
+        <source>Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume.</source>
+        <target state="translated">يضيف الوضع المدمج توهينًا برمجيًا دون أدنى مستوى صوت قابل للاستخدام في العتاد، ويتطلب وحدة تحكم يمكنها الإبلاغ عن مستوى صوت العتاد.</target>
+        <note>53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.</note>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
@@ -2648,6 +2918,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">السطوع المدمج غير نشط.</target>
         <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
       </trans-unit>
+      <trans-unit id="Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." xml:space="preserve">
+        <source>Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller.</source>
+        <target state="translated">يتطلب الصوت المدمج وحدة تحكم بالعتاد يمكنها الإبلاغ عن مستوى الصوت الفعلي للجهاز. اختر طريقة أخرى للتحكم بالصوت أو اضبط وحدة تحكم متوافقة بالعتاد.</target>
+        <note>53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.</note>
+      </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
         <target state="translated">تأثير الرسوم</target>
@@ -2677,6 +2952,41 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Compresses the allowed software brightness range between the specified value and 100⁠%, affecting the software component of combined brightness control as well. This helps avoid accidentally setting the software brightness level too low or to zero.</source>
         <target state="translated">يضغط نطاق السطوع البرمجي المسموح به بين القيمة المحدّدة و100⁠%، ويؤثّر ذلك أيضاً على المكوّن البرمجي في التحكم بالسطوع المدمج. يساعد هذا على تفادي خفض السطوع البرمجي كثيراً أو إلى الصفر بالخطأ.</target>
         <note>53477 - Software brightness range compression help; preserve the word joiner in the percentage.</note>
+      </trans-unit>
+      <trans-unit id="Compression can let brief peaks through." xml:space="preserve">
+        <source>Compression can let brief peaks through.</source>
+        <target state="translated">قد يسمح الضغط بمرور ذروات قصيرة.</target>
+        <note>53927 - Device Control help shown only when the audio compressor is enabled. Brief signal transients may pass before the compressor responds.</note>
+      </trans-unit>
+      <trans-unit id="Compressor Attack" xml:space="preserve">
+        <source>Compressor Attack</source>
+        <target state="translated">زمن بدء الضاغط</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Time in milliseconds for gain reduction to engage after the signal crosses the threshold.</note>
+      </trans-unit>
+      <trans-unit id="Compressor Knee" xml:space="preserve">
+        <source>Compressor Knee</source>
+        <target state="translated">عرض ركبة الضاغط</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Width in decibels over which compression changes gradually around the threshold.</note>
+      </trans-unit>
+      <trans-unit id="Compressor Makeup Gain" xml:space="preserve">
+        <source>Compressor Makeup Gain</source>
+        <target state="translated">كسب تعويض الضاغط</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Post-compression gain in decibels compensating for dynamic-range reduction.</note>
+      </trans-unit>
+      <trans-unit id="Compressor Ratio" xml:space="preserve">
+        <source>Compressor Ratio</source>
+        <target state="translated">نسبة الضغط</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Input-to-output level-change ratio above threshold; one applies no compression.</note>
+      </trans-unit>
+      <trans-unit id="Compressor Release" xml:space="preserve">
+        <source>Compressor Release</source>
+        <target state="translated">زمن تحرير الضاغط</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Time in milliseconds for gain reduction to relax after the signal falls below the compression region.</note>
+      </trans-unit>
+      <trans-unit id="Compressor Threshold" xml:space="preserve">
+        <source>Compressor Threshold</source>
+        <target state="translated">عتبة الضاغط</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Stereo-linked signal level in dBFS above which compression begins; dBFS is relative to digital full scale.</note>
       </trans-unit>
       <trans-unit id="Computer monitor" xml:space="preserve">
         <source>Computer monitor</source>
@@ -2753,11 +3063,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">إعداد مصادر الإدخال عبر DDC…</target>
         <note>53477 - DDC input source mapping setup action.</note>
       </trans-unit>
-      <trans-unit id="Configure DDC volume and mute control support under &quot;DDC Controls…&quot; or set up an alternative control method using control integration." xml:space="preserve">
-        <source>Configure DDC volume and mute control support under "DDC Controls…" or set up an alternative control method using control integration.</source>
-        <target state="translated">أعِدّ دعم التحكم بمستوى الصوت والكتم عبر DDC ضمن "أدوات تحكم DDC…" أو أعِدّ طريقة تحكم بديلة عبر تكامل التحكم.</target>
-        <note>53477 - Volume/mute setup help pointing to DDC controls or control integration.</note>
-      </trans-unit>
       <trans-unit id="Configure Device Control" xml:space="preserve">
         <source>Configure Device Control</source>
         <target state="translated">تكوين التحكم بالجهاز</target>
@@ -2813,6 +3118,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">إعداد جهاز Samsung الذكي…</target>
         <note>53477 - Samsung device controller setup action.</note>
       </trans-unit>
+      <trans-unit id="Configure Software Audio…" xml:space="preserve">
+        <source>Configure Software Audio…</source>
+        <target state="translated">إعداد الصوت البرمجي…</target>
+        <note>53927 - Button or menu link opening the Software Audio controller configuration sheet.</note>
+      </trans-unit>
       <trans-unit id="Configure Steps for Range-Based Controls" xml:space="preserve">
         <source>Configure Steps for Range-Based Controls</source>
         <target state="translated">إعداد الخطوات للتحكم بالنطاق</target>
@@ -2853,10 +3163,15 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">إعداد خيارات الدقة لـ %@</target>
         <note>53477 - Display resolution configuration action.</note>
       </trans-unit>
-      <trans-unit id="Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options." xml:space="preserve">
-        <source>Configure settings shared by this display’s controllers. Volume Control lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options.</source>
-        <target state="translated">اضبط الإعدادات المشتركة بين وحدات التحكم بهذه الشاشة. يتيح لك «التحكم بالصوت» ربط جهاز صوت وتخصيص سلوك كتم الصوت وإظهار مؤشر مستوى الصوت أو إخفاءه. توفر «إعدادات التحكم» تفضيلات السطوع وخيارات عامة أخرى للتحكم بالجهاز.</target>
-        <note>53627 - Help above the Volume Control and Device Control Settings buttons below the configured controllers. Volume feedback is the onscreen volume indicator; associating an audio device links its volume control to this display.</note>
+      <trans-unit id="Configure settings shared by this display’s controllers. Audio Device Configuration lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options." xml:space="preserve">
+        <source>Configure settings shared by this display’s controllers. Audio Device Configuration lets you associate an audio device, customize mute behavior and show or hide volume feedback. Control Settings provides brightness preferences and other general device control options.</source>
+        <target state="translated">اضبط الإعدادات المشتركة بين وحدات التحكم بهذه الشاشة. يتيح «إعداد جهاز الصوت» ربط جهاز صوت وتخصيص سلوك الكتم وإظهار مؤشر مستوى الصوت أو إخفاءه. توفر إعدادات التحكم تفضيلات السطوع وخيارات عامة أخرى للتحكم بالجهاز.</target>
+        <note>53927 - Help above the shared configuration buttons in an individual display’s Device Control section. Audio Device Configuration opens audio association, mute-method and OSD settings; Control Settings refers to Device Control Settings.</note>
+      </trans-unit>
+      <trans-unit id="Configure the associated audio device under Audio Device Configuration…. Audio tuning is available independently of volume and mute." xml:space="preserve">
+        <source>Configure the associated audio device under Audio Device Configuration…. Audio tuning is available independently of volume and mute.</source>
+        <target state="translated">اضبط جهاز الصوت المرتبط ضمن «إعداد جهاز الصوت…». يتوفر ضبط الصوت بمعزل عن مستوى الصوت وكتمه.</target>
+        <note>53927 - Shared help below the software volume/mute provision switches. Points to the output association and explains independent audio tuning.</note>
       </trans-unit>
       <trans-unit id="Configure the custom EDID for a display." xml:space="preserve">
         <source>Configure the custom EDID for a display.</source>
@@ -2872,6 +3187,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configure virtual screen/stream rotation - useful for portrait Sidecar or for displays that do not support changing orientation. With Sidecar you can decide whether the USB-C port (lightning connector) should face up or down.</source>
         <target state="translated">إعداد تدوير الشاشة الافتراضية أو البث - مفيد لـ Sidecar بالوضع الطولي أو للشاشات التي لا تدعم تغيير الاتجاه. مع Sidecar يمكنك تحديد ما إذا كان منفذ USB-C ‏(موصّل lightning) متجهاً للأعلى أو للأسفل.</target>
         <note>53477 - Virtual screen/stream rotation help including physical Sidecar connector orientation.</note>
+      </trans-unit>
+      <trans-unit id="Configured" xml:space="preserve">
+        <source>Configured</source>
+        <target state="translated">مُعدّ</target>
+        <note>53927 - Status of the Software Audio Controller row when the controller has been added to this display. Does not imply permission, output availability or an active processing session.</note>
       </trans-unit>
       <trans-unit id="Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported)." xml:space="preserve">
         <source>Configures the min and max volume ranges accepted by the TV. Use the sync button to fetch values from the device (if supported).</source>
@@ -3078,11 +3398,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">قيم أدوات التحكم (التي يديرها متحكّم التكامل أو متحكّمات إضافية أخرى) عند بدء التشغيل</target>
         <note>53477 - Startup restoration policy for controls managed by additional controllers.</note>
       </trans-unit>
-      <trans-unit id="Controller" xml:space="preserve">
-        <source>Controller</source>
-        <target state="translated">وحدة تحكم</target>
-        <note>53477 - Device controller label.</note>
-      </trans-unit>
       <trans-unit id="Copy" xml:space="preserve">
         <source>Copy</source>
         <target state="translated">نسخ</target>
@@ -3092,6 +3407,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Copy Current Device Name</source>
         <target state="translated">نسخ اسم الجهاز الحالي</target>
         <note>53477 - Action copying the currently selected device name.</note>
+      </trans-unit>
+      <trans-unit id="Core Audio process taps require macOS 14.2 or newer." xml:space="preserve">
+        <source>Core Audio process taps require macOS 14.2 or newer.</source>
+        <target state="translated">تتطلب نقاط التقاط صوت العمليات في Core Audio نظام ⁦macOS 14.2⁩ أو أحدث.</target>
+        <note>53927 - Unsupported-system error for the public process-tap API; keep the macOS version number.</note>
       </trans-unit>
       <trans-unit id="Could not connect to the privileged helper." xml:space="preserve">
         <source>Could not connect to the privileged helper.</source>
@@ -3417,6 +3737,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Custom ordering string</source>
         <target state="translated">سلسلة الترتيب المخصصة</target>
         <note>53477 - Custom string used for display ordering.</note>
+      </trans-unit>
+      <trans-unit id="Custom profiles:" xml:space="preserve">
+        <source>Custom profiles:</source>
+        <target state="translated">ملفات مخصصة:</target>
+        <note>53885 - Heading above installed non-system, non-factory ColorSync profiles, including user and shared custom profiles, in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="Custom refresh rate list" xml:space="preserve">
         <source>Custom refresh rate list</source>
@@ -3923,6 +4248,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">اكتشاف قدرات DDC…</target>
         <note>53477 - Action detecting DDC capabilities.</note>
       </trans-unit>
+      <trans-unit id="Detected" xml:space="preserve">
+        <source>Detected</source>
+        <target state="translated">مكتشف</target>
+        <note>53927 - Status beside Clipping in Software Audio meters when digital output clipping has been observed. The warning remains latched until reset.</note>
+      </trans-unit>
       <trans-unit id="Detected MAC address: %@" xml:space="preserve">
         <source>Detected MAC address: %@</source>
         <target state="translated">عنوان MAC المكتشف: %@</target>
@@ -3962,6 +4292,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Device Control</source>
         <target state="translated">التحكم بالجهاز</target>
         <note>53477 - Device control settings section.</note>
+      </trans-unit>
+      <trans-unit id="Device Control Menu" xml:space="preserve">
+        <source>Device Control Menu</source>
+        <target state="translated">قائمة التحكم بالجهاز</target>
+        <note>53927 - Section in Configure Software Audio with four independent menu visibility switches: gain/channels, equalizer/bass/loudness, filters/dynamics/protection and meters. Hiding a section preserves its processing settings.</note>
       </trans-unit>
       <trans-unit id="Device Control Settings" xml:space="preserve">
         <source>Device Control Settings</source>
@@ -4377,6 +4712,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Display Stream Compression (DSC)</source>
         <target state="translated">ضغط تدفق العرض (DSC)</target>
         <note>53477 - Display Stream Compression protocol capability.</note>
+      </trans-unit>
+      <trans-unit id="Display and Group Icons" xml:space="preserve">
+        <source>Display and Group Icons</source>
+        <target state="translated">أيقونات الشاشات والمجموعات</target>
+        <note>53878 - Section title in the scrollable Menu Bar Icon Options sheet for main-display and sole-active-group icon matching.</note>
       </trans-unit>
       <trans-unit id="Display current value in the OSD" xml:space="preserve">
         <source>Display current value in the OSD</source>
@@ -4812,6 +5152,16 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">تفعيل كل الحمايات</target>
         <note>53477 - Action enabling all configuration protections.</note>
       </trans-unit>
+      <trans-unit id="Enable Audio Access" xml:space="preserve">
+        <source>Enable Audio Access</source>
+        <target state="translated">تمكين الوصول إلى الصوت</target>
+        <note>53927 - Button explicitly requesting macOS system-audio capture permission for software processing.</note>
+      </trans-unit>
+      <trans-unit id="Enable Audio Access requests the System Audio Recording Only permission from macOS and starts software audio when access is granted." xml:space="preserve">
+        <source>Enable Audio Access requests the System Audio Recording Only permission from macOS and starts software audio when access is granted.</source>
+        <target state="translated">يطلب «تمكين الوصول إلى الصوت» إذن «تسجيل صوت النظام فقط» من macOS ويبدأ الصوت البرمجي عند منح الوصول.</target>
+        <note>53927 - Help above Enable Audio Access and System Settings in Configure Software Audio, explaining the permission request and subsequent session start.</note>
+      </trans-unit>
       <trans-unit id="Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state." xml:space="preserve">
         <source>Enable CEC tunnel when macOS does not automatically enable the adapter's CEC tunnel-control state.</source>
         <target state="translated">فعّل قناة CEC عندما لا يفعّل macOS تلقائياً حالة التحكم بقناة CEC في المحوّل.</target>
@@ -4826,6 +5176,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Enable Color Table Control</source>
         <target state="translated">تفعيل التحكم بجدول الألوان</target>
         <note>53477 - Color-table control action.</note>
+      </trans-unit>
+      <trans-unit id="Enable Compressor" xml:space="preserve">
+        <source>Enable Compressor</source>
+        <target state="translated">تمكين الضاغط</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Enable stereo-linked dynamic-range compression without lookahead.</note>
       </trans-unit>
       <trans-unit id="Enable Cropping" xml:space="preserve">
         <source>Enable Cropping</source>
@@ -4872,6 +5227,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">تفعيل الإضاءة الدافئة</target>
         <note>53477 - Apple Night Shift feature toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable Noise Gate" xml:space="preserve">
+        <source>Enable Noise Gate</source>
+        <target state="translated">تمكين بوابة الضوضاء</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Enable stereo-linked attenuation below the gate threshold, without lookahead.</note>
+      </trans-unit>
       <trans-unit id="Enable Picture in Picture Window" xml:space="preserve">
         <source>Enable Picture in Picture Window</source>
         <target state="translated">تفعيل نافذة الصورة داخل الصورة</target>
@@ -4901,6 +5261,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Enable color table control</source>
         <target state="translated">تفعيل التحكم بجدول الألوان</target>
         <note>53477 - Color-table control setting.</note>
+      </trans-unit>
+      <trans-unit id="Enable combined volume control" xml:space="preserve">
+        <source>Enable combined volume control</source>
+        <target state="translated">تمكين التحكم المدمج بالصوت</target>
+        <note>53927 - Switch enabling optional volume/mute provider selection and combined volume mapping. Its explicit methods override the hardware-priority preference.</note>
       </trans-unit>
       <trans-unit id="Enable compositor filter layer" xml:space="preserve">
         <source>Enable compositor filter layer</source>
@@ -5017,6 +5382,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">تفعيل المزامنة لمجموعة الشاشات هذه</target>
         <note>53477 - Display group synchronization toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable the software volume or mute control above for the selected method." xml:space="preserve">
+        <source>Enable the software volume or mute control above for the selected method.</source>
+        <target state="translated">فعّل التحكم البرمجي بمستوى الصوت أو كتمه أعلاه للطريقة المحددة.</target>
+        <note>53927 - Notice when the selected audio method needs a software volume or mute provision switch that is currently off.</note>
+      </trans-unit>
       <trans-unit id="Enable this setting if your display supports color table adjustments but the app does not detect the capability. Some DisplayLink devices work better with this enabled." xml:space="preserve">
         <source>Enable this setting if your display supports color table adjustments but the app does not detect the capability. Some DisplayLink devices work better with this enabled.</source>
         <target state="translated">فعّل هذا الإعداد إذا كانت شاشتك تدعم تعديلات جدول الألوان لكن التطبيق لا يكتشف هذه الإمكانية. بعض أجهزة DisplayLink تعمل بشكل أفضل عند تفعيله.</target>
@@ -5037,10 +5407,25 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">مفعّل</target>
         <note>53477 - Enabled state label.</note>
       </trans-unit>
-      <trans-unit id="Enabled (toggle only)" xml:space="preserve">
-        <source>Enabled (toggle only)</source>
-        <target state="translated">مفعّل (تبديل فقط)</target>
-        <note>53477 - Control supports toggling rather than explicit on/off commands.</note>
+      <trans-unit id="Enabled (Combined)" xml:space="preserve">
+        <source>Enabled (Combined)</source>
+        <target state="translated">مفعّل (مدمج)</target>
+        <note>53927 - Availability of a control supplied by Combined Audio in Audio Device Configuration, such as volume combining hardware level and software attenuation.</note>
+      </trans-unit>
+      <trans-unit id="Enabled (Hardware)" xml:space="preserve">
+        <source>Enabled (Hardware)</source>
+        <target state="translated">مفعّل (عتاد)</target>
+        <note>53927 - Volume or mute availability supplied by a hardware controller in Audio Device Configuration. Also covers supported relative volume commands or mute-toggle-only commands.</note>
+      </trans-unit>
+      <trans-unit id="Enabled (Native)" xml:space="preserve">
+        <source>Enabled (Native)</source>
+        <target state="translated">مفعّل (أصلي)</target>
+        <note>53927 - Volume or mute availability supplied by the associated audio device’s native macOS controls in Audio Device Configuration. Each capability is checked separately.</note>
+      </trans-unit>
+      <trans-unit id="Enabled (Software)" xml:space="preserve">
+        <source>Enabled (Software)</source>
+        <target state="translated">مفعّل (برمجي)</target>
+        <note>53927 - Volume or mute availability supplied by the active Software Audio controller in Audio Device Configuration. Each capability is checked separately.</note>
       </trans-unit>
       <trans-unit id="Enables direct XDR brightness upscaling and extended dimming for this display." xml:space="preserve">
         <source>Enables direct XDR brightness upscaling and extended dimming for this display.</source>
@@ -5106,6 +5491,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Enter Service Menu</source>
         <target state="translated">الدخول إلى قائمة الخدمة</target>
         <note>53689 - TV remote action to open the technical service menu.</note>
+      </trans-unit>
+      <trans-unit id="Equalizer, Bass Boost and Loudness" xml:space="preserve">
+        <source>Equalizer, Bass Boost and Loudness</source>
+        <target state="translated">المعادل وتعزيز الجهير وتعويض علو الصوت</target>
+        <note>53927 - Device Control Menu visibility toggle in the Software Audio sheet. Controls the equalizer, additional bass boost and loudness compensation sections without changing processing.</note>
       </trans-unit>
       <trans-unit id="Estimated compressed payload" xml:space="preserve">
         <source>Estimated compressed payload</source>
@@ -5257,6 +5647,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">ملف ألوان المصنع</target>
         <note>53477 - System-created factory display color profile.</note>
       </trans-unit>
+      <trans-unit id="Factory color profile:" xml:space="preserve">
+        <source>Factory color profile:</source>
+        <target state="translated">ملف ألوان المصنع:</target>
+        <note>53885 - Heading above the selected display’s own factory ColorSync profile in the Color Profile menu. This section is hidden when that profile is unavailable.</note>
+      </trans-unit>
       <trans-unit id="Factory color profiles are automatically created by the system whenever a display is connected. Over time, these profiles can accumulate.&#10;&#10;Removing them is safe—macOS will recreate any necessary profiles the next time the display is connected." xml:space="preserve">
         <source>Factory color profiles are automatically created by the system whenever a display is connected. Over time, these profiles can accumulate.
 
@@ -5276,6 +5671,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">مفضّل</target>
         <note>53477 - Resolution slider snap badge followed by a space and the favorite slot number; keep the word within 8 characters so the complete badge stays around 10, using a recognizable abbreviation if needed.</note>
       </trans-unit>
+      <trans-unit id="Favorite color profiles:" xml:space="preserve">
+        <source>Favorite color profiles:</source>
+        <target state="translated">ملفات الألوان المفضّلة:</target>
+        <note>53885 - Heading above the five color-profile favorite slots saved separately for each display in the Color Profile menu. Keep it concise beside the Manage button; “color” may be omitted where the menu context makes it clear.</note>
+      </trans-unit>
       <trans-unit id="Favorite modes:" xml:space="preserve">
         <source>Favorite modes:</source>
         <target state="translated">الأوضاع المفضلة:</target>
@@ -5290,6 +5690,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Feature Availability</source>
         <target state="translated">توفّر الميزة</target>
         <note>53477 - Feature availability section heading.</note>
+      </trans-unit>
+      <trans-unit id="Filled circles indicate occupied slots. You can use the context menu of a color profile item to assign or remove favorites as well." xml:space="preserve">
+        <source>Filled circles indicate occupied slots. You can use the context menu of a color profile item to assign or remove favorites as well.</source>
+        <target state="translated">تشير الدوائر الممتلئة إلى الخانات المشغولة. يمكنك أيضًا استخدام قائمة السياق لعنصر ملف الألوان لتعيين المفضلة أو إزالتها.</target>
+        <note>53885 - Help beneath the five color-profile favorite slots in the Manage panel. Filled numbered circles contain saved profiles; a profile row’s context menu also offers favorite assignment and removal.</note>
       </trans-unit>
       <trans-unit id="Filled circles indicate occupied slots. You can use the context menu of a resolution item to assign or remove favorites as well." xml:space="preserve">
         <source>Filled circles indicate occupied slots. You can use the context menu of a resolution item to assign or remove favorites as well.</source>
@@ -5325,6 +5730,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Flags</source>
         <target state="translated">العلامات</target>
         <note>53477 - Technical bit flags in display information.</note>
+      </trans-unit>
+      <trans-unit id="Flat / Reset EQ" xml:space="preserve">
+        <source>Flat / Reset EQ</source>
+        <target state="translated">مسطح / إعادة تعيين المعادل</target>
+        <note>53927 - Button setting simple bass/treble and all ten-band equalizer gains to zero decibels.</note>
       </trans-unit>
       <trans-unit id="Flip" xml:space="preserve">
         <source>Flip</source>
@@ -5516,6 +5926,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">شدة الأحمر</target>
         <note>53477 - Red channel gain adjustment.</note>
       </trans-unit>
+      <trans-unit id="Gain and channels" xml:space="preserve">
+        <source>Gain and channels</source>
+        <target state="translated">الكسب والقنوات</target>
+        <note>53927 - Device Control Menu visibility toggle in the Software Audio sheet. Hides or shows gain, balance and all channel controls without changing processing.</note>
+      </trans-unit>
       <trans-unit id="Gamma" xml:space="preserve">
         <source>Gamma</source>
         <target state="translated">Gamma</target>
@@ -5536,6 +5951,36 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">Gamma (أحمر)</target>
         <note>53477 - Red channel gamma adjustment.</note>
       </trans-unit>
+      <trans-unit id="Gate Attack" xml:space="preserve">
+        <source>Gate Attack</source>
+        <target state="translated">زمن فتح بوابة الضوضاء</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Time in milliseconds for the gate to open after the signal exceeds threshold.</note>
+      </trans-unit>
+      <trans-unit id="Gate Attenuation" xml:space="preserve">
+        <source>Gate Attenuation</source>
+        <target state="translated">توهين بوابة الضوضاء</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Maximum gain reduction in decibels while the gate is closed.</note>
+      </trans-unit>
+      <trans-unit id="Gate Hold" xml:space="preserve">
+        <source>Gate Hold</source>
+        <target state="translated">زمن إبقاء بوابة الضوضاء مفتوحة</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Duration in milliseconds for an open gate to remain open before closing below the hysteresis band.</note>
+      </trans-unit>
+      <trans-unit id="Gate Hysteresis" xml:space="preserve">
+        <source>Gate Hysteresis</source>
+        <target state="translated">التباطؤ التخلفي لبوابة الضوضاء</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Difference in decibels between the opening and closing thresholds, reducing chatter.</note>
+      </trans-unit>
+      <trans-unit id="Gate Release" xml:space="preserve">
+        <source>Gate Release</source>
+        <target state="translated">زمن إغلاق بوابة الضوضاء</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Time in milliseconds for the gate to close toward its attenuated level.</note>
+      </trans-unit>
+      <trans-unit id="Gate Threshold" xml:space="preserve">
+        <source>Gate Threshold</source>
+        <target state="translated">عتبة بوابة الضوضاء</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Stereo-linked opening threshold in dBFS, relative to digital full scale.</note>
+      </trans-unit>
       <trans-unit id="Gaussian Blur" xml:space="preserve">
         <source>Gaussian Blur</source>
         <target state="translated">تمويه غاوسي</target>
@@ -5546,10 +5991,25 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">الإعدادات العامة</target>
         <note>53477 - General settings section.</note>
       </trans-unit>
+      <trans-unit id="Get ${feature} of ${displayEntity}." xml:space="preserve">
+        <source>Get ${feature} of ${displayEntity}.</source>
+        <target state="translated">جلب ${feature} للشاشة ${displayEntity}.</target>
+        <note>53927 - Shortcuts summary for reading an audio component or tuning parameter. Preserve ${feature}, ${displayEntity} parameter tokens exactly.</note>
+      </trans-unit>
       <trans-unit id="Get %@ Pro" xml:space="preserve">
         <source>Get %@ Pro</source>
         <target state="translated">شراء %@ Pro</target>
         <note>53486 - Purchase Pro from the compact app-menu footer button; %@ is the app name (normally BetterDisplay). Preserve the placeholder and keep the translation short enough for a 180-point button including its icon and padding.</note>
+      </trans-unit>
+      <trans-unit id="Get Audio Adjustment" xml:space="preserve">
+        <source>Get Audio Adjustment</source>
+        <target state="translated">جلب ضبط الصوت</target>
+        <note>53927 - Shortcuts action reading a numeric audio component or tuning value in its native units.</note>
+      </trans-unit>
+      <trans-unit id="Get Audio Option" xml:space="preserve">
+        <source>Get Audio Option</source>
+        <target state="translated">جلب خيار الصوت</target>
+        <note>53927 - Shortcuts action reading a Boolean audio state or tuning option.</note>
       </trans-unit>
       <trans-unit id="Get Custom DDC value" xml:space="preserve">
         <source>Get Custom DDC value</source>
@@ -5610,6 +6070,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Get value of ${rangedFeature} for ${displayEntity}.</source>
         <target state="translated">جلب قيمة ${rangedFeature} لـ ${displayEntity}.</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
+      </trans-unit>
+      <trans-unit id="Give hardware volume and mute control priority when available" xml:space="preserve">
+        <source>Give hardware volume and mute control priority when available</source>
+        <target state="translated">إعطاء الأولوية للتحكم بالعتاد بمستوى الصوت وكتمه عند توفره</target>
+        <note>53927 - Default-on Software Audio preference selecting available hardware/native main volume and mute independently, with software fallback; off prefers software. Disabled while both software capabilities are off or combined routing is enabled.</note>
       </trans-unit>
       <trans-unit id="Gloom" xml:space="preserve">
         <source>Gloom</source>
@@ -5791,10 +6256,25 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">إعادة توصيل قسرية</target>
         <note>53477 - Display event for physical reconnection, distinct from app soft reconnect.</note>
       </trans-unit>
+      <trans-unit id="Hardware" xml:space="preserve">
+        <source>Hardware</source>
+        <target state="translated">العتاد</target>
+        <note>53927 - Audio provider picker choice using the physical device controller, including native, DDC or network volume/mute.</note>
+      </trans-unit>
+      <trans-unit id="Hardware / Software Switchover Point" xml:space="preserve">
+        <source>Hardware / Software Switchover Point</source>
+        <target state="translated">نقطة الانتقال بين العتاد والبرمجيات</target>
+        <note>53927 - Combined Audio mapping slider label, using the same switchover-point terminology as combined brightness. The normalized combined-volume position separates software attenuation from hardware volume when overlap is zero.</note>
+      </trans-unit>
       <trans-unit id="Hardware Control" xml:space="preserve">
         <source>Hardware Control</source>
         <target state="translated">التحكم بالعتاد</target>
         <note>53477 - Hardware control section.</note>
+      </trans-unit>
+      <trans-unit id="Hardware Volume Control" xml:space="preserve">
+        <source>Hardware Volume Control</source>
+        <target state="translated">التحكم بالعتاد بمستوى الصوت</target>
+        <note>53927 - First status row in the Feature Availability block of Audio Device Configuration. Its value names the available hardware-volume controller, including native macOS control, or says Absent when no hardware volume path is available.</note>
       </trans-unit>
       <trans-unit id="Hardware control (Apple)" xml:space="preserve">
         <source>Hardware control (Apple)</source>
@@ -5810,6 +6290,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Hardware control - minimum</source>
         <target state="translated">التحكم بالعتاد - الحد الأدنى</target>
         <note>53477 - Hardware control range lower bound.</note>
+      </trans-unit>
+      <trans-unit id="Hardware mute requires a controller that can set and report the mute state." xml:space="preserve">
+        <source>Hardware mute requires a controller that can set and report the mute state.</source>
+        <target state="translated">يتطلب الكتم بالعتاد وحدة تحكم يمكنها تعيين حالة الكتم والإبلاغ عنها.</target>
+        <note>53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.</note>
       </trans-unit>
       <trans-unit id="Has Home button" xml:space="preserve">
         <source>Has Home button</source>
@@ -5906,6 +6391,26 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">دقة عالية (HiDPI)</target>
         <note>53477 - High pixel density display mode label.</note>
       </trans-unit>
+      <trans-unit id="High-pass Frequency" xml:space="preserve">
+        <source>High-pass Frequency</source>
+        <target state="translated">تردد المرشح الممرر للترددات العالية</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. High-pass filter cutoff in hertz; zero is the neutral default and bypasses this filter; no separate enable switch is used.</note>
+      </trans-unit>
+      <trans-unit id="Higher notch Q rejects a narrower frequency band." xml:space="preserve">
+        <source>Higher notch Q rejects a narrower frequency band.</source>
+        <target state="translated">يرفض معامل Q الأعلى لمرشح رفض النطاق الضيق نطاق تردد أضيق.</target>
+        <note>53927 - Device Control help shown only when the notch filter is enabled. Q is the filter quality factor controlling the width of the rejected frequency band.</note>
+      </trans-unit>
+      <trans-unit id="Higher values give finer control at quieter levels." xml:space="preserve">
+        <source>Higher values give finer control at quieter levels.</source>
+        <target state="translated">تتيح القيم الأعلى تحكمًا أدق في المستويات الهادئة.</target>
+        <note>53927 - Help beneath the combined Software Volume Curve setting, explaining how increasing the exponent changes quiet-volume control.</note>
+      </trans-unit>
+      <trans-unit id="Higher values give finer control at quieter levels. Adjust volume and audio tuning in the display’s Device Control menu." xml:space="preserve">
+        <source>Higher values give finer control at quieter levels. Adjust volume and audio tuning in the display’s Device Control menu.</source>
+        <target state="translated">تتيح القيم الأعلى تحكمًا أدق في المستويات الهادئة. اضبط مستوى الصوت وإعداداته في قائمة التحكم بالجهاز الخاصة بالشاشة.</target>
+        <note>53927 - Help beneath the ordinary Software Volume Curve setting, explaining the effect of its exponent and where playback controls are located.</note>
+      </trans-unit>
       <trans-unit id="Highlight" xml:space="preserve">
         <source>Highlight</source>
         <target state="translated">الإضاءة الساطعة</target>
@@ -5940,6 +6445,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>Hold ⇧ Shift during app startup to engage safe mode and prevent writing saved value. With combined control enabled, DDC brightness might be reapplied even when unselected.</source>
         <target state="translated">اضغط مع الاستمرار على ⇧ Shift أثناء بدء تشغيل التطبيق لتفعيل الوضع الآمن ومنع كتابة القيمة المحفوظة. مع تفعيل التحكم المدمج قد يُعاد تطبيق سطوع DDC حتى لو لم يكن محدداً.</target>
         <note>53555 - Startup safe mode help for combined brightness control.</note>
+      </trans-unit>
+      <trans-unit id="Hold ⇧ Shift for 10× or ⌥ Option for 100× steps." xml:space="preserve">
+        <source>Hold ⇧ Shift for 10× or ⌥ Option for 100× steps.</source>
+        <target state="translated">اضغط مطولًا على ⁦⇧ Shift⁩ لخطوات ⁦10×⁩ أو ⁦⌥ Option⁩ لخطوات ⁦100×⁩.</target>
+        <note>53872 - Hint beside the numeric calibration input below the slider in Calibrate Upscaling. Steps are 0.001 normally, 0.010 with Shift and 0.100 with Option (which takes precedence); keep modifier glyph/name pairs together and the caption concise beside the 76-point field and stepper within a 700-point sheet.</note>
       </trans-unit>
       <trans-unit id="Hold ⇧ Shift for multi-select." xml:space="preserve">
         <source>Hold ⇧ Shift for multi-select.</source>
@@ -6045,11 +6555,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>If disabled, Quit %@ is listed in the Tools menu.</source>
         <target state="translated">عند التعطيل يظهر خيار إنهاء %@ ضمن قائمة الأدوات.</target>
         <note>53477 - Help for quit-button visibility. The quoted command must match Quit %@, with the app name substituted into the placeholder.</note>
-      </trans-unit>
-      <trans-unit id="If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name." xml:space="preserve">
-        <source>If keyboard control is set to the display that matches the current audio device name (set this up under Keyboard settings), this value will be used for audio device matching instead of the display name.</source>
-        <target state="translated">إذا ضُبط التحكم بلوحة المفاتيح على الشاشة التي تطابق اسم جهاز الصوت الحالي (يُضبط ذلك ضمن إعدادات لوحة المفاتيح)، فستُستخدم هذه القيمة لمطابقة جهاز الصوت بدلاً من اسم الشاشة.</target>
-        <note>53477 - Audio device name override help.</note>
       </trans-unit>
       <trans-unit id="If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance." xml:space="preserve">
         <source>If no perfect resolution is available for perfect scale matching, the app will look for the closest resolution in the vicinity within the given tolerance.</source>
@@ -6295,6 +6800,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">مصادر الإدخال…</target>
         <note>53477 - Open input source settings action.</note>
       </trans-unit>
+      <trans-unit id="Input peak / RMS: %@, %@ dBFS" xml:space="preserve">
+        <source>Input peak / RMS: %@, %@ dBFS</source>
+        <target state="translated">ذروة الدخل / RMS: ⁦%@, %@ dBFS⁩</target>
+        <note>53927 - Software Audio input meter with two formatted levels: peak first, then root mean square (RMS), both relative to digital full scale (dBFS). Preserve both %@ placeholders in that order; these are not acoustic sound-pressure levels.</note>
+      </trans-unit>
       <trans-unit id="Input source menu" xml:space="preserve">
         <source>Input source menu</source>
         <target state="translated">قائمة مصادر الإدخال</target>
@@ -6374,6 +6884,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Invert DDC value scale</source>
         <target state="translated">قلب مقياس قيم DDC</target>
         <note>53477 - Reverse hardware control value direction setting.</note>
+      </trans-unit>
+      <trans-unit id="Invert Left Channel Polarity" xml:space="preserve">
+        <source>Invert Left Channel Polarity</source>
+        <target state="translated">عكس قطبية القناة اليسرى</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Reverse the sign of the physical left audio channel, without swapping channels.</note>
+      </trans-unit>
+      <trans-unit id="Invert Right Channel Polarity" xml:space="preserve">
+        <source>Invert Right Channel Polarity</source>
+        <target state="translated">عكس قطبية القناة اليمنى</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Reverse the sign of the physical right audio channel, without swapping channels.</note>
       </trans-unit>
       <trans-unit id="Invert colors" xml:space="preserve">
         <source>Invert colors</source>
@@ -6534,6 +7054,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Left</source>
         <target state="translated">يسار</target>
         <note>53477 - Physical left direction.</note>
+      </trans-unit>
+      <trans-unit id="Left Channel Trim" xml:space="preserve">
+        <source>Left Channel Trim</source>
+        <target state="translated">ضبط مستوى القناة اليسرى</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Gain adjustment in decibels applied to the final physical left channel.</note>
       </trans-unit>
       <trans-unit id="Left of %@" xml:space="preserve">
         <source>Left of %@</source>
@@ -6730,6 +7255,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">العرض المنطقي</target>
         <note>53477 - Logical display width in points.</note>
       </trans-unit>
+      <trans-unit id="Loudness Compensation" xml:space="preserve">
+        <source>Loudness Compensation</source>
+        <target state="translated">تعويض علو الصوت</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Volume-dependent bass/treble contour that approximates perceived loudness at lower logical volume.</note>
+      </trans-unit>
+      <trans-unit id="Low-pass Frequency" xml:space="preserve">
+        <source>Low-pass Frequency</source>
+        <target state="translated">تردد المرشح الممرر للترددات المنخفضة</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Low-pass filter cutoff in hertz; the maximum stored value of 22000 is the neutral default, displayed as infinity and bypassed at every sample rate; there is no separate enable switch.</note>
+      </trans-unit>
       <trans-unit id="Lower brightness for all displays by some amount." xml:space="preserve">
         <source>Lower brightness for all displays by some amount.</source>
         <target state="translated">خفض السطوع لجميع الشاشات بمقدار معيّن.</target>
@@ -6880,6 +7415,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">مطابقة نسبة أبعاد شاشة والارتباط بها</target>
         <note>53477 - Virtual screen association setting.</note>
       </trans-unit>
+      <trans-unit id="Match menu icon with current sole display group's custom icon" xml:space="preserve">
+        <source>Match menu icon with current sole display group's custom icon</source>
+        <target state="translated">مطابقة أيقونة القائمة مع الأيقونة المخصصة لمجموعة الشاشات النشطة الوحيدة حاليًا</target>
+        <note>53878 - Menu Bar Icon Options toggle, available only when main-display icon matching is off. Sole means exactly one active display group, including Default Group; only its valid custom icon is eligible.</note>
+      </trans-unit>
       <trans-unit id="Match menu icon with main display icon" xml:space="preserve">
         <source>Match menu icon with main display icon</source>
         <target state="translated">مطابقة أيقونة القائمة مع أيقونة الشاشة الرئيسية</target>
@@ -6909,11 +7449,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Matches default resolution</source>
         <target state="translated">مطابق للدقة الافتراضية</target>
         <note>53477 - Resolution status label.</note>
-      </trans-unit>
-      <trans-unit id="Matching audio device name" xml:space="preserve">
-        <source>Matching audio device name</source>
-        <target state="translated">مطابقة اسم جهاز الصوت</target>
-        <note>53477 - Audio device name for display matching.</note>
       </trans-unit>
       <trans-unit id="Matching tolerance" xml:space="preserve">
         <source>Matching tolerance</source>
@@ -6949,6 +7484,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Max value: %u</source>
         <target state="translated">أقصى قيمة: %u</target>
         <note>53477 - Maximum control value label.</note>
+      </trans-unit>
+      <trans-unit id="Maximum Hardware Level" xml:space="preserve">
+        <source>Maximum Hardware Level</source>
+        <target state="translated">أقصى مستوى للعتاد</target>
+        <note>53927 - Upper physical-volume limit used by the combined mapping, expressed on a normalized zero-to-one scale.</note>
       </trans-unit>
       <trans-unit id="Maximum Source Bandwidth" xml:space="preserve">
         <source>Maximum Source Bandwidth</source>
@@ -7100,6 +7640,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">تصغير</target>
         <note>53477 - Window minimize action.</note>
       </trans-unit>
+      <trans-unit id="Minimum Audible Hardware Level" xml:space="preserve">
+        <source>Minimum Audible Hardware Level</source>
+        <target state="translated">أدنى مستوى مسموع للعتاد</target>
+        <note>53927 - Usable audible physical-volume floor held while software extends the quiet range; zero is not necessarily audible.</note>
+      </trans-unit>
       <trans-unit id="Minimum HDR luminance" xml:space="preserve">
         <source>Minimum HDR luminance</source>
         <target state="translated">أدنى سطوع HDR</target>
@@ -7210,6 +7755,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">الأوضاع المطابقة للمرشّح الافتراضي:</target>
         <note>53477 - Filtered display mode list heading.</note>
       </trans-unit>
+      <trans-unit id="Mono Audio" xml:space="preserve">
+        <source>Mono Audio</source>
+        <target state="translated">صوت أحادي</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Combine left and right program audio into a mono signal.</note>
+      </trans-unit>
       <trans-unit id="Monochrome" xml:space="preserve">
         <source>Monochrome</source>
         <target state="translated">أحادي اللون</target>
@@ -7219,6 +7769,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>More System Configuration Options</source>
         <target state="translated">المزيد من خيارات إعداد النظام</target>
         <note>53477 - Heading and button label for additional display system configuration options. The button adds its own ellipsis, so do not include one in the translation.</note>
+      </trans-unit>
+      <trans-unit id="More than one audio output matches. Refine the existing association or copy its unique identifier with Option." xml:space="preserve">
+        <source>More than one audio output matches. Refine the existing association or copy its unique identifier with Option.</source>
+        <target state="translated">يطابق أكثر من خرج صوت واحد. حدّد الارتباط الحالي بدقة أكبر أو انسخ المعرّف الفريد باستخدام Option.</target>
+        <note>53927 - Ambiguous output-association warning. Option is the keyboard modifier used with Copy Current Device Name to copy the output UID.</note>
       </trans-unit>
       <trans-unit id="Most displays support hardware controls via the DDC/CI protocol, but features vary. Some, especially TVs and Smart Monitors, may lack DDC support. For the app to function correctly, configure DDC support to match your display’s capabilities. The app can assist if DDC detection is supported." xml:space="preserve">
         <source>Most displays support hardware controls via the DDC/CI protocol, but features vary. Some, especially TVs and Smart Monitors, may lack DDC support. For the app to function correctly, configure DDC support to match your display’s capabilities. The app can assist if DDC detection is supported.</source>
@@ -7310,20 +7865,40 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">كتم الصوت</target>
         <note>53477 - Audio mute control.</note>
       </trans-unit>
+      <trans-unit id="Mute (Hardware)" xml:space="preserve">
+        <source>Mute (Hardware)</source>
+        <target state="translated">كتم الصوت (العتاد)</target>
+        <note>53927 - Explicit readable/settable physical mute component, distinct from routed mute and software mute.</note>
+      </trans-unit>
+      <trans-unit id="Mute (Software)" xml:space="preserve">
+        <source>Mute (Software)</source>
+        <target state="translated">كتم الصوت (برمجي)</target>
+        <note>53927 - Digital mute component supplied by Software Audio, independent of hardware mute.</note>
+      </trans-unit>
       <trans-unit id="Mute Method" xml:space="preserve">
         <source>Mute Method</source>
         <target state="translated">طريقة كتم الصوت</target>
         <note>53627 - Audio settings section for choosing the order of volume changes and mute commands when muting a display.</note>
+      </trans-unit>
+      <trans-unit id="Mute at zero combined volume" xml:space="preserve">
+        <source>Mute at zero combined volume</source>
+        <target state="translated">الكتم عند وصول الصوت المدمج إلى الصفر</target>
+        <note>53927 - Option applying the selected mute provider when a main combined-volume adjustment reaches zero.</note>
       </trans-unit>
       <trans-unit id="Mute control" xml:space="preserve">
         <source>Mute control</source>
         <target state="translated">التحكم بكتم الصوت</target>
         <note>53477 - Mute control setting.</note>
       </trans-unit>
-      <trans-unit id="Mute or unmute display using DDC (if the display is configured so)." xml:space="preserve">
-        <source>Mute or unmute display using DDC (if the display is configured so).</source>
-        <target state="translated">كتم صوت الشاشة أو إلغاء كتمه عبر DDC ‏(إذا كانت الشاشة مُعدّة لذلك).</target>
-        <note>53477 - DDC mute shortcut action description.</note>
+      <trans-unit id="Mute method" xml:space="preserve">
+        <source>Mute method</source>
+        <target state="translated">طريقة كتم الصوت</target>
+        <note>53927 - Picker independently choosing the Hardware or Software mute provider.</note>
+      </trans-unit>
+      <trans-unit id="Mute or unmute display (if the display is configured so)." xml:space="preserve">
+        <source>Mute or unmute display (if the display is configured so).</source>
+        <target state="translated">كتم صوت الشاشة أو إلغاء كتمه ‏(إذا كانت الشاشة مُعدّة لذلك).</target>
+        <note>53887 - Description of the Toggle Mute Shortcuts action. It uses the display’s configured audio controller, including native audio, network controllers and DDC.</note>
       </trans-unit>
       <trans-unit id="NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %@ Configuration Protection." xml:space="preserve">
         <source>NTSC (or other unexposed) refresh rates may not persist after mode-changes unless forced by %1$@ Configuration Protection.</source>
@@ -7550,10 +8125,25 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">لا تدعم جميع الشاشات عمليات التحكم بالشاشة. قد تسبّب هذه العمليات مشاكل مع بعض الشاشات.</target>
         <note>53477 - Hardware screen control compatibility warning.</note>
       </trans-unit>
+      <trans-unit id="Not detected" xml:space="preserve">
+        <source>Not detected</source>
+        <target state="translated">غير مكتشف</target>
+        <note>53927 - Status beside Clipping in Software Audio meters when no clipping warning is latched.</note>
+      </trans-unit>
       <trans-unit id="Notch" xml:space="preserve">
         <source>Notch</source>
         <target state="translated">ارتفاع سطح المكتب الموسّع</target>
         <note>53477 - Display camera notch label.</note>
+      </trans-unit>
+      <trans-unit id="Notch Frequency" xml:space="preserve">
+        <source>Notch Frequency</source>
+        <target state="translated">تردد مرشح رفض النطاق الضيق</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Notch filter center frequency in hertz; zero is the neutral default and bypasses the filter, retaining the separate Q (bandwidth) setting.</note>
+      </trans-unit>
+      <trans-unit id="Notch Q" xml:space="preserve">
+        <source>Notch Q</source>
+        <target state="translated">معامل Q لمرشح رفض النطاق الضيق</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Notch filter quality factor; higher Q means a narrower rejected frequency band.</note>
       </trans-unit>
       <trans-unit id="Note: Additional configuration options will be available at the created virtual screen's settings pane." xml:space="preserve">
         <source>Note: Additional configuration options will be available at the created virtual screen's settings pane.</source>
@@ -7565,10 +8155,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">ملاحظة: تعتمد طريقة عمل اختصارات الدقة والتكبير على إعدادات شريط تمرير الدقة.</target>
         <note>53477 - Resolution keyboard shortcut behavior help.</note>
       </trans-unit>
-      <trans-unit id="Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs." xml:space="preserve">
-        <source>Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Volume Control… for displays that have their own volume OSDs.</source>
-        <target state="translated">ملاحظة: يمكنك تعطيل مؤشّر الصوت (OSD) لكل شاشة على حدة من الإعدادات &gt; الشاشات &gt; (الشاشة) &gt; التحكم بالصوت… وذلك للشاشات التي لها مؤشّر صوت خاص بها.</target>
-        <note>53477 - Per-display volume OSD configuration hint.</note>
+      <trans-unit id="Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Device Control &gt; Audio Device Configuration… for displays that have their own volume OSDs." xml:space="preserve">
+        <source>Note: you can disable volume OSD on a per-display basis under Settings &gt; Displays &gt; (the display) &gt; Device Control &gt; Audio Device Configuration… for displays that have their own volume OSDs.</source>
+        <target state="translated">ملاحظة: يمكنك تعطيل مؤشر الصوت OSD لكل شاشة على حدة ضمن الإعدادات &gt; الشاشات &gt; (الشاشة) &gt; التحكم بالجهاز &gt; إعداد جهاز الصوت… للشاشات التي لديها مؤشر صوت OSD خاص بها.</target>
+        <note>53927 - Keyboard settings hint pointing to the per-display volume OSD switch in the Audio Device Configuration sheet. OSD means the on-screen volume indicator; the parenthesized display is the user’s selected display.</note>
       </trans-unit>
       <trans-unit id="Notification Center" xml:space="preserve">
         <source>Notification Center</source>
@@ -7774,6 +8364,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Outdated License</source>
         <target state="translated">ترخيص قديم</target>
         <note>53486 - App-menu footer status for a license covering an earlier app version, not the current version. Keep the translation short enough for a 180-point button including its icon and padding.</note>
+      </trans-unit>
+      <trans-unit id="Output clipping detected" xml:space="preserve">
+        <source>Output clipping detected</source>
+        <target state="translated">اكتُشف قص في خرج الصوت</target>
+        <note>53927 - Retained manual warning for digital output clipping: samples exceeding the allowed full-scale range. The current meter uses Clipping: %@ with separate detected/not-detected status labels.</note>
+      </trans-unit>
+      <trans-unit id="Output peak / RMS: %@, %@ dBFS" xml:space="preserve">
+        <source>Output peak / RMS: %@, %@ dBFS</source>
+        <target state="translated">ذروة الخرج / RMS: ⁦%@, %@ dBFS⁩</target>
+        <note>53927 - Software Audio output meter with two formatted levels: peak first, then root mean square (RMS), both relative to digital full scale (dBFS). Preserve both %@ placeholders in that order; these are not acoustic sound-pressure levels.</note>
       </trans-unit>
       <trans-unit id="Overlay" xml:space="preserve">
         <source>Overlay</source>
@@ -8150,10 +8750,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">منع دخول المؤشر</target>
         <note>53477 - Prevent pointer from entering a display setting.</note>
       </trans-unit>
+      <trans-unit id="Prevent Sleep" xml:space="preserve">
+        <source>Prevent Sleep</source>
+        <target state="translated">منع السكون</target>
+        <note>53861 - Global menu toggle and keyboard OSD title keeping all displays and the Mac awake during user inactivity, independently of per-display connection preferences. The filled cup icon distinguishes this mode from Prevent Sleep While Connected.</note>
+      </trans-unit>
       <trans-unit id="Prevent Sleep While Connected" xml:space="preserve">
         <source>Prevent Sleep While Connected</source>
         <target state="translated">منع السكون أثناء الاتصال</target>
         <note>53555 - Compact display-management menu toggle preventing system sleep while this display is connected.</note>
+      </trans-unit>
+      <trans-unit id="Prevent Sleep is available under the Displays and Virtual Screens menu when hidden." xml:space="preserve">
+        <source>Prevent Sleep is available under the Displays and Virtual Screens menu when hidden.</source>
+        <target state="translated">يتوفر خيار منع السكون ضمن قائمة الشاشات والشاشات الافتراضية عند إخفائه.</target>
+        <note>53861 - Help beneath the Tools Prevent Sleep visibility selector in Customize App Menu Contents. Hidden moves the toggle into Displays And Virtual Screens; the other visibility choices place it directly beneath System Colors.</note>
       </trans-unit>
       <trans-unit id="Prevent accidental rotation of the internal display." xml:space="preserve">
         <source>Prevent accidental rotation of the internal display.</source>
@@ -8190,6 +8800,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">المتابعة بكتابة EDID</target>
         <note>53477 - Confirm hardware EDID write action.</note>
       </trans-unit>
+      <trans-unit id="Process an associated stereo audio output with software volume, mute and audio tuning. Requires System Audio Recording Only permission." xml:space="preserve">
+        <source>Process an associated stereo audio output with software volume, mute and audio tuning. Requires System Audio Recording Only permission.</source>
+        <target state="translated">معالجة خرج صوت ستيريو مرتبط مع التحكم البرمجي بمستوى الصوت وكتمه وضبطه. يتطلب إذن تسجيل صوت النظام فقط.</target>
+        <note>53927 - Controller-chooser description of Software Audio and its specific macOS system-audio permission requirement.</note>
+      </trans-unit>
       <trans-unit id="Product name" xml:space="preserve">
         <source>Product name</source>
         <target state="translated">اسم المنتج</target>
@@ -8219,6 +8834,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Protocol version</source>
         <target state="translated">إصدار البروتوكول</target>
         <note>53477 - Device control protocol version setting.</note>
+      </trans-unit>
+      <trans-unit id="Provide software mute" xml:space="preserve">
+        <source>Provide software mute</source>
+        <target state="translated">توفير كتم برمجي</target>
+        <note>53927 - Expose software mute independently when software volume provision is off. This switch is hidden and mute stays enabled while software volume is provided.</note>
+      </trans-unit>
+      <trans-unit id="Provide software volume" xml:space="preserve">
+        <source>Provide software volume</source>
+        <target state="translated">توفير تحكم برمجي بمستوى الصوت</target>
+        <note>53927 - Expose software volume together with software mute. Enabling this switch also enables mute and hides the separate mute provision switch.</note>
       </trans-unit>
       <trans-unit id="Provided by EDID" xml:space="preserve">
         <source>Provided by EDID</source>
@@ -8703,7 +9328,7 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Remove from Favorite %lld" xml:space="preserve">
         <source>Remove from Favorite %lld</source>
         <target state="translated">إزالة من المفضلة %lld</target>
-        <note>53477 - Remove mode from numbered favorite slot action.</note>
+        <note>53876 - Removes an assignment from a numbered Display Mode or Color Profile favorite slot without changing the active mode or profile. %lld is the slot number from 1 to 5.</note>
       </trans-unit>
       <trans-unit id="Remove layout protection for %@%@" xml:space="preserve">
         <source>Remove layout protection for %1$@%2$@</source>
@@ -8774,6 +9399,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Reset All Settings</source>
         <target state="translated">إعادة تعيين جميع الإعدادات</target>
         <note>53477 - Reset all app settings action.</note>
+      </trans-unit>
+      <trans-unit id="Reset Audio Tuning" xml:space="preserve">
+        <source>Reset Audio Tuning</source>
+        <target state="translated">إعادة تعيين ضبط الصوت</target>
+        <note>53927 - Reset tuning parameters and return EQ to Simple mode, preserving software volume and mute.</note>
+      </trans-unit>
+      <trans-unit id="Reset Combined Volume Control" xml:space="preserve">
+        <source>Reset Combined Volume Control</source>
+        <target state="translated">إعادة تعيين التحكم المدمج بالصوت</target>
+        <note>53927 - Resets combined volume mapping, provider selection, mute policies and combined control values without disabling Combined Volume Control, removing Software Audio or resetting its tuning.</note>
       </trans-unit>
       <trans-unit id="Reset Default" xml:space="preserve">
         <source>Reset Default</source>
@@ -8930,6 +9565,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">إعادة تشغيل التطبيق…</target>
         <note>53484 - Compact app restart action in advanced app settings and the restart confirmation; the surrounding UI identifies the application.</note>
       </trans-unit>
+      <trans-unit id="Restart Audio Session" xml:space="preserve">
+        <source>Restart Audio Session</source>
+        <target state="translated">إعادة تشغيل جلسة الصوت</target>
+        <note>53927 - Button below the session status in Configure Software Audio. Rebuilds audio processing for the associated output using current settings.</note>
+      </trans-unit>
       <trans-unit id="Restart the app" xml:space="preserve">
         <source>Restart the app</source>
         <target state="translated">إعادة تشغيل التطبيق</target>
@@ -8975,10 +9615,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">استعادة التعديلات غير المتعلقة بالسطوع فقط</target>
         <note>53477 - Saved adjustment restore scope option.</note>
       </trans-unit>
+      <trans-unit id="Restore saved combined position" xml:space="preserve">
+        <source>Restore saved combined position</source>
+        <target state="translated">استعادة موضع الصوت المدمج المحفوظ</target>
+        <note>53927 - Restore a saved combined-slider position using protected hardware/software sequencing at startup or wake.</note>
+      </trans-unit>
       <trans-unit id="Restore the factory EDID for a display." xml:space="preserve">
         <source>Restore the factory EDID for a display.</source>
         <target state="translated">استعادة EDID المصنع لشاشة عرض.</target>
         <note>53477 - Shortcut action description.</note>
+      </trans-unit>
+      <trans-unit id="Restore the saved combined volume after startup or wake. Otherwise, restore the saved hardware volume and mute settings." xml:space="preserve">
+        <source>Restore the saved combined volume after startup or wake. Otherwise, restore the saved hardware volume and mute settings.</source>
+        <target state="translated">استعادة مستوى الصوت المدمج المحفوظ بعد بدء التشغيل أو الاستيقاظ. وإلا، تُستعاد إعدادات صوت العتاد وكتمه المحفوظة.</target>
+        <note>53927 - Help for Restore saved combined position, explaining the two restoration choices.</note>
       </trans-unit>
       <trans-unit id="Resume Stream on Connect" xml:space="preserve">
         <source>Resume Stream on Connect</source>
@@ -9049,6 +9699,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Right</source>
         <target state="translated">يمين</target>
         <note>53477 - Physical right direction.</note>
+      </trans-unit>
+      <trans-unit id="Right Channel Trim" xml:space="preserve">
+        <source>Right Channel Trim</source>
+        <target state="translated">ضبط مستوى القناة اليمنى</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Gain adjustment in decibels applied to the final physical right channel.</note>
       </trans-unit>
       <trans-unit id="Right of %@" xml:space="preserve">
         <source>Right of %@</source>
@@ -9495,10 +10150,30 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">تعيين ${displayEntity} كشاشة رئيسية.</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
       </trans-unit>
+      <trans-unit id="Set ${feature} of ${displayEntity} to ${onOff}." xml:space="preserve">
+        <source>Set ${feature} of ${displayEntity} to ${onOff}.</source>
+        <target state="translated">تعيين ${feature} للشاشة ${displayEntity} إلى ${onOff}.</target>
+        <note>53927 - Shortcuts summary for setting an audio component or tuning parameter. Preserve ${feature}, ${displayEntity}, ${onOff} parameter tokens exactly.</note>
+      </trans-unit>
+      <trans-unit id="Set ${feature} of ${displayEntity} to ${value}." xml:space="preserve">
+        <source>Set ${feature} of ${displayEntity} to ${value}.</source>
+        <target state="translated">تعيين ${feature} للشاشة ${displayEntity} إلى ${value}.</target>
+        <note>53927 - Shortcuts summary for setting an audio component or tuning parameter. Preserve ${feature}, ${displayEntity}, ${value} parameter tokens exactly.</note>
+      </trans-unit>
       <trans-unit id="Set All to Hidden" xml:space="preserve">
         <source>Set All to Hidden</source>
         <target state="translated">تعيين الكل كمخفي</target>
         <note>53477 - Set all menu item visibility values to hidden.</note>
+      </trans-unit>
+      <trans-unit id="Set Audio Adjustment" xml:space="preserve">
+        <source>Set Audio Adjustment</source>
+        <target state="translated">تعيين ضبط الصوت</target>
+        <note>53927 - Shortcuts action setting a numeric audio component or tuning parameter in native units.</note>
+      </trans-unit>
+      <trans-unit id="Set Audio Option" xml:space="preserve">
+        <source>Set Audio Option</source>
+        <target state="translated">تعيين خيار الصوت</target>
+        <note>53927 - Shortcuts action setting a Boolean audio state or tuning option.</note>
       </trans-unit>
       <trans-unit id="Set Brightness" xml:space="preserve">
         <source>Set Brightness</source>
@@ -9509,11 +10184,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Set Brightness for All Displays</source>
         <target state="translated">تعيين السطوع لجميع الشاشات</target>
         <note>53477 - Global brightness shortcut action title.</note>
-      </trans-unit>
-      <trans-unit id="Set DDC Volume" xml:space="preserve">
-        <source>Set DDC Volume</source>
-        <target state="translated">تعيين الصوت عبر DDC</target>
-        <note>53477 - Hardware volume shortcut action title.</note>
       </trans-unit>
       <trans-unit id="Set Default - Auto Calibrate" xml:space="preserve">
         <source>Set Default - Auto Calibrate</source>
@@ -9529,6 +10199,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Set Up Permissions</source>
         <target state="translated">إعداد الصلاحيات</target>
         <note>53486 - Open keyboard-control permission setup from the compact app-menu footer button; keep the translation short enough for a 180-point button including its icon and padding.</note>
+      </trans-unit>
+      <trans-unit id="Set Value…" xml:space="preserve">
+        <source>Set Value…</source>
+        <target state="translated">تعيين القيمة…</target>
+        <note>53927 - Audio slider context-menu action opening precise numeric entry for that parameter, with its original units, bounds and Reset action.</note>
+      </trans-unit>
+      <trans-unit id="Set Volume" xml:space="preserve">
+        <source>Set Volume</source>
+        <target state="translated">تعيين مستوى الصوت</target>
+        <note>53927 - Shortcuts action setting a display volume through its configured audio provider.</note>
       </trans-unit>
       <trans-unit id="Set any adjustment control of a display by a specified offset. The percentage value will be converted to the feature's own specific min-max range." xml:space="preserve">
         <source>Set any adjustment control of a display by a specified offset. The percentage value will be converted to the feature's own specific min-max range.</source>
@@ -9610,10 +10290,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">ضبط عنوان مصدر CEC المنطقي قبل الإرسال ثم استعادة القناع السابق بعده. أوقف هذا الخيار للإرسال المجرّد.</target>
         <note>53477 - CEC tunnel state management help.</note>
       </trans-unit>
-      <trans-unit id="Set the audio volume of a display using DDC to a specified value." xml:space="preserve">
-        <source>Set the audio volume of a display using DDC to a specified value.</source>
-        <target state="translated">ضبط مستوى صوت شاشة عبر DDC على قيمة محدّدة.</target>
-        <note>53477 - Hardware volume shortcut description.</note>
+      <trans-unit id="Set the audio volume of a display using its configured audio controller." xml:space="preserve">
+        <source>Set the audio volume of a display using its configured audio controller.</source>
+        <target state="translated">تعيين مستوى صوت شاشة باستخدام وحدة التحكم بالصوت المُعدّة لها.</target>
+        <note>53927 - Description of the Set Volume Shortcuts action; it follows the display routed volume provider.</note>
       </trans-unit>
       <trans-unit id="Set the brightness of a display to a specified value." xml:space="preserve">
         <source>Set the brightness of a display to a specified value.</source>
@@ -9685,10 +10365,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">تعيين الصوت لأدنى مستوى</target>
         <note>53477 - Mute volume behavior option.</note>
       </trans-unit>
+      <trans-unit id="Sets the hardware volume reached at maximum combined volume." xml:space="preserve">
+        <source>Sets the hardware volume reached at maximum combined volume.</source>
+        <target state="translated">يحدد مستوى صوت العتاد عند أقصى مستوى للصوت المدمج.</target>
+        <note>53927 - Help beneath Maximum Hardware Level, specifying its role at the top of the combined volume scale.</note>
+      </trans-unit>
       <trans-unit id="Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering the heavy PWM range, substituting it with software dimming instead." xml:space="preserve">
         <source>Sets the minimum allowed hardware brightness value (on its own scale) below which software dimming kicks in when using combined brightness control. This setting is useful for those with PWM sensitivity as it prohibits backlight control from entering the heavy PWM range, substituting it with software dimming instead.</source>
         <target state="translated">يحدّد أدنى قيمة مسموح بها للسطوع العتادي (على مقياسه الخاص) التي يبدأ تحتها التعتيم البرمجي عند استخدام التحكم بالسطوع المدمج. هذا الإعداد مفيد لمن لديهم حساسية تجاه PWM لأنه يمنع التحكم بالإضاءة الخلفية من دخول نطاق PWM الكثيف ويستبدله بالتعتيم البرمجي.</target>
         <note>53555 - Combined brightness hardware floor help; PWM is pulse-width modulation of the backlight.</note>
+      </trans-unit>
+      <trans-unit id="Sets the width of the range around the switchover point where hardware and software volume change together." xml:space="preserve">
+        <source>Sets the width of the range around the switchover point where hardware and software volume change together.</source>
+        <target state="translated">يحدد عرض النطاق حول نقطة الانتقال حيث يتغير مستوى صوت العتاد والبرمجيات معًا.</target>
+        <note>53927 - Help beneath Switchover Overlap. Its percentage measures the width of the shared adjustment region on the combined volume scale.</note>
       </trans-unit>
       <trans-unit id="Settings made with the app are protected." xml:space="preserve">
         <source>Settings made with the app are protected.</source>
@@ -9990,6 +10680,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">إظهار شريطي تمرير منفصلين للسطوع العتادي والبرمجي عند تفعيل السطوع المدمج. مفيد للاختبار ولفهم تأثير الشريط المدمج.</target>
         <note>53477 - Combined brightness subslider visibility help.</note>
       </trans-unit>
+      <trans-unit id="Show separate hardware and software volume sliders when combined volume is enabled. This is useful for testing and understanding the effects of the combined slider." xml:space="preserve">
+        <source>Show separate hardware and software volume sliders when combined volume is enabled. This is useful for testing and understanding the effects of the combined slider.</source>
+        <target state="translated">إظهار شريطي مستوى صوت منفصلين للعتاد والبرمجيات عند تمكين الصوت المدمج. يفيد هذا في اختبار تأثيرات الشريط المدمج وفهمها.</target>
+        <note>53927 - Help for Show subsliders for combined volume control. Mirrors the corresponding combined-brightness explanation; this changes menu visibility and preserves audio processing, routing and component values.</note>
+      </trans-unit>
       <trans-unit id="Show slider labels and values" xml:space="preserve">
         <source>Show slider labels and values</source>
         <target state="translated">إظهار تسميات شريط التمرير وقيمه</target>
@@ -10004,6 +10699,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Show subsliders for combined brightness control</source>
         <target state="translated">إظهار أشرطة فرعية للتحكم بالسطوع المدمج</target>
         <note>53477 - Combined brightness subslider setting.</note>
+      </trans-unit>
+      <trans-unit id="Show subsliders for combined volume control" xml:space="preserve">
+        <source>Show subsliders for combined volume control</source>
+        <target state="translated">إظهار أشرطة فرعية للتحكم المدمج بالصوت</target>
+        <note>53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.</note>
       </trans-unit>
       <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
         <source>Show the display or device name before the current value in the rounded OSD.</source>
@@ -10105,6 +10805,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">الانتقال بخطوات 25⁠%</target>
         <note>53477 - Slider snap interval option.</note>
       </trans-unit>
+      <trans-unit id="Soft Clipping" xml:space="preserve">
+        <source>Soft Clipping</source>
+        <target state="translated">قص ناعم</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Optional smooth digital saturation near full scale, without a true-peak or brickwall-limiter guarantee.</note>
+      </trans-unit>
+      <trans-unit id="Soft clipping does not guarantee true-peak protection." xml:space="preserve">
+        <source>Soft clipping does not guarantee true-peak protection.</source>
+        <target state="translated">القص الناعم لا يضمن الحماية من الذروة الحقيقية.</target>
+        <note>53927 - Device Control help shown only when soft clipping is enabled. True peaks include reconstructed peaks between digital samples.</note>
+      </trans-unit>
       <trans-unit id="Soft disconnect" xml:space="preserve">
         <source>Soft disconnect</source>
         <target state="translated">فصل برمجي</target>
@@ -10130,10 +10840,60 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">مفصولة برمجيًا (عبر النظام)</target>
         <note>53477 - System-reported soft connection state.</note>
       </trans-unit>
+      <trans-unit id="Software" xml:space="preserve">
+        <source>Software</source>
+        <target state="translated">البرمجيات</target>
+        <note>53927 - Audio provider picker choice using digital attenuation or mute in the software-processing session.</note>
+      </trans-unit>
+      <trans-unit id="Software Audio" xml:space="preserve">
+        <source>Software Audio</source>
+        <target state="translated">الصوت البرمجي</target>
+        <note>53927 - Name of the optional controller providing digital audio attenuation, mute and tuning for an associated output.</note>
+      </trans-unit>
+      <trans-unit id="Software Audio Controller" xml:space="preserve">
+        <source>Software Audio Controller</source>
+        <target state="translated">وحدة التحكم بالصوت البرمجي</target>
+        <note>53927 - Second status row in Audio Device Configuration. Reports whether the optional Software Audio controller has been added to this display, independently of whether its processing session is active.</note>
+      </trans-unit>
+      <trans-unit id="Software Audio Session" xml:space="preserve">
+        <source>Software Audio Session</source>
+        <target state="translated">جلسة الصوت البرمجي</target>
+        <note>53927 - Heading above the session explanation, categorized status and Restart action in Configure Software Audio. Restart rebuilds audio processing for the associated output.</note>
+      </trans-unit>
+      <trans-unit id="Software Audio does not support this connection type. Try a built-in, USB, HDMI, DisplayPort or Bluetooth audio output." xml:space="preserve">
+        <source>Software Audio does not support this connection type. Try a built-in, USB, HDMI, DisplayPort or Bluetooth audio output.</source>
+        <target state="translated">لا يدعم الصوت البرمجي نوع الاتصال هذا. جرّب خرج صوت مدمجًا أو عبر USB أو HDMI أو DisplayPort أو Bluetooth.</target>
+        <note>53927 - Warning for audio connection types outside Software Audio’s transport allowlist. Built-in, wired and Bluetooth examples are non-exhaustive; format requirements still apply.</note>
+      </trans-unit>
+      <trans-unit id="Software Volume Curve" xml:space="preserve">
+        <source>Software Volume Curve</source>
+        <target state="translated">منحنى الصوت البرمجي</target>
+        <note>53927 - Exponent shaping normalized software attenuation over the slider range; it is not acoustic calibration.</note>
+      </trans-unit>
       <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
         <source>Software XDR/HDR Upscaling and Dimming</source>
         <target state="translated">رفع XDR/HDR والتعتيم البرمجي</target>
         <note>53477 - Software brightness feature section.</note>
+      </trans-unit>
+      <trans-unit id="Software audio is active." xml:space="preserve">
+        <source>Software audio is active.</source>
+        <target state="translated">الصوت البرمجي نشط.</target>
+        <note>53927 - Session status after the audio tap and aggregate output have started successfully.</note>
+      </trans-unit>
+      <trans-unit id="Software audio is disabled." xml:space="preserve">
+        <source>Software audio is disabled.</source>
+        <target state="translated">الصوت البرمجي معطل.</target>
+        <note>53927 - Fallback status when no software-processing session is enabled.</note>
+      </trans-unit>
+      <trans-unit id="Software audio is enabled and waiting for audio processing." xml:space="preserve">
+        <source>Software audio is enabled and waiting for audio processing.</source>
+        <target state="translated">الصوت البرمجي مفعّل وينتظر معالجة الصوت.</target>
+        <note>53927 - Informational status while an enabled Software Audio session waits for an audio stream or processing activation. This is an idle state, not an error; hardware changes still wait for confirmed digital silence.</note>
+      </trans-unit>
+      <trans-unit id="Software audio is suspended during system sleep." xml:space="preserve">
+        <source>Software audio is suspended during system sleep.</source>
+        <target state="translated">الصوت البرمجي معلق أثناء إسبات النظام.</target>
+        <note>53927 - Software Audio status while the system is asleep and its processing session is stopped until wake.</note>
       </trans-unit>
       <trans-unit id="Software control" xml:space="preserve">
         <source>Software control</source>
@@ -10149,6 +10909,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Software dimming gamma adjustment strength</source>
         <target state="translated">قوة ضبط Gamma في التعتيم البرمجي</target>
         <note>53477 - Software dimming gamma strength setting.</note>
+      </trans-unit>
+      <trans-unit id="Software protection could not be established. The hardware request was not sent." xml:space="preserve">
+        <source>Software protection could not be established. The hardware request was not sent.</source>
+        <target state="translated">تعذر إنشاء الحماية البرمجية. لم يُرسل طلب العتاد.</target>
+        <note>53927 - Retained manual coordination error for failure to confirm protective digital silence before a hardware command. The hardware request is withheld.</note>
       </trans-unit>
       <trans-unit id="Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%@' in the app menu first and then activate '%@' in the app menu to use this feature." xml:space="preserve">
         <source>Software upscaling is active while direct control and XDR upscaling is also allowed. Turn off '%1$@' in the app menu first and then activate '%2$@' in the app menu to use this feature.</source>
@@ -10189,6 +10954,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">بعض هذه النسخ غير مستقرة، وقد تحتوي على أخطاء كبيرة أو مزايا تجريبية أو غير مكتملة. لا تتوفر جميع النسخ الداخلية كتحديثات تلقائية.</target>
         <note>53477 - Internal prerelease channel warning.</note>
+      </trans-unit>
+      <trans-unit id="Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." xml:space="preserve">
+        <source>Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active.</source>
+        <target state="translated">تم تخطي بعض إعدادات صوت العتاد أو كتمه المحفوظة لأن وحدة التحكم لا يمكنها الإبلاغ عن حالة الجهاز الفعلية. يظل الصوت البرمجي نشطًا.</target>
+        <note>53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.</note>
       </trans-unit>
       <trans-unit id="Something went wrong…" xml:space="preserve">
         <source>Something went wrong…</source>
@@ -10260,11 +11030,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">حدّد قائمة الشاشات التي لن تتأثر بهذه المزامنة.</target>
         <note>53477 - Synchronization target exclusion list help.</note>
       </trans-unit>
-      <trans-unit id="Specify an audio device that has native volume controls which will be associated with the display." xml:space="preserve">
-        <source>Specify an audio device that has native volume controls which will be associated with the display.</source>
-        <target state="translated">حدّد جهاز صوت يملك تحكماً أصلياً بمستوى الصوت ليُربط بهذه الشاشة.</target>
-        <note>53477 - Associated native audio device selection help.</note>
-      </trans-unit>
       <trans-unit id="Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display." xml:space="preserve">
         <source>Specify what should happen when the app menu on/off switch is pressed. Not all options may be valid for the display.</source>
         <target state="translated">حدّد ما ينبغي أن يحدث عند الضغط على مفتاح التشغيل/الإيقاف في قائمة التطبيق. قد لا تكون جميع الخيارات صالحة لهذه الشاشة.</target>
@@ -10310,6 +11075,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">تشغيل/إيقاف نافذة الصورة داخل الصورة</target>
         <note>53477 - PIP keyboard shortcut action.</note>
       </trans-unit>
+      <trans-unit id="Starting software audio…" xml:space="preserve">
+        <source>Starting software audio…</source>
+        <target state="translated">جارٍ بدء الصوت البرمجي…</target>
+        <note>53927 - Session status while constructing and starting the audio tap and aggregate output.</note>
+      </trans-unit>
+      <trans-unit id="Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
+        <source>Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
+        <target state="translated">يكتم بدء التشغيل والاسترداد المعالجة حتى تُؤكَّد إعدادات العتاد المحفوظة. تعيد «إعادة تشغيل جلسة الصوت» بناء المعالجة وقد تستعيد مستوى الصوت الأصلي للجهاز لفترة وجيزة.</target>
+        <note>53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.</note>
+      </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
         <target state="translated">الحالة</target>
@@ -10319,6 +11094,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>State is processed from the response and matched to the specified expected return contents directly or as regular expressions.</source>
         <target state="translated">تُستخلص الحالة من الاستجابة وتُطابَق مع المحتوى المتوقّع المحدّد مباشرةً أو عبر تعبيرات نمطية.</target>
         <note>53477 - Integration response state parsing help.</note>
+      </trans-unit>
+      <trans-unit id="Status Icons" xml:space="preserve">
+        <source>Status Icons</source>
+        <target state="translated">أيقونات الحالة</target>
+        <note>53878 - Section title in the scrollable Menu Bar Icon Options sheet for the alternate sleep-prevention and paused-stream indicators.</note>
       </trans-unit>
       <trans-unit id="Status: Outdated License" xml:space="preserve">
         <source>Status: Outdated License</source>
@@ -10340,6 +11120,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">الحالة: بلا ترخيص، انتهت التجربة</target>
         <note>53477 - License status label.</note>
       </trans-unit>
+      <trans-unit id="Stereo Width" xml:space="preserve">
+        <source>Stereo Width</source>
+        <target state="translated">اتساع الستيريو</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Scale the side component of stereo audio; zero is mono, one preserves width and larger values widen the image.</note>
+      </trans-unit>
       <trans-unit id="Stop Mirroring" xml:space="preserve">
         <source>Stop Mirroring</source>
         <target state="translated">إيقاف المحاكاة</target>
@@ -10354,6 +11139,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Stop all full screen streams</source>
         <target state="translated">إيقاف جميع عمليات بث ملء الشاشة</target>
         <note>53477 - Stop all fullscreen streams action.</note>
+      </trans-unit>
+      <trans-unit id="Stopping or restarting software audio may restore the audio device’s original volume." xml:space="preserve">
+        <source>Stopping or restarting software audio may restore the audio device’s original volume.</source>
+        <target state="translated">قد تؤدي إعادة تشغيل الصوت البرمجي أو إيقافه إلى استعادة مستوى الصوت الأصلي للجهاز.</target>
+        <note>53927 - Software Audio card notice about the physical output level when processing stops or restarts.</note>
       </trans-unit>
       <trans-unit id="Stream" xml:space="preserve">
         <source>Stream</source>
@@ -10460,6 +11250,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">تعليق التعديلات (عدا السطوع)</target>
         <note>53477 - Suspend image adjustments except brightness option.</note>
       </trans-unit>
+      <trans-unit id="Swap Audio Channels" xml:space="preserve">
+        <source>Swap Audio Channels</source>
+        <target state="translated">تبديل قناتي الصوت</target>
+        <note>53927 - Shared title for a Device Control menu switch and a Shortcuts audio option; keep it concise. Exchange the left and right program channels before final physical-channel trims.</note>
+      </trans-unit>
       <trans-unit id="Swap identical displays" xml:space="preserve">
         <source>Swap identical displays</source>
         <target state="translated">تبديل الشاشات المتطابقة</target>
@@ -10494,6 +11289,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Switch to this display mode</source>
         <target state="translated">التبديل إلى وضع العرض هذا</target>
         <note>53477 - Display mode selection action.</note>
+      </trans-unit>
+      <trans-unit id="Switchover Overlap" xml:space="preserve">
+        <source>Switchover Overlap</source>
+        <target state="translated">تداخل الانتقال</target>
+        <note>53927 - Width of the combined-volume region around the switchover point where hardware and software levels change together. Zero overlap keeps their adjustment ranges separate.</note>
       </trans-unit>
       <trans-unit id="Symbol name" xml:space="preserve">
         <source>Symbol name</source>
@@ -10575,6 +11375,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">مزامنة فروق القيم (delta) من المصادر إلى الأهداف. يساعد هذا في الحفاظ على الفروق الأولية بين المصدر والهدف (حتى بلوغ الحد الأدنى أو الأقصى). عند تعطيله تُزامَن القيم المطلقة.</target>
         <note>53477 - Delta versus absolute synchronization help.</note>
       </trans-unit>
+      <trans-unit id="System Audio Recording Only permission is required. Use Enable Audio Access in Configure Software Audio…." xml:space="preserve">
+        <source>System Audio Recording Only permission is required. Use Enable Audio Access in Configure Software Audio….</source>
+        <target state="translated">يلزم إذن «تسجيل صوت النظام فقط». استخدم «تمكين الوصول إلى الصوت» في «إعداد الصوت البرمجي…».</target>
+        <note>53927 - Permission-required software audio status, pointing to the action that requests access and starts processing.</note>
+      </trans-unit>
       <trans-unit id="System Color Profile" xml:space="preserve">
         <source>System Color Profile</source>
         <target state="translated">ملف ألوان النظام</target>
@@ -10595,6 +11400,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">OSD النظام</target>
         <note>53477 - Native system OSD option.</note>
       </trans-unit>
+      <trans-unit id="System Settings…" xml:space="preserve">
+        <source>System Settings…</source>
+        <target state="translated">إعدادات النظام…</target>
+        <note>53927 - Button opening the macOS privacy settings for system-audio recording permission.</note>
+      </trans-unit>
       <trans-unit id="System UUID match" xml:space="preserve">
         <source>System UUID match</source>
         <target state="translated">مطابقة مُعرّف النظام</target>
@@ -10604,6 +11414,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>System UUID match (recommended)</source>
         <target state="translated">مطابقة مُعرّف النظام (موصى به)</target>
         <note>53477 - Recommended display identification method.</note>
+      </trans-unit>
+      <trans-unit id="System profiles:" xml:space="preserve">
+        <source>System profiles:</source>
+        <target state="translated">ملفات النظام:</target>
+        <note>53885 - Heading above installed system ColorSync profiles other than factory profiles in the Color Profile menu.</note>
       </trans-unit>
       <trans-unit id="System sleep" xml:space="preserve">
         <source>System sleep</source>
@@ -10725,11 +11540,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">يستطيع التطبيق توصيل شاشة افتراضية وفصلها تلقائياً بحسب توفر الشاشة أو الشاشات المرتبطة بها. كما يستطيع بدء المحاكاة أو البث تلقائياً أو اتّباع اتجاه الشاشة المرتبطة.</target>
         <note>53477 - Virtual screen display association help.</note>
       </trans-unit>
-      <trans-unit id="The app controls the associated audio device specified below using the native audio control methods provided by macOS." xml:space="preserve">
-        <source>The app controls the associated audio device specified below using the native audio control methods provided by macOS.</source>
-        <target state="translated">يتحكم التطبيق بجهاز الصوت المرتبط المحدّد أدناه باستخدام طرق التحكم بالصوت الأصلية في macOS.</target>
-        <note>53477 - Native audio device integration help.</note>
-      </trans-unit>
       <trans-unit id="The app creates input commands from HDMI 1 up to the selected number." xml:space="preserve">
         <source>The app creates input commands from HDMI 1 up to the selected number.</source>
         <target state="translated">ينشئ التطبيق أوامر المداخل ابتداءً من HDMI 1 وحتى الرقم المحدّد.</target>
@@ -10823,6 +11633,36 @@ This operation does not reset the display itself.</source>
 لا تعيد هذه العملية ضبط الشاشة نفسها.</target>
         <note>53477 - Reset app DDC configuration confirmation.</note>
       </trans-unit>
+      <trans-unit id="The associated audio output is unavailable." xml:space="preserve">
+        <source>The associated audio output is unavailable.</source>
+        <target state="translated">خرج الصوت المرتبط غير متاح.</target>
+        <note>53927 - Resolution status when no usable output matches the display existing audio association.</note>
+      </trans-unit>
+      <trans-unit id="The associated device is used for volume, mute and effects provided by the software audio controller. It also identifies the output for native hardware audio control when enabled and for keyboard audio-device matching." xml:space="preserve">
+        <source>The associated device is used for volume, mute and effects provided by the software audio controller. It also identifies the output for native hardware audio control when enabled and for keyboard audio-device matching.</source>
+        <target state="translated">يُستخدم الجهاز المرتبط لمستوى الصوت والكتم والتأثيرات التي توفرها وحدة التحكم بالصوت البرمجي. ويحدد الخرج أيضًا للتحكم الأصلي بصوت العتاد عند تمكينه ولمطابقة جهاز الصوت مع لوحة المفاتيح.</target>
+        <note>53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.</note>
+      </trans-unit>
+      <trans-unit id="The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." xml:space="preserve">
+        <source>The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session.</source>
+        <target state="translated">لم يؤكد جهاز الصوت التغيير. يبقى الصوت مكتومًا. تحقق من الاتصال وأعد تشغيل جلسة الصوت.</target>
+        <note>53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.</note>
+      </trans-unit>
+      <trans-unit id="The audio device did not confirm the change. Check its connection and try again." xml:space="preserve">
+        <source>The audio device did not confirm the change. Check its connection and try again.</source>
+        <target state="translated">لم يؤكد جهاز الصوت التغيير. تحقق من الاتصال وحاول مجددًا.</target>
+        <note>53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.</note>
+      </trans-unit>
+      <trans-unit id="The audio device or its format changed. Restart software audio to resume processing." xml:space="preserve">
+        <source>The audio device or its format changed. Restart software audio to resume processing.</source>
+        <target state="translated">تغير جهاز الصوت أو تنسيقه. أعد تشغيل الصوت البرمجي لاستئناف المعالجة.</target>
+        <note>53927 - Recovery status after the associated audio output or its format changed. Restart refers to the audio-session action in Configure Software Audio.</note>
+      </trans-unit>
+      <trans-unit id="The audio session could not be released safely. Quit and reopen BetterDisplay to restore software audio." xml:space="preserve">
+        <source>The audio session could not be released safely. Quit and reopen BetterDisplay to restore software audio.</source>
+        <target state="translated">تعذر تحرير جلسة الصوت بأمان. أنهِ BetterDisplay وافتحه مجددًا لاستعادة الصوت البرمجي.</target>
+        <note>53927 - Audio teardown failure that quarantines the output until the app process ends. This exceptional failure requires manually reopening BetterDisplay, rather than using the session Restart button.</note>
+      </trans-unit>
       <trans-unit id="The broadcast IP address for the WOL/WoWLAN magic packet. If left empty, the app broadcasts to 255.255.255.255, the local directed broadcast address (if it can be determined) and unicast to the device IP address." xml:space="preserve">
         <source>The broadcast IP address for the WOL/WoWLAN magic packet. If left empty, the app broadcasts to 255.255.255.255, the local directed broadcast address (if it can be determined) and unicast to the device IP address.</source>
         <target state="translated">عنوان IP للبث المستخدم في حزمة WOL/WoWLAN السحرية. إذا تُرك فارغاً فسيبث التطبيق إلى 255.255.255.255، وإلى عنوان البث الموجّه المحلي (إن أمكن تحديده)، وإلى عنوان IP الخاص بالجهاز مباشرةً.</target>
@@ -10902,6 +11742,26 @@ This operation does not reset the display itself.</source>
         <source>The duplicated group will be disabled by default.</source>
         <target state="translated">ستكون المجموعة المنسوخة معطّلة افتراضياً.</target>
         <note>53477 - Duplicate display group action help.</note>
+      </trans-unit>
+      <trans-unit id="The hardware mute provider does not support device readback. No mute request was sent." xml:space="preserve">
+        <source>The hardware mute provider does not support device readback. No mute request was sent.</source>
+        <target state="translated">لا تدعم وحدة التحكم بكتم العتاد قراءة حالة الجهاز. لم يُرسل طلب كتم.</target>
+        <note>53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.</note>
+      </trans-unit>
+      <trans-unit id="The hardware mute state could not be confirmed. Software protection remains active." xml:space="preserve">
+        <source>The hardware mute state could not be confirmed. Software protection remains active.</source>
+        <target state="translated">تعذر تأكيد حالة كتم العتاد. تظل الحماية البرمجية نشطة.</target>
+        <note>53927 - Retained manual hardware-mute confirmation error; software protection means retaining digital silence during the failed operation.</note>
+      </trans-unit>
+      <trans-unit id="The hardware volume provider does not support device readback. No hardware request was sent." xml:space="preserve">
+        <source>The hardware volume provider does not support device readback. No hardware request was sent.</source>
+        <target state="translated">لا تدعم وحدة التحكم بصوت العتاد قراءة حالة الجهاز. لم يُرسل طلب عتاد.</target>
+        <note>53927 - Retained manual warning for a hardware volume provider that cannot report actual device state. The protected operation rejects the request before sending a hardware command.</note>
+      </trans-unit>
+      <trans-unit id="The hardware volume request could not be confirmed. Software protection remains active. Reconnect or retry." xml:space="preserve">
+        <source>The hardware volume request could not be confirmed. Software protection remains active. Reconnect or retry.</source>
+        <target state="translated">تعذر تأكيد طلب مستوى صوت العتاد. تظل الحماية البرمجية نشطة. أعد الاتصال أو حاول مجددًا.</target>
+        <note>53927 - Retained manual hardware-volume confirmation error; digital protective silence is retained until recovery. Reconnect refers to the device connection.</note>
       </trans-unit>
       <trans-unit id="The imported LUT and its configuration will be removed." xml:space="preserve">
         <source>The imported LUT and its configuration will be removed.</source>
@@ -11031,6 +11891,21 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">لا تسري الحماية ما لم يُحدَّد الموضع النسبي.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
+      </trans-unit>
+      <trans-unit id="The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." xml:space="preserve">
+        <source>The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller.</source>
+        <target state="translated">لا يمكن لوحدة التحكم بالعتاد المحددة الإبلاغ عن حالة كتم الجهاز. لم يتغير كتم العتاد. اختر الكتم البرمجي أو اضبط وحدة تحكم أخرى لكتم العتاد.</target>
+        <note>53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.</note>
+      </trans-unit>
+      <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
+        <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
+        <target state="translated">طريقة الكتم المحددة غير متاحة. فعّل الكتم البرمجي أو اضبط كتم العتاد ضمن التحكم بالجهاز.</target>
+        <note>53927 - Unavailable selected mute provider warning. Software and hardware mute capabilities are independent of volume routing.</note>
+      </trans-unit>
+      <trans-unit id="The selected volume method is unavailable. Enable the required software volume capability or configure hardware volume in Device Control." xml:space="preserve">
+        <source>The selected volume method is unavailable. Enable the required software volume capability or configure hardware volume in Device Control.</source>
+        <target state="translated">طريقة التحكم بالصوت المحددة غير متاحة. فعّل إمكانية التحكم البرمجي بالصوت المطلوبة أو اضبط صوت العتاد ضمن التحكم بالجهاز.</target>
+        <note>53927 - Unavailable selected volume provider warning. Directs users to software volume provision or hardware volume configuration.</note>
       </trans-unit>
       <trans-unit id="The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well." xml:space="preserve">
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well.</source>
@@ -11371,6 +12246,11 @@ Please note that previously stored custom display configurations won't be remove
 لاحظ أن إعدادات الشاشات المخصّصة المحفوظة سابقاً لن تُزال من النظام!</target>
         <note>53477 - Reset app settings confirmation.</note>
       </trans-unit>
+      <trans-unit id="This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings." xml:space="preserve">
+        <source>This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings.</source>
+        <target state="translated">يحدد هذا التحكم الأصلي في macOS بمستوى الصوت والكتم كطريقة التحكم بالعتاد لجهاز الصوت المرتبط. تظل عناصر التحكم الأصلية غير المدعومة غير متاحة دون الرجوع إلى وحدة تحكم أخرى بالعتاد. يختار الصوت البرمجي عناصر التحكم الرئيسية بمستوى الصوت والكتم باستخدام تفضيل أولوية العتاد أو إعدادات التحكم المدمج بالصوت.</target>
+        <note>53927 - Help for native hardware audio association in Audio Device Configuration. Native controls are the hardware component, while Software Audio priority or explicit combined methods select the main providers.</note>
+      </trans-unit>
       <trans-unit id="This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100⁠%." xml:space="preserve">
         <source>This setting applies to screens/displays that are scalable (virtual screens, real displays with flexible scaling enabled). Default resolution is 100⁠%.</source>
         <target state="translated">ينطبق هذا الإعداد على الشاشات القابلة للتحجيم (الشاشات الافتراضية والشاشات الحقيقية التي فُعّل فيها التحجيم المرن). الدقة الافتراضية هي 100⁠%.</target>
@@ -11530,11 +12410,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">تبديل عنصر التحكم</target>
         <note>53477 - Boolean control toggle action.</note>
       </trans-unit>
-      <trans-unit id="Toggle DDC Mute" xml:space="preserve">
-        <source>Toggle DDC Mute</source>
-        <target state="translated">تبديل كتم الصوت عبر DDC</target>
-        <note>53477 - DDC mute toggle shortcut.</note>
-      </trans-unit>
       <trans-unit id="Toggle Dark Mode" xml:space="preserve">
         <source>Toggle Dark Mode</source>
         <target state="translated">تبديل النمط الداكن</target>
@@ -11584,6 +12459,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Toggle Picture in Picture</source>
         <target state="translated">تبديل الصورة داخل الصورة</target>
         <note>53477 - PIP toggle shortcut.</note>
+      </trans-unit>
+      <trans-unit id="Toggle Prevent Sleep" xml:space="preserve">
+        <source>Toggle Prevent Sleep</source>
+        <target state="translated">تبديل منع السكون</target>
+        <note>53861 - Keyboard shortcut label in Display Miscellaneous for toggling the global Prevent Sleep mode. It affects all displays and the Mac, rather than only the display under the pointer.</note>
       </trans-unit>
       <trans-unit id="Toggle Screen Stream" xml:space="preserve">
         <source>Toggle Screen Stream</source>
@@ -11739,6 +12619,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Treat this display (identified as Apple-made) as generic and allow DDC control to be enabled. Might cause permanent issues on some older Apple displays!</source>
         <target state="translated">التعامل مع هذه الشاشة (المعرّفة على أنها من صنع Apple) كشاشة عامة والسماح بتفعيل التحكم عبر DDC. قد يسبّب ذلك مشاكل دائمة في بعض شاشات Apple الأقدم!</target>
         <note>53477 - Apple display DDC override warning.</note>
+      </trans-unit>
+      <trans-unit id="Treble" xml:space="preserve">
+        <source>Treble</source>
+        <target state="translated">الترددات العالية</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. High-frequency shelf gain in decibels in the simple audio equalizer.</note>
       </trans-unit>
       <trans-unit id="True Tone turned off by HDR toggle" xml:space="preserve">
         <source>True Tone turned off by HDR toggle</source>
@@ -11950,6 +12835,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">تعذّر عرض بيانات EDID.</target>
         <note>53688 - Display identification data presentation failure.</note>
       </trans-unit>
+      <trans-unit id="Unable to start software audio. Use Restart Audio Session to try again." xml:space="preserve">
+        <source>Unable to start software audio. Use Restart Audio Session to try again.</source>
+        <target state="translated">تعذر بدء الصوت البرمجي. استخدم «إعادة تشغيل جلسة الصوت» للمحاولة مجددًا.</target>
+        <note>53927 - Shared recovery message for macOS audio startup, readiness and process-exclusion failures. The exact cause and any macOS error code are logged separately.</note>
+      </trans-unit>
       <trans-unit id="Unavailable" xml:space="preserve">
         <source>Unavailable</source>
         <target state="translated">غير متاح</target>
@@ -12070,10 +12960,20 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">طريقة إلغاء الكتم</target>
         <note>53627 - Audio settings section for choosing the order of volume changes and unmute commands when restoring sound.</note>
       </trans-unit>
+      <trans-unit id="Unmute on main-volume adjustment" xml:space="preserve">
+        <source>Unmute on main-volume adjustment</source>
+        <target state="translated">إلغاء الكتم عند ضبط مستوى الصوت الرئيسي</target>
+        <note>53927 - Option releasing the selected mute when the routed main volume is adjusted above zero.</note>
+      </trans-unit>
       <trans-unit id="Unmute only (except for volume change induced unmute, when set volume as well)" xml:space="preserve">
         <source>Unmute only (except for volume change induced unmute, when set volume as well)</source>
         <target state="translated">إلغاء الكتم فقط (باستثناء إلغاء الكتم الناتج عن تغيير مستوى الصوت، فيُضبط مستوى الصوت أيضاً)</target>
         <note>53477 - Unmute behavior option.</note>
+      </trans-unit>
+      <trans-unit id="Unmute when adjusting the main volume to a level above zero." xml:space="preserve">
+        <source>Unmute when adjusting the main volume to a level above zero.</source>
+        <target state="translated">إلغاء الكتم عند ضبط مستوى الصوت الرئيسي إلى قيمة أعلى من الصفر.</target>
+        <note>53927 - Help for Unmute on main-volume adjustment. Any user volume adjustment to a nonzero level can trigger the selected unmute policy.</note>
       </trans-unit>
       <trans-unit id="Unpause Streaming" xml:space="preserve">
         <source>Unpause Streaming</source>
@@ -12099,6 +12999,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Unsupported</source>
         <target state="translated">غير مدعوم</target>
         <note>53477 - Unsupported capability state.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session." xml:space="preserve">
+        <source>Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session.</source>
+        <target state="translated">تنسيق صوت غير مدعوم. تحقق من الخرج في «إعداد صوت MIDI»، ثم أعد تشغيل جلسة الصوت.</target>
+        <note>53927 - Shared setup/runtime warning for unsupported software-audio formats. Detailed stereo/PCM requirements and callback diagnostics are logged; Audio MIDI Setup is the macOS utility for audio-device formats.</note>
       </trans-unit>
       <trans-unit id="Unsupported by the display" xml:space="preserve">
         <source>Unsupported by the display</source>
@@ -12155,6 +13060,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">استخدام %@ كأيقونة قائمة عندما يمنع التطبيق سكون الشاشة</target>
         <note>53477 - Alternate menu icon setting; placeholder is icon preview.</note>
       </trans-unit>
+      <trans-unit id="Use 10-band EQ" xml:space="preserve">
+        <source>Use 10-band EQ</source>
+        <target state="translated">استخدام معادل ذي 10 نطاقات</target>
+        <note>53927 - Switch between simple bass/treble EQ and ten individually adjustable frequency bands. Located below the selected sliders, immediately above Flat / Reset EQ; each mode keeps separate settings.</note>
+      </trans-unit>
       <trans-unit id="Use Admin Prompt Instead" xml:space="preserve">
         <source>Use Admin Prompt Instead</source>
         <target state="translated">استخدام مصادقة المسؤول بدلاً من ذلك</target>
@@ -12164,6 +13074,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Use Compositor Filter</source>
         <target state="translated">استخدام مرشّح التركيب</target>
         <note>53477 - Use display compositor image filter option.</note>
+      </trans-unit>
+      <trans-unit id="Use Enable Audio Access in Configure Software Audio… to request audio recording permission." xml:space="preserve">
+        <source>Use Enable Audio Access in Configure Software Audio… to request audio recording permission.</source>
+        <target state="translated">استخدم «تمكين الوصول إلى الصوت» في «إعداد الصوت البرمجي…» لطلب إذن تسجيل الصوت.</target>
+        <note>53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -12190,6 +13105,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">استخدم أيقونة قائمة التطبيق أعلاه للفتح والإغلاق.</target>
         <note>53477 - App menu first launch hint.</note>
       </trans-unit>
+      <trans-unit id="Use available hardware or native controls for main volume and mute, with software as fallback. Turn this off if hardware control does not work properly." xml:space="preserve">
+        <source>Use available hardware or native controls for main volume and mute, with software as fallback. Turn this off if hardware control does not work properly.</source>
+        <target state="translated">استخدم عناصر التحكم المتاحة بالعتاد أو الأصلية لمستوى الصوت الرئيسي والكتم، مع البرمجيات كخيار احتياطي. أوقف هذا إذا لم يعمل التحكم بالعتاد بشكل صحيح.</target>
+        <note>53927 - Help for hardware priority in Configure Software Audio. Applies independently to available volume and mute capabilities; the separate combined-mode notice explains its override.</note>
+      </trans-unit>
       <trans-unit id="Use custom resolution list" xml:space="preserve">
         <source>Use custom resolution list</source>
         <target state="translated">استخدام قائمة دقة مخصصة</target>
@@ -12215,6 +13135,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">استخدام طرق الكتم وإلغائه</target>
         <note>53477 - Device mute command method setting.</note>
       </trans-unit>
+      <trans-unit id="Use native volume and mute control for the associated audio device" xml:space="preserve">
+        <source>Use native volume and mute control for the associated audio device</source>
+        <target state="translated">استخدام التحكم الأصلي بمستوى الصوت وكتمه لجهاز الصوت المرتبط</target>
+        <note>53927 - Per-display preference above the Associated audio device field. Selects native macOS controls as the hardware volume/mute component; Software Audio or Combined Audio can still supply the main controls.</note>
+      </trans-unit>
       <trans-unit id="Use passive connection status check" xml:space="preserve">
         <source>Use passive connection status check</source>
         <target state="translated">استخدام التحقق غير النشط لحالة الاتصال</target>
@@ -12235,10 +13160,20 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">استخدام طبقات مظللة لأيقونات SF Symbol في شريط القوائم. عطّل الخيار لاستخدام درجة واحدة، بما في ذلك أيقونة الشاشة الرئيسية عند استخدامها في شريط القوائم.</target>
         <note>53849 - Help for the hierarchical menu bar icon rendering toggle. A single shade means monochrome SF Symbol rendering; the preference also applies when main-display matching supplies a display or linked virtual-screen symbol.</note>
       </trans-unit>
+      <trans-unit id="Use the custom icon of the only active display group. This option has no effect if the group uses its default icon or multiple groups are active." xml:space="preserve">
+        <source>Use the custom icon of the only active display group. This option has no effect if the group uses its default icon or multiple groups are active.</source>
+        <target state="translated">استخدم الأيقونة المخصصة لمجموعة الشاشات النشطة الوحيدة. لا يؤثر هذا الخيار إذا كانت المجموعة تستخدم أيقونتها الافتراضية أو كانت مجموعات متعددة نشطة.</target>
+        <note>53878 - Details for matching the menu bar icon to the sole active display group. A group's ordinary default icon is never substituted, and zero or multiple active groups disable this behavior.</note>
+      </trans-unit>
       <trans-unit id="Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners." xml:space="preserve">
         <source>Use the recent circular macOS OSD design, without the close icon. Classic keeps its size with more rounded corners.</source>
         <target state="translated">استخدام تصميم OSD الدائري الحديث في macOS، دون أيقونة الإغلاق. يحتفظ النمط «كلاسيكي» بحجمه مع زوايا أكثر استدارة.</target>
         <note>53823 - Explanation of the rounded OSD option, which hides the close button. Classic refers to the app-drawn Classic style in the OSD location and style picker.</note>
+      </trans-unit>
+      <trans-unit id="Use the selected display's explicit audio component or software tuning target. Ranged values use native units: normalized volume/proportions, dB, Hz or milliseconds." xml:space="preserve">
+        <source>Use the selected display's explicit audio component or software tuning target. Ranged values use native units: normalized volume/proportions, dB, Hz or milliseconds.</source>
+        <target state="translated">استخدم مكوّن الصوت المحدد للشاشة المختارة أو هدف الضبط البرمجي. تستخدم القيم ذات النطاق وحداتها الأصلية: مستوى صوت/نسب مطبّعة، أو dB أو Hz أو مللي ثانية.</target>
+        <note>53927 - Shortcuts help for audio adjustments; numeric units depend on the selected feature, with volume/proportions normalized to zero-to-one.</note>
       </trans-unit>
       <trans-unit id="Use this multiplier to convert the control's internal value to the value expected (or provided) by the integrated device." xml:space="preserve">
         <source>Use this multiplier to convert the control's internal value to the value expected (or provided) by the integrated device.</source>
@@ -12500,6 +13435,21 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">الصوت</target>
         <note>53477 - Volume control label.</note>
       </trans-unit>
+      <trans-unit id="Volume (Combined)" xml:space="preserve">
+        <source>Volume (Combined)</source>
+        <target state="translated">الصوت (مدمج)</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Explicit combined-volume component coordinating hardware and software levels, distinct from routed volume.</note>
+      </trans-unit>
+      <trans-unit id="Volume (Hardware)" xml:space="preserve">
+        <source>Volume (Hardware)</source>
+        <target state="translated">الصوت (العتاد)</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Explicit physical-device volume component, distinct from routed volume and software attenuation.</note>
+      </trans-unit>
+      <trans-unit id="Volume (Software)" xml:space="preserve">
+        <source>Volume (Software)</source>
+        <target state="translated">الصوت (برمجي)</target>
+        <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Explicit software attenuation component; one is unity gain and zero is silence.</note>
+      </trans-unit>
       <trans-unit id="Volume Control Affects:" xml:space="preserve">
         <source>Volume Control Affects:</source>
         <target state="translated">التحكم بالصوت يؤثر على:</target>
@@ -12509,11 +13459,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Volume Control Settings</source>
         <target state="translated">إعدادات التحكم بالصوت</target>
         <note>53477 - Volume settings section.</note>
-      </trans-unit>
-      <trans-unit id="Volume Control…" xml:space="preserve">
-        <source>Volume Control…</source>
-        <target state="translated">التحكم بالصوت…</target>
-        <note>53477 - Volume control settings link.</note>
       </trans-unit>
       <trans-unit id="Volume Down" xml:space="preserve">
         <source>Volume Down</source>
@@ -12534,6 +13479,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Volume control is configured to use an audio device with native volume control. This prevents this control from being accessible even if the capability is enabled.</source>
         <target state="translated">التحكم بالصوت مضبوط على استخدام جهاز صوت له تحكم أصلي بمستوى الصوت. هذا يمنع الوصول إلى أداة التحكم هذه حتى لو كانت الإمكانية مفعّلة.</target>
         <note>53688 - Control availability warning when native audio device volume takes precedence.</note>
+      </trans-unit>
+      <trans-unit id="Volume is being adjusted manually. Adjust combined volume to realign hardware and software levels." xml:space="preserve">
+        <source>Volume is being adjusted manually. Adjust combined volume to realign hardware and software levels.</source>
+        <target state="translated">يُضبط مستوى الصوت يدويًا. اضبط الصوت المدمج لمحاذاة مستويات العتاد والبرمجيات مجددًا.</target>
+        <note>53927 - Information below Enable combined volume control when the current hardware/software levels are outside its mapping. Adjusting the combined slider realigns both levels.</note>
+      </trans-unit>
+      <trans-unit id="Volume method" xml:space="preserve">
+        <source>Volume method</source>
+        <target state="translated">طريقة التحكم بالصوت</target>
+        <note>53927 - Picker selecting Hardware, Software or Combined as the primary routed volume provider.</note>
       </trans-unit>
       <trans-unit id="WOL broadcast address" xml:space="preserve">
         <source>WOL broadcast address</source>
@@ -12685,11 +13640,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">عند تفعيل هذا الخيار، سيستخدم التطبيق السطوع العتادي للتحكم بالسطوع المدمج بدلاً من أداة ضبط ذروة سطوع SDR ‏(التحكم بسطوع HDR) التي يوفّرها macOS. يظل بإمكانك ضبط ذروة سطوع SDR من مركز التحكم - وستؤثّر هذه التعديلات على هامش الرفع الذي يوفّره التطبيق (إن توفر). لا تدعم جميع الشاشات التحكم العتادي بالسطوع في وضع HDR.</target>
         <note>53477 - Prefer hardware brightness in HDR setting help.</note>
       </trans-unit>
-      <trans-unit id="When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control." xml:space="preserve">
-        <source>When this is enabled, the app will use the matching audio device's native audio controls (if available) instead of direct hardware control (via DDC or control integration). Make sure the matching audio device name is specified accordingly. This feature is useful for controlling the volume of multi-output audio devices involving both displays with app-managed hardware (DDC, control integration) volume control and displays with native volume control.</source>
-        <target state="translated">عند تفعيل هذا الخيار، سيستخدم التطبيق أدوات التحكم الأصلية بالصوت في جهاز الصوت المطابق (إن توفرت) بدلاً من التحكم العتادي المباشر (عبر DDC أو تكامل التحكم). تأكد من تحديد اسم جهاز الصوت المطابق وفق ذلك. هذه الميزة مفيدة للتحكم بمستوى الصوت في أجهزة الصوت متعددة المخارج التي تجمع بين شاشات يديرها التطبيق عتادياً (DDC، تكامل التحكم) وشاشات ذات تحكم أصلي بالصوت.</target>
-        <note>53477 - Prefer associated native audio device volume control setting help.</note>
-      </trans-unit>
       <trans-unit id="Width" xml:space="preserve">
         <source>Width</source>
         <target state="translated">العرض</target>
@@ -12739,6 +13689,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>With this option selected, the app will leave native brightness keys under macOS control if only Apple displays are connected with no additional software brightness control features enabled. In this case however various settings (like "Make fine scale default" or control "All suitable screens" simultaneously) that modify the default behavior of the brightness keys will not apply.</source>
         <target state="translated">عند اختيار هذا الخيار، سيترك التطبيق مفاتيح السطوع الأصلية تحت سيطرة macOS إذا كانت الشاشات المتصلة كلها من Apple ولم تُفعَّل أي مزايا إضافية للتحكم البرمجي بالسطوع. لكن في هذه الحالة لن تسري إعدادات متنوعة (مثل "جعل المقياس الدقيق افتراضياً" أو التحكم بـ "جميع الشاشات المناسبة" في آن واحد) التي تغيّر السلوك الافتراضي لمفاتيح السطوع.</target>
         <note>53477 - Native brightness key handling exception help.</note>
+      </trans-unit>
+      <trans-unit id="With zero overlap, software volume adjusts below this point while hardware stays at its audible minimum. Above it, hardware volume adjusts while software volume stays at full level." xml:space="preserve">
+        <source>With zero overlap, software volume adjusts below this point while hardware stays at its audible minimum. Above it, hardware volume adjusts while software volume stays at full level.</source>
+        <target state="translated">عندما يكون التداخل صفرًا، يتغير الصوت البرمجي دون هذه النقطة ويبقى صوت العتاد عند أدنى مستوى مسموع. فوقها، يتغير صوت العتاد ويبقى الصوت البرمجي عند المستوى الكامل.</target>
+        <note>53927 - Help beneath Hardware / Software Switchover Point, describing the mapping when overlap is zero.</note>
       </trans-unit>
       <trans-unit id="Without Screen Recording permissions this feature will not work!" xml:space="preserve">
         <source>Without Screen Recording permissions this feature will not work!</source>
@@ -12824,6 +13779,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Yes (EDR)</source>
         <target state="translated">نعم (EDR)</target>
         <note>53477 - Affirmative EDR capability state.</note>
+      </trans-unit>
+      <trans-unit id="You can also configure this custom icon to appear as the app menu icon in the menu bar icon settings." xml:space="preserve">
+        <source>You can also configure this custom icon to appear as the app menu icon in the menu bar icon settings.</source>
+        <target state="translated">يمكنك أيضًا ضبط ظهور هذه الأيقونة المخصصة كأيقونة قائمة التطبيق ضمن إعدادات أيقونة شريط القوائم.</target>
+        <note>53878 - Details below the custom icon field in a display group's Advanced sheet. Refers generally to menu bar icon settings, without a fixed navigation path.</note>
       </trans-unit>
       <trans-unit id="You can also drag the app to Login Items under System Settings &gt; General." xml:space="preserve">
         <source>You can also drag the app to Login Items under System Settings &gt; General.</source>
