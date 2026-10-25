@@ -214,6 +214,10 @@
         }
       }
     },
+    "⇧ Shift alone bypasses group synchronization and \"All suitable screens\".\n⌃ Control targets the built-in display.\n⌃ Control + ⌘ Command targets external displays.\n⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." : {
+      "comment" : "53983 - Four-line help for additional native brightness modifier actions; All suitable screens is an existing keyboard target option. Shift+Command excludes the current display and all its mirror/stream targets; preserve line breaks and modifier glyph/name pairs.",
+      "extractionState" : "manual"
+    },
     "0" : {
       "comment" : "50000 - Non-translatable numeric zero used as an input or value label.",
       "shouldTranslate" : false
@@ -514,10 +518,6 @@
     "A display is present which is not fully controllable without the app" : {
       "comment" : "53477 - Conditional activation option for displays requiring the app for full control."
     },
-    "A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." : {
-      "comment" : "53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.",
-      "extractionState" : "manual"
-    },
     "A higher priority display group marked as exclusive is active." : {
       "comment" : "53477 - Group activation status when an exclusive higher-priority group takes precedence."
     },
@@ -560,6 +560,10 @@
     },
     "Absent" : {
       "comment" : "53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.",
+      "extractionState" : "manual"
+    },
+    "Accent Color" : {
+      "comment" : "53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.",
       "extractionState" : "manual"
     },
     "Accessibility Configuration Required!" : {
@@ -762,6 +766,10 @@
     },
     "Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way." : {
       "comment" : "53477 - Layout protection anchor point help explaining relative alignment and default centering."
+    },
+    "Adjustments affect mirror and stream targets" : {
+      "comment" : "53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.",
+      "extractionState" : "manual"
     },
     "Administrator authorization failed (%d)." : {
       "comment" : "53477 - Fallback error shown when macOS administrator authorization fails and no system-provided description is available. ‘Authorization’ refers to macOS Authorization Services; %d is the OSStatus error code."
@@ -1428,6 +1436,10 @@
       "comment" : "53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.",
       "extractionState" : "manual"
     },
+    "Audio processing could not be confirmed and may be ineffective." : {
+      "comment" : "53967 - Warning when the brief startup or restoration wait ends without a processing acknowledgement. Requested changes still proceed and temporary muting is released; this warning clears once processing makes progress.",
+      "extractionState" : "manual"
+    },
     "Audio recording permission" : {
       "comment" : "53927 - Heading above the permission-request explanation and the Enable Audio Access / System Settings buttons in Configure Software Audio.",
       "extractionState" : "manual"
@@ -1465,6 +1477,10 @@
     },
     "Auto-disconnect on external display connection is now suspended." : {
       "comment" : "53477 - Status indicating temporary suspension of automatic disconnection."
+    },
+    "Auto-expand current display when opening the menu" : {
+      "comment" : "53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.",
+      "extractionState" : "manual"
     },
     "Auto-start full screen streaming" : {
       "comment" : "53477 - Full-screen streaming automatic start setting."
@@ -2158,8 +2174,8 @@
       "comment" : "53927 - Volume-method picker choice using coordinated hardware volume and software attenuation.",
       "extractionState" : "manual"
     },
-    "Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." : {
-      "comment" : "53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.",
+    "Combined adds software attenuation below the hardware’s lowest usable volume." : {
+      "comment" : "53967 - Help for the Combined volume method, which adds software attenuation below the physical output’s usable range. Hardware readback is optional and is not required to use this method.",
       "extractionState" : "manual"
     },
     "Combined brightness" : {
@@ -2205,10 +2221,6 @@
     },
     "Combined Volume Control is enabled and manages hardware and software volume and mute controls." : {
       "comment" : "53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.",
-      "extractionState" : "manual"
-    },
-    "Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." : {
-      "comment" : "53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.",
       "extractionState" : "manual"
     },
     "Comic Effect" : {
@@ -3093,6 +3105,9 @@
     "Detached app menu alpha level" : {
       "comment" : "53477 - Opacity setting for the detached floating app menu."
     },
+    "Detached Remote" : {
+      "comment" : "53969 - Presentation toggle shown only while the controller’s Show Remote toggle is on. On displays the remote in a separate floating window; off displays it inline in the app menu, and the choice is remembered while the remote is hidden."
+    },
     "Detailed DDC capabilities report" : {
       "comment" : "53477 - Detailed parsed DDC capabilities report."
     },
@@ -3292,6 +3307,10 @@
     "Disconnect reconnected displays upon wake" : {
       "comment" : "53477 - Setting restoring disconnected state after macOS reconnects displays on wake."
     },
+    "Disconnect Screen on Close" : {
+      "comment" : "53972 - Per-PIP preference shown only for BetterDisplay virtual screens with Start Automatically enabled. Closing this PIP window disconnects its source virtual screen only if no other PIP, screen stream or mirror target still uses it.",
+      "extractionState" : "manual"
+    },
     "Disconnect Virtual Screen" : {
       "comment" : "53477 - Virtual screen disconnection action."
     },
@@ -3340,6 +3359,10 @@
     },
     "Disconnecting virtual screens" : {
       "comment" : "53477 - Virtual screen disconnection operation heading."
+    },
+    "Disconnects only when no other BetterDisplay streams or mirrors use this screen." : {
+      "comment" : "53972 - Help shown beneath Disconnect Screen on Close only while enabled. Streams include other PIP windows and screen streams, including paused or hidden ones; mirrors are display mirroring targets of this virtual screen.",
+      "extractionState" : "manual"
     },
     "Dismiss" : {
       "comment" : "53477 - Dismiss a message or transient UI."
@@ -3717,6 +3740,10 @@
     "Enable" : {
       "comment" : "53477 - Enable action."
     },
+    "Enable additional modifier key functions" : {
+      "comment" : "53983 - Separate default-on switches in Native Brightness Key Settings and Native Audio Key Settings. Gates extra modifier actions but keeps Shift+Option fine adjustment available.",
+      "extractionState" : "manual"
+    },
     "Enable All Groups" : {
       "comment" : "53477 - Action enabling all display groups."
     },
@@ -3856,6 +3883,14 @@
     },
     "Enable synchronization for this display group" : {
       "comment" : "53477 - Display group synchronization toggle."
+    },
+    "Enable System Settings and mirroring shortcuts" : {
+      "comment" : "53983 - Native Brightness Key Settings switch, enabled by default. Enables Option with brightness keys to open Displays in System Settings and Command with Brightness Down to toggle display mirroring.",
+      "extractionState" : "manual"
+    },
+    "Enable System Settings shortcuts" : {
+      "comment" : "53983 - Native Audio Key Settings switch, enabled by default. Enables Option with volume or mute keys to open Sound in System Settings.",
+      "extractionState" : "manual"
     },
     "Enable the software volume or mute control above for the selected method." : {
       "comment" : "53927 - Notice when the selected audio method needs a software volume or mute provision switch that is currently off.",
@@ -4123,6 +4158,10 @@
     },
     "Flip" : {
       "comment" : "53477 - Streaming image horizontal or vertical flip control."
+    },
+    "Follow System Appearance" : {
+      "comment" : "53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.",
+      "extractionState" : "manual"
     },
     "For best results, stick close to the display aspect ratio!" : {
       "comment" : "53688 - Aspect ratio advice for custom display dimensions or resolutions."
@@ -4403,8 +4442,8 @@
     "Hardware control (Apple)" : {
       "comment" : "53477 - Apple native hardware display control section."
     },
-    "Hardware mute requires a controller that can set and report the mute state." : {
-      "comment" : "53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.",
+    "Hardware mute requires a controller that can set the mute state." : {
+      "comment" : "53967 - Shown when the Hardware mute method has no available provider. Setting mute is required, but reporting or confirming the state is optional.",
       "extractionState" : "manual"
     },
     "Hardware Volume Control" : {
@@ -4575,6 +4614,10 @@
     },
     "Highlight" : {
       "comment" : "53477 - Image adjustment for the bright tonal regions of an image, paired with the Shadow adjustment. This is photographic highlights, not UI selection highlighting."
+    },
+    "Highlight Window with Mouse" : {
+      "comment" : "53973 - Per-PIP toggle below Show Mouse Pointer. Highlights the PIP title bar, or glows around titlebar-hidden content, when the source-screen pointer lies within the displayed region, respecting cropping and transforms; this is visual emphasis, not the photographic Highlight adjustment.",
+      "extractionState" : "manual"
     },
     "Hinted maximum active pixel rate" : {
       "comment" : "53477 - Display capability hint for active pixel throughput."
@@ -5430,6 +5473,10 @@
     "Mirroring" : {
       "comment" : "53477 - Mirroring feature heading."
     },
+    "Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets." : {
+      "comment" : "53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.",
+      "extractionState" : "manual"
+    },
     "MISSING" : {
       "comment" : "53477 - Missing configuration item status."
     },
@@ -5858,8 +5905,9 @@
     "OSD" : {
       "comment" : "53477 - On-screen display feature label."
     },
-    "OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark)." : {
-      "comment" : "53477 - Glass OSD adaptive appearance help."
+    "OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance." : {
+      "comment" : "53983 - Help for Adaptive OSD background in Keyboard settings. Disabling adaptation reveals a picker for system, light or dark appearance.",
+      "extractionState" : "manual"
     },
     "OSD location and style" : {
       "comment" : "53477 - OSD appearance settings heading."
@@ -6156,6 +6204,18 @@
     },
     "Preset Index" : {
       "comment" : "53477 - Display preset index label."
+    },
+    "Press ⇧ Shift alone to bypass group synchronization and \"All suitable screens\". Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference." : {
+      "comment" : "53983 - Help for additional native audio modifiers affecting volume and mute keys. Shift alone bypasses synchronization/all-screen targeting; Shift without Option inverts the saved feedback-sound preference when feedback is emitted.",
+      "extractionState" : "manual"
+    },
+    "Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring." : {
+      "comment" : "53983 - Help for the combined native brightness System Settings and mirroring shortcut switch. Keep each modifier glyph with its key name; Brightness Down is the media action normally assigned to F1.",
+      "extractionState" : "manual"
+    },
+    "Press ⌥ Option with a volume or mute key to open Sound in System Settings." : {
+      "comment" : "53983 - Help for the native audio System Settings shortcut switch. Sound is the macOS System Settings pane; preserve the modifier glyph and key name together.",
+      "extractionState" : "manual"
     },
     "Press Shortcut" : {
       "comment" : "53477 - Keyboard shortcut recording prompt.",
@@ -7179,6 +7239,9 @@
     "Set the specified display as the main display for this display group. Leave 'Unspecified' to let macOS decide or allow the Configuration Protection app menu setting to apply." : {
       "comment" : "53477 - Display group main display assignment help."
     },
+    "Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." : {
+      "comment" : "53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen."
+    },
     "Set up Accessibility Permissions…" : {
       "comment" : "53477 - Open Accessibility permission setup action."
     },
@@ -7257,6 +7320,17 @@
     "Show %@ in the macOS Dock" : {
       "comment" : "53477 - App Dock visibility setting; placeholder is the app name."
     },
+    "Show adaptive slider scales where appropriate" : {
+      "comment" : "53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show adaptive slider scales where appropriate"
+          }
+        }
+      }
+    },
     "Show All" : {
       "comment" : "53484 - Compact toggle beside Reset Default in the display-mode submenu. Shows all modes allowed by the surrounding safety limits; it does not select or apply a mode."
     },
@@ -7299,6 +7373,10 @@
     "Show Crop Rectangle Boundary" : {
       "comment" : "53484 - PIP option showing the outline of the configured crop rectangle; keep the toggle label compact."
     },
+    "Show current display at top" : {
+      "comment" : "53983 - Toggle under Menu settings > Additional Menu Options > Display Menu Options, available when main-display priority is off. Current display means the screen where an attached app menu first opens, not the main display or the screen it moves to later.",
+      "extractionState" : "manual"
+    },
     "Show current resolution values" : {
       "comment" : "53477 - Current display resolution visibility setting."
     },
@@ -7339,7 +7417,7 @@
       "comment" : "53477 - HDMI-CEC input command visibility help."
     },
     "Show HDMI-CEC Remote" : {
-      "comment" : "53477 - Open HDMI-CEC remote control action."
+      "comment" : "53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on."
     },
     "Show header when only one device is present" : {
       "comment" : "53477 - Single-device menu header visibility setting."
@@ -7354,7 +7432,7 @@
       "comment" : "53477 - Menu item visibility setting."
     },
     "Show LG Remote" : {
-      "comment" : "53477 - Open LG remote control action."
+      "comment" : "53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on."
     },
     "Show main display at the top" : {
       "comment" : "53477 - Display list sort setting."
@@ -7387,7 +7465,7 @@
       "comment" : "53477 - Scalable display slider format setting."
     },
     "Show Philips Remote" : {
-      "comment" : "53477 - Philips remote menu visibility setting."
+      "comment" : "53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on."
     },
     "Show PIP menu when only a single display is connected" : {
       "comment" : "53477 - PIP menu visibility setting."
@@ -7395,8 +7473,11 @@
     "Show Quit %@ in the button bar" : {
       "comment" : "53477 - Toggle for showing the Quit command in the button bar. The quoted command must match Quit %@; the placeholder is the app name."
     },
+    "Show Remote" : {
+      "comment" : "53968 - Display menu toggle for floating remote-control windows. Shows any missing controller remotes for this display, or hides them all when all are already visible."
+    },
     "Show Samsung Remote" : {
-      "comment" : "53477 - Samsung remote menu visibility setting."
+      "comment" : "53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on."
     },
     "Show separate hardware and software brightness sliders when combined brightness is enabled. This is useful for testing and understanding the effects of the combined slider." : {
       "comment" : "53477 - Combined brightness subslider visibility help."
@@ -7421,6 +7502,21 @@
       "comment" : "53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.",
       "extractionState" : "manual"
     },
+    "Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point." : {
+      "comment" : "53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point."
+          }
+        }
+      }
+    },
+    "Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." : {
+      "comment" : "53983 - Explanation of automatic expansion for the opening display. More Options is the device’s additional controls revealed by its chevron; automatic tidying permits only one device to show that area at a time, without collapsing other device headers.",
+      "extractionState" : "manual"
+    },
     "Show the display or device name before the current value in the rounded OSD." : {
       "comment" : "53824 - Help for the rounded OSD device-name toggle. The display or audio device name precedes the current value with a dot separator in one callout, or appears alone if no value is shown."
     },
@@ -7429,6 +7525,9 @@
     },
     "Show warning notifications about color table anomalies" : {
       "comment" : "53477 - Toggle enabling notifications when another app interferes with display color-table adjustments. The enabled state shows warnings."
+    },
+    "Show/Hide Remote" : {
+      "comment" : "53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference."
     },
     "Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." : {
       "comment" : "53477 - Show disconnected displays setting help."
@@ -7534,6 +7633,10 @@
       "comment" : "53927 - Second status row in Audio Device Configuration. Reports whether the optional Software Audio controller has been added to this display, independently of whether its processing session is active.",
       "extractionState" : "manual"
     },
+    "Software audio could not enable automatic system sleep. Audio processing remains active." : {
+      "comment" : "53967 - Warning when macOS rejects the optional audio-process setting that allows automatic system sleep. The already running audio session continues and remains controllable.",
+      "extractionState" : "manual"
+    },
     "Software Audio does not support this connection type. Try a built-in, USB, HDMI, DisplayPort or Bluetooth audio output." : {
       "comment" : "53927 - Warning for audio connection types outside Software Audio’s transport allowlist. Built-in, wired and Bluetooth examples are non-exhaustive; format requirements still apply.",
       "extractionState" : "manual"
@@ -7622,10 +7725,6 @@
     "Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates." : {
       "comment" : "53477 - Internal prerelease channel warning."
     },
-    "Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." : {
-      "comment" : "53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.",
-      "extractionState" : "manual"
-    },
     "Something went wrong…" : {
       "comment" : "53477 - Title of a critical alert shown only when applying display overrides or removing factory color profiles still fails after the app has automatically tried the alternate administrator prompt where applicable."
     },
@@ -7705,8 +7804,8 @@
       "comment" : "53927 - Session status while constructing and starting the audio tap and aggregate output.",
       "extractionState" : "manual"
     },
-    "Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." : {
-      "comment" : "53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.",
+    "Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." : {
+      "comment" : "53966 - Software Audio Session help explaining brief muting while restoring saved hardware settings and the audible consequence of restarting. Unconfirmed hardware state shows a warning and releases temporary muting.",
       "extractionState" : "manual"
     },
     "State" : {
@@ -7776,6 +7875,10 @@
     },
     "Streaming to Multiple Screens" : {
       "comment" : "53477 - Multiple stream destinations status."
+    },
+    "Strength" : {
+      "comment" : "53979 - Label beside the small slider in PIP-highlight (when title bar controls are off) and crop-boundary color selectors. PIP glow defaults to 50% and changes opacity below halfway and thickness above it, while crop-boundary strength defaults to 100% and controls only opacity, with zero invisible.",
+      "extractionState" : "manual"
     },
     "Supported" : {
       "comment" : "53477 - Feature support state."
@@ -8040,12 +8143,8 @@
       "comment" : "53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.",
       "extractionState" : "manual"
     },
-    "The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." : {
-      "comment" : "53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.",
-      "extractionState" : "manual"
-    },
-    "The audio device did not confirm the change. Check its connection and try again." : {
-      "comment" : "53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.",
+    "The audio device did not confirm the change. Audio processing may be ineffective." : {
+      "comment" : "53966 - Warning after hardware volume or mute readback fails to match a requested change, including digital outputs with ineffective native controls. Temporary startup protection is released and the configured software volume and mute remain in effect; this warning does not establish that audio processing failed.",
       "extractionState" : "manual"
     },
     "The audio device or its format changed. Restart software audio to resume processing." : {
@@ -8141,10 +8240,6 @@
     "The duplicated group will be disabled by default." : {
       "comment" : "53477 - Duplicate display group action help."
     },
-    "The hardware mute provider does not support device readback. No mute request was sent." : {
-      "comment" : "53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.",
-      "extractionState" : "manual"
-    },
     "The hardware mute state could not be confirmed. Software protection remains active." : {
       "comment" : "53927 - Retained manual hardware-mute confirmation error; software protection means retaining digital silence during the failed operation.",
       "extractionState" : "manual"
@@ -8228,10 +8323,6 @@
     },
     "The protection is not in effect unless relative position is defined." : {
       "comment" : "53688 - Layout protection prerequisite requiring a relative display position."
-    },
-    "The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." : {
-      "comment" : "53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.",
-      "extractionState" : "manual"
     },
     "The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." : {
       "comment" : "53927 - Unavailable selected mute provider warning. Software and hardware mute capabilities are independent of volume routing.",
@@ -8649,9 +8740,6 @@
     "Toggles" : {
       "comment" : "53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears."
     },
-    "Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." : {
-      "comment" : "53477 - Hidden toggle control access help."
-    },
     "Tools" : {
       "comment" : "53477 - Tools menu title."
     },
@@ -9059,11 +9147,19 @@
     "Use custom resolution list" : {
       "comment" : "53477 - Custom resolution list setting."
     },
+    "Use Dark Appearance" : {
+      "comment" : "53983 - OSD appearance picker option that forces a dark OSD independently of the system appearance, when adaptive background is disabled.",
+      "extractionState" : "manual"
+    },
     "Use dedicated queue" : {
       "comment" : "53627 - Per-display DDC communication setting. A dedicated queue serializes commands for this controller independently of other displays; disabling it uses the shared global queue."
     },
     "Use Enable Audio Access in Configure Software Audio… to request audio recording permission." : {
       "comment" : "53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.",
+      "extractionState" : "manual"
+    },
+    "Use Light Appearance" : {
+      "comment" : "53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.",
       "extractionState" : "manual"
     },
     "Use magnification slider instead of resolution slider" : {
@@ -9418,6 +9514,10 @@
     },
     "When HDR upscaling is enabled while hardware brightness control is disabled, the app uses a continuous brightness scale between zero and the calibrated max upscale value. Due to this the neutral setting (100⁠% brightness, when on-screen HDR content is unclipped) might not fall to an OSD chiclet boundary which makes it difficult to attain via the shortcut keys. To fix this an additional mid-chiclet step at 100⁠% brightness is inserted." : {
       "comment" : "53477 - Neutral software HDR brightness keyboard step setting help."
+    },
+    "When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected." : {
+      "comment" : "53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.",
+      "extractionState" : "manual"
     },
     "When Settings is Open" : {
       "comment" : "53477 - Settings-dependent visibility option."

@@ -591,11 +591,6 @@ Kiểm tra kết nối mạng và cài đặt tường lửa của bạn.</targe
         <target state="translated">Một màn hình hiện diện nhưng không thể điều khiển hoàn toàn nếu không có ứng dụng</target>
         <note>53477 - Conditional activation option for displays requiring the app for full control.</note>
       </trans-unit>
-      <trans-unit id="A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." xml:space="preserve">
-        <source>A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it.</source>
-        <target state="translated">Đã yêu cầu thay đổi âm lượng phần cứng nhưng bộ điều khiển không thể báo cáo âm lượng thực tế của thiết bị. Tắt tiếng phần mềm vẫn bật cho đến khi bạn chủ động bỏ tắt tiếng.</target>
-        <note>53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.</note>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <target state="translated">Một nhóm màn hình có mức ưu tiên cao hơn được đánh dấu là độc quyền đang hoạt động.</target>
@@ -665,6 +660,11 @@ Kiểm tra kết nối mạng và cài đặt tường lửa của bạn.</targe
         <source>Absent</source>
         <target state="translated">Chưa thêm</target>
         <note>53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.</note>
+      </trans-unit>
+      <trans-unit id="Accent Color" xml:space="preserve">
+        <source>Accent Color</source>
+        <target state="translated">Màu nhấn</target>
+        <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
       <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
         <source>Accessibility Configuration Required!</source>
@@ -955,6 +955,11 @@ Kiểm tra kết nối mạng và cài đặt tường lửa của bạn.</targe
         <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <target state="translated">Điều chỉnh độ lệch của hai màn hình bằng cách thay đổi các điểm neo. Bảo vệ bố cục cố gắng sắp xếp các màn hình sao cho chúng căn chỉnh tại các điểm neo đã được định nghĩa theo chiều ngang hoặc chiều dọc. Cài đặt mặc định là căn chỉnh màn hình theo cách trung tâm.</target>
         <note>53477 - Layout protection anchor point help explaining relative alignment and default centering.</note>
+      </trans-unit>
+      <trans-unit id="Adjustments affect mirror and stream targets" xml:space="preserve">
+        <source>Adjustments affect mirror and stream targets</source>
+        <target state="translated">Điều chỉnh áp dụng cho đích phản chiếu và trình chiếu</target>
+        <note>53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.</note>
       </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
@@ -1863,6 +1868,11 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <target state="translated">Đồng hồ âm thanh yêu cầu phiên âm thanh phần mềm đang hoạt động.</target>
         <note>53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.</note>
       </trans-unit>
+      <trans-unit id="Audio processing could not be confirmed and may be ineffective." xml:space="preserve">
+        <source>Audio processing could not be confirmed and may be ineffective.</source>
+        <target state="translated">Không thể xác nhận quá trình xử lý âm thanh và quá trình này có thể không hiệu quả.</target>
+        <note>53967 - Warning when the brief startup or restoration wait ends without a processing acknowledgement. Requested changes still proceed and temporary muting is released; this warning clears once processing makes progress.</note>
+      </trans-unit>
       <trans-unit id="Audio recording permission" xml:space="preserve">
         <source>Audio recording permission</source>
         <target state="translated">Quyền ghi âm thanh</target>
@@ -1912,6 +1922,11 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Tự động ngắt kết nối khi kết nối màn hình rời đã tạm ngừng.</target>
         <note>53477 - Status indicating temporary suspension of automatic disconnection.</note>
+      </trans-unit>
+      <trans-unit id="Auto-expand current display when opening the menu" xml:space="preserve">
+        <source>Auto-expand current display when opening the menu</source>
+        <target state="translated">Tự mở rộng màn hình hiện tại khi mở menu</target>
+        <note>53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.</note>
       </trans-unit>
       <trans-unit id="Auto-start full screen streaming" xml:space="preserve">
         <source>Auto-start full screen streaming</source>
@@ -2883,10 +2898,10 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <target state="translated">Điều khiển âm lượng kết hợp đã bật và đang quản lý các điều khiển âm lượng, tắt tiếng phần cứng và phần mềm.</target>
         <note>53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.</note>
       </trans-unit>
-      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." xml:space="preserve">
-        <source>Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume.</source>
-        <target state="translated">Chế độ kết hợp bổ sung suy giảm bằng phần mềm dưới âm lượng phần cứng thấp nhất có thể dùng và yêu cầu bộ điều khiển có thể báo cáo âm lượng phần cứng.</target>
-        <note>53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.</note>
+      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume." xml:space="preserve">
+        <source>Combined adds software attenuation below the hardware’s lowest usable volume.</source>
+        <target state="translated">Chế độ kết hợp bổ sung suy giảm bằng phần mềm dưới âm lượng phần cứng thấp nhất có thể dùng.</target>
+        <note>53967 - Help for the Combined volume method, which adds software attenuation below the physical output’s usable range. Hardware readback is optional and is not required to use this method.</note>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
@@ -2917,11 +2932,6 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <source>Combined brightness is not active.</source>
         <target state="translated">Độ sáng kết hợp không hoạt động.</target>
         <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
-      </trans-unit>
-      <trans-unit id="Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." xml:space="preserve">
-        <source>Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller.</source>
-        <target state="translated">Âm lượng kết hợp cần bộ điều khiển phần cứng có thể báo cáo âm lượng thực tế của thiết bị. Chọn phương pháp âm lượng khác hoặc định cấu hình bộ điều khiển phần cứng tương thích.</target>
-        <note>53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.</note>
       </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
@@ -4233,6 +4243,11 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <target state="translated">Menu ứng dụng có thể tách rời</target>
         <note>53477 - Setting allowing the app menu to detach into a floating window.</note>
       </trans-unit>
+      <trans-unit id="Detached Remote" xml:space="preserve">
+        <source>Detached Remote</source>
+        <target state="translated">Điều khiển tách rời</target>
+        <note>53969 - Presentation toggle shown only while the controller’s Show Remote toggle is on. On displays the remote in a separate floating window; off displays it inline in the app menu, and the choice is remembered while the remote is hidden.</note>
+      </trans-unit>
       <trans-unit id="Detached app menu alpha level" xml:space="preserve">
         <source>Detached app menu alpha level</source>
         <target state="translated">Mức độ alpha cho menu ứng dụng tách rời</target>
@@ -4508,6 +4523,11 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <target state="translated">Ngắt kết nối màn hình</target>
         <note>53477 - Display disconnection action.</note>
       </trans-unit>
+      <trans-unit id="Disconnect Screen on Close" xml:space="preserve">
+        <source>Disconnect Screen on Close</source>
+        <target state="translated">Ngắt kết nối màn hình khi đóng</target>
+        <note>53972 - Per-PIP preference shown only for BetterDisplay virtual screens with Start Automatically enabled. Closing this PIP window disconnects its source virtual screen only if no other PIP, screen stream or mirror target still uses it.</note>
+      </trans-unit>
       <trans-unit id="Disconnect Virtual Screen" xml:space="preserve">
         <source>Disconnect Virtual Screen</source>
         <target state="translated">Ngắt kết nối màn hình ảo</target>
@@ -4587,6 +4607,11 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <source>Disconnecting virtual screens</source>
         <target state="translated">Đang ngắt kết nối màn hình ảo</target>
         <note>53477 - Virtual screen disconnection operation heading.</note>
+      </trans-unit>
+      <trans-unit id="Disconnects only when no other BetterDisplay streams or mirrors use this screen." xml:space="preserve">
+        <source>Disconnects only when no other BetterDisplay streams or mirrors use this screen.</source>
+        <target state="translated">Chỉ ngắt kết nối khi không có phiên trình chiếu hoặc phản chiếu BetterDisplay nào khác sử dụng màn hình này.</target>
+        <note>53972 - Help shown beneath Disconnect Screen on Close only while enabled. Streams include other PIP windows and screen streams, including paused or hidden ones; mirrors are display mirroring targets of this virtual screen.</note>
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
@@ -5242,6 +5267,16 @@ Thao tác không có tác dụng với màn hình tích hợp (cần khởi đ�
         <target state="translated">Bật trình chiếu</target>
         <note>53477 - Display streaming toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable System Settings and mirroring shortcuts" xml:space="preserve">
+        <source>Enable System Settings and mirroring shortcuts</source>
+        <target state="translated">Bật phím tắt Cài đặt hệ thống và phản chiếu</target>
+        <note>53983 - Native Brightness Key Settings switch, enabled by default. Enables Option with brightness keys to open Displays in System Settings and Command with Brightness Down to toggle display mirroring.</note>
+      </trans-unit>
+      <trans-unit id="Enable System Settings shortcuts" xml:space="preserve">
+        <source>Enable System Settings shortcuts</source>
+        <target state="translated">Bật phím tắt Cài đặt hệ thống</target>
+        <note>53983 - Native Audio Key Settings switch, enabled by default. Enables Option with volume or mute keys to open Sound in System Settings.</note>
+      </trans-unit>
       <trans-unit id="Enable True Tone" xml:space="preserve">
         <source>Enable True Tone</source>
         <target state="translated">Kích hoạt True Tone</target>
@@ -5256,6 +5291,11 @@ Thao tác không có tác dụng với màn hình tích hợp (cần khởi đ�
         <source>Enable Video Filter Window</source>
         <target state="translated">Bật Cửa Sổ Bộ Lọc Video</target>
         <note>53477 - Video filter window toggle.</note>
+      </trans-unit>
+      <trans-unit id="Enable additional modifier key functions" xml:space="preserve">
+        <source>Enable additional modifier key functions</source>
+        <target state="translated">Bật chức năng bổ sung của phím bổ trợ</target>
+        <note>53983 - Separate default-on switches in Native Brightness Key Settings and Native Audio Key Settings. Gates extra modifier actions but keeps Shift+Option fine adjustment available.</note>
       </trans-unit>
       <trans-unit id="Enable color table control" xml:space="preserve">
         <source>Enable color table control</source>
@@ -5740,6 +5780,11 @@ Việc xóa chúng là an toàn—macOS sẽ tạo lại bất kỳ hồ sơ c�
         <source>Flip</source>
         <target state="translated">Lật</target>
         <note>53477 - Streaming image horizontal or vertical flip control.</note>
+      </trans-unit>
+      <trans-unit id="Follow System Appearance" xml:space="preserve">
+        <source>Follow System Appearance</source>
+        <target state="translated">Theo giao diện hệ thống</target>
+        <note>53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
         <source>For best results, stick close to the display aspect ratio!</source>
@@ -6291,10 +6336,10 @@ Việc xóa chúng là an toàn—macOS sẽ tạo lại bất kỳ hồ sơ c�
         <target state="translated">Điều khiển phần cứng - tối thiểu</target>
         <note>53477 - Hardware control range lower bound.</note>
       </trans-unit>
-      <trans-unit id="Hardware mute requires a controller that can set and report the mute state." xml:space="preserve">
-        <source>Hardware mute requires a controller that can set and report the mute state.</source>
-        <target state="translated">Tắt tiếng phần cứng yêu cầu bộ điều khiển có thể đặt và báo cáo trạng thái tắt tiếng.</target>
-        <note>53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.</note>
+      <trans-unit id="Hardware mute requires a controller that can set the mute state." xml:space="preserve">
+        <source>Hardware mute requires a controller that can set the mute state.</source>
+        <target state="translated">Tắt tiếng phần cứng yêu cầu bộ điều khiển có thể đặt trạng thái tắt tiếng.</target>
+        <note>53967 - Shown when the Hardware mute method has no available provider. Setting mute is required, but reporting or confirming the state is optional.</note>
       </trans-unit>
       <trans-unit id="Has Home button" xml:space="preserve">
         <source>Has Home button</source>
@@ -6415,6 +6460,11 @@ Việc xóa chúng là an toàn—macOS sẽ tạo lại bất kỳ hồ sơ c�
         <source>Highlight</source>
         <target state="translated">Vùng sáng</target>
         <note>53477 - Image adjustment for the bright tonal regions of an image, paired with the Shadow adjustment. This is photographic highlights, not UI selection highlighting.</note>
+      </trans-unit>
+      <trans-unit id="Highlight Window with Mouse" xml:space="preserve">
+        <source>Highlight Window with Mouse</source>
+        <target state="translated">Làm nổi bật cửa sổ có trỏ chuột</target>
+        <note>53973 - Per-PIP toggle below Show Mouse Pointer. Highlights the PIP title bar, or glows around titlebar-hidden content, when the source-screen pointer lies within the displayed region, respecting cropping and transforms; this is visual emphasis, not the photographic Highlight adjustment.</note>
       </trans-unit>
       <trans-unit id="Hinted maximum active pixel rate" xml:space="preserve">
         <source>Hinted maximum active pixel rate</source>
@@ -7715,6 +7765,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Đang phản chiếu</target>
         <note>53477 - Mirroring feature heading.</note>
       </trans-unit>
+      <trans-unit id="Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets." xml:space="preserve">
+        <source>Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets.</source>
+        <target state="translated">Phản chiếu và trình chiếu khiến việc xác định màn hình cần điều chỉnh trở nên không rõ ràng. Tắt tùy chọn này để chỉ nhắm đến nguồn. Đồng bộ hóa nhóm có thể truyền các thay đổi một cách độc lập, và các lớp phủ trong hình ảnh nguồn vẫn có thể ảnh hưởng đến đích.</target>
+        <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Định danh bị thiếu hoặc trùng lặp - điều này sẽ tạo ra kết quả không mong đợi!</target>
@@ -8250,10 +8305,10 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">OSD</target>
         <note>53477 - On-screen display feature label.</note>
       </trans-unit>
-      <trans-unit id="OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark)." xml:space="preserve">
-        <source>OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark).</source>
-        <target state="translated">Nền OSD thích ứng với môi trường. Khi bị tắt, OSD trong suốt sẽ theo giao diện hệ thống hiện tại (sáng hoặc tối).</target>
-        <note>53477 - Glass OSD adaptive appearance help.</note>
+      <trans-unit id="OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance." xml:space="preserve">
+        <source>OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance.</source>
+        <target state="translated">Nền OSD thích ứng với môi trường. Khi tắt, hãy chọn để OSD theo giao diện hệ thống hoặc luôn dùng giao diện sáng hay tối.</target>
+        <note>53983 - Help for Adaptive OSD background in Keyboard settings. Disabling adaptation reveals a picker for system, light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="OSD location and style" xml:space="preserve">
         <source>OSD location and style</source>
@@ -8744,6 +8799,21 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Press Shortcut</source>
         <target state="translated">Nhấn phím tắt</target>
         <note>53477 - Keyboard shortcut recording prompt.</note>
+      </trans-unit>
+      <trans-unit id="Press ⇧ Shift alone to bypass group synchronization and &quot;All suitable screens&quot;. Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference." xml:space="preserve">
+        <source>Press ⇧ Shift alone to bypass group synchronization and "All suitable screens". Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference.</source>
+        <target state="translated">Chỉ nhấn ⇧ Shift để bỏ qua đồng bộ hóa nhóm và “Tất cả màn hình phù hợp”. Giữ ⇧ Shift mà không giữ ⌥ Option cũng đảo ngược tùy chọn âm thanh phản hồi khi thay đổi âm lượng.</target>
+        <note>53983 - Help for additional native audio modifiers affecting volume and mute keys. Shift alone bypasses synchronization/all-screen targeting; Shift without Option inverts the saved feedback-sound preference when feedback is emitted.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring." xml:space="preserve">
+        <source>Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring.</source>
+        <target state="translated">Nhấn ⌥ Option cùng phím độ sáng để mở Màn hình trong Cài đặt hệ thống, hoặc ⌘ Command cùng phím giảm độ sáng (F1) để bật hoặc tắt phản chiếu màn hình.</target>
+        <note>53983 - Help for the combined native brightness System Settings and mirroring shortcut switch. Keep each modifier glyph with its key name; Brightness Down is the media action normally assigned to F1.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a volume or mute key to open Sound in System Settings." xml:space="preserve">
+        <source>Press ⌥ Option with a volume or mute key to open Sound in System Settings.</source>
+        <target state="translated">Nhấn ⌥ Option cùng phím âm lượng hoặc tắt tiếng để mở Âm thanh trong Cài đặt hệ thống.</target>
+        <note>53983 - Help for the native audio System Settings shortcut switch. Sound is the macOS System Settings pane; preserve the modifier glyph and key name together.</note>
       </trans-unit>
       <trans-unit id="Prevent Cursor Entering" xml:space="preserve">
         <source>Prevent Cursor Entering</source>
@@ -10195,6 +10265,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Đặt Màn Hình Làm Chính</target>
         <note>53477 - Primary screen shortcut title.</note>
       </trans-unit>
+      <trans-unit id="Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." xml:space="preserve">
+        <source>Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen).</source>
+        <target state="translated">Đặt Công tắc thành Đã ẩn để tùy chỉnh khả năng hiển thị của từng công tắc. Các công tắc riêng lẻ được đặt thành Đã ẩn vẫn có trong Quản lý Màn hình (hoặc Quản lý Màn hình ảo).</target>
+        <note>53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen.</note>
+      </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
         <target state="translated">Thiết lập Quyền truy cập</target>
@@ -10478,12 +10553,12 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
       <trans-unit id="Show HDMI-CEC Remote" xml:space="preserve">
         <source>Show HDMI-CEC Remote</source>
         <target state="translated">Hiển thị điều khiển từ xa HDMI-CEC</target>
-        <note>53477 - Open HDMI-CEC remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">Hiện điều khiển LG</target>
-        <note>53477 - Open LG remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Mixed Modes" xml:space="preserve">
         <source>Show Mixed Modes</source>
@@ -10518,22 +10593,32 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
       <trans-unit id="Show Philips Remote" xml:space="preserve">
         <source>Show Philips Remote</source>
         <target state="translated">Hiện điều khiển Philips</target>
-        <note>53477 - Philips remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Quit %@ in the button bar" xml:space="preserve">
         <source>Show Quit %@ in the button bar</source>
         <target state="translated">Hiển thị Thoát %@ trong thanh nút</target>
         <note>53477 - Toggle for showing the Quit command in the button bar. The quoted command must match Quit %@; the placeholder is the app name.</note>
       </trans-unit>
+      <trans-unit id="Show Remote" xml:space="preserve">
+        <source>Show Remote</source>
+        <target state="translated">Hiện điều khiển</target>
+        <note>53968 - Display menu toggle for floating remote-control windows. Shows any missing controller remotes for this display, or hides them all when all are already visible.</note>
+      </trans-unit>
       <trans-unit id="Show Samsung Remote" xml:space="preserve">
         <source>Show Samsung Remote</source>
         <target state="translated">Hiện điều khiển Samsung</target>
-        <note>53477 - Samsung remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Settings in the button bar" xml:space="preserve">
         <source>Show Settings in the button bar</source>
         <target state="translated">Hiển thị Cài Đặt trong thanh nút</target>
         <note>53477 - Settings button visibility setting.</note>
+      </trans-unit>
+      <trans-unit id="Show adaptive slider scales where appropriate" xml:space="preserve">
+        <source>Show adaptive slider scales where appropriate</source>
+        <target state="translated">Hiển thị thang đo thích ứng cho thanh trượt khi phù hợp</target>
+        <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
@@ -10584,6 +10669,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Show console</source>
         <target state="translated">Hiển thị bảng điều khiển</target>
         <note>53477 - Show integration console action.</note>
+      </trans-unit>
+      <trans-unit id="Show current display at top" xml:space="preserve">
+        <source>Show current display at top</source>
+        <target state="translated">Hiển thị màn hình hiện tại ở trên cùng</target>
+        <note>53983 - Toggle under Menu settings &gt; Additional Menu Options &gt; Display Menu Options, available when main-display priority is off. Current display means the screen where an attached app menu first opens, not the main display or the screen it moves to later.</note>
       </trans-unit>
       <trans-unit id="Show current resolution values" xml:space="preserve">
         <source>Show current resolution values</source>
@@ -10705,6 +10795,16 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Hiển thị thanh trượt phụ cho điều khiển âm lượng kết hợp</target>
         <note>53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.</note>
       </trans-unit>
+      <trans-unit id="Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point." xml:space="preserve">
+        <source>Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point.</source>
+        <target state="translated">Hiển thị các chấm xám nhẹ ở những khoảng cách phù hợp trên thanh trượt số. Thang đo thích ứng với phạm vi và không gian có sẵn, dùng giá trị mặc định hoặc trung tính làm điểm tham chiếu.</target>
+        <note>53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.</note>
+      </trans-unit>
+      <trans-unit id="Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." xml:space="preserve">
+        <source>Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close.</source>
+        <target state="translated">Hiển thị các điều khiển và tùy chọn bổ sung của màn hình hiện tại khi mở menu. Khi bật tự động thu gọn, các tùy chọn bổ sung của những màn hình khác sẽ đóng lại.</target>
+        <note>53983 - Explanation of automatic expansion for the opening display. More Options is the device’s additional controls revealed by its chevron; automatic tidying permits only one device to show that area at a time, without collapsing other device headers.</note>
+      </trans-unit>
       <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
         <source>Show the display or device name before the current value in the rounded OSD.</source>
         <target state="translated">Hiển thị tên màn hình hoặc thiết bị trước giá trị hiện tại trong OSD bo tròn.</target>
@@ -10719,6 +10819,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Show warning notifications about color table anomalies</source>
         <target state="translated">Hiển thị cảnh cáo về các bất thường của bảng màu</target>
         <note>53477 - Toggle enabling notifications when another app interferes with display color-table adjustments. The enabled state shows warnings.</note>
+      </trans-unit>
+      <trans-unit id="Show/Hide Remote" xml:space="preserve">
+        <source>Show/Hide Remote</source>
+        <target state="translated">Hiện/ẩn điều khiển</target>
+        <note>53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference.</note>
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
@@ -10875,6 +10980,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Tăng độ sáng XDR/HDR và làm tối bằng phần mềm</target>
         <note>53477 - Software brightness feature section.</note>
       </trans-unit>
+      <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
+        <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
+        <target state="translated">Âm thanh phần mềm không thể cho phép hệ thống tự động ngủ. Quá trình xử lý âm thanh vẫn hoạt động.</target>
+        <note>53967 - Warning when macOS rejects the optional audio-process setting that allows automatic system sleep. The already running audio session continues and remains controllable.</note>
+      </trans-unit>
       <trans-unit id="Software audio is active." xml:space="preserve">
         <source>Software audio is active.</source>
         <target state="translated">Âm thanh phần mềm đang hoạt động.</target>
@@ -10954,11 +11064,6 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">Một số trong đây không ổn định, có thể chứa lỗi nghiêm trọng, các tính năng thử nghiệm hoặc chưa hoàn thành. Không phải tất cả các phiên bản nội bộ đều có sẵn dưới dạng cập nhật tự động.</target>
         <note>53477 - Internal prerelease channel warning.</note>
-      </trans-unit>
-      <trans-unit id="Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." xml:space="preserve">
-        <source>Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active.</source>
-        <target state="translated">Đã bỏ qua một số cài đặt âm lượng phần cứng hoặc tắt tiếng đã lưu vì bộ điều khiển không thể báo cáo trạng thái thực tế của thiết bị. Âm thanh phần mềm vẫn hoạt động.</target>
-        <note>53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.</note>
       </trans-unit>
       <trans-unit id="Something went wrong…" xml:space="preserve">
         <source>Something went wrong…</source>
@@ -11080,10 +11185,10 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Đang khởi động âm thanh phần mềm…</target>
         <note>53927 - Session status while constructing and starting the audio tap and aggregate output.</note>
       </trans-unit>
-      <trans-unit id="Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
-        <source>Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
-        <target state="translated">Khi khởi động và khôi phục, đầu ra xử lý được tắt tiếng cho đến khi xác nhận cài đặt phần cứng đã lưu. Khởi động lại phiên âm thanh tạo lại quá trình xử lý và có thể khôi phục âm lượng ban đầu của thiết bị trong chốc lát.</target>
-        <note>53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.</note>
+      <trans-unit id="Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
+        <source>Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
+        <target state="translated">Khi khởi động và khôi phục, đầu ra xử lý được tắt tiếng trong chốc lát khi khôi phục cài đặt phần cứng đã lưu. Khởi động lại phiên âm thanh tạo lại quá trình xử lý và có thể khôi phục âm lượng ban đầu của thiết bị trong chốc lát.</target>
+        <note>53966 - Software Audio Session help explaining brief muting while restoring saved hardware settings and the audible consequence of restarting. Unconfirmed hardware state shows a warning and releases temporary muting.</note>
       </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
@@ -11194,6 +11299,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Streaming to Multiple Screens</source>
         <target state="translated">Trình Chiếu Đến Nhiều Màn Hình</target>
         <note>53477 - Multiple stream destinations status.</note>
+      </trans-unit>
+      <trans-unit id="Strength" xml:space="preserve">
+        <source>Strength</source>
+        <target state="translated">Cường độ</target>
+        <note>53979 - Label beside the small slider in PIP-highlight (when title bar controls are off) and crop-boundary color selectors. PIP glow defaults to 50% and changes opacity below halfway and thickness above it, while crop-boundary strength defaults to 100% and controls only opacity, with zero invisible.</note>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
         <source>Supported</source>
@@ -11643,15 +11753,10 @@ Thao tác này không đặt lại màn hình.</target>
         <target state="translated">Thiết bị liên kết được dùng cho âm lượng, tắt tiếng và hiệu ứng do bộ điều khiển âm thanh phần mềm cung cấp. Thiết bị này cũng xác định đầu ra cho điều khiển âm thanh phần cứng gốc khi được bật và dùng để khớp thiết bị âm thanh cho bàn phím.</target>
         <note>53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.</note>
       </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." xml:space="preserve">
-        <source>The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session.</source>
-        <target state="translated">Thiết bị âm thanh chưa xác nhận thay đổi. Âm thanh vẫn tắt tiếng. Kiểm tra kết nối và khởi động lại phiên âm thanh.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.</note>
-      </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Check its connection and try again." xml:space="preserve">
-        <source>The audio device did not confirm the change. Check its connection and try again.</source>
-        <target state="translated">Thiết bị âm thanh chưa xác nhận thay đổi. Kiểm tra kết nối rồi thử lại.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.</note>
+      <trans-unit id="The audio device did not confirm the change. Audio processing may be ineffective." xml:space="preserve">
+        <source>The audio device did not confirm the change. Audio processing may be ineffective.</source>
+        <target state="translated">Thiết bị âm thanh chưa xác nhận thay đổi. Quá trình xử lý âm thanh có thể không hiệu quả.</target>
+        <note>53966 - Warning after hardware volume or mute readback fails to match a requested change, including digital outputs with ineffective native controls. Temporary startup protection is released and the configured software volume and mute remain in effect; this warning does not establish that audio processing failed.</note>
       </trans-unit>
       <trans-unit id="The audio device or its format changed. Restart software audio to resume processing." xml:space="preserve">
         <source>The audio device or its format changed. Restart software audio to resume processing.</source>
@@ -11742,11 +11847,6 @@ Thao tác này không đặt lại màn hình.</target>
         <source>The duplicated group will be disabled by default.</source>
         <target state="translated">Nhóm được nhân bản sẽ bị tắt theo mặc định.</target>
         <note>53477 - Duplicate display group action help.</note>
-      </trans-unit>
-      <trans-unit id="The hardware mute provider does not support device readback. No mute request was sent." xml:space="preserve">
-        <source>The hardware mute provider does not support device readback. No mute request was sent.</source>
-        <target state="translated">Nhà cung cấp tắt tiếng phần cứng không hỗ trợ đọc lại trạng thái thiết bị. Yêu cầu tắt tiếng chưa được gửi.</target>
-        <note>53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.</note>
       </trans-unit>
       <trans-unit id="The hardware mute state could not be confirmed. Software protection remains active." xml:space="preserve">
         <source>The hardware mute state could not be confirmed. Software protection remains active.</source>
@@ -11891,11 +11991,6 @@ Trong trường hợp thất bại, ngắt kết nối và kết nối lại mà
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Bảo vệ sẽ không có hiệu lực trừ khi vị trí tương đối được xác định.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." xml:space="preserve">
-        <source>The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller.</source>
-        <target state="translated">Bộ điều khiển phần cứng đã chọn không thể báo cáo trạng thái tắt tiếng của thiết bị. Tắt tiếng phần cứng chưa thay đổi. Chọn tắt tiếng phần mềm hoặc định cấu hình bộ điều khiển tắt tiếng phần cứng khác.</target>
-        <note>53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12505,11 +12600,6 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Công tắc</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
-      <trans-unit id="Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." xml:space="preserve">
-        <source>Toggles are available under the Manage Display (or Virtual Screen) menu when hidden.</source>
-        <target state="translated">Các công tắc có sẵn trong menu Quản Lý Màn Hình (hoặc Màn Hình Ảo) khi bị ẩn.</target>
-        <note>53477 - Hidden toggle control access help.</note>
-      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">Công cụ</target>
@@ -13075,10 +13165,20 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Sử dụng bộ lọc compositor</target>
         <note>53477 - Use display compositor image filter option.</note>
       </trans-unit>
+      <trans-unit id="Use Dark Appearance" xml:space="preserve">
+        <source>Use Dark Appearance</source>
+        <target state="translated">Dùng giao diện tối</target>
+        <note>53983 - OSD appearance picker option that forces a dark OSD independently of the system appearance, when adaptive background is disabled.</note>
+      </trans-unit>
       <trans-unit id="Use Enable Audio Access in Configure Software Audio… to request audio recording permission." xml:space="preserve">
         <source>Use Enable Audio Access in Configure Software Audio… to request audio recording permission.</source>
         <target state="translated">Dùng Bật quyền truy cập âm thanh trong Định cấu hình âm thanh phần mềm… để yêu cầu quyền ghi âm thanh.</target>
         <note>53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.</note>
+      </trans-unit>
+      <trans-unit id="Use Light Appearance" xml:space="preserve">
+        <source>Use Light Appearance</source>
+        <target state="translated">Dùng giao diện sáng</target>
+        <note>53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -13619,6 +13719,11 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">Khi mở rộng một mục menu, tự động ẩn các mục khác trong khối thiết bị/menu đã chọn. Điều này giúp giữ cho menu nhỏ gọn hơn.</target>
         <note>53477 - Menu automatic collapse setting help.</note>
+      </trans-unit>
+      <trans-unit id="When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected." xml:space="preserve">
+        <source>When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected.</source>
+        <target state="translated">Khi mở menu ứng dụng, đặt màn hình mà menu mở trên đó lên đầu. Menu đã tách và việc chuyển menu đang mở sang màn hình khác không bị ảnh hưởng.</target>
+        <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
@@ -14192,6 +14297,17 @@ Mở Cài đặt hệ thống &gt; Cài đặt chung &gt; Mục đăng nhập v�
         <source>waiting for prompt</source>
         <target state="translated">Đang chờ yêu cầu ghép đôi</target>
         <note>53477 - Device pairing prompt state.</note>
+      </trans-unit>
+      <trans-unit id="⇧ Shift alone bypasses group synchronization and &quot;All suitable screens&quot;.&#10;⌃ Control targets the built-in display.&#10;⌃ Control + ⌘ Command targets external displays.&#10;⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." xml:space="preserve">
+        <source>⇧ Shift alone bypasses group synchronization and "All suitable screens".
+⌃ Control targets the built-in display.
+⌃ Control + ⌘ Command targets external displays.
+⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets.</source>
+        <target state="translated">Chỉ ⇧ Shift sẽ bỏ qua đồng bộ hóa nhóm và “Tất cả màn hình phù hợp”.
+⌃ Control nhắm đến màn hình tích hợp.
+⌃ Control + ⌘ Command nhắm đến các màn hình ngoài.
+⇧ Shift + ⌘ Command nhắm đến các màn hình khác ngoài màn hình hiện tại và các đích phản chiếu/trình chiếu của màn hình đó.</target>
+        <note>53983 - Four-line help for additional native brightness modifier actions; All suitable screens is an existing keyboard target option. Shift+Command excludes the current display and all its mirror/stream targets; preserve line breaks and modifier glyph/name pairs.</note>
       </trans-unit>
     </body>
   </file>

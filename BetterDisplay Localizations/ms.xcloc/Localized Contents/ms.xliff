@@ -591,11 +591,6 @@ Semak sambungan rangkaian dan tetapan tembok api anda.</target>
         <target state="translated">Terdapat paparan yang tidak boleh dikawal sepenuhnya tanpa app</target>
         <note>53477 - Conditional activation option for displays requiring the app for full control.</note>
       </trans-unit>
-      <trans-unit id="A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it." xml:space="preserve">
-        <source>A hardware volume change was requested, but the controller cannot report the device’s actual volume. Software mute stays on until you explicitly unmute it.</source>
-        <target state="translated">Perubahan kelantangan perkakasan telah diminta, tetapi pengawal tidak boleh melaporkan kelantangan sebenar peranti. Bisu perisian kekal hidup sehingga anda menyahbisukannya secara jelas.</target>
-        <note>53927 - Diagnostic for write-only hardware providers. The volume request was sent, but automatic software unmute is withheld until the user explicitly unmutes.</note>
-      </trans-unit>
       <trans-unit id="A higher priority display group marked as exclusive is active." xml:space="preserve">
         <source>A higher priority display group marked as exclusive is active.</source>
         <target state="translated">Kumpulan paparan berkeutamaan lebih tinggi yang ditandakan sebagai eksklusif sedang aktif.</target>
@@ -665,6 +660,11 @@ Semak sambungan rangkaian dan tetapan tembok api anda.</target>
         <source>Absent</source>
         <target state="translated">Belum ditambah</target>
         <note>53927 - Audio Device Configuration status when no hardware volume controller is available or the optional Software Audio controller has not been added.</note>
+      </trans-unit>
+      <trans-unit id="Accent Color" xml:space="preserve">
+        <source>Accent Color</source>
+        <target state="translated">Warna Aksen</target>
+        <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
       <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
         <source>Accessibility Configuration Required!</source>
@@ -955,6 +955,11 @@ Semak sambungan rangkaian dan tetapan tembok api anda.</target>
         <source>Adjust the offset of the two displays by modifying the anchor points. Layout protection tries to arrange the displays so they line up at the defined anchor points horizontally or vertically. The default setting is to line up displays in a centered way.</source>
         <target state="translated">Laraskan ofset antara dua paparan dengan mengubah titik sauh. Perlindungan susun atur cuba menyusun paparan supaya sejajar pada titik sauh yang ditentukan secara mendatar atau menegak. Seting lalai menjajarkan paparan di tengah.</target>
         <note>53477 - Layout protection anchor point help explaining relative alignment and default centering.</note>
+      </trans-unit>
+      <trans-unit id="Adjustments affect mirror and stream targets" xml:space="preserve">
+        <source>Adjustments affect mirror and stream targets</source>
+        <target state="translated">Pelarasan mempengaruhi sasaran pencerminan dan penstriman</target>
+        <note>53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.</note>
       </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
@@ -1863,6 +1868,11 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <target state="translated">Meter audio memerlukan sesi audio perisian yang aktif.</target>
         <note>53927 - Information in the Device Control protection and meters block when processing is inactive. Meters appear whenever that menu section is enabled.</note>
       </trans-unit>
+      <trans-unit id="Audio processing could not be confirmed and may be ineffective." xml:space="preserve">
+        <source>Audio processing could not be confirmed and may be ineffective.</source>
+        <target state="translated">Pemprosesan audio tidak dapat disahkan dan mungkin tidak berkesan.</target>
+        <note>53967 - Warning when the brief startup or restoration wait ends without a processing acknowledgement. Requested changes still proceed and temporary muting is released; this warning clears once processing makes progress.</note>
+      </trans-unit>
       <trans-unit id="Audio recording permission" xml:space="preserve">
         <source>Audio recording permission</source>
         <target state="translated">Kebenaran rakaman audio</target>
@@ -1912,6 +1922,11 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <source>Auto-disconnect on external display connection is now suspended.</source>
         <target state="translated">Pemutusan automatik apabila paparan luaran disambungkan kini digantung.</target>
         <note>53477 - Status indicating temporary suspension of automatic disconnection.</note>
+      </trans-unit>
+      <trans-unit id="Auto-expand current display when opening the menu" xml:space="preserve">
+        <source>Auto-expand current display when opening the menu</source>
+        <target state="translated">Kembangkan paparan semasa apabila menu dibuka</target>
+        <note>53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.</note>
       </trans-unit>
       <trans-unit id="Auto-start full screen streaming" xml:space="preserve">
         <source>Auto-start full screen streaming</source>
@@ -2883,10 +2898,10 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <target state="translated">Kawalan Kelantangan Gabungan didayakan dan mengurus kawalan kelantangan serta bisu perkakasan dan perisian.</target>
         <note>53927 - Information-icon explanation below the disabled hardware-priority switch while combined volume/mute routing is enabled.</note>
       </trans-unit>
-      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume." xml:space="preserve">
-        <source>Combined adds software attenuation below the hardware’s lowest usable volume and requires a controller that can report the hardware volume.</source>
-        <target state="translated">Gabungan menambah pelemahan perisian di bawah kelantangan perkakasan terendah yang boleh digunakan dan memerlukan pengawal yang boleh melaporkan kelantangan perkakasan.</target>
-        <note>53927 - Help below Volume method, explaining combined volume and the need to read the actual hardware volume.</note>
+      <trans-unit id="Combined adds software attenuation below the hardware’s lowest usable volume." xml:space="preserve">
+        <source>Combined adds software attenuation below the hardware’s lowest usable volume.</source>
+        <target state="translated">Gabungan menambah pelemahan perisian di bawah kelantangan perkakasan terendah yang boleh digunakan.</target>
+        <note>53967 - Help for the Combined volume method, which adds software attenuation below the physical output’s usable range. Hardware readback is optional and is not required to use this method.</note>
       </trans-unit>
       <trans-unit id="Combined brightness" xml:space="preserve">
         <source>Combined brightness</source>
@@ -2917,11 +2932,6 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <source>Combined brightness is not active.</source>
         <target state="translated">Kecerahan gabungan tidak aktif.</target>
         <note>53695 - Status beneath the Combined brightness switch in display Settings when combined brightness is not the effective brightness control.</note>
-      </trans-unit>
-      <trans-unit id="Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller." xml:space="preserve">
-        <source>Combined volume needs a hardware controller that can report the device’s actual volume. Choose another volume method or configure a compatible hardware controller.</source>
-        <target state="translated">Kelantangan gabungan memerlukan pengawal perkakasan yang boleh melaporkan kelantangan sebenar peranti. Pilih kaedah kelantangan lain atau konfigurasikan pengawal perkakasan yang serasi.</target>
-        <note>53927 - Warning when combined volume cannot confirm hardware state. A compatible hardware controller must report the device’s actual volume as well as accepting writes.</note>
       </trans-unit>
       <trans-unit id="Comic Effect" xml:space="preserve">
         <source>Comic Effect</source>
@@ -4233,6 +4243,11 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <target state="translated">Menu app boleh dipisahkan</target>
         <note>53477 - Setting allowing the app menu to detach into a floating window.</note>
       </trans-unit>
+      <trans-unit id="Detached Remote" xml:space="preserve">
+        <source>Detached Remote</source>
+        <target state="translated">Alat kawalan jauh terpisah</target>
+        <note>53969 - Presentation toggle shown only while the controller’s Show Remote toggle is on. On displays the remote in a separate floating window; off displays it inline in the app menu, and the choice is remembered while the remote is hidden.</note>
+      </trans-unit>
       <trans-unit id="Detached app menu alpha level" xml:space="preserve">
         <source>Detached app menu alpha level</source>
         <target state="translated">Aras alfa menu app yang dipisahkan</target>
@@ -4508,6 +4523,11 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <target state="translated">Putuskan Paparan</target>
         <note>53477 - Display disconnection action.</note>
       </trans-unit>
+      <trans-unit id="Disconnect Screen on Close" xml:space="preserve">
+        <source>Disconnect Screen on Close</source>
+        <target state="translated">Putuskan Skrin Apabila Ditutup</target>
+        <note>53972 - Per-PIP preference shown only for BetterDisplay virtual screens with Start Automatically enabled. Closing this PIP window disconnects its source virtual screen only if no other PIP, screen stream or mirror target still uses it.</note>
+      </trans-unit>
       <trans-unit id="Disconnect Virtual Screen" xml:space="preserve">
         <source>Disconnect Virtual Screen</source>
         <target state="translated">Putuskan Skrin Maya</target>
@@ -4587,6 +4607,11 @@ Menentukan panjang bacaan adalah pilihan - biarkan medan kosong untuk pengesanan
         <source>Disconnecting virtual screens</source>
         <target state="translated">Memutuskan skrin maya</target>
         <note>53477 - Virtual screen disconnection operation heading.</note>
+      </trans-unit>
+      <trans-unit id="Disconnects only when no other BetterDisplay streams or mirrors use this screen." xml:space="preserve">
+        <source>Disconnects only when no other BetterDisplay streams or mirrors use this screen.</source>
+        <target state="translated">Skrin hanya diputuskan jika tiada strim atau pencerminan BetterDisplay lain menggunakan skrin ini.</target>
+        <note>53972 - Help shown beneath Disconnect Screen on Close only while enabled. Streams include other PIP windows and screen streams, including paused or hidden ones; mirrors are display mirroring targets of this virtual screen.</note>
       </trans-unit>
       <trans-unit id="Dismiss" xml:space="preserve">
         <source>Dismiss</source>
@@ -5242,6 +5267,16 @@ Proses ini tidak berfungsi untuk paparan terbina dalam (but semula diperlukan). 
         <target state="translated">Dayakan Strim</target>
         <note>53477 - Display streaming toggle.</note>
       </trans-unit>
+      <trans-unit id="Enable System Settings and mirroring shortcuts" xml:space="preserve">
+        <source>Enable System Settings and mirroring shortcuts</source>
+        <target state="translated">Dayakan pintasan Seting Sistem dan pencerminan</target>
+        <note>53983 - Native Brightness Key Settings switch, enabled by default. Enables Option with brightness keys to open Displays in System Settings and Command with Brightness Down to toggle display mirroring.</note>
+      </trans-unit>
+      <trans-unit id="Enable System Settings shortcuts" xml:space="preserve">
+        <source>Enable System Settings shortcuts</source>
+        <target state="translated">Dayakan pintasan Seting Sistem</target>
+        <note>53983 - Native Audio Key Settings switch, enabled by default. Enables Option with volume or mute keys to open Sound in System Settings.</note>
+      </trans-unit>
       <trans-unit id="Enable True Tone" xml:space="preserve">
         <source>Enable True Tone</source>
         <target state="translated">Dayakan True Tone</target>
@@ -5256,6 +5291,11 @@ Proses ini tidak berfungsi untuk paparan terbina dalam (but semula diperlukan). 
         <source>Enable Video Filter Window</source>
         <target state="translated">Dayakan Tetingkap Penapis Video</target>
         <note>53477 - Video filter window toggle.</note>
+      </trans-unit>
+      <trans-unit id="Enable additional modifier key functions" xml:space="preserve">
+        <source>Enable additional modifier key functions</source>
+        <target state="translated">Dayakan fungsi tambahan kekunci pengubah suai</target>
+        <note>53983 - Separate default-on switches in Native Brightness Key Settings and Native Audio Key Settings. Gates extra modifier actions but keeps Shift+Option fine adjustment available.</note>
       </trans-unit>
       <trans-unit id="Enable color table control" xml:space="preserve">
         <source>Enable color table control</source>
@@ -5740,6 +5780,11 @@ Mengalih keluarnya adalah selamat—macOS akan mencipta semula profil yang diper
         <source>Flip</source>
         <target state="translated">Balikkan</target>
         <note>53477 - Streaming image horizontal or vertical flip control.</note>
+      </trans-unit>
+      <trans-unit id="Follow System Appearance" xml:space="preserve">
+        <source>Follow System Appearance</source>
+        <target state="translated">Ikut penampilan sistem</target>
+        <note>53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
         <source>For best results, stick close to the display aspect ratio!</source>
@@ -6291,10 +6336,10 @@ Mengalih keluarnya adalah selamat—macOS akan mencipta semula profil yang diper
         <target state="translated">Kawalan perkakasan - minimum</target>
         <note>53477 - Hardware control range lower bound.</note>
       </trans-unit>
-      <trans-unit id="Hardware mute requires a controller that can set and report the mute state." xml:space="preserve">
-        <source>Hardware mute requires a controller that can set and report the mute state.</source>
-        <target state="translated">Bisu perkakasan memerlukan pengawal yang boleh menetapkan dan melaporkan keadaan bisu.</target>
-        <note>53927 - Notice when the selected hardware mute provider cannot support explicit mute state and confirmation.</note>
+      <trans-unit id="Hardware mute requires a controller that can set the mute state." xml:space="preserve">
+        <source>Hardware mute requires a controller that can set the mute state.</source>
+        <target state="translated">Bisu perkakasan memerlukan pengawal yang boleh menetapkan keadaan bisu.</target>
+        <note>53967 - Shown when the Hardware mute method has no available provider. Setting mute is required, but reporting or confirming the state is optional.</note>
       </trans-unit>
       <trans-unit id="Has Home button" xml:space="preserve">
         <source>Has Home button</source>
@@ -6415,6 +6460,11 @@ Mengalih keluarnya adalah selamat—macOS akan mencipta semula profil yang diper
         <source>Highlight</source>
         <target state="translated">Sorotan</target>
         <note>53477 - Image adjustment for the bright tonal regions of an image, paired with the Shadow adjustment. This is photographic highlights, not UI selection highlighting.</note>
+      </trans-unit>
+      <trans-unit id="Highlight Window with Mouse" xml:space="preserve">
+        <source>Highlight Window with Mouse</source>
+        <target state="translated">Serlahkan Tetingkap Berpenuding</target>
+        <note>53973 - Per-PIP toggle below Show Mouse Pointer. Highlights the PIP title bar, or glows around titlebar-hidden content, when the source-screen pointer lies within the displayed region, respecting cropping and transforms; this is visual emphasis, not the photographic Highlight adjustment.</note>
       </trans-unit>
       <trans-unit id="Hinted maximum active pixel rate" xml:space="preserve">
         <source>Hinted maximum active pixel rate</source>
@@ -7715,6 +7765,11 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <target state="translated">Pencerminan</target>
         <note>53477 - Mirroring feature heading.</note>
       </trans-unit>
+      <trans-unit id="Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets." xml:space="preserve">
+        <source>Mirroring and streaming make the intended display ambiguous. Disable this to target only the source. Group synchronization may independently propagate changes, and source overlays may still affect targets.</source>
+        <target state="translated">Pencerminan dan penstriman menjadikan paparan yang dimaksudkan tidak jelas. Nyahdayakan ini untuk menyasarkan sumber sahaja. Penyegerakan kumpulan mungkin menyebarkan perubahan secara berasingan, dan tindanan pada imej sumber masih boleh mempengaruhi sasaran.</target>
+        <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Terdapat pengecam yang hilang atau berganda - ini akan menghasilkan hasil yang tidak dijangka!</target>
@@ -8250,10 +8305,10 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <target state="translated">OSD</target>
         <note>53477 - On-screen display feature label.</note>
       </trans-unit>
-      <trans-unit id="OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark)." xml:space="preserve">
-        <source>OSD background adapts to the environment. When disabled, the glass OSD will follow the current system appearance (light or dark).</source>
-        <target state="translated">Latar belakang OSD menyesuaikan diri dengan persekitaran. Apabila dinyahdayakan, OSD kaca akan mengikut penampilan sistem semasa (cerah atau gelap).</target>
-        <note>53477 - Glass OSD adaptive appearance help.</note>
+      <trans-unit id="OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance." xml:space="preserve">
+        <source>OSD background adapts to the environment. When disabled, choose whether the OSD follows the system appearance or always uses light or dark appearance.</source>
+        <target state="translated">Latar belakang OSD menyesuaikan diri dengan persekitaran. Apabila dinyahdayakan, pilih sama ada OSD mengikut penampilan sistem atau sentiasa menggunakan penampilan cerah atau gelap.</target>
+        <note>53983 - Help for Adaptive OSD background in Keyboard settings. Disabling adaptation reveals a picker for system, light or dark appearance.</note>
       </trans-unit>
       <trans-unit id="OSD location and style" xml:space="preserve">
         <source>OSD location and style</source>
@@ -8744,6 +8799,21 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <source>Press Shortcut</source>
         <target state="translated">Tekan Pintasan</target>
         <note>53477 - Keyboard shortcut recording prompt.</note>
+      </trans-unit>
+      <trans-unit id="Press ⇧ Shift alone to bypass group synchronization and &quot;All suitable screens&quot;. Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference." xml:space="preserve">
+        <source>Press ⇧ Shift alone to bypass group synchronization and "All suitable screens". Holding ⇧ Shift without ⌥ Option also reverses the volume feedback sound preference.</source>
+        <target state="translated">Tekan ⇧ Shift sahaja untuk memintas penyegerakan kumpulan dan “Semua skrin yang sesuai”. Menahan ⇧ Shift tanpa ⌥ Option juga membalikkan keutamaan bunyi maklum balas kelantangan.</target>
+        <note>53983 - Help for additional native audio modifiers affecting volume and mute keys. Shift alone bypasses synchronization/all-screen targeting; Shift without Option inverts the saved feedback-sound preference when feedback is emitted.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring." xml:space="preserve">
+        <source>Press ⌥ Option with a brightness key to open Displays in System Settings, or ⌘ Command with Brightness Down (F1) to toggle display mirroring.</source>
+        <target state="translated">Tekan ⌥ Option bersama kekunci kecerahan untuk membuka Paparan dalam Seting Sistem, atau ⌘ Command bersama kekunci Kurangkan Kecerahan (F1) untuk menogol pencerminan paparan.</target>
+        <note>53983 - Help for the combined native brightness System Settings and mirroring shortcut switch. Keep each modifier glyph with its key name; Brightness Down is the media action normally assigned to F1.</note>
+      </trans-unit>
+      <trans-unit id="Press ⌥ Option with a volume or mute key to open Sound in System Settings." xml:space="preserve">
+        <source>Press ⌥ Option with a volume or mute key to open Sound in System Settings.</source>
+        <target state="translated">Tekan ⌥ Option bersama kekunci kelantangan atau bisu untuk membuka Bunyi dalam Seting Sistem.</target>
+        <note>53983 - Help for the native audio System Settings shortcut switch. Sound is the macOS System Settings pane; preserve the modifier glyph and key name together.</note>
       </trans-unit>
       <trans-unit id="Prevent Cursor Entering" xml:space="preserve">
         <source>Prevent Cursor Entering</source>
@@ -10195,6 +10265,11 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <target state="translated">Tetapkan Skrin sebagai Utama</target>
         <note>53477 - Primary screen shortcut title.</note>
       </trans-unit>
+      <trans-unit id="Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." xml:space="preserve">
+        <source>Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen).</source>
+        <target state="translated">Tetapkan Togol kepada Tersembunyi untuk menyesuaikan keterlihatan setiap togol. Togol individu yang ditetapkan kepada Tersembunyi kekal tersedia di bawah Urus Paparan (atau Urus Skrin Maya).</target>
+        <note>53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen.</note>
+      </trans-unit>
       <trans-unit id="Set Up Permissions" xml:space="preserve">
         <source>Set Up Permissions</source>
         <target state="translated">Sediakan Kebenaran</target>
@@ -10478,12 +10553,12 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
       <trans-unit id="Show HDMI-CEC Remote" xml:space="preserve">
         <source>Show HDMI-CEC Remote</source>
         <target state="translated">Tunjukkan Alat Kawalan Jauh HDMI-CEC</target>
-        <note>53477 - Open HDMI-CEC remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show LG Remote" xml:space="preserve">
         <source>Show LG Remote</source>
         <target state="translated">Tunjukkan Alat Kawalan Jauh LG</target>
-        <note>53477 - Open LG remote control action.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Mixed Modes" xml:space="preserve">
         <source>Show Mixed Modes</source>
@@ -10518,22 +10593,32 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
       <trans-unit id="Show Philips Remote" xml:space="preserve">
         <source>Show Philips Remote</source>
         <target state="translated">Tunjukkan Alat Kawalan Jauh Philips</target>
-        <note>53477 - Philips remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Quit %@ in the button bar" xml:space="preserve">
         <source>Show Quit %@ in the button bar</source>
         <target state="translated">Tunjukkan Keluar %@ dalam bar butang</target>
         <note>53477 - Toggle for showing the Quit command in the button bar. The quoted command must match Quit %@; the placeholder is the app name.</note>
       </trans-unit>
+      <trans-unit id="Show Remote" xml:space="preserve">
+        <source>Show Remote</source>
+        <target state="translated">Tunjukkan alat kawalan jauh</target>
+        <note>53968 - Display menu toggle for floating remote-control windows. Shows any missing controller remotes for this display, or hides them all when all are already visible.</note>
+      </trans-unit>
       <trans-unit id="Show Samsung Remote" xml:space="preserve">
         <source>Show Samsung Remote</source>
         <target state="translated">Tunjukkan Alat Kawalan Jauh Samsung</target>
-        <note>53477 - Samsung remote menu visibility setting.</note>
+        <note>53969 - Controller remote visibility toggle. Shows or hides the remote inline or in a floating window according to the saved Detached Remote setting; the presentation toggle is shown only while this visibility toggle is on.</note>
       </trans-unit>
       <trans-unit id="Show Settings in the button bar" xml:space="preserve">
         <source>Show Settings in the button bar</source>
         <target state="translated">Tunjukkan Seting dalam bar butang</target>
         <note>53477 - Settings button visibility setting.</note>
+      </trans-unit>
+      <trans-unit id="Show adaptive slider scales where appropriate" xml:space="preserve">
+        <source>Show adaptive slider scales where appropriate</source>
+        <target state="translated">Tunjukkan skala gelangsar adaptif jika sesuai</target>
+        <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
@@ -10584,6 +10669,11 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <source>Show console</source>
         <target state="translated">Tunjukkan konsol</target>
         <note>53477 - Show integration console action.</note>
+      </trans-unit>
+      <trans-unit id="Show current display at top" xml:space="preserve">
+        <source>Show current display at top</source>
+        <target state="translated">Tunjukkan paparan semasa di atas</target>
+        <note>53983 - Toggle under Menu settings &gt; Additional Menu Options &gt; Display Menu Options, available when main-display priority is off. Current display means the screen where an attached app menu first opens, not the main display or the screen it moves to later.</note>
       </trans-unit>
       <trans-unit id="Show current resolution values" xml:space="preserve">
         <source>Show current resolution values</source>
@@ -10705,6 +10795,16 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <target state="translated">Tunjukkan subgelangsar bagi kawalan kelantangan gabungan</target>
         <note>53927 - Per-display option directly below Enable combined volume control in the Software Audio sheet, off by default. Shows separate hardware/software volume sliders when the Combined volume method is selected; mirrors the combined-brightness option wording.</note>
       </trans-unit>
+      <trans-unit id="Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point." xml:space="preserve">
+        <source>Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point.</source>
+        <target state="translated">Menunjukkan titik kelabu yang halus pada sela yang sesuai pada gelangsar berangka. Skala menyesuaikan diri dengan julat dan ruang yang tersedia, menggunakan nilai lalai atau neutral sebagai titik rujukan.</target>
+        <note>53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.</note>
+      </trans-unit>
+      <trans-unit id="Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." xml:space="preserve">
+        <source>Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close.</source>
+        <target state="translated">Tunjukkan kawalan dan pilihan tambahan paparan semasa apabila menu dibuka. Apabila pengemasan automatik didayakan, pilihan tambahan paparan lain ditutup.</target>
+        <note>53983 - Explanation of automatic expansion for the opening display. More Options is the device’s additional controls revealed by its chevron; automatic tidying permits only one device to show that area at a time, without collapsing other device headers.</note>
+      </trans-unit>
       <trans-unit id="Show the display or device name before the current value in the rounded OSD." xml:space="preserve">
         <source>Show the display or device name before the current value in the rounded OSD.</source>
         <target state="translated">Tunjukkan nama paparan atau peranti sebelum nilai semasa dalam OSD bulat.</target>
@@ -10719,6 +10819,11 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <source>Show warning notifications about color table anomalies</source>
         <target state="translated">Tunjukkan pemberitahuan amaran tentang anomali jadual warna</target>
         <note>53477 - Toggle enabling notifications when another app interferes with display color-table adjustments. The enabled state shows warnings.</note>
+      </trans-unit>
+      <trans-unit id="Show/Hide Remote" xml:space="preserve">
+        <source>Show/Hide Remote</source>
+        <target state="translated">Tunjukkan/sembunyikan alat kawalan jauh</target>
+        <note>53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference.</note>
       </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
@@ -10875,6 +10980,11 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <target state="translated">Peningkatan Kecerahan dan Pemalapan XDR/HDR Perisian</target>
         <note>53477 - Software brightness feature section.</note>
       </trans-unit>
+      <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
+        <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
+        <target state="translated">Audio perisian tidak dapat membenarkan tidur sistem automatik. Pemprosesan audio kekal aktif.</target>
+        <note>53967 - Warning when macOS rejects the optional audio-process setting that allows automatic system sleep. The already running audio session continues and remains controllable.</note>
+      </trans-unit>
       <trans-unit id="Software audio is active." xml:space="preserve">
         <source>Software audio is active.</source>
         <target state="translated">Audio perisian aktif.</target>
@@ -10954,11 +11064,6 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <source>Some of these are unstable, may contain major bugs, experimental or unfinished features. Not all internal releases are available as auto-updates.</source>
         <target state="translated">Sesetengah keluaran ini tidak stabil, mungkin mengandungi pepijat besar, ciri eksperimen atau belum siap. Tidak semua keluaran dalaman tersedia sebagai kemas kini automatik.</target>
         <note>53477 - Internal prerelease channel warning.</note>
-      </trans-unit>
-      <trans-unit id="Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active." xml:space="preserve">
-        <source>Some saved hardware volume or mute settings were skipped because the controller cannot report the device’s actual state. Software audio remains active.</source>
-        <target state="translated">Sesetengah seting kelantangan perkakasan atau bisu yang disimpan dilangkau kerana pengawal tidak boleh melaporkan keadaan sebenar peranti. Audio perisian kekal aktif.</target>
-        <note>53927 - Warning after startup or wake when unreadable hardware state prevents restoring some saved hardware volume/mute values, while software processing remains usable.</note>
       </trans-unit>
       <trans-unit id="Something went wrong…" xml:space="preserve">
         <source>Something went wrong…</source>
@@ -11080,10 +11185,10 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <target state="translated">Memulakan audio perisian…</target>
         <note>53927 - Session status while constructing and starting the audio tap and aggregate output.</note>
       </trans-unit>
-      <trans-unit id="Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
-        <source>Startup and recovery mute processing until saved hardware settings are confirmed. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
-        <target state="translated">Semasa permulaan dan pemulihan, output pemprosesan dibisukan sehingga seting perkakasan yang disimpan disahkan. Mulakan Semula Sesi Audio membina semula pemprosesan dan mungkin memulihkan kelantangan asal peranti buat seketika.</target>
-        <note>53927 - Software Audio Session help explaining temporary muting during protected restoration and the audible consequence of restarting the session.</note>
+      <trans-unit id="Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume." xml:space="preserve">
+        <source>Startup and recovery briefly mute processing while restoring saved hardware settings. Restart Audio Session rebuilds processing and may briefly restore the device’s original volume.</source>
+        <target state="translated">Semasa permulaan dan pemulihan, output pemprosesan dibisukan seketika sewaktu memulihkan seting perkakasan yang disimpan. Mulakan Semula Sesi Audio membina semula pemprosesan dan mungkin memulihkan kelantangan asal peranti buat seketika.</target>
+        <note>53966 - Software Audio Session help explaining brief muting while restoring saved hardware settings and the audible consequence of restarting. Unconfirmed hardware state shows a warning and releases temporary muting.</note>
       </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
@@ -11194,6 +11299,11 @@ Tidak semua paparan menyokong operasi kawalan skrin. Operasi ini boleh menyebabk
         <source>Streaming to Multiple Screens</source>
         <target state="translated">Menstrim ke Berbilang Skrin</target>
         <note>53477 - Multiple stream destinations status.</note>
+      </trans-unit>
+      <trans-unit id="Strength" xml:space="preserve">
+        <source>Strength</source>
+        <target state="translated">Keamatan</target>
+        <note>53979 - Label beside the small slider in PIP-highlight (when title bar controls are off) and crop-boundary color selectors. PIP glow defaults to 50% and changes opacity below halfway and thickness above it, while crop-boundary strength defaults to 100% and controls only opacity, with zero invisible.</note>
       </trans-unit>
       <trans-unit id="Supported" xml:space="preserve">
         <source>Supported</source>
@@ -11643,15 +11753,10 @@ Operasi ini tidak menetapkan semula paparan itu sendiri.</target>
         <target state="translated">Peranti berkaitan digunakan untuk kelantangan, bisu dan kesan yang disediakan oleh pengawal audio perisian. Ia juga mengenal pasti output untuk kawalan audio perkakasan asli apabila didayakan dan untuk pemadanan peranti audio papan kekunci.</target>
         <note>53927 - Help beneath the Associated audio device field. Explains that the output association is shared by software audio processing, optional native hardware volume/mute and keyboard target matching.</note>
       </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session." xml:space="preserve">
-        <source>The audio device did not confirm the change. Audio remains muted. Check its connection and restart the audio session.</source>
-        <target state="translated">Peranti audio tidak mengesahkan perubahan. Audio kekal dibisukan. Semak sambungannya dan mulakan semula sesi audio.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during protected startup or recovery. Playback remains temporarily muted; the requested and observed hardware state are logged.</note>
-      </trans-unit>
-      <trans-unit id="The audio device did not confirm the change. Check its connection and try again." xml:space="preserve">
-        <source>The audio device did not confirm the change. Check its connection and try again.</source>
-        <target state="translated">Peranti audio tidak mengesahkan perubahan. Semak sambungannya dan cuba lagi.</target>
-        <note>53927 - Hardware volume or mute confirmation failed during an ordinary adjustment. This failure does not add a temporary mute; the requested and observed hardware state are logged.</note>
+      <trans-unit id="The audio device did not confirm the change. Audio processing may be ineffective." xml:space="preserve">
+        <source>The audio device did not confirm the change. Audio processing may be ineffective.</source>
+        <target state="translated">Peranti audio tidak mengesahkan perubahan. Pemprosesan audio mungkin tidak berkesan.</target>
+        <note>53966 - Warning after hardware volume or mute readback fails to match a requested change, including digital outputs with ineffective native controls. Temporary startup protection is released and the configured software volume and mute remain in effect; this warning does not establish that audio processing failed.</note>
       </trans-unit>
       <trans-unit id="The audio device or its format changed. Restart software audio to resume processing." xml:space="preserve">
         <source>The audio device or its format changed. Restart software audio to resume processing.</source>
@@ -11742,11 +11847,6 @@ Operasi ini tidak menetapkan semula paparan itu sendiri.</target>
         <source>The duplicated group will be disabled by default.</source>
         <target state="translated">Kumpulan yang diduplikasikan akan dinyahdayakan secara lalai.</target>
         <note>53477 - Duplicate display group action help.</note>
-      </trans-unit>
-      <trans-unit id="The hardware mute provider does not support device readback. No mute request was sent." xml:space="preserve">
-        <source>The hardware mute provider does not support device readback. No mute request was sent.</source>
-        <target state="translated">Penyedia bisu perkakasan tidak menyokong bacaan balik keadaan peranti. Tiada permintaan bisu dihantar.</target>
-        <note>53927 - Protected mute/unmute cannot verify the selected physical provider, so the operation is rejected before sending a hardware command.</note>
       </trans-unit>
       <trans-unit id="The hardware mute state could not be confirmed. Software protection remains active." xml:space="preserve">
         <source>The hardware mute state could not be confirmed. Software protection remains active.</source>
@@ -11891,11 +11991,6 @@ Jika berlaku kegagalan, putuskan dan sambungkan semula paparan secara fizikal.</
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Perlindungan tidak berkuat kuasa melainkan kedudukan relatif ditentukan.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller." xml:space="preserve">
-        <source>The selected hardware controller cannot report the device’s mute state. Hardware mute was not changed. Choose software mute or configure another hardware mute controller.</source>
-        <target state="translated">Pengawal perkakasan yang dipilih tidak boleh melaporkan keadaan bisu peranti. Bisu perkakasan tidak diubah. Pilih bisu perisian atau konfigurasikan pengawal bisu perkakasan lain.</target>
-        <note>53927 - Warning for a hardware mute controller without state readback. The app withholds the hardware mute request and suggests software mute or a compatible provider.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12505,11 +12600,6 @@ Anda boleh mengetepikan pemberitahuan ini - dalam kes ini, perubahan akan diguna
         <target state="translated">Togol</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
-      <trans-unit id="Toggles are available under the Manage Display (or Virtual Screen) menu when hidden." xml:space="preserve">
-        <source>Toggles are available under the Manage Display (or Virtual Screen) menu when hidden.</source>
-        <target state="translated">Togol tersedia di bawah menu Urus Paparan (atau Skrin Maya) apabila disembunyikan.</target>
-        <note>53477 - Hidden toggle control access help.</note>
-      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">Alat</target>
@@ -13075,10 +13165,20 @@ Anda boleh mengetepikan pemberitahuan ini - dalam kes ini, perubahan akan diguna
         <target state="translated">Gunakan Penapis Penggubah</target>
         <note>53477 - Use display compositor image filter option.</note>
       </trans-unit>
+      <trans-unit id="Use Dark Appearance" xml:space="preserve">
+        <source>Use Dark Appearance</source>
+        <target state="translated">Gunakan penampilan gelap</target>
+        <note>53983 - OSD appearance picker option that forces a dark OSD independently of the system appearance, when adaptive background is disabled.</note>
+      </trans-unit>
       <trans-unit id="Use Enable Audio Access in Configure Software Audio… to request audio recording permission." xml:space="preserve">
         <source>Use Enable Audio Access in Configure Software Audio… to request audio recording permission.</source>
         <target state="translated">Gunakan Dayakan Akses Audio dalam Konfigurasikan Audio Perisian… untuk meminta kebenaran rakaman audio.</target>
         <note>53927 - Actionable permission hint when audio access cannot be checked and the user has not yet requested access or started a session.</note>
+      </trans-unit>
+      <trans-unit id="Use Light Appearance" xml:space="preserve">
+        <source>Use Light Appearance</source>
+        <target state="translated">Gunakan penampilan cerah</target>
+        <note>53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -13619,6 +13719,11 @@ Anda boleh mengetepikan pemberitahuan ini - dalam kes ini, perubahan akan diguna
         <source>When expanding a menu item, automatically hide other items under the given device / menu block. This helps keep the menu smaller.</source>
         <target state="translated">Apabila mengembangkan item menu, sembunyikan item lain di bawah blok peranti / menu berkenaan secara automatik. Ini membantu mengekalkan menu yang lebih kecil.</target>
         <note>53477 - Menu automatic collapse setting help.</note>
+      </trans-unit>
+      <trans-unit id="When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected." xml:space="preserve">
+        <source>When opening the app menu, place the display it opens on first. Detached menus and an already open menu moving to another display are unaffected.</source>
+        <target state="translated">Apabila menu app dibuka, letakkan paparan tempat menu dibuka pada kedudukan pertama. Menu terpisah dan menu yang sudah terbuka lalu dipindahkan ke paparan lain tidak terjejas.</target>
+        <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
@@ -14192,6 +14297,17 @@ Buka Seting Sistem &gt; Umum &gt; Item Log Masuk dan benarkan %@ berjalan di lat
         <source>waiting for prompt</source>
         <target state="translated">menunggu gesaan</target>
         <note>53477 - Device pairing prompt state.</note>
+      </trans-unit>
+      <trans-unit id="⇧ Shift alone bypasses group synchronization and &quot;All suitable screens&quot;.&#10;⌃ Control targets the built-in display.&#10;⌃ Control + ⌘ Command targets external displays.&#10;⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." xml:space="preserve">
+        <source>⇧ Shift alone bypasses group synchronization and "All suitable screens".
+⌃ Control targets the built-in display.
+⌃ Control + ⌘ Command targets external displays.
+⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets.</source>
+        <target state="translated">⇧ Shift sahaja memintas penyegerakan kumpulan dan “Semua skrin yang sesuai”.
+⌃ Control menyasarkan paparan terbina dalam.
+⌃ Control + ⌘ Command menyasarkan paparan luaran.
+⇧ Shift + ⌘ Command menyasarkan paparan selain paparan semasa dan sasaran pencerminan/penstrimannya.</target>
+        <note>53983 - Four-line help for additional native brightness modifier actions; All suitable screens is an existing keyboard target option. Shift+Command excludes the current display and all its mirror/stream targets; preserve line breaks and modifier glyph/name pairs.</note>
       </trans-unit>
     </body>
   </file>
