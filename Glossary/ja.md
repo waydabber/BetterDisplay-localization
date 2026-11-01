@@ -8,7 +8,10 @@ This glossary records the maintained Japanese localization's existing terminolog
 | --- | --- | --- |
 | Apple Display Preset | Appleディスプレイプリセット | |
 | associate | 関連付け | Disassociation is distinct from disconnection. |
+| attenuation | 減衰 | Gain reduction. |
+| attenuation | 減衰量 | Amout of the gain reduction. |
 | brightness | 輝度 | Valid existing alternatives are not automatically replaced. |
+| bypass | スキップ | Verbs. |
 | chiclet | 目盛り | |
 | color mode | カラーモード | |
 | color profile | カラープロファイル | |
@@ -19,7 +22,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | controller | コントローラ | |
 | dimming | ディミング | |
 | disassociate | 関連付け解除 | Disassociation is distinct from disconnection. |
-| disconnect | 切断 | Existing 接続解除 remains valid. |
+| disconnect | 接続解除 | Existing 切断 remains valid. |
 | display | ディスプレイ | |
 | display group | ディスプレイグループ | |
 | display mode | ディスプレイモード | |
@@ -46,8 +49,10 @@ This glossary records the maintained Japanese localization's existing terminolog
 | resolution | 解像度 | |
 | scale, scaling | サイズ調整 | Verbs. Adjust the size according to a specific scale. |
 | scale | スケール | Nouns. Graduated range of values. (eg. Gray Scale グレイスケール) |
+| scale | 目盛り | Nouns. Segment dots on the numeric sliders. (eg. Slider Scales スライダ目盛り) |
 | screen | 画面 | In "Full screen", "screen streaming" and in "virtual screen" use スクリーン. |
 | segment | 目盛り | One standard step spans one segment, while the default fine step is one-quarter of a segment. Do not imply the entire OSD scale. |
+| slider scale | スライダ目盛り | |
 | temporal dithering | 時間的ディザリング | Frame-to-frame variation, not temporary activation. |
 | UI scale matching | UIサイズマッチング | |
 | unlock | ロック解除 | MacOS session; service-menu restriction removal remains ロック解除 or 制限解除 as appropriate. |
