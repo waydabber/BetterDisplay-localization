@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="sl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -36,7 +36,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="sl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -83,7 +83,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="sl" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -376,6 +376,10 @@ Preverite omrežno povezavo in nastavitve požarnega zidu.</target>
         <source>1:1 pixel mapped resolution</source>
         <target state="translated">1:1 preslikana ločljivost slikovnih pik</target>
         <note>53477 - Resolution where each source pixel maps to one physical display pixel.</note>
+      </trans-unit>
+      <trans-unit id="2" translate="no" xml:space="preserve">
+        <source>2</source>
+        <note>54030 - Default value shown in the screenshot detection frequency input, meaning two checks per second.</note>
       </trans-unit>
       <trans-unit id="2 kHz" xml:space="preserve">
         <source>2 kHz</source>
@@ -811,6 +815,11 @@ Preverite omrežno povezavo in nastavitve požarnega zidu.</target>
         <target state="translated">Dodaj novo sinhronizacijo…</target>
         <note>53477 - Action opening a new display group synchronization configuration.</note>
       </trans-unit>
+      <trans-unit id="Add New…" xml:space="preserve">
+        <source>Add New…</source>
+        <target state="translated">Dodaj nov profil…</target>
+        <note>54069 - Opens the inline color profile retouch editor to create a new user profile.</note>
+      </trans-unit>
       <trans-unit id="Add PIP Configuration" xml:space="preserve">
         <source>Add PIP Configuration</source>
         <target state="translated">Dodaj konfiguracijo PIP</target>
@@ -915,6 +924,11 @@ Preverite omrežno povezavo in nastavitve požarnega zidu.</target>
         <source>Additional Settings…</source>
         <target state="translated">Dodatne nastavitve…</target>
         <note>53477 - Action opening additional settings.</note>
+      </trans-unit>
+      <trans-unit id="Additional adjustments currently require Matrix mode." xml:space="preserve">
+        <source>Additional adjustments currently require Matrix mode.</source>
+        <target state="translated">Dodatne prilagoditve trenutno zahtevajo matrični način.</target>
+        <note>54069 - Retouch generation error: additional tone and color-balance adjustments are currently supported only by the matrix-based processing mode.</note>
       </trans-unit>
       <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
         <source>Additional delay after wake to reapply DDC settings</source>
@@ -1034,6 +1048,11 @@ To lahko storite v sistemskih nastavitvah ali pa aplikacija namesto vas (potrebn
         <source>After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings.</source>
         <target state="translated">Ko zavržete navidezni zaslon, je priporočljivo, da v sistemskih nastavitvah odstranite njegov neuporabljen tovarniški barvni profil.</target>
         <note>53477 - Virtual screen deletion cleanup advice for manual color profile removal.</note>
+      </trans-unit>
+      <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
+        <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
+        <target state="translated">Po prebujanju sinhroniziraj spremembe svetlosti za vsaj dve odstotni točki iz Applovega vira svetlosti, ki je bil povezan pred spanjem. Če ni spremembe, ki izpolnjuje pogoj, sinhronizacija po absolutni vrednosti in v nitih uporabi veljavno trenutno vrednost svetlosti Apple, tudi iz na novo povezanih zaslonov. Ničelne ali skoraj ničelne vrednosti svetlosti se prezrejo.</target>
+        <note>54069 - Help for brightness synchronization after wake. The two-percentage-point comparison requires pre-sleep readings; absolute-value and nits synchronization can fall back to valid current readings from existing or newly connected Apple displays, with zero or near-zero readings excluded.</note>
       </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. Uses the selected synchronization method and ignores zero or near-zero brightness readings." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. Uses the selected synchronization method and ignores zero or near-zero brightness readings.</source>
@@ -1378,6 +1397,11 @@ Večina zaslonov ne dovoljuje zapisovanja EDID iz varnostnih razlogov, nekateri 
         <source>An active layout protection main status configured under Groups takes precedence.</source>
         <target state="translated">Prednost ima aktivno glavno stanje zaščite postavitve, konfigurirano v skupinah.</target>
         <note>53689 - Main display setting help: active group layout protection can override the selected main display.</note>
+      </trans-unit>
+      <trans-unit id="An adjustment is outside the supported range." xml:space="preserve">
+        <source>An adjustment is outside the supported range.</source>
+        <target state="translated">Prilagoditev je zunaj podprtega obsega.</target>
+        <note>54069 - Retouch validation error when an adjustment parameter is outside its supported numeric range.</note>
       </trans-unit>
       <trans-unit id="An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
         <source>An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
@@ -2329,11 +2353,6 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Povečevanje svetlosti (neposredno)</target>
         <note>53477 - Direct native brightness upscaling.</note>
       </trans-unit>
-      <trans-unit id="Brightness Upscaling and Dimming Settings" xml:space="preserve">
-        <source>Brightness Upscaling and Dimming Settings</source>
-        <target state="translated">Nastavitve povečanja svetlosti in zatemnitve</target>
-        <note>53477 - Brightness upscaling and dimming settings section.</note>
-      </trans-unit>
       <trans-unit id="Brightness and Video" xml:space="preserve">
         <source>Brightness and Video</source>
         <target state="translated">Svetlost in video</target>
@@ -2514,6 +2533,16 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Prekliči seznanjanje</target>
         <note>53477 - Cancel device pairing action.</note>
       </trans-unit>
+      <trans-unit id="Cannot fingerprint the profile." xml:space="preserve">
+        <source>Cannot fingerprint the profile.</source>
+        <target state="translated">Prstnega odtisa profila ni mogoče izračunati.</target>
+        <note>54069 - Retouch metadata error when the cryptographic fingerprint used to verify a profile cannot be calculated; fingerprint is a data hash, not a biometric identifier.</note>
+      </trans-unit>
+      <trans-unit id="Cannot read profile tag." xml:space="preserve">
+        <source>Cannot read profile tag.</source>
+        <target state="translated">Oznake profila ni mogoče prebrati.</target>
+        <note>54069 - Retouch metadata error when an ICC profile tag cannot be read; a tag is a named data block in the profile.</note>
+      </trans-unit>
       <trans-unit id="Capabilities" xml:space="preserve">
         <source>Capabilities</source>
         <target state="translated">Zmogljivosti</target>
@@ -2683,6 +2712,11 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <source>Checking…</source>
         <target state="translated">Preverjanje…</target>
         <note>53477 - General check progress status.</note>
+      </trans-unit>
+      <trans-unit id="Checks only while an adjustment overlay is active. A sufficiently high frequency can also hide overlays for instant full-screen screenshots, but increases CPU usage." xml:space="preserve">
+        <source>Checks only while an adjustment overlay is active. A sufficiently high frequency can also hide overlays for instant full-screen screenshots, but increases CPU usage.</source>
+        <target state="translated">Preverjanje poteka samo, ko je prekrivna plast prilagoditev aktivna. Dovolj visoka pogostost lahko skrije prekrivne plasti tudi pri takojšnjih posnetkih celotnega zaslona, vendar poveča obremenitev CPU.</target>
+        <note>54034 - Help for screenshot detection frequency, measured in checks per second. Explain that sufficiently frequent polling can also support instant full-screen screenshots at a higher CPU cost.</note>
       </trans-unit>
       <trans-unit id="Choose control methods for your device, including hardware controllers and custom integrations." xml:space="preserve">
         <source>Choose control methods for your device, including hardware controllers and custom integrations.</source>
@@ -2873,6 +2907,31 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <source>Color temperature warmer</source>
         <target state="translated">Toplejša barvna temperatura</target>
         <note>53477 - Action shifting color temperature toward warmer colors.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not apply the color profile." xml:space="preserve">
+        <source>ColorSync could not apply the color profile.</source>
+        <target state="translated">ColorSync ni mogel uveljaviti barvnega profila.</target>
+        <note>54069 - Live preview or save error when macOS ColorSync cannot apply the retouched color profile to the display.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not restore the original color profile." xml:space="preserve">
+        <source>ColorSync could not restore the original color profile.</source>
+        <target state="translated">ColorSync ni mogel obnoviti izvirnega barvnega profila.</target>
+        <note>54069 - Retouch editor error when macOS ColorSync cannot restore the previously active color profile.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not sample the original tone curves." xml:space="preserve">
+        <source>ColorSync could not sample the original tone curves.</source>
+        <target state="translated">ColorSync ni mogel vzorčiti izvirnih tonskih krivulj.</target>
+        <note>54069 - Retouch generation error when ColorSync cannot sample the original tone-response curves; sampling evaluates the curves at a series of input values.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync refused the profile assignment." xml:space="preserve">
+        <source>ColorSync refused the profile assignment.</source>
+        <target state="translated">ColorSync je zavrnil dodelitev profila.</target>
+        <note>54069 - Error when macOS ColorSync refuses to assign a profile to a display.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync rejected the generated profile." xml:space="preserve">
+        <source>ColorSync rejected the generated profile.</source>
+        <target state="translated">ColorSync je zavrnil ustvarjeni profil.</target>
+        <note>54069 - Retouch generation error when macOS ColorSync rejects the newly generated ICC profile.</note>
       </trans-unit>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
@@ -3429,10 +3488,25 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <target state="translated">Povezava s privilegiranim pomožnim programom ni uspela.</target>
         <note>53477 - Error shown when the app cannot establish its XPC connection to the privileged helper. ‘Privileged helper’ is BetterDisplay’s background system service for administrator-level operations.</note>
       </trans-unit>
+      <trans-unit id="Could not copy the original profile." xml:space="preserve">
+        <source>Could not copy the original profile.</source>
+        <target state="translated">Izvirnega profila ni bilo mogoče kopirati.</target>
+        <note>54069 - Retouch generation error when the original ICC profile cannot be copied for modification.</note>
+      </trans-unit>
       <trans-unit id="Could not create an administrator authorization session." xml:space="preserve">
         <source>Could not create an administrator authorization session.</source>
         <target state="translated">Skrbniške seje za odobritev ni bilo mogoče ustvariti.</target>
         <note>53477 - Error shown when macOS cannot create the Authorization Services session needed for an administrator-level operation.</note>
+      </trans-unit>
+      <trans-unit id="Could not create the linear profile used to sample tone curves." xml:space="preserve">
+        <source>Could not create the linear profile used to sample tone curves.</source>
+        <target state="translated">Linearnega profila za vzorčenje tonskih krivulj ni bilo mogoče ustvariti.</target>
+        <note>54069 - Retouch generation error when the linear reference profile used to sample tone-response curves cannot be created.</note>
+      </trans-unit>
+      <trans-unit id="Could not read this display's default ColorSync profile." xml:space="preserve">
+        <source>Could not read this display's default ColorSync profile.</source>
+        <target state="translated">Privzetega profila ColorSync za ta zaslon ni bilo mogoče prebrati.</target>
+        <note>54069 - Retouch source error when the display’s default macOS ColorSync profile cannot be read.</note>
       </trans-unit>
       <trans-unit id="Could not register the administrator authorization right (%d)." xml:space="preserve">
         <source>Could not register the administrator authorization right (%d).</source>
@@ -3443,6 +3517,11 @@ Določanje dolžine branja ni obvezno - pustite polje prazno za samodejno zaznav
         <source>Could not register the privileged helper.</source>
         <target state="translated">Privilegiranega pomožnega programa ni bilo mogoče registrirati.</target>
         <note>53477 - Error shown when BetterDisplay cannot register its privileged helper with macOS. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="Could not serialize the generated profile." xml:space="preserve">
+        <source>Could not serialize the generated profile.</source>
+        <target state="translated">Ustvarjenega profila ni bilo mogoče serializirati.</target>
+        <note>54069 - Retouch generation error when the generated profile cannot be serialized into binary ICC data.</note>
       </trans-unit>
       <trans-unit id="Could not transfer the administrator authorization to the privileged helper." xml:space="preserve">
         <source>Could not transfer the administrator authorization to the privileged helper.</source>
@@ -5533,6 +5612,11 @@ Postopek ne deluje za vgrajeni zaslon (potreben je ponovni zagon). Operacija lah
         <target state="translated">Vstop v servisni meni</target>
         <note>53689 - TV remote action to open the technical service menu.</note>
       </trans-unit>
+      <trans-unit id="Enter a color profile name." xml:space="preserve">
+        <source>Enter a color profile name.</source>
+        <target state="translated">Vnesite ime barvnega profila.</target>
+        <note>54069 - Validation message requiring a nonempty name for a retouched color profile.</note>
+      </trans-unit>
       <trans-unit id="Equalizer, Bass Boost and Loudness" xml:space="preserve">
         <source>Equalizer, Bass Boost and Loudness</source>
         <target state="translated">Izenačevalnik, poudarjanje nizkih tonov in fiziološka korekcija</target>
@@ -6407,6 +6491,11 @@ Odstranjevanje je varno – macOS bo ponovno ustvaril vse potrebne profile, ko b
         <target state="translated">Skrij opozorila o dovoljenjih za dostopnost in licenciranju v meniju aplikacije.</target>
         <note>53477 - Menu warning visibility setting help.</note>
       </trans-unit>
+      <trans-unit id="Hide adjustment overlays while taking screenshots" xml:space="preserve">
+        <source>Hide adjustment overlays while taking screenshots</source>
+        <target state="translated">Skrij prekrivne plasti prilagoditev med zajemanjem posnetkov zaslona</target>
+        <note>54034 - Default-off Displays Overview setting for hiding display-adjustment overlay layers while the native macOS screenshot tool is active. These compositor or Metal overlays are separate from color-table adjustments.</note>
+      </trans-unit>
       <trans-unit id="Hide all full screen streams" xml:space="preserve">
         <source>Hide all full screen streams</source>
         <target state="translated">Skrij vse celozaslonske tokove</target>
@@ -6561,6 +6650,11 @@ Odstranjevanje je varno – macOS bo ponovno ustvaril vse potrebne profile, ko b
         <source>I2C service name</source>
         <target state="translated">Ime storitve I2C</target>
         <note>53477 - Hardware I2C service identifier label.</note>
+      </trans-unit>
+      <trans-unit id="ICC metadata is too large." xml:space="preserve">
+        <source>ICC metadata is too large.</source>
+        <target state="translated">Metapodatki ICC so preveliki.</target>
+        <note>54069 - Retouch metadata error when encoded ICC metadata exceeds its allowed byte size.</note>
       </trans-unit>
       <trans-unit id="IN START Service Menu" xml:space="preserve">
         <source>IN START Service Menu</source>
@@ -6736,6 +6830,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Prilagoditve slike</target>
         <note>53477 - Image adjustments menu heading.</note>
       </trans-unit>
+      <trans-unit id="Image Adjustments, Upscaling &amp; Dimming Settings" xml:space="preserve">
+        <source>Image Adjustments, Upscaling &amp; Dimming Settings</source>
+        <target state="translated">Nastavitve prilagoditev slike, povečevanja svetlosti in zatemnitve</target>
+        <note>54034 - Title of the advanced app-wide image adjustment, software brightness upscaling and dimming settings section and its opening button. Upscaling means increased software brightness above the normal range, not higher image resolution.</note>
+      </trans-unit>
       <trans-unit id="Image adjustment controls are unavailable." xml:space="preserve">
         <source>Image adjustment controls are unavailable.</source>
         <target state="translated">Kontrolniki za prilagajanje slike niso na voljo.</target>
@@ -6770,6 +6869,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency).</source>
         <target state="translated">Ločeni meni aplikacije lebdi nad namizjem kot okno najvišje ravni. Nastavite lahko njegovo prosojnost (nižja vrednost pomeni večjo prosojnost).</target>
         <note>53477 - Detached menu opacity help.</note>
+      </trans-unit>
+      <trans-unit id="Incomplete retouch metadata." xml:space="preserve">
+        <source>Incomplete retouch metadata.</source>
+        <target state="translated">Nepopolni metapodatki retuširanja.</target>
+        <note>54069 - Retouch loading error when the embedded metadata lacks required retouch information.</note>
       </trans-unit>
       <trans-unit id="Increase Apple Keyboard brightness" xml:space="preserve">
         <source>Increase Apple Keyboard brightness</source>
@@ -6916,15 +7020,50 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Interna predizdaja</target>
         <note>53477 - Internal pre-release build channel.</note>
       </trans-unit>
+      <trans-unit id="Invalid ICC metadata offset." xml:space="preserve">
+        <source>Invalid ICC metadata offset.</source>
+        <target state="translated">Neveljaven odmik metapodatkov ICC.</target>
+        <note>54069 - ICC metadata parsing error for an invalid byte offset into the metadata data block.</note>
+      </trans-unit>
+      <trans-unit id="Invalid ICC metadata record table." xml:space="preserve">
+        <source>Invalid ICC metadata record table.</source>
+        <target state="translated">Neveljavna tabela zapisov metapodatkov ICC.</target>
+        <note>54069 - ICC metadata parsing error for an invalid table of metadata records.</note>
+      </trans-unit>
+      <trans-unit id="Invalid ICC metadata text." xml:space="preserve">
+        <source>Invalid ICC metadata text.</source>
+        <target state="translated">Neveljavno besedilo metapodatkov ICC.</target>
+        <note>54069 - ICC metadata parsing error when a metadata string is not valid encoded text.</note>
+      </trans-unit>
+      <trans-unit id="Invalid display UUID." xml:space="preserve">
+        <source>Invalid display UUID.</source>
+        <target state="translated">Neveljaven UUID zaslona.</target>
+        <note>54069 - ColorSync profile assignment error when the display’s UUID identifier is invalid; keep UUID unchanged.</note>
+      </trans-unit>
       <trans-unit id="Invalid mode" xml:space="preserve">
         <source>Invalid mode</source>
         <target state="translated">Neveljaven način</target>
         <note>53477 - Invalid display mode status.</note>
       </trans-unit>
+      <trans-unit id="Invalid or oversized profile." xml:space="preserve">
+        <source>Invalid or oversized profile.</source>
+        <target state="translated">Neveljaven ali prevelik profil.</target>
+        <note>54069 - Retouch loading error when an ICC profile is invalid or exceeds the allowed size.</note>
+      </trans-unit>
       <trans-unit id="Invalid resolution (skipped)" xml:space="preserve">
         <source>Invalid resolution (skipped)</source>
         <target state="translated">Neveljavna ločljivost (preskočeno)</target>
         <note>53477 - Skipped invalid resolution status.</note>
+      </trans-unit>
+      <trans-unit id="Invalid tone-curve exponent." xml:space="preserve">
+        <source>Invalid tone-curve exponent.</source>
+        <target state="translated">Neveljaven eksponent tonske krivulje.</target>
+        <note>54069 - Tone-curve parsing error for an invalid mathematical exponent in the curve definition.</note>
+      </trans-unit>
+      <trans-unit id="Invalid tone-curve samples." xml:space="preserve">
+        <source>Invalid tone-curve samples.</source>
+        <target state="translated">Neveljavni vzorci tonske krivulje.</target>
+        <note>54069 - Retouch generation error for invalid numeric samples of a tone-response curve.</note>
       </trans-unit>
       <trans-unit id="Invert Colors" xml:space="preserve">
         <source>Invert Colors</source>
@@ -7055,6 +7194,20 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>LG webOS Smart Device</source>
         <target state="translated">Pametna naprava LG webOS</target>
         <note>53477 - LG webOS controller device type.</note>
+      </trans-unit>
+      <trans-unit id="LUT" translate="no" xml:space="preserve">
+        <source>LUT</source>
+        <note>54036 - Non-translatable LUT (lookup table) badge next to LUT-based or hybrid ICC color profiles in the Color Profile menu, including favorite rows.</note>
+      </trans-unit>
+      <trans-unit id="LUT conversion matrix exceeds the ICC fixed-point range." xml:space="preserve">
+        <source>LUT conversion matrix exceeds the ICC fixed-point range.</source>
+        <target state="translated">Pretvorbena matrika LUT presega obseg števil s fiksno vejico ICC.</target>
+        <note>54069 - Retouch generation error when the LUT conversion matrix cannot fit the ICC fixed-point numeric representation; preserve LUT and ICC.</note>
+      </trans-unit>
+      <trans-unit id="LUT-based profiles cannot be retouched." xml:space="preserve">
+        <source>LUT-based profiles cannot be retouched.</source>
+        <target state="translated">Profilov na osnovi LUT ni mogoče retuširati.</target>
+        <note>54069 - Retouch source error: profiles based on lookup tables (LUTs) cannot be used as originals for this editor.</note>
       </trans-unit>
       <trans-unit id="Landscape - no rotation" xml:space="preserve">
         <source>Landscape - no rotation</source>
@@ -7261,6 +7414,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Vrata strežnika HTTP</target>
         <note>53477 - HTTP integration server listening port setting.</note>
       </trans-unit>
+      <trans-unit id="Live Preview" xml:space="preserve">
+        <source>Live Preview</source>
+        <target state="translated">Predogled v živo</target>
+        <note>54069 - Toggle at the bottom of the color profile retouch editor that previews slider changes on the display.</note>
+      </trans-unit>
       <trans-unit id="LoDPI" xml:space="preserve">
         <source>LoDPI</source>
         <target state="translated">LoDPI</target>
@@ -7330,6 +7488,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>Mac/input physical address: %@</source>
         <target state="translated">Mac/vhodni fizični naslov: %@</target>
         <note>53477 - HDMI-CEC physical address; placeholder is a dotted numeric address, not a network MAC address.</note>
+      </trans-unit>
+      <trans-unit id="Magenta/Green Balance" xml:space="preserve">
+        <source>Magenta/Green Balance</source>
+        <target state="translated">Ravnovesje magenta/zeleno</target>
+        <note>54069 - Relative color balance in the retouch editor: negative values shift tones toward magenta and positive values toward green, preserving black and white.</note>
       </trans-unit>
       <trans-unit id="Magnification" xml:space="preserve">
         <source>Magnification</source>
@@ -7505,6 +7668,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>Matching tolerance</source>
         <target state="translated">Toleranca ujemanja</target>
         <note>53477 - UI scale matching tolerance setting.</note>
+      </trans-unit>
+      <trans-unit id="Matrix exceeds ICC range." xml:space="preserve">
+        <source>Matrix exceeds ICC range.</source>
+        <target state="translated">Matrika presega obseg ICC.</target>
+        <note>54069 - Retouch generation error when a matrix coefficient exceeds the numeric range supported by ICC.</note>
       </trans-unit>
       <trans-unit id="Max" xml:space="preserve">
         <source>Max</source>
@@ -7771,10 +7939,20 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Zrcaljenje in pretakanje otežita določitev želenega zaslona. Onemogočite to možnost, če želite ciljati samo vir. Skupinska sinhronizacija lahko neodvisno prenaša spremembe, prekrivne plasti v izvorni sliki pa lahko še vedno vplivajo na cilje.</target>
         <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
       </trans-unit>
+      <trans-unit id="Missing or duplicate ICC metadata name." xml:space="preserve">
+        <source>Missing or duplicate ICC metadata name.</source>
+        <target state="translated">Manjkajoče ali podvojeno ime metapodatkov ICC.</target>
+        <note>54069 - ICC metadata parsing error for a missing or duplicate metadata entry name.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Prisoten manjkajoči ali podvojen identifikator - to bo prineslo nepričakovane rezultate!</target>
         <note>53688 - Validation warning for missing or duplicate identifiers.</note>
+      </trans-unit>
+      <trans-unit id="Missing tone curve." xml:space="preserve">
+        <source>Missing tone curve.</source>
+        <target state="translated">Manjkajoča tonska krivulja.</target>
+        <note>54069 - Retouch generation error when a required tone-response curve is absent from the profile.</note>
       </trans-unit>
       <trans-unit id="Mixed" xml:space="preserve">
         <source>Mixed</source>
@@ -8006,6 +8184,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Izvorni način (preslikava 1:1)</target>
         <note>53477 - Native pixel mapping mode.</note>
       </trans-unit>
+      <trans-unit id="Nested retouch sources are not supported." xml:space="preserve">
+        <source>Nested retouch sources are not supported.</source>
+        <target state="translated">Gnezdeni viri retuširanja niso podprti.</target>
+        <note>54069 - Retouch loading error: an embedded original cannot itself contain another retouch; nested means retouches embedded inside other retouches.</note>
+      </trans-unit>
       <trans-unit id="Neutral" xml:space="preserve">
         <source>Neutral</source>
         <target state="translated">Nevtralno</target>
@@ -8095,6 +8278,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>No favorites added.</source>
         <target state="translated">Ni dodanih priljubljenih.</target>
         <note>53477 - Empty favorite mode list.</note>
+      </trans-unit>
+      <trans-unit id="No retouched color profiles." xml:space="preserve">
+        <source>No retouched color profiles.</source>
+        <target state="translated">Ni retuširanih barvnih profilov.</target>
+        <note>54069 - Empty state for the retouched color profiles section. Add New remains available.</note>
       </trans-unit>
       <trans-unit id="No screen rotation" xml:space="preserve">
         <source>No screen rotation</source>
@@ -8405,6 +8593,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>Original</source>
         <target state="translated">Izvirno</target>
         <note>53477 - Slider snap badge marking the original adjustment value; keep it compact, ideally 8-10 characters, abbreviating naturally if needed.</note>
+      </trans-unit>
+      <trans-unit id="Original profile exceeds the 4 MiB embedding limit." xml:space="preserve">
+        <source>Original profile exceeds the 4 MiB embedding limit.</source>
+        <target state="translated">Izvirni profil presega omejitev vdelave 4 MiB.</target>
+        <note>54069 - Retouch save error when the original profile exceeds the 4 MiB limit for embedding it in the generated profile; preserve the size and unit.</note>
       </trans-unit>
       <trans-unit id="Other Apple display" xml:space="preserve">
         <source>Other Apple display</source>
@@ -8881,6 +9074,16 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Ime izdelka</target>
         <note>53477 - Display product name information.</note>
       </trans-unit>
+      <trans-unit id="Profile exceeds the 32 MiB read limit." xml:space="preserve">
+        <source>Profile exceeds the 32 MiB read limit.</source>
+        <target state="translated">Profil presega omejitev branja 32 MiB.</target>
+        <note>54069 - Retouch loading error when a profile exceeds the 32 MiB read limit; preserve the size and unit.</note>
+      </trans-unit>
+      <trans-unit id="Profile name" xml:space="preserve">
+        <source>Profile name</source>
+        <target state="translated">Ime profila</target>
+        <note>54069 - Accessible label and empty placeholder for the inline-editable name in a color profile retouch menu row.</note>
+      </trans-unit>
       <trans-unit id="Prohibit Resizing" xml:space="preserve">
         <source>Prohibit Resizing</source>
         <target state="translated">Prepoved spreminjanja velikosti</target>
@@ -9296,6 +9499,26 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Ponovno inicializirajte ta zaslon ob prebujanju</target>
         <note>53477 - Display wake recovery setting.</note>
       </trans-unit>
+      <trans-unit id="Relative Gamma" xml:space="preserve">
+        <source>Relative Gamma</source>
+        <target state="translated">Relativna gama</target>
+        <note>54069 - Gamma correction relative to the original color profile, with 100% unchanged; not a measured display gamma.</note>
+      </trans-unit>
+      <trans-unit id="Relative Gamma (Blue)" xml:space="preserve">
+        <source>Relative Gamma (Blue)</source>
+        <target state="translated">Relativna gama (Modra)</target>
+        <note>54069 - Blue channel gamma correction relative to the original color profile; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Relative Gamma (Green)" xml:space="preserve">
+        <source>Relative Gamma (Green)</source>
+        <target state="translated">Relativna gama (Zelena)</target>
+        <note>54069 - Green channel gamma correction relative to the original color profile; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Relative Gamma (Red)" xml:space="preserve">
+        <source>Relative Gamma (Red)</source>
+        <target state="translated">Relativna gama (Rdeča)</target>
+        <note>54069 - Red channel gamma correction relative to the original color profile; 100% leaves the channel unchanged.</note>
+      </trans-unit>
       <trans-unit id="Relative Position" xml:space="preserve">
         <source>Relative Position</source>
         <target state="translated">Relativni položaj</target>
@@ -9421,6 +9644,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Odstranitev te aktivacije vpliva samo na to namestitev. Druge aktivacije lahko odstranite brez vpliva na to namestitev. Odstranitev vseh aktivacij povsem ponastavi stanje aktivacij.</target>
         <note>53477 - License activation removal scope help.</note>
       </trans-unit>
+      <trans-unit id="Reopen the retouched profile to use its embedded original; nesting retouches is not supported." xml:space="preserve">
+        <source>Reopen the retouched profile to use its embedded original; nesting retouches is not supported.</source>
+        <target state="translated">Znova odprite retuširani profil, da uporabite vdelani izvirnik; gnezdeno retuširanje ni podprto.</target>
+        <note>54069 - Retouch source error directing the user to reopen the edited profile so its embedded original can be used, instead of nesting another retouch.</note>
+      </trans-unit>
       <trans-unit id="Reported actual refresh rate:" xml:space="preserve">
         <source>Reported actual refresh rate:</source>
         <target state="translated">Sporočena dejanska frekvenca osveževanja:</target>
@@ -9515,6 +9743,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>Reset Menu Layout…</source>
         <target state="translated">Ponastavi postavitev menija …</target>
         <note>53477 - Reset app menu layout action.</note>
+      </trans-unit>
+      <trans-unit id="Reset Originals" xml:space="preserve">
+        <source>Reset Originals</source>
+        <target state="translated">Obnovi izvirne vrednosti</target>
+        <note>54069 - Resets all retouch sliders to the neutral values of the embedded original color profile.</note>
       </trans-unit>
       <trans-unit id="Reset System Settings" xml:space="preserve">
         <source>Reset System Settings</source>
@@ -9705,6 +9938,36 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>Resume Stream on Connect</source>
         <target state="translated">Nadaljuj pretakanje ob povezavi</target>
         <note>53484 - Display stream menu toggle that resumes streaming when the display reconnects. Keep the label short enough for the app menu.</note>
+      </trans-unit>
+      <trans-unit id="Retouch effective settings do not match the recipe." xml:space="preserve">
+        <source>Retouch effective settings do not match the recipe.</source>
+        <target state="translated">Dejanske nastavitve retuširanja se ne ujemajo s shranjenim receptom.</target>
+        <note>54069 - Retouch loading error when the effective adjustments do not match the saved recipe; recipe means the stored processing parameters.</note>
+      </trans-unit>
+      <trans-unit id="Retouch source or output fingerprint does not match." xml:space="preserve">
+        <source>Retouch source or output fingerprint does not match.</source>
+        <target state="translated">Prstni odtis vira ali rezultata retuširanja se ne ujema.</target>
+        <note>54069 - Retouch loading error when a source or output cryptographic hash differs from the saved fingerprint; this verifies profile data integrity.</note>
+      </trans-unit>
+      <trans-unit id="Retouched %@" xml:space="preserve">
+        <source>Retouched %@</source>
+        <target state="translated">Retuširan %@</target>
+        <note>54069 - Default name for a new retouched color profile; the placeholder is the original profile name.</note>
+      </trans-unit>
+      <trans-unit id="Retouched color profiles:" xml:space="preserve">
+        <source>Retouched color profiles:</source>
+        <target state="translated">Retuširani barvni profili:</target>
+        <note>54069 - Section containing color profiles with embedded BetterDisplay retouch metadata and their original source profile.</note>
+      </trans-unit>
+      <trans-unit id="Retouching requires a valid matrix-based RGB display profile with an XYZ connection space." xml:space="preserve">
+        <source>Retouching requires a valid matrix-based RGB display profile with an XYZ connection space.</source>
+        <target state="translated">Retuširanje zahteva veljaven matrični profil zaslona RGB s povezovalnim prostorom XYZ.</target>
+        <note>54069 - Retouch source requirement: a valid matrix-based RGB display profile using XYZ as its profile connection space.</note>
+      </trans-unit>
+      <trans-unit id="Retouch…" xml:space="preserve">
+        <source>Retouch…</source>
+        <target state="translated">Retuširaj…</target>
+        <note>54069 - Context-menu action opening the color profile retouch editor for a non-LUT source profile.</note>
       </trans-unit>
       <trans-unit id="Retrieve EDID" xml:space="preserve">
         <source>Retrieve EDID</source>
@@ -9976,6 +10239,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Zaslon z oknom v fokusu</target>
         <note>53477 - Keyboard control target option.</note>
       </trans-unit>
+      <trans-unit id="Screenshot detection frequency" xml:space="preserve">
+        <source>Screenshot detection frequency</source>
+        <target state="translated">Pogostost zaznavanja zajemanja posnetkov zaslona</target>
+        <note>54034 - Numeric setting specifying how often the app checks for the native screenshot process while an adjustment overlay is active. The adjacent unit is checks per second.</note>
+      </trans-unit>
       <trans-unit id="Script to get current value (%@)" xml:space="preserve">
         <source>Script to get current value (%@)</source>
         <target state="translated">Skript za pridobitev trenutne vrednosti (%@)</target>
@@ -10035,6 +10303,11 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <source>Select a disconnected display</source>
         <target state="translated">Izberi nepovezan zaslon</target>
         <note>53477 - Disconnected display selection prompt.</note>
+      </trans-unit>
+      <trans-unit id="Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline." xml:space="preserve">
+        <source>Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline.</source>
+        <target state="translated">Izberite izvirni matrični profil. Obstoječih profilov LUT/hibridnih profilov ni mogoče uporabiti za osnovo.</target>
+        <note>54069 - Retouch source requirement: use a matrix-based original rather than a LUT or hybrid profile; baseline means the original profile to modify.</note>
       </trans-unit>
       <trans-unit id="Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`." xml:space="preserve">
         <source>Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`.</source>
@@ -10971,15 +11244,15 @@ Vsi zasloni ne podpirajo nadzora zaslona. Ta dejanja lahko pri nekaterih zasloni
         <target state="translated">Programski zvok ne podpira te vrste povezave. Poskusite vgrajeni zvočni izhod ali izhod USB, HDMI, DisplayPort ali Bluetooth.</target>
         <note>53927 - Warning for audio connection types outside Software Audio’s transport allowlist. Built-in, wired and Bluetooth examples are non-exhaustive; format requirements still apply.</note>
       </trans-unit>
+      <trans-unit id="Software Image Adjustments, Upscaling &amp; Dimming" xml:space="preserve">
+        <source>Software Image Adjustments, Upscaling &amp; Dimming</source>
+        <target state="translated">Programske prilagoditve slike, povečevanje svetlosti in zatemnitev</target>
+        <note>54034 - App-wide Displays Overview section containing software image adjustment, brightness upscaling, dimming and screenshot-overlay settings. Upscaling increases software brightness above its normal range.</note>
+      </trans-unit>
       <trans-unit id="Software Volume Curve" xml:space="preserve">
         <source>Software Volume Curve</source>
         <target state="translated">Krivulja programske glasnosti</target>
         <note>53927 - Exponent shaping normalized software attenuation over the slider range; it is not acoustic calibration.</note>
-      </trans-unit>
-      <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
-        <source>Software XDR/HDR Upscaling and Dimming</source>
-        <target state="translated">Programsko povečanje in zatemnitev XDR/HDR</target>
-        <note>53477 - Software brightness feature section.</note>
       </trans-unit>
       <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
         <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
@@ -11784,6 +12057,11 @@ Ta postopek ne ponastavi samega zaslona.</target>
         <target state="translated">Vgrajenega zaslona iMac ni mogoče zlahka znova povezati (pomanjkanje kabla zaslona, pokrova, ki ga je mogoče zapreti) v primeru okvare aplikacije. Omogočite to nastavitev še posebej previdno!</target>
         <note>53477 - iMac built-in display disconnection warning.</note>
       </trans-unit>
+      <trans-unit id="The color profile is too large." xml:space="preserve">
+        <source>The color profile is too large.</source>
+        <target state="translated">Barvni profil je prevelik.</target>
+        <note>54069 - Retouch editor error when the selected color profile exceeds the allowed size.</note>
+      </trans-unit>
       <trans-unit id="The custom filter no longer exists." xml:space="preserve">
         <source>The custom filter no longer exists.</source>
         <target state="translated">Filter po meri ne obstaja več.</target>
@@ -11824,6 +12102,11 @@ Ta postopek ne ponastavi samega zaslona.</target>
         <target state="translated">Zaslon podpira DDC</target>
         <note>53477 - DDC detection result.</note>
       </trans-unit>
+      <trans-unit id="The display is not ready for a color profile change." xml:space="preserve">
+        <source>The display is not ready for a color profile change.</source>
+        <target state="translated">Zaslon ni pripravljen na spremembo barvnega profila.</target>
+        <note>54069 - Retouch preview or restore error when the display is not currently ready for a profile change.</note>
+      </trans-unit>
       <trans-unit id="The display may have limited DDC support" xml:space="preserve">
         <source>The display may have limited DDC support</source>
         <target state="translated">Zaslon ima morda omejeno podporo za DDC</target>
@@ -11838,6 +12121,11 @@ Ta postopek ne ponastavi samega zaslona.</target>
         <source>The display or connection does not support DDC</source>
         <target state="translated">Zaslon ali povezava ne podpira DDC</target>
         <note>53477 - DDC detection result.</note>
+      </trans-unit>
+      <trans-unit id="The display profile changed. Enable Live Preview again to continue." xml:space="preserve">
+        <source>The display profile changed. Enable Live Preview again to continue.</source>
+        <target state="translated">Profil zaslona se je spremenil. Za nadaljevanje znova vklopite predogled v živo.</target>
+        <note>54069 - Shown when an external color profile selection stops retouch preview; names the Live Preview toggle.</note>
       </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
@@ -11983,6 +12271,21 @@ V primeru okvare odklopite in ponovno fizično priključite zaslon.</target>
         <target state="translated">Privilegirani pomožni program je treba osvežiti.</target>
         <note>53477 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface.</note>
       </trans-unit>
+      <trans-unit id="The profile file cannot be replaced." xml:space="preserve">
+        <source>The profile file cannot be replaced.</source>
+        <target state="translated">Datoteke profila ni mogoče zamenjati.</target>
+        <note>54069 - Retouch save error when the existing profile file cannot safely be replaced.</note>
+      </trans-unit>
+      <trans-unit id="The profile is missing standard RGB matrix or tone-curve tags." xml:space="preserve">
+        <source>The profile is missing standard RGB matrix or tone-curve tags.</source>
+        <target state="translated">V profilu manjkajo standardne oznake matrike RGB ali tonskih krivulj.</target>
+        <note>54069 - Retouch source error when standard ICC tags for the RGB matrix or tone-response curves are missing; tags are named profile data blocks.</note>
+      </trans-unit>
+      <trans-unit id="The profile's RGB matrix is degenerate or has unsupported luminance weights." xml:space="preserve">
+        <source>The profile's RGB matrix is degenerate or has unsupported luminance weights.</source>
+        <target state="translated">Matrika RGB profila je degenerirana ali ima nepodprte uteži svetilnosti.</target>
+        <note>54069 - Retouch source error for a mathematically degenerate RGB matrix or unsupported luminance weights, which describe each channel’s contribution to luminance.</note>
+      </trans-unit>
       <trans-unit id="The protection is not in effect unless all participating displays are connected." xml:space="preserve">
         <source>The protection is not in effect unless all participating displays are connected.</source>
         <target state="translated">Zaščita ne deluje, če niso povezani vsi sodelujoči zasloni.</target>
@@ -11992,6 +12295,11 @@ V primeru okvare odklopite in ponovno fizično priključite zaslon.</target>
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Zaščita ne velja, razen če je določen relativni položaj.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
+      </trans-unit>
+      <trans-unit id="The requested matrix is singular." xml:space="preserve">
+        <source>The requested matrix is singular.</source>
+        <target state="translated">Zahtevana matrika je singularna.</target>
+        <note>54069 - Retouch generation error for a singular matrix, meaning a mathematical matrix that cannot be inverted.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12107,6 +12415,11 @@ V primeru okvare odklopite in ponovno fizično priključite zaslon.</target>
         <source>Thermal</source>
         <target state="translated">Toplota</target>
         <note>53477 - Core Image Thermal false-color image filter.</note>
+      </trans-unit>
+      <trans-unit id="These adjustments exceed conservative limits and may be incompatible with some apps." xml:space="preserve">
+        <source>These adjustments exceed conservative limits and may be incompatible with some apps.</source>
+        <target state="translated">Te prilagoditve presegajo konservativne omejitve in morda niso združljive z nekaterimi aplikacijami.</target>
+        <note>54069 - Warning shown when conservative gamut limiting is off and the retouch settings would exceed the limiter’s compatibility bounds.</note>
       </trans-unit>
       <trans-unit id="These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %@ for your display type." xml:space="preserve">
         <source>These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %1$@ for your display type.</source>
@@ -12318,6 +12631,11 @@ Ste prepričani, da želite nadaljevati?</target>
         <target state="translated">To prepreči trenutna nihanja svetlosti po prikazu vsebine HDR na zaslonu. Upoštevajte, da ohranjanje vgrajenega zaslona v načinu EDR za neposredno upravljanje svetlosti nima slabosti, vendar lahko ta nastavitev tudi druge zunanje zaslone Apple prisili v način EDR.</target>
         <note>53477 - Keep display in EDR mode setting help.</note>
       </trans-unit>
+      <trans-unit id="This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered." xml:space="preserve">
+        <source>This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered.</source>
+        <target state="translated">Ta profil nima metapodatkov retuširanja. Izvirnega profila in nastavitev prilagoditev ni mogoče obnoviti.</target>
+        <note>54069 - Retouch loading error when embedded metadata is absent, preventing recovery of the original ICC profile and adjustment settings.</note>
+      </trans-unit>
       <trans-unit id="This provides a cleaner look when sliders are not in active use." xml:space="preserve">
         <source>This provides a cleaner look when sliders are not in active use.</source>
         <target state="translated">To zagotavlja čistejši videz, ko drsnik ni v aktivni uporabi.</target>
@@ -12341,6 +12659,11 @@ Please note that previously stored custom display configurations won't be remove
 
 Upoštevajte, da predhodno shranjene konfiguracije zaslona po meri ne bodo odstranjene iz sistema!</target>
         <note>53477 - Reset app settings confirmation.</note>
+      </trans-unit>
+      <trans-unit id="This retouch uses an unsupported metadata or algorithm version." xml:space="preserve">
+        <source>This retouch uses an unsupported metadata or algorithm version.</source>
+        <target state="translated">To retuširanje uporablja nepodprto različico metapodatkov ali algoritma.</target>
+        <note>54069 - Retouch loading error when the embedded metadata format or processing algorithm version is unsupported.</note>
       </trans-unit>
       <trans-unit id="This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings." xml:space="preserve">
         <source>This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings.</source>
@@ -12450,6 +12773,11 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <source>Timeout</source>
         <target state="translated">Časovna omejitev</target>
         <note>53477 - Operation timeout setting.</note>
+      </trans-unit>
+      <trans-unit id="Tint" xml:space="preserve">
+        <source>Tint</source>
+        <target state="translated">Obarvanost</target>
+        <note>54069 - Color-balance term for a magenta/green tint adjustment, distinct from hue rotation.</note>
       </trans-unit>
       <trans-unit id="Title Bar &amp; Window Controls" xml:space="preserve">
         <source>Title Bar &amp; Window Controls</source>
@@ -12601,6 +12929,56 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <target state="translated">Stikala</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
+      <trans-unit id="Tone Brightness" xml:space="preserve">
+        <source>Tone Brightness</source>
+        <target state="translated">Tonska svetlost</target>
+        <note>54069 - Logarithmic strength of an endpoint-preserving brightness curve in the retouch editor. The unitless value is not photographic exposure or EV.</note>
+      </trans-unit>
+      <trans-unit id="Tone Contrast" xml:space="preserve">
+        <source>Tone Contrast</source>
+        <target state="translated">Tonski kontrast</target>
+        <note>54069 - S-curve contrast in the Color Profile retouch editor; preserves black and white rather than using the Image Adjustments contrast formula.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain" xml:space="preserve">
+        <source>Tone Gain</source>
+        <target state="translated">Tonsko ojačenje</target>
+        <note>54069 - Multiplier controlling an endpoint-preserving tone curve in the retouch editor, not a linear signal gain.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain (Blue)" xml:space="preserve">
+        <source>Tone Gain (Blue)</source>
+        <target state="translated">Tonsko ojačenje (Modra)</target>
+        <note>54069 - Blue channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain (Green)" xml:space="preserve">
+        <source>Tone Gain (Green)</source>
+        <target state="translated">Tonsko ojačenje (Zelena)</target>
+        <note>54069 - Green channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain (Red)" xml:space="preserve">
+        <source>Tone Gain (Red)</source>
+        <target state="translated">Tonsko ojačenje (Rdeča)</target>
+        <note>54069 - Red channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Tone adjustment is not monotonic." xml:space="preserve">
+        <source>Tone adjustment is not monotonic.</source>
+        <target state="translated">Tonska prilagoditev ni monotona.</target>
+        <note>54069 - Retouch generation error when the tone curve is not monotonic: its output decreases as its input increases.</note>
+      </trans-unit>
+      <trans-unit id="Tone adjustment produced an invalid value." xml:space="preserve">
+        <source>Tone adjustment produced an invalid value.</source>
+        <target state="translated">Tonska prilagoditev je ustvarila neveljavno vrednost.</target>
+        <note>54069 - Retouch generation error when a tone-curve adjustment produces an invalid numeric value.</note>
+      </trans-unit>
+      <trans-unit id="Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app." xml:space="preserve">
+        <source>Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app.</source>
+        <target state="translated">Prilagoditve tonov in barvnega ravnovesja ohranijo črno in belo končno točko. Delovanje HDR je odvisno od zaslona in aplikacije.</target>
+        <note>54069 - Explanation beneath the Color Profile retouch sliders; these tone-curve effects preserve endpoints, with display- and app-dependent HDR behavior.</note>
+      </trans-unit>
+      <trans-unit id="Too many metadata entries." xml:space="preserve">
+        <source>Too many metadata entries.</source>
+        <target state="translated">Preveč vnosov metapodatkov.</target>
+        <note>54069 - ICC metadata encoding error when there are more metadata entries than allowed.</note>
+      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">Orodja</target>
@@ -12720,6 +13098,16 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <source>True Tone turned off by HDR toggle</source>
         <target state="translated">True Tone je izklopljen s stikalom HDR</target>
         <note>53477 - True Tone disabled notification.</note>
+      </trans-unit>
+      <trans-unit id="Truncated sampled curve." xml:space="preserve">
+        <source>Truncated sampled curve.</source>
+        <target state="translated">Odrezana vzorčena krivulja.</target>
+        <note>54069 - Tone-curve parsing error when a sampled curve’s stored data ends before all declared samples are present.</note>
+      </trans-unit>
+      <trans-unit id="Truncated tone curve." xml:space="preserve">
+        <source>Truncated tone curve.</source>
+        <target state="translated">Odrezana tonska krivulja.</target>
+        <note>54069 - Tone-curve parsing error when the stored curve data is truncated or incomplete.</note>
       </trans-unit>
       <trans-unit id="Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled." xml:space="preserve">
         <source>Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled.</source>
@@ -13091,6 +13479,11 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <target state="translated">Nepodprto</target>
         <note>53477 - Unsupported capability state.</note>
       </trans-unit>
+      <trans-unit id="Unsupported LUT adjustment recipe." xml:space="preserve">
+        <source>Unsupported LUT adjustment recipe.</source>
+        <target state="translated">Nepodprt recept prilagoditve LUT.</target>
+        <note>54069 - Retouch loading error for unsupported LUT adjustment parameters; recipe means the stored processing parameters.</note>
+      </trans-unit>
       <trans-unit id="Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session." xml:space="preserve">
         <source>Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session.</source>
         <target state="translated">Nepodprt zvočni format. Preverite izhod v aplikaciji »Nastavitve zvoka in MIDI« in nato znova zaženite zvočno sejo.</target>
@@ -13100,6 +13493,21 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <source>Unsupported by the display</source>
         <target state="translated">Zaslon ga ne podpira</target>
         <note>53477 - Unsupported display capability state.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported or oversized ICC metadata dictionary." xml:space="preserve">
+        <source>Unsupported or oversized ICC metadata dictionary.</source>
+        <target state="translated">Nepodprt ali prevelik slovar metapodatkov ICC.</target>
+        <note>54069 - ICC metadata parsing error for an unsupported dictionary format or excessive size; dictionary means a collection of named metadata entries.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported parametric curve." xml:space="preserve">
+        <source>Unsupported parametric curve.</source>
+        <target state="translated">Nepodprta parametrična krivulja.</target>
+        <note>54069 - Tone-curve parsing error for an unsupported parametric curve function or parameter layout.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported tone-curve type." xml:space="preserve">
+        <source>Unsupported tone-curve type.</source>
+        <target state="translated">Nepodprta vrsta tonske krivulje.</target>
+        <note>54069 - Tone-curve parsing error for an unsupported ICC curve data type.</note>
       </trans-unit>
       <trans-unit id="Up/down and mute toggle only" xml:space="preserve">
         <source>Up/down and mute toggle only</source>
@@ -13305,6 +13713,11 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <source>Use ⌥ Option + click on the display menu header for a quick identification.</source>
         <target state="translated">Za hitro prepoznavanje uporabite ⌥ Option + klik na glavo menija zaslona.</target>
         <note>53689 - Display identification help for Option-clicking a display menu header.</note>
+      </trans-unit>
+      <trans-unit id="Useful for adjustments that use overlay layers, such as the compositor filter layer or Metal overlays. Color table adjustments alone do not need this. Works best for window or region selection with the macOS screenshot tool. Instant full-screen screenshots need a higher detection frequency. Adjustments return after capture or cancellation." xml:space="preserve">
+        <source>Useful for adjustments that use overlay layers, such as the compositor filter layer or Metal overlays. Color table adjustments alone do not need this. Works best for window or region selection with the macOS screenshot tool. Instant full-screen screenshots need a higher detection frequency. Adjustments return after capture or cancellation.</source>
+        <target state="translated">Uporabno za prilagoditve, ki uporabljajo prekrivne plasti, kot sta plast filtra sestavljalnika ali prekrivna plast Metal. Same prilagoditve barvne tabele tega ne potrebujejo. Najbolje deluje pri izbiri okna ali območja z orodjem za posnetke zaslona v macOS. Takojšnji posnetki celotnega zaslona zahtevajo večjo pogostost zaznavanja. Prilagoditve se obnovijo po zajemu ali preklicu.</target>
+        <note>54034 - Help for screenshot-overlay hiding, distinguishing compositor and Metal overlay layers from color-table adjustments. Retain the selection-versus-instant-capture distinction and automatic restoration behavior.</note>
       </trans-unit>
       <trans-unit id="User Color Profile" xml:space="preserve">
         <source>User Color Profile</source>
@@ -13626,6 +14039,11 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <target state="translated">Bujenje ob zaznavi</target>
         <note>53477 - Device wake on detection setting.</note>
       </trans-unit>
+      <trans-unit id="Warm/Cool Balance" xml:space="preserve">
+        <source>Warm/Cool Balance</source>
+        <target state="translated">Ravnovesje toplo/hladno</target>
+        <note>54069 - Relative color balance in the retouch editor: negative values are warmer, positive values cooler, and zero preserves the original. This does not specify a physical white-point temperature.</note>
+      </trans-unit>
       <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
         <source>Warp Mouse Cursor</source>
         <target state="translated">Premakni kazalec miške</target>
@@ -13745,6 +14163,16 @@ To obvestilo lahko opustite - v tem primeru bodo spremembe uporabljene, ko bo na
         <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode.</source>
         <target state="translated">Ko je to omogočeno, aplikacija za kombinirano svetlost uporablja strojno upravljanje namesto prilagoditve najvišje svetlosti SDR (upravljanja svetlosti HDR) v macOS. Najvišjo svetlost SDR lahko še vedno prilagajate v Nadzornem središču. Te prilagoditve vplivajo na razpoložljivo rezervo za povečevanje svetlosti v aplikaciji. Vsi zasloni ne podpirajo strojnega upravljanja svetlosti v načinu HDR.</target>
         <note>53477 - Prefer hardware brightness in HDR setting help.</note>
+      </trans-unit>
+      <trans-unit id="White-point target is invalid." xml:space="preserve">
+        <source>White-point target is invalid.</source>
+        <target state="translated">Ciljna bela točka ni veljavna.</target>
+        <note>54069 - Retouch generation error for an invalid target white point, the chromaticity intended to represent white.</note>
+      </trans-unit>
+      <trans-unit id="White-point target is outside the supported range." xml:space="preserve">
+        <source>White-point target is outside the supported range.</source>
+        <target state="translated">Ciljna bela točka je zunaj podprtega obsega.</target>
+        <note>54069 - Retouch generation error when the target white point lies outside the supported chromaticity range.</note>
       </trans-unit>
       <trans-unit id="Width" xml:space="preserve">
         <source>Width</source>
@@ -14259,6 +14687,11 @@ Odprite Sistemske nastavitve &gt; Splošno &gt; Elementi prijave in dovolite apl
         <source>times</source>
         <target state="translated">krat</target>
         <note>53477 - Repetition count unit shown after a numeric field, such as DDC command send and retry counts. Translate as a unit following the number, not as a count label.</note>
+      </trans-unit>
+      <trans-unit id="times/second" xml:space="preserve">
+        <source>times/second</source>
+        <target state="translated">krat/sekundo</target>
+        <note>54034 - Unit for the screenshot detection frequency input: number of checks per second, rather than a time interval in milliseconds.</note>
       </trans-unit>
       <trans-unit id="unable to connect" xml:space="preserve">
         <source>unable to connect</source>
