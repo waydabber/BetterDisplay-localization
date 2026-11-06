@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -36,7 +36,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -83,7 +83,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="ko" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B48"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -376,6 +376,10 @@ Check your network connection and firewall settings.</source>
         <source>1:1 pixel mapped resolution</source>
         <target state="translated">1:1 픽셀 매핑 해상도</target>
         <note>53477 - Resolution where each source pixel maps to one physical display pixel.</note>
+      </trans-unit>
+      <trans-unit id="2" translate="no" xml:space="preserve">
+        <source>2</source>
+        <note>54030 - Default value shown in the screenshot detection frequency input, meaning two checks per second.</note>
       </trans-unit>
       <trans-unit id="2 kHz" xml:space="preserve">
         <source>2 kHz</source>
@@ -811,6 +815,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">새로운 동기화 항목 추가…</target>
         <note>53477 - Action opening a new display group synchronization configuration.</note>
       </trans-unit>
+      <trans-unit id="Add New…" xml:space="preserve">
+        <source>Add New…</source>
+        <target state="translated">새로 추가…</target>
+        <note>54069 - Opens the inline color profile retouch editor to create a new user profile.</note>
+      </trans-unit>
       <trans-unit id="Add PIP Configuration" xml:space="preserve">
         <source>Add PIP Configuration</source>
         <target state="translated">PIP 구성 추가</target>
@@ -915,6 +924,11 @@ Check your network connection and firewall settings.</source>
         <source>Additional Settings…</source>
         <target state="translated">추가 설정...</target>
         <note>53477 - Action opening additional settings.</note>
+      </trans-unit>
+      <trans-unit id="Additional adjustments currently require Matrix mode." xml:space="preserve">
+        <source>Additional adjustments currently require Matrix mode.</source>
+        <target state="translated">추가 조정에는 현재 행렬 모드가 필요합니다.</target>
+        <note>54069 - Retouch generation error: additional tone and color-balance adjustments are currently supported only by the matrix-based processing mode.</note>
       </trans-unit>
       <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
         <source>Additional delay after wake to reapply DDC settings</source>
@@ -1034,6 +1048,11 @@ You can do this in System Settings or the app can do it for you (administrator c
         <source>After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings.</source>
         <target state="translated">가상 화면을 제거한 후에는 시스템 설정에서 사용하지 않는 초기 색상 프로파일을 제거하는 것을 권장합니다.</target>
         <note>53477 - Virtual screen deletion cleanup advice for manual color profile removal.</note>
+      </trans-unit>
+      <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
+        <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
+        <target state="translated">잠자기에서 깨어난 후, 잠자기 전에 연결되어 있던 Apple 밝기 소스의 밝기가 2퍼센트포인트 이상 바뀌면 동기화합니다. 조건을 충족하는 변경 사항이 없으면 절대값 및 니트 동기화는 새로 연결된 디스플레이를 포함하여 유효한 현재 Apple 밝기 측정값을 사용합니다. 0 또는 0에 가까운 밝기 측정값은 무시합니다.</target>
+        <note>54069 - Help for brightness synchronization after wake. The two-percentage-point comparison requires pre-sleep readings; absolute-value and nits synchronization can fall back to valid current readings from existing or newly connected Apple displays, with zero or near-zero readings excluded.</note>
       </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. Uses the selected synchronization method and ignores zero or near-zero brightness readings." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. Uses the selected synchronization method and ignores zero or near-zero brightness readings.</source>
@@ -1377,6 +1396,11 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <source>An active layout protection main status configured under Groups takes precedence.</source>
         <target state="translated">그룹에서 활성화된 레이아웃 보호의 주 디스플레이 상태 설정이 우선 적용됩니다.</target>
         <note>53689 - Main display setting help: active group layout protection can override the selected main display.</note>
+      </trans-unit>
+      <trans-unit id="An adjustment is outside the supported range." xml:space="preserve">
+        <source>An adjustment is outside the supported range.</source>
+        <target state="translated">조정 값이 지원 범위를 벗어났습니다.</target>
+        <note>54069 - Retouch validation error when an adjustment parameter is outside its supported numeric range.</note>
       </trans-unit>
       <trans-unit id="An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
         <source>An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
@@ -2328,11 +2352,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">밝기 업스케일링 (직접)</target>
         <note>53477 - Direct native brightness upscaling.</note>
       </trans-unit>
-      <trans-unit id="Brightness Upscaling and Dimming Settings" xml:space="preserve">
-        <source>Brightness Upscaling and Dimming Settings</source>
-        <target state="translated">밝기 업스케일링 및 디밍 설정</target>
-        <note>53477 - Brightness upscaling and dimming settings section.</note>
-      </trans-unit>
       <trans-unit id="Brightness and Video" xml:space="preserve">
         <source>Brightness and Video</source>
         <target state="translated">밝기 및 비디오</target>
@@ -2513,6 +2532,16 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">페어링 취소</target>
         <note>53477 - Cancel device pairing action.</note>
       </trans-unit>
+      <trans-unit id="Cannot fingerprint the profile." xml:space="preserve">
+        <source>Cannot fingerprint the profile.</source>
+        <target state="translated">프로파일 지문을 계산할 수 없습니다.</target>
+        <note>54069 - Retouch metadata error when the cryptographic fingerprint used to verify a profile cannot be calculated; fingerprint is a data hash, not a biometric identifier.</note>
+      </trans-unit>
+      <trans-unit id="Cannot read profile tag." xml:space="preserve">
+        <source>Cannot read profile tag.</source>
+        <target state="translated">프로파일 태그를 읽을 수 없습니다.</target>
+        <note>54069 - Retouch metadata error when an ICC profile tag cannot be read; a tag is a named data block in the profile.</note>
+      </trans-unit>
       <trans-unit id="Capabilities" xml:space="preserve">
         <source>Capabilities</source>
         <target state="translated">기능</target>
@@ -2683,6 +2712,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">확인 중…</target>
         <note>53477 - General check progress status.</note>
       </trans-unit>
+      <trans-unit id="Checks only while an adjustment overlay is active. A sufficiently high frequency can also hide overlays for instant full-screen screenshots, but increases CPU usage." xml:space="preserve">
+        <source>Checks only while an adjustment overlay is active. A sufficiently high frequency can also hide overlays for instant full-screen screenshots, but increases CPU usage.</source>
+        <target state="translated">조정 오버레이가 활성화되어 있을 때만 확인합니다. 빈도가 충분히 높으면 전체 화면을 즉시 캡처할 때도 오버레이를 숨길 수 있지만 CPU 사용량이 늘어납니다.</target>
+        <note>54034 - Help for screenshot detection frequency, measured in checks per second. Explain that sufficiently frequent polling can also support instant full-screen screenshots at a higher CPU cost.</note>
+      </trans-unit>
       <trans-unit id="Choose control methods for your device, including hardware controllers and custom integrations." xml:space="preserve">
         <source>Choose control methods for your device, including hardware controllers and custom integrations.</source>
         <target state="translated">하드웨어 컨트롤러와 사용자 정의 통합을 포함하여 기기의 제어 방법을 선택하세요.</target>
@@ -2833,6 +2867,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">%@의 색상 프로파일이 변경되었습니다.</target>
         <note>53477 - Success notification after changing a display color profile.</note>
       </trans-unit>
+      <trans-unit id="Color table adjustments are temporarily disabled." xml:space="preserve">
+        <source>Color table adjustments are temporarily disabled.</source>
+        <target state="translated">색상표 조정이 일시적으로 비활성화되었습니다.</target>
+        <note>54073 - Note below Live Preview in the color profile retouch editor while its temporary safety suspension disables color-table image adjustments across displays. Saved adjustment values are retained; the warning icon is supplied separately.</note>
+      </trans-unit>
       <trans-unit id="Color table alteration capable" xml:space="preserve">
         <source>Color table alteration capable</source>
         <target state="translated">색상표 변경 가능</target>
@@ -2872,6 +2911,31 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Color temperature warmer</source>
         <target state="translated">색온도 따뜻하게</target>
         <note>53477 - Action shifting color temperature toward warmer colors.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not apply the color profile." xml:space="preserve">
+        <source>ColorSync could not apply the color profile.</source>
+        <target state="translated">ColorSync가 색상 프로파일을 적용하지 못했습니다.</target>
+        <note>54069 - Live preview or save error when macOS ColorSync cannot apply the retouched color profile to the display.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not restore the original color profile." xml:space="preserve">
+        <source>ColorSync could not restore the original color profile.</source>
+        <target state="translated">ColorSync가 원본 색상 프로파일을 복원하지 못했습니다.</target>
+        <note>54069 - Retouch editor error when macOS ColorSync cannot restore the previously active color profile.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not sample the original tone curves." xml:space="preserve">
+        <source>ColorSync could not sample the original tone curves.</source>
+        <target state="translated">ColorSync가 원본 명암 곡선을 샘플링하지 못했습니다.</target>
+        <note>54069 - Retouch generation error when ColorSync cannot sample the original tone-response curves; sampling evaluates the curves at a series of input values.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync refused the profile assignment." xml:space="preserve">
+        <source>ColorSync refused the profile assignment.</source>
+        <target state="translated">ColorSync가 프로파일 할당을 거부했습니다.</target>
+        <note>54069 - Error when macOS ColorSync refuses to assign a profile to a display.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync rejected the generated profile." xml:space="preserve">
+        <source>ColorSync rejected the generated profile.</source>
+        <target state="translated">ColorSync가 생성된 프로파일을 거부했습니다.</target>
+        <note>54069 - Retouch generation error when macOS ColorSync rejects the newly generated ICC profile.</note>
       </trans-unit>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
@@ -3428,10 +3492,25 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">권한 있는 도우미에 연결할 수 없습니다.</target>
         <note>53477 - Error shown when the app cannot establish its XPC connection to the privileged helper. ‘Privileged helper’ is BetterDisplay’s background system service for administrator-level operations.</note>
       </trans-unit>
+      <trans-unit id="Could not copy the original profile." xml:space="preserve">
+        <source>Could not copy the original profile.</source>
+        <target state="translated">원본 프로파일을 복사하지 못했습니다.</target>
+        <note>54069 - Retouch generation error when the original ICC profile cannot be copied for modification.</note>
+      </trans-unit>
       <trans-unit id="Could not create an administrator authorization session." xml:space="preserve">
         <source>Could not create an administrator authorization session.</source>
         <target state="translated">관리자 인증 세션을 생성할 수 없습니다.</target>
         <note>53477 - Error shown when macOS cannot create the Authorization Services session needed for an administrator-level operation.</note>
+      </trans-unit>
+      <trans-unit id="Could not create the linear profile used to sample tone curves." xml:space="preserve">
+        <source>Could not create the linear profile used to sample tone curves.</source>
+        <target state="translated">명암 곡선 샘플링에 사용할 선형 프로파일을 생성하지 못했습니다.</target>
+        <note>54069 - Retouch generation error when the linear reference profile used to sample tone-response curves cannot be created.</note>
+      </trans-unit>
+      <trans-unit id="Could not read this display's default ColorSync profile." xml:space="preserve">
+        <source>Could not read this display's default ColorSync profile.</source>
+        <target state="translated">이 디스플레이의 기본 ColorSync 프로파일을 읽지 못했습니다.</target>
+        <note>54069 - Retouch source error when the display’s default macOS ColorSync profile cannot be read.</note>
       </trans-unit>
       <trans-unit id="Could not register the administrator authorization right (%d)." xml:space="preserve">
         <source>Could not register the administrator authorization right (%d).</source>
@@ -3442,6 +3521,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Could not register the privileged helper.</source>
         <target state="translated">권한 있는 도우미를 등록할 수 없습니다.</target>
         <note>53477 - Error shown when BetterDisplay cannot register its privileged helper with macOS. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
+      </trans-unit>
+      <trans-unit id="Could not serialize the generated profile." xml:space="preserve">
+        <source>Could not serialize the generated profile.</source>
+        <target state="translated">생성된 프로파일을 직렬화하지 못했습니다.</target>
+        <note>54069 - Retouch generation error when the generated profile cannot be serialized into binary ICC data.</note>
       </trans-unit>
       <trans-unit id="Could not transfer the administrator authorization to the privileged helper." xml:space="preserve">
         <source>Could not transfer the administrator authorization to the privileged helper.</source>
@@ -4853,6 +4937,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">디스플레이 종류</target>
         <note>53477 - Display type label.</note>
       </trans-unit>
+      <trans-unit id="Display with mouse cursor" xml:space="preserve">
+        <source>Display with mouse cursor</source>
+        <target state="translated">마우스 포인터가 있는 디스플레이</target>
+        <note>54072 - OSD destination in the Show OSD on picker. Uses the display containing the mouse cursor when feedback is shown or updated; moving the cursor alone does not move visible feedback.</note>
+      </trans-unit>
       <trans-unit id="Display with the same name as current audio device" xml:space="preserve">
         <source>Display with the same name as current audio device</source>
         <target state="translated">현재 오디오 장치와 동일한 이름을 가진 화면</target>
@@ -5531,6 +5620,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Enter Service Menu</source>
         <target state="translated">서비스 메뉴 진입</target>
         <note>53689 - TV remote action to open the technical service menu.</note>
+      </trans-unit>
+      <trans-unit id="Enter a color profile name." xml:space="preserve">
+        <source>Enter a color profile name.</source>
+        <target state="translated">색상 프로파일 이름을 입력하세요.</target>
+        <note>54069 - Validation message requiring a nonempty name for a retouched color profile.</note>
       </trans-unit>
       <trans-unit id="Equalizer, Bass Boost and Loudness" xml:space="preserve">
         <source>Equalizer, Bass Boost and Loudness</source>
@@ -6406,6 +6500,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">앱 메뉴에서 손쉬운 사용 권한 및 라이선스 관련 경고를 숨깁니다.</target>
         <note>53477 - Menu warning visibility setting help.</note>
       </trans-unit>
+      <trans-unit id="Hide adjustment overlays while taking screenshots" xml:space="preserve">
+        <source>Hide adjustment overlays while taking screenshots</source>
+        <target state="translated">스크린샷을 찍는 동안 조정 오버레이 숨기기</target>
+        <note>54034 - Default-off Displays Overview setting for hiding display-adjustment overlay layers while the native macOS screenshot tool is active. These compositor or Metal overlays are separate from color-table adjustments.</note>
+      </trans-unit>
       <trans-unit id="Hide all full screen streams" xml:space="preserve">
         <source>Hide all full screen streams</source>
         <target state="translated">모든 전체화면 스트리밍 숨기기</target>
@@ -6560,6 +6659,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>I2C service name</source>
         <target state="translated">I2C 서비스 이름</target>
         <note>53477 - Hardware I2C service identifier label.</note>
+      </trans-unit>
+      <trans-unit id="ICC metadata is too large." xml:space="preserve">
+        <source>ICC metadata is too large.</source>
+        <target state="translated">ICC 메타데이터가 너무 큽니다.</target>
+        <note>54069 - Retouch metadata error when encoded ICC metadata exceeds its allowed byte size.</note>
       </trans-unit>
       <trans-unit id="IN START Service Menu" xml:space="preserve">
         <source>IN START Service Menu</source>
@@ -6735,6 +6839,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">이미지 조정</target>
         <note>53477 - Image adjustments menu heading.</note>
       </trans-unit>
+      <trans-unit id="Image Adjustments, Upscaling &amp; Dimming Settings" xml:space="preserve">
+        <source>Image Adjustments, Upscaling &amp; Dimming Settings</source>
+        <target state="translated">이미지 조정, 밝기 업스케일링 및 디밍 설정</target>
+        <note>54034 - Title of the advanced app-wide image adjustment, software brightness upscaling and dimming settings section and its opening button. Upscaling means increased software brightness above the normal range, not higher image resolution.</note>
+      </trans-unit>
       <trans-unit id="Image adjustment controls are unavailable." xml:space="preserve">
         <source>Image adjustment controls are unavailable.</source>
         <target state="translated">이미지 조정 제어를 사용할 수 없습니다.</target>
@@ -6769,6 +6878,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>In a detached state the app menu floats over the desktop as a top-level window. You can specify the alpha level to see-through the menu (lower the value for more transparency).</source>
         <target state="translated">분리된 상태에서는 앱 메뉴가 바탕화면 위에 최상위 윈도우로 떠 있습니다. 메뉴를 투명하게 보이도록 알파 레벨을 지정할 수 있습니다(값을 낮추면 더 투명해집니다).</target>
         <note>53477 - Detached menu opacity help.</note>
+      </trans-unit>
+      <trans-unit id="Incomplete retouch metadata." xml:space="preserve">
+        <source>Incomplete retouch metadata.</source>
+        <target state="translated">보정 메타데이터가 불완전합니다.</target>
+        <note>54069 - Retouch loading error when the embedded metadata lacks required retouch information.</note>
       </trans-unit>
       <trans-unit id="Increase Apple Keyboard brightness" xml:space="preserve">
         <source>Increase Apple Keyboard brightness</source>
@@ -6915,15 +7029,50 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">내부 시험판</target>
         <note>53477 - Internal pre-release build channel.</note>
       </trans-unit>
+      <trans-unit id="Invalid ICC metadata offset." xml:space="preserve">
+        <source>Invalid ICC metadata offset.</source>
+        <target state="translated">ICC 메타데이터 오프셋이 유효하지 않습니다.</target>
+        <note>54069 - ICC metadata parsing error for an invalid byte offset into the metadata data block.</note>
+      </trans-unit>
+      <trans-unit id="Invalid ICC metadata record table." xml:space="preserve">
+        <source>Invalid ICC metadata record table.</source>
+        <target state="translated">ICC 메타데이터 레코드 테이블이 유효하지 않습니다.</target>
+        <note>54069 - ICC metadata parsing error for an invalid table of metadata records.</note>
+      </trans-unit>
+      <trans-unit id="Invalid ICC metadata text." xml:space="preserve">
+        <source>Invalid ICC metadata text.</source>
+        <target state="translated">ICC 메타데이터 텍스트가 유효하지 않습니다.</target>
+        <note>54069 - ICC metadata parsing error when a metadata string is not valid encoded text.</note>
+      </trans-unit>
+      <trans-unit id="Invalid display UUID." xml:space="preserve">
+        <source>Invalid display UUID.</source>
+        <target state="translated">디스플레이 UUID가 유효하지 않습니다.</target>
+        <note>54069 - ColorSync profile assignment error when the display’s UUID identifier is invalid; keep UUID unchanged.</note>
+      </trans-unit>
       <trans-unit id="Invalid mode" xml:space="preserve">
         <source>Invalid mode</source>
         <target state="translated">유효하지 않은 모드</target>
         <note>53477 - Invalid display mode status.</note>
       </trans-unit>
+      <trans-unit id="Invalid or oversized profile." xml:space="preserve">
+        <source>Invalid or oversized profile.</source>
+        <target state="translated">프로파일이 유효하지 않거나 너무 큽니다.</target>
+        <note>54069 - Retouch loading error when an ICC profile is invalid or exceeds the allowed size.</note>
+      </trans-unit>
       <trans-unit id="Invalid resolution (skipped)" xml:space="preserve">
         <source>Invalid resolution (skipped)</source>
         <target state="translated">유효하지 않은 해상도 (건너뜀)</target>
         <note>53477 - Skipped invalid resolution status.</note>
+      </trans-unit>
+      <trans-unit id="Invalid tone-curve exponent." xml:space="preserve">
+        <source>Invalid tone-curve exponent.</source>
+        <target state="translated">명암 곡선 지수가 유효하지 않습니다.</target>
+        <note>54069 - Tone-curve parsing error for an invalid mathematical exponent in the curve definition.</note>
+      </trans-unit>
+      <trans-unit id="Invalid tone-curve samples." xml:space="preserve">
+        <source>Invalid tone-curve samples.</source>
+        <target state="translated">명암 곡선 샘플이 유효하지 않습니다.</target>
+        <note>54069 - Retouch generation error for invalid numeric samples of a tone-response curve.</note>
       </trans-unit>
       <trans-unit id="Invert Colors" xml:space="preserve">
         <source>Invert Colors</source>
@@ -7054,6 +7203,20 @@ Not all displays support screen control operations. These operations can cause i
         <source>LG webOS Smart Device</source>
         <target state="translated">LG webOS 스마트 기기</target>
         <note>53477 - LG webOS controller device type.</note>
+      </trans-unit>
+      <trans-unit id="LUT" translate="no" xml:space="preserve">
+        <source>LUT</source>
+        <note>54036 - Non-translatable LUT (lookup table) badge next to LUT-based or hybrid ICC color profiles in the Color Profile menu, including favorite rows.</note>
+      </trans-unit>
+      <trans-unit id="LUT conversion matrix exceeds the ICC fixed-point range." xml:space="preserve">
+        <source>LUT conversion matrix exceeds the ICC fixed-point range.</source>
+        <target state="translated">LUT 변환 행렬이 ICC 고정 소수점 범위를 초과합니다.</target>
+        <note>54069 - Retouch generation error when the LUT conversion matrix cannot fit the ICC fixed-point numeric representation; preserve LUT and ICC.</note>
+      </trans-unit>
+      <trans-unit id="LUT-based profiles cannot be retouched." xml:space="preserve">
+        <source>LUT-based profiles cannot be retouched.</source>
+        <target state="translated">LUT 기반 프로파일은 보정할 수 없습니다.</target>
+        <note>54069 - Retouch source error: profiles based on lookup tables (LUTs) cannot be used as originals for this editor.</note>
       </trans-unit>
       <trans-unit id="Landscape - no rotation" xml:space="preserve">
         <source>Landscape - no rotation</source>
@@ -7260,6 +7423,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">수신 중인 HTTP 포트</target>
         <note>53477 - HTTP integration server listening port setting.</note>
       </trans-unit>
+      <trans-unit id="Live Preview" xml:space="preserve">
+        <source>Live Preview</source>
+        <target state="translated">실시간 미리보기</target>
+        <note>54069 - Toggle at the bottom of the color profile retouch editor that previews slider changes on the display.</note>
+      </trans-unit>
       <trans-unit id="LoDPI" xml:space="preserve">
         <source>LoDPI</source>
         <target state="translated">LoDPI</target>
@@ -7329,6 +7497,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Mac/input physical address: %@</source>
         <target state="translated">Mac/입력 물리적 주소: %@</target>
         <note>53477 - HDMI-CEC physical address; placeholder is a dotted numeric address, not a network MAC address.</note>
+      </trans-unit>
+      <trans-unit id="Magenta/Green Balance" xml:space="preserve">
+        <source>Magenta/Green Balance</source>
+        <target state="translated">마젠타/초록 균형</target>
+        <note>54069 - Relative color balance in the retouch editor: negative values shift tones toward magenta and positive values toward green, preserving black and white.</note>
       </trans-unit>
       <trans-unit id="Magnification" xml:space="preserve">
         <source>Magnification</source>
@@ -7504,6 +7677,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Matching tolerance</source>
         <target state="translated">일치 허용 오차</target>
         <note>53477 - UI scale matching tolerance setting.</note>
+      </trans-unit>
+      <trans-unit id="Matrix exceeds ICC range." xml:space="preserve">
+        <source>Matrix exceeds ICC range.</source>
+        <target state="translated">행렬이 ICC 범위를 초과합니다.</target>
+        <note>54069 - Retouch generation error when a matrix coefficient exceeds the numeric range supported by ICC.</note>
       </trans-unit>
       <trans-unit id="Max" xml:space="preserve">
         <source>Max</source>
@@ -7770,10 +7948,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">미러링과 스트리밍으로 인해 조정하려는 디스플레이가 모호해집니다. 소스만 대상으로 하려면 이 설정을 비활성화하세요. 그룹 동기화는 이 설정과 관계없이 변경 사항을 전달할 수 있으며, 소스 이미지의 오버레이도 계속 대상에 영향을 줄 수 있습니다.</target>
         <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
       </trans-unit>
+      <trans-unit id="Missing or duplicate ICC metadata name." xml:space="preserve">
+        <source>Missing or duplicate ICC metadata name.</source>
+        <target state="translated">ICC 메타데이터 이름이 없거나 중복되었습니다.</target>
+        <note>54069 - ICC metadata parsing error for a missing or duplicate metadata entry name.</note>
+      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">식별자가 누락되었거나 중복되어 있습니다 - 이로 인해 예상치 못한 결과가 발생할 수 있습니다!</target>
         <note>53688 - Validation warning for missing or duplicate identifiers.</note>
+      </trans-unit>
+      <trans-unit id="Missing tone curve." xml:space="preserve">
+        <source>Missing tone curve.</source>
+        <target state="translated">명암 곡선이 없습니다.</target>
+        <note>54069 - Retouch generation error when a required tone-response curve is absent from the profile.</note>
       </trans-unit>
       <trans-unit id="Mixed" xml:space="preserve">
         <source>Mixed</source>
@@ -8005,6 +8193,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">네이티브 모드 (1:1 매핑)</target>
         <note>53477 - Native pixel mapping mode.</note>
       </trans-unit>
+      <trans-unit id="Nested retouch sources are not supported." xml:space="preserve">
+        <source>Nested retouch sources are not supported.</source>
+        <target state="translated">중첩된 보정 소스는 지원되지 않습니다.</target>
+        <note>54069 - Retouch loading error: an embedded original cannot itself contain another retouch; nested means retouches embedded inside other retouches.</note>
+      </trans-unit>
       <trans-unit id="Neutral" xml:space="preserve">
         <source>Neutral</source>
         <target state="translated">중립</target>
@@ -8094,6 +8287,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>No favorites added.</source>
         <target state="translated">추가된 즐겨찾기가 없습니다.</target>
         <note>53477 - Empty favorite mode list.</note>
+      </trans-unit>
+      <trans-unit id="No retouched color profiles." xml:space="preserve">
+        <source>No retouched color profiles.</source>
+        <target state="translated">보정된 색상 프로파일이 없습니다.</target>
+        <note>54069 - Empty state for the retouched color profiles section. Add New remains available.</note>
       </trans-unit>
       <trans-unit id="No screen rotation" xml:space="preserve">
         <source>No screen rotation</source>
@@ -8404,6 +8602,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Original</source>
         <target state="translated">원본</target>
         <note>53477 - Slider snap badge marking the original adjustment value; keep it compact, ideally 8-10 characters, abbreviating naturally if needed.</note>
+      </trans-unit>
+      <trans-unit id="Original profile exceeds the 4 MiB embedding limit." xml:space="preserve">
+        <source>Original profile exceeds the 4 MiB embedding limit.</source>
+        <target state="translated">원본 프로파일이 4 MiB 포함 한도를 초과합니다.</target>
+        <note>54069 - Retouch save error when the original profile exceeds the 4 MiB limit for embedding it in the generated profile; preserve the size and unit.</note>
       </trans-unit>
       <trans-unit id="Other Apple display" xml:space="preserve">
         <source>Other Apple display</source>
@@ -8881,6 +9084,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">제품명</target>
         <note>53477 - Display product name information.</note>
       </trans-unit>
+      <trans-unit id="Profile exceeds the 32 MiB read limit." xml:space="preserve">
+        <source>Profile exceeds the 32 MiB read limit.</source>
+        <target state="translated">프로파일이 32 MiB 읽기 한도를 초과합니다.</target>
+        <note>54069 - Retouch loading error when a profile exceeds the 32 MiB read limit; preserve the size and unit.</note>
+      </trans-unit>
+      <trans-unit id="Profile name" xml:space="preserve">
+        <source>Profile name</source>
+        <target state="translated">프로파일 이름</target>
+        <note>54069 - Accessible label and empty placeholder for the inline-editable name in a color profile retouch menu row.</note>
+      </trans-unit>
       <trans-unit id="Prohibit Resizing" xml:space="preserve">
         <source>Prohibit Resizing</source>
         <target state="translated">윈도우 크기 고정</target>
@@ -9296,6 +9509,26 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">깨어날 때 이 디스플레이 다시 초기화</target>
         <note>53477 - Display wake recovery setting.</note>
       </trans-unit>
+      <trans-unit id="Relative Gamma" xml:space="preserve">
+        <source>Relative Gamma</source>
+        <target state="translated">상대 감마</target>
+        <note>54069 - Gamma correction relative to the original color profile, with 100% unchanged; not a measured display gamma.</note>
+      </trans-unit>
+      <trans-unit id="Relative Gamma (Blue)" xml:space="preserve">
+        <source>Relative Gamma (Blue)</source>
+        <target state="translated">상대 감마 (파랑)</target>
+        <note>54069 - Blue channel gamma correction relative to the original color profile; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Relative Gamma (Green)" xml:space="preserve">
+        <source>Relative Gamma (Green)</source>
+        <target state="translated">상대 감마 (초록)</target>
+        <note>54069 - Green channel gamma correction relative to the original color profile; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Relative Gamma (Red)" xml:space="preserve">
+        <source>Relative Gamma (Red)</source>
+        <target state="translated">상대 감마 (빨강)</target>
+        <note>54069 - Red channel gamma correction relative to the original color profile; 100% leaves the channel unchanged.</note>
+      </trans-unit>
       <trans-unit id="Relative Position" xml:space="preserve">
         <source>Relative Position</source>
         <target state="translated">상대적 위치</target>
@@ -9421,6 +9654,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">이 활성화를 제거해도 현재 설치된 앱에만 영향을 미칩니다. 다른 활성화를 제거하는 것은 현재 설치된 앱에 영향을 주지 않으며, 모든 활성화를 제거하면 모든 것이 초기 상태로 재설정됩니다.</target>
         <note>53477 - License activation removal scope help.</note>
       </trans-unit>
+      <trans-unit id="Reopen the retouched profile to use its embedded original; nesting retouches is not supported." xml:space="preserve">
+        <source>Reopen the retouched profile to use its embedded original; nesting retouches is not supported.</source>
+        <target state="translated">보정된 프로파일을 다시 열어 포함된 원본을 사용하세요. 중첩 보정은 지원되지 않습니다.</target>
+        <note>54069 - Retouch source error directing the user to reopen the edited profile so its embedded original can be used, instead of nesting another retouch.</note>
+      </trans-unit>
       <trans-unit id="Reported actual refresh rate:" xml:space="preserve">
         <source>Reported actual refresh rate:</source>
         <target state="translated">보고된 실제 주사율:</target>
@@ -9515,6 +9753,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Reset Menu Layout…</source>
         <target state="translated">메뉴 레이아웃 재설정…</target>
         <note>53477 - Reset app menu layout action.</note>
+      </trans-unit>
+      <trans-unit id="Reset Originals" xml:space="preserve">
+        <source>Reset Originals</source>
+        <target state="translated">원본 값으로 복원</target>
+        <note>54069 - Resets all retouch sliders to the neutral values of the embedded original color profile.</note>
       </trans-unit>
       <trans-unit id="Reset System Settings" xml:space="preserve">
         <source>Reset System Settings</source>
@@ -9705,6 +9948,36 @@ Not all displays support screen control operations. These operations can cause i
         <source>Resume Stream on Connect</source>
         <target state="translated">연결 시 스트리밍 재개</target>
         <note>53484 - Display stream menu toggle that resumes streaming when the display reconnects. Keep the label short enough for the app menu.</note>
+      </trans-unit>
+      <trans-unit id="Retouch effective settings do not match the recipe." xml:space="preserve">
+        <source>Retouch effective settings do not match the recipe.</source>
+        <target state="translated">실제 보정 설정이 저장된 레시피와 일치하지 않습니다.</target>
+        <note>54069 - Retouch loading error when the effective adjustments do not match the saved recipe; recipe means the stored processing parameters.</note>
+      </trans-unit>
+      <trans-unit id="Retouch source or output fingerprint does not match." xml:space="preserve">
+        <source>Retouch source or output fingerprint does not match.</source>
+        <target state="translated">보정 소스 또는 출력의 지문이 일치하지 않습니다.</target>
+        <note>54069 - Retouch loading error when a source or output cryptographic hash differs from the saved fingerprint; this verifies profile data integrity.</note>
+      </trans-unit>
+      <trans-unit id="Retouched %@" xml:space="preserve">
+        <source>Retouched %@</source>
+        <target state="translated">보정된 %@</target>
+        <note>54069 - Default name for a new retouched color profile; the placeholder is the original profile name.</note>
+      </trans-unit>
+      <trans-unit id="Retouched color profiles:" xml:space="preserve">
+        <source>Retouched color profiles:</source>
+        <target state="translated">보정된 색상 프로파일:</target>
+        <note>54069 - Section containing color profiles with embedded BetterDisplay retouch metadata and their original source profile.</note>
+      </trans-unit>
+      <trans-unit id="Retouching requires a valid matrix-based RGB display profile with an XYZ connection space." xml:space="preserve">
+        <source>Retouching requires a valid matrix-based RGB display profile with an XYZ connection space.</source>
+        <target state="translated">보정하려면 XYZ 연결 공간을 사용하는 유효한 행렬 기반 RGB 디스플레이 프로파일이 필요합니다.</target>
+        <note>54069 - Retouch source requirement: a valid matrix-based RGB display profile using XYZ as its profile connection space.</note>
+      </trans-unit>
+      <trans-unit id="Retouch…" xml:space="preserve">
+        <source>Retouch…</source>
+        <target state="translated">보정…</target>
+        <note>54069 - Context-menu action opening the color profile retouch editor for a non-LUT source profile.</note>
       </trans-unit>
       <trans-unit id="Retrieve EDID" xml:space="preserve">
         <source>Retrieve EDID</source>
@@ -9976,6 +10249,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">활성 윈도우가 있는 화면</target>
         <note>53477 - Keyboard control target option.</note>
       </trans-unit>
+      <trans-unit id="Screenshot detection frequency" xml:space="preserve">
+        <source>Screenshot detection frequency</source>
+        <target state="translated">스크린샷 감지 빈도</target>
+        <note>54034 - Numeric setting specifying how often the app checks for the native screenshot process while an adjustment overlay is active. The adjacent unit is checks per second.</note>
+      </trans-unit>
       <trans-unit id="Script to get current value (%@)" xml:space="preserve">
         <source>Script to get current value (%@)</source>
         <target state="translated">현재 값을 가져오는 스크립트 (%@)</target>
@@ -10035,6 +10313,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Select a disconnected display</source>
         <target state="translated">연결되지 않은 디스플레이 선택</target>
         <note>53477 - Disconnected display selection prompt.</note>
+      </trans-unit>
+      <trans-unit id="Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline." xml:space="preserve">
+        <source>Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline.</source>
+        <target state="translated">행렬 기반 원본 프로파일을 선택하세요. 기존 LUT/하이브리드 프로파일은 기반으로 사용할 수 없습니다.</target>
+        <note>54069 - Retouch source requirement: use a matrix-based original rather than a LUT or hybrid profile; baseline means the original profile to modify.</note>
       </trans-unit>
       <trans-unit id="Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`." xml:space="preserve">
         <source>Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`.</source>
@@ -10971,15 +11254,15 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">소프트웨어 오디오는 이 연결 유형을 지원하지 않습니다. 내장, USB, HDMI, DisplayPort 또는 Bluetooth 오디오 출력을 사용해 보세요.</target>
         <note>53927 - Warning for audio connection types outside Software Audio’s transport allowlist. Built-in, wired and Bluetooth examples are non-exhaustive; format requirements still apply.</note>
       </trans-unit>
+      <trans-unit id="Software Image Adjustments, Upscaling &amp; Dimming" xml:space="preserve">
+        <source>Software Image Adjustments, Upscaling &amp; Dimming</source>
+        <target state="translated">소프트웨어 이미지 조정, 밝기 업스케일링 및 디밍</target>
+        <note>54034 - App-wide Displays Overview section containing software image adjustment, brightness upscaling, dimming and screenshot-overlay settings. Upscaling increases software brightness above its normal range.</note>
+      </trans-unit>
       <trans-unit id="Software Volume Curve" xml:space="preserve">
         <source>Software Volume Curve</source>
         <target state="translated">소프트웨어 볼륨 곡선</target>
         <note>53927 - Exponent shaping normalized software attenuation over the slider range; it is not acoustic calibration.</note>
-      </trans-unit>
-      <trans-unit id="Software XDR/HDR Upscaling and Dimming" xml:space="preserve">
-        <source>Software XDR/HDR Upscaling and Dimming</source>
-        <target state="translated">소프트웨어 XDR/HDR 업스케일링 및 디밍</target>
-        <note>53477 - Software brightness feature section.</note>
       </trans-unit>
       <trans-unit id="Software audio could not enable automatic system sleep. Audio processing remains active." xml:space="preserve">
         <source>Software audio could not enable automatic system sleep. Audio processing remains active.</source>
@@ -11784,6 +12067,11 @@ This operation does not reset the display itself.</source>
         <target state="translated">앱에 오류가 발생하면 iMac의 내장 디스플레이를 쉽게 다시 연결할 수 없습니다(디스플레이 케이블이나 닫을 수 있는 덮개가 없음). 이 설정은 각별히 주의해서 사용하세요!</target>
         <note>53477 - iMac built-in display disconnection warning.</note>
       </trans-unit>
+      <trans-unit id="The color profile is too large." xml:space="preserve">
+        <source>The color profile is too large.</source>
+        <target state="translated">색상 프로파일이 너무 큽니다.</target>
+        <note>54069 - Retouch editor error when the selected color profile exceeds the allowed size.</note>
+      </trans-unit>
       <trans-unit id="The custom filter no longer exists." xml:space="preserve">
         <source>The custom filter no longer exists.</source>
         <target state="translated">사용자 정의 필터가 더 이상 존재하지 않습니다.</target>
@@ -11824,6 +12112,11 @@ This operation does not reset the display itself.</source>
         <target state="translated">디스플레이가 DDC를 지원함</target>
         <note>53477 - DDC detection result.</note>
       </trans-unit>
+      <trans-unit id="The display is not ready for a color profile change." xml:space="preserve">
+        <source>The display is not ready for a color profile change.</source>
+        <target state="translated">디스플레이가 색상 프로파일을 변경할 준비가 되지 않았습니다.</target>
+        <note>54069 - Retouch preview or restore error when the display is not currently ready for a profile change.</note>
+      </trans-unit>
       <trans-unit id="The display may have limited DDC support" xml:space="preserve">
         <source>The display may have limited DDC support</source>
         <target state="translated">디스플레이의 DDC 지원이 제한적일 수 있음</target>
@@ -11838,6 +12131,11 @@ This operation does not reset the display itself.</source>
         <source>The display or connection does not support DDC</source>
         <target state="translated">디스플레이 또는 연결이 DDC를 지원하지 않음</target>
         <note>53477 - DDC detection result.</note>
+      </trans-unit>
+      <trans-unit id="The display profile changed. Enable Live Preview again to continue." xml:space="preserve">
+        <source>The display profile changed. Enable Live Preview again to continue.</source>
+        <target state="translated">디스플레이 프로파일이 변경되었습니다. 계속하려면 실시간 미리보기를 다시 켜세요.</target>
+        <note>54069 - Shown when an external color profile selection stops retouch preview; names the Live Preview toggle.</note>
       </trans-unit>
       <trans-unit id="The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!" xml:space="preserve">
         <source>The display will be automatically disconnected upon detection or physical connect if it was disconnected using the app beforehand. This setting might cause unexpected issues (connect-disconnect cycle with incompatible displays, lack of any connected displays) - use with caution!</source>
@@ -11984,6 +12282,21 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">권한 있는 도우미를 새로 고쳐야 합니다.</target>
         <note>53477 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface.</note>
       </trans-unit>
+      <trans-unit id="The profile file cannot be replaced." xml:space="preserve">
+        <source>The profile file cannot be replaced.</source>
+        <target state="translated">프로파일 파일을 교체할 수 없습니다.</target>
+        <note>54069 - Retouch save error when the existing profile file cannot safely be replaced.</note>
+      </trans-unit>
+      <trans-unit id="The profile is missing standard RGB matrix or tone-curve tags." xml:space="preserve">
+        <source>The profile is missing standard RGB matrix or tone-curve tags.</source>
+        <target state="translated">프로파일에 표준 RGB 행렬 또는 명암 곡선 태그가 없습니다.</target>
+        <note>54069 - Retouch source error when standard ICC tags for the RGB matrix or tone-response curves are missing; tags are named profile data blocks.</note>
+      </trans-unit>
+      <trans-unit id="The profile's RGB matrix is degenerate or has unsupported luminance weights." xml:space="preserve">
+        <source>The profile's RGB matrix is degenerate or has unsupported luminance weights.</source>
+        <target state="translated">프로파일의 RGB 행렬이 퇴화되었거나 지원되지 않는 휘도 가중치를 사용합니다.</target>
+        <note>54069 - Retouch source error for a mathematically degenerate RGB matrix or unsupported luminance weights, which describe each channel’s contribution to luminance.</note>
+      </trans-unit>
       <trans-unit id="The protection is not in effect unless all participating displays are connected." xml:space="preserve">
         <source>The protection is not in effect unless all participating displays are connected.</source>
         <target state="translated">모든 참여 디스플레이가 연결되어 있지 않으면 보호 기능이 적용되지 않습니다.</target>
@@ -11993,6 +12306,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">상대 위치가 정의되지 않으면 보호 기능이 적용되지 않습니다.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
+      </trans-unit>
+      <trans-unit id="The requested matrix is singular." xml:space="preserve">
+        <source>The requested matrix is singular.</source>
+        <target state="translated">요청한 행렬은 특이 행렬입니다.</target>
+        <note>54069 - Retouch generation error for a singular matrix, meaning a mathematical matrix that cannot be inverted.</note>
       </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
@@ -12108,6 +12426,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>Thermal</source>
         <target state="translated">열화상</target>
         <note>53477 - Core Image Thermal false-color image filter.</note>
+      </trans-unit>
+      <trans-unit id="These adjustments exceed conservative limits and may be incompatible with some apps." xml:space="preserve">
+        <source>These adjustments exceed conservative limits and may be incompatible with some apps.</source>
+        <target state="translated">이 조정은 보수적인 한계를 초과하며 일부 앱과 호환되지 않을 수 있습니다.</target>
+        <note>54069 - Warning shown when conservative gamut limiting is off and the retouch settings would exceed the limiter’s compatibility bounds.</note>
       </trans-unit>
       <trans-unit id="These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %@ for your display type." xml:space="preserve">
         <source>These steps provide the modern way to enter and exit the service menu and unlock the advanced service menu options - should work on newer Samsung Smart displays. Use the appropriate step %1$@ for your display type.</source>
@@ -12319,6 +12642,11 @@ Are you sure you want to continue?</source>
         <target state="translated">디스플레이에 HDR 콘텐츠가 표시된 후 순간적인 밝기 변동을 방지합니다. 직접 밝기 제어를 위해 내장 디스플레이를 EDR 모드로 유지하는 데에는 단점이 없지만, 이 설정은 다른 외부 Apple 디스플레이도 EDR 모드로 강제할 수 있습니다.</target>
         <note>53477 - Keep display in EDR mode setting help.</note>
       </trans-unit>
+      <trans-unit id="This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered." xml:space="preserve">
+        <source>This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered.</source>
+        <target state="translated">이 프로파일에는 보정 메타데이터가 없습니다. 원본 프로파일과 조정 설정을 복구할 수 없습니다.</target>
+        <note>54069 - Retouch loading error when embedded metadata is absent, preventing recovery of the original ICC profile and adjustment settings.</note>
+      </trans-unit>
       <trans-unit id="This provides a cleaner look when sliders are not in active use." xml:space="preserve">
         <source>This provides a cleaner look when sliders are not in active use.</source>
         <target state="translated">슬라이더를 사용하지 않을 때 더 깔끔하게 보이게 됩니다.</target>
@@ -12342,6 +12670,11 @@ Please note that previously stored custom display configurations won't be remove
 
 이전에 저장한 사용자 정의 디스플레이 구성은 시스템에서 제거되지 않는다는 점에 유의하세요!</target>
         <note>53477 - Reset app settings confirmation.</note>
+      </trans-unit>
+      <trans-unit id="This retouch uses an unsupported metadata or algorithm version." xml:space="preserve">
+        <source>This retouch uses an unsupported metadata or algorithm version.</source>
+        <target state="translated">이 보정은 지원되지 않는 메타데이터 또는 알고리즘 버전을 사용합니다.</target>
+        <note>54069 - Retouch loading error when the embedded metadata format or processing algorithm version is unsupported.</note>
       </trans-unit>
       <trans-unit id="This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings." xml:space="preserve">
         <source>This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings.</source>
@@ -12451,6 +12784,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Timeout</source>
         <target state="translated">타임아웃</target>
         <note>53477 - Operation timeout setting.</note>
+      </trans-unit>
+      <trans-unit id="Tint" xml:space="preserve">
+        <source>Tint</source>
+        <target state="translated">색조 보정</target>
+        <note>54069 - Color-balance term for a magenta/green tint adjustment, distinct from hue rotation.</note>
       </trans-unit>
       <trans-unit id="Title Bar &amp; Window Controls" xml:space="preserve">
         <source>Title Bar &amp; Window Controls</source>
@@ -12602,6 +12940,56 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">토글</target>
         <note>53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears.</note>
       </trans-unit>
+      <trans-unit id="Tone Brightness" xml:space="preserve">
+        <source>Tone Brightness</source>
+        <target state="translated">명암 밝기</target>
+        <note>54069 - Logarithmic strength of an endpoint-preserving brightness curve in the retouch editor. The unitless value is not photographic exposure or EV.</note>
+      </trans-unit>
+      <trans-unit id="Tone Contrast" xml:space="preserve">
+        <source>Tone Contrast</source>
+        <target state="translated">명암 대비</target>
+        <note>54069 - S-curve contrast in the Color Profile retouch editor; preserves black and white rather than using the Image Adjustments contrast formula.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain" xml:space="preserve">
+        <source>Tone Gain</source>
+        <target state="translated">명암 게인</target>
+        <note>54069 - Multiplier controlling an endpoint-preserving tone curve in the retouch editor, not a linear signal gain.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain (Blue)" xml:space="preserve">
+        <source>Tone Gain (Blue)</source>
+        <target state="translated">명암 게인 (파랑)</target>
+        <note>54069 - Blue channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain (Green)" xml:space="preserve">
+        <source>Tone Gain (Green)</source>
+        <target state="translated">명암 게인 (초록)</target>
+        <note>54069 - Green channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Tone Gain (Red)" xml:space="preserve">
+        <source>Tone Gain (Red)</source>
+        <target state="translated">명암 게인 (빨강)</target>
+        <note>54069 - Red channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
+      </trans-unit>
+      <trans-unit id="Tone adjustment is not monotonic." xml:space="preserve">
+        <source>Tone adjustment is not monotonic.</source>
+        <target state="translated">명암 조정이 단조 함수가 아닙니다.</target>
+        <note>54069 - Retouch generation error when the tone curve is not monotonic: its output decreases as its input increases.</note>
+      </trans-unit>
+      <trans-unit id="Tone adjustment produced an invalid value." xml:space="preserve">
+        <source>Tone adjustment produced an invalid value.</source>
+        <target state="translated">명암 조정으로 유효하지 않은 값이 생성되었습니다.</target>
+        <note>54069 - Retouch generation error when a tone-curve adjustment produces an invalid numeric value.</note>
+      </trans-unit>
+      <trans-unit id="Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app." xml:space="preserve">
+        <source>Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app.</source>
+        <target state="translated">명암 및 색상 균형 조정은 검정과 흰색 끝점을 유지합니다. HDR 동작은 디스플레이와 앱에 따라 달라집니다.</target>
+        <note>54069 - Explanation beneath the Color Profile retouch sliders; these tone-curve effects preserve endpoints, with display- and app-dependent HDR behavior.</note>
+      </trans-unit>
+      <trans-unit id="Too many metadata entries." xml:space="preserve">
+        <source>Too many metadata entries.</source>
+        <target state="translated">메타데이터 항목이 너무 많습니다.</target>
+        <note>54069 - ICC metadata encoding error when there are more metadata entries than allowed.</note>
+      </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
         <target state="translated">도구</target>
@@ -12721,6 +13109,16 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>True Tone turned off by HDR toggle</source>
         <target state="translated">HDR 토글로 True Tone 꺼짐</target>
         <note>53477 - True Tone disabled notification.</note>
+      </trans-unit>
+      <trans-unit id="Truncated sampled curve." xml:space="preserve">
+        <source>Truncated sampled curve.</source>
+        <target state="translated">샘플링된 곡선이 잘렸습니다.</target>
+        <note>54069 - Tone-curve parsing error when a sampled curve’s stored data ends before all declared samples are present.</note>
+      </trans-unit>
+      <trans-unit id="Truncated tone curve." xml:space="preserve">
+        <source>Truncated tone curve.</source>
+        <target state="translated">명암 곡선이 잘렸습니다.</target>
+        <note>54069 - Tone-curve parsing error when the stored curve data is truncated or incomplete.</note>
       </trans-unit>
       <trans-unit id="Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled." xml:space="preserve">
         <source>Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled.</source>
@@ -13092,6 +13490,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">지원되지 않음</target>
         <note>53477 - Unsupported capability state.</note>
       </trans-unit>
+      <trans-unit id="Unsupported LUT adjustment recipe." xml:space="preserve">
+        <source>Unsupported LUT adjustment recipe.</source>
+        <target state="translated">지원되지 않는 LUT 조정 레시피입니다.</target>
+        <note>54069 - Retouch loading error for unsupported LUT adjustment parameters; recipe means the stored processing parameters.</note>
+      </trans-unit>
       <trans-unit id="Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session." xml:space="preserve">
         <source>Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session.</source>
         <target state="translated">지원되지 않는 오디오 형식입니다. 오디오 MIDI 설정에서 출력을 확인한 다음 오디오 세션을 재시작하세요.</target>
@@ -13101,6 +13504,21 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Unsupported by the display</source>
         <target state="translated">디스플레이에서 지원하지 않음</target>
         <note>53477 - Unsupported display capability state.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported or oversized ICC metadata dictionary." xml:space="preserve">
+        <source>Unsupported or oversized ICC metadata dictionary.</source>
+        <target state="translated">ICC 메타데이터 사전이 지원되지 않거나 너무 큽니다.</target>
+        <note>54069 - ICC metadata parsing error for an unsupported dictionary format or excessive size; dictionary means a collection of named metadata entries.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported parametric curve." xml:space="preserve">
+        <source>Unsupported parametric curve.</source>
+        <target state="translated">지원되지 않는 매개변수 곡선입니다.</target>
+        <note>54069 - Tone-curve parsing error for an unsupported parametric curve function or parameter layout.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported tone-curve type." xml:space="preserve">
+        <source>Unsupported tone-curve type.</source>
+        <target state="translated">지원되지 않는 명암 곡선 유형입니다.</target>
+        <note>54069 - Tone-curve parsing error for an unsupported ICC curve data type.</note>
       </trans-unit>
       <trans-unit id="Up/down and mute toggle only" xml:space="preserve">
         <source>Up/down and mute toggle only</source>
@@ -13306,6 +13724,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Use ⌥ Option + click on the display menu header for a quick identification.</source>
         <target state="translated">디스플레이 메뉴 헤더에서 ⌥ Option 키를 누른 상태로 클릭하여 빠르게 식별하세요.</target>
         <note>53689 - Display identification help for Option-clicking a display menu header.</note>
+      </trans-unit>
+      <trans-unit id="Useful for adjustments that use overlay layers, such as the compositor filter layer or Metal overlays. Color table adjustments alone do not need this. Works best for window or region selection with the macOS screenshot tool. Instant full-screen screenshots need a higher detection frequency. Adjustments return after capture or cancellation." xml:space="preserve">
+        <source>Useful for adjustments that use overlay layers, such as the compositor filter layer or Metal overlays. Color table adjustments alone do not need this. Works best for window or region selection with the macOS screenshot tool. Instant full-screen screenshots need a higher detection frequency. Adjustments return after capture or cancellation.</source>
+        <target state="translated">컴포지터 필터 레이어나 Metal 오버레이처럼 오버레이 레이어를 사용하는 조정에 유용합니다. 색상표 조정만 사용하는 경우에는 필요하지 않습니다. macOS 스크린샷 도구로 윈도우나 영역을 선택할 때 가장 잘 작동합니다. 전체 화면을 즉시 캡처하려면 감지 빈도를 높여야 합니다. 캡처하거나 취소하면 조정이 복원됩니다.</target>
+        <note>54034 - Help for screenshot-overlay hiding, distinguishing compositor and Metal overlay layers from color-table adjustments. Retain the selection-versus-instant-capture distinction and automatic restoration behavior.</note>
       </trans-unit>
       <trans-unit id="User Color Profile" xml:space="preserve">
         <source>User Color Profile</source>
@@ -13627,6 +14050,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">감지 시 깨우기</target>
         <note>53477 - Device wake on detection setting.</note>
       </trans-unit>
+      <trans-unit id="Warm/Cool Balance" xml:space="preserve">
+        <source>Warm/Cool Balance</source>
+        <target state="translated">따뜻함/차가움 균형</target>
+        <note>54069 - Relative color balance in the retouch editor: negative values are warmer, positive values cooler, and zero preserves the original. This does not specify a physical white-point temperature.</note>
+      </trans-unit>
       <trans-unit id="Warp Mouse Cursor" xml:space="preserve">
         <source>Warp Mouse Cursor</source>
         <target state="translated">마우스 포인터 즉시 이동</target>
@@ -13748,6 +14176,16 @@ Apple 하드웨어 밝기의 경우 10%, DDC 하드웨어 밝기의 경우 0% �
         <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode.</source>
         <target state="translated">이 기능이 활성화되면, 앱은 macOS에서 제공하는 SDR 최대 밝기 조정 제어(HDR 밝기 제어) 대신 하드웨어 밝기를 사용하여 통합된 밝기 제어를 수행합니다. 여전히 제어 센터에서 SDR 최대 밝기를 조정할 수 있으며, 이러한 조정은 앱이 제공하는 업스케일링(사용 가능한 경우) 여유에 영향을 미칩니다. 모든 디스플레이가 HDR 모드에서 하드웨어 밝기 제어를 지원하는 것은 아닙니다.</target>
         <note>53477 - Prefer hardware brightness in HDR setting help.</note>
+      </trans-unit>
+      <trans-unit id="White-point target is invalid." xml:space="preserve">
+        <source>White-point target is invalid.</source>
+        <target state="translated">목표 백색점이 유효하지 않습니다.</target>
+        <note>54069 - Retouch generation error for an invalid target white point, the chromaticity intended to represent white.</note>
+      </trans-unit>
+      <trans-unit id="White-point target is outside the supported range." xml:space="preserve">
+        <source>White-point target is outside the supported range.</source>
+        <target state="translated">목표 백색점이 지원 범위를 벗어났습니다.</target>
+        <note>54069 - Retouch generation error when the target white point lies outside the supported chromaticity range.</note>
       </trans-unit>
       <trans-unit id="Width" xml:space="preserve">
         <source>Width</source>
@@ -14261,6 +14699,11 @@ Open System Settings &gt; General &gt; Login Items and allow %@ to run in the ba
         <source>times</source>
         <target state="translated">회</target>
         <note>53477 - Repetition count unit shown after a numeric field, such as DDC command send and retry counts. Translate as a unit following the number, not as a count label.</note>
+      </trans-unit>
+      <trans-unit id="times/second" xml:space="preserve">
+        <source>times/second</source>
+        <target state="translated">회/초</target>
+        <note>54034 - Unit for the screenshot detection frequency input: number of checks per second, rather than a time interval in milliseconds.</note>
       </trans-unit>
       <trans-unit id="unable to connect" xml:space="preserve">
         <source>unable to connect</source>
