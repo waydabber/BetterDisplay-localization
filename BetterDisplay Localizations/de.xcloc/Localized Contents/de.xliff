@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="App/InfoPlist.xcstrings" source-language="en" target-language="de" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>BetterDisplay OSD</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>BetterDisplayOSD</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -39,7 +54,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -86,7 +101,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="de" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.2" build-num="27B52"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -246,6 +261,11 @@ Verwende die Funktion „Displayeinstellungen übertragen“ in den zusätzliche
         <source>%1$lld additional color modes are available with different refresh rates.</source>
         <target state="translated">%1$lld zusätzliche Farbmodi sind mit unterschiedlichen Wiederholraten verfügbar.</target>
         <note>53689 - Color mode menu help reporting how many additional modes are available at other refresh rates.</note>
+      </trans-unit>
+      <trans-unit id="%lld minutes" xml:space="preserve">
+        <source>%lld minutes</source>
+        <target state="translated">%lld Minuten</target>
+        <note>54123 - Duration option in the Yamaha receiver sleep timer. The placeholder is 30, 60, 90 or 120.</note>
       </trans-unit>
       <trans-unit id="%lld°" translate="no" xml:space="preserve">
         <source>%lld°</source>
@@ -1602,6 +1622,11 @@ AliPay ist verfügbar in China.</target>
         <target state="translated">EDID-Daten anwenden</target>
         <note>53477 - EDID data application action.</note>
       </trans-unit>
+      <trans-unit id="Apply Profile" xml:space="preserve">
+        <source>Apply Profile</source>
+        <target state="translated">Profil anwenden</target>
+        <note>54123 - Button offered after creating a LUT color profile. Applies the saved ICC profile to the selected display.</note>
+      </trans-unit>
       <trans-unit id="Apply all layout protections on startup" xml:space="preserve">
         <source>Apply all layout protections on startup</source>
         <target state="translated">Jeden Layoutschutz beim Startvorgang anwenden</target>
@@ -2069,6 +2094,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>Back to DDC Controls…</source>
         <target state="translated">Zurück zu den DDC-Steuerelementen…</target>
         <note>53477 - Navigation back to DDC controls.</note>
+      </trans-unit>
+      <trans-unit id="Base Profile:" xml:space="preserve">
+        <source>Base Profile:</source>
+        <target state="translated">Basisprofil:</target>
+        <note>54123 - Selector for the matrix-based RGB display profile whose color characterization is combined with the imported LUT.</note>
       </trans-unit>
       <trans-unit id="Base64 Encoded EDID" xml:space="preserve">
         <source>Base64 Encoded EDID</source>
@@ -2840,6 +2870,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Farbprofileinstellungen</target>
         <note>53477 - Display color profile configuration section.</note>
       </trans-unit>
+      <trans-unit id="Color Profile Created" xml:space="preserve">
+        <source>Color Profile Created</source>
+        <target state="translated">Farbprofil erstellt</target>
+        <note>54123 - Success heading after saving a generated LUT color profile.</note>
+      </trans-unit>
       <trans-unit id="Color Profile Favorites" xml:space="preserve">
         <source>Color Profile Favorites</source>
         <target state="translated">Farbprofil-Favoriten</target>
@@ -2919,6 +2954,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>ColorSync could not apply the color profile.</source>
         <target state="translated">ColorSync konnte das Farbprofil nicht anwenden.</target>
         <note>54069 - Live preview or save error when macOS ColorSync cannot apply the retouched color profile to the display.</note>
+      </trans-unit>
+      <trans-unit id="ColorSync could not create the LUT conversion." xml:space="preserve">
+        <source>ColorSync could not create the LUT conversion.</source>
+        <target state="translated">ColorSync konnte die LUT-Konvertierung nicht erstellen.</target>
+        <note>54123 - Error when ColorSync cannot construct or sample the color conversion needed to bake a LUT into a display profile.</note>
       </trans-unit>
       <trans-unit id="ColorSync could not restore the original color profile." xml:space="preserve">
         <source>ColorSync could not restore the original color profile.</source>
@@ -3510,6 +3550,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Das lineare Profil zum Abtasten der Tonwertkurven konnte nicht erstellt werden.</target>
         <note>54069 - Retouch generation error when the linear reference profile used to sample tone-response curves cannot be created.</note>
       </trans-unit>
+      <trans-unit id="Could not read the LUT signal space." xml:space="preserve">
+        <source>Could not read the LUT signal space.</source>
+        <target state="translated">Der LUT-Signalraum konnte nicht gelesen werden.</target>
+        <note>54123 - Error while loading the ICC description of the RGB encoding selected for an imported LUT.</note>
+      </trans-unit>
       <trans-unit id="Could not read this display's default ColorSync profile." xml:space="preserve">
         <source>Could not read this display's default ColorSync profile.</source>
         <target state="translated">Das standardmäßige ColorSync-Profil dieses Displays konnte nicht gelesen werden.</target>
@@ -3540,6 +3585,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Meldung von Abstürzen</target>
         <note>53477 - Crash reporting setting.</note>
       </trans-unit>
+      <trans-unit id="Create" xml:space="preserve">
+        <source>Create</source>
+        <target state="translated">Erstellen</target>
+        <note>54123 - Confirmation button that saves an experimental LUT color profile in the user ColorSync Profiles folder without applying it.</note>
+      </trans-unit>
       <trans-unit id="Create Display Group" xml:space="preserve">
         <source>Create Display Group</source>
         <target state="translated">Displaygruppe erstellen</target>
@@ -3549,6 +3599,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>Create HDR modes only</source>
         <target state="translated">Nur HDR-Modi erstellen</target>
         <note>53477 - Resolution generation option limiting output to HDR modes.</note>
+      </trans-unit>
+      <trans-unit id="Create LUT Color Profile…" xml:space="preserve">
+        <source>Create LUT Color Profile…</source>
+        <target state="translated">LUT-Farbprofil erstellen…</target>
+        <note>54123 - Action beside Export Original LUT in a saved custom LUT entry. Opens a small sheet for creating an experimental SDR ICC display profile from that LUT.</note>
       </trans-unit>
       <trans-unit id="Create New Display Group…" xml:space="preserve">
         <source>Create New Display Group…</source>
@@ -4415,6 +4470,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <target state="translated">Überschreibung der MAC-Adresse des Geräts</target>
         <note>53477 - Override for the network hardware address used by the controller.</note>
       </trans-unit>
+      <trans-unit id="Device RGB (no output conversion)" xml:space="preserve">
+        <source>Device RGB (no output conversion)</source>
+        <target state="translated">Geräte-RGB (ohne Ausgabekonvertierung)</target>
+        <note>54123 - Base Profile option in the experimental LUT color profile creation sheet. Uses LUT output values directly as display-device RGB, without a subsequent conversion into another display profile.</note>
+      </trans-unit>
       <trans-unit id="Device specific features can be configured and bound to predefined or custom controls configured under Displays &gt; Overview &gt; Custom Controls." xml:space="preserve">
         <source>Device specific features can be configured and bound to predefined or custom controls configured under Displays &gt; Overview &gt; Custom Controls.</source>
         <target state="translated">Gerätespezifische Funktionen können vorgegebenen oder benutzerdefinierten Steuerungen zugewiesen werden, die unter Displays &gt; Übersicht &gt; Benutzerdefinierte Steuerungen konfiguriert sind.</target>
@@ -4464,6 +4524,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>Dimensions (unrotated)</source>
         <target state="translated">Dimensionen (nicht gedreht)</target>
         <note>53477 - Dimensions in the original unrotated coordinate orientation.</note>
+      </trans-unit>
+      <trans-unit id="Direct" xml:space="preserve">
+        <source>Direct</source>
+        <target state="translated">Direct</target>
+        <note>54123 - Yamaha Direct listening mode, which bypasses sound processing. Preserve the product terminology where appropriate.</note>
       </trans-unit>
       <trans-unit id="Direct I2C communication" xml:space="preserve">
         <source>Direct I2C communication</source>
@@ -4739,6 +4804,11 @@ Die Angabe der Leselänge ist optional - lass das Feld leer für automatische Er
         <source>Display Connections</source>
         <target state="translated">Display-Verbindungen</target>
         <note>53477 - Display connection management section.</note>
+      </trans-unit>
+      <trans-unit id="Display Cutout" xml:space="preserve">
+        <source>Display Cutout</source>
+        <target state="translated">Displayaussparung</target>
+        <note>54125 - App menu toggle and Menu Contents visibility row on Macs with Dynamic Island, switching between modes that use or avoid the camera cutout area. Refers to the physical cutout, not Live Activities or Dynamic Island interactions.</note>
       </trans-unit>
       <trans-unit id="Display Disconnect" xml:space="preserve">
         <source>Display Disconnect</source>
@@ -5093,6 +5163,11 @@ Dieser Vorgang kann nicht auf das integrierte Display angewendet werden (Neustar
         <source>Dot Screen</source>
         <target state="translated">Punkt-Raster</target>
         <note>53477 - Image filter that simulates monochrome halftone printing dots. Screen means a printing screen pattern here, not a display device.</note>
+      </trans-unit>
+      <trans-unit id="Down" xml:space="preserve">
+        <source>Down</source>
+        <target state="translated">Nach unten</target>
+        <note>54123 - Tooltip for the down arrow on the Yamaha receiver menu navigation pad.</note>
       </trans-unit>
       <trans-unit id="Downspread" xml:space="preserve">
         <source>Downspread</source>
@@ -5614,6 +5689,16 @@ Dieser Vorgang kann nicht auf das integrierte Display angewendet werden (Neustar
         <target state="translated">Erweitertes Framing</target>
         <note>53477 - DisplayPort enhanced framing capability in display information.</note>
       </trans-unit>
+      <trans-unit id="Enhancer" xml:space="preserve">
+        <source>Enhancer</source>
+        <target state="translated">Enhancer</target>
+        <note>54123 - Yamaha Compressed Music Enhancer sound processing switch.</note>
+      </trans-unit>
+      <trans-unit id="Enter" xml:space="preserve">
+        <source>Enter</source>
+        <target state="translated">Bestätigen</target>
+        <note>54123 - Tooltip for confirming the selection on the Yamaha receiver menu navigation pad.</note>
+      </trans-unit>
       <trans-unit id="Enter Hospitality Menu" xml:space="preserve">
         <source>Enter Hospitality Menu</source>
         <target state="translated">Hospitality-Menü öffnen</target>
@@ -5728,6 +5813,11 @@ Dieser Vorgang kann nicht auf das integrierte Display angewendet werden (Neustar
         <source>Experimental</source>
         <target state="translated">Experimentell</target>
         <note>53477 - Experimental feature status.</note>
+      </trans-unit>
+      <trans-unit id="Experimental color profile creation is available for SDR LUTs only." xml:space="preserve">
+        <source>Experimental color profile creation is available for SDR LUTs only.</source>
+        <target state="translated">Die experimentelle Erstellung von Farbprofilen ist nur für SDR-LUTs verfügbar.</target>
+        <note>54123 - Help for the LUT color profile action. SDR means standard dynamic range; HDR LUTs cannot be exported as color profiles here.</note>
       </trans-unit>
       <trans-unit id="Experimental feature" xml:space="preserve">
         <source>Experimental feature</source>
@@ -5883,6 +5973,11 @@ Das Entfernen ist unbedenklich — macOS erstellt alle erforderlichen Profile ne
         <target state="translated">Systemerscheinungsbild folgen</target>
         <note>53983 - Default OSD appearance picker option, visible when Adaptive OSD background is disabled. Follows the current macOS light or dark appearance.</note>
       </trans-unit>
+      <trans-unit id="For LUTs that already include the display correction." xml:space="preserve">
+        <source>For LUTs that already include the display correction.</source>
+        <target state="translated">Für LUTs, die bereits die Displaykorrektur enthalten.</target>
+        <note>54123 - Short explanation shown when Device RGB (no output conversion) is selected. The imported LUT already maps its input signal space to the RGB values needed by the display.</note>
+      </trans-unit>
       <trans-unit id="For best results, stick close to the display aspect ratio!" xml:space="preserve">
         <source>For best results, stick close to the display aspect ratio!</source>
         <target state="translated">Für beste Ergebnisse das Seitenverhältnis des Displays möglichst beibehalten!</target>
@@ -5982,6 +6077,11 @@ Das Entfernen ist unbedenklich — macOS erstellt alle erforderlichen Profile ne
         <source>Free Aspect Ratio</source>
         <target state="translated">Freies Seitenverhältnis</target>
         <note>53484 - Streaming and PIP toggle allowing the image or window aspect ratio to vary instead of preserving the source width-to-height ratio.</note>
+      </trans-unit>
+      <trans-unit id="Full" xml:space="preserve">
+        <source>Full</source>
+        <target state="translated">Voll</target>
+        <note>54097 - Aspect-ratio badge and filter for full-height display modes on built-in panels with a notch or Dynamic Island, including the area beside the cutout. This refers to use of the full panel, not a full-screen app or RGB range.</note>
       </trans-unit>
       <trans-unit id="Full EDID match" xml:space="preserve">
         <source>Full EDID match</source>
@@ -7047,6 +7147,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Ungültiger Text in den ICC-Metadaten.</target>
         <note>54069 - ICC metadata parsing error when a metadata string is not valid encoded text.</note>
       </trans-unit>
+      <trans-unit id="Invalid LUT output samples." xml:space="preserve">
+        <source>Invalid LUT output samples.</source>
+        <target state="translated">Ungültige LUT-Ausgabesamples.</target>
+        <note>54123 - Error when resampling an imported LUT produces non-finite output RGB values that cannot be encoded in the generated ICC profile.</note>
+      </trans-unit>
       <trans-unit id="Invalid display UUID." xml:space="preserve">
         <source>Invalid display UUID.</source>
         <target state="translated">Ungültige Display-UUID.</target>
@@ -7201,6 +7306,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>LG alt</source>
         <target state="translated">LG alt</target>
         <note>53479 - Compact column heading for the alternative LG DDC input-code toggle, limited to 40 points of width. Use a very short abbreviation or retain LG alt if the localized wording would wrap; alt means alternative, not the Option key.</note>
+      </trans-unit>
+      <trans-unit id="LG webOS" xml:space="preserve">
+        <source>LG webOS</source>
+        <target state="translated">LG webOS</target>
+        <note>54123 - Short LG webOS controller name used in detached remote titles and Device Control section headers. Keep the LG and webOS brand names.</note>
       </trans-unit>
       <trans-unit id="LG webOS Smart Device" xml:space="preserve">
         <source>LG webOS Smart Device</source>
@@ -7411,11 +7521,6 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Link-Rate</target>
         <note>53477 - DisplayPort link transfer rate information.</note>
       </trans-unit>
-      <trans-unit id="Liquid Retina with Notch" xml:space="preserve">
-        <source>Liquid Retina with Notch</source>
-        <target state="translated">Liquid Retina mit Notch</target>
-        <note>53477 - Display type with a camera notch.</note>
-      </trans-unit>
       <trans-unit id="Listen to native audio keys" xml:space="preserve">
         <source>Listen to native audio keys</source>
         <target state="translated">Native Audiotasten benutzen</target>
@@ -7425,6 +7530,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Listening HTTP port</source>
         <target state="translated">Benutzter HTTP-Port</target>
         <note>53477 - HTTP integration server listening port setting.</note>
+      </trans-unit>
+      <trans-unit id="Live Activity" xml:space="preserve">
+        <source>Live Activity</source>
+        <target state="translated">Live-Aktivität</target>
+        <note>54123 - OSD location and style option on macOS 27.3 and later. Presents brightness, volume and other control feedback as a system-managed Live Activity in the menu bar or Dynamic Island.</note>
       </trans-unit>
       <trans-unit id="Live Preview" xml:space="preserve">
         <source>Live Preview</source>
@@ -8241,6 +8351,26 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Neu angeschlossene Displays werden normalerweise nur als möglicherweise betroffene Displays behandelt. Wenn diese Option aktiviert ist, werden neu angeschlossene Displays auch mit der Liste der überwachten Displays abgeglichen.</target>
         <note>53477 - Display group new connection monitoring help.</note>
       </trans-unit>
+      <trans-unit id="Next Input" xml:space="preserve">
+        <source>Next Input</source>
+        <target state="translated">Nächster Eingang</target>
+        <note>54123 - Remote button that selects the next input in the configured Yamaha zone input list.</note>
+      </trans-unit>
+      <trans-unit id="Next Preset" xml:space="preserve">
+        <source>Next Preset</source>
+        <target state="translated">Nächster gespeicherter Sender</target>
+        <note>54123 - Remote button that selects the next saved station preset on the active Yamaha tuner.</note>
+      </trans-unit>
+      <trans-unit id="Next Sound Program" xml:space="preserve">
+        <source>Next Sound Program</source>
+        <target state="translated">Nächstes Klangprogramm</target>
+        <note>54123 - Remote button that selects the next Yamaha sound processing program.</note>
+      </trans-unit>
+      <trans-unit id="Next Track" xml:space="preserve">
+        <source>Next Track</source>
+        <target state="translated">Nächster Titel</target>
+        <note>54123 - Remote button that skips to the next track on the active Yamaha network, USB or Bluetooth source.</note>
+      </trans-unit>
       <trans-unit id="Night Shift Intensity" xml:space="preserve">
         <source>Night Shift Intensity</source>
         <target state="translated">Intensität von Night Shift</target>
@@ -8551,6 +8681,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Beim Aufwachen oder Verbinden</target>
         <note>53477 - Device event timing option.</note>
       </trans-unit>
+      <trans-unit id="On-screen Menu" xml:space="preserve">
+        <source>On-screen Menu</source>
+        <target state="translated">Bildschirmmenü</target>
+        <note>54123 - Remote button that opens the Yamaha receiver on-screen setup menu.</note>
+      </trans-unit>
       <trans-unit id="One-dimensional or mixed CUBE files are not supported." xml:space="preserve">
         <source>One-dimensional or mixed CUBE files are not supported.</source>
         <target state="translated">Eindimensionale oder gemischte CUBE-Dateien werden nicht unterstützt.</target>
@@ -8595,6 +8730,16 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Opted-out</source>
         <target state="translated">Abgelehnt</target>
         <note>53477 - Display information list of adaptations the user opted out of.</note>
+      </trans-unit>
+      <trans-unit id="Optimize for:" xml:space="preserve">
+        <source>Optimize for:</source>
+        <target state="translated">Optimieren für:</target>
+        <note>54123 - Display selector in the LUT color profile sheet. The selected display supplies the default base profile and is the target for Preview and Apply Profile; None creates without a target.</note>
+      </trans-unit>
+      <trans-unit id="Option Menu" xml:space="preserve">
+        <source>Option Menu</source>
+        <target state="translated">Optionsmenü</target>
+        <note>54123 - Remote button that opens the Yamaha receiver Option menu.</note>
       </trans-unit>
       <trans-unit id="Optional display specific adaptation is awaiting installation:" xml:space="preserve">
         <source>Optional display specific adaptation is awaiting installation:</source>
@@ -8686,6 +8831,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Base64 einfügen</target>
         <note>53477 - Paste Base64-encoded EDID data action.</note>
       </trans-unit>
+      <trans-unit id="Pause" xml:space="preserve">
+        <source>Pause</source>
+        <target state="translated">Pause</target>
+        <note>54123 - Yamaha media remote action to pause the active source, when supported.</note>
+      </trans-unit>
       <trans-unit id="Pause Picture in Picture" xml:space="preserve">
         <source>Pause Picture in Picture</source>
         <target state="translated">Bild-in-Bild pausieren</target>
@@ -8760,6 +8910,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Persistent network connection</source>
         <target state="translated">Permanente Netzwerkverbindung</target>
         <note>53477 - Persistent device network connection setting.</note>
+      </trans-unit>
+      <trans-unit id="Philips" xml:space="preserve">
+        <source>Philips</source>
+        <target state="translated">Philips</target>
+        <note>54123 - Short Philips controller name used in detached remote titles and Device Control section headers. This is the Philips brand name.</note>
       </trans-unit>
       <trans-unit id="Philips Android TVs use secure connection and require pairing. Turning this off may allow control of some older non-Android Philips TVs." xml:space="preserve">
         <source>Philips Android TVs use secure connection and require pairing. Turning this off may allow control of some older non-Android Philips TVs.</source>
@@ -8856,6 +9011,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Plattform</target>
         <note>53477 - System platform information label.</note>
       </trans-unit>
+      <trans-unit id="Play" xml:space="preserve">
+        <source>Play</source>
+        <target state="translated">Wiedergabe</target>
+        <note>54123 - Yamaha media remote action to start or resume playback on the active source.</note>
+      </trans-unit>
       <trans-unit id="Please confirm the pairing request on the TV." xml:space="preserve">
         <source>Please confirm the pairing request on the TV.</source>
         <target state="translated">Bitte bestätige die Kopplungsanfrage am Fernseher.</target>
@@ -8920,6 +9080,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Potentially DDC compatible</source>
         <target state="translated">Möglicherweise DDC-kompatibel</target>
         <note>53477 - Unconfirmed DDC capability status.</note>
+      </trans-unit>
+      <trans-unit id="Power" xml:space="preserve">
+        <source>Power</source>
+        <target state="translated">Ein/Aus</target>
+        <note>54123 - Yamaha receiver zone power toggle in Device Control. On powers the zone on, and off puts it in standby; this is a current device state, not an automatic power preference.</note>
       </trans-unit>
       <trans-unit id="Power Control" xml:space="preserve">
         <source>Power Control</source>
@@ -9056,6 +9221,31 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Verhindert, dass die App den DisplayLink-Controller für dieses Display automatisch hinzufügt oder entfernt.</target>
         <note>53477 - DisplayLink controller automatic configuration lock help.</note>
       </trans-unit>
+      <trans-unit id="Preview" xml:space="preserve">
+        <source>Preview</source>
+        <target state="translated">Vorschau</target>
+        <note>54123 - Button that temporarily applies a generated LUT color profile to the selected display.</note>
+      </trans-unit>
+      <trans-unit id="Previous Input" xml:space="preserve">
+        <source>Previous Input</source>
+        <target state="translated">Vorheriger Eingang</target>
+        <note>54123 - Remote button that selects the previous input in the configured Yamaha zone input list.</note>
+      </trans-unit>
+      <trans-unit id="Previous Preset" xml:space="preserve">
+        <source>Previous Preset</source>
+        <target state="translated">Vorheriger gespeicherter Sender</target>
+        <note>54123 - Remote button that selects the previous saved station preset on the active Yamaha tuner.</note>
+      </trans-unit>
+      <trans-unit id="Previous Sound Program" xml:space="preserve">
+        <source>Previous Sound Program</source>
+        <target state="translated">Vorheriges Klangprogramm</target>
+        <note>54123 - Remote button that selects the previous Yamaha sound processing program.</note>
+      </trans-unit>
+      <trans-unit id="Previous Track" xml:space="preserve">
+        <source>Previous Track</source>
+        <target state="translated">Vorheriger Titel</target>
+        <note>54123 - Remote button that skips to the previous track on the active Yamaha network, USB or Bluetooth source.</note>
+      </trans-unit>
       <trans-unit id="Pro" xml:space="preserve">
         <source>Pro</source>
         <target state="translated">Pro</target>
@@ -9085,6 +9275,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Product name</source>
         <target state="translated">Produktname</target>
         <note>53477 - Display product name information.</note>
+      </trans-unit>
+      <trans-unit id="Profile Name:" xml:space="preserve">
+        <source>Profile Name:</source>
+        <target state="translated">Profilname:</target>
+        <note>54123 - Label for the name of the ICC profile generated from an imported LUT, initially filled with the saved LUT name. Symbol generation is disabled to avoid a collision with the existing Profile name label.</note>
       </trans-unit>
       <trans-unit id="Profile exceeds the 32 MiB read limit." xml:space="preserve">
         <source>Profile exceeds the 32 MiB read limit.</source>
@@ -9161,11 +9356,6 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Bietet grundlegende TV-Steuerung über HDMI-CEC-Befehle. Erfordert einen Mac mit Apple-Chip und ein kompatibles Display, angeschlossen über einen unterstützten integrierten HDMI-Anschluss oder einen Adapter mit Unterstützung für HDMI-CEC-Tunneling. Apple nennt integrierte Unterstützung für ausgewählte Mac-Modelle, die 2023 oder später mit Chips der M3-Serie oder neuer eingeführt wurden, mit Ausnahme des MacBook Pro mit M3 in der Einstiegsversion. [Weitere Informationen](https://support.apple.com/en-us/108928).</target>
         <note>53667 - HDMI-CEC controller description summarizing Apple’s compatible models; the entry-level M3 MacBook Pro is excluded. HDMI-CEC tunneling carries device-control commands through an adapter; preserve the Markdown link and its URL.</note>
       </trans-unit>
-      <trans-unit id="Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
-        <source>Provides basic volume control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>
-        <target state="translated">Bietet Lautstärkeregelung für kompatible Yamaha-AVRs und MusicCast-Geräte. Nützlich für einen Verstärker, der über HDMI oder S/PDIF angeschlossen ist.</target>
-        <note>53477 - Yamaha audio controller help.</note>
-      </trans-unit>
       <trans-unit id="Provides basic volume control, virtual remote control capability and service menu access for compatible Samsung Smart TVs and Smart Monitors with local network access." xml:space="preserve">
         <source>Provides basic volume control, virtual remote control capability and service menu access for compatible Samsung Smart TVs and Smart Monitors with local network access.</source>
         <target state="translated">Bietet einfache Lautstärkeregelung, virtuelle Fernbedienungsfunktionen und Zugriff auf das Servicemenü für kompatible Samsung Smart TVs und Smart Monitore über das lokale Netzwerk.</target>
@@ -9196,10 +9386,25 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Bietet Lautstärkeregelung und virtuelle Fernbedienungsfunktionen für kompatible Android-basierte und einige ältere Philips Smart TVs.</target>
         <note>53477 - Philips TV controller help.</note>
       </trans-unit>
+      <trans-unit id="Provides volume, input, sound settings and remote control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF." xml:space="preserve">
+        <source>Provides volume, input, sound settings and remote control for compatible Yamaha AVRs and MusicCast devices. Useful for an amplifier connected via HDMI or S/PDIF.</source>
+        <target state="translated">Bietet Lautstärke-, Eingangs- und Klangeinstellungen sowie eine Fernbedienung für kompatible Yamaha-AV-Receiver und MusicCast-Geräte. Nützlich für einen über HDMI oder S/PDIF angeschlossenen Verstärker.</target>
+        <note>54123 - Description of the Yamaha AVR/MusicCast network controller in its configuration sheet. AVR means audio/video receiver.</note>
+      </trans-unit>
+      <trans-unit id="Pure Direct" xml:space="preserve">
+        <source>Pure Direct</source>
+        <target state="translated">Pure Direct</target>
+        <note>54123 - Yamaha Pure Direct listening mode, which bypasses additional processing. Preserve the product terminology where appropriate.</note>
+      </trans-unit>
       <trans-unit id="Put HDMI-CEC Device to Standby" xml:space="preserve">
         <source>Put HDMI-CEC Device to Standby</source>
         <target state="translated">HDMI-CEC-Gerät in den Standby versetzen</target>
         <note>53477 - HDMI-CEC standby command.</note>
+      </trans-unit>
+      <trans-unit id="Put Yamaha AVR to Standby" xml:space="preserve">
+        <source>Put Yamaha AVR to Standby</source>
+        <target state="translated">Yamaha AVR in Standby versetzen</target>
+        <note>54123 - Manual action to put the configured Yamaha receiver zone into standby.</note>
       </trans-unit>
       <trans-unit id="Quantization" xml:space="preserve">
         <source>Quantization</source>
@@ -9455,6 +9660,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Reference EDR</source>
         <target state="translated">EDR-Referenz</target>
         <note>53477 - Reference extended dynamic range information.</note>
+      </trans-unit>
+      <trans-unit id="Refresh" xml:space="preserve">
+        <source>Refresh</source>
+        <target state="translated">Aktualisieren</target>
+        <note>54123 - Refreshes the Yamaha receiver connection, capabilities and status.</note>
       </trans-unit>
       <trans-unit id="Refresh Rate" xml:space="preserve">
         <source>Refresh Rate</source>
@@ -10008,6 +10218,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <target state="translated">Abgerufene EDID-Daten</target>
         <note>53477 - Retrieved hardware EDID data heading.</note>
       </trans-unit>
+      <trans-unit id="Return" xml:space="preserve">
+        <source>Return</source>
+        <target state="translated">Zurück</target>
+        <note>54123 - Remote button that returns to the previous Yamaha receiver menu.</note>
+      </trans-unit>
       <trans-unit id="Return value is processed from the combined output of the script and matched to the specified expected return contents directly or as regular expressions." xml:space="preserve">
         <source>Return value is processed from the combined output of the script and matched to the specified expected return contents directly or as regular expressions.</source>
         <target state="translated">Der Rückgabewert wird aus der kombinierten Skriptausgabe verarbeitet und direkt oder mithilfe regulärer Ausdrücke mit dem erwarteten Rückgabewert verglichen.</target>
@@ -10193,6 +10408,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <target state="translated">Samples pro Pixel</target>
         <note>53477 - Framebuffer samples per pixel information.</note>
       </trans-unit>
+      <trans-unit id="Samsung" xml:space="preserve">
+        <source>Samsung</source>
+        <target state="translated">Samsung</target>
+        <note>54123 - Short Samsung controller name used in detached remote titles and Device Control section headers. This is the Samsung brand name.</note>
+      </trans-unit>
       <trans-unit id="Samsung Smart Device" xml:space="preserve">
         <source>Samsung Smart Device</source>
         <target state="translated">Samsung Smart-Gerät</target>
@@ -10217,6 +10437,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <source>Scaling</source>
         <target state="translated">Skalierung</target>
         <note>53477 - Display or image scaling setting.</note>
+      </trans-unit>
+      <trans-unit id="Scene %lld" xml:space="preserve">
+        <source>Scene %lld</source>
+        <target state="translated">Szene %lld</target>
+        <note>54123 - Tooltip and selector label for a Yamaha receiver scene preset. The placeholder is the scene number, starting at 1.</note>
       </trans-unit>
       <trans-unit id="Screen Control" xml:space="preserve">
         <source>Screen Control</source>
@@ -10903,6 +11128,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <target state="translated">Einstellungen in der Tastenleiste anzeigen</target>
         <note>53477 - Settings button visibility setting.</note>
       </trans-unit>
+      <trans-unit id="Show Yamaha Remote" xml:space="preserve">
+        <source>Show Yamaha Remote</source>
+        <target state="translated">Yamaha-Fernbedienung anzeigen</target>
+        <note>54123 - Shows or hides the Yamaha AVR remote, inline in Device Control or in its detached window.</note>
+      </trans-unit>
       <trans-unit id="Show adaptive slider scales where appropriate" xml:space="preserve">
         <source>Show adaptive slider scales where appropriate</source>
         <target state="translated">Adaptive Reglerskalen anzeigen, wo sinnvoll</target>
@@ -11113,6 +11343,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <target state="translated">Fernbedienung ein-/ausblenden</target>
         <note>53968 - Keyboard shortcut to show or hide floating remote-control windows for the displays selected by the video keyboard-control preference.</note>
       </trans-unit>
+      <trans-unit id="Shows a read-only Live Activity in the menu bar or Dynamic Island. macOS controls its placement." xml:space="preserve">
+        <source>Shows a read-only Live Activity in the menu bar or Dynamic Island. macOS controls its placement.</source>
+        <target state="translated">Zeigt eine schreibgeschützte Live-Aktivität in der Menüleiste oder Dynamic Island an. macOS bestimmt ihre Position.</target>
+        <note>54123 - Explanation for the Live Activity OSD style. This style displays control feedback through macOS and does not support slider interaction or app-selected screen placement.</note>
+      </trans-unit>
       <trans-unit id="Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline." xml:space="preserve">
         <source>Shows all displays previously detected by the app. Allows some configuration changes even when a display is offline.</source>
         <target state="translated">Zeigt alle bisher von der App entdeckten Displays an. Ermöglicht einige Konfigurationsänderungen, auch wenn ein Display nicht angeschlossen ist.</target>
@@ -11177,6 +11412,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <source>Skip when sole display</source>
         <target state="translated">Auslassen, wenn einziges Display</target>
         <note>53849 - Checkbox beside the screen saver or lock dimming percentage. Skips dimming when this is the sole connected display, excluding virtual screens created by BetterDisplay.</note>
+      </trans-unit>
+      <trans-unit id="Sleep Timer: %@" xml:space="preserve">
+        <source>Sleep Timer: %@</source>
+        <target state="translated">Ausschalttimer: %@</target>
+        <note>54123 - Yamaha sleep timer row showing Off or a duration. Both the collapsed row and every expanded choice use this prefix; the placeholder is the localized duration or unavailable-state label.</note>
       </trans-unit>
       <trans-unit id="Slider format string" xml:space="preserve">
         <source>Slider format string</source>
@@ -11518,10 +11758,20 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <target state="translated">Stereobreite</target>
         <note>53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Scale the side component of stereo audio; zero is mono, one preserves width and larger values widen the image.</note>
       </trans-unit>
+      <trans-unit id="Stop" xml:space="preserve">
+        <source>Stop</source>
+        <target state="translated">Stopp</target>
+        <note>54123 - Yamaha media remote action to stop an active source that does not support pause.</note>
+      </trans-unit>
       <trans-unit id="Stop Mirroring" xml:space="preserve">
         <source>Stop Mirroring</source>
         <target state="translated">Synchronisierung stoppen</target>
         <note>53477 - Stop display mirroring action.</note>
+      </trans-unit>
+      <trans-unit id="Stop Preview" xml:space="preserve">
+        <source>Stop Preview</source>
+        <target state="translated">Vorschau beenden</target>
+        <note>54123 - Button that restores the display profile selected before the temporary LUT color profile preview.</note>
       </trans-unit>
       <trans-unit id="Stop Streaming" xml:space="preserve">
         <source>Stop Streaming</source>
@@ -11537,6 +11787,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <source>Stopping or restarting software audio may restore the audio device’s original volume.</source>
         <target state="translated">Das Stoppen oder Neustarten von Software-Audio kann die ursprüngliche Lautstärke des Audiogeräts wiederherstellen.</target>
         <note>53927 - Software Audio card notice about the physical output level when processing stops or restarts.</note>
+      </trans-unit>
+      <trans-unit id="Straight" xml:space="preserve">
+        <source>Straight</source>
+        <target state="translated">Straight</target>
+        <note>54123 - Yamaha Straight listening mode, selected as a sound program.</note>
       </trans-unit>
       <trans-unit id="Stream" xml:space="preserve">
         <source>Stream</source>
@@ -11637,6 +11892,11 @@ Das Entfernen aller Aktivierungen setzt alles auf Null.</target>
         <source>Supports variable refresh rate</source>
         <target state="translated">Variable Wiederholrate wird unterstützt</target>
         <note>53477 - Display capability field.</note>
+      </trans-unit>
+      <trans-unit id="Surround Decoder: %@" xml:space="preserve">
+        <source>Surround Decoder: %@</source>
+        <target state="translated">Surround-Decoder: %@</target>
+        <note>54123 - Inline Yamaha surround decoder selector showing the current decoder name. The placeholder is the receiver decoder name.</note>
       </trans-unit>
       <trans-unit id="Suspend Image Adjustments" xml:space="preserve">
         <source>Suspend Image Adjustments</source>
@@ -12071,6 +12331,11 @@ Dieser Vorgang setzt das Display selbst nicht zurück.</target>
         <target state="translated">Das integrierte Display des iMac kann im Falle eines Programmfehlers nicht einfach erneut verbunden werden (kein Displaykabel, kein verschließbarer Deckel). Aktiviere diese Einstellung mit besonderer Vorsicht!</target>
         <note>53477 - iMac built-in display disconnection warning.</note>
       </trans-unit>
+      <trans-unit id="The color profile %@ was created. You can select it in the Color Profile menu." xml:space="preserve">
+        <source>The color profile %@ was created. You can select it in the Color Profile menu.</source>
+        <target state="translated">Das Farbprofil %@ wurde erstellt. Du kannst es im Menü „Farbprofil“ auswählen.</target>
+        <note>54123 - Success explanation after generating an ICC profile from a LUT. The placeholder is the final profile name, including a numeric suffix if needed.</note>
+      </trans-unit>
       <trans-unit id="The color profile is too large." xml:space="preserve">
         <source>The color profile is too large.</source>
         <target state="translated">Das Farbprofil ist zu groß.</target>
@@ -12315,6 +12580,11 @@ Trenne im Falle eines Fehlers die physische Verbindung zum Display und verbinde 
         <target state="translated">Die angeforderte Matrix ist singulär.</target>
         <note>54069 - Retouch generation error for a singular matrix, meaning a mathematical matrix that cannot be inverted.</note>
       </trans-unit>
+      <trans-unit id="The selected display is no longer connected." xml:space="preserve">
+        <source>The selected display is no longer connected.</source>
+        <target state="translated">Das ausgewählte Display ist nicht mehr verbunden.</target>
+        <note>54123 - Notice when the display selected for LUT profile preview or application disconnects. Profile creation remains possible.</note>
+      </trans-unit>
       <trans-unit id="The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control." xml:space="preserve">
         <source>The selected mute method is unavailable. Enable software mute or configure hardware mute in Device Control.</source>
         <target state="translated">Die gewählte Stummschaltmethode ist nicht verfügbar. Aktiviere softwarebasierte Stummschaltung oder konfiguriere Hardware-Stummschaltung in der Gerätesteuerung.</target>
@@ -12454,6 +12724,11 @@ Trenne im Falle eines Fehlers die physische Verbindung zum Display und verbinde 
         <source>Third-party external display</source>
         <target state="translated">Externes Display eines Drittanbieters</target>
         <note>53477 - Non-Apple external display type.</note>
+      </trans-unit>
+      <trans-unit id="This Apple display uses Presets. To preview or apply a color profile, enable Unlock Color Profile management for Apple displays under Settings &gt; Displays &gt; Overview &gt; Advanced Display Settings." xml:space="preserve">
+        <source>This Apple display uses Presets. To preview or apply a color profile, enable Unlock Color Profile management for Apple displays under Settings &gt; Displays &gt; Overview &gt; Advanced Display Settings.</source>
+        <target state="translated">Dieses Apple-Display verwendet Voreinstellungen. Um ein Farbprofil als Vorschau anzuzeigen oder anzuwenden, aktiviere „Farbprofilverwaltung für Apple-Displays freischalten“ unter Einstellungen &gt; Displays &gt; Übersicht &gt; Erweiterte Display-Einstellungen.</target>
+        <note>54123 - Notice when Color Profile management is locked on a Preset-based Apple display. Unlock Color Profile management for Apple displays is the exact existing setting name.</note>
       </trans-unit>
       <trans-unit id="This LUT is enabled for %lld display or stream configurations. Deleting it will disable those assignments as well." xml:space="preserve">
         <source>This LUT is enabled for %lld display or stream configurations. Deleting it will disable those assignments as well.</source>
@@ -13163,6 +13438,11 @@ Du kannst diese Mitteilung schließen - in diesem Fall werden die Änderungen ü
         <target state="translated">Bildschirm einschalten</target>
         <note>53477 - Screen on shortcut title.</note>
       </trans-unit>
+      <trans-unit id="Turn Yamaha AVR On" xml:space="preserve">
+        <source>Turn Yamaha AVR On</source>
+        <target state="translated">Yamaha AVR einschalten</target>
+        <note>54123 - Manual action to power on the configured Yamaha receiver zone, independent of automatic wake preferences.</note>
+      </trans-unit>
       <trans-unit id="Turn display off" xml:space="preserve">
         <source>Turn display off</source>
         <target state="translated">Display ausschalten</target>
@@ -13522,6 +13802,11 @@ Du kannst diese Mitteilung schließen - in diesem Fall werden die Änderungen ü
         <source>Unsupported tone-curve type.</source>
         <target state="translated">Nicht unterstützter Tonwertkurventyp.</target>
         <note>54069 - Tone-curve parsing error for an unsupported ICC curve data type.</note>
+      </trans-unit>
+      <trans-unit id="Up" xml:space="preserve">
+        <source>Up</source>
+        <target state="translated">Nach oben</target>
+        <note>54123 - Tooltip for the up arrow on the Yamaha receiver menu navigation pad.</note>
       </trans-unit>
       <trans-unit id="Up/down and mute toggle only" xml:space="preserve">
         <source>Up/down and mute toggle only</source>
@@ -14549,6 +14834,11 @@ Eine vorherige Aktivierung wurde automatisch entfernt, um Platz für diese neue 
         <target state="translated">macOS kann digitale Streams nativ Stummschalten - wenn die Stummschaltung mit deinem Display nicht richtig funktioniert, sollte diese Funktion eingeschaltet werden.</target>
         <note>53477 - Alternative mute handling help.</note>
       </trans-unit>
+      <trans-unit id="macOS does not officially support LUT color profiles. Some apps may ignore the LUT or display color incorrectly." xml:space="preserve">
+        <source>macOS does not officially support LUT color profiles. Some apps may ignore the LUT or display color incorrectly.</source>
+        <target state="translated">macOS unterstützt LUT-Farbprofile nicht offiziell. Einige Apps ignorieren möglicherweise die LUT oder stellen Farben falsch dar.</target>
+        <note>54123 - Compatibility notice followed by the standard Experimental badge in the LUT color profile creation sheet. LUT means lookup table, and app behavior depends on support for LUT-based ICC display profiles.</note>
+      </trans-unit>
       <trans-unit id="macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled." xml:space="preserve">
         <source>macOS may ask for administrator credentials. This message disappears when the request is completed or cancelled.</source>
         <target state="translated">macOS fragt möglicherweise nach Administrator-Zugangsdaten. Diese Meldung verschwindet, sobald die Anfrage abgeschlossen oder abgebrochen wurde.</target>
@@ -14747,6 +15037,16 @@ Open System Settings &gt; General &gt; Login Items and allow %@ to run in the ba
         <source>waiting for prompt</source>
         <target state="translated">Warten auf Kopplungsaufforderung</target>
         <note>53477 - Device pairing prompt state.</note>
+      </trans-unit>
+      <trans-unit id="with cutout" xml:space="preserve">
+        <source>with cutout</source>
+        <target state="translated">mit Aussparung</target>
+        <note>54125 - Suffix after Built-in Display in the display type description for a MacBook with a detached camera cutout (Dynamic Island). Describes the physical opening in the panel, not its interactive software features.</note>
+      </trans-unit>
+      <trans-unit id="with notch" xml:space="preserve">
+        <source>with notch</source>
+        <target state="translated">mit Notch</target>
+        <note>54125 - Suffix after Built-in Display in the display type description for a panel with a camera notch attached to the top edge. Refers to the physical display shape.</note>
       </trans-unit>
       <trans-unit id="⇧ Shift alone bypasses group synchronization and &quot;All suitable screens&quot;.&#10;⌃ Control targets the built-in display.&#10;⌃ Control + ⌘ Command targets external displays.&#10;⇧ Shift + ⌘ Command targets displays outside the current display and its mirror/stream targets." xml:space="preserve">
         <source>⇧ Shift alone bypasses group synchronization and "All suitable screens".
