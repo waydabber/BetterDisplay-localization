@@ -20,46 +20,70 @@ This glossary records the maintained Japanese localization's existing terminolog
 | connect | 接続 | |
 | control | 制御 | Exc. "Control Center" コントロールセンター |
 | controller | コントローラ | |
+| curve | 曲線 | parametric curve パラメトリック曲線, tone-curve トーン曲線 |
 | dimming | ディミング | |
 | disassociate | 関連付け解除 | Disassociation is distinct from disconnection. |
 | disconnect | 接続解除 | Existing 切断 remains valid. |
 | display | ディスプレイ | |
 | display group | ディスプレイグループ | |
 | display mode | ディスプレイモード | |
+| end points | 終点 | |
 | event | イベント | Display connection and sleep/wake automation hooks; not 予定 (scheduled appointment). |
 | exclusive group | 排他的ディスプレイグループ | Distinguish exclusivity from activation priority. |
 | export | 書き出す | |
+| fingerprint | フィンガープリント | not a biometric identifier. |
 | fixed-point refresh rate | リフレッシュレート（固定小数点） | A numeric fixed-point representation. |
 | flexible scaling | フレキシブルサイズ調整 | |
 | framebuffer | フレームバッファ | |
+| relative gamma | 相対ガンマ | |
 | group membership | グループメンバーシップ / メンバー構成 | Membership here is which displays belong, not member rights. |
 | import | 読み込む | |
+| Instant full-screen screenshots, full-screen screenshots | 画面全体のスクリーンショット | |
+| integration | 統合 | |
 | layout protection | レイアウト保護 | |
 | licensing disabled | ライセンス管理は無効 | Describes disabled license management, not an action to deactivate a license. |
 | main display | 主ディスプレイ | メインディスプレイ is also retained. Main status means the main-display assignment, not 主な状況. |
+| matrix | 行列 | (e.g. matrix mode マトリックスモード) |
+| matrix mode | マトリックスモード | |
 | mute | ミュート | Generic audio controls are not limited to DDC. |
 | neutral value | ニュートラル値 | A default unadjusted value, not a mathematical median. |
+| originals | オリジナル | |
 | OSD chiclet | OSD目盛り | One standard step spans one segment, while the default fine step is one-quarter of a segment. Do not imply the entire OSD scale. |
 | outdated license | 旧バージョン用ライセンス | This is version eligibility, not time-based expiry (期限切れ). |
 | override | オーバーライド | Context-specific replacement/change wording is also valid; overriding EDID does not disable EDID. |
 | reconnect | 再接続 | |
+| recover | 復旧 | |
 | reference preset | リファレンス用のプリセット | Do not confuse with a standard/default preset. |
 | reference XDR mode | リファレンスXDRモード | Do not use 参考XDR or confuse with a standard/default preset. |
 | refresh rate | リフレッシュレート | |
 | resolution | 解像度 | |
+| restore | 復元 | |
+| revert | 元に戻す | |
+| sample, sampling | サンプリング | Verbs. |
+| saturation | 彩度 | white saturation 白飛び |
 | scale, scaling | サイズ調整 | Verbs. Adjust the size according to a specific scale. |
 | scale | スケール | Nouns. Graduated range of values. (eg. Gray Scale グレイスケール) |
 | scale | 目盛り | Nouns. Segment dots on the numeric sliders. (eg. Slider Scales スライダ目盛り) |
 | screen | 画面 | In "Full screen", "screen streaming" and in "virtual screen" use スクリーン. |
 | segment | 目盛り | One standard step spans one segment, while the default fine step is one-quarter of a segment. Do not imply the entire OSD scale. |
+| serialize | シリアライズ | |
 | slider scale | スライダ目盛り | |
+| target white point | 使用するホワイトポイント | |
 | temporal dithering | 時間的ディザリング | Frame-to-frame variation, not temporary activation. |
+| tint | 色合い | |
+| tone | トーン | |
+| True Tone | True Tone | |
+| tone gain | トーンゲイン | |
 | UI scale matching | UIサイズマッチング | |
 | unlock | ロック解除 | MacOS session; service-menu restriction removal remains ロック解除 or 制限解除 as appropriate. |
 | unmute | ミュート解除 | Generic audio controls are not limited to DDC. |
 | upscaling | アップスケーリング | |
 | virtual screen | 仮想スクリーン | |
 | Wake-on-LAN | Wake-on-LAN | Network wake protocol, not waking upon LAN connection. |
+| white saturation | 白飛び | |
+| -based | に基づく | |
+| "" | "" | |
+| … | … | Do not use ... (three consecutive periods). |
 | ! ? | ! ? | Do not use fullwidth ！(U+FF01) ？(U+FF1F) but ASCII. |
 | () | （） | Use fullwidth characters for parentheses. Exclude the variables. |
 
