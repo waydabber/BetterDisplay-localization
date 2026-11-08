@@ -1588,6 +1588,14 @@ La majoria de pantalles no permeten escriure l’EDID per motius de seguretat; a
         <target state="translated">Preajust de pantalla d’Apple</target>
         <note>53477 - Compact heading for the Apple display preset selector, also used in Settings and Shortcuts; distinct from resolution modes. Keep the label concise enough for the app menu while retaining Apple and the display-configuration meaning.</note>
       </trans-unit>
+      <trans-unit id="Apple Logo" xml:space="preserve">
+        <source>Apple Logo</source>
+        <note>54140 - Section heading for illumination options for the Apple logo on the outside of a supported MacBook lid.</note>
+      </trans-unit>
+      <trans-unit id="Apple Logo Control" xml:space="preserve">
+        <source>Apple Logo Control</source>
+        <note>54140 - Enables BetterDisplay brightness overrides for the illuminated Apple logo while the MacBook lid is open. Turning it off restores system brightness behavior.</note>
+      </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
@@ -1599,6 +1607,10 @@ AliPay està disponible a la Xina.</target>
         <source>Apple external display</source>
         <target state="translated">Pantalla externa d’Apple</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple logo light" xml:space="preserve">
+        <source>Apple logo light</source>
+        <note>54141 - Display Information capability indicating support for independently adjusting the Apple logo light on a MacBook lid. Older logos lit by the panel backlight do not have this independent capability.</note>
       </trans-unit>
       <trans-unit id="Apple silicon" xml:space="preserve">
         <source>Apple silicon</source>
@@ -7205,6 +7217,11 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <target state="translated">Resolució no vàlida (omesa)</target>
         <note>53477 - Skipped invalid resolution status.</note>
       </trans-unit>
+      <trans-unit id="Invalid slider format. The default percentage format is used until this is corrected." xml:space="preserve">
+        <source>Invalid slider format. The default percentage format is used until this is corrected.</source>
+        <target state="translated">El format del regulador no és vàlid. Es fa servir el format de percentatge per omissió fins que es corregeixi.</target>
+        <note>54136 - Control integration settings warning shown for an invalid slider value format. The slider displays its normal percentage until the user corrects the saved format.</note>
+      </trans-unit>
       <trans-unit id="Invalid tone-curve exponent." xml:space="preserve">
         <source>Invalid tone-curve exponent.</source>
         <target state="translated">Exponent de corba tonal no vàlid.</target>
@@ -7214,6 +7231,11 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <source>Invalid tone-curve samples.</source>
         <target state="translated">Mostres de corba tonal no vàlides.</target>
         <note>54069 - Retouch generation error for invalid numeric samples of a tone-response curve.</note>
+      </trans-unit>
+      <trans-unit id="Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f." xml:space="preserve">
+        <source>Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f.</source>
+        <target state="translated">El format del valor no és vàlid. S’ometen les accions fins que es corregeixi. Feu servir un format de coma flotant, com ara %.0f o %.2f.</target>
+        <note>54136 - Control integration settings warning shown when the outgoing numeric format is unsafe or unsupported. %.0f and %.2f are literal printf format examples, not substitution placeholders; preserve them exactly.</note>
       </trans-unit>
       <trans-unit id="Invert Colors" xml:space="preserve">
         <source>Invert Colors</source>
@@ -7619,6 +7641,10 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <target state="translated">Amplada lògica</target>
         <note>53477 - Logical display width in points.</note>
       </trans-unit>
+      <trans-unit id="Logo Light Strength" xml:space="preserve">
+        <source>Logo Light Strength</source>
+        <note>54142 - Apple logo brightness slider label. The value is always shown as a percentage, either a fixed light strength or a multiplier when matching screen brightness is enabled.</note>
+      </trans-unit>
       <trans-unit id="Loudness Compensation" xml:space="preserve">
         <source>Loudness Compensation</source>
         <target state="translated">Compensació de sonoritat</target>
@@ -7813,6 +7839,10 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <source>Match vendor, serial</source>
         <target state="translated">Coincidència de fabricant i número de sèrie</target>
         <note>53477 - Display identity matching rule.</note>
+      </trans-unit>
+      <trans-unit id="Match with Screen Brightness" xml:space="preserve">
+        <source>Match with Screen Brightness</source>
+        <note>54142 - Apple logo option: adjusts logo light strength relative to the brightness macOS selects from screen brightness and ambient light. Disabled by default, which uses a fixed light strength.</note>
       </trans-unit>
       <trans-unit id="Matches default resolution" xml:space="preserve">
         <source>Matches default resolution</source>
@@ -12815,6 +12845,11 @@ En cas de fallada, desconnecteu i reconnecteu físicament la pantalla.</target>
         <target state="translated">Aquest control ara és un marcador de posició i no executa cap acció.</target>
         <note>53477 - Unconfigured custom control status.</note>
       </trans-unit>
+      <trans-unit id="This control is unavailable until the minimum and maximum form a finite, increasing range." xml:space="preserve">
+        <source>This control is unavailable until the minimum and maximum form a finite, increasing range.</source>
+        <target state="translated">Aquest control no està disponible fins que els valors mínim i màxim defineixin un interval finit, amb el màxim superior al mínim.</target>
+        <note>54136 - Control integration settings warning: the control is disabled until both bounds are finite numbers with the maximum greater than the minimum and a finite difference. Saved values remain editable.</note>
+      </trans-unit>
       <trans-unit id="This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them." xml:space="preserve">
         <source>This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them.</source>
         <target state="translated">Aquest control personalitzat està configurat per a una o més pantalles o grups de pantalles. Si l’elimineu, també se n’eliminarà.</target>
@@ -13156,6 +13191,10 @@ Podeu descartar aquesta notificació; en aquest cas, els canvis s’aplicaran la
         <source>Toggle (on/off) control</source>
         <target state="translated">Control de commutació (activat/desactivat)</target>
         <note>53477 - Boolean custom control type.</note>
+      </trans-unit>
+      <trans-unit id="Toggle Apple logo control" xml:space="preserve">
+        <source>Toggle Apple logo control</source>
+        <note>54140 - Keyboard shortcut that switches between system-selected and BetterDisplay-controlled illuminated Apple logo brightness.</note>
       </trans-unit>
       <trans-unit id="Toggle Auto Brightness" xml:space="preserve">
         <source>Toggle Auto Brightness</source>

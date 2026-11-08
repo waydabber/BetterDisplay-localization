@@ -1555,6 +1555,14 @@ Die meisten Displays erlauben aus Sicherheitsgründen kein EDID-Schreiben, bei e
         <target state="translated">Apple-Display-Voreinstellung</target>
         <note>53477 - Compact heading for the Apple display preset selector, also used in Settings and Shortcuts; distinct from resolution modes. Keep the label concise enough for the app menu while retaining Apple and the display-configuration meaning.</note>
       </trans-unit>
+      <trans-unit id="Apple Logo" xml:space="preserve">
+        <source>Apple Logo</source>
+        <note>54140 - Section heading for illumination options for the Apple logo on the outside of a supported MacBook lid.</note>
+      </trans-unit>
+      <trans-unit id="Apple Logo Control" xml:space="preserve">
+        <source>Apple Logo Control</source>
+        <note>54140 - Enables BetterDisplay brightness overrides for the illuminated Apple logo while the MacBook lid is open. Turning it off restores system brightness behavior.</note>
+      </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
 AliPay available in China.</source>
@@ -1566,6 +1574,10 @@ AliPay ist verfügbar in China.</target>
         <source>Apple external display</source>
         <target state="translated">Externes Display von Apple</target>
         <note>53477 - Apple external display device category.</note>
+      </trans-unit>
+      <trans-unit id="Apple logo light" xml:space="preserve">
+        <source>Apple logo light</source>
+        <note>54141 - Display Information capability indicating support for independently adjusting the Apple logo light on a MacBook lid. Older logos lit by the panel backlight do not have this independent capability.</note>
       </trans-unit>
       <trans-unit id="Apple silicon" xml:space="preserve">
         <source>Apple silicon</source>
@@ -7172,6 +7184,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Ungültige Auflösung (übersprungen)</target>
         <note>53477 - Skipped invalid resolution status.</note>
       </trans-unit>
+      <trans-unit id="Invalid slider format. The default percentage format is used until this is corrected." xml:space="preserve">
+        <source>Invalid slider format. The default percentage format is used until this is corrected.</source>
+        <target state="translated">Ungültiges Reglerformat. Bis zur Korrektur wird das standardmäßige Prozentformat verwendet.</target>
+        <note>54136 - Control integration settings warning shown for an invalid slider value format. The slider displays its normal percentage until the user corrects the saved format.</note>
+      </trans-unit>
       <trans-unit id="Invalid tone-curve exponent." xml:space="preserve">
         <source>Invalid tone-curve exponent.</source>
         <target state="translated">Ungültiger Tonwertkurvenexponent.</target>
@@ -7181,6 +7198,11 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Invalid tone-curve samples.</source>
         <target state="translated">Ungültige Tonwertkurven-Abtastwerte.</target>
         <note>54069 - Retouch generation error for invalid numeric samples of a tone-response curve.</note>
+      </trans-unit>
+      <trans-unit id="Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f." xml:space="preserve">
+        <source>Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f.</source>
+        <target state="translated">Ungültiges Werteformat. Aktionen werden bis zur Korrektur übersprungen. Verwende ein Gleitkommaformat wie %.0f oder %.2f.</target>
+        <note>54136 - Control integration settings warning shown when the outgoing numeric format is unsafe or unsupported. %.0f and %.2f are literal printf format examples, not substitution placeholders; preserve them exactly.</note>
       </trans-unit>
       <trans-unit id="Invert Colors" xml:space="preserve">
         <source>Invert Colors</source>
@@ -7586,6 +7608,10 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <target state="translated">Logische Breite</target>
         <note>53477 - Logical display width in points.</note>
       </trans-unit>
+      <trans-unit id="Logo Light Strength" xml:space="preserve">
+        <source>Logo Light Strength</source>
+        <note>54142 - Apple logo brightness slider label. The value is always shown as a percentage, either a fixed light strength or a multiplier when matching screen brightness is enabled.</note>
+      </trans-unit>
       <trans-unit id="Loudness Compensation" xml:space="preserve">
         <source>Loudness Compensation</source>
         <target state="translated">Loudness-Kompensation</target>
@@ -7780,6 +7806,10 @@ Nicht alle Displays unterstützen die Bildschirmsteuerung. Diese Vorgänge könn
         <source>Match vendor, serial</source>
         <target state="translated">Nach Hersteller, Seriennummer abgleichen</target>
         <note>53477 - Display identity matching rule.</note>
+      </trans-unit>
+      <trans-unit id="Match with Screen Brightness" xml:space="preserve">
+        <source>Match with Screen Brightness</source>
+        <note>54142 - Apple logo option: adjusts logo light strength relative to the brightness macOS selects from screen brightness and ambient light. Disabled by default, which uses a fixed light strength.</note>
       </trans-unit>
       <trans-unit id="Matches default resolution" xml:space="preserve">
         <source>Matches default resolution</source>
@@ -12775,6 +12805,11 @@ Trenne im Falle eines Fehlers die physische Verbindung zum Display und verbinde 
         <target state="translated">Dieses Steuerelement ist jetzt ein Platzhalter und führt keine Aktion aus.</target>
         <note>53477 - Unconfigured custom control status.</note>
       </trans-unit>
+      <trans-unit id="This control is unavailable until the minimum and maximum form a finite, increasing range." xml:space="preserve">
+        <source>This control is unavailable until the minimum and maximum form a finite, increasing range.</source>
+        <target state="translated">Dieses Steuerelement ist erst verfügbar, wenn Minimum und Maximum einen endlichen Bereich bilden und das Maximum größer als das Minimum ist.</target>
+        <note>54136 - Control integration settings warning: the control is disabled until both bounds are finite numbers with the maximum greater than the minimum and a finite difference. Saved values remain editable.</note>
+      </trans-unit>
       <trans-unit id="This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them." xml:space="preserve">
         <source>This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them.</source>
         <target state="translated">Dieses benutzerdefinierte Steuerelement ist für ein oder mehrere Displays bzw. Display-Gruppen konfiguriert. Wird es gelöscht, wird es auch dort entfernt.</target>
@@ -13107,6 +13142,10 @@ Du kannst diese Mitteilung schließen - in diesem Fall werden die Änderungen ü
         <source>Toggle (on/off) control</source>
         <target state="translated">Ein-/Aus-Steuerelement</target>
         <note>53477 - Boolean custom control type.</note>
+      </trans-unit>
+      <trans-unit id="Toggle Apple logo control" xml:space="preserve">
+        <source>Toggle Apple logo control</source>
+        <note>54140 - Keyboard shortcut that switches between system-selected and BetterDisplay-controlled illuminated Apple logo brightness.</note>
       </trans-unit>
       <trans-unit id="Toggle Auto Brightness" xml:space="preserve">
         <source>Toggle Auto Brightness</source>
