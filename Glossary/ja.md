@@ -7,6 +7,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | English | Japanese | Notes |
 | --- | --- | --- |
 | Apple Display Preset | Appleディスプレイプリセット | |
+| Apple Logo | Appleロゴ | |
 | associate | 関連付け | Disassociation is distinct from disconnection. |
 | attenuation | 減衰 | Gain reduction. |
 | attenuation | 減衰量 | Amout of the gain reduction. |
@@ -16,17 +17,20 @@ This glossary records the maintained Japanese localization's existing terminolog
 | color mode | カラーモード | |
 | color profile | カラープロファイル | |
 | combined brightness | 複合輝度 | Valid existing alternatives are not automatically replaced. |
+| compatibile | 互換性がある | |
 | configuration protection | 構成保護 | Existing action label 構成を保護 is retained. |
 | connect | 接続 | |
 | control | 制御 | Exc. "Control Center" コントロールセンター |
 | controller | コントローラ | |
 | curve | 曲線 | parametric curve パラメトリック曲線, tone-curve トーン曲線 |
+| decoder | デコーダ | |
 | dimming | ディミング | |
 | disassociate | 関連付け解除 | Disassociation is distinct from disconnection. |
 | disconnect | 接続解除 | Existing 切断 remains valid. |
 | display | ディスプレイ | |
 | display group | ディスプレイグループ | |
 | display mode | ディスプレイモード | |
+| Dynamic Island | Dynamic Island | |
 | end points | 終点 | |
 | event | イベント | Display connection and sleep/wake automation hooks; not 予定 (scheduled appointment). |
 | exclusive group | 排他的ディスプレイグループ | Distinguish exclusivity from activation priority. |
@@ -42,15 +46,20 @@ This glossary records the maintained Japanese localization's existing terminolog
 | integration | 統合 | |
 | layout protection | レイアウト保護 | |
 | licensing disabled | ライセンス管理は無効 | Describes disabled license management, not an action to deactivate a license. |
+| Live Activity | ライブアクティビティ | |
 | main display | 主ディスプレイ | メインディスプレイ is also retained. Main status means the main-display assignment, not 主な状況. |
 | matrix | 行列 | (e.g. matrix mode マトリックスモード) |
 | matrix mode | マトリックスモード | |
 | mute | ミュート | Generic audio controls are not limited to DDC. |
 | neutral value | ニュートラル値 | A default unadjusted value, not a mathematical median. |
+| officially | 公式に | |
+| on-screen | オンスクリーン | |
 | originals | オリジナル | |
 | OSD chiclet | OSD目盛り | One standard step spans one segment, while the default fine step is one-quarter of a segment. Do not imply the entire OSD scale. |
 | outdated license | 旧バージョン用ライセンス | This is version eligibility, not time-based expiry (期限切れ). |
 | override | オーバーライド | Context-specific replacement/change wording is also valid; overriding EDID does not disable EDID. |
+| preset | プリセット | |
+| read-only | 読み出し専用 | |
 | reconnect | 再接続 | |
 | recover | 復旧 | |
 | reference preset | リファレンス用のプリセット | Do not confuse with a standard/default preset. |
@@ -82,7 +91,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | Wake-on-LAN | Wake-on-LAN | Network wake protocol, not waking upon LAN connection. |
 | white saturation | 白飛び | |
 | -based | に基づく | |
-| "" | "" | |
+| "" | "" | Do not use 「」 parentheses. |
 | … | … | Do not use ... (three consecutive periods). |
 | ! ? | ! ? | Do not use fullwidth ！(U+FF01) ？(U+FF1F) but ASCII. |
 | () | （） | Use fullwidth characters for parentheses. Exclude the variables. |
