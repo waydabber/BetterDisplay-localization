@@ -1217,6 +1217,18 @@
     "Apple external display" : {
       "comment" : "53477 - Apple external display device category."
     },
+    "Apple Logo" : {
+      "comment" : "54140 - Section heading for illumination options for the Apple logo on the outside of a supported MacBook lid.",
+      "extractionState" : "manual"
+    },
+    "Apple Logo Control" : {
+      "comment" : "54140 - Enables BetterDisplay brightness overrides for the illuminated Apple logo while the MacBook lid is open. Turning it off restores system brightness behavior.",
+      "extractionState" : "manual"
+    },
+    "Apple logo light" : {
+      "comment" : "54141 - Display Information capability indicating support for independently adjusting the Apple logo light on a MacBook lid. Older logos lit by the panel backlight do not have this independent capability.",
+      "extractionState" : "manual"
+    },
     "Apple Pay requires Safari, Google Pay requires Chrome.\nAliPay available in China." : {
       "comment" : "53477 - Payment method browser and regional availability help."
     },
@@ -3720,8 +3732,7 @@
       "comment" : "53477 - Display name field."
     },
     "Display Notch" : {
-      "comment" : "53477 - Toggle switching between display modes with or without the notch area.",
-      "extractionState" : "stale"
+      "comment" : "53477 - Toggle switching between display modes with or without the notch area."
     },
     "Display P3" : {
       "comment" : "53477 - Standard color space/profile name; retain the identifier."
@@ -5286,6 +5297,9 @@
     "Invalid resolution (skipped)" : {
       "comment" : "53477 - Skipped invalid resolution status."
     },
+    "Invalid slider format. The default percentage format is used until this is corrected." : {
+      "comment" : "54136 - Control integration settings warning shown for an invalid slider value format. The slider displays its normal percentage until the user corrects the saved format."
+    },
     "Invalid tone-curve exponent." : {
       "comment" : "54069 - Tone-curve parsing error for an invalid mathematical exponent in the curve definition.",
       "extractionState" : "manual",
@@ -5309,6 +5323,9 @@
           }
         }
       }
+    },
+    "Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f." : {
+      "comment" : "54136 - Control integration settings warning shown when the outgoing numeric format is unsafe or unsupported. %.0f and %.2f are literal printf format examples, not substitution placeholders; preserve them exactly."
     },
     "Invert colors" : {
       "comment" : "53477 - Color inversion toggle."
@@ -5578,6 +5595,10 @@
     "Logical width" : {
       "comment" : "53477 - Logical display width in points."
     },
+    "Logo Light Strength" : {
+      "comment" : "54142 - Apple logo brightness slider label. The value is always shown as a percentage, either a fixed light strength or a multiplier when matching screen brightness is enabled.",
+      "extractionState" : "manual"
+    },
     "Loudness Compensation" : {
       "comment" : "53927 - Shared title for a one-line Device Control slider and a Shortcuts audio adjustment; keep it concise. Volume-dependent bass/treble contour that approximates perceived loudness at lower logical volume.",
       "extractionState" : "manual"
@@ -5761,6 +5782,10 @@
     },
     "Match vendor, serial" : {
       "comment" : "53477 - Display identity matching rule."
+    },
+    "Match with Screen Brightness" : {
+      "comment" : "54142 - Apple logo option: adjusts logo light strength relative to the brightness macOS selects from screen brightness and ambient light. Disabled by default, which uses a fixed light strength.",
+      "extractionState" : "manual"
     },
     "Matches default resolution" : {
       "comment" : "53477 - Resolution status label."
@@ -9377,6 +9402,9 @@
     "This control is now a placeholder and does not perform any action." : {
       "comment" : "53477 - Unconfigured custom control status."
     },
+    "This control is unavailable until the minimum and maximum form a finite, increasing range." : {
+      "comment" : "54136 - Control integration settings warning: the control is disabled until both bounds are finite numbers with the maximum greater than the minimum and a finite difference. Saved values remain editable."
+    },
     "This custom control is configured for one or more displays or display groups. Deleting it will also remove it from them." : {
       "comment" : "53477 - Custom control deletion confirmation."
     },
@@ -9653,6 +9681,10 @@
     },
     "Toggle (on/off) control" : {
       "comment" : "53477 - Boolean custom control type."
+    },
+    "Toggle Apple logo control" : {
+      "comment" : "54140 - Keyboard shortcut that switches between system-selected and BetterDisplay-controlled illuminated Apple logo brightness.",
+      "extractionState" : "manual"
     },
     "Toggle Auto Brightness" : {
       "comment" : "53477 - Auto brightness toggle shortcut."
