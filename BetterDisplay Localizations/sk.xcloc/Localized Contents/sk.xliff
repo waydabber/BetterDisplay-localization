@@ -1619,11 +1619,13 @@ Väčšina displejov z bezpečnostných dôvodov zápis EDID nepovoľuje. Niekto
       </trans-unit>
       <trans-unit id="Apple Logo" xml:space="preserve">
         <source>Apple Logo</source>
-        <note>54140 - Section heading for illumination options for the Apple logo on the outside of a supported MacBook lid.</note>
+        <target state="translated">Logo Apple</target>
+        <note>54192 - Section heading for illumination options for the Apple logo on the outside of a supported MacBook lid.</note>
       </trans-unit>
       <trans-unit id="Apple Logo Control" xml:space="preserve">
         <source>Apple Logo Control</source>
-        <note>54140 - Enables BetterDisplay brightness overrides for the illuminated Apple logo while the MacBook lid is open. Turning it off restores system brightness behavior.</note>
+        <target state="translated">Ovládanie osvetlenia loga Apple</target>
+        <note>54192 - Enables BetterDisplay brightness overrides for the illuminated Apple logo while the MacBook lid is open. Turning it off restores system brightness behavior.</note>
       </trans-unit>
       <trans-unit id="Apple Pay requires Safari, Google Pay requires Chrome.&#10;AliPay available in China." xml:space="preserve">
         <source>Apple Pay requires Safari, Google Pay requires Chrome.
@@ -1639,7 +1641,8 @@ AliPay je dostupné v Číne.</target>
       </trans-unit>
       <trans-unit id="Apple logo light" xml:space="preserve">
         <source>Apple logo light</source>
-        <note>54141 - Display Information capability indicating support for independently adjusting the Apple logo light on a MacBook lid. Older logos lit by the panel backlight do not have this independent capability.</note>
+        <target state="translated">Osvetlenie loga Apple</target>
+        <note>54192 - Display Information capability indicating support for independently adjusting the Apple logo light on a MacBook lid. Older logos lit by the panel backlight do not have this independent capability.</note>
       </trans-unit>
       <trans-unit id="Apple silicon" xml:space="preserve">
         <source>Apple silicon</source>
@@ -3543,6 +3546,11 @@ Dĺžka čítania je voliteľná – pre automatické zistenie nechajte pole pr�
         <source>Content</source>
         <target state="translated">Obsah</target>
         <note>53477 - Content section or selection label.</note>
+      </trans-unit>
+      <trans-unit id="Content Based Ambience" xml:space="preserve">
+        <source>Content Based Ambience</source>
+        <target state="translated">Ambientné osvetlenie podľa obsahu</target>
+        <note>54192 - Experimental Apple logo option that follows the built-in OLED screen content brightness. The existing logo strength slider caps the learned glow, calibrated to the brightest content from the last minute.</note>
       </trans-unit>
       <trans-unit id="Continuous software XDR upscaling readiness" xml:space="preserve">
         <source>Continuous software XDR upscaling readiness</source>
@@ -5898,6 +5906,11 @@ Proces nefunguje pre vstavaný displej (vyžaduje reštart). Operácia môže na
         <target state="translated">Experimentálna funkcia</target>
         <note>53477 - Experimental feature label.</note>
       </trans-unit>
+      <trans-unit id="Experimental: Follows screen content brightness, adapting to the brightest content in the last minute. Logo Light Strength sets the maximum; black content turns the light off." xml:space="preserve">
+        <source>Experimental: Follows screen content brightness, adapting to the brightest content in the last minute. Logo Light Strength sets the maximum; black content turns the light off.</source>
+        <target state="translated">Experimentálne: Sleduje jas obsahu obrazovky a prispôsobuje sa najjasnejšiemu obsahu za poslednú minútu. Nastavenie „Intenzita osvetlenia loga“ určuje maximum; čierny obsah vypína osvetlenie.</target>
+        <note>54192 - Help for Content Based Ambience under Apple Logo Control. The brightest recent screen content defines maximum logo brightness; the Logo Light Strength slider limits this maximum and black content turns the logo light off.</note>
+      </trans-unit>
       <trans-unit id="Explore Other Control Options" xml:space="preserve">
         <source>Explore Other Control Options</source>
         <target state="translated">Preskúmať ďalšie možnosti ovládania</target>
@@ -7570,6 +7583,11 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <target state="translated">Obmedziť rozsah posuvníka rozlíšenia a klávesových skratiek</target>
         <note>53477 - Resolution control range setting.</note>
       </trans-unit>
+      <trans-unit id="Limit with Screen Brightness" xml:space="preserve">
+        <source>Limit with Screen Brightness</source>
+        <target state="translated">Obmedziť podľa jasu obrazovky</target>
+        <note>54192 - Apple logo option that scales Logo Light Strength using the logo brightness macOS selects from screen brightness and ambient light. With Content Based Ambience enabled, this also limits its maximum; off uses the fixed-strength base.</note>
+      </trans-unit>
       <trans-unit id="Limited Range" xml:space="preserve">
         <source>Limited Range</source>
         <target state="translated">Obmedzený rozsah</target>
@@ -7672,7 +7690,8 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
       </trans-unit>
       <trans-unit id="Logo Light Strength" xml:space="preserve">
         <source>Logo Light Strength</source>
-        <note>54142 - Apple logo brightness slider label. The value is always shown as a percentage, either a fixed light strength or a multiplier when matching screen brightness is enabled.</note>
+        <target state="translated">Intenzita osvetlenia loga</target>
+        <note>54192 - Apple logo brightness slider label. The value is always shown as a percentage, either a fixed light strength or a multiplier when matching screen brightness is enabled.</note>
       </trans-unit>
       <trans-unit id="Loudness Compensation" xml:space="preserve">
         <source>Loudness Compensation</source>
@@ -7868,10 +7887,6 @@ Nie všetky displeje podporujú operácie ovládania obrazovky. Na niektorých d
         <source>Match vendor, serial</source>
         <target state="translated">Porovnávať výrobcu a sériové číslo</target>
         <note>53477 - Display identity matching rule.</note>
-      </trans-unit>
-      <trans-unit id="Match with Screen Brightness" xml:space="preserve">
-        <source>Match with Screen Brightness</source>
-        <note>54142 - Apple logo option: adjusts logo light strength relative to the brightness macOS selects from screen brightness and ambient light. Disabled by default, which uses a fixed light strength.</note>
       </trans-unit>
       <trans-unit id="Matches default resolution" xml:space="preserve">
         <source>Matches default resolution</source>
@@ -13260,7 +13275,8 @@ Toto hlásenie môžete zavrieť – zmeny sa potom použijú pri ďalšom pripo
       </trans-unit>
       <trans-unit id="Toggle Apple logo control" xml:space="preserve">
         <source>Toggle Apple logo control</source>
-        <note>54140 - Keyboard shortcut that switches between system-selected and BetterDisplay-controlled illuminated Apple logo brightness.</note>
+        <target state="translated">Prepnúť ovládanie osvetlenia loga Apple</target>
+        <note>54192 - Keyboard shortcut that switches between system-selected and BetterDisplay-controlled illuminated Apple logo brightness.</note>
       </trans-unit>
       <trans-unit id="Toggle Auto Brightness" xml:space="preserve">
         <source>Toggle Auto Brightness</source>
