@@ -996,6 +996,11 @@ Check your network connection and firewall settings.</source>
         <target state="translated">ミラーリングおよびストリーミングターゲットにも調整を適用</target>
         <note>53983 - Switch in Keyboard settings below the brightness/video target choices, shown only for pointer or focused-window targeting. Targets are displays receiving a mirrored image or an active full-screen stream from the selected source display.</note>
       </trans-unit>
+      <trans-unit id="Adjusts the value bar in the unexpanded Live Activity. Mini is always continuous." xml:space="preserve">
+        <source>Adjusts the value bar in the unexpanded Live Activity. Mini is always continuous.</source>
+        <target state="translated">展開されていないライブアクティビティの値バーを調整します。「ミニ」は常に目盛りのない連続したバーを使用します。</target>
+        <note>54320 - Help below Bar length when unexpanded, applying to unexpanded Live Activities in both the menu bar and Dynamic Island. Mini is the exact size-option label and always uses an unsegmented, continuous meter, regardless of the global segmented-bar setting.</note>
+      </trans-unit>
       <trans-unit id="Administrator authorization failed (%d)." xml:space="preserve">
         <source>Administrator authorization failed (%d).</source>
         <target state="translated">管理者による承認ができませんでした（%d）。</target>
@@ -1218,6 +1223,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <source>Allow hardware brightness control in HDR mode</source>
         <target state="translated">HDRモードでハードウェア輝度制御を許可</target>
         <note>53477 - Hardware brightness control permission while HDR is active.</note>
+      </trans-unit>
+      <trans-unit id="Allow pass-thru even if the display is a group brightness sync source" xml:space="preserve">
+        <source>Allow pass-thru even if the display is a group brightness sync source</source>
+        <target state="translated">ディスプレイがグループの輝度同期ソースでもパススルーを許可</target>
+        <note>54301 - Per-display exception allowing native brightness-key events to pass to macOS even when this display supplies brightness changes to an active display group’s synchronization. This does not bypass focus, targeting, or direct-brightness safety checks.</note>
       </trans-unit>
       <trans-unit id="Allow power control only when the selected macOS audio device matches the configured audio device for the display." xml:space="preserve">
         <source>Allow power control only when the selected macOS audio device matches the configured audio device for the display.</source>
@@ -1506,7 +1516,7 @@ Most displays do not allow EDID write for security reasons, some displays requir
       <trans-unit id="App menu icon bounce animation on activity" xml:space="preserve">
         <source>App menu icon bounce animation on activity</source>
         <target state="translated">アプリメニューアイコンをアニメーション表示</target>
-        <note>53477 - Menu bar icon activity animation setting.</note>
+        <note>54299 - Setting for bounce animations of icons inside the app menu when its buttons or toggles are used. This does not control the Dock icon.</note>
       </trans-unit>
       <trans-unit id="App menu presentation" xml:space="preserve">
         <source>App menu presentation</source>
@@ -1993,6 +2003,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">メニューを開くときに現在のディスプレイを自動的に展開</target>
         <note>53983 - Separate toggle shown when current-display ordering is enabled. Expands the device section and its More Options area on each fresh attached-menu opening, following the existing automatic tidying preference.</note>
       </trans-unit>
+      <trans-unit id="Auto-expand live activity" xml:space="preserve">
+        <source>Auto-expand live activity</source>
+        <target state="translated">ライブアクティビティを自動的に展開</target>
+        <note>54301 - Setting below the Live Activity OSD style that selects silent alert-driven expansion. Disabled keeps the activity updating normally; it does not turn Live Activities off.</note>
+      </trans-unit>
       <trans-unit id="Auto-start full screen streaming" xml:space="preserve">
         <source>Auto-start full screen streaming</source>
         <target state="translated">フルスクリーンストリーミングを自動開始</target>
@@ -2107,6 +2122,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Back to DDC Controls…</source>
         <target state="translated">DDC制御に戻る…</target>
         <note>53477 - Navigation back to DDC controls.</note>
+      </trans-unit>
+      <trans-unit id="Bar length when unexpanded" xml:space="preserve">
+        <source>Bar length when unexpanded</source>
+        <target state="translated">未展開時のバーの長さ</target>
+        <note>54320 - Live Activity setting for the value-meter length before expansion, in either the menu bar or Dynamic Island. Expanded feedback keeps its existing dimensions; this is a visual value indicator, not an interactive slider.</note>
       </trans-unit>
       <trans-unit id="Base Profile:" xml:space="preserve">
         <source>Base Profile:</source>
@@ -2788,6 +2808,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">主音量スライダとキーボードコマンドで使用するミュート制御を選択します。</target>
         <note>53927 - Help below Mute method, identifying the primary audio controls that use the selected mute provider.</note>
       </trans-unit>
+      <trans-unit id="Choose when the live activity expands automatically. The Dynamic Island option applies only when the focused window is on the built-in Dynamic Island display." xml:space="preserve">
+        <source>Choose when the live activity expands automatically. The Dynamic Island option applies only when the focused window is on the built-in Dynamic Island display.</source>
+        <target state="translated">ライブアクティビティを自動的に展開するタイミングを選択します。Dynamic Islandのオプションは、フォーカス中のウインドウがDynamic Island搭載の内蔵ディスプレイにある場合にのみ適用されます。</target>
+        <note>54301 - Help below Auto-expand live activity describing when silent expansion may be requested. The Dynamic Island choice checks the focused window’s built-in hardware display, while macOS chooses the activity’s actual placement.</note>
+      </trans-unit>
       <trans-unit id="Chroma Subsampling" xml:space="preserve">
         <source>Chroma Subsampling</source>
         <target state="translated">クロマサブサンプリング</target>
@@ -3067,6 +3092,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Command destination</source>
         <target state="translated">コマンド送信先</target>
         <note>53477 - Command integration destination selector.</note>
+      </trans-unit>
+      <trans-unit id="Compact" xml:space="preserve">
+        <source>Compact</source>
+        <target state="translated">コンパクト</target>
+        <note>54320 - Shorter unexpanded Live Activity meter option, with half-width segments and narrower gaps than Normal. Compact describes the meter length, not compressed content or display resolution.</note>
       </trans-unit>
       <trans-unit id="Complete Pairing" xml:space="preserve">
         <source>Complete Pairing</source>
@@ -5102,10 +5132,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">SDRピーク輝度調整機能の可用性を無視</target>
         <note>53477 - Override setting ignoring reported SDR peak brightness adjustment availability.</note>
       </trans-unit>
-      <trans-unit id="Divide the slider bar into 16 segments when the mouse is not hovering over the OSD." xml:space="preserve">
-        <source>Divide the slider bar into 16 segments when the mouse is not hovering over the OSD.</source>
-        <target state="translated">マウスポインタがOSD上にないとき、スライダバーを16個の目盛りに分割します。</target>
-        <note>53723 - Explanation of the segmented OSD slider option. Hovering or dragging displays a continuous slider bar instead of the 16 segments.</note>
+      <trans-unit id="Divide the value bar into 16 segments when the mouse is not hovering over the OSD." xml:space="preserve">
+        <source>Divide the value bar into 16 segments when the mouse is not hovering over the OSD.</source>
+        <target state="translated">マウスポインタがOSD上にないとき、値バーを16個の目盛りに分割します。</target>
+        <note>54320 - Help for the segmented value-bar setting: ordinary meters use sixteen segments, and interactive app-drawn bars become continuous while hovered. Live Activity feedback is read-only; its Mini unexpanded bar stays continuous.</note>
       </trans-unit>
       <trans-unit id="Do not apply to the internal display" xml:space="preserve">
         <source>Do not apply to the internal display</source>
@@ -5842,10 +5872,10 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">実験的機能</target>
         <note>53477 - Experimental feature label.</note>
       </trans-unit>
-      <trans-unit id="Experimental: Follows screen content brightness, adapting to the brightest content in the last minute. Logo Light Strength sets the maximum; black content turns the light off." xml:space="preserve">
-        <source>Experimental: Follows screen content brightness, adapting to the brightest content in the last minute. Logo Light Strength sets the maximum; black content turns the light off.</source>
-        <target state="translated">実験的：画面コンテンツの輝度に連動し、直近1分間で最も明るいコンテンツに合わせて調整します。「ロゴ照明の強さ」で上限を設定し、コンテンツが黒くなると照明が消灯します。</target>
-        <note>54192 - Help for Content Based Ambience under Apple Logo Control. The brightest recent screen content defines maximum logo brightness; the Logo Light Strength slider limits this maximum and black content turns the logo light off.</note>
+      <trans-unit id="Experimental: Follows screen content brightness with a fading five-minute calibration that reduces the influence of brief bright flashes. Logo Light Strength sets the maximum; black content turns the light off." xml:space="preserve">
+        <source>Experimental: Follows screen content brightness with a fading five-minute calibration that reduces the influence of brief bright flashes. Logo Light Strength sets the maximum; black content turns the light off.</source>
+        <target state="translated">実験的：画面コンテンツの輝度に連動します。過去5分間のデータを使い、古いデータほど影響を小さくするキャリブレーションで、短い強い閃光の影響を抑えます。「ロゴ照明の強さ」で上限を設定し、コンテンツが黒くなると照明が消灯します。</target>
+        <note>54320 - Help for Content Based Ambience under Apple Logo Control: the five-minute calibration history fades older samples and reduces brief bright-flash influence while live brightness changes remain fast. Logo Light Strength is the exact slider label setting the maximum, and black content turns the logo light off immediately.</note>
       </trans-unit>
       <trans-unit id="Explore Other Control Options" xml:space="preserve">
         <source>Explore Other Control Options</source>
@@ -6010,6 +6040,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>For better reachability.</source>
         <target state="translated">アクセス性を良くします。</target>
         <note>53477 - Help for placing the menu button bar at the top.</note>
+      </trans-unit>
+      <trans-unit id="For consistent pass-through with multiple displays, set brightness keys to affect the screen with the window in focus under Settings &gt; Keyboard. Mouse targeting also works when the pointer and focused window are on the same screen." xml:space="preserve">
+        <source>For consistent pass-through with multiple displays, set brightness keys to affect the screen with the window in focus under Settings &gt; Keyboard. Mouse targeting also works when the pointer and focused window are on the same screen.</source>
+        <target state="translated">複数のディスプレイで一貫したパススルー動作にするには、「設定 &gt; キーボード」で輝度キーの対象を「フォーカス中のウインドウまたはデスクトップがある画面（アクティブな画面）」に設定してください。マウスによる対象選択も、ポインタとフォーカス中のウインドウが同じ画面にある場合は機能します。</target>
+        <note>54320 - Recommendation below native brightness-key pass-through when Keyboard targeting is not the active screen. Settings &gt; Keyboard is the app’s path, and any quoted target label must match Screen with the window or desktop in focus (active screen); mouse targeting works when pointer and focus are on the same screen.</note>
       </trans-unit>
       <trans-unit id="For controls that trigger a feature or functionality." xml:space="preserve">
         <source>For controls that trigger a feature or functionality.</source>
@@ -7280,6 +7315,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">関連する機能（コントラスト、カラー制御）について、現在の値セットをデフォルトとして構成することをお勧めします。現在表示されている画像が適切でない場合は、最初にディスプレイのOSDを使って修正し、続行する前に再度検出を行ってください!</target>
         <note>53477 - Hardware control detection default value guidance.</note>
       </trans-unit>
+      <trans-unit id="It is recommended to disable Combined Brightness when using pass-through. For extra dimming and software upscaling, use the separate software brightness control under Image Adjustments." xml:space="preserve">
+        <source>It is recommended to disable Combined Brightness when using pass-through. For extra dimming and software upscaling, use the separate software brightness control under Image Adjustments.</source>
+        <target state="translated">パススルーの使用時は「複合輝度」を無効にすることを推奨します。追加のディミングやソフトウェアによる輝度アップスケーリングには、「画像調整」にある独立したソフトウェア輝度制御を使用してください。</target>
+        <note>54301 - Recommendation shown when native brightness-key pass-through and Combined Brightness are both enabled. Image Adjustments is the app menu section containing the separate software-brightness slider for dimming and brightness upscaling, not resolution scaling.</note>
+      </trans-unit>
       <trans-unit id="It is recommended to have more leeway in the range!" xml:space="preserve">
         <source>It is recommended to have more leeway in the range!</source>
         <target state="translated">範囲にもう少し余裕を持たせてください!</target>
@@ -7454,6 +7494,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Let UI size be matched among members of the display group when the resolution of a watched group member display changes. This feature works best on displays with flexible scaling enabled.</source>
         <target state="translated">監視対象のグループメンバーディスプレイの解像度が変更された場合に、ディスプレイグループのメンバー間でUIサイズを一致させます。この機能は、フレキシブルサイズ調整を有効にしたディスプレイで、もっともよく機能します。</target>
         <note>53477 - Help for automatic display-group UI scale matching triggered by a watched member changing resolution; this does not ask the user to manually match the displays.</note>
+      </trans-unit>
+      <trans-unit id="Let macOS handle native brightness keys and their modifiers when this is the only connected display or keyboard control targets the focused screen. With mouse-pointer targeting, the pointer must also be on that screen. BetterDisplay's keyboard modifiers and brightness OSD do not apply during pass-through." xml:space="preserve">
+        <source>Let macOS handle native brightness keys and their modifiers when this is the only connected display or keyboard control targets the focused screen. With mouse-pointer targeting, the pointer must also be on that screen. BetterDisplay's keyboard modifiers and brightness OSD do not apply during pass-through.</source>
+        <target state="translated">接続されているディスプレイがこれ1台だけの場合、またはキーボード制御の対象がフォーカス中の画面の場合に、システムの輝度キーとその修飾キーの処理をmacOSに任せます。マウスポインタによる対象選択では、ポインタもその画面上にある必要があります。パススルー中は、BetterDisplayのキーボード修飾キーの動作と輝度OSDは適用されません。</target>
+        <note>54301 - Explains forwarding original Apple keyboard brightness events, including modifier keys such as Control, Option, Shift and Command, to macOS. It requires one connected display or eligible focused-screen targeting (mouse targeting must agree with focus), and bypasses BetterDisplay’s modifier behavior and brightness OSD (on-screen feedback).</note>
       </trans-unit>
       <trans-unit id="Let the Tools menu behave like the display menus." xml:space="preserve">
         <source>Let the Tools menu behave like the display menus.</source>
@@ -8020,6 +8065,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">幅・高さの最小値/最大値の制限は個別に適用されます。制限が必要なフィールドだけを指定し、残りを空白のままにしておくことができます。</target>
         <note>53477 - Resolution dimension constraints help.</note>
       </trans-unit>
+      <trans-unit id="Mini" xml:space="preserve">
+        <source>Mini</source>
+        <target state="translated">ミニ</target>
+        <note>54320 - Smallest unexpanded Live Activity bar-length option. It uses a continuous meter with rounded ends regardless of the segmented-bar setting, not a separate activity type or a visibility setting.</note>
+      </trans-unit>
       <trans-unit id="Minimize" xml:space="preserve">
         <source>Minimize</source>
         <target state="translated">しまう</target>
@@ -8340,6 +8390,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">ネイティブ輝度キー設定</target>
         <note>53477 - Native brightness key settings heading.</note>
       </trans-unit>
+      <trans-unit id="Native brightness changes can still synchronize to other displays when the group's synchronization of externally induced changes is enabled. macOS chooses the display affected by modifier keys." xml:space="preserve">
+        <source>Native brightness changes can still synchronize to other displays when the group's synchronization of externally induced changes is enabled. macOS chooses the display affected by modifier keys.</source>
+        <target state="translated">グループで外部からの変更の同期が有効な場合、システムによる輝度変更は引き続き他のディスプレイに同期できます。修飾キーの影響を受けるディスプレイはmacOSが選択します。</target>
+        <note>54301 - Help for allowing pass-through on group brightness-sync sources: forwarded key events can still be observed as external brightness changes and synchronized when the group’s external-change option is enabled. Native modifier-key behavior and the display it affects are decided by macOS.</note>
+      </trans-unit>
+      <trans-unit id="Native brightness keyboard control pass-thru" xml:space="preserve">
+        <source>Native brightness keyboard control pass-thru</source>
+        <target state="translated">システム輝度キーのパススルー</target>
+        <note>54301 - Per-display Apple brightness setting that forwards original system brightness-key events and their modifier keys to macOS instead of changing brightness in BetterDisplay. Pass-thru means keyboard-event forwarding, not a display connection or DDC transport.</note>
+      </trans-unit>
       <trans-unit id="Native keyboard control requires accessibility permissions!" xml:space="preserve">
         <source>Native keyboard control requires accessibility permissions!</source>
         <target state="translated">ネイティブキーボードの制御にはアクセシビリティのアクセス許可が必要です!</target>
@@ -8524,6 +8584,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>None</source>
         <target state="translated">なし</target>
         <note>53477 - No option selected.</note>
+      </trans-unit>
+      <trans-unit id="Normal" xml:space="preserve">
+        <source>Normal</source>
+        <target state="translated">標準</target>
+        <note>54320 - Default, longest unexpanded Live Activity value-bar option. Normal is a meter-length choice, not a display aspect ratio or a normal/SDR color mode.</note>
       </trans-unit>
       <trans-unit id="Normal Window Priority" xml:space="preserve">
         <source>Normal Window Priority</source>
@@ -8710,6 +8775,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">オン</target>
         <note>53477 - On state option.</note>
       </trans-unit>
+      <trans-unit id="On Dynamic Island only" xml:space="preserve">
+        <source>On Dynamic Island only</source>
+        <target state="translated">Dynamic Islandのみ</target>
+        <note>54301 - Live Activity auto-expansion choice: request silent expansion only while the focused window is on the built-in Dynamic Island display. Other focused displays keep normal activity updates without automatic expansion.</note>
+      </trans-unit>
+      <trans-unit id="On all screens" xml:space="preserve">
+        <source>On all screens</source>
+        <target state="translated">すべての画面</target>
+        <note>54301 - Live Activity auto-expansion choice: request silent expansion regardless of the screen containing the focused window, including screens without Dynamic Island. It does not place a separate activity on each screen; macOS controls placement.</note>
+      </trans-unit>
       <trans-unit id="On sleep or disconnect" xml:space="preserve">
         <source>On sleep or disconnect</source>
         <target state="translated">スリープまたは接続解除</target>
@@ -8864,6 +8939,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Partial strings are supported for matching. Hold ⌥ Option while copying the current device name to use the device's unique identifier instead.</source>
         <target state="translated">部分的な文字列のマッチングに対応しています。⌥ Optionを押したまま現在のデバイス名をコピーすると、代わりにデバイスの一意な識別子を使用します。</target>
         <note>53477 - Audio device matching input help.</note>
+      </trans-unit>
+      <trans-unit id="Pass-through is suspended while direct brightness control is active on any connected Apple display, including when a modifier key could target that display." xml:space="preserve">
+        <source>Pass-through is suspended while direct brightness control is active on any connected Apple display, including when a modifier key could target that display.</source>
+        <target state="translated">接続されているいずれかのAppleディスプレイで直接輝度制御が有効な間は、パススルーが停止されます。修飾キーによってそのディスプレイが対象になる可能性がある場合も含みます。</target>
+        <note>54301 - Notice shown with experimental direct Apple brightness control: native key forwarding is blocked whenever a connected display uses the direct brightness controller. Native modifier keys may target another display, so the restriction applies even if the focused display is not under direct control.</note>
       </trans-unit>
       <trans-unit id="Paste" xml:space="preserve">
         <source>Paste</source>
@@ -9164,6 +9244,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Predefined</source>
         <target state="translated">定義済み</target>
         <note>53477 - Predefined option label.</note>
+      </trans-unit>
+      <trans-unit id="Prefer active display Dynamic Island" xml:space="preserve">
+        <source>Prefer active display Dynamic Island</source>
+        <target state="translated">アクティブなディスプレイのDynamic Islandを優先</target>
+        <note>54320 - Default-on preference for Top-corner, Top-center, Under the app menu icon, and Under the menu bar. It substitutes an expanded Live Activity only when the normal OSD destination is the active built-in Dynamic Island display in Full aspect ratio, without changing the normal display targeting.</note>
       </trans-unit>
       <trans-unit id="Prefer hardware brightness control" xml:space="preserve">
         <source>Prefer hardware brightness control</source>
@@ -10520,6 +10605,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">フォーカス中のウインドウがある画面</target>
         <note>53477 - Keyboard control target option.</note>
       </trans-unit>
+      <trans-unit id="Screen with the window or desktop in focus (active screen)" xml:space="preserve">
+        <source>Screen with the window or desktop in focus (active screen)</source>
+        <target state="translated">フォーカス中のウインドウまたはデスクトップがある画面（アクティブな画面）</target>
+        <note>54320 - Keyboard brightness and volume target option: active means the display identified by window or desktop focus. It is distinct from the main display and the display containing the mouse pointer; desktop means the macOS desktop surface, not a desktop computer.</note>
+      </trans-unit>
       <trans-unit id="Screenshot detection frequency" xml:space="preserve">
         <source>Screenshot detection frequency</source>
         <target state="translated">スクリーンショットの検出頻度</target>
@@ -11180,6 +11270,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">必要に応じて動的スライダ目盛りを表示</target>
         <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
       </trans-unit>
+      <trans-unit id="Show an expanded Live Activity in the Dynamic Island when the OSD would appear on the active display (the screen with the window or desktop in focus). The display must have a Dynamic Island and use the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
+        <source>Show an expanded Live Activity in the Dynamic Island when the OSD would appear on the active display (the screen with the window or desktop in focus). The display must have a Dynamic Island and use the Full aspect ratio. Otherwise, use the selected OSD style.</source>
+        <target state="translated">OSDがアクティブなディスプレイ（フォーカス中のウインドウまたはデスクトップがある画面）に表示される場合、Dynamic Islandに展開したライブアクティビティを表示します。ディスプレイはDynamic Islandを備え、アスペクト比「全体」を使用している必要があります。それ以外の場合は、選択したOSDスタイルを使用します。</target>
+        <note>54320 - Help for replacing eligible OSD feedback with an expanded Live Activity only on the focused built-in Dynamic Island display. Full is the exact uncropped aspect-ratio option, including scaled Full modes, not a full-screen app or only the native pixel resolution.</note>
+      </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
         <target state="translated">表示して手前に移動</target>
@@ -11268,7 +11363,7 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Show device name in the OSD" xml:space="preserve">
         <source>Show device name in the OSD</source>
         <target state="translated">デバイス名をOSDに表示</target>
-        <note>53823 - Keyboard settings toggle, off by default, to show the adjusted display or audio device name in the rounded on-screen display (OSD). Available only for rounded app-drawn styles other than Classic.</note>
+        <note>54320 - Keyboard OSD toggle showing the adjusted display or audio device name in rounded non-Classic OSDs or Live Activity feedback. With Live Activity, the name appears only in expanded presentation.</note>
       </trans-unit>
       <trans-unit id="Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays." xml:space="preserve">
         <source>Show disconnect/connect menu option for displays. Disconnecting a display puts the display into sleep mode and removes it from the display layout. Connecting it restores the display. Disconnected displays can be reconnected with the header toggle (power button), by turning the display on/off or closing and opening the lid for MacBook displays.</source>
@@ -14010,10 +14105,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">丸みを帯びたOSDスタイルを使用</target>
         <note>53823 - Keyboard settings toggle for the rounded on-screen display (OSD), which hides the close button and offers an optional device-name callout. Classic keeps its existing size with rounder corners.</note>
       </trans-unit>
-      <trans-unit id="Use segmented OSD slider bar" xml:space="preserve">
-        <source>Use segmented OSD slider bar</source>
-        <target state="translated">目盛り付きのOSDスライダバーを使用</target>
-        <note>53723 - Keyboard settings toggle for dividing the on-screen display (OSD) slider bar into 16 segments while the pointer is outside the OSD.</note>
+      <trans-unit id="Use segmented OSD value bar" xml:space="preserve">
+        <source>Use segmented OSD value bar</source>
+        <target state="translated">目盛り付きのOSD値バーを使用</target>
+        <note>54320 - Toggle for segmented value meters in app-drawn OSD styles and Live Activity feedback, including its minimal ring. Mini-length unexpanded Live Activity bars remain continuous; value bar does not imply an interactive slider.</note>
       </trans-unit>
       <trans-unit id="Use shaded layers for SF Symbol menu bar icons. Disable for a single shade, including the main display’s icon when used as the menu bar icon." xml:space="preserve">
         <source>Use shaded layers for SF Symbol menu bar icons. Disable for a single shade, including the main display’s icon when used as the menu bar icon.</source>
@@ -14495,6 +14590,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">アプリメニューを開くときに、メニューを開くディスプレイを先頭にしてください。切り離したメニューや、開いて別のディスプレイに移動したメニューには影響ありません</target>
         <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
+      <trans-unit id="When the OSD appears on a display that is not active, the app uses the selected OSD style even if that display has a Dynamic Island." xml:space="preserve">
+        <source>When the OSD appears on a display that is not active, the app uses the selected OSD style even if that display has a Dynamic Island.</source>
+        <target state="translated">OSDの表示先がアクティブなディスプレイでない場合、そのディスプレイにDynamic Islandがあっても、選択したOSDスタイルを使用します。</target>
+        <note>54320 - Warning under the automatic Dynamic Island preference for Top-corner or Top-center when Show OSD on is not Active display. Not active means the destination is not the window/desktop focus display, not that it is disconnected or powered off.</note>
+      </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
         <target state="translated">アクティブなオーディオデバイスがmacOSのネイティブの音量制御をサポートしていることを検出した場合、メディアキーの入力を待ち受ける間は、適切な操作をオペレーティングシステムに転送します。</target>
@@ -14549,6 +14649,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Wireless</source>
         <target state="translated">ワイヤレス</target>
         <note>53477 - Wireless connection type.</note>
+      </trans-unit>
+      <trans-unit id="With Live Activity, this is shown only in the expanded view." xml:space="preserve">
+        <source>With Live Activity, this is shown only in the expanded view.</source>
+        <target state="translated">ライブアクティビティでは、この情報は展開した表示でのみ表示されます。</target>
+        <note>54320 - Shared info below Show device name in the OSD and Display current value in the OSD when manual or automatic Live Activity feedback is available. This means the device name or current numeric value, not the whole activity, and appears only after expansion.</note>
       </trans-unit>
       <trans-unit id="With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation." xml:space="preserve">
         <source>With settings transfer, this display's settings will be replaced by the selected disconnected display's settings. This can be used to reassign display settings when a display's identifiers change or when app settings were imported or migrated from a different installation.</source>
