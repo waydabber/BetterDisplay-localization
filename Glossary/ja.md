@@ -38,6 +38,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | fingerprint | フィンガープリント | not a biometric identifier. |
 | fixed-point refresh rate | リフレッシュレート（固定小数点） | A numeric fixed-point representation. |
 | flexible scaling | フレキシブルサイズ調整 | |
+| focus, focused | 操作対象, 操作対象の | the window in focus 操作対象のウインドウ |
 | framebuffer | フレームバッファ | |
 | relative gamma | 相対ガンマ | |
 | group membership | グループメンバーシップ / メンバー構成 | Membership here is which displays belong, not member rights. |
@@ -50,7 +51,9 @@ This glossary records the maintained Japanese localization's existing terminolog
 | main display | 主ディスプレイ | メインディスプレイ is also retained. Main status means the main-display assignment, not 主な状況. |
 | matrix | 行列 | (e.g. matrix mode マトリックスモード) |
 | matrix mode | マトリックスモード | |
+| modifier | 修飾キー | |
 | mute | ミュート | Generic audio controls are not limited to DDC. |
+| native | ネイティブ | |
 | neutral value | ニュートラル値 | A default unadjusted value, not a mathematical median. |
 | officially | 公式に | |
 | on-screen | オンスクリーン | |
@@ -58,6 +61,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | OSD chiclet | OSD目盛り | One standard step spans one segment, while the default fine step is one-quarter of a segment. Do not imply the entire OSD scale. |
 | outdated license | 旧バージョン用ライセンス | This is version eligibility, not time-based expiry (期限切れ). |
 | override | オーバーライド | Context-specific replacement/change wording is also valid; overriding EDID does not disable EDID. |
+| pass-through | キーの透過 | For hardware use パススルー. |
 | preset | プリセット | |
 | read-only | 読み出し専用 | |
 | reconnect | 再接続 | |
@@ -77,6 +81,10 @@ This glossary records the maintained Japanese localization's existing terminolog
 | segment | 目盛り | One standard step spans one segment, while the default fine step is one-quarter of a segment. Do not imply the entire OSD scale. |
 | serialize | シリアライズ | |
 | slider scale | スライダ目盛り | |
+| stream targets | ストリーミング先 | |
+| sync targets | 同期先 | |
+| target | Nouns. 先; Adjective. 対象となる or ターゲット | target display ターゲットディスプレイ |
+| target display | ターゲットディスプレイ | |
 | target white point | 使用するホワイトポイント | |
 | temporal dithering | 時間的ディザリング | Frame-to-frame variation, not temporary activation. |
 | tint | 色合い | |
