@@ -734,18 +734,6 @@
     "Adding an event" : {
       "comment" : "53477 - Event creation heading."
     },
-    "Additional adjustments currently require Matrix mode." : {
-      "comment" : "54069 - Retouch generation error: additional tone and color-balance adjustments are currently supported only by the matrix-based processing mode.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Additional adjustments currently require Matrix mode."
-          }
-        }
-      }
-    },
     "Additional Apple Brightness Settings" : {
       "comment" : "53477 - Additional native Apple display brightness settings section."
     },
@@ -1109,18 +1097,6 @@
     },
     "An active layout protection main status configured under Groups takes precedence." : {
       "comment" : "53689 - Main display setting help: active group layout protection can override the selected main display."
-    },
-    "An adjustment is outside the supported range." : {
-      "comment" : "54069 - Retouch validation error when an adjustment parameter is outside its supported numeric range.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "An adjustment is outside the supported range."
-          }
-        }
-      }
     },
     "An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" : {
       "comment" : "53688 - Display configuration warning when overridden EDID identification data is active; system settings are associated with that identity, not the original one."
@@ -1936,30 +1912,6 @@
     "Cancel Pairing" : {
       "comment" : "53477 - Cancel device pairing action."
     },
-    "Cannot fingerprint the profile." : {
-      "comment" : "54069 - Retouch metadata error when the cryptographic fingerprint used to verify a profile cannot be calculated; fingerprint is a data hash, not a biometric identifier.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cannot fingerprint the profile."
-          }
-        }
-      }
-    },
-    "Cannot read profile tag." : {
-      "comment" : "54069 - Retouch metadata error when an ICC profile tag cannot be read; a tag is a named data block in the profile.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cannot read profile tag."
-          }
-        }
-      }
-    },
     "Capabilities" : {
       "comment" : "53477 - Device capability information label."
     },
@@ -2188,6 +2140,9 @@
     "Color profile changed for %@." : {
       "comment" : "53477 - Success notification after changing a display color profile."
     },
+    "Color Profile compatibility is more limited for built-in displays." : {
+      "comment" : "54364 - Brief compatibility note below the built-in display Color Profile menu option. Built-in Apple displays using Presets have more limited color profile compatibility than external Apple displays."
+    },
     "Color Profile Configuration" : {
       "comment" : "53477 - Display color profile configuration section."
     },
@@ -2317,58 +2272,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ColorSync could not apply the color profile."
-          }
-        }
-      }
-    },
-    "ColorSync could not create the LUT conversion." : {
-      "comment" : "54123 - Error when ColorSync cannot construct or sample the color conversion needed to bake a LUT into a display profile.",
-      "extractionState" : "manual"
-    },
-    "ColorSync could not restore the original color profile." : {
-      "comment" : "54069 - Retouch editor error when macOS ColorSync cannot restore the previously active color profile.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ColorSync could not restore the original color profile."
-          }
-        }
-      }
-    },
-    "ColorSync could not sample the original tone curves." : {
-      "comment" : "54069 - Retouch generation error when ColorSync cannot sample the original tone-response curves; sampling evaluates the curves at a series of input values.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ColorSync could not sample the original tone curves."
-          }
-        }
-      }
-    },
-    "ColorSync refused the profile assignment." : {
-      "comment" : "54069 - Error when macOS ColorSync refuses to assign a profile to a display.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ColorSync refused the profile assignment."
-          }
-        }
-      }
-    },
-    "ColorSync rejected the generated profile." : {
-      "comment" : "54069 - Retouch generation error when macOS ColorSync rejects the newly generated ICC profile.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ColorSync rejected the generated profile."
           }
         }
       }
@@ -2801,14 +2704,14 @@
     "Could not connect to the privileged helper." : {
       "comment" : "53477 - Error shown when the app cannot establish its XPC connection to the privileged helper. ‘Privileged helper’ is BetterDisplay’s background system service for administrator-level operations."
     },
-    "Could not copy the original profile." : {
-      "comment" : "54069 - Retouch generation error when the original ICC profile cannot be copied for modification.",
+    "Could not create a color profile with these settings." : {
+      "comment" : "54381 - Generic generation error for ICC retouch preview/save or LUT-profile creation. Detailed source, format, and adjustment errors are logged rather than exposed in this message.",
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Could not copy the original profile."
+            "value" : "Could not create a color profile with these settings."
           }
         }
       }
@@ -2816,48 +2719,20 @@
     "Could not create an administrator authorization session." : {
       "comment" : "53477 - Error shown when macOS cannot create the Authorization Services session needed for an administrator-level operation."
     },
-    "Could not create the linear profile used to sample tone curves." : {
-      "comment" : "54069 - Retouch generation error when the linear reference profile used to sample tone-response curves cannot be created.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Could not create the linear profile used to sample tone curves."
-          }
-        }
-      }
-    },
-    "Could not read the LUT signal space." : {
-      "comment" : "54123 - Error while loading the ICC description of the RGB encoding selected for an imported LUT.",
-      "extractionState" : "manual"
-    },
-    "Could not read this display's default ColorSync profile." : {
-      "comment" : "54069 - Retouch source error when the display’s default macOS ColorSync profile cannot be read.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Could not read this display's default ColorSync profile."
-          }
-        }
-      }
-    },
     "Could not register the administrator authorization right (%d)." : {
       "comment" : "53477 - Error shown when the app cannot register its custom macOS Authorization Services right. ‘Authorization right’ is a technical macOS security term; %d is the OSStatus error code."
     },
     "Could not register the privileged helper." : {
       "comment" : "53477 - Error shown when BetterDisplay cannot register its privileged helper with macOS. ‘Privileged helper’ is the app’s background system service for administrator-level operations."
     },
-    "Could not serialize the generated profile." : {
-      "comment" : "54069 - Retouch generation error when the generated profile cannot be serialized into binary ICC data.",
+    "Could not save the color profile." : {
+      "comment" : "54381 - Generic error when writing a generated ICC profile or a temporary preview profile fails, including saving LUT-created profiles. This is a file-save error, distinct from a ColorSync apply/assignment failure.",
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Could not serialize the generated profile."
+            "value" : "Could not save the color profile."
           }
         }
       }
@@ -5028,18 +4903,6 @@
     "I2C service name" : {
       "comment" : "53477 - Hardware I2C service identifier label."
     },
-    "ICC metadata is too large." : {
-      "comment" : "54069 - Retouch metadata error when encoded ICC metadata exceeds its allowed byte size.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ICC metadata is too large."
-          }
-        }
-      }
-    },
     "Icon" : {
       "comment" : "53477 - Icon selection setting."
     },
@@ -5177,18 +5040,6 @@
     "inch" : {
       "comment" : "53477 - Unit displayed beside the editable reported diagonal size of a virtual display, measured in inches. Use a unit label or abbreviation suitable for decimal values without singular/plural agreement."
     },
-    "Incomplete retouch metadata." : {
-      "comment" : "54069 - Retouch loading error when the embedded metadata lacks required retouch information.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incomplete retouch metadata."
-          }
-        }
-      }
-    },
     "Increase Apple Keyboard brightness" : {
       "comment" : "53477 - Keyboard backlight brightness action."
     },
@@ -5277,102 +5128,14 @@
     "Internal Pre-Release" : {
       "comment" : "53477 - Internal pre-release build channel."
     },
-    "Invalid display UUID." : {
-      "comment" : "54069 - ColorSync profile assignment error when the display’s UUID identifier is invalid; keep UUID unchanged.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid display UUID."
-          }
-        }
-      }
-    },
-    "Invalid ICC metadata offset." : {
-      "comment" : "54069 - ICC metadata parsing error for an invalid byte offset into the metadata data block.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid ICC metadata offset."
-          }
-        }
-      }
-    },
-    "Invalid ICC metadata record table." : {
-      "comment" : "54069 - ICC metadata parsing error for an invalid table of metadata records.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid ICC metadata record table."
-          }
-        }
-      }
-    },
-    "Invalid ICC metadata text." : {
-      "comment" : "54069 - ICC metadata parsing error when a metadata string is not valid encoded text.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid ICC metadata text."
-          }
-        }
-      }
-    },
-    "Invalid LUT output samples." : {
-      "comment" : "54123 - Error when resampling an imported LUT produces non-finite output RGB values that cannot be encoded in the generated ICC profile.",
-      "extractionState" : "manual"
-    },
     "Invalid mode" : {
       "comment" : "53477 - Invalid display mode status."
-    },
-    "Invalid or oversized profile." : {
-      "comment" : "54069 - Retouch loading error when an ICC profile is invalid or exceeds the allowed size.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid or oversized profile."
-          }
-        }
-      }
     },
     "Invalid resolution (skipped)" : {
       "comment" : "53477 - Skipped invalid resolution status."
     },
     "Invalid slider format. The default percentage format is used until this is corrected." : {
       "comment" : "54136 - Control integration settings warning shown for an invalid slider value format. The slider displays its normal percentage until the user corrects the saved format."
-    },
-    "Invalid tone-curve exponent." : {
-      "comment" : "54069 - Tone-curve parsing error for an invalid mathematical exponent in the curve definition.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid tone-curve exponent."
-          }
-        }
-      }
-    },
-    "Invalid tone-curve samples." : {
-      "comment" : "54069 - Retouch generation error for invalid numeric samples of a tone-response curve.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invalid tone-curve samples."
-          }
-        }
-      }
     },
     "Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f." : {
       "comment" : "54136 - Control integration settings warning shown when the outgoing numeric format is unsafe or unsupported. %.0f and %.2f are literal printf format examples, not substitution placeholders; preserve them exactly."
@@ -5690,30 +5453,6 @@
       "comment" : "54036 - Non-translatable LUT (lookup table) badge next to LUT-based or hybrid ICC color profiles in the Color Profile menu, including favorite rows.",
       "shouldTranslate" : false
     },
-    "LUT conversion matrix exceeds the ICC fixed-point range." : {
-      "comment" : "54069 - Retouch generation error when the LUT conversion matrix cannot fit the ICC fixed-point numeric representation; preserve LUT and ICC.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LUT conversion matrix exceeds the ICC fixed-point range."
-          }
-        }
-      }
-    },
-    "LUT-based profiles cannot be retouched." : {
-      "comment" : "54069 - Retouch source error: profiles based on lookup tables (LUTs) cannot be used as originals for this editor.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LUT-based profiles cannot be retouched."
-          }
-        }
-      }
-    },
     "lux" : {
       "comment" : "53477 - Ambient illuminance unit."
     },
@@ -5864,18 +5603,6 @@
     },
     "Matching tolerance" : {
       "comment" : "53477 - UI scale matching tolerance setting."
-    },
-    "Matrix exceeds ICC range." : {
-      "comment" : "54069 - Retouch generation error when a matrix coefficient exceeds the numeric range supported by ICC.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Matrix exceeds ICC range."
-          }
-        }
-      }
     },
     "Max" : {
       "comment" : "53477 - Maximum range label."
@@ -6049,32 +5776,8 @@
     "MISSING" : {
       "comment" : "53477 - Missing configuration item status."
     },
-    "Missing or duplicate ICC metadata name." : {
-      "comment" : "54069 - ICC metadata parsing error for a missing or duplicate metadata entry name.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Missing or duplicate ICC metadata name."
-          }
-        }
-      }
-    },
     "Missing or duplicated identifier present - this will yield unexpected results!" : {
       "comment" : "53688 - Validation warning for missing or duplicate identifiers."
-    },
-    "Missing tone curve." : {
-      "comment" : "54069 - Retouch generation error when a required tone-response curve is absent from the profile.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Missing tone curve."
-          }
-        }
-      }
     },
     "Mixed" : {
       "comment" : "53477 - Mixed state across multiple selected items."
@@ -6252,18 +5955,6 @@
     },
     "Native mode (1:1 mapping)" : {
       "comment" : "53477 - Native pixel mapping mode."
-    },
-    "Nested retouch sources are not supported." : {
-      "comment" : "54069 - Retouch loading error: an embedded original cannot itself contain another retouch; nested means retouches embedded inside other retouches.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nested retouch sources are not supported."
-          }
-        }
-      }
     },
     "Neutral" : {
       "comment" : "53477 - Slider snap badge for neutral software brightness (no dimming or boost); keep it compact, ideally 8-10 characters, abbreviating naturally if needed."
@@ -6578,18 +6269,6 @@
     "Original" : {
       "comment" : "53477 - Slider snap badge marking the original adjustment value; keep it compact, ideally 8-10 characters, abbreviating naturally if needed."
     },
-    "Original profile exceeds the 4 MiB embedding limit." : {
-      "comment" : "54069 - Retouch save error when the original profile exceeds the 4 MiB limit for embedding it in the generated profile; preserve the size and unit.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Original profile exceeds the 4 MiB embedding limit."
-          }
-        }
-      }
-    },
     "OS managed (recommended)" : {
       "comment" : "53477 - System-managed option."
     },
@@ -6896,8 +6575,8 @@
     "Predefined" : {
       "comment" : "53477 - Predefined option label."
     },
-    "Prefer active display Dynamic Island" : {
-      "comment" : "54320 - Default-on preference for Top-corner, Top-center, Under the app menu icon, and Under the menu bar. It substitutes an expanded Live Activity only when the normal OSD destination is the active built-in Dynamic Island display in Full aspect ratio, without changing the normal display targeting.",
+    "Prefer Dynamic Island OSD" : {
+      "comment" : "54419 - Default-on preference for eligible top/menu OSD placements on built-in displays with a Dynamic Island camera cutout. By default it draws an interactive capsule in that area; the separate Live Activity option selects system-managed feedback.",
       "extractionState" : "manual"
     },
     "Prefer hardware brightness control" : {
@@ -7009,18 +6688,6 @@
     },
     "Product name" : {
       "comment" : "53477 - Display product name information."
-    },
-    "Profile exceeds the 32 MiB read limit." : {
-      "comment" : "54069 - Retouch loading error when a profile exceeds the 32 MiB read limit; preserve the size and unit.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Profile exceeds the 32 MiB read limit."
-          }
-        }
-      }
     },
     "Profile name" : {
       "comment" : "54069 - Accessible label and empty placeholder for the inline-editable name in a color profile retouch menu row.",
@@ -7456,18 +7123,6 @@
     "Removing this activation will affect only this installation. Other activations can be removed without impacting this installation. Removing all activations will reset everything to a blank slate." : {
       "comment" : "53477 - License activation removal scope help."
     },
-    "Reopen the retouched profile to use its embedded original; nesting retouches is not supported." : {
-      "comment" : "54069 - Retouch source error directing the user to reopen the edited profile so its embedded original can be used, instead of nesting another retouch.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reopen the retouched profile to use its embedded original; nesting retouches is not supported."
-          }
-        }
-      }
-    },
     "Reported actual refresh rate:" : {
       "comment" : "53477 - Reported actual refresh rate information."
     },
@@ -7656,30 +7311,6 @@
     "Resume Stream on Connect" : {
       "comment" : "53484 - Display stream menu toggle that resumes streaming when the display reconnects. Keep the label short enough for the app menu."
     },
-    "Retouch effective settings do not match the recipe." : {
-      "comment" : "54069 - Retouch loading error when the effective adjustments do not match the saved recipe; recipe means the stored processing parameters.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Retouch effective settings do not match the recipe."
-          }
-        }
-      }
-    },
-    "Retouch source or output fingerprint does not match." : {
-      "comment" : "54069 - Retouch loading error when a source or output cryptographic hash differs from the saved fingerprint; this verifies profile data integrity.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Retouch source or output fingerprint does not match."
-          }
-        }
-      }
-    },
     "Retouch…" : {
       "comment" : "54069 - Context-menu action opening the color profile retouch editor for a non-LUT source profile.",
       "extractionState" : "manual",
@@ -7712,18 +7343,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retouched color profiles:"
-          }
-        }
-      }
-    },
-    "Retouching requires a valid matrix-based RGB display profile with an XYZ connection space." : {
-      "comment" : "54069 - Retouch source requirement: a valid matrix-based RGB display profile using XYZ as its profile connection space.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Retouching requires a valid matrix-based RGB display profile with an XYZ connection space."
           }
         }
       }
@@ -7938,18 +7557,6 @@
     },
     "Select a disconnected display" : {
       "comment" : "53477 - Disconnected display selection prompt."
-    },
-    "Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline." : {
-      "comment" : "54069 - Retouch source requirement: use a matrix-based original rather than a LUT or hybrid profile; baseline means the original profile to modify.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline."
-          }
-        }
-      }
     },
     "Select All" : {
       "comment" : "53477 - Select all items action."
@@ -8296,10 +7903,6 @@
     "Show All Tabs" : {
       "comment" : "53477 - Standard window tab overview action."
     },
-    "Show an expanded Live Activity in the Dynamic Island when the OSD would appear on the active display (the screen with the window or desktop in focus). The display must have a Dynamic Island and use the Full aspect ratio. Otherwise, use the selected OSD style." : {
-      "comment" : "54320 - Help for replacing eligible OSD feedback with an expanded Live Activity only on the focused built-in Dynamic Island display. Full is the exact uncropped aspect-ratio option, including scaled Full modes, not a full-screen app or only the native pixel resolution.",
-      "extractionState" : "manual"
-    },
     "Show and Bring to Front" : {
       "comment" : "53477 - Show window and bring it to front action."
     },
@@ -8323,6 +7926,12 @@
     },
     "Show button bar at the top of the menu" : {
       "comment" : "53477 - Menu button bar placement setting."
+    },
+    "Show Color Profile menu for built-in displays using Presets" : {
+      "comment" : "54364 - Default-off Advanced Display Settings option showing the Color Profile menu for built-in Apple displays using display Presets. Presets manage display color reproduction and are distinct from color profiles."
+    },
+    "Show Color Profile menu for external Apple displays using Presets" : {
+      "comment" : "54364 - Default-on Advanced Display Settings option showing the Color Profile menu for external Apple displays using display Presets, such as Studio Display and Pro Display XDR. This preference is independent of the built-in display option."
     },
     "Show connect/disconnect in menu even if header has it as switch" : {
       "comment" : "53477 - Display connection menu item visibility setting."
@@ -8482,6 +8091,14 @@
     },
     "Show the display or device name before the current value in the rounded OSD." : {
       "comment" : "53824 - Help for the rounded OSD device-name toggle. The display or audio device name precedes the current value with a dot separator in one callout, or appears alone if no value is shown."
+    },
+    "Show the OSD as a Live Activity so macOS can avoid overlap with other activities already in the Dynamic Island. This adds a small delay, disables slider adjustments, and shows a minimal activity on other displays. If the destination is not the active display (the screen with the window or desktop in focus), the selected OSD style is used." : {
+      "comment" : "54419 - Help for the system-managed Live Activity option, which lets macOS coordinate space with other activities at the cost of a small delay and loss of slider interaction. Active means window/desktop focus; minimal is the system’s small presentation on other screens, not the Mini bar-length choice.",
+      "extractionState" : "manual"
+    },
+    "Show the OSD in the Dynamic Island area when the destination display has a Dynamic Island and uses the Full aspect ratio. Otherwise, use the selected OSD style." : {
+      "comment" : "54419 - Help for drawing OSD in the destination display’s camera-cutout area; fallback retains the selected OSD style. Full is the exact uncropped aspect-ratio label, including scaled Full resolutions, not a full-screen app or a requirement to use native pixel resolution.",
+      "extractionState" : "manual"
     },
     "Show volume OSD with keyboard control" : {
       "comment" : "53477 - Keyboard volume OSD setting."
@@ -8678,6 +8295,9 @@
           }
         }
       }
+    },
+    "Some activations could not be removed." : {
+      "comment" : "54381 - Pro settings alert after Remove All Activations or Remove Other Activation(s) if the server cannot list records or at least one removal fails. Activations are license records for installations; this can describe a partial failure or no removals at all."
     },
     "Some adjustments may clip HDR content!" : {
       "comment" : "53689 - Image adjustment warning: clipping loses highlight or shadow detail in HDR content."
@@ -9159,18 +8779,6 @@
       "comment" : "54123 - Success explanation after generating an ICC profile from a LUT. The placeholder is the final profile name, including a numeric suffix if needed.",
       "extractionState" : "manual"
     },
-    "The color profile is too large." : {
-      "comment" : "54069 - Retouch editor error when the selected color profile exceeds the allowed size.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The color profile is too large."
-          }
-        }
-      }
-    },
     "The CUBE contains %lld color entries instead of the expected %lld." : {
       "comment" : "53477 - CUBE parser color entry count error; actual then expected count.",
       "localizations" : {
@@ -9349,59 +8957,11 @@
     "The privileged helper needs to be refreshed." : {
       "comment" : "53477 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface."
     },
-    "The profile file cannot be replaced." : {
-      "comment" : "54069 - Retouch save error when the existing profile file cannot safely be replaced.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The profile file cannot be replaced."
-          }
-        }
-      }
-    },
-    "The profile is missing standard RGB matrix or tone-curve tags." : {
-      "comment" : "54069 - Retouch source error when standard ICC tags for the RGB matrix or tone-response curves are missing; tags are named profile data blocks.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The profile is missing standard RGB matrix or tone-curve tags."
-          }
-        }
-      }
-    },
-    "The profile's RGB matrix is degenerate or has unsupported luminance weights." : {
-      "comment" : "54069 - Retouch source error for a mathematically degenerate RGB matrix or unsupported luminance weights, which describe each channel’s contribution to luminance.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The profile's RGB matrix is degenerate or has unsupported luminance weights."
-          }
-        }
-      }
-    },
     "The protection is not in effect unless all participating displays are connected." : {
       "comment" : "53688 - Group protection prerequisite requiring every participating display."
     },
     "The protection is not in effect unless relative position is defined." : {
       "comment" : "53688 - Layout protection prerequisite requiring a relative display position."
-    },
-    "The requested matrix is singular." : {
-      "comment" : "54069 - Retouch generation error for a singular matrix, meaning a mathematical matrix that cannot be inverted.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The requested matrix is singular."
-          }
-        }
-      }
     },
     "The selected display is no longer connected." : {
       "comment" : "54123 - Notice when the display selected for LUT profile preview or application disconnects. Profile creation remains possible.",
@@ -9519,8 +9079,8 @@
     "This allows the dimming or image adjustment overlay to take effect on the lock screen and on spaces where it is normally ineffective." : {
       "comment" : "53477 - Overlay coverage on lock screen and spaces help."
     },
-    "This Apple display uses Presets. To preview or apply a color profile, enable Unlock Color Profile management for Apple displays under Settings > Displays > Overview > Advanced Display Settings." : {
-      "comment" : "54123 - Notice when Color Profile management is locked on a Preset-based Apple display. Unlock Color Profile management for Apple displays is the exact existing setting name.",
+    "This Apple display uses Presets. To preview or apply a color profile, enable %@ under Settings > Displays > Overview > Advanced Display Settings." : {
+      "comment" : "54364 - Notice when the selected Preset-based Apple display has its Color Profile menu disabled. %@ is the localized setting name for built-in or external Apple displays, followed by the Settings path.",
       "extractionState" : "manual"
     },
     "This applies both to physically connecting an external display and using the app to reconnect one. However, the app will not reconnect the built-in display if you allow all displays to be disconnected!" : {
@@ -9528,6 +9088,18 @@
     },
     "This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support." : {
       "comment" : "53477 - DDC unsupported detection troubleshooting help."
+    },
+    "This color profile cannot be opened for retouching." : {
+      "comment" : "54381 - Generic error when loading a selected ICC color profile into the retouch editor, including recovering its embedded source and adjustment recipe. Retouching means editing the profile’s color adjustments, not opening a file for viewing.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This color profile cannot be opened for retouching."
+          }
+        }
+      }
     },
     "This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the macOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data." : {
       "comment" : "53477 - Display identification method setting help."
@@ -9685,18 +9257,6 @@
     "This prevents momentary brightness fluctuations after HDR content was presented on the display. Please note that while keeping the built-in display in EDR mode for direct brightness control does not have any drawbacks, this setting may force other external Apple displays into EDR mode as well." : {
       "comment" : "53477 - Keep display in EDR mode setting help."
     },
-    "This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered." : {
-      "comment" : "54069 - Retouch loading error when embedded metadata is absent, preventing recovery of the original ICC profile and adjustment settings.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered."
-          }
-        }
-      }
-    },
     "This provides a cleaner look when sliders are not in active use." : {
       "comment" : "53477 - Hide inactive slider labels setting help."
     },
@@ -9708,18 +9268,6 @@
     },
     "This restores the default settings and restarts the app.\n\nPlease note that previously stored custom display configurations won't be removed from the system!" : {
       "comment" : "53477 - Reset app settings confirmation."
-    },
-    "This retouch uses an unsupported metadata or algorithm version." : {
-      "comment" : "54069 - Retouch loading error when the embedded metadata format or processing algorithm version is unsupported.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This retouch uses an unsupported metadata or algorithm version."
-          }
-        }
-      }
     },
     "This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings." : {
       "comment" : "53927 - Help for native hardware audio association in Audio Device Configuration. Native controls are the hardware component, while Software Audio priority or explicit combined methods select the main providers.",
@@ -9885,30 +9433,6 @@
     "Toggles" : {
       "comment" : "53477 - Label for the menu visibility setting controlling display toggle buttons, such as HiDPI and automatic brightness. These are on/off controls, not mechanical switches or gears."
     },
-    "Tone adjustment is not monotonic." : {
-      "comment" : "54069 - Retouch generation error when the tone curve is not monotonic: its output decreases as its input increases.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tone adjustment is not monotonic."
-          }
-        }
-      }
-    },
-    "Tone adjustment produced an invalid value." : {
-      "comment" : "54069 - Retouch generation error when a tone-curve adjustment produces an invalid numeric value.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tone adjustment produced an invalid value."
-          }
-        }
-      }
-    },
     "Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app." : {
       "comment" : "54069 - Explanation beneath the Color Profile retouch sliders; these tone-curve effects preserve endpoints, with display- and app-dependent HDR behavior.",
       "extractionState" : "manual",
@@ -9993,18 +9517,6 @@
         }
       }
     },
-    "Too many metadata entries." : {
-      "comment" : "54069 - ICC metadata encoding error when there are more metadata entries than allowed.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Too many metadata entries."
-          }
-        }
-      }
-    },
     "Tools" : {
       "comment" : "53477 - Tools menu title."
     },
@@ -10077,30 +9589,6 @@
     },
     "True Tone turned off by HDR toggle" : {
       "comment" : "53477 - True Tone disabled notification."
-    },
-    "Truncated sampled curve." : {
-      "comment" : "54069 - Tone-curve parsing error when a sampled curve’s stored data ends before all declared samples are present.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Truncated sampled curve."
-          }
-        }
-      }
-    },
-    "Truncated tone curve." : {
-      "comment" : "54069 - Tone-curve parsing error when the stored curve data is truncated or incomplete.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Truncated tone curve."
-          }
-        }
-      }
     },
     "Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled." : {
       "comment" : "53477 - Prerelease update channel setting help."
@@ -10294,9 +9782,6 @@
         }
       }
     },
-    "Unlock Color Profile management for Apple displays" : {
-      "comment" : "53477 - Enable normally restricted Apple display color profile controls."
-    },
     "Unlock EDID write - I understand the risks involved" : {
       "comment" : "53477 - Hardware EDID write unlock acknowledgement."
     },
@@ -10344,54 +9829,6 @@
     },
     "Unsupported by the display" : {
       "comment" : "53477 - Unsupported display capability state."
-    },
-    "Unsupported LUT adjustment recipe." : {
-      "comment" : "54069 - Retouch loading error for unsupported LUT adjustment parameters; recipe means the stored processing parameters.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unsupported LUT adjustment recipe."
-          }
-        }
-      }
-    },
-    "Unsupported or oversized ICC metadata dictionary." : {
-      "comment" : "54069 - ICC metadata parsing error for an unsupported dictionary format or excessive size; dictionary means a collection of named metadata entries.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unsupported or oversized ICC metadata dictionary."
-          }
-        }
-      }
-    },
-    "Unsupported parametric curve." : {
-      "comment" : "54069 - Tone-curve parsing error for an unsupported parametric curve function or parameter layout.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unsupported parametric curve."
-          }
-        }
-      }
-    },
-    "Unsupported tone-curve type." : {
-      "comment" : "54069 - Tone-curve parsing error for an unsupported ICC curve data type.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unsupported tone-curve type."
-          }
-        }
-      }
     },
     "unverified (unexpected response, may work)" : {
       "comment" : "53477 - DDC feature detection uncertain state."
@@ -10505,6 +9942,10 @@
     },
     "Use Light Appearance" : {
       "comment" : "53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.",
+      "extractionState" : "manual"
+    },
+    "Use Live Activity for Dynamic Island OSD" : {
+      "comment" : "54419 - Default-off child of Prefer Dynamic Island OSD, selecting a read-only macOS Live Activity instead of the interactive app-drawn capsule. This variant also requires the destination to be the window/desktop focus display.",
       "extractionState" : "manual"
     },
     "Use magnification slider instead of resolution slider" : {
@@ -10888,10 +10329,6 @@
     "When the display is set as main, the lower limit is 30⁠% for combined or software brightness, 10⁠% for Apple hardware brightness, 0⁠% for DDC hardware brightness." : {
       "comment" : "53477 - Main display safe minimum brightness help."
     },
-    "When the OSD appears on a display that is not active, the app uses the selected OSD style even if that display has a Dynamic Island." : {
-      "comment" : "54320 - Warning under the automatic Dynamic Island preference for Top-corner or Top-center when Show OSD on is not Active display. Not active means the destination is not the window/desktop focus display, not that it is disconnected or powered off.",
-      "extractionState" : "manual"
-    },
     "When this is enabled, syncing won't affect displays in HDR mode or XDR displays set to a reference Apple Display Preset." : {
       "comment" : "53477 - Skip HDR/reference XDR synchronization setting help."
     },
@@ -10900,30 +10337,6 @@
     },
     "When Volume Reaches 0⁠%…" : {
       "comment" : "53627 - Audio settings section for choosing what happens when the volume reaches zero percent, including whether to use the configured mute and unmute methods."
-    },
-    "White-point target is invalid." : {
-      "comment" : "54069 - Retouch generation error for an invalid target white point, the chromaticity intended to represent white.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "White-point target is invalid."
-          }
-        }
-      }
-    },
-    "White-point target is outside the supported range." : {
-      "comment" : "54069 - Retouch generation error when the target white point lies outside the supported chromaticity range.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "White-point target is outside the supported range."
-          }
-        }
-      }
     },
     "Width" : {
       "comment" : "53477 - Width field."

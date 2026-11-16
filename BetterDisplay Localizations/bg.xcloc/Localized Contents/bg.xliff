@@ -2,22 +2,22 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/InfoPlist.xcstrings" source-language="en" target-language="bg" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5035i"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" xml:space="preserve">
-        <source>BetterDisplay OSD</source>
+        <source>BetterDisplayWidget</source>
         <note>Bundle display name</note>
       </trans-unit>
       <trans-unit id="CFBundleName" xml:space="preserve">
-        <source>BetterDisplayOSD</source>
+        <source>BetterDisplayWidget</source>
         <note>Bundle name</note>
       </trans-unit>
     </body>
   </file>
   <file original="App/Localizable/InfoPlist.xcstrings" source-language="en" target-language="bg" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5035i"/>
     </header>
     <body>
       <trans-unit id="CFBundleDisplayName" translate="no" xml:space="preserve">
@@ -51,7 +51,7 @@
   </file>
   <file original="App/Localizable/InternetAccessPolicy.xcstrings" source-language="en" target-language="bg" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5035i"/>
     </header>
     <body>
       <trans-unit id="Error Reporting" xml:space="preserve">
@@ -98,7 +98,7 @@
   </file>
   <file original="App/Localizable/Localizable.xcstrings" source-language="en" target-language="bg" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5020n"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="27.3" build-num="27C5035i"/>
     </header>
     <body>
       <trans-unit id="" translate="no" xml:space="preserve">
@@ -965,11 +965,6 @@ Check your network connection and firewall settings.</source>
         <target state="translated">Допълнителни настройки…</target>
         <note>53477 - Action opening additional settings.</note>
       </trans-unit>
-      <trans-unit id="Additional adjustments currently require Matrix mode." xml:space="preserve">
-        <source>Additional adjustments currently require Matrix mode.</source>
-        <target state="translated">Допълнителните корекции в момента изискват матричен режим.</target>
-        <note>54069 - Retouch generation error: additional tone and color-balance adjustments are currently supported only by the matrix-based processing mode.</note>
-      </trans-unit>
       <trans-unit id="Additional delay after wake to reapply DDC settings" xml:space="preserve">
         <source>Additional delay after wake to reapply DDC settings</source>
         <target state="translated">Допълнително забавяне след събуждане преди повторно прилагане на DDC настройките</target>
@@ -1446,11 +1441,6 @@ Most displays do not allow EDID write for security reasons, some displays requir
         <source>An active layout protection main status configured under Groups takes precedence.</source>
         <target state="translated">Активната настройка за основен дисплей в защитата на подредбата под „Групи“ има предимство.</target>
         <note>53689 - Main display setting help: active group layout protection can override the selected main display.</note>
-      </trans-unit>
-      <trans-unit id="An adjustment is outside the supported range." xml:space="preserve">
-        <source>An adjustment is outside the supported range.</source>
-        <target state="translated">Корекция е извън поддържания диапазон.</target>
-        <note>54069 - Retouch validation error when an adjustment parameter is outside its supported numeric range.</note>
       </trans-unit>
       <trans-unit id="An alternate EDID identity is in effect - system configuration changes will be tied to this identity!" xml:space="preserve">
         <source>An alternate EDID identity is in effect - system configuration changes will be tied to this identity!</source>
@@ -2617,16 +2607,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Отказ от сдвояване</target>
         <note>53477 - Cancel device pairing action.</note>
       </trans-unit>
-      <trans-unit id="Cannot fingerprint the profile." xml:space="preserve">
-        <source>Cannot fingerprint the profile.</source>
-        <target state="translated">Не може да се изчисли отпечатъкът на профила.</target>
-        <note>54069 - Retouch metadata error when the cryptographic fingerprint used to verify a profile cannot be calculated; fingerprint is a data hash, not a biometric identifier.</note>
-      </trans-unit>
-      <trans-unit id="Cannot read profile tag." xml:space="preserve">
-        <source>Cannot read profile tag.</source>
-        <target state="translated">Не може да се прочете тагът на профила.</target>
-        <note>54069 - Retouch metadata error when an ICC profile tag cannot be read; a tag is a named data block in the profile.</note>
-      </trans-unit>
       <trans-unit id="Capabilities" xml:space="preserve">
         <source>Capabilities</source>
         <target state="translated">Възможности</target>
@@ -2937,6 +2917,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Любими цветови профили</target>
         <note>53885 - Heading in the custom keyboard shortcuts sheet above five Pro shortcuts that apply the color-profile favorite slot saved for the display under the pointer.</note>
       </trans-unit>
+      <trans-unit id="Color Profile compatibility is more limited for built-in displays." xml:space="preserve">
+        <source>Color Profile compatibility is more limited for built-in displays.</source>
+        <target state="translated">Съвместимостта с цветови профили е по-ограничена при вградените дисплеи.</target>
+        <note>54364 - Brief compatibility note below the built-in display Color Profile menu option. Built-in Apple displays using Presets have more limited color profile compatibility than external Apple displays.</note>
+      </trans-unit>
       <trans-unit id="Color Table" xml:space="preserve">
         <source>Color Table</source>
         <target state="translated">Цветова таблица</target>
@@ -3011,31 +2996,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>ColorSync could not apply the color profile.</source>
         <target state="translated">ColorSync не успя да приложи цветовия профил.</target>
         <note>54069 - Live preview or save error when macOS ColorSync cannot apply the retouched color profile to the display.</note>
-      </trans-unit>
-      <trans-unit id="ColorSync could not create the LUT conversion." xml:space="preserve">
-        <source>ColorSync could not create the LUT conversion.</source>
-        <target state="translated">ColorSync не успя да създаде LUT преобразуването.</target>
-        <note>54123 - Error when ColorSync cannot construct or sample the color conversion needed to bake a LUT into a display profile.</note>
-      </trans-unit>
-      <trans-unit id="ColorSync could not restore the original color profile." xml:space="preserve">
-        <source>ColorSync could not restore the original color profile.</source>
-        <target state="translated">ColorSync не успя да възстанови оригиналния цветови профил.</target>
-        <note>54069 - Retouch editor error when macOS ColorSync cannot restore the previously active color profile.</note>
-      </trans-unit>
-      <trans-unit id="ColorSync could not sample the original tone curves." xml:space="preserve">
-        <source>ColorSync could not sample the original tone curves.</source>
-        <target state="translated">ColorSync не успя да дискретизира оригиналните тонални криви.</target>
-        <note>54069 - Retouch generation error when ColorSync cannot sample the original tone-response curves; sampling evaluates the curves at a series of input values.</note>
-      </trans-unit>
-      <trans-unit id="ColorSync refused the profile assignment." xml:space="preserve">
-        <source>ColorSync refused the profile assignment.</source>
-        <target state="translated">ColorSync отказа задаването на профила.</target>
-        <note>54069 - Error when macOS ColorSync refuses to assign a profile to a display.</note>
-      </trans-unit>
-      <trans-unit id="ColorSync rejected the generated profile." xml:space="preserve">
-        <source>ColorSync rejected the generated profile.</source>
-        <target state="translated">ColorSync отхвърли генерирания профил.</target>
-        <note>54069 - Retouch generation error when macOS ColorSync rejects the newly generated ICC profile.</note>
       </trans-unit>
       <trans-unit id="Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control." xml:space="preserve">
         <source>Combine hardware brightness control (if available), software dimming and XDR/HDR upscaling into one unified brightness control.</source>
@@ -3602,30 +3562,15 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Неуспешно свързване с помощната услуга с повишени права.</target>
         <note>53477 - Error shown when the app cannot establish its XPC connection to the privileged helper. ‘Privileged helper’ is BetterDisplay’s background system service for administrator-level operations.</note>
       </trans-unit>
-      <trans-unit id="Could not copy the original profile." xml:space="preserve">
-        <source>Could not copy the original profile.</source>
-        <target state="translated">Оригиналният профил не можа да бъде копиран.</target>
-        <note>54069 - Retouch generation error when the original ICC profile cannot be copied for modification.</note>
+      <trans-unit id="Could not create a color profile with these settings." xml:space="preserve">
+        <source>Could not create a color profile with these settings.</source>
+        <target state="translated">Неуспешно създаване на цветови профил с тези настройки.</target>
+        <note>54381 - Generic generation error for ICC retouch preview/save or LUT-profile creation. Detailed source, format, and adjustment errors are logged rather than exposed in this message.</note>
       </trans-unit>
       <trans-unit id="Could not create an administrator authorization session." xml:space="preserve">
         <source>Could not create an administrator authorization session.</source>
         <target state="translated">Не може да се създаде сесия за администраторско упълномощаване.</target>
         <note>53477 - Error shown when macOS cannot create the Authorization Services session needed for an administrator-level operation.</note>
-      </trans-unit>
-      <trans-unit id="Could not create the linear profile used to sample tone curves." xml:space="preserve">
-        <source>Could not create the linear profile used to sample tone curves.</source>
-        <target state="translated">Не можа да се създаде линейният профил за дискретизиране на тонални криви.</target>
-        <note>54069 - Retouch generation error when the linear reference profile used to sample tone-response curves cannot be created.</note>
-      </trans-unit>
-      <trans-unit id="Could not read the LUT signal space." xml:space="preserve">
-        <source>Could not read the LUT signal space.</source>
-        <target state="translated">Неуспешно прочитане на сигналното пространство на LUT.</target>
-        <note>54123 - Error while loading the ICC description of the RGB encoding selected for an imported LUT.</note>
-      </trans-unit>
-      <trans-unit id="Could not read this display's default ColorSync profile." xml:space="preserve">
-        <source>Could not read this display's default ColorSync profile.</source>
-        <target state="translated">Не можа да се прочете ColorSync профилът по подразбиране на този дисплей.</target>
-        <note>54069 - Retouch source error when the display’s default macOS ColorSync profile cannot be read.</note>
       </trans-unit>
       <trans-unit id="Could not register the administrator authorization right (%d)." xml:space="preserve">
         <source>Could not register the administrator authorization right (%d).</source>
@@ -3637,10 +3582,10 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">Не може да се регистрира помощната услуга с повишени права.</target>
         <note>53477 - Error shown when BetterDisplay cannot register its privileged helper with macOS. ‘Privileged helper’ is the app’s background system service for administrator-level operations.</note>
       </trans-unit>
-      <trans-unit id="Could not serialize the generated profile." xml:space="preserve">
-        <source>Could not serialize the generated profile.</source>
-        <target state="translated">Генерираният профил не можа да бъде сериализиран.</target>
-        <note>54069 - Retouch generation error when the generated profile cannot be serialized into binary ICC data.</note>
+      <trans-unit id="Could not save the color profile." xml:space="preserve">
+        <source>Could not save the color profile.</source>
+        <target state="translated">Неуспешно запазване на цветовия профил.</target>
+        <note>54381 - Generic error when writing a generated ICC profile or a temporary preview profile fails, including saving LUT-created profiles. This is a file-save error, distinct from a ColorSync apply/assignment failure.</note>
       </trans-unit>
       <trans-unit id="Could not transfer the administrator authorization to the privileged helper." xml:space="preserve">
         <source>Could not transfer the administrator authorization to the privileged helper.</source>
@@ -6840,11 +6785,6 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <target state="translated">Име на I2C услугата</target>
         <note>53477 - Hardware I2C service identifier label.</note>
       </trans-unit>
-      <trans-unit id="ICC metadata is too large." xml:space="preserve">
-        <source>ICC metadata is too large.</source>
-        <target state="translated">ICC метаданните са твърде големи.</target>
-        <note>54069 - Retouch metadata error when encoded ICC metadata exceeds its allowed byte size.</note>
-      </trans-unit>
       <trans-unit id="IN START Service Menu" xml:space="preserve">
         <source>IN START Service Menu</source>
         <target state="translated">Сервизно меню IN START</target>
@@ -7059,11 +6999,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">В отделено състояние менюто на приложението плава над работния плот като прозорец от най-горно ниво. Можете да зададете непрозрачността, за да виждате през менюто (по-ниска стойност означава по-голяма прозрачност).</target>
         <note>53477 - Detached menu opacity help.</note>
       </trans-unit>
-      <trans-unit id="Incomplete retouch metadata." xml:space="preserve">
-        <source>Incomplete retouch metadata.</source>
-        <target state="translated">Непълни метаданни за ретуширане.</target>
-        <note>54069 - Retouch loading error when the embedded metadata lacks required retouch information.</note>
-      </trans-unit>
       <trans-unit id="Increase Apple Keyboard brightness" xml:space="preserve">
         <source>Increase Apple Keyboard brightness</source>
         <target state="translated">Увеличаване на яркостта на клавиатурата Apple</target>
@@ -7209,40 +7144,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Вътрешна предварителна версия</target>
         <note>53477 - Internal pre-release build channel.</note>
       </trans-unit>
-      <trans-unit id="Invalid ICC metadata offset." xml:space="preserve">
-        <source>Invalid ICC metadata offset.</source>
-        <target state="translated">Невалидно отместване на ICC метаданните.</target>
-        <note>54069 - ICC metadata parsing error for an invalid byte offset into the metadata data block.</note>
-      </trans-unit>
-      <trans-unit id="Invalid ICC metadata record table." xml:space="preserve">
-        <source>Invalid ICC metadata record table.</source>
-        <target state="translated">Невалидна таблица със записи на ICC метаданни.</target>
-        <note>54069 - ICC metadata parsing error for an invalid table of metadata records.</note>
-      </trans-unit>
-      <trans-unit id="Invalid ICC metadata text." xml:space="preserve">
-        <source>Invalid ICC metadata text.</source>
-        <target state="translated">Невалиден текст на ICC метаданни.</target>
-        <note>54069 - ICC metadata parsing error when a metadata string is not valid encoded text.</note>
-      </trans-unit>
-      <trans-unit id="Invalid LUT output samples." xml:space="preserve">
-        <source>Invalid LUT output samples.</source>
-        <target state="translated">Невалидни изходни семпли на LUT.</target>
-        <note>54123 - Error when resampling an imported LUT produces non-finite output RGB values that cannot be encoded in the generated ICC profile.</note>
-      </trans-unit>
-      <trans-unit id="Invalid display UUID." xml:space="preserve">
-        <source>Invalid display UUID.</source>
-        <target state="translated">Невалиден UUID на дисплея.</target>
-        <note>54069 - ColorSync profile assignment error when the display’s UUID identifier is invalid; keep UUID unchanged.</note>
-      </trans-unit>
       <trans-unit id="Invalid mode" xml:space="preserve">
         <source>Invalid mode</source>
         <target state="translated">Невалиден режим</target>
         <note>53477 - Invalid display mode status.</note>
-      </trans-unit>
-      <trans-unit id="Invalid or oversized profile." xml:space="preserve">
-        <source>Invalid or oversized profile.</source>
-        <target state="translated">Невалиден или твърде голям профил.</target>
-        <note>54069 - Retouch loading error when an ICC profile is invalid or exceeds the allowed size.</note>
       </trans-unit>
       <trans-unit id="Invalid resolution (skipped)" xml:space="preserve">
         <source>Invalid resolution (skipped)</source>
@@ -7253,16 +7158,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Invalid slider format. The default percentage format is used until this is corrected.</source>
         <target state="translated">Невалиден формат на плъзгача. До отстраняването на проблема се използва стандартният процентен формат.</target>
         <note>54136 - Control integration settings warning shown for an invalid slider value format. The slider displays its normal percentage until the user corrects the saved format.</note>
-      </trans-unit>
-      <trans-unit id="Invalid tone-curve exponent." xml:space="preserve">
-        <source>Invalid tone-curve exponent.</source>
-        <target state="translated">Невалиден степенен показател на тоналната крива.</target>
-        <note>54069 - Tone-curve parsing error for an invalid mathematical exponent in the curve definition.</note>
-      </trans-unit>
-      <trans-unit id="Invalid tone-curve samples." xml:space="preserve">
-        <source>Invalid tone-curve samples.</source>
-        <target state="translated">Невалидни отсчети на тоналната крива.</target>
-        <note>54069 - Retouch generation error for invalid numeric samples of a tone-response curve.</note>
       </trans-unit>
       <trans-unit id="Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f." xml:space="preserve">
         <source>Invalid value format. Actions are skipped until this is corrected. Use a floating-point format such as %.0f or %.2f.</source>
@@ -7412,16 +7307,6 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="LUT" translate="no" xml:space="preserve">
         <source>LUT</source>
         <note>54036 - Non-translatable LUT (lookup table) badge next to LUT-based or hybrid ICC color profiles in the Color Profile menu, including favorite rows.</note>
-      </trans-unit>
-      <trans-unit id="LUT conversion matrix exceeds the ICC fixed-point range." xml:space="preserve">
-        <source>LUT conversion matrix exceeds the ICC fixed-point range.</source>
-        <target state="translated">Матрицата за преобразуване на LUT надвишава ICC диапазона с фиксирана запетая.</target>
-        <note>54069 - Retouch generation error when the LUT conversion matrix cannot fit the ICC fixed-point numeric representation; preserve LUT and ICC.</note>
-      </trans-unit>
-      <trans-unit id="LUT-based profiles cannot be retouched." xml:space="preserve">
-        <source>LUT-based profiles cannot be retouched.</source>
-        <target state="translated">Профили, базирани на LUT, не могат да се ретушират.</target>
-        <note>54069 - Retouch source error: profiles based on lookup tables (LUTs) cannot be used as originals for this editor.</note>
       </trans-unit>
       <trans-unit id="Landscape - no rotation" xml:space="preserve">
         <source>Landscape - no rotation</source>
@@ -7898,11 +7783,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Допуск при изравняване</target>
         <note>53477 - UI scale matching tolerance setting.</note>
       </trans-unit>
-      <trans-unit id="Matrix exceeds ICC range." xml:space="preserve">
-        <source>Matrix exceeds ICC range.</source>
-        <target state="translated">Матрицата надвишава ICC диапазона.</target>
-        <note>54069 - Retouch generation error when a matrix coefficient exceeds the numeric range supported by ICC.</note>
-      </trans-unit>
       <trans-unit id="Max" xml:space="preserve">
         <source>Max</source>
         <target state="translated">Макс.</target>
@@ -8173,20 +8053,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Дублирането и предаването правят избора на желания дисплей нееднозначен. Изключете това, за да управлявате само източника. Груповата синхронизация може независимо да разпространява промените, а наслагванията в изображението на източника може да продължат да засягат целите.</target>
         <note>53983 - Help for including mirror and active stream targets in keyboard video adjustments. Source-only direct targeting does not suppress independent group synchronization or overlay effects already present in the mirrored or streamed source image.</note>
       </trans-unit>
-      <trans-unit id="Missing or duplicate ICC metadata name." xml:space="preserve">
-        <source>Missing or duplicate ICC metadata name.</source>
-        <target state="translated">Липсващо или дублирано име на ICC метаданни.</target>
-        <note>54069 - ICC metadata parsing error for a missing or duplicate metadata entry name.</note>
-      </trans-unit>
       <trans-unit id="Missing or duplicated identifier present - this will yield unexpected results!" xml:space="preserve">
         <source>Missing or duplicated identifier present - this will yield unexpected results!</source>
         <target state="translated">Има липсващ или дублиран идентификатор — това ще доведе до неочаквани резултати!</target>
         <note>53688 - Validation warning for missing or duplicate identifiers.</note>
-      </trans-unit>
-      <trans-unit id="Missing tone curve." xml:space="preserve">
-        <source>Missing tone curve.</source>
-        <target state="translated">Липсваща тонална крива.</target>
-        <note>54069 - Retouch generation error when a required tone-response curve is absent from the profile.</note>
       </trans-unit>
       <trans-unit id="Mixed" xml:space="preserve">
         <source>Mixed</source>
@@ -8427,11 +8297,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Native mode (1:1 mapping)</source>
         <target state="translated">Собствен режим (съответствие 1:1)</target>
         <note>53477 - Native pixel mapping mode.</note>
-      </trans-unit>
-      <trans-unit id="Nested retouch sources are not supported." xml:space="preserve">
-        <source>Nested retouch sources are not supported.</source>
-        <target state="translated">Вложени източници за ретуширане не се поддържат.</target>
-        <note>54069 - Retouch loading error: an embedded original cannot itself contain another retouch; nested means retouches embedded inside other retouches.</note>
       </trans-unit>
       <trans-unit id="Neutral" xml:space="preserve">
         <source>Neutral</source>
@@ -8888,11 +8753,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Оригинал</target>
         <note>53477 - Slider snap badge marking the original adjustment value; keep it compact, ideally 8-10 characters, abbreviating naturally if needed.</note>
       </trans-unit>
-      <trans-unit id="Original profile exceeds the 4 MiB embedding limit." xml:space="preserve">
-        <source>Original profile exceeds the 4 MiB embedding limit.</source>
-        <target state="translated">Оригиналният профил надвишава ограничението за вграждане от 4 MiB.</target>
-        <note>54069 - Retouch save error when the original profile exceeds the 4 MiB limit for embedding it in the generated profile; preserve the size and unit.</note>
-      </trans-unit>
       <trans-unit id="Other Apple display" xml:space="preserve">
         <source>Other Apple display</source>
         <target state="translated">Друг дисплей Apple</target>
@@ -9263,10 +9123,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Предварително зададено</target>
         <note>53477 - Predefined option label.</note>
       </trans-unit>
-      <trans-unit id="Prefer active display Dynamic Island" xml:space="preserve">
-        <source>Prefer active display Dynamic Island</source>
-        <target state="translated">Предпочитане на Dynamic Island на активния дисплей</target>
-        <note>54320 - Default-on preference for Top-corner, Top-center, Under the app menu icon, and Under the menu bar. It substitutes an expanded Live Activity only when the normal OSD destination is the active built-in Dynamic Island display in Full aspect ratio, without changing the normal display targeting.</note>
+      <trans-unit id="Prefer Dynamic Island OSD" xml:space="preserve">
+        <source>Prefer Dynamic Island OSD</source>
+        <target state="translated">Предпочитане на OSD в Dynamic Island</target>
+        <note>54419 - Default-on preference for eligible top/menu OSD placements on built-in displays with a Dynamic Island camera cutout. By default it draws an interactive capsule in that area; the separate Live Activity option selects system-managed feedback.</note>
       </trans-unit>
       <trans-unit id="Prefer hardware brightness control" xml:space="preserve">
         <source>Prefer hardware brightness control</source>
@@ -9427,11 +9287,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Profile Name:</source>
         <target state="translated">Име на профила:</target>
         <note>54123 - Label for the name of the ICC profile generated from an imported LUT, initially filled with the saved LUT name. Symbol generation is disabled to avoid a collision with the existing Profile name label.</note>
-      </trans-unit>
-      <trans-unit id="Profile exceeds the 32 MiB read limit." xml:space="preserve">
-        <source>Profile exceeds the 32 MiB read limit.</source>
-        <target state="translated">Профилът надвишава ограничението за четене от 32 MiB.</target>
-        <note>54069 - Retouch loading error when a profile exceeds the 32 MiB read limit; preserve the size and unit.</note>
       </trans-unit>
       <trans-unit id="Profile name" xml:space="preserve">
         <source>Profile name</source>
@@ -10013,11 +9868,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Премахването на тази активация засяга само тази инсталация. Другите активации могат да се премахнат, без да се засяга тази инсталация. Премахването на всички активации нулира всичко.</target>
         <note>53477 - License activation removal scope help.</note>
       </trans-unit>
-      <trans-unit id="Reopen the retouched profile to use its embedded original; nesting retouches is not supported." xml:space="preserve">
-        <source>Reopen the retouched profile to use its embedded original; nesting retouches is not supported.</source>
-        <target state="translated">Отворете отново ретуширания профил, за да използвате вградения оригинал; вложени ретуширания не се поддържат.</target>
-        <note>54069 - Retouch source error directing the user to reopen the edited profile so its embedded original can be used, instead of nesting another retouch.</note>
-      </trans-unit>
       <trans-unit id="Reported actual refresh rate:" xml:space="preserve">
         <source>Reported actual refresh rate:</source>
         <target state="translated">Отчетена действителна честота на опресняване:</target>
@@ -10308,16 +10158,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Подновяване на потока при свързване</target>
         <note>53484 - Display stream menu toggle that resumes streaming when the display reconnects. Keep the label short enough for the app menu.</note>
       </trans-unit>
-      <trans-unit id="Retouch effective settings do not match the recipe." xml:space="preserve">
-        <source>Retouch effective settings do not match the recipe.</source>
-        <target state="translated">Ефективните настройки за ретуширане не съответстват на запазената рецепта.</target>
-        <note>54069 - Retouch loading error when the effective adjustments do not match the saved recipe; recipe means the stored processing parameters.</note>
-      </trans-unit>
-      <trans-unit id="Retouch source or output fingerprint does not match." xml:space="preserve">
-        <source>Retouch source or output fingerprint does not match.</source>
-        <target state="translated">Отпечатъкът на източника или резултата от ретуширането не съвпада.</target>
-        <note>54069 - Retouch loading error when a source or output cryptographic hash differs from the saved fingerprint; this verifies profile data integrity.</note>
-      </trans-unit>
       <trans-unit id="Retouched %@" xml:space="preserve">
         <source>Retouched %@</source>
         <target state="translated">Ретуширан %@</target>
@@ -10327,11 +10167,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Retouched color profiles:</source>
         <target state="translated">Ретуширани цветови профили:</target>
         <note>54069 - Section containing color profiles with embedded BetterDisplay retouch metadata and their original source profile.</note>
-      </trans-unit>
-      <trans-unit id="Retouching requires a valid matrix-based RGB display profile with an XYZ connection space." xml:space="preserve">
-        <source>Retouching requires a valid matrix-based RGB display profile with an XYZ connection space.</source>
-        <target state="translated">Ретуширането изисква валиден матричен RGB профил на дисплей със свързващо пространство XYZ.</target>
-        <note>54069 - Retouch source requirement: a valid matrix-based RGB display profile using XYZ as its profile connection space.</note>
       </trans-unit>
       <trans-unit id="Retouch…" xml:space="preserve">
         <source>Retouch…</source>
@@ -10692,11 +10527,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Select a disconnected display</source>
         <target state="translated">Изберете несвързан дисплей</target>
         <note>53477 - Disconnected display selection prompt.</note>
-      </trans-unit>
-      <trans-unit id="Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline." xml:space="preserve">
-        <source>Select a matrix-based original profile. Existing LUT/hybrid profiles cannot be used as the baseline.</source>
-        <target state="translated">Изберете оригинален матричен профил. Съществуващите LUT/хибридни профили не могат да се използват като основа.</target>
-        <note>54069 - Retouch source requirement: use a matrix-based original rather than a LUT or hybrid profile; baseline means the original profile to modify.</note>
       </trans-unit>
       <trans-unit id="Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`." xml:space="preserve">
         <source>Select an icon from Apple’s SF Symbols library, designed for seamless integration with the San Francisco system font across Apple platforms. For example, try: `face.smiling`.</source>
@@ -11183,6 +11013,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Показване на всички раздели</target>
         <note>53477 - Standard window tab overview action.</note>
       </trans-unit>
+      <trans-unit id="Show Color Profile menu for built-in displays using Presets" xml:space="preserve">
+        <source>Show Color Profile menu for built-in displays using Presets</source>
+        <target state="translated">Показване на менюто Цветови профил за вградени дисплеи с предварителни настройки</target>
+        <note>54364 - Default-off Advanced Display Settings option showing the Color Profile menu for built-in Apple displays using display Presets. Presets manage display color reproduction and are distinct from color profiles.</note>
+      </trans-unit>
+      <trans-unit id="Show Color Profile menu for external Apple displays using Presets" xml:space="preserve">
+        <source>Show Color Profile menu for external Apple displays using Presets</source>
+        <target state="translated">Показване на менюто Цветови профил за външни дисплеи Apple с предварителни настройки</target>
+        <note>54364 - Default-on Advanced Display Settings option showing the Color Profile menu for external Apple displays using display Presets, such as Studio Display and Pro Display XDR. This preference is independent of the built-in display option.</note>
+      </trans-unit>
       <trans-unit id="Show Console" xml:space="preserve">
         <source>Show Console</source>
         <target state="translated">Показване на конзолата</target>
@@ -11287,11 +11127,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Show adaptive slider scales where appropriate</source>
         <target state="translated">Показване на адаптивни скали на плъзгачите, където е подходящо</target>
         <note>53943 - Additional Menu Options preference for automatic gray reference dots on numeric sliders, distinct from accent-colored snap markers. Scale means graduated value intervals, not interface size or resolution scaling.</note>
-      </trans-unit>
-      <trans-unit id="Show an expanded Live Activity in the Dynamic Island when the OSD would appear on the active display (the screen with the window or desktop in focus). The display must have a Dynamic Island and use the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
-        <source>Show an expanded Live Activity in the Dynamic Island when the OSD would appear on the active display (the screen with the window or desktop in focus). The display must have a Dynamic Island and use the Full aspect ratio. Otherwise, use the selected OSD style.</source>
-        <target state="translated">Показва разгъната активност на живо в Dynamic Island, когато OSD би се появил на активния дисплей (екрана с фокусиран прозорец или работен плот). Дисплеят трябва да има Dynamic Island и да използва съотношението „Пълен“. В противен случай се използва избраният стил на OSD.</target>
-        <note>54320 - Help for replacing eligible OSD feedback with an expanded Live Activity only on the focused built-in Dynamic Island display. Full is the exact uncropped aspect-ratio option, including scaled Full modes, not a full-screen app or only the native pixel resolution.</note>
       </trans-unit>
       <trans-unit id="Show and Bring to Front" xml:space="preserve">
         <source>Show and Bring to Front</source>
@@ -11472,6 +11307,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Show subtle gray dots at useful intervals on numeric sliders. The scale adapts to the range and available space, using the default or neutral value as a reference point.</source>
         <target state="translated">Показва ненатрапчиви сиви точки през подходящи интервали върху числовите плъзгачи. Скалата се адаптира към диапазона и наличното място, като използва стойността по подразбиране или неутралната стойност за отправна точка.</target>
         <note>53943 - Help for adaptive slider scales: gray dots subdivide numeric ranges and adapt to track width. Default or neutral is the unadjusted reference value, which need not be the midpoint; the dots do not add snapping.</note>
+      </trans-unit>
+      <trans-unit id="Show the OSD as a Live Activity so macOS can avoid overlap with other activities already in the Dynamic Island. This adds a small delay, disables slider adjustments, and shows a minimal activity on other displays. If the destination is not the active display (the screen with the window or desktop in focus), the selected OSD style is used." xml:space="preserve">
+        <source>Show the OSD as a Live Activity so macOS can avoid overlap with other activities already in the Dynamic Island. This adds a small delay, disables slider adjustments, and shows a minimal activity on other displays. If the destination is not the active display (the screen with the window or desktop in focus), the selected OSD style is used.</source>
+        <target state="translated">Показва OSD като активност на живо, за да може macOS да избегне припокриване с други активности, които вече са в Dynamic Island. Това добавя малко забавяне, изключва регулирането с плъзгачи и показва минимален изглед на активността на другите дисплеи. Ако целта не е активният дисплей (екранът с фокусирания прозорец или работен плот), се използва избраният стил на OSD.</target>
+        <note>54419 - Help for the system-managed Live Activity option, which lets macOS coordinate space with other activities at the cost of a small delay and loss of slider interaction. Active means window/desktop focus; minimal is the system’s small presentation on other screens, not the Mini bar-length choice.</note>
+      </trans-unit>
+      <trans-unit id="Show the OSD in the Dynamic Island area when the destination display has a Dynamic Island and uses the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
+        <source>Show the OSD in the Dynamic Island area when the destination display has a Dynamic Island and uses the Full aspect ratio. Otherwise, use the selected OSD style.</source>
+        <target state="translated">Показва OSD в областта на Dynamic Island, когато целевият дисплей има Dynamic Island и използва съотношението „Пълен“. В противен случай се използва избраният стил на OSD.</target>
+        <note>54419 - Help for drawing OSD in the destination display’s camera-cutout area; fallback retains the selected OSD style. Full is the exact uncropped aspect-ratio label, including scaled Full resolutions, not a full-screen app or a requirement to use native pixel resolution.</note>
       </trans-unit>
       <trans-unit id="Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close." xml:space="preserve">
         <source>Show the current display’s controls and More Options when opening the menu. When automatic tidying is enabled, other displays’ More Options close.</source>
@@ -11717,6 +11562,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>Some Apple displays use Presets to manage display color reproduction, gamma, and white point settings. Color Profiles can still be used to influence rendering to a limited extent; however, Presets work best when the factory default Color Profile is configured for the Apple display.</source>
         <target state="translated">Някои дисплеи Apple използват предварителни настройки за управление на цветовъзпроизвеждането, гамата и бялата точка. Цветовите профили все още могат да влияят на изобразяването в ограничена степен, но предварителните настройки работят най-добре с фабричния цветови профил по подразбиране за дисплея Apple.</target>
         <note>53477 - Apple display preset and color profile interaction help.</note>
+      </trans-unit>
+      <trans-unit id="Some activations could not be removed." xml:space="preserve">
+        <source>Some activations could not be removed.</source>
+        <target state="translated">Някои активации не можаха да бъдат премахнати.</target>
+        <note>54381 - Pro settings alert after Remove All Activations or Remove Other Activation(s) if the server cannot list records or at least one removal fails. Activations are license records for installations; this can describe a partial failure or no removals at all.</note>
       </trans-unit>
       <trans-unit id="Some adjustments may clip HDR content!" xml:space="preserve">
         <source>Some adjustments may clip HDR content!</source>
@@ -12491,11 +12341,6 @@ This operation does not reset the display itself.</source>
         <target state="translated">Цветовият профил %@ е създаден. Можете да го изберете от менюто „Цветови профил“.</target>
         <note>54123 - Success explanation after generating an ICC profile from a LUT. The placeholder is the final profile name, including a numeric suffix if needed.</note>
       </trans-unit>
-      <trans-unit id="The color profile is too large." xml:space="preserve">
-        <source>The color profile is too large.</source>
-        <target state="translated">Цветовият профил е твърде голям.</target>
-        <note>54069 - Retouch editor error when the selected color profile exceeds the allowed size.</note>
-      </trans-unit>
       <trans-unit id="The custom filter no longer exists." xml:space="preserve">
         <source>The custom filter no longer exists.</source>
         <target state="translated">Персонализираният филтър вече не съществува.</target>
@@ -12705,21 +12550,6 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Помощната услуга с повишени права трябва да се обнови.</target>
         <note>53477 - Error shown when the installed privileged helper version does not match the app and must be re-registered. ‘Refreshed’ means replacing or updating the helper registration, not refreshing the user interface.</note>
       </trans-unit>
-      <trans-unit id="The profile file cannot be replaced." xml:space="preserve">
-        <source>The profile file cannot be replaced.</source>
-        <target state="translated">Файлът на профила не може да бъде заменен.</target>
-        <note>54069 - Retouch save error when the existing profile file cannot safely be replaced.</note>
-      </trans-unit>
-      <trans-unit id="The profile is missing standard RGB matrix or tone-curve tags." xml:space="preserve">
-        <source>The profile is missing standard RGB matrix or tone-curve tags.</source>
-        <target state="translated">В профила липсват стандартни тагове за RGB матрица или тонални криви.</target>
-        <note>54069 - Retouch source error when standard ICC tags for the RGB matrix or tone-response curves are missing; tags are named profile data blocks.</note>
-      </trans-unit>
-      <trans-unit id="The profile's RGB matrix is degenerate or has unsupported luminance weights." xml:space="preserve">
-        <source>The profile's RGB matrix is degenerate or has unsupported luminance weights.</source>
-        <target state="translated">RGB матрицата на профила е изродена или има неподдържани тегла за яркост.</target>
-        <note>54069 - Retouch source error for a mathematically degenerate RGB matrix or unsupported luminance weights, which describe each channel’s contribution to luminance.</note>
-      </trans-unit>
       <trans-unit id="The protection is not in effect unless all participating displays are connected." xml:space="preserve">
         <source>The protection is not in effect unless all participating displays are connected.</source>
         <target state="translated">Защитата не действа, докато не бъдат свързани всички участващи дисплеи.</target>
@@ -12729,11 +12559,6 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The protection is not in effect unless relative position is defined.</source>
         <target state="translated">Защитата не действа, докато не бъде зададена относителна позиция.</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
-      </trans-unit>
-      <trans-unit id="The requested matrix is singular." xml:space="preserve">
-        <source>The requested matrix is singular.</source>
-        <target state="translated">Заявената матрица е сингулярна.</target>
-        <note>54069 - Retouch generation error for a singular matrix, meaning a mathematical matrix that cannot be inverted.</note>
       </trans-unit>
       <trans-unit id="The selected display is no longer connected." xml:space="preserve">
         <source>The selected display is no longer connected.</source>
@@ -12880,10 +12705,10 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">Външен дисплей от друг производител</target>
         <note>53477 - Non-Apple external display type.</note>
       </trans-unit>
-      <trans-unit id="This Apple display uses Presets. To preview or apply a color profile, enable Unlock Color Profile management for Apple displays under Settings &gt; Displays &gt; Overview &gt; Advanced Display Settings." xml:space="preserve">
-        <source>This Apple display uses Presets. To preview or apply a color profile, enable Unlock Color Profile management for Apple displays under Settings &gt; Displays &gt; Overview &gt; Advanced Display Settings.</source>
-        <target state="translated">Този дисплей Apple използва предварителни настройки. За да прегледате или приложите цветови профил, включете „Отключване на управлението на цветови профили за дисплеи Apple“ в Настройки &gt; Дисплеи &gt; Общ преглед &gt; Разширени настройки на дисплея.</target>
-        <note>54123 - Notice when Color Profile management is locked on a Preset-based Apple display. Unlock Color Profile management for Apple displays is the exact existing setting name.</note>
+      <trans-unit id="This Apple display uses Presets. To preview or apply a color profile, enable %@ under Settings &gt; Displays &gt; Overview &gt; Advanced Display Settings." xml:space="preserve">
+        <source>This Apple display uses Presets. To preview or apply a color profile, enable %@ under Settings &gt; Displays &gt; Overview &gt; Advanced Display Settings.</source>
+        <target state="translated">Този дисплей Apple използва предварителни настройки. За да прегледате или приложите цветови профил, включете „%@“ в Настройки &gt; Дисплеи &gt; Общ преглед &gt; Разширени настройки на дисплея.</target>
+        <note>54364 - Notice when the selected Preset-based Apple display has its Color Profile menu disabled. %@ is the localized setting name for built-in or external Apple displays, followed by the Settings path.</note>
       </trans-unit>
       <trans-unit id="This LUT is enabled for %lld display or stream configurations. Deleting it will disable those assignments as well.|==|plural.one" xml:space="preserve">
         <source>This LUT is enabled for %lld display or stream configurations. Deleting it will disable those assignments as well.</source>
@@ -12924,6 +12749,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>This can be a result of disabled DDC/CI support (check the display's OSD), display firmware limitations or connection issues. Many TVs and TV-derived smart monitors do not support DDC. If the issue cannot be resolved either by changing display settings or fixing cable issues, you should disable DDC support.</source>
         <target state="translated">Причината може да е изключена DDC/CI поддръжка (проверете OSD на дисплея), ограничения на фърмуера или проблеми с връзката. Много телевизори и смарт монитори, базирани на телевизори, не поддържат DDC. Ако проблемът не може да се реши с настройки на дисплея или смяна на кабела, изключете DDC поддръжката.</target>
         <note>53477 - DDC unsupported detection troubleshooting help.</note>
+      </trans-unit>
+      <trans-unit id="This color profile cannot be opened for retouching." xml:space="preserve">
+        <source>This color profile cannot be opened for retouching.</source>
+        <target state="translated">Този цветови профил не може да се отвори за корекции.</target>
+        <note>54381 - Generic error when loading a selected ICC color profile into the retouch editor, including recovering its embedded source and adjustment recipe. Retouching means editing the profile’s color adjustments, not opening a file for viewing.</note>
       </trans-unit>
       <trans-unit id="This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the macOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data." xml:space="preserve">
         <source>This configures how the data associated with the currently configured display is matched to a detected display during the configuration/detection process. Changing this setting might cause a display to be recognized as previously unconnected and disassociate existing saved display configuration data. System UUID match uses the macOS default identification. When set to use basic identifiers, the app identifies the display by its vendor/model IDs and serial number. With extended it also uses product name, alphanumeric serial number, and production date. With port and location the app also considers hardware connectivity data.</source>
@@ -13085,11 +12915,6 @@ Are you sure you want to continue?</source>
         <target state="translated">Предотвратява кратки колебания в яркостта след показване на HDR съдържание. Задържането на вградения дисплей в EDR режим за директно управление на яркостта няма недостатъци, но тази настройка може да принуди и други външни дисплеи Apple да преминат в EDR режим.</target>
         <note>53477 - Keep display in EDR mode setting help.</note>
       </trans-unit>
-      <trans-unit id="This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered." xml:space="preserve">
-        <source>This profile has no retouch metadata. The original profile and adjustment settings cannot be recovered.</source>
-        <target state="translated">Този профил няма метаданни за ретуширане. Оригиналният профил и настройките за корекция не могат да бъдат възстановени.</target>
-        <note>54069 - Retouch loading error when embedded metadata is absent, preventing recovery of the original ICC profile and adjustment settings.</note>
-      </trans-unit>
       <trans-unit id="This provides a cleaner look when sliders are not in active use." xml:space="preserve">
         <source>This provides a cleaner look when sliders are not in active use.</source>
         <target state="translated">Осигурява по-изчистен изглед, когато плъзгачите не се използват активно.</target>
@@ -13113,11 +12938,6 @@ Please note that previously stored custom display configurations won't be remove
 
 Запазените по-рано персонализирани конфигурации на дисплеи няма да бъдат премахнати от системата!</target>
         <note>53477 - Reset app settings confirmation.</note>
-      </trans-unit>
-      <trans-unit id="This retouch uses an unsupported metadata or algorithm version." xml:space="preserve">
-        <source>This retouch uses an unsupported metadata or algorithm version.</source>
-        <target state="translated">Това ретуширане използва неподдържана версия на метаданните или алгоритъма.</target>
-        <note>54069 - Retouch loading error when the embedded metadata format or processing algorithm version is unsupported.</note>
       </trans-unit>
       <trans-unit id="This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings." xml:space="preserve">
         <source>This selects native macOS volume and mute as the hardware control method for the associated audio device. Unsupported native controls remain unavailable instead of falling back to another hardware controller. Software Audio chooses the main volume and mute controls using its hardware priority preference or Combined Volume Control settings.</source>
@@ -13418,25 +13238,10 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Тонално усилване (Червено)</target>
         <note>54069 - Red channel endpoint-preserving tone gain in the Color Profile retouch editor; 100% leaves the channel unchanged.</note>
       </trans-unit>
-      <trans-unit id="Tone adjustment is not monotonic." xml:space="preserve">
-        <source>Tone adjustment is not monotonic.</source>
-        <target state="translated">Тоналната корекция не е монотонна.</target>
-        <note>54069 - Retouch generation error when the tone curve is not monotonic: its output decreases as its input increases.</note>
-      </trans-unit>
-      <trans-unit id="Tone adjustment produced an invalid value." xml:space="preserve">
-        <source>Tone adjustment produced an invalid value.</source>
-        <target state="translated">Тоналната корекция създаде невалидна стойност.</target>
-        <note>54069 - Retouch generation error when a tone-curve adjustment produces an invalid numeric value.</note>
-      </trans-unit>
       <trans-unit id="Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app." xml:space="preserve">
         <source>Tone and color balance adjustments preserve black and white endpoints. HDR behavior depends on the display and app.</source>
         <target state="translated">Корекциите на тона и цветовия баланс запазват черната и бялата крайна точка. Поведението на HDR зависи от дисплея и приложението.</target>
         <note>54069 - Explanation beneath the Color Profile retouch sliders; these tone-curve effects preserve endpoints, with display- and app-dependent HDR behavior.</note>
-      </trans-unit>
-      <trans-unit id="Too many metadata entries." xml:space="preserve">
-        <source>Too many metadata entries.</source>
-        <target state="translated">Твърде много записи на метаданни.</target>
-        <note>54069 - ICC metadata encoding error when there are more metadata entries than allowed.</note>
       </trans-unit>
       <trans-unit id="Tools" xml:space="preserve">
         <source>Tools</source>
@@ -13557,16 +13362,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>True Tone turned off by HDR toggle</source>
         <target state="translated">True Tone е изключен от превключвателя за HDR</target>
         <note>53477 - True Tone disabled notification.</note>
-      </trans-unit>
-      <trans-unit id="Truncated sampled curve." xml:space="preserve">
-        <source>Truncated sampled curve.</source>
-        <target state="translated">Отрязана дискретизирана крива.</target>
-        <note>54069 - Tone-curve parsing error when a sampled curve’s stored data ends before all declared samples are present.</note>
-      </trans-unit>
-      <trans-unit id="Truncated tone curve." xml:space="preserve">
-        <source>Truncated tone curve.</source>
-        <target state="translated">Отрязана тонална крива.</target>
-        <note>54069 - Tone-curve parsing error when the stored curve data is truncated or incomplete.</note>
       </trans-unit>
       <trans-unit id="Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled." xml:space="preserve">
         <source>Try the latest features by enrolling as a pre-release tester. If you are already running a pre-release version, you'll receive pre-release updates until the next stable release even if this option is disabled.</source>
@@ -13878,11 +13673,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Отключване на разширените опции (телевизор)</target>
         <note>53689 - Samsung service menu action to unlock advanced options for televisions.</note>
       </trans-unit>
-      <trans-unit id="Unlock Color Profile management for Apple displays" xml:space="preserve">
-        <source>Unlock Color Profile management for Apple displays</source>
-        <target state="translated">Отключване на управлението на цветови профили за дисплеи Apple</target>
-        <note>53477 - Enable normally restricted Apple display color profile controls.</note>
-      </trans-unit>
       <trans-unit id="Unlock EDID write - I understand the risks involved" xml:space="preserve">
         <source>Unlock EDID write - I understand the risks involved</source>
         <target state="translated">Отключване на записа на EDID — разбирам рисковете</target>
@@ -13943,11 +13733,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">Не се поддържа</target>
         <note>53477 - Unsupported capability state.</note>
       </trans-unit>
-      <trans-unit id="Unsupported LUT adjustment recipe." xml:space="preserve">
-        <source>Unsupported LUT adjustment recipe.</source>
-        <target state="translated">Неподдържана рецепта за LUT корекция.</target>
-        <note>54069 - Retouch loading error for unsupported LUT adjustment parameters; recipe means the stored processing parameters.</note>
-      </trans-unit>
       <trans-unit id="Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session." xml:space="preserve">
         <source>Unsupported audio format. Check the output in Audio MIDI Setup, then restart the audio session.</source>
         <target state="translated">Неподдържан аудиоформат. Проверете изхода в Audio MIDI Setup, след което рестартирайте аудиосесията.</target>
@@ -13957,21 +13742,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Unsupported by the display</source>
         <target state="translated">Не се поддържа от дисплея</target>
         <note>53477 - Unsupported display capability state.</note>
-      </trans-unit>
-      <trans-unit id="Unsupported or oversized ICC metadata dictionary." xml:space="preserve">
-        <source>Unsupported or oversized ICC metadata dictionary.</source>
-        <target state="translated">Неподдържан или твърде голям речник на ICC метаданни.</target>
-        <note>54069 - ICC metadata parsing error for an unsupported dictionary format or excessive size; dictionary means a collection of named metadata entries.</note>
-      </trans-unit>
-      <trans-unit id="Unsupported parametric curve." xml:space="preserve">
-        <source>Unsupported parametric curve.</source>
-        <target state="translated">Неподдържана параметрична крива.</target>
-        <note>54069 - Tone-curve parsing error for an unsupported parametric curve function or parameter layout.</note>
-      </trans-unit>
-      <trans-unit id="Unsupported tone-curve type." xml:space="preserve">
-        <source>Unsupported tone-curve type.</source>
-        <target state="translated">Неподдържан тип тонална крива.</target>
-        <note>54069 - Tone-curve parsing error for an unsupported ICC curve data type.</note>
       </trans-unit>
       <trans-unit id="Up" xml:space="preserve">
         <source>Up</source>
@@ -14057,6 +13827,11 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>Use Light Appearance</source>
         <target state="translated">Използване на светъл облик</target>
         <note>53983 - OSD appearance picker option that forces a light OSD independently of the system appearance, when adaptive background is disabled.</note>
+      </trans-unit>
+      <trans-unit id="Use Live Activity for Dynamic Island OSD" xml:space="preserve">
+        <source>Use Live Activity for Dynamic Island OSD</source>
+        <target state="translated">Използване на активност на живо за OSD в Dynamic Island</target>
+        <note>54419 - Default-off child of Prefer Dynamic Island OSD, selecting a read-only macOS Live Activity instead of the interactive app-drawn capsule. This variant also requires the destination to be the window/desktop focus display.</note>
       </trans-unit>
       <trans-unit id="Use Metal for image adjustments" xml:space="preserve">
         <source>Use Metal for image adjustments</source>
@@ -14613,11 +14388,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">При отваряне на менюто на приложението поставете най-отгоре дисплея, на който то се отваря. Отделените менюта и вече отворено меню, преместено на друг дисплей, не се засягат.</target>
         <note>53983 - Explanation of the current-display ordering toggle. The opening screen gets temporary priority in the menu list; a detached menu or movement of an already visible menu does not select a new priority display.</note>
       </trans-unit>
-      <trans-unit id="When the OSD appears on a display that is not active, the app uses the selected OSD style even if that display has a Dynamic Island." xml:space="preserve">
-        <source>When the OSD appears on a display that is not active, the app uses the selected OSD style even if that display has a Dynamic Island.</source>
-        <target state="translated">Когато OSD се показва на дисплей, различен от активния, приложението използва избрания стил на OSD, дори този дисплей да има Dynamic Island.</target>
-        <note>54320 - Warning under the automatic Dynamic Island preference for Top-corner or Top-center when Show OSD on is not Active display. Not active means the destination is not the window/desktop focus display, not that it is disconnected or powered off.</note>
-      </trans-unit>
       <trans-unit id="When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system." xml:space="preserve">
         <source>When the app detects that the active audio device supports native volume control in macOS while it listens to media keys, it forwards the appropriate operations to the operating system.</source>
         <target state="translated">Когато приложението прихваща медийните клавиши и открие, че активното аудиоустройство поддържа стандартно управление на силата на звука в macOS, то препраща съответните операции към операционната система.</target>
@@ -14637,16 +14407,6 @@ You can dismiss this notification - in this case the changes will be applied whe
         <source>When this is enabled, the app will use hardware brightness for combined brightness control instead of the SDR peak brightness adjustment control (HDR brightness control) provided by macOS. You can still adjust the SDR peak brightness in Control Center - these adjustments will influence the upscaling (if available) headroom provided by the app. Not all displays support hardware brightness control in HDR mode.</source>
         <target state="translated">При включване приложението използва хардуерната яркост за комбинираното управление вместо настройката за пикова SDR яркост на macOS (HDR управление на яркостта). Все още можете да настройвате пиковата SDR яркост в Контролния център — тези промени влияят на резерва за увеличаване на яркостта, предоставян от приложението (ако е наличен). Не всички дисплеи поддържат хардуерно управление на яркостта в HDR режим.</target>
         <note>53477 - Prefer hardware brightness in HDR setting help.</note>
-      </trans-unit>
-      <trans-unit id="White-point target is invalid." xml:space="preserve">
-        <source>White-point target is invalid.</source>
-        <target state="translated">Целевата бяла точка е невалидна.</target>
-        <note>54069 - Retouch generation error for an invalid target white point, the chromaticity intended to represent white.</note>
-      </trans-unit>
-      <trans-unit id="White-point target is outside the supported range." xml:space="preserve">
-        <source>White-point target is outside the supported range.</source>
-        <target state="translated">Целевата бяла точка е извън поддържания диапазон.</target>
-        <note>54069 - Retouch generation error when the target white point lies outside the supported chromaticity range.</note>
       </trans-unit>
       <trans-unit id="Width" xml:space="preserve">
         <source>Width</source>
