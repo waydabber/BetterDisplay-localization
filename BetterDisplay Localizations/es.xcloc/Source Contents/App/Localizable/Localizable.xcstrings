@@ -34,9 +34,6 @@
     "[License Terms](https://betterdisplay.pro/license)" : {
       "comment" : "53477 - Link to the software license terms."
     },
-    "[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)" : {
-      "comment" : "53477 - Link to Apple help explaining Accessibility permissions required to control the Mac."
-    },
     "[Privacy Policy](https://betterdisplay.pro/privacy)" : {
       "comment" : "53477 - Link to the product privacy policy."
     },
@@ -574,21 +571,6 @@
       "comment" : "53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.",
       "extractionState" : "manual"
     },
-    "Accessibility Configuration Required!" : {
-      "comment" : "53477 - Accessibility permission status requiring user configuration."
-    },
-    "Accessibility Configured - App Restart Needed" : {
-      "comment" : "53477 - Accessibility status when permission is granted but a restart is still required."
-    },
-    "Accessibility is Configured Properly" : {
-      "comment" : "53477 - Accessibility permission success status."
-    },
-    "Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the \"Restart %@\" button below to restart the app immediately!" : {
-      "comment" : "53477 - Accessibility permission help after authorization; %@ is the app name in the restart button."
-    },
-    "Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" : {
-      "comment" : "53477 - Accessibility permission success help for native keyboard controls. Native keys are the standard system brightness or audio keys, including those on external Apple keyboards."
-    },
     "Acquired" : {
       "comment" : "53477 - DDC capabilities report status after successful retrieval."
     },
@@ -1062,6 +1044,9 @@
     },
     "Already Have a License?" : {
       "comment" : "53477 - License activation prompt for existing license holders."
+    },
+    "Alternatively, you can disable native keyboard control both for brightness and volume in **Settings > Keyboard**." : {
+      "comment" : "54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings > Keyboard path refers to BetterDisplay settings, not System Settings."
     },
     "Always" : {
       "comment" : "53477 - Unconditional policy or frequency selection."
@@ -2417,9 +2402,6 @@
     "Configure ${customEDID} as custom EDID for ${displayEntity}." : {
       "comment" : "53477 - App Intent summary configuring custom EDID data; preserve interpolation tokens."
     },
-    "Configure Accessibility" : {
-      "comment" : "53477 - Action opening Accessibility permission configuration."
-    },
     "Configure Activation Rules" : {
       "comment" : "53477 - Display group activation rule configuration action."
     },
@@ -2483,6 +2465,9 @@
     },
     "Configure HDMI-CEC…" : {
       "comment" : "53477 - HDMI-CEC controller setup action."
+    },
+    "Configure in System Settings…" : {
+      "comment" : "54439 - Button that opens the native keyboard permission page in macOS System Settings. System Settings is the macOS app, not BetterDisplay settings; retain the ellipsis."
     },
     "Configure Integration Controls…" : {
       "comment" : "53484 - Opens configuration of integration-based device controls from the device-control menu and display Settings; keep this navigation label compact."
@@ -5810,6 +5795,9 @@
     "Monochrome" : {
       "comment" : "53477 - Monochrome image filter."
     },
+    "More information on the required permissions…" : {
+      "comment" : "54437 - Link label for Apple help about native keyboard permissions; the destination depends on the macOS version."
+    },
     "More System Configuration Options" : {
       "comment" : "53477 - Heading and button label for additional display system configuration options. The button adds its own ellipsis, so do not include one in the translation."
     },
@@ -5916,8 +5904,8 @@
     "Native (Apple) Keyboard Control" : {
       "comment" : "53477 - Native Apple media key control heading."
     },
-    "Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!" : {
-      "comment" : "53477 - Native media key Accessibility permission warning."
+    "Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings." : {
+      "comment" : "54438 - Explains why native Apple brightness and audio keys need permissions in System Settings. End the sentence with a period rather than an exclamation mark."
     },
     "Native Audio" : {
       "comment" : "53477 - Native audio control setting."
@@ -5950,8 +5938,14 @@
         }
       }
     },
-    "Native keyboard control requires accessibility permissions!" : {
-      "comment" : "53477 - Native keyboard control permission warning."
+    "Native keyboard control (brightness and volume) requires permissions" : {
+      "comment" : "54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page."
+    },
+    "Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the \"Restart %@\" button below to restart the app immediately!" : {
+      "comment" : "54441 - Shown after native Apple keyboard permissions are granted but the app must restart before the handlers can work. Preserve the bold restart requirement and the exact localized Restart %@ button caption, where %@ is the app name."
+    },
+    "Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" : {
+      "comment" : "54437 - Success message for native keyboard brightness and volume permissions; other keyboard settings must also be enabled."
     },
     "Native mode (1:1 mapping)" : {
       "comment" : "53477 - Native pixel mapping mode."
@@ -6433,6 +6427,15 @@
     },
     "Periodically read and update current value from display" : {
       "comment" : "53477 - Display state polling setting."
+    },
+    "Permissions are Configured Properly" : {
+      "comment" : "54437 - Native keyboard permission status when authorization is already available."
+    },
+    "Permissions Configured - App Restart Needed" : {
+      "comment" : "54437 - Native keyboard permission status when authorization has been granted but the app must restart."
+    },
+    "Permissions Required for Native Keyboard Control" : {
+      "comment" : "54437 - Heading shown when native keyboard brightness and volume permissions have not been granted."
     },
     "Persistent network connection" : {
       "comment" : "53477 - Persistent device network connection setting."
@@ -7808,11 +7811,8 @@
     "Set Toggles to Hidden to customize each toggle's visibility. Individual toggles set to Hidden remain available under Manage Display (or Manage Virtual Screen)." : {
       "comment" : "53958 - Help beneath the Toggles visibility setting in Customize App Menu Contents. Selecting Hidden reveals per-toggle placement choices; individual toggles left Hidden move to Manage Display or Manage Virtual Screen."
     },
-    "Set up Accessibility Permissions…" : {
-      "comment" : "53477 - Open Accessibility permission setup action."
-    },
-    "Set up Device Control and Data Access…" : {
-      "comment" : "53477 - Open macOS device control and data access permission setup."
+    "Set up Native Keyboard Permissions…" : {
+      "comment" : "54439 - Opens the permission setup sheet for native Apple keyboard brightness and volume keys. This caption is the same on every macOS version; it does not name a System Settings permission category."
     },
     "Set Up Permissions" : {
       "comment" : "53486 - Open keyboard-control permission setup from the compact app-menu footer button; keep the translation short enough for a 180-point button including its icon and padding."
@@ -9348,11 +9348,14 @@
     "To control features that operate on a range (like brightness). Can be used for group-level synchronization." : {
       "comment" : "53477 - Range integration control help."
     },
-    "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." : {
-      "comment" : "53477 - Native keyboard control Accessibility permission instructions."
+    "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > Accessibility**." : {
+      "comment" : "54439 - Native Apple keyboard permission setup instructions for macOS 26. Preserve the bold System Settings path; restart guidance is shown separately when needed."
     },
-    "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." : {
-      "comment" : "53477 - Native keyboard control macOS 27 permission instructions."
+    "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > Device Control and Data Access**." : {
+      "comment" : "54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed."
+    },
+    "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > System & App Protection Override**." : {
+      "comment" : "54443 - [LOCALIZATION_REVIEW_REQUIRED] macOS 27.3+ native Apple keyboard permission instructions; the bold path retains System & App Protection Override in English for all locales because SecurityPrivacyExtension’s Localizable.loctable key ACCESSIBILITY is still English in build 26C5047e. Recheck that system resource on localization updates, apply verified localized page titles where available, and retain the marker while any affected locale still needs review."
     },
     "To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." : {
       "comment" : "53477 - Open app settings instructions."

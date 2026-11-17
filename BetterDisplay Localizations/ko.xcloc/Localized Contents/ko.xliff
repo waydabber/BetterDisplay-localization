@@ -690,31 +690,6 @@ Check your network connection and firewall settings.</source>
         <target state="translated">강조 색상</target>
         <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
-      <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
-        <source>Accessibility Configuration Required!</source>
-        <target state="translated">손쉬운 사용 설정이 필요합니다!</target>
-        <note>53477 - Accessibility permission status requiring user configuration.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Configured - App Restart Needed" xml:space="preserve">
-        <source>Accessibility Configured - App Restart Needed</source>
-        <target state="translated">손쉬운 사용 구성 완료 - 앱 재시작 필요</target>
-        <note>53477 - Accessibility status when permission is granted but a restart is still required.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
-        <target state="translated">손쉬운 사용 권한이 부여되었지만 변경 사항을 적용하려면 **앱을 다시 시작**해야 합니다! 시간이 나면 앱을 닫았다가 다시 시작하거나 아래의 "%@ 다시 시작" 버튼을 눌러 앱을 즉시 재시작하세요!</target>
-        <note>53477 - Accessibility permission help after authorization; %@ is the app name in the restart button.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
-        <source>Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
-        <target state="translated">손쉬운 사용 권한이 올바르게 구성되었습니다. 관련 기능도 설정되어 있다면 기본(Apple) 키보드의 밝기 및 볼륨 키가 작동해야 합니다. 작동하지 않으면 앱을 다시 시작해 보세요!</target>
-        <note>53477 - Accessibility permission success help for native keyboard controls. Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility is Configured Properly" xml:space="preserve">
-        <source>Accessibility is Configured Properly</source>
-        <target state="translated">손쉬운 사용이 올바르게 구성됨</target>
-        <note>53477 - Accessibility permission success status.</note>
-      </trans-unit>
       <trans-unit id="Acquired" xml:space="preserve">
         <source>Acquired</source>
         <target state="translated">획득됨</target>
@@ -1352,6 +1327,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <source>Already Have a License?</source>
         <target state="translated">이미 라이선스를 가지고 있나요?</target>
         <note>53477 - License activation prompt for existing license holders.</note>
+      </trans-unit>
+      <trans-unit id="Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**." xml:space="preserve">
+        <source>Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**.</source>
+        <target state="translated">또는 **설정 &gt; 키보드**에서 밝기와 볼륨 모두에 대한 기본 키보드 제어를 비활성화할 수 있습니다.</target>
+        <note>54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings &gt; Keyboard path refers to BetterDisplay settings, not System Settings.</note>
       </trans-unit>
       <trans-unit id="Always" xml:space="preserve">
         <source>Always</source>
@@ -3147,11 +3127,6 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">%@ 트리플 스크린 동기화 구성</target>
         <note>53477 - Monduo tri-screen synchronization setup action; %@ is the product name.</note>
       </trans-unit>
-      <trans-unit id="Configure Accessibility" xml:space="preserve">
-        <source>Configure Accessibility</source>
-        <target state="translated">손쉬운 사용 구성</target>
-        <note>53477 - Action opening Accessibility permission configuration.</note>
-      </trans-unit>
       <trans-unit id="Configure Activation Rules" xml:space="preserve">
         <source>Configure Activation Rules</source>
         <target state="translated">활성화 규칙 구성</target>
@@ -3271,6 +3246,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Configure full screen stream to this display</source>
         <target state="translated">이 디스플레이로 전체 화면 스트리밍 구성</target>
         <note>53477 - Full-screen stream configuration action targeting this display.</note>
+      </trans-unit>
+      <trans-unit id="Configure in System Settings…" xml:space="preserve">
+        <source>Configure in System Settings…</source>
+        <target state="translated">시스템 설정에서 구성…</target>
+        <note>54439 - Button that opens the native keyboard permission page in macOS System Settings. System Settings is the macOS app, not BetterDisplay settings; retain the ellipsis.</note>
       </trans-unit>
       <trans-unit id="Configure layout protection for %@" xml:space="preserve">
         <source>Configure layout protection for %@</source>
@@ -8088,6 +8068,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">더 많은 시스템 구성 옵션</target>
         <note>53477 - Heading and button label for additional display system configuration options. The button adds its own ellipsis, so do not include one in the translation.</note>
       </trans-unit>
+      <trans-unit id="More information on the required permissions…" xml:space="preserve">
+        <source>More information on the required permissions…</source>
+        <target state="translated">필요한 권한에 관한 자세한 정보…</target>
+        <note>54437 - Link label for Apple help about native keyboard permissions; the destination depends on the macOS version.</note>
+      </trans-unit>
       <trans-unit id="More than one audio output matches. Refine the existing association or copy its unique identifier with Option." xml:space="preserve">
         <source>More than one audio output matches. Refine the existing association or copy its unique identifier with Option.</source>
         <target state="translated">일치하는 오디오 출력이 여러 개 있습니다. 기존 연관 조건을 구체화하거나 Option을 누른 채 고유 식별자를 복사하세요.</target>
@@ -8238,10 +8223,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">Apple 키보드 제어</target>
         <note>53477 - Native Apple media key control heading.</note>
       </trans-unit>
-      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!" xml:space="preserve">
-        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!</source>
-        <target state="translated">Apple 키보드의 밝기 키 또는 오디오 키를 사용하는 기본 제어 기능은 바로 작동하지 않습니다. 이 기능을 사용하려면 먼저 시스템 설정에서 '손쉬운 사용' 권한을 설정해야 합니다!</target>
-        <note>53477 - Native media key Accessibility permission warning.</note>
+      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings." xml:space="preserve">
+        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings.</source>
+        <target state="translated">Apple 키보드의 밝기 키 또는 오디오 키를 사용하는 기본 제어 기능은 먼저 시스템 설정에서 적절한 권한을 설정해야 작동합니다.</target>
+        <note>54438 - Explains why native Apple brightness and audio keys need permissions in System Settings. End the sentence with a period rather than an exclamation mark.</note>
       </trans-unit>
       <trans-unit id="Native Audio" xml:space="preserve">
         <source>Native Audio</source>
@@ -8268,10 +8253,20 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">시스템 밝기 키 패스스루</target>
         <note>54301 - Per-display Apple brightness setting that forwards original system brightness-key events and their modifier keys to macOS instead of changing brightness in BetterDisplay. Pass-thru means keyboard-event forwarding, not a display connection or DDC transport.</note>
       </trans-unit>
-      <trans-unit id="Native keyboard control requires accessibility permissions!" xml:space="preserve">
-        <source>Native keyboard control requires accessibility permissions!</source>
-        <target state="translated">기본 키보드 제어는 손쉬운 사용 권한이 필요합니다!</target>
-        <note>53477 - Native keyboard control permission warning.</note>
+      <trans-unit id="Native keyboard control (brightness and volume) requires permissions" xml:space="preserve">
+        <source>Native keyboard control (brightness and volume) requires permissions</source>
+        <target state="translated">기본 키보드 제어(밝기 및 볼륨)에는 권한이 필요합니다</target>
+        <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
+        <target state="translated">기본 키보드 제어 권한이 부여되었지만 변경 사항을 적용하려면 **앱을 다시 시작**해야 합니다! 시간이 나면 앱을 닫았다가 다시 시작하거나 아래의 "%@ 재시작" 버튼을 눌러 앱을 즉시 재시작하세요!</target>
+        <note>54441 - Shown after native Apple keyboard permissions are granted but the app must restart before the handlers can work. Preserve the bold restart requirement and the exact localized Restart %@ button caption, where %@ is the app name.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
+        <source>Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
+        <target state="translated">기본 키보드 제어 권한이 올바르게 구성되었습니다. 관련 기능도 설정되어 있다면 기본(Apple) 키보드의 밝기 및 볼륨 키가 작동해야 합니다. 작동하지 않으면 앱을 다시 시작해 보세요!</target>
+        <note>54437 - Success message for native keyboard brightness and volume permissions; other keyboard settings must also be enabled.</note>
       </trans-unit>
       <trans-unit id="Native mode (1:1 mapping)" xml:space="preserve">
         <source>Native mode (1:1 mapping)</source>
@@ -8887,6 +8882,21 @@ Not all displays support screen control operations. These operations can cause i
         <source>Periodically read and update current value from display</source>
         <target state="translated">디스플레이에서 현재 값을 주기적으로 읽고 갱신</target>
         <note>53477 - Display state polling setting.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Configured - App Restart Needed" xml:space="preserve">
+        <source>Permissions Configured - App Restart Needed</source>
+        <target state="translated">권한 구성 완료 - 앱 재시작 필요</target>
+        <note>54437 - Native keyboard permission status when authorization has been granted but the app must restart.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Required for Native Keyboard Control" xml:space="preserve">
+        <source>Permissions Required for Native Keyboard Control</source>
+        <target state="translated">기본 키보드 제어에 필요한 권한</target>
+        <note>54437 - Heading shown when native keyboard brightness and volume permissions have not been granted.</note>
+      </trans-unit>
+      <trans-unit id="Permissions are Configured Properly" xml:space="preserve">
+        <source>Permissions are Configured Properly</source>
+        <target state="translated">권한이 올바르게 구성됨</target>
+        <note>54437 - Native keyboard permission status when authorization is already available.</note>
       </trans-unit>
       <trans-unit id="Persistent network connection" xml:space="preserve">
         <source>Persistent network connection</source>
@@ -10889,15 +10899,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">지정된 디스플레이를 이 디스플레이 그룹의 주 디스플레이로 설정합니다. macOS가 결정하도록 하거나 앱 메뉴의 '설정 보호' 설정을 적용하려면 '지정 안 함'으로 두세요.</target>
         <note>53477 - Display group main display assignment help.</note>
       </trans-unit>
-      <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
-        <source>Set up Accessibility Permissions…</source>
-        <target state="translated">손쉬운 사용 권한 설정…</target>
-        <note>53477 - Open Accessibility permission setup action.</note>
-      </trans-unit>
-      <trans-unit id="Set up Device Control and Data Access…" xml:space="preserve">
-        <source>Set up Device Control and Data Access…</source>
-        <target state="translated">기기 제어 및 데이터 접근 설정…</target>
-        <note>53477 - Open macOS device control and data access permission setup.</note>
+      <trans-unit id="Set up Native Keyboard Permissions…" xml:space="preserve">
+        <source>Set up Native Keyboard Permissions…</source>
+        <target state="translated">기본 키보드 제어 권한 설정…</target>
+        <note>54439 - Opens the permission setup sheet for native Apple keyboard brightness and volume keys. This caption is the same on every macOS version; it does not name a System Settings permission category.</note>
       </trans-unit>
       <trans-unit id="Set volume level first, then issue unmute command" xml:space="preserve">
         <source>Set volume level first, then issue unmute command</source>
@@ -13045,15 +13050,20 @@ You can dismiss this notification - in this case the changes will be applied whe
         <target state="translated">범위에서 작동하는 기능(밝기와 같은)을 제어하기 위한 것입니다. 그룹 수준 동기화에 사용될 수 있습니다.</target>
         <note>53477 - Range integration control help.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Apple 키보드의 밝기 및 볼륨 키로 외부 디스플레이를 제어하려면 **시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 손쉬운 사용**에 앱을 추가하세요! 그런 다음 앱을 다시 시작해야 합니다. 또는 설정에서 기본 키보드 제어를 비활성화할 수 있습니다.</target>
-        <note>53477 - Native keyboard control Accessibility permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**.</source>
+        <target state="translated">Apple 키보드의 밝기 및 볼륨 키로 외부 디스플레이를 제어하려면 **시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 손쉬운 사용**에 앱을 추가하세요.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 26. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Apple 키보드의 밝기 및 볼륨 키로 외부 디스플레이를 제어하려면 **시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 기기 제어 및 데이터 접근**에 앱을 추가하세요! 그런 다음 앱을 다시 시작해야 합니다. 또는 설정에서 기본 키보드 제어를 비활성화할 수 있습니다.</target>
-        <note>53477 - Native keyboard control macOS 27 permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**.</source>
+        <target state="translated">Apple 키보드의 밝기 및 볼륨 키로 외부 디스플레이를 제어하려면 **시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 기기 제어 및 데이터 접근**에 앱을 추가하세요.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**.</source>
+        <target state="translated">Apple 키보드의 밝기 및 볼륨 키로 외부 디스플레이를 제어하려면 **시스템 설정 &gt; 개인정보 보호 및 보안 &gt; System &amp; App Protection Override**에 앱을 추가하세요.</target>
+        <note>54443 - [LOCALIZATION_REVIEW_REQUIRED] macOS 27.3+ native Apple keyboard permission instructions; the bold path retains System &amp; App Protection Override in English for all locales because SecurityPrivacyExtension’s Localizable.loctable key ACCESSIBILITY is still English in build 26C5047e. Recheck that system resource on localization updates, apply verified localized page titles where available, and retain the marker while any affected locale still needs review.</note>
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
         <source>To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running.</source>
@@ -14605,11 +14615,6 @@ A previous activation was automatically removed to make room for this new one.</
         <source>[License Terms](https://betterdisplay.pro/license)</source>
         <target state="translated">[라이선스 약관](https://betterdisplay.pro/license)</target>
         <note>53477 - Link to the software license terms.</note>
-      </trans-unit>
-      <trans-unit id="[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)" xml:space="preserve">
-        <source>[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</source>
-        <target state="translated">[손쉬운 사용 권한에 관한 정보…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</target>
-        <note>53477 - Link to Apple help explaining Accessibility permissions required to control the Mac.</note>
       </trans-unit>
       <trans-unit id="[Privacy Policy](https://betterdisplay.pro/privacy)" xml:space="preserve">
         <source>[Privacy Policy](https://betterdisplay.pro/privacy)</source>

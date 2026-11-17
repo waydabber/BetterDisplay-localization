@@ -690,31 +690,6 @@ Kiểm tra kết nối mạng và cài đặt tường lửa của bạn.</targe
         <target state="translated">Màu nhấn</target>
         <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
-      <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
-        <source>Accessibility Configuration Required!</source>
-        <target state="translated">Cần cấu hình Trợ năng!</target>
-        <note>53477 - Accessibility permission status requiring user configuration.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Configured - App Restart Needed" xml:space="preserve">
-        <source>Accessibility Configured - App Restart Needed</source>
-        <target state="translated">Đã cấu hình Trợ năng - Cần khởi động lại ứng dụng</target>
-        <note>53477 - Accessibility status when permission is granted but a restart is still required.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
-        <target state="translated">Quyền Trợ năng đã được cấu hình nhưng **vẫn cần khởi động lại ứng dụng** để các thay đổi có hiệu lực! Hãy đóng và khởi động lại ứng dụng khi thuận tiện hoặc nhấn nút "Khởi động lại %@" bên dưới để khởi động lại ngay!</target>
-        <note>53477 - Accessibility permission help after authorization; %@ is the app name in the restart button.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
-        <source>Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
-        <target state="translated">Quyền Trợ năng đã được cấu hình đúng. Các phím độ sáng và âm lượng gốc (Apple) sẽ hoạt động nếu các tính năng này đã được thiết lập. Nếu không, hãy thử khởi động lại ứng dụng!</target>
-        <note>53477 - Accessibility permission success help for native keyboard controls. Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility is Configured Properly" xml:space="preserve">
-        <source>Accessibility is Configured Properly</source>
-        <target state="translated">Trợ năng được cấu hình đúng cách</target>
-        <note>53477 - Accessibility permission success status.</note>
-      </trans-unit>
       <trans-unit id="Acquired" xml:space="preserve">
         <source>Acquired</source>
         <target state="translated">Đã nhận</target>
@@ -1352,6 +1327,11 @@ Thay đổi này không thể hoàn tác. Bạn có chắc chắn muốn thực 
         <source>Already Have a License?</source>
         <target state="translated">Đã có giấy phép?</target>
         <note>53477 - License activation prompt for existing license holders.</note>
+      </trans-unit>
+      <trans-unit id="Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**." xml:space="preserve">
+        <source>Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**.</source>
+        <target state="translated">Bạn cũng có thể tắt điều khiển bằng bàn phím gốc cho cả độ sáng và âm lượng trong **Cài đặt &gt; Bàn phím**.</target>
+        <note>54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings &gt; Keyboard path refers to BetterDisplay settings, not System Settings.</note>
       </trans-unit>
       <trans-unit id="Always" xml:space="preserve">
         <source>Always</source>
@@ -3147,11 +3127,6 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <target state="translated">%@ cấu hình đồng bộ ba màn hình</target>
         <note>53477 - Monduo tri-screen synchronization setup action; %@ is the product name.</note>
       </trans-unit>
-      <trans-unit id="Configure Accessibility" xml:space="preserve">
-        <source>Configure Accessibility</source>
-        <target state="translated">Cấu hình Trợ năng</target>
-        <note>53477 - Action opening Accessibility permission configuration.</note>
-      </trans-unit>
       <trans-unit id="Configure Activation Rules" xml:space="preserve">
         <source>Configure Activation Rules</source>
         <target state="translated">Cấu hình quy tắc kích hoạt</target>
@@ -3271,6 +3246,11 @@ Không bắt buộc chỉ định độ dài đọc - hãy để trống trườ
         <source>Configure full screen stream to this display</source>
         <target state="translated">Cấu hình trình chiếu toàn màn hình đến màn hình này</target>
         <note>53477 - Full-screen stream configuration action targeting this display.</note>
+      </trans-unit>
+      <trans-unit id="Configure in System Settings…" xml:space="preserve">
+        <source>Configure in System Settings…</source>
+        <target state="translated">Cấu hình trong Cài đặt hệ thống…</target>
+        <note>54439 - Button that opens the native keyboard permission page in macOS System Settings. System Settings is the macOS app, not BetterDisplay settings; retain the ellipsis.</note>
       </trans-unit>
       <trans-unit id="Configure layout protection for %@" xml:space="preserve">
         <source>Configure layout protection for %@</source>
@@ -8088,6 +8068,11 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Các tùy chọn cấu hình hệ thống khác</target>
         <note>53477 - Heading and button label for additional display system configuration options. The button adds its own ellipsis, so do not include one in the translation.</note>
       </trans-unit>
+      <trans-unit id="More information on the required permissions…" xml:space="preserve">
+        <source>More information on the required permissions…</source>
+        <target state="translated">Thêm thông tin về các quyền cần thiết…</target>
+        <note>54437 - Link label for Apple help about native keyboard permissions; the destination depends on the macOS version.</note>
+      </trans-unit>
       <trans-unit id="More than one audio output matches. Refine the existing association or copy its unique identifier with Option." xml:space="preserve">
         <source>More than one audio output matches. Refine the existing association or copy its unique identifier with Option.</source>
         <target state="translated">Có nhiều đầu ra âm thanh khớp. Thu hẹp điều kiện liên kết hiện có hoặc giữ Option để sao chép mã định danh duy nhất.</target>
@@ -8238,10 +8223,10 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Điều khiển bằng bàn phím gốc (Apple)</target>
         <note>53477 - Native Apple media key control heading.</note>
       </trans-unit>
-      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!" xml:space="preserve">
-        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!</source>
-        <target state="translated">Điều khiển bằng các phím độ sáng hoặc âm thanh gốc (Apple) sẽ không hoạt động nếu chưa thiết lập quyền Trợ năng trong Cài đặt hệ thống!</target>
-        <note>53477 - Native media key Accessibility permission warning.</note>
+      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings." xml:space="preserve">
+        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings.</source>
+        <target state="translated">Điều khiển bằng các phím độ sáng hoặc âm thanh gốc (Apple) sẽ không hoạt động nếu chưa thiết lập các quyền phù hợp trong Cài đặt hệ thống.</target>
+        <note>54438 - Explains why native Apple brightness and audio keys need permissions in System Settings. End the sentence with a period rather than an exclamation mark.</note>
       </trans-unit>
       <trans-unit id="Native Audio" xml:space="preserve">
         <source>Native Audio</source>
@@ -8268,10 +8253,20 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Chuyển tiếp các phím độ sáng gốc</target>
         <note>54301 - Per-display Apple brightness setting that forwards original system brightness-key events and their modifier keys to macOS instead of changing brightness in BetterDisplay. Pass-thru means keyboard-event forwarding, not a display connection or DDC transport.</note>
       </trans-unit>
-      <trans-unit id="Native keyboard control requires accessibility permissions!" xml:space="preserve">
-        <source>Native keyboard control requires accessibility permissions!</source>
-        <target state="translated">Điều khiển bằng bàn phím gốc yêu cầu quyền Trợ năng!</target>
-        <note>53477 - Native keyboard control permission warning.</note>
+      <trans-unit id="Native keyboard control (brightness and volume) requires permissions" xml:space="preserve">
+        <source>Native keyboard control (brightness and volume) requires permissions</source>
+        <target state="translated">Điều khiển bằng bàn phím gốc (độ sáng và âm lượng) yêu cầu quyền</target>
+        <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
+        <target state="translated">Quyền điều khiển bằng bàn phím gốc đã được cấu hình nhưng **vẫn cần khởi động lại ứng dụng** để các thay đổi có hiệu lực! Hãy đóng và khởi động lại ứng dụng khi thuận tiện hoặc nhấn nút "Khởi động lại %@" bên dưới để khởi động lại ngay!</target>
+        <note>54441 - Shown after native Apple keyboard permissions are granted but the app must restart before the handlers can work. Preserve the bold restart requirement and the exact localized Restart %@ button caption, where %@ is the app name.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
+        <source>Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
+        <target state="translated">Quyền điều khiển bằng bàn phím gốc đã được cấu hình đúng. Các phím độ sáng và âm lượng gốc (Apple) sẽ hoạt động nếu các tính năng này đã được thiết lập. Nếu không, hãy thử khởi động lại ứng dụng!</target>
+        <note>54437 - Success message for native keyboard brightness and volume permissions; other keyboard settings must also be enabled.</note>
       </trans-unit>
       <trans-unit id="Native mode (1:1 mapping)" xml:space="preserve">
         <source>Native mode (1:1 mapping)</source>
@@ -8887,6 +8882,21 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <source>Periodically read and update current value from display</source>
         <target state="translated">Định kỳ đọc và cập nhật giá trị hiện tại từ màn hình</target>
         <note>53477 - Display state polling setting.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Configured - App Restart Needed" xml:space="preserve">
+        <source>Permissions Configured - App Restart Needed</source>
+        <target state="translated">Đã cấu hình quyền - Cần khởi động lại ứng dụng</target>
+        <note>54437 - Native keyboard permission status when authorization has been granted but the app must restart.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Required for Native Keyboard Control" xml:space="preserve">
+        <source>Permissions Required for Native Keyboard Control</source>
+        <target state="translated">Cần cấp quyền để điều khiển bằng bàn phím gốc</target>
+        <note>54437 - Heading shown when native keyboard brightness and volume permissions have not been granted.</note>
+      </trans-unit>
+      <trans-unit id="Permissions are Configured Properly" xml:space="preserve">
+        <source>Permissions are Configured Properly</source>
+        <target state="translated">Quyền đã được cấu hình đúng</target>
+        <note>54437 - Native keyboard permission status when authorization is already available.</note>
       </trans-unit>
       <trans-unit id="Persistent network connection" xml:space="preserve">
         <source>Persistent network connection</source>
@@ -10888,15 +10898,10 @@ Không phải màn hình nào cũng hỗ trợ điều khiển màn hình. Các 
         <target state="translated">Đặt màn hình được chỉ định làm màn hình chính cho nhóm màn hình này. Để “Không xác định” để macOS tự quyết định hoặc cho phép áp dụng cài đặt trong menu ứng dụng Bảo vệ Cấu hình.</target>
         <note>53477 - Display group main display assignment help.</note>
       </trans-unit>
-      <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
-        <source>Set up Accessibility Permissions…</source>
-        <target state="translated">Thiết lập Quyền truy cập Trợ năng</target>
-        <note>53477 - Open Accessibility permission setup action.</note>
-      </trans-unit>
-      <trans-unit id="Set up Device Control and Data Access…" xml:space="preserve">
-        <source>Set up Device Control and Data Access…</source>
-        <target state="translated">Thiết lập Điều khiển thiết bị và truy cập dữ liệu…</target>
-        <note>53477 - Open macOS device control and data access permission setup.</note>
+      <trans-unit id="Set up Native Keyboard Permissions…" xml:space="preserve">
+        <source>Set up Native Keyboard Permissions…</source>
+        <target state="translated">Thiết lập quyền điều khiển bằng bàn phím gốc…</target>
+        <note>54439 - Opens the permission setup sheet for native Apple keyboard brightness and volume keys. This caption is the same on every macOS version; it does not name a System Settings permission category.</note>
       </trans-unit>
       <trans-unit id="Set volume level first, then issue unmute command" xml:space="preserve">
         <source>Set volume level first, then issue unmute command</source>
@@ -13043,15 +13048,20 @@ Bạn có thể bỏ qua thông báo này - trong trường hợp này, các tha
         <target state="translated">Để điều khiển các tính năng hoạt động trên một phạm vi (như độ sáng). Có thể được sử dụng để đồng bộ hóa cấp nhóm.</target>
         <note>53477 - Range integration control help.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Để các phím độ sáng và âm lượng trên bàn phím Apple điều khiển màn hình ngoài, hãy thêm ứng dụng vào **Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Trợ năng**! Sau đó, hãy khởi động lại ứng dụng. Bạn cũng có thể tắt điều khiển bằng bàn phím gốc trong Cài đặt.</target>
-        <note>53477 - Native keyboard control Accessibility permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**.</source>
+        <target state="translated">Để các phím độ sáng và âm lượng trên bàn phím Apple điều khiển màn hình ngoài, hãy thêm ứng dụng vào **Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Trợ năng**.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 26. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Để các phím độ sáng và âm lượng trên bàn phím Apple điều khiển màn hình ngoài, hãy thêm ứng dụng vào **Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Điều khiển thiết bị và truy cập dữ liệu**! Sau đó, hãy khởi động lại ứng dụng. Bạn cũng có thể tắt điều khiển bằng bàn phím gốc trong Cài đặt.</target>
-        <note>53477 - Native keyboard control macOS 27 permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**.</source>
+        <target state="translated">Để các phím độ sáng và âm lượng trên bàn phím Apple điều khiển màn hình ngoài, hãy thêm ứng dụng vào **Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; Điều khiển thiết bị và truy cập dữ liệu**.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**.</source>
+        <target state="translated">Để các phím độ sáng và âm lượng trên bàn phím Apple điều khiển màn hình ngoài, hãy thêm ứng dụng vào **Cài đặt hệ thống &gt; Quyền riêng tư &amp; Bảo mật &gt; System &amp; App Protection Override**.</target>
+        <note>54443 - [LOCALIZATION_REVIEW_REQUIRED] macOS 27.3+ native Apple keyboard permission instructions; the bold path retains System &amp; App Protection Override in English for all locales because SecurityPrivacyExtension’s Localizable.loctable key ACCESSIBILITY is still English in build 26C5047e. Recheck that system resource on localization updates, apply verified localized page titles where available, and retain the marker while any affected locale still needs review.</note>
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
         <source>To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running.</source>
@@ -14601,11 +14611,6 @@ Một lần kích hoạt trước đó đã được tự động xóa để t�
         <source>[License Terms](https://betterdisplay.pro/license)</source>
         <target state="translated">[Điều khoản Giấy phép](https://betterdisplay.pro/license)</target>
         <note>53477 - Link to the software license terms.</note>
-      </trans-unit>
-      <trans-unit id="[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)" xml:space="preserve">
-        <source>[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</source>
-        <target state="translated">[Thêm thông tin về quyền Trợ năng…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</target>
-        <note>53477 - Link to Apple help explaining Accessibility permissions required to control the Mac.</note>
       </trans-unit>
       <trans-unit id="[Privacy Policy](https://betterdisplay.pro/privacy)" xml:space="preserve">
         <source>[Privacy Policy](https://betterdisplay.pro/privacy)</source>

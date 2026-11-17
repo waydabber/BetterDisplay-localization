@@ -690,31 +690,6 @@ Controleer je netwerkverbinding en firewallinstellingen.</target>
         <target state="translated">Accentkleur</target>
         <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
-      <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
-        <source>Accessibility Configuration Required!</source>
-        <target state="translated">Configuratie van Toegankelijkheid vereist!</target>
-        <note>53477 - Accessibility permission status requiring user configuration.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Configured - App Restart Needed" xml:space="preserve">
-        <source>Accessibility Configured - App Restart Needed</source>
-        <target state="translated">Toegankelijkheid geconfigureerd - herstart van app nodig</target>
-        <note>53477 - Accessibility status when permission is granted but a restart is still required.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
-        <target state="translated">De bevoegdheden voor Toegankelijkheid zijn geconfigureerd, maar de **app moet nog opnieuw worden opgestart** voordat de wijzigingen van kracht worden! Sluit de app en start deze opnieuw wanneer het uitkomt, of druk hieronder op 'Start %@ opnieuw op' om dit meteen te doen!</target>
-        <note>53477 - Accessibility permission help after authorization; %@ is the app name in the restart button.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
-        <source>Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
-        <target state="translated">Bevoegdheden voor Toegankelijkheid zijn goed geconfigureerd. Ingebouwde helderheids- en volumetoetsen van (Apple-)toetsenborden zouden moeten werken als deze functies al eerder waren ingesteld. Zo niet, probeer de app opnieuw op te starten!</target>
-        <note>53477 - Accessibility permission success help for native keyboard controls. Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility is Configured Properly" xml:space="preserve">
-        <source>Accessibility is Configured Properly</source>
-        <target state="translated">Toegankelijkheid is goed geconfigureerd</target>
-        <note>53477 - Accessibility permission success status.</note>
-      </trans-unit>
       <trans-unit id="Acquired" xml:space="preserve">
         <source>Acquired</source>
         <target state="translated">Vastgelegd</target>
@@ -1352,6 +1327,11 @@ Deze wijziging kan niet worden ongedaan gemaakt. Weet je zeker dat je dit wilt d
         <source>Already Have a License?</source>
         <target state="translated">Heb je al een licentie?</target>
         <note>53477 - License activation prompt for existing license holders.</note>
+      </trans-unit>
+      <trans-unit id="Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**." xml:space="preserve">
+        <source>Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**.</source>
+        <target state="translated">Als alternatief kun je ingebouwde toetsenbordbediening voor zowel helderheid als volume uitschakelen in **Instellingen &gt; Toetsenbord**.</target>
+        <note>54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings &gt; Keyboard path refers to BetterDisplay settings, not System Settings.</note>
       </trans-unit>
       <trans-unit id="Always" xml:space="preserve">
         <source>Always</source>
@@ -3147,11 +3127,6 @@ Het opgeven van de leeslengte is optioneel. Laat het veld leeg voor automatische
         <target state="translated">Configureer synchronisatie drie schermen van %@</target>
         <note>53477 - Monduo tri-screen synchronization setup action; %@ is the product name.</note>
       </trans-unit>
-      <trans-unit id="Configure Accessibility" xml:space="preserve">
-        <source>Configure Accessibility</source>
-        <target state="translated">Configureer toegankelijkheid</target>
-        <note>53477 - Action opening Accessibility permission configuration.</note>
-      </trans-unit>
       <trans-unit id="Configure Activation Rules" xml:space="preserve">
         <source>Configure Activation Rules</source>
         <target state="translated">Configureer activeringsregels</target>
@@ -3271,6 +3246,11 @@ Het opgeven van de leeslengte is optioneel. Laat het veld leeg voor automatische
         <source>Configure full screen stream to this display</source>
         <target state="translated">Configureer volledigescherm-stream naar dit scherm</target>
         <note>53477 - Full-screen stream configuration action targeting this display.</note>
+      </trans-unit>
+      <trans-unit id="Configure in System Settings…" xml:space="preserve">
+        <source>Configure in System Settings…</source>
+        <target state="translated">Configureer in Systeeminstellingen…</target>
+        <note>54439 - Button that opens the native keyboard permission page in macOS System Settings. System Settings is the macOS app, not BetterDisplay settings; retain the ellipsis.</note>
       </trans-unit>
       <trans-unit id="Configure layout protection for %@" xml:space="preserve">
         <source>Configure layout protection for %@</source>
@@ -8088,6 +8068,11 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <target state="translated">Meer systeemconfiguratieopties</target>
         <note>53477 - Heading and button label for additional display system configuration options. The button adds its own ellipsis, so do not include one in the translation.</note>
       </trans-unit>
+      <trans-unit id="More information on the required permissions…" xml:space="preserve">
+        <source>More information on the required permissions…</source>
+        <target state="translated">Meer informatie over de vereiste bevoegdheden…</target>
+        <note>54437 - Link label for Apple help about native keyboard permissions; the destination depends on the macOS version.</note>
+      </trans-unit>
       <trans-unit id="More than one audio output matches. Refine the existing association or copy its unique identifier with Option." xml:space="preserve">
         <source>More than one audio output matches. Refine the existing association or copy its unique identifier with Option.</source>
         <target state="translated">Meer dan één audio-uitvoer komt overeen. Verfijn de bestaande koppeling of kopieer de unieke identificatie met Option.</target>
@@ -8238,10 +8223,10 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <target state="translated">Ingebouwde (Apple-)toetsenbordbediening</target>
         <note>53477 - Native Apple media key control heading.</note>
       </trans-unit>
-      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!" xml:space="preserve">
-        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!</source>
-        <target state="translated">De ingebouwde bediening via helderheids- of geluidstoetsen op een Apple-toetsenbord werkt pas nadat je bevoegdheden voor Toegankelijkheid hebt ingesteld in Systeeminstellingen!</target>
-        <note>53477 - Native media key Accessibility permission warning.</note>
+      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings." xml:space="preserve">
+        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings.</source>
+        <target state="translated">De ingebouwde bediening via helderheids- of geluidstoetsen op een Apple-toetsenbord werkt pas nadat je de juiste bevoegdheden hebt ingesteld in Systeeminstellingen.</target>
+        <note>54438 - Explains why native Apple brightness and audio keys need permissions in System Settings. End the sentence with a period rather than an exclamation mark.</note>
       </trans-unit>
       <trans-unit id="Native Audio" xml:space="preserve">
         <source>Native Audio</source>
@@ -8268,10 +8253,20 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <target state="translated">Systeemhelderheidstoetsen doorgeven</target>
         <note>54301 - Per-display Apple brightness setting that forwards original system brightness-key events and their modifier keys to macOS instead of changing brightness in BetterDisplay. Pass-thru means keyboard-event forwarding, not a display connection or DDC transport.</note>
       </trans-unit>
-      <trans-unit id="Native keyboard control requires accessibility permissions!" xml:space="preserve">
-        <source>Native keyboard control requires accessibility permissions!</source>
-        <target state="translated">Ingebouwde toetsenbordbediening vereist bevoegdheden voor Toegankelijkheid!</target>
-        <note>53477 - Native keyboard control permission warning.</note>
+      <trans-unit id="Native keyboard control (brightness and volume) requires permissions" xml:space="preserve">
+        <source>Native keyboard control (brightness and volume) requires permissions</source>
+        <target state="translated">Ingebouwde toetsenbordbediening (helderheid en volume) vereist bevoegdheden</target>
+        <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
+        <target state="translated">De bevoegdheden voor ingebouwde toetsenbordbediening zijn geconfigureerd, maar de **app moet nog opnieuw worden opgestart** voordat de wijzigingen van kracht worden! Sluit de app en start deze opnieuw wanneer het uitkomt, of druk hieronder op 'Herstart %@' om dit meteen te doen!</target>
+        <note>54441 - Shown after native Apple keyboard permissions are granted but the app must restart before the handlers can work. Preserve the bold restart requirement and the exact localized Restart %@ button caption, where %@ is the app name.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
+        <source>Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
+        <target state="translated">Bevoegdheden voor ingebouwde toetsenbordbediening zijn goed geconfigureerd. Ingebouwde helderheids- en volumetoetsen van (Apple-)toetsenborden zouden moeten werken als deze functies al eerder waren ingesteld. Zo niet, probeer de app opnieuw op te starten!</target>
+        <note>54437 - Success message for native keyboard brightness and volume permissions; other keyboard settings must also be enabled.</note>
       </trans-unit>
       <trans-unit id="Native mode (1:1 mapping)" xml:space="preserve">
         <source>Native mode (1:1 mapping)</source>
@@ -8887,6 +8882,21 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <source>Periodically read and update current value from display</source>
         <target state="translated">Lees en werk periodiek huidige waarde bij van scherm</target>
         <note>53477 - Display state polling setting.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Configured - App Restart Needed" xml:space="preserve">
+        <source>Permissions Configured - App Restart Needed</source>
+        <target state="translated">Bevoegdheden geconfigureerd - herstart van app nodig</target>
+        <note>54437 - Native keyboard permission status when authorization has been granted but the app must restart.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Required for Native Keyboard Control" xml:space="preserve">
+        <source>Permissions Required for Native Keyboard Control</source>
+        <target state="translated">Bevoegdheden vereist voor ingebouwde toetsenbordbediening</target>
+        <note>54437 - Heading shown when native keyboard brightness and volume permissions have not been granted.</note>
+      </trans-unit>
+      <trans-unit id="Permissions are Configured Properly" xml:space="preserve">
+        <source>Permissions are Configured Properly</source>
+        <target state="translated">Bevoegdheden zijn goed geconfigureerd</target>
+        <note>54437 - Native keyboard permission status when authorization is already available.</note>
       </trans-unit>
       <trans-unit id="Persistent network connection" xml:space="preserve">
         <source>Persistent network connection</source>
@@ -10888,15 +10898,10 @@ Niet alle schermen ondersteunen schermbediening. Deze acties kunnen bij sommige 
         <target state="translated">Stelt het opgegeven scherm in als hoofdscherm voor deze schermgroep. Laat 'Niet opgegeven' staan om macOS te laten beslissen of de instelling voor Bescherming configuratie in het appmenu toe te passen.</target>
         <note>53477 - Display group main display assignment help.</note>
       </trans-unit>
-      <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
-        <source>Set up Accessibility Permissions…</source>
-        <target state="translated">Stel toegankelijkheidsbevoegdheden in...</target>
-        <note>53477 - Open Accessibility permission setup action.</note>
-      </trans-unit>
-      <trans-unit id="Set up Device Control and Data Access…" xml:space="preserve">
-        <source>Set up Device Control and Data Access…</source>
-        <target state="translated">Stel Apparaatbeheer en gegevenstoegang in…</target>
-        <note>53477 - Open macOS device control and data access permission setup.</note>
+      <trans-unit id="Set up Native Keyboard Permissions…" xml:space="preserve">
+        <source>Set up Native Keyboard Permissions…</source>
+        <target state="translated">Stel bevoegdheden voor ingebouwde toetsenbordbediening in…</target>
+        <note>54439 - Opens the permission setup sheet for native Apple keyboard brightness and volume keys. This caption is the same on every macOS version; it does not name a System Settings permission category.</note>
       </trans-unit>
       <trans-unit id="Set volume level first, then issue unmute command" xml:space="preserve">
         <source>Set volume level first, then issue unmute command</source>
@@ -13043,15 +13048,20 @@ Je kunt deze melding wegklikken - in dit geval zullen de wijzigingen worden toeg
         <target state="translated">Om functies te bedienen die werken op een bereik (zoals helderheid). Kan worden gebruikt voor synchronisatie op groepsniveau.</target>
         <note>53477 - Range integration control help.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Om de helderheids- en volumetoetsen van je Apple-toetsenbord je externe scherm te laten bedienen, voeg de app toe aan **Systeeminstellingen &gt; Privacy en beveiliging &gt; Toegankelijkheid**! Hierna moet je de app herstarten. Als alternatief kun je ingebouwde toetsenbordbediening uitschakelen in Instellingen.</target>
-        <note>53477 - Native keyboard control Accessibility permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**.</source>
+        <target state="translated">Om de helderheids- en volumetoetsen van je Apple-toetsenbord je externe scherm te laten bedienen, voeg de app toe aan **Systeeminstellingen &gt; Privacy en beveiliging &gt; Toegankelijkheid**.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 26. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Om de helderheids- en volumetoetsen van je Apple-toetsenbord je externe scherm te laten bedienen, voeg de app toe aan **Systeeminstellingen &gt; Privacy en beveiliging &gt; Apparaatbeheer en gegevenstoegang**! Hierna moet je de app herstarten. Als alternatief kun je ingebouwde toetsenbordbediening uitschakelen in Instellingen.</target>
-        <note>53477 - Native keyboard control macOS 27 permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**.</source>
+        <target state="translated">Om de helderheids- en volumetoetsen van je Apple-toetsenbord je externe scherm te laten bedienen, voeg de app toe aan **Systeeminstellingen &gt; Privacy en beveiliging &gt; Apparaatbeheer en gegevenstoegang**.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**.</source>
+        <target state="translated">Om de helderheids- en volumetoetsen van je Apple-toetsenbord je externe scherm te laten bedienen, voeg de app toe aan **Systeeminstellingen &gt; Privacy en beveiliging &gt; System &amp; App Protection Override**.</target>
+        <note>54443 - [LOCALIZATION_REVIEW_REQUIRED] macOS 27.3+ native Apple keyboard permission instructions; the bold path retains System &amp; App Protection Override in English for all locales because SecurityPrivacyExtension’s Localizable.loctable key ACCESSIBILITY is still English in build 26C5047e. Recheck that system resource on localization updates, apply verified localized page titles where available, and retain the marker while any affected locale still needs review.</note>
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
         <source>To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running.</source>
@@ -14601,11 +14611,6 @@ Een eerdere activering is automatisch verwijderd om ruimte te maken voor deze ni
         <source>[License Terms](https://betterdisplay.pro/license)</source>
         <target state="translated">[Licentievoorwaarden](https://betterdisplay.pro/license)</target>
         <note>53477 - Link to the software license terms.</note>
-      </trans-unit>
-      <trans-unit id="[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)" xml:space="preserve">
-        <source>[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</source>
-        <target state="translated">[Meer informatie over bevoegdheden voor Toegankelijkheid…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</target>
-        <note>53477 - Link to Apple help explaining Accessibility permissions required to control the Mac.</note>
       </trans-unit>
       <trans-unit id="[Privacy Policy](https://betterdisplay.pro/privacy)" xml:space="preserve">
         <source>[Privacy Policy](https://betterdisplay.pro/privacy)</source>

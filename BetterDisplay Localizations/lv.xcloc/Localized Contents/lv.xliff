@@ -720,31 +720,6 @@ Pārbaudiet tīkla savienojumu un ugunsmūra iestatījumus.</target>
         <target state="translated">Akcenta krāsa</target>
         <note>53974 - Tooltip and accessibility label for the multicolor first swatch in the shared PIP-highlight and crop-boundary color selectors. This option follows the macOS/app accent color rather than choosing a fixed color.</note>
       </trans-unit>
-      <trans-unit id="Accessibility Configuration Required!" xml:space="preserve">
-        <source>Accessibility Configuration Required!</source>
-        <target state="translated">Nepieciešama pieejamības konfigurācija!</target>
-        <note>53477 - Accessibility permission status requiring user configuration.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Configured - App Restart Needed" xml:space="preserve">
-        <source>Accessibility Configured - App Restart Needed</source>
-        <target state="translated">Pieejamība konfigurēta — jārestartē lietotne</target>
-        <note>53477 - Accessibility status when permission is granted but a restart is still required.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
-        <source>Accessibility Permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
-        <target state="translated">Pieejamības atļaujas ir konfigurētas, taču **lietotne joprojām ir jārestartē**, lai izmaiņas stātos spēkā! Lūdzu, aizveriet un restartējiet lietotni, kad tas ir ērti, vai nospiediet tālāk redzamo pogu „Restartēt %@”, lai nekavējoties restartētu lietotni!</target>
-        <note>53477 - Accessibility permission help after authorization; %@ is the app name in the restart button.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
-        <source>Accessibility Permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
-        <target state="translated">Pieejamības atļaujas ir pareizi konfigurētas. Sistēmas (Apple) tastatūras spilgtuma un skaļuma taustiņiem vajadzētu darboties, ja šīs funkcijas ir citādi iestatītas. Ja nē, lūdzu, mēģiniet restartēt lietotni!</target>
-        <note>53477 - Accessibility permission success help for native keyboard controls. Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
-      </trans-unit>
-      <trans-unit id="Accessibility is Configured Properly" xml:space="preserve">
-        <source>Accessibility is Configured Properly</source>
-        <target state="translated">Pieejamība ir pareizi konfigurēta</target>
-        <note>53477 - Accessibility permission success status.</note>
-      </trans-unit>
       <trans-unit id="Acquired" xml:space="preserve">
         <source>Acquired</source>
         <target state="translated">Iegūts</target>
@@ -1382,6 +1357,11 @@ This change cannot be undone. Are you sure you want to do this?</source>
         <source>Already Have a License?</source>
         <target state="translated">Vai jums jau ir licence?</target>
         <note>53477 - License activation prompt for existing license holders.</note>
+      </trans-unit>
+      <trans-unit id="Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**." xml:space="preserve">
+        <source>Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**.</source>
+        <target state="translated">Varat arī atspējot sistēmas tastatūras vadību gan spilgtumam, gan skaļumam sadaļā **Iestatījumi &gt; Tastatūra**.</target>
+        <note>54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings &gt; Keyboard path refers to BetterDisplay settings, not System Settings.</note>
       </trans-unit>
       <trans-unit id="Always" xml:space="preserve">
         <source>Always</source>
@@ -3177,11 +3157,6 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <target state="translated">Konfigurēt %@ Tri-Screen sinhronizāciju</target>
         <note>53477 - Monduo tri-screen synchronization setup action; %@ is the product name.</note>
       </trans-unit>
-      <trans-unit id="Configure Accessibility" xml:space="preserve">
-        <source>Configure Accessibility</source>
-        <target state="translated">Konfigurēt pieejamību</target>
-        <note>53477 - Action opening Accessibility permission configuration.</note>
-      </trans-unit>
       <trans-unit id="Configure Activation Rules" xml:space="preserve">
         <source>Configure Activation Rules</source>
         <target state="translated">Konfigurēt aktivizācijas noteikumus</target>
@@ -3301,6 +3276,11 @@ Lasīšanas garuma norādīšana nav obligāta — atstājiet lauku tukšu autom
         <source>Configure full screen stream to this display</source>
         <target state="translated">Konfigurēt pilnekrāna straumi uz šo displeju</target>
         <note>53477 - Full-screen stream configuration action targeting this display.</note>
+      </trans-unit>
+      <trans-unit id="Configure in System Settings…" xml:space="preserve">
+        <source>Configure in System Settings…</source>
+        <target state="translated">Konfigurēt Sistēmas iestatījumos…</target>
+        <note>54439 - Button that opens the native keyboard permission page in macOS System Settings. System Settings is the macOS app, not BetterDisplay settings; retain the ellipsis.</note>
       </trans-unit>
       <trans-unit id="Configure layout protection for %@" xml:space="preserve">
         <source>Configure layout protection for %@</source>
@@ -8118,6 +8098,11 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Vairāk sistēmas konfigurācijas opciju</target>
         <note>53477 - Heading and button label for additional display system configuration options. The button adds its own ellipsis, so do not include one in the translation.</note>
       </trans-unit>
+      <trans-unit id="More information on the required permissions…" xml:space="preserve">
+        <source>More information on the required permissions…</source>
+        <target state="translated">Plašāka informācija par nepieciešamajām atļaujām…</target>
+        <note>54437 - Link label for Apple help about native keyboard permissions; the destination depends on the macOS version.</note>
+      </trans-unit>
       <trans-unit id="More than one audio output matches. Refine the existing association or copy its unique identifier with Option." xml:space="preserve">
         <source>More than one audio output matches. Refine the existing association or copy its unique identifier with Option.</source>
         <target state="translated">Atbilst vairāk nekā viena audio izvade. Precizējiet esošo saistījumu vai kopējiet unikālo identifikatoru ar Option.</target>
@@ -8268,10 +8253,10 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Sistēmas (Apple) tastatūras vadība</target>
         <note>53477 - Native Apple media key control heading.</note>
       </trans-unit>
-      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!" xml:space="preserve">
-        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up accessibility permissions first in System Settings!</source>
-        <target state="translated">Sistēmas (Apple) tastatūras vadība, izmantojot spilgtuma vai audio taustiņus, nedarbosies bez pieejamības atļaujām, kas vispirms jāiestata Sistēmas iestatījumos!</target>
-        <note>53477 - Native media key Accessibility permission warning.</note>
+      <trans-unit id="Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings." xml:space="preserve">
+        <source>Native (Apple) keyboard control using the brightness keys or audio keys will not work without setting up the appropriate permissions first in System Settings.</source>
+        <target state="translated">Sistēmas (Apple) tastatūras vadība, izmantojot spilgtuma vai audio taustiņus, nedarbosies bez atbilstošajām atļaujām, kas vispirms jāiestata Sistēmas iestatījumos.</target>
+        <note>54438 - Explains why native Apple brightness and audio keys need permissions in System Settings. End the sentence with a period rather than an exclamation mark.</note>
       </trans-unit>
       <trans-unit id="Native Audio" xml:space="preserve">
         <source>Native Audio</source>
@@ -8298,10 +8283,20 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Sistēmas spilgtuma taustiņu caurlaide</target>
         <note>54301 - Per-display Apple brightness setting that forwards original system brightness-key events and their modifier keys to macOS instead of changing brightness in BetterDisplay. Pass-thru means keyboard-event forwarding, not a display connection or DDC transport.</note>
       </trans-unit>
-      <trans-unit id="Native keyboard control requires accessibility permissions!" xml:space="preserve">
-        <source>Native keyboard control requires accessibility permissions!</source>
-        <target state="translated">Sistēmas tastatūras vadībai ir nepieciešamas pieejamības atļaujas!</target>
-        <note>53477 - Native keyboard control permission warning.</note>
+      <trans-unit id="Native keyboard control (brightness and volume) requires permissions" xml:space="preserve">
+        <source>Native keyboard control (brightness and volume) requires permissions</source>
+        <target state="translated">Sistēmas tastatūras vadībai (spilgtumam un skaļumam) ir nepieciešamas atļaujas</target>
+        <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
+        <source>Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
+        <target state="translated">Sistēmas tastatūras vadības atļaujas ir konfigurētas, taču **lietotne joprojām ir jārestartē**, lai izmaiņas stātos spēkā! Lūdzu, aizveriet un restartējiet lietotni, kad tas ir ērti, vai nospiediet tālāk redzamo pogu „Restartēt %@”, lai nekavējoties restartētu lietotni!</target>
+        <note>54441 - Shown after native Apple keyboard permissions are granted but the app must restart before the handlers can work. Preserve the bold restart requirement and the exact localized Restart %@ button caption, where %@ is the app name.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" xml:space="preserve">
+        <source>Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!</source>
+        <target state="translated">Sistēmas tastatūras vadības atļaujas ir pareizi konfigurētas. Sistēmas (Apple) tastatūras spilgtuma un skaļuma taustiņiem vajadzētu darboties, ja šīs funkcijas ir citādi iestatītas. Ja nē, lūdzu, mēģiniet restartēt lietotni!</target>
+        <note>54437 - Success message for native keyboard brightness and volume permissions; other keyboard settings must also be enabled.</note>
       </trans-unit>
       <trans-unit id="Native mode (1:1 mapping)" xml:space="preserve">
         <source>Native mode (1:1 mapping)</source>
@@ -8917,6 +8912,21 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <source>Periodically read and update current value from display</source>
         <target state="translated">Periodiski nolasīt un atjaunināt pašreizējo vērtību no displeja</target>
         <note>53477 - Display state polling setting.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Configured - App Restart Needed" xml:space="preserve">
+        <source>Permissions Configured - App Restart Needed</source>
+        <target state="translated">Atļaujas konfigurētas — jārestartē lietotne</target>
+        <note>54437 - Native keyboard permission status when authorization has been granted but the app must restart.</note>
+      </trans-unit>
+      <trans-unit id="Permissions Required for Native Keyboard Control" xml:space="preserve">
+        <source>Permissions Required for Native Keyboard Control</source>
+        <target state="translated">Sistēmas tastatūras vadībai nepieciešamas atļaujas</target>
+        <note>54437 - Heading shown when native keyboard brightness and volume permissions have not been granted.</note>
+      </trans-unit>
+      <trans-unit id="Permissions are Configured Properly" xml:space="preserve">
+        <source>Permissions are Configured Properly</source>
+        <target state="translated">Atļaujas ir pareizi konfigurētas</target>
+        <note>54437 - Native keyboard permission status when authorization is already available.</note>
       </trans-unit>
       <trans-unit id="Persistent network connection" xml:space="preserve">
         <source>Persistent network connection</source>
@@ -10918,15 +10928,10 @@ Ne visi displeji atbalsta ekrāna vadības darbības. Šīs darbības dažiem di
         <target state="translated">Iestatīt norādīto displeju kā šīs displeju grupas galveno displeju. Atstājiet „Nav norādīts”, lai ļautu izlemt macOS vai ļautu piemērot Konfigurācijas aizsardzības lietotnes izvēlnes iestatījumu.</target>
         <note>53477 - Display group main display assignment help.</note>
       </trans-unit>
-      <trans-unit id="Set up Accessibility Permissions…" xml:space="preserve">
-        <source>Set up Accessibility Permissions…</source>
-        <target state="translated">Iestatīt pieejamības atļaujas…</target>
-        <note>53477 - Open Accessibility permission setup action.</note>
-      </trans-unit>
-      <trans-unit id="Set up Device Control and Data Access…" xml:space="preserve">
-        <source>Set up Device Control and Data Access…</source>
-        <target state="translated">Iestatīt ierīces vadības un datu piekļuves atļaujas…</target>
-        <note>53477 - Open macOS device control and data access permission setup.</note>
+      <trans-unit id="Set up Native Keyboard Permissions…" xml:space="preserve">
+        <source>Set up Native Keyboard Permissions…</source>
+        <target state="translated">Iestatīt sistēmas tastatūras vadības atļaujas…</target>
+        <note>54439 - Opens the permission setup sheet for native Apple keyboard brightness and volume keys. This caption is the same on every macOS version; it does not name a System Settings permission category.</note>
       </trans-unit>
       <trans-unit id="Set volume level first, then issue unmute command" xml:space="preserve">
         <source>Set volume level first, then issue unmute command</source>
@@ -13093,15 +13098,20 @@ Varat aizvērt šo paziņojumu — tādā gadījumā izmaiņas tiks lietotas, ka
         <target state="translated">Lai vadītu funkcijas, kas darbojas diapazonā (piemēram, spilgtums). Var izmantot grupas līmeņa sinhronizācijai.</target>
         <note>53477 - Range integration control help.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Lai Apple tastatūras spilgtuma un skaļuma taustiņi vadītu ārējo displeju, lūdzu, pievienojiet lietotni sadaļā **Sistēmas iestatījumi &gt; Privātums un drošība &gt; Pieejamība**! Pēc tam lietotne būs jārestartē. Varat arī atspējot sistēmas tastatūras vadību iestatījumos.</target>
-        <note>53477 - Native keyboard control Accessibility permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Accessibility**.</source>
+        <target state="translated">Lai Apple tastatūras spilgtuma un skaļuma taustiņi vadītu ārējo displeju, lūdzu, pievienojiet lietotni sadaļā **Sistēmas iestatījumi &gt; Privātums un drošība &gt; Pieejamība**.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 26. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
       </trans-unit>
-      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings." xml:space="preserve">
-        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**! After this, you'll have to restart the app. Alternatively, you can disable native keyboard control in Settings.</source>
-        <target state="translated">Lai Apple tastatūras spilgtuma un skaļuma taustiņi vadītu ārējo displeju, lūdzu, pievienojiet lietotni sadaļā **Sistēmas iestatījumi &gt; Privātums un drošība &gt; Ierīces vadība un datu piekļuve**! Pēc tam lietotne būs jārestartē. Varat arī atspējot sistēmas tastatūras vadību iestatījumos.</target>
-        <note>53477 - Native keyboard control macOS 27 permission instructions.</note>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**.</source>
+        <target state="translated">Lai Apple tastatūras spilgtuma un skaļuma taustiņi vadītu ārējo displeju, lūdzu, pievienojiet lietotni sadaļā **Sistēmas iestatījumi &gt; Privātums un drošība &gt; Ierīces vadība un datu piekļuve**.</target>
+        <note>54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**.</source>
+        <target state="translated">Lai Apple tastatūras spilgtuma un skaļuma taustiņi vadītu ārējo displeju, lūdzu, pievienojiet lietotni sadaļā **Sistēmas iestatījumi &gt; Privātums un drošība &gt; System &amp; App Protection Override**.</target>
+        <note>54443 - [LOCALIZATION_REVIEW_REQUIRED] macOS 27.3+ native Apple keyboard permission instructions; the bold path retains System &amp; App Protection Override in English for all locales because SecurityPrivacyExtension’s Localizable.loctable key ACCESSIBILITY is still English in build 26C5047e. Recheck that system resource on localization updates, apply verified localized page titles where available, and retain the marker while any affected locale still needs review.</note>
       </trans-unit>
       <trans-unit id="To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running." xml:space="preserve">
         <source>To open Settings, use the Tools menu, hold ⌥ Option while clicking on the app menu icon or launch the app again while it is already running.</source>
@@ -14651,11 +14661,6 @@ Iepriekšējā aktivācija tika automātiski noņemta, lai atbrīvotu vietu šai
         <source>[License Terms](https://betterdisplay.pro/license)</source>
         <target state="translated">[Licences noteikumi](https://betterdisplay.pro/license)</target>
         <note>53477 - Link to the software license terms.</note>
-      </trans-unit>
-      <trans-unit id="[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)" xml:space="preserve">
-        <source>[More information about Accessibility Permissions…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</source>
-        <target state="translated">[Plašāka informācija par Pieejamības atļaujām…](https://support.apple.com/guide/mac-help/allow-accessibility-apps-to-access-your-mac-mh43185)</target>
-        <note>53477 - Link to Apple help explaining Accessibility permissions required to control the Mac.</note>
       </trans-unit>
       <trans-unit id="[Privacy Policy](https://betterdisplay.pro/privacy)" xml:space="preserve">
         <source>[Privacy Policy](https://betterdisplay.pro/privacy)</source>
