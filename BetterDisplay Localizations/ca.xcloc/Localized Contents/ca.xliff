@@ -1364,10 +1364,10 @@ Aquest canvi no es pot desfer. Segur que voleu fer-ho?</target>
         <target state="translated">Ja teniu una llicència?</target>
         <note>53477 - License activation prompt for existing license holders.</note>
       </trans-unit>
-      <trans-unit id="Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**." xml:space="preserve">
-        <source>Alternatively, you can disable native keyboard control both for brightness and volume in **Settings &gt; Keyboard**.</source>
-        <target state="translated">També podeu desactivar el control natiu del teclat tant per a la brillantor com per al volum a **Ajustos &gt; Teclat**.</target>
-        <note>54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings &gt; Keyboard path refers to BetterDisplay settings, not System Settings.</note>
+      <trans-unit id="Alternatively, choose a different native keyboard control method, or disable native keyboard control for both brightness and volume in **Settings &gt; Keyboard**." xml:space="preserve">
+        <source>Alternatively, choose a different native keyboard control method, or disable native keyboard control for both brightness and volume in **Settings &gt; Keyboard**.</source>
+        <target state="translated">També podeu triar un altre mètode de control natiu del teclat o desactivar-lo tant per a la brillantor com per al volum a **Ajustos &gt; Teclat**.</target>
+        <note>54459 - Alternative to granting the selected native keyboard permission: select another method or disable both native brightness and audio control in the app’s Keyboard settings. Preserve the bold settings path.</note>
       </trans-unit>
       <trans-unit id="Always" xml:space="preserve">
         <source>Always</source>
@@ -6101,6 +6101,11 @@ Es poden eliminar sense risc: el macOS tornarà a crear els perfils necessaris l
         <target state="translated">Completa</target>
         <note>54097 - Aspect-ratio badge and filter for full-height display modes on built-in panels with a notch or Dynamic Island, including the area beside the cutout. This refers to use of the full panel, not a full-screen app or RGB range.</note>
       </trans-unit>
+      <trans-unit id="Full Access" xml:space="preserve">
+        <source>Full Access</source>
+        <target state="translated">Accés complet</target>
+        <note>54459 - Native keyboard method using the original active event tap and broad Accessibility/device-control permission; not Full Disk Access.</note>
+      </trans-unit>
       <trans-unit id="Full EDID match" xml:space="preserve">
         <source>Full EDID match</source>
         <target state="translated">Coincidència completa de l’EDID</target>
@@ -6851,6 +6856,11 @@ Es poden eliminar sense risc: el macOS tornarà a crear els perfils necessaris l
         <target state="translated">Si s’especifica, aquesta expressió regular s’aplica a la resposta per extreure’n el valor retornat.</target>
         <note>53477 - URL integration return value extraction help.</note>
       </trans-unit>
+      <trans-unit id="If the app is not listed, click + to add it. Enable access, then restart the app." xml:space="preserve">
+        <source>If the app is not listed, click + to add it. Enable access, then restart the app.</source>
+        <target state="translated">Si l’app no apareix a la llista, feu clic a + per afegir-la. Activeu l’accés i reinicieu l’app.</target>
+        <note>54446 - Fallback instructions in the native keyboard permission sheet when macOS has not automatically listed the app under Input Monitoring. The + is the System Settings Add button; users enable the app’s switch and restart BetterDisplay.</note>
+      </trans-unit>
       <trans-unit id="If the device is already powered on by the time the app would power the device on, do not switch to the Mac input." xml:space="preserve">
         <source>If the device is already powered on by the time the app would power the device on, do not switch to the Mac input.</source>
         <target state="translated">Si el dispositiu ja està encès quan l’app l’hauria d’encendre, no canvia a l’entrada del Mac.</target>
@@ -7064,6 +7074,11 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <source>Initiate Pairing</source>
         <target state="translated">Inicia l’enllaç</target>
         <note>53477 - Start device pairing action.</note>
+      </trans-unit>
+      <trans-unit id="Input Monitoring" xml:space="preserve">
+        <source>Input Monitoring</source>
+        <target state="translated">Monitoratge dels dispositius d’entrada</target>
+        <note>54459 - [LOCALIZATION_REVIEW_REQUIRED] Native keyboard method and macOS permission page name, verified against SecurityPrivacyExtension LISTEN_EVENT or the existing Latvian glossary. Bulgarian and Persian remain descriptive fallbacks pending an authoritative localized Apple label.</note>
       </trans-unit>
       <trans-unit id="Input Source" xml:space="preserve">
         <source>Input Source</source>
@@ -8293,6 +8308,16 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <source>Native keyboard control (brightness and volume) requires permissions</source>
         <target state="translated">El control natiu del teclat (brillantor i volum) requereix permisos</target>
         <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control could not start. Try a different native keyboard control method." xml:space="preserve">
+        <source>Native keyboard control could not start. Try a different native keyboard control method.</source>
+        <target state="translated">No s’ha pogut iniciar el control natiu del teclat. Proveu un altre mètode.</target>
+        <note>54459 - Native keyboard backend could not start or safely install its mappings/shortcut reservations; suggests selecting another method.</note>
+      </trans-unit>
+      <trans-unit id="Native keyboard control method" xml:space="preserve">
+        <source>Native keyboard control method</source>
+        <target state="translated">Mètode de control natiu del teclat</target>
+        <note>54459 - Label for the three-way native Apple brightness/audio key handling method selector under Keyboard settings.</note>
       </trans-unit>
       <trans-unit id="Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the &quot;Restart %@&quot; button below to restart the app immediately!" xml:space="preserve">
         <source>Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the "Restart %@" button below to restart the app immediately!</source>
@@ -11697,7 +11722,7 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
       <trans-unit id="Standard" xml:space="preserve">
         <source>Standard</source>
         <target state="translated">Estàndard</target>
-        <note>53477 - App menu presentation option that opens below the menu bar icon with the normal menu background. Standard names the regular presentation, without implying an older or dated style.</note>
+        <note>54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions.</note>
       </trans-unit>
       <trans-unit id="Standard Appearance" xml:space="preserve">
         <source>Standard Appearance</source>
@@ -11713,6 +11738,11 @@ No totes les pantalles admeten operacions de control de pantalla. Aquestes opera
         <source>Standard step size</source>
         <target state="translated">Mida del pas estàndard</target>
         <note>53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size.</note>
+      </trans-unit>
+      <trans-unit id="Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger persistent warnings on newer macOS versions. Full Access requires the widest grant." xml:space="preserve">
+        <source>Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger persistent warnings on newer macOS versions. Full Access requires the widest grant.</source>
+        <target state="translated">Estàndard utilitza l’accés més limitat i no requereix permisos explícits del sistema per funcionar. Si causa problemes, proveu Monitoratge dels dispositius d’entrada o Accés complet. Aquests mètodes requereixen permisos explícits a Configuració del Sistema i poden provocar avisos persistents en versions més recents del macOS. Accés complet requereix els permisos més amplis.</target>
+        <note>54463 - [LOCALIZATION_REVIEW_REQUIRED] Explanation beneath the native keyboard method selector: Standard uses focused access without explicit system permissions; fallback methods need permission and may trigger persistent macOS warnings. Bulgarian and Persian Input Monitoring names remain descriptive fallbacks pending an authoritative Apple label from its localized guide or SecurityPrivacyExtension LISTEN_EVENT.</note>
       </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
@@ -13111,6 +13141,11 @@ Podeu descartar aquesta notificació; en aquest cas, els canvis s’aplicaran la
         <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Device Control and Data Access**.</source>
         <target state="translated">Perquè les tecles de brillantor i volum del teclat Apple controlin la pantalla externa, afegiu l’app a **Configuració del Sistema &gt; Privacitat i seguretat &gt; Control de dispositius i accés a dades**.</target>
         <note>54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed.</note>
+      </trans-unit>
+      <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Input Monitoring**." xml:space="preserve">
+        <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Input Monitoring**.</source>
+        <target state="translated">Perquè les tecles de brillantor i volum del teclat Apple controlin la pantalla externa, afegiu l’app a **Configuració del Sistema &gt; Privacitat i seguretat &gt; Monitoratge dels dispositius d’entrada**.</target>
+        <note>54463 - [LOCALIZATION_REVIEW_REQUIRED] Native Apple keyboard setup instructions for the Input Monitoring method; preserve the bold System Settings path and the verified LISTEN_EVENT page title. Bulgarian and Persian Input Monitoring labels remain descriptive fallbacks pending authoritative Apple wording from SecurityPrivacyExtension’s Localizable.loctable or a localized Apple guide; Latvian uses its established glossary term.</note>
       </trans-unit>
       <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**." xml:space="preserve">
         <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**.</source>

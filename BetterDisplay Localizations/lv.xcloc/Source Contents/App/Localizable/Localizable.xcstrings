@@ -1045,8 +1045,8 @@
     "Already Have a License?" : {
       "comment" : "53477 - License activation prompt for existing license holders."
     },
-    "Alternatively, you can disable native keyboard control both for brightness and volume in **Settings > Keyboard**." : {
-      "comment" : "54438 - Separate alternative paragraph in native keyboard permission setup. Both brightness and volume handlers must be disabled; the bold Settings > Keyboard path refers to BetterDisplay settings, not System Settings."
+    "Alternatively, choose a different native keyboard control method, or disable native keyboard control for both brightness and volume in **Settings > Keyboard**." : {
+      "comment" : "54459 - Alternative to granting the selected native keyboard permission: select another method or disable both native brightness and audio control in the app’s Keyboard settings. Preserve the bold settings path."
     },
     "Always" : {
       "comment" : "53477 - Unconditional policy or frequency selection."
@@ -4424,6 +4424,9 @@
     "Full" : {
       "comment" : "54097 - Aspect-ratio badge and filter for full-height display modes on built-in panels with a notch or Dynamic Island, including the area beside the cutout. This refers to use of the full panel, not a full-screen app or RGB range."
     },
+    "Full Access" : {
+      "comment" : "54459 - Native keyboard method using the original active event tap and broad Accessibility/device-control permission; not Full Disk Access."
+    },
     "Full control" : {
       "comment" : "53477 - Full device control capability label."
     },
@@ -4927,6 +4930,9 @@
     "If specified, this regex is performed on the response to extract the return value." : {
       "comment" : "53477 - URL integration return value extraction help."
     },
+    "If the app is not listed, click + to add it. Enable access, then restart the app." : {
+      "comment" : "54446 - Fallback instructions in the native keyboard permission sheet when macOS has not automatically listed the app under Input Monitoring. The + is the System Settings Add button; users enable the app’s switch and restart BetterDisplay."
+    },
     "If the device is already powered on by the time the app would power the device on, do not switch to the Mac input." : {
       "comment" : "53477 - Device power-on input switching condition."
     },
@@ -5066,6 +5072,9 @@
     },
     "Initiate Pairing" : {
       "comment" : "53477 - Start device pairing action."
+    },
+    "Input Monitoring" : {
+      "comment" : "54459 - [LOCALIZATION_REVIEW_REQUIRED] Native keyboard method and macOS permission page name, verified against SecurityPrivacyExtension LISTEN_EVENT or the existing Latvian glossary. Bulgarian and Persian remain descriptive fallbacks pending an authoritative localized Apple label."
     },
     "Input peak / RMS: %@, %@ dBFS" : {
       "comment" : "53927 - Software Audio input meter with two formatted levels: peak first, then root mean square (RMS), both relative to digital full scale (dBFS). Preserve both %@ placeholders in that order; these are not acoustic sound-pressure levels.",
@@ -5940,6 +5949,12 @@
     },
     "Native keyboard control (brightness and volume) requires permissions" : {
       "comment" : "54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page."
+    },
+    "Native keyboard control could not start. Try a different native keyboard control method." : {
+      "comment" : "54459 - Native keyboard backend could not start or safely install its mappings/shortcut reservations; suggests selecting another method."
+    },
+    "Native keyboard control method" : {
+      "comment" : "54459 - Label for the three-way native Apple brightness/audio key handling method selector under Keyboard settings."
     },
     "Native keyboard control permissions are configured but the **app still needs to be restarted** for the changes to take effect! Please close and restart the app when it is convenient or press the \"Restart %@\" button below to restart the app immediately!" : {
       "comment" : "54441 - Shown after native Apple keyboard permissions are granted but the app must restart before the handlers can work. Preserve the bold restart requirement and the exact localized Restart %@ button caption, where %@ is the app name."
@@ -8372,7 +8387,7 @@
       "comment" : "53477 - Standard RGB color space identifier."
     },
     "Standard" : {
-      "comment" : "53477 - App menu presentation option that opens below the menu bar icon with the normal menu background. Standard names the regular presentation, without implying an older or dated style."
+      "comment" : "54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions."
     },
     "Standard Appearance" : {
       "comment" : "53477 - Standard appearance option."
@@ -8382,6 +8397,9 @@
     },
     "Standard step size" : {
       "comment" : "53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size."
+    },
+    "Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger persistent warnings on newer macOS versions. Full Access requires the widest grant." : {
+      "comment" : "54463 - [LOCALIZATION_REVIEW_REQUIRED] Explanation beneath the native keyboard method selector: Standard uses focused access without explicit system permissions; fallback methods need permission and may trigger persistent macOS warnings. Bulgarian and Persian Input Monitoring names remain descriptive fallbacks pending an authoritative Apple label from its localized guide or SecurityPrivacyExtension LISTEN_EVENT."
     },
     "Start Automatically" : {
       "comment" : "53477 - Automatically start feature option."
@@ -9353,6 +9371,9 @@
     },
     "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > Device Control and Data Access**." : {
       "comment" : "54439 - Native Apple keyboard permission setup instructions for macOS 27.0–27.2. Preserve the bold System Settings path; restart guidance is shown separately when needed."
+    },
+    "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > Input Monitoring**." : {
+      "comment" : "54463 - [LOCALIZATION_REVIEW_REQUIRED] Native Apple keyboard setup instructions for the Input Monitoring method; preserve the bold System Settings path and the verified LISTEN_EVENT page title. Bulgarian and Persian Input Monitoring labels remain descriptive fallbacks pending authoritative Apple wording from SecurityPrivacyExtension’s Localizable.loctable or a localized Apple guide; Latvian uses its established glossary term."
     },
     "To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings > Privacy & Security > System & App Protection Override**." : {
       "comment" : "54443 - [LOCALIZATION_REVIEW_REQUIRED] macOS 27.3+ native Apple keyboard permission instructions; the bold path retains System & App Protection Override in English for all locales because SecurityPrivacyExtension’s Localizable.loctable key ACCESSIBILITY is still English in build 26C5047e. Recheck that system resource on localization updates, apply verified localized page titles where available, and retain the marker while any affected locale still needs review."
