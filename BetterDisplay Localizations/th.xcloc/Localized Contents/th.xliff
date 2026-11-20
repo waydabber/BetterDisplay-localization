@@ -5201,6 +5201,11 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">ดึงข้อมูล EDID ไม่สำเร็จ</target>
         <note>53688 - Warning when display identification data could not be retrieved.</note>
       </trans-unit>
+      <trans-unit id="EDID sent. Reconnect the display to verify the result." xml:space="preserve">
+        <source>EDID sent. Reconnect the display to verify the result.</source>
+        <target state="translated">ส่งข้อมูล EDID แล้ว เชื่อมต่อจอภาพอีกครั้งเพื่อตรวจสอบผล</target>
+        <note>54469 - Shown when all EDID identification data was sent to the display. Reconnect the physical display to verify what the device retained.</note>
+      </trans-unit>
       <trans-unit id="EDID version" xml:space="preserve">
         <source>EDID version</source>
         <target state="translated">เวอร์ชั่น EDID</target>
@@ -7042,7 +7047,7 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Input Monitoring" xml:space="preserve">
         <source>Input Monitoring</source>
         <target state="translated">การตรวจสอบสัญญาณเข้า</target>
-        <note>54459 - [LOCALIZATION_REVIEW_REQUIRED] Native keyboard method and macOS permission page name, verified against SecurityPrivacyExtension LISTEN_EVENT or the existing Latvian glossary. Bulgarian and Persian remain descriptive fallbacks pending an authoritative localized Apple label.</note>
+        <note>54496 - Native keyboard handling method and macOS permission page for monitoring keyboard, mouse, and trackpad input. Use SecurityPrivacyExtension’s LISTEN_EVENT wording where available; Bulgarian, Persian, and Latvian use accepted project terminology.</note>
       </trans-unit>
       <trans-unit id="Input Source" xml:space="preserve">
         <source>Input Source</source>
@@ -8273,10 +8278,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">การควบคุมด้วยปุ่มแป้นพิมพ์ของระบบ (ความสว่างและระดับเสียง) ต้องมีสิทธิ์</target>
         <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
       </trans-unit>
-      <trans-unit id="Native keyboard control could not start. Try a different native keyboard control method." xml:space="preserve">
-        <source>Native keyboard control could not start. Try a different native keyboard control method.</source>
-        <target state="translated">ไม่สามารถเริ่มการควบคุมด้วยปุ่มระบบบนแป้นพิมพ์ได้ โปรดลองวิธีอื่น</target>
-        <note>54459 - Native keyboard backend could not start or safely install its mappings/shortcut reservations; suggests selecting another method.</note>
+      <trans-unit id="Native keyboard control is being interrupted and may be unavailable. The reason could be a device connection issue or interference from another app or service. If you notice a problem, try reconnecting any affected external keyboards, pausing other keyboard utilities, or switching to a different keyboard control method." xml:space="preserve">
+        <source>Native keyboard control is being interrupted and may be unavailable. The reason could be a device connection issue or interference from another app or service. If you notice a problem, try reconnecting any affected external keyboards, pausing other keyboard utilities, or switching to a different keyboard control method.</source>
+        <target state="translated">การควบคุมด้วยปุ่มระบบบนแป้นพิมพ์กำลังถูกขัดจังหวะและอาจใช้งานไม่ได้ สาเหตุอาจเป็นปัญหาการเชื่อมต่ออุปกรณ์หรือการรบกวนจากแอปหรือบริการอื่น หากพบปัญหา ให้ลองเชื่อมต่อแป้นพิมพ์ภายนอกที่ได้รับผลกระทบใหม่ หยุดยูทิลิตี้แป้นพิมพ์อื่นชั่วคราว หรือเปลี่ยนไปใช้วิธีควบคุมแป้นพิมพ์แบบอื่น</target>
+        <note>54496 - Warning beneath the native keyboard method selector while the app retries interrupted key handling. Device connection problems or another keyboard driver/remapper may interfere; suggested remedies are reconnecting affected external keyboards, pausing other keyboard utilities, or choosing another handling method.</note>
       </trans-unit>
       <trans-unit id="Native keyboard control method" xml:space="preserve">
         <source>Native keyboard control method</source>
@@ -10213,6 +10218,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">ข้อมูล EDID ที่ดึงมา</target>
         <note>53477 - Retrieved hardware EDID data heading.</note>
       </trans-unit>
+      <trans-unit id="Retry" xml:space="preserve">
+        <source>Retry</source>
+        <target state="translated">ลองอีกครั้ง</target>
+        <note>54469 - Action in the selected-content stream menu that retries capturing the currently selected windows after a failed source change.</note>
+      </trans-unit>
       <trans-unit id="Return" xml:space="preserve">
         <source>Return</source>
         <target state="translated">ย้อนกลับ</target>
@@ -11703,10 +11713,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">ขนาดขั้นการปรับแบบมาตรฐาน</target>
         <note>53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size.</note>
       </trans-unit>
-      <trans-unit id="Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger persistent warnings on newer macOS versions. Full Access requires the widest grant." xml:space="preserve">
-        <source>Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger persistent warnings on newer macOS versions. Full Access requires the widest grant.</source>
-        <target state="translated">มาตรฐาน ใช้การเข้าถึงที่จำกัดที่สุดและไม่จำเป็นต้องได้รับสิทธิ์ของระบบอย่างชัดเจนเพื่อทำงาน หากพบปัญหา ให้ลอง การตรวจสอบสัญญาณเข้า หรือ การเข้าถึงแบบเต็ม วิธีเหล่านี้ต้องได้รับสิทธิ์อย่างชัดเจนในการตั้งค่าระบบ และอาจทำให้มีคำเตือนแสดงอย่างต่อเนื่องใน macOS เวอร์ชันใหม่กว่า การเข้าถึงแบบเต็ม ต้องใช้สิทธิ์ที่ครอบคลุมที่สุด</target>
-        <note>54463 - [LOCALIZATION_REVIEW_REQUIRED] Explanation beneath the native keyboard method selector: Standard uses focused access without explicit system permissions; fallback methods need permission and may trigger persistent macOS warnings. Bulgarian and Persian Input Monitoring names remain descriptive fallbacks pending an authoritative Apple label from its localized guide or SecurityPrivacyExtension LISTEN_EVENT.</note>
+      <trans-unit id="Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant." xml:space="preserve">
+        <source>Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant.</source>
+        <target state="translated">มาตรฐาน ใช้การเข้าถึงที่จำกัดที่สุดและไม่จำเป็นต้องได้รับสิทธิ์ของระบบอย่างชัดเจนเพื่อทำงาน หากพบปัญหา ให้ลอง การตรวจสอบสัญญาณเข้า หรือ การเข้าถึงแบบเต็ม วิธีเหล่านี้ต้องได้รับสิทธิ์อย่างชัดเจนในการตั้งค่าระบบ และอาจทำให้ตัวบ่งชี้แสดงอยู่ตลอดเวลาใน macOS บางเวอร์ชัน การเข้าถึงแบบเต็ม ต้องใช้สิทธิ์ที่ครอบคลุมที่สุด</target>
+        <note>54496 - Help beneath the native keyboard method selector: Standard needs no explicit system permission grant, while Input Monitoring and Full Access require permission and may show a persistent macOS access indicator. Bulgarian and Persian Input Monitoring labels use accepted project terminology.</note>
       </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
@@ -12093,6 +12103,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">จับคู่ UUID ของระบบ (แนะนำ)</target>
         <note>53477 - Recommended display identification method.</note>
       </trans-unit>
+      <trans-unit id="System display settings were reset, but NVRAM could not be cleared. Restart your Mac now?" xml:space="preserve">
+        <source>System display settings were reset, but NVRAM could not be cleared. Restart your Mac now?</source>
+        <target state="translated">รีเซ็ตการตั้งค่าจอภาพของระบบแล้ว แต่ไม่สามารถล้าง NVRAM ได้ คุณต้องการเริ่มการทำงานของ Mac ใหม่ตอนนี้หรือไม่</target>
+        <note>54469 - Partial reset alert shown after system display settings were removed but the requested NVRAM clear failed. The user can restart the Mac now or cancel.</note>
+      </trans-unit>
       <trans-unit id="System profiles:" xml:space="preserve">
         <source>System profiles:</source>
         <target state="translated">โปรไฟล์ระบบ:</target>
@@ -12182,6 +12197,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>The DDC reset command might not work properly for all displays. You can also try using the built-in factory reset functionality of the display (usually accessible via the display OSD).</source>
         <target state="translated">คำสั่งรีเซ็ต DDC อาจทำงานไม่ถูกต้องกับจอภาพบางจอ คุณสามารถลองใช้ฟังก์ชั่นรีเซ็ตเป็นค่าจากโรงงานในตัวจอภาพได้ด้วย (โดยทั่วไปเข้าถึงผ่าน OSD ของจอภาพ)</target>
         <note>53477 - Hardware DDC reset confirmation help.</note>
+      </trans-unit>
+      <trans-unit id="The EDID write failed. The device EDID may be incomplete." xml:space="preserve">
+        <source>The EDID write failed. The device EDID may be incomplete.</source>
+        <target state="translated">เขียนข้อมูล EDID ไม่สำเร็จ ข้อมูล EDID ในอุปกรณ์อาจไม่สมบูรณ์</target>
+        <note>54469 - Shown when a physical EDID write failed. The device may have received only part of the display identification data.</note>
       </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
@@ -12575,6 +12595,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <target state="translated">การป้องกันจะไม่มีผลจนกว่าจะกำหนดตำแหน่งสัมพัทธ์</target>
         <note>53688 - Layout protection prerequisite requiring a relative display position.</note>
       </trans-unit>
+      <trans-unit id="The reset stopped before it finished. Some system display settings may already have been removed. BetterDisplay kept your saved display records." xml:space="preserve">
+        <source>The reset stopped before it finished. Some system display settings may already have been removed. BetterDisplay kept your saved display records.</source>
+        <target state="translated">การรีเซ็ตหยุดลงก่อนที่จะเสร็จสิ้น การตั้งค่าจอภาพบางอย่างของระบบอาจถูกลบไปแล้ว BetterDisplay ยังคงเก็บข้อมูลจอภาพที่คุณบันทึกไว้</target>
+        <note>54469 - Display settings reset error shown with the underlying failure details. System settings may already have been removed, while the display records saved by BetterDisplay are retained.</note>
+      </trans-unit>
       <trans-unit id="The selected display is no longer connected." xml:space="preserve">
         <source>The selected display is no longer connected.</source>
         <target state="translated">จอภาพที่เลือกไม่ได้เชื่อมต่อแล้ว</target>
@@ -12594,11 +12619,6 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The slider will omit resolutions that do not match the display's size in order to reduce clutter and make the slider easier to use. Affects resolution keyboard shortcuts as well.</source>
         <target state="translated">แถบเลื่อนจะละเว้นความละเอียดที่ไม่ตรงกับขนาดจอภาพ เพื่อลดความรกและให้ใช้งานง่ายขึ้น มีผลกับปุ่มลัดความละเอียดด้วย</target>
         <note>53477 - Resolution slider filtering setting help.</note>
-      </trans-unit>
-      <trans-unit id="The source selection does not contain any content." xml:space="preserve">
-        <source>The source selection does not contain any content.</source>
-        <target state="translated">ต้นทางที่เลือกไม่มีเนื้อหา</target>
-        <note>53477 - Empty capture source selection error.</note>
       </trans-unit>
       <trans-unit id="The specified audio device does not have native volume controls." xml:space="preserve">
         <source>The specified audio device does not have native volume controls.</source>
@@ -12624,6 +12644,11 @@ In case of a failure, disconnect and reconnect the display physically.</source>
         <source>The system OSD is available for brightness and volume only and may not show the correct device name and value on this macOS version.</source>
         <target state="translated">OSD ของระบบใช้ได้เฉพาะความสว่างและระดับเสียง และอาจแสดงชื่ออุปกรณ์กับค่าไม่ถูกต้องบน macOS เวอร์ชั่นนี้</target>
         <note>53688 - System OSD compatibility warning; only brightness and volume are supported.</note>
+      </trans-unit>
+      <trans-unit id="The system display settings have been reset. Please restart your Mac manually." xml:space="preserve">
+        <source>The system display settings have been reset. Please restart your Mac manually.</source>
+        <target state="translated">รีเซ็ตการตั้งค่าจอภาพของระบบแล้ว โปรดเริ่มการทำงานของ Mac ใหม่ด้วยตนเอง</target>
+        <note>54469 - Alert shown when the reset has completed but the request to restart macOS failed. The user must restart the Mac manually.</note>
       </trans-unit>
       <trans-unit id="The system might reconnect the built-in display and other displays after wake from sleep to ensure GUI access. With this option enabled, the app forcefully disconnects these displays again. Post-wake main display will not be disconnected." xml:space="preserve">
         <source>The system might reconnect the built-in display and other displays after wake from sleep to ensure GUI access. With this option enabled, the app forcefully disconnects these displays again. Post-wake main display will not be disconnected.</source>
@@ -13091,7 +13116,7 @@ You can dismiss this notification - in this case the changes will be applied whe
       <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Input Monitoring**." xml:space="preserve">
         <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; Input Monitoring**.</source>
         <target state="translated">เพื่อให้ปุ่มความสว่างและระดับเสียงบนแป้นพิมพ์ Apple ควบคุมจอภาพภายนอกได้ โปรดเพิ่มแอปใน **การตั้งค่าระบบ &gt; ความเป็นส่วนตัวและความปลอดภัย &gt; การตรวจสอบสัญญาณเข้า**.</target>
-        <note>54463 - [LOCALIZATION_REVIEW_REQUIRED] Native Apple keyboard setup instructions for the Input Monitoring method; preserve the bold System Settings path and the verified LISTEN_EVENT page title. Bulgarian and Persian Input Monitoring labels remain descriptive fallbacks pending authoritative Apple wording from SecurityPrivacyExtension’s Localizable.loctable or a localized Apple guide; Latvian uses its established glossary term.</note>
+        <note>54496 - Instructions for enabling the Input Monitoring native keyboard method on any supported macOS version; preserve the bold System Settings path. Page names use SecurityPrivacyExtension’s LISTEN_EVENT where available, with accepted Bulgarian, Persian, and Latvian project terminology otherwise.</note>
       </trans-unit>
       <trans-unit id="To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**." xml:space="preserve">
         <source>To make your Apple keyboard's brightness and volume keys control your external display, please add the app to **System Settings &gt; Privacy &amp; Security &gt; System &amp; App Protection Override**.</source>
