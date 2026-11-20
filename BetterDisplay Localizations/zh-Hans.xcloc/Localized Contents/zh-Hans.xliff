@@ -3712,10 +3712,20 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">当前显示角色</target>
         <note>53477 - Display role, such as computer monitor or television; not main or secondary position.</note>
       </trans-unit>
+      <trans-unit id="Current full-screen luminance" xml:space="preserve">
+        <source>Current full-screen luminance</source>
+        <target state="translated">当前全屏亮度</target>
+        <note>54559 - Read-only label for the display’s currently reported maximum sustained luminance across an entirely white screen, in nits.</note>
+      </trans-unit>
       <trans-unit id="Current method:" xml:space="preserve">
         <source>Current method:</source>
         <target state="translated">当前方式：</target>
         <note>53695 - Label beneath the software-based video adjustments switch in display Settings. A separately localized description of the loaded image adjustment controllers follows this label.</note>
+      </trans-unit>
+      <trans-unit id="Current minimum usable brightness" xml:space="preserve">
+        <source>Current minimum usable brightness</source>
+        <target state="translated">当前最低可用亮度</target>
+        <note>54559 - Read-only label for the display’s currently reported minimum usable white luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current mode" xml:space="preserve">
         <source>Current mode</source>
@@ -3726,6 +3736,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Current native resolution</source>
         <target state="translated">当前原生分辨率</target>
         <note>53477 - Current native physical display resolution.</note>
+      </trans-unit>
+      <trans-unit id="Current peak luminance" xml:space="preserve">
+        <source>Current peak luminance</source>
+        <target state="translated">当前峰值亮度</target>
+        <note>54559 - Read-only label for the display’s currently reported peak luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current resolution (width × height) is shown as text when enabled." xml:space="preserve">
         <source>Current resolution (width × height) is shown as text when enabled.</source>
@@ -5256,10 +5271,25 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">编辑显示角色</target>
         <note>53477 - System display role editing, such as monitor versus television.</note>
       </trans-unit>
+      <trans-unit id="Edit full-screen luminance" xml:space="preserve">
+        <source>Edit full-screen luminance</source>
+        <target state="translated">编辑全屏亮度</target>
+        <note>54559 - Toggle that enables a custom sustained luminance value for this display model when the entire screen is white.</note>
+      </trans-unit>
+      <trans-unit id="Edit minimum usable brightness" xml:space="preserve">
+        <source>Edit minimum usable brightness</source>
+        <target state="translated">编辑最低可用亮度</target>
+        <note>54559 - Toggle that enables a custom minimum usable white luminance value for this display model.</note>
+      </trans-unit>
       <trans-unit id="Edit native panel pixel resolution" xml:space="preserve">
         <source>Edit native panel pixel resolution</source>
         <target state="translated">编辑原生面板像素分辨率</target>
         <note>53477 - System override for native panel pixel dimensions.</note>
+      </trans-unit>
+      <trans-unit id="Edit peak luminance" xml:space="preserve">
+        <source>Edit peak luminance</source>
+        <target state="translated">编辑峰值亮度</target>
+        <note>54559 - Toggle that enables a custom peak luminance value for this display model.</note>
       </trans-unit>
       <trans-unit id="Edit system display name" xml:space="preserve">
         <source>Edit system display name</source>
@@ -5281,10 +5311,25 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">已编辑显示角色</target>
         <note>53477 - Edited display role override value.</note>
       </trans-unit>
+      <trans-unit id="Edited full-screen luminance" xml:space="preserve">
+        <source>Edited full-screen luminance</source>
+        <target state="translated">已编辑的全屏亮度</target>
+        <note>54559 - Editable field for the custom sustained luminance in nits when the entire screen is white.</note>
+      </trans-unit>
+      <trans-unit id="Edited minimum usable brightness" xml:space="preserve">
+        <source>Edited minimum usable brightness</source>
+        <target state="translated">已编辑的最低可用亮度</target>
+        <note>54559 - Editable field for the custom minimum usable white luminance in nits in the display model’s system configuration.</note>
+      </trans-unit>
       <trans-unit id="Edited native resolution" xml:space="preserve">
         <source>Edited native resolution</source>
         <target state="translated">已编辑原生分辨率</target>
         <note>53477 - Edited native resolution override value.</note>
+      </trans-unit>
+      <trans-unit id="Edited peak luminance" xml:space="preserve">
+        <source>Edited peak luminance</source>
+        <target state="translated">已编辑的峰值亮度</target>
+        <note>54559 - Editable field for the custom peak luminance in nits in the display model’s system configuration.</note>
       </trans-unit>
       <trans-unit id="Edited system display name" xml:space="preserve">
         <source>Edited system display name</source>
@@ -5770,6 +5815,16 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Exit Service Menu</source>
         <target state="translated">退出服务菜单</target>
         <note>53689 - TV remote action to leave the technical service menu.</note>
+      </trans-unit>
+      <trans-unit id="Expand OSD from notch area" xml:space="preserve">
+        <source>Expand OSD from notch area</source>
+        <target state="translated">从刘海区域展开调整浮窗</target>
+        <note>54534 - Keyboard settings toggle for expanding the on-screen display from the built-in MacBook camera notch.</note>
+      </trans-unit>
+      <trans-unit id="Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
+        <source>Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style.</source>
+        <target state="translated">当目标显示器配备刘海并使用“完整”宽高比时，从刘海区域展开调整浮窗。否则使用所选调整浮窗样式。</target>
+        <note>54534 - Describes notch OSD placement. Full is the aspect ratio that includes the screen area beside the camera housing.</note>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
@@ -6404,6 +6459,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>HDR LUT support is experimental and requires a Rec. 2100 PQ LUT created for a fixed display calibration.</source>
         <target state="translated">HDR LUT 支持是实验性的，需要为固定显示校准创建 Rec. 2100 PQ LUT。</target>
         <note>53477 - HDR LUT compatibility help.</note>
+      </trans-unit>
+      <trans-unit id="HDR Luminance" xml:space="preserve">
+        <source>HDR Luminance</source>
+        <target state="translated">HDR 亮度</target>
+        <note>54559 - Section title in More System Configuration Options for overrides of peak luminance, sustained full-screen luminance, and minimum usable brightness, all measured in nits.</note>
       </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
@@ -10918,10 +10978,25 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">将 ${displayEntity} 的显示模式设为分辨率 ${resolutionEntity}、缩放 ${scaleFactorEntity}、刷新率 ${refreshRateEntity}、色深 ${colorDepthEntity}。</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
       </trans-unit>
+      <trans-unit id="Set the display's peak luminance in nits for macOS brightness and HDR calculations." xml:space="preserve">
+        <source>Set the display's peak luminance in nits for macOS brightness and HDR calculations.</source>
+        <target state="translated">以尼特为单位设置显示器的峰值亮度，供 macOS 计算亮度和 HDR。</target>
+        <note>54559 - Help below the peak luminance override. This is the value macOS uses for brightness and HDR calculations.</note>
+      </trans-unit>
       <trans-unit id="Set the input source ${displayEntity} to ${inputSourceEntity}." xml:space="preserve">
         <source>Set the input source ${displayEntity} to ${inputSourceEntity}.</source>
         <target state="translated">将 ${displayEntity} 的输入源设置为 ${inputSourceEntity}。</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
+      </trans-unit>
+      <trans-unit id="Set the lowest usable white luminance in nits for macOS brightness control." xml:space="preserve">
+        <source>Set the lowest usable white luminance in nits for macOS brightness control.</source>
+        <target state="translated">以尼特为单位设置白色的最低可用亮度，供 macOS 控制亮度。</target>
+        <note>54559 - Help below the minimum usable brightness override. The value specifies the lowest usable luminance when showing white for macOS brightness control.</note>
+      </trans-unit>
+      <trans-unit id="Set the luminance in nits that the display can sustain when the entire screen is white." xml:space="preserve">
+        <source>Set the luminance in nits that the display can sustain when the entire screen is white.</source>
+        <target state="translated">以尼特为单位设置整个屏幕显示白色时显示器可持续保持的亮度。</target>
+        <note>54559 - Help below the full-screen luminance override. This is the luminance that can be maintained when the entire display shows white.</note>
       </trans-unit>
       <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
         <source>Set the rotation of ${displayEntity} to ${degrees}.</source>
@@ -11713,11 +11788,6 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">标准步长</target>
         <note>53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size.</note>
       </trans-unit>
-      <trans-unit id="Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant." xml:space="preserve">
-        <source>Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant.</source>
-        <target state="translated">标准使用的访问范围最小，无需明确授予系统权限即可工作。如果遇到问题，请尝试输入监控或完全访问。这些方式需要在系统设置中明确授予权限，并且可能会在某些 macOS 版本中持续显示指示器。完全访问需要的授权范围最广。</target>
-        <note>54496 - Help beneath the native keyboard method selector: Standard needs no explicit system permission grant, while Input Monitoring and Full Access require permission and may show a persistent macOS access indicator. Bulgarian and Persian Input Monitoring labels use accepted project terminology.</note>
-      </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
         <target state="translated">自启动</target>
@@ -12217,6 +12287,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>The LUT signal space or brightness range is invalid.</source>
         <target state="translated">LUT 信号空间或亮度范围无效。</target>
         <note>53477 - LUT range validation error.</note>
+      </trans-unit>
+      <trans-unit id="The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Input Monitoring and Full Access can capture these keys in both cases and may work better with some third-party apps. Both require permission in System Settings and may trigger the transparency indicator on some macOS versions." xml:space="preserve">
+        <source>The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Input Monitoring and Full Access can capture these keys in both cases and may work better with some third-party apps. Both require permission in System Settings and may trigger the transparency indicator on some macOS versions.</source>
+        <target state="translated">“标准”方式使用的访问范围最小，无需明确授予系统权限即可工作。在锁定屏幕上或屏幕保护程序运行时，此方式会将亮度、音量和静音键交给 macOS 处理。“输入监控”和“完全访问”在这两种情况下都可以捕获这些按键，也可能与某些第三方 App 配合得更好。两者都需要在“系统设置”中获得权限，并且在某些 macOS 版本中可能会触发透明度指示器。</target>
+        <note>54533 - Help beneath the native keyboard control method picker. Standard leaves brightness, volume, and mute to macOS on the lock screen and during the screen saver, while Input Monitoring and Full Access can handle these keys and may show the macOS menu bar indicator for input access.</note>
       </trans-unit>
       <trans-unit id="The TV requires pairing" xml:space="preserve">
         <source>The TV requires pairing</source>

@@ -2829,6 +2829,9 @@
     "Current EDR" : {
       "comment" : "53477 - Current extended dynamic range value."
     },
+    "Current full-screen luminance" : {
+      "comment" : "54559 - Read-only label for the display’s currently reported maximum sustained luminance across an entirely white screen, in nits."
+    },
     "Current method:" : {
       "comment" : "53695 - Label beneath the software-based video adjustments switch in display Settings. A separately localized description of the loaded image adjustment controllers follows this label.",
       "localizations" : {
@@ -2840,11 +2843,17 @@
         }
       }
     },
+    "Current minimum usable brightness" : {
+      "comment" : "54559 - Read-only label for the display’s currently reported minimum usable white luminance in nits."
+    },
     "Current mode" : {
       "comment" : "53477 - Current device/display mode label."
     },
     "Current native resolution" : {
       "comment" : "53477 - Current native physical display resolution."
+    },
+    "Current peak luminance" : {
+      "comment" : "54559 - Read-only label for the display’s currently reported peak luminance in nits."
     },
     "Current resolution (width × height) is shown as text when enabled." : {
       "comment" : "53477 - Menu bar resolution text visibility setting help."
@@ -3859,8 +3868,17 @@
     "Edit display role" : {
       "comment" : "53477 - System display role editing, such as monitor versus television."
     },
+    "Edit full-screen luminance" : {
+      "comment" : "54559 - Toggle that enables a custom sustained luminance value for this display model when the entire screen is white."
+    },
+    "Edit minimum usable brightness" : {
+      "comment" : "54559 - Toggle that enables a custom minimum usable white luminance value for this display model."
+    },
     "Edit native panel pixel resolution" : {
       "comment" : "53477 - System override for native panel pixel dimensions."
+    },
+    "Edit peak luminance" : {
+      "comment" : "54559 - Toggle that enables a custom peak luminance value for this display model."
     },
     "Edit Settings…" : {
       "comment" : "53477 - Action opening settings editing."
@@ -3880,8 +3898,17 @@
     "Edited display role" : {
       "comment" : "53477 - Edited display role override value."
     },
+    "Edited full-screen luminance" : {
+      "comment" : "54559 - Editable field for the custom sustained luminance in nits when the entire screen is white."
+    },
+    "Edited minimum usable brightness" : {
+      "comment" : "54559 - Editable field for the custom minimum usable white luminance in nits in the display model’s system configuration."
+    },
     "Edited native resolution" : {
       "comment" : "53477 - Edited native resolution override value."
+    },
+    "Edited peak luminance" : {
+      "comment" : "54559 - Editable field for the custom peak luminance in nits in the display model’s system configuration."
     },
     "Edited system display name" : {
       "comment" : "53477 - Edited system display name override value."
@@ -4198,6 +4225,14 @@
     },
     "Exit Service Menu" : {
       "comment" : "53689 - TV remote action to leave the technical service menu."
+    },
+    "Expand OSD from notch area" : {
+      "comment" : "54534 - Keyboard settings toggle for expanding the on-screen display from the built-in MacBook camera notch.",
+      "extractionState" : "manual"
+    },
+    "Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style." : {
+      "comment" : "54534 - Describes notch OSD placement. Full is the aspect ratio that includes the screen area beside the camera housing.",
+      "extractionState" : "manual"
     },
     "Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." : {
       "comment" : "53477 - Expandable menu item behavior help."
@@ -4709,6 +4744,9 @@
     },
     "HDR Filter Pipeline" : {
       "comment" : "53477 - HDR-capable video filter pipeline setting."
+    },
+    "HDR Luminance" : {
+      "comment" : "54559 - Section title in More System Configuration Options for overrides of peak luminance, sustained full-screen luminance, and minimum usable brightness, all measured in nits."
     },
     "HDR LUT support is experimental and requires a Rec. 2100 PQ LUT created for a fixed display calibration." : {
       "comment" : "53477 - HDR LUT compatibility help."
@@ -7820,8 +7858,17 @@
     "Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}." : {
       "comment" : "53477 - Shortcut summary; preserve parameter interpolation syntax."
     },
+    "Set the display's peak luminance in nits for macOS brightness and HDR calculations." : {
+      "comment" : "54559 - Help below the peak luminance override. This is the value macOS uses for brightness and HDR calculations."
+    },
     "Set the input source ${displayEntity} to ${inputSourceEntity}." : {
       "comment" : "53477 - Shortcut summary; preserve parameter interpolation syntax."
+    },
+    "Set the lowest usable white luminance in nits for macOS brightness control." : {
+      "comment" : "54559 - Help below the minimum usable brightness override. The value specifies the lowest usable luminance when showing white for macOS brightness control."
+    },
+    "Set the luminance in nits that the display can sustain when the entire screen is white." : {
+      "comment" : "54559 - Help below the full-screen luminance override. This is the luminance that can be maintained when the entire display shows white."
     },
     "Set the rotation of ${displayEntity} to ${degrees}." : {
       "comment" : "53477 - Shortcut summary; preserve parameter interpolation syntax."
@@ -8403,9 +8450,6 @@
     },
     "Standard step size" : {
       "comment" : "53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size."
-    },
-    "Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant." : {
-      "comment" : "54496 - Help beneath the native keyboard method selector: Standard needs no explicit system permission grant, while Input Monitoring and Full Access require permission and may show a persistent macOS access indicator. Bulgarian and Persian Input Monitoring labels use accepted project terminology."
     },
     "Start Automatically" : {
       "comment" : "53477 - Automatically start feature option."
@@ -9016,6 +9060,9 @@
     },
     "The specified audio device is not found or currently unavailable." : {
       "comment" : "53688 - Audio device control warning for an unavailable configured device."
+    },
+    "The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Input Monitoring and Full Access can capture these keys in both cases and may work better with some third-party apps. Both require permission in System Settings and may trigger the transparency indicator on some macOS versions." : {
+      "comment" : "54533 - Help beneath the native keyboard control method picker. Standard leaves brightness, volume, and mute to macOS on the lock screen and during the screen saver, while Input Monitoring and Full Access can handle these keys and may show the macOS menu bar indicator for input access."
     },
     "The stored custom filter record is invalid." : {
       "comment" : "53477 - Custom filter persistence validation error."
