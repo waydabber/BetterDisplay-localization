@@ -820,7 +820,7 @@
       "comment" : "53477 - Virtual screen deletion cleanup advice for manual color profile removal."
     },
     "After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." : {
-      "comment" : "54579 - Warning below a display’s native brightness-key pass-through toggle for the Standard and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay."
+      "comment" : "54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay."
     },
     "After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." : {
       "comment" : "54069 - Help for brightness synchronization after wake. The two-percentage-point comparison requires pre-sleep readings; absolute-value and nits synchronization can fall back to valid current readings from existing or newly connected Apple displays, with zero or near-zero readings excluded.",
@@ -6082,6 +6082,9 @@
     "No Mirror Targets Available" : {
       "comment" : "53477 - Empty mirror target list."
     },
+    "No Permissions Required" : {
+      "comment" : "54610 - Native keyboard control method in Settings > Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions."
+    },
     "No retouched color profiles." : {
       "comment" : "54069 - Empty state for the retouched color profiles section. Add New remains available.",
       "extractionState" : "manual",
@@ -8443,7 +8446,7 @@
       "comment" : "53477 - Standard RGB color space identifier."
     },
     "Standard" : {
-      "comment" : "54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions."
+      "comment" : "54610 - Label for the regular app-menu presentation in Settings > Menu."
     },
     "Standard Appearance" : {
       "comment" : "53477 - Standard appearance option."
@@ -8977,8 +8980,8 @@
     "The imported LUT and its configuration will be removed." : {
       "comment" : "53477 - Imported LUT deletion confirmation."
     },
-    "The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping." : {
-      "comment" : "54603 - Help for the Input Monitoring native keyboard control method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs."
+    "The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." : {
+      "comment" : "54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs."
     },
     "The logical CEC address used for remote, volume and power commands. TV is the usual target." : {
       "comment" : "53477 - HDMI-CEC logical address setting help."
@@ -9072,9 +9075,6 @@
     },
     "The specified audio device is not found or currently unavailable." : {
       "comment" : "53688 - Audio device control warning for an unavailable configured device."
-    },
-    "The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use." : {
-      "comment" : "54603 - Help for the Standard native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions."
     },
     "The stored custom filter record is invalid." : {
       "comment" : "53477 - Custom filter persistence validation error."
@@ -9321,6 +9321,9 @@
     },
     "This menu item is redundant if the header is set to present the function as a switch." : {
       "comment" : "53477 - Menu visibility redundancy help."
+    },
+    "This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." : {
+      "comment" : "54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions."
     },
     "This might help solve issues with certain configurations." : {
       "comment" : "53477 - Compatibility workaround setting help."

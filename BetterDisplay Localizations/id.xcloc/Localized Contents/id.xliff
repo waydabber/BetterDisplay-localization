@@ -1047,7 +1047,7 @@ Anda dapat melakukannya di Pengaturan Sistem atau membiarkan app melakukannya un
       <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
         <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
         <target state="translated">Setelah beralih layar, BetterDisplay mungkin menangani beberapa penekanan pertama pada tombol kecerahan sebelum tombol tersebut mulai diteruskan ke macOS. Agar penekanan langsung diteruskan, pilih “Akses Penuh” di pengaturan Papan Ketik.</target>
-        <note>54579 - Warning below a display’s native brightness-key pass-through toggle for the Standard and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
+        <note>54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
       </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
@@ -8453,6 +8453,11 @@ Tidak semua layar mendukung operasi kontrol layar. Operasi ini dapat menyebabkan
         <target state="translated">Tidak Ada Tujuan Pencerminan</target>
         <note>53477 - Empty mirror target list.</note>
       </trans-unit>
+      <trans-unit id="No Permissions Required" xml:space="preserve">
+        <source>No Permissions Required</source>
+        <target state="translated">Tidak Memerlukan Izin</target>
+        <note>54610 - Native keyboard control method in Settings &gt; Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions.</note>
+      </trans-unit>
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
         <target state="translated">Tidak Ada Tujuan Streaming</target>
@@ -11776,7 +11781,7 @@ Tidak semua layar mendukung operasi kontrol layar. Operasi ini dapat menyebabkan
       <trans-unit id="Standard" xml:space="preserve">
         <source>Standard</source>
         <target state="translated">Standar</target>
-        <note>54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions.</note>
+        <note>54610 - Label for the regular app-menu presentation in Settings &gt; Menu.</note>
       </trans-unit>
       <trans-unit id="Standard Appearance" xml:space="preserve">
         <source>Standard Appearance</source>
@@ -12283,10 +12288,10 @@ Tidak semua layar mendukung operasi kontrol layar. Operasi ini dapat menyebabkan
         <target state="translated">Metode Akses Penuh memerlukan izin sistem secara eksplisit agar dapat berfungsi dan menampilkan indikator transparansi pada versi macOS tertentu.</target>
         <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
       </trans-unit>
-      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
-        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
-        <target state="translated">Metode Pengawasan Input memerlukan izin sistem secara eksplisit agar dapat berfungsi dan menampilkan indikator transparansi pada versi macOS tertentu. Di layar terkunci atau saat penghemat layar aktif, metode ini menyerahkan penanganan tombol kecerahan, volume, dan bisu kepada macOS. Tidak disarankan jika Anda aktif menggunakan tombol fungsi F13–F19 pada papan ketik yang diperluas. Dibandingkan dengan metode Standar, metode ini dapat sedikit meningkatkan kompatibilitas dengan beberapa app pihak ketiga yang memetakan ulang tombol.</target>
-        <note>54603 - Help for the Input Monitoring native keyboard control method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
+      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
+        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
+        <target state="translated">Metode Pengawasan Input memerlukan izin sistem secara eksplisit agar dapat berfungsi dan menampilkan indikator transparansi pada versi macOS tertentu. Di layar terkunci atau saat penghemat layar aktif, metode ini menyerahkan penanganan tombol kecerahan, volume, dan bisu kepada macOS. Tidak disarankan jika Anda aktif menggunakan tombol fungsi F13–F19 pada papan ketik yang diperluas. Dibandingkan dengan metode “Tidak Memerlukan Izin”, metode ini dapat sedikit meningkatkan kompatibilitas dengan beberapa app pihak ketiga yang memetakan ulang tombol.</target>
+        <note>54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
       </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
@@ -12302,11 +12307,6 @@ Tidak semua layar mendukung operasi kontrol layar. Operasi ini dapat menyebabkan
         <source>The LUT signal space or brightness range is invalid.</source>
         <target state="translated">Ruang sinyal atau rentang kecerahan LUT tidak valid.</target>
         <note>53477 - LUT range validation error.</note>
-      </trans-unit>
-      <trans-unit id="The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
-        <source>The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use.</source>
-        <target state="translated">Metode Standar menggunakan akses yang paling terbatas dan tidak memerlukan izin sistem eksplisit untuk berfungsi. Di layar terkunci atau saat penghemat layar aktif, metode ini menyerahkan penanganan tombol kecerahan, volume, dan bisu kepada macOS. Tidak disarankan jika Anda aktif menggunakan tombol fungsi F13–F19 pada papan ketik yang diperluas.</target>
-        <note>54603 - Help for the Standard native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="The TV requires pairing" xml:space="preserve">
         <source>The TV requires pairing</source>
@@ -13000,6 +13000,11 @@ Terima kasih atas pengertian dan dukungan Anda.</target>
         <source>This menu item is redundant if the header is set to present the function as a switch.</source>
         <target state="translated">Item menu ini tidak diperlukan jika fungsi yang sama sudah ditampilkan sebagai sakelar di judul.</target>
         <note>53477 - Menu visibility redundancy help.</note>
+      </trans-unit>
+      <trans-unit id="This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
+        <source>This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use.</source>
+        <target state="translated">Metode ini menggunakan akses yang paling terbatas dan tidak memerlukan izin sistem eksplisit untuk berfungsi. Di layar terkunci atau saat penghemat layar aktif, metode ini menyerahkan penanganan tombol kecerahan, volume, dan bisu kepada macOS. Tidak disarankan jika Anda aktif menggunakan tombol fungsi F13–F19 pada papan ketik yang diperluas.</target>
+        <note>54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="This might help solve issues with certain configurations." xml:space="preserve">
         <source>This might help solve issues with certain configurations.</source>

@@ -1067,7 +1067,7 @@ Voit tehdä tämän Järjestelmäasetuksissa tai antaa sovelluksen tehdä sen pu
       <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
         <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
         <target state="translated">Kun vaihdat näyttöä, BetterDisplay saattaa käsitellä muutaman ensimmäisen kirkkausnäppäinten painalluksen ennen kuin läpivienti macOS:lle alkaa. Jos haluat läpiviennin alkavan heti, valitse näppäimistöasetuksissa ”Täysi käyttöoikeus”.</target>
-        <note>54579 - Warning below a display’s native brightness-key pass-through toggle for the Standard and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
+        <note>54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
       </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
@@ -8473,6 +8473,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Peilauskohteita ei ole saatavilla</target>
         <note>53477 - Empty mirror target list.</note>
       </trans-unit>
+      <trans-unit id="No Permissions Required" xml:space="preserve">
+        <source>No Permissions Required</source>
+        <target state="translated">Ei vaadi käyttöoikeuksia</target>
+        <note>54610 - Native keyboard control method in Settings &gt; Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions.</note>
+      </trans-unit>
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
         <target state="translated">Suoratoistokohteita ei ole saatavilla</target>
@@ -11796,7 +11801,7 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
       <trans-unit id="Standard" xml:space="preserve">
         <source>Standard</source>
         <target state="translated">Tavallinen</target>
-        <note>54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions.</note>
+        <note>54610 - Label for the regular app-menu presentation in Settings &gt; Menu.</note>
       </trans-unit>
       <trans-unit id="Standard Appearance" xml:space="preserve">
         <source>Standard Appearance</source>
@@ -12303,10 +12308,10 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Menetelmä ”Täysi käyttöoikeus” tarvitsee toimiakseen erilliset järjestelmän käyttöoikeudet, ja sen käyttö tuo joissakin macOS-versioissa näkyviin käyttöoikeudesta kertovan ilmaisimen.</target>
         <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
       </trans-unit>
-      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
-        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
-        <target state="translated">Menetelmä ”Syötteen tarkkailu” tarvitsee toimiakseen erilliset järjestelmän käyttöoikeudet, ja sen käyttö tuo joissakin macOS-versioissa näkyviin käyttöoikeudesta kertovan ilmaisimen. Lukitulla näytöllä tai näytönsäästäjän ollessa käynnissä macOS käsittelee kirkkaus-, äänenvoimakkuus- ja mykistysnäppäinten painallukset. Menetelmää ei suositella, jos käytät laajennetun näppäimistön funktionäppäimiä F13–F19 aktiivisesti. Tavallinen-menetelmään verrattuna tämä menetelmä voi parantaa hieman yhteensopivuutta joidenkin näppäimiä uudelleenmäärittävien muiden valmistajien appien kanssa.</target>
-        <note>54603 - Help for the Input Monitoring native keyboard control method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
+      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
+        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
+        <target state="translated">Menetelmä ”Syötteen tarkkailu” tarvitsee toimiakseen erilliset järjestelmän käyttöoikeudet, ja sen käyttö tuo joissakin macOS-versioissa näkyviin käyttöoikeudesta kertovan ilmaisimen. Lukitulla näytöllä tai näytönsäästäjän ollessa käynnissä macOS käsittelee kirkkaus-, äänenvoimakkuus- ja mykistysnäppäinten painallukset. Menetelmää ei suositella, jos käytät laajennetun näppäimistön funktionäppäimiä F13–F19 aktiivisesti. Menetelmään ”Ei vaadi käyttöoikeuksia” verrattuna tämä menetelmä voi parantaa hieman yhteensopivuutta joidenkin näppäimiä uudelleenmäärittävien muiden valmistajien appien kanssa.</target>
+        <note>54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
       </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
@@ -12322,11 +12327,6 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>The LUT signal space or brightness range is invalid.</source>
         <target state="translated">LUT:n signaaliväriavaruus tai kirkkausalue on virheellinen.</target>
         <note>53477 - LUT range validation error.</note>
-      </trans-unit>
-      <trans-unit id="The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
-        <source>The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use.</source>
-        <target state="translated">Tavallinen-menetelmä käyttää rajatuinta pääsyä eikä tarvitse erillisiä järjestelmän käyttöoikeuksia toimiakseen. Lukitulla näytöllä tai näytönsäästäjän ollessa käynnissä macOS käsittelee kirkkaus-, äänenvoimakkuus- ja mykistysnäppäinten painallukset. Menetelmää ei suositella, jos käytät laajennetun näppäimistön funktionäppäimiä F13–F19 aktiivisesti.</target>
-        <note>54603 - Help for the Standard native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="The TV requires pairing" xml:space="preserve">
         <source>The TV requires pairing</source>
@@ -13020,6 +13020,11 @@ Kiitos ymmärryksestäsi ja jatkuvasta tuestasi.</target>
         <source>This menu item is redundant if the header is set to present the function as a switch.</source>
         <target state="translated">Tämä valikkokohde on tarpeeton, jos otsikko on määritetty näyttämään toiminto kytkimenä.</target>
         <note>53477 - Menu visibility redundancy help.</note>
+      </trans-unit>
+      <trans-unit id="This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
+        <source>This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use.</source>
+        <target state="translated">Tämä menetelmä käyttää rajatuinta pääsyä eikä tarvitse erillisiä järjestelmän käyttöoikeuksia toimiakseen. Lukitulla näytöllä tai näytönsäästäjän ollessa käynnissä macOS käsittelee kirkkaus-, äänenvoimakkuus- ja mykistysnäppäinten painallukset. Menetelmää ei suositella, jos käytät laajennetun näppäimistön funktionäppäimiä F13–F19 aktiivisesti.</target>
+        <note>54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="This might help solve issues with certain configurations." xml:space="preserve">
         <source>This might help solve issues with certain configurations.</source>
