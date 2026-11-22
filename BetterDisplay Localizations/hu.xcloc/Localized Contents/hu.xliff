@@ -1044,6 +1044,11 @@ Ezt a Rendszerbeállításokban teheti meg, vagy az alkalmazás is elvégezheti 
         <target state="translated">A virtuális képernyő törlése után érdemes annak már nem használt gyári színprofilját is eltávolítani a Rendszerbeállításokban.</target>
         <note>53477 - Virtual screen deletion cleanup advice for manual color profile removal.</note>
       </trans-unit>
+      <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
+        <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
+        <target state="translated">Kijelzőváltás után előfordulhat, hogy a fényerőgombok első néhány lenyomását a BetterDisplay kezeli, mielőtt átengedné a gombnyomásokat a macOS-nek. Az azonnali átengedéshez válassza a „Teljes hozzáférés” lehetőséget a Billentyűzet beállításainál.</target>
+        <note>54579 - Warning below a display’s native brightness-key pass-through toggle for the Standard and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
+      </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
         <target state="translated">Ébredés után szinkronizálja az alvás előtt már csatlakoztatott Apple-fényerőforrás legalább két százalékpontos fényerőváltozásait. Ha nincs megfelelő mértékű változás, az abszolút érték és a nit alapú szinkronizálás érvényes, aktuális Apple-fényerőértéket használ, akár újonnan csatlakoztatott kijelzőről is. A nulla vagy közel nulla fényerőértékeket figyelmen kívül hagyja.</target>
@@ -12273,6 +12278,16 @@ Nem minden kijelző támogatja a képernyővezérlési műveleteket. Ezek egyes 
         <target state="translated">Az EDID-adatok írása sikertelen. Az eszközön tárolt EDID-adatok hiányosak lehetnek.</target>
         <note>54469 - Shown when a physical EDID write failed. The device may have received only part of the display identification data.</note>
       </trans-unit>
+      <trans-unit id="The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions." xml:space="preserve">
+        <source>The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions.</source>
+        <target state="translated">A „Teljes hozzáférés” mód működéséhez kifejezett rendszerengedélyek szükségesek, és a macOS egyes verzióiban megjelenik az átláthatósági jelző.</target>
+        <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
+      </trans-unit>
+      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
+        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use. Compared to the Standard method, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
+        <target state="translated">A „Bemenet figyelése” mód működéséhez kifejezett rendszerengedélyek szükségesek, és a macOS egyes verzióiban megjelenik az átláthatósági jelző. A zárolási képernyőn vagy a képernyővédő futása közben a fényerő-, hangerő- és némítógombokat a macOS kezeli. Nem ajánlott, ha bővített billentyűzeten rendszeresen használja az F13–F19 funkcióbillentyűket. A Szokásos módhoz képest ez a mód kis mértékben javíthatja a kompatibilitást egyes külső fejlesztők billentyűket átkiosztó alkalmazásaival.</target>
+        <note>54603 - Help for the Input Monitoring native keyboard control method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
+      </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
         <target state="translated">A LUT-fájl túl nagy.</target>
@@ -12288,10 +12303,10 @@ Nem minden kijelző támogatja a képernyővezérlési műveleteket. Ezek egyes 
         <target state="translated">A LUT jelszíntere vagy fényerőtartománya érvénytelen.</target>
         <note>53477 - LUT range validation error.</note>
       </trans-unit>
-      <trans-unit id="The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Input Monitoring and Full Access can capture these keys in both cases and may work better with some third-party apps. Both require permission in System Settings and may trigger the transparency indicator on some macOS versions." xml:space="preserve">
-        <source>The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Input Monitoring and Full Access can capture these keys in both cases and may work better with some third-party apps. Both require permission in System Settings and may trigger the transparency indicator on some macOS versions.</source>
-        <target state="translated">A Szokásos mód a lehető legszűkebb hozzáférést használja, és működéséhez nincs szükség kifejezett rendszerengedélyekre. A zárolási képernyőn vagy a képernyővédő futása közben a fényerő-, hangerő- és némítógombokat a macOS kezeli. A Bemenet figyelése és a Teljes hozzáférés mód mindkét esetben képes érzékelni ezeket a gombnyomásokat, és egyes külső fejlesztésű appokkal jobban működhet. Mindkét módot engedélyezni kell a Rendszerbeállításokban, és a macOS egyes verzióiban megjelenhet az átláthatósági jelző.</target>
-        <note>54533 - Help beneath the native keyboard control method picker. Standard leaves brightness, volume, and mute to macOS on the lock screen and during the screen saver, while Input Monitoring and Full Access can handle these keys and may show the macOS menu bar indicator for input access.</note>
+      <trans-unit id="The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
+        <source>The Standard method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended with extended keyboards with F13-F19 function keys in active use.</source>
+        <target state="translated">A Szokásos mód a lehető legszűkebb hozzáférést használja, és működéséhez nincs szükség kifejezett rendszerengedélyekre. A zárolási képernyőn vagy a képernyővédő futása közben a fényerő-, hangerő- és némítógombokat a macOS kezeli. Nem ajánlott, ha bővített billentyűzeten rendszeresen használja az F13–F19 funkcióbillentyűket.</target>
+        <note>54603 - Help for the Standard native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="The TV requires pairing" xml:space="preserve">
         <source>The TV requires pairing</source>
@@ -12337,6 +12352,11 @@ Nem minden kijelző támogatja a képernyővezérlési műveleteket. Ezek egyes 
         <source>The app listens to both the native volume and mute keys (if permissions permit).</source>
         <target state="translated">Az alkalmazás figyeli a rendszer hangerő-szabályozó és némító billentyűit is (ha az engedélyek lehetővé teszik).</target>
         <note>53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app listens to the mute key (if permissions permit) but not the volume keys." xml:space="preserve">
+        <source>The app listens to the mute key (if permissions permit) but not the volume keys.</source>
+        <target state="translated">Az alkalmazás figyeli a némító billentyűt (ha az engedélyek lehetővé teszik), a hangerő-szabályozó billentyűket azonban nem.</target>
+        <note>54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method.</note>
       </trans-unit>
       <trans-unit id="The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
         <source>The app listens to the native brightness keys (if permissions permit).</source>
