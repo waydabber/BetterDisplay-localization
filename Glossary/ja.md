@@ -7,7 +7,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | English | Japanese | Notes |
 | --- | --- | --- |
 | Apple Display Preset | Appleディスプレイプリセット | |
-| Apple Keyboard |  Apple製キーボード|  |
+| Apple Keyboard | Apple製キーボード | |
 | Apple Logo | Appleロゴ | |
 | associate | 関連付け | Disassociation is distinct from disconnection. |
 | attenuation | 減衰 | Gain reduction. |
@@ -41,16 +41,16 @@ This glossary records the maintained Japanese localization's existing terminolog
 | flexible scaling | フレキシブルサイズ調整 | |
 | focus, focused | 操作対象, 操作対象の | the window in focus 操作対象のウインドウ |
 | framebuffer | フレームバッファ | |
-| full aspect ratio |  フルアスペクト比|  |
+| full aspect ratio | フルアスペクト比 | |
 | relative gamma | 相対ガンマ | |
 | group membership | グループメンバーシップ / メンバー構成 | Membership here is which displays belong, not member rights. |
 | import | 読み込む | |
-| Input Monitoring |  入力監視|  |
+| Input Monitoring | 入力監視 | |
 | Instant full-screen screenshots, full-screen screenshots | 画面全体のスクリーンショット | |
 | integration | 統合 | |
 | layout protection | レイアウト保護 | |
 | licensing disabled | ライセンス管理は無効 | Describes disabled license management, not an action to deactivate a license. |
-| list |  リスト|  |
+| list | リスト | |
 | Live Activity | ライブアクティビティ | |
 | main display | 主ディスプレイ | メインディスプレイ is also retained. Main status means the main-display assignment, not 主な状況. |
 | matrix | 行列 | (e.g. matrix mode マトリックスモード) |
@@ -66,7 +66,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | outdated license | 旧バージョン用ライセンス | This is version eligibility, not time-based expiry (期限切れ). |
 | override | オーバーライド | Context-specific replacement/change wording is also valid; overriding EDID does not disable EDID. |
 | pass-through | キーの透過 | For hardware use パススルー. |
-| permissions |  アクセス権|  access permissions アクセス許可|
+| permissions | アクセス権 | access permissions アクセス許可 |
 | preset | プリセット | |
 | read-only | 読み出し専用 | |
 | reconnect | 再接続 | |
@@ -94,6 +94,7 @@ This glossary records the maintained Japanese localization's existing terminolog
 | temporal dithering | 時間的ディザリング | Frame-to-frame variation, not temporary activation. |
 | tint | 色合い | |
 | tone | トーン | |
+| transparency indicator | プライバシーインジケータ | |
 | True Tone | True Tone | |
 | tone gain | トーンゲイン | |
 | UI scale matching | UIサイズマッチング | |
