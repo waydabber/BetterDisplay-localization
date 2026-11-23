@@ -1046,7 +1046,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       </trans-unit>
       <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
         <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
-        <target state="translated">ディスプレイを切り替えた後、キーの透過が始まるまで、最初の数回の輝度キー操作はBetterDisplayが処理する場合があります。すぐにキーを透過させるには、キーボード設定で「フルアクセス」を選択してください。</target>
+        <target state="translated">ディスプレイを切り替えた直後は、ネイティブのキーの透過が有効になるまで、最初の数回の輝度キー操作をBetterDisplayが処理する場合があります。すぐにキーの透過を行うには、”キーボード”設定で”フルアクセス”を選択してください。</target>
         <note>54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
       </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
@@ -3719,7 +3719,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Current full-screen luminance" xml:space="preserve">
         <source>Current full-screen luminance</source>
-        <target state="translated">現在の全画面輝度</target>
+        <target state="translated">フルスクリーン輝度（現在）</target>
         <note>54559 - Read-only label for the display’s currently reported maximum sustained luminance across an entirely white screen, in nits.</note>
       </trans-unit>
       <trans-unit id="Current method:" xml:space="preserve">
@@ -3729,7 +3729,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Current minimum usable brightness" xml:space="preserve">
         <source>Current minimum usable brightness</source>
-        <target state="translated">現在の使用可能な最低輝度</target>
+        <target state="translated">使用可能な最低輝度（現在）</target>
         <note>54559 - Read-only label for the display’s currently reported minimum usable white luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current mode" xml:space="preserve">
@@ -3744,7 +3744,7 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
       </trans-unit>
       <trans-unit id="Current peak luminance" xml:space="preserve">
         <source>Current peak luminance</source>
-        <target state="translated">現在のピーク輝度</target>
+        <target state="translated">ピーク輝度（現在）</target>
         <note>54559 - Read-only label for the display’s currently reported peak luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current resolution (width × height) is shown as text when enabled." xml:space="preserve">
@@ -5278,7 +5278,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Edit full-screen luminance" xml:space="preserve">
         <source>Edit full-screen luminance</source>
-        <target state="translated">全画面輝度を編集</target>
+        <target state="translated">フルスクリーン輝度を編集</target>
         <note>54559 - Toggle that enables a custom sustained luminance value for this display model when the entire screen is white.</note>
       </trans-unit>
       <trans-unit id="Edit minimum usable brightness" xml:space="preserve">
@@ -5318,7 +5318,7 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Edited full-screen luminance" xml:space="preserve">
         <source>Edited full-screen luminance</source>
-        <target state="translated">全画面輝度（編集済み）</target>
+        <target state="translated">フルスクリーン輝度（編集済み）</target>
         <note>54559 - Editable field for the custom sustained luminance in nits when the entire screen is white.</note>
       </trans-unit>
       <trans-unit id="Edited minimum usable brightness" xml:space="preserve">
@@ -5823,12 +5823,12 @@ The process does not work for the built-in display (reboot needed). The operatio
       </trans-unit>
       <trans-unit id="Expand OSD from notch area" xml:space="preserve">
         <source>Expand OSD from notch area</source>
-        <target state="translated">ノッチからOSDを展開</target>
+        <target state="translated">ノッチ領域からOSDを展開</target>
         <note>54534 - Keyboard settings toggle for expanding the on-screen display from the built-in MacBook camera notch.</note>
       </trans-unit>
       <trans-unit id="Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
         <source>Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style.</source>
-        <target state="translated">表示先のディスプレイにノッチがあり、フルアスペクト比を使用している場合は、ノッチからOSDを展開します。それ以外の場合は、選択したOSDスタイルを使用します。</target>
+        <target state="translated">表示先のディスプレイにノッチを備え、フルアスペクト比を使用している場合は、OSDをノッチ部分から展開します。それ以外の場合は、選択したOSDスタイルを使用します。</target>
         <note>54534 - Describes notch OSD placement. Full is the aspect ratio that includes the screen area beside the camera housing.</note>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
@@ -6467,7 +6467,7 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
       </trans-unit>
       <trans-unit id="HDR Luminance" xml:space="preserve">
         <source>HDR Luminance</source>
-        <target state="translated">HDR 輝度</target>
+        <target state="translated">HDR輝度</target>
         <note>54559 - Section title in More System Configuration Options for overrides of peak luminance, sustained full-screen luminance, and minimum usable brightness, all measured in nits.</note>
       </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
@@ -8340,7 +8340,7 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="Native keyboard control (brightness and volume) requires permissions" xml:space="preserve">
         <source>Native keyboard control (brightness and volume) requires permissions</source>
-        <target state="translated">ネイティブキーボードの制御（輝度と音量）にはアクセス許可が必要です</target>
+        <target state="translated">ネイティブキーボード制御（輝度と音量）にはアクセス許可が必要です</target>
         <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
       </trans-unit>
       <trans-unit id="Native keyboard control is being interrupted and may be unavailable. The reason could be a device connection issue or interference from another app or service. If you notice a problem, try reconnecting any affected external keyboards, pausing other keyboard utilities, or switching to a different keyboard control method." xml:space="preserve">
@@ -10990,7 +10990,7 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="Set the display's peak luminance in nits for macOS brightness and HDR calculations." xml:space="preserve">
         <source>Set the display's peak luminance in nits for macOS brightness and HDR calculations.</source>
-        <target state="translated">macOS の輝度および HDR の計算に使うディスプレイのピーク輝度をニト単位で設定します。</target>
+        <target state="translated">macOSが輝度およびHDRの計算に使うディスプレイのピーク輝度をニトで設定します。</target>
         <note>54559 - Help below the peak luminance override. This is the value macOS uses for brightness and HDR calculations.</note>
       </trans-unit>
       <trans-unit id="Set the input source ${displayEntity} to ${inputSourceEntity}." xml:space="preserve">
@@ -11000,12 +11000,12 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="Set the lowest usable white luminance in nits for macOS brightness control." xml:space="preserve">
         <source>Set the lowest usable white luminance in nits for macOS brightness control.</source>
-        <target state="translated">macOS の輝度制御に使う、白の使用可能な最低輝度をニト単位で設定します。</target>
+        <target state="translated">macOSの輝度制御で、ホワイト表示が使用可能な最低輝度をニトで設定します。</target>
         <note>54559 - Help below the minimum usable brightness override. The value specifies the lowest usable luminance when showing white for macOS brightness control.</note>
       </trans-unit>
       <trans-unit id="Set the luminance in nits that the display can sustain when the entire screen is white." xml:space="preserve">
         <source>Set the luminance in nits that the display can sustain when the entire screen is white.</source>
-        <target state="translated">画面全体が白のときにディスプレイが維持できる輝度をニト単位で設定します。</target>
+        <target state="translated">画面全体がホワイトのときにディスプレイが維持できる輝度をニトで設定します。</target>
         <note>54559 - Help below the full-screen luminance override. This is the luminance that can be maintained when the entire display shows white.</note>
       </trans-unit>
       <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
@@ -12285,12 +12285,12 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions." xml:space="preserve">
         <source>The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions.</source>
-        <target state="translated">「フルアクセス」方式の動作にはシステムの明示的なアクセス権が必要です。一部のバージョンのmacOSでは透明性インジケータが表示されます。</target>
+        <target state="translated">“フルアクセス”の方法を動作させるには、システムの明示的なアクセス権が必要です。一部のバージョンのmacOSではプライバシーインジケータが表示されます。</target>
         <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
       </trans-unit>
       <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
         <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
-        <target state="translated">「入力監視」方式の動作にはシステムの明示的なアクセス権が必要です。一部のバージョンのmacOSでは透明性インジケータが表示されます。ロック画面やスクリーンセーバの動作中は、明るさ、音量、消音の各キーの処理をmacOSに任せます。拡張キーボードのファンクションキーF13〜F19を日常的に使用する場合は推奨されません。「アクセス権不要」方式と比べて、キーの割り当てを変更する一部の他社製アプリとの互換性がわずかに向上する場合があります。</target>
+        <target state="translated">“入力監視”の方法を動作させるには、システムの明示的なアクセス権が必要です。一部のバージョンのmacOSではプライバシーインジケータが表示されます。ロック画面やスクリーンセーバの動作中は、輝度、音量、ミュートの各キーの処理をmacOSに任せます。ファンクションキーF13〜F19を日常的に使用する拡張キーボードには推奨されません。”アクセス権不要”の方法と比較すると、キー割り当てを変更する一部の他社製アプリとの互換性が、わずかに向上する場合があります。</target>
         <note>54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
       </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
@@ -12355,7 +12355,7 @@ Not all displays support screen control operations. These operations can cause i
       </trans-unit>
       <trans-unit id="The app listens to the mute key (if permissions permit) but not the volume keys." xml:space="preserve">
         <source>The app listens to the mute key (if permissions permit) but not the volume keys.</source>
-        <target state="translated">現在はミュートキーを待ち受けます（アクセス権の許可が必要）が、音量キーは待ち受けません。</target>
+        <target state="translated">ミュートキーを待ち受けます（アクセス権が許可されている場合）が、音量キーは待ち受けません。</target>
         <note>54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method.</note>
       </trans-unit>
       <trans-unit id="The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
@@ -13003,7 +13003,7 @@ Thank you for your understanding and continued support.</source>
       </trans-unit>
       <trans-unit id="This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
         <source>This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use.</source>
-        <target state="translated">この方式は最も限定的なアクセスを使用し、動作にシステムアクセス権を明示的には要求しません。ロック画面やスクリーンセーバの動作中は、明るさ、音量、消音の各キーの処理をmacOSに任せます。拡張キーボードのファンクションキーF13〜F19を日常的に使用する場合は推奨されません。</target>
+        <target state="translated">この方法は最も限定的なアクセス方法を使用し、動作にシステムの明示的なアクセス権を必要としません。ロック画面やスクリーンセーバの動作中は、輝度、音量、ミュートの各キーの処理をmacOSに任せます。ファンクションキーF13〜F19を日常的に使用する拡張キーボードには推奨されません。</target>
         <note>54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="This might help solve issues with certain configurations." xml:space="preserve">
