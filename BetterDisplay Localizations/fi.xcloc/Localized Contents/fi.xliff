@@ -1064,6 +1064,11 @@ Voit tehdä tämän Järjestelmäasetuksissa tai antaa sovelluksen tehdä sen pu
         <target state="translated">Virtuaaliruudun poistamisen jälkeen on suositeltavaa poistaa sen käyttämätön tehdasväriprofiili Järjestelmäasetuksissa.</target>
         <note>53477 - Virtual screen deletion cleanup advice for manual color profile removal.</note>
       </trans-unit>
+      <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
+        <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
+        <target state="translated">Kun vaihdat näyttöä, BetterDisplay saattaa käsitellä muutaman ensimmäisen kirkkausnäppäinten painalluksen ennen kuin läpivienti macOS:lle alkaa. Jos haluat läpiviennin alkavan heti, valitse näppäimistöasetuksissa ”Täysi käyttöoikeus”.</target>
+        <note>54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
+      </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
         <target state="translated">Synkronoi heräämisen jälkeen vähintään kahden prosenttiyksikön kirkkausmuutokset Applen kirkkauslähteestä, joka oli liitettynä ennen nukkumista. Jos ehdot täyttävää muutosta ei ole, absoluuttisen arvon synkronointi ja synkronointi niteinä käyttävät kelvollista nykyistä Applen kirkkauslukemaa, myös juuri liitetyistä näytöistä. Nollan suuruiset tai lähes nollan suuruiset kirkkauslukemat ohitetaan.</target>
@@ -3732,10 +3737,20 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <target state="translated">Näytön nykyinen käyttötarkoitus</target>
         <note>53477 - Display role, such as computer monitor or television; not main or secondary position.</note>
       </trans-unit>
+      <trans-unit id="Current full-screen luminance" xml:space="preserve">
+        <source>Current full-screen luminance</source>
+        <target state="translated">Nykyinen koko näytön luminanssi</target>
+        <note>54559 - Read-only label for the display’s currently reported maximum sustained luminance across an entirely white screen, in nits.</note>
+      </trans-unit>
       <trans-unit id="Current method:" xml:space="preserve">
         <source>Current method:</source>
         <target state="translated">Nykyinen menetelmä:</target>
         <note>53695 - Label beneath the software-based video adjustments switch in display Settings. A separately localized description of the loaded image adjustment controllers follows this label.</note>
+      </trans-unit>
+      <trans-unit id="Current minimum usable brightness" xml:space="preserve">
+        <source>Current minimum usable brightness</source>
+        <target state="translated">Nykyinen pienin käyttökelpoinen kirkkaus</target>
+        <note>54559 - Read-only label for the display’s currently reported minimum usable white luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current mode" xml:space="preserve">
         <source>Current mode</source>
@@ -3746,6 +3761,11 @@ Lukupituuden määrittäminen on valinnaista. Jätä kenttä tyhjäksi automaatt
         <source>Current native resolution</source>
         <target state="translated">Nykyinen natiivitarkkuus</target>
         <note>53477 - Current native physical display resolution.</note>
+      </trans-unit>
+      <trans-unit id="Current peak luminance" xml:space="preserve">
+        <source>Current peak luminance</source>
+        <target state="translated">Nykyinen huippuluminanssi</target>
+        <note>54559 - Read-only label for the display’s currently reported peak luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current resolution (width × height) is shown as text when enabled." xml:space="preserve">
         <source>Current resolution (width × height) is shown as text when enabled.</source>
@@ -5276,10 +5296,25 @@ Toiminto ei toimi sisäiselle näytölle (vaatii uudelleenkäynnistyksen). Toimi
         <target state="translated">Muokkaa näytön käyttötarkoitusta</target>
         <note>53477 - System display role editing, such as monitor versus television.</note>
       </trans-unit>
+      <trans-unit id="Edit full-screen luminance" xml:space="preserve">
+        <source>Edit full-screen luminance</source>
+        <target state="translated">Muokkaa koko näytön luminanssia</target>
+        <note>54559 - Toggle that enables a custom sustained luminance value for this display model when the entire screen is white.</note>
+      </trans-unit>
+      <trans-unit id="Edit minimum usable brightness" xml:space="preserve">
+        <source>Edit minimum usable brightness</source>
+        <target state="translated">Muokkaa pienintä käyttökelpoista kirkkautta</target>
+        <note>54559 - Toggle that enables a custom minimum usable white luminance value for this display model.</note>
+      </trans-unit>
       <trans-unit id="Edit native panel pixel resolution" xml:space="preserve">
         <source>Edit native panel pixel resolution</source>
         <target state="translated">Muokkaa paneelin natiivipikselitarkkuutta</target>
         <note>53477 - System override for native panel pixel dimensions.</note>
+      </trans-unit>
+      <trans-unit id="Edit peak luminance" xml:space="preserve">
+        <source>Edit peak luminance</source>
+        <target state="translated">Muokkaa huippuluminanssia</target>
+        <note>54559 - Toggle that enables a custom peak luminance value for this display model.</note>
       </trans-unit>
       <trans-unit id="Edit system display name" xml:space="preserve">
         <source>Edit system display name</source>
@@ -5301,10 +5336,25 @@ Toiminto ei toimi sisäiselle näytölle (vaatii uudelleenkäynnistyksen). Toimi
         <target state="translated">Muokattu näytön käyttötarkoitus</target>
         <note>53477 - Edited display role override value.</note>
       </trans-unit>
+      <trans-unit id="Edited full-screen luminance" xml:space="preserve">
+        <source>Edited full-screen luminance</source>
+        <target state="translated">Muokattu koko näytön luminanssi</target>
+        <note>54559 - Editable field for the custom sustained luminance in nits when the entire screen is white.</note>
+      </trans-unit>
+      <trans-unit id="Edited minimum usable brightness" xml:space="preserve">
+        <source>Edited minimum usable brightness</source>
+        <target state="translated">Muokattu pienin käyttökelpoinen kirkkaus</target>
+        <note>54559 - Editable field for the custom minimum usable white luminance in nits in the display model’s system configuration.</note>
+      </trans-unit>
       <trans-unit id="Edited native resolution" xml:space="preserve">
         <source>Edited native resolution</source>
         <target state="translated">Muokattu natiivitarkkuus</target>
         <note>53477 - Edited native resolution override value.</note>
+      </trans-unit>
+      <trans-unit id="Edited peak luminance" xml:space="preserve">
+        <source>Edited peak luminance</source>
+        <target state="translated">Muokattu huippuluminanssi</target>
+        <note>54559 - Editable field for the custom peak luminance in nits in the display model’s system configuration.</note>
       </trans-unit>
       <trans-unit id="Edited system display name" xml:space="preserve">
         <source>Edited system display name</source>
@@ -5790,6 +5840,16 @@ Toiminto ei toimi sisäiselle näytölle (vaatii uudelleenkäynnistyksen). Toimi
         <source>Exit Service Menu</source>
         <target state="translated">Poistu huoltovalikosta</target>
         <note>53689 - TV remote action to leave the technical service menu.</note>
+      </trans-unit>
+      <trans-unit id="Expand OSD from notch area" xml:space="preserve">
+        <source>Expand OSD from notch area</source>
+        <target state="translated">Laajenna OSD näytön lovesta</target>
+        <note>54534 - Keyboard settings toggle for expanding the on-screen display from the built-in MacBook camera notch.</note>
+      </trans-unit>
+      <trans-unit id="Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
+        <source>Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style.</source>
+        <target state="translated">Laajentaa OSD:n näytön lovesta, kun kohdenäytössä on lovi ja käytössä on kuvasuhde ”Täysi”. Muussa tapauksessa käytetään valittua OSD-tyyliä.</target>
+        <note>54534 - Describes notch OSD placement. Full is the aspect ratio that includes the screen area beside the camera housing.</note>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
@@ -6424,6 +6484,11 @@ Niiden poistaminen on turvallista: macOS luo tarvittavat profiilit uudelleen, ku
         <source>HDR LUT support is experimental and requires a Rec. 2100 PQ LUT created for a fixed display calibration.</source>
         <target state="translated">HDR-LUT-tuki on kokeellinen ja vaatii kiinteälle näytön kalibroinnille luodun Rec. 2100 PQ -LUT-taulukon.</target>
         <note>53477 - HDR LUT compatibility help.</note>
+      </trans-unit>
+      <trans-unit id="HDR Luminance" xml:space="preserve">
+        <source>HDR Luminance</source>
+        <target state="translated">HDR-luminanssi</target>
+        <note>54559 - Section title in More System Configuration Options for overrides of peak luminance, sustained full-screen luminance, and minimum usable brightness, all measured in nits.</note>
       </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
@@ -8407,6 +8472,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>No Mirror Targets Available</source>
         <target state="translated">Peilauskohteita ei ole saatavilla</target>
         <note>53477 - Empty mirror target list.</note>
+      </trans-unit>
+      <trans-unit id="No Permissions Required" xml:space="preserve">
+        <source>No Permissions Required</source>
+        <target state="translated">Ei vaadi käyttöoikeuksia</target>
+        <note>54610 - Native keyboard control method in Settings &gt; Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions.</note>
       </trans-unit>
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
@@ -10938,10 +11008,25 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">Aseta näytön ${displayEntity} näyttötilan tarkkuudeksi ${resolutionEntity}, skaalaukseksi ${scaleFactorEntity}, virkistystaajuudeksi ${refreshRateEntity} ja värisyvyydeksi ${colorDepthEntity}.</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
       </trans-unit>
+      <trans-unit id="Set the display's peak luminance in nits for macOS brightness and HDR calculations." xml:space="preserve">
+        <source>Set the display's peak luminance in nits for macOS brightness and HDR calculations.</source>
+        <target state="translated">Aseta näytön huippuluminanssi niteinä macOS:n kirkkaus- ja HDR-laskentaa varten.</target>
+        <note>54559 - Help below the peak luminance override. This is the value macOS uses for brightness and HDR calculations.</note>
+      </trans-unit>
       <trans-unit id="Set the input source ${displayEntity} to ${inputSourceEntity}." xml:space="preserve">
         <source>Set the input source ${displayEntity} to ${inputSourceEntity}.</source>
         <target state="translated">Aseta näytön ${displayEntity} tulolähteeksi ${inputSourceEntity}.</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
+      </trans-unit>
+      <trans-unit id="Set the lowest usable white luminance in nits for macOS brightness control." xml:space="preserve">
+        <source>Set the lowest usable white luminance in nits for macOS brightness control.</source>
+        <target state="translated">Aseta valkoisen pienin käyttökelpoinen luminanssi niteinä macOS:n kirkkauden säätöä varten.</target>
+        <note>54559 - Help below the minimum usable brightness override. The value specifies the lowest usable luminance when showing white for macOS brightness control.</note>
+      </trans-unit>
+      <trans-unit id="Set the luminance in nits that the display can sustain when the entire screen is white." xml:space="preserve">
+        <source>Set the luminance in nits that the display can sustain when the entire screen is white.</source>
+        <target state="translated">Aseta niteinä luminanssi, jonka näyttö pystyy ylläpitämään, kun koko näyttö on valkoinen.</target>
+        <note>54559 - Help below the full-screen luminance override. This is the luminance that can be maintained when the entire display shows white.</note>
       </trans-unit>
       <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
         <source>Set the rotation of ${displayEntity} to ${degrees}.</source>
@@ -11716,7 +11801,7 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
       <trans-unit id="Standard" xml:space="preserve">
         <source>Standard</source>
         <target state="translated">Tavallinen</target>
-        <note>54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions.</note>
+        <note>54610 - Label for the regular app-menu presentation in Settings &gt; Menu.</note>
       </trans-unit>
       <trans-unit id="Standard Appearance" xml:space="preserve">
         <source>Standard Appearance</source>
@@ -11732,11 +11817,6 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>Standard step size</source>
         <target state="translated">Tavallisen askeleen koko</target>
         <note>53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size.</note>
-      </trans-unit>
-      <trans-unit id="Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant." xml:space="preserve">
-        <source>Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant.</source>
-        <target state="translated">Tavallinen käyttää rajatuinta pääsyä eikä tarvitse erillisiä järjestelmän käyttöoikeuksia toimiakseen. Jos siinä on ongelmia, kokeile tapaa Syötteen tarkkailu tai Täysi käyttöoikeus. Nämä tavat vaativat erilliset käyttöoikeudet Järjestelmäasetuksissa ja voivat näyttää pysyvän ilmaisimen joissakin macOS-versioissa. Täysi käyttöoikeus vaatii laajimmat käyttöoikeudet.</target>
-        <note>54496 - Help beneath the native keyboard method selector: Standard needs no explicit system permission grant, while Input Monitoring and Full Access require permission and may show a persistent macOS access indicator. Bulgarian and Persian Input Monitoring labels use accepted project terminology.</note>
       </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
@@ -12223,6 +12303,16 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <target state="translated">EDID-tietojen kirjoitus epäonnistui. Laitteen EDID-tiedot voivat olla puutteelliset.</target>
         <note>54469 - Shown when a physical EDID write failed. The device may have received only part of the display identification data.</note>
       </trans-unit>
+      <trans-unit id="The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions." xml:space="preserve">
+        <source>The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions.</source>
+        <target state="translated">Menetelmä ”Täysi käyttöoikeus” tarvitsee toimiakseen erilliset järjestelmän käyttöoikeudet, ja sen käyttö tuo joissakin macOS-versioissa näkyviin käyttöoikeudesta kertovan ilmaisimen.</target>
+        <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
+      </trans-unit>
+      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
+        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
+        <target state="translated">Menetelmä ”Syötteen tarkkailu” tarvitsee toimiakseen erilliset järjestelmän käyttöoikeudet, ja sen käyttö tuo joissakin macOS-versioissa näkyviin käyttöoikeudesta kertovan ilmaisimen. Lukitulla näytöllä tai näytönsäästäjän ollessa käynnissä macOS käsittelee kirkkaus-, äänenvoimakkuus- ja mykistysnäppäinten painallukset. Menetelmää ei suositella, jos käytät laajennetun näppäimistön funktionäppäimiä F13–F19 aktiivisesti. Menetelmään ”Ei vaadi käyttöoikeuksia” verrattuna tämä menetelmä voi parantaa hieman yhteensopivuutta joidenkin näppäimiä uudelleenmäärittävien muiden valmistajien appien kanssa.</target>
+        <note>54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
+      </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
         <target state="translated">LUT-tiedosto on liian suuri.</target>
@@ -12282,6 +12372,11 @@ Kaikki näytöt eivät tue ruudun ohjaustoimintoja. Nämä toiminnot voivat aihe
         <source>The app listens to both the native volume and mute keys (if permissions permit).</source>
         <target state="translated">Sovellus kuuntelee sekä järjestelmän äänenvoimakkuus- että mykistysnäppäimiä (jos oikeudet sallivat).</target>
         <note>53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app listens to the mute key (if permissions permit) but not the volume keys." xml:space="preserve">
+        <source>The app listens to the mute key (if permissions permit) but not the volume keys.</source>
+        <target state="translated">Sovellus kuuntelee mykistysnäppäintä (jos oikeudet sallivat), mutta ei äänenvoimakkuusnäppäimiä.</target>
+        <note>54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method.</note>
       </trans-unit>
       <trans-unit id="The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
         <source>The app listens to the native brightness keys (if permissions permit).</source>
@@ -12925,6 +13020,11 @@ Kiitos ymmärryksestäsi ja jatkuvasta tuestasi.</target>
         <source>This menu item is redundant if the header is set to present the function as a switch.</source>
         <target state="translated">Tämä valikkokohde on tarpeeton, jos otsikko on määritetty näyttämään toiminto kytkimenä.</target>
         <note>53477 - Menu visibility redundancy help.</note>
+      </trans-unit>
+      <trans-unit id="This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
+        <source>This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use.</source>
+        <target state="translated">Tämä menetelmä käyttää rajatuinta pääsyä eikä tarvitse erillisiä järjestelmän käyttöoikeuksia toimiakseen. Lukitulla näytöllä tai näytönsäästäjän ollessa käynnissä macOS käsittelee kirkkaus-, äänenvoimakkuus- ja mykistysnäppäinten painallukset. Menetelmää ei suositella, jos käytät laajennetun näppäimistön funktionäppäimiä F13–F19 aktiivisesti.</target>
+        <note>54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="This might help solve issues with certain configurations." xml:space="preserve">
         <source>This might help solve issues with certain configurations.</source>

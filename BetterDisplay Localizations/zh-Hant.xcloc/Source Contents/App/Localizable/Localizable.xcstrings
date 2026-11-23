@@ -819,6 +819,9 @@
     "After discarding the virtual screen, it is recommended to remove its unused factory color profile in System Settings." : {
       "comment" : "53477 - Virtual screen deletion cleanup advice for manual color profile removal."
     },
+    "After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." : {
+      "comment" : "54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay."
+    },
     "After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." : {
       "comment" : "54069 - Help for brightness synchronization after wake. The two-percentage-point comparison requires pre-sleep readings; absolute-value and nits synchronization can fall back to valid current readings from existing or newly connected Apple displays, with zero or near-zero readings excluded.",
       "extractionState" : "manual",
@@ -2829,6 +2832,9 @@
     "Current EDR" : {
       "comment" : "53477 - Current extended dynamic range value."
     },
+    "Current full-screen luminance" : {
+      "comment" : "54559 - Read-only label for the display’s currently reported maximum sustained luminance across an entirely white screen, in nits."
+    },
     "Current method:" : {
       "comment" : "53695 - Label beneath the software-based video adjustments switch in display Settings. A separately localized description of the loaded image adjustment controllers follows this label.",
       "localizations" : {
@@ -2840,11 +2846,17 @@
         }
       }
     },
+    "Current minimum usable brightness" : {
+      "comment" : "54559 - Read-only label for the display’s currently reported minimum usable white luminance in nits."
+    },
     "Current mode" : {
       "comment" : "53477 - Current device/display mode label."
     },
     "Current native resolution" : {
       "comment" : "53477 - Current native physical display resolution."
+    },
+    "Current peak luminance" : {
+      "comment" : "54559 - Read-only label for the display’s currently reported peak luminance in nits."
     },
     "Current resolution (width × height) is shown as text when enabled." : {
       "comment" : "53477 - Menu bar resolution text visibility setting help."
@@ -3859,8 +3871,17 @@
     "Edit display role" : {
       "comment" : "53477 - System display role editing, such as monitor versus television."
     },
+    "Edit full-screen luminance" : {
+      "comment" : "54559 - Toggle that enables a custom sustained luminance value for this display model when the entire screen is white."
+    },
+    "Edit minimum usable brightness" : {
+      "comment" : "54559 - Toggle that enables a custom minimum usable white luminance value for this display model."
+    },
     "Edit native panel pixel resolution" : {
       "comment" : "53477 - System override for native panel pixel dimensions."
+    },
+    "Edit peak luminance" : {
+      "comment" : "54559 - Toggle that enables a custom peak luminance value for this display model."
     },
     "Edit Settings…" : {
       "comment" : "53477 - Action opening settings editing."
@@ -3880,8 +3901,17 @@
     "Edited display role" : {
       "comment" : "53477 - Edited display role override value."
     },
+    "Edited full-screen luminance" : {
+      "comment" : "54559 - Editable field for the custom sustained luminance in nits when the entire screen is white."
+    },
+    "Edited minimum usable brightness" : {
+      "comment" : "54559 - Editable field for the custom minimum usable white luminance in nits in the display model’s system configuration."
+    },
     "Edited native resolution" : {
       "comment" : "53477 - Edited native resolution override value."
+    },
+    "Edited peak luminance" : {
+      "comment" : "54559 - Editable field for the custom peak luminance in nits in the display model’s system configuration."
     },
     "Edited system display name" : {
       "comment" : "53477 - Edited system display name override value."
@@ -4198,6 +4228,14 @@
     },
     "Exit Service Menu" : {
       "comment" : "53689 - TV remote action to leave the technical service menu."
+    },
+    "Expand OSD from notch area" : {
+      "comment" : "54534 - Keyboard settings toggle for expanding the on-screen display from the built-in MacBook camera notch.",
+      "extractionState" : "manual"
+    },
+    "Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style." : {
+      "comment" : "54534 - Describes notch OSD placement. Full is the aspect ratio that includes the screen area beside the camera housing.",
+      "extractionState" : "manual"
     },
     "Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." : {
       "comment" : "53477 - Expandable menu item behavior help."
@@ -4709,6 +4747,9 @@
     },
     "HDR Filter Pipeline" : {
       "comment" : "53477 - HDR-capable video filter pipeline setting."
+    },
+    "HDR Luminance" : {
+      "comment" : "54559 - Section title in More System Configuration Options for overrides of peak luminance, sustained full-screen luminance, and minimum usable brightness, all measured in nits."
     },
     "HDR LUT support is experimental and requires a Rec. 2100 PQ LUT created for a fixed display calibration." : {
       "comment" : "53477 - HDR LUT compatibility help."
@@ -6040,6 +6081,9 @@
     },
     "No Mirror Targets Available" : {
       "comment" : "53477 - Empty mirror target list."
+    },
+    "No Permissions Required" : {
+      "comment" : "54610 - Native keyboard control method in Settings > Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions."
     },
     "No retouched color profiles." : {
       "comment" : "54069 - Empty state for the retouched color profiles section. Add New remains available.",
@@ -7820,8 +7864,17 @@
     "Set the display mode of ${displayEntity} to resolution ${resolutionEntity} using ${scaleFactorEntity} scaling at refresh rate ${refreshRateEntity} with color depth ${colorDepthEntity}." : {
       "comment" : "53477 - Shortcut summary; preserve parameter interpolation syntax."
     },
+    "Set the display's peak luminance in nits for macOS brightness and HDR calculations." : {
+      "comment" : "54559 - Help below the peak luminance override. This is the value macOS uses for brightness and HDR calculations."
+    },
     "Set the input source ${displayEntity} to ${inputSourceEntity}." : {
       "comment" : "53477 - Shortcut summary; preserve parameter interpolation syntax."
+    },
+    "Set the lowest usable white luminance in nits for macOS brightness control." : {
+      "comment" : "54559 - Help below the minimum usable brightness override. The value specifies the lowest usable luminance when showing white for macOS brightness control."
+    },
+    "Set the luminance in nits that the display can sustain when the entire screen is white." : {
+      "comment" : "54559 - Help below the full-screen luminance override. This is the luminance that can be maintained when the entire display shows white."
     },
     "Set the rotation of ${displayEntity} to ${degrees}." : {
       "comment" : "53477 - Shortcut summary; preserve parameter interpolation syntax."
@@ -8393,7 +8446,7 @@
       "comment" : "53477 - Standard RGB color space identifier."
     },
     "Standard" : {
-      "comment" : "54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions."
+      "comment" : "54610 - Label for the regular app-menu presentation in Settings > Menu."
     },
     "Standard Appearance" : {
       "comment" : "53477 - Standard appearance option."
@@ -8403,9 +8456,6 @@
     },
     "Standard step size" : {
       "comment" : "53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size."
-    },
-    "Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant." : {
-      "comment" : "54496 - Help beneath the native keyboard method selector: Standard needs no explicit system permission grant, while Input Monitoring and Full Access require permission and may show a persistent macOS access indicator. Bulgarian and Persian Input Monitoring labels use accepted project terminology."
     },
     "Start Automatically" : {
       "comment" : "53477 - Automatically start feature option."
@@ -8737,6 +8787,9 @@
     "The app listens to both the native volume and mute keys (if permissions permit)." : {
       "comment" : "53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards."
     },
+    "The app listens to the mute key (if permissions permit) but not the volume keys." : {
+      "comment" : "54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method."
+    },
     "The app listens to the native brightness keys (if permissions permit)." : {
       "comment" : "53689 - Keyboard status describing interception of native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards."
     },
@@ -8909,6 +8962,9 @@
     "The EDID write failed. The device EDID may be incomplete." : {
       "comment" : "54469 - Shown when a physical EDID write failed. The device may have received only part of the display identification data."
     },
+    "The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions." : {
+      "comment" : "54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions."
+    },
     "The hardware mute state could not be confirmed. Software protection remains active." : {
       "comment" : "53927 - Retained manual hardware-mute confirmation error; software protection means retaining digital silence during the failed operation.",
       "extractionState" : "manual"
@@ -8923,6 +8979,9 @@
     },
     "The imported LUT and its configuration will be removed." : {
       "comment" : "53477 - Imported LUT deletion confirmation."
+    },
+    "The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." : {
+      "comment" : "54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs."
     },
     "The logical CEC address used for remote, volume and power commands. TV is the usual target." : {
       "comment" : "53477 - HDMI-CEC logical address setting help."
@@ -9262,6 +9321,9 @@
     },
     "This menu item is redundant if the header is set to present the function as a switch." : {
       "comment" : "53477 - Menu visibility redundancy help."
+    },
+    "This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." : {
+      "comment" : "54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions."
     },
     "This might help solve issues with certain configurations." : {
       "comment" : "53477 - Compatibility workaround setting help."

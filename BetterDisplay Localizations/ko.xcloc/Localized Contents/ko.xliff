@@ -1044,6 +1044,11 @@ You can do this in System Settings or the app can do it for you (administrator c
         <target state="translated">가상 화면을 제거한 후에는 시스템 설정에서 사용하지 않는 초기 색상 프로파일을 제거하는 것을 권장합니다.</target>
         <note>53477 - Virtual screen deletion cleanup advice for manual color profile removal.</note>
       </trans-unit>
+      <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
+        <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
+        <target state="translated">디스플레이를 전환하면 패스스루가 시작되기 전에 처음 몇 번의 밝기 키 입력을 BetterDisplay가 처리할 수 있습니다. 즉시 패스스루를 사용하려면 키보드 설정에서 ‘전체 접근’을 선택하세요.</target>
+        <note>54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
+      </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
         <target state="translated">잠자기에서 깨어난 후, 잠자기 전에 연결되어 있던 Apple 밝기 소스의 밝기가 2퍼센트포인트 이상 바뀌면 동기화합니다. 조건을 충족하는 변경 사항이 없으면 절대값 및 니트 동기화는 새로 연결된 디스플레이를 포함하여 유효한 현재 Apple 밝기 측정값을 사용합니다. 0 또는 0에 가까운 밝기 측정값은 무시합니다.</target>
@@ -3712,10 +3717,20 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <target state="translated">현재 디스플레이 역할</target>
         <note>53477 - Display role, such as computer monitor or television; not main or secondary position.</note>
       </trans-unit>
+      <trans-unit id="Current full-screen luminance" xml:space="preserve">
+        <source>Current full-screen luminance</source>
+        <target state="translated">현재 전체 화면 휘도</target>
+        <note>54559 - Read-only label for the display’s currently reported maximum sustained luminance across an entirely white screen, in nits.</note>
+      </trans-unit>
       <trans-unit id="Current method:" xml:space="preserve">
         <source>Current method:</source>
         <target state="translated">현재 방식:</target>
         <note>53695 - Label beneath the software-based video adjustments switch in display Settings. A separately localized description of the loaded image adjustment controllers follows this label.</note>
+      </trans-unit>
+      <trans-unit id="Current minimum usable brightness" xml:space="preserve">
+        <source>Current minimum usable brightness</source>
+        <target state="translated">현재 사용 가능한 최소 밝기</target>
+        <note>54559 - Read-only label for the display’s currently reported minimum usable white luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current mode" xml:space="preserve">
         <source>Current mode</source>
@@ -3726,6 +3741,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Current native resolution</source>
         <target state="translated">현재 네이티브 해상도</target>
         <note>53477 - Current native physical display resolution.</note>
+      </trans-unit>
+      <trans-unit id="Current peak luminance" xml:space="preserve">
+        <source>Current peak luminance</source>
+        <target state="translated">현재 최대 휘도</target>
+        <note>54559 - Read-only label for the display’s currently reported peak luminance in nits.</note>
       </trans-unit>
       <trans-unit id="Current resolution (width × height) is shown as text when enabled." xml:space="preserve">
         <source>Current resolution (width × height) is shown as text when enabled.</source>
@@ -5256,10 +5276,25 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">디스플레이 역할 수정</target>
         <note>53477 - System display role editing, such as monitor versus television.</note>
       </trans-unit>
+      <trans-unit id="Edit full-screen luminance" xml:space="preserve">
+        <source>Edit full-screen luminance</source>
+        <target state="translated">전체 화면 휘도 수정</target>
+        <note>54559 - Toggle that enables a custom sustained luminance value for this display model when the entire screen is white.</note>
+      </trans-unit>
+      <trans-unit id="Edit minimum usable brightness" xml:space="preserve">
+        <source>Edit minimum usable brightness</source>
+        <target state="translated">사용 가능한 최소 밝기 수정</target>
+        <note>54559 - Toggle that enables a custom minimum usable white luminance value for this display model.</note>
+      </trans-unit>
       <trans-unit id="Edit native panel pixel resolution" xml:space="preserve">
         <source>Edit native panel pixel resolution</source>
         <target state="translated">네이티브 패널 픽셀 해상도 수정</target>
         <note>53477 - System override for native panel pixel dimensions.</note>
+      </trans-unit>
+      <trans-unit id="Edit peak luminance" xml:space="preserve">
+        <source>Edit peak luminance</source>
+        <target state="translated">최대 휘도 수정</target>
+        <note>54559 - Toggle that enables a custom peak luminance value for this display model.</note>
       </trans-unit>
       <trans-unit id="Edit system display name" xml:space="preserve">
         <source>Edit system display name</source>
@@ -5281,10 +5316,25 @@ The process does not work for the built-in display (reboot needed). The operatio
         <target state="translated">수정된 디스플레이 역할</target>
         <note>53477 - Edited display role override value.</note>
       </trans-unit>
+      <trans-unit id="Edited full-screen luminance" xml:space="preserve">
+        <source>Edited full-screen luminance</source>
+        <target state="translated">수정된 전체 화면 휘도</target>
+        <note>54559 - Editable field for the custom sustained luminance in nits when the entire screen is white.</note>
+      </trans-unit>
+      <trans-unit id="Edited minimum usable brightness" xml:space="preserve">
+        <source>Edited minimum usable brightness</source>
+        <target state="translated">사용 가능한 최소 밝기(수정값)</target>
+        <note>54559 - Editable field for the custom minimum usable white luminance in nits in the display model’s system configuration.</note>
+      </trans-unit>
       <trans-unit id="Edited native resolution" xml:space="preserve">
         <source>Edited native resolution</source>
         <target state="translated">수정된 네이티브 해상도</target>
         <note>53477 - Edited native resolution override value.</note>
+      </trans-unit>
+      <trans-unit id="Edited peak luminance" xml:space="preserve">
+        <source>Edited peak luminance</source>
+        <target state="translated">수정된 최대 휘도</target>
+        <note>54559 - Editable field for the custom peak luminance in nits in the display model’s system configuration.</note>
       </trans-unit>
       <trans-unit id="Edited system display name" xml:space="preserve">
         <source>Edited system display name</source>
@@ -5770,6 +5820,16 @@ The process does not work for the built-in display (reboot needed). The operatio
         <source>Exit Service Menu</source>
         <target state="translated">서비스 메뉴 나가기</target>
         <note>53689 - TV remote action to leave the technical service menu.</note>
+      </trans-unit>
+      <trans-unit id="Expand OSD from notch area" xml:space="preserve">
+        <source>Expand OSD from notch area</source>
+        <target state="translated">노치에서 OSD 펼치기</target>
+        <note>54534 - Keyboard settings toggle for expanding the on-screen display from the built-in MacBook camera notch.</note>
+      </trans-unit>
+      <trans-unit id="Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style." xml:space="preserve">
+        <source>Expand the OSD from the notch when the destination display has a notch and uses the Full aspect ratio. Otherwise, use the selected OSD style.</source>
+        <target state="translated">대상 디스플레이에 노치가 있고 화면비가 ‘전체’이면 노치에서 OSD를 펼칩니다. 그렇지 않으면 선택한 OSD 스타일을 사용합니다.</target>
+        <note>54534 - Describes notch OSD placement. Full is the aspect ratio that includes the screen area beside the camera housing.</note>
       </trans-unit>
       <trans-unit id="Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space)." xml:space="preserve">
         <source>Expandable menu items unfold inside the main app menu. When turned off, the app shows a floating popup submenu right or left (depending on available space).</source>
@@ -6404,6 +6464,11 @@ Removing them is safe—macOS will recreate any necessary profiles the next time
         <source>HDR LUT support is experimental and requires a Rec. 2100 PQ LUT created for a fixed display calibration.</source>
         <target state="translated">HDR LUT 지원은 실험적이며 고정 디스플레이 보정을 위해 생성된 Rec. 2100 PQ LUT이 필요합니다.</target>
         <note>53477 - HDR LUT compatibility help.</note>
+      </trans-unit>
+      <trans-unit id="HDR Luminance" xml:space="preserve">
+        <source>HDR Luminance</source>
+        <target state="translated">HDR 휘도</target>
+        <note>54559 - Section title in More System Configuration Options for overrides of peak luminance, sustained full-screen luminance, and minimum usable brightness, all measured in nits.</note>
       </trans-unit>
       <trans-unit id="HDR Off" xml:space="preserve">
         <source>HDR Off</source>
@@ -8387,6 +8452,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>No Mirror Targets Available</source>
         <target state="translated">사용 가능한 미러링 대상 없음</target>
         <note>53477 - Empty mirror target list.</note>
+      </trans-unit>
+      <trans-unit id="No Permissions Required" xml:space="preserve">
+        <source>No Permissions Required</source>
+        <target state="translated">권한 필요 없음</target>
+        <note>54610 - Native keyboard control method in Settings &gt; Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions.</note>
       </trans-unit>
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
@@ -10919,10 +10989,25 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">${displayEntity}의 디스플레이 모드를 해상도는 ${resolutionEntity}, 배율은 ${scaleFactorEntity}, 주사율은 ${refreshRateEntity}, 색상 깊이는 ${colorDepthEntity}(으)로 설정합니다.</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
       </trans-unit>
+      <trans-unit id="Set the display's peak luminance in nits for macOS brightness and HDR calculations." xml:space="preserve">
+        <source>Set the display's peak luminance in nits for macOS brightness and HDR calculations.</source>
+        <target state="translated">macOS의 밝기 및 HDR 계산에 사용할 디스플레이의 최대 휘도를 니트 단위로 설정합니다.</target>
+        <note>54559 - Help below the peak luminance override. This is the value macOS uses for brightness and HDR calculations.</note>
+      </trans-unit>
       <trans-unit id="Set the input source ${displayEntity} to ${inputSourceEntity}." xml:space="preserve">
         <source>Set the input source ${displayEntity} to ${inputSourceEntity}.</source>
         <target state="translated">${displayEntity}의 입력 소스를 ${inputSourceEntity}(으)로 설정합니다.</target>
         <note>53477 - Shortcut summary; preserve parameter interpolation syntax.</note>
+      </trans-unit>
+      <trans-unit id="Set the lowest usable white luminance in nits for macOS brightness control." xml:space="preserve">
+        <source>Set the lowest usable white luminance in nits for macOS brightness control.</source>
+        <target state="translated">macOS의 밝기 제어에 쓰이는, 사용 가능한 최소 백색 휘도를 니트 단위로 설정합니다.</target>
+        <note>54559 - Help below the minimum usable brightness override. The value specifies the lowest usable luminance when showing white for macOS brightness control.</note>
+      </trans-unit>
+      <trans-unit id="Set the luminance in nits that the display can sustain when the entire screen is white." xml:space="preserve">
+        <source>Set the luminance in nits that the display can sustain when the entire screen is white.</source>
+        <target state="translated">화면 전체가 흰색일 때 디스플레이가 유지할 수 있는 휘도를 니트 단위로 설정합니다.</target>
+        <note>54559 - Help below the full-screen luminance override. This is the luminance that can be maintained when the entire display shows white.</note>
       </trans-unit>
       <trans-unit id="Set the rotation of ${displayEntity} to ${degrees}." xml:space="preserve">
         <source>Set the rotation of ${displayEntity} to ${degrees}.</source>
@@ -11697,7 +11782,7 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Standard" xml:space="preserve">
         <source>Standard</source>
         <target state="translated">표준</target>
-        <note>54462 - Shared label for the regular app-menu presentation and the default native keyboard control method. For keyboard control, Standard uses focused media-key mappings and registered shortcuts without requiring explicit system permissions.</note>
+        <note>54610 - Label for the regular app-menu presentation in Settings &gt; Menu.</note>
       </trans-unit>
       <trans-unit id="Standard Appearance" xml:space="preserve">
         <source>Standard Appearance</source>
@@ -11713,11 +11798,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Standard step size</source>
         <target state="translated">표준 단계 크기</target>
         <note>53477 - Label for the number of logical steps used by a normal keyboard adjustment. This is the standard adjustment increment, as opposed to the fine step size.</note>
-      </trans-unit>
-      <trans-unit id="Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant." xml:space="preserve">
-        <source>Standard uses the most focused access and does not require explicit system permissions to function. If it causes issues, try Input Monitoring or Full Access. These methods require explicit permissions in System Settings and may trigger a persistent indicator on some macOS versions. Full Access requires the widest grant.</source>
-        <target state="translated">표준 방식은 가장 제한된 접근을 사용하며 작동을 위해 명시적인 시스템 권한이 필요하지 않습니다. 문제가 발생하면 입력 모니터링 또는 전체 접근을 시도하세요. 이러한 방식은 시스템 설정에서 명시적으로 권한을 부여해야 하며, 일부 macOS 버전에서는 표시기가 계속 나타날 수 있습니다. 전체 접근은 가장 광범위한 권한이 필요합니다.</target>
-        <note>54496 - Help beneath the native keyboard method selector: Standard needs no explicit system permission grant, while Input Monitoring and Full Access require permission and may show a persistent macOS access indicator. Bulgarian and Persian Input Monitoring labels use accepted project terminology.</note>
       </trans-unit>
       <trans-unit id="Start Automatically" xml:space="preserve">
         <source>Start Automatically</source>
@@ -12204,6 +12284,16 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">EDID 데이터를 쓰지 못했습니다. 장치의 EDID 데이터가 불완전할 수 있습니다.</target>
         <note>54469 - Shown when a physical EDID write failed. The device may have received only part of the display identification data.</note>
       </trans-unit>
+      <trans-unit id="The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions." xml:space="preserve">
+        <source>The Full Access method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions.</source>
+        <target state="translated">‘전체 접근’ 방식이 작동하려면 명시적인 시스템 권한이 필요하며, 일부 macOS 버전에서는 투명성 표시기가 나타납니다.</target>
+        <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
+      </trans-unit>
+      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
+        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
+        <target state="translated">‘입력 모니터링’ 방식이 작동하려면 명시적인 시스템 권한이 필요하며, 일부 macOS 버전에서는 투명성 표시기가 나타납니다. 잠금 화면이나 화면 보호기가 실행 중일 때는 밝기, 음량 및 음소거 키를 macOS가 처리합니다. 확장 키보드에서 F13~F19 기능 키를 자주 사용하는 경우에는 권장하지 않습니다. ‘권한 필요 없음’ 방식에 비해 키를 재매핑하는 일부 타사 앱과의 호환성이 조금 더 좋을 수 있습니다.</target>
+        <note>54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
+      </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
         <target state="translated">LUT 파일이 너무 큽니다.</target>
@@ -12263,6 +12353,11 @@ Not all displays support screen control operations. These operations can cause i
         <source>The app listens to both the native volume and mute keys (if permissions permit).</source>
         <target state="translated">앱이 기본 볼륨 및 음소거 키를 감지합니다 (권한 허용 시).</target>
         <note>53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      </trans-unit>
+      <trans-unit id="The app listens to the mute key (if permissions permit) but not the volume keys." xml:space="preserve">
+        <source>The app listens to the mute key (if permissions permit) but not the volume keys.</source>
+        <target state="translated">앱이 음소거 키는 감지하지만(권한 허용 시) 볼륨 키는 감지하지 않습니다.</target>
+        <note>54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method.</note>
       </trans-unit>
       <trans-unit id="The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
         <source>The app listens to the native brightness keys (if permissions permit).</source>
@@ -12907,6 +13002,11 @@ Thank you for your understanding and continued support.</source>
         <source>This menu item is redundant if the header is set to present the function as a switch.</source>
         <target state="translated">헤더가 기능을 스위치로 표시하도록 설정된 경우 이 메뉴 항목은 중복됩니다.</target>
         <note>53477 - Menu visibility redundancy help.</note>
+      </trans-unit>
+      <trans-unit id="This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
+        <source>This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use.</source>
+        <target state="translated">이 방식은 가장 제한된 접근을 사용하며 작동을 위해 명시적인 시스템 권한이 필요하지 않습니다. 잠금 화면이나 화면 보호기가 실행 중일 때는 밝기, 음량 및 음소거 키를 macOS가 처리합니다. 확장 키보드에서 F13~F19 기능 키를 자주 사용하는 경우에는 권장하지 않습니다.</target>
+        <note>54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
       </trans-unit>
       <trans-unit id="This might help solve issues with certain configurations." xml:space="preserve">
         <source>This might help solve issues with certain configurations.</source>
