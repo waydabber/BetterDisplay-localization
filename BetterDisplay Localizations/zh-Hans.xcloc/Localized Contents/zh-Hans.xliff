@@ -1047,7 +1047,7 @@ You can do this in System Settings or the app can do it for you (administrator c
       <trans-unit id="After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." xml:space="preserve">
         <source>After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings.</source>
         <target state="translated">切换显示器后，在亮度键直通生效前，BetterDisplay 可能会处理最初几次按键。要立即启用直通，请在键盘设置中选择“完全访问”。</target>
-        <note>54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
+        <note>54617 - Warning below a display’s native brightness-key pass-through toggle for the Limited Access and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay.</note>
       </trans-unit>
       <trans-unit id="After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." xml:space="preserve">
         <source>After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored.</source>
@@ -2161,6 +2161,11 @@ Specifying read length is optional - leave the field empty for autodetect.</sour
         <source>Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level).</source>
         <target state="translated">在组合亮度刻度上，低于此值时应用程序会使用额外的软件调光，因为硬件背光已达到最低亮度。</target>
         <note>53477 - Combined brightness hardware/software transition threshold help.</note>
+      </trans-unit>
+      <trans-unit id="BetterDisplay leaves the native brightness, volume, and mute keys to macOS." xml:space="preserve">
+        <source>BetterDisplay leaves the native brightness, volume, and mute keys to macOS.</source>
+        <target state="translated">BetterDisplay 将原生亮度、音量和静音键交由 macOS 处理。</target>
+        <note>54619 - Help shown when Disabled is selected for native keyboard control. Native keys are the keyboard’s built-in brightness, volume, and mute keys.</note>
       </trans-unit>
       <trans-unit id="BetterDisplay treats this brightness as luminance value 1.0. Display brightness or preset changes can invalidate an accurately measured LUT." xml:space="preserve">
         <source>BetterDisplay treats this brightness as luminance value 1.0. Display brightness or preset changes can invalidate an accurately measured LUT.</source>
@@ -7112,7 +7117,7 @@ Not all displays support screen control operations. These operations can cause i
       <trans-unit id="Input Monitoring" xml:space="preserve">
         <source>Input Monitoring</source>
         <target state="translated">输入监控</target>
-        <note>54496 - Native keyboard handling method and macOS permission page for monitoring keyboard, mouse, and trackpad input. Use SecurityPrivacyExtension’s LISTEN_EVENT wording where available; Bulgarian, Persian, and Latvian use accepted project terminology.</note>
+        <note>54617 - Native keyboard control method and macOS permission page for monitoring keyboard, mouse, and trackpad input. Use the established macOS permission name from the glossary.</note>
       </trans-unit>
       <trans-unit id="Input Source" xml:space="preserve">
         <source>Input Source</source>
@@ -7517,6 +7522,16 @@ Not all displays support screen control operations. These operations can cause i
         <source>Limit with Screen Brightness</source>
         <target state="translated">随屏幕亮度限制</target>
         <note>54192 - Apple logo option that scales Logo Light Strength using the logo brightness macOS selects from screen brightness and ambient light. With Content Based Ambience enabled, this also limits its maximum; off uses the fixed-strength base.</note>
+      </trans-unit>
+      <trans-unit id="Limited Access" xml:space="preserve">
+        <source>Limited Access</source>
+        <target state="translated">受限访问</target>
+        <note>54614 - Native keyboard control method for handling brightness, volume, and mute keys without requesting explicit system permissions.</note>
+      </trans-unit>
+      <trans-unit id="Limited Access handles the keys without requiring explicit system permissions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. If you encounter issues with keyboard control, try Full Access." xml:space="preserve">
+        <source>Limited Access handles the keys without requiring explicit system permissions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. If you encounter issues with keyboard control, try Full Access.</source>
+        <target state="translated">“受限访问”无需明确授予系统权限即可处理按键。在锁定屏幕上或屏幕保护程序运行时，此方式会将亮度、音量和静音键交给 macOS 处理。如果你经常使用扩展键盘上的 F13 至 F19 功能键，不建议使用此方式。如果键盘控制出现问题，请尝试“完全访问”。</target>
+        <note>54614 - Help for the Limited Access native keyboard control method. F13 through F19 are physical function keys on extended keyboards, and Full Access must match the picker label.</note>
       </trans-unit>
       <trans-unit id="Limited Range" xml:space="preserve">
         <source>Limited Range</source>
@@ -8328,6 +8343,11 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">原生亮度键设置</target>
         <note>53477 - Native brightness key settings heading.</note>
       </trans-unit>
+      <trans-unit id="Native Keyboard Control Requires Permissions" xml:space="preserve">
+        <source>Native Keyboard Control Requires Permissions</source>
+        <target state="translated">原生键盘控制需要权限</target>
+        <note>54630 - Heading of the orange warning in Keyboard settings when the selected native keyboard control method needs macOS permissions. Use title case where customary.</note>
+      </trans-unit>
       <trans-unit id="Native brightness changes can still synchronize to other displays when the group's synchronization of externally induced changes is enabled. macOS chooses the display affected by modifier keys." xml:space="preserve">
         <source>Native brightness changes can still synchronize to other displays when the group's synchronization of externally induced changes is enabled. macOS chooses the display affected by modifier keys.</source>
         <target state="translated">如果显示组启用了对外部引起的变化进行同步，系统亮度变化仍可同步到其他显示器。macOS 决定修饰键影响哪台显示器。</target>
@@ -8337,11 +8357,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>Native brightness keyboard control pass-thru</source>
         <target state="translated">系统亮度键直通</target>
         <note>54301 - Per-display Apple brightness setting that forwards original system brightness-key events and their modifier keys to macOS instead of changing brightness in BetterDisplay. Pass-thru means keyboard-event forwarding, not a display connection or DDC transport.</note>
-      </trans-unit>
-      <trans-unit id="Native keyboard control (brightness and volume) requires permissions" xml:space="preserve">
-        <source>Native keyboard control (brightness and volume) requires permissions</source>
-        <target state="translated">原生键盘控制（亮度和音量）需要权限</target>
-        <note>54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page.</note>
       </trans-unit>
       <trans-unit id="Native keyboard control is being interrupted and may be unavailable. The reason could be a device connection issue or interference from another app or service. If you notice a problem, try reconnecting any affected external keyboards, pausing other keyboard utilities, or switching to a different keyboard control method." xml:space="preserve">
         <source>Native keyboard control is being interrupted and may be unavailable. The reason could be a device connection issue or interference from another app or service. If you notice a problem, try reconnecting any affected external keyboards, pausing other keyboard utilities, or switching to a different keyboard control method.</source>
@@ -8452,11 +8467,6 @@ Not all displays support screen control operations. These operations can cause i
         <source>No Mirror Targets Available</source>
         <target state="translated">无可用镜像目标</target>
         <note>53477 - Empty mirror target list.</note>
-      </trans-unit>
-      <trans-unit id="No Permissions Required" xml:space="preserve">
-        <source>No Permissions Required</source>
-        <target state="translated">无需权限</target>
-        <note>54610 - Native keyboard control method in Settings &gt; Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions.</note>
       </trans-unit>
       <trans-unit id="No Stream Targets Available" xml:space="preserve">
         <source>No Stream Targets Available</source>
@@ -12288,10 +12298,10 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">“完全访问”方式需要明确授予系统权限才能工作，并会在某些 macOS 版本中触发透明度指示器。</target>
         <note>54603 - Help for the Full Access native keyboard control method. The transparency indicator is the macOS privacy indicator shown on certain system versions.</note>
       </trans-unit>
-      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." xml:space="preserve">
-        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping.</source>
-        <target state="translated">“输入监控”方式需要明确授予系统权限才能工作，并会在某些 macOS 版本中触发透明度指示器。在锁定屏幕上或屏幕保护程序运行时，此方式会将亮度、音量和静音键交给 macOS 处理。如果你经常使用扩展键盘上的 F13 至 F19 功能键，不建议使用此方式。与“无需权限”方式相比，此方式可能会略微改善与某些可重新映射按键的第三方 App 的兼容性。</target>
-        <note>54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs.</note>
+      <trans-unit id="The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. It may work better than Limited Access with some third-party keyboard remapping apps. If you encounter issues with keyboard control, try Full Access." xml:space="preserve">
+        <source>The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. It may work better than Limited Access with some third-party keyboard remapping apps. If you encounter issues with keyboard control, try Full Access.</source>
+        <target state="translated">“输入监控”方式需要明确授予系统权限才能工作，并会在某些 macOS 版本中触发透明度指示器。在锁定屏幕上或屏幕保护程序运行时，此方式会将亮度、音量和静音键交给 macOS 处理。如果你经常使用扩展键盘上的 F13 至 F19 功能键，不建议使用此方式。与某些第三方键盘重映射应用搭配使用时，此方式的效果可能比“受限访问”更好。如果键盘控制出现问题，请尝试“完全访问”。</target>
+        <note>54618 - Help for the Input Monitoring native keyboard control method. Remapping changes key assignments, the transparency indicator is a macOS privacy indicator, and Limited Access and Full Access must match the picker labels.</note>
       </trans-unit>
       <trans-unit id="The LUT file is too large." xml:space="preserve">
         <source>The LUT file is too large.</source>
@@ -12348,25 +12358,25 @@ Not all displays support screen control operations. These operations can cause i
         <target state="translated">应用程序不再响应原生音量和静音键。</target>
         <note>53689 - Keyboard status: the app is disengaged from native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
       </trans-unit>
-      <trans-unit id="The app listens to both the native volume and mute keys (if permissions permit)." xml:space="preserve">
-        <source>The app listens to both the native volume and mute keys (if permissions permit).</source>
-        <target state="translated">应用监听原生音量和静音键 (如果权限允许)</target>
-        <note>53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      <trans-unit id="The app listens to both the native volume and mute keys (if conditions permit)." xml:space="preserve">
+        <source>The app listens to both the native volume and mute keys (if conditions permit).</source>
+        <target state="translated">应用监听原生音量和静音键 (如果条件允许)</target>
+        <note>54619 - Status shown when the native volume and mute listeners are engaged in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup.</note>
       </trans-unit>
-      <trans-unit id="The app listens to the mute key (if permissions permit) but not the volume keys." xml:space="preserve">
-        <source>The app listens to the mute key (if permissions permit) but not the volume keys.</source>
-        <target state="translated">应用监听静音键（如果权限允许），但不监听音量键。</target>
-        <note>54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method.</note>
+      <trans-unit id="The app listens to the mute key (if conditions permit) but not the volume keys." xml:space="preserve">
+        <source>The app listens to the mute key (if conditions permit) but not the volume keys.</source>
+        <target state="translated">应用监听静音键（如果条件允许），但不监听音量键。</target>
+        <note>54619 - Status shown when the native mute listener is engaged alone in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup.</note>
       </trans-unit>
-      <trans-unit id="The app listens to the native brightness keys (if permissions permit)." xml:space="preserve">
-        <source>The app listens to the native brightness keys (if permissions permit).</source>
-        <target state="translated">应用程序会监听原生亮度键 (如果权限允许)</target>
-        <note>53689 - Keyboard status describing interception of native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards.</note>
+      <trans-unit id="The app listens to the native brightness keys (if conditions permit)." xml:space="preserve">
+        <source>The app listens to the native brightness keys (if conditions permit).</source>
+        <target state="translated">应用程序会监听原生亮度键 (如果条件允许)</target>
+        <note>54619 - Status shown when the native brightness listener is engaged in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup.</note>
       </trans-unit>
-      <trans-unit id="The app listens to the volume keys (if permissions permit) but not the mute key." xml:space="preserve">
-        <source>The app listens to the volume keys (if permissions permit) but not the mute key.</source>
-        <target state="translated">应用监听音量键 (如果权限允许), 但不监听静音键。</target>
-        <note>53689 - Keyboard status describing volume key interception without mute key interception.</note>
+      <trans-unit id="The app listens to the volume keys (if conditions permit) but not the mute key." xml:space="preserve">
+        <source>The app listens to the volume keys (if conditions permit) but not the mute key.</source>
+        <target state="translated">应用监听音量键 (如果条件允许), 但不监听静音键。</target>
+        <note>54619 - Status shown when the native volume listener is engaged alone in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup.</note>
       </trans-unit>
       <trans-unit id="The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" xml:space="preserve">
         <source>The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…</source>
@@ -13001,11 +13011,6 @@ Thank you for your understanding and continued support.</source>
         <target state="translated">标题栏设置将功能显示为开关时此菜单项多余。</target>
         <note>53477 - Menu visibility redundancy help.</note>
       </trans-unit>
-      <trans-unit id="This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." xml:space="preserve">
-        <source>This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use.</source>
-        <target state="translated">此方式使用的访问范围最小，无需明确授予系统权限即可工作。在锁定屏幕上或屏幕保护程序运行时，此方式会将亮度、音量和静音键交给 macOS 处理。如果你经常使用扩展键盘上的 F13 至 F19 功能键，不建议使用此方式。</target>
-        <note>54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions.</note>
-      </trans-unit>
       <trans-unit id="This might help solve issues with certain configurations." xml:space="preserve">
         <source>This might help solve issues with certain configurations.</source>
         <target state="translated">这可能有助于解决某些配置的问题。</target>
@@ -13054,6 +13059,11 @@ Are you sure you want to continue?</source>
         <source>This provides a cleaner look when sliders are not in active use.</source>
         <target state="translated">当滑块不在使用状态时外观更整洁。</target>
         <note>53477 - Hide inactive slider labels setting help.</note>
+      </trans-unit>
+      <trans-unit id="This requires enabled Auto Brightness." xml:space="preserve">
+        <source>This requires enabled Auto Brightness.</source>
+        <target state="translated">这需要开启“自动亮度”。</target>
+        <note>54630 - Warning below Content Based Ambience when the built-in display’s Auto Brightness toggle is off. Auto Brightness is the menu label for macOS automatic display brightness.</note>
       </trans-unit>
       <trans-unit id="This resolution is used as the default (as HiDPI if available) when the display is included in a new layout." xml:space="preserve">
         <source>This resolution is used as the default (as HiDPI if available) when the display is included in a new layout.</source>

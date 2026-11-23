@@ -820,7 +820,7 @@
       "comment" : "53477 - Virtual screen deletion cleanup advice for manual color profile removal."
     },
     "After switching displays, BetterDisplay may handle the first few brightness key presses before native pass-through kicks in. For immediate pass-through, select Full Access in Keyboard settings." : {
-      "comment" : "54610 - Warning below a display’s native brightness-key pass-through toggle for the No Permissions Required and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay."
+      "comment" : "54617 - Warning below a display’s native brightness-key pass-through toggle for the Limited Access and Input Monitoring methods. Switching displays means changing the keyboard’s target display, and Full Access and Keyboard must match the method label and settings section in BetterDisplay."
     },
     "After wake, synchronize brightness changes of at least two percentage points from an Apple brightness source that was connected before sleep. If no qualifying change is available, absolute-value and nits synchronization use a valid current Apple brightness reading, including from newly connected displays. Zero or near-zero brightness readings are ignored." : {
       "comment" : "54069 - Help for brightness synchronization after wake. The two-percentage-point comparison requires pre-sleep readings; absolute-value and nits synchronization can fall back to valid current readings from existing or newly connected Apple displays, with zero or near-zero readings excluded.",
@@ -1660,6 +1660,9 @@
     },
     "Below this level on the combined brightness scale the app uses additional software dimming (as hardware backlight control reached the lowest possible level)." : {
       "comment" : "53477 - Combined brightness hardware/software transition threshold help."
+    },
+    "BetterDisplay leaves the native brightness, volume, and mute keys to macOS." : {
+      "comment" : "54619 - Help shown when Disabled is selected for native keyboard control. Native keys are the keyboard’s built-in brightness, volume, and mute keys."
     },
     "BetterDisplay treats this brightness as luminance value 1.0. Display brightness or preset changes can invalidate an accurately measured LUT." : {
       "comment" : "53477 - LUT calibration reference brightness help; normalized luminance 1.0 depends on fixed display calibration."
@@ -5118,7 +5121,7 @@
       "comment" : "53477 - Start device pairing action."
     },
     "Input Monitoring" : {
-      "comment" : "54496 - Native keyboard handling method and macOS permission page for monitoring keyboard, mouse, and trackpad input. Use SecurityPrivacyExtension’s LISTEN_EVENT wording where available; Bulgarian, Persian, and Latvian use accepted project terminology."
+      "comment" : "54617 - Native keyboard control method and macOS permission page for monitoring keyboard, mouse, and trackpad input. Use the established macOS permission name from the glossary."
     },
     "Input peak / RMS: %@, %@ dBFS" : {
       "comment" : "53927 - Software Audio input meter with two formatted levels: peak first, then root mean square (RMS), both relative to digital full scale (dBFS). Preserve both %@ placeholders in that order; these are not acoustic sound-pressure levels.",
@@ -5401,6 +5404,12 @@
     "Limit with Screen Brightness" : {
       "comment" : "54192 - Apple logo option that scales Logo Light Strength using the logo brightness macOS selects from screen brightness and ambient light. With Content Based Ambience enabled, this also limits its maximum; off uses the fixed-strength base.",
       "extractionState" : "manual"
+    },
+    "Limited Access" : {
+      "comment" : "54614 - Native keyboard control method for handling brightness, volume, and mute keys without requesting explicit system permissions."
+    },
+    "Limited Access handles the keys without requiring explicit system permissions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. If you encounter issues with keyboard control, try Full Access." : {
+      "comment" : "54614 - Help for the Limited Access native keyboard control method. F13 through F19 are physical function keys on extended keyboards, and Full Access must match the picker label."
     },
     "Limited Range" : {
       "comment" : "53477 - Limited signal value range, as opposed to full range."
@@ -5991,9 +6000,6 @@
         }
       }
     },
-    "Native keyboard control (brightness and volume) requires permissions" : {
-      "comment" : "54441 - Warning in BetterDisplay Keyboard settings that native Apple brightness and volume key control needs macOS permissions. This neutral heading has no exclamation marks and does not name a version-specific System Settings page."
-    },
     "Native keyboard control is being interrupted and may be unavailable. The reason could be a device connection issue or interference from another app or service. If you notice a problem, try reconnecting any affected external keyboards, pausing other keyboard utilities, or switching to a different keyboard control method." : {
       "comment" : "54496 - Warning beneath the native keyboard method selector while the app retries interrupted key handling. Device connection problems or another keyboard driver/remapper may interfere; suggested remedies are reconnecting affected external keyboards, pausing other keyboard utilities, or choosing another handling method."
     },
@@ -6005,6 +6011,9 @@
     },
     "Native keyboard control permissions are properly configured. Native (Apple) keyboard brightness and volume keys should work if these features are otherwise set up. If not, please try restarting the app!" : {
       "comment" : "54437 - Success message for native keyboard brightness and volume permissions; other keyboard settings must also be enabled."
+    },
+    "Native Keyboard Control Requires Permissions" : {
+      "comment" : "54630 - Heading of the orange warning in Keyboard settings when the selected native keyboard control method needs macOS permissions. Use title case where customary."
     },
     "Native mode (1:1 mapping)" : {
       "comment" : "53477 - Native pixel mapping mode."
@@ -6081,9 +6090,6 @@
     },
     "No Mirror Targets Available" : {
       "comment" : "53477 - Empty mirror target list."
-    },
-    "No Permissions Required" : {
-      "comment" : "54610 - Native keyboard control method in Settings > Keyboard. BetterDisplay can handle media keys without the user granting explicit system permissions."
     },
     "No retouched color profiles." : {
       "comment" : "54069 - Empty state for the retouched color profiles section. Add New remains available.",
@@ -8784,17 +8790,17 @@
     "The app is disengaged from native volume and mute keys." : {
       "comment" : "53689 - Keyboard status: the app is disengaged from native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards."
     },
-    "The app listens to both the native volume and mute keys (if permissions permit)." : {
-      "comment" : "53689 - Keyboard status describing interception of both native volume and mute keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards."
+    "The app listens to both the native volume and mute keys (if conditions permit)." : {
+      "comment" : "54619 - Status shown when the native volume and mute listeners are engaged in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup."
     },
-    "The app listens to the mute key (if permissions permit) but not the volume keys." : {
-      "comment" : "54588 - Keyboard settings status shown when BetterDisplay handles the mute key but neither volume key is engaged. The permission caveat refers to the selected native keyboard control method."
+    "The app listens to the mute key (if conditions permit) but not the volume keys." : {
+      "comment" : "54619 - Status shown when the native mute listener is engaged alone in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup."
     },
-    "The app listens to the native brightness keys (if permissions permit)." : {
-      "comment" : "53689 - Keyboard status describing interception of native brightness keys; Native keys are the standard system brightness or audio keys, including those on external Apple keyboards."
+    "The app listens to the native brightness keys (if conditions permit)." : {
+      "comment" : "54619 - Status shown when the native brightness listener is engaged in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup."
     },
-    "The app listens to the volume keys (if permissions permit) but not the mute key." : {
-      "comment" : "53689 - Keyboard status describing volume key interception without mute key interception."
+    "The app listens to the volume keys (if conditions permit) but not the mute key." : {
+      "comment" : "54619 - Status shown when the native volume listener is engaged alone in Keyboard settings. Conditions include system permissions and whether BetterDisplay can handle the keys in the current setup."
     },
     "The app menu icon will reflect the icon of the current main display. Enable if you don't like the default icon…" : {
       "comment" : "53477 - Main display icon as menu icon setting help."
@@ -8980,8 +8986,8 @@
     "The imported LUT and its configuration will be removed." : {
       "comment" : "53477 - Imported LUT deletion confirmation."
     },
-    "The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. Compared to No Permissions Required, this method may marginally improve compatibility with some third party apps using keyboard remapping." : {
-      "comment" : "54610 - Help for Input Monitoring, comparing it with the No Permissions Required method. The transparency indicator is a macOS privacy indicator, and keyboard remapping means changing which action a key performs."
+    "The Input Monitoring method requires explicit system permissions to function and triggers the transparency indicator on certain macOS versions. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use. It may work better than Limited Access with some third-party keyboard remapping apps. If you encounter issues with keyboard control, try Full Access." : {
+      "comment" : "54618 - Help for the Input Monitoring native keyboard control method. Remapping changes key assignments, the transparency indicator is a macOS privacy indicator, and Limited Access and Full Access must match the picker labels."
     },
     "The logical CEC address used for remote, volume and power commands. TV is the usual target." : {
       "comment" : "53477 - HDMI-CEC logical address setting help."
@@ -9322,9 +9328,6 @@
     "This menu item is redundant if the header is set to present the function as a switch." : {
       "comment" : "53477 - Menu visibility redundancy help."
     },
-    "This method uses the most focused access and does not require explicit system permissions to function. On the lock screen or while the screen saver is running, it leaves the brightness, volume, and mute keys to macOS. Not recommended for extended keyboards with F13-F19 function keys in active use." : {
-      "comment" : "54610 - Help for the No Permissions Required native keyboard control method. Extended keyboards have physical F13 through F19 keys that may be used for other functions."
-    },
     "This might help solve issues with certain configurations." : {
       "comment" : "53477 - Compatibility workaround setting help."
     },
@@ -9354,6 +9357,9 @@
     },
     "This provides a cleaner look when sliders are not in active use." : {
       "comment" : "53477 - Hide inactive slider labels setting help."
+    },
+    "This requires enabled Auto Brightness." : {
+      "comment" : "54630 - Warning below Content Based Ambience when the built-in display’s Auto Brightness toggle is off. Auto Brightness is the menu label for macOS automatic display brightness."
     },
     "This resolution is used as the default (as HiDPI if available) when the display is included in a new layout." : {
       "comment" : "53477 - Default layout resolution setting help."
